@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1750706239709" clover="3.2.0">
+  <project timestamp="1750706239709" name="All files">
+    <metrics statements="61" coveredstatements="61" conditionals="14" coveredconditionals="14" methods="10" coveredmethods="7" elements="85" coveredelements="82" complexity="0" loc="61" ncloc="61" packages="1" files="1" classes="1"/>
+    <file name="setup-docker.js" path="/workspace/verified_repos_v2/JavaScript/docker-practice_actions-setup-docker/lib/setup-docker.js">
+      <metrics statements="61" coveredstatements="61" conditionals="14" coveredconditionals="14" methods="10" coveredmethods="7"/>
+      <line num="2" count="14" type="stmt"/>
+      <line num="3" count="14" type="stmt"/>
+      <line num="4" count="14" type="stmt"/>
+      <line num="6" count="14" type="stmt"/>
+      <line num="7" count="14" type="stmt"/>
+      <line num="8" count="14" type="stmt"/>
+      <line num="9" count="14" type="stmt"/>
+      <line num="10" count="14" type="stmt"/>
+      <line num="11" count="14" type="stmt"/>
+      <line num="13" count="14" type="stmt"/>
+      <line num="18" count="5" type="stmt"/>
+      <line num="19" count="5" type="stmt"/>
+      <line num="20" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="24" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="28" count="5" type="stmt"/>
+      <line num="34" count="5" type="stmt"/>
+      <line num="35" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="36" count="4" type="stmt"/>
+      <line num="39" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="40" count="2" type="stmt"/>
+      <line num="42" count="2" type="stmt"/>
+      <line num="45" count="3" type="stmt"/>
+      <line num="47" count="3" type="stmt"/>
+      <line num="52" count="2" type="stmt"/>
+      <line num="53" count="2" type="stmt"/>
+      <line num="61" count="2" type="stmt"/>
+      <line num="63" count="2" type="stmt"/>
+      <line num="64" count="2" type="stmt"/>
+      <line num="67" count="2" type="stmt"/>
+      <line num="69" count="2" type="stmt"/>
+      <line num="70" count="2" type="stmt"/>
+      <line num="86" count="2" type="stmt"/>
+      <line num="88" count="2" type="stmt"/>
+      <line num="89" count="2" type="stmt"/>
+      <line num="94" count="2" type="stmt"/>
+      <line num="96" count="1" type="stmt"/>
+      <line num="101" count="5" type="stmt"/>
+      <line num="103" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="104" count="1" type="stmt"/>
+      <line num="105" count="1" type="stmt"/>
+      <line num="108" count="1" type="stmt"/>
+      <line num="111" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="113" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="114" count="1" type="stmt"/>
+      <line num="116" count="1" type="stmt"/>
+      <line num="119" count="2" type="stmt"/>
+      <line num="121" count="2" type="stmt"/>
+      <line num="124" count="2" type="stmt"/>
+      <line num="127" count="2" type="stmt"/>
+      <line num="129" count="2" type="stmt"/>
+      <line num="131" count="2" type="stmt"/>
+      <line num="137" count="2" type="stmt"/>
+      <line num="139" count="2" type="stmt"/>
+      <line num="144" count="2" type="stmt"/>
+      <line num="146" count="2" type="stmt"/>
+      <line num="147" count="2" type="stmt"/>
+      <line num="150" count="2" type="stmt"/>
+      <line num="152" count="2" type="stmt"/>
+      <line num="159" count="14" type="stmt"/>
+    </file>
+  </project>
+</coverage>

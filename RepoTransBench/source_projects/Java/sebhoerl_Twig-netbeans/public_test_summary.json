@@ -1,0 +1,91 @@
+{
+  "project_name": "sebhoerl_Twig-netbeans",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:19:53.942207",
+  "original_path": "/workspace/verified_repos_v2/Java/sebhoerl_Twig-netbeans",
+  "public_test_result_path": "/workspace/public_test_results/Java/sebhoerl_Twig-netbeans",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/org/netbeans/modules/php/twig/editor/TwigEditorKitTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/TwigDataObjectTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/completion/TwigCompletionHandlerTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigStructureItemTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigStructureScannerTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigLanguageTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/parsing/TwigParserResultTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/parsing/TwigParserTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/format/TwigFormatterTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/lexer/TwigTopTokenIdTest.java",
+      "twig-netbeans/src/test/java/org/netbeans/modules/php/twig/AppTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 11,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/org/netbeans/modules/php/twig/editor/TwigEditorKitPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/TwigDataObjectPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/completion/TwigCompletionHandlerPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigLanguagePublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigStructureItemPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigStructureScannerPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/parsing/TwigParserResultPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/parsing/TwigParserPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/lexer/TwigTopTokenIdPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/format/TwigFormatterPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/format/TwigFormatterPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/lexer/TwigTopTokenIdPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/completion/TwigCompletionHandlerPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/TwigDataObjectPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/TwigEditorKitPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigLanguagePublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigStructureItemPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigStructureScannerPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/parsing/TwigParserResultPublicTest.java",
+      "src/test/java/org/netbeans/modules/php/twig/editor/parsing/TwigParserPublicTest.java",
+      "run_public_tests.sh",
+      "public_tests_list.txt"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 23,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/org/netbeans/modules/php/twig/editor/TwigEditorKitPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/TwigDataObjectPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/completion/TwigCompletionHandlerPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigLanguagePublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigStructureItemPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigStructureScannerPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/parsing/TwigParserResultPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/parsing/TwigParserPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/lexer/TwigTopTokenIdPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/format/TwigFormatterPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/format/TwigFormatterPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/lexer/TwigTopTokenIdPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/completion/TwigCompletionHandlerPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/TwigDataObjectPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/TwigEditorKitPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigLanguagePublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigStructureItemPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigStructureScannerPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/parsing/TwigParserResultPublicTest.java",
+    "src/test/java/org/netbeans/modules/php/twig/editor/parsing/TwigParserPublicTest.java",
+    "run_public_tests.sh",
+    "public_tests_list.txt"
+  ]
+}

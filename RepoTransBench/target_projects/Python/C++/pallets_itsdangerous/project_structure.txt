@@ -1,0 +1,72 @@
+Project Structure for pallets_itsdangerous (C++ version):
+
+.
+├── CMakeLists.txt              # CMake build configuration
+├── include/                    # Header files for project and library code
+│   └── ...                     # (Place .h files here for source/lib modules)
+├── public_tests/               # Translated public test cases (C++/Google Test)
+│   ├── test_url_safe_public_test.cpp
+│   ├── test_encoding_public_test.cpp
+│   ├── test_initializer_public_test.cpp
+│   ├── test_serializer_public_test.cpp
+│   ├── test_exc_public_test.cpp
+│   ├── test_signer_public_test.cpp
+│   ├── test_timed_public_test.cpp
+│   └── ... (all public tests, one .cpp per translation)
+├── run_tests.sh                # Simple script: builds and runs all tests
+├── src/
+│   ├── main.cpp (optional)     # (optional entrypoint)
+│   └── lib/
+│       ├── ...                 # C++ implementations of "itsdangerous" classes and helpers
+├── tests/
+│   ├── test_main.cpp           # GTest main entry
+│   └── original/
+│       ├── test_url_safe_test.cpp
+│       ├── test_encoding_test.cpp
+│       ├── test_init_test.cpp
+│       ├── test_serializer_test.cpp
+│       ├── test_signer_test.cpp
+│       ├── test_timed_test.cpp
+│       ├── test_exc_test.cpp
+│       └── ... (all original tests, each as .cpp)
+├── README.md                   # Project README and usage instructions
+└── project_structure.txt       # (this file, describes directory purposes & instructions)
+
+-----------------------------------------------
+Directory/Files Explanation:
+
+- CMakeLists.txt: Root CMake project config. Adds all test source and links to GTest.
+- include/: Place header files (must be included by both library & tests).
+- public_tests/: All public (student-facing) test cases, one .cpp per suite, for GTest.
+- run_tests.sh: One-click script: builds in ./build, runs all tests via Google Test.
+- src/: C++ source implementation. Place your main modules here (main.cpp optional).
+  - src/lib/: Keep class implementations and sources logically organized (e.g., Signer, Serializer, etc.).
+- tests/test_main.cpp: GTest test main for all tests.
+- tests/original/: All translated original test cases, one .cpp per suite.
+- README.md: General project documentation.
+- project_structure.txt: This file.
+
+-----------------------------------------------
+SETUP & RUNNING INSTRUCTIONS:
+
+Prerequisites:
+  - CMake (>=3.10)
+  - A C++17 compiler (g++ or clang++)
+  - Google Test (gtest) development libraries
+
+To build and run all tests:
+
+  $ chmod +x run_tests.sh
+  $ ./run_tests.sh
+
+This will:
+  - Build everything in ./build/
+  - Run *all* tests (both original and public) via test_runner (GTest)
+  - Output results to the terminal
+
+Test Structure:
+  - All tests use Google Test (`TEST`, `EXPECT_*`, etc).
+  - Keep new test cases in the appropriate directory (`tests/original/` or `public_tests/`).
+  - If adding new library code, put implementation in src/ and headers in include/.
+
+See README.md for more information.

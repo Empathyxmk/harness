@@ -1,0 +1,24 @@
+name: Publish to Pypi and create Github release
+on:
+  push:
+    tags:
+      - "v*.*.*"
+jobs:
+  test:
+    uses: ./.github/workflows/test.yml
+  pypi:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build and publish to pypi
+        uses: JRubics/poetry-publish@v1.17
+        with:
+          pypi_token: ${{ secrets.PYPI_TOKEN }}
+  github-release:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker://antonyurchenko/git-release:v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,51 @@
+{
+  "project_name": "spengilley_ActivityFragmentMVP",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:19:08.112370",
+  "original_path": "/workspace/verified_repos_v2/Java/spengilley_ActivityFragmentMVP",
+  "public_test_result_path": "/workspace/public_test_results/Java/spengilley_ActivityFragmentMVP",
+  "original_tests": {
+    "test_files": [
+      "app/src/test/java/com/spengilley/activityfragmentmvp/AppTest.java",
+      "app/src/test/java/com/spengilley/activityfragmentmvp/ModulesTest.java",
+      "app/src/test/java/com/spengilley/activityfragmentmvp/AppModuleTest.java",
+      "app/src/test/java/com/spengilley/activityfragmentmvp/ui/main/FragmentCallbackTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 4,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "app/src/test/java/com/spengilley/activityfragmentmvp/AppModulePublicTest.java",
+      "app/src/test/java/com/spengilley/activityfragmentmvp/ModulesPublicTest.java",
+      "app/src/test/java/com/spengilley/activityfragmentmvp/AppPublicTest.java",
+      "app/src/test/java/com/spengilley/activityfragmentmvp/ui/main/FragmentCallbackPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 6,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "app/src/test/java/com/spengilley/activityfragmentmvp/AppModulePublicTest.java",
+    "app/src/test/java/com/spengilley/activityfragmentmvp/ModulesPublicTest.java",
+    "app/src/test/java/com/spengilley/activityfragmentmvp/AppPublicTest.java",
+    "app/src/test/java/com/spengilley/activityfragmentmvp/ui/main/FragmentCallbackPublicTest.java",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

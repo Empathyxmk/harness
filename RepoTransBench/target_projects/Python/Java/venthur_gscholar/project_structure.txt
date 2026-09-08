@@ -1,0 +1,41 @@
+venthur_gscholar_java/
+├── pom.xml
+├── run_tests.sh
+├── project_structure.txt
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── venthur/
+│   │               └── gscholar/
+│   │                   ├── Main.java              # Placeholder for main app entry point
+│   │                   ├── GScholar.java          # Contains public static methods/constants stubbed for test mocks
+│   │                   ├── Version.java           # Version module
+│   │                   ├── MainCLI.java           # Placeholder for CLI, test-invoked
+│   │                   ├── logger.java            # Logger class used in tests
+│   │                   ├── __main__.java          # Dummy, for parity only
+│   │                   └── __init__.java          # Dummy, for parity only
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── venthur/
+│                   └── gscholar/
+│                       ├── original/
+│                       │   ├── TestMainCli.java           # Translation of tests/test_main_cli.py
+│                       │   ├── TestGscholarExtended.java  # Translation of tests/test_gscholar_extended.py
+│                       │   ├── TestGscholar.java          # Translation of tests/test_gscholar.py
+│                       │   └── TestVersion.java           # Translation of tests/test_version.py
+│                       └── public_tests/
+│                           ├── PublicMainCliTest.java        # Translation of public_tests/test_public_main_cli.py
+│                           ├── PublicGscholarExtendedTest.java # Translation of public_tests/test_public_gscholar_extended.py
+│                           ├── PublicGscholarTest.java         # Translation of public_tests/test_public_gscholar.py
+│                           └── PublicVersionTest.java          # Translation of public_tests/test_public_version.py
+
+Instructions:
+- Place your project root at the level of pom.xml and run_tests.sh.
+- To run all tests: `./run_tests.sh`
+- Project uses JUnit 5 and Mockito for test mocking (pom.xml covers all dependencies).
+- "original" tests are in `src/test/java/com/venthur/gscholar/original/`.
+- "public" tests are in `src/test/java/com/venthur/gscholar/public_tests/`.
+- All core production logic stubs are in `src/main/java/com/venthur/gscholar/`. Tests should use Mockito to mock results as per original Python test monkeypatch logic.
+- No source implementation required; all logic is inside test files using mocks.

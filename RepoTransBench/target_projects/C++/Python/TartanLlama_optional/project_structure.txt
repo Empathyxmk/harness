@@ -1,0 +1,46 @@
+Project Structure:
+
+.
+├── README.md                 # Project info & usage
+├── requirements.txt          # Python test requirements (pytest)
+├── run_tests.sh              # One-click all-test execution
+├── project_structure.txt     # This project structure document
+├── src/
+│   └── tartanllama_optional/
+│       ├── __init__.py       # Package init
+│       └── optional.py       # Placeholder for future source
+├── tests/
+│   ├── __init__.py           # Tests package
+│   └── original/
+│       ├── __init__.py       # Original tests package
+│       ├── test_assignment.py
+│       ├── test_bases.py
+│       ├── test_constexpr.py
+│       ├── test_constructors.py
+│       ├── test_emplace.py
+│       ├── test_extensions.py
+│       ├── test_hash.py
+│       ├── test_in_place.py
+│       ├── test_issues.py
+│       ├── test_main.py
+│       ├── test_make_optional.py
+│       ├── test_noexcept.py
+│       ├── test_nullopt.py
+│       ├── test_observers.py
+│       ├── test_relops.py
+│       └── test_swap.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_extensions_public.py
+│   └── test_noexcept_public.py
+
+Directory Explanations:
+- src/tartanllama_optional: Your implementation of optional functionality; fill in as needed.
+- tests/original: Translated original C++ tests (function bodies missing, awaiting source).
+- public_tests: Public subset of tests, as above.
+- run_tests.sh: Run this script after installing requirements to run all tests with pytest.
+- requirements.txt: Declares pytest; run `pip install -r requirements.txt` if needed.
+
+Setup and Running:
+1. `pip install -r requirements.txt`
+2. `./run_tests.sh`

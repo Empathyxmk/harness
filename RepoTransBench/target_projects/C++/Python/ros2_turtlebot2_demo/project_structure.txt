@@ -1,0 +1,33 @@
+project_root/
+├── src/
+│   ├── calculator.py
+│   └── __init__.py             # (optional, can be empty or omitted)
+├── tests/
+│   ├── original/
+│   │   ├── test_calculator.py  # Original test cases from the project
+│   │   └── __init__.py         # (optional, can be empty or omitted)
+│   └── __init__.py             # (optional, can be empty or omitted)
+├── public_tests/
+│   ├── test_calculator_public.py # Publicly visible auto-generated test cases
+│   └── __init__.py               # (optional, can be empty or omitted)
+├── requirements.txt             # Python dependencies (pytest)
+├── run_tests.sh                 # One-click test runner script
+├── project_structure.txt        # This file
+└── README.md                    # [create as needed]
+
+Structure Explanation:
+- src/: Application source code. `calculator.py` is the core Calculator implementation.
+- tests/original/: Translated "original" (internal/maintainer) test cases from the C++ project. 
+- public_tests/: Translated public test cases based on public C++ tests.
+- requirements.txt: Project dependencies (pytest) for running the test suite.
+- run_tests.sh: Simple script to install dependencies and run all tests.
+- README.md: (Add usage/setup instructions here. Not included, but recommended.)
+
+How to run tests:
+1. Ensure Python 3.x is installed.
+2. From the project root directory, run:
+      ./run_tests.sh
+   This installs dependencies and runs ALL tests (original & public) using pytest.
+
+Test organization:
+- Both internal (original) and public test cases are preserved under separate directories for clarity and access control.

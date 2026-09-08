@@ -1,0 +1,38 @@
+apache_rocketmq-spring-dotnet/
+├── apache_rocketmq-spring-dotnet.sln
+├── src/
+│   └── RocketMQSpring/
+│       ├── RocketMQSpring.csproj
+│       ├── Program.cs
+│       └── (placeholder for ported main logic, as needed)
+├── tests/
+│   ├── original/
+│   │   ├── RocketMQSpring.OriginalTests.csproj
+│   │   ├── ProducerApplicationTests.cs
+│   │   ├── ProducerACLApplicationTests.cs
+│   │   ├── ConsumerApplicationTests.cs
+│   │   ├── ExtRocketMQTemplateTests.cs
+│   │   ├── StringConsumerTests.cs
+│   │   ├── RocketMQTemplateTests.cs
+│   │   ├── ExtRocketMQTemplateMainTests.cs
+│   │   ├── RocketMQMessageListenerBeanPostProcessorTests.cs
+│   │   ├── RocketMQAutoConfigurationTests.cs
+│   │   ├── DefaultRocketMQListenerContainerTests.cs
+│   │   ├── RocketMQUtilTests.cs
+│   │   └── TestUtilities.cs
+│   └── (common test utilities)
+├── public_tests/
+│   ├── RocketMQSpring.PublicTests.csproj
+│   ├── ProducerApplicationPublicTests.cs
+│   ├── ProducerACLApplicationPublicTests.cs
+│   ├── ConsumerApplicationPublicTests.cs
+│   ├── ExtRocketMQTemplatePublicTests.cs
+│   ├── StringConsumerPublicTests.cs
+│   ├── ExtRocketMQTemplateCorePublicTests.cs
+│   ├── RocketMQTemplateCorePublicTests.cs
+│   ├── RocketMQMessageListenerBeanPostProcessorPublicTests.cs
+│   ├── RocketMQAutoConfigurationPublicTests.cs
+│   ├── RocketMQUtilPublicTests.cs
+│   └── DefaultRocketMQListenerContainerPublicTests.cs
+├── run_tests.sh
+└── test_translation_progress.json

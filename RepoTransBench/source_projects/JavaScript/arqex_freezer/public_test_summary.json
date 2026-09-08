@@ -1,0 +1,75 @@
+{
+  "project_name": "arqex_freezer",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:41:35.140349",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/arqex_freezer",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/arqex_freezer",
+  "original_tests": {
+    "test_files": [
+      "tests/utils-coverage-extra.spec.js",
+      "tests/frozen-coverage-extra.spec.js",
+      "tests/emitter-coverage-extra.spec.js",
+      "tests/emitter-coverage.spec.js",
+      "tests/freezer-coverage.spec.js",
+      "tests/nodeCreator-coverage.spec.js",
+      "tests/nodeCreator-coverage-extra.spec.js",
+      "tests/utils-coverage.spec.js",
+      "tests/frozen-coverage.spec.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 9,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/utils-coverage-extra.public.spec.js",
+      "public_tests/frozen-coverage-extra.public.spec.js",
+      "public_tests/emitter-coverage-extra.public.spec.js",
+      "run_public_tests.sh",
+      "public_tests/emitter-coverage.public.spec.js",
+      "public_tests/freezer-coverage.public.spec.js",
+      "public_tests/utils-coverage.public.spec.js",
+      "public_tests/nodeCreator-coverage.public.spec.js",
+      "public_tests/nodeCreator-coverage-extra.public.spec.js",
+      "public_tests/frozen-coverage.public.spec.js",
+      "public_tests/utils-coverage-extra.public.spec.js",
+      "public_tests/frozen-coverage-extra.public.spec.js",
+      "public_tests/emitter-coverage-extra.public.spec.js",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 15,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/utils-coverage-extra.public.spec.js",
+    "public_tests/frozen-coverage-extra.public.spec.js",
+    "public_tests/emitter-coverage-extra.public.spec.js",
+    "run_public_tests.sh",
+    "public_tests/emitter-coverage.public.spec.js",
+    "public_tests/freezer-coverage.public.spec.js",
+    "public_tests/utils-coverage.public.spec.js",
+    "public_tests/nodeCreator-coverage.public.spec.js",
+    "public_tests/nodeCreator-coverage-extra.public.spec.js",
+    "public_tests/frozen-coverage.public.spec.js",
+    "public_tests/utils-coverage-extra.public.spec.js",
+    "public_tests/frozen-coverage-extra.public.spec.js",
+    "public_tests/emitter-coverage-extra.public.spec.js",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

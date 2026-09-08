@@ -1,0 +1,41 @@
+aadhithya_rajiniPP Rust Project Structure
+
+.
+├── Cargo.toml              # Rust package manifest
+├── src/
+│   ├── lib.rs              # Main library: (Placeholder implementation for test discoverability)
+│   └── main.rs             # Empty main (not used)
+├── tests/
+│   └── original/
+│       ├── conftest.rs     # Helper functions with sample code/data matching the original Python conftest.py
+│       ├── test_init_module.rs
+│       ├── test_rajiniworld.rs
+│       ├── test_functions.rs
+│       ├── test_flow_control.rs
+│       ├── test_exprs.rs
+│       ├── test_runner.rs
+│       ├── test_lexer_and_exceptions.rs
+│       └── test_print.rs
+├── public_tests/
+│   ├── test_public_init_module.rs
+│   ├── test_public_rajiniworld.rs
+│   ├── test_public_functions.rs
+│   ├── test_public_exprs.rs
+│   ├── test_public_flow_control.rs
+│   ├── test_public_runner.rs
+│   ├── test_public_lexer_and_exceptions.rs
+│   └── test_public_print.rs
+├── run_tests.sh            # One-click script: runs all tests
+├── project_structure.txt   # This file: explains structure and usage
+
+Directory Explanations:
+- src/: Core library code (stubbed out). In a real port, replace with actual implementation.
+- tests/original/: Full port of the original Python test files. Logic mirrors the behavior of the Python code.
+- public_tests/: Translations of public test cases as in the original project.
+- run_tests.sh: Simple script to execute all Rust tests.
+- Cargo.toml: Declares the Rust crate, manages dependencies.
+
+Instructions:
+1. Install Rust and Cargo (https://www.rust-lang.org/tools/install)
+2. Run tests:  `chmod +x ./run_tests.sh && ./run_tests.sh`
+All unit and integration tests (original + public) should execute.

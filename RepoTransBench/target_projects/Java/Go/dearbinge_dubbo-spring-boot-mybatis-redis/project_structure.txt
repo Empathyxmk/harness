@@ -1,0 +1,15 @@
+.
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── tests/
+│   ├── original/
+│   │   ├── http_session_config_test.go
+│   │   ├── parking_spot_data_trans_test.go
+│   │   ├── parking_basic_data_sync_test.go
+│   │   └── testutil.go
+├── public_tests/
+│   ├── http_session_config_public_test.go
+│   ├── parking_spot_data_trans_public_test.go
+│   ├── parking_basic_data_sync_public_test.go
+│   └── testutil.go

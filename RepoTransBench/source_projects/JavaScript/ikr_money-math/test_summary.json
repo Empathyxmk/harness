@@ -1,0 +1,17 @@
+{
+  "project_name": "ikr_money-math",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 98.27,
+    "branch": 86.79
+  },
+  "timestamp": "2025-06-19T10:38:57.799877",
+  "original_path": "/workspace/runnable_filter/JavaScript/ikr_money-math",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/ikr_money-math",
+  "tests_path": [
+    "spec/money.spec.js",
+    "spec/money-extra.spec.js",
+    "spec/unit-money-internal.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

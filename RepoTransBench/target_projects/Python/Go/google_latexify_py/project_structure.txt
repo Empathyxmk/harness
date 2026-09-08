@@ -1,0 +1,20 @@
+.
+├── go.mod
+├── run_tests.sh
+├── tests
+│   └── original
+│       ├── README.md
+│       ├── algorithmic_style_test.go
+│       ├── ast_utils_test.go
+│       ├── config_test.go
+│       ├── codegen_utils_test.go
+│       ├── expression_codegen_test.go
+│       ├── frontend_test.go
+│       ├── test_utils_test.go
+│       └── ... (other original test files in Go)
+├── public_tests
+│   ├── README.md
+│   ├── test_public_ast_utils_test.go
+│   ├── test_public_utils_test.go
+│   └── ... (other public test files in Go)
+└── project_structure.txt

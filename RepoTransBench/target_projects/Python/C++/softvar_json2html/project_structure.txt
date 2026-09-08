@@ -1,0 +1,39 @@
+C++ Project Structure for softvar_json2html
+------------------------------------------
+
+softvar_json2html/
+├── CMakeLists.txt         # Build configuration for CMake, includes GoogleTest setup
+├── include/
+│   └── json2html.h        # C++ header for the (mock) json2html API under test
+├── src/
+│   └── json2html.cpp      # Source code file implementing API mocks/stubs for tests
+├── tests/
+│   ├── test_main.cpp      # Entry point for all C++ GoogleTest tests
+│   └── original/
+│       ├── test_json2html_core.cpp      # Translation of original core Python tests
+│       └── test_json2html_additional.cpp# Translation of additional Python tests
+├── public_tests/
+│   ├── test_public_json2html_core.cpp   # C++ translation of public test (core)
+│   └── test_public_json2html_additional.cpp # C++ translation of public test (additional)
+├── run_tests.sh            # One-click C++ test build & execution script
+└── project_structure.txt   # This project structure document
+
+
+Directory/Files Description:
+-------------------------------
+include/           -- C++ public headers. The main API for json2html is mocked here.
+src/               -- C++ source implementations for json2html API (minimal mocks for testing).
+tests/original/    -- Original (private/internal) tests, translated 1-to-1 from Python repo.
+tests/test_main.cpp-- Main test runner for GoogleTest; auto-discovers all linked test files.
+public_tests/      -- All public test cases, matching the Python repo's public tests.
+CMakeLists.txt     -- Build script supporting all test and library files, automatically grabs GoogleTest.
+run_tests.sh       -- One-command build & test runner for the C++ repo (calls all GoogleTest cases).
+project_structure.txt -- This file (explains project layout and usage).
+
+Usage Instructions:
+--------------------
+1. Ensure you have CMake and a C++ compiler (GCC or clang) installed.
+2. To build and run ALL tests, from the project root, just run:
+   ./run_tests.sh
+3. This will build into ./build/ and run all public/original tests.
+4. Add your actual (re)implementation of json2html to src/json2html.cpp as needed.

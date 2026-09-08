@@ -1,0 +1,33 @@
+JoshData_pdf-redactor-cpp/
+├── CMakeLists.txt                # Root CMake project file (configures the build and includes test sources)
+├── README.md                     # Project documentation and setup instructions
+├── include/
+│   └── pdf_redactor.hpp          # C++ header for the main library (to match pdf_redactor.py logic)
+├── src/
+│   └── pdf_redactor.cpp          # C++ source for the main library (implement the API used by test stubs)
+├── tests/
+│   ├── CMakeLists.txt            # CMake config for building original tests
+│   ├── test_redactor_options.cpp # Port of tests/test_redactor_options.py (original test cases)
+│   ├── test_redactor_error.cpp   # Port of tests/test_redactor_error.py (original test cases)
+│   ├── test_redactor.cpp         # Port of tests/test_redactor.py (original test cases)
+│   └── test_redactor_filters.cpp # Port of tests/test_redactor_filters.py (original test cases)
+├── public_tests/
+│   ├── CMakeLists.txt                 # CMake config for building public tests
+│   ├── test_public_redactor_options.cpp # Port of public_tests/test_public_redactor_options.py
+│   ├── test_public_redactor_error.cpp   # Port of public_tests/test_public_redactor_error.py
+│   ├── test_public_redactor.cpp         # Port of public_tests/test_public_redactor.py
+│   └── test_public_redactor_filters.cpp # Port of public_tests/test_public_redactor_filters.py
+├── test-ssns.pdf                 # Test fixture - copy from original or place dummy (fixture for pdf tests)
+├── run_tests.sh                  # One-click build & test script (build+execute all tests)
+└── project_structure.txt         # This file: Explains the project layout
+
+-----
+Directory/Files Explanations:
+- include/: Header file(s) for all public/project-visible C++ APIs (pdf_redactor.hpp).
+- src/: Implementation for main source library (pdf_redactor.cpp).
+- tests/: All original ("private") tests from Python ported to C++/gtest.
+- public_tests/: Public test suite (as per "public_tests" in Python), same logic and API coverage.
+- test-ssns.pdf: PDF fixture needed for some tests (copy from original).
+- run_tests.sh: Top-level script for CMake+gtest-driven one-command build/run.
+- CMakeLists.txt: Main project config, finds GoogleTest, builds src+tests and sets up test execution.
+- README.md: How to build/test and brief notes.

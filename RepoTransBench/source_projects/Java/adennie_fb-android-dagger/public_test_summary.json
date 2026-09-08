@@ -1,0 +1,57 @@
+{
+  "project_name": "adennie_fb-android-dagger",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:12:48.219799",
+  "original_path": "/workspace/verified_repos_v2/Java/adennie_fb-android-dagger",
+  "public_test_result_path": "/workspace/public_test_results/Java/adennie_fb-android-dagger",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/com/fizzbuzz/android/dagger/InjectingPreferenceFragmentTest.java",
+      "src/test/java/com/fizzbuzz/android/dagger/InjectingFragmentModuleTest.java",
+      "src/test/java/com/fizzbuzz/android/dagger/InjectingActionBarActivityTest.java",
+      "src/test/java/com/fizzbuzz/android/dagger/InjectingPreferenceActivityTest.java",
+      "src/test/java/com/fizzbuzz/android/dagger/InjectingActivityModuleTest.java",
+      "src/test/java/com/fizzbuzz/android/dagger/PreconditionsTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/com/fizzbuzz/android/dagger/InjectingActionBarActivityPublicTest.java",
+      "src/test/java/com/fizzbuzz/android/dagger/InjectingFragmentModulePublicTest.java",
+      "src/test/java/com/fizzbuzz/android/dagger/InjectingPreferenceFragmentPublicTest.java",
+      "src/test/java/com/fizzbuzz/android/dagger/InjectingPreferenceActivityPublicTest.java",
+      "src/test/java/com/fizzbuzz/android/dagger/InjectingActivityModulePublicTest.java",
+      "src/test/java/com/fizzbuzz/android/dagger/PreconditionsPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/com/fizzbuzz/android/dagger/InjectingActionBarActivityPublicTest.java",
+    "src/test/java/com/fizzbuzz/android/dagger/InjectingFragmentModulePublicTest.java",
+    "src/test/java/com/fizzbuzz/android/dagger/InjectingPreferenceFragmentPublicTest.java",
+    "src/test/java/com/fizzbuzz/android/dagger/InjectingPreferenceActivityPublicTest.java",
+    "src/test/java/com/fizzbuzz/android/dagger/InjectingActivityModulePublicTest.java",
+    "src/test/java/com/fizzbuzz/android/dagger/PreconditionsPublicTest.java",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "run_tests.sh"
+  ]
+}

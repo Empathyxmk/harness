@@ -1,0 +1,16 @@
+{
+  "project_name": "ebradyjobory_finance.js",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.4,
+    "branch": 83.72
+  },
+  "timestamp": "2025-06-19T10:17:54.820085",
+  "original_path": "/workspace/runnable_filter/JavaScript/ebradyjobory_finance.js",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/ebradyjobory_finance.js",
+  "tests_path": [
+    "test/finance.edge.test.js",
+    "test/index.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

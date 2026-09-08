@@ -1,0 +1,17 @@
+{
+  "project_name": "os_slacker",
+  "language": "Python",
+  "coverage": {
+    "line": 56.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T12:12:17.473971",
+  "original_path": "/workspace/runnable_filter/Python/os_slacker",
+  "test_result_path": "/workspace/test_enhancement_results/Python/os_slacker",
+  "tests_path": [
+    "tests/test_channels.py",
+    "tests/test_utilities.py",
+    "tests/test_init.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,11 @@
+{
+  "project_name": "tonybase_netty-chat",
+  "language": "Java",
+  "coverage": {
+    "line": 52.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-20T03:42:55.503037",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/tonybase_netty-chat",
+  "test_result_path": "/workspace/test_enhancement_results/Java/tonybase_netty-chat"
+}

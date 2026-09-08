@@ -1,0 +1,45 @@
+ParametricText Java Project Structure
+
+.
+├── pom.xml                      # Maven config: dependencies, build/test instructions
+├── run_tests.sh                 # One-click shell script to run all tests (chmod +x)
+├── project_structure.txt        # This file: Overview of the structure
+└── src/
+    ├── main/
+    │   └── java/
+    │       └── com/
+    │           └── thomasa88/
+    │               ├── ParamSpec.java         # ParamSpec class and its parser (from_string, equals, etc.)
+    │               ├── Slice.java             # Slice class, helper for param parsing
+    │               ├── ParamFormatter.java    # mixedFracInch logic
+    │               ├── DummyParam.java        # Dummy param with value/unit for formatter tests
+    │               ├── DummyDesign.java       # Design stub for formatter tests
+    │               ├── DummyUnitsManager.java # UnitsManager stub for DummyDesign
+    │               └── ParamUtil.java         # Utility for nullint logic
+    └── test/
+        └── java/
+            └── com/
+                └── thomasa88/
+                    ├── original/
+                    │   ├── TestParamSpec.java      # Tests from test/test_paramparser.py
+                    │   ├── TestParamFormatter.java # Tests from test/test_paramformatter.py
+                    │   └── TestParser.java         # Tests from test/parser_test.py
+                    └── public_tests/
+                        ├── PublicParamFormatterTest.java # From public_tests/test_public_paramformatter.py
+                        ├── PublicParamParserTest.java    # From public_tests/test_public_paramparser.py
+                        └── PublicParserTest.java         # From public_tests/test_public_parser.py
+
+-----
+EXPLANATION & USAGE:
+
+- Source code in src/main/java/com/thomasa88/.
+- "Original" tests in src/test/java/com/thomasa88/original/ (maps to test/ from Python).
+- "Public" tests in src/test/java/com/thomasa88/public_tests/ (maps to public_tests/ from Python).
+
+- Use `./run_tests.sh` from the project root to build and execute **all** tests.
+
+- Maven with JUnit 5 is used, so any IDE with Maven support can import and run.
+
+- To add implementation for production code, extend classes in src/main/java/com/thomasa88/.
+
+-----

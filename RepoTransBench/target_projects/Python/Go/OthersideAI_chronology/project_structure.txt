@@ -1,0 +1,15 @@
+project_root/
+├── chronological/
+│   └── chronological.go        # Implementation (DummyAdd, DummyMul, DummyPositive)
+├── go.mod                     # Go module definition
+├── public_tests/
+│   ├── chronological_test.go                # Public addition test cases
+│   ├── chronological_extra_test.go          # Public multiplication test cases
+│   └── chronological_branches_test.go       # Public positive check test cases
+├── tests/
+│   └── original/
+│       ├── chronological_test.go            # Original tests for DummyAdd
+│       ├── chronological_extra_test.go      # Original tests for DummyMul
+│       └── chronological_branches_test.go   # Original tests for DummyPositive
+├── run_tests.sh                # Script to run all tests
+├── README.md                   # Project documentation

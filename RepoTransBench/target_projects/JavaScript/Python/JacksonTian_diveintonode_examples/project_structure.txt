@@ -1,0 +1,39 @@
+project_root/
+├── src/
+│   └── (original module files, not translated for tests - placeholder)
+├── requirements.txt          # Python dependencies (pytest)
+├── run_tests.sh              # One-click script to run all tests
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_extensions.py
+│       ├── test_delete.py
+│       ├── test_parse.py
+│       ├── test_tls_client_server.py
+│       ├── test_tls_server.py
+│       ├── test_https_server_client.py
+│       ├── test_http_client.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_extensions_public.py
+│   ├── test_delete_public.py
+│   ├── test_parse_public.py
+│   ├── test_tls_client_server_public.py
+│   ├── test_tls_server_public.py
+│   ├── test_https_server_client_public.py
+│   ├── test_http_client_public.py
+
+Explanation:
+
+- src/: Place any source modules here if converting business logic. (Not needed just for tests)
+- requirements.txt: Lists 'pytest', the Python test framework required to run all tests.
+- run_tests.sh: Simple shell script to run all tests using pytest.
+- tests/original/: Contains Python translations of all original test files. Maintains functionality of the provided JavaScript tests.
+- public_tests/: Contains Python translations of all public test files and scenarios.
+- All tests are executable with one command: ./run_tests.sh
+
+How to run all tests:
+1. Install dependencies: pip install -r requirements.txt
+2. Run tests: ./run_tests.sh
+3. All original and public tests will be executed. Output will show pass/fail per function.

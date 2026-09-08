@@ -1,0 +1,67 @@
+project_root/
+├── src/
+│   └── lips/
+│       ├── __init__.py
+│       ├── addhorzplane.py
+│       ├── bryant2angular.py
+│       ├── cursorLocation.py
+│       ├── drawCoordinates3d.py
+│       ├── euler2angular.py
+│       ├── gencirclerays.py
+│       ├── intersectrayspolys.py
+│       ├── invalidateintersections.py
+│       ├── kevinsPlaneIntersection.py
+│       ├── load_2dplanedata.py
+│       ├── main_MAINSCRIPT.py
+│       └── planes2dtopolygons3d.py
+├── src/
+│   └── cursorloc/
+│       ├── __init__.py
+│       └── cursorLocation.py
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_addhorzplane.py
+│       ├── test_bryant2angular.py
+│       ├── test_cursorLocation.py
+│       ├── test_drawCoordinates3d.py
+│       ├── test_euler2angular.py
+│       ├── test_gencirclerays.py
+│       ├── test_invalidateintersections.py
+│       ├── test_intersectrayspolys.py
+│       ├── test_kevinsPlaneIntersection.py
+│       ├── test_load_2dplanedata.py
+│       ├── test_main_MAINSCRIPT.py
+│       ├── test_planes2dtopolygons3d.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_addhorzplane.py
+│   ├── test_bryant2angular.py
+│   ├── test_cursorLocation.py
+│   ├── test_drawCoordinates3d.py
+│   ├── test_euler2angular.py
+│   ├── test_gencirclerays.py
+│   ├── test_invalidateintersections.py
+│   ├── test_intersectrayspolys.py
+│   ├── test_kevinsPlaneIntersection.py
+│   ├── test_load_2dplanedata.py
+│   ├── test_main_MAINSCRIPT.py
+│   ├── test_planes2dtopolygons3d.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+
+Directory Descriptions:
+- src/lips/: All main Python implementations of the lips functions to be tested.
+- src/cursorloc/: Contains implementation of cursorLocation if required for modularity.
+- tests/original/: Contains translations of original (non-public) Matlab test files, using pytest.
+- public_tests/: Contains translations of public test files, as required for open/public validation of the library. Also uses pytest.
+- requirements.txt: Python dependencies (pytest, numpy).
+- run_tests.sh: Minimal bash script to run all tests.
+- project_structure.txt: This documentation file.
+
+Test/Run Instructions:
+1. Install dependencies:
+    pip install -r requirements.txt
+2. Run all tests (original and public):
+    ./run_tests.sh

@@ -1,0 +1,17 @@
+/.settings
+/bin
+/docs
+/libs
+/obfuscate
+/problem
+/proguard
+/.checkstyle
+/Resizer*.jar
+/Resizer*.exe
+/antbin
+/launch4j.log
+target
+.idea/
+densities.json
+Resizer.eml
+resizer.iml

@@ -1,0 +1,28 @@
+.
+├── requirements.txt               # Python dependencies (pytest)
+├── run_tests.sh                   # Simple script to run all tests
+├── tests/                         # All original, 'private' test cases (from Java)
+│   ├── test_data.py               # DataTest.java
+│   ├── test_sample.py             # SampleTest.java
+│   ├── test_sources.py            # SourcesTest.java
+│   └── test_sources_branch.py     # SourcesBranchTest.java
+├── public_tests/                  # All public test cases
+│   ├── __init__.py
+│   ├── test_data_public.py        # DataPublicTest.java
+│   ├── test_sample_public.py      # SamplePublicTest.java
+│   ├── test_sources_branch_public.py # SourcesBranchPublicTest.java
+│   └── test_sources_public.py     # SourcesPublicTest.java
+└── project_structure.txt          # This file, project tree and explanations
+
+# Directory explanations:
+# - requirements.txt: Lists dependencies (pytest).
+# - run_tests.sh: Execute all test cases, both original and public.
+# - tests/: Contains original translated unit tests from Java.
+# - public_tests/: Contains public translated test cases from Java.
+# - __init__.py: Needed by Python import system, can be empty or omitted for test dirs.
+# - project_structure.txt: Structure and explanation.
+
+# To set up and run tests:
+# 1. pip install -r requirements.txt
+# 2. chmod +x run_tests.sh
+# 3. ./run_tests.sh

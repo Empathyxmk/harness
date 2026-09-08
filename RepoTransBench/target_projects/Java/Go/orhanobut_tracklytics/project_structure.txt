@@ -1,0 +1,25 @@
+.
+├── go.mod
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests
+│   ├── original
+│   │   ├── attribute_annotation_test.go
+│   │   ├── event_test.go
+│   │   ├── trackable_attribute_annotation_test.go
+│   │   ├── trackable_interface_test.go
+│   │   ├── tracklytics_aspect_test.go
+│   │   ├── tracklytics_test.go
+│   │   ├── track_super_attribute_annotation_test.go
+│   │   └── tracking_sample_test.go
+│   └── testutil.go
+├── public_tests
+│   ├── attribute_annotation_public_test.go
+│   ├── event_public_test.go
+│   ├── public_test_summary.json
+│   ├── run_public_tests.sh
+│   ├── trackable_attribute_annotation_public_test.go
+│   ├── trackable_interface_public_test.go
+│   ├── tracklytics_aspect_public_test.go
+│   ├── tracklytics_public_test.go
+│   └── track_super_attribute_annotation_public_test.go

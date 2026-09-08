@@ -1,0 +1,14 @@
+project_root/
+├── Cargo.toml                   # Rust project metadata and dependencies
+├── src/
+│   └── lib.rs                   # RingBuffer implementation (minimal, for testing support)
+├── tests/
+│   ├── test_ringbuffer.rs           # Translation of original C tests
+│   └── test_ringbuffer_public.rs    # Translation of C public tests
+├── run_tests.sh                 # One-click test runner (executable)
+└── project_structure.txt        # This file: describes the project structure
+
+# - To run all tests, just execute:    ./run_tests.sh
+# - Rust auto-discovers tests in the `tests/` directory at project root,
+#   one per integration test file.
+# - The original and public test scenarios are now directly available and runnable!

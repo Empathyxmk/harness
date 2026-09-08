@@ -1,0 +1,30 @@
+UberUX_CSharp/
+├── src/
+│   └── UberUX/
+│       ├── Program.cs                # Entry point and stub types corresponding to app logic.
+│       └── UberUX.csproj             # Main library project file.
+├── tests/
+│   └── original/
+│       ├── BaseActivityTest.cs
+│       ├── CarsPagerAdapterTest.cs
+│       ├── ExampleInstrumentedTest.cs
+│       ├── ExampleUnitTest.cs
+│       ├── getPolylineTest.cs
+│       ├── LoginActivityTest.cs
+│       ├── LoginWithPhoneTest.cs
+│       ├── MapActivityTest.cs
+│       ├── PasswordActivityTest.cs
+│       └── OriginalTests.csproj      # Project file for original tests.
+├── public_tests/
+│   ├── BaseActivityPublicTest.cs
+│   ├── CarsPagerAdapterPublicTest.cs
+│   ├── ExampleInstrumentedPublicTest.cs
+│   ├── ExampleUnitPublicTest.cs
+│   ├── getPolylinePublicTest.cs
+│   ├── LoginActivityPublicTest.cs
+│   ├── LoginWithPhonePublicTest.cs
+│   ├── MapActivityPublicTest.cs
+│   ├── PasswordActivityPublicTest.cs
+│   └── PublicTests.csproj            # Project file for public tests.
+├── run_tests.sh                      # One-click test runner script.
+└── README.md

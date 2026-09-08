@@ -1,0 +1,39 @@
+project_root/
+├── src/
+│   └── robust_laplacian/
+│       ├── __init__.py
+│       └── core.py                 # Library source (not provided; needed for real project)
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_point_cloud_utilities_py.py   # Translated from test/test_point_cloud_utilities_py.py
+│       ├── test_core_py.py                   # Translated from test/test_core_py.py
+│       ├── test_init_py.py                   # Translated from test/test_init_py.py
+│       ├── test_robust_laplacian_test.py     # Translated from test/robust_laplacian_test.py
+│       └── test_point_cloud_utilities_cpp.py  # Translated C++ tests as Python
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_point_cloud_utilities_py_public_test.py    # Translated from test/test_point_cloud_utilities_py_public_test.py
+│   ├── test_core_py_public_test.py                    # Translated from test/test_core_py_public_test.py
+│   ├── test_init_py_public_test.py                    # Translated from test/test_init_py_public_test.py
+│   └── test_robust_laplacian_test_public.py           # Translated from test/robust_laplacian_test_public.py
+├── requirements.txt                       # Lists pytest, coverage
+├── run_tests.sh                           # One-click Python test runner
+├── README.md                              # (To be filled with usage/docs)
+└── project_structure.txt                  # This file
+
+----------------
+Directory descriptions:
+
+- src/robust_laplacian/: The actual robust laplacian Python package code; `core.py` is the main logic module.
+- tests/original/: Translated original and C++ tests, preserving original coverage.
+- public_tests/: Translated public tests.
+- requirements.txt: Python dependencies for development and testing.
+- run_tests.sh: Simple test script to execute both original and public test suites.
+- README.md: User documentation (expected to be created/fleshed out).
+- project_structure.txt: This documentation file.
+
+----------------
+Test Running Instructions:
+
+1. Install dependencies (in a virtualenv recommended):

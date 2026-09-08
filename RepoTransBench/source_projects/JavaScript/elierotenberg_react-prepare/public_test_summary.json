@@ -1,0 +1,41 @@
+{
+  "project_name": "elierotenberg_react-prepare",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": false,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:41:31.486262",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/elierotenberg_react-prepare",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/elierotenberg_react-prepare",
+  "original_tests": {
+    "test_files": [
+      "dist/tests/ReactLifeCycle.spec.js",
+      "dist/tests/isReactCompositeComponent.spec.js",
+      "dist/tests/prepared.spec.js",
+      "dist/tests/dispatched.spec.js",
+      "dist/tests/prepare.spec.js",
+      "dist/tests/isThenable.spec.js",
+      "src/tests/ReactLifeCycle.spec.js",
+      "src/tests/isReactCompositeComponent.spec.js",
+      "src/tests/prepared.spec.js",
+      "src/tests/dispatched.spec.js",
+      "src/tests/prepare.spec.js",
+      "src/tests/isThenable.spec.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 12,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [],
+    "test_scripts": [],
+    "total_public_test_files": 0,
+    "generated_public_tests": false
+  },
+  "created_files": []
+}

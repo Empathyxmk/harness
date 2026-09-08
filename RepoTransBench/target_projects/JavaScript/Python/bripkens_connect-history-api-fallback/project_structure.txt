@@ -1,0 +1,32 @@
+project_root/
+├── requirements.txt                         # Python dependencies (pytest)
+├── run_tests.sh                             # One-click test script for all tests
+├── src/
+│   └── connect_history_api_fallback/
+│       ├── __init__.py                      # Package module
+│       ├── middleware.py                    # Middleware function (stub for tests)
+│       └── utils.py                         # Utility helpers fully implemented for tests
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_index.py                    # Translation of test/index.test.js
+│       └── test_utils.py                    # Translation of test/utils.test.js
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_index_public.py                 # Translation of public_tests/index.public.test.js
+│   └── test_utils_public.py                 # Translation of public_tests/utils.public.test.js
+
+Structure Explanation:
+- requirements.txt: Dependencies, mainly pytest for running tests.
+- run_tests.sh: Simple script to execute all tests using pytest.
+- src/: Contains the package under src/connect_history_api_fallback/. Includes a test-complete stub of middleware.py (implements the interface, rewrites logic, and only enough for tests to pass) and the fully implemented utils.py for helper/test coverage.
+- tests/: All original/private tests, keeping organization parity with the JS repo ("original" subfolder). Fully functional test translations.
+- public_tests/: All public test translations, mirroring their JS source. Maintained full logic, naming, and isolation from originals.
+
+Testing Instructions:
+1. Ensure python and pip are installed.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run all tests: `./run_tests.sh`
+4. Or run originals: `pytest tests/original/`
+5. Or run public tests: `pytest public_tests/`

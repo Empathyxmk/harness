@@ -1,0 +1,16 @@
+{
+  "project_name": "benface_tailwindcss-transforms",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 72.72
+  },
+  "timestamp": "2025-06-19T09:59:56.040884",
+  "original_path": "/workspace/runnable_filter/JavaScript/benface_tailwindcss-transforms",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/benface_tailwindcss-transforms",
+  "tests_path": [
+    "index.test.js",
+    "prefixNegativeModifiers.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,11 @@
+{
+  "project_name": "dwyl_learn-redis",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 80.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:18:34.100539",
+  "original_path": "/workspace/runnable_filter/JavaScript/dwyl_learn-redis",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/dwyl_learn-redis"
+}

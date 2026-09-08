@@ -1,0 +1,17 @@
+{
+  "project_name": "frameable_el",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.69,
+    "branch": 88.88
+  },
+  "timestamp": "2025-06-19T10:27:06.408401",
+  "original_path": "/workspace/runnable_filter/JavaScript/frameable_el",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/frameable_el",
+  "tests_path": [
+    "test/debug.test.js",
+    "test/index.js",
+    "test/main.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,69 @@
+easy-thumbnails-java/
+├── pom.xml
+├── run_tests.sh
+├── README.md
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── smileychris/
+│   │               └── easythumbnails/
+│   │                   (production code would go here)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── smileychris/
+│                   └── easythumbnails/
+│                       ├── original/
+│                       │   ├── FilesTest.java
+│                       │   ├── NamersTest.java
+│                       │   ├── ModelsTest.java
+│                       │   ├── AliasesTest.java
+│                       │   ├── StorageTest.java
+│                       │   ├── AnimatedFormatsTest.java
+│                       │   ├── ThumbnailCleanupTest.java
+│                       │   ├── SourceGeneratorsTest.java
+│                       │   ├── ConfTest.java
+│                       │   ├── WidgetsTest.java
+│                       │   ├── SvgProcessorsTest.java
+│                       │   ├── EngineTest.java
+│                       │   ├── FieldsTest.java
+│                       │   ├── ManagementTest.java
+│                       │   ├── TemplatetagsTest.java
+│                       │   └── PixelProcessorsTest.java
+│                       └── public_tests/
+│                           ├── PublicFilesTest.java
+│                           ├── PublicNamersTest.java
+│                           ├── PublicModelsTest.java
+│                           ├── PublicAliasesTest.java
+│                           ├── PublicStorageTest.java
+│                           ├── PublicAnimatedFormatsTest.java
+│                           ├── PublicThumbnailCleanupTest.java
+│                           ├── PublicSourceGeneratorsTest.java
+│                           ├── PublicConfTest.java
+│                           ├── PublicWidgetsTest.java
+│                           ├── PublicEngineTest.java
+│                           ├── PublicFieldsTest.java
+│                           ├── PublicPixelProcessorsTest.java
+│                           └── PublicTemplatetagsTest.java
+
+Structure Key:
+-------------
+- `pom.xml`: Maven build file, manages dependencies and build process.
+- `run_tests.sh`: Simple script; runs "mvn clean test" for all tests.
+- `README.md`: Documentation (to be written by the user).
+- `src/main/java/`: Production/source code (not included here).
+- `src/test/java/com/smileychris/easythumbnails/original/`: Original test cases, translated from Python to Java.
+- `src/test/java/com/smileychris/easythumbnails/public_tests/`: Public test cases, translated from Python to Java.
+
+Usage:
+------
+1. Ensure Java 11+ and Maven 3.6+ are installed.
+2. Run all tests with:
+   ./run_tests.sh
+   (or: mvn clean test)
+
+All tests are implemented using JUnit 5 (see pom.xml for details). 
+Production code must be placed under "src/main/java/com/smileychris/easythumbnails/".
+
+Each integrated test case is a full translation; test logic and coverage are carried over from the original Python code.

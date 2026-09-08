@@ -1,0 +1,25 @@
+project_root/
+├── public_tests/
+│   ├── test_parseEvent_public.py         # Translation of public_tests/parseEvent.public.test.js
+│   └── test_public.py                    # Translation of public_tests/public.test.js
+├── requirements.txt                      # Python dependencies (includes pytest)
+├── run_tests.sh                          # One-click test execution script
+├── project_structure.txt                 # This project structure explanation file
+
+
+Explanation of directories and files:
+
+public_tests/                 # Contains public test cases (translated from JS public_tests)
+    test_parseEvent_public.py # Test: parseEvent public cases (unique data, error handling, rejection)
+    test_public.py            # Test: Smoke test for parseEvent export and minimal valid input
+
+requirements.txt              # Lists Python dependencies so users can easily install requirements (pytest used)
+
+run_tests.sh                  # Simple bash script to execute all Python tests with one command
+
+project_structure.txt         # Describes the project layout and each component
+
+Instructions to run tests:
+1. (Recommended) Create a virtual environment: python3 -m venv venv && source venv/bin/activate
+2. Install dependencies: pip install -r requirements.txt
+3. Run all tests: ./run_tests.sh

@@ -1,0 +1,28 @@
+project_root/
+├── src/
+│   └── calculator.py                  # Python Calculator class
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_calculator.py         # Original tests from CalculatorTest.java
+├── public_tests/
+│   ├── __init__.py
+│   └── test_calculator_public.py      # Public tests from CalculatorPublicTest.java
+├── requirements.txt                   # Python dependencies (pytest)
+├── run_tests.sh                       # Run all tests with one command
+├── project_structure.txt              # This project structure description
+
+Directory Explanations:
+- src/: Main Python source code. calculator.py contains the Calculator class.
+- tests/original/: Original (private) test cases, translated from CalculatorTest.java.
+- public_tests/: Public test cases, translated from CalculatorPublicTest.java.
+- requirements.txt: Lists the required Python packages. Install with 'pip install -r requirements.txt'
+- run_tests.sh: Runs all tests (original and public tests) with pytest.
+- project_structure.txt: This documentation file.
+
+Instructions:
+1. Install dependencies:
+   pip install -r requirements.txt
+2. Run all tests:
+   ./run_tests.sh

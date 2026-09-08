@@ -1,0 +1,50 @@
+{
+  "project_name": "fafaldo-zz_FABToolbar",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:14:54.932321",
+  "original_path": "/workspace/verified_repos_v2/Java/fafaldo-zz_FABToolbar",
+  "public_test_result_path": "/workspace/public_test_results/Java/fafaldo-zz_FABToolbar",
+  "original_tests": {
+    "test_files": [
+      "FABToolbar/app/src/androidTest/java/com/github/fafaldo/fabtoolbar/ApplicationTest.java",
+      "FABToolbar/library/src/androidTest/java/com/github/fafaldo/fabtoolbar/ApplicationTest.java",
+      "FABToolbar/library/src/test/java/com/github/fafaldo/fabtoolbar/widget/FABToolbarLayoutTest.java",
+      "FABToolbar/library/src/test/java/com/github/fafaldo/fabtoolbar/util/ExpandAnimationUtilsTest.java"
+    ],
+    "test_scripts": [],
+    "total_original_test_files": 4,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "FABToolbar/library/src/test/java/com/github/fafaldo/fabtoolbar/widget/FABToolbarLayoutPublicTest.java",
+      "FABToolbar/library/src/test/java/com/github/fafaldo/fabtoolbar/util/ExpandAnimationUtilsPublicTest.java",
+      "FABToolbar/app/src/androidTest/java/com/github/fafaldo/fabtoolbar/ApplicationPublicTest.java",
+      "FABToolbar/library/src/androidTest/java/com/github/fafaldo/fabtoolbar/ApplicationPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 6,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "FABToolbar/library/src/test/java/com/github/fafaldo/fabtoolbar/widget/FABToolbarLayoutPublicTest.java",
+    "FABToolbar/library/src/test/java/com/github/fafaldo/fabtoolbar/util/ExpandAnimationUtilsPublicTest.java",
+    "FABToolbar/app/src/androidTest/java/com/github/fafaldo/fabtoolbar/ApplicationPublicTest.java",
+    "FABToolbar/library/src/androidTest/java/com/github/fafaldo/fabtoolbar/ApplicationPublicTest.java",
+    "run_public_tests.sh",
+    "FABToolbar/run_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

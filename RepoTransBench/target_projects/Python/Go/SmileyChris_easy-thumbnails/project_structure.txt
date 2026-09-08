@@ -1,0 +1,41 @@
+easythumbnails/                   # Go module root
+├── go.mod                        # Go module file for dependencies
+├── main.go                       # (if main app exists, can be empty for test-only)
+├── README.md
+├── run_tests.sh                  # Simple shell script to run all tests
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── test_files_test.go
+│   │   ├── test_namers_test.go
+│   │   ├── test_models_test.go
+│   │   ├── test_aliases_test.go
+│   │   ├── test_storage_test.go
+│   │   ├── test_animated_formats_test.go
+│   │   ├── test_thumbnail_cleanup_test.go
+│   │   ├── test_source_generators_test.go
+│   │   ├── test_conf_test.go
+│   │   ├── test_widgets_test.go
+│   │   ├── test_svg_processors_test.go
+│   │   ├── test_engine_test.go
+│   │   ├── test_fields_test.go
+│   │   ├── test_management_test.go
+│   │   ├── test_templatetags_test.go
+│   │   ├── test_pixel_processors_test.go
+│   │   └── (utils_test.go, helpers.go...)        # (helper and mock files)
+├── public_tests/
+│   ├── test_thumbnail_cleanup_public_test.go
+│   ├── test_templatetags_public_test.go
+│   ├── test_conf_public_test.go
+│   ├── test_files_public_test.go
+│   ├── test_storage_public_test.go
+│   ├── test_widgets_public_test.go
+│   ├── test_animated_formats_public_test.go
+│   ├── test_models_public_test.go
+│   ├── test_pixel_processors_public_test.go
+│   ├── test_source_generators_public_test.go
+│   ├── test_aliases_public_test.go
+│   ├── test_fields_public_test.go
+│   ├── test_engine_public_test.go
+│   ├── test_namers_public_test.go
+└── (plus config, generator stubs, etc.)

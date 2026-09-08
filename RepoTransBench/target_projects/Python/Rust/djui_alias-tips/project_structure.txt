@@ -1,0 +1,26 @@
+djui_alias_tips/               # Project root
+├── Cargo.toml                 # Cargo project manifest
+├── src/
+│   └── lib.rs                 # Core library with alias suggestion logic (functions and types)
+├── tests/
+│   └── original/
+│       └── test_alias_tips.rs # Original/unrestricted comprehensive tests
+├── public_tests/
+│   └── test_public_alias_tips.rs # Public, restricted tests for alias_tips module
+├── run_tests.sh               # Simple one-click script to run all tests
+└── project_structure.txt      # (This file) Overview & directory explanation
+
+Directory explanations:
+- src/lib.rs:   Implements the alias_tips logic/functions as the Rust lib crate.
+- Cargo.toml:   Declares the library and test binaries for cargo to build and run.
+- tests/original/:    Contains original (full) tests translated from test_alias_tips.py.
+- public_tests/:      Contains public/restricted tests, matches public_tests/test_public_alias_tips.py logic.
+- run_tests.sh:       Runs all tests with cargo test, for simplicity.
+
+Setup & test instructions:
+1. Ensure Rust toolchain is installed (https://rustup.rs).
+2. Run `chmod +x run_tests.sh` if needed.
+3. Execute tests: `./run_tests.sh`
+4. Both original and public tests will execute (via cargo's test binaries).
+
+Add or modify further Rust unit/integration tests in the `tests/` or `public_tests/` directories.

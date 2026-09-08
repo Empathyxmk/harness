@@ -1,0 +1,50 @@
+{
+  "project_name": "wangshaolei_AutoSpannableTextView",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:20:05.475886",
+  "original_path": "/workspace/verified_repos_v2/Java/wangshaolei_AutoSpannableTextView",
+  "public_test_result_path": "/workspace/public_test_results/Java/wangshaolei_AutoSpannableTextView",
+  "original_tests": {
+    "test_files": [
+      "app/src/androidTest/java/com/len/ApplicationTest.java",
+      "app/src/test/java/com/len/ExampleUnitTest.java",
+      "library/src/test/java/com/len/library/AutoLinkStyleTextViewTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "app/src/test/java/com/len/ExampleUnitPublicTest.java",
+      "library/src/test/java/com/len/library/AutoLinkStyleTextViewPublicTest.java",
+      "app/src/androidTest/java/com/len/ApplicationPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 5,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "app/src/test/java/com/len/ExampleUnitPublicTest.java",
+    "library/src/test/java/com/len/library/AutoLinkStyleTextViewPublicTest.java",
+    "app/src/androidTest/java/com/len/ApplicationPublicTest.java",
+    "run_public_tests.sh",
+    "gradle/wrapper/gradle-wrapper.jar",
+    "gradle/wrapper/gradle-wrapper.properties",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

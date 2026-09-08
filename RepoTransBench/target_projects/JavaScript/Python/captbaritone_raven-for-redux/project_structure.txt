@@ -1,0 +1,33 @@
+project_root/
+├── requirements.txt               # Python dependencies (pytest for test running)
+├── run_tests.sh                   # Script to run all tests (pytest)
+├── src/
+│   └── raven_for_redux/           # Python package for raven-for-redux logic
+│       ├── __init__.py
+│       └── middleware.py          # Ported createRavenMiddleware function
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_middleware.py     # Translated original tests from index.test.js
+├── public_tests/
+│   ├── __init__.py
+│   └── test_index_public.py       # Translated public tests from JS public_tests/index.public.test.js
+└── project_structure.txt          # This file, explains layout
+
+Directory Explanations:
+- src/raven_for_redux/: Source implementation for 'create_raven_middleware' (translation of the JS middleware).
+- tests/original/: Original test suite; full coverage, mirrors 'index.test.js' in JS.
+- public_tests/: Public test suite, mirrors provided public_tests/index.public.test.js.
+- requirements.txt: Lists dependencies (pytest, etc).
+- run_tests.sh: Run all tests in tests/ and public_tests/; just use ./run_tests.sh.
+- project_structure.txt: This document, describes the Python project structure.
+
+Setup & Testing Instructions:
+1. Install dependencies:
+    pip install -r requirements.txt
+
+2. Run all tests:
+    ./run_tests.sh
+
+This runs pytest over both 'tests/' and 'public_tests/'. Test output will show both sets of tests.

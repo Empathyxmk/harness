@@ -1,0 +1,11 @@
+{
+  "project_name": "Jude95_Utils",
+  "language": "Java",
+  "coverage": {
+    "line": 71.7,
+    "branch": 53.5
+  },
+  "timestamp": "2025-06-19T21:28:53.684936",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/Jude95_Utils",
+  "test_result_path": "/workspace/test_enhancement_results/Java/Jude95_Utils"
+}

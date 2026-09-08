@@ -1,0 +1,59 @@
+google_mail_importer_python/
+├── requirements.txt                # Python dependencies (pytest, mock)
+├── run_tests.sh                    # One-click test execution script
+├── src/                            # (Placeholder for main source code if ported)
+├── tests/
+│   ├── __init__.py
+│   └── original/                   # Original (private/internal) test cases
+│       ├── __init__.py
+│       ├── test_mail_provider.py
+│       ├── test_importer.py
+│       ├── test_command_line_arguments.py
+│       ├── test_flags_module.py
+│       ├── test_io_provider.py
+│       ├── gmail/
+│       │   ├── __init__.py
+│       │   ├── test_unsuccessful_response_handler_chainer.py
+│       │   ├── test_gmail_service_module.py
+│       │   └── test_gmail_syncer.py
+│       ├── local/
+│       │   ├── __init__.py
+│       │   ├── test_javax_mail_storage.py
+│       │   └── thunderbird/
+│       │       ├── __init__.py
+│       │       ├── test_xmozilla_status.py
+│       │       ├── test_thunderbird_mail_storage.py
+│       │       └── test_thunderbird_local_message.py
+│       └── testing/
+│           ├── __init__.py
+│           └── test_module_tester.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_command_line_arguments.py
+│   ├── test_flags_module.py
+│   ├── test_mail_provider.py
+│   ├── test_io_provider.py
+│   ├── gmail/
+│   │   ├── __init__.py
+│   │   ├── test_unsuccessful_response_handler_chainer.py
+│   │   ├── test_gmail_syncer.py
+│   │   └── test_gmail_service_module.py
+│   ├── local/
+│   │   ├── __init__.py
+│   │   ├── test_javax_mail_storage.py
+│   │   └── thunderbird/
+│   │       ├── __init__.py
+│   │       ├── test_xmozilla_status.py
+│   │       ├── test_thunderbird_mail_storage.py
+│   │       └── test_thunderbird_local_message.py
+│   └── testing/
+│       ├── __init__.py
+│       └── test_module_tester.py
+└── README.md
+
+- All project dependencies are listed in requirements.txt.
+- All original tests are under tests/original/, mirroring internal Java structure and submodules.
+- All public tests are under public_tests/, mirroring substructure where relevant.
+- Each Python test is a direct translation from the corresponding Java test file.
+- Directory __init__.py files ensure pytest test discovery compatibility.
+- To run all tests: install requirements, then use ./run_tests.sh.

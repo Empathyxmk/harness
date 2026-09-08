@@ -1,0 +1,26 @@
+{
+  "project_name": "Bouke_docx-mailmerge",
+  "language": "Python",
+  "coverage": {
+    "line": 98.2,
+    "branch": 89.3
+  },
+  "timestamp": "2025-06-19T11:32:15.111917",
+  "original_path": "/workspace/runnable_filter/Python/Bouke_docx-mailmerge",
+  "test_result_path": "/workspace/test_enhancement_results/Python/Bouke_docx-mailmerge",
+  "tests_path": [
+    "tests/test_mailmerge_errors.py",
+    "tests/test_mailmerge_parse.py",
+    "tests/test_issue54_spaces.py",
+    "tests/test_issue64.py",
+    "tests/test_issue8.py",
+    "tests/test_macword2011.py",
+    "tests/test_merge_pages.py",
+    "tests/test_merge_table_multipart.py",
+    "tests/test_merge_table_rows.py",
+    "tests/test_merge_templates.py",
+    "tests/test_multiple_elements.py",
+    "tests/test_winword2010.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

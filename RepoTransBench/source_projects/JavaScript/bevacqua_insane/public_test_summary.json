@@ -1,0 +1,73 @@
+{
+  "project_name": "bevacqua_insane",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T15:17:55.900168",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/bevacqua_insane",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/bevacqua_insane",
+  "iterations_completed": 8,
+  "token_usage_stats": {
+    "project_structure_tokens": 424,
+    "test_files_tokens": 0,
+    "test_files_count": 0,
+    "source_files_tokens": 0,
+    "source_files_count": 0,
+    "total_content_tokens": 424,
+    "average_tokens_per_test_file": 0,
+    "average_tokens_per_source_file": 0
+  },
+  "original_tests": {
+    "test_files": [
+      "test/sanitizer.test.js",
+      "test/attributes.test.js",
+      "test/insane.test.js",
+      "test/toMap.test.js",
+      "test/parser.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/attributes.public.test.js",
+      "public_tests/toMap.public.test.js",
+      "public_tests/insane.public.test.js",
+      "public_tests/parser.public.test.js",
+      "public_tests/sanitizer.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/sanitizer.public.test.js",
+      "public_tests/sanitizer.public.test.js",
+      "public_tests/sanitizer.public.test.js",
+      "public_tests/sanitizer.public.test.js",
+      "public_tests/sanitizer.public.test.js",
+      "public_tests/sanitizer.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 12,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/attributes.public.test.js",
+    "public_tests/toMap.public.test.js",
+    "public_tests/insane.public.test.js",
+    "public_tests/parser.public.test.js",
+    "public_tests/sanitizer.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/sanitizer.public.test.js",
+    "public_tests/sanitizer.public.test.js",
+    "public_tests/sanitizer.public.test.js",
+    "public_tests/sanitizer.public.test.js",
+    "public_tests/sanitizer.public.test.js",
+    "public_tests/sanitizer.public.test.js"
+  ]
+}

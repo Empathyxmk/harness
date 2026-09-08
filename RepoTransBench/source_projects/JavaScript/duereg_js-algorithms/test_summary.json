@@ -1,0 +1,11 @@
+{
+  "project_name": "duereg_js-algorithms",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 98.07,
+    "branch": 95.56
+  },
+  "timestamp": "2025-06-23T10:36:24.771979",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/duereg_js-algorithms",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/duereg_js-algorithms"
+}

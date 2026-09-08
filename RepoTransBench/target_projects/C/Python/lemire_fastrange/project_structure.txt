@@ -1,0 +1,22 @@
+lemire_fastrange/
+├── src/
+│   └── fastrange/
+│       └── __init__.py         # Main implementation of fastrange functions
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_fastrange32.py       # Tests for fastrange32 function
+│       ├── test_fastrange_extra.py   # Tests for extra fastrange64 functionality
+│       ├── test_fastrange64_fallback.py # Tests for fastrange64 fallback code
+│       ├── test_fastrange_sizeint.py # Tests for size_t handling
+│       └── test_cpp.py               # Tests from the C++ implementation
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_fastrange32.py           # Public tests for fastrange32 function
+│   ├── test_fastrange_extra_public.py # Public tests for extra functionality
+│   ├── test_fastrange64_fallback_public.py # Public tests for fallback code
+│   └── test_fastrange_sizeint_public.py # Public tests for size_t handling
+├── conftest.py                # pytest configuration
+├── requirements.txt           # Python dependencies
+├── run_tests.sh               # Script to run all tests
+└── project_structure.txt      # This file describing project structure

@@ -1,0 +1,27 @@
+berry/
+├── Cargo.toml              # Project configuration and dependencies
+├── src/
+│   ├── lib.rs              # Main library entry point
+│   └── utils.rs            # Utility functions (safe_strncpy, berry_asprintf)
+├── tests/
+│   ├── test_utils.rs       # Original tests for utility functions
+│   ├── test_utils_public.rs # Public tests for utility functions
+│   └── test_man.rs         # Tests for man page documentation
+└── run_tests.sh            # Simple test execution script
+
+The project is structured as a standard Rust library with test modules:
+
+1. src/lib.rs - Main library entry point that exports modules
+2. src/utils.rs - Contains the utility functions being tested
+3. tests/ - Contains all test files:
+   - test_utils.rs - Original tests for utility functions
+   - test_utils_public.rs - Public tests with different test data
+   - test_man.rs - Shell script test converted to Rust
+
+The tests maintain the same functionality as the original C tests:
+- Testing safe_strncpy with normal input, longer input, and empty input
+- Testing berry_asprintf with basic formatting, null pointer, and empty format
+
+To run the tests:
+1. Make sure you have Rust and Cargo installed
+2. Run `./run_tests.sh` to execute all tests

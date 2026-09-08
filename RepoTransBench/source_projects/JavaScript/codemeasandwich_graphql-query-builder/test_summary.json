@@ -1,0 +1,16 @@
+{
+  "project_name": "codemeasandwich_graphql-query-builder",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:07:54.936220",
+  "original_path": "/workspace/runnable_filter/JavaScript/codemeasandwich_graphql-query-builder",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/codemeasandwich_graphql-query-builder",
+  "tests_path": [
+    "test.js",
+    "test-extra.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

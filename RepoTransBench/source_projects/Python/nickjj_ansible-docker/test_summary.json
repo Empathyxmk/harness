@@ -1,0 +1,16 @@
+{
+  "project_name": "nickjj_ansible-docker",
+  "language": "Python",
+  "coverage": {
+    "line": 80.0,
+    "branch": 97.5
+  },
+  "timestamp": "2025-06-19T12:08:25.022792",
+  "original_path": "/workspace/runnable_filter/Python/nickjj_ansible-docker",
+  "test_result_path": "/workspace/test_enhancement_results/Python/nickjj_ansible-docker",
+  "tests_path": [
+    "tests/test_dummy_logic.py",
+    "tests/test_host_mock.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

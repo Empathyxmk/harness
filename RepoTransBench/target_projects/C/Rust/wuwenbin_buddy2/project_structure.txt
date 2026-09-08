@@ -1,0 +1,13 @@
+wuwenbin_buddy2/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   └── original/
+│       └── buddy2_test.rs
+├── public_tests/
+│   ├── buddy2_public_test.rs
+│   └── mod.rs
+├── run_tests.sh
+├── project_structure.txt
+└── test_translation_progress.json

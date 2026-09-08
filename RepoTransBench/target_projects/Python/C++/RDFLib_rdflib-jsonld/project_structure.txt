@@ -1,0 +1,19 @@
+RDFLib_jsonld/ (project root)
+├── CMakeLists.txt     # Project configuration and build script
+├── include/
+│   └── module.h       # Public header for the dummy rdflib_jsonld API
+├── public_tests/
+│   ├── test_public_init.cpp          # Public C++ test for import/init
+│   ├── test_public_setup_py.cpp      # Public C++ test for setup.py existence/behavior
+│   └── test_public_version_and_metadata.cpp   # Public C++ test for version/metadata
+├── run_tests.sh       # One-click build and run all tests
+├── src/
+│   ├── CMakeLists.txt
+│   └── lib/
+│       ├── module.cpp # Minimal implementation for API metadata
+│       └── module.h   # (mirror, included for possible future use)
+├── tests/
+│   ├── test_init.cpp                  # Original test for module import/init
+│   ├── test_main.cpp                  # C++ runner for Google Test
+│   ├── test_setup_py.cpp              # Original setup.py tests (existence, exec)
+│   └── test_version_and_metadata.cpp  # Original version/metadata tests

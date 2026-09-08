@@ -1,0 +1,13 @@
+.classpath
+.project
+.settings
+.DS_Store
+target/
+*.iml
+*.ipr
+*.swp
+bin/
+nlp/dependency-reduced-pom.xml
+/*/src/main/java/META-INF
+docs/reference/src/main/docbook/en-US/version_info.xml
+.idea

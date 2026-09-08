@@ -1,0 +1,26 @@
+ilyakurdyukov_ioccc (Rust port)
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   └── original/
+│       ├── mod.rs
+│       ├── test_lettermixer.rs
+│       ├── test_markovchain.rs
+│       ├── test_input.txt
+│       ├── test_short.txt
+│       ├── test_input2.txt
+│       ├── test_basic.txt
+│       └── test_symbols.txt
+├── public_tests/
+│   ├── mod.rs
+│   ├── lettermixer_public.rs
+│   ├── markovchain_public.rs
+│   ├── public_test_alpha.txt
+│   ├── public_test_unicode.txt
+│   ├── public_test_punctuation.txt
+│   ├── public_test_input_A.txt
+│   └── public_test_input_B.txt
+├── run_tests.sh
+├── project_structure.txt
+└── test_translation_progress.json

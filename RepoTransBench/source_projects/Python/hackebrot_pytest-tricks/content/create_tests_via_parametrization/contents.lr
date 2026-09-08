@@ -1,0 +1,204 @@
+name: Create Tests via Parametrization
+---
+author: Raphael Pierzina
+---
+twitter_handle: hackebrot
+---
+github_user: hackebrot
+---
+content:
+
+# Use Case
+
+Imagine you want to write a test for a particular function, but for multiple input values.
+Writing a for-loop is a bad idea as the test will fail as soon as it hits the first ``AssertionError``.
+Subsequent input values will not be tested and you have no idea which part of your code is actually broken.
+At the same time you want to stick to DRY and not implement the same ``unittest.Testcase``
+method over and over again with slightly different input values.
+
+Keep in mind **why** we write unit tests:
+
+**We want to know when we break stuff, but also at the same time get as many hints as possible on why the error occurs!**
+
+Pytest provides various ways of creating individual test items. There are parametrized fixtures and mark.parametrize (and hooks).
+
+# Marker
+Using this built-in marker you do not need to implement any fixtures. Instead you define your scenarios in a decorator and the only
+thing you really need to look out for is to match the number of positional test arguments with your iterable.
+
+```python
+import pytest
+
+@pytest.mark.parametrize(
+    'number, word', [
+        (1, '1'),
+        (3, 'Fizz'),
+        (5, 'Buzz'),
+        (10, 'Buzz'),
+        (15, 'FizzBuzz'),
+        (16, '16')
+    ]
+)
+def test_fizzbuzz(number, word):
+    assert fizzbuzz(number) == word
+```
+
+# Fixture
+To parametrize a fixture you need pass an interable to the ``params`` keyword argument.
+The built-in fixture ``request`` knows about the current parameter and if you don't want to do anything fancy,
+you can pass it right to the test via the ``return`` statement.
+
+```python
+import pytest
+
+@pytest.fixture(params=['apple', 'banana', 'plum'])
+def fruit(request):
+    return request.param
+
+def test_is_healthy(fruit):
+    assert is_healthy(fruit)
+```
+
+# Example Implementation
+
+*Please note that the examples are written in Python3*
+
+Sometimes you may find yourself struggling to chose which is the best way to parametrize your tests.
+At the end of the day it really depends on what you want to test. But...
+Good news! Pytest lets you combine both methods to get the most out of both worlds.
+
+## Some Classes in a Module
+
+Imagine this Python module (``foobar.py``) which contains a few class definitions with a bit of logic:
+
+```python
+# -*- coding: utf-8 -*-
+
+FOSS_LICENSES = ['Apache 2.0', 'MIT', 'GPL', 'BSD']
+
+PYTHON_PKGS = ['pytest', 'requests', 'django', 'cookiecutter']
+
+
+class Package:
+    def __init__(self, name, license):
+        self.name = name
+        self.license = license
+
+    @property
+    def is_open_source(self):
+        return self.license in FOSS_LICENSES
+
+
+class Person:
+    def __init__(self, name, gender):
+        self.name = name
+        self.gender = gender
+        self._skills = ['eating', 'sleeping']
+
+    def learn(self, skill):
+        self._skills.append(skill)
+
+    @property
+    def looks_like_a_programmer(self):
+        return any(
+            package in self._skills
+            for package in PYTHON_PKGS
+        )
+
+
+class Woman(Person):
+    def __init__(self, name):
+        super().__init__(name, 'female')
+
+
+class Man(Person):
+    def __init__(self, name):
+        super().__init__(name, 'male')
+```
+
+## Tests in a Separate Module
+
+With only two few lines of pytest code, we can create loads of different scenarios that we would like to test.
+By re-using parametrized fixtures and applying the aforementioned markers to your tests, you can focus on the actual test implementation, as opposed to
+writing the same boilerplate code for each of the methods that you would have to write with ``unittest.TestCase``.
+
+```python
+# -*- coding: utf-8 -*-
+
+import operator
+import pytest
+
+from foobar import Package, Woman, Man
+
+PACKAGES = [
+    Package('requests', 'Apache 2.0'),
+    Package('django', 'BSD'),
+    Package('pytest', 'MIT'),
+]
+
+
+@pytest.fixture(params=PACKAGES, ids=operator.attrgetter('name'))
+def python_package(request):
+    return request.param
+
+
+@pytest.mark.parametrize('person', [
+    Woman('Audrey'), Woman('Brianna'),
+    Man('Daniel'), Woman('Ola'), Man('Kenneth')
+])
+def test_become_a_programmer(person, python_package):
+    person.learn(python_package.name)
+    assert person.looks_like_a_programmer
+
+
+def test_is_open_source(python_package):
+    assert python_package.is_open_source
+```
+
+# Test Report
+Going the extra mile and setting up ``ids`` for your test scenarios greatly increases
+the comprehensibilty of your test report. In this case we would like to display the name
+of each ``Package`` rather than the fixture name with a numbered suffix such as ``python_package2``.
+
+If you run the tests now, you will see that pytest created 18 **individual tests** for us (Yes, yes indeed. 18 = 3 * 5 + 3).
+
+```text
+$ py.test -v
+================================== test session starts ==================================
+platform darwin -- Python 3.5.0, pytest-2.8.7, py-1.4.31, pluggy-0.3.1
+collected 18 items
+
+test_foobar.py::test_become_a_programmer[requests-person0] PASSED
+test_foobar.py::test_become_a_programmer[requests-person1] PASSED
+test_foobar.py::test_become_a_programmer[requests-person2] PASSED
+test_foobar.py::test_become_a_programmer[requests-person3] PASSED
+test_foobar.py::test_become_a_programmer[requests-person4] PASSED
+test_foobar.py::test_become_a_programmer[django-person0] PASSED
+test_foobar.py::test_become_a_programmer[django-person1] PASSED
+test_foobar.py::test_become_a_programmer[django-person2] PASSED
+test_foobar.py::test_become_a_programmer[django-person3] PASSED
+test_foobar.py::test_become_a_programmer[django-person4] PASSED
+test_foobar.py::test_become_a_programmer[pytest-person0] PASSED
+test_foobar.py::test_become_a_programmer[pytest-person1] PASSED
+test_foobar.py::test_become_a_programmer[pytest-person2] PASSED
+test_foobar.py::test_become_a_programmer[pytest-person3] PASSED
+test_foobar.py::test_become_a_programmer[pytest-person4] PASSED
+test_foobar.py::test_is_open_source[requests] PASSED
+test_foobar.py::test_is_open_source[django] PASSED
+test_foobar.py::test_is_open_source[pytest] PASSED
+
+=============================== 18 passed in 0.02 seconds ===============================
+```
+---
+date: 2016-02-23
+---
+docs: https://pytest.org/latest/parametrize.html
+---
+tags:
+
+marker
+fixture
+parametrize
+ids
+---
+tldr: Use ``@pytest.fixture(params=[1, 2])`` or ``@pytest.mark.parametrize('a, b', [(1, 2), (3, 4)])`` to create multiple tests

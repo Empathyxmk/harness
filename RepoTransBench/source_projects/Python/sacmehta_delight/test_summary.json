@@ -1,0 +1,19 @@
+{
+  "project_name": "sacmehta_delight",
+  "language": "Python",
+  "coverage": {
+    "line": 51.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T12:28:56.750589",
+  "original_path": "/workspace/runnable_filter/Python/sacmehta_delight",
+  "test_result_path": "/workspace/test_enhancement_results/Python/sacmehta_delight",
+  "tests_path": [
+    "tests/test_fairseq_bleu.py",
+    "tests/test_fairseq_checkpoint_utils.py",
+    "tests/test_fairseq_dictionary.py",
+    "tests/test_main_scripts.py",
+    "tests/test_run_experiment_advanced.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,68 @@
+aadhithya_rajiniPP C++ Project Structure
+
+.
+├── CMakeLists.txt                         - CMake build and test config (uses GoogleTest)
+├── include/                               - (Optional) Public C++ headers
+├── src/                                   - Main C++ source files (interpreter/engine)
+│   ├── rajinipp_apis.h                    - Header for rpp_exec/rpp_eval/etc
+│   ├── rajinipp_module.h                  - Module-level information (version, __all__, etc.)
+│   ├── rajinipp_lexer.h                   - Lexer definition
+│   ├── rajinipp_exceptions.h              - Exception classes (BreakException, ReturnException)
+│   ├── rajinipp_rajiniworld.h             - __vars__ and __functions__ maps
+│   ├── rajinipp_utils.h                   - Utility declarations, e.g., read_yml for lexer tokens
+│   ├── rajinipp_runner.h                  - RppRunner class definition
+│   └── ... (other code files as needed)
+├── tests/
+│   ├── original/                          - Original Python tests translated to C++
+│   │   ├── test_init_module.cpp
+│   │   ├── test_rajiniworld.cpp
+│   │   ├── test_functions.cpp
+│   │   ├── test_flow_control.cpp
+│   │   ├── test_exprs.cpp
+│   │   ├── test_runner.cpp
+│   │   ├── test_lexer_and_exceptions.cpp
+│   │   └── test_print.cpp
+│   ├── test_helpers.h                     - Common helpers/utilities for tests
+├── public_tests/
+│   ├── test_public_init_module.cpp
+│   ├── test_public_rajiniworld.cpp
+│   ├── test_public_functions.cpp
+│   ├── test_public_exprs.cpp
+│   ├── test_public_flow_control.cpp
+│   ├── test_public_runner.cpp
+│   ├── test_public_lexer_and_exceptions.cpp
+│   ├── test_public_print.cpp
+├── examples/
+│   ├── hello_world.rpp                    - Sample rpp source file for print/expr tests
+│   ├── multi_print.rpp                    - Sample rpp file for multi print test
+│   ├── if_conditional.rpp                 - Test file for conditionals
+│   ├── logical_ops.rpp                    - Test file for logical expression tests
+│   ├── math_ops.rpp                       - Math ops for test coverage
+│   ├── if_else_conditional.rpp            - If/else tests
+│   ├── for_loop.rpp                       - For-loop test
+│   ├── while_loop.rpp                     - While-loop test
+│   ├── functions_no_args.rpp              - Functions/no args
+│   ├── function_return.rpp                - Function returning value
+│   └── ... (other necessary 
+├── run_tests.sh                           - One-click build and test script (chmod +x)
+├── README.md                              - Project/documentation/usage
+└── project_structure.txt                  - This file
+
+KEY COMPONENTS:
+- CMakeLists.txt: configures build, includes GoogleTest, builds/runs all test files
+- run_tests.sh: builds and executes tests (one-click)
+- src/: source implementation (MUST match interface expected by tests)
+- tests/original/: all original Python tests, 100% logic-preserving
+- public_tests/: all public "sample" test cases, logic preserved
+- examples/: rpp program source files used to test the interpreter
+- test_helpers.h: helpers for file loading, simulated output
+- Each test uses GoogleTest (gtest), e.g., TEST(Suite, Name).
+
+USAGE:
+  chmod +x run_tests.sh
+  ./run_tests.sh
+
+REQUIREMENTS FOR CORRECTNESS:
+- All test cases are fully implemented in C++
+- All assertions and output checks match original test intent
+- Interpreter engine (rpp_exec, rpp_eval, RppRunner, etc.) must be implemented to pass all tests.

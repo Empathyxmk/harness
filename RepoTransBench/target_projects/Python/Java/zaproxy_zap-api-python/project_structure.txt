@@ -1,0 +1,45 @@
+Project Structure for Java Translation of zaproxy_zap-api-python
+
+.
+├── pom.xml                   # Maven project descriptor with all dependencies for build/test
+├── run_tests.sh              # Simple bash script to run all (JUnit) tests using Maven
+├── project_structure.txt     # This file; documents structure and usage/setup instructions
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── zaproxy/
+│                   └── zapv2/
+│                       └── [API classes and Zapv2 stub classes here, if/when translated] 
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── zaproxy/
+│                   ├── original/
+│                   │   ├── BrkTest.java
+│                   │   ├── ClientTest.java
+│                   │   ├── AutomationTest.java
+│                   │   └── RuleConfigTest.java
+│                   └── public_tests/
+│                       ├── PublicBrkTest.java
+│                       ├── PublicClientTest.java
+│                       ├── PublicAutomationTest.java
+│                       └── PublicRuleConfigTest.java
+└── README.md                 # Project overview and build/run instructions
+
+Directory explanations:
+
+- pom.xml: Declares dependencies for JUnit, Hamcrest, Mockito, and configure/test Java source compatibility.
+- run_tests.sh: Executable shell script; simply runs `mvn clean test`, building and running all tests.
+- src/main/java/com/zaproxy/zapv2/: (Placeholder) Package for Java implementation of zapv2 API and client classes.
+- src/test/java/com/zaproxy/zaproxy/original/: Contains all translated original test files from tests/unit in Python.
+- src/test/java/com/zaproxy/zaproxy/public_tests/: Contains publicly generated test files from public_tests in Python.
+- Each test file is a full translation with identical test coverage and assertion logic from Python.
+- README.md: (to be filled by user) Typical project usage/instructions.
+
+Test Execution/Setup:
+
+1. Ensure Java (11+) and Maven are installed.
+2. Run tests via: `./run_tests.sh`
+3. All original and public tests will execute, summary will be shown in terminal.

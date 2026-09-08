@@ -1,0 +1,53 @@
+{
+  "project_name": "navdeep-G_samplemod",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:26.388892",
+  "original_path": "/workspace/verified_repos_v2/Python/navdeep-G_samplemod",
+  "public_test_result_path": "/workspace/public_test_results/Python/navdeep-G_samplemod",
+  "original_tests": {
+    "test_files": [
+      "tests/test_core_helpers.py",
+      "tests/test_basic.py",
+      "tests/test_advanced.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_core_helpers.py",
+      "public_tests/test_public_basic.py",
+      "public_tests/test_public_advanced.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_core_helpers.py",
+      "public_tests/test_public_basic.py",
+      "public_tests/test_public_advanced.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_core_helpers.py",
+    "public_tests/test_public_basic.py",
+    "public_tests/test_public_advanced.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_core_helpers.py",
+    "public_tests/test_public_basic.py",
+    "public_tests/test_public_advanced.py",
+    "run_public_tests.sh"
+  ]
+}

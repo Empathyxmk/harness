@@ -1,0 +1,32 @@
+project_root/
+├── requirements.txt                  # Python dependencies (includes pytest)
+├── run_tests.sh                      # Simple script to execute all tests
+├── src/
+│   ├── gps_driver/
+│   │   ├── gps_resolve.py            # GPSData + sentence parsing logic
+│   │   └── gps_resolve_object.py     # GPSResolveObject for advanced GPS sentence test
+│   ├── xsens_imu_driver/
+│   │   └── main.py                   # XsDataPacket and CallbackHandler simulation
+│   └── velodyne_pointcloud/
+│       └── calibration.py            # Calibration file parsing simulation
+├── tests/
+│   ├── original/
+│   │   ├── test_gps_resolve.py       # Original GPS parsing tests
+│   │   └── test_xsens.py             # Original PacketBuffer/CallbackHandler tests
+├── public_tests/
+│   ├── test_xsens_public.py          # Public tests for xsens_imu_driver's CallbackHandler
+│   ├── test_gps_resolve_public.py    # Public tests for GPS resolve edge cases
+│   └── test_calibration_public.py    # Public tests for velodyne calibration file logic
+
+Instructions:
+-------------
+1. Install dependencies:
+   pip install -r requirements.txt
+2. To run all tests:
+   ./run_tests.sh
+
+- src/ contains Python implementations of all logic needed by the test cases.
+- tests/original/ contains translations of the C++ original tests.
+- public_tests/ contains translations of the C++ public test cases.
+- Each test file is fully implemented and runs independently with pytest.
+- All code and test logic is self-contained and follows Python standards.

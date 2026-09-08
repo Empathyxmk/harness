@@ -1,0 +1,43 @@
+ovh_celery-dyrygent/
+|-- pom.xml
+|-- run_tests.sh
+|-- src/
+|   |-- main/
+|   |   `-- java/
+|   |       `-- com/
+|   |           `-- ovhcelery/
+|   |               `-- dyrygent/
+|   |                   |-- (library source files would be here)
+|   `-- test/
+|       `-- java/
+|           `-- com/
+|               `-- ovhcelery/
+|                   `-- dyrygent/
+|                       |-- original/
+|                       |   |-- component/
+|                       |   |   |-- TestCeleryTest.java
+|                       |   |   |-- TestTasksTest.java
+|                       |   |   `-- TestWorkflowsTest.java
+|                       |   |-- integration/
+|                       |   |   `-- TestIntegrationTest.java
+|                       |   `-- unit/
+|                       |       |-- TestTasksTest.java
+|                       |       |-- TestImportsAndVersionTest.java
+|                       |       |-- TestWorkflowsCoreTest.java
+|                       |       |-- TestWorkflowsTest.java
+|                       |       `-- TestInspectTest.java
+|                       `-- public/
+|                           |-- component/
+|                           |   |-- TestCeleryPublicTest.java
+|                           |   |-- TestTasksPublicTest.java
+|                           |   `-- TestWorkflowsPublicTest.java
+|                           |-- integration/
+|                           |   `-- TestIntegrationPublicTest.java
+|                           `-- unit/
+|                               |-- TestInspectPublicTest.java
+|                               |-- TestTasksPublicTest.java
+|                               |-- TestWorkflowsCorePublicTest.java
+|                               |-- TestImportsAndVersionPublicTest.java
+|                               `-- TestWorkflowsPublicTest.java
+|-- test_translation_progress.json
+|-- (other source files, docs, etc.)

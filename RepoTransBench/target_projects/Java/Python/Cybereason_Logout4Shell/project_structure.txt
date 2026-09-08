@@ -1,0 +1,30 @@
+project_root/
+├── README.md                 # Project documentation
+├── requirements.txt          # Python dependencies (pytest)
+├── run_tests.sh              # Shell script to run all tests
+├── src/
+│   ├── __init__.py           # Source package init
+│   └── log4j.py              # Main source code adapted from Java's Log4j.java
+├── tests/
+│   ├── __init__.py           # Tests package init
+│   └── original/
+│       ├── __init__.py       # Original tests package init
+│       └── test_log4j.py     # Original test cases (from Log4jTest.java)
+├── public_tests/
+│   ├── __init__.py           # Public tests package init
+│   └── test_log4j_public.py  # Public test cases (from Log4jPublicTest.java)
+
+# Directory explanations:
+# src/         - Contains the translated main application logic; here, log4j.py mimics the Java Log4j class
+# tests/original/ - Contains original test suite, faithful to the structure of Java's original tests
+# public_tests/ - Contains public test suite, matching Java's public tests
+# requirements.txt - Lists dependencies needed for tests (pytest)
+# run_tests.sh  - Run this script to execute all tests in the project (pytest will auto-discover both original and public tests)
+# README.md     - Project description and setup (write your project-specific docs here)
+
+# Instructions:
+# 1. Install requirements: pip install -r requirements.txt
+# 2. Run ALL tests:        ./run_tests.sh
+# 3. To run only original or public tests:
+#      pytest tests/original/
+#      pytest public_tests/

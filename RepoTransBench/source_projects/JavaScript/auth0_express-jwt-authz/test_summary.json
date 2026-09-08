@@ -1,0 +1,16 @@
+{
+  "project_name": "auth0_express-jwt-authz",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T09:56:47.737108",
+  "original_path": "/workspace/runnable_filter/JavaScript/auth0_express-jwt-authz",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/auth0_express-jwt-authz",
+  "tests_path": [
+    "test/index.tests.js",
+    "test/functional.tests.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

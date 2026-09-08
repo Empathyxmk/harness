@@ -1,0 +1,41 @@
+project_root/
+├── go.mod                    # Go module definition
+├── README.md                 # Overview and instructions
+├── project_structure.txt     # This file, project structure and explanations
+├── run_tests.sh              # One-click test execution script
+├── bumpversion/              # Go source implementation (not included here)
+│   ├── functions.go          # NumericFunction, ValuesFunction, and related logic
+│   ├── version_part.go       # VersionPart and configuration logic
+│   ├── __init__.go           # Module initializations (package bumpversion)
+│   └── main.go               # Optional: CLI entry point for bumpversion
+├── tests/                    # Original test cases (high/internal coverage)
+│   ├── functions_test.go
+│   ├── functions_edge_test.go
+│   ├── cli_test.go
+│   ├── init_vcs_test.go
+│   ├── bumpversion_init_test.go
+│   ├── version_part_test.go
+│   ├── version_part_extra_test.go
+│   └── init_edge_cases_test.go
+└── public_tests/             # Public-facing test cases (API and expected workflow)
+    ├── public_functions_test.go
+    ├── public_functions_edge_test.go
+    ├── public_cli_test.go
+    ├── public_bumpversion_init_test.go
+    ├── public_version_part_test.go
+    ├── public_version_part_extra_test.go
+    ├── public_init_edge_cases_test.go
+    └── public_init_vcs_test.go
+
+- `bumpversion/`:
+    - Package source files (`functions.go`, `version_part.go`, etc.).
+- `tests/`:
+    - Translated original test cases from Python.
+- `public_tests/`:
+    - Translated public (API) test cases from Python.
+- `run_tests.sh`:
+    - Minimal script to run all tests.
+- `go.mod`:
+    - Go module definition.
+
+Tests are written using Go's `testing` package. Run all tests from root with `./run_tests.sh`.

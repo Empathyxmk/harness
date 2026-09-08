@@ -1,0 +1,38 @@
+scrapy_queuelib/ (Rust project root)
+├── Cargo.toml             # Rust package definition and dependencies
+├── LICENSE
+├── NEWS
+├── README.rst
+├── src/
+│   ├── lib.rs             # Library root. Contains queue traits and memory/disk stubs (to support all test types)
+│   ├── pqueue.rs          # Stub for PriorityQueue type for API/module tests
+│   ├── rrqueue.rs         # Stub for RoundRobinQueue type for API/module tests
+├── tests/
+│   └── original/          # Directory for original (private) test translations
+│       ├── test_queue_memory.rs      # Covers FifoMemoryQueue, LifoMemoryQueue, BaseQueue meta logic
+│       ├── test_public_api.rs        # Tests for API/all symbols
+│       ├── test_queue.rs             # Main functional tests covering traits, factories and all queue scenarios
+├── public_tests/
+│   ├── test_public_queue_memory.rs   # Covers BaseQueue meta, FifoMemoryQueue, LifoMemoryQueue (public)
+│   ├── test_public_public_api.rs     # Tests for module/public API exposure
+│   ├── test_public_queue.rs          # Public translation for disk queue tests (stubbed)
+│   ├── test_public_pqueue.rs         # Public dummy pqueue pop logic (stubbed)
+│   ├── test_public_rrqueue.rs        # Public dummy rrqueue pop logic (stubbed)
+├── run_tests.sh           # Simple script to run all tests (calls cargo test)
+└── project_structure.txt  # This file. Project description and structure.
+
+Directory/explanation:
+- Cargo.toml: Defines Rust crate info, versions, and deps (test uses `tempfile` for tmp dir creation).
+- src/lib.rs: Library queue implementations and stubs to allow original/public tests to run.
+- src/pqueue.rs, src/rrqueue.rs: Minimal module stubs for PriorityQueue/RoundRobinQueue for API tests.
+- tests/original/: Translated original/internal test files from the Python project.
+- public_tests/: Translated public test cases (public API or public disk queue stubs).
+- run_tests.sh: Run `./run_tests.sh` to execute tests (with `cargo test`).
+- project_structure.txt: Overview of project layout.
+
+To build and test:
+1. Ensure Rust/cargo toolchain is installed (https://rustup.rs/).
+2. In the project root, run:
+    chmod +x run_tests.sh
+    ./run_tests.sh
+This will automatically build and run all original and public tests defined.

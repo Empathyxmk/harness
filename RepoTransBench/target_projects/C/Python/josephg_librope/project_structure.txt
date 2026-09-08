@@ -1,0 +1,27 @@
+project_root/
+├── src/
+│   └── librope/
+│       ├── __init__.py
+│       └── rope.py              # Placeholder for implementation
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_rope_additional.py        # From test/test_rope_additional.c
+│       └── test_rope_main.py              # From test/tests.c
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_rope_additional_public.py     # From test/test_rope_additional_public.c
+│   └── test_rope_public.py                # From test/tests_public.c
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+---
+
+- `src/librope/`       : Intended location for the Python port of the rope data structure.
+- `tests/original/`    : Original, comprehensive, and randomized test suite translations.
+- `public_tests/`      : Public, simplified, and variant tests (from generated/limited test sets).
+- `requirements.txt`   : Python test dependencies.
+- `run_tests.sh`       : One-click shell shortcut to run all tests.

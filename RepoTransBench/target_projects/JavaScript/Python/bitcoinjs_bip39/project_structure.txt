@@ -1,0 +1,36 @@
+project_root/
+├── requirements.txt            # Python dependencies for testing (pytest)
+├── run_tests.sh                # Script to run all tests (chmod +x)
+├── project_structure.txt       # This file: structure/explain
+├── tests/
+│   ├── __init__.py             # Marks as package (can be empty)
+│   └── original/
+│       ├── __init__.py         # empty
+│       ├── test_util_wordlists.py            # Original test: util_wordlists.test.js
+│       ├── test_ts_buildcheck.py             # Original test: ts_buildcheck.test.js
+│       ├── test__wordlists.py                # Original test: _wordlists.test.js
+│       ├── test_index_integration.py         # Original test: index.integration.test.js
+│       ├── test__wordlists_integration.py    # Original test: _wordlists.integration.test.js
+│       └── test_index.py                     # Original test: index.test.js
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_ts_buildcheck_public.py
+│   ├── test__wordlists_public.py
+│   ├── test_index_public.py
+│   ├── test_util_wordlists_public.py
+│   ├── test_index_integration_public.py
+│   └── test__wordlists_integration_public.py
+
+Directory explanations:
+- requirements.txt: List of Python dependencies (pytest for tests)
+- run_tests.sh: Run all tests with ./run_tests.sh
+- project_structure.txt: This file, showing structure/comments
+- tests/original/: Contains all translations of original JavaScript tests
+- public_tests/: Contains all translations of public test JS files
+- __init__.py: Present for test discovery and packaging
+- All test_*.py: Translated, fully implemented tests
+
+Setup & Testing Instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+3. To run only original or public tests, use: `pytest tests/original/` or `pytest public_tests/`

@@ -1,0 +1,61 @@
+{
+  "project_name": "rohanpadhye_vasco",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:41.207607",
+  "original_path": "/workspace/verified_repos_v2/Java/rohanpadhye_vasco",
+  "public_test_result_path": "/workspace/public_test_results/Java/rohanpadhye_vasco",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/vasco/OldForwardInterProceduralAnalysisTest.java",
+      "src/test/java/vasco/InterProceduralAnalysisTest.java",
+      "src/test/java/vasco/ContextTest.java",
+      "src/test/java/vasco/ContextTransitionTableTest.java",
+      "src/test/java/vasco/CallSiteTest.java",
+      "src/test/java/vasco/BackwardForwardInterProceduralAnalysisTest.java",
+      "src/test/java/vasco/ProgramRepresentationTest.java",
+      "src/test/java/vasco/DataFlowSolutionTest.java",
+      "src/test/java/vasco/callgraph/CallGraphTransformerTest.java",
+      "src/test/java/vasco/callgraph/PointsToGraphTest.java",
+      "src/test/java/vasco/callgraph/CallGraphTest.java",
+      "src/test/java/vasco/callgraph/PointsToAnalysisTest.java",
+      "src/test/java/vasco/soot/examples/CopyConstantTest.java",
+      "src/test/java/vasco/soot/examples/SignTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 14,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/vasco/OldForwardInterProceduralAnalysisPublicTest.java",
+      "src/test/java/vasco/InterProceduralAnalysisPublicTest.java",
+      "src/test/java/vasco/ContextPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/vasco/ContextTransitionTablePublicTest.java",
+      "src/test/java/vasco/DataFlowSolutionPublicTest.java",
+      "src/test/java/vasco/ProgramRepresentationPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/vasco/OldForwardInterProceduralAnalysisPublicTest.java",
+    "src/test/java/vasco/InterProceduralAnalysisPublicTest.java",
+    "src/test/java/vasco/ContextPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/vasco/ContextTransitionTablePublicTest.java",
+    "src/test/java/vasco/DataFlowSolutionPublicTest.java",
+    "src/test/java/vasco/ProgramRepresentationPublicTest.java"
+  ]
+}

@@ -1,0 +1,33 @@
+project_root/
+├── requirements.txt            # Python dependencies (pytest)
+├── run_tests.sh                # One-click test execution script
+├── project_structure.txt       # This file: overview + directory explanations
+├── README.md                   # Documentation (user guide, not included here)
+├── src/                        # (if implementing application code, not supplied here)
+│   └── ...                     # (placeholder for application source)
+├── tests/                      # Root testing directory
+│   ├── __init__.py
+│   └── original/               # Original test cases (all manually written and translated)
+│       ├── __init__.py
+│       ├── test_cloud_config_server_application.py          # from CloudConfigServerApplicationTests.java
+│       ├── test_department_service_application.py           # from DepartmentServiceApplicationTests.java
+│       ├── test_user_service_application.py                 # from UserServiceApplicationTests.java
+│       ├── test_service_registry_application.py             # from ServiceRegistryApplicationTests.java
+│       ├── test_service_registry_application_suite.py       # from ServiceRegistryApplicationTestSuite.java
+│       ├── test_hystrix_dashboard_application.py            # from HystrixDashboardApplicationTests.java
+│       ├── test_hystrix_dashboard_application_suite.py      # from HystrixDashboardApplicationTestSuite.java
+│       ├── test_cloud_gateway_application.py                # from CloudGatewayApplicationTests.java
+│       ├── test_cloud_gateway_application_suite.py          # from CloudGatewayApplicationTestSuite.java
+│       └── test_fallback_method_controller.py               # from FallBackMethodControllerTest.java
+├── public_tests/                 # Public test cases (from generated public test files)
+│   ├── __init__.py
+│   └── test_fallback_method_controller_public.py            # from FallBackMethodControllerPublicTest.java
+
+# Directory Explanations:
+
+# requirements.txt        - Defines dependencies (pytest)
+# run_tests.sh            - Bash script to run all tests in one click: ./run_tests.sh
+# project_structure.txt   - Docs: explains organization
+# src/                    - (Optional) source/application code (not supplied in this task)
+# tests/original/         - All original (non-public) test cases, one Python file per original Java test class
+# public_tests/           - Public test cases (from public/generative suite), separate from original tests

@@ -1,0 +1,67 @@
+awslabs_route53-infima-cs/
+│
+├── src/
+│   └── Route53Infima/
+│       ├── Route53Infima.csproj
+│       ├── Program.cs
+│       ├── Lattice.cs
+│       ├── OneDimensionalLattice.cs
+│       ├── TwoDimensionalLattice.cs
+│       ├── SingleCellLattice.cs
+│       ├── SimpleSignatureShuffleSharder.cs
+│       ├── StatefulSearchingShuffleSharder.cs
+│       ├── RubberTree.cs
+│       └── Util/
+│           ├── AnswerSet.cs
+│           ├── ComparableResourceRecord.cs
+│           ├── HealthCheckedResourceRecord.cs
+│           └── IterableSubListGenerator.cs
+│
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── LatticeTest.cs
+│       ├── OneDimensionalLatticeTest.cs
+│       ├── SimpleSignatureShuffleSharderTest.cs
+│       ├── TwoDimensionalLatticeTest.cs
+│
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── LatticePublicTest.cs
+│   ├── OneDimensionalLatticePublicTest.cs
+│   ├── SimpleSignatureShuffleSharderPublicTest.cs
+│   ├── TwoDimensionalLatticePublicTest.cs
+│
+├── tests/
+│   ├── AnswerSetTests.cs
+│   ├── RubbeeTreeTests.cs
+│   ├── SimpleSignatureShuffleSharderTests.cs
+│   ├── StatefulSearchingShuffleSharderTests.cs
+│   ├── SubListIteratorTests.cs
+│   ├── LatticeTests.cs
+│
+├── Route53Infima.sln
+├── run_tests.sh
+└── README.md
+
+- src/Route53Infima/       : Source code for core library.
+- tests/original/          : C# translations of original Java tests (from '*Test.java').
+- public_tests/            : C# translations of public Java tests (from '*PublicTest.java').
+- tests/                   : Translations of supporting and non-public-specific Java test files.
+- run_tests.sh             : Simple shell script to run all tests using `dotnet test`.
+- Route53Infima.sln        : .NET solution including all projects.
+- README.md                : Project overview and instructions.
+
+--- Setup and Testing Instructions ---
+
+1. .NET 6.0 or higher is required (see dotnet.microsoft.com/download).
+2. Restore dependencies and build:
+      dotnet restore
+      dotnet build
+3. Run all tests:
+      ./run_tests.sh
+   (Ensure the script is executable: chmod +x run_tests.sh)
+4. To run only original tests:
+      dotnet test tests/original/
+5. To run only public tests:
+      dotnet test public_tests/

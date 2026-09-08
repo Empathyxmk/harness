@@ -1,0 +1,31 @@
+project_root/
+├── go.mod                        # Go module definition
+├── run_tests.sh                  # Simple script to run all Go tests
+├── README.md                     # Project documentation
+├── tests/
+│   ├── original/
+│   │   ├── test_request_factory_test.go
+│   │   ├── test_request_factory_branch_test.go
+│   │   ├── test_data_test.go
+│   │   ├── test_auth_test.go
+│   │   └── test_orm_test.go
+├── public_tests/
+│   ├── test_public_request_factory_test.go
+│   ├── test_public_request_factory_branch_test.go
+│   ├── test_public_data_test.go
+│   └── test_public_auth_test.go
+
+Directory Explanations:
+-----------------------
+- tests/original/:        All translated original (private/internal) test cases from Python.
+- public_tests/:          All public test cases, for external/public interface verification.
+- run_tests.sh:           Script to execute all tests with a single command (`./run_tests.sh`).
+- go.mod:                 Go module file for dependency and package management.
+
+Setup & Testing Instructions:
+-----------------------------
+1. Ensure Go is installed (Go 1.20+ recommended).
+2. From the project root, run: `go mod tidy` to fetch dependencies (if go.mod includes third-party).
+3. Run all tests using: `./run_tests.sh` or `go test ./...`
+
+All tests are fully implemented and grouped by scope (original or public).

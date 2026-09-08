@@ -1,0 +1,53 @@
+{
+  "project_name": "spotify_pythonflow",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:24:04.194087",
+  "original_path": "/workspace/verified_repos_v2/Python/spotify_pythonflow",
+  "public_test_result_path": "/workspace/public_test_results/Python/spotify_pythonflow",
+  "original_tests": {
+    "test_files": [
+      "tests/test_core_basic.py",
+      "tests/test_pfmq.py",
+      "tests/test_pythonflow.py",
+      "tests/test_util.py",
+      "tests/test_util_extra.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_core_basic.py",
+      "public_tests/test_public_pythonflow.py",
+      "public_tests/test_public_util.py",
+      "public_tests/test_public_util_extra.py",
+      "public_tests/test_public_pfmq.py",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_core_basic.py",
+    "public_tests/test_public_pythonflow.py",
+    "public_tests/test_public_util.py",
+    "public_tests/test_public_util_extra.py",
+    "public_tests/test_public_pfmq.py",
+    "run_public_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

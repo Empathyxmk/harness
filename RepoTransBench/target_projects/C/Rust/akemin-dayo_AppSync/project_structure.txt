@@ -1,0 +1,33 @@
+appsync_unified/ (Rust crate root)
+├── Cargo.toml               # Rust build and dependency configuration
+├── README.md                # Project overview and usage docs (create as needed)
+├── run_tests.sh             # One-click test execution script
+├── src/
+│   ├── lib.rs               # Source library module (placeholder)
+│   └── main.rs              # Binary entrypoint (empty, for completeness)
+├── tests/
+│   ├── original/
+│   │   └── test_asu_inject.rs          # Rust translation of original in-repo tests
+│   └── public/
+│       └── test_asu_inject_public.rs   # Rust translation of public-scenario tests (was: public_tests/)
+├── project_structure.txt    # This file: structure and usage
+└── ...                     # (Generated, target/ for build products, etc.)
+
+Directory Explanations:
+- src/: Main library (lib.rs) and binary (main.rs) source
+- tests/original/: Contains direct translations of original in-repo test logic
+- tests/public/: Contains translation of public scenario tests
+- Cargo.toml: Build/dependency config for the Rust crate
+- run_tests.sh: One command to run all tests (`chmod +x` before running)
+- project_structure.txt: Overview of project organization
+
+Testing and Setup Instructions:
+1. Prerequisite: Install Rust (https://rustup.rs/)
+2. Make `run_tests.sh` executable: `chmod +x run_tests.sh`
+3. To run ALL tests (original and public): `./run_tests.sh`
+   - This invokes `cargo test --all --release`, running tests from both `tests/original/` and `tests/public/`.
+4. To run tests interactively:
+   - `cargo test`           (or restrict via module name)
+   - See individual files in `tests/original/` and `tests/public/` for details.
+
+All test logic and original scenario/data preserved from C code to Rust. Add docs/ or other files as needed for completeness.

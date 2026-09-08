@@ -1,0 +1,26 @@
+jedp_porter_stemmer_python/
+├── porter.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── README.md
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_porter.py
+│       └── test_porter_branches.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_porter_public.py
+│   └── test_porter_branches_public.py
+
+Explanations:
+- porter.py: Main module where the Porter Stemmer implementation goes.
+- requirements.txt: Specifies dependency (pytest) for testing.
+- run_tests.sh: Simple script to install dependencies and run all tests.
+- project_structure.txt: This file; describes the structure/purpose.
+- README.md: Project documentation and instructions.
+- tests/original/: Contains all translated "original" test cases from the JavaScript project.
+- public_tests/: Contains all translated "public" test cases.
+- __init__.py files: Mark directories as Python packages and enable easy test discovery.

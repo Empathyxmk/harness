@@ -1,0 +1,44 @@
+Project Structure:
+
+.
+├── requirements.txt                # Python dependencies (pytest, numpy)
+├── run_tests.sh                    # Simple one-click test execution script
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_learn.py           # Original tests for learn.m
+│       ├── test_loadclass.py       # Original test for loadclass.m
+│       ├── test_move_ind.py        # Original test for move_ind.m
+│       └── test_svmtrain.py        # Original test for svmtrain.m
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_learn.py        # Public test for learn.m
+│   ├── test_public_loadclass.py    # Public test for loadclass.m
+│   ├── test_public_move_ind.py     # Public test for move_ind.m
+│   └── test_public_svmtrain.py     # Public test for svmtrain.m
+
+Directory explanations:
+
+- requirements.txt:                Lists dependencies to be installed via pip
+- run_tests.sh:                    Runs all tests under both tests/ and public_tests/ via pytest with a single command
+- tests/original/:                 Contains Python translations of the original (private/internal) test cases from Matlab "tests/"
+- public_tests/:                   Contains Python translations of the Matlab public test cases from "public_tests/"
+- tests/original/test_learn.py:    Translated original tests for the "learn" function
+- tests/original/test_loadclass.py:Translated original test for loading a class vector
+- tests/original/test_move_ind.py: Translated original test for "move_ind" function
+- tests/original/test_svmtrain.py: Translated original tests for "svmtrain" (training an SVM)
+- public_tests/test_public_learn.py:     Public test for "learn"
+- public_tests/test_public_loadclass.py: Public test for "loadclass"
+- public_tests/test_public_move_ind.py:  Public test for "move_ind"
+- public_tests/test_public_svmtrain.py:  Public test for "svmtrain"
+
+Instructions:
+
+1. Install all dependencies:
+   pip install -r requirements.txt
+
+2. Run all tests (original + public):
+   ./run_tests.sh
+
+This setup is ready for easy extension with your real SVM implementations, replacing the stubs.

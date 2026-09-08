@@ -1,0 +1,16 @@
+tree/
+├── Cargo.toml            # Rust project configuration
+├── README.md             # Project documentation
+├── prepare_test_dirs.sh  # Script to prepare test directories
+├── run_public_tests.sh   # Script to run public tests
+├── run_tests.sh          # Script to run all tests
+├── src/
+│   ├── lib.rs            # Core functionality
+│   └── main.rs           # Command-line interface
+├── tests/
+│   └── original/
+│       └── test_tree.rs  # Original test cases
+└── public_tests/
+    └── test_tree_public.rs  # Public test cases
+
+4 directories, 8 files

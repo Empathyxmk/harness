@@ -1,0 +1,42 @@
+ssh_audit_rust/
+├── Cargo.toml
+├── run_tests.sh
+├── src/
+│   ├── lib.rs
+│   └── ssh_audit/
+│       ├── mod.rs
+│       ├── buffer.rs
+│       ├── output.rs
+│       ├── banner.rs
+│       ├── software.rs
+│       ├── version.rs
+│       ├── ssh1.rs
+│       ├── ssh2.rs
+│       ├── errors.rs
+│       └── auditconf.rs
+├── tests/
+│   ├── original/
+│   │   ├── mod.rs
+│   │   ├── test_buffer.rs
+│   │   ├── test_software.rs
+│   │   ├── test_ssh2.rs
+│   │   ├── test_banner.rs
+│   │   ├── test_version_compare.rs
+│   │   ├── test_ssh1.rs
+│   │   ├── test_auditconf.rs
+│   │   ├── test_output.rs
+│   │   └── test_errors.rs
+│   └── common/
+│       └── mod.rs
+├── public_tests/
+│   ├── mod.rs
+│   ├── test_public_buffer.rs
+│   ├── test_public_software.rs
+│   ├── test_public_banner.rs
+│   ├── test_public_version_compare.rs
+│   ├── test_public_ssh1.rs
+│   ├── test_public_auditconf.rs
+│   ├── test_public_output.rs
+│   ├── test_public_ssh2.rs
+│   └── test_public_errors.rs
+└── project_structure.txt

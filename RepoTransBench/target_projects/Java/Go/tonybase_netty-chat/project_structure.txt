@@ -1,0 +1,28 @@
+tonybase_nettychat/
+├── go.mod                        # Module definition/dependency file
+├── run_tests.sh                  # One-click test execution for all tests
+├── project_structure.txt         # This file: Project tree & directory explanations
+├── tests/
+│   └── original/
+│       ├── chat_operation_test.go        # Original test: ChatOperationTest
+│       └── message_operation_test.go     # Original test: MessageOperationTest
+├── public_tests/
+│   ├── chat_operation_public_test.go     # Public test: ChatOperationPublicTest
+│   └── message_operation_public_test.go  # Public test: MessageOperationPublicTest
+└── README.md                     # Project documentation (add instructions as needed)
+
+Directory Explanations:
+- go.mod: Go module/dependency definition file. Uses testify for advanced mocking.
+- run_tests.sh: Run *all* tests (original and public) with one command (`./run_tests.sh`).
+- project_structure.txt: Project tree overview and directory explanations.
+- tests/original/: Contains all original tests translated from Java.
+- public_tests/: Contains all public tests, translated and maintained separately.
+- README.md: Add setup, documentation, or further usage details here.
+
+Setup and Testing Instructions:
+1. Install Go >= 1.20 and ensure `go` is in your PATH.
+2. (Optional) Run `go mod tidy` to ensure dependencies are installed.
+3. Run all tests (original and public) with:
+   ./run_tests.sh
+
+This will test all files in `tests/original/` and `public_tests/`.

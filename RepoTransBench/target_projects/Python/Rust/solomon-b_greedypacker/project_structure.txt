@@ -1,0 +1,45 @@
+.
+├── Cargo.toml                      # Rust package configuration and dependency manifest
+├── src/
+│   ├── lib.rs                      # Main library module, exports submodules
+│   ├── binmanager.rs               # Placeholder/stub for BinManager
+│   ├── item.rs                     # Placeholder/stub for Item
+│   ├── guillotine.rs               # Placeholder/stub for Guillotine
+│   ├── shelf.rs                    # Placeholder/stub for Shelf
+│   ├── skyline.rs                  # Placeholder/stub for Skyline
+│   └── maximal_rectangles.rs       # Placeholder/stub for MaximalRectangle
+├── tests/
+│   └── original/
+│       ├── test_api.rs             # Rust translation of test/test_api.py
+│       ├── test_guillotine.rs      # Rust translation of test/test_guillotine.py
+│       ├── test_init_imports.rs    # Rust translation of test/test_init_imports.py
+│       ├── test_maximal_rectangles_constructor.rs
+│       ├── test_maximalrectangles.rs
+│       ├── test_setup_script.rs
+│       ├── test_shelf.rs
+│       ├── test_skyline.rs
+│       └── test_skyline_construction.rs
+├── public_tests/
+│   ├── test_public_api.rs
+│   ├── test_public_guillotine.rs
+│   ├── test_public_init_imports.rs
+│   ├── test_public_maximal_rectangles_constructor.rs
+│   ├── test_public_maximalrectangles.rs
+│   ├── test_public_shelf.rs
+│   ├── test_public_skyline.rs
+│   └── test_public_skyline_construction.rs
+├── run_tests.sh                    # Simple script to run all tests
+└── project_structure.txt           # This file
+
+Directory Explanations:
+- Cargo.toml: Rust project configuration and dependency declarations.
+- src/: All source files for the greedypacker ported library.
+- tests/original/: Translated "original" Python tests as Rust integration tests.
+- public_tests/: Public API and basic functional tests, also translated to Rust, can be run with `cargo test`.
+- run_tests.sh: Bash script for easy one-click Rust test execution (runs `cargo test`).
+- project_structure.txt: Structure overview and instructions.
+
+Setup and Testing:
+1. Install Rust (https://rustup.rs/)
+2. Run: `./run_tests.sh` to execute ALL tests (original and public_api).
+3. Add the actual implementation code for greedypacker in `src/` modules as you port it.

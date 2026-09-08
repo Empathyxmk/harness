@@ -1,0 +1,41 @@
+project_root/
+├── Adafruit_DHT/                 # Original Python package files (System Under Test, not translated)
+│   ├── Beaglebone_Black.py
+│   ├── Raspberry_Pi.py
+│   ├── Raspberry_Pi_2.py
+│   ├── Test.py                   # Original Python test driver, uses C extension
+│   ├── __init__.py
+│   ├── common.py
+│   └── platform_detect.py
+├── source/                       # Original C source files and C extensions (not translated)
+│   ├── Beaglebone_Black/
+│   ├── Raspberry_Pi/
+│   ├── Raspberry_Pi_2/
+│   ├── Test/                     # Contains original C unit test files (translated to Python)
+│   │   ├── test_common_dht_read.c
+│   │   ├── test_dht_read.c
+│   │   ├── test_runner.c
+│   │   ├── test_common_dht_read_public.c
+│   │   ├── test_dht_read_public.c
+│   │   └── test_runner_public.c
+│   ├── _Beaglebone_Black_Driver.c
+│   ├── _Raspberry_Pi_2_Driver.c
+│   ├── _Raspberry_Pi_Driver.c
+│   ├── _Test_Driver.c            # C extension used by Adafruit_DHT/Test.py
+│   ├── common_dht_read.c
+│   └── common_dht_read.h
+├── tests/
+│   ├── __init__.py               # Makes 'tests' a Python package
+│   └── original/
+│       ├── __init__.py           # Makes 'original' a Python package
+│       ├── test_common_dht_read.py # Translated from source/Test/test_common_dht_read.c
+│       ├── test_dht_read.py      # Translated from source/Test/test_dht_read.c
+│       └── test_runner.py        # Translated from source/Test/test_runner.c
+├── public_tests/
+│   ├── __init__.py               # Makes 'public_tests' a Python package
+│   ├── test_common_dht_read_public.py # Translated from source/Test/test_common_dht_read_public.c
+│   ├── test_dht_read_public.py   # Translated from source/Test/test_dht_read_public.c
+│   └── test_runner_public.py     # Translated from source/Test/test_runner_public.c
+├── requirements.txt              # Lists Python dependencies (e.g., pytest)
+├── run_tests.sh                  # Script to run all translated Python tests
+└── project_structure.txt         # This document describing the structure

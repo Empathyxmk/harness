@@ -1,0 +1,32 @@
+znone_qtl-python/
+├── src/
+│   └── (project source, not present in this test translation)
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │    ├── __init__.py
+│   │    ├── test_apply_tuple.py
+│   │    └── test_qtl_common.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_apply_tuple_public.py
+│   └── test_qtl_common_public.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+│
+├── README.md
+
+Directory explanations:
+- src/: (not present for this translation—would be for main source code)
+- tests/original/: All tests translated from the C++ original test files (full functional tests)
+- public_tests/: All tests translated from C++ "public" test files (basic/blackbox functional tests)
+- requirements.txt: Python dependencies, primarily pytest for testing.
+- run_tests.sh: Simple script to run all original and public Python tests with a single command.
+- README.md: Short project documentation and running instructions.
+- project_structure.txt: This file, describing the structure for end users.
+
+Setup & Testing Instructions:
+1. Install requirements: `pip install -r requirements.txt`
+2. Run all tests with one command: `./run_tests.sh`
+3. Tests are stored in `tests/original/` (original C++ test conversion) and `public_tests/` (public generated test cases).

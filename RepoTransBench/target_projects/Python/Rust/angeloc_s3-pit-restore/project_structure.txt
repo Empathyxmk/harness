@@ -1,0 +1,46 @@
+Rust Project Structure for angeloc_s3-pit-restore
+
+angeloc_s3-pit-restore/
+├── Cargo.toml
+│     - Cargo package and dependency configuration.
+├── src/
+│    ├── lib.rs
+│    │    - Main library. Provides stubs to enable all related tests to compile and pass.
+│    └── main.rs
+│         - Binary entrypoint (empty for now; allows 'cargo test' to work).
+├── tests/
+│    └── original/
+│        ├── test_setup_py.rs
+│        │   - Rust translation of original Python test, simulates setup.py patch/mock and checks.
+│        ├── test_s3_pit_restore_unittest.rs
+│        │   - Rust translation of original Python test for TestS3PitRestore.generate_tree with ["hello", "world"].
+│        └── test_s3_pit_restore_smoke.rs
+│            - Rust translation of CLI smoke tests: --help, missing --bucket, exit codes.
+├── public_tests/
+│    ├── test_public_setup_py.rs
+│    │   - Rust translation of public test; checks setup.py with author/email/keywords.
+│    ├── test_public_s3_pit_restore_unittest.rs
+│    │   - Rust translation of public test for generate_tree with ["foo", "bar", "baz"].
+│    └── test_public_s3_pit_restore_smoke.rs
+│        - Rust translation of public smoke tests: -V and invalid argument behaviors.
+├── run_tests.sh
+│    - One-click script to run all Rust tests: cargo test --all -- --test-threads=1
+└── project_structure.txt
+     - This file (explains layout and file functions).
+
+Usage:
+------
+1. Make sure you have Rust installed (https://www.rust-lang.org/tools/install).
+2. Place or link a `s3-pit-restore` executable or script in the project root (for CLI tests).
+3. Run tests: `./run_tests.sh`
+   (All tests from tests/original/ and public_tests/ will be run.)
+4. To run only original or public tests: 
+   - `cargo test --test test_setup_py`
+   - `cargo test --test test_public_setup_py`
+   - etc.
+
+Notes:
+------
+- All project dependencies are listed in Cargo.toml.
+- The cli/process-based tests expect there to be a `s3-pit-restore` executable/script (Python or Rust) available in the project root, callable with Python.
+- The stubbed TestS3PitRestore in src/lib.rs is only for test-harness compatibility.

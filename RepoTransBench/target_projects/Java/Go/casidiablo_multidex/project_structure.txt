@@ -1,0 +1,30 @@
+casidiablo_multidex/
+├── go.mod                     # Go module definition and dependencies
+├── README.md                  # Project documentation and usage
+├── run_tests.sh               # One-click shell script to run all tests
+├── project_structure.txt      # Directory and file layout explanation (this file)
+├── tests/
+│   ├── original/              # Translated "original" (private/internal) tests from Java
+│   │   ├── multidex_application_test.go
+│   │   ├── multidex_extractor_test.go
+│   │   ├── multidex_standalone_test.go
+│   │   ├── multidex_test.go
+│   │   ├── ziputil_extra_test.go
+│   │   └── ziputil_test.go
+│   └── testutil.go            # Test utilities and helpers (optional, for reusable functions)
+└── public_tests/
+    ├── multidex_application_public_test.go
+    ├── multidex_extractor_public_test.go
+    ├── multidex_public_test.go
+    ├── multidex_standalone_public_test.go
+    ├── ziputil_extra_public_test.go
+    └── ziputil_public_test.go
+
+Directory explanations:
+- tests/original/: Original (internal/private) test cases, as directly ported from the Java suite.
+- public_tests/: Public/candidate-facing tests as directly ported from the Java suite.
+- tests/testutil.go: Place for helper functions to reduce code duplication across both suites.
+- go.mod: Declares the module name and dependencies.
+- run_tests.sh: Shell script to execute all tests with a single command using Go's built-in test runner.
+
+Run all tests with: `./run_tests.sh`

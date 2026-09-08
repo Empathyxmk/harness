@@ -1,0 +1,63 @@
+Project Structure Overview
+=========================
+
+Torantulino_AI-Functions/
+├── pom.xml
+├── run_tests.sh
+├── README.md
+├── project_structure.txt         # (this file)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── aifunctions/
+│   │                   ├── AIFunctions.java
+│   │                   ├── AIClient.java
+│   │                   └── AIResponse.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── aifunctions/
+│                       ├── original/
+│                       │   └── AIFunctionsOriginalTest.java
+│                       └── public_tests/
+│                           └── AIFunctionsPublicTest.java
+
+Key:
+- pom.xml              : Maven config and dependencies (JUnit 5, Mockito)
+- run_tests.sh         : Simple script to run all Java tests via Maven
+- README.md            : Documentation stub (add further usage infos)
+- project_structure.txt: This overview file
+
+- src/main/java/...
+    AIFunctions.java    : Java port of ai_functions.py logic, entrypoint API
+    AIClient.java       : Interface for mocking OpenAI client calls
+    AIResponse.java     : Dummy OpenAI-like response for tests
+
+- src/test/java/...
+    original/           : Original (private) test cases translated from Python
+    public_tests/       : Public-facing test cases, same structure
+
+How to Use
+----------
+
+1. Build and run all tests:
+   $ ./run_tests.sh
+
+2. To run specific test groups (original or public):
+   Edit the 'run_tests.sh' to use Maven's '-Dtest' selector if needed.
+
+Both test suites use full Java implementations for all logic, mocking, and assertions.
+
+All test logic, inputs, outputs, and edge cases strictly match the original Python tests. No empty stubs.
+
+Dependencies:
+-------------
+- Java 17
+- Maven (for dependency and test management)
+- JUnit 5 (testing)
+- Mockito (mocking, included in case of mocking need)
+
+Edit README.md as needed for further instructions.

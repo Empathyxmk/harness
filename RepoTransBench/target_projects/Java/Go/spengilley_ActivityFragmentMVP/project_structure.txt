@@ -1,0 +1,27 @@
+project_root/
+├── go.mod                       # Go module definition
+├── run_tests.sh                 # Simple one-click test execution script
+├── tests/
+│   └── original/                # Contains all translated original tests
+│       ├── app_test.go
+│       ├── app_module_test.go
+│       ├── fragment_callback_test.go
+│       └── modules_test.go
+├── public_tests/                # Contains all translated public tests
+│   ├── app_module_public_test.go
+│   ├── app_public_test.go
+│   ├── fragment_callback_public_test.go
+│   └── modules_public_test.go
+└── project_structure.txt        # This documentation file
+
+Directory explanations:
+- go.mod                : Declares Go module and Go version. No external dependencies required beyond stdlib.
+- run_tests.sh          : Runs all tests in both tests/original/ and public_tests/ using `go test ./...`.
+- tests/original/       : Translated "original" test cases from Java source.
+- public_tests/         : Translated "public" test cases from Java public test files.
+- project_structure.txt : This project structure and instructions documentation.
+
+Setup and testing instructions:
+1. Ensure [Go](https://golang.org/dl/) (version 1.20+) is installed.
+2. From the project root, run: `chmod +x run_tests.sh`
+3. Execute all tests with: `./run_tests.sh`

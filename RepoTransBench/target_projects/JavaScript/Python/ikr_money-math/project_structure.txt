@@ -1,0 +1,47 @@
+.
+├── README.md
+├── requirements.txt                   # Python dependencies (pytest)
+├── run_tests.sh                       # Simple test script for all tests (pytest)
+├── src/
+│   ├── __init__.py
+│   └── money.py                       # Money math implementation (functions as used by tests)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_money.py              # Original test: money.spec.js
+│       ├── test_money_extra.py        # Original test: money-extra.spec.js
+│       └── test_unit_money_internal.py# Original: unit-money-internal.spec.js
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_money_public.py           # Public test: money.public.test.js
+│   ├── test_money_extra_public.py     # Public: money-extra.public.test.js
+│   └── test_unit_money_internal_public.py # Public: unit-money-internal.public.test.js
+
+README.md
+  - Overview and usage instructions.
+
+src/
+  - Source code for the library/module.
+  - src/money.py is the entrypoint for financial handling functions.
+
+tests/original/
+  - High coverage, full internal/original test suite (all edge/internal/original test content translated from JS).
+  - Separated with __init__.py for pytest discovery.
+
+public_tests/
+  - Tests intended for public/black-box validation, as in the original JS project.
+  - Modular and similarly named as source, to mirror the JS suite and allow easy mapping from public_tests/.
+
+requirements.txt
+  - Lists pytest, the Python testing framework needed.
+
+run_tests.sh
+  - Simple one-liner script to run all tests (both tests/ and public_tests/) via pytest.
+
+How to use:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+
+Note:
+- All test logic from JS is faithfully translated. Many tests expect functions to exactly mimic their JS counterparts' output and semantics. Implement src/money.py accordingly to pass all tests.

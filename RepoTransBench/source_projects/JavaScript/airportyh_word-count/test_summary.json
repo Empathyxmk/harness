@@ -1,0 +1,16 @@
+{
+  "project_name": "airportyh_word-count",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 66.66
+  },
+  "timestamp": "2025-06-19T09:50:23.399316",
+  "original_path": "/workspace/runnable_filter/JavaScript/airportyh_word-count",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/airportyh_word-count",
+  "tests_path": [
+    "__tests__/oo_small_classes.test.js",
+    "__tests__/oo_one_class.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

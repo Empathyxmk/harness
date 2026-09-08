@@ -1,0 +1,21 @@
+{
+  "project_name": "tonyo_pyope",
+  "language": "Python",
+  "coverage": {
+    "line": 69.0,
+    "branch": 91.8
+  },
+  "timestamp": "2025-06-19T12:59:54.414222",
+  "original_path": "/workspace/runnable_filter/Python/tonyo_pyope",
+  "test_result_path": "/workspace/test_enhancement_results/Python/tonyo_pyope",
+  "tests_path": [
+    "tests/test_errors.py",
+    "tests/test_ope.py",
+    "tests/test_range.py",
+    "tests/test_setup_py.py",
+    "tests/test_stat.py",
+    "tests/test_stat_core.py",
+    "tests/test_utils.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,29 @@
+cmusphinx_pocketsphinx_android/
+├── go.mod                        # Module definition for Go
+├── tests/
+│   └── original/
+│       ├── assets_test.go                 # Original test: AssetsTest.java logic
+│       ├── hypothesis_test.go             # Original test: HypothesisTest.java logic
+│       ├── recognition_listener_test.go   # Original test: RecognitionListenerTest.java logic
+│       ├── speech_recognizer_setup_test.go# Original test: SpeechRecognizerSetupTest.java logic
+│       └── speech_recognizer_test.go      # Original test: SpeechRecognizerTest.java logic
+├── public_tests/
+│   ├── assets_public_test.go              # Public test: AssetsPublicTest.java logic
+│   ├── hypothesis_public_test.go          # Public test: HypothesisPublicTest.java logic
+│   ├── recognition_listener_public_test.go# Public test: RecognitionListenerPublicTest.java logic
+│   ├── speech_recognizer_setup_public_test.go # Public: SpeechRecognizerSetupPublicTest.java logic
+│   └── speech_recognizer_public_test.go   # Public: SpeechRecognizerPublicTest.java logic
+├── run_tests.sh                   # Simple one-click script for all tests (chmod +x)
+└── project_structure.txt          # This file (project tree and explanation)
+
+Directory structure:
+- go.mod: Go module definition.
+- tests/original/: All tests translated from original Java test files. Each *_test.go file corresponds to a Java test class.
+- public_tests/: All tests translated from public Java test files. Each *_public_test.go corresponds to Java *PublicTest.java.
+- run_tests.sh: Simple bash script running all Go tests. Use it with `./run_tests.sh`.
+- project_structure.txt: This document, describes structure and usage.
+
+To run tests:
+1. Make sure you have Go installed.
+2. Run: ./run_tests.sh
+All tests (both original and public) will execute.

@@ -1,0 +1,43 @@
+.
+├── go.mod
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests
+│   ├── original
+│   │   ├── creational
+│   │   │   ├── builder_test.go
+│   │   │   ├── setup_py_test.go
+│   │   │   ├── singleton_test.go
+│   │   │   ├── builder_coverage_test.go
+│   │   │   ├── singleton_coverage_test.go
+│   │   │   ├── pool_coverage_test.go
+│   │   │   ├── pool_test.go
+│   │   │   ├── factory_test.go
+│   │   │   ├── prototype_test.go
+│   │   ├── behavioral
+│   │   │   ├── null_test.go
+│   │   │   ├── command_test.go
+│   │   │   ├── observer_test.go
+│   │   │   ├── mediator_test.go
+│   │   │   ├── memento_test.go
+│   │   │   ├── visitor_test.go
+│   │   │   ├── chain_test.go
+│   │   │   ├── iterator_test.go
+│   │   ├── structural
+│   │   │   ├── adapter_test.go
+│   │   │   ├── composite_test.go
+│   │   │   ├── decorator_test.go
+│   │   │   ├── flyweight_test.go
+├── public_tests
+│   ├── creational
+│   │   ├── builder_public_test.go
+│   │   ├── setup_py_public_test.go
+│   │   ├── singleton_public_test.go
+│   │   ├── builder_coverage_public_test.go
+│   │   ├── singleton_coverage_public_test.go
+│   │   ├── pool_coverage_public_test.go
+│   │   ├── pool_public_test.go
+│   │   ├── factory_public_test.go
+│   │   ├── prototype_public_test.go
+│   ├── behavioral
+│   │   ├── null_public_test.go

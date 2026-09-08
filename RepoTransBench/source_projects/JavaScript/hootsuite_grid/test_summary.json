@@ -1,0 +1,26 @@
+{
+  "project_name": "hootsuite_grid",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 61.08,
+    "branch": 92.85
+  },
+  "timestamp": "2025-06-23T10:39:03.539495",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/hootsuite_grid",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/hootsuite_grid",
+  "tests_path": [
+    "spec/cloneItemsSpec.js",
+    "spec/findPositionForItemSpec.js",
+    "spec/fixtures.js",
+    "spec/gridChangesSpec.js",
+    "spec/gridCollisionsSpec.js",
+    "spec/gridItemResizeSpec.js",
+    "spec/gridList_basicSpec.js",
+    "spec/gridList_branchesSpec.js",
+    "spec/gridPositioningSpec.js",
+    "spec/helpers.js",
+    "spec/matchers.js",
+    "spec/support/jasmine.mjs"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

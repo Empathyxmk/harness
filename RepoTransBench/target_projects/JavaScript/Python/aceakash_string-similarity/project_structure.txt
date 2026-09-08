@@ -1,0 +1,29 @@
+.
+├── README.md
+├── requirements.txt
+├── run_tests.sh
+├── src/
+│   ├── __init__.py
+│   └── string_similarity.py
+├── tests/
+│   └── original/
+│       ├── test_extra_coverage.py
+│       ├── test_index.py
+│       └── test_index_spec.py
+└── public_tests/
+    ├── test_extra_coverage_public.py
+    ├── test_index_public.py
+    └── test_index_spec_public.py
+
+Directory explanations:
+- src/: API/source code for string similarity
+- tests/original/: Full translation of all original JavaScript test cases
+- public_tests/: Full translation of public tests from the JavaScript repository
+- requirements.txt: Python dependencies (pytest required)
+- run_tests.sh: One-click test execution script
+
+How to set up and run:
+1. pip install -r requirements.txt
+2. ./run_tests.sh
+
+This configuration runs all tests (original and public) using pytest and will discover all properly named test scripts.

@@ -1,0 +1,35 @@
+venthur_gscholar/
+├── Cargo.toml               # Cargo package definition and dependencies
+├── README.md
+├── run_tests.sh             # One-click test runner: executes all (including public and original) tests
+├── src/
+│   ├── lib.rs               # Rust library root; stubs for gscholar and version modules for tests
+│   ├── main.rs              # Executable entry point (stub CLI)
+│   ├── gscholar.rs          # Main gscholar logic stub (for imports/use in tests)
+│   └── version.rs           # Version constant stub
+├── tests/
+│   └── original/
+│       ├── test_main_cli.rs         # Translation of original tests/test_main_cli.py
+│       ├── test_gscholar_extended.rs # tests/test_gscholar_extended.py
+│       ├── test_gscholar.rs         # tests/test_gscholar.py
+│       └── test_version.rs          # tests/test_version.py
+├── public_tests/
+│   ├── test_public_main_cli.rs             # Translation of public_tests/test_public_main_cli.py
+│   ├── test_public_gscholar_extended.rs    # public_tests/test_public_gscholar_extended.py
+│   ├── test_public_gscholar.rs             # public_tests/test_public_gscholar.py
+│   └── test_public_version.rs              # public_tests/test_public_version.py
+
+Directory explanation:
+- src/                : Rust source code; stubbed so tests compile.
+- tests/original/     : All original Python tests, ported to Rust.
+- public_tests/       : All public Python tests, ported to Rust.
+- run_tests.sh        : Run all tests with a single command.
+- Cargo.toml          : Build & dependency config for Rust/cargo.
+- project_structure.txt: (this file) Project structure description.
+
+Setup and usage:
+1. Ensure Rust and Cargo are installed.
+2. Run `chmod +x run_tests.sh`.
+3. Run all tests (original + public) with: `./run_tests.sh`
+   - This runs all tests under tests/original/ and public_tests/.
+   - Output will list all test pass/fail.

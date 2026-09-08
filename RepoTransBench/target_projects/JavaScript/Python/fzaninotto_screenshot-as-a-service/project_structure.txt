@@ -1,0 +1,26 @@
+project_root/
+├── requirements.txt                 # Python dependencies (pytest)
+├── run_tests.sh                     # Simple one-click test execution script
+├── project_structure.txt            # This project structure overview
+├── tests/
+│   └── original/
+│       └── test_lib_rasterizerService.py      # Tests corresponding to original JS test file
+├── public_tests/
+│   └── test_lib_rasterizerService_public.py   # Tests corresponding to public JS test file
+│
+# Project Structure and Purpose:
+# - requirements.txt: List Python dependencies. Only "pytest" required for these tests.
+# - run_tests.sh: Run the tests in one step (`./run_tests.sh`), installs dependencies and runs pytest.
+# - tests/original/: Contains tests translated from the original test files provided in __tests__/.
+# - public_tests/: Contains public/mock tests translated from public_tests/ in the source repo.
+# - project_structure.txt: This file, serves as a guide to the layout, test org, and how to use/run.
+#
+# Test Organization:
+# - All test code is fully contained within the test files; relevant mock classes are defined inline.
+# - No actual implementation or source modules are imported (as the JS original uses pure mocks).
+#
+# How to run:
+# 1. Run `chmod +x run_tests.sh` (if needed to make script executable)
+# 2. Run all tests with: `./run_tests.sh`
+#
+# No environment variables or external dependencies are required.

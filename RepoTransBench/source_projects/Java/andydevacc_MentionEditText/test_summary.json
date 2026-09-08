@@ -1,0 +1,15 @@
+{
+  "project_name": "andydevacc_MentionEditText",
+  "language": "Java",
+  "coverage": {
+    "line": 90.7,
+    "branch": 81.0
+  },
+  "timestamp": "2025-06-23T11:19:45.107510",
+  "original_path": "/workspace/runnable_filter/Java/andydevacc_MentionEditText",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/andydevacc_MentionEditText",
+  "tests_path": [
+    "library/src/test/java/io/github/luckyandyzhang/mentionedittext/MentionEditTextTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,40 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── src/
+│   └── benface_tailwindcss_transforms/
+│       ├── __init__.py
+│       ├── index.py
+│       └── prefix_negative_modifiers.py
+├── tests/
+│   ├── original/
+│   │   ├── test_index.py
+│   │   └── test_prefix_negative_modifiers.py
+│   └── test_tailwindcss_transforms_plugin_integration.py
+├── public_tests/
+│   ├── test_index_public.py
+│   └── test_prefix_negative_modifiers_public.py
+
+Directory Explanations:
+
+- requirements.txt
+    Python dependencies for project and tests (includes pytest).
+- run_tests.sh
+    Executable script to run all tests with one command.
+- project_structure.txt
+    This file (describes project layout and file purposes).
+- src/benface_tailwindcss_transforms/
+    Main source code for the library/plugin and helpers.
+- tests/original/
+    Translated original (private) test cases from the JavaScript project.
+- public_tests/
+    Translated public test cases from the JavaScript project.
+- tests/test_tailwindcss_transforms_plugin_integration.py
+    Skipped integration test (mimics the original repo test intent, does not affect coverage).
+
+Setup & Testing Instructions:
+1. Install dependencies:        pip install -r requirements.txt
+2. Run all tests:              ./run_tests.sh
+
+All original (private) and public test cases are faithfully translated and organized as above.

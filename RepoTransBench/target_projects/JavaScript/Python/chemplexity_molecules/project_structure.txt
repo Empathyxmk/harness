@@ -1,0 +1,17 @@
+chemplexity_molecules/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_math.py
+│       ├── test_smiles.py
+│       ├── test_molecules.py
+│       └── test_test.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_math_public.py
+│   ├── test_smiles_public.py
+│   └── test_molecules_public.py
+├── test_translation_progress.json

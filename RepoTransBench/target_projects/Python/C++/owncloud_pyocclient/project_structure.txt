@@ -1,0 +1,29 @@
+owncloud_pyocclient_cpp/
+├── CMakeLists.txt
+├── src/
+│   └── lib/
+│       ├── owncloud_stub.cpp
+│       ├── owncloud_stub.h
+│       └── CMakeLists.txt
+├── tests/
+│   ├── original/
+│   │   └── test_unit.cpp
+│   └── test_main.cpp
+├── public_tests/
+│   └── test_public_unit.cpp
+├── run_tests.sh
+└── project_structure.txt
+
+Structure description:
+- CMakeLists.txt: Project build configuration, includes GoogleTest and source/test files.
+- src/lib/: Contains library code required for test cases. 'owncloud_stub.*' provides C++ stubs simulating original Python APIs/types needed for testing.
+- tests/original/: All translated original (non-public) test cases from Python.
+- public_tests/: C++ translations of public/testable test cases.
+- tests/test_main.cpp: Main entry point for GoogleTest.
+- run_tests.sh: Simple bash script to build and run all tests.
+- project_structure.txt: This file.
+
+How to use:
+1. Install CMake and a modern C++ compiler (GCC>=7 or Clang>=6 recommended).
+2. Run `chmod +x run_tests.sh`
+3. Run `./run_tests.sh` to build and execute all tests.

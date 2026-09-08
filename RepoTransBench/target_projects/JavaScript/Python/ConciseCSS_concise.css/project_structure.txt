@@ -1,0 +1,52 @@
+project_root/
+├── src/
+│   └── concise/
+│       ├── __init__.py
+│       ├── index.py        # Place for actual implementation (not included)
+│       └── lib/
+│           ├── __init__.py
+│           ├── lh.py       # Placeholders for plugins
+│           └── type_scale.py
+├── tests/
+│   └── __init__.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_bin_index_public.py
+│   ├── test_index_public.py
+│   ├── test_lh_public.py
+│   └── test_type_scale_public.py
+├── requirements.txt
+├── run_tests.sh
+├── LICENSE
+├── README.md
+
+project_root/              - Project root directory
+├── src/                   - Python source code (actual implementation goes here)
+│   └── concise/           - Main package directory for concise.css port
+│       ├── __init__.py
+│       ├── index.py       - Main module (not included here, add implementation as needed)
+│       └── lib/           - Directory for plugin logic
+│           ├── __init__.py
+│           ├── lh.py      - Placeholder for LH plugin logic
+│           └── type_scale.py - Placeholder for type-scale plugin logic
+├── tests/                 - Directory for (future) original tests (empty, as JS repo has none)
+│   └── __init__.py
+├── public_tests/          - Directory containing all public tests, fully translated to Python
+│   ├── __init__.py
+│   ├── test_bin_index_public.py    - Translated CLI/bin related public test
+│   ├── test_index_public.py        - Translated public 'index' test (fixture-based)
+│   ├── test_lh_public.py           - Translated LH plugin public tests
+│   └── test_type_scale_public.py   - Translated type-scale plugin public tests
+├── requirements.txt       - Python dependency file (Pytest, pytest-asyncio)
+├── run_tests.sh           - One-click script to run all tests
+├── LICENSE                - License file (copied from source)
+├── README.md              - Readme and documentation (copied from source)
+
+Setup & Testing Instructions:
+1. Install requirements:
+   pip install -r requirements.txt
+2. Place your src/ implementation as needed.
+3. Run all tests:
+   ./run_tests.sh
+
+All tests are in 'public_tests/'. No original (private) tests exist in source repo.

@@ -1,0 +1,32 @@
+ckcr4lyf_EvilAppleJuice-ESP32 Python translation project structure:
+
+.
+├── src/
+│   ├── __init__.py            # Makes src a module
+│   └── devices.py             # Device class implementation (transliterated from C++ logic)
+├── tests/
+│   ├── __init__.py            # Empty, marks tests as a module
+│   └── original/
+│       ├── __init__.py        # Empty, marks original tests as a package
+│       └── test_devices.py    # Original test cases (from test/test_devices.cpp)
+├── public_tests/
+│   ├── __init__.py            # Empty, marks public_tests as a module
+│   └── test_devices.py        # Public test cases (from test/public_test_devices.cpp)
+├── requirements.txt           # Python dependencies (pytest)
+├── run_tests.sh               # One-click test execution script
+└── project_structure.txt      # This explanatory document
+
+Directory explanations:
+
+src/ - Project source code (core logic classes, here Device)
+tests/original/ - Original (non-public) test cases, translated from C++ test/test_devices.cpp
+public_tests/ - Public test cases, translated from C++ test/public_test_devices.cpp
+requirements.txt - Python requirements for development/testing (primarily pytest)
+run_tests.sh - Run all tests with a single command (runs both original and public)
+project_structure.txt - This document summarizing the structure
+
+Setup & testing instructions:
+1. Install dependencies:    pip install -r requirements.txt
+2. Run all tests:           ./run_tests.sh
+
+All tests are implemented in plain pytest format for readability and tooling compatibility.

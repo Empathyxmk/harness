@@ -1,0 +1,32 @@
+flask_babel_rs/
+├── Cargo.toml                # Rust package config defining dependencies and test deps
+├── src/
+│   └── lib.rs                # Babel stub library, core logic for test translation
+├── tests/
+│   └── original/
+│       ├── test_app_factory.rs          # Original test translations
+│       ├── test_date_formatting.rs
+│       ├── test_force_locale.rs
+│       ├── test_init_smoke.rs
+│       ├── test_multiple_apps.rs
+│       ├── test_number_formatting.rs
+├── public_tests/
+│   ├── test_public_app_factory.rs       # Public test translations
+│   ├── test_public_date_formatting.rs
+│   ├── test_public_force_locale.rs
+│   ├── test_public_init_smoke.rs
+│   ├── test_public_multiple_apps.rs
+│   ├── test_public_number_formatting.rs
+├── run_tests.sh               # Shell script to execute all tests with one command
+
+Directory Explanations:
+- src/           : Library crate for Babel stub
+- tests/original/: Original (private) tests ported from Python
+- public_tests/  : Public test suite
+- Cargo.toml     : Rust dependency/build config
+- run_tests.sh   : One-click all-tests runner
+
+Setup & Test Instructions:
+1. Install Rust and Cargo (`curl https://sh.rustup.rs -sSf | sh`)
+2. From the project root, run: `./run_tests.sh`
+3. All tests from both original and public suites will run.

@@ -1,0 +1,16 @@
+language: java
+jdk:
+  - openjdk8
+
+script: "mvn cobertura:cobertura"
+
+branches:
+  only:
+    - main
+
+notifications:
+  email:
+    - binarywang@vip.qq.com
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

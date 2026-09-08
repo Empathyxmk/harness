@@ -1,0 +1,32 @@
+Project Structure:
+
+Grizi-ju_Astar_JPS_Pathplanning_in_ROS/
+├── requirements.txt               # Python dependencies (pytest, numpy)
+├── run_tests.sh                   # Executable test script to run all tests
+├── src/                           # (empty or for future Python module code, if needed)
+├── tests/                         # All original tests
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_astar_jps.py      # Translated from grid_path_searcher/test/test_astar_jps.cpp
+│       └── test_jps_utils.py      # Translated from grid_path_searcher/test/test_jps_utils.cpp
+├── public_tests/                  # All public tests, as in public_test_summary.json
+│   ├── __init__.py
+│   ├── test_astar_jps_public.py   # Translated from grid_path_searcher/test/test_astar_jps_public.cpp
+│   └── test_jps_utils_public.py   # Translated from grid_path_searcher/test/test_jps_utils_public.cpp
+├── project_structure.txt          # (this file; explains structure and how to run)
+└── README.md                      # (general project and testing info)
+
+Explanations:
+- requirements.txt: lists required dependencies, auto-installed by run_tests.sh.
+- src/: place for main algorithm code (not needed for test-only translation unless switching to full Python port).
+- tests/original/: full Python translations of all original C++ tests, with logic preserved.
+- public_tests/: full Python translations of public test cases generated/found in public_test_summary.json.
+- run_tests.sh: Bash script that installs dependencies and runs all tests via pytest.
+- project_structure.txt: this guide with instructions and structure info.
+
+To run all tests:
+    $ chmod +x run_tests.sh
+    $ ./run_tests.sh
+
+Tests will be found and executed (original and public) using pytest.

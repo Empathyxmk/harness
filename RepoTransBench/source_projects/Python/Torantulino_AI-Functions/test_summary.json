@@ -1,0 +1,15 @@
+{
+  "project_name": "Torantulino_AI-Functions",
+  "language": "Python",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:37:19.905374",
+  "original_path": "/workspace/test_enhancement_results/Python/Torantulino_AI-Functions",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/Torantulino_AI-Functions",
+  "tests_path": [
+    "test_ai_function.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

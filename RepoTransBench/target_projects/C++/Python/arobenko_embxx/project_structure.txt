@@ -1,0 +1,32 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Run all tests with one command
+├── project_structure.txt           # This file (project overview and usage)
+├── tests/
+│   ├── original/                   # (Original) Full internal test suite
+│   │   ├── __init__.py
+│   │   ├── conftest.py
+│   │   ├── test_assert.py
+│   │   ├── test_scope_guard.py
+│   │   └── test_stream_logger.py
+├── public_tests/                   # Public-facing tests
+│   ├── __init__.py
+│   ├── test_assert_public.py
+│   ├── test_object_public.py
+│   ├── test_scope_guard_public.py
+│   └── test_stream_logger_public.py
+
+# Directory explanations & usage:
+
+# requirements.txt          - Lists test dependencies (pytest)
+# run_tests.sh              - Make executable ("chmod +x run_tests.sh"). Runs all tests with pytest.
+# tests/original/           - All original, full-coverage tests directly translated from C++
+# public_tests/             - Public showcase/test files directly translated from C++, safe for external users
+
+# Setup:
+# 1. pip install -r requirements.txt
+# 2. ./run_tests.sh
+
+# Test organization:
+# - Original full/coverage tests: tests/original/
+# - Public/externally-facing tests: public_tests/

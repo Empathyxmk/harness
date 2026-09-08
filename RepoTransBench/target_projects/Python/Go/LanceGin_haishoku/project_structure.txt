@@ -1,0 +1,53 @@
+lancegin_haishoku_go_project/
+├── go.mod                  # Go module definition
+├── README.md               # Project overview and test instructions
+├── run_tests.sh            # One-click script to run all tests
+├── project_structure.txt   # (this file) structure & explanations
+├── haishoku/               # (Placeholder for Go source files)
+│   ├── alg.go
+│   ├── haishoku.go
+│   ├── haillow.go
+│   └── ...
+├── tests/
+│   └── original/
+│       ├── alg_test.go
+│       ├── alg_more_test.go
+│       ├── base_test.go
+│       ├── demo_script_test.go
+│       ├── haishoku_class_test.go
+│       ├── haishoku_edgecases_test.go
+│       ├── haishoku_test.go
+│       ├── haillow_test.go
+│       └── init_and_setup_test.go
+├── public_tests/
+│   ├── public_base_test.go
+│   ├── public_alg_test.go
+│   ├── public_alg_more_test.go
+│   ├── public_demo_script_test.go
+│   ├── public_haillow_test.go
+│   ├── public_haishoku_class_test.go
+│   ├── public_haishoku_edgecases_test.go
+│   ├── public_haishoku_test.go
+│   └── public_init_and_setup_test.go
+
+## Directory Explanations
+
+- `go.mod` - Module and dependency configuration for Go.
+- `README.md` - Simple usage and test instruction guide.
+- `run_tests.sh` - Run `go test ./...` on all test files.
+- `project_structure.txt` - This file. Describes structure and intent.
+
+#### Source Code
+- `haishoku/` - Implementation of Haishoku color extraction and related algorithms, ported to Go.
+  - (NOTE: Only skeletons needed for tests to build—see test files for test logic.)
+
+#### Test Suites
+- `tests/original/` - Original functionality and edge-case tests, ported from Python `tests/`.
+- `public_tests/` - Public sample/coverage/edge-case tests, ported from Python `public_tests/`.
+
+All tests conform to Go's standard testing practices: filenames end in `_test.go` and test functions start with `Test`.
+
+## How To Extend
+
+- Implement missing functions in the `haishoku/` directory to make all tests pass.
+- Add new test files under appropriate test directories.

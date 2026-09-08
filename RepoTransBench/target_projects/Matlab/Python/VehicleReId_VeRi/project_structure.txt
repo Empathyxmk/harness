@@ -1,0 +1,34 @@
+VehicleReId_VeRi-python/
+├── src/
+│   └── vehiclereid/
+│       ├── __init__.py
+│       └── compute_ap.py
+├── tests/
+│   └── original/
+│       └── test_compute_ap.py
+├── public_tests/
+│   └── test_public_test_compute_ap.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── project_structure.txt
+
+Structure Explanation:
+
+- src/vehiclereid/: Core Python modules; includes compute_ap.py with the compute_AP function ported from the Matlab logic.
+- tests/original/: All "original" tests, straight translation from Matlab code/test_compute_AP.m.
+- public_tests/: All "public" tests, translation of code/public_test_compute_AP.m.
+- requirements.txt: Install dependencies (pytest, numpy).
+- run_tests.sh: One-command test runner (executes all tests via pytest).
+- README.md: Project introduction, test running instructions, and notes.
+- project_structure.txt: This file; overview of the repo layout and component explanations.
+
+Setup/Testing Instructions:
+
+1. Set up the environment (ideally in a virtualenv), then:
+    pip install -r requirements.txt
+
+2. To run ALL tests (original and public), run:
+    ./run_tests.sh
+
+All test cases from the Matlab project have complete, direct Python equivalents and will be run with this script.

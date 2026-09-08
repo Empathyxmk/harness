@@ -1,0 +1,50 @@
+Project Structure:
+-----------------------
+
+super_expressive-python/
+├── src/
+│   └── super_expressive/
+│       ├── __init__.py
+│       └── core.py                  # Main library module; EXPORTED API for tests.
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_core.py             # Original test cases, from index.test.js
+├── public_tests/
+│   ├── __init__.py
+│   └── test_public_core.py          # Public test cases, from index.public.test.js
+├── requirements.txt                 # Python dependencies; includes pytest
+├── run_tests.sh                     # Run all tests with 'pytest'
+├── project_structure.txt            # This file
+-----------------------
+
+Directory/Files Overview:
+
+src/super_expressive/
+    - Python package for the main functionality (implementations go in core.py).
+
+tests/original/
+    - Contains all original ("private") tests converted from JavaScript.
+
+public_tests/
+    - Contains all public test cases, independently converted.
+
+requirements.txt
+    - Lists testing/development dependencies.
+
+run_tests.sh
+    - Run this script to execute all unit tests with one command.
+
+Setup & Usage:
+-----------------------
+1. Install dependencies:
+    pip install -r requirements.txt
+
+2. Run all tests:
+    ./run_tests.sh
+
+You can also run individual test files directly with:
+    pytest tests/
+    pytest public_tests/
+-----------------------

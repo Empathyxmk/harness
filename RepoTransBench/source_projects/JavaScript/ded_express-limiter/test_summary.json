@@ -1,0 +1,16 @@
+{
+  "project_name": "ded_express-limiter",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.61,
+    "branch": 93.75
+  },
+  "timestamp": "2025-06-19T10:11:33.163289",
+  "original_path": "/workspace/runnable_filter/JavaScript/ded_express-limiter",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/ded_express-limiter",
+  "tests_path": [
+    "tests/index.js",
+    "tests/edge_cases.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

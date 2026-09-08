@@ -1,0 +1,25 @@
+project_root/
+├── README.md                 # Project readme, setup and instructions
+├── requirements.txt          # Python dependencies (pytest, pycryptodome)
+├── run_tests.sh              # Simple one-click test runner (runs pytest)
+├── src/
+│   └── tinyaes/
+│       ├── __init__.py       # Package init
+│       └── aes.py            # AES minimalistic Python interface (unified CBC/ECB/CTR)
+├── tests/
+│   └── original/
+│       ├── __init__.py       # Test package init
+│       ├── test_edge_cases.py# Python translation of test_edge_cases.c
+│       └── test_test_c.py    # Python translation of test.c core suite
+├── public_tests/
+│   ├── __init__.py           # Public tests package init
+│   ├── test_public.py        # Python translation of test_public.c
+│   └── test_edge_cases_public.py # Python translation of test_edge_cases_public.c
+└── project_structure.txt     # This file: structure and directory explanations
+
+Explanations:
+- src/tinyaes/: Implements the Python test harness for AES with CBC/CTR/ECB, using pycryptodome so test code can focus on inputs/outputs.
+- tests/original/: Original test logic (from test.c and test_edge_cases.c) in Python/pytest.
+- public_tests/: Official public/edge-case tests for public API behavior.
+- requirements.txt: All required Python packages.
+- run_tests.sh: Run all tests (public + original) with a single command.

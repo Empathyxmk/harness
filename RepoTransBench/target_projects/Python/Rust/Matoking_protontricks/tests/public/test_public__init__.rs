@@ -1,0 +1,1 @@
+// Ensures public_tests is treated as a module for test discovery if needed.

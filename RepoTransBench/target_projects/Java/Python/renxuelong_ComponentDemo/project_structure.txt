@@ -1,0 +1,52 @@
+.
+├── requirements.txt            # Python dependencies (pytest)
+├── run_tests.sh                # Run all tests with one command
+├── README.md                   # Setup and usage instructions
+├── project_structure.txt       # Project structure and directory guide
+├── src/
+│   ├── componentbase/
+│   │   ├── __init__.py
+│   │   ├── service_factory.py
+│   │   ├── empty_service/
+│   │   │   ├── __init__.py
+│   │   │   └── empty_account_service.py
+│   │   └── service/
+│   │       ├── __init__.py
+│   │       └── i_account_service.py
+│   ├── login/
+│   │   ├── __init__.py
+│   │   └── ... # (add if needed by test mocking)
+│   ├── share/
+│   │   ├── __init__.py
+│   │   └── ... # (add if needed by test mocking)
+│   └── base/
+│       ├── __init__.py
+│       └── ... # (add if needed by test mocking)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_componentbase_example_instrumented.py
+│       ├── test_componentbase_servicefactory.py
+│       ├── test_componentbase_example_unit.py
+│       ├── test_componentbase_emptyaccountservice.py
+│       ├── test_login_example_instrumented.py
+│       ├── test_login_example_unit.py
+│       ├── test_app_example_instrumented.py
+│       ├── test_app_example_unit.py
+│       ├── test_share_example_instrumented.py
+│       ├── test_share_example_unit.py
+│       ├── test_base_example_instrumented.py
+│       └── test_base_example_unit.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_componentbase_example_instrumented_public.py
+│   ├── test_componentbase_example_unit_public.py
+│   ├── test_componentbase_servicefactory_public.py
+│   ├── test_componentbase_emptyaccountservice_public.py
+│   ├── test_login_example_instrumented_public.py
+│   ├── test_login_example_unit_public.py
+│   ├── test_share_example_instrumented_public.py
+│   ├── test_share_example_unit_public.py
+│   ├── test_base_example_instrumented_public.py
+│   └── test_base_example_unit_public.py

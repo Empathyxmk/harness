@@ -1,0 +1,41 @@
+Project Structure: Cybereason_Logout4Shell (C# Translation)
+
+/
+├── Cybereason_Logout4Shell.sln         # .NET Solution file to organize projects
+├── src/
+│   └── Cybereason_Logout4Shell/
+│       ├── Cybereason_Logout4Shell.csproj # Main C# project file
+│       └── Log4j.cs                        # Main application logic (placeholder, as no logic provided)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj             # xUnit test project for original (private) tests
+│       └── Log4jTest.cs                     # C# translation of src/test/java/Log4jTest.java
+├── public_tests/
+│   ├── PublicTests.csproj                   # xUnit test project for public tests
+│   └── Log4jPublicTest.cs                   # C# translation of src/test/java/Log4jPublicTest.java
+├── run_tests.sh                             # One-click script to run all tests
+├── README.md                                # Documentation (setup, run instructions, etc.)
+└── project_structure.txt                    # This file (project tree & docs)
+
+Directory/Files Explanation:
+
+- Cybereason_Logout4Shell.sln : .NET Core solution file linking all projects
+- src/Cybereason_Logout4Shell : Main application code (placeholder - no source code provided)
+    - Log4j.cs : C# class for Log4j logic (stubbed with the public methods used in tests)
+- tests/original : Contains all original (non-public) translated tests
+    - OriginalTests.csproj : xUnit test project for original tests
+    - Log4jTest.cs : Full C# translation of Log4jTest.java, testing Log4j behaviors
+- public_tests : Contains all public translated tests
+    - PublicTests.csproj : xUnit test project for public tests
+    - Log4jPublicTest.cs : Full C# translation of Log4jPublicTest.java
+- run_tests.sh : Simple bash script to run ALL tests in one shot via dotnet test
+- README.md : Human-friendly instructions to build, test, and use the project
+- project_structure.txt : Overview & documentation for maintainability
+
+Setup/Testing Instructions:
+1. Prerequisite: .NET 6.0 SDK+ installed.
+2. Restore dependencies: `dotnet restore`
+3. Run all tests: `./run_tests.sh`
+4. To run tests for a specific test project:
+   - Original tests: `dotnet test tests/original/`
+   - Public tests: `dotnet test public_tests/`

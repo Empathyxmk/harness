@@ -1,0 +1,21 @@
+{
+  "project_name": "skorokithakis_shortuuid",
+  "language": "Python",
+  "coverage": {
+    "line": 98.5,
+    "branch": 88.9
+  },
+  "timestamp": "2025-06-19T12:50:56.677989",
+  "original_path": "/workspace/runnable_filter/Python/skorokithakis_shortuuid",
+  "test_result_path": "/workspace/test_enhancement_results/Python/skorokithakis_shortuuid",
+  "tests_path": [
+    "shortuuid/test_cli.py",
+    "shortuuid/test_shortuuid.py",
+    "shortuuid/test_main_additional.py",
+    "shortuuid/test_django_fields.py",
+    "shortuuid/test_shortuuid_init_imports.py",
+    "shortuuid/test_cli_argparse_errors.py",
+    "shortuuid/test_main_branches.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

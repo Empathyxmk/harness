@@ -1,0 +1,11 @@
+{
+  "project_name": "initstring_linkedin2username",
+  "language": "Python",
+  "coverage": {
+    "line": 53.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T11:49:53.777029",
+  "original_path": "/workspace/runnable_filter/Python/initstring_linkedin2username",
+  "test_result_path": "/workspace/test_enhancement_results/Python/initstring_linkedin2username"
+}

@@ -1,0 +1,34 @@
+project_root/
+├── Cargo.toml                # Rust package manifest: dependencies, package info
+├── src/
+│   ├── lib.rs                # Library root - includes all submodules
+│   ├── middleware.rs         # Core middleware and test utilities
+│   ├── settings.rs           # Settings constants stub
+│   ├── tasks.rs              # Email task functions stub
+│   └── wsgi.rs               # WSGI/DispatcherMiddleware stub
+├── tests/
+│   └── original/
+│       ├── test_settings.rs  # Original translated test: settings
+│       ├── test_wsgi.rs      # Original translated test: wsgi
+│       ├── test_tasks.rs     # Original translated test: tasks
+│       └── test_middleware.rs# Original translated test: middleware
+├── public_tests/
+│   ├── test_public_settings.rs      # Public translated test: settings
+│   ├── test_public_wsgi.rs          # Public translated test: wsgi
+│   ├── test_public_tasks.rs         # Public translated test: tasks
+│   └── test_public_middleware.rs    # Public translated test: middleware
+├── run_tests.sh              # One-click script to run all tests
+└── project_structure.txt     # Project structure documentation
+
+# Directory explanations:
+# - src/: Main library source (stubs to allow tests to compile/run)
+# - tests/original/: Translated "original" tests from Python's tests/
+# - public_tests/:   Translated "public" test suite for open source/public sharing
+# - run_tests.sh:    Simple script to run all tests (original+public)
+# - Cargo.toml:      Declares dependencies and test configuration
+
+# Setup and testing instructions:
+# 1. Ensure you have Rust (and cargo) installed.
+# 2. To run all tests: ./run_tests.sh
+#    - This will run both original and public translated test suites.
+# 3. Add real implementations for library logic in src/ if needed.

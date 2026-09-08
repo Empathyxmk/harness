@@ -1,0 +1,66 @@
+{
+  "project_name": "wxy2077_fastapi-mysql-generator",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:27:09.843066",
+  "original_path": "/workspace/verified_repos_v2/Python/wxy2077_fastapi-mysql-generator",
+  "public_test_result_path": "/workspace/public_test_results/Python/wxy2077_fastapi-mysql-generator",
+  "original_tests": {
+    "test_files": [
+      "examples/demo_scheduler/test_main_scheduler.py",
+      "examples/demo_casbin/test_casbin_examples.py",
+      "{{cookiecutter.project_name}}/tests/api/v1/test_cron.py",
+      "{{cookiecutter.project_name}}/tests/api/v1/test_user.py",
+      "{{cookiecutter.project_name}}/tests/api/v1/test_casbin.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/demo_scheduler/test_public_main_scheduler.py",
+      "public_tests/demo_casbin/test_public_casbin_examples.py",
+      "public_tests/api/v1/test_public_cron.py",
+      "run_public_tests.sh",
+      "public_tests/api/v1/test_public_user.py",
+      "public_tests/api/v1/test_public_casbin.py",
+      "run_public_tests.sh",
+      "public_tests/demo_casbin/model.conf",
+      "public_tests/demo_casbin/policy.csv",
+      "public_tests/demo_casbin/custom_model.conf",
+      "public_tests/demo_casbin/test_public_casbin_examples.py",
+      "public_tests/demo_scheduler/test_public_main_scheduler.py",
+      "public_tests/demo_casbin/test_public_casbin_examples.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 13,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/demo_scheduler/test_public_main_scheduler.py",
+    "public_tests/demo_casbin/test_public_casbin_examples.py",
+    "public_tests/api/v1/test_public_cron.py",
+    "run_public_tests.sh",
+    "public_tests/api/v1/test_public_user.py",
+    "public_tests/api/v1/test_public_casbin.py",
+    "{{cookiecutter.project_name}}/core/server.py",
+    "run_public_tests.sh",
+    "public_tests/demo_casbin/model.conf",
+    "public_tests/demo_casbin/policy.csv",
+    "public_tests/demo_casbin/custom_model.conf",
+    "public_tests/demo_casbin/test_public_casbin_examples.py",
+    "public_tests/demo_scheduler/test_public_main_scheduler.py",
+    "public_tests/demo_casbin/test_public_casbin_examples.py"
+  ]
+}

@@ -1,0 +1,11 @@
+gabrieldim_JUnit-CACC-RACC/
+├── difference/
+│   └── difference.go
+├── go.mod
+├── main.go
+├── public_tests/
+│   └── difference_between_days_in_year_public_test.go
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       └── difference_between_days_in_year_test.go

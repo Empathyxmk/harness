@@ -1,0 +1,51 @@
+kevinburke_hamms C++ Project Structure
+
+.
+├── src/
+│   ├── main.cpp              - (Optional) Main file for executable if needed.
+│   └── lib/
+│       └── ...               - Library files (to implement core logic if necessary).
+├── include/
+│   └── ...                   - Header files for library/source code.
+├── tests/
+│   └── original/
+│       ├── test_thread_py.cpp         - Translation of tests/test_thread_py.py
+│       ├── test_utils.cpp             - Translation of tests/test_utils.py
+│       ├── test_morse.cpp             - Translation of tests/test_morse.py
+│       ├── test_endpoints.cpp         - Translation of tests/test_endpoints.py
+│       ├── test_hamms_misc.cpp        - Translation of tests/test_hamms_misc.py
+│       ├── test_hamms_server.cpp      - Translation of tests/test_hamms_server.py
+│       ├── test_init_py.cpp           - Translation of tests/test_init_py.py
+│       └── test_main_py.cpp           - Translation of tests/test_main_py.py
+├── public_tests/
+│   ├── test_public_endpoints.cpp
+│   ├── test_public_hamms_misc.cpp
+│   ├── test_public_hamms_server.cpp
+│   ├── test_public_init_py.cpp
+│   ├── test_public_main_py.cpp
+│   ├── test_public_morse.cpp
+│   ├── test_public_thread_py.cpp
+│   └── test_public_utils.cpp
+├── CMakeLists.txt            - CMake build configuration.
+├── run_tests.sh              - Simple test script (builds and runs all tests).
+├── README.md                 - Project overview and usage instructions.
+└── project_structure.txt     - (This file) Describes the C++ project layout.
+
+Directory explanations:
+src/         - Main source files; library code for the project.
+include/     - Public header files for the project.
+tests/original/ - C++ translations of "original" tests from the Python repo.
+public_tests/   - C++ translations of "public" tests from the Python repo.
+CMakeLists.txt  - Configures build and test with GoogleTest.
+run_tests.sh    - Builds and runs all tests with one command.
+README.md       - Project/documentation info.
+
+How to build and run all tests:
+$ ./run_tests.sh
+
+This will:
+- Build the project using CMake and make.
+- Run all tests using GoogleTest.
+
+No additional dependencies (other than CMake, Make, a C++14+ compiler) are required;
+GoogleTest is fetched automatically as part of the build.

@@ -1,0 +1,35 @@
+blackobfuscatorasplugin/
+├── go.mod                         # Go module definition
+├── tests/
+│   ├── original/
+│   │   ├── abx_test.go            # Original test: test for 'Abx' logic
+│   │   ├── example_instrumented_test.go     # Simulates Android instrumented test in Go
+│   │   ├── example_unit_test.go             # Simple math test (original logic)
+│   │   ├── main_activity_test.go            # Simulates Android MainActivity test in Go
+│   │   ├── mapping_test.go        # Tests mapping logic, file parsing, edge cases
+│   │   ├── obfdex_test.go         # Tests ObfDex (obfuscation) with various scenarios
+│   │   └── testutil.go            # Shared helper functions for tests (empty, placeholder)
+├── public_tests/
+│   ├── abx_public_test.go         # Public test: different Abx scenarios
+│   ├── example_instrumented_public_test.go  # Public test simulating instrumented context check
+│   ├── example_unit_public_test.go          # Math unit test with public data
+│   ├── main_activity_public_test.go         # Public MainActivity welcome message test
+│   ├── mapping_public_test.go     # Public test for Mapping with different data
+│   ├── obfdex_public_test.go      # Public test for ObfDex with public test data
+├── run_tests.sh                   # One-click test execution script (go test ./...)
+└── project_structure.txt          # This file; project structure and overview
+
+# Directory explanations:
+# - tests/original: All translated "original" test cases from the Java source (mirrors coverage, edge cases, and input/output of Java tests)
+# - public_tests: All translated "public" test cases, covering distinct scenarios/inputs as per the original public test suite
+# - testutil.go: Intended for test helpers or shared code, kept in original for compatibility/future expansion
+# - go.mod: Sets Go module, makes 'go test' work across all folders
+# - run_tests.sh: Minimal script to run all test cases with one command
+
+# Setup and testing instructions:
+# 1. Install Go 1.18 or newer.
+# 2. From the project root, run:
+#       chmod +x run_tests.sh
+#       ./run_tests.sh
+# 3. All tests in both 'tests/original' and 'public_tests' will be executed.
+# 4. There are no external dependencies.

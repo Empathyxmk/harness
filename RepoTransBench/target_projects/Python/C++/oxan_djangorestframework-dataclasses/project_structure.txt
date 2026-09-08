@@ -1,0 +1,23 @@
+oxan_djangorestframework-dataclasses-cpp/
+├── CMakeLists.txt
+├── include/
+│   └── (library headers, e.g. field_utils.h, fields.h, serializers.h, typing_utils.h, etc.)
+├── src/
+│   └── (library sources, e.g. field_utils.cpp, fields.cpp, serializers.cpp, typing_utils.cpp, etc.)
+├── tests/
+│   ├── original/
+│   │   ├── test_functional.cpp
+│   │   ├── test_issues.cpp
+│   │   ├── test_serializers.cpp
+│   │   ├── test_py312.cpp
+│   │   ├── test_fields.cpp
+│   │   ├── test_field_generation.cpp
+│   │   ├── test_typing_utils.cpp
+│   │   └── test_field_utils.cpp
+│   └── test_main.cpp
+├── public_tests/
+│   ├── test_public_functional.cpp
+│   ├── test_public_issues.cpp
+│   └── test_public_serializers.cpp
+├── run_tests.sh
+├── test_translation_progress.json

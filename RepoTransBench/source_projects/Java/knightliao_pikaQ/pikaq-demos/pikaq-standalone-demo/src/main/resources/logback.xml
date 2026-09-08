@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <property resource="rabbit.properties"/>
+
+    <property name="log.base" value="./log/pikaq-standalone-demo"/>
+
+    <jmxConfigurator/>
+
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="logfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.base}.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${log.base}.%d{yyyy-MM-dd}.log</FileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="AMQP" class="org.springframework.amqp.rabbit.logback.AmqpAppender">
+        <layout>
+            <pattern>%X{sessionId} %date [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </layout>
+
+        <host>${host}</host>
+        <port>${port}</port>
+        <username>${username}</username>
+        <password>${password}</password>
+        <routingKeyPattern>${routingKeyPattern}</routingKeyPattern>
+        <exchangeName>${exchangeName}</exchangeName>
+
+        <declareExchange>true</declareExchange>
+        <generateId>true</generateId>
+        <charset>UTF-8</charset>
+        <durable>true</durable>
+        <deliveryMode>PERSISTENT</deliveryMode>
+    </appender>
+
+    <logger name="com.github.knightliao">
+        <level value="DEBUG"/>
+    </logger>
+
+    <logger name="org.springframework">
+        <level value="WARN"/>
+    </logger>
+
+    <logger name="org.springframework.amqp.rabbit.logback">
+        <level value="INFO"/>
+    </logger>
+
+    <logger name="net.sf.ehcache">
+        <level value="ERROR"/>
+    </logger>
+
+    <logger name="org.springmodules">
+        <level value="ERROR"/>
+    </logger>
+
+    <root>
+        <level value="INFO"/>
+        <appender-ref ref="stdout"/>
+        <appender-ref ref="logfile"/>
+        <appender-ref ref="AMQP"/>
+    </root>
+
+</configuration>
+

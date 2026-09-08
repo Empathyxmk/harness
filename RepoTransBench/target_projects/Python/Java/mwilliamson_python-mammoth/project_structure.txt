@@ -1,0 +1,27 @@
+.
+├── README.md
+├── pom.xml                # Maven project configuration (with JUnit5)
+├── run_tests.sh           # One-click test script: runs all project tests (chmod +x)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/example/mammoth/  # Java translation of library code should be placed here (not populated by test translation)
+│   └── test/
+│       └── java/
+│           └── com/example/mammoth/
+│               ├── original/
+│               │   ├── TestImagesModule.java
+│               │   ├── TestSetupPy.java
+│               │   ├── TestDocumentMatchersModule.java
+│               │   ├── TestConversionModule.java
+│               │   ├── TestHtmlPathsModule.java
+│               │   ├── TestResultsModule.java
+│               └── public_tests/
+│                   ├── TestPublicResultsModule.java
+│                   ├── TestPublicConversionModule.java
+│                   ├── TestPublicDocumentMatchersModule.java
+│                   ├── TestPublicImagesModule.java
+│                   ├── TestPublicSetupPy.java
+│                   ├── TestPublicHtmlPathsModule.java
+│
+└── ...

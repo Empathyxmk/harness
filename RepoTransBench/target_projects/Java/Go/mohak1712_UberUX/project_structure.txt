@@ -1,0 +1,34 @@
+mohak1712_uberux/
+├── go.mod                     # Go module definition with testify dependency
+├── README.md                  # Project overview and test instructions
+├── run_tests.sh               # Simple script to run all Go tests
+├── tests/
+│   ├── testutil.go            # Test utility shims/dummy types for code compatibility
+│   └── original/
+│       ├── base_activity_test.go
+│       ├── cars_pager_adapter_test.go
+│       ├── example_instrumented_test.go
+│       ├── example_unit_test.go
+│       ├── get_polyline_test.go
+│       ├── login_activity_test.go
+│       ├── login_with_phone_test.go
+│       ├── map_activity_test.go
+│       └── password_activity_test.go
+├── public_tests/
+│   ├── base_activity_public_test.go
+│   ├── cars_pager_adapter_public_test.go
+│   ├── example_instrumented_public_test.go
+│   ├── example_unit_public_test.go
+│   ├── get_polyline_public_test.go
+│   ├── login_activity_public_test.go
+│   ├── login_with_phone_public_test.go
+│   ├── map_activity_public_test.go
+│   └── password_activity_public_test.go
+
+# Directory explanations:
+# - tests/original/:       Translated original Java test cases.
+# - public_tests/:         Translated public Java test cases.
+# - tests/testutil.go:     Provides dummy structs/mocks for code compatibility.
+# - go.mod:                Go dependencies and module setup (uses testify for assertions/mocks).
+# - run_tests.sh:          One-click test run script (runs all tests).
+# - README.md:             Project description and how to run tests.

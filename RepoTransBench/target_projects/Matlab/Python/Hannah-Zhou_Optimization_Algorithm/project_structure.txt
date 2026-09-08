@@ -1,0 +1,31 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_armijo.py
+│       ├── test_bfgs.py
+│       ├── test_broyden.py
+│       ├── test_dampnm.py
+│       ├── test_dfp.py
+│       ├── test_frcg.py
+│       ├── test_golds.py
+│       ├── test_grad.py
+│       ├── test_multphr.py
+│       └── test_trustm.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_armijo.py
+│   ├── test_public_bfgs.py
+│   ├── test_public_broyden.py
+│   ├── test_public_dampnm.py
+│   ├── test_public_dfp.py
+│   ├── test_public_frcg.py
+│   ├── test_public_golds.py
+│   ├── test_public_grad.py
+│   ├── test_public_multphr.py
+│   └── test_public_trustm.py
+└── test_summary.json

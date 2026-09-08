@@ -1,0 +1,11 @@
+{
+  "project_name": "whwlsfb_JDumpSpider",
+  "language": "Java",
+  "coverage": {
+    "line": 58.6,
+    "branch": 56.0
+  },
+  "timestamp": "2025-06-20T04:15:27.282382",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/whwlsfb_JDumpSpider",
+  "test_result_path": "/workspace/test_enhancement_results/Java/whwlsfb_JDumpSpider"
+}

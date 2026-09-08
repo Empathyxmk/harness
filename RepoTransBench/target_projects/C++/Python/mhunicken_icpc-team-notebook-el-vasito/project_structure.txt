@@ -1,0 +1,34 @@
+mhunicken_icpc-team-notebook-el-vasito/
+├── README.md
+├── requirements.txt              # Python dependencies (pytest)
+├── run_tests.sh                  # Simple script to run all tests via pytest
+├── src/                          # (Recommended) Python implementations (empty if only translating tests)
+│   └── __init__.py
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_dinic.py
+│       ├── test_hopcroft_karp.py
+│       ├── test_matching.py
+│       ├── test_min_cost_max_flow.py
+│       └── ... (numbered to match C++ source)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_dinic_public.py
+│   ├── test_hopcroft_karp_public.py
+│   ├── test_matching_public.py
+│   ├── test_min_cost_max_flow_public.py
+├── (other translated test files as needed)
+...
+Description:
+- src/: Contains (optionally) main algorithm implementations. May be empty for pure-test translation.
+- tests/original/: Contains original translated tests from C++ ("_test.cpp" => "test_*.py"). One file per functionality.
+- public_tests/: Contains public-facing test cases (translated).
+- run_tests.sh: One-click script; runs "pytest tests/ public_tests/" for all tests.
+- requirements.txt: Contains pytest test dependency.
+- README.md: General documentation and project intro.
+
+Instructions:
+1. Install requirements: `pip install -r requirements.txt`
+2. Run all tests (original + public): `./run_tests.sh`
+   - Confirm all tests pass and output is as expected.

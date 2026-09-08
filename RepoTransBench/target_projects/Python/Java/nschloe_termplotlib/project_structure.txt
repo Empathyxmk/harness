@@ -1,0 +1,73 @@
+nschloe-termplotlib Java Port Project Structure
+==============================================
+
+.
+├── pom.xml                   # Maven build and dependency configuration
+├── run_tests.sh              # Simple script to run all tests
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── termplotlib/
+│   │                   ├── barh/
+│   │                   │   ├── Barh.java         # Barh plotting stub
+│   │                   │   └── PublicBarh.java   # (optional) public alias
+│   │                   ├── plot/
+│   │                   │   ├── Plot.java         # Plot stub
+│   │                   │   └── PublicPlot.java   # (optional) public alias
+│   │                   ├── hist/
+│   │                   │   ├── Hist.java         # Histogram stub
+│   │                   │   └── PublicHist.java   # (optional) public alias
+│   │                   ├── subplot/
+│   │                   │   ├── Subplot.java      # Subplot stub
+│   │                   │   └── SubplotUtil.java  # Helper: tuple structure for Subplot tests
+│   │                   ├── figure/
+│   │                   │   ├── Figure.java       # Figure stub
+│   │                   │   ├── Axes.java         # Axes stub
+│   │                   │   ├── FigureUtil.java   # Helper: tuple structure (not always needed)
+│   │                   │   ├── PublicFigure.java # (optional) public alias
+│   │                   │   └── PublicAxes.java   # (optional) public alias
+│   │                   ├── barh/
+│   │                   │   └── package-info.java # Package marker (for completeness)
+│   │                   ├── plot/
+│   │                   │   └── package-info.java # Package marker
+│   │                   ├── hist/
+│   │                   │   └── package-info.java # Package marker
+│   │                   ├── subplot/
+│   │                   │   └── package-info.java # Package marker
+│   │                   └── figure/
+│   │                       └── package-info.java # Package marker
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── TestBarh.java
+│                   │   ├── TestSubplot.java
+│                   │   ├── TestScatter.java
+│                   │   ├── TestFigure.java
+│                   │   ├── TestPlot.java
+│                   │   └── TestHist.java
+│                   └── publictest/
+│                       ├── TestBarhPublic.java
+│                       ├── TestSubplotPublic.java
+│                       ├── TestPlotPublic.java
+│                       ├── TestScatterPublic.java
+│                       ├── TestHistPublic.java
+│                       └── TestFigurePublic.java
+
+Instructions:
+-------------
+- **Build & Test:** Just run `./run_tests.sh` in the root directory to compile and execute ALL tests (original & public).
+- **Dependencies:** Managed by Maven via pom.xml (`mvn clean test` will work as well)
+- **Adding/Organizing Tests:**
+  - Original tests are under `src/test/java/com/example/original/`
+  - Public tests are under `src/test/java/com/example/publictest/`
+- **Stubs:** Source under `src/main/java/com/example/termplotlib/` only provides empty methods/classes as placeholders
+  (critical for tests to compile).
+
+Notes:
+------
+- Output and display code is NOT implemented - the `termplotlib` methods/classes here are stubs only for testing translation logic.
+- To provide a working version, real plotting logic must be implemented in the main package.

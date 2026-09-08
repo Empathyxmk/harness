@@ -1,0 +1,29 @@
+project_root/
+├── README.md                   # Project documentation
+├── requirements.txt            # Python dependencies for pytest
+├── run_tests.sh                # Simple script to run all tests
+├── src/
+│   └── the_super_tiny_compiler.py   # Python implementation stub (to be filled)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_the_super_tiny_compiler.py          # Original test translation 1
+│       └── test_the_super_tiny_compiler_extra.py    # Original test translation 2
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_the_super_tiny_compiler_public.py       # Public test translation 1
+│   └── test_the_super_tiny_compiler_extra_public.py # Public test translation 2
+
+Directory explanations:
+- src/:  Contains the source code for 'the_super_tiny_compiler' Python module (implement as needed).
+- tests/original/: Contains translations of the original (non-public) JavaScript test cases.
+- public_tests/:  Contains translations of public test cases only (based on public spec JS files).
+- requirements.txt: Lists dependencies (pytest) for easy pip installation.
+- run_tests.sh: Simple script that invokes pytest for all tests.
+
+Setup & Testing Instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+   (or `pytest` directly)
+3. All tests are auto-discovered by pytest from 'tests/' and 'public_tests/'.

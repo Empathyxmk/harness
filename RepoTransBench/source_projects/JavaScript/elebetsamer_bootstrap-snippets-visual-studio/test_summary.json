@@ -1,0 +1,15 @@
+{
+  "project_name": "elebetsamer_bootstrap-snippets-visual-studio",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.36,
+    "branch": 87.5
+  },
+  "timestamp": "2025-06-19T10:18:54.970665",
+  "original_path": "/workspace/runnable_filter/JavaScript/elebetsamer_bootstrap-snippets-visual-studio",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/elebetsamer_bootstrap-snippets-visual-studio",
+  "tests_path": [
+    "build.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

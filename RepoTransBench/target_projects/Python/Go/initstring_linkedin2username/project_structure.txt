@@ -1,0 +1,20 @@
+initstring_linkedin2username Go translation
+.
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── linkedin2username.go                       # ← would hold main implementation (not shown)
+├── tests/
+│   └── original/
+│       ├── georegions_test.go
+│       ├── import_python_test.go
+│       ├── linkedin2username_test.go
+│       ├── linkedin2username_minimal_test.go
+│       └── namemutator_test.go
+├── public_tests/
+│   ├── public_georegions_test.go
+│   ├── public_import_python_test.go
+│   ├── public_linkedin2username_minimal_test.go
+│   ├── public_linkedin2username_test.go
+│   └── public_namemutator_test.go
+└── (plus any implementation: linkedin2username.go, etc.)

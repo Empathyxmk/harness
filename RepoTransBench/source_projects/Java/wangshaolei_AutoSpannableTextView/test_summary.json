@@ -1,0 +1,11 @@
+{
+  "project_name": "wangshaolei_AutoSpannableTextView",
+  "language": "Java",
+  "coverage": {
+    "line": 66.7,
+    "branch": 60.0
+  },
+  "timestamp": "2025-06-23T13:27:30.706945",
+  "original_path": "/workspace/runnable_filter/Java/wangshaolei_AutoSpannableTextView",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/wangshaolei_AutoSpannableTextView"
+}

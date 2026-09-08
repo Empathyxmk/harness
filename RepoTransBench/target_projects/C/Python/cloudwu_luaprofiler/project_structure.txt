@@ -1,0 +1,28 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── README.md                      # ADDED: Quickstart/setup guide
+├── project_structure.txt          # This file: documentation of the structure
+├── tests/
+│   ├── __init__.py                # ADDED: Ensures package discoverability
+│   └── original/
+│       ├── __init__.py
+│       ├── test_profiler_functional.py         # Python translation of test.lua and C test logic
+│       └── test_profiler_integration.py        # Functional test: validation of foo/factorial computation
+├── public_tests/
+│   ├── __init__.py
+│   └── test_profiler_public.py                 # Python public test translation of public_test.lua
+#
+# Explanations:
+#   - requirements.txt: Declares dependencies (pytest)
+#   - run_tests.sh: Simple test runner, executes all tests via pytest
+#   - README.md: Quick setup and usage guide
+#   - tests/original/: Contains test cases translated from original C/Lua tests (test.lua, test_profiler.c)
+#   - public_tests/:  Contains tests that mirror public_test.lua logic used for public verification
+#   - project_structure.txt: This documentation
+#
+# How to set up and run tests:
+# 1. Ensure Python 3 is installed.
+# 2. Install dependencies: pip install -r requirements.txt
+# 3. Run all tests: ./run_tests.sh
+#    All original and public tests will be executed and results shown.

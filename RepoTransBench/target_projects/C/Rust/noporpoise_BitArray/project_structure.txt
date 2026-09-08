@@ -1,0 +1,20 @@
+noporpoise_bitarray/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── bit_array.rs
+│   ├── bitlock.rs
+│   └── bar.rs
+├── tests/
+│   ├── original/
+│   │   ├── mod.rs
+│   │   ├── bit_array_test.rs
+│   │   ├── bitlock_test.rs
+│   │   └── bitlock_try_test.rs
+├── public_tests/
+│   ├── mod.rs
+│   ├── bit_array_public_test.rs
+│   ├── bitlock_public_test.rs
+│   └── bitlock_try_public_test.rs
+├── run_tests.sh
+└── project_structure.txt

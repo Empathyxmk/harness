@@ -1,0 +1,36 @@
+baddoo_piDMD_python/
+├── README.md
+├── requirements.txt              # Python dependencies (numpy, scipy, pytest)
+├── run_tests.sh                  # One-click test execution script
+├── src/
+│   ├── __init__.py
+│   └── pidmd.py                  # Main implementations of tls, piDMD, redblue, rq
+├── tests/
+│   ├── __init__.py
+│   ├── test_tls.py               # Original test for tls
+│   ├── test_redblue.py           # Original test for redblue
+│   ├── test_pidmd.py             # Original test for piDMD
+│   ├── test_orthogonal.py        # Original test for piDMD/orthogonal
+│   ├── test_rq.py                # Original test for rq
+│   └── test_circulant.py         # Original test for piDMD circulant/shift
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_tls.py               # Public test for tls
+│   ├── test_redblue.py           # Public test for redblue
+│   ├── test_pidmd.py             # Public test for piDMD
+│   ├── test_orthogonal.py        # Public test for orthogonal
+│   ├── test_rq.py                # Public test for rq
+│   └── test_circulant.py         # Public test for piDMD circulant/shift
+
+Directory explanation:
+- src/: Main source module containing all core algorithm implementations.
+- tests/: Original test cases (derived from Matlab's tests/) using pytest.
+- public_tests/: Public-facing test cases (derived from Matlab's public_tests/) using pytest.
+- requirements.txt: Dependencies (numpy, scipy, pytest, matplotlib for colormap).
+- run_tests.sh: Run all tests (both tests/ and public_tests/) with one-click.
+- README.md: Documentation and setup instructions.
+
+Setup & Testing Instructions:
+1. pip install -r requirements.txt
+2. ./run_tests.sh
+All tests will be discovered and executed via pytest.

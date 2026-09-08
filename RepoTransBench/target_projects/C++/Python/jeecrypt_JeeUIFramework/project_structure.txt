@@ -1,0 +1,62 @@
+jeecrypt_JeeUIFramework_python/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # One-click script to run all tests
+├── src/                            # (Empty or for shared implementation)
+│
+├── tests/                          # All "original" test cases (from C++)
+│   └── original/
+│       ├── __init__.py             # (empty)
+│       └── test_framework_compile.py # 'Compiles and setup/loop can be called'
+│
+├── public_tests/                   # All public test cases (from C++)
+│   ├── __init__.py                 # (empty)
+│   └── test_public_framework_build.py # 'Public framework build validation'
+│
+└── project_structure.txt           # This file; describes structure and usage
+
+=====================================
+Directory/Files explanation:
+
+- requirements.txt
+    Lists all Python dependencies required to run the tests. Install with:
+        pip install -r requirements.txt
+
+- run_tests.sh
+    Executable shell script. Run all tests with:
+        ./run_tests.sh
+
+- src/
+    Placeholder for shared library code if needed. For this translated project,
+    no implementation files are needed as tests just check "compilation"/presence
+    of stubs.
+
+- tests/original/
+    Contains all the original (non-public) test cases translated from C++.
+    Each test file corresponds to a test scenario from the C++ sources.
+    - test_framework_compile.py: Checks stub setup/loop can be called.
+
+- public_tests/
+    Contains public tests as found/generated in the public test summary.
+    - test_public_framework_build.py: Alternative stub + slightly different call/assert.
+
+- __init__.py
+    Present in both test folders to mark as packages (pytest compatibility).
+
+- project_structure.txt
+    This overview and file explanations.
+
+=====================================
+Setup & running instructions:
+
+1. (Recommended) Create a virtual environment:
+        python -m venv .venv
+        source .venv/bin/activate
+
+2. Install dependencies:
+        pip install -r requirements.txt
+
+3. Run all tests:
+        chmod +x run_tests.sh
+        ./run_tests.sh
+
+All tests in tests/original/ and public_tests/ will run using pytest, with output in the console.

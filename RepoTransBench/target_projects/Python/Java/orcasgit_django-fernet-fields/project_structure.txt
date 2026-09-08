@@ -1,0 +1,38 @@
+.
+├── pom.xml
+├── run_tests.sh
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── orcasgit
+│   │               └── fernetfields
+│   │                   ├── BaseField.java
+│   │                   ├── EncryptedCharField.java
+│   │                   ├── EncryptedTextField.java
+│   │                   └── FernetField.java
+│   └── test
+│       └── java
+│           └── com
+│               └── orcasgit
+│                   └── fernetfields
+│                       ├── original
+│                       │   ├── FieldsExtraTest.java
+│                       │   └── FieldsTest.java
+│                       └── public_tests
+│                           ├── PublicFieldsExtraTest.java
+│                           └── PublicFieldsTest.java
+
+# Explanation:
+# - pom.xml: Maven build and dependency config (JUnit, etc)
+# - run_tests.sh: One-click script to run all tests (mvn clean test)
+# - src/main/java/com/orcasgit/fernetfields/: Java implementations of the (mock) crypto field classes
+# - src/test/java/com/orcasgit/fernetfields/original/: "Original" (private/internal) testcases as Java JUnit 5 classes, 1:1 with source logic
+# - src/test/java/com/orcasgit/fernetfields/public_tests/: "Public" testcases, translated from public_tests/ Python files
+# 
+# How to run tests:
+#   1. Ensure Maven is installed.
+#   2. Run: chmod +x run_tests.sh
+#   3. Run all tests (original+public): ./run_tests.sh
+#
+# JUnit 5 is enabled in pom.xml; all *Test.java under src/test/java are discovered automatically.

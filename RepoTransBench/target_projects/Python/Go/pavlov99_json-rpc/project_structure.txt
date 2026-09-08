@@ -1,0 +1,62 @@
+pavlov99_jsonrpc Go Project Structure
+=====================================
+
+.
+├── go.mod                   # Go module file
+├── run_tests.sh             # Script to run all tests (Go standard)
+├── project_structure.txt    # This file
+├── README.md                # Documentation and setup instructions
+├── jsonrpc/                 # Main package code (migrated from src)
+│   ├── utils.go             # Utility functions/entities (JSONSerializable, DatetimeDecimalEncoder, etc.)
+│   ├── dispatcher.go        # Dispatcher logic
+│   ├── exceptions.go        # Exceptions and mapped Go errors
+│   ├── jsonrpc1.go          # JSON-RPC 1.0 implementation
+│   ├── jsonrpc2.go          # JSON-RPC 2.0 implementation
+│   ├── jsonrpc.go           # Unified entry for JSON-RPC requests
+│   ├── manager.go           # JSONRPCResponseManager and related
+│   ├── base.go              # Base JSON-RPC classes
+│   └── ...                  # (more .go source files as needed)
+├── tests/
+│   └── original/
+│       ├── jsonrpc1_test.go           # From test_jsonrpc1.py
+│       ├── jsonrpc2_test.go           # From test_jsonrpc2.py
+│       ├── jsonrpc_test.go            # From test_jsonrpc.py
+│       ├── base_test.go               # From test_base.py
+│       ├── bug29_test.go              # From test_bug29.py
+│       ├── dispatcher_test.go         # From test_dispatcher.py
+│       ├── examples20_test.go         # From test_examples20.py
+│       ├── jsonrpc_errors_test.go     # From test_jsonrpc_errors.py
+│       ├── jsonrpc_py_test.go         # From test_jsonrpc_py.py
+│       ├── manager_test.go            # From test_manager.py
+│       ├── pep3107_test.go            # From test_pep3107.py
+│       ├── six_py_test.go             # From test_six_py.py
+│       ├── test_backend_django_integration_test.go
+│       ├── test_backend_flask_integration_test.go
+│       ├── utils_test.go              # From test_utils.py
+│       └── ...                        # (remaining tests, including Django/Flask backend)
+├── public_tests/
+│   ├── jsonrpc1_public_test.go
+│   ├── jsonrpc2_public_test.go
+│   ├── utils_public_test.go
+│   └── ...         # All public tests, 1:1 with python public_tests
+└── README.md
+
+Directory/Files Explanation:
+--------------------------------------
+- jsonrpc/:         Go package source code (converted from .py to .go)
+- tests/original/:  All legacy/original tests from Python ported to Go
+- public_tests/:    All public user-facing tests ported from Python's public_tests
+- go.mod:           Declares the Go module and dependencies
+- run_tests.sh:     Runs all Go tests in the workspace (across original/public)
+- README.md:        Project explanation, setup usage, testing instructions
+
+How to Test:
+--------------------------------------
+1. Ensure you have Go installed (`go version`)
+2. From project root, run:
+   $ chmod +x run_tests.sh
+   $ ./run_tests.sh
+
+This will execute all unit tests (from tests/original and public_tests folders).
+
+Custom test organisation preserves both internal and public verification coverage.

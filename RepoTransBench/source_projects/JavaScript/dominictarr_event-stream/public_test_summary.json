@@ -1,0 +1,44 @@
+{
+  "project_name": "dominictarr_event-stream",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:24:10.580615",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/dominictarr_event-stream",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/dominictarr_event-stream",
+  "original_tests": {
+    "test_files": [
+      "test/es_index_main.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 1,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/es_index_main.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/es_index_main.public.test.js",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 4,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/es_index_main.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/es_index_main.public.test.js",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

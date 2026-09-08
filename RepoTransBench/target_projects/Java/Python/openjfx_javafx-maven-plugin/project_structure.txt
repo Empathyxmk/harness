@@ -1,0 +1,33 @@
+project_root/
+├── requirements.txt             # Python requirements (dependencies)
+├── run_tests.sh                 # One-click script to run all tests
+├── tests/
+│   ├── __init__.py              # (empty file, marking tests as a package)
+│   └── original/                # Original (non-public) test cases
+│       ├── __init__.py
+│       ├── test_javafx_base_mojo.py      # Original JavaFXBaseMojo tests
+│       ├── test_javafx_jlink_mojo.py     # Original JavaFXJLinkMojo tests
+│       ├── test_javafx_run_mojo.py       # Original JavaFXRunMojo tests
+│       └── test_runtime_path_option.py   # Original RuntimePathOption tests
+├── public_tests/                # Public test cases
+│   ├── __init__.py
+│   ├── test_javafx_base_mojo_public.py          # Public JavaFXBaseMojo tests
+│   ├── test_javafx_jlink_mojo_public.py         # Public JavaFXJLinkMojo tests
+│   ├── test_javafx_run_mojo_public.py           # Public JavaFXRunMojo tests
+│   └── test_runtime_path_option_public.py       # Public RuntimePathOption tests
+└── (src/ ...)                   # (Source code, not included, not necessary for running the tests)
+
+# Directory/Files Descriptions
+# - requirements.txt: List of required Python packages (pytest)
+# - run_tests.sh: Simple script to execute all tests
+# - tests/: Main test package directory
+#   - original/: Contains all original (non-public) test translations from Java to Python.
+# - public_tests/: Contains all public test translations from Java to Python.
+# - __init__.py (in each dir): Marks directory as a Python package. Files can be left empty.
+#
+# Setup & Test Instructions:
+# 1. Install requirements: `pip install -r requirements.txt`
+# 2. Run all tests: `./run_tests.sh`
+#
+# All original and public tests are self-contained within their respective folders.
+# All test logic and coverage is preserved from the Java originals.

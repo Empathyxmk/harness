@@ -1,0 +1,13 @@
+localstack_aws-cdk-local-python/
+├── requirements.txt               # Python dependencies (pytest)
+├── run_tests.sh                   # One-click shell script to run all tests
+├── README.md                      # Project description and usage
+├── project_structure.txt          # This file: describes the structure
+├── src/
+│   └── localstack_aws_cdk_local/
+│       ├── __init__.py            # source implementation, contains all exported functions/classes/constants
+├── tests/
+│   └── original/
+│       └── test_index.py          # Full translation of original Jest tests from __tests__/index.test.js
+├── public_tests/
+│   └── test_index_public.py       # Full translation of public tests from public_tests/index.public.test.js

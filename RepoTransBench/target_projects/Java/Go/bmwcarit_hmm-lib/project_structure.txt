@@ -1,0 +1,17 @@
+bmwcarit_hmm-lib/
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── tests/
+│   ├── original/
+│   │   ├── transition_test.go
+│   │   ├── sequencestate_test.go
+│   │   ├── utils_test.go
+│   │   └── viterbialgorithm_test.go
+│   └── testutil.go
+├── public_tests/
+│   ├── transition_public_test.go
+│   ├── sequencestate_public_test.go
+│   ├── utils_public_test.go
+│   └── viterbialgorithm_public_test.go
+└── ... (core Go translations of src/main/java/com/bmw/hmm/*.java not included in this batch)

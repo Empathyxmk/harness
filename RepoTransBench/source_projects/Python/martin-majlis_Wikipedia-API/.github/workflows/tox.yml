@@ -1,0 +1,23 @@
+name: Tests - TOX
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.9", "3.10", "3.11", "3.12", "3.13", "pypy3.9", "pypy3.10"]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: "pip"
+      - name: Install Tox and any other packages
+        run: make requirements-dev
+      - name: Run Tox
+        # Run tox using the version of Python in `PATH`
+        run: tox --version; tox -e py

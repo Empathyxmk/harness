@@ -1,0 +1,11 @@
+{
+  "name": "brettlangdon_jsnice",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

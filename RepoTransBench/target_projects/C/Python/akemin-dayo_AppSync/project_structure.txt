@@ -1,0 +1,12 @@
+akemin-dayo_AppSync/
+├── src/
+│   └── asu_inject/
+│       └── core.py                 # Contains the translated core logic functions (System Under Test)
+├── tests/
+│   └── original/
+│       └── test_asu_inject.py      # Translated original test cases using pytest
+├── public_tests/
+│   └── test_asu_inject_public.py   # Translated public test cases using pytest
+├── requirements.txt                # Lists Python dependencies (pytest)
+├── run_tests.sh                    # Script to install dependencies and run all tests
+└── project_structure.txt           # This document

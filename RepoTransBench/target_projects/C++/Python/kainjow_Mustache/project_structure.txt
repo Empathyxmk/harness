@@ -1,0 +1,33 @@
+project_root/
+├── requirements.txt                  # Python project dependencies (pytest)
+├── run_tests.sh                      # One-click test execution script
+├── project_structure.txt             # Documentation of project structure
+├── tests/
+│   ├── __init__.py                   # For pytest discovery
+│   └── original/
+│       ├── __init__.py               # For pytest discovery
+│       └── test_mustache.py          # Full original tests suite (translated from C++)
+├── public_tests/
+│   ├── __init__.py                   # For pytest discovery
+│   └── test_mustache_public.py       # All public tests (translated from C++)
+└── README.md                         # (Optional) Documentation
+
+Folder/Files explanation:
+
+- requirements.txt: Lists all dependencies for running tests, including pytest.
+- run_tests.sh: Execute all tests (both original and public) with a single command.
+- tests/: Main test directory for the project.
+    - tests/original/: Contains full translation of the project's original test suite, `test_mustache.py`.
+- public_tests/: Contains translation of the project public test cases (`test_mustache_public.py`).
+- __init__.py files: Allow test directories to be recognized as Python packages for pytest discovery.
+- project_structure.txt: Overview of the project layout and explanation of folders/files.
+
+How to set up and run:
+
+1. Install dependencies:  
+   `pip install -r requirements.txt`
+
+2. Run all tests:  
+   `./run_tests.sh`
+
+This will execute all tests (original and public) in both `tests/original/` and `public_tests/`.

@@ -1,0 +1,18 @@
+os_slacker/
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── tests/
+│   ├── test_channels_test.go
+│   ├── test_init_test.go
+│   └── test_utilities_test.go
+├── public_tests/
+│   ├── test_public_channels_test.go
+│   ├── test_public_init_test.go
+│   └── test_public_utilities_test.go
+└── test_translation_progress.json
+
+Legend:
+- tests/ : Original tests translated from Python
+- public_tests/ : Public tests translated from Python public examples
+- *_test.go : Go test file naming convention

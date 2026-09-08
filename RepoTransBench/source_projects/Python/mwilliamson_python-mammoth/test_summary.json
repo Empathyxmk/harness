@@ -1,0 +1,11 @@
+{
+  "project_name": "mwilliamson_python-mammoth",
+  "language": "Python",
+  "coverage": {
+    "line": 73.0,
+    "branch": 98.5
+  },
+  "timestamp": "2025-06-23T10:33:31.084017",
+  "original_path": "/workspace/test_enhancement_results/Python/mwilliamson_python-mammoth",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/mwilliamson_python-mammoth"
+}

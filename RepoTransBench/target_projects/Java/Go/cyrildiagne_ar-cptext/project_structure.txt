@@ -1,0 +1,30 @@
+project_root/
+├── go.mod                            # Go module definition
+├── run_tests.sh                      # Script: runs all tests with one command
+├── project_structure.txt              # This documentation file
+├── tests/
+│   ├── original/
+│   │   ├── desktop_http_client_test.go     # Original DesktopHTTPClient Java tests in Go
+│   │   ├── text_recognition_test.go        # Original TextRecognition Java tests in Go
+│   │   └── image_utils_test.go             # Original ImageUtils Java tests in Go
+├── public_tests/
+│   ├── desktop_http_client_public_test.go  # Public DesktopHTTPClient Go test cases
+│   ├── text_recognition_public_test.go     # Public TextRecognition Go test cases
+│   └── image_utils_public_test.go          # Public ImageUtils Go test cases
+
+Directory Explanations:
+- go.mod: Declares project dependencies and Go module.
+- run_tests.sh: Runs every test in the project with a single command.
+- project_structure.txt: Explains project layout and setup.
+- tests/original/: Contains translations of original (private) Java test cases in Go.
+- public_tests/: Contains public test cases (translated from Java) for public test verification.
+
+Setup and Testing Instructions:
+1. Install Go (version 1.18+ recommended).
+2. Run 'go mod tidy' to download dependencies (testify).
+3. To run all tests, use:
+   ./run_tests.sh
+   or
+   go test ./...
+
+Both public and original tests will be detected and run automatically by Go tooling.

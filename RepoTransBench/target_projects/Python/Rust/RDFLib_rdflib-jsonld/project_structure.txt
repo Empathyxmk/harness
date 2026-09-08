@@ -1,0 +1,29 @@
+project_root/
+├── Cargo.toml                 # Rust project manifest (package info, version, dependencies)
+├── src/
+│   └── lib.rs                 # Crate library: public API and constants (mimics rdflib_jsonld)
+├── tests/
+│   └── original/
+│       ├── test_init.rs               # Original: test importing and symbol existence
+│       ├── test_version_and_metadata.rs  # Original: metadata attributes and docstring
+│       └── test_setup_py.rs           # Original: setup.py tests, script existence/running
+├── public_tests/
+│   ├── test_public_version_and_metadata.rs  # Public: relaxed version/metadata, docstring, setup.py
+│   ├── test_public_init.rs                 # Public: relaxed import and attribute typing
+│   └── test_public_setup_py.rs             # Public: setup.py presence/content, bad-arg run
+├── README.md                     # Project info and setup instructions
+├── run_tests.sh                  # One-click test runner: executes all Rust tests
+└── project_structure.txt         # This structure overview and notes
+
+Directory notes:
+- src/           — main crate source; public API/constants (`lib.rs`)
+- tests/original — Rust integration tests translated from Python's `tests/`
+- public_tests/  — Rust integration tests translated from Python's `public_tests/`
+- Cargo.toml     — package manifest
+- run_tests.sh   — single-command script to execute all test cases
+- README.md      — project overview and usage
+- project_structure.txt — this overview file
+
+Setup & Testing:
+- Run all tests with: `./run_tests.sh`
+- Runs all integration and public tests.

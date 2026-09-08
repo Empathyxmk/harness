@@ -1,0 +1,25 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Simple test execution script
+├── README.md                       # (not present, for user docs)
+├── tests/
+│   ├── __init__.py                 # Test package marker
+│   └── original/
+│       ├── __init__.py             # Original tests package marker
+│       ├── test_asm_bytes.py       # Original test: asm_bytes dummy
+│       ├── test_asm_core.py        # Original test: asm_core dummy
+│       ├── test_compile.py         # Original test: compile dummy (empty, as C++)
+│       └── test_features.py        # Original test: features dummy
+├── public_tests/
+│   ├── __init__.py                 # Public tests package marker
+│   ├── test_asm_bytes_public.py    # Public test: asm_bytes public variant
+│   ├── test_asm_core_public.py     # Public test: asm_core public variant
+│   └── test_compile_public.py      # Public test: compile public variant
+
+# Directory explanations:
+# requirements.txt   - Specifies Python dependencies for running all tests (pytest).
+# run_tests.sh       - Bash script to run all tests using pytest; one-command testing.
+# tests/original/    - Contains the original private/internal tests, translated from C++.
+# public_tests/      - Contains public variant tests, translated from C++.
+# __init__.py files  - Mark the folders as Python packages (for test discovery).
+# README.md          - Here for completeness, not provided.

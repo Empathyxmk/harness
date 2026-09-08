@@ -1,0 +1,16 @@
+{
+  "project_name": "jaredhanson_passport-google-oauth",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:40:38.417057",
+  "original_path": "/workspace/runnable_filter/JavaScript/jaredhanson_passport-google-oauth",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/jaredhanson_passport-google-oauth",
+  "tests_path": [
+    "test/lib/index.test.js",
+    "test/package.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

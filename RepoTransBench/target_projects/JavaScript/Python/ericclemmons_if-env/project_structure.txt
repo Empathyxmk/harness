@@ -1,0 +1,33 @@
+project_root/
+├── requirements.txt         # Python dependencies file (lists pytest)
+├── run_tests.sh            # One-click script to run all tests
+├── bin/
+│   └── if-env.js           # Original CLI JS: still invoked by tests
+├── public_tests/
+│   ├── __init__.py         # Module marker
+│   └── test_if_env_public.py   # Translated public tests for CLI
+├── tests/
+│   ├── __init__.py         # Module marker
+│   └── original/
+│       ├── __init__.py     # Module marker
+│       └── test_if_env.py  # Translated original tests for CLI
+└── project_structure.txt   # This file (structure and explanations)
+
+Directories and files:
+- bin/if-env.js             : The original JS CLI program. Both test families invoke this.
+- requirements.txt          : Python project dependencies (pytest).
+- run_tests.sh              : Executable Bash script; runs all tests via pytest.
+- tests/original/           : Original full test suite, translated to Python (pytest).
+- public_tests/             : Public test suite, translated to Python (pytest).
+- __init__.py               : Marks Python packages per convention.
+- project_structure.txt     : This documentation file.
+
+Setup & Testing Instructions:
+1. Install Python 3 and Node.js.
+2. Install dependencies:
+       pip install -r requirements.txt
+3. Ensure `node` is available and `bin/if-env.js` exists and is executable.
+4. Run all tests with one command:
+       ./run_tests.sh
+
+The provided tests replicate the JavaScript test logic using Python's pytest and subprocess.

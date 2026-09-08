@@ -1,0 +1,62 @@
+{
+  "project_name": "cyfonly_FLogger",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:40:09.604943",
+  "original_path": "/workspace/verified_repos_v2/Java/cyfonly_FLogger",
+  "public_test_result_path": "/workspace/public_test_results/Java/cyfonly_FLogger",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/com/yun/flogger/test/LogFileItemTest.java",
+      "src/test/java/com/yun/flogger/test/FloggerTest.java",
+      "src/test/java/com/yun/flogger/test/TimeUtilTest.java",
+      "src/test/java/com/yun/flogger/test/CommUtilTest.java",
+      "src/test/java/com/yun/flogger/test/ConstantTest.java",
+      "src/test/java/com/yun/flogger/test/FLoggerTest.java",
+      "src/test/java/com/yun/flogger/test/LogManagerTest.java",
+      "src/test/java/com/yun/flogger/test/FloggerThroughputTest.java",
+      "src/test/java/com/yun/flogger/test/FLoggerCoreTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 9,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/com/yun/flogger/test/publics/LogFileItemPublicTest.java",
+      "src/test/java/com/yun/flogger/test/publics/FloggerPublicTest.java",
+      "src/test/java/com/yun/flogger/test/publics/TimeUtilPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/com/yun/flogger/test/publics/CommUtilPublicTest.java",
+      "src/test/java/com/yun/flogger/test/publics/ConstantPublicTest.java",
+      "src/test/java/com/yun/flogger/test/publics/FLoggerCorePublicTest.java",
+      "src/test/java/com/yun/flogger/test/publics/FLoggerTestPublic.java",
+      "src/test/java/com/yun/flogger/test/publics/FloggerThroughputPublicTest.java",
+      "src/test/java/com/yun/flogger/test/publics/LogManagerPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 10,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/com/yun/flogger/test/publics/LogFileItemPublicTest.java",
+    "src/test/java/com/yun/flogger/test/publics/FloggerPublicTest.java",
+    "src/test/java/com/yun/flogger/test/publics/TimeUtilPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/com/yun/flogger/test/publics/CommUtilPublicTest.java",
+    "src/test/java/com/yun/flogger/test/publics/ConstantPublicTest.java",
+    "src/test/java/com/yun/flogger/test/publics/FLoggerCorePublicTest.java",
+    "src/test/java/com/yun/flogger/test/publics/FLoggerTestPublic.java",
+    "src/test/java/com/yun/flogger/test/publics/FloggerThroughputPublicTest.java",
+    "src/test/java/com/yun/flogger/test/publics/LogManagerPublicTest.java"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "project_name": "hackebrot_pytest-tricks",
+  "language": "Python",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T11:46:53.808852",
+  "original_path": "/workspace/runnable_filter/Python/hackebrot_pytest-tricks",
+  "test_result_path": "/workspace/test_enhancement_results/Python/hackebrot_pytest-tricks",
+  "tests_path": [
+    "code_examples/create_tests_via_parametrization/test_foobar.py",
+    "code_examples/create_tests_via_parametrization/test_parametrize.py",
+    "code_examples/create_tests_via_parametrization/test_params.py",
+    "code_examples/show_pytest_warnings/test_foobar_show_warning.py",
+    "code_examples/mark_parametrize_with_indirect/test_sushi_unit.py",
+    "code_examples/mark_parametrize_with_indirect/test_sushi_property_edge.py",
+    "code_examples/mark_parametrize_with_indirect/test_sushi_error.py",
+    "code_examples/mark_parametrize_with_indirect/test_conftest_py_integration.py",
+    "code_examples/mark_parametrize_with_indirect/test_sushi.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,51 @@
+project_root/
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── test_plot_convergence_edge_test.go
+│       ├── test_optimizer_test.go
+│       ├── test_plot_boxplot_test.go
+│       ├── test_setup_py_test.go
+│       ├── test_benchmarks_test.go
+│       ├── test_benchmarks_edge_test.go
+│       ├── test_plot_convergence_test.go
+│       └── test_optimizers/
+│           ├── test_MVO_test.go
+│           ├── test_DE_test.go
+│           ├── test_HHO_test.go
+│           ├── test_BAT_test.go
+│           ├── test_FFA_test.go
+│           ├── test_SSA_test.go
+│           ├── test_PSO_test.go
+│           ├── test_JAYA_test.go
+│           ├── test_GWO_test.go
+│           ├── test_MFO_test.go
+│           ├── test_GA_test.go
+│           ├── test_WOA_test.go
+│           ├── test_CS_test.go
+│           └── test_SCA_test.go
+└── public_tests/
+    ├── test_benchmarks_edge_public_test.go
+    ├── test_plot_convergence_public_test.go
+    ├── test_optimizer_public_test.go
+    ├── test_plot_convergence_edge_public_test.go
+    ├── test_setup_py_public_test.go
+    ├── test_benchmarks_public_test.go
+    ├── test_plot_boxplot_public_test.go
+    └── test_optimizers/
+        ├── test_BAT_public_test.go
+        ├── test_HHO_public_test.go
+        ├── test_SCA_public_test.go
+        ├── test_JAYA_public_test.go
+        ├── test_GWO_public_test.go
+        ├── test_DE_public_test.go
+        ├── test_WOA_public_test.go
+        ├── test_GA_public_test.go
+        ├── test_MFO_public_test.go
+        ├── test_MVO_public_test.go
+        ├── test_SSA_public_test.go
+        ├── test_FFA_public_test.go
+        ├── test_CS_public_test.go
+        └── test_PSO_public_test.go

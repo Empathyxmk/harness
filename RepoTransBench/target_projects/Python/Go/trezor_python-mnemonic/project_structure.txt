@@ -1,0 +1,29 @@
+project_root/
+├── go.mod                      # Go module definition for dependency and build management
+├── run_tests.sh                # One-click test execution script for all Go tests
+├── project_structure.txt       # This project structure explanation
+├── src/
+│   └── mnemonic/               # Source code for the Mnemonic package (adapt or implement as needed)
+│       └── (your mnemonic.go and dependencies should go here)
+├── tests/                      # Original tests translated from Python (full logic maintained)
+│   ├── original/
+│   │   ├── test_mnemonic_extra_test.go
+│   │   ├── test_mnemonic_test.go
+│   │   └── testutil.go
+├── public_tests/               # Public translated tests
+│   ├── test_public_mnemonic_test.go
+│   ├── test_public_mnemonic_extra_test.go
+│   └── testutil.go
+
+# Directory explanations:
+# src/mnemonic/         Contains your implementation of the Mnemonic functionality.
+# tests/original/       Contains the original, non-public test cases translated to Go.
+# public_tests/         Contains the public test cases translated to Go.
+# run_tests.sh          Shell script: just run `./run_tests.sh` to execute all tests.
+# go.mod                Go module file for easy `go test`/`go run`/`go build`.
+# project_structure.txt This file - describes purpose of each directory and setup.
+#
+# Test Execution:
+# 1. Ensure you have the implementation in src/mnemonic/.
+# 2. Run: chmod +x run_tests.sh
+# 3. Run: ./run_tests.sh   (runs all public and original tests)

@@ -1,0 +1,50 @@
+{
+  "project_name": "unterstein_binance-trader",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:20:40.087909",
+  "original_path": "/workspace/verified_repos_v2/Java/unterstein_binance-trader",
+  "public_test_result_path": "/workspace/public_test_results/Java/unterstein_binance-trader",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/io/github/unterstein/BinanceBotApplicationTest.java",
+      "src/test/java/io/github/unterstein/TradingClientTest.java",
+      "src/test/java/io/github/unterstein/BinanceTraderTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/io/github/unterstein/BinanceBotApplicationPublicTest.java",
+      "src/test/java/io/github/unterstein/TradingClientPublicTest.java",
+      "src/test/java/io/github/unterstein/BinanceTraderPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/io/github/unterstein/TradingClientPublicTest.java",
+      "src/test/java/io/github/unterstein/TradingClientPublicTest.java",
+      "src/test/java/io/github/unterstein/TradingClientPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/io/github/unterstein/BinanceBotApplicationPublicTest.java",
+    "src/test/java/io/github/unterstein/TradingClientPublicTest.java",
+    "src/test/java/io/github/unterstein/BinanceTraderPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/io/github/unterstein/TradingClientPublicTest.java",
+    "src/test/java/io/github/unterstein/TradingClientPublicTest.java",
+    "src/test/java/io/github/unterstein/TradingClientPublicTest.java"
+  ]
+}

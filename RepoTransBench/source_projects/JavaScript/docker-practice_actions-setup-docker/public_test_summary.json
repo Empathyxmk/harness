@@ -1,0 +1,38 @@
+{
+  "project_name": "docker-practice_actions-setup-docker",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:41:04.455645",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/docker-practice_actions-setup-docker",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/docker-practice_actions-setup-docker",
+  "original_tests": {
+    "test_files": [
+      "lib/setup-docker.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 1,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/setup-docker.public.test.js",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 2,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/setup-docker.public.test.js",
+    "run_public_tests.sh"
+  ]
+}

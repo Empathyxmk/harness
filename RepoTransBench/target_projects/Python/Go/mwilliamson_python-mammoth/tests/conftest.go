@@ -1,0 +1,1 @@
+// Go does not need a direct equivalent of conftest.py for the basic mocking and fixtures provided there.

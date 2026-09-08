@@ -1,0 +1,37 @@
+true-random/
+├── Cargo.toml                    # Rust package configuration
+├── src/
+│   ├── lib.rs                    # Core library with true_random, get_bit, and get_byte functions
+│   ├── tester.rs                 # Binary to print 10 random numbers
+│   ├── public_test_true_random.rs # Binary to print 15 random numbers
+│   └── public_generate_constant_stream.rs # Binary to generate 20 bytes in a specific pattern
+├── tests/
+│   └── test_true_random.rs       # Original tests for get_bit and get_byte functions
+├── public_tests/
+│   ├── test_true_random.rs       # Public tests for true_random function
+│   └── test_constant_stream.rs   # Public tests for constant stream generation
+└── run_tests.sh                  # Script to run all tests
+
+The project is structured as follows:
+
+1. Core Library (src/lib.rs):
+   - Contains implementations of get_bit(), get_byte(), and true_random() functions
+
+2. Original Tests (tests/):
+   - test_true_random.rs: Tests get_bit() and get_byte() functions
+
+3. Public Tests (public_tests/):
+   - test_true_random.rs: Tests true_random() function
+   - test_constant_stream.rs: Tests constant stream generation
+
+4. Binary Applications (src/):
+   - tester.rs: Prints 10 random numbers
+   - public_test_true_random.rs: Prints 15 random numbers
+   - public_generate_constant_stream.rs: Generates 20 bytes in a specific pattern
+
+5. Test Script:
+   - run_tests.sh: Runs all tests and executables
+
+Setup and Testing Instructions:
+1. Make sure you have Rust and Cargo installed
+2. Run './run_tests.sh' to execute all tests

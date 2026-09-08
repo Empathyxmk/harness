@@ -1,0 +1,50 @@
+Project Structure Overview
+=========================
+
+.
+├── pom.xml                         # Maven configuration file
+├── run_tests.sh                    # Simple script to run all tests
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── Memcacheify.java        # Java source (memcacheify logic stub)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   └── MemcacheifyOriginalTest.java   # Original test cases (from 'tests/test_memcacheify.py')
+│                   └── public_tests/
+│                       └── MemcacheifyPublicTest.java     # Public test cases (from 'public_tests/test_public_memcacheify.py')
+
+Key Directories/Files:
+----------------------
+- src/main/java/com/example/Memcacheify.java:
+    Minimal source stub to allow tests to run. Fully replace with real business logic if ported.
+- src/test/java/com/example/original/MemcacheifyOriginalTest.java:
+    Java translation of original (private) tests.
+- src/test/java/com/example/public_tests/MemcacheifyPublicTest.java:
+    Java translation of public test cases.
+- pom.xml:
+    Standard Maven build file, sets up JUnit5 and Mockito for Java testing.
+- run_tests.sh:
+    Run all tests with one command: './run_tests.sh'
+- project_structure.txt:
+    This documentation
+
+Test Execution Instructions:
+---------------------------
+1. Ensure Java and Maven are installed.
+2. Make run_tests.sh executable if required: 'chmod +x run_tests.sh'
+3. Run tests: './run_tests.sh'
+   - This will run ALL tests (original + public) and print results.
+   - Tests can also be run via 'mvn test' directly.
+
+Separation of test types:
+-------------------------
+- All original (non-public) tests live in:    src/test/java/com/example/original/
+- All public tests live in:                   src/test/java/com/example/public_tests/
+
+Test classes follow Java JUnit5 conventions.

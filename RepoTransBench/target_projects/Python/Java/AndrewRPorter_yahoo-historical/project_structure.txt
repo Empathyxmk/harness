@@ -1,0 +1,49 @@
+AndrewRPorter_yahoo-historical/
+├── LICENSE.txt
+├── README.md
+├── htmlcov/
+│   └── ... (coverage HTML files)
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_constants.py
+│   ├── test_public_fetch.py
+│   ├── test_public_fetcher_core.py
+│   ├── test_public_init_import.py
+│   └── test_public_setup_py.py
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.py
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── andrewporter/
+│                   └── yahoohistorical/
+│                       ├── original/
+│                       │   ├── ConstantsTest.java
+│                       │   ├── FetchTest.java
+│                       │   ├── FetcherCoreTest.java
+│                       │   ├── InitImportTest.java
+│                       │   └── SetupPyTest.java
+│                       └── public_tests/
+│                           ├── PublicConstantsTest.java
+│                           ├── PublicFetchTest.java
+│                           ├── PublicFetcherCoreTest.java
+│                           ├── PublicInitImportTest.java
+│                           └── PublicSetupPyTest.java
+├── test_summary.json
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── test_constants.py
+│   ├── test_fetch.py
+│   ├── test_fetcher_core.py
+│   ├── test_init_import.py
+│   └── test_setup_py.py
+└── yahoo_historical/
+    ├── __init__.py
+    ├── constants.py
+    └── fetch.py

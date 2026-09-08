@@ -1,0 +1,50 @@
+.
+├── Cargo.toml
+├── README.md
+├── run_tests.sh
+├── src/
+│   ├── lib.rs
+│   └── forms_builder/
+│       ├── mod.rs
+│       └── forms/
+│           ├── mod.rs
+│           ├── fields.rs
+│           ├── utils.rs
+│           └── settings.rs
+├── tests/
+│   ├── original/
+│   │   ├── test_core.rs
+│   │   ├── test_docs_conf_import.rs
+│   │   ├── test_fields.rs
+│   │   ├── test_fields_unit.rs
+│   │   ├── test_init_py.rs
+│   │   ├── test_setup_py.rs
+│   │   └── test_utils.rs
+├── public_tests/
+│   ├── test_public_fields.rs
+│   └── test_public_fields_unit.rs
+
+**Directory explanations:**
+- `Cargo.toml`: Rust project manifest (dependencies, package info).
+- `README.md`: Project overview and instructions for building/tests.
+- `run_tests.sh`: One-click test script (runs all tests).
+- `src/`: Rust source code.
+    - `lib.rs`: Rust library entrypoint.
+    - `forms_builder/`: Top-level module.
+        - `mod.rs`: Module definition.
+        - `forms/`: Django-form-builder API shims:
+            - `fields.rs`, `utils.rs`, `settings.rs`: Core logic used by tests.
+- `tests/original/`: All tests directly ported from original Python repo.
+- `public_tests/`: Public/visible tests matching the public Python equivalents.
+
+**Setup/testing instructions:**
+1. Install Rust (https://www.rust-lang.org/tools/install)
+2. In project root, run: `./run_tests.sh`
+   - This builds and runs all tests (original and public).
+   - Output shows all passing/failing tests.
+3. You can also run `cargo test` manually.
+
+**Key notes:**
+- All Python-side test logic is mirrored in Rust, with adaptation to Rust idioms.
+- All helper and edge cases are faithfully preserved.
+- The build is dependency-light and uses only standard cargo features, plus the `regex` and `serial_test` crates for required test logic.

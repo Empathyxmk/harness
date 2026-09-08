@@ -1,0 +1,39 @@
+sunzuolei_astar_dijkstra_rrt_python/
+├── src/
+│   ├── __init__.py                         # Marks package
+│   ├── astar.py                            # Placeholder: translated A* algorithm implementation
+│   ├── dijkstra.py                         # Placeholder: Dijkstra algorithm
+│   ├── rrt.py                              # Placeholder: RRT algorithm implementation
+│   ├── utils.py                            # Placeholder: project utilities
+│   └── nav_map.py                          # Placeholder: map/visualization utilities (for createMap etc.)
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_astar.py                   # Original test (from Matlab: tests/test_astar.m)
+│   │   ├── test_astar_createmap.py         # Original test (from Matlab: tests/test_astar_createmap.m)
+│   │   ├── test_rrt_createmap.py           # Original test (from Matlab: tests/test_rrt_createmap.m)
+│   │   ├── test_rrtplan.py                 # Original test (from Matlab: tests/test_rrtplan.m)
+│   │   ├── test_movcov_mfile_recognizes_classdef_syntax.py
+│   │   ├── test_mocov_is_absolute_path.py
+│   │   ├── test_mocov_line_covered.py
+│   │   ├── test_get_absolute_path.py
+│   │   ├── test_mocov_get_relative_path.py
+│   │   └── test_is_octave.py
+│   └── conftest.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_astar.py
+│   ├── test_public_astar_createmap.py
+│   ├── test_public_rrt_createmap.py
+│   ├── test_public_rrtplan.py
+│   ├── test_public_movcov_mfile_recognizes_classdef_syntax.py
+│   ├── test_public_mocov_is_absolute_path.py
+│   ├── test_public_mocov_line_covered.py
+│   ├── test_public_get_absolute_path.py
+│   ├── test_public_mocov_get_relative_path.py
+│   └── test_public_is_octave.py
+├── requirements.txt                        # Python dependencies
+├── run_tests.sh                            # One-click test runner (pytest)
+├── README.md                               # Project description and usage
+├── project_structure.txt                   # This file (structure + explanations)

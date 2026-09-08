@@ -1,0 +1,45 @@
+madisona-django-google-maps-java/
+├── pom.xml                     # Maven project definition, dependencies, and config
+├── run_tests.sh                # One-click script to execute all Java tests (calls mvn clean test)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── (empty or placeholder for main code)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── WidgetTests.java               # Java translation of original widget tests (test_widget.py)
+│                   │   ├── TypeNameTests.java             # Java translation of test_typename.py
+│                   │   ├── GeoPtFieldTests.java           # Java translation of test_geopt_field.py
+│                   │   ├── FieldsModelsWidgetsTests.java  # Java translation of test_fields_models_widgets.py
+│                   │   ├── GeoLocationFieldTests.java     # Java translation of test_geolocation_field.py
+│                   │   ├── SetupManageUrlsTests.java      # Java translation of test_setup_manage_urls.py
+│                   │   └── SampleSimpleTest.java          # Java translation of sample/tests.py
+│                   └── public_tests/
+│                       ├── WidgetPublicTests.java         # Java translation of public_tests/test_public_widget.py
+│                       ├── TypeNamePublicTests.java       # Java translation of public_tests/test_public_typename.py
+│                       └── PublicFieldsModelsWidgetsTests.java # Java translation of public_tests/test_public_fields_models_widgets.py
+
+Directory Explanations:
+-----------------------
+pom.xml                 - Build and dependency specification for Maven (JUnit 5 included)
+run_tests.sh            - Shell script for one-command test runs (mvn clean test)
+src/main/java           - Placeholder for application/main code (not needed for test-only translation)
+src/test/java/com/example/original
+                        - Java package for original tests, direct translation from all original Python tests
+src/test/java/com/example/public_tests
+                        - Java package for public tests, direct translation from Python's public_tests/
+project_structure.txt   - This file, describes layout, explains mapping, setup, and how to run tests
+
+Setup/Testing Instructions:
+---------------------------
+1. Ensure JDK 11+ and Maven 3.8+ are installed.
+2. To run all tests, simply execute:
+       ./run_tests.sh
+   This will compile everything and run all translated Java tests (JUnit style).
+
+3. Test output is available in console. All test implementations match original logic and edge/corner cases.

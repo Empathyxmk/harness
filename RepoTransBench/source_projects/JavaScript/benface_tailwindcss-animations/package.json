@@ -1,0 +1,30 @@
+{
+  "name": "tailwindcss-animations",
+  "version": "2.0.0",
+  "description": "Tailwind CSS plugin to generate animation utilities",
+  "author": "Benoît Rouleau <benoit.rouleau@icloud.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benface/tailwindcss-animations.git"
+  },
+  "bugs": "https://github.com/benface/tailwindcss-animations/issues",
+  "homepage": "https://github.com/benface/tailwindcss-animations",
+  "scripts": {
+    "test": "jest",
+    "release": "f(){ release-it $1 && github-release-from-changelog ;};f"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/register": "^7.27.1",
+    "github-release-from-changelog": "^2.1.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "jest-matcher-css": "^1.1.0",
+    "lodash": "^4.17.21",
+    "postcss": "^7.0.39",
+    "release-it": "^13.6.5",
+    "tailwindcss": "^1.9.6"
+  }
+}

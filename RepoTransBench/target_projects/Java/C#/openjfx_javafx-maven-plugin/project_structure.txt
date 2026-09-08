@@ -1,0 +1,44 @@
+openjfx_javafx_maven_plugin_csharp/
+├── src/
+│   └── OpenJfxJavafxMavenPlugin/
+│       ├── OpenJfxJavafxMavenPlugin.csproj
+│       ├── JavaFXBaseMojo.cs
+│       ├── JavaFXRunMojo.cs
+│       ├── JavaFXJLinkMojo.cs
+│       └── Model/
+│           └── RuntimePathOption.cs
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── JavaFXBaseMojoTest.cs
+│       ├── JavaFXJLinkMojoTest.cs
+│       ├── JavaFXRunMojoTest.cs
+│       ├── JavaFXRunMojoTestCase.cs
+│       ├── Model/
+│       │   └── RuntimePathOptionTest.cs
+│       └── TestHelpers.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── JavaFXBaseMojoPublicTest.cs
+│   ├── JavaFXJLinkMojoPublicTest.cs
+│   ├── JavaFXRunMojoPublicTest.cs
+│   └── Model/
+│       └── RuntimePathOptionPublicTest.cs
+├── OpenJfxJavafxMavenPlugin.sln
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+Directory explanations:
+- src/OpenJfxJavafxMavenPlugin/: Source code (stub implementations where required for compilation)
+- tests/original/: Original test cases translated from Java to C#
+- public_tests/: Public test cases as per public_test_summary.json (translated)
+- Model/: Namespace for runtime path enums/models
+- OpenJfxJavafxMavenPlugin.sln: Solution file referencing all projects
+- *.csproj files: Project definitions including references to xUnit and source project
+- run_tests.sh: One-click test runner using standard dotnet CLI
+- README.md: Project and test instructions
+
+Setup and test instructions:
+1. Install .NET SDK 6+.
+2. From repo root: `./run_tests.sh` to build and run all tests.

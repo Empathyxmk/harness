@@ -1,0 +1,30 @@
+clab_stack-lstm-ner-python/
+├── src/
+│   ├── corpus.py              # Main 'Corpus' class for testing (Python translation of cpyp::Corpus)
+├── tests/
+│   ├── __init__.py            # Makes this a package
+│   └── original/
+│       ├── __init__.py
+│       └── test_corpus.py     # Original/private tests (from test_c2.cpp)
+├── public_tests/
+│   ├── __init__.py
+│   └── test_corpus_public.py  # Public test (from test_c2_public.cpp)
+├── requirements.txt           # Python dependencies (pytest)
+├── run_tests.sh               # One-click test execution (pytest)
+└── project_structure.txt      # This file (project structure description)
+
+# Directory and File Descriptions:
+# - src/: Python source code for main data structures and logic under test.
+#   - corpus.py: The Corpus test class, minimal functionality to allow property tests.
+# - tests/original/: Contains tests mirroring the C++ "private/original" test_c2.cpp, renamed for Python conventions.
+# - public_tests/: Contains tests mirroring the C++ public test test_c2_public.cpp.
+# - requirements.txt: Lists dependencies (pytest).
+# - run_tests.sh: Simple script to run all tests with pytest.
+# - project_structure.txt: Overview and explanation of the Python project structure.
+
+# Setup and Testing Instructions:
+# 1. Install Python (version >=3.7 recommended)
+# 2. Install dependencies:
+#      pip install -r requirements.txt
+# 3. Run all tests:
+#      ./run_tests.sh

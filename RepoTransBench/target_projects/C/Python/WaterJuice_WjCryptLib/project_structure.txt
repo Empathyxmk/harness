@@ -1,0 +1,19 @@
+wjcryptlib/
+├── pyproject.toml         # Project metadata and build configuration
+├── README.md              # Project description
+├── requirements.txt       # Project dependencies
+├── run_tests.sh           # Test execution script
+├── setup.py               # Package installation script
+└── src/                   # Source code
+    └── wjcryptlib/        # Main package
+        ├── __init__.py    # Package initialization
+        ├── aes.py         # AES implementation (CTR mode)
+        └── sha512.py      # SHA-512 implementation
+└── tests/                 # Test directory
+    ├── __init__.py        # Test package initialization
+    ├── original/          # Original tests from C implementation
+    │   └── __init__.py    # Original tests package initialization
+    └── public_tests/      # Public tests
+        ├── __init__.py    # Public tests package initialization
+        ├── test_aesctr_output.py  # AES-CTR output test
+        └── test_sha512_string.py  # SHA-512 string test

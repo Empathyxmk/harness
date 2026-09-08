@@ -1,0 +1,16 @@
+{
+  "project_name": "gabrieldim_JUnit-CACC-RACC",
+  "language": "Java",
+  "coverage": {
+    "line": 98.0,
+    "branch": 96.0
+  },
+  "timestamp": "2025-06-23T10:15:25.117016",
+  "original_path": "/workspace/test_enhancement_results/Java/gabrieldim_JUnit-CACC-RACC",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/gabrieldim_JUnit-CACC-RACC",
+  "tests_path": [
+    "src/DifferenceBetweenDaysInYearTest.java",
+    "src/test/java/DifferenceBetweenDaysInYearTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

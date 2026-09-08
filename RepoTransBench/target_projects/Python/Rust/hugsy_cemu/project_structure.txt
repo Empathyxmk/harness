@@ -1,0 +1,29 @@
+hugsy_cemu/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── main.rs
+├── tests/
+│   ├── original/
+│   │   ├── test_arch.rs
+│   │   ├── test_basic.rs
+│   │   ├── test_errors.rs
+│   │   ├── test_exports.rs
+│   │   ├── test_log.rs
+│   │   ├── test_memory.rs
+│   │   ├── test_os.rs
+│   │   ├── test_settings.rs
+│   │   └── test_utils.rs
+│   └── common.rs
+├── public_tests/
+│   ├── test_public_arch.rs
+│   ├── test_public_basic.rs
+│   ├── test_public_errors.rs
+│   ├── test_public_exports.rs
+│   ├── test_public_log.rs
+│   ├── test_public_memory.rs
+│   ├── test_public_os.rs
+│   ├── test_public_settings.rs
+│   └── test_public_utils.rs
+├── run_tests.sh
+├── test_translation_progress.json

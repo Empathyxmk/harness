@@ -1,0 +1,45 @@
+wendy512_stream/
+├── wendy512_stream.sln               # Solution file for Visual Studio/.NET
+├── run_tests.sh                      # One-click test execution script (dotnet test)
+├── src/
+│   └── wendy512_stream/
+│       └── wendy512_stream.csproj    # Main project file (empty placeholder)
+├── tests/
+│   └── original/                     # Directory for original tests
+│       ├── OriginalTests.csproj      # Test project file (xUnit + Moq)
+│       ├── PulsarStateConfigureTest.cs
+│       ├── PulsarSinkTest.cs
+│       ├── PulsarSourceTest.cs
+│       ├── MqttStateConfigureTest.cs
+│       ├── MqttSinkTest.cs
+│       ├── test_summary.json         # Test coverage summary (from Java, reference only)
+├── public_tests/                     # Directory for public tests
+│   ├── PublicTests.csproj            # Test project file (xUnit + Moq)
+│   ├── PulsarStateConfigurePublicTest.cs
+│   ├── PulsarSinkPublicTest.cs
+│   ├── PulsarSourcePublicTest.cs
+│   ├── MqttStateConfigurePublicTest.cs
+│   ├── MqttSinkPublicTest.cs
+│   ├── public_test_summary.json      # Public test coverage summary (from Java, reference only)
+
+Directory Explanations:
+- wendy512_stream.sln: Solution to make it easy to open/test in Visual Studio.
+- run_tests.sh: Run all tests with 'dotnet test'.
+- src/wendy512_stream: Placeholder for core implementation (empty, just for structure).
+- tests/original: Contains ALL original test cases fully translated to C# (xUnit+Moq).
+- public_tests: Contains ALL public (Open) tests, fully translated (xUnit+Moq).
+- *.csproj: Test projects reference the main project, include Moq for mocking.
+
+Setup/Testing Instructions:
+1. Install [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0) if not present.
+2. To restore dependencies and build everything, run:
+      dotnet restore
+      dotnet build
+3. Run all tests (original & public) with:
+      ./run_tests.sh
+
+Test Output: All xUnit test results will display on the console.
+
+You can also run individual test projects with:
+    dotnet test tests/original/
+    dotnet test public_tests/

@@ -1,0 +1,11 @@
+{
+  "project_name": "chemplexity_molecules",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 98.1,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:06:13.025575",
+  "original_path": "/workspace/runnable_filter/JavaScript/chemplexity_molecules",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/chemplexity_molecules"
+}

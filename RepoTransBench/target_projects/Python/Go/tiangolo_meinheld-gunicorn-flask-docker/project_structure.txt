@@ -1,0 +1,28 @@
+LICENSE
+README.md
+SECURITY.md
+docker-images/
+  app/
+    main.py
+  python3.9.dockerfile
+  requirements.txt
+go.mod
+project_structure.txt
+public_test_summary.json
+public_tests/
+  test_public_main_test.go
+  test_public_utils_minimal_test.go
+  test_public_utils_test.go
+run_public_tests.sh
+run_tests.sh
+test_summary.json
+tests/
+  __init__.py
+  test_01_main/
+    __init__.py
+  test_main_test.go
+  test_utils_minimal_test.go
+  test_utils_test.go
+utils/
+  utils.go
+  utils_test.go

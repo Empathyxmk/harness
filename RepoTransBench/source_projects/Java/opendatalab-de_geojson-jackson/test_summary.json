@@ -1,0 +1,11 @@
+{
+  "project_name": "opendatalab-de_geojson-jackson",
+  "language": "Java",
+  "coverage": {
+    "line": 82.2,
+    "branch": 61.6
+  },
+  "timestamp": "2025-06-19T09:30:52.645650",
+  "original_path": "/workspace/runnable_filter/Java/opendatalab-de_geojson-jackson",
+  "test_result_path": "/workspace/test_enhancement_results/Java/opendatalab-de_geojson-jackson"
+}

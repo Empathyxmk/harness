@@ -1,0 +1,17 @@
+{
+  "project_name": "assertible_lambda-cloudwatch-slack",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 73.8,
+    "branch": 85.71
+  },
+  "timestamp": "2025-06-19T09:56:55.705955",
+  "original_path": "/workspace/runnable_filter/JavaScript/assertible_lambda-cloudwatch-slack",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/assertible_lambda-cloudwatch-slack",
+  "tests_path": [
+    "test/index_handlers.test.js",
+    "test/index_basic.test.js",
+    "test/config.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

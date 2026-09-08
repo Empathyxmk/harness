@@ -1,0 +1,37 @@
+CommonsGuy.Cwac.Merge/                  # Project root
+
+├── CommonsGuy.Cwac.Merge.sln           # .NET solution file, includes all projects
+├── project_structure.txt               # This file. Overview of the project tree
+├── run_tests.sh                        # Script to build and run all tests
+
+├── src/
+│   └── CommonsGuy.Cwac.Merge/
+│       ├── CommonsGuy.Cwac.Merge.csproj   # Main C# class library (core code, stubs, etc.)
+│       └── MergeAdapter.cs                # Contains DummyAdapter and MergeAdapter ported from Java
+
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj           # Test project for original test cases
+│       └── MergeAdapterTest.cs            # Translated original tests from MergeAdapterTest.java
+
+├── public_tests/
+│   ├── PublicTests.csproj                 # Test project for public test cases
+│   └── MergeAdapterPublicTest.cs          # Translated public tests from MergeAdapterPublicTest.java
+
+# Directories:
+#   src/           : Core source code
+#   tests/original/: Original (non-public) test suite
+#   public_tests/  : Public test suite
+
+# Setup & Testing Instructions:
+#
+# 1. Requirements: .NET 6+ SDK (install from https://dotnet.microsoft.com/)
+# 2. To build and run all tests:
+#       $ chmod +x run_tests.sh
+#       $ ./run_tests.sh
+#    - This builds the solution if needed, then runs both original and public test projects, showing all output.
+# 3. For IDEs (e.g. Visual Studio, Rider, VS Code with C# plugin), open 'CommonsGuy.Cwac.Merge.sln'
+#    and run test explorer.
+#
+# All tests are discovered and executed using xUnit and the Microsoft.NET.Test.Sdk.
+# No manual test registration is needed; simply add new [Fact] or [Theory] methods.

@@ -1,0 +1,11 @@
+{
+  "project_name": "python-cas_python-cas",
+  "language": "Python",
+  "coverage": {
+    "line": 80.0,
+    "branch": 93.8
+  },
+  "timestamp": "2025-06-23T10:36:12.112350",
+  "original_path": "/workspace/test_enhancement_results/Python/python-cas_python-cas",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/python-cas_python-cas"
+}

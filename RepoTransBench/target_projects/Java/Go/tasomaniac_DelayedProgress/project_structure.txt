@@ -1,0 +1,28 @@
+tasomaniac_delayedprogress/
+├── delayedprogress/
+│   ├── progress_bar.go                 # Go implementation: mock DelayedProgressBar, Looper, constants, logic, animation, view state
+│   └── progress_dialog.go              # Go implementation: mock DelayedProgressDialog, dialog logic, animation, timers, etc.
+├── tests/
+│   └── original/
+│       ├── delayed_progress_bar_test.go      # All translated original DelayedProgressBar tests
+│       └── delayed_progress_dialog_test.go   # All translated original DelayedProgressDialog tests
+├── public_tests/
+│   ├── delayed_progress_bar_public_test.go   # All translated public DelayedProgressBar tests
+│   └── delayed_progress_dialog_public_test.go# All translated public DelayedProgressDialog tests
+├── go.mod                             # Go module and dependency declaration
+├── run_tests.sh                       # One-click test runner script
+├── README.md                          # Project documentation/setup
+└── project_structure.txt              # This file - overview of project structure and explanation
+
+Directory explanations:
+- delayedprogress/: Non-UI testable implementations of DelayedProgressBar/Dialog and test looper (mock kernel logic for tests).
+- tests/original/: All original Java test cases (from library/src/test/java/com/tasomaniac/android/widget) converted to Go.
+- public_tests/: All public Java test cases converted to Go.
+- go.mod: Go module/dependency setup.
+- run_tests.sh: Execute all tests with a single command.
+- README.md: Quick start & how to run explanations.
+
+How to run:
+1. Install Go 1.18+ and run `go mod download`.
+2. Execute `./run_tests.sh` or `go test ./...`
+All tests will be executed from both original and public suites.

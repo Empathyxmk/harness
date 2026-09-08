@@ -1,0 +1,16 @@
+{
+  "project_name": "codekirei_node-multispinner",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 91.1,
+    "branch": 73.2
+  },
+  "timestamp": "2025-06-19T10:07:13.800970",
+  "original_path": "/workspace/runnable_filter/JavaScript/codekirei_node-multispinner",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/codekirei_node-multispinner",
+  "tests_path": [
+    "test/index.utility.test.js",
+    "test/index.integration.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

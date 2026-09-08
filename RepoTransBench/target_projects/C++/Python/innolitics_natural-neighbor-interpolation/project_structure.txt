@@ -1,0 +1,22 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_api_public.py
+│   ├── test_cube_public.py
+│   ├── test_dummy_cnaturalneighbor_public.py
+│   ├── test_input_validation_public.py
+│   ├── test_output_shape_public.py
+│   └── test_xyz_to_ijk_public.py
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_api.py
+│       ├── test_cube.py
+│       ├── test_dummy_cnaturalneighbor.py
+│       ├── test_geometry_kdtree.py
+│       ├── test_input_validation.py
+│       ├── test_output_shape.py
+│       └── test_xyz_to_ijk.py
+...

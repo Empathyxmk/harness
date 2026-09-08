@@ -1,0 +1,34 @@
+.
+├── MeituanDianpingWalle.sln
+├── src/
+│   └── MeituanDianpingWalle/
+│       ├── MeituanDianpingWalle.csproj
+│       ├── PayloadReader.cs
+│       ├── ChannelInfo.cs
+│       ├── ChannelReader.cs
+│       ├── ApkUtil.cs
+│       ├── SignatureNotFoundException.cs
+│       ├── Pair.cs
+│       └── (supporting classes, if required)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── PayloadReaderTest.cs
+│       ├── ChannelInfoEqualsHashCodeTest.cs
+│       ├── SignatureNotFoundExceptionTest.cs
+│       ├── ApkUtilTest.cs
+│       ├── ChannelInfoTest.cs
+│       ├── PairTest.cs
+│       └── ChannelReaderTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── ChannelInfoEqualsHashCodePublicTest.cs
+│   ├── ApkUtilPublicTest.cs
+│   ├── SignatureNotFoundExceptionPublicTest.cs
+│   ├── ChannelReaderPublicTest.cs
+│   ├── PayloadReaderPublicTest.cs
+│   ├── ChannelInfoPublicTest.cs
+│   └── PairPublicTest.cs
+├── run_tests.sh
+├── README.md
+└── test_translation_progress.json

@@ -1,0 +1,33 @@
+ai_forever_gigachat/             # Project root
+├── Cargo.toml                   # Rust package manifest and dependency config
+├── src/
+│   └── lib.rs                   # Main library file with stubs for core types; implement as needed
+├── tests/
+│   └── original/                # All translated original tests from Python
+│       ├── test_settings.rs
+│       ├── test_assistants.rs
+│       ├── test_examples.rs
+│       ├── test_client.rs
+│       ├── test_models.rs
+│       ├── test_threads.rs
+│       ├── test_get_image.rs
+├── public_tests/
+│   ├── test_public_settings.rs    # Translated public test: settings
+│   ├── test_public_models.rs      # Translated public test: models
+│   ├── test_public_assistants.rs  # Translated public test: assistants logic
+│   ├── test_public_examples.rs    # Translated public test: examples
+│   ├── test_public_client.rs      # Translated public test: client dummy function
+├── run_tests.sh                 # Simple one-click script: runs all tests
+└── project_structure.txt        # This file: describes structure & usage
+
+# Setup & Testing Instructions:
+#  1. Run `./run_tests.sh` to execute all original and public tests.
+#  2. All code and tests organized as per Rust conventions.
+#  3. Add implementations for main types in src/lib.rs as needed for your logic.
+#  4. Use Cargo.toml to manage dependencies.
+
+# Directories:
+#  - src/: Main Rust code and API/types
+#  - tests/original/: Translations of Python original_tests/unit_tests
+#  - public_tests/: Public tests, mirroring Python public_tests logic
+#  - run_tests.sh: Main entry to run all tests.

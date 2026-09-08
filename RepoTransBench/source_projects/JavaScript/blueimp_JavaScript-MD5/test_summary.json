@@ -1,0 +1,15 @@
+{
+  "project_name": "blueimp_JavaScript-MD5",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 93.75,
+    "branch": 55.55
+  },
+  "timestamp": "2025-06-19T10:00:14.676325",
+  "original_path": "/workspace/runnable_filter/JavaScript/blueimp_JavaScript-MD5",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/blueimp_JavaScript-MD5",
+  "tests_path": [
+    "test/md5.unit.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

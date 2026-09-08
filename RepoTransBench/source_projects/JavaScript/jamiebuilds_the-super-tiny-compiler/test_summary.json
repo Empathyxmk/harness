@@ -1,0 +1,16 @@
+{
+  "project_name": "jamiebuilds_the-super-tiny-compiler",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 85.71,
+    "branch": 86.66
+  },
+  "timestamp": "2025-06-19T10:40:37.162020",
+  "original_path": "/workspace/runnable_filter/JavaScript/jamiebuilds_the-super-tiny-compiler",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/jamiebuilds_the-super-tiny-compiler",
+  "tests_path": [
+    "__tests__/the-super-tiny-compiler.spec.js",
+    "__tests__/the-super-tiny-compiler-extra.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

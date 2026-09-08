@@ -1,0 +1,51 @@
+Project Structure for rbarrois_xworkflows Java Translation
+
+.
+├── pom.xml
+├── run_tests.sh
+├── README.md
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── xworkflows
+│   │               ├── base
+│   │               │   ├── FakeBase.java
+│   │               │   └── MinimalWorkflow.java
+│   │               ├── compat
+│   │               │   └── CompatUtils.java
+│   │               └── utils
+│   │                   └── IterclassUtils.java
+│   └── test
+│       └── java
+│           └── com
+│               └── xworkflows
+│                   ├── original
+│                   │   ├── TestUtils.java
+│                   │   └── TestCompat.java
+│                   └── publictests
+│                       ├── TestPublicCompat.java
+│                       ├── TestPublicUtils.java
+│                       ├── TestPublicBase.java
+│                       └── TestPublicUsing.java
+
+Explanations:
+- pom.xml: Maven configuration file specifying dependencies (JUnit 5, Mockito for mocking), build info.
+- run_tests.sh: Simple bash script to run all tests via Maven with one command.
+- src/main/java/com/xworkflows/: Source code package.
+    - base/: Placeholder/dummy base logic for test simulation (FakeBase, MinimalWorkflow).
+    - compat/: Compatibility utility functions (CompatUtils).
+    - utils/: Utility classes such as class attribute reflection (IterclassUtils).
+- src/test/java/com/xworkflows/original/: Original test cases translated from Python, package-separated.
+- src/test/java/com/xworkflows/publictests/: Public test cases translated from Python, package-separated.
+- README.md: (To be included separately; documents test running, Maven info, etc.)
+
+Instructions:
+- Install Maven (if not already): https://maven.apache.org/install.html
+- Run tests: `./run_tests.sh`
+- To add more tests, place them in appropriate packages under `src/test/java/com/xworkflows/`.
+- To add real implementation, add files under `src/main/java/com/xworkflows/`.
+
+NOTE:
+- The source logic for workflows is simulated for test coverage, as actual implementation is unavailable.
+- Assertion logic, exception raising, and structure match the logic of the Python tests.

@@ -1,0 +1,17 @@
+{
+  "project_name": "brandonbloom_jseg",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 86.58,
+    "branch": 74.01
+  },
+  "timestamp": "2025-06-19T10:00:57.690424",
+  "original_path": "/workspace/runnable_filter/JavaScript/brandonbloom_jseg",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/brandonbloom_jseg",
+  "tests_path": [
+    "test/graph_coverage.js",
+    "test/schema_coverage.js",
+    "test/util_coverage.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

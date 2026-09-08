@@ -1,0 +1,19 @@
+project_root/
+├── go.mod                         # Go module definition
+├── README.md                      # Basic project information and test instructions
+├── run_tests.sh                   # One-click test execution script
+├── project_structure.txt          # This file: describes layout and usage
+├── tests/
+│   └── original/
+│       ├── application_test.go              # Application tests (translated from Android Instrumentation/Unit tests)
+│       ├── example_unittest.go              # From ExampleUnitTest.java (app/src/test/... and library/src/test/...)
+│       ├── circleimageview_test.go          # From CircleImageViewTest.java
+│       ├── scrollviewcontainer_test.go      # From ScrollViewContainerTest.java
+│       ├── myimageloader_test.go            # From MyImageLoaderTest.java
+│       └── statusbarview_test.go            # From StatusBarViewTest.java
+├── public_tests/
+│   ├── example_public_unittest.go                 # From ExamplePublicUnitTest.java (app and library, public)
+│   ├── myimageloader_public_test.go
+│   ├── scrollviewcontainer_public_test.go
+│   ├── statusbarview_public_test.go
+│   └── circleimageview_public_test.go

@@ -1,0 +1,43 @@
+project_root/
+├── requirements.txt                   # Python dependencies (pytest)
+├── run_tests.sh                       # One-click script to run all tests (original and public)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_checktarget.py
+│       ├── test_defaulttext.py
+│       ├── test_defaulttextarea.py
+│       ├── test_guismoke.py
+│       ├── test_http.py
+│       ├── test_mainsmoke.py
+│       ├── test_re.py
+│       └── test_txtfile.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_checktarget_public.py
+│   ├── test_defaulttext_public.py
+│   ├── test_defaulttextarea_public.py
+│   ├── test_guismoke_public.py
+│   ├── test_http_public.py
+│   ├── test_mainsmoke_public.py
+│   ├── test_re_public.py
+│   └── test_txtfile_public.py
+│
+README.md                            # Instructions and project overview
+
+----------------------------------------------------------
+Directory explanations:
+- requirements.txt:        Specifies all Python dependencies (just pytest here).
+- run_tests.sh:            Bash script to execute all tests with a single command.
+- tests/original/:         Contains translated original test cases from Java.
+- public_tests/:           Contains translated public tests.
+- __init__.py:             Standard Python package init files (empty).
+----------------------------------------------------------
+To run all tests:
+
+1. Ensure you have Python 3 and pip installed.
+2. Install dependencies: pip install -r requirements.txt
+3. Run all tests: ./run_tests.sh
+
+The script runs all tests (original + public) using pytest.

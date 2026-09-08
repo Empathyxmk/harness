@@ -1,0 +1,15 @@
+{
+  "project_name": "bryanwoods_autolink-js",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:02:23.598718",
+  "original_path": "/workspace/runnable_filter/JavaScript/bryanwoods_autolink-js",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/bryanwoods_autolink-js",
+  "tests_path": [
+    "test/autolink-unit.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

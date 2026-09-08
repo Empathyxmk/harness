@@ -1,0 +1,54 @@
+Project Structure for whonore_Coqtail (Java Version)
+----------------------------------------------------
+
+whonore_Coqtail/
+├── pom.xml                    # Maven configuration for dependencies/build
+├── run_tests.sh               # Simple script: one-click test execution
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── whonore/
+│   │               └── coqtail/
+│   │                   ├── Coqtail.java
+│   │                   ├── Coqtop.java
+│   │                   ├── matcher/
+│   │                   │   └── Matcher.java
+│   │                   ├── parse/
+│   │                   │   └── Parse.java
+│   │                   ├── version/
+│   │                   │   └── Version.java
+│   │                   └── xml/
+│   │                       └── XMLInterface.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── whonore/
+│                   └── coqtail/
+│                       ├── original/
+│                       │   ├── TestCoqtail.java
+│                       │   ├── TestCoqtop.java
+│                       │   ├── TestVersion.java
+│                       │   ├── TestParse.java
+│                       │   ├── TestXMLInterface.java
+│                       │   └── TestMatcher.java
+│                       └── publictests/
+│                           ├── PublicParseTest.java
+│                           ├── PublicVersionTest.java
+│                           ├── PublicXMLInterfaceTest.java
+│                           └── PublicMatcherTest.java
+
+----------------------------------------------------
+- src/main/java/: Source code library and stubs. Only the minimum logic needed to satisfy test compiles is included here as the focus is on translation of tests.
+- src/test/java/com/whonore/coqtail/original/: Complete translations of the project’s original Python tests using JUnit 5.
+- src/test/java/com/whonore/coqtail/publictests/: All translated public tests. They match the Python public tests as supplied.
+- run_tests.sh: Run all tests via `mvn clean test`.
+- pom.xml: Java/Maven build and dependency management.
+----------------------------------------------------
+Instructions:
+1. Make sure you have JDK 11+ and Maven installed.
+2. To run all tests, simply run:
+      ./run_tests.sh
+   from the project root.
+
+All test logic is directly translated and covered.

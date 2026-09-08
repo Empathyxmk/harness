@@ -1,0 +1,50 @@
+{
+  "project_name": "fenjuly_ToggleExpandLayout",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:14:55.908154",
+  "original_path": "/workspace/verified_repos_v2/Java/fenjuly_ToggleExpandLayout",
+  "public_test_result_path": "/workspace/public_test_results/Java/fenjuly_ToggleExpandLayout",
+  "original_tests": {
+    "test_files": [
+      "demo/src/androidTest/java/com/fenjuly/toggleexpandlayout/ApplicationTest.java",
+      "library/src/androidTest/java/com/fenjuly/mylibrary/ApplicationTest.java",
+      "library/src/test/java/com/fenjuly/mylibrary/DropDownLayoutTest.java",
+      "library/src/test/java/com/fenjuly/mylibrary/ToggleExpandLayoutTest.java",
+      "library/src/test/java/com/fenjuly/mylibrary/BaseAnimatorTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "library/src/test/java/com/fenjuly/mylibrary/DropDownLayoutPublicTest.java",
+      "library/src/test/java/com/fenjuly/mylibrary/BaseAnimatorPublicTest.java",
+      "library/src/test/java/com/fenjuly/mylibrary/ToggleExpandLayoutPublicTest.java",
+      "run_public_tests.sh",
+      "demo/src/androidTest/java/com/fenjuly/toggleexpandlayout/ApplicationPublicTest.java",
+      "library/src/androidTest/java/com/fenjuly/mylibrary/ApplicationPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 6,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "library/src/test/java/com/fenjuly/mylibrary/DropDownLayoutPublicTest.java",
+    "library/src/test/java/com/fenjuly/mylibrary/BaseAnimatorPublicTest.java",
+    "library/src/test/java/com/fenjuly/mylibrary/ToggleExpandLayoutPublicTest.java",
+    "run_public_tests.sh",
+    "demo/src/androidTest/java/com/fenjuly/toggleexpandlayout/ApplicationPublicTest.java",
+    "library/src/androidTest/java/com/fenjuly/mylibrary/ApplicationPublicTest.java"
+  ]
+}

@@ -1,0 +1,23 @@
+mapio_GraphvizAnim/
+├── go.mod
+├── README.md
+├── main.go (if needed)
+├── gvanim/
+│   ├── animation.go            # Implementation (assumed to exist or needs creation)
+│   ├── action.go               # Implementation (assumed to exist or needs creation)
+│   ├── render.go               # Implementation (assumed to exist or needs creation)
+│   ├── jupyter.go              # Implementation (assumed to exist or needs creation)
+│   └── ... (other source as appropriate)
+├── tests/
+│   └── original/
+│       ├── animation_test.go
+│       ├── main_imports_test.go
+│       ├── action_extra_test.go
+│       └── render_test.go
+├── public_tests/
+│   ├── public_animation_test.go
+│   ├── public_action_extra_test.go
+│   ├── public_render_test.go
+│   └── public_main_imports_test.go
+├── test_translation_progress.json
+└── run_tests.sh

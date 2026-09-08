@@ -1,0 +1,29 @@
+.
+├── README.md                    # Project overview and instructions
+├── go.mod                       # Go module definition
+├── main.go                      # (Optional) placeholder for prod implementation
+├── run_tests.sh                 # One-click test runner - executes ALL tests in all packages
+├── project_structure.txt        # This project structure document
+├── tests/
+│   ├── testutil.go              # Helper types and stubs for tests
+│   └── original/
+│       ├── application_test.go  # Application test (original Android, stubbed)
+│       └── loading_button_test.go   # Translation of LoadingButtonTest.java
+├── public_tests/
+│   ├── testutil.go                  # Helper types and stubs for public tests
+│   ├── application_test.go          # Application test from public variant
+│   └── loading_button_public_test.go  # Translation of LoadingButtonPublicTest.java
+
+Directory explanations:
+- tests/: All original test translations from the Java project. Kept under 'original/'.
+    - testutil.go: Minimal test double/stub for LoadingButton (since no prod code ported).
+- public_tests/: All public test translations. Kept separate for clarity and one-to-one mapping.
+    - testutil.go: Same as in tests/ but for public test imports/namespacing.
+- run_tests.sh: Runs both tests and public_tests with a single command.
+
+Setup & Usage:
+1. Install Go 1.20+.
+2. From this directory: `chmod +x run_tests.sh && ./run_tests.sh`
+   - Executes all tests in tests/ and public_tests/ automatically.
+
+Test package structure matches the original Java project separation of original and public tests.

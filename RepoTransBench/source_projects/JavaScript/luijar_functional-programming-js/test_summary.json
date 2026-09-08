@@ -1,0 +1,11 @@
+{
+  "project_name": "luijar_functional-programming-js",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 55.72,
+    "branch": 54.66
+  },
+  "timestamp": "2025-06-19T10:54:39.260635",
+  "original_path": "/workspace/runnable_filter/JavaScript/luijar_functional-programming-js",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/luijar_functional-programming-js"
+}

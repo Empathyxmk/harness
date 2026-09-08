@@ -1,0 +1,28 @@
+routeros_api/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── main.rs
+├── tests/
+│   └── original/
+│       ├── test_api_communicator.rs
+│       ├── test_base_api.rs
+│       ├── test_sentence.rs
+│       ├── test_api_structure.rs
+│       ├── test_resource.rs
+│       ├── test_query.rs
+│       ├── test_api_socket.rs
+│       ├── test_socket.rs
+│       ├── test_login_router_os_api.rs
+├── public_tests/
+│   ├── test_public_api_communicator.rs
+│   ├── test_public_base_api.rs
+│   ├── test_public_sentence.rs
+│   ├── test_public_api_structure.rs
+│   ├── test_public_resource.rs
+│   ├── test_public_api_socket.rs
+│   ├── test_public_query.rs
+│   ├── test_public_login_router_os_api.rs
+│   ├── test_public_socket.rs
+├── run_tests.sh
+├── project_structure.txt

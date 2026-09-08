@@ -1,0 +1,26 @@
+{
+  "name": "trivias",
+  "version": "1.0.0",
+  "description": "Solidity trivias",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajsantander/trivias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajsantander/trivias/issues"
+  },
+  "homepage": "https://github.com/ajsantander/trivias#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "chai": "^5.2.0",
+    "ethers": "^5.4.7",
+    "hardhat": "^2.6.5",
+    "mocha": "^11.7.0",
+    "nyc": "^17.1.0",
+    "solidity-coverage": "^0.8.16"
+  }
+}

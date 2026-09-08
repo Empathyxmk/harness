@@ -1,0 +1,19 @@
+{
+  "project_name": "trailofbits_protofuzz",
+  "language": "Python",
+  "coverage": {
+    "line": 96.0,
+    "branch": 81.2
+  },
+  "timestamp": "2025-06-19T13:00:22.457016",
+  "original_path": "/workspace/runnable_filter/Python/trailofbits_protofuzz",
+  "test_result_path": "/workspace/test_enhancement_results/Python/trailofbits_protofuzz",
+  "tests_path": [
+    "protofuzz/tests/test_protofuzz.py",
+    "protofuzz/tests/test_values.py",
+    "protofuzz/tests/test_gen.py",
+    "protofuzz/tests/test_log.py",
+    "protofuzz/tests/test_pbimport.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

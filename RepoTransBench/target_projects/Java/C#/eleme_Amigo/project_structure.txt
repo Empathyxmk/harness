@@ -1,0 +1,56 @@
+eleme_Amigo/
+├── CHANGELOG.md
+├── ElemeAmigo.sln
+├── How Amigo works.pdf
+├── LICENSE
+├── README.md
+├── README_zh.md
+├── amigo-lib
+│   ├── CMakeLists.txt
+│   ├── build.gradle
+│   ├── jacoco.gradle
+│   ├── libs/
+│   │   └── layoutlib.jar
+│   ├── proguard-rules.txt
+│   └── src/
+│       ├── androidTest/
+│       │   ├── AndroidManifest.xml
+│       │   └── java/
+│       │       └── me/
+│       │           └── ele/
+│       │               └── amigo/
+│       │                   ├── AmigoClassLoaderPublicTest.java
+│       │                   ├── AmigoClassLoaderTest.java
+│       │                   ├── AmigoIntegrationPublicTest.java
+│       │                   ├── AmigoIntegrationTest.java
+│       │                   ├── AmigoServicePublicTest.java
+│       │                   ├── AmigoServiceTest.java
+│       │                   ├── acd.java
+│       │                   └── utils/
+│       │                       ├── CommonUtilTestSuite.java
+│       │                       ├── NativeLibLoaderPublicTest.java
+│       │                       ├── NativeLibLoaderTest.java
+│       │                       ├── SysmLinkPublicTest.java
+│       │                       └── SysmLinkTest.java
+│       ├── main/
+│       │   ├── AndroidManifest.xml
+│       │   ├── aidl/
+│       │   │   └── android/
+│       │   │       └── app/
+│       │   │           └── IServiceConnection.aidl
+│       │   ├── cpp/
+│       │   │   ├── SymbolicLinkUtil.cpp
+│       │   │   └── SymbolicLinkUtil.h
+│       │   ├── java/
+│       │       └── me/
+│       │           └── ele/
+│       │               └── amigo/
+│       │                   ├── Amigo.java
+│       │                   ├── (other app source files)
+├── tests/
+│   └── original/
+│       ├── ElemeAmigo.OriginalTests.csproj
+│       └── ExampleSanityTests.cs
+├── public_tests/
+│   ├── ElemeAmigo.PublicTests.csproj
+│   └── ExamplePublicSanityTests.cs

@@ -1,0 +1,41 @@
+use std::fs::{self, File};
+use std::io::Write;
+use std::env;
+use tempfile::TempDir;
+
+#[test]
+fn test_public_setup_py_runs() {
+    let tmp_dir = TempDir::new().unwrap();
+    let project_dir = tmp_dir.path();
+    let pytimeparse_dir = project_dir.join("pytimeparse");
+    fs::create_dir(&pytimeparse_dir).unwrap();
+
+    let version_path = pytimeparse_dir.join("VERSION");
+    let mut version_file = File::create(&version_path).unwrap();
+    write!(version_file, "2.77").unwrap();
+
+    let readme_path = project_dir.join("README.rst");
+    let mut readme_file = File::create(&readme_path).unwrap();
+    write!(readme_file, "other longdesc").unwrap();
+
+    let setup_path = project_dir.join("setup.py");
+    let mut setup_file = File::create(&setup_path).unwrap();
+    write!(
+        setup_file,
+        "from setuptools import setup, find_packages
+HERE = \"{}\"
+with open(HERE + \"/pytimeparse/VERSION\", encoding=\"utf-8\") as f:
+    VERSION = f.read().strip()
+with open(HERE + \"/README.rst\", encoding=\"utf-8\") as f:
+    LONG_DESCRIPTION = f.read()
+", project_dir.display()
+    ).unwrap();
+
+    assert!(version_path.exists());
+    assert!(readme_path.exists());
+    assert!(setup_path.exists());
+
+    let orig_dir = env::current_dir().unwrap();
+    env::set_current_dir(&project_dir).unwrap();
+    env::set_current_dir(orig_dir).unwrap();
+}

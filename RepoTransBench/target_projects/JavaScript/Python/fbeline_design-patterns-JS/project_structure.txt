@@ -1,0 +1,28 @@
+project_root/
+├── requirements.txt                  # Python dependencies for the project (pytest)
+├── run_tests.sh                      # Simple one-click script to run all tests with pytest
+├── project_structure.txt             # This file: documents structure and setup
+├── tests/
+│   ├── __init__.py                   # Makes tests a module (can be empty)
+│   └── original/
+│       ├── __init__.py               # So pytest detects the test package
+│       ├── test_factory.py           # Original factory test cases
+│       ├── test_factory_es6.py       # Original ES6 factory placeholder
+│       ├── test_prototype.py         # Original prototype test cases
+│       ├── test_prototype_es6.py     # Original ES6 prototype placeholder
+│       └── test_singleton_es6.py     # Original ES6 singleton placeholder
+├── public_tests/
+│   ├── __init__.py                   # Makes directory a module (can be empty)
+│   ├── test_factory_es6_public.py    # Public ES6 factory placeholder
+│   ├── test_factory_public.py        # Public test: BmwFactory variant scenarios
+│   ├── test_prototype_es6_public.py  # Public test: prototype ES6 with other data
+│   ├── test_prototype_public.py      # Public test: prototype with different data
+│   └── test_singleton_es6_public.py  # Public ES6 singleton placeholder
+
+Notes:
+- All test case logic is recreated in Python using pytest.
+- Original tests reside in tests/original/, public sample tests in public_tests/.
+- Dummy tests (from original JS) are preserved as one-assertion "always pass" for ES6 placeholders.
+- All helper classes (e.g., Sheep, bmw_factory) are embedded as needed for test self-containment.
+- To run **all tests**, execute: ./run_tests.sh
+- For requirements: `pip install -r requirements.txt`

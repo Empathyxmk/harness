@@ -1,0 +1,55 @@
+rbarrois_xworkflows Rust Translation Project
+============================================
+
+Project Structure:
+------------------
+.
+├── Cargo.toml
+├── src/
+│   ├── lib.rs            # Library root module
+│   ├── base.rs           # Main workflow logic (Rust port/minimal stubs for tests)
+│   ├── compat.rs         # Python/Rust compatibility helpers
+│   └── utils.rs          # Utility functions
+├── tests/
+│   └── original/
+│       ├── test_utils.rs     # Original test (translated)
+│       ├── test_init.rs
+│       ├── test_compat.rs
+│       ├── test_base.rs
+│       # ...all other original tests
+├── public_tests/
+│   ├── test_public_utils.rs        # Public tests (translated)
+│   ├── test_public_base.rs
+│   ├── test_public_compat.rs
+│   ├── test_public_init.rs
+│   └── test_public_using.rs
+├── run_tests.sh           # Simple script to run all tests
+├── project_structure.txt  # This file (project structure and explanation)
+└── README.md              # (Optional: add your project documentation here)
+
+Directory Explanations:
+-----------------------
+src/            - All library and implementation code (Rust translation of rbarrois_xworkflows logic)
+tests/original/ - Original Python test cases translated to Rust (full coverage)
+public_tests/   - Public test cases (mirroring the Python public_tests/ directory structure)
+Cargo.toml      - Rust package manifest and dependencies
+run_tests.sh    - Run all tests with a single command
+project_structure.txt - This structure/explanation file
+
+Setup & Testing Instructions:
+-----------------------------
+1. Install Rust if you don't have it:
+   https://rustup.rs/
+
+2. Run all tests from project root:
+   $ ./run_tests.sh
+
+   (Or manually: $ cargo test --all)
+
+3. To run only original or public tests, specify via cargo:
+   $ cargo test --test original/test_utils
+   $ cargo test --test public_tests/test_public_base
+
+4. Add implementation to `src/` as needed for further features.
+
+Enjoy!

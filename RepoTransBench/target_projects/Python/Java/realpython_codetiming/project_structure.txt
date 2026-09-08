@@ -1,0 +1,42 @@
+Project Structure for Java translation of realpython_codetiming
+
+codetiming/
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── realpython/
+│   │               └── codetiming/
+│   │                   ├── Timer.java               # (Minimal) major Timer class (API adapter)
+│   │                   ├── TimerError.java          # Exception for Timer errors
+│   │                   └── Timers.java              # Timer statistics and agreggator
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── realpython/
+│                   └── codetiming/
+│                       ├── original/
+│                       │   ├── TestTimerAdditional.java       # Translated original tests/test_timer_additional.py
+│                       │   ├── TestTimers.java                # Translated original tests/test_timers.py
+│                       │   └── TestCodeTiming.java            # Translated original tests/test_codetiming.py
+│                       └── public_tests/
+│                           ├── TestPublicTimerAdditional.java # Translated public_tests/test_public_timer_additional.py
+│                           ├── TestPublicTimers.java          # Translated public_tests/test_public_timers.py
+│                           └── TestPublicCodeTiming.java      # Translated public_tests/test_public_codetiming.py
+
+├── pom.xml          # Maven build configuration
+├── run_tests.sh     # One-click run-all-tests shell script (executes "mvn clean test")
+├── project_structure.txt  # This structure and mapping document
+
+Directories:
+- src/main/java/com/realpython/codetiming/ : Library ("production") code (adapters for testing purposes)
+- src/test/java/com/realpython/codetiming/original/ : All original test case translations
+- src/test/java/com/realpython/codetiming/public_tests/ : All public test case translations
+- pom.xml : Dependency and build management (JUnit 5 provided)
+- run_tests.sh : Simple one-click test invocation
+
+Instructions:
+1. Ensure you have Java 11+ and Maven installed.
+2. To run all (original and public) tests: `./run_tests.sh`
+3. All tests are picked up and run via `mvn test` (JUnit 5 discovery).
+4. To add additional source code for real codetiming logic, implement required classes in src/main/java/com/realpython/codetiming/.

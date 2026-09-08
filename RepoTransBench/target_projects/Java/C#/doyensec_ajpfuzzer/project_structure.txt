@@ -1,0 +1,47 @@
+project_root/
+├── DoyensecAjpFuzzer.sln
+├── run_tests.sh
+├── project_structure.txt
+├── src/
+│   └── Doyensec.Ajpfuzzer/
+│       ├── Doyensec.Ajpfuzzer.csproj
+│       ├── AJPFuzzer.cs
+│       ├── Utils.cs
+│       └── AJPTestCases.cs
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── AJPFuzzerTest.cs
+│       ├── AJPFuzzerExtraTest.cs
+│       ├── AJPTestCasesTest.cs
+│       ├── AJPTestCasesExtraTest.cs
+│       ├── UtilsTest.cs
+│       └── UtilsExtraTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── AJPFuzzerPublicTest.cs
+│   ├── AJPFuzzerExtraPublicTest.cs
+│   ├── AJPTestCasesPublicTest.cs
+│   ├── AJPTestCasesExtraPublicTest.cs
+│   ├── UtilsPublicTest.cs
+│   └── UtilsExtraPublicTest.cs
+
+Directory Explanations:
+- DoyensecAjpFuzzer.sln : Visual Studio solution containing all projects (src, original tests, public tests)
+- run_tests.sh         : Simple script to run all tests
+- project_structure.txt: This documentation file (project tree and explanations)
+- src/                 : Source code (.cs) for the main project
+    - Doyensec.Ajpfuzzer/: Main C# project with all implementation files
+- tests/original/      : Original/author internal tests (mirrored from Java's 'test/java/')
+    - OriginalTests.csproj: Test project file for these tests
+    - *.cs:                : Test case implementations (one class per .cs)
+- public_tests/        : Public test set, corresponding to Java's public tests
+    - PublicTests.csproj : Test project file for these tests
+    - *.cs:                Individual public test files
+
+Setup & Testing Instructions:
+1. Ensure .NET 6.0 SDK is installed (dotnet command on PATH)
+2. Restore dependencies:   dotnet restore DoyensecAjpFuzzer.sln
+3. Run all tests:          ./run_tests.sh
+
+All dependencies are managed via NuGet (.csproj files). xUnit is used for testing throughout.

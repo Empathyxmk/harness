@@ -1,0 +1,16 @@
+{
+  "project_name": "domchristie_humps",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.87,
+    "branch": 91.48
+  },
+  "timestamp": "2025-06-23T10:35:31.299657",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/domchristie_humps",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/domchristie_humps",
+  "tests_path": [
+    "test/humps-extra.test.js",
+    "test/test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

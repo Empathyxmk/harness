@@ -1,0 +1,69 @@
+seatgeek_fuzzywuzzy/
+├── CHANGES.rst
+├── LICENSE.txt
+├── MANIFEST.in
+├── README.md
+├── benchmarks.py
+├── data/
+│   └── titledata.csv
+├── fuzzywuzzy/
+│   ├── StringMatcher.py
+│   ├── __init__.py
+│   ├── fuzz.py
+│   ├── process.py
+│   ├── string_processing.py
+│   └── utils.py
+├── htmlcov/
+│   ├── class_index.html
+│   ├── coverage_html_cb_6fb7b396.js
+│   ├── favicon_32_cb_58284776.png
+│   ├── function_index.html
+│   ├── index.html
+│   ├── keybd_closed_cb_ce680311.png
+│   ├── status.json
+│   ├── style_cb_81f8c14c.css
+│   ├── z_29486f426ae4f41a_StringMatcher_py.html
+│   ├── z_29486f426ae4f41a___init___py.html
+│   ├── z_29486f426ae4f41a_fuzz_py.html
+│   ├── z_29486f426ae4f41a_process_py.html
+│   ├── z_29486f426ae4f41a_string_processing_py.html
+│   └── z_29486f426ae4f41a_utils_py.html
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_fuzzywuzzy.py
+│   ├── test_public_fuzzywuzzy_hypothesis.py
+│   ├── test_public_fuzzywuzzy_pytest.py
+│   ├── test_public_process_py.py
+│   └── test_public_utils_and_stringmatcher.py
+├── release/
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.cfg
+├── setup.py
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── seatgeek/
+│                   ├── original/
+│                   │   ├── FuzzywuzzyHypothesisTest.java
+│                   │   ├── FuzzywuzzyPytestTest.java
+│                   │   ├── FuzzywuzzyTest.java
+│                   │   ├── ProcessPyTest.java
+│                   │   └── UtilsAndStringMatcherTest.java
+│                   └── public_tests/
+│                       ├── PublicFuzzywuzzyHypothesisTest.java
+│                       ├── PublicFuzzywuzzyPytestTest.java
+│                       ├── PublicFuzzywuzzyTest.java
+│                       ├── PublicProcessPyTest.java
+│                       └── PublicUtilsAndStringMatcherTest.java
+├── test_fuzzywuzzy.py
+├── test_fuzzywuzzy_hypothesis.py
+├── test_fuzzywuzzy_pytest.py
+├── test_summary.json
+├── tests/
+│   ├── test_process_py.py
+│   └── test_utils_and_stringmatcher.py
+└── tox.ini

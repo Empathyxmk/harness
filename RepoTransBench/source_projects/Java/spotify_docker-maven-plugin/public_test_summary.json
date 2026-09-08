@@ -1,0 +1,68 @@
+{
+  "project_name": "spotify_docker-maven-plugin",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:19:34.539579",
+  "original_path": "/workspace/verified_repos_v2/Java/spotify_docker-maven-plugin",
+  "public_test_result_path": "/workspace/public_test_results/Java/spotify_docker-maven-plugin",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/com/spotify/docker/GitTest.java",
+      "src/test/java/com/spotify/docker/CompositeImageNameTest.java",
+      "src/test/java/com/spotify/docker/TagMojoTest.java",
+      "src/test/java/com/spotify/docker/UtilsTest.java",
+      "src/test/java/com/spotify/docker/RemoveImageMojoTest.java",
+      "src/test/java/com/spotify/docker/BuildMojoTest.java",
+      "src/test/java/com/spotify/docker/AbstractDockerMojoTest.java",
+      "src/test/java/com/spotify/docker/PushMojoTest.java",
+      "src/test/java/com/spotify/docker/DockerBuildInformationTest.java",
+      "src/it/with-many-modules/b/src/test/java/com/spotify/manymodules/ImageDependencyTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 10,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/com/spotify/docker/CompositeImageNamePublicTest.java",
+      "src/test/java/com/spotify/docker/GitPublicTest.java",
+      "src/test/java/com/spotify/docker/TagMojoPublicTest.java",
+      "src/test/java/com/spotify/docker/UtilsPublicTest.java",
+      "src/test/java/com/spotify/docker/RemoveImageMojoPublicTest.java",
+      "src/test/java/com/spotify/docker/BuildMojoPublicTest.java",
+      "src/test/java/com/spotify/docker/AbstractDockerMojoPublicTest.java",
+      "src/test/java/com/spotify/docker/PushMojoPublicTest.java",
+      "src/test/java/com/spotify/docker/DockerBuildInformationPublicTest.java",
+      "src/it/with-many-modules/b/src/test/java/com/spotify/manymodules/ImageDependencyPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 12,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/com/spotify/docker/CompositeImageNamePublicTest.java",
+    "src/test/java/com/spotify/docker/GitPublicTest.java",
+    "src/test/java/com/spotify/docker/TagMojoPublicTest.java",
+    "src/test/java/com/spotify/docker/UtilsPublicTest.java",
+    "src/test/java/com/spotify/docker/RemoveImageMojoPublicTest.java",
+    "src/test/java/com/spotify/docker/BuildMojoPublicTest.java",
+    "src/test/java/com/spotify/docker/AbstractDockerMojoPublicTest.java",
+    "src/test/java/com/spotify/docker/PushMojoPublicTest.java",
+    "src/test/java/com/spotify/docker/DockerBuildInformationPublicTest.java",
+    "src/it/with-many-modules/b/src/test/java/com/spotify/manymodules/ImageDependencyPublicTest.java",
+    "run_public_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

@@ -1,0 +1,36 @@
+project_root/
+├── src/
+│   └── is_number.py
+│       - Source code for the is_number function, a Python translation of jonschlinkert/is-number.
+├── tests/
+│   ├── __init__.py
+│   ├── test_is_number.py
+│       - Translation of test.js with tests for positive and negative number detection.
+│   ├── test_is_number_complete.py
+│       - Translation of test/test-is-number-complete.js with comprehensive/edge case tests.
+│   └── original/
+│       ├── __init__.py
+│       └── test_is_number_extra.py
+│           - Translation of test/is-number.extra.test.js (extra edge case tests).
+├── public_tests/
+│   ├── __init__.py
+│   └── test_is_number_extra_public.py
+│       - Translation of public_tests/is-number.extra.public.test.js; public-facing extra/edge tests.
+├── requirements.txt
+│    - Dependencies for the project (pytest)
+├── run_tests.sh
+│    - Simple one-click script to run all tests using pytest.
+└── project_structure.txt
+     - This file. Explains each directory and its contents.
+
+Instructions:
+- To install dependencies: `pip install -r requirements.txt`
+- To run all tests: `./run_tests.sh`
+
+Test Suite Organization:
+- tests/          : Standard/original test suite translations
+- tests/original/ : Extra original/edge tests
+- public_tests/   : Public-facing tests (as provided in the JavaScript source project)
+- src/            : The main is_number implementation in Python
+
+All test cases have been fully translated for logic, behavior, and structure from their JavaScript counterparts.

@@ -1,0 +1,44 @@
+itsdangerous_rs/
+├── Cargo.toml                 -- Rust package manifest, dependencies, metadata
+├── src/
+│   ├── lib.rs                 -- Library root, module declaration
+│   ├── encoding.rs            -- Encoding tools (base64, bytes helpers)
+│   ├── exc.rs                 -- Exception types, error structs
+│   ├── serializer.rs          -- Serializer logic (dummy for test)
+│   ├── signer.rs              -- Signer struct and dummy methods
+│   ├── timed.rs               -- TimedSerializer dummy
+│   └── url_safe.rs            -- URLSafeSerializer dummy
+├── tests/
+│   └── original/
+│       ├── test_encoding.rs
+│       ├── test_exc.rs
+│       ├── test_init.rs
+│       ├── test_serializer.rs
+│       ├── test_signer.rs
+│       ├── test_timed.rs
+│       └── test_url_safe.rs
+├── public_tests/
+│   ├── test_encoding_public.rs
+│   ├── test_exc_public.rs
+│   ├── test_init_public.rs
+│   ├── test_serializer_public.rs
+│   ├── test_signer_public.rs
+│   ├── test_timed_public.rs
+│   └── test_url_safe_public.rs
+├── run_tests.sh               -- Simple script: runs all tests with Cargo
+└── project_structure.txt      -- This structure description and quick setup notes
+
+Directory explanations:
+- src/: All library implementation modules (dummy, enough for tests logic).
+- tests/original/: Rust translation of all original Python test files, one per area/module.
+- public_tests/: Rust translation of public sample tests (public API/coverage).
+- run_tests.sh: Run all tests (both `tests/` and `public_tests/`).
+- Cargo.toml: Configure dependencies and versioning.
+- project_structure.txt: You are reading it.
+
+Setup and testing instructions:
+1. Ensure Rust and Cargo are installed (`rustup` recommended).
+2. Clone/extract this directory.
+3. Run all tests: `./run_tests.sh` from the project root.
+
+Both `tests/original/` and `public_tests/` are auto-discovered by Cargo when running `cargo test`. All logic is implemented; you can enhance implementation in `src/` for real algorithms as needed.

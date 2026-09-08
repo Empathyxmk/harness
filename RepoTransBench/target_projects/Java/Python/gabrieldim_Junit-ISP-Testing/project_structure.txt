@@ -1,0 +1,74 @@
+Project Structure for gabrieldim_Junit-ISP-Testing (Python Translation)
+======================================================================
+
+.
+├── src/
+│   ├── __init__.py
+│   └── testing_sets.py
+│
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py
+│   │   └── test_testing_sets.py
+│   └── __init__.py
+│
+├── public_tests/
+│   ├── __init__.py
+│   └── test_testing_sets_public.py
+│
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Directory and File Explanations:
+-------------------------------
+
+src/
+   - Source code for the implementation of set_difference (ported from TestingSets.java).
+   - 'testing_sets.py': Contains the set_difference function.
+   - '__init__.py': For package recognition.
+
+tests/original/
+   - Contains the full translation of the original (private/internal) unit tests.
+   - 'test_testing_sets.py': Full suite of original tests, functionally matching the Java source test.
+   - '__init__.py': For test discovery.
+
+public_tests/
+   - Public test cases, translated from provided public test Java file.
+   - 'test_testing_sets_public.py': Public test suite for set_difference, matches the Java public test data.
+   - '__init__.py': For test discovery.
+
+requirements.txt
+   - Lists test dependencies; just 'pytest' is required.
+
+run_tests.sh
+   - Executable bash script (chmod +x) to run ALL tests with one command ('pytest'). Discovers both original and public tests.
+
+project_structure.txt
+   - This file; describes layout, explanations, setup, and running instructions.
+
+Setup & Running Instructions:
+-----------------------------
+
+1. (Optional) Create a virtualenv and activate it.
+   python3 -m venv venv
+   source venv/bin/activate
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Run all tests:
+   ./run_tests.sh
+   # This will discover and run both the original and public test suites.
+
+   You can also run them individually:
+      pytest tests/original/
+      pytest public_tests/
+
+4. To add your own tests, place them into 'tests/' or 'public_tests/' as appropriate.
+
+Notes:
+------
+- All test logic is fully ported and mirrors the Java version in logic and coverage.
+- Error handling matches Java's NullPointerException using Python's TypeError as the closest idiomatic equivalent, which is properly caught by 'pytest.raises'.
+- Tests use Python sets and native '==' for equality.

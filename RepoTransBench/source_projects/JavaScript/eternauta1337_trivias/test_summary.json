@@ -1,0 +1,16 @@
+{
+  "project_name": "eternauta1337_trivias",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:22:15.654746",
+  "original_path": "/workspace/runnable_filter/JavaScript/eternauta1337_trivias",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/eternauta1337_trivias",
+  "tests_path": [
+    "test/Trivia1.test.js",
+    "test/Trivia2.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

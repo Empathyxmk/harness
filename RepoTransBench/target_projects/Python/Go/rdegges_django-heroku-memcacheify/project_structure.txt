@@ -1,0 +1,21 @@
+memcacheify-go/
+├── go.mod                         # Go module definition
+├── memcacheify.go                 # Main (stub) implementation for memcacheify logic and env parsing
+├── README.md                      # Project documentation and structure explanation
+├── run_tests.sh                   # Single-command script to run all tests (chmod +x)
+├── public_tests/
+│   └── test_public_memcacheify_test.go   # Translated public tests (from provided Python public_tests/)
+├── tests/
+│   ├── original/
+│   │   └── test_memcacheify_test.go      # Translated original tests (from Python tests/)
+│   └── testutil.go                # Shared test utilities (env helpers)
+└── (other source files as desired)
+
+# Structure Explanation:
+- go.mod:        Go project requirements (additive as you add custom dependencies)
+- memcacheify.go:Stub Go implementation matching the expected interface from tests (adapt as needed)
+- README.md:     Usage, structure, setup, and test instructions
+- run_tests.sh:  Runs all tests in one go (covers ./tests, ./public_tests, etc.)
+- public_tests/: All translated public test cases, named *_test.go, ready to be run with 'go test'
+- tests/:        All translated original tests and test utilities (reuse helpers here)
+- tests/original/: Original project-specific tests

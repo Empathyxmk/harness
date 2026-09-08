@@ -1,0 +1,39 @@
+project_root/
+├── src/
+│   └── ArCpText/
+│       ├── ArCpText.csproj              # Main project definition
+│       ├── DesktopHTTPClient.cs         # Placeholder: Core class under test (simulate project structure)
+│       ├── DesktopHTTPClientCallback.cs # Placeholder: Callback interface (simulate project structure)
+│       ├── ImageUtils.cs                # Placeholder: Class with static utility image functions
+│       └── TextRecognition.cs           # Placeholder: Class with recognition logic
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj         # Original test project definition
+│       ├── DesktopHTTPClientTests.cs    # Original test cases translated from .java
+│       ├── TextRecognitionTests.cs
+│       └── ImageUtilsTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj               # Public test project definition
+│   ├── DesktopHTTPClientPublicTests.cs  # Public test cases
+│   ├── TextRecognitionPublicTests.cs
+│   └── ImageUtilsPublicTests.cs
+├── ArCpText.sln                         # Solution file
+├── run_tests.sh                         # Simple script to run ALL tests
+├── README.md
+└── project_structure.txt                # This file: describes layout
+
+Directory Explanations:
+- src/ArCpText: Main source code (we provide stubs if source not available)
+- tests/original: Original (private) functional/unit test cases, translated from Java JUnit code
+- public_tests: Public test cases (originally *PublicTest.java), also translated
+- *.csproj: C#/.NET project files for build dependencies and test frameworks
+- ArCpText.sln: Solution file linking all projects for unified builds and testing
+- run_tests.sh: One-click script to (build and) run all tests across both original and public test sets
+
+Setup & Testing Instructions:
+1. Install .NET SDK (>=6.0)
+2. Run: `./run_tests.sh`
+   - This builds and tests all test projects.
+3. Results for both original and public tests will be displayed.
+
+Unit tests use xUnit for all assertions and structure.

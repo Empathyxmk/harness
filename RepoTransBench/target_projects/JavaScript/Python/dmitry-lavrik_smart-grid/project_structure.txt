@@ -1,0 +1,29 @@
+dmitry-lavrik_smart-grid Python Translation Project Structure
+
+.
+├── src/
+│   └── utils.py               # Implementation of add, max, isEven, greet
+├── tests/
+│   └── original/
+│       └── test_utils.py      # Original JS test translations (full coverage)
+├── public_tests/
+│   └── test_utils_public.py   # Public test suite (from public JS tests)
+├── requirements.txt           # Test dependencies (pytest)
+├── run_tests.sh               # One-click test execution script
+└── project_structure.txt      # This structure and explanation doc
+
+Directory/Files Explanation:
+- src/: Source package directory.
+    - utils.py: Python conversion of the JavaScript utils.js module.
+- tests/original/: Translated test cases from the original JS test files.
+    - test_utils.py: Fully detailed, functionally equivalent translation of original tests.
+- public_tests/: Translated public test cases (from provided utils.public.test.js).
+    - test_utils_public.py: Complete set of public test cases.
+- requirements.txt: Test dependencies list (contains "pytest").
+- run_tests.sh: Simple bash script to run all tests using pytest.
+- project_structure.txt: Overview of the project and folder/files explained.
+
+How to Set Up & Test:
+1. (Optional, in a virtualenv) Install requirements: `pip install -r requirements.txt`
+2. Run all tests with: `./run_tests.sh`
+3. Tests from "tests/original/" and "public_tests/" will be discovered and executed.

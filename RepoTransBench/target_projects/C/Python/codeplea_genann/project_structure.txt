@@ -1,0 +1,41 @@
+codeplea_genann_python/
+├── src/
+│   └── genann.py              # Python translation of genann neural net
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_basic.py          # Test initializing minimal network
+│       ├── test_xor.py            # Test hardwired XOR logic network
+│       ├── test_backprop.py       # Simple backpropagation case
+│       ├── test_and.py            # Training AND
+│       ├── test_or.py             # Training OR
+│       ├── test_xor_train.py      # Training XOR
+│       ├── test_persist.py        # Persistence/file save/load
+│       ├── test_copy.py           # Network copy
+│       ├── test_sigmoid.py        # Activation function coverage
+│       └── test_edgecases.py      # Direct translation of edgecases (init, copy, activation, fileio)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_edgecases.py       # Public neural edge cases
+│   ├── test_public_preset_read.py     # Public ANN file load test (NAND function)
+│   └── test_public_xor_and.py         # Public training AND function
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+Explanations:
+- `src/`: Source code (Python module for genann translated API)
+- `tests/original/`: Direct translations of all original project tests from C, separated from public
+- `public_tests/`: All public test cases for neural network, as generated for public consumption
+- `requirements.txt`: All dependencies needed (numpy for math, pytest for testing)
+- `run_tests.sh`: Minimal script to run all test files using pytest
+- `README.md`: How to setup and invoke the test suite
+- `project_structure.txt`: This file
+
+Run all tests:
+    ./run_tests.sh
+
+Install dependencies:
+    pip install -r requirements.txt

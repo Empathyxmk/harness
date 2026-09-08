@@ -1,0 +1,34 @@
+googlearchive_android-ClippingBasic-python/
+├── requirements.txt
+├── run_tests.sh        # One-click script to execute all tests (pytest)
+├── README.md           # Project documentation and usage
+├── project_structure.txt
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_log.py                     # Tests for Log class (original)
+│       ├── test_logview.py                 # Tests for LogView class (original)
+│       ├── test_message_only_log_filter.py # Tests for MessageOnlyLogFilter (original)
+│       └── test_sample.py                  # UI/functionality sample tests (original)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_log_public.py                  # Public tests for Log class
+│   ├── test_logview_public.py              # Public tests for LogView class
+│   └── test_message_only_log_filter_public.py # Public tests for MessageOnlyLogFilter
+└── [src package placeholder: implement library under src/ if porting Java logic]
+
+# Directory explanations:
+# - requirements.txt: Python requirements, including pytest and mock
+# - run_tests.sh: Simple script to run all tests via pytest
+# - README.md: Project documentation and instructions
+# - tests/original/: Contains all translated "original" test cases from Java
+# - public_tests/: Contains all translated "public"/sample test cases from Java
+# - project_structure.txt: This file, documenting structure
+# - src/: Placeholder directory for shared implementation (not populated here, as only tests supplied)
+
+# Instructions:
+# 1. Install requirements: `pip install -r requirements.txt`
+# 2. Run all tests: `./run_tests.sh`
+#
+# All test cases are fully standalone and include minimal stubs/mocks

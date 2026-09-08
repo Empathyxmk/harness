@@ -1,0 +1,23 @@
+.
+├── pom.xml
+├── run_tests.sh
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── wesbarnett
+│   │               └── snap_pac
+│   │                   └── scripts
+│   │                       └── Scripts.java
+│   └── test
+│       └── java
+│           └── com
+│               └── wesbarnett
+│                   └── snap_pac
+│                       ├── original
+│                       │   ├── TestScript.java
+│                       │   └── TestSnapPac.java
+│                       └── public_tests
+│                           ├── PublicTestScript.java
+│                           └── PublicTestSnapPac.java
+└── project_structure.txt

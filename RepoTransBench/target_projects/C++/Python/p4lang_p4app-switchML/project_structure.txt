@@ -1,0 +1,52 @@
+project_root/
+├── src/
+│   └── switchml/
+│       ├── __init__.py
+│       ├── barrier.py          # Translated barrier sync class
+│       └── common.py           # Translated add function for utility
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_barrier.py     # Original barrier synchronization tests
+│       └── test_main.py        # Main entrypoint for original test suite (mirrors C++)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_utils_public.py    # Publicly visible add() functionality tests
+│   └── test_main_public.py     # Stub main for public tests
+├── requirements.txt            # Python dependencies for testing
+├── run_tests.sh                # One-click test execution
+└── project_structure.txt       # This file: documentation of the structure
+
+Directory Explanations:
+
+src/switchml/           - Application implementation modules.
+  barrier.py              - Thread Barrier implementation as per original C++.
+  common.py               - Miscellaneous utilities (add function required for public tests).
+
+tests/original/         - All original/private test cases, translated from C++.
+  test_barrier.py         - Full test coverage for the Barrier class.
+  test_main.py            - Main entrypoint (only present for structure mirroring).
+
+public_tests/           - Public, simplified test suites for user-visible API (add).
+  test_utils_public.py    - Direct translation of public functionality tests for 'add'.
+  test_main_public.py     - Main entrypoint (for parity, not required by pytest).
+
+requirements.txt        - All Python dependencies (pytest).
+run_tests.sh            - Simple, one-click test runner (calls pytest on all tests).
+project_structure.txt   - This file.
+
+Setup and Test Instructions:
+
+1. (Optional) Create a Python venv, then install dependencies:
+       pip install -r requirements.txt
+
+2. To run ALL tests (both original & public), just:
+       ./run_tests.sh
+   or:
+       pytest
+
+3. Fast test listing:
+       pytest --collect-only
+
+All test coverage and logic from the C++ (barrier sync, add utility) is preserved and tested in Python.

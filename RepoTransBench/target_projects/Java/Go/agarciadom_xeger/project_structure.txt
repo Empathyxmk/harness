@@ -1,0 +1,22 @@
+agarciadom_xeger/
+├── README.md
+├── go.mod
+├── run_tests.sh
+├── xeger/
+│   └── xeger.go         # All source (package xeger)
+├── tests/
+│   └── original/
+│       ├── xeger_edge_test.go          # Translated XegerEdgeTest.java
+│       ├── xeger_coverage_test.go      # Translated XegerCoverageTest.java
+│       ├── xeger_utils_test.go         # Translated XegerUtilsTest.java
+│       └── xeger_test.go               # Translated XegerTest.java
+├── public_tests/
+│   ├── xeger_edge_public_test.go       # Translated XegerEdgePublicTest.java
+│   ├── xeger_coverage_public_test.go   # Translated XegerCoveragePublicTest.java
+│   ├── xeger_utils_public_test.go      # Translated XegerUtilsPublicTest.java
+│   └── xeger_public_test.go            # Translated XegerPublicTest.java
+
+All test files are implemented as *_test.go in their respective directory.
+Use `run_tests.sh` to execute the full suite.
+- All Xeger implementation lives under package xeger.
+- Test files import and test the 'xeger' package.

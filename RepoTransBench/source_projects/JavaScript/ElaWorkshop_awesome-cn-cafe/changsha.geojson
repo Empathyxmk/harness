@@ -1,0 +1,290 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "三居时光",
+        "下载速度": "144.49 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/c/f6a6b9e3-5c4c-4875-8199-424a17af4e2c",
+        "参考价格": "拿铁26元",
+        "评论 (@lhysdl)": "家附近的咖啡馆，旁边的面馆很好吃^_^",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.9953,
+          28.1289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "太平阳咖啡（中建广场店）",
+        "下载速度": "247 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/my-result/a/6448021572",
+        "参考价格": "红宝石烤奶风味拿铁35元",
+        "评论 (@lhysdl)": "价格较贵，东西一般，还不能给停车券",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.0019,
+          28.1222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "enjoy悦想家",
+        "下载速度": "94.1 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/my-result/d/292290440",
+        "参考价格": "dirty28元",
+        "评论 (@lhysdl)": "家附近的咖啡馆，林业科技大学后门口，网速环境都不错",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.984815,
+          28.130511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "别有coffee",
+        "下载速度": "32.76 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/11983062565",
+        "参考价格": "拿铁28",
+        "评论 (@lhysdl)": "一个小坡上去，左手边一个独栋小房子，对面是废弃的老楼。只供应饮料没有食物。",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.000242,
+          28.125248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "home coffee",
+        "下载速度": "68.51 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/12057437406",
+        "参考价格": "latte 10",
+        "评论 (@lhysdl)": "homemade coffee",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.988973,
+          28.130002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "Tims Hortons",
+        "下载速度": "2.90 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/12654027701",
+        "参考价格": "中杯拿铁24，鸡肉贝果20，火腿可颂12",
+        "评论 (@lhysdl)": "贝果不错，咖啡一般",
+        "marker-color": "#C24740",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.011457,
+          28.113958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "LAVAZZA",
+        "下载速度": "2.69 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/12665307093",
+        "参考价格": "浓郁拿铁中杯32",
+        "评论 (@lhysdl)": "浓郁拿铁标准杯是三倍浓缩，单凭kafa豆偏酸",
+        "marker-color": "#C24740",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.009451,
+          28.115905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "NORTHMUG",
+        "下载速度": "70.31 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/12725202875",
+        "参考价格": "拿铁25",
+        "评论 (@lhysdl)": "有卖10块钱的热红酒，改天不开车来尝尝",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.974487,
+          28.192481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "矢量咖啡",
+        "下载速度": "87.59 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/12730138160",
+        "参考价格": "拿铁39",
+        "评论 (@lhysdl)": "在西西弗书店里，比较贵，口味一般，拿铁奶泡太厚了，算是看书座位的门票吧",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.013795,
+          28.114385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "WinTer cafe",
+        "下载速度": "46.50 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/12734760647",
+        "参考价格": "拿铁25",
+        "评论 (@lhysdl)": "工业风，wifi密码有点意思",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.986367,
+          28.113274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "COLORIUM COFFEE",
+        "下载速度": "360.00 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/12735880597",
+        "参考价格": "鸳鸯拿铁22",
+        "评论 (@lhysdl)": "价格实惠，还送饼干，口味也不错，网速快的惊人，适合常来",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.990326,
+          28.131259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "RESTART COFFEE",
+        "下载速度": "452.90 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/12745342977",
+        "参考价格": "拿铁标准杯19",
+        "评论 (@lhysdl)": "每天8:30就开门的临街咖啡馆，很小很温馨，价格实惠，网速超快的。",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.991808,
+          28.117937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "陆光cafe",
+        "下载速度": "32.34 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/12746423700",
+        "参考价格": "dirty 28元",
+        "评论 (@lhysdl)": "黄兴广场旁边巷子里，门口覆盖了茂密的绿植",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.972403,
+          28.192868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "德思勤24小时书店",
+        "下载速度": "0.37 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/13115112959",
+        "参考价格": "拿铁 35元",
+        "评论 (@lhysdl)": "24小时书店，环境和氛围都不错，饮品略贵但不点也可以，网速有点慢",
+        "marker-color": "#C24740",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.005947,
+          28.115485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "山君咖啡",
+        "下载速度": "92.83 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/d/440788339",
+        "参考价格": "精品拿铁35元，普通拿铁25",
+        "评论 (@lhysdl)": "精品豆子很香，咖啡品质很好",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.99292,
+          28.177544
+        ]
+      }
+    }
+  ]
+}

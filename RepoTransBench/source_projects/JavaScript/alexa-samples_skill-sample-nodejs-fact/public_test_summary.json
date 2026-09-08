@@ -1,0 +1,53 @@
+{
+  "project_name": "alexa-samples_skill-sample-nodejs-fact",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:15:13.876654",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/alexa-samples_skill-sample-nodejs-fact",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/alexa-samples_skill-sample-nodejs-fact",
+  "original_tests": {
+    "test_files": [
+      "lambda/custom/personalizationStorageUtil.test.js",
+      "lambda/custom/personalizationUtil.test.js",
+      "lambda/custom/index.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "lambda/custom/__public__/personalizationStorageUtil.public.test.js",
+      "lambda/custom/__public__/personalizationUtil.public.test.js",
+      "lambda/custom/__public__/index.public.test.js",
+      "run_public_tests.sh",
+      "lambda/custom/__public__/index.public.test.js",
+      "lambda/custom/__public__/index.public.test.js",
+      "lambda/custom/__public__/index.public.test.js",
+      "lambda/custom/__public__/index.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "lambda/custom/__public__/personalizationStorageUtil.public.test.js",
+    "lambda/custom/__public__/personalizationUtil.public.test.js",
+    "lambda/custom/__public__/index.public.test.js",
+    "lambda/custom/__public__/jest.config.js",
+    "run_public_tests.sh",
+    "lambda/custom/__public__/index.public.test.js",
+    "lambda/custom/__public__/index.public.test.js",
+    "lambda/custom/__public__/index.public.test.js",
+    "lambda/custom/__public__/index.public.test.js"
+  ]
+}

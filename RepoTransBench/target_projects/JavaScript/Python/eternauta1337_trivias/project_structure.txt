@@ -1,0 +1,31 @@
+etrernauta1337_trivias_python/
+├── README.md                        # Project info & instructions
+├── requirements.txt                 # Python dependencies (pytest)
+├── run_tests.sh                     # Simple test execution script (chmod +x)
+├── project_structure.txt            # This structure/reference file
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py              # Package marker
+│   │   ├── test_trivia1.py          # Original tests from test/Trivia1.test.js
+│   │   └── test_trivia2.py          # Original tests from test/Trivia2.test.js
+│   └── __init__.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_trivia1_public.py       # Public test analog of public_tests/Trivia1.public.test.js
+│   └── test_trivia2_public.py       # Public test analog of public_tests/Trivia2.public.test.js
+
+Structure Explanation
+---------------------
+- `tests/original/`: Python ports of the original JS-based test cases.
+- `public_tests/`: Python ports of public test cases from the original JS project's `public_tests/`.
+- `requirements.txt`: Declares all Python dependencies (here, only pytest required).
+- `run_tests.sh`: Shell script to run all test cases at once using pytest (easy/quick).
+- `README.md`: Basic project info and test execution instructions.
+- `project_structure.txt`: You are reading it.
+
+Run all tests
+-------------
+    ./run_tests.sh
+
+Python/pytest will auto-discover all test modules.
+No configuration beyond installing required packages is needed.

@@ -1,0 +1,12 @@
+fengsp_sender (Rust project layout)
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   └── original/
+│       ├── test_sender.rs
+│       └── test_sender_extended.rs
+├── public_tests/
+│   ├── public_test_sender.rs
+│   └── public_test_sender_extended.rs
+├── run_tests.sh

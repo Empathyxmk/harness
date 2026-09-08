@@ -1,0 +1,32 @@
+hugsy_cemu_cpp/
+├── CMakeLists.txt
+├── README.md
+├── include/
+│   └── (cemu include headers: to be implemented as necessary)
+├── src/
+│   └── (cemu source files: to be implemented as necessary)
+├── tests/
+│   ├── original/
+│   │   ├── test_arch_test.cpp
+│   │   ├── test_basic_test.cpp
+│   │   ├── test_errors_test.cpp
+│   │   ├── test_exports_test.cpp
+│   │   ├── test_log_test.cpp
+│   │   ├── test_memory_test.cpp
+│   │   ├── test_os_test.cpp
+│   │   ├── test_settings_test.cpp
+│   │   └── test_utils_test.cpp
+│   └── test_main.cpp
+├── public_tests/
+│   ├── test_public_arch_test.cpp
+│   ├── test_public_basic_test.cpp
+│   ├── test_public_errors_test.cpp
+│   ├── test_public_exports_test.cpp
+│   ├── test_public_log_test.cpp
+│   ├── test_public_memory_test.cpp
+│   ├── test_public_os_test.cpp
+│   ├── test_public_settings_test.cpp
+│   └── test_public_utils_test.cpp
+│   └── test_public_test_main.cpp
+├── run_tests.sh
+└── test_translation_progress.json

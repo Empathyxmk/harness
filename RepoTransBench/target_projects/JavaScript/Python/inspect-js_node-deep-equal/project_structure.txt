@@ -1,0 +1,38 @@
+project_root/
+├── src/
+│   ├── deep_equal.py         # Implementation for deep_equal (converted from JS)
+│   └── assert_util.py        # assert utility functions for tests
+├── requirements.txt          # Python dependencies (pytest)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_assert.py
+│       ├── test_index_basic.py
+│       ├── test_index_additional.py
+│       ├── test_index_circular.py
+│       └── test_index_error.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_assert_public.py
+│   ├── test_index_basic_public.py
+│   ├── test_index_additional_public.py
+│   ├── test_index_error_public.py
+│   └── test_index_circular_public.py
+├── run_tests.sh              # Simple test runner: runs all tests via pytest
+├── README.md                 # Documentation
+└── project_structure.txt     # This file (project structure and explanations)
+
+Explanations:
+
+src/                    - Python library source code (`deep_equal` and helper assert)
+requirements.txt        - List of dependencies, e.g., pytest
+tests/original/         - Original (private/internal) test suite, mirrors JS test coverage
+public_tests/           - Public test suite, for open/visible testing
+run_tests.sh            - Single shell script to run ALL tests (pytest)
+README.md               - Info on usage, install, and testing
+project_structure.txt   - OVERVIEW of the repo including instructions
+
+**Setup & Testing**
+Install dependencies:   pip install -r requirements.txt
+Run all tests:          ./run_tests.sh

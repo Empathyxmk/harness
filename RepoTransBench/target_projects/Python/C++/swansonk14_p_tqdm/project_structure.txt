@@ -1,0 +1,26 @@
+project_root/
+├── CMakeLists.txt                  # CMake build file for project, includes setup for GoogleTest and all test sources
+├── include/
+│   └── p_tqdm_api.h                # C++ header, interface for the tested API (dummy functions matching test signatures)
+├── src/
+│   └── lib/
+│       └── p_tqdm_api.cpp          # Dummy implementation file (prototypes, version info)
+├── tests/
+│   ├── test_main.cpp               # GTest main entry (runs all tests)
+│   └── original/
+│       ├── test_p_tqdm.cpp         # C++ original private tests, translated from Python
+│       └── test_p_tqdm_extra.cpp   # C++ original "extra" tests
+├── public_tests/
+│   ├── test_public_p_tqdm.cpp      # C++ public test, from test_public_p_tqdm.py
+│   └── test_public_p_tqdm_extra.cpp# C++ public test, from test_public_p_tqdm_extra.py
+├── run_tests.sh                    # Single script to build and run all tests
+└── project_structure.txt           # This structure & guide file
+
+# Directory explanations:
+# include/         - Public API headers (here: dummy header that defines testable interface)
+# src/lib/         - Implementation of p_tqdm functions (currently dummy, as Python code not available)
+# tests/original/  - Original (private) tests translated to C++
+# public_tests/    - Public tests translated to C++
+# tests/test_main.cpp - GTest test runner main
+# CMakeLists.txt   - Build configuration, sets up Google Test, sources, and test runner
+# run_tests.sh     - One-click test build and execution script

@@ -1,0 +1,17 @@
+{
+  "project_name": "jaydenseric_apollo-upload-client",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:41:26.823946",
+  "original_path": "/workspace/runnable_filter/JavaScript/jaydenseric_apollo-upload-client",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/jaydenseric_apollo-upload-client",
+  "tests_path": [
+    "createUploadLink.test.mjs",
+    "formDataAppendFile.test.mjs",
+    "isExtractableFile.test.mjs"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

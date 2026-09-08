@@ -1,0 +1,83 @@
+{
+  "project_name": "thomasa88_ParametricText",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:25:24.829808",
+  "original_path": "/workspace/verified_repos_v2/Python/thomasa88_ParametricText",
+  "public_test_result_path": "/workspace/public_test_results/Python/thomasa88_ParametricText",
+  "original_tests": {
+    "test_files": [
+      "test/test_paramparser.py",
+      "test/test_paramformatter.py",
+      "test/parser_test.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_paramparser.py",
+      "public_tests/test_public_paramformatter.py",
+      "public_tests/test_public_parser.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_paramformatter.py",
+      "public_tests/test_public_paramparser.py",
+      "public_tests/test_public_parser.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_paramformatter.py",
+      "public_tests/test_public_paramparser.py",
+      "public_tests/test_public_parser.py",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "public_tests/test_public_paramformatter.py",
+      "public_tests/test_public_paramparser.py",
+      "public_tests/test_public_parser.py",
+      "public_tests/test_public_paramformatter.py",
+      "public_tests/test_public_paramparser.py",
+      "public_tests/test_public_parser.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 21,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_paramparser.py",
+    "public_tests/test_public_paramformatter.py",
+    "public_tests/test_public_parser.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_paramformatter.py",
+    "public_tests/test_public_paramparser.py",
+    "public_tests/test_public_parser.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_paramformatter.py",
+    "public_tests/test_public_paramparser.py",
+    "public_tests/test_public_parser.py",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "public_tests/test_public_paramformatter.py",
+    "public_tests/test_public_paramparser.py",
+    "public_tests/test_public_parser.py",
+    "public_tests/test_public_paramformatter.py",
+    "public_tests/test_public_paramparser.py",
+    "public_tests/test_public_parser.py",
+    "run_public_tests.sh"
+  ]
+}

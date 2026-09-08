@@ -1,0 +1,103 @@
+{
+  "project_name": "melvinkcx_fastapi-events",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:19:21.231356",
+  "original_path": "/workspace/verified_repos_v2/Python/melvinkcx_fastapi-events",
+  "public_test_result_path": "/workspace/public_test_results/Python/melvinkcx_fastapi-events",
+  "original_tests": {
+    "test_files": [
+      "tests/test_typing.py",
+      "tests/test_setup_py.py",
+      "tests/test_event_payload_schema_registry.py",
+      "tests/test_init_and_errors.py",
+      "tests/test_dispatcher.py",
+      "tests/test_middleware_core.py",
+      "tests/handlers/test_gcp_handler.py",
+      "tests/handlers/test_aws_handler.py",
+      "tests/handlers/test_local_handler.py",
+      "tests/middleware/test_starlite.py",
+      "tests/middleware/test_starlette.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 11,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_typing.py",
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_event_payload_schema_registry.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_init_and_errors.py",
+      "public_tests/test_public_dispatcher.py",
+      "public_tests/test_public_middleware_core.py",
+      "public_tests/handlers/test_public_gcp_handler.py",
+      "public_tests/handlers/test_public_aws_handler.py",
+      "public_tests/handlers/test_public_local_handler.py",
+      "public_tests/middleware/test_public_starlite.py",
+      "public_tests/middleware/test_public_starlette.py",
+      "public_tests/handlers/test_public_aws_handler.py",
+      "public_tests/handlers/test_public_gcp_handler.py",
+      "public_tests/handlers/test_public_local_handler.py",
+      "public_tests/handlers/test_public_local_handler.py",
+      "public_tests/handlers/test_public_aws_handler.py",
+      "public_tests/handlers/test_public_gcp_handler.py",
+      "public_tests/test_public_dispatcher.py",
+      "public_tests/test_public_event_payload_schema_registry.py",
+      "public_tests/test_public_init_and_errors.py",
+      "public_tests/test_public_middleware_core.py",
+      "public_tests/test_public_typing.py",
+      "public_tests/middleware/test_public_starlette.py",
+      "public_tests/middleware/test_public_starlite.py",
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_setup_py.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 29,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_typing.py",
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_event_payload_schema_registry.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_init_and_errors.py",
+    "public_tests/test_public_dispatcher.py",
+    "public_tests/test_public_middleware_core.py",
+    "public_tests/handlers/test_public_gcp_handler.py",
+    "public_tests/handlers/test_public_aws_handler.py",
+    "public_tests/handlers/test_public_local_handler.py",
+    "public_tests/middleware/test_public_starlite.py",
+    "public_tests/middleware/test_public_starlette.py",
+    "public_tests/handlers/test_public_aws_handler.py",
+    "public_tests/handlers/test_public_gcp_handler.py",
+    "public_tests/handlers/test_public_local_handler.py",
+    "public_tests/handlers/test_public_local_handler.py",
+    "public_tests/handlers/test_public_aws_handler.py",
+    "public_tests/handlers/test_public_gcp_handler.py",
+    "public_tests/test_public_dispatcher.py",
+    "public_tests/test_public_event_payload_schema_registry.py",
+    "public_tests/test_public_init_and_errors.py",
+    "public_tests/test_public_middleware_core.py",
+    "public_tests/test_public_typing.py",
+    "public_tests/middleware/test_public_starlette.py",
+    "public_tests/middleware/test_public_starlite.py",
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_setup_py.py",
+    "run_public_tests.sh"
+  ]
+}

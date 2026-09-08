@@ -1,0 +1,37 @@
+vijos_jd4_cpp/
+├── CMakeLists.txt
+├── README.md
+├── include/
+│   └── jd4/
+│       ├── case.h
+│       ├── cache.h
+│       ├── compare.h
+│       ├── log.h
+│       ├── pool.h
+│       └── ... (other headers as needed)
+├── src/
+│   └── jd4/
+│       ├── case.cpp
+│       ├── cache.cpp
+│       ├── compare.cpp
+│       ├── log.cpp
+│       ├── pool.cpp
+│       └── ... (other source files as needed)
+├── tests/
+│   └── original/
+│       ├── test_cache.cpp
+│       ├── test_log_and_config.cpp
+│       ├── test_pool.cpp
+│       ├── test_case.cpp
+│       ├── test_compare.cpp
+│       ├── test_integration.cpp
+│       └── test_main.cpp
+├── public_tests/
+│   ├── test_public_case.cpp
+│   ├── test_public_pool.cpp
+│   ├── test_public_log_and_config.cpp
+│   ├── test_public_cache.cpp
+│   ├── test_public_compare.cpp
+│   └── test_public_main.cpp
+├── run_tests.sh
+└── test_translation_progress.json

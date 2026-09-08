@@ -1,0 +1,58 @@
+{
+  "name": "babel-plugin-functional-hmr",
+  "version": "1.0.25",
+  "description": "HMR for functional components in React Native",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bvic23/babel-plugin-functional-hmr"
+  },
+  "bugs": {
+    "url": "https://github.com/bvic23/babel-plugin-functional-hmr/issues",
+    "email": "bvic23@gmail.com"
+  },
+  "homepage": "https://github.com/bvic23/babel-plugin-functional-hmr",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch",
+    "lint:base": "eslint --ext .js --ext .jsx --ignore-path .gitignore",
+    "lint": "yarn lint:base ."
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "hot-reload",
+    "hmr",
+    "functional-components"
+  ],
+  "author": "bvic23",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-tester": "^12.0.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-config-react-app": "^1.0.5",
+    "eslint-import-resolver-babel-module": "^3.0.0",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-react": "^7.1.0",
+    "jest": "^30.0.2",
+    "jest-cli": "^20.0.4",
+    "prettier": "^1.5.3",
+    "prettier-eslint-cli": "^4.1.1"
+  },
+  "dependencies": {
+    "react-transform-hmr": "1.0.4"
+  },
+  "packageManager": "yarn@4.9.2+sha512.1fc009bc09d13cfd0e19efa44cbfc2b9cf6ca61482725eb35bbc5e257e093ebf4130db6dfe15d604ff4b79efd8e1e8e99b25fa7d0a6197c9f9826358d4d65c3c"
+}

@@ -1,0 +1,11 @@
+{
+  "project_name": "scottyab_AESCrypt-Android",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 93.5
+  },
+  "timestamp": "2025-06-20T02:32:06.711048",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/scottyab_AESCrypt-Android",
+  "test_result_path": "/workspace/test_enhancement_results/Java/scottyab_AESCrypt-Android"
+}

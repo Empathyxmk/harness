@@ -1,0 +1,26 @@
+kennethreitz_records_cpp/
+├── CMakeLists.txt
+├── include/
+│   ├── records.hpp            # Header for Record, RecordCollection, Database etc.
+├── src/
+│   └── records.cpp            # Implementation
+├── tests/
+│   ├── CMakeLists.txt         # Test build config
+│   ├── original/
+│   │   ├── test_records_core.cpp
+│   │   ├── test_69.cpp
+│   │   ├── test_records.cpp
+│   │   ├── test_105.cpp
+│   │   ├── test_records_additional.cpp
+│   │   └── test_transactions.cpp
+│   └── test_main.cpp          # Test runner main
+├── public_tests/
+│   ├── test_public_105.cpp
+│   ├── test_public_records_additional.cpp
+│   ├── test_public_69.cpp
+│   ├── test_public_records_core.cpp
+│   ├── test_public_transactions.cpp
+│   └── test_public_records.cpp
+├── run_tests.sh
+├── README.md
+└── test_translation_progress.json

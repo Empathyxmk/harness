@@ -1,0 +1,57 @@
+viralogic_py-enumerable/
+├── LICENSE                    # License file
+├── README.md                  # Project documentation
+├── _config.yml                # Site build config (for docs)
+├── docs/                      # Documentation
+│   └── ...                    # Various .md documentation files
+├── poetry.lock                # Python lock file (not used in Go)
+├── pyproject.toml             # Python project file (not used in Go)
+├── pytest.ini                 # Pytest config (old, not used in Go)
+├── py_linq/                   # Python source (reference, not used in Go)
+│   └── ...                    # Python source files
+├── tests/                     # Go original (private) tests
+│   ├── original/              # (Go convention) - original test cases (*.go)
+│   │   ├── core_test.go
+│   │   ├── decorators_test.go
+│   │   ├── exceptions_test.go
+│   │   ├── functions_test.go
+│   │   ├── py_linq_test.go
+│   │   ├── py_linq_branch_test.go
+│   │   ├── repeatable_test.go
+│   │   └── testutil.go
+│   └── files/
+│       └── test_file1.txt     # Copied as data for tests if needed
+├── public_tests/              # Go public test cases (*.go)
+│   ├── public_core_test.go
+│   ├── public_decorators_test.go
+│   ├── public_exceptions_test.go
+│   ├── public_functions_test.go
+│   ├── public_performance_test.go
+│   ├── public_py_linq_test.go
+│   ├── public_py_linq_branch_test.go
+│   └── public_repeatable_test.go
+├── test_summary.json          # Coverage summary (for historical purposes)
+├── public_test_summary.json   # Public test meta-information
+├── run_public_tests.sh        # (Legacy) Public test runner script
+├── run_tests.sh               # Go script for running all tests (entry point)
+└── go.mod                     # Go module definition file
+
+Structure explanations:
+
+- `tests/original/`: All private (original) Go test files, one per source test, with full logic.
+- `public_tests/`: All public Go test files, following source public test structure.
+- `go.mod`: Go modules build/dependency file.
+- `run_tests.sh`: Simple test runner, executes all Go tests.
+- `project_structure.txt`: (This file) Project documentation & structure tree.
+- `testutil.go`: Any necessary test helper/util functions, shared by tests.
+- `tests/files/`: Test data files.
+- `docs/`: User/developer documentation.
+- `README.md`: General project and usage/readme.
+
+How to run tests:
+1. Install Go 1.20+.
+2. From the project root, run:
+   $ chmod +x run_tests.sh
+   $ ./run_tests.sh
+
+All original and public tests will be run, and all results shown.

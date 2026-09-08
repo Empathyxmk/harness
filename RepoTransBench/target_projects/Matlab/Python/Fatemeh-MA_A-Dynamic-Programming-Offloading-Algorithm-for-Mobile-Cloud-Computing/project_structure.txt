@@ -1,0 +1,28 @@
+project_root/
+├── README.md                      # Project overview and documentation
+├── requirements.txt               # Python dependencies list (pytest, numpy, matplotlib)
+├── run_tests.sh                   # One-click test execution script
+├── src/
+│   ├── __init__.py
+│   ├── Cal_E_T7.py                # Core source file (translated logic from MATLAB)
+│   ├── Cal_E_T8.py
+│   ├── dynamic7.py
+│   ├── GA.py
+│   ├── Main.py
+│   └── Plot.py
+├── tests/
+│   ├── __init__.py
+│   ├── testCal_E_T7.py            # Original test - Cal_E_T7
+│   ├── testCal_E_T8.py            # Original test - Cal_E_T8
+│   ├── testDynamic7.py            # Original test - dynamic7
+│   ├── testGA.py                  # Original test - GA (Genetic Algorithm)
+│   ├── testMain.py                # Original test - Main
+│   └── testPlot.py                # Original test - Plot
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_testCal_E_T7.py   # Public test - Cal_E_T7 (public)
+│   ├── test_public_testDynamic7.py   # Public test - dynamic7 (public)
+│   ├── test_public_testCal_E_T8.py   # Public test - Cal_E_T8 (public)
+│   ├── test_public_testGA.py         # Public test - GA (public)
+│   ├── test_public_testMain.py       # Public test - Main (public)
+│   └── test_public_testPlot.py       # Public test - Plot (public)

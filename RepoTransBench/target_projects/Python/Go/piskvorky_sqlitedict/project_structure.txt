@@ -1,0 +1,29 @@
+piskvorky_sqlitedict/
+├── go.mod                        # Go modules definition with dependencies.
+├── README.md                     # Project explanation and usage.
+├── run_tests.sh                  # One-click script to run all Go tests.
+├── sqlitedict.go                 # (Stub) Main Go module; you must implement.
+├── project_structure.txt         # This overview.
+├── public_tests/
+│   ├── public_coverage_ext_test.go         # Public: coverage-related tests.
+│   └── public_sqlitedict_extremes_test.go  # Public: extremes/boundary tests.
+└── tests/
+    ├── original/
+    │   ├── autocommit_test.go
+    │   ├── core_test.go
+    │   ├── coverage_ext_test.go
+    │   ├── named_db_test.go
+    │   ├── onimport_test.go
+    │   ├── sqlitedict_basic_test.go
+    │   ├── sqlitedict_branches_test.go
+    │   ├── sqlitedict_edgecases_test.go
+    │   ├── sqlitedict_errors_test.go
+    │   ├── sqlitedict_extra_test.go
+    │   ├── sqlitedict_extremes_test.go
+    │   ├── temp_db_test.go
+    │   └── testutil.go
+    └── testutil.go                     # Test helper (tempfile, comparators, etc.)
+
+- `public_tests/` — Contains all publicly provided tests (for public grading/coverage).
+- `tests/original/` — Full translation of original author's test suite.
+- `tests/testutil.go` — Utility functions for cross-file sharing (e.g., temporary files).

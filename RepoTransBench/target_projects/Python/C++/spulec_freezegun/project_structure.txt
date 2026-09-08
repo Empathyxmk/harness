@@ -1,0 +1,61 @@
+spulec_freezegun_cpp/
+├── CMakeLists.txt                    # Project and test build configuration
+├── README.md                         # Project documentation and setup instructions
+├── include/
+│   └── freezegun/                    # Public headers for C++ implementation
+│       ├── api.h
+│       └── config.h
+├── src/
+│   └── freezegun/                    # C++ implementation code
+│       ├── api.cpp
+│       └── config.cpp
+├── tests/
+│   ├── original/                     # Original test cases (full coverage)
+│   │   ├── test_asyncio.cpp
+│   │   ├── test_class_import.cpp
+│   │   ├── test_config_py.cpp
+│   │   ├── test_configure.cpp
+│   │   ├── test_create_tag.cpp
+│   │   ├── test_datetimes.cpp
+│   │   ├── test_errors.cpp
+│   │   ├── test_import_alias.cpp
+│   │   ├── test_operations.cpp
+│   │   ├── test_pickle.cpp
+│   │   ├── test_sqlite3.cpp
+│   │   ├── test_ticking.cpp
+│   │   ├── test_utils.cpp
+│   │   ├── test_uuid.cpp
+│   │   └── test_warnings.cpp
+│   └── test_main.cpp                 # GTest main entry to register all tests
+├── public_tests/
+│   ├── test_public_asyncio.cpp
+│   ├── test_public_class_import.cpp
+│   ├── test_public_config_py.cpp
+│   ├── test_public_configure.cpp
+│   ├── test_public_create_tag.cpp
+│   ├── test_public_datetimes.cpp
+│   ├── test_public_errors.cpp
+│   ├── test_public_import_alias.cpp
+│   ├── test_public_operations.cpp
+│   ├── test_public_pickle.cpp
+│   ├── test_public_sqlite3.cpp
+│   ├── test_public_ticking.cpp
+│   ├── test_public_utils.cpp
+│   ├── test_public_uuid.cpp
+│   └── test_public_warnings.cpp
+├── run_tests.sh                      # Simple one-click test execution
+└── project_structure.txt             # This file
+
+Directory Explanations:
+- include/freezegun/    : Contains public headers for C++ freezegun logic and config
+- src/freezegun/        : Implementation files for core logic (dummy/freezegun replacements as needed)
+- tests/original/       : C++ translation of original Python test cases; full internal/functional validation
+- public_tests/         : Publicly visible/targeted tests; C++ translation of Python provided public tests
+- tests/test_main.cpp   : All test files and GTest main registration
+- CMakeLists.txt        : Project build/test config—discovers and builds all tests and sources
+- run_tests.sh          : Rebuilds and runs all tests with a single command
+- README.md             : C++ project build and usage instructions
+
+Instructions:
+- Install CMake and GoogleTest for your platform.
+- Run: `./run_tests.sh` from the repo root to build and execute all tests.

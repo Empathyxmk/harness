@@ -1,0 +1,26 @@
+martin90s_ImagePicker_CSharp/
+├── README.md                          # Project overview & usage instructions
+├── martin90s_ImagePicker.sln          # .NET solution file
+├── src/
+│   └── martin90s_ImagePicker/
+│       ├── martin90s_ImagePicker.csproj       # Library csproj
+│       └── [placeholder for production code]  # Production source structure here
+├── tests/
+│   ├── original/
+│   │   ├── OriginalTests.csproj
+│   │   ├── FileChooseInterceptorTests.cs
+│   │   ├── SImagePickerTests.cs
+│   │   ├── CapturePhotoHelperTests.cs
+│   │   ├── PhotoLoadListenerTests.cs
+│   │   ├── ImageLoaderTests.cs
+│   │   ├── ExampleInstrumentedTests.cs
+│   │   └── ExampleUnitTests.cs
+│   └── TestUtilities.cs                 # Shared test dummies & stubs if needed
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── FileChooseInterceptorPublicTests.cs
+│   ├── SImagePickerPublicTests.cs
+│   ├── CapturePhotoHelperPublicTests.cs
+│   ├── PhotoLoadListenerPublicTests.cs
+│   └── ImageLoaderPublicTests.cs
+├── run_tests.sh                        # Simple script to run all tests

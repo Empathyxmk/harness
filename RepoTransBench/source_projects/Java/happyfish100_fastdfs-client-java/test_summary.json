@@ -1,0 +1,11 @@
+{
+  "project_name": "happyfish100_fastdfs-client-java",
+  "language": "Java",
+  "coverage": {
+    "line": 57.8,
+    "branch": 51.2
+  },
+  "timestamp": "2025-06-19T20:21:28.545924",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/happyfish100_fastdfs-client-java",
+  "test_result_path": "/workspace/test_enhancement_results/Java/happyfish100_fastdfs-client-java"
+}

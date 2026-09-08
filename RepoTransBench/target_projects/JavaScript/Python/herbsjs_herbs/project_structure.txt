@@ -1,0 +1,33 @@
+herbsjs_herbs-python/
+├── src/
+│   └── herbs/
+│       ├── __init__.py
+│       └── [Put library source code here, if ported]
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   └── __init__.py
+│   └── # [Here would be original tests if they existed]
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_aloe_public.py
+│   ├── test_buchu_public.py
+│   ├── test_gotu_public.py
+│   └── test_suma_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Directory Explanations:
+- src/herbs/: Place for library source code if porting the herbsjs library.
+- tests/: Original tests (none for this project, included for structure).
+- public_tests/: All public test cases translated from JavaScript, using pytest, fully working and discoverable.
+- requirements.txt: Python dependencies (pytest).
+- run_tests.sh: One-line script to discover and run all tests via pytest.
+- project_structure.txt: This file describing the structure.
+
+Setup and Testing Instructions:
+1. Install requirements: `pip install -r requirements.txt`
+2. (Optional) Add/port library logic in src/herbs/ if porting the main library.
+3. Run all tests: `./run_tests.sh`
+4. All public test cases are in public_tests/ and use pytest naming conventions.

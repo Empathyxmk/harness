@@ -1,0 +1,40 @@
+PercentLinearLayoutSample Project Structure
+------------------------------------------
+
+.
+├── PercentLinearLayoutSample.sln            # Visual Studio Solution file for C# multi-project setup
+├── run_tests.sh                            # Simple shell script for one-click testing
+├── project_structure.txt                   # This project structure documentation file
+├── src/
+│   └── PercentLinearLayout/
+│       ├── PercentLinearLayout.csproj      # Main library (placeholder logic, as Android-dependent)
+│       └── PercentLinearLayout.cs          # Class stubs emulating the Android PercentLinearLayout, LinearLayout, etc.
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj            # xUnit test project for original tests
+│       ├── ApplicationTest.cs              # Translated from ApplicationTest.java
+│       └── PercentLinearLayoutTest.cs      # Translated from PercentLinearLayoutTest.java
+└── public_tests/
+    ├── PublicTests.csproj                  # xUnit test project for public test cases
+    ├── ApplicationPublicTest.cs            # Translated from ApplicationPublicTest.java
+    └── PercentLinearLayoutPublicTest.cs    # Translated from PercentLinearLayoutPublicTest.java
+
+Directory/Files Explanation:
+- PercentLinearLayoutSample.sln        : Ties all C# projects together for easy single-command builds/tests
+- run_tests.sh                        : Runs all tests in both original and public test projects using the .sln
+- src/PercentLinearLayout/            : Contains the placeholder C# implementation (stubs) required by tests
+- tests/original/                     : Contains all test files ported from the original test suite
+- public_tests/                       : Contains all test files ported from the public test suite
+
+Setup/Testing Instructions:
+1. Ensure you have [.NET SDK 7.0+](https://dotnet.microsoft.com/en-us/download) installed.
+2. Restore and build: `dotnet build PercentLinearLayoutSample.sln`
+3. Run all tests: `./run_tests.sh`
+   - Or individually with, e.g., `dotnet test tests/original/OriginalTests.csproj`
+   - Or for public: `dotnet test public_tests/PublicTests.csproj`
+
+Dependencies:
+- xUnit testing framework is referenced via NuGet for all test projects.
+
+Notes:
+- The actual library code is a minimal stub, so the tests can run; in a real port, Android logic would require full .NET cross-platform adaptation.

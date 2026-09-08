@@ -1,0 +1,33 @@
+casidiablo_multidex_python/
+├── requirements.txt                # Python requirements: pytest
+├── run_tests.sh                    # One-click test execution, runs all tests via pytest
+├── project_structure.txt           # This file. Project structure and README.
+├── tests/
+│   ├── __init__.py                 # (Empty file, marks directory as package)
+│   └── original/                   # Original (non-public) translated tests
+│       ├── __init__.py
+│       ├── test_multidex.py        # Transl. of MultiDexTest.java
+│       ├── test_multidex_standalone.py # MultiDexStandaloneTest.java
+│       ├── test_multidexapplication.py # MultiDexApplicationTest.java
+│       ├── test_multidexextractor.py   # MultiDexExtractorTest.java
+│       ├── test_ziputil.py         # ZipUtilTest.java
+│       └── test_ziputilextra.py    # ZipUtilExtraTest.java
+├── public_tests/
+│   ├── __init__.py                 # (Empty file)
+│   ├── test_multidex_public.py           # MultiDexPublicTest.java
+│   ├── test_multidex_standalone_public.py # MultiDexStandalonePublicTest.java
+│   ├── test_multidexapplication_public.py # MultiDexApplicationPublicTest.java
+│   ├── test_multidexextractor_public.py   # MultiDexExtractorPublicTest.java
+│   ├── test_ziputil_public.py            # ZipUtilPublicTest.java
+│   ├── test_ziputilextra_public.py       # ZipUtilExtraPublicTest.java
+│   └── test_ziputilpublic_extra.py       # (merged if needed, else as above)
+│
+README/Instructions:
+--------------------
+- To install dependencies:      pip install -r requirements.txt
+- To run all tests:             ./run_tests.sh
+- Both original and public test cases are implemented using pytest in their respective folders.
+- The original Java test coverage and scenarios are faithfully maintained via the Python tests.
+- Running pytest will execute all tests (original and public). To run only one type, use e.g.:
+    pytest tests/original/
+    pytest public_tests/

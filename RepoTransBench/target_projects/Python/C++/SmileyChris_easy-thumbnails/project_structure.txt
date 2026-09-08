@@ -1,0 +1,46 @@
+project_root/
+├── CMakeLists.txt
+├── include/
+│   └── (library headers, if any)
+├── src/
+│   └── (core src files, if any)
+├── tests/
+│   ├── original/
+│   │   ├── test_files_test.cpp
+│   │   ├── test_namers_test.cpp
+│   │   ├── test_models_test.cpp
+│   │   ├── test_aliases_test.cpp
+│   │   ├── test_storage_test.cpp
+│   │   ├── test_animated_formats_test.cpp
+│   │   ├── test_thumbnail_cleanup_test.cpp
+│   │   ├── test_source_generators_test.cpp
+│   │   ├── test_conf_test.cpp
+│   │   ├── test_widgets_test.cpp
+│   │   ├── test_svg_processors_test.cpp
+│   │   ├── test_engine_test.cpp
+│   │   ├── test_fields_test.cpp
+│   │   ├── test_management_test.cpp
+│   │   ├── test_templatetags_test.cpp
+│   │   ├── test_pixel_processors_test.cpp
+│   │   ├── demoproject_mainapp_tests_test.cpp
+│   │   └── test_summary_test.cpp
+│   └── test_main.cpp
+├── public_tests/
+│   ├── test_thumbnail_cleanup_public_test.cpp
+│   ├── test_templatetags_public_test.cpp
+│   ├── test_conf_public_test.cpp
+│   ├── test_files_public_test.cpp
+│   ├── test_storage_public_test.cpp
+│   ├── test_widgets_public_test.cpp
+│   ├── test_animated_formats_public_test.cpp
+│   ├── test_models_public_test.cpp
+│   ├── test_pixel_processors_public_test.cpp
+│   ├── test_source_generators_public_test.cpp
+│   ├── test_aliases_public_test.cpp
+│   ├── test_fields_public_test.cpp
+│   ├── test_engine_public_test.cpp
+│   ├── test_namers_public_test.cpp
+│   └── public_test_summary_test.cpp
+├── run_tests.sh
+├── README.md
+└── test_translation_progress.json

@@ -1,0 +1,22 @@
+levenshtein/
+├── Cargo.toml              # Rust project configuration
+├── src/
+│   └── lib.rs              # Main implementation of Levenshtein algorithm
+├── tests/
+│   └── original/
+│       └── original_tests.rs  # Original test cases translated from test.c
+├── public_tests/
+│   └── public_tests.rs     # Public test cases translated from public_test.c
+└── run_tests.sh            # Simple test execution script
+
+This Rust project structure follows standard Rust conventions:
+- src/lib.rs: Contains the main implementation of the Levenshtein distance algorithm
+- tests/: Contains the original test cases from test.c
+- public_tests/: Contains the public test cases from public_test.c
+- Cargo.toml: Project configuration file that defines dependencies and test structure
+- run_tests.sh: Simple script to run all tests with a single command
+
+To run all tests:
+$ ./run_tests.sh
+
+This will execute both the original and public tests.

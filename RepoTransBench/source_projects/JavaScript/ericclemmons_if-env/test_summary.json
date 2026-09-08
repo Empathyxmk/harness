@@ -1,0 +1,15 @@
+{
+  "project_name": "ericclemmons_if-env",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:20:33.369268",
+  "original_path": "/workspace/runnable_filter/JavaScript/ericclemmons_if-env",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/ericclemmons_if-env",
+  "tests_path": [
+    "test/if-env.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,24 @@
+{
+  "project_name": "LanceGin_haishoku",
+  "language": "Python",
+  "coverage": {
+    "line": 88.0,
+    "branch": 92.9
+  },
+  "timestamp": "2025-06-23T10:31:18.875348",
+  "original_path": "/workspace/test_enhancement_results/Python/LanceGin_haishoku",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/LanceGin_haishoku",
+  "tests_path": [
+    "tests/test_alg_more.py",
+    "tests/test_demo_script.py",
+    "tests/test_haishoku.py",
+    "tests/test_haishoku_class.py",
+    "tests/test_haillow.py",
+    "tests/test_haishoku_edgecases.py",
+    "tests/test_alg.py",
+    "tests/test_init_and_setup.py",
+    "tests/base_test.py",
+    "tests/__init__.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

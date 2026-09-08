@@ -1,0 +1,22 @@
+.
+├── go.mod                        # Go module definition
+├── README.md                     # Project info and test instructions
+├── run_tests.sh                  # One-click test runner
+├── siesta/                       # Main package directory (IMPLEMENT HERE)
+│   ├── api.go                    # [You: Place your API implementation here]
+│   ├── resource.go               # [You: Place your Resource implementation here]
+│   ├── auth.go                   # [You: Place your Auth implementation here]
+│   └── ...                       # [Other package files as needed]
+├── tests/
+│   └── original/
+│       ├── auth_test.go          # Original test_auth.py translated to Go
+│       ├── init_test.go          # Original test_init.py translated to Go
+│       └── siesta_test.go        # Original test_siesta.py translated to Go
+└── public_tests/
+    ├── auth_public_test.go       # Public test_public_auth.py translated to Go
+    ├── init_public_test.go       # Public test_public_init.py translated to Go
+    └── siesta_public_test.go     # Public test_public_siesta.py translated to Go
+
+- All Go test files are self-contained and import from `siesta` package.
+- Place your implementation in `/siesta/`.
+- All tests are executable via `go test ./...` or `./run_tests.sh`.

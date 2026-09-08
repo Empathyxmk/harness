@@ -1,0 +1,57 @@
+{
+  "project_name": "xiaofeidev_RoundWidget",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:20:20.579007",
+  "original_path": "/workspace/verified_repos_v2/Java/xiaofeidev_RoundWidget",
+  "public_test_result_path": "/workspace/public_test_results/Java/xiaofeidev_RoundWidget",
+  "original_tests": {
+    "test_files": [
+      "lib_round/src/androidTest/java/io/github/xiaofeidev/round/ExampleInstrumentedTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/ExampleUnitTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/RoundImageViewTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/RoundFrameLayoutTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/round/RoundStatusImplTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/round/RoundStatusTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/round/RoundStatusImplBuilderTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/utils/SizeUtilsTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "lib_round/src/test/java/io/github/xiaofeidev/round/ExampleUnitPublicTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/RoundImageViewPublicTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/RoundFrameLayoutPublicTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/round/RoundStatusImplPublicTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/round/RoundStatusPublicTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/round/RoundStatusImplBuilderPublicTest.java",
+      "lib_round/src/test/java/io/github/xiaofeidev/round/utils/SizeUtilsPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "lib_round/src/test/java/io/github/xiaofeidev/round/ExampleUnitPublicTest.java",
+    "lib_round/src/test/java/io/github/xiaofeidev/round/RoundImageViewPublicTest.java",
+    "lib_round/src/test/java/io/github/xiaofeidev/round/RoundFrameLayoutPublicTest.java",
+    "lib_round/src/test/java/io/github/xiaofeidev/round/round/RoundStatusImplPublicTest.java",
+    "lib_round/src/test/java/io/github/xiaofeidev/round/round/RoundStatusPublicTest.java",
+    "lib_round/src/test/java/io/github/xiaofeidev/round/round/RoundStatusImplBuilderPublicTest.java",
+    "lib_round/src/test/java/io/github/xiaofeidev/round/utils/SizeUtilsPublicTest.java",
+    "run_public_tests.sh"
+  ]
+}

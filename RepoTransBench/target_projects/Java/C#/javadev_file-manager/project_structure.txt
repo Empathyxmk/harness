@@ -1,0 +1,28 @@
+project_root/
+├── FileManager.sln                               # .NET solution file to aggregate all projects
+├── run_tests.sh                                  # Simple shell script to run all tests with one command
+├── src/
+│   └── FileManager/
+│       ├── FileManager.csproj                    # C# class library project for core logic
+│       └── FileManager.cs                        # FileManager implementation (translated from Java)
+├── tests/
+│   └── original/
+│       ├── FileManagerTest.csproj                # xUnit test project for original private tests
+│       └── FileManagerTest.cs                    # C# translation of FileManagerTest.java (private tests)
+├── public_tests/
+│   ├── FileManagerPublicTest.csproj              # xUnit test project for public test cases
+│   └── FileManagerPublicTest.cs                  # C# translation of FileManagerPublicTest.java (public tests)
+└── project_structure.txt                         # This file, describing the C# project structure
+
+Directory explanations:
+- src/FileManager/                        → Core C# library with FileManager.cs
+- tests/original/                         → Private/original tests (mirrors Java's FileManagerTest.java)
+- public_tests/                           → Public/visible tests (mirrors Java's FileManagerPublicTest.java)
+- FileManager.sln                         → Solution file; unifies source and test projects for easy dotnet build/test
+- run_tests.sh                            → Bash script for one-click testing with dotnet test
+
+Setup:
+  1. Ensure .NET 6.0 SDK or higher is installed.
+  2. Run: chmod +x run_tests.sh
+  3. Run: ./run_tests.sh
+     This will build and execute all tests (original and public), outputting results to the console.

@@ -1,0 +1,34 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   └── url.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_url.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_url_public.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+
+Directory explanations:
+
+src/: Main source code. url.py provides URL parsing/normalization utilities.
+tests/original/: The main/original test suite, comprehensive and covering all original logic.
+public_tests/: Public ("user-facing") test suite for visible usage scenarios and example validation.
+requirements.txt: Python dependency list (pytest for test running).
+run_tests.sh: Simple one-click script to run ALL tests with pytest.
+project_structure.txt: This document; outlines the Python project structure and contents.
+
+Setup and testing instructions:
+
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Run all tests:
+   ./run_tests.sh
+
+Tests from tests/original/ and public_tests/ will both be discovered and executed by pytest.

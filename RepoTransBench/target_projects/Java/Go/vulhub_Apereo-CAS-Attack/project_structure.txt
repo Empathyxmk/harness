@@ -1,0 +1,12 @@
+apereo-cas-attack/
+├── go.mod                   # Go module declaration
+├── README.md                # Overview, instructions
+├── main.go                  # Main CLI entry point
+├── app.go                   # Apereo CAS attack logic and CLI parsing functions
+├── run_tests.sh             # Simple script to run all tests
+├── project_structure.txt    # This project structure documentation
+├── tests/
+│   └── original/
+│       └── app_test.go      # All tests originally in AppTest.java
+├── public_tests/
+│   └── app_public_test.go   # All tests from AppPublicTest.java

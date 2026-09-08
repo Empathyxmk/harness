@@ -1,0 +1,23 @@
+verbalexpressions-java/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── verbalexpressions/
+│   │                   ├── VerEx.java         # (to be implemented)
+│   │                   └── Util.java          # (for things like re_escape)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── verbalexpressions/
+│                       ├── original/
+│                       │   ├── VerExExtraTest.java
+│                       │   └── VerExTest.java
+│                       └── public_tests/
+│                           ├── PublicVerExExtraTest.java
+│                           └── PublicVerExTest.java
+├── test_translation_progress.json

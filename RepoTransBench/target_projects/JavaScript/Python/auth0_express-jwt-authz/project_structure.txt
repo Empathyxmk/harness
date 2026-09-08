@@ -1,0 +1,32 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   └── express_jwt_authz.py
+│
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_index.py
+│       └── test_functional.py
+│
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_index_public.py
+│   └── test_functional_public.py
+│
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Descriptions:
+- src/: Main Python package source code. (express_jwt_authz.py is a stub for middleware interface used by tests)
+- tests/original/: Direct translations of the original project test cases.
+- public_tests/: Translations of generated public test cases.
+- requirements.txt: Python package requirement dependencies (pytest for testing).
+- run_tests.sh: Simple Bash script for easily running all tests via pytest.
+- project_structure.txt: This file, describes folder layout and roles.
+
+Instructions:
+1. Set up a virtualenv and install requirements: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`

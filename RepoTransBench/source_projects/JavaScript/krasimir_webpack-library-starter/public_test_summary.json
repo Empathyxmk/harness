@@ -1,0 +1,56 @@
+{
+  "project_name": "krasimir_webpack-library-starter",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:32:38.228236",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/krasimir_webpack-library-starter",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/krasimir_webpack-library-starter",
+  "original_tests": {
+    "test_files": [
+      "src/__tests__/dog.spec.js",
+      "src/__tests__/index.spec.js",
+      "src/__tests__/webpackconfig.spec.js",
+      "src/__tests__/cat.spec.js",
+      "src/__tests__/dog_extended.spec.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/dog.public.test.js",
+      "public_tests/index.public.test.js",
+      "public_tests/webpackconfig.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/cat.public.test.js",
+      "public_tests/dog_extended.public.test.js",
+      "public_tests/cat.public.test.js",
+      "public_tests/index.public.test.js",
+      "public_tests/dog_extended.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/dog.public.test.js",
+    "public_tests/index.public.test.js",
+    "public_tests/webpackconfig.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/cat.public.test.js",
+    "public_tests/dog_extended.public.test.js",
+    "public_tests/cat.public.test.js",
+    "public_tests/index.public.test.js",
+    "public_tests/dog_extended.public.test.js"
+  ]
+}

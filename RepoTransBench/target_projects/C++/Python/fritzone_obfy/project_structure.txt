@@ -1,0 +1,50 @@
+Project Structure for fritzone_obfy Python Port:
+
+.
+├── src/
+│   └── fritzone_obfy/
+│       ├── __init__.py                # Package init
+│       └── instr.py                   # Logic implementation (process_instruction)
+├── tests/
+│   ├── __init__.py                    # Tests package init
+│   └── original/
+│       ├── __init__.py                # Original tests package init
+│       └── test_main.py               # Original C++ tests translated to Python
+├── public_tests/
+│   ├── __init__.py                    # Public tests package init
+│   └── test_main_public.py            # Public C++ tests translated to Python
+├── requirements.txt                   # Python test dependencies (pytest)
+├── run_tests.sh                       # Simple test runner (also runs pip install)
+├── README.md                          # Documentation and instructions
+├── project_structure.txt              # This file (project structure description)
+
+# Directory/Module Explanations
+
+src/fritzone_obfy/
+    Contains the main source logic (process_instruction etc.)
+
+tests/original/
+    Contains translations of original test logic from the C++ project.
+
+public_tests/
+    Contains translations of public, externally visible tests.
+
+requirements.txt
+    Lists pip dependencies for tests (pytest).
+
+run_tests.sh
+    Installs dependencies and runs all tests with a single command.
+
+README.md
+    Basic instructions for running and maintaining the project.
+
+project_structure.txt
+    Overview of the Python project structure and file purposes.
+
+# Running Tests
+
+All tests can be run by executing:
+
+    ./run_tests.sh
+
+which will run both the original and public test suites.

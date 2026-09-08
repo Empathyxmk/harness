@@ -1,0 +1,25 @@
+zfkun_ja-netfilter-mymap-plugin (Go Project Structure):
+
+.
+├── README.md                        # Project overview and instructions
+├── go.mod                           # Go module file
+├── module.go                        # (placeholder/business logic, not implemented)
+├── main.go                          # (placeholder/business logic entry point)
+├── run_tests.sh                     # One-click script to execute all tests
+├── project_structure.txt            # This structure/readme file
+├── tests/
+│   ├── testutil.go                  # Shared test utilities, structs, helpers
+│   └── original/
+│       ├── map_transformer_test.go            # Original translation of MapTransformerTest.java
+│       ├── put_filter_test.go                 # Original translation of PutFilterTest.java
+│       └── my_plugin_entry_test.go            # Original translation of MyPluginEntryTest.java
+└── public_tests/
+    ├── map_transformer_public_test.go         # Translation of MapTransformerPublicTest.java
+    ├── put_filter_public_test.go              # Translation of PutFilterPublicTest.java
+    └── my_plugin_entry_public_test.go         # Translation of MyPluginEntryPublicTest.java
+
+Legend:
+- All test files end in `_test.go` per Go conventions.
+- Original tests are under `tests/original/`. Public tests under `public_tests/`.
+- `tests/testutil.go` has common simple mock struct types for testing (enums, etc).
+- `run_tests.sh` runs all tests recursively.

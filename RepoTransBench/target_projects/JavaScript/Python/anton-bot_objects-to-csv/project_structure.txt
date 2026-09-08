@@ -1,0 +1,38 @@
+Project Structure for anton-bot_objects-to-csv (Python translation)
+
+├── src/
+│   └── objects_to_csv.py         # Main library code: objects_to_csv function
+├── tests/
+│   └── original/
+│       └── test_objects_to_csv.py        # Original test suite, full coverage
+├── public_tests/
+│   └── test_objects_to_csv_public.py     # Public test cases (public-facing, representative data)
+├── requirements.txt              # Python dependency specification (pytest for testing)
+├── run_tests.sh                  # Simple script to run all tests (one-click)
+└── project_structure.txt         # This file
+
+# Directory/Files Explanation:
+
+src/objects_to_csv.py
+    Implementation of the CSV conversion logic. Called by all tests.
+
+tests/original/
+    Contains all original test cases (from index.test.js), with identical coverage and edge-cases.
+
+public_tests/
+    Contains public-facing test cases (from index.public.test.js), with public data only.
+
+requirements.txt
+    Use 'pip install -r requirements.txt' to install test dependencies.
+
+run_tests.sh
+    Simple shell script to run all tests with 'pytest'.
+    Usage:
+        chmod +x run_tests.sh
+        ./run_tests.sh
+
+Instructions:
+    1. Install requirements: `pip install -r requirements.txt`
+    2. Run tests: `./run_tests.sh`
+
+All logic and assertion details from the source JavaScript tests have been fully preserved and translated into Python with pytest.

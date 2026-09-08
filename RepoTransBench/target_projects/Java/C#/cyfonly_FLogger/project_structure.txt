@@ -1,0 +1,33 @@
+cyfonly_FLogger_CSharp/
+├── cyfonly_FLogger.sln
+├── src/
+│   └── cyfonly_FLogger/
+│       ├── cyfonly_FLogger.csproj
+│       └── (main source files, not shown here)
+├── tests/
+│   ├── original/
+│   │   ├── cyfonly_FLogger.Tests.Original.csproj
+│   │   ├── CommUtilTest.cs
+│   │   ├── ConstantTest.cs
+│   │   ├── FLoggerCoreTest.cs
+│   │   ├── FLoggerTest.cs
+│   │   ├── FloggerTest.cs
+│   │   ├── FloggerThroughputTest.cs
+│   │   ├── LogFileItemTest.cs
+│   │   ├── LogManagerTest.cs
+│   │   └── TimeUtilTest.cs
+│   └── TestUtilities.cs
+├── public_tests/
+│   ├── cyfonly_FLogger.Tests.Public.csproj
+│   ├── CommUtilPublicTest.cs
+│   ├── ConstantPublicTest.cs
+│   ├── FLoggerCorePublicTest.cs
+│   ├── FLoggerTestPublic.cs
+│   ├── FloggerPublicTest.cs
+│   ├── FloggerThroughputPublicTest.cs
+│   ├── LogFileItemPublicTest.cs
+│   ├── LogManagerPublicTest.cs
+│   └── TimeUtilPublicTest.cs
+├── run_tests.sh
+├── README.md
+├── test_translation_progress.json

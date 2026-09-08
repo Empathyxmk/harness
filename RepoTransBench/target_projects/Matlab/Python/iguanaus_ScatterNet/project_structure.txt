@@ -1,0 +1,30 @@
+iguanaus_ScatterNet Python Test Project Structure
+
+.
+├── requirements.txt                  # Python dependencies (incl. pytest)
+├── run_tests.sh                      # Simple bash script to run all tests with pytest
+├── src/                              # [Optional] place for core Python sources (empty placeholder here)
+├── tests/
+│   ├── __init__.py                   # (empty file for pytest discovery)
+│   └── original/
+│       ├── __init__.py               # (empty file for pytest discovery)
+│       ├── test_scatternet.py        # Translation of tests/test_scatternet.m
+│       └── test_scatternet_extended.py   # Translation of tests/test_scatternet_extended.m
+├── public_tests/
+│   ├── __init__.py                   # (empty file for pytest discovery)
+│   ├── test_scatternet_public.py     # Translation of tests_public/public_test_scatternet.m
+│   └── test_scatternet_public_extended.py # Translation of tests_public/public_test_scatternet_extended.m
+
+Directory explanations:
+- requirements.txt: Lists Python dependencies required (pytest).
+- run_tests.sh: Minimal script; executes all Python tests with pytest.
+- src/: Placeholder for Python library code (original repo is mainly Matlab, so unused in this translation).
+- tests/original/: Contains test cases translated from Matlab's 'tests' (private/original tests).
+- public_tests/: Contains test cases translated from Matlab's 'tests_public' (publicly visible tests).
+- All test logic is fully translated and executable with pytest.
+
+Setup & Testing:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+
+Enjoy one-click reproducibility and discovery via pytest!

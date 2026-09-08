@@ -1,0 +1,18 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_cpr.py
+│       ├── test_msgpack.py
+│       ├── test_zmq.py
+│       ├── test_pybind.py
+│       ├── test_protobuf.py
+│       ├── test_cpp_version.py
+└── public_tests/
+    ├── __init__.py
+    ├── test_msgpack_public.py
+    ├── test_zmq_public.py

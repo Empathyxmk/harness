@@ -1,0 +1,11 @@
+{
+  "project_name": "chengzhicao_ChannelView",
+  "language": "Java",
+  "coverage": {
+    "line": 55.0,
+    "branch": 52.5
+  },
+  "timestamp": "2025-06-19T18:35:34.426097",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/chengzhicao_ChannelView",
+  "test_result_path": "/workspace/test_enhancement_results/Java/chengzhicao_ChannelView"
+}

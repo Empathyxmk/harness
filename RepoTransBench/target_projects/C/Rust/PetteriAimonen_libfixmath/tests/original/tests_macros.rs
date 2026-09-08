@@ -1,0 +1,96 @@
+use libfixmath_rs::fix16::*;
+#[test]
+fn test_macros() {
+    #[track_caller]
+    fn do_test(i: i32, m: i32) {
+        let f = F16((i as f64) + (m as f64 / 100_000.0));
+        assert_eq!(f, F16C(i, m));
+        assert_eq!(f, fix16_from_dbl((i as f64) + (m as f64 / 100_000.0)));
+    }
+    do_test(1, 234);
+    do_test(0, 0);
+    do_test(1, 0);
+    do_test(-1, 0);
+    do_test(1, 5);
+    do_test(-1, 5);
+    do_test(0, 0);
+    do_test(0, 1);
+    do_test(0, 10);
+    do_test(0, 1);
+    do_test(0, 10001);
+    do_test(0, 11000);
+    do_test(25, 133);
+    do_test(32767, 0);
+    do_test(32767, 1);
+    do_test(32767, 99999);
+    do_test(0, 25);
+    do_test(0, 99555);
+    do_test(0, 99998);
+    do_test(0, 99999);
+    do_test(-1, 1);
+    do_test(-25, 133);
+    do_test(-32767, 1);
+    do_test(-32768, 0);
+
+    // Random values
+    do_test(0, 2267);
+    do_test(1, 49887);
+    do_test(0, 27589);
+    do_test(0, 38393);
+    do_test(0, 8934);
+    do_test(0, 95820);
+    do_test(0, 95596);
+    do_test(72, 10642);
+    do_test(0, 48939);
+    do_test(3, 37797);
+    do_test(1, 9194);
+    do_test(0, 8605);
+    do_test(3, 4349);
+    do_test(3, 95401);
+    do_test(15, 36292);
+    do_test(56, 9242);
+    do_test(0, 54071);
+    do_test(27, 8953);
+    do_test(0, 3913);
+    do_test(1, 32707);
+    do_test(4, 50117);
+    do_test(0, 24990);
+    do_test(44, 77319);
+    do_test(2, 59139);
+    do_test(0, 16279);
+    do_test(17, 14712);
+    do_test(11, 54281);
+    do_test(0, 2768);
+    do_test(0, 39278);
+    do_test(0, 19369);
+    do_test(0, 4534);
+    do_test(0, 349);
+    do_test(-2, 30380);
+    do_test(0, 3061);
+    do_test(-7, 50065);
+    do_test(-3, 97050);
+    do_test(0, 43898);
+    do_test(-3, 49876);
+    do_test(-1, 35942);
+    do_test(-10, 81154);
+    do_test(0, 26676);
+    do_test(-9, 52134);
+    do_test(0, 42592);
+    do_test(0, 5424);
+    do_test(0, 62461);
+    do_test(0, 21562);
+    do_test(0, 22366);
+    do_test(0, 9074);
+    do_test(-1, 29527);
+    do_test(-4, 98427);
+    do_test(0, 10721);
+    do_test(-11, 39446);
+    do_test(-451, 53916);
+    do_test(0, 4279);
+    do_test(-3, 36543);
+    do_test(0, 1003);
+    do_test(-12, 8326);
+    do_test(-1, 7143);
+    do_test(-1, 7737);
+    do_test(0, 22957);
+}

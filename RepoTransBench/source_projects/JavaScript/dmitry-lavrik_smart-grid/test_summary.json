@@ -1,0 +1,15 @@
+{
+  "project_name": "dmitry-lavrik_smart-grid",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:17:30.535964",
+  "original_path": "/workspace/runnable_filter/JavaScript/dmitry-lavrik_smart-grid",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/dmitry-lavrik_smart-grid",
+  "tests_path": [
+    "src/utils.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

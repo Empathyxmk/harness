@@ -1,0 +1,16 @@
+{
+  "project_name": "expressjs_morgan",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 89.92,
+    "branch": 67.41
+  },
+  "timestamp": "2025-06-19T10:24:52.493741",
+  "original_path": "/workspace/runnable_filter/JavaScript/expressjs_morgan",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/expressjs_morgan",
+  "tests_path": [
+    "test/morgan_index.test.js",
+    "test/morgan_tokens_format.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,28 @@
+gabrieldim_Junit-ISP-Testing (Go translation)
+├── go.mod                          # Go module file
+├── README.md                       # Documentation and instructions
+├── run_tests.sh                    # Simple test runner for all tests
+├── project_structure.txt           # This project structure file
+├── sets/
+│   └── sets.go                     # Core implementation: set difference and set data structure
+├── tests/
+│   └── original/
+│       └── testing_sets_test.go    # Complete translations of original (private) tests from Java
+├── public_tests/
+│   └── testing_sets_public_test.go # Complete translations of public tests from Java
+
+# Directory and file explanations:
+
+- sets/: Contains all set-related logic, including IntSet and SetDifference implementation.
+- tests/original/: Private/original tests from Java source, fully translated.
+- public_tests/: Public (released) tests, fully translated.
+- run_tests.sh: Run `./run_tests.sh` to execute ALL tests (original and public).
+- go.mod: Go module/dependency management file.
+
+# Usage:
+
+1. Install Go 1.20+ if not already installed.
+2. Run `./run_tests.sh` from the root directory.
+3. All tests (original and public) will be executed and results shown.
+
+This structure ensures a clean separation between public and original test suites, as well as modular source code for easy future maintenance.

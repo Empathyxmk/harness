@@ -1,0 +1,16 @@
+{
+  "project_name": "danharper_Handlebars-Helpers",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 95.2,
+    "branch": 75.0
+  },
+  "timestamp": "2025-06-19T10:10:05.554509",
+  "original_path": "/workspace/runnable_filter/JavaScript/danharper_Handlebars-Helpers",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/danharper_Handlebars-Helpers",
+  "tests_path": [
+    "test/helpers.test.js",
+    "test/helpersTest.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

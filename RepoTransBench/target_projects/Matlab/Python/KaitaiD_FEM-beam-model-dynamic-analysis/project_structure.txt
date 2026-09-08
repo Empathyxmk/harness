@@ -1,0 +1,28 @@
+.
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── project_structure.txt
+├── src/
+│   ├── __init__.py
+│   ├── fem/
+│   │   ├── __init__.py
+│   │   ├── newmark.py
+│   │   ├── material.py
+│   │   ├── element.py
+│   │   ├── utility.py
+│   │   └── ... (other translated FEM modules)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_newmark_integration.py
+│       ├── test_materialstiffness.py
+│       ├── test_element_routines.py
+│       └── test_utility_functions.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_newmark_integration_public.py
+│   ├── test_materialstiffness_public.py
+│   ├── test_element_routines_public.py
+│   └── test_utility_functions_public.py

@@ -1,0 +1,30 @@
+realpython_codetiming/
+├── Cargo.toml                      # Rust package config
+├── src/
+│   ├── lib.rs                      # Main crate file, exposes modules
+│   ├── timer.rs                    # Timer and TimerError logic
+│   └── timers.rs                   # Simulates accumulators/methods for timers
+├── tests/
+│   └── original/
+│       ├── test_codetiming.rs      # Translated original test_codetiming.py (Rust)
+│       ├── test_timer_additional.rs# Translated original test_timer_additional.py
+│       └── test_timers.rs          # Translated original test_timers.py
+├── public_tests/
+│   ├── test_public_codetiming.rs   # Translated public_tests/test_public_codetiming.py
+│   ├── test_public_timer_additional.rs
+│   └── test_public_timers.rs
+├── run_tests.sh                    # One-click test runner (cargo test)
+└── project_structure.txt           # This file, describes layout and usage
+
+Directory and file explanations:
+- Cargo.toml: Standard Rust manifest with deps and test dev-deps.
+- src/: Source code (with modules, not actual impls but test harness stubs for the timer/timers).
+- tests/original/: All original test cases from Python, directly mapped to Rust as #[test] fns.
+- public_tests/: All public test cases, separated, also as valid #[test] Rust test modules.
+- run_tests.sh: Run with `./run_tests.sh` to execute all Rust #[test] tests from all modules.
+- project_structure.txt: Explains above.
+
+How to build/run:
+1. Install Rust toolchain if not available (`rustup`)
+2. Ensure executable bit on run_tests.sh (`chmod +x run_tests.sh`)
+3. Run `./run_tests.sh` in project root to build and test everything.

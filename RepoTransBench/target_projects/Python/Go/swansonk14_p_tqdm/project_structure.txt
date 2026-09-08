@@ -1,0 +1,20 @@
+swansonk14_p_tqdm-go/
+├── go.mod                      # Go module file
+├── run_tests.sh                # Simple one-click test runner script
+├── public_tests/               # Directory for public test cases (translated)
+│   ├── p_tqdm_test.go          # Translated public tests (was test_public_p_tqdm.py)
+│   └── p_tqdm_extra_test.go    # Translated public tests (was test_public_p_tqdm_extra.py)
+└── tests/
+    └── original/
+        ├── p_tqdm_test.go          # Translated original tests (was test_p_tqdm.py)
+        └── p_tqdm_extra_test.go    # Translated original tests (was test_p_tqdm_extra.py)
+
+# Directory/filename explanations:
+# go.mod                : Declares Go module, required for dependency management/startup.
+# run_tests.sh          : Script to run all tests in the codebase via go test (one command).
+# public_tests/         : All public test cases placed here, equivalent to Python's public_tests/ folder.
+# tests/original/       : Contains all "original" (non-public) tests translated from the original Python suite.
+# ..._test.go           : All unit/integration test files in Go are named *_test.go for test discovery.
+
+# To run all tests, simply invoke:
+#   ./run_tests.sh

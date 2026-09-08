@@ -1,0 +1,56 @@
+Shpota_github-activity-generator Java Project Structure:
+
+.
+├── pom.xml                       # Maven build configuration, dependencies for JUnit & Mockito
+├── run_tests.sh                  # Simple test execution script (chmod +x for convenience)
+├── project_structure.txt         # This file. Overview of folders/files and their purposes
+
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── contribute/
+│   │                   ├── Contribute.java      # Java port of contribute.py (core logic)
+│   │                   └── Args.java            # Command-line argument holder class
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   └── ContributeOriginalTest.java  # Original test translations (full logic)
+│                   └── public_tests/
+│                       └── PublicContributeTest.java    # Public test translations (full logic)
+
+Key Directories and Contents:
+
+src/main/java/com/example/contribute/
+    - Contains business logic implemented for testing purposes.
+    - Args.java: Arguments class for command line and configuration.
+    - Contribute.java: All business logic with methods corresponding to testable behaviors.
+
+src/test/java/com/example/original/
+    - Contains tests translated from test_contribute.py covering full functionality.
+    - Uses JUnit5 for assertions and test management.
+
+src/test/java/com/example/public_tests/
+    - Contains tests translated from public_tests/test_public_contribute.py.
+    - Covers public scenarios with slightly different data but same underlying logic.
+
+run_tests.sh
+    - One-click test script: runs all tests (original and public) via Maven's JUnit integration.
+    - Usage: `chmod +x run_tests.sh && ./run_tests.sh`
+
+pom.xml
+    - Maven dependencies and plugins setup for building and running tests.
+
+Setup Instructions:
+
+1. Ensure you have JDK 11+ and Maven installed.
+2. To install dependencies and run all tests:
+       ./run_tests.sh
+3. To run only a specific test class (example):
+       mvn test -Dtest="com.example.original.ContributeOriginalTest"
+4. Project structure matches Java best practices for test organization.
+
+No source files beyond testable logic needed for running tests.

@@ -1,0 +1,48 @@
+project_root/
+├── src/
+│   └── GeoHashLib/
+│       ├── GeoHashLib.csproj
+│       ├── Program.cs        # (if needed)
+│       ├── BoundingBox.cs
+│       ├── GeoHash.cs
+│       ├── WGS84Point.cs
+│       ├── queries/
+│       │   ├── GeoHashBoundingBoxQuery.cs
+│       │   ├── GeoHashCircleQuery.cs
+│       │   └── GeoHashQuery.cs
+│       └── util/
+│           ├── BoundingBoxGeoHashIterator.cs
+│           ├── BoundingBoxSampler.cs
+│           ├── DoubleUtil.cs
+│           ├── GeoHashSizeTable.cs
+│           ├── LongUtil.cs
+│           ├── TwoGeoHashBoundingBox.cs
+│           └── VincentyGeodesy.cs
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── GeoHashCircleQueryTests.cs
+│       ├── GeoHashTests.cs
+│       ├── GeoHashBoundingBoxSearchTests.cs
+│       ├── BoundingBoxTests.cs
+│       ├── WGS84PointTests.cs
+│       └── util/
+│           ├── LongUtilTests.cs
+│           ├── BoundingBoxGeoHashIteratorTests.cs
+│           ├── BoundingBoxSamplerTests.cs
+│           ├── DoubleUtilTests.cs
+│           └── GeoHashSizeTableTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── BoundingBoxPublicTests.cs
+│   ├── WGS84PointPublicTests.cs
+│   └── util/
+│       ├── GeoHashSizeTablePublicTests.cs
+│       ├── LongUtilPublicTests.cs
+│       ├── BoundingBoxSamplerPublicTests.cs
+│       ├── BoundingBoxGeoHashIteratorPublicTests.cs
+│       └── DoubleUtilPublicTests.cs
+├── GeoHashLib.sln
+├── run_tests.sh
+├── test_translation_progress.json
+└── README.md

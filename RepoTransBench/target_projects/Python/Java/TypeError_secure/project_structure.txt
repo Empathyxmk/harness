@@ -1,0 +1,36 @@
+Project Java Structure:
+-----------------------
+secure-java/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/typeerror/secure/                # Secure library Java port (headers etc.)
+│   │               [CacheControl.java, ...]         # (to be ported)
+│   └── test/
+│       └── java/
+│           └── com/typeerror/secure/
+│               ├── original/                        # Original (full-scope) test cases
+│               │   ├── TestSecureAPIMinimal.java
+│               │   ├── TestSecure.java
+│               │   ├── TestSecureProtocols.java
+│               │   ├── headers/
+│               │   │   ├── TestXFrameOptions.java
+│               │   │   ├── TestPermissionsPolicy.java
+│               │   │   ├── TestServer.java
+│               │   │   ├── TestStrictTransportSecurity.java
+│               │   │   ├── TestCacheControl.java
+│               │   │   ├── TestCrossOriginOpenerPolicy.java
+│               │   │   ├── TestReferrerPolicy.java
+│               │   │   ├── TestCustomHeader.java
+│               │   │   ├── TestContentSecurityPolicy.java
+│               │   │   ├── TestXContentTypeOptions.java
+│               └── public/
+│                   ├── TestSecureAPIMinimalPublic.java
+│                   ├── TestSecureProtocolsPublic.java
+│                   ├── TestSecurePublic.java
+
+README: 
+- All test classes are under src/test/java/com/typeerror/secure/original/ or /public/ depending on test privacy.
+- Library classes to be implemented in src/main/java/com/typeerror/secure/.

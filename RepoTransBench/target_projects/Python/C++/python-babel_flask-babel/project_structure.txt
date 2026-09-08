@@ -1,0 +1,45 @@
+Project Structure for C++ Translation of python-babel_flask-babel
+
+python-babel_flask-babel/
+├── CMakeLists.txt                  # Top-level CMake configuration for building the project and tests
+├── include/                        # Public library headers
+│   └── (API headers for the library, e.g. Babel.h, Domain.h)
+├── src/                            # Library source code
+│   └── (Implementation of translation, Babel/Domain, lazy strings, etc)
+├── tests/
+│   ├── original/                   # C++ translations of original tests from tests/*.py
+│   │   ├── test_app_factory_test.cpp
+│   │   ├── test_date_formatting_test.cpp
+│   │   ├── test_force_locale_test.cpp
+│   │   ├── test_gettext_test.cpp
+│   │   ├── test_init_smoke_test.cpp
+│   │   ├── test_integration_test.cpp
+│   │   ├── test_multiple_apps_test.cpp
+│   │   ├── test_number_formatting_test.cpp
+│   │   └── test_speaklater_test.cpp
+│   └── test_main.cpp               # Main entry point for all original test cases
+├── public_tests/                   # C++ translations of public_tests/*.py
+│   ├── test_public_app_factory_test.cpp
+│   ├── test_public_date_formatting_test.cpp
+│   ├── test_public_force_locale_test.cpp
+│   ├── test_public_gettext_test.cpp
+│   ├── test_public_init_smoke_test.cpp
+│   ├── test_public_integration_test.cpp
+│   ├── test_public_multiple_apps_test.cpp
+│   ├── test_public_number_formatting_test.cpp
+│   ├── test_public_speaklater_test.cpp
+│   └── test_public_main.cpp        # Main entry point for all public test cases
+├── translations/                   # If needed, translation domain test data for integration tests
+│   └── ....                       # (Copy as applicable from source if used by C++ implementation)
+├── run_tests.sh                    # Script to build and run both original and public tests
+├── README.md                       # Documentation on usage and setup
+└── project_structure.txt           # This file
+
+Explanations:
+- include/: Contains public C++ headers for the i18n/translation API
+- src/: Contains library implementation files
+- tests/original/: Contains complete C++ translations of the original test suite (from "tests" folder in Python)
+- public_tests/: Contains complete C++ translations of the public test suite
+- tests/test_main.cpp and public_tests/test_public_main.cpp: Register all tests in their subtree into Google Test's main
+- CMakeLists.txt: Builds both the library and the tests. Links everything with Google Test.
+- run_tests.sh: Simple shell script that runs all tests (builds and executes). Only requires ./run_tests.sh

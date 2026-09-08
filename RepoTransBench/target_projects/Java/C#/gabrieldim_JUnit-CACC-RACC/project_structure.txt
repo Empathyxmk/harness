@@ -1,0 +1,36 @@
+gabrieldim_JUnit-CACC-RACC C# Translation Project Structure
+----------------------------------------------------------
+. (root)
+├── src/
+│   ├── gabrieldim_JUnit-CACC-RACC.csproj            # Main C# library project file
+│   └── DifferenceBetweenDaysInYear.cs               # Core day difference/validation logic
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj                     # C# xUnit project for original tests
+│       ├── DifferenceBetweenDaysInYearTests.cs      # Direct Java-JUnit translation
+│       └── DifferenceBetweenDaysInYearExtendedTests.cs     # Extended/original coverage tests
+├── public_tests/
+│   ├── PublicTests.csproj                           # C# xUnit project for public tests
+│   ├── DifferenceBetweenDaysInYearPublicTests.cs    # Public test (matches Java public tests)
+│   └── DifferenceBetweenDaysInYearPublicExtendedTests.cs   # Public extended test (matches sample)
+├── ProjectName.sln                                  # .NET solution file, contains references
+├── run_tests.sh                                     # Run all (original & public) tests via dotnet test
+├── project_structure.txt                            # This project structure documentation
+
+Directory/Files Purpose:
+- src/: Contains the main C# implementation.
+- tests/original/: Original (private/complete) test cases translated from Java.
+- public_tests/: Public test cases translated from Java.
+- .csproj files: .NET project files for build/test/discover.
+- ProjectName.sln: .NET Solution linking all projects.
+- run_tests.sh: Simple script to run all tests in one command using dotnet test.
+
+How to build and test:
+  1. Install .NET 6.0 SDK or newer.
+  2. Run: ./run_tests.sh
+  3. All projects and tests will be built and run. Summary will be displayed.
+
+Test layout:
+  - All original/private tests live in tests/original/
+  - All public test cases live in public_tests/
+  - Shared code is in src/

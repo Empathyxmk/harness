@@ -1,0 +1,27 @@
+nzacas_props2js (Go version)
+├── go.mod                       # Go module configuration
+├── README.md                    # Project overview and usage
+├── project_structure.txt        # Project organization reference
+├── main.go                      # (Stub) Main entry point for Props2Js tool (implement as needed)
+├── module.go                    # (Stub) Place for PropertyConverter implementation
+├── run_tests.sh                 # Simple script to run all tests
+├── tests/
+│   ├── original/
+│   │   ├── props2js_test.go                  # Original Props2JsTest translated from Java
+│   │   └── property_converter_test.go        # Original PropertyConverterTest
+│   └── testutil.go                          # Helpers for test cases
+├── public_tests/
+│   ├── props2js_public_test.go               # Props2Js public test cases
+│   └── property_converter_public_test.go     # PropertyConverter public tests
+
+Explanations:
+- All production code should be added to `main.go`, `module.go`, or subpackages as needed.
+- `tests/original/` contains Go equivalents of the original Java test suites.
+- `public_tests/` contains Go equivalents of the public test suites.
+- `tests/testutil.go` provides helpers for property file manipulation and redirection of output for test purposes.
+- Use `run_tests.sh` to execute all tests.
+
+Instructions:
+- Implement or copy your Props2Js and PropertyConverter logic into main/module.go or packages.
+- Add or modify tests as needed.
+- To test, simply run `./run_tests.sh`

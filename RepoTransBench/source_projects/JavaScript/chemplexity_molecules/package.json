@@ -1,0 +1,15 @@
+{
+  "name": "chemplexity_molecules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/molecules.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx jest --config=jest.config.js",
+    "test:public": "npx jest public_tests/ --config=jest.config.js --coverage=false"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,30 @@
+project_root/
+├── requirements.txt           # Python dependencies (includes pytest)
+├── run_tests.sh               # Simple shell script to run all tests
+├── tests/                     # Test directory
+│   ├── __init__.py
+│   └── original/              # Original test cases from source
+│       ├── __init__.py
+│       ├── test_utils.py      # Python translation of tests/test_utils.cpp
+│       └── test_win32_window.py # Skipped stub for windows-only tests/test_win32_window.cpp
+├── public_tests/              # Public test cases as per public_test_summary.json
+│   ├── __init__.py
+│   └── test_utils_public.py   # Python translation of tests/test_utils_public.cpp
+└── project_structure.txt      # This file: description of project structure
+
+Directory explanations:
+- requirements.txt: Lists Python packages needed (pytest) for running tests.
+- run_tests.sh: Executable shell script, runs all tests in both "tests/original" and "public_tests" using pytest. Run with `./run_tests.sh`.
+- tests/: Python test code from the "original" (private) C++ tests. Additional test files should go here.
+- tests/original/: Contains translations of private/original C++ test cases.
+  - test_win32_window.py: A stub, explicitly skipped, to match source tests/test_win32_window.cpp which is commented out due to requiring Win32 APIs.
+- public_tests/: Contains translations of public test cases as required by the public_test_summary.json.
+- __init__.py files: Mark folders as Python packages for test discovery.
+- project_structure.txt: This overview, to aid user understanding.
+
+Setup & Test Instructions:
+1. Run `pip install -r requirements.txt` to install dependencies.
+2. Execute tests: `./run_tests.sh`
+   - This will run both original (private) and public tests using pytest.
+
+No actual C++ source logic is present; the test helpers (utf8_from_utf16, get_command_line_arguments) are replicated as Python stubs to permit direct test translation.

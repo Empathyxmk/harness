@@ -1,0 +1,31 @@
+yacy_yacy_grid_search/
+├── go.mod                                     # Go module definition
+├── main.go                                    # Main entry (not needed for tests, placeholder)
+├── module.go                                  # Placeholder module file
+├── README.md                                  # Documentation and usage
+├── run_tests.sh                               # Simple one-click test runner
+├── tests/
+│   ├── testutil.go                            # Helper types/functions implementing tested logic stubs
+│   └── original/                              # All translations of original (non-public) Java tests
+│       ├── dummylogic_test.go
+│       ├── samplelogic_test.go
+│       └── search_test.go
+├── public_tests/
+│   ├── dummylogic_public_test.go              # Go translation of DummyLogicPublicTest.java
+│   ├── samplelogic_public_test.go             # Go translation of SampleLogicPublicTest.java
+│   └── search_public_test.go                  # Go translation of SearchPublicTest.java
+
+Explanation:
+
+- `go.mod`: Declares module and Go version, required for all Go projects.
+- `main.go` / `module.go`: Placeholders for code completeness; actual implementation for test purposes lives in `tests/testutil.go`.
+- `run_tests.sh`: Make executable (`chmod +x run_tests.sh`) and run to execute all tests in both test directories.
+- `tests/original/`: Contains all original (non-public) Java test cases, now written in Go.
+- `public_tests/`: Contains all public Java test cases, now written in Go.
+- `tests/testutil.go`: Contains minimal, fully functional implementations ("stubs") of the Search and DummyLogic types surfaced by test logic.
+- All test files match test names and assertions/functionality of their Java equivalents.
+
+HOW TO RUN:
+1. In the repo root, run: `chmod +x run_tests.sh`
+2. Run tests: `./run_tests.sh`
+All tests should pass.

@@ -1,0 +1,33 @@
+KeepAwake C# Project Structure
+
+.
+├── KeepAwake.sln                  # Visual Studio solution file
+├── run_tests.sh                   # One-click test execution script
+├── src/
+│   └── KeepAwake/
+│       ├── KeepAwake.cs           # C# implementation of KeepAwake class (logic ported for tests)
+│       └── KeepAwake.csproj       # C# library project for KeepAwake
+├── tests/
+│   └── original/
+│       ├── KeepAwakeTests.cs      # Translated original Java tests (full test coverage)
+│       └── KeepAwakeTests.csproj  # Test project config for xUnit and dependencies
+├── public_tests/
+│   ├── KeepAwakePublicTests.cs    # Translated public Java tests (alternate public-facing scenarios)
+│   └── KeepAwakePublicTests.csproj# Public tests project config for xUnit
+└── project_structure.txt          # This structure/reference file
+
+Directory/Files Purpose:
+
+- KeepAwake.sln.........: Solution file connecting all C# projects (code, tests, public_tests)
+- run_tests.sh..........: Simple script to build and run all tests at once. `chmod +x run_tests.sh` allows `./run_tests.sh`
+- src/KeepAwake/........: Core KeepAwake library source code (translated from Java context by test logic alone)
+- tests/original/.......: All original (private/internal) test cases translated from Java (xUnit, strict test logic preservation)
+- public_tests/.........: All public tests translated from Java (xUnit, matches alternate/public scenarios)
+- *.csproj..............: Project descriptors, declare C# test/build dependencies (xUnit, runner, project references)
+
+Testing/Setup Instructions:
+
+1. Install .NET 6.0+ SDK: https://dotnet.microsoft.com/en-us/download
+2. Run `dotnet restore` in the project root.
+3. Make sure `run_tests.sh` is executable: `chmod +x run_tests.sh`
+4. Run **all tests**:

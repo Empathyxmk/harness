@@ -1,0 +1,11 @@
+{
+  "project_name": "subchen_jetbrick-template-2x",
+  "language": "Java",
+  "coverage": {
+    "line": 55.3,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-20T03:14:29.152684",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/subchen_jetbrick-template-2x",
+  "test_result_path": "/workspace/test_enhancement_results/Java/subchen_jetbrick-template-2x"
+}

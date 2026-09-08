@@ -1,0 +1,82 @@
+{
+  "project_name": "GoogleCloudPlatform_localllm",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:50:57.283508",
+  "original_path": "/workspace/verified_repos_v2/Python/GoogleCloudPlatform_localllm",
+  "public_test_result_path": "/workspace/public_test_results/Python/GoogleCloudPlatform_localllm",
+  "original_tests": {
+    "test_files": [
+      "local-llm/test_modeldownload_full.py",
+      "local-llm/test_modelserving_full.py",
+      "local-llm/test_modelfiles_full.py",
+      "local-llm/test_modeldownload.py",
+      "local-llm/test_modelfiles.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_modeldownload_full.py",
+      "public_tests/test_public_modelserving_full.py",
+      "public_tests/test_public_modelfiles_full.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_modelfiles.py",
+      "public_tests/test_public_modeldownload.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_modelserving_full.py",
+      "public_tests/test_public_modeldownload.py",
+      "public_tests/test_public_modeldownload_full.py",
+      "public_tests/test_public_modelfiles.py",
+      "public_tests/test_public_modelfiles_full.py",
+      "public_tests/test_public_modelserving_full.py",
+      "public_tests/test_public_modelserving_full.py",
+      "public_tests/test_public_modeldownload.py",
+      "public_tests/test_public_modeldownload_full.py",
+      "public_tests/test_public_modelfiles.py",
+      "public_tests/test_public_modelfiles_full.py",
+      "public_tests/test_public_modelserving_full.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 20,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_modeldownload_full.py",
+    "public_tests/test_public_modelserving_full.py",
+    "public_tests/test_public_modelfiles_full.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_modelfiles.py",
+    "public_tests/test_public_modeldownload.py",
+    "run_public_tests.sh",
+    "local-llm/modeldownload.py",
+    "local-llm/modelserving.py",
+    "public_tests/test_public_modelserving_full.py",
+    "public_tests/test_public_modeldownload.py",
+    "public_tests/test_public_modeldownload_full.py",
+    "public_tests/test_public_modelfiles.py",
+    "public_tests/test_public_modelfiles_full.py",
+    "public_tests/test_public_modelserving_full.py",
+    "public_tests/test_public_modelserving_full.py",
+    "public_tests/test_public_modeldownload.py",
+    "public_tests/test_public_modeldownload_full.py",
+    "public_tests/test_public_modelfiles.py",
+    "public_tests/test_public_modelfiles_full.py",
+    "public_tests/test_public_modelserving_full.py",
+    "run_public_tests.sh"
+  ]
+}

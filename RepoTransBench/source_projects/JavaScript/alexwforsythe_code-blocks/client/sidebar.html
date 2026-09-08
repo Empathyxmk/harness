@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="_top">
+
+    <link rel="stylesheet" href="//ssl.gstatic.com/docs/script/css/add-ons1.css">
+
+    <?!= include('sidebar.css.html'); ?>
+</head>
+<body>
+<div class="sidebar branding-below">
+    <form>
+        <div class="block form-group" id="languages">
+            <label for="language">Language</label>
+            <select name="language" id="language" disabled>
+                <option value="auto" selected>auto</option>
+            </select>
+        </div>
+
+        <div class="block form-group" id="themes">
+            <label for="theme">Theme</label>
+            <select name="theme" id="theme" disabled></select>
+        </div>
+
+        <div class="block">
+            <input type="checkbox" id="no-background">
+            <label for="no-background">No background</label>
+        </div>
+
+        <div class="block button-group" id="format-buttons">
+            <button class="blue" id="format-selection" disabled>Format</button>
+            <button id="show-preview" disabled>Preview</button>
+        </div>
+
+        <div class="block">
+            <pre id="preview"></pre>
+        </div>
+    </form>
+</div>
+
+<div class="sidebar bottom">
+    <?!= include('logo.svg.html'); ?>
+    <a class="gray branding-text"
+       href="https://github.com/alexwforsythe/code-blocks">
+        v1.4.2
+    </a>
+</div>
+
+<?!= include('bundle.min.js.html'); ?>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49371812-2', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+project_root/
+├── src/
+│   └── passport/
+│       ├── __init__.py
+│       └── ...       # (your translated or wrapped library code goes here)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_authenticationerror.py
+│       ├── test_authenticator_api.py
+│       ├── test_authenticator_framework.py
+│       ├── test_authenticator_middleware.py
+│       ├── test_authenticator.py
+│       ├── test_http_request.py
+│       ├── test_index_exports.py
+│       ├── test_middleware_authenticate_error_callback.py
+│       ├── test_middleware_authenticate_error.py
+│       ├── test_middleware_authenticate_fail_callback.py
+│       ├── test_middleware_authenticate_fail_flash.py
+│       ├── test_middleware_authenticate_fail_message.py
+│       ├── test_middleware_authenticate_fail_multi.py
+│       ├── test_middleware_authenticate_fail.py
+│       ├── test_middleware_authenticate_pass.py
+│       ├── test_middleware_authenticate_redirect.py
+│       ├── test_middleware_authenticate_success_callback.py
+│       ├── test_middleware_authenticate_success_flash.py
+│       ├── test_middleware_authenticate_success_info.py
+│       ├── test_middleware_authenticate_success_message.py
+│       ├── test_middleware_authenticate_success_multi.py
+│       ├── test_middleware_authenticate_success_test.py
+│       ├── test_middleware_authenticate_success.py
+│       ├── test_middleware_authenticate_test.py
+│       ├── test_middleware_initialize.py
+│       ├── test_package.py
+│       ├── test_sessionmanager.py
+│       ├── test_strategies_session_pause.py
+│       └── test_strategies_session.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_authenticationerror_public.py
+│   ├── test_authenticator_middleware_public.py
+│   ├── test_authenticator_public.py
+│   ├── test_index_exports_public.py
+│   ├── test_package_public.py
+│   └── test_sessionmanager_public.py
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Executable test script (runs all tests)
+├── README.md                       # Short description and usage
+├── project_structure.txt           # This file: describes structure

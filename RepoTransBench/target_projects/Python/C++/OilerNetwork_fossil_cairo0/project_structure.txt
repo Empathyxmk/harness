@@ -1,0 +1,31 @@
+OilerNetwork_fossil_cairo0-cpp/
+├── CMakeLists.txt                       # Main CMake project file for building/running tests
+├── README.md                            # Project readme and setup instructions
+├── include/
+│   └── (empty or project headers if needed)
+├── src/
+│   └── (main source files, none needed for setup.py tests)
+├── tests/
+│   └── test_setup_py.cpp                # C++ translation of tests/test_setup_py.py (original test)
+├── public_tests/
+│   └── test_public_setup_py.cpp         # C++ translation of public_tests/test_public_setup_py.py (public variant)
+├── build/                               # Generated build files
+├── run_tests.sh                         # Simple script to build and run all tests (chmod +x)
+└── project_structure.txt                # This file (project tree and explanation)
+
+Directory/Files Explanation:
+- CMakeLists.txt: Tells CMake how to build all test code and where tests are located.
+- tests/: For original test cases.
+- public_tests/: For public versioned test cases.
+- src/, include/: Standard C++ project source layout for main code (not strictly required in this minimal repo).
+- build/: CMake puts build output here (not source-controlled).
+- run_tests.sh: One-click script for building and running all tests using CTest and GoogleTest.
+- README.md: Explains setup, dependencies, and how to run tests.
+
+Instructions:
+  1. Install Google Test (libgtest-dev) and CMake (>=3.10) on your system.
+  2. Place your setup.py file in this directory.
+  3. From project root, run:  chmod +x run_tests.sh
+  4. Execute tests with:      ./run_tests.sh
+
+Both original and public variant tests will be built and run automatically.

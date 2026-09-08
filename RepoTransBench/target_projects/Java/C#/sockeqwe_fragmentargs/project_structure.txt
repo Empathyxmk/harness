@@ -1,0 +1,37 @@
+sockeqwe_fragmentargs/
+├── ProjectName.sln
+├── src/
+│   └── ProjectName/
+│       ├── ProjectName.csproj
+│       └── (main implementation files go here)
+├── tests/
+│   ├── original/
+│   │   ├── OriginalTests.csproj
+│   │   ├── FragmentArgsTest.cs
+│   │   ├── FragmentArgsStaticInitTest.cs
+│   │   ├── FragmentArgsInjectorTest.cs
+│   │   ├── ArgsBundlerInterfaceTest.cs
+│   │   ├── NoneArgsBundlerTest.cs
+│   │   ├── CastedArrayListArgsBundlerTest.cs
+│   │   ├── ProtectedAccessTest.cs
+│   │   ├── InnerClassTest.cs
+│   │   ├── CompileTest.cs
+│   │   ├── CompareModifierUtilsTest.cs
+│   │   └── ModifierUtilsDefaultModifierTest.cs
+│   └── TestUtilities.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── FragmentArgsStaticInitPublicTest.cs
+│   ├── FragmentArgsInjectorPublicTest.cs
+│   ├── FragmentArgsPublicTest.cs
+│   ├── NoneArgsBundlerPublicTest.cs
+│   ├── CastedArrayListArgsBundlerPublicTest.cs
+│   ├── ArgsBundlerInterfacePublicTest.cs
+│   ├── ProtectedAccessPublicTest.cs
+│   ├── CompareModifierUtilsPublicTest.cs
+│   ├── InnerClassPublicTest.cs
+│   ├── CompilePublicTest.cs
+│   └── (public TestUtilities - if needed)
+├── run_tests.sh
+├── README.md
+├── test_translation_progress.json

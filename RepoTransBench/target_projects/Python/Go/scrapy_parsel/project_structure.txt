@@ -1,0 +1,28 @@
+scrapy_parsel_go/
+├── go.mod
+├── main.go                  # (optional, stub for completeness)
+├── parsel/                  # Domain logic package (stubs, since not provided)
+│   ├── csstranslator.go
+│   ├── selector.go
+│   ├── utils.go
+│   ├── xpathfuncs.go
+│   └── testutil.go
+├── tests/                   # Original test cases from `tests/`
+│   ├── original/
+│   │   ├── selector_csstranslator_test.go
+│   │   ├── selector_edgecases_test.go
+│   │   ├── utils_test.go
+│   │   ├── xpathfuncs_test.go
+│   │   ├── csstranslator_edgecases_test.go
+│   │   ├── selector_jmespath_test.go
+│   │   ├── xml_attacks_test.go
+│   │   └── selector_test.go
+│   └── testutil.go   # Test helper utilities and setup
+├── public_tests/            # Public test cases
+│   ├── public_csstranslator_test.go
+│   ├── public_selector_test.go
+│   ├── public_xpathfuncs_test.go
+│   └── public_utils_test.go
+├── run_tests.sh             # Script: go test ./...
+├── test_translation_progress.json
+└── README.md

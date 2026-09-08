@@ -1,0 +1,20 @@
+{
+  "project_name": "oskvr37_tiddl",
+  "language": "Python",
+  "coverage": {
+    "line": 81.0,
+    "branch": 81.8
+  },
+  "timestamp": "2025-06-19T12:12:40.692044",
+  "original_path": "/workspace/runnable_filter/Python/oskvr37_tiddl",
+  "test_result_path": "/workspace/test_enhancement_results/Python/oskvr37_tiddl",
+  "tests_path": [
+    "tests/test_api.py",
+    "tests/test_api_unit.py",
+    "tests/test_config_unit.py",
+    "tests/test_exceptions_unit.py",
+    "tests/test_utils.py",
+    "tests/test_utils_unit.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

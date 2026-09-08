@@ -1,0 +1,47 @@
+fed135_Kalm Python Project Structure
+
+.
+├── README.md                 # Project description and usage
+├── requirements.txt          # Python dependencies (pytest for testing)
+├── run_tests.sh              # One-click test execution script (runs all tests)
+├── src/
+│   ├── __init__.py           # Entry point, re-exports from index.py
+│   ├── index.py              # Main exports for Kalm (Client, Server, etc.)
+│   ├── Timer.py              # Timer implementation for timing-related tests
+│   └── Store.py              # Store for state/registration/lookup pattern
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_toplevel_index.py       # Original: tests/unit/toplevel-index.spec.js
+│       ├── test_timer_extra.py          # Original: tests/unit/Timer.extra.spec.js
+│       ├── test_index_extra.py          # Original: tests/unit/index.extra.spec.js
+│       └── test_store_extra.py          # Original: tests/unit/Store.extra.spec.js
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_toplevel_index_public.py     # Public: public_tests/unit/toplevel-index.public.test.js
+│   ├── test_timer_extra_public.py        # Public: public_tests/unit/Timer.extra.public.test.js
+│   ├── test_index_extra_public.py        # Public: public_tests/unit/index.extra.public.test.js
+│   └── test_store_extra_public.py        # Public: public_tests/unit/Store.extra.public.test.js
+
+Explanations:
+src/          - Python translations of core Kalm library components needed to run and test logic
+tests/original/ - Original tests translated from JavaScript, covering logic, edge cases and coverage
+public_tests/   - Publicly visible translated tests for user verification
+requirements.txt- Declares pytest required for all test runs
+run_tests.sh    - Runs all (original+public) tests at once using pytest
+project_structure.txt - This documentation (project structure & usage)
+
+To set up and run all tests:
+
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Run all tests:
+   ./run_tests.sh
+
+All tests (original and public) will be discovered and executed.
+
+To run only original or public tests, use:
+   pytest tests/original
+   pytest public_tests

@@ -1,0 +1,26 @@
+Project Structure:
+
+.
+├── src/
+│   └── JustOneKafkaSinkPgJson/
+│       ├── JustOneKafkaSinkPgJson.csproj    # Main library/project file (empty stub for source)
+│       └── Program.cs                       # Empty main program file
+├── tests/
+│   └── original/
+│       ├── JustOneKafkaSinkPgJson.Tests.csproj    # xUnit project file for original tests
+│       ├── PostgreSQLSinkTaskTests.cs             # Original test cases for PostgreSQLSinkTask
+│       └── PostgreSQLSinkConnectorTests.cs        # Original test cases for PostgreSQLSinkConnector
+├── public_tests/
+│   ├── JustOneKafkaSinkPgJson.PublicTests.csproj  # xUnit project file for public tests
+│   ├── PostgreSQLSinkTaskPublicTests.cs           # Public test cases for PostgreSQLSinkTask
+│   └── PostgreSQLSinkConnectorPublicTests.cs      # Public test cases for PostgreSQLSinkConnector
+├── run_tests.sh                             # Script to run ALL tests (original + public)
+├── README.md                                # Project documentation and instructions
+├── project_structure.txt                    # This project structure and explanation
+
+Directory Descriptions:
+- src/JustOneKafkaSinkPgJson: C# class library stub (used as reference for test builds)
+- tests/original: Original test cases, closely mirroring Java originals, using xUnit.
+- public_tests: Public test cases, adapted from Java public test logic, using xUnit.
+- Each test directory contains its own csproj for modular test execution.
+- run_tests.sh: One-click script to build and run all tests (original + public).

@@ -1,0 +1,17 @@
+.
+├── README.md
+├── go.mod
+├── run_tests.sh
+├── tests
+│   └── original
+│       ├── constants_test.go
+│       ├── fetch_test.go
+│       ├── fetcher_core_test.go
+│       ├── init_import_test.go
+│       └── setup_py_test.go
+└── public_tests
+    ├── public_constants_test.go
+    ├── public_fetch_test.go
+    ├── public_fetcher_core_test.go
+    ├── public_init_import_test.go
+    └── public_setup_py_test.go

@@ -1,0 +1,45 @@
+.
+├── public_tests/
+│   ├── test_pretty_print.py         # Public pretty-print output tests (mirrors original public C++ pretty-print tests)
+│
+├── requirements.txt                 # Python dependencies for testing
+│
+├── run_tests.sh                     # One-click script to run all (pytest) tests
+│
+├── tests/
+│   └── original/
+│       └── test_json_parser.py      # Translated "test-suite.cpp" for parser error/success coverage
+│
+└── project_structure.txt            # This file: explains directory layout
+
+# Directory Explanations
+
+public_tests/
+  - Contains public test cases. These would normally be "release" friendly test scenarios.
+  - test_pretty_print.py: Mirrors the C++ public pretty-print tests.
+tests/original/
+  - Contains private or original ("full" coverage) test cases, usually focused on error handling, edge/corner cases, and full-coverage regression.
+  - test_json_parser.py: Translates all test cases from C++ "test-suite.cpp", includes all pass/fail expectations.
+requirements.txt
+  - Lists third-party packages required to run all test suites (here, just 'pytest').
+run_tests.sh
+  - Simple shell script to run all tests with one command. Just run with: ./run_tests.sh
+project_structure.txt
+  - Explains the Python project structure, file layout, and their purposes.
+
+# Setup and Testing Instructions
+
+1. (Once) Install requirements (if running locally):
+      pip install -r requirements.txt
+
+2. Run all tests:
+      ./run_tests.sh
+      # Or directly:
+      pytest
+
+Both original and public tests will run and must pass.
+
+# Notes on Translation
+
+- All test logic (including pass/fail parser cases and pretty print output checks) is faithfully replicated from the provided C++ test suite logic and json files.
+- All pretty-print output is carefully matched for format/whitespace and numeric precision.

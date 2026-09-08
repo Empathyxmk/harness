@@ -1,0 +1,19 @@
+{
+  "project_name": "ovh_celery-dyrygent",
+  "language": "Python",
+  "coverage": {
+    "line": 94.0,
+    "branch": 97.5
+  },
+  "timestamp": "2025-06-19T12:13:02.295774",
+  "original_path": "/workspace/runnable_filter/Python/ovh_celery-dyrygent",
+  "test_result_path": "/workspace/test_enhancement_results/Python/ovh_celery-dyrygent",
+  "tests_path": [
+    "tests/unit/test_imports_and_version.py",
+    "tests/unit/test_inspect.py",
+    "tests/unit/test_tasks.py",
+    "tests/unit/test_workflows.py",
+    "tests/unit/test_workflows_core.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

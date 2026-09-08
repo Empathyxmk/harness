@@ -1,0 +1,11 @@
+project_root/
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── testutil.go
+│       ├── verbal_expressions_extra_test.go
+│       └── verbal_expressions_test.go
+├── public_tests/
+│   ├── test_public_verbal_expressions_extra_test.go
+│   └── test_public_verbal_expressions_test.go

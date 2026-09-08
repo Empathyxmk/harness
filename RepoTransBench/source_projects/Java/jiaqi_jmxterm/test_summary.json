@@ -1,0 +1,11 @@
+{
+  "project_name": "jiaqi_jmxterm",
+  "language": "Java",
+  "coverage": {
+    "line": 64.6,
+    "branch": 65.2
+  },
+  "timestamp": "2025-06-19T09:16:15.799506",
+  "original_path": "/workspace/runnable_filter/Java/jiaqi_jmxterm",
+  "test_result_path": "/workspace/test_enhancement_results/Java/jiaqi_jmxterm"
+}

@@ -1,0 +1,28 @@
+project_root/
+├── go.mod                       # Module definition for Go, manages dependencies
+├── go.sum                       # Checksums for Go module dependencies
+├── jp.go                        # Main implementation (should match previous source)
+├── jp                           # "jp" executable required for end-to-end tests to pass
+├── README.md                    # Project documentation
+├── tests/
+│   └── original/
+│       └── jp_wrapper_test.go   # Translated Go test cases from original Python tests
+├── public_tests/
+│   └── jp_wrapper_public_test.go # Translated Go public test cases from Python public tests
+├── run_tests.sh                 # Simple script to run all tests
+└── project_structure.txt        # This project structure file
+
+Directory summary:
+- tests/original/:      Contains all Go test implementations for original private/non-public Python tests. 
+- public_tests/:        Contains Go test implementations translated from public test suites.
+- run_tests.sh:         One-click script to run all Go tests for both test sets.
+- go.mod, go.sum:       Go module/dependency management files.
+- jp:                   Binary used in wrapper end-to-end tests (must be present, executable).
+- jp.go:                Main Go implementation (if needed for test helpers, etc.).
+
+Instructions:
+1. Ensure the `jp` binary is built and present in project root and has executable permissions (`chmod +x jp`).
+2. Run all unit and integration tests using:
+   ./run_tests.sh
+
+This will invoke all Go test suites defined in both tests/original and public_tests directories.

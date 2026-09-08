@@ -1,0 +1,19 @@
+fenjuly_toggleexpandlayout/
+├── go.mod                       # Go module definition and dependencies.
+├── README.md                    # This documentation.
+├── run_tests.sh                 # Script to run all tests via 'go test ./...'
+├── project_structure.txt        # This file (project structure, with explanations)
+├── tests/
+│   ├── original/
+│   │   ├── baseanimator_test.go      # Original BaseAnimator tests (translated)
+│   │   ├── dropdownlayout_test.go    # Original DropDownLayout tests (translated)
+│   │   ├── toggleexpandlayout_test.go# Original ToggleExpandLayout tests (translated)
+│   │   ├── application_test.go       # AndroidTest from library (translated stub)
+│   │   └── demo_application_test.go  # AndroidTest from demo (translated stub)
+│   └── testutil.go                # Test utility stubs and common mocks for Android/Java replacements
+├── public_tests/
+│   ├── baseanimator_public_test.go   # Public BaseAnimator tests (translated)
+│   ├── dropdownlayout_public_test.go # Public DropDownLayout tests (translated)
+│   ├── toggleexpandlayout_public_test.go # Public ToggleExpandLayout tests (translated)
+│   ├── application_public_test.go    # Public AndroidTest from library (stub)
+│   └── demo_application_public_test.go   # Public AndroidTest from demo (stub)

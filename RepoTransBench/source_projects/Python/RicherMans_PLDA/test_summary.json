@@ -1,0 +1,11 @@
+{
+  "project_name": "RicherMans_PLDA",
+  "language": "Python",
+  "coverage": {
+    "line": 90.0,
+    "branch": 78.6
+  },
+  "timestamp": "2025-06-19T12:25:40.953297",
+  "original_path": "/workspace/runnable_filter/Python/RicherMans_PLDA",
+  "test_result_path": "/workspace/test_enhancement_results/Python/RicherMans_PLDA"
+}

@@ -1,0 +1,43 @@
+Project Structure for "nayakwadis_mftool" Rust Translation
+==========================================================
+
+.
+├── Cargo.toml                # Rust project manifest, dependencies
+├── README.md                 # Project documentation, instructions
+├── project_structure.txt     # This structure & setup explanation
+├── run_tests.sh              # Simple one-click Rust test runner
+├── src/
+│   └── lib.rs                # Dummy implementation for test stubs
+├── tests/
+│   ├── mftool_tests.rs              # Implementation of advanced, original tests
+│   ├── test_mftool_class.rs         # Simple class dummy test (private)
+│   ├── test_mftool_init.rs          # Minimal "init" test (private)
+│   ├── test_utils.rs                # Minimal utils test (private)
+│   ├── test_public_mftool_class.rs  # Public, basic class test (copied from public_tests)
+│   ├── test_public_mftool_init.rs   # Public, minimal init test (copied from public_tests)
+│   └── test_public_utils.rs         # Public, minimal utils test (copied from public_tests)
+└── public_tests/
+    ├── test_public_mftool_class.rs  # Archive: public test, NOT run by cargo test unless copied/linked to tests/
+    ├── test_public_mftool_init.rs   # Archive: ditto
+    └── test_public_utils.rs         # Archive: ditto
+
+Explanations
+------------
+
+- **src/**: Contains `lib.rs`, a stub implementation. In a real project, core library logic would reside here.
+- **tests/**: Contains ALL runnable integration tests as required by Rust/Cargo. This includes both original (private) and public test suites.
+- **public_tests/**: Archive/record of the originally public test set. NOT run by cargo test unless copied to `tests/`.
+- **Cargo.toml**: Manages dependencies, metadata, and build configuration for Rust and Cargo.
+- **run_tests.sh**: A simple command to execute all tests via Cargo, so users may simply `./run_tests.sh`.
+- **project_structure.txt**: This document, explaining file/directory purposes and setup.
+- **README.md**: Main documentation and instructions.
+
+Running the Tests
+-----------------
+Simply execute:
+    ./run_tests.sh
+
+Or run using cargo directly:
+    cargo test
+
+All private and public tests will execute and report results.

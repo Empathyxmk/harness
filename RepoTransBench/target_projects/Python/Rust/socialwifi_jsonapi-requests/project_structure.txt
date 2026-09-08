@@ -1,0 +1,45 @@
+socialwifi_jsonapi-requests/
+├── AUTHORS
+├── CHANGELOG.md
+├── Cargo.lock
+├── Cargo.toml
+├── LICENSE
+├── MANIFEST.in
+├── README.md
+├── base_requirements.txt
+├── htmlcov/
+├── jsonapi_requests/
+├── project_structure.txt
+├── public_test_summary.json
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.cfg
+├── setup.py
+├── src/
+│   ├── auth.rs
+│   ├── configuration.rs
+│   ├── data.rs
+│   ├── lib.rs
+│   ├── orm.rs
+│   └── request_factory.rs
+├── test_summary.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── test_auth.rs
+│   │   ├── test_data.rs
+│   │   ├── test_orm.rs
+│   │   ├── test_request_factory.rs
+│   │   └── test_request_factory_branch.rs
+│   ├── test_auth.py
+│   ├── test_data.py
+│   ├── test_orm.py
+│   ├── test_request_factory.py
+│   ├── test_request_factory_branch.py
+│   └── public/
+│       ├── test_public_auth.rs
+│       ├── test_public_data.rs
+│       ├── test_public_orm.rs
+│       ├── test_public_request_factory.rs
+│       └── test_public_request_factory_branch.rs
+└── tox.ini

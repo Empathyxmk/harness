@@ -1,0 +1,11 @@
+{
+  "project_name": "kbialek_deye-inverter-mqtt",
+  "language": "Python",
+  "coverage": {
+    "line": 52.3,
+    "branch": 51.3
+  },
+  "timestamp": "2025-06-19T11:55:29.155607",
+  "original_path": "/workspace/runnable_filter/Python/kbialek_deye-inverter-mqtt",
+  "test_result_path": "/workspace/test_enhancement_results/Python/kbialek_deye-inverter-mqtt"
+}

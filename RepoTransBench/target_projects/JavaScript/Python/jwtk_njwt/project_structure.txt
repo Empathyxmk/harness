@@ -1,0 +1,30 @@
+project_root/
+├── src/
+│   └── njwt/              # (expected: implementation code here)
+│       ├── __init__.py
+│       └── ...            # (actual library code for Jwt, JwtBody, etc.)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       └── __init__.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_algs_public.py                 # Public test for HMAC algorithm
+│   ├── test_builder_public.py              # Public test for builder
+│   ├── test_exports_public.py              # Public test for exports & prototype pollution
+│   ├── test_jwt_body_public.py             # Public JwtBody test
+│   ├── test_jwt_public.py                  # Public Jwt tests (claims, headers, etc.)
+│   └── test_key_resolver_public.py         # Public Verifier key resolver test
+├── requirements.txt                        # Python dependencies (pytest)
+├── run_tests.sh                            # One-click test execution
+└── project_structure.txt                   # Project structure doc
+
+EXPLANATIONS:
+
+src/njwt/           : Place your NJWT implementation here (Jwt, JwtBody, JwtHeader, Verifier, etc.)
+tests/              : Directory for the original (internal) test suite (none present originally in repo)
+tests/original/     : Placeholder for original tests if available (empty here)
+public_tests/       : Translated public test suite (from JavaScript to Python)
+requirements.txt    : List of Python dependencies (pytest)
+run_tests.sh        : Basic test runner script, runs all tests using pytest
+project_structure.txt: This file (structure reference and directory explanations)

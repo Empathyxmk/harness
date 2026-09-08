@@ -1,0 +1,22 @@
+project_root/
+├── company/
+│   └── main.go                    # Main logic: ReverseIfNotBlank, IsAllDigits, RandomString, output control
+├── go.mod                         # Go module, declares testify for testing
+├── README.md                      # Documentation and usage instructions
+├── run_tests.sh                   # One-click script to execute all tests
+├── tests/
+│   ├── original/
+│   │   ├── main_branch_coverage_test.go      # MainBranchCoverageTest.java
+│   │   ├── main_full_coverage_test.go        # MainFullCoverageTest.java
+│   │   ├── main_test.go                     # MainTest.java
+│   │   ├── random_util_branch_coverage_test.go    # RandomUtilBranchCoverageTest.java
+│   │   ├── random_util_full_test.go         # RandomUtilFullTest.java
+│   │   ├── random_util_test.go              # RandomUtilTest.java
+│   │   └── testutil.go                      # Utility helpers if needed
+├── public_tests/
+│   ├── main_public_test.go                  # MainPublicTest.java
+│   ├── main_branch_coverage_public_test.go  # MainBranchCoveragePublicTest.java
+│   ├── main_full_coverage_public_test.go    # MainFullCoveragePublicTest.java
+│   ├── random_util_public_test.go           # RandomUtilPublicTest.java
+│   ├── random_util_branch_coverage_public_test.go    # RandomUtilBranchCoveragePublicTest.java
+│   └── random_util_full_public_test.go         # RandomUtilFullPublicTest.java

@@ -1,0 +1,70 @@
+camgunz_cmp/
+├── CMakeLists.txt
+├── CODE_OF_CONDUCT.md
+├── Cargo.toml
+├── LICENSE
+├── Makefile
+├── README.md
+├── TODO.md
+├── cmp.c
+├── cmp.gcda
+├── cmp.gcno
+├── cmp.h
+├── cmpunittest
+├── cmpunittest-buf.gcda
+├── cmpunittest-buf.gcno
+├── cmpunittest-test.gcda
+├── cmpunittest-test.gcno
+├── cmpunittest-tests.gcda
+├── cmpunittest-tests.gcno
+├── cmpunittest-utils.gcda
+├── cmpunittest-utils.gcno
+├── cmpunittest_public-cmp.gcno
+├── cmpunittest_public-utils.gcno
+├── coverage.txt
+├── example1
+├── example1-cmp.gcno
+├── example1-example1.gcno
+├── example2
+├── example2-cmp.gcno
+├── example2-example2.gcno
+├── examples/
+│   ├── cmp_data.dat
+│   ├── example1.c
+│   └── example2.c
+├── profile
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── mod.rs
+│   └── test_tests_public.rs
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── buf.rs
+│   ├── cmp.rs
+│   └── lib.rs
+├── test/
+│   ├── buf.c
+│   ├── buf.h
+│   ├── cases.mpac
+│   ├── cmp_api_error
+│   ├── cmp_api_error.c
+│   ├── cmp_api_error.gcda
+│   ├── cmp_api_error.gcno
+│   ├── profile.c
+│   ├── test.c
+│   ├── tests.c
+│   ├── tests.h
+│   ├── tests_public-cmp.gcno
+│   ├── tests_public.c
+│   ├── tests_public.h
+│   ├── utils.c
+│   └── utils.h
+├── test_summary.json
+├── test_translation_progress.json
+└── tests/
+    └── original/
+        ├── test_tests.rs
+        ├── test_tests_part2.rs
+        └── test_tests_part3.rs

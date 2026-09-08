@@ -1,0 +1,21 @@
+cloudconvert-go/
+├── go.mod                   # Go module definition
+├── run_tests.sh             # One-click test execution script
+├── project_structure.txt    # This project structure documentation
+├── tests/
+│   └── original/
+│       ├── config_test.go
+│       ├── environment_vars_test.go
+│       ├── exceptions_test.go
+│       ├── job_test.go
+│       ├── signed_url_test.go
+│       ├── utils_test.go
+│       ├── webhook_test.go
+├── public_tests/
+│   ├── config_public_test.go
+│   ├── environment_vars_public_test.go
+│   ├── exceptions_public_test.go
+│   ├── job_public_test.go
+│   ├── signed_url_public_test.go
+│   ├── utils_public_test.go
+│   ├── webhook_public_test.go

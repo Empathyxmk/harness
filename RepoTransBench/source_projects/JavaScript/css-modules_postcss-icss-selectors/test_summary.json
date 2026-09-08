@@ -1,0 +1,15 @@
+{
+  "project_name": "css-modules_postcss-icss-selectors",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:09:07.234318",
+  "original_path": "/workspace/runnable_filter/JavaScript/css-modules_postcss-icss-selectors",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/css-modules_postcss-icss-selectors",
+  "tests_path": [
+    "test/test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,15 @@
+{
+  "project_name": "commonsguy_cwac-merge",
+  "language": "Java",
+  "coverage": {
+    "line": 71.4,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-23T11:41:53.434331",
+  "original_path": "/workspace/runnable_filter/Java/commonsguy_cwac-merge",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/commonsguy_cwac-merge",
+  "tests_path": [
+    "src/test/java/com/commonsguy/cwac/merge/MergeAdapterTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

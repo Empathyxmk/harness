@@ -1,0 +1,17 @@
+{
+  "project_name": "jonschlinkert_is-number",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:39:41.686792",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/jonschlinkert_is-number",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/jonschlinkert_is-number",
+  "tests_path": [
+    "test.js",
+    "test/is-number.extra.test.js",
+    "test/test-is-number-complete.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

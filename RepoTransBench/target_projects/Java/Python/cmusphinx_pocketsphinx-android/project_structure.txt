@@ -1,0 +1,53 @@
+Project Structure for Pythonized cmusphinx_pocketsphinx-android
+=============================================================
+
+.
+├── requirements.txt                 # Python dependencies: pytest for testing
+├── run_tests.sh                     # One-click script to run all tests (pytest)
+├── src/
+│   └── pocketsphinx/
+│       ├── __init__.py              # Module initializer
+│       ├── assets.py                # Assets class stub (for test compatibility)
+│       ├── hypothesis.py            # Hypothesis class for result encapsulation
+│       ├── recognition_listener.py  # RecognitionListener interface (abstract base)
+│       ├── speech_recognizer.py     # SpeechRecognizer stub for listener management
+│       └── speech_recognizer_setup.py  # SpeechRecognizerSetup builder pattern mimicking Java usage
+├── tests/
+│   ├── __init__.py                  # Marker for test package
+│   └── original/
+│       ├── __init__.py              # Marker for original test package
+│       ├── test_assets.py           # Original Assets tests
+│       ├── test_hypothesis.py       # Original Hypothesis tests
+│       ├── test_recognition_listener.py # Original RecognitionListener tests
+│       ├── test_speech_recognizer.py    # Original SpeechRecognizer tests
+│       └── test_speech_recognizer_setup.py  # Orig. SpeechRecognizerSetup tests
+├── public_tests/
+│   ├── __init__.py                  # Marker for public tests folder
+│   ├── test_assets_public.py        # Public Assets tests
+│   ├── test_hypothesis_public.py    # Public Hypothesis tests
+│   ├── test_recognition_listener_public.py # Public RecognitionListener tests
+│   ├── test_speech_recognizer_public.py   # Public SpeechRecognizer tests
+│   └── test_speech_recognizer_setup_public.py   # Public SpeechRecognizerSetup tests
+
+Folders explained
+-----------------
+src/pocketsphinx/        - Contains all minimal implementation stubs required for tests to run:
+                          - assets.py: Asset management stub
+                          - hypothesis.py: Mimics Java's Hypothesis class
+                          - recognition_listener.py: Abstract base for recognition callbacks
+                          - speech_recognizer.py: Minimal SpeechRecognizer and listener registry
+                          - speech_recognizer_setup.py: Configures SpeechRecognizer as in Java
+
+tests/original/          - Original (non-public) port of Java test suite, functionally complete
+
+public_tests/            - Public-port equivalents of Java public tests, with matching logic,
+                          but using distinct values where noted in public tests
+
+Simple test execution
+---------------------
+1. Install requirements (once):
+    pip install -r requirements.txt
+
+2. Run all tests (from project root):
+    ./run_tests.sh
+    # This finds all test files in tests/original/ and public_tests/

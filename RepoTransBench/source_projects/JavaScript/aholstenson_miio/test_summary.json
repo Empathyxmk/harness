@@ -1,0 +1,19 @@
+{
+  "project_name": "aholstenson_miio",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 95.94,
+    "branch": 82.22
+  },
+  "timestamp": "2025-06-19T09:50:36.282753",
+  "original_path": "/workspace/runnable_filter/JavaScript/aholstenson_miio",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/aholstenson_miio",
+  "tests_path": [
+    "example.test.js",
+    "cli/log.test.js",
+    "cli/index.test.js",
+    "cli/device-finder.test.js",
+    "cli/commands/protocol.test.js"
+  ],
+  "run_tests_path": null
+}

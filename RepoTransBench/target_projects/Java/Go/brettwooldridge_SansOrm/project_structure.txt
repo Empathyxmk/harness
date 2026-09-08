@@ -1,0 +1,32 @@
+.
+├── README.md                  # Project documentation & instructions
+├── go.mod                     # Go module definition & dependencies
+├── run_tests.sh               # One-click test script for all tests
+├── tests/
+│   └── original/
+│       ├── introspected_test.go         # IntrospectedTest.java -> Go
+│       ├── introspector_test.go         # IntrospectorTest.java -> Go
+│       ├── ormelf_test.go               # OrmElfTest.java -> Go
+│       ├── sansorm_test.go              # SansOrmTest.java -> Go
+│       ├── sqlclosure_test.go           # SqlClosureTest.java -> Go
+│       ├── sqlclosurebranch_test.go     # SqlClosureBranchTest.java -> Go
+│       ├── sqlclosureelf_test.go        # SqlClosureElfTest.java -> Go
+│       ├── sqlfunction_test.go          # SqlFunctionTest.java -> Go
+│       ├── casesensitivedatabases_test.go         # internal/CaseSensitiveDatabasesTest.java -> Go
+│       ├── compositekey_test.go         # internal/CompositeKeyTest.java -> Go
+│       ├── fieldcolumninfo_test.go      # internal/FieldColumnInfoTest.java -> Go
+│       ├── refresh_test.go              # internal/RefreshTest.java -> Go
+│       ├── query_test.go                # org/sansorm/QueryTest.java -> Go
+│       ├── query_test2.go               # org/sansorm/QueryTest2.java -> Go
+│       └── query_test_sqlite.go         # org/sansorm/sqlite/QueryTestSQLite.java -> Go
+│       ├── testutils.go                 # Reusable test utility functions (from TestUtils.java etc)
+│       └── ... (any additional helpers for test scaffolding)
+├── public_tests/
+│   ├── ormelf_public_test.go            # OrmElfPublicTest.java -> Go
+│   ├── sansorm_public_test.go           # SansOrmPublicTest.java -> Go
+│   ├── sqlclosure_public_test.go        # SqlClosurePublicTest.java -> Go
+│   ├── sqlclosurebranch_public_test.go  # SqlClosureBranchPublicTest.java -> Go
+│   ├── sqlclosureelf_public_test.go     # SqlClosureElfPublicTest.java -> Go
+│   ├── sqlfunction_public_test.go       # SqlFunctionPublicTest.java -> Go
+│   └── ... (any additional public test helpers)
+└── (all non-test source code would go in a separate pkg, not included here for tests-only translation)

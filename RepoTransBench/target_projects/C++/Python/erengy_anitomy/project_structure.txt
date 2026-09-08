@@ -1,0 +1,28 @@
+erengy_anitomy_python/
+├── README.md                       # Project overview and usage instructions
+├── requirements.txt                # Python dependencies
+├── run_tests.sh                    # One-click script to execute all tests
+├── project_structure.txt           # This project tree and explanations
+├── src/
+│   └── anitomy/
+│       ├── __init__.py             # anitomy API package initializer
+│       ├── anitomy.py              # Mock Anitomy class and enum types
+│       └── options.py              # Mock Options class
+├── tests/
+│   ├── __init__.py                 # Makes "tests" a Python package
+│   └── original/
+│       ├── __init__.py             # Original test subpackage
+│       ├── test_anitomy_api.py     # Original C++ API options tests (pytest port)
+│       └── test_options.py         # Original Options coverage tests (pytest port)
+├── public_tests/
+│   ├── __init__.py                 # Makes "public_tests" a Python module
+│   ├── test_anitomy_api_public.py  # Public API/filename parsing coverage (pytest port)
+│   └── test_options_public.py      # Public extended Options tests (pytest port)
+
+Directory explanations:
+- src/anitomy/: Minimal Python "mock" API so public/original tests can import and run.
+- tests/original/: Direct translation of original private C++ tests (now as pytest Python tests).
+- public_tests/: Direct translation of public C++ test cases, as pytest Python tests.
+- requirements.txt: All required dependencies (pytest).
+- run_tests.sh: Simple bash script to invoke all tests via pytest.
+- project_structure.txt: This documentation file of the project layout.

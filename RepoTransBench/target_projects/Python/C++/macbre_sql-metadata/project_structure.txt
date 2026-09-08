@@ -1,0 +1,39 @@
+project_root/
+├── CMakeLists.txt
+├── src/
+│   ├── CMakeLists.txt
+│   ├── parser.h
+│   ├── parser.cpp
+│   ├── keywords_lists.h
+│   ├── keywords_lists.cpp
+├── tests/
+│   ├── test_main.cpp
+│   └── original/
+│       ├── test_column_aliases.cpp
+│       ├── test_complex_aliases.cpp
+│       ├── test_drop_table.cpp
+│       ├── test_mssql_server.cpp
+│       ├── test_alter.cpp
+│       ├── test_aliases.cpp
+│       ├── test_multiple_subqueries.cpp
+│       ├── test_redshift.cpp
+│       ├── test_keywords_lists_unit.cpp
+│       ├── test_fully_qualified_names.cpp
+│       ├── test_query_type.cpp
+│       ├── test_unions.cpp
+│       ├── test_sqlite.cpp
+│       ├── test_values.cpp
+│       ├── test_query.cpp
+│       ├── test_comments.cpp
+│       ├── test_hive.cpp
+│       ├── test_caching.cpp
+│       ├── test_create_table.cpp
+│       ├── test_getting_columns.cpp
+│       ├── test_normalization.cpp
+│       ├── test_limit_and_offset.cpp
+├── public_tests/
+│   ├── test_public_column_aliases.cpp
+│   ├── test_public_complex_aliases.cpp
+│   ├── test_public_drop_table.cpp
+├── run_tests.sh
+└── project_structure.txt

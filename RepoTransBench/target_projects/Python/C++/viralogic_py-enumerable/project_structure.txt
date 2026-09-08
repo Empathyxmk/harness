@@ -1,0 +1,36 @@
+viralogic_cpp-enumerable/
+├── CMakeLists.txt                  # Main build configuration: adds src/ and all tests, links with gtest
+├── README.md                       # Project and testing documentation
+├── include/
+│   └── viralogic_cpp_enumerable/   # Public library headers
+│       ├── Enumerable.h            # Main Enumerable class interface (stub for test linkage)
+│       ├── core.h                  # Core classes (Node, Key, OrderingDirection, RepeatableIterable)
+│       ├── decorators.h            # Decorators utilities (stub)
+│       ├── exceptions.h            # Exception classes as per Python module
+├── src/
+│   └── viralogic_cpp_enumerable/
+│       ├── Enumerable.cpp          # (Stub) Main Enumerable methods for linkage with tests
+│       ├── core.cpp                # (Stub) Implementation for RepeatableIterable and helpers
+│       ├── decorators.cpp          # (Stub) Decorators logic for testing warning (no-op)
+│       ├── exceptions.cpp          # (Stub) Exception class implementations
+├── tests/
+│   ├── original/
+│   │   ├── test_core.cpp
+│   │   ├── test_decorators.cpp
+│   │   ├── test_exceptions.cpp
+│   │   ├── test_functions.cpp
+│   │   ├── test_performance.cpp
+│   │   ├── test_py_linq.cpp
+│   │   ├── test_py_linq_branch.cpp
+│   │   ├── test_repeatable.cpp
+│   └── test_main.cpp               # GTest main entry point for running all tests
+├── public_tests/
+│   ├── test_public_core.cpp
+│   ├── test_public_decorators.cpp
+│   ├── test_public_exceptions.cpp
+│   ├── test_public_functions.cpp
+│   ├── test_public_performance.cpp
+│   ├── test_public_py_linq.cpp
+│   ├── test_public_py_linq_branch.cpp
+│   ├── test_public_repeatable.cpp
+├── run_tests.sh                    # Simple test build+run script

@@ -1,0 +1,16 @@
+{
+  "project_name": "spring-attic_sso",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-20T03:03:48.388854",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/spring-attic_sso",
+  "test_result_path": "/workspace/test_enhancement_results/Java/spring-attic_sso",
+  "tests_path": [
+    "src/test/java/demo/SsoApplicationTest.java",
+    "src/test/java/demo/ApplicationTests.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

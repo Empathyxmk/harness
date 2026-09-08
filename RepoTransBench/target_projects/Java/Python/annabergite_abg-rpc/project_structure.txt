@@ -1,0 +1,45 @@
+project_root/
+├── requirements.txt                 # Python dependencies file
+├── run_tests.sh                     # One-click test runner
+├── project_structure.txt            # This project description file
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_zookeeper_discover_integration.py
+│       ├── test_zookeeper_discover.py
+│       ├── test_zookeeper_register_advanced.py
+│       ├── test_zookeeper_register.py
+│       ├── test_forever_retry_policy.py
+│       ├── test_fastserializer.py
+│       ├── test_bytebufoutput.py
+│       ├── test_protostuff_serializer.py
+│       ├── test_string.py
+│       ├── test_kryo_bytebuf.py
+│       ├── test_reflect_testbean.py
+│       ├── test_hello_refer.py
+│       ├── test_hello_boot.py
+│       ├── test_trubo_client_boot.py
+│       ├── test_trubo_client_filter.py
+│       ├── test_trubo_server_boot.py
+│       ├── test_trubo_server_filter.py
+│       ├── test_unsafe.py
+│       └── test_method_param_class_factory.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_zookeeper_discover_public.py
+│   ├── test_zookeeper_discover_integration_public.py
+│   ├── test_zookeeper_register_advanced_public.py
+│   ├── test_zookeeper_register_public.py
+│   └── test_forever_retry_policy_public.py
+
+Directory explanations:
+- requirements.txt: Python dependencies (pytest).
+- run_tests.sh: Simple shell script to run all Python tests with Pytest.
+- project_structure.txt: This file describing the translated project structure.
+- tests/original/: All non-public ("original") tests, direct translations from Java.
+- public_tests/: All "public" test files, as listed in public_test_summary.json; runnable independently.
+- All test files use pytest conventions and direct assertion translation.
+- __init__.py files included (even if empty) to allow package discovery.
+- To install dependencies: `pip install -r requirements.txt`
+- To run all tests: `./run_tests.sh`

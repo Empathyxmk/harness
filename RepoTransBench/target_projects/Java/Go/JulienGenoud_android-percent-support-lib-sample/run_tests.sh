@@ -1,0 +1,3 @@
+#!/bin/bash
+set -e
+go test ./tests/... ./public_tests/...

@@ -1,0 +1,14 @@
+{
+  "name": "developit_dlv",
+  "version": "1.0.0",
+  "description": "Safe deep property access - dlv",
+  "main": "dlv.js",
+  "scripts": {
+    "test": "node test.js",
+    "coverage": "c8 node test.js"
+  },
+  "devDependencies": {
+    "c8": "^8.0.1",
+    "jest": "^30.0.2"
+  }
+}

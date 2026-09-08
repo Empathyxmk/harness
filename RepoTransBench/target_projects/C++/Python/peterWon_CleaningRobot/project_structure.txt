@@ -1,0 +1,35 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   ├── cleaning_path_planner.py         # CleaningPathPlanner logic (original path planner)
+│   ├── local_grid_velocity_computer.py  # LocalGridVelocityComputer logic
+│   ├── geometry_msgs.py                 # Python mocks for geometry_msgs used in tests
+│   ├── nav_msgs.py                      # Python mocks for nav_msgs used in tests
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_cleaning_path_planner.py        # Translated "original" C++ test
+│   │   └── test_local_grid_velocity_computer.py # Translated "original" C++ test
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_cleaning_path_planner_public.py         # Translated public C++ test
+│   └── test_local_grid_velocity_computer_public.py  # Translated public C++ test
+├── requirements.txt
+├── run_tests.sh                   # One-click test script (runs all tests)
+├── README.md
+├── project_structure.txt          # This file: description of all files/directories
+
+Directory/Files Purpose:
+- src/: Main source code modules and interface/shim "ROS" message mocks
+- tests/original/: Original private test cases (from C++ tests named without 'public')
+- public_tests/: Public test cases (from *_public.cpp files)
+- requirements.txt: Python dependencies (pytest)
+- run_tests.sh: Runs both original and public tests using pytest
+- project_structure.txt: This file - structure map & explanations
+- README.md: Short project usage/readme (create as needed)
+
+Setup & Testing Instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+   (Or run individually: `pytest tests/`, `pytest public_tests/`)

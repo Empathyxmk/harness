@@ -1,0 +1,28 @@
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/example/localllm/
+│   │           ├── ModelDownload.java
+│   │           ├── ModelFiles.java
+│   │           ├── ModelServing.java
+│   │           └── HfHubDownloadWrapper.java
+│   └── test/
+│       └── java/
+│           └── com/example/localllm/
+│               ├── original/
+│               │   ├── TestModelDownloadFull.java
+│               │   ├── TestModelServingFull.java
+│               │   ├── TestModelFilesFull.java
+│               │   ├── TestModelDownload.java
+│               │   ├── TestModelFiles.java
+│               │   ├── ImageTests.java
+│               │   └── CloudBuildTestYamlCheck.java
+│               └── publictests/
+│                   ├── PublicModelServingFullTest.java
+│                   ├── PublicModelDownloadTest.java
+│                   ├── PublicModelDownloadFullTest.java
+│                   ├── PublicModelFilesFullTest.java
+│                   ├── PublicModelFilesTest.java

@@ -1,0 +1,34 @@
+BartVandewoestyne_Effective-Modern-Cpp/
+├── CMakeCache.txt
+├── CMakeFiles/
+├── CMakeLists.txt
+├── Item01_Understand_template_type_deduction/
+├── Item02_Understand_auto_type_deduction/
+├── Item03_Understand_decltype/
+├── Item04_Know_how_to_view_deduced_types/
+├── Item05_Prefer_auto_to_explicit_type_declarations/
+├── Item06_Use_the_explicitly_typed_initializer_idiom_when_auto_deduces_undesired_types/
+├── Item07_Distinguish_between()_and_{}_when_creating_objects/
+├── Item08_Prefer_nullptr_to_0_and_NULL/
+├── Item09_Prefer_alias_declarations_to_typedefs/
+├── Item10_Prefer_scoped_enums_to_unscoped_enums/
+├── Item11_Prefer_deleted_functions_to_private_undefined_ones/
+├── ...
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_main.py
+│       ├── test_type_deduction.py
+│       ├── test_overriding_explained.py
+│       ├── test_override.py
+│       ├── test_empty_braces_v1.py
+│       └── test_empty_braces_v2.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_override_public.py
+│   ├── test_overriding_explained_public.py
+│   ├── test_type_deduction_public.py
+│   └── test_overriding_explained_public_test.py

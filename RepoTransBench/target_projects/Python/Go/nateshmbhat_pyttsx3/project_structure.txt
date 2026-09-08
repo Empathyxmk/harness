@@ -1,0 +1,48 @@
+nateshmbhat_pyttsx3 Go Project Structure
+===========================================
+
+This is a Go translation of the original Python "nateshmbhat_pyttsx3" project focusing on test case migration.
+Below is the high-level project structure and explanations:
+
+.
+├── go.mod                          # Go module definition & dependencies
+├── tests/
+│   └── original/
+│       ├── driverproxy_api_test.go # Original Python driverproxy API tests (now in Go)
+│       ├── engines_test.go         # Original Python engine tests (skipped)
+│       ├── init_api_test.go        # Original Python pyttsx3.init API tests
+│       ├── pyttsx3_test.go         # Original high-level pyttsx3 API/caching tests
+├── public_tests/
+│   ├── public_driverproxy_api_test.go  # Public API version of driverproxy tests
+│   ├── public_engines_test.go          # Public API engine (skipped) tests
+│   ├── public_init_api_test.go         # Public API for engine initialization
+│   ├── public_pyttsx3_test.go          # Alternative implementation for public pyttsx3 API tests
+├── run_tests.sh                    # Executable script to run ALL Go tests in both trees
+├── project_structure.txt           # This project topology and explanation
+
+Directory Details
+-----------------
+- tests/original/: Contains all tests migrated from 'tests/' in the original Python source.
+  Each test is implemented in Go in an idiomatic but logic-preserving way.
+
+- public_tests/: Mirrors all public API tests from 'public_tests/' in the original repo.
+  These exercise similar, but sometimes alternative, API behaviors in a public-friendly way.
+
+- run_tests.sh: One-click script to execute ALL test suites.
+  Usage:
+    chmod +x run_tests.sh      # if needed
+    ./run_tests.sh            # will run tests in all subtrees
+
+Setup & Usage
+-------------
+1. Ensure Go (1.20+) is installed: https://golang.org/
+2. cd to project root.
+3. Run: ./run_tests.sh        # will run all tests and show results
+
+Test Organization
+-----------------
+- All original and public tests have been migrated from Python to Go.
+- Skipped tests for engines/voice are preserved but always skipped in Go too.
+- Active tests match original behavior as closely as Go syntax/semantics allow.
+
+No production/implementation code is present except for that needed in tests to simulate the Python pyttsx3 API.

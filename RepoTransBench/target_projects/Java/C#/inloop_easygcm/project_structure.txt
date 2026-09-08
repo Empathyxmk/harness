@@ -1,0 +1,47 @@
+C# Project Structure for inloop_easygcm
+
+.
+├── easygcm/
+│   ├── EasyGcm.cs                        # Main library classes (stubbed for test linkage)
+│   ├── GcmListener.cs                    # GCM Listener interface/class (stub for tests)
+│   ├── GcmServicesHandler.cs             # GCM Service Handler stub (for tests)
+│   ├── GcmHelper.cs
+│   ├── NetworkStateReceiver.cs
+│   ├── ConnectionUtils.cs
+│   ├── GcmRegistrationService.cs
+│   ├── GcmUtils.cs
+│   ├── Program.cs                        # For build/test entrypoint, if needed
+│   └── easygcm.csproj
+├── tests/
+│   ├── original/
+│   │   ├── ConnectionUtilsTests.cs
+│   │   ├── EasyGcmListenerServiceTests.cs
+│   │   ├── NetworkStateReceiverTests.cs
+│   │   ├── GcmRegistrationServiceTests.cs
+│   │   └── GcmHelperTests.cs
+│   └── OriginalTests.csproj
+├── public_tests/
+│   ├── ConnectionUtilsPublicTests.cs
+│   ├── EasyGcmListenerServicePublicTests.cs
+│   ├── NetworkStateReceiverPublicTests.cs
+│   ├── GcmHelperPublicTests.cs
+│   ├── GcmRegistrationServicePublicTests.cs
+│   └── PublicTests.csproj
+├── inloop_easygcm.sln
+├── run_tests.sh
+├── README.md
+
+Directory/File Explanations:
+- easygcm/: Source code and all necessary stubs to build/run the tests.
+- tests/original/: Translated C# versions of all original test cases.
+- public_tests/: Translated public test cases (for public-facing correctness).
+- *.csproj: C# project files for src, original tests, public tests.
+- inloop_easygcm.sln: Solution file tying all projects together.
+- run_tests.sh: Simple script to execute all tests.
+- README.md: Project description and instructions.
+- project_structure.txt: This structure/documentation file.
+
+Build & Test Instructions:
+1. .NET 6.0+ SDK is required.
+2. Restore dependencies: `dotnet restore`
+3. Run all tests: `./run_tests.sh`

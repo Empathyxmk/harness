@@ -1,0 +1,23 @@
+project_root/
+├── src/
+│   └── lducas_fhew/                 # (to be implemented if code logic is ported)
+│       ├── __init__.py
+│       └── (core python code files)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_cmd_common.py
+│       ├── test_LWE.py
+│       ├── test_fft.py
+│       └── test_distrib.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_fft_public.py
+│   ├── test_distrib_public.py
+│   ├── test_LWE_public.py
+│   └── test_cmd_common_public.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json

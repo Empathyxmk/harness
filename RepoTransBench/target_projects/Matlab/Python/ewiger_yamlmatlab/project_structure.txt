@@ -1,0 +1,44 @@
+ewiger_yamlmatlab-python/
+├── src/
+│   └── yamlmatlab/
+│       ├── __init__.py
+│       ├── yaml.py           # Core module port (not implemented here)
+│       ├── extras.py         # Placeholder for extras (not implemented here)
+│       └── date_time.py      # Placeholder for DateTime (not implemented here)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_dosubstitution.py
+│       ├── test_deflateimports.py
+│       ├── test_WriteYaml.py
+│       ├── test_mergeimports.py
+│       ├── test_merge_struct.py
+│       ├── test_DateTime.py
+│       ├── test_ReadYamlRaw.py
+│       ├── test_auxiliary.py
+│       ├── test_doinheritance.py
+│       └── test_ReadYaml.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_dosubstitution.py
+│   ├── test_public_deflateimports.py
+│   ├── test_public_WriteYaml.py
+│   ├── test_public_merge_struct.py
+│   ├── test_public_mergeimports.py
+│   ├── test_public_auxiliary.py
+│   ├── test_public_DateTime.py
+│   ├── test_public_ReadYaml.py
+│   ├── test_public_ReadYamlRaw.py
+│   ├── test_public_doinheritance.py
+├── requirements.txt
+├── run_tests.sh
+└── README.md
+
+- `src/yamlmatlab/`: Core library code for the YAML Matlab-like module (should implement all needed logic, not included in this translation).
+- `tests/original/`: All original translated tests from the Matlab code, using pytest.
+- `public_tests/`: All public mapped tests using pytest.
+- `requirements.txt`: Python dependencies (pytest, pyyaml, numpy, etc.).
+- `run_tests.sh`: Simple, one-click test runner.
+- `README.md`: Project overview and instructions.
+- `project_structure.txt`: This file, describes entire project structure.

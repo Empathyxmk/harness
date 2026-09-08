@@ -1,0 +1,18 @@
+{
+  "project_name": "alexbeletsky_backbone-express-spa",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 80.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T09:50:49.473882",
+  "original_path": "/workspace/runnable_filter/JavaScript/alexbeletsky_backbone-express-spa",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/alexbeletsky_backbone-express-spa",
+  "tests_path": [
+    "test/Gruntfile.spec.js",
+    "test/app.spec.js",
+    "test/runMocha.spec.js",
+    "test/public_js_core_transition.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

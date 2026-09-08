@@ -1,0 +1,61 @@
+{
+  "project_name": "orhanobut_tracklytics",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:50:00.019163",
+  "original_path": "/workspace/verified_repos_v2/Java/orhanobut_tracklytics",
+  "public_test_result_path": "/workspace/public_test_results/Java/orhanobut_tracklytics",
+  "original_tests": {
+    "test_files": [
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TracklyticsAspectTest.java",
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TrackSuperAttributeAnnotationTest.java",
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/EventTest.java",
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TrackableAttributeAnnotationTest.java",
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TracklyticsTest.java",
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/AttributeAnnotationTest.java",
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TrackableInterfaceTest.java",
+      "sample/src/test/java/com/orhanobut/sample/TrackingTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/EventPublicTest.java",
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TrackSuperAttributeAnnotationPublicTest.java",
+      "run_public_tests.sh",
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/AttributeAnnotationPublicTest.java",
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TrackableAttributeAnnotationPublicTest.java",
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TrackableInterfacePublicTest.java",
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TracklyticsPublicTest.java",
+      "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TracklyticsAspectPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/EventPublicTest.java",
+    "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TrackSuperAttributeAnnotationPublicTest.java",
+    "run_public_tests.sh",
+    "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/AttributeAnnotationPublicTest.java",
+    "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TrackableAttributeAnnotationPublicTest.java",
+    "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TrackableInterfacePublicTest.java",
+    "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TracklyticsPublicTest.java",
+    "tracklytics-runtime/src/test/java/com/orhanobut/tracklytics/TracklyticsAspectPublicTest.java",
+    "build.gradle",
+    "run_public_tests.sh"
+  ]
+}

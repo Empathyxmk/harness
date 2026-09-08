@@ -1,0 +1,22 @@
+{
+  "project_name": "aksakalli_gtop",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 80.2,
+    "branch": 72.7
+  },
+  "timestamp": "2025-06-23T10:33:51.287369",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/aksakalli_gtop",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/aksakalli_gtop",
+  "tests_path": [
+    "lib/gtop.test.js",
+    "lib/utils.test.js",
+    "lib/monitor/cpu.test.js",
+    "lib/monitor/disk.test.js",
+    "lib/monitor/index.test.js",
+    "lib/monitor/mem.test.js",
+    "lib/monitor/net.test.js",
+    "lib/monitor/proc.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

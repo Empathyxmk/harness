@@ -1,0 +1,28 @@
+.
+├── go.mod                          # Go modules for dependency/configuration
+├── README.md                       # Project documentation and test invocation guide
+├── run_tests.sh                    # Shell script to run all Go unit tests
+├── src/
+│   ├── about.go                    # Stubs for about/version logic
+│   ├── config.go                   # Stubs for config constants
+│   ├── login_manager.go            # Stubs for login manager
+│   ├── mixins.go                   # Stubs for UserMixin, AnonymousUserMixin
+│   └── test_client.go              # Stub for FlaskLoginClient
+├── tests/
+│   └── original/
+│       ├── about_test.go           # Tests from tests/test_about.py
+│       ├── config_test.go          # Tests from tests/test_config.py
+│       ├── login_test.go           # Skipped: extremely large and Flask-specific
+│       ├── mixins_test.go          # Tests from tests/test_mixins.py
+│       └── test_client_test.go     # From src/flask_login/test_client.py
+└── public_tests/
+    ├── test_public_about_test.go
+    ├── test_public_client_test.go
+    ├── test_public_config_test.go
+    ├── test_public_login_test.go
+    └── test_public_mixins_test.go
+
+Descriptions:
+- src/: Contains stubbed source code so that tests compile.
+- tests/original/: Translations of the original internal test suite.
+- public_tests/: Translations of public (student-facing) tests.

@@ -1,0 +1,31 @@
+enet/
+├── Cargo.toml              # Rust project configuration
+├── src/
+│   └── lib.rs              # Main library implementation
+├── tests/
+│   └── test_enet.rs        # Original tests
+├── public_tests/
+│   └── public_test_enet.rs # Public tests
+└── run_tests.sh            # Test execution script
+
+The Rust project follows standard Rust project conventions:
+
+1. src/lib.rs: Contains the implementation of the core functions:
+   - enet_add: Addition function
+   - enet_sub: Subtraction function
+   - enet_div: Division function with division by zero handling
+   - enet_max: Maximum value function
+
+2. tests/test_enet.rs: Contains the original tests translated from C
+   - Tests all core functions with the same test cases as in the original
+
+3. public_tests/public_test_enet.rs: Contains the public tests
+   - Tests all core functions with the public test cases
+
+4. run_tests.sh: Simple bash script to run all tests
+   - Executes with: ./run_tests.sh
+   - Uses 'cargo test --all' to run both original and public tests
+
+Setup instructions:
+1. Make sure Rust and Cargo are installed
+2. Run tests with: ./run_tests.sh

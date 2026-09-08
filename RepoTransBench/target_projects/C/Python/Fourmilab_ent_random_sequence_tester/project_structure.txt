@@ -1,0 +1,52 @@
+.
+├── public_tests
+│   ├── test_chisq_public.py
+│   ├── test_iso8859_public.py
+│   └── test_randtest_public.py
+├── requirements.txt
+├── run_tests.sh
+├── src
+│   └── fourmilab_ent
+│       ├── __init__.py
+│       ├── chisq.py
+│       ├── iso8859.py
+│       └── randtest.py
+└── tests
+    └── original
+        ├── test_chisq.py
+        ├── test_iso8859.py
+        └── test_randtest.py
+
+5 directories, 10 files
+
+============================================================
+== Project Structure Description
+============================================================
+- src/fourmilab_ent/: Contains the translated Python source code.
+  - __init__.py: Marks the directory as a Python package.
+  - chisq.py: Port of the chi-squared probability function.
+  - iso8859.py: Port of the ISO-8859-1 character classification functions.
+  - randtest.py: Port of the randomness testing logic.
+
+- tests/original/: Contains the translated original test suite.
+  - test_*.py: Pytest files corresponding to the original C tests.
+
+- public_tests/: Contains the translated public test suite.
+  - test_*_public.py: Pytest files corresponding to the public C tests.
+
+- requirements.txt: Lists the Python dependencies (pytest, scipy).
+
+- run_tests.sh: A simple script to install dependencies and run all tests using pytest.
+
+============================================================
+== Setup and Execution
+============================================================
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Run all tests:
+   ./run_tests.sh
+   (This script also installs dependencies automatically)
+
+   Alternatively, run pytest directly:
+   pytest

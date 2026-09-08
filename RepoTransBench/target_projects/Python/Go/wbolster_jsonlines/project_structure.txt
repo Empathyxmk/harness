@@ -1,0 +1,27 @@
+wbolster_jsonlines/
+├── go.mod                         # Go module definition
+├── README.md                      # Project documentation
+├── run_tests.sh                   # Script to run all tests (`go test ./...`)
+├── jsonlines/                     # (Placeholder) Core package implementation directory
+│
+├── tests/
+│   └── original/                  # All original translated tests from Python's `tests/`
+│       ├── test_error_conditions_test.go
+│       ├── test_jsonlines_extra_test.go
+│       ├── test_jsonlines_test.go
+│       └── test_typing_test.go
+│
+└── public_tests/                  # All publicly released/go-translated test cases
+    ├── test_public_error_conditions_test.go
+    ├── test_public_jsonlines_extra_test.go
+    ├── test_public_jsonlines_test.go
+    └── test_public_typing_test.go
+
+Explanations:
+- `jsonlines/`: Core implementation should live here (to be implemented; all tests expect functionality here).
+- `tests/original/`: Original functional/edge-case tests, translated from Python unit tests.
+- `public_tests/`: Public-facing tests (those released as public/educational), translated as well.
+- `run_tests.sh`: One-click test runner for all test suites in any nested directory.
+
+To run tests:
+    ./run_tests.sh

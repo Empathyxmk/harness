@@ -1,0 +1,56 @@
+{
+  "project_name": "un33k_django-uuslug",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:25:23.411438",
+  "original_path": "/workspace/verified_repos_v2/Python/un33k_django-uuslug",
+  "public_test_result_path": "/workspace/public_test_results/Python/un33k_django-uuslug",
+  "original_tests": {
+    "test_files": [
+      "uuslug/tests/test_models_integration.py",
+      "uuslug/tests/test_init.py",
+      "uuslug/tests/test_uuslug_func.py",
+      "uuslug/tests/test_uuslug.py",
+      "uuslug/tests/test_setup.py",
+      "uuslug/tests/test_apps_py.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "uuslug/tests/public_test_models_integration.py",
+      "uuslug/tests/public_test_init.py",
+      "uuslug/tests/public_test_uuslug_func.py",
+      "run_public_tests.sh",
+      "uuslug/tests/public_test_uuslug.py",
+      "uuslug/tests/public_test_setup.py",
+      "uuslug/tests/public_test_apps_py.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "uuslug/tests/public_test_models_integration.py",
+    "uuslug/tests/public_test_init.py",
+    "uuslug/tests/public_test_uuslug_func.py",
+    "run_public_tests.sh",
+    "uuslug/tests/public_test_uuslug.py",
+    "uuslug/tests/public_test_setup.py",
+    "uuslug/tests/public_test_apps_py.py",
+    "run_public_tests.sh"
+  ]
+}

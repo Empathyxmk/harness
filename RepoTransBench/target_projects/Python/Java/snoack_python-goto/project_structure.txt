@@ -1,0 +1,35 @@
+snoack-goto-java/
+├── pom.xml                # Maven configuration file (dependencies)
+├── run_tests.sh           # Executable script to run all tests
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── goto/
+│   │                   └── Goto.java             # Dummy Java module for 'goto'
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── TestGoto.java         # Original private/internal tests
+│                   │   └── TestGotoInternals.java
+│                   └── public_tests/
+│                       ├── PublicGotoTest.java   # Public test cases from public_tests/
+│                       └── PublicGotoInternalsTest.java
+└── project_structure.txt  # This file
+
+# Directory Explanations:
+# - src/main/java/com/example/goto/Goto.java: Minimal 'goto' module for reflection/public tests.
+# - src/test/java/com/example/original/: Private/internal tests translated from test_goto.py and test_goto_internals.py.
+# - src/test/java/com/example/public_tests/: Public-facing test cases from public_tests/* in source repo.
+# - run_tests.sh: Run all tests with one command. Invokes Maven's test mechanism.
+# - pom.xml: Build and dependency management (JUnit 5).
+# - project_structure.txt: This project tree and documentation.
+
+Instructions:
+1. Ensure Java 11 and Maven (3.6+) are installed.
+2. Run `chmod +x run_tests.sh` if needed.
+3. Execute all tests: `./run_tests.sh`
+   - All internal (original) and public tests will be run.

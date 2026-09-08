@@ -1,0 +1,14 @@
+{
+  "name": "fbeline_design-patterns-JS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "dependencies": {}
+}

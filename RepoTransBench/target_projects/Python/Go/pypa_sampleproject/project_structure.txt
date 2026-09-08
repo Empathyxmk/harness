@@ -1,0 +1,17 @@
+pypa_sampleproject/
+├── go.mod                          # Go module definition
+├── run_tests.sh                    # Run all tests in a single command
+├── README.md                       # Overview and usage instructions
+├── src/
+│   └── sample/
+│       ├── init.go                 # Implements Main() print behavior
+│       └── simple.go               # Implements AddOne() logic
+├── tests/
+│   └── original/
+│       ├── test_init_test.go       # test of sample.Main()
+│       ├── test_simple_test.go     # all add_one cases
+│       └── test_noxfile_test.go    # simulated noxfile session logic as best possible in Go
+├── public_tests/
+│   ├── test_public_init_test.go    # public Main() output substring check
+│   ├── test_public_simple_test.go  # public add_one coverage
+│   └── test_public_noxfile_test.go # public simulated noxfile.py session logic

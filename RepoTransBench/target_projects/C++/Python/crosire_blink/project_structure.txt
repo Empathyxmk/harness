@@ -1,0 +1,30 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── project_structure.txt
+├── tests/
+│   └── original/
+│       ├── test_blink_utils.py         # Python translation of private DummyTest
+│       └── test_msf_reader.py          # Python translation of private DummyTest for msf_reader
+├── public_tests/
+│   ├── test_blink_utils_public.py      # Public dummy util test (passes with non-duplicate logic)
+│   ├── test_msf_reader_public.py       # Public: tries to open a non-existent .msf file, expects failure
+│   ├── test_blink_add_unique_path_public.py  # Public: tests add_unique_path insertion logic (new/distinct/existing path)
+│   └── test_coff_reader_public.py      # Public: tries to open non-existent ".obj" file, expects failure
+└── (auto-discoverable by pytest)
+
+Explanations:
+- requirements.txt        : Lists required dependencies (pytest)
+- run_tests.sh           : Simple shell script to run all (original and public) test suites using pytest
+- project_structure.txt  : This file; describes directory and file layout and each file's intent
+- README.md              : (Create as project documentation/usage if needed)
+- tests/original/        : Contains Python versions of any PRIVATE (non-public) tests from the C++ repo
+- public_tests/          : Contains all PUBLIC tests ported from the `tests_public` C++ suite
+- All test filenames use Python conventions (test_*.py), follow pytest standards, are grouped by original/public status
+- No source/ directory provided; tests are self-contained and test "dummy"/logic/mocks
+
+Instructions:
+1. Install requirements:       pip install -r requirements.txt
+2. Run all tests:              ./run_tests.sh
+3. Add your source code in a src/ directory as needed for full implementation (not required for these dummy/public tests)

@@ -1,0 +1,38 @@
+DistributedKit/                         # Repo root
+├── src/                               # Library source code
+│   ├── DistributedKit.csproj          # Project file for library
+│   ├── LimitRule.cs                   # LimitRule class (ported)
+│   ├── AccessSpeedLimit.cs            # AccessSpeedLimit class + stubs for IJedisPool/IJedis interfaces
+│   ├── ZkDistributedSequence.cs       # Zookeeper-based sequence logic + fake stat/curator
+│   ├── RedisReentrantLock.cs          # Simplified RedisReentrantLock for tests
+│   └── ...                            # (can add more source as needed)
+├── tests/
+│   └── original/                      # Original translated tests (internal/private)
+│       ├── OriginalTests.csproj       # xUnit project file
+│       ├── LimitRuleTests.cs
+│       ├── AccessSpeedLimitUnitTests.cs
+│       ├── AccessSpeedLimitTests.cs
+│       ├── ZkDistributedSequenceUnitTests.cs
+│       ├── ZkReentrantLockTemplateTests.cs
+│       ├── RedisReentrantLockTemplateTests.cs
+│       ├── SimpleTests.cs
+├── public_tests/                      # Public test suite (mirrors Java *PublicTest files)
+│   ├── PublicTests.csproj
+│   ├── LimitRulePublicTests.cs
+│   ├── AccessSpeedLimitPublicTests.cs
+│   ├── ZkDistributedSequencePublicTests.cs
+│   ├── ZkReentrantLockTemplatePublicTests.cs
+│   ├── SimplePublicTests.cs
+│   ├── RedisReentrantLockTemplatePublicTests.cs
+├── DistributedKit.sln                 # Solution file, ties all projects together
+├── run_tests.sh                       # One-click test runner (calls dotnet test)
+├── README.md                          # Explanation of structure, how to run, etc.
+└── project_structure.txt              # This project tree/explanation file
+
+Key Directories:
+- `src/`: Main code base (fakes/stubs for tests as source impl isn't provided)
+- `tests/original/`: All original/internal test cases, ported & functional
+- `public_tests/`: All public test logic (mirrors Java *PublicTest files)
+- All test projects set up for xUnit + Moq mocking (NuGet dependencies in .csproj)
+
+See `README.md` for run/setup info.

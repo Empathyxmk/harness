@@ -1,0 +1,15 @@
+{
+  "project_name": "fregante_code-tag",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:27:26.369882",
+  "original_path": "/workspace/runnable_filter/JavaScript/fregante_code-tag",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/fregante_code-tag",
+  "tests_path": [
+    "esm/index.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

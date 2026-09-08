@@ -1,0 +1,74 @@
+{
+  "project_name": "JamesZBL_java_design_patterns",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:40:23.284669",
+  "original_path": "/workspace/verified_repos_v2/Java/JamesZBL_java_design_patterns",
+  "public_test_result_path": "/workspace/public_test_results/Java/JamesZBL_java_design_patterns",
+  "original_tests": {
+    "test_files": [
+      "composite/src/test/java/me/zbl/composite/WriterIntegrationTest.java",
+      "composite/src/test/java/me/zbl/composite/CharacterCompositeTest.java",
+      "composite/src/test/java/me/zbl/composite/WriterTest.java",
+      "composite/src/test/java/me/zbl/composite/EnglishWordTest.java",
+      "composite/src/test/java/me/zbl/composite/EnglishSentenceTest.java",
+      "composite/src/test/java/me/zbl/composite/ChineseWordTest.java",
+      "facade/src/test/java/me/zbl/facade/CourseFacadeTest.java",
+      "prototype/src/test/java/me/zbl/prototype/PrototypeTest.java",
+      "prototype/src/test/java/me/zbl/prototype/FactoryTest.java",
+      "factory-method/src/test/java/me/zbl/factory/method/FactoryMethodTest.java",
+      "bridge/src/test/java/me/zbl/bridge/MordernWarTest.java",
+      "bridge/src/test/java/me/zbl/bridge/WarTest.java",
+      "bridge/src/test/java/me/zbl/bridge/AncientWarTest.java",
+      "singleton/src/test/java/me/zbl/singleton/LazyInitializationDirectorTest.java",
+      "singleton/src/test/java/me/zbl/singleton/SingletonTest.java",
+      "singleton/src/test/java/me/zbl/singleton/DirectorTest.java",
+      "singleton/src/test/java/me/zbl/singleton/ThreadSafeLazyLoadDirectorTest.java",
+      "singleton/src/test/java/me/zbl/singleton/ThreadSafeDoubleCheckLockingTest.java",
+      "singleton/src/test/java/me/zbl/singleton/EnumDirectorTest.java",
+      "decorator/src/test/java/me/zbl/decorator/CarpenterOperationsTest.java",
+      "decorator/src/test/java/me/zbl/decorator/HammerSmithOperationsTest.java",
+      "abstract-factory/src/test/java/me/zbl/abstractFactory/AbstractFactoryTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 22,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "composite/src/test/java/me/zbl/composite/WriterIntegrationPublicTest.java",
+      "composite/src/test/java/me/zbl/composite/CharacterCompositePublicTest.java",
+      "composite/src/test/java/me/zbl/composite/WriterPublicTest.java",
+      "composite/src/test/java/me/zbl/composite/EnglishWordPublicTest.java",
+      "composite/src/test/java/me/zbl/composite/EnglishSentencePublicTest.java",
+      "composite/src/test/java/me/zbl/composite/ChineseWordPublicTest.java",
+      "composite/run_public_tests.sh",
+      "composite/run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "composite/run_public_tests.sh",
+      "composite/run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "composite/src/test/java/me/zbl/composite/WriterIntegrationPublicTest.java",
+    "composite/src/test/java/me/zbl/composite/CharacterCompositePublicTest.java",
+    "composite/src/test/java/me/zbl/composite/WriterPublicTest.java",
+    "composite/src/test/java/me/zbl/composite/EnglishWordPublicTest.java",
+    "composite/src/test/java/me/zbl/composite/EnglishSentencePublicTest.java",
+    "composite/src/test/java/me/zbl/composite/ChineseWordPublicTest.java",
+    "composite/run_public_tests.sh",
+    "composite/run_tests.sh",
+    "composite/run_public_tests.sh",
+    "composite/pom.xml"
+  ]
+}

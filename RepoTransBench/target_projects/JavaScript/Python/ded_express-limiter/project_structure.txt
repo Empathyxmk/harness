@@ -1,0 +1,28 @@
+ded_express-limiter (Python version)
+├── requirements.txt           # Python dependencies (pytest, Flask, freezegun, etc)
+├── run_tests.sh               # One-click script to run all tests with pytest
+├── src/
+│   └── ded_express_limiter/
+│       └── __init__.py        # Placeholder for ded_express-limiter source implementation
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_edge_cases.py # All original edge case and branch tests translated from JS
+├── public_tests/
+│   ├── __init__.py
+│   └── test_edge_cases_public.py # All public edge/branch test cases translated from JS
+└── project_structure.txt      # This structure and instructions file
+
+Directory Explanations:
+- requirements.txt: Lists required Python libraries (pytest, Flask, freezegun, etc).
+- run_tests.sh: Simple script to install dependencies and run all tests with pytest.
+- src/: All actual (or placeholder) source code for the ded_express-limiter library.
+- tests/original/: Translations of the original (non-public) ded_express-limiter test suites.
+- public_tests/: Translations of public-facing test suites.
+- project_structure.txt: This help file describing the folder layout and purpose.
+
+Setup & Usage:
+1. Run `chmod +x run_tests.sh` to ensure the test script is executable.
+2. Run `./run_tests.sh`
+3. All tests (original and public) will execute with pytest, showing results and coverage.

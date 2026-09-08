@@ -1,0 +1,29 @@
+project_root/
+├── README.md                # Project overview and usage instructions
+├── requirements.txt         # Python dependencies for testing
+├── run_tests.sh             # Simple script to run all tests
+├── src/
+│   ├── __init__.py          # (optional) package marker
+│   └── ecdo.py              # Core module implementing all main string utilities
+├── tests/
+│   ├── __init__.py          # (optional) test package marker
+│   └── original/
+│       ├── __init__.py      # (optional) test package marker
+│       └── test_ecdo.py     # Translated original (private) test cases
+└── public_tests/
+    ├── __init__.py          # (optional) test package marker
+    └── test_ecdo_public.py  # Translated public test cases
+
+# Directory Purpose:
+# - src/: Contains all implementation code.
+# - tests/original/: Original (internal) test translation.
+# - public_tests/: All public/visible test translations.
+# - requirements.txt: Specifies pytest as the testing dependency.
+# - run_tests.sh: Run all tests with one command.
+# - README.md: Documentation, usage, and structure instructions.
+# - project_structure.txt: This file; directory/file roles explained.
+
+# Usage:
+#   - Install dependencies from requirements.txt
+#   - Run all tests with ./run_tests.sh
+#   - Both tests/original/ and public_tests/ will be automatically detected/executed by pytest

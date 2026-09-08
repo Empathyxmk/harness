@@ -1,0 +1,11 @@
+{
+  "project_name": "commoncrawl_news-crawl",
+  "language": "Java",
+  "coverage": {
+    "line": 52.8,
+    "branch": 54.5
+  },
+  "timestamp": "2025-06-19T08:49:05.137357",
+  "original_path": "/workspace/runnable_filter/Java/commoncrawl_news-crawl",
+  "test_result_path": "/workspace/test_enhancement_results/Java/commoncrawl_news-crawl"
+}

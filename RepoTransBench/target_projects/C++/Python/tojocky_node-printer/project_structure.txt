@@ -1,0 +1,43 @@
+tojocky_node-printer-python/
+├── requirements.txt                  # Python dependency requirements (pytest)
+├── run_tests.sh                      # Simple script to run all tests with one-click
+├── project_structure.txt             # This file: overview and layout explanation
+├── tests/                            # All original (private/internal) tests
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_node_printer_util.py # Translation of original test_node_printer_util.cpp
+├── public_tests/                     # All public (open test coverage) tests
+│   ├── __init__.py
+│   └── test_node_printer_util_public.py # Translation of test_node_printer_util_public.cpp
+
+Directory/details:
+
+requirements.txt
+    List of all dependencies needed to develop and run tests (includes pytest).
+
+run_tests.sh
+    Bash script for running all unit tests (original and public) with a single command.
+
+tests/original/
+    Python translation of original (private/internal) C++ test logic. Use pytest conventions.
+
+public_tests/
+    Python translation of public C++ tests, separated for clarity and educational use.
+
+tests/__init__.py, public_tests/__init__.py, tests/original/__init__.py
+    Python package marker files (can be empty).
+
+Instructions:
+-------------
+1. Install all dependencies:
+      pip install -r requirements.txt
+
+2. Run all tests:
+      ./run_tests.sh
+
+All tests should run (both private and public) and print results. If you want to run only original/private tests:
+      pytest tests/original/
+
+For only public tests:
+      pytest public_tests/

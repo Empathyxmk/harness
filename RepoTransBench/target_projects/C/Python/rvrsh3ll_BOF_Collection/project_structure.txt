@@ -1,0 +1,30 @@
+project_root/
+├── src/                                  # Source code for the BOF collection modules
+│   ├── __init__.py                       # Makes 'src' a Python package
+│   └── bof_collection/                   # Contains core BOF functionality (mocked for this translation)
+│       ├── __init__.py                   # Makes 'bof_collection' a Python package
+│       └── common.py                     # Contains mocked 'go' and external Windows API function placeholders
+├── tests/                                # Directory for original (private) test cases
+│   ├── __init__.py                       # Makes 'tests' a Python package
+│   └── original/                         # Original test cases
+│       ├── __init__.py                   # Makes 'original' a Python package
+│       ├── test_registry_persistence_original.py # Translated test for RegistryPersistence
+│       ├── test_domain_info_original.py  # Translated test for GetDomainInfo
+│       └── test_portscan_original.py     # Translated test for PortScan
+├── public_tests/                         # Directory for public test cases
+│   ├── __init__.py                       # Makes 'public_tests' a Python package
+│   ├── test_registry_persistence_public.py # Translated public test for RegistryPersistence
+│   ├── test_domain_info_public.py        # Translated public test for GetDomainInfo
+│   └── test_portscan_public.py           # Translated public test for PortScan
+├── requirements.txt                      # List of Python dependencies (pytest, pytest-mock)
+├── run_tests.sh                          # Script to execute all tests
+└── project_structure.txt                 # This file, documenting the project structure
+
+Setup and Testing Instructions:
+1. Navigate to the project root directory.
+2. Install Python dependencies:
+   ./run_tests.sh
+   (The run_tests.sh script will automatically install dependencies from requirements.txt)
+3. Run all tests:
+   ./run_tests.sh
+   (This will execute all tests found by pytest in 'tests' and 'public_tests' directories)

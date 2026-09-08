@@ -1,0 +1,41 @@
+project_root/
+│
+├── Cargo.toml                  # Rust build and dependency config
+├── README.md                   # Project documentation (optional/user-supplied)
+├── run_tests.sh                # One-click test execution script
+│
+├── src/                        # Main source directory
+│   ├── lib.rs                  # Main entry point (re-exports modules for testing)
+│   ├── stepper.rs              # Stepper module (translated from stepper.py)
+│   ├── checkpoint.rs           # Checkpoint module (translated/adapted for Rust tests)
+│   ├── main_basic.rs           # Main logic (test interface for CLI-logic)
+│   └── code.rs                 # Placeholder for code for public/private code coverage
+│
+├── tests/                      # Rust standard original test directory
+│   └── original/
+│       ├── test_stepper.rs         # Test cases for stepper (original)
+│       ├── test_code.rs            # Test cases for code (original)
+│       ├── test_checkpoint.rs      # Test cases for checkpoint (original)
+│       └── test_main_basic.rs      # Test cases for main CLI logic (original)
+│
+├── public_tests/               # Public-facing tests
+│   ├── test_public_stepper.rs      # Public test: stepper edge/API
+│   ├── test_public_code.rs         # Public test: math/string ops
+│   ├── test_public_checkpoint.rs   # Public test: checkpoint save/load with alternate data
+│   ├── test_public_main_basic.rs   # Public test: parse_args/dummy CLI simulation
+│   └── conftest.txt                # Placeholder: Python-to-Rust conftest analog
+│
+└── project_structure.txt       # This file, describing structure and test organization
+
+**Explanation**:
+- `src/`: Rust source files organizing all main code modules for ai_models. Each logical area from Python is represented as a module.
+- `tests/original/`: All original test logic translated from `tests/` in Python (unit tests, edge cases, internal).
+- `public_tests/`: Public test cases, generally lighter, confirming basic logic or public API, not requiring deep internals.
+- `Cargo.toml`: Rust build and dependency manager (equivalent to pyproject.toml).
+- `run_tests.sh`: Simple script which runs *all* Rust tests via `cargo test`.
+- `project_structure.txt`: Documents organization, aids navigation and new user onboarding.
+
+**Test Organization**:
+- Both original and public test cases are included and clearly separated.
+- All test logic is implemented with assertions and full logic—no placeholders or missing logic.
+- You can run all tests using `./run_tests.sh`, which will execute both original and public-facing tests via Rust's test harness.

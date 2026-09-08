@@ -1,0 +1,42 @@
+Project Structure for rdflib_jsonld Go Port
+
+.
+├── go.mod                            # Go module definition
+├── rdflib_jsonld/
+│   └── rdflib_jsonld.go              # Stub main package exposing the same interface/attributes as Python module
+├── tests/
+│   ├── test_init_test.go             # Original test: attribute existence on import
+│   ├── test_setup_py_test.go         # Original test: setup.py executability and presence
+│   └── test_version_and_metadata_test.go  # Original test: semantic attribute tests
+├── public_tests/
+│   ├── test_public_init_test.go      # Public test: import and attribute types
+│   ├── test_public_setup_py_test.go  # Public test: setup.py existence, executable + symbolic content
+│   └── test_public_version_and_metadata_test.go # Public test: less strict version/author/contact/doc checks
+├── run_tests.sh                      # Run all Go tests using go test ./...
+└── project_structure.txt             # This documentation file
+
+Directory and file notes:
+- `rdflib_jsonld/`  
+    - Contains the implementation source code, in Go, mimicking the Python module's attributes.
+    - For this translation, only the attributes accessed by tests are defined.
+- `tests/`  
+    - Contains Go tests directly translated from the *original* Python tests (equivalent coverage).
+- `public_tests/`  
+    - Contains Go tests directly translated from the *public* Python tests. Slightly less strict/refined coverage as per the Python originals.
+- `go.mod`
+    - Standard Go module file—no 3rd-party dependencies.
+- `run_tests.sh`
+    - Shell script: just run `./run_tests.sh` from project root to execute all tests (original and public).
+    - Requires Go 1.18+ and Python 3 for setup.py-related tests.
+- `project_structure.txt`
+    - This file, describes layout.
+    
+Testing instructions:
+1. Install Go 1.18+ (`go` command available).
+2. Run: `chmod +x run_tests.sh`
+3. Run: `./run_tests.sh`
+4. All tests in `tests/` and `public_tests/` will be executed by Go testing framework.
+
+Note:
+- Python is required for tests that execute `setup.py` (as in the original suite).
+- Paths expecting `setup.py` as `../setup.py` from test dirs—place setup.py in project root for full compatibility.

@@ -1,0 +1,11 @@
+{
+  "project_name": "johanjanssen_JavaUpgrades",
+  "language": "Java",
+  "coverage": {
+    "line": 64.0,
+    "branch": 58.1
+  },
+  "timestamp": "2025-06-19T21:25:30.881893",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/johanjanssen_JavaUpgrades",
+  "test_result_path": "/workspace/test_enhancement_results/Java/johanjanssen_JavaUpgrades"
+}

@@ -1,0 +1,29 @@
+project_root/
+├── go.mod                         # Go module definition
+├── README.md                      # Project overview and instructions
+├── run_tests.sh                   # One-click test execution script
+├── serpy/
+│   ├── fields.go                  # Fields definitions (StrField, IntField, etc)
+│   └── serializer.go              # Serializer, DictSerializer, etc
+├── tests/
+│   ├── original/
+│   │   ├── test_fields_test.go        # Original test: tests/test_fields.py
+│   │   ├── test_integration_test.go   # Original test: tests/test_integration.py
+│   │   └── test_serializer_test.go    # Original test: tests/test_serializer.py
+│   └── testutil.go                # Utility types, e.g., Obj, for tests
+├── public_tests/
+│   ├── test_public_fields_test.go     # Public test: public_tests/test_public_fields.py
+│   ├── test_public_integration_test.go # Public test: public_tests/test_public_integration.py
+│   └── test_public_serializer_test.go # Public test: public_tests/test_public_serializer.py
+
+Directory explanations:
+- serpy/: Go implementation of the serialization framework (to be implemented).
+- tests/original/: Go translations of the original Python test suite.
+- public_tests/: Go translations of the public/externally released test suite.
+- tests/testutil.go: Utility types needed by tests (like "Obj" struct).
+
+How to run:
+- Run all tests with: ./run_tests.sh
+
+How to add code:
+- Implement fields and serializer types/interfaces in serpy/ as required by tests.

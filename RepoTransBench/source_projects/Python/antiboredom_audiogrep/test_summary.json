@@ -1,0 +1,17 @@
+{
+  "project_name": "antiboredom_audiogrep",
+  "language": "Python",
+  "coverage": {
+    "line": 54.0,
+    "branch": 89.9
+  },
+  "timestamp": "2025-06-19T11:28:19.824277",
+  "original_path": "/workspace/runnable_filter/Python/antiboredom_audiogrep",
+  "test_result_path": "/workspace/test_enhancement_results/Python/antiboredom_audiogrep",
+  "tests_path": [
+    "audiogrep/tests/test_api.py",
+    "audiogrep/tests/test_audiogrep.py",
+    "audiogrep/tests/test_import_init.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

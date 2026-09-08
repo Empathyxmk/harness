@@ -1,0 +1,69 @@
+{
+  "project_name": "opendatalab-de_geojson-jackson",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:41:53.940288",
+  "original_path": "/workspace/verified_repos_v2/Java/opendatalab-de_geojson-jackson",
+  "public_test_result_path": "/workspace/public_test_results/Java/opendatalab-de_geojson-jackson",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/org/geojson/FeatureCollectionTest.java",
+      "src/test/java/org/geojson/GeoJsonObjectVisitorTest.java",
+      "src/test/java/org/geojson/GeometryTest.java",
+      "src/test/java/org/geojson/FeatureUnitTest.java",
+      "src/test/java/org/geojson/ToStringTest.java",
+      "src/test/java/org/geojson/FeatureTest.java",
+      "src/test/java/org/geojson/LineStringUnitTest.java",
+      "src/test/java/org/geojson/LngLatAltTest.java",
+      "src/test/java/org/geojson/MultiLineStringUnitTest.java",
+      "src/test/java/org/geojson/jackson/CrsTest.java",
+      "src/test/java/org/geojson/jackson/MultiPoligonTest.java",
+      "src/test/java/org/geojson/jackson/LineStringTest.java",
+      "src/test/java/org/geojson/jackson/MultiPointTest.java",
+      "src/test/java/org/geojson/jackson/LngLatAltSerializerTest.java",
+      "src/test/java/org/geojson/jackson/GeoJsonObjectTest.java",
+      "src/test/java/org/geojson/jackson/GeometryCollectionTest.java",
+      "src/test/java/org/geojson/jackson/MultiLineStringTest.java",
+      "src/test/java/org/geojson/jackson/LngLatAltDeserializerTest.java",
+      "src/test/java/org/geojson/jackson/PointTest.java",
+      "src/test/java/org/geojson/jackson/PolygonTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 20,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/org/geojson/public_FeatureCollectionPublicTest.java",
+      "src/test/java/org/geojson/public_GeoJsonObjectVisitorPublicTest.java",
+      "src/test/java/org/geojson/public_GeometryPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/org/geojson/public_FeatureUnitPublicTest.java",
+      "src/test/java/org/geojson/public_ToStringPublicTest.java",
+      "src/test/java/org/geojson/public_FeatureCollectionPublicTest.java",
+      "src/test/java/org/geojson/public_FeatureCollectionPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/org/geojson/public_FeatureCollectionPublicTest.java",
+    "src/test/java/org/geojson/public_GeoJsonObjectVisitorPublicTest.java",
+    "src/test/java/org/geojson/public_GeometryPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/org/geojson/public_FeatureUnitPublicTest.java",
+    "src/test/java/org/geojson/public_ToStringPublicTest.java",
+    "src/test/java/org/geojson/public_FeatureCollectionPublicTest.java",
+    "src/test/java/org/geojson/public_FeatureCollectionPublicTest.java"
+  ]
+}

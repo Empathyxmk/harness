@@ -1,0 +1,73 @@
+nickstenning_honcho/
+├── src/
+│   ├── lib.rs
+│   ├── main.rs
+│   ├── colour.rs
+│   ├── command.rs
+│   ├── environ.rs
+│   ├── manager.rs
+│   ├── printer.rs
+│   ├── process.rs
+│   └── export/
+│       ├── mod.rs
+│       ├── base.rs
+│       ├── runit.rs
+│       ├── supervisord.rs
+│       ├── systemd.rs
+│       └── upstart.rs
+├── tests/
+│   ├── conftest.rs
+│   ├── test_colour.rs
+│   ├── test_command.rs
+│   ├── test_doc_conf.rs
+│   ├── test_environ.rs
+│   ├── test_export_base.rs
+│   ├── test_export_runit.rs
+│   ├── test_export_supervisord.rs
+│   ├── test_export_systemd.rs
+│   ├── test_export_upstart.rs
+│   ├── test_invocation.rs
+│   ├── test_manager.rs
+│   ├── test_printer.rs
+│   ├── test_process.rs
+│   ├── test__init__.rs
+│   ├── test__version.rs
+│   └── integration/
+│       ├── test_run.rs
+│       ├── test_start.rs
+│       ├── test_main.rs
+│       ├── test_check.rs
+│       └── test_export.rs
+├── public_tests/
+│   ├── test_public__init__.rs
+│   ├── test_public__version.rs
+│   ├── test_public_colour.rs
+│   ├── test_public_command.rs
+│   ├── test_public_doc_conf.rs
+│   ├── test_public_environ.rs
+│   ├── test_public_export_base.rs
+│   ├── test_public_export_runit.rs
+│   ├── test_public_export_supervisord.rs
+│   ├── test_public_export_systemd.rs
+│   ├── test_public_export_upstart.rs
+│   ├── test_public_invocation.rs
+│   ├── test_public_manager.rs
+│   ├── test_public_printer.rs
+│   └── test_public_process.rs
+├── Cargo.toml
+├── README.md
+├── run_tests.sh
+├── .gitignore
+└── project_structure.txt
+
+# Directory and File Explanations
+
+- `src/`: Rust source code. `lib.rs` is the crate root. Main modules ported from honcho.
+- `src/export/`: Submodule for export formats (systemd, upstart, supervisord, runit, base).
+- `tests/`: All original (internal) unit/integration tests.
+- `tests/integration/`: Integration-style tests ported from Python's.
+- `public_tests/`: "Public" black-box-style tests, matching the public tests set.
+- `Cargo.toml`: Rust project/package metadata with dependencies.
+- `run_tests.sh`: Executable test script (`chmod +x run_tests.sh`).
+- `.gitignore`: Version control ignore rules.
+- `README.md`: Documentation and how-to-run info.

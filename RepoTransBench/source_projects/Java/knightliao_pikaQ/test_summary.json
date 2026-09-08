@@ -1,0 +1,11 @@
+{
+  "project_name": "knightliao_pikaQ",
+  "language": "Java",
+  "coverage": {
+    "line": 57.2,
+    "branch": 66.7
+  },
+  "timestamp": "2025-06-19T21:40:46.263048",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/knightliao_pikaQ",
+  "test_result_path": "/workspace/test_enhancement_results/Java/knightliao_pikaQ"
+}

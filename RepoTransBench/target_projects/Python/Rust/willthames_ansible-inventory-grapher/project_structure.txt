@@ -1,0 +1,18 @@
+ansible_inventory_grapher/
+├── Cargo.toml           # Rust package manifest
+├── README.md            # Project overview and instructions
+├── run_tests.sh         # Simple test runner script
+├── src/
+│   └── lib.rs           # Core library (stub only)
+├── tests/
+│   ├── test_init.rs         # Original init logic tests
+│   ├── test_inventory.rs    # Original inventory adapter tests
+│   ├── test_variables.rs    # Original variables merging/logic tests
+│   ├── test_vault.rs        # Original vault interaction tests
+│   ├── test_version.rs      # Original version string tests
+├── public_tests/
+│   ├── test_public_init.rs      # Public test logic (init, node/edge, parent, graph merge)
+│   ├── test_public_inventory.rs # Public test logic (inventory and plugin interaction)
+│   ├── test_public_variables.rs # Public test logic (variable stripping, nested structures)
+│   ├── test_public_vault.rs     # Public test logic (vault file and password scenarios)
+│   ├── test_public_version.rs   # Public test logic (version string format)

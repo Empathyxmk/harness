@@ -1,0 +1,95 @@
+renatopp_liac-arff/
+├── CHANGES.rst
+├── Cargo.toml
+├── LICENSE
+├── README.rst
+├── arff.py
+├── ci_scripts/
+│   └── create_doc.sh
+├── docs/
+│   ├── Makefile
+│   ├── make.bat
+│   └── source/
+│       ├── _static/
+│       │   └── empty
+│       ├── conf.py
+│       └── index.rst
+├── htmlcov/
+│   ├── arff_py.html
+│   ├── class_index.html
+│   ├── coverage_html.js
+│   ├── coverage_html_cb_6fb7b396.js
+│   ├── (many .html and .js coverage files)
+│   ├── favicon_32.png
+│   ├── favicon_32_cb_58284776.png
+│   ├── function_index.html
+│   ├── index.html
+│   ├── keybd_closed.png
+│   ├── keybd_closed_cb_ce680311.png
+│   ├── keybd_open.png
+│   ├── status.json
+│   ├── style.css
+│   ├── style_cb_81f8c14c.css
+│   ├── z_41207d94ac41bfc9___init___py.html
+│   ├── z_41207d94ac41bfc9_pytest_xprocess_py.html
+│   ├── z_41207d94ac41bfc9_xprocess_py.html
+│   ├── z_a44f0ac069e85531___init___py.html
+│   ├── z_a44f0ac069e85531_test_conversor_py.html
+│   ├── z_a44f0ac069e85531_test_data_py.html
+│   ├── z_a44f0ac069e85531_test_decode_attribute_py.html
+│   ├── z_a44f0ac069e85531_test_decode_attribute_types_py.html
+│   ├── z_a44f0ac069e85531_test_decode_comment_py.html
+│   ├── z_a44f0ac069e85531_test_decode_data_py.html
+│   ├── z_a44f0ac069e85531_test_decode_py.html
+│   ├── z_a44f0ac069e85531_test_decode_relation_py.html
+│   ├── z_a44f0ac069e85531_test_dump_escape_py.html
+│   ├── z_a44f0ac069e85531_test_dump_py.html
+│   ├── z_a44f0ac069e85531_test_dumps_escape_py.html
+│   ├── z_a44f0ac069e85531_test_dumps_py.html
+│   ├── z_a44f0ac069e85531_test_encode_attribute_py.html
+│   ├── z_a44f0ac069e85531_test_encode_comment_py.html
+│   ├── z_a44f0ac069e85531_test_encode_py.html
+│   ├── z_a44f0ac069e85531_test_encode_relation_py.html
+│   ├── z_a44f0ac069e85531_test_load_py.html
+│   ├── z_a44f0ac069e85531_test_loads_dumps_py.html
+│   ├── z_a44f0ac069e85531_test_loads_py.html
+│   ├── z_a44f0ac069e85531_test_setup_py_py.html
+│   ├── z_c4ffa8a422684190___init___py.html
+│   ├── z_c4ffa8a422684190_more_py.html
+│   ├── z_c4ffa8a422684190_recipes_py.html
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_conversor.py
+│   ├── test_public_conversor.rs
+│   ├── test_public_data.py
+│   ├── test_public_decode.py
+│   ├── test_public_decode_attribute.py
+│   ├── test_public_decode_attribute_types.py
+│   ├── test_public_decode_comment.py
+│   ├── test_public_decode_data.py
+│   ├── test_public_decode_relation.py
+│   ├── test_public_dump.py
+│   ├── test_public_dump_escape.py
+│   ├── test_public_dumps.py
+│   ├── test_public_dumps_escape.py
+│   ├── test_public_encode.py
+│   ├── test_public_encode_attribute.py
+│   ├── test_public_encode_comment.py
+│   ├── test_public_encode_comment.rs
+│   ├── test_public_encode_relation.py
+│   ├── test_public_load.py
+│   ├── test_public_loads.py
+│   ├── test_public_loads.rs
+│   ├── test_public_loads_dumps.py
+│   └── test_public_setup_py.py
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.py
+├── src/
+│   └── arff/
+│       └── mod.rs
+└── tests/
+    └── original/
+        └── test_decode_data.rs

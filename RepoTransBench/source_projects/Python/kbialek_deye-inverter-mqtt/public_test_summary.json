@@ -1,0 +1,73 @@
+{
+  "project_name": "kbialek_deye-inverter-mqtt",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:17:05.063450",
+  "original_path": "/workspace/verified_repos_v2/Python/kbialek_deye-inverter-mqtt",
+  "public_test_result_path": "/workspace/public_test_results/Python/kbialek_deye-inverter-mqtt",
+  "original_tests": {
+    "test_files": [
+      "tests/src_deye_docker_entrypoint_test.py",
+      "tests/deye_timeofuse_service_test.py",
+      "tests/deye_inverter_state_test.py",
+      "tests/deye_modbus_tcp_test.py",
+      "tests/deye_active_power_regulation_test.py",
+      "tests/deye_multi_inverter_data_aggregator_test.py",
+      "tests/deye_events_test.py",
+      "tests/deye_config_test.py",
+      "tests/deye_modbus_tcp_custom_test.py",
+      "tests/deye_sensor_test.py",
+      "tests/deye_at_connector_test.py",
+      "tests/plugins_deye_plugin_sample_test.py",
+      "tests/src_deye_multi_inverter_data_aggregator_test.py",
+      "tests/deye_set_time_processor_test.py",
+      "tests/deye_mqtt_test.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 15,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/public_src_deye_docker_entrypoint_test.py",
+      "public_tests/public_deye_timeofuse_service_test.py",
+      "public_tests/public_deye_inverter_state_test.py",
+      "run_public_tests.sh",
+      "public_tests/public_deye_active_power_regulation_test.py",
+      "public_tests/public_deye_events_test.py",
+      "public_tests/public_deye_config_test.py",
+      "public_tests/public_deye_sensor_test.py",
+      "public_tests/public_deye_multi_inverter_data_aggregator_test.py",
+      "public_tests/public_deye_at_connector_test.py",
+      "public_tests/public_plugins_deye_plugin_sample_test.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 12,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/public_src_deye_docker_entrypoint_test.py",
+    "public_tests/public_deye_timeofuse_service_test.py",
+    "public_tests/public_deye_inverter_state_test.py",
+    "run_public_tests.sh",
+    "public_tests/public_deye_active_power_regulation_test.py",
+    "public_tests/public_deye_events_test.py",
+    "public_tests/public_deye_config_test.py",
+    "public_tests/public_deye_sensor_test.py",
+    "public_tests/public_deye_multi_inverter_data_aggregator_test.py",
+    "public_tests/public_deye_at_connector_test.py",
+    "public_tests/public_plugins_deye_plugin_sample_test.py",
+    "run_public_tests.sh"
+  ]
+}

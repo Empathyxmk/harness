@@ -1,0 +1,30 @@
+sockeqwe_fragmentargs/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_fragment_args.py
+│       ├── test_fragment_args_static_init.py
+│       ├── test_fragment_args_injector.py
+│       ├── test_args_bundler_interface.py
+│       ├── test_none_args_bundler.py
+│       ├── test_casted_array_list_args_bundler.py
+│       ├── test_protected_access.py
+│       ├── test_inner_class.py
+│       ├── test_compile.py
+│       ├── test_compare_modifier_utils.py
+│       └── test_modifier_utils_default_modifier.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_fragment_args_static_init_public.py
+│   ├── test_fragment_args_injector_public.py
+│   ├── test_fragment_args_public.py
+│   ├── test_none_args_bundler_public.py
+│   ├── test_casted_array_list_args_bundler_public.py
+│   ├── test_args_bundler_interface_public.py
+│   ├── test_protected_access_public.py
+│   ├── test_compare_modifier_utils_public.py
+│   ├── test_inner_class_public.py
+│   └── test_compile_public.py

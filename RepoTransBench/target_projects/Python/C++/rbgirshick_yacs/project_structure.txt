@@ -1,0 +1,35 @@
+project_root/
+├── CMakeLists.txt
+│   - CMake build configuration; sets up project, uses GoogleTest, builds library and tests.
+├── include/
+│   └── yacs/
+│       └── cfg_node.h
+│           - C++ header for the core config node (CfgNode) logic, adapted for testing.
+├── src/
+│   └── cfg_node.cpp
+│       - C++ implementation of the basic CfgNode config functionality.
+├── tests/
+│   ├── original/
+│   │   └── test_config_additional_test.cpp
+│       - C++ translation of the original Python tests/test_config_additional.py
+│   └── test_main.cpp
+│       - GoogleTest runner entry point, runs both original and public tests.
+├── public_tests/
+│   └── test_public_config_additional_test.cpp
+│       - C++ translation of public_tests/test_public_config_additional.py
+├── run_tests.sh
+│   - Simple build-and-run test script; builds and runs all tests with one click.
+├── project_structure.txt
+│   - This file. Explains the directory and file structure.
+└── README.md
+    - Intro, usage, and notes for building/testing.
+
+Directory summary:
+  - include/yacs/: headers for CfgNode and related logic (for use in both lib and tests)
+  - src/: C++ implementation code of config logic.
+  - tests/original/: C++ translated original test cases.
+  - public_tests/: C++ translated public test cases.
+  - tests/test_main.cpp: Single main for all tests.
+  - run_tests.sh: Simple shell script for building and testing all cases.
+  - CMakeLists.txt: Clearly setup to fetch GoogleTest, compile, and link all components.
+  - README.md: Documentation.

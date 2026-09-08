@@ -1,0 +1,34 @@
+project_root/
+├── go.mod                                # Go module/configuration file
+├── run_tests.sh                          # Simple test run script (./run_tests.sh)
+├── tests/
+│   ├── original/
+│   │   ├── address_test.go               # Go translation of AddressTest.java
+│   │   ├── email_test.go                 # Go translation of EmailTest.java
+│   │   ├── event_test.go                 # Go translation of EventTest.java
+│   │   ├── phone_number_test.go          # Go translation of PhoneNumberTest.java
+│   │   └── constants_testutil.go         # Test constants and utility types
+├── public_tests/
+│   ├── address_public_test.go            # Go translation of AddressPublicTest.java
+│   ├── email_public_test.go              # Go translation of EmailPublicTest.java
+│   ├── event_public_test.go              # Go translation of EventPublicTest.java
+│   └── phone_number_public_test.go       # Go translation of PhoneNumberPublicTest.java
+├── contacts/                             # (expected) Go implementation for contacts library
+│   ├── (Address.go, Email.go, ...)       # Go implementation code (not included - to be coded)
+└── README.md                             # Project info, usage, and instructions
+
+Directory explanations:
+- go.mod:         Go module/dependency config, required for Go builds/tests.
+- run_tests.sh:   Simple test script (chmod +x, run by ./run_tests.sh).
+- tests/original: Go test translation of all original (non-public) Java test cases.
+- public_tests:   Go test translation of all public Java test cases.
+- contacts/:      Your Go code package (types, logic, etc.), importable by test files.
+- README.md:      Documentation and usage instructions for the Go implementation.
+
+Test running:
+- To run all tests: `./run_tests.sh` (runs both original and public tests).
+- All source and test code lives in idiomatic Go project subdirectories.
+
+Setup:
+- Ensure you have Go installed.
+- Place implementation code in `contacts/`. Tests expect `contacts` to be importable as a Go module.

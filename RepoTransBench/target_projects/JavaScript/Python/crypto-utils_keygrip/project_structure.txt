@@ -1,0 +1,30 @@
+crypto-utils_keygrip/
+├── HISTORY.md
+├── LICENSE
+├── README.md
+├── coverage/
+│   └── ... (coverage output files)
+├── index.js
+├── package-lock.json
+├── package.json
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── __init__.py
+│   ├── keygrip-extra.public.test.js    # (original JS, for reference)
+│   └── test_keygrip_extra_public.py    # TRANSLATED PYTHON TESTS
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── __init__.py
+│   └── keygrip.py
+├── test/
+│   ├── keygrip-extra.spec.js           # (original JS, for reference)
+│   └── keygrip.js                      # (original JS, for reference)
+├── test_summary.json
+└── tests/
+    ├── __init__.py
+    └── original/
+        ├── __init__.py
+        └── test_keygrip_extra.py       # TRANSLATED PYTHON TESTS

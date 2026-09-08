@@ -1,0 +1,28 @@
+sibson_redbeat_cxx/
+├── src/
+│   ├── main.cpp
+│   └── lib/
+│       ├── module.h/cpp         # Core library stubs
+├── include/
+│   └── *.h                      # Library/public API headers
+├── tests/
+│   ├── test_main.cpp
+│   ├── test_json.cpp
+│   ├── test_entry.cpp
+│   ├── test_schedules_extra.cpp
+│   ├── test_utils.cpp
+│   ├── test_setup_py.cpp
+│   ├── test_schedulers_import.cpp
+│   ├── test_decoder_extra.cpp
+│   ├── test_decoder.cpp
+│   ├── test_schedules.cpp
+│   ├── test_init_py.cpp
+│   ├── test_scheduler.cpp
+│   └── test_config.cpp
+├── public_tests/
+│   ├── test_public_json.cpp
+│   ├── test_public_entry.cpp
+│   └── test_public_schedules_extra.cpp
+├── CMakeLists.txt
+├── run_tests.sh
+└── project_structure.txt

@@ -1,0 +1,10 @@
+// ... (existing contents at the top remain unchanged)
+allprojects {
+    tasks.withType(Test) {
+        // Remove legacy Java options that break with JDK 17+
+        jvmArgs = jvmArgs.findAll { 
+            !it.contains('MaxPermSize') 
+        }
+    }
+}
+// ... (rest of file remains unchanged)

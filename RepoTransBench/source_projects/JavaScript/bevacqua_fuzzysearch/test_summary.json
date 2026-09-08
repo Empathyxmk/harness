@@ -1,0 +1,15 @@
+{
+  "project_name": "bevacqua_fuzzysearch",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:32:56.890104",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/bevacqua_fuzzysearch",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/bevacqua_fuzzysearch",
+  "tests_path": [
+    "test/fuzzysearch-extra.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

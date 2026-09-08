@@ -1,0 +1,31 @@
+project_root/
+├── src/
+│   └── SignaturePad/
+│       ├── SignaturePad.csproj                # Library project file for core SignaturePad logic (Bezier, TimedPoint, etc)
+│       ├── Utils/
+│       │   ├── Bezier.cs                      # Bezier curve logic
+│       │   ├── ControlTimedPoints.cs          # ControlTimedPoints logic
+│       │   └── TimedPoint.cs                  # TimedPoint logic
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj               # Test project for original tests
+│       ├── ControlTimedPointsTests.cs         # Original tests for ControlTimedPoints
+│       ├── TimedPointTests.cs                 # Original tests for TimedPoint
+│       └── BezierTests.cs                     # Original tests for Bezier
+├── public_tests/
+│   ├── PublicTests.csproj                     # Test project for public tests
+│   ├── ControlTimedPointsPublicTests.cs       # Public tests for ControlTimedPoints
+│   ├── TimedPointPublicTests.cs               # Public tests for TimedPoint
+│   └── BezierPublicTests.cs                   # Public tests for Bezier
+├── SignaturePad.sln                           # Solution containing all projects
+├── run_tests.sh                               # One-click test script (dotnet test)
+└── project_structure.txt                      # This file: project tree and description
+
+# Directory explanations:
+# - src/SignaturePad: Contains core C# implementation (Bezier, TimedPoint, etc)
+# - tests/original: Original tests from Java, ported to xUnit, isolated here.
+# - public_tests: Public tests, ported from the public Java tests.
+# - .csproj files: Project definitions/config for dotnet CLI.
+# - SignaturePad.sln: Solution file for all projects.
+# - run_tests.sh: One-click script to execute all tests with dotnet test.
+# - project_structure.txt: This documentation.

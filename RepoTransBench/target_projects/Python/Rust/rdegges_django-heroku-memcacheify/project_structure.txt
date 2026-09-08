@@ -1,0 +1,10 @@
+project_root/
+├── Cargo.toml              # Rust build configuration and dependency manifest
+├── README.md               # Project overview and instructions
+├── run_tests.sh            # Simple bash script for one-click testing
+├── src/
+│   └── lib.rs              # Library with memcacheify config logic
+├── tests/
+│   └── test_memcacheify.rs # Original (private) test ported to Rust, uses serial_test for env isolation
+├── public_tests/
+│   └── test_public_memcacheify.rs # Public test suite, also uses serial_test for isolation

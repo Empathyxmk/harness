@@ -1,0 +1,11 @@
+{
+  "project_name": "jhalterman_typetools",
+  "language": "Java",
+  "coverage": {
+    "line": 68.4,
+    "branch": 55.6
+  },
+  "timestamp": "2025-06-19T09:15:12.967143",
+  "original_path": "/workspace/runnable_filter/Java/jhalterman_typetools",
+  "test_result_path": "/workspace/test_enhancement_results/Java/jhalterman_typetools"
+}

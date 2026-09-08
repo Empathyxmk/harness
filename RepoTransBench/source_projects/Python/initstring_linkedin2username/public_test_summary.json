@@ -1,0 +1,67 @@
+{
+  "project_name": "initstring_linkedin2username",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:42:46.931643",
+  "original_path": "/workspace/verified_repos_v2/Python/initstring_linkedin2username",
+  "public_test_result_path": "/workspace/public_test_results/Python/initstring_linkedin2username",
+  "original_tests": {
+    "test_files": [
+      "tests/test_georegions.py",
+      "tests/test_linkedin2username.py",
+      "tests/test_import_python.py",
+      "tests/test_namemutator.py",
+      "tests/test_linkedin2username_minimal.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_georegions.py",
+      "public_tests/test_public_import_python.py",
+      "public_tests/test_public_namemutator.py",
+      "public_tests/test_public_linkedin2username_minimal.py",
+      "public_tests/test_public_linkedin2username.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_namemutator.py",
+      "public_tests/test_public_namemutator.py",
+      "public_tests/test_public_georegions.py",
+      "public_tests/test_public_linkedin2username.py",
+      "public_tests/test_public_linkedin2username_minimal.py",
+      "public_tests/test_public_import_python.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 13,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_georegions.py",
+    "public_tests/test_public_import_python.py",
+    "public_tests/test_public_namemutator.py",
+    "public_tests/test_public_linkedin2username_minimal.py",
+    "public_tests/test_public_linkedin2username.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_namemutator.py",
+    "tests/test_namemutator.py",
+    "tests/test_namemutator.py",
+    "public_tests/test_public_namemutator.py",
+    "public_tests/test_public_georegions.py",
+    "public_tests/test_public_linkedin2username.py",
+    "public_tests/test_public_linkedin2username_minimal.py",
+    "public_tests/test_public_import_python.py",
+    "run_public_tests.sh"
+  ]
+}

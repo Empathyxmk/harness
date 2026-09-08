@@ -1,0 +1,23 @@
+{
+  "project_name": "jwtk_njwt",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:47:06.769871",
+  "original_path": "/workspace/runnable_filter/JavaScript/jwtk_njwt",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/jwtk_njwt",
+  "tests_path": [
+    "test/algs.js",
+    "test/builder.js",
+    "test/exports.js",
+    "test/jwt-body.js",
+    "test/jwt.js",
+    "test/key-resolver.js",
+    "test/others.js",
+    "test/rsa.js",
+    "test/verifier.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

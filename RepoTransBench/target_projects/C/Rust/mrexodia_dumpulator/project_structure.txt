@@ -1,0 +1,11 @@
+mrexodia_dumpulator/
+├── src/
+│   └── lib.rs           # Main implementation with math functions
+├── tests/
+│   ├── mod.rs           # Test module declaration
+│   └── original/
+│       └── test_math.rs # Original test cases
+├── public_tests/
+│   └── test_math_public.rs # Public test cases
+├── Cargo.toml           # Rust project configuration
+└── run_tests.sh         # Test execution script

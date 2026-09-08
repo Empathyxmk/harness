@@ -1,0 +1,18 @@
+{
+  "project_name": "creationix_js-git",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 71.71,
+    "branch": 86.36
+  },
+  "timestamp": "2025-06-19T10:09:34.909165",
+  "original_path": "/workspace/runnable_filter/JavaScript/creationix_js-git",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/creationix_js-git",
+  "tests_path": [
+    "test/net-tcp-node.test.js",
+    "test/net-transport-http.test.js",
+    "test/net-tcp-ws-proxy.test.js",
+    "test/net-tcp-chrome-sockets.test.js"
+  ],
+  "run_tests_path": null
+}

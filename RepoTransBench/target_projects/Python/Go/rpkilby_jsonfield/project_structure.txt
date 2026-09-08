@@ -1,0 +1,21 @@
+rpkilby_jsonfield/
+├── go.mod                # Go module file
+├── README.md             # Documentation
+├── run_tests.sh          # One-click test script
+├── src/
+│   ├── jsonfield/
+│   │   ├── fields.go         # JSONField Go implementation (to be ported)
+│   │   ├── forms.go          # JSONFormField implementation (to be ported)
+│   │   ├── encoder.go
+│   │   └── jsonutil.go
+│   └── models.go             # Model structs (used/faked for tests)
+├── tests/
+│   ├── original/
+│   │   ├── fields_test.go    # Original, comprehensive tests (translated)
+│   │   ├── forms_test.go
+│   │   └── jsonfield_test.go
+│   └── testutil.go           # Helper for test double DB/mocks
+├── public_tests/
+│   ├── public_fields_test.go     # Public sample tests (translated)
+│   ├── public_forms_test.go
+│   └── public_jsonfield_test.go

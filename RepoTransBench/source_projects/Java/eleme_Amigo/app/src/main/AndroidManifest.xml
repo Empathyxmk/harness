@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="me.ele.app.amigo">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+        android:name=".ApplicationContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DemoActivity"
+            android:label="@string/demo"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TestPatchedActivities"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TestPatchedServices"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".dev.DevActivity"/>
+        <activity
+            android:name=".dev.SubprocessActivity"
+            android:exported="true"
+            android:process=".demo.subprocess"/>
+
+        <activity android:name=".WebActivity"/>
+
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="me.ele.app.amigo.provider.my_provider"
+            android:exported="false"/>
+
+        <receiver android:name=".MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".MyIntentService"
+            android:exported="false">
+        </service>
+
+        <!--set ApkReleaseActivity's orientation to portrait-->
+        <meta-data
+            android:name="amigo_orientation"
+            android:value="portrait"/>
+        <!--set ApkReleaseActivity's layout-->
+        <meta-data
+            android:name="amigo_layout"
+            android:value="amigo_layout_demo"/>
+        <!--set ApkReleaseActivity's theme-->
+        <meta-data
+            android:name="amigo_theme"
+            android:value="amigoThemeDemo"/>
+
+    </application>
+
+</manifest>

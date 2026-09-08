@@ -1,0 +1,38 @@
+ovh_celery_dyrygent/
+│
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── celery/
+│   │   ├── mod.rs
+│   │   ├── entities.rs
+│   │   └── inspect.rs
+│   ├── tasks.rs
+│   └── workflows/
+│       ├── mod.rs
+│       ├── exceptions.rs
+│       ├── node.rs
+│       └── workflow.rs
+│
+├── tests/
+│   └── original/
+│       ├── test_imports_and_version.rs
+│       ├── test_workflows_core.rs
+│       ├── test_inspect.rs
+│
+├── public_tests/
+│   ├── unit/
+│   │   ├── test_inspect_public.rs
+│   │   ├── test_tasks_public.rs
+│   │   ├── test_workflows_core_public.rs
+│   │   ├── test_imports_and_version_public.rs
+│   │   └── test_workflows_public.rs
+│   ├── component/
+│   │   ├── test_celery_public.rs
+│   │   ├── test_tasks_public.rs
+│   │   └── test_workflows_public.rs
+│   └── integration/
+│       └── test_integration_public.rs
+│
+├── run_tests.sh
+└── project_structure.txt

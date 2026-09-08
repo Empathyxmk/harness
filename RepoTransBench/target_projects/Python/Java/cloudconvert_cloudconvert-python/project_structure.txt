@@ -1,0 +1,102 @@
+cloudconvert_cloudconvert-python/
+├── LICENCE
+├── README.md
+├── cloudconvert/
+│   ├── __init__.py
+│   ├── cloudconvertrestclient.py
+│   ├── config.py
+│   ├── environment_vars.py
+│   ├── exceptions/
+│   │   ├── __init__.py
+│   │   └── exceptions.py
+│   ├── job.py
+│   ├── resource.py
+│   ├── signed_url.py
+│   ├── task.py
+│   ├── utils.py
+│   └── webhook.py
+├── htmlcov/
+│   └── ... (coverage report files)
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_config.py
+│   ├── test_public_environment_vars.py
+│   ├── test_public_exceptions.py
+│   ├── test_public_job.py
+│   ├── test_public_setup_py.py
+│   ├── test_public_signed_url.py
+│   ├── test_public_task_cancel_retry.py
+│   ├── test_public_task_upload.py
+│   ├── test_public_utils.py
+│   └── test_public_webhook.py
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.py
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── cloudconvert/
+│                   ├── original/
+│                   │   ├── ConfigTest.java
+│                   │   ├── EnvironmentVarsTest.java
+│                   │   ├── ExceptionsTest.java
+│                   │   ├── JobTest.java
+│                   │   ├── SetupPyTest.java
+│                   │   ├── SignedUrlTest.java
+│                   │   ├── TaskCancelRetryTest.java
+│                   │   ├── TaskUploadTest.java
+│                   │   ├── UtilsTest.java
+│                   │   └── WebhookTest.java
+│                   └── publictests/
+│                       ├── PublicConfigTest.java
+│                       ├── PublicEnvironmentVarsTest.java
+│                       ├── PublicExceptionsTest.java
+│                       ├── PublicJobTest.java
+│                       ├── PublicSetupPyTest.java
+│                       ├── PublicSignedUrlTest.java
+│                       ├── PublicTaskCancelRetryTest.java
+│                       ├── PublicTaskUploadTest.java
+│                       ├── PublicUtilsTest.java
+│                       └── PublicWebhookTest.java
+├── test_summary.json
+├── tests/
+│   ├── __init__.py
+│   ├── integration/
+│   │   ├── __init__.py
+│   │   ├── files/
+│   │   │   ├── input.pdf
+│   │   │   └── input.png
+│   │   ├── testJobs.py
+│   │   └── testTasks.py
+│   └── unit/
+│       ├── __init__.py
+│       ├── responses/
+│       │   ├── job.json
+│       │   ├── job_created.json
+│       │   ├── job_export_urls.json
+│       │   ├── jobs.json
+│       │   ├── retry.json
+│       │   ├── task.json
+│       │   ├── task_created.json
+│       │   ├── tasks.json
+│       │   └── upload_task_created.json
+│       ├── testJob.py
+│       ├── testSignedUrl.py
+│       ├── testTask.py
+│       ├── testWebhookSignature.py
+│       ├── test_config.py
+│       ├── test_environment_vars.py
+│       ├── test_exceptions.py
+│       ├── test_job.py
+│       ├── test_setup_py.py
+│       ├── test_signed_url.py
+│       ├── test_task_cancel_retry.py
+│       ├── test_task_upload.py
+│       ├── test_utils.py
+│       └── test_webhook.py
+└── venv/
+    └── ... (virtualenv files)

@@ -1,0 +1,21 @@
+wroberts_pytimeparse/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── pytimeparse/
+│       ├── mod.rs
+│       └── timeparse.rs
+├── tests/
+│   └── original/
+│       ├── test_setup_py.rs
+│       ├── test_init.rs
+│       ├── test_timeparse_regexes.rs
+│       ├── test_timeparse_comprehensive.rs
+├── public_tests/
+│   ├── test_public_timeparse_api.rs
+│   ├── test_public_init.rs
+│   ├── test_public_timeparse_regexes.rs
+│   ├── test_public_timeparse_comprehensive.rs
+│   └── test_public_setup_py.rs
+├── run_tests.sh
+└── project_structure.txt

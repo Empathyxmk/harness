@@ -1,0 +1,30 @@
+check-manifest-java/
+├── pom.xml
+├── run_tests.sh
+├── project_structure.txt
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── checkmanifest/
+│   │                   ├── UI.java
+│   │                   ├── FormatUtils.java
+│   │                   ├── Failure.java
+│   │                   └── CommandFailed.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── checkmanifest/
+│                       ├── original/
+│                       │   ├── TestUIOriginal.java
+│                       │   ├── TestFormatUtilsOriginal.java
+│                       │   ├── TestFailureOriginal.java
+│                       │   └── README.txt
+│                       └── publictests/
+│                           ├── TestUIPublic.java
+│                           ├── TestFormatUtilsPublic.java
+│                           ├── TestFailurePublic.java
+│                           └── README.txt
+└── test_translation_progress.json

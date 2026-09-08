@@ -1,0 +1,26 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── test_translation_progress.json
+├── src/
+│   └── visit_struct/
+│       ├── __init__.py
+│       └── (placeholder for Python implementation of visit_struct)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_fully_visitable.py
+│       ├── test_visit_struct.py
+│       ├── test_extra_edge_cases.py
+│       ├── test_visit_struct_intrusive.py
+│       ├── test_visit_struct_boost_fusion.py
+│       ├── test_visit_struct_boost_hana.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_fully_visitable_public.py
+│   ├── test_visit_struct_public.py
+│   ├── test_visit_struct_intrusive_public.py
+│   ├── test_extra_edge_cases_public.py
+└── (config/other files)

@@ -1,0 +1,46 @@
+project_root/
+├── go.mod                     # Go module file for dependency tracking
+├── run_tests.sh               # Script to run all Go tests
+├── README.md                  # Documentation, setup and instructions
+├── tests/
+│   ├── original/
+│   │   ├── create_tests_via_parametrization_test_foobar_test.go
+│   │   ├── create_tests_via_parametrization_test_params_test.go
+│   │   ├── create_tests_via_parametrization_test_parametrize_test.go
+│   │   ├── show_pytest_warnings_test_foobar_show_warning_test.go
+│   │   ├── mark_parametrize_with_indirect_test_sushi_unit_test.go
+│   │   ├── mark_parametrize_with_indirect_test_sushi_property_edge_test.go
+│   │   ├── mark_parametrize_with_indirect_test_sushi_error_test.go
+│   │   ├── mark_parametrize_with_indirect_test_conftest_py_integration_test.go
+│   │   ├── mark_parametrize_with_indirect_test_sushi_test.go
+│   └── (other original tests if any)
+├── public_tests/
+│   ├── create_tests_via_parametrization/
+│   │   ├── test_public_foobar_test.go
+│   │   ├── test_public_params_test.go
+│   │   ├── test_public_parametrize_test.go
+│   ├── show_pytest_warnings/
+│   │   └── test_public_foobar_show_warning_test.go
+│   ├── mark_parametrize_with_indirect/
+│   │   ├── test_public_sushi_unit_test.go
+│   │   ├── test_public_sushi_property_edge_test.go
+│   │   ├── test_public_sushi_error_test.go
+│   │   ├── test_public_conftest_py_integration_test.go
+│   │   └── test_public_sushi_test.go
+│   └── (any other public tests if any)
+└── README.md
+
+Directory explanations:
+- tests/original/                                 : All original Go test translations, mirrors original Python test logic.
+- public_tests/                                   : All public test translations. Follows Python public test logic and structure.
+- go.mod                                          : Go module definition, required for dependency resolution.
+- run_tests.sh                                    : Execute all tests in the project with a single command.
+- project_structure.txt                           : This file explaining the structure.
+- README.md                                       : Setup and execution instructions.
+
+How to run tests:
+1. Ensure Go 1.20+ is installed.
+2. Execute: chmod +x run_tests.sh
+3. Then: ./run_tests.sh
+
+All tests in both original and public directories will be executed.

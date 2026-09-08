@@ -1,0 +1,27 @@
+xiaofeidev_RoundWidget (Go version)
+├── main.go                               # Go main entry (package main)
+├── go.mod                                # Go module config
+├── roundwidget/
+│   └── module.go                         # All core logic & stubs for testability (package roundwidget)
+├── tests/
+│   ├── testutil.go                       # Shared helpers for tests
+│   └── original/
+│       ├── example_instrumented_test.go
+│       ├── example_unit_test.go
+│       ├── roundframelayout_test.go
+│       ├── roundimageview_test.go
+│       ├── roundstatusimpl_test.go
+│       ├── roundstatus_test.go
+│       ├── roundstatusimplbuilder_test.go
+│       └── sizeutils_test.go
+├── public_tests/
+│   ├── example_unit_public_test.go
+│   ├── roundframelayout_public_test.go
+│   ├── roundimageview_public_test.go
+│   ├── roundstatusimpl_public_test.go
+│   ├── roundstatus_public_test.go
+│   ├── roundstatusimplbuilder_public_test.go
+│   └── sizeutils_public_test.go
+├── run_tests.sh                          # Test runner: ./run_tests.sh
+├── README.md                             # Project overview and instructions
+├── project_structure.txt                 # This file

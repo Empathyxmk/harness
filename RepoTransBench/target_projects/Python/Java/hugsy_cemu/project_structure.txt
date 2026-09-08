@@ -1,0 +1,32 @@
+hugsy-cemu-java/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/example/cemu/
+│   │           └── ... (project source files to be implemented)
+│   └── test/
+│       └── java/
+│           └── com/example/cemu/
+│               ├── original/
+│               │   ├── SettingsTest.java
+│               │   ├── ExportsTest.java
+│               │   ├── UtilsTest.java
+│               │   ├── BasicTest.java
+│               │   ├── ArchTest.java
+│               │   ├── MemoryTest.java
+│               │   ├── OsTest.java
+│               │   ├── ErrorsTest.java
+│               │   └── LogTest.java
+│               └── public_tests/
+│                   ├── PublicOsTest.java
+│                   ├── PublicErrorsTest.java
+│                   ├── PublicSettingsTest.java
+│                   ├── PublicLogTest.java
+│                   ├── PublicExportsTest.java
+│                   ├── PublicArchTest.java
+│                   ├── PublicMemoryTest.java
+│                   ├── PublicBasicTest.java
+│                   └── PublicUtilsTest.java
+└── test_translation_progress.json

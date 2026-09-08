@@ -1,0 +1,27 @@
+pywizlight_rust/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── utils.rs
+│   ├── scenes.rs
+│   ├── bulblibrary.rs
+│   ├── discovery.rs
+│   └── models.rs
+├── tests/
+│   └── original/
+│       ├── mod.rs
+│       ├── test_utils.rs
+│       ├── test_scenes.rs
+│       ├── test_public_utils.rs
+│       └── test_public_scenes.rs
+├── public_tests/
+│   ├── mod.rs
+│   ├── test_public_version_and_setup.rs
+│   ├── test_public_bulb_hero_1_23_70.rs
+│   ├── test_public_discovery_core.rs
+│   ├── test_public_scenes.rs
+│   ├── test_public_bulb_socket.rs
+│   └── test_public_utils.rs
+├── run_tests.sh
+├── project_structure.txt
+└── test_translation_progress.json

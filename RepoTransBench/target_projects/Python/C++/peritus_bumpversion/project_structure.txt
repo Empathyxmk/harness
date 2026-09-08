@@ -1,0 +1,51 @@
+.
+├── CMakeLists.txt            # Top-level CMake build configuration
+├── include/                  # Public headers for src/ modules
+│   ├── functions.h
+│   ├── init.h
+│   └── version_part.h
+├── public_tests/             # All public test cases (translated from public_tests/)
+│   ├── public_test_main.cpp
+│   ├── test_public_bumpversion_init.cpp
+│   ├── test_public_cli.cpp
+│   ├── test_public_functions.cpp
+│   ├── test_public_functions_edge.cpp
+│   ├── test_public_init_edge_cases.cpp
+│   ├── test_public_init_vcs.cpp
+│   ├── test_public_version_part.cpp
+│   └── test_public_version_part_extra.cpp
+├── run_tests.sh              # One-click script to build and run all tests
+├── src/                      # C++ translation of core library logic (stubs as needed)
+│   ├── CMakeLists.txt
+│   ├── functions.cpp
+│   ├── functions.h
+│   ├── init.cpp
+│   ├── init.h
+│   ├── main_dummy.cpp
+│   ├── version_part.cpp
+│   └── version_part.h
+├── tests/                    # Original (private) test cases
+│   ├── test_bumpversion_init.cpp
+│   ├── test_cli.cpp
+│   ├── test_functions.cpp
+│   ├── test_functions_edge.cpp
+│   ├── test_init_edge_cases.cpp
+│   ├── test_init_vcs.cpp
+│   ├── test_main.cpp
+│   ├── test_version_part.cpp
+│   └── test_version_part_extra.cpp
+└── project_structure.txt     # This structure and translation/usage explanation
+
+# Directory explanations:
+# - src/: Main source code (stubs provided to allow all tests to build/link)
+# - include/: Public headers, for modular linking
+# - tests/: All original (private) tests, matching Python test logic
+# - public_tests/: All public-facing tests, matching public_tests from Python
+# - run_tests.sh: One-click script for building and running both test suites
+# - CMakeLists.txt: Standard build configuration, integrates Google Test
+
+# How to build & run tests:
+# 1. Ensure you have CMake and Google Test installed (on most Linux: `apt install cmake libgtest-dev`)
+# 2. Make run_tests.sh executable with `chmod +x run_tests.sh`
+# 3. Run `./run_tests.sh`
+#    - This builds everything in 'build/', and then runs both test executables.

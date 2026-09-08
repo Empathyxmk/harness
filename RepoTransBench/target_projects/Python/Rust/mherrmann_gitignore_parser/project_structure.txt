@@ -1,0 +1,30 @@
+project_root/
+├── Cargo.toml               # Rust project manifest
+├── src/
+│   ├── lib.rs               # Core gitignore_parser functionality (stub/mock to satisfy the tests)
+│   └── main.rs              # Main binary stub (not required for testing)
+├── tests/
+│   ├── original.rs          # Translation of all original Python test (tests.py + extra_tests.py)
+├── public_tests/
+│   └── test_public_gitignore_parser.rs  # All public Python tests translated to Rust
+├── run_tests.sh             # Simple one-click shell command to run all tests
+├── project_structure.txt    # Project structure and explanation
+
+Directory Explanations:
+
+src/                - Contains the library code for mherrmann_gitignore_parser.
+src/lib.rs          - Library code, includes parse_gitignore_str, parse_gitignore, IgnoreRule, etc.
+src/main.rs         - Stub main binary. Not required for testing.
+tests/original.rs   - All original (private) test cases from tests.py and extra_tests.py, translated.
+public_tests/       - Directory containing all automatically generated public test(s).
+public_tests/test_public_gitignore_parser.rs - Public tests translated to Rust.
+Cargo.toml          - Rust dependency and package configuration.
+run_tests.sh        - One-liner to run all Rust tests (makes sure both tests/ and public_tests/ are run).
+project_structure.txt- This structure and directory guide.
+
+Setup & Test Instructions:
+1. Have Rust (cargo) installed (https://www.rust-lang.org/tools/install)
+2. Run all tests: ./run_tests.sh
+   - This will execute both original and public test cases.
+3. Place new source logic in src/lib.rs.
+4. Add new tests in tests/original.rs or public_tests/.

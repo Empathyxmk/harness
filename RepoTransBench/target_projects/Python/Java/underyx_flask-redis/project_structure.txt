@@ -1,0 +1,39 @@
+underyx_flask-redis-java/
+├── pom.xml                         # Maven Build/Dependency configuration for all tests
+├── run_tests.sh                    # One-click test script: runs all tests via `mvn clean test`
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── underyx/
+│                   └── flaskredis/
+│                       ├── original/
+│                       │   ├── UnitSetupPyTest.java        # Translated: test/unit/test_setup_py.py
+│                       │   ├── UnitClientTest.java         # Translated: test/unit/test_client.py
+│                       │   ├── UnitInitPyTest.java         # Translated: test/unit/test_init_py.py
+│                       │   ├── UnitAdditionalTest.java     # Translated: test/unit/test_additional.py
+│                       │   └── IntegrationClientTest.java  # Translated: test/integration/test_client.py
+│                       └── publictests/
+│                           ├── PublicAdditionalTest.java           # Translated: public_tests/unit/test_public_additional.py
+│                           ├── PublicClientTest.java               # Translated: public_tests/unit/test_public_client.py
+│                           ├── PublicSetupPyTest.java              # Translated: public_tests/unit/test_public_setup_py.py
+│                           ├── PublicInitPyTest.java               # Translated: public_tests/unit/test_public_init_py.py
+│                           └── integration/
+│                               └── PublicClientIntegrationTest.java # Translated: public_tests/integration/test_public_client.py
+
+Structure Explanation:
+- `pom.xml`         – Project & dependency configuration, sets up JUnit 5 and Mockito for tests.
+- `run_tests.sh`    – Simple script to run all Java tests, executable via `./run_tests.sh`,
+                      which automatically cleans and tests the project.
+- `src/test/java/...` – All tests in *Java* (JUnit) format, mirroring original test folders:
+    - `original/`     – Translated from all original private/unit/integration Python tests.
+    - `publictests/`  – Translated from all public test cases, kept in a mirrored separation.
+    - `integration/`  – Nested for integration-specific public tests.
+
+Setup & Testing Instructions:
+1. Install Java 11+ and Maven if not already present.
+2. Make sure `run_tests.sh` is executable: `chmod +x run_tests.sh`
+3. Execute all tests by running: `./run_tests.sh`
+4. All tests (original and public) will run, outputting results via Maven/JUnit.
+
+No application source code is present; this project is a full translation of the original and public test suites from the Python project.

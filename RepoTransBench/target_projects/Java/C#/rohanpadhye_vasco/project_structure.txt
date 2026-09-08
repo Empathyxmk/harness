@@ -1,0 +1,107 @@
+rohanpadhye_vasco/
+├── LICENSE.txt
+├── README.md
+├── javadoc.xml
+├── offline/
+│   ├── java/
+│   │   └── package-list
+│   ├── jdi/
+│   │   └── package-list
+│   └── soot/
+│       └── package-list
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── ContextPublicTest.cs
+│   ├── ContextTransitionTablePublicTest.cs
+│   ├── DataFlowSolutionPublicTest.cs
+│   ├── InterProceduralAnalysisPublicTest.cs
+│   ├── OldForwardInterProceduralAnalysisPublicTest.cs
+│   ├── ProgramRepresentationPublicTest.cs
+│   └── PublicTests.csproj
+├── rohanpadhye_vasco.sln
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── Vasco/
+│   │   ├── Program.cs
+│   │   └── Vasco.csproj
+│   ├── main/
+│   │   └── java/
+│   │       └── vasco/
+│   │           ├── BackwardInterProceduralAnalysis.java
+│   │           ├── CallSite.java
+│   │           ├── Context.java
+│   │           ├── ContextTransitionTable.java
+│   │           ├── DataFlowSolution.java
+│   │           ├── ForwardInterProceduralAnalysis.java
+│   │           ├── InterProceduralAnalysis.java
+│   │           ├── OldForwardInterProceduralAnalysis.java
+│   │           ├── ProgramRepresentation.java
+│   │           ├── callgraph/
+│   │           │   ├── CallGraphTransformer.java
+│   │           │   ├── PointsToAnalysis.java
+│   │           │   └── PointsToGraph.java
+│   │           └── soot/
+│   │               ├── ContextSensitiveJimpleRepresentation.java
+│   │               ├── DefaultJimpleRepresentation.java
+│   │               └── examples/
+│   │                   ├── CopyConstantAnalysis.java
+│   │                   └── SignAnalysis.java
+│   └── test/
+│       └── java/
+│           └── vasco/
+│               ├── BackwardForwardInterProceduralAnalysisTest.java
+│               ├── CallSiteTest.java
+│               ├── CallSiteTestExtra.java
+│               ├── ContextPublicTest.java
+│               ├── ContextTest.java
+│               ├── ContextTransitionTablePublicTest.java
+│               ├── ContextTransitionTableTest.java
+│               ├── ContextTransitionTableTestExtra.java
+│               ├── DataFlowSolutionPublicTest.java
+│               ├── DataFlowSolutionTest.java
+│               ├── InterProceduralAnalysisPublicTest.java
+│               ├── InterProceduralAnalysisTest.java
+│               ├── OldForwardInterProceduralAnalysisPublicTest.java
+│               ├── OldForwardInterProceduralAnalysisTest.java
+│               ├── ProgramRepresentationPublicTest.java
+│               ├── ProgramRepresentationTest.java
+│               ├── callgraph/
+│               │   ├── CallGraphTest.java
+│               │   ├── CallGraphTransformerTest.java
+│               │   ├── PointsToAnalysisTest.java
+│               │   └── PointsToGraphTest.java
+│               ├── soot/
+│               │   └── examples/
+│               │       ├── CopyConstantTest.java
+│               │       └── SignTest.java
+│               └── tests/
+│                   ├── CallGraphTestCase.java
+│                   ├── CopyConstantTestCase.java
+│                   └── SignTestCase.java
+├── test_summary.json
+├── test_translation_progress.json
+└── tests/
+    └── original/
+        ├── BackwardForwardInterProceduralAnalysisTest.cs
+        ├── CallGraphTest.cs
+        ├── CallGraphTestCase.cs
+        ├── CallGraphTransformerTest.cs
+        ├── CallSiteTest.cs
+        ├── CallSiteTestExtra.cs
+        ├── ContextTest.cs
+        ├── ContextTransitionTableTest.cs
+        ├── ContextTransitionTableTestExtra.cs
+        ├── CopyConstantTest.cs
+        ├── CopyConstantTestCase.cs
+        ├── DataFlowSolutionTest.cs
+        ├── InterProceduralAnalysisTest.cs
+        ├── OldForwardInterProceduralAnalysisTest.cs
+        ├── OriginalTests.csproj
+        ├── PointsToAnalysisTest.cs
+        ├── PointsToGraphTest.cs
+        ├── ProgramRepresentationTest.cs
+        ├── SignTest.cs
+        └── SignTestCase.cs

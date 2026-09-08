@@ -1,0 +1,18 @@
+quadprog_quadprog/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── linear_algebra.rs
+├── tests/
+│   └── original/
+│       ├── test_1.rs
+│       ├── test_factorized.rs
+│       ├── test_linear_algebra.rs
+│       └── test_qr_update.rs
+├── public_tests/
+│   ├── test_1_public.rs
+│   ├── test_factorized_public.rs
+│   ├── test_linear_algebra_public.rs
+│   └── test_qr_update_public.rs
+├── run_tests.sh
+└── project_structure.txt

@@ -1,0 +1,15 @@
+{
+  "project_name": "Flet_prettier-bytes",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:25:37.497318",
+  "original_path": "/workspace/runnable_filter/JavaScript/Flet_prettier-bytes",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/Flet_prettier-bytes",
+  "tests_path": [
+    "test/index.extra.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,28 @@
+ded_klass Python Translation - Project Structure
+
+.
+├── requirements.txt                # Python dependencies (pytest for testing)
+├── run_tests.sh                    # One-click test script: runs pytest for all tests
+├── src/
+│   ├── ded_klass.py                # Python 'klass' implementation mock (emulates JS klass.js API)
+├── tests/
+│   └── original/
+│       └── test_klass.py           # Original comprehensive internal test suite, translated from JS
+├── public_tests/
+│   └── test_klass_public.py        # Public-facing test suite, translated from JS public tests
+
+Directory Guide:
+- src/:        Contains source code for the klass logic. (Here implemented as ded_klass.py)
+- tests/original/:  Contains original internal (non-public) translated test cases.
+- public_tests/:    Contains translated public test cases from original JS project.
+- run_tests.sh:     Runs all test cases with one command using pytest.
+- requirements.txt: Declares all test dependencies (pytest).
+
+Running tests:
+1. Install requirements (if not done yet):
+   pip install -r requirements.txt
+
+2. Run all tests with one command:
+   ./run_tests.sh
+
+All tests (original and public) will be discovered and run using pytest.

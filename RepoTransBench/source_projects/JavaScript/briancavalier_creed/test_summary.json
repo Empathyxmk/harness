@@ -1,0 +1,15 @@
+{
+  "project_name": "briancavalier_creed",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 89.64
+  },
+  "timestamp": "2025-06-19T10:02:25.158129",
+  "original_path": "/workspace/runnable_filter/JavaScript/briancavalier_creed",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/briancavalier_creed",
+  "tests_path": [
+    "test/env-extra-test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

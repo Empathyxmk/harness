@@ -1,0 +1,85 @@
+{
+  "project_name": "SmileyChris_easy-thumbnails",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:25:15.261204",
+  "original_path": "/workspace/verified_repos_v2/Python/SmileyChris_easy-thumbnails",
+  "public_test_result_path": "/workspace/public_test_results/Python/SmileyChris_easy-thumbnails",
+  "original_tests": {
+    "test_files": [
+      "easy_thumbnails/tests/test_files.py",
+      "easy_thumbnails/tests/test_namers.py",
+      "easy_thumbnails/tests/test_models.py",
+      "easy_thumbnails/tests/test_aliases.py",
+      "easy_thumbnails/tests/test_storage.py",
+      "easy_thumbnails/tests/test_animated_formats.py",
+      "easy_thumbnails/tests/test_thumbnail_cleanup.py",
+      "easy_thumbnails/tests/test_source_generators.py",
+      "easy_thumbnails/tests/test_conf.py",
+      "easy_thumbnails/tests/test_widgets.py",
+      "easy_thumbnails/tests/test_svg_processors.py",
+      "easy_thumbnails/tests/test_engine.py",
+      "easy_thumbnails/tests/test_fields.py",
+      "easy_thumbnails/tests/test_management.py",
+      "easy_thumbnails/tests/test_templatetags.py",
+      "easy_thumbnails/tests/test_pixel_processors.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 16,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_namers_public.py",
+      "public_tests/test_models_public.py",
+      "public_tests/test_files_public.py",
+      "run_public_tests.sh",
+      "public_tests/test_aliases_public.py",
+      "public_tests/test_storage_public.py",
+      "public_tests/test_animated_formats_public.py",
+      "public_tests/test_thumbnail_cleanup_public.py",
+      "public_tests/test_source_generators_public.py",
+      "public_tests/test_conf_public.py",
+      "public_tests/test_widgets_public.py",
+      "run_public_tests.sh",
+      "public_tests/test_engine_public.py",
+      "public_tests/test_fields_public.py",
+      "public_tests/test_pixel_processors_public.py",
+      "public_tests/test_templatetags_public.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 17,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_namers_public.py",
+    "public_tests/test_models_public.py",
+    "public_tests/test_files_public.py",
+    "run_public_tests.sh",
+    "public_tests/test_aliases_public.py",
+    "public_tests/test_storage_public.py",
+    "public_tests/test_animated_formats_public.py",
+    "public_tests/test_thumbnail_cleanup_public.py",
+    "public_tests/test_source_generators_public.py",
+    "public_tests/test_conf_public.py",
+    "public_tests/test_widgets_public.py",
+    "run_public_tests.sh",
+    "public_tests/test_engine_public.py",
+    "public_tests/test_fields_public.py",
+    "public_tests/test_pixel_processors_public.py",
+    "public_tests/test_templatetags_public.py",
+    "run_public_tests.sh"
+  ]
+}

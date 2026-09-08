@@ -1,0 +1,30 @@
+project_root/
+├── requirements.txt
+│     # Python dependency file, lists required packages (pytest).
+├── run_tests.sh
+│     # Simple shell script for running all tests in the project using pytest.
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py
+│   │   │     # Marks this folder as a package, enables relative imports for tests.
+│   │   ├── test_morgan_tokens_format.py
+│   │   │     # Original test cases (translated from test/morgan_tokens_format.test.js).
+│   │   └── test_morgan_index.py
+│   │         # Original test cases (translated from test/morgan_index.test.js).
+│   └── __init__.py
+│         # Package marker for tests.
+├── public_tests/
+│   ├── __init__.py
+│   │     # Marks this folder as a package.
+│   ├── test_morgan_tokens_format_public.py
+│   │     # Public test cases (translated from public_tests/morgan_tokens_format.public.test.js).
+│   └── test_morgan_index_public.py
+│         # Public test cases (translated from public_tests/morgan_index.public.test.js).
+└── README.md
+      # (Add documentation or usage as needed.)
+
+Notes:
+- All code and tests use `pytest` as the test runner.
+- To run all tests, use: `./run_tests.sh`
+- The `tests/original/` folder contains "original" test suite, while `public_tests/` holds public test suite.
+- `requirements.txt` lists project dependencies. Install them with: `pip install -r requirements.txt`

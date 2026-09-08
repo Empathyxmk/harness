@@ -1,0 +1,19 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_jfilemanager.py
+│   │   ├── test_jtimetransform.py
+│   │   ├── test_jactivitymanager.py
+│   │   └── test_application.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_jfilemanager_public.py
+│   ├── test_jtimetransform_public.py
+│   ├── test_jactivitymanager_public.py
+│   └── test_application_public.py
+└── README.md

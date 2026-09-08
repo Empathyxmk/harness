@@ -1,0 +1,29 @@
+.
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   ├── original/
+│   │   ├── base32_test.go
+│   │   ├── coverage_test.go
+│   │   ├── coverage_longs_test.go
+│   │   ├── db_database_test.go
+│   │   ├── direction_test.go
+│   │   ├── geohash_minimal_test.go
+│   │   ├── geohash_test.go
+│   │   ├── latlong_test.go
+│   │   ├── preconditions_test.go
+│   │   ├── testingutil.go
+│   │   └── mem_geomem_test.go
+│   └── testutil.go
+├── public_tests/
+│   ├── base32_public_test.go
+│   ├── coverage_public_test.go
+│   ├── coverage_longs_public_test.go
+│   ├── db_database_public_test.go
+│   ├── direction_public_test.go
+│   ├── geohash_minimal_public_test.go
+│   ├── geohash_public_test.go
+│   ├── latlong_public_test.go
+│   ├── mem_geomem_public_test.go
+│   ├── util_preconditions_public_test.go
+└── test_translation_progress.json

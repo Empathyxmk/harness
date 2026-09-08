@@ -1,0 +1,19 @@
+{
+  "name": "crypto-utils_keygrip",
+  "version": "1.0.0",
+  "description": "Keygrip utility for signing/verifying with secret keys",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/keygrip.js",
+    "coverage": "nyc --reporter=text --reporter=html mocha test/keygrip.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "c8": "^10.1.3",
+    "chai": "^4.4.1",
+    "mocha": "^10.8.2",
+    "nyc": "^15.1.0",
+    "tsscmp": "^1.0.6"
+  }
+}

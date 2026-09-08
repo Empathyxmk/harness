@@ -1,0 +1,47 @@
+Project Structure Explanation
+============================
+
+l42111996_java-Kcp (Python Translation)
+---------------------------------------
+.
+├── requirements.txt                # Python dependencies (pytest, mock)
+├── run_tests.sh                    # One-click shell script to run all tests (both original and public)
+├── README.md                       # Project overview and instructions              [add as needed]
+├── src/                            # (Place to put Python ported source code)      [not populated here]
+└── tests/
+    ├── __init__.py
+    ├── original/
+    │   ├── __init__.py
+    │   ├── test_kcp_server_examples.py        # From: kcp-example/.../KcpServerExamplesTest.java
+    │   ├── test_fec.py                       # From: kcp-fec/.../FecTest.java
+    │   ├── test_reed_solomon.py              # From: kcp-fec/.../ReedSolomonTest.java
+    │   ├── test_galois.py                    # From: kcp-fec/.../GaloisTest.java
+    │   ├── test_matrix.py                    # From: kcp-fec/.../MatrixTest.java
+    │   ├── test_fec_native.py                # From: kcp-fec/.../FecTestNative.java
+    │   ├── test_encryption.py                # From: kcp-base/.../TestEncryption.java
+    │   ├── test_crc32.py                     # From: kcp-base/.../TestCrc32.java
+    │   ├── test_order_thread_pool_order.py   # From: kcp-base/.../TestOrderThreadPoolOrder.java
+    │   ├── test_thread_loop.py               # From: kcp-base/.../TestThreadLoop.java
+    │   ├── test_kcp_game_test_client.py      # From: kcp-lockStepSynchronization/.../KcpGameTestClient.java
+    │   ├── test_kcp_game_test_server.py      # From: kcp-lockStepSynchronization/.../KcpGameTestServer.java
+    │   ├── test_test_room.py                 # From: kcp-lockStepSynchronization/.../TestRoom.java
+    │   ├── test_game_test_room_manager.py    # From: kcp-lockStepSynchronization/.../GameTestRoomManager.java
+    └── conftest.py                           # pytest configuration (if needed)
+└── public_tests/
+    ├── __init__.py
+    ├── test_kcp_server_examples_public.py            # From: kcp-example/.../KcpServerExamplesPublicTest.java
+    ├── test_fec_public.py                            # From: kcp-fec/.../FecPublicTest.java
+    ├── test_reed_solomon_public.py                   # From: kcp-fec/.../ReedSolomonPublicTest.java
+    ├── test_galois_public.py                         # From: kcp-fec/.../GaloisPublicTest.java
+    ├── test_matrix_public.py                         # From: kcp-fec/.../MatrixPublicTest.java
+
+
+How to Run Tests
+----------------
+1. Ensure you have Python 3 and pip installed.
+2. Run `pip install -r requirements.txt` to install the required packages.
+3. Make the script executable: `chmod +x run_tests.sh`
+4. Run all tests: `./run_tests.sh`
+
+- All tests in `tests/original/` are from the original Java repository.
+- All tests in `public_tests/` are the public tests adapted from the original repository's public test set.

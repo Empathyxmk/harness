@@ -1,0 +1,68 @@
+{
+  "project_name": "navdeep-G_showme",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:41.931224",
+  "original_path": "/workspace/verified_repos_v2/Python/navdeep-G_showme",
+  "public_test_result_path": "/workspace/public_test_results/Python/navdeep-G_showme",
+  "original_tests": {
+    "test_files": [
+      "showme/tests/test_docs.py",
+      "showme/tests/test_trace.py",
+      "showme/tests/test_core_additional.py",
+      "showme/tests/test_setup_py.py",
+      "showme/tests/test_time.py",
+      "showme/tests/test_cputime.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_docs.py",
+      "public_tests/test_public_trace.py",
+      "public_tests/test_public_core_additional.py",
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_time.py",
+      "public_tests/test_public_cputime.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_core_additional.py",
+      "public_tests/test_public_cputime.py",
+      "public_tests/test_public_docs.py",
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_time.py",
+      "public_tests/test_public_trace.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 14,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_docs.py",
+    "public_tests/test_public_trace.py",
+    "public_tests/test_public_core_additional.py",
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_time.py",
+    "public_tests/test_public_cputime.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_core_additional.py",
+    "public_tests/test_public_cputime.py",
+    "public_tests/test_public_docs.py",
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_time.py",
+    "public_tests/test_public_trace.py",
+    "run_public_tests.sh"
+  ]
+}

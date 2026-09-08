@@ -1,0 +1,38 @@
+project_root/
+├── requirements.txt                  # Python dependency file for pytest
+├── run_tests.sh                      # One-click test execution script
+├── README.md                         # Project documentation (to be filled as needed)
+├── src/                              # (source code would go here if translated)
+│
+├── tests/
+│   ├── original/
+│   │   ├── test_callsite.py
+│   │   ├── test_callsite_extra.py
+│   │   ├── test_context.py
+│   │   ├── test_contexttransitiontable.py
+│   │   ├── test_contexttransitiontable_extra.py
+│   │   ├── test_dataflowsolution.py
+│   │   ├── test_backwardforwardinterprocedural.py
+│   │   ├── test_oldforwardinterprocedural.py
+│   │   ├── test_interproceduralanalysis.py
+│   │   ├── test_programrepresentation.py
+│   │   └── soot/
+│   │       └── examples/
+│   │           ├── test_copyconstant.py
+│   │           └── test_sign.py
+│   └── callgraph/
+│       ├── test_callgraph.py
+│       ├── test_callgraphtransformer.py
+│       ├── test_pointstoanalysis.py
+│       └── test_pointstograph.py
+│
+├── public_tests/
+│   ├── test_oldforwardinterprocedural_public.py
+│   ├── test_contexttransitiontable_public.py
+│   ├── test_context_public.py
+│   ├── test_dataflowsolution_public.py
+│   ├── test_programrepresentation_public.py
+│   └── test_interproceduralanalysis_public.py
+│
+├── test_summary.json                 # Original test coverage summary (copied from Java repo)
+├── public_test_summary.json          # Public test coverage summary (copied from Java repo)

@@ -1,0 +1,28 @@
+ali-bouali-one-to-one-chat/
+├── go.mod                             # Go module definition, using testify for test assertions/mocking
+├── run_tests.sh                       # One-click test runner for all tests (Go standard)
+├── project_structure.txt              # (This file) - Explains project layout and usage
+├── tests/
+│   ├── chat_application_test.go       # "Smoke test": equivalent of context load test
+│   └── original/
+│       ├── chat_controller_test.go    # Original ChatControllerTest translated from Java
+│       └── chatroom_service_test.go   # Original ChatRoomServiceTest translated from Java
+├── public_tests/
+│   ├── chat_controller_public_test.go # Public test of ChatController (Java public test)
+│   └── chatroom_service_public_test.go# Public test of ChatRoomService (Java public test)
+└── README.md                          # Project documentation
+
+Directory explanations:
+
+- go.mod:            Declares Go module and dependencies (testify is used for assertions and mocks).
+- run_tests.sh:      Executable script to run all Go tests in all packages/directories; just run `./run_tests.sh`.
+- tests/:            Contains all ORIGINAL (non-public) test translations. Each *_test.go file under `original/` mirrors a corresponding Java test file.
+- public_tests/:     Contains all PUBLIC test translations. Each *_test.go is a translation from a Java PublicTest.
+- tests/chat_application_test.go:   Smoke test, ported from Java's context test (does nothing, but asserts the application can start up).
+- README.md:         Documentation for setup and usage.
+
+Setup and Testing Instructions:
+
+1. Ensure you have [Go >=1.20](https://golang.org/dl/) installed.
+2. Install dependencies, if needed: `go mod tidy`
+3. Run all tests: `./run_tests.sh`

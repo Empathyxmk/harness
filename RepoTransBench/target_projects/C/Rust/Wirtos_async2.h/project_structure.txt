@@ -1,0 +1,16 @@
+async2/
+├── Cargo.toml                # Rust project configuration
+├── run_tests.sh              # Test execution script
+├── src/
+│   └── lib.rs                # Main library file
+├── tests/
+│   ├── lib.rs                # Test integration
+│   └── original/             # Original tests
+│       ├── test_async2_api.rs
+│       ├── test_async2_arr_edgecases.rs
+│       └── test_example_main.rs
+└── public_tests/             # Public tests
+    ├── lib.rs                # Public test integration
+    ├── test_async2_api.rs
+    ├── test_async2_arr_edgecases.rs
+    └── test_example_main.rs

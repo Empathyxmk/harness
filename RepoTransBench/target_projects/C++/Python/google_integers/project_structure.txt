@@ -1,0 +1,34 @@
+Project Structure for google_integers (Python translation)
+===========================================================
+
+google_integers/
+├── requirements.txt             # Python dependencies (pytest)
+├── run_tests.sh                 # One-click test runner (runs all tests with pytest)
+├── tests/                       # Directory for ALL original (internal) tests
+│   ├── __init__.py              # Python package init
+│   └── original/                # Original test cases, translated from C++
+│       ├── __init__.py
+│       ├── test_clamping.py     # Original clamping tests
+│       ├── test_ranged.py       # Original ranged tests
+│       ├── test_trapping.py     # Original trapping tests
+│       └── test_wrapping.py     # Original wrapping tests
+├── public_tests/                # Directory for public test cases
+│   ├── __init__.py
+│   ├── test_clamping_public.py  # Public clamping test
+│   ├── test_ranged_public.py    # Public ranged test
+│   ├── test_trapping_public.py  # Public trapping test
+│   └── test_wrapping_public.py  # Public wrapping test
+
+Descriptions
+------------
+- tests/original/       : Contains C++ original test translations for full coverage and assertions.
+- public_tests/         : Contains C++ public test translations (distinct input/output, public only).
+- run_tests.sh          : Run all tests (original and public) using 'pytest'.
+- requirements.txt      : Lists all dependency packages (pytest).
+
+How to Run All Tests
+--------------------
+1. Install dependencies:   pip install -r requirements.txt
+2. Run all tests:          ./run_tests.sh
+
+All tests (both original and public) will be run using pytest.

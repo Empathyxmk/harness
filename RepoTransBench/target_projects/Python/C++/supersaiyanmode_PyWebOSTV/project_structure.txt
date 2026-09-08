@@ -1,0 +1,33 @@
+Project Structure:
+
+supersaiyanmode_PyWebOSTV_CPP/
+├── CMakeLists.txt
+│      # CMake build + test configuration
+├── include/
+│   └── *.h      # Header files for native implementation (stubbed)
+├── src/
+│   └── *.cpp    # Source code (stubbed - library impl not included)
+├── tests/
+│   ├── test_main.cpp           # gtest: entry point for all tests
+│   └── original/
+│       ├── test_controls.cpp           # Original translated test (controls)
+│       ├── test_connection.cpp         # Original translated test (connection)
+│       ├── test_setup.cpp              # Original translated test (setup.py exists/importable)
+│       ├── test_discovery.cpp          # Original translated test (discovery)
+│       ├── test_model.cpp              # Original translated test (model)
+│       └── utils_test_helpers.h        # Helper mocks (FakeClient, etc.) for original tests
+├── public_tests/
+│   ├── test_public_controls.cpp        # Translated public test cases
+│   ├── test_public_connection.cpp      # Translated public test cases
+│   ├── test_public_setup.cpp           # Translated public test cases
+│   ├── test_public_discovery.cpp       # Translated public test cases
+│   ├── test_public_model.cpp           # Translated public test cases
+│   └── utils_public_test_helpers.h     # Public test suite helpers/mocks
+├── run_tests.sh                        # One-click build & run for all tests
+├── README.md                           # Project info, usage, test instructions
+├── project_structure.txt               # This structure/readme file
+
+Build and Run:
+$ ./run_tests.sh
+
+All translated tests (original + public) run via GoogleTest, compiled and built in ./build/

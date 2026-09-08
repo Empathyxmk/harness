@@ -1,0 +1,19 @@
+MCGallaspy_dr_strangetemplate_python/
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_case_study_2_public.py      # Python translation of case_study_2_public_test.cpp
+│   └── test_case_study_3_public.py      # Python translation of case_study_3_public_test.cpp
+├── requirements.txt                     # Python dependencies (pytest)
+├── run_tests.sh                         # Simple one-click test script
+└── project_structure.txt                # This file: project structure documentation
+
+Description of Structure:
+- public_tests/: Contains all public test cases translated from C++ (.cpp) to Python using pytest.
+- requirements.txt: Lists Python dependencies (pytest needed for running tests).
+- run_tests.sh: Minimal script to execute all Python tests (with pytest). Run with "./run_tests.sh".
+- project_structure.txt: This documentation file.
+
+Test Instructions:
+1. Ensure Python 3.6+ is installed.
+2. Install requirements: `pip install -r requirements.txt`
+3. Run all tests: `./run_tests.sh`

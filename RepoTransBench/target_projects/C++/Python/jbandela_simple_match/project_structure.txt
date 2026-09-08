@@ -1,0 +1,32 @@
+Project Structure: Python translation of jbandela_simple_match
+
+.
+├── LICENSE_1_0.txt
+├── README.md
+├── include/                            # (C++ only, not used by Python tests)
+├── public_test_summary.json            # C++ public test summary
+├── public_tests/                       # Public tests, translated from C++ public test files
+│   ├── __init__.py
+│   ├── test_coverage_extra_public.py
+│   └── test_public.py
+├── requirements.txt                    # Python requirements for testing (pytest)
+├── run_public_tests.sh                 # (C++ only, not needed for Python)
+├── run_tests.sh                        # Simple script: runs all Python tests via pytest
+├── tests/                              # All (original) tests, translated from C++ original test files
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   └── test_coverage_extra.py
+├── test_summary.json
+└── ...
+
+- public_tests/ contains tests that correspond to C++ 'test/test_public.cpp', 'test/test_coverage_extra_public.cpp', etc.
+- tests/original/ contains original C++ test coverage (if any). Only 'test_coverage_extra' from C++ test sources maps here, as other logic is public.
+- requirements.txt: Python dependencies (primarily pytest)
+- run_tests.sh: One-click script to run all tests
+
+How to run all tests:
+$ pip install -r requirements.txt
+$ ./run_tests.sh
+
+All Python test files and logic are self-contained and do not depend on the C++ sources or include/.

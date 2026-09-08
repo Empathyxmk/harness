@@ -1,0 +1,36 @@
+project_root/
+├── requirements.txt               # Python dependency file - install with pip install -r requirements.txt
+├── run_tests.sh                   # Simple bash script to run all tests via pytest
+├── src/
+│   └── alexafact/                 # Source code package for the Alexa fact skill
+│       ├── __init__.py
+│       ├── personalizationStorageUtil.py
+│       ├── personalizationUtil.py
+│       └── index.py
+├── tests/
+│   └── original/                  # Directory containing all Python translations of original tests
+│       ├── __init__.py
+│       ├── test_personalizationStorageUtil.py
+│       ├── test_personalizationUtil.py
+│       └── test_index.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_personalizationStorageUtil_public.py   # Python translations of public test suite
+│   ├── test_personalizationUtil_public.py
+│   └── test_index_public.py
+└── project_structure.txt          # This overview tree and explanations
+
+Directory Explanations:
+- src/alexafact/: Main Python package for the fact skill logic. Contains modules for personalization util, storage util, and main index logic.
+- tests/original/: Original (internal) test translations, mapped 1:1 from JS original test suite with identical coverage.
+- public_tests/: Public test suite directory. Each test preserves the public variant logic/data from JS, adapted to Python.
+- requirements.txt: Python dependencies (install using: pip install -r requirements.txt).
+- run_tests.sh: Run all tests. Make executable with chmod +x run_tests.sh, then run ./run_tests.sh.
+
+Test Execution:
+1. Install dependencies:
+   pip install -r requirements.txt
+2. Run all tests:
+   ./run_tests.sh
+
+Tests will execute both original and public test cases using pytest.

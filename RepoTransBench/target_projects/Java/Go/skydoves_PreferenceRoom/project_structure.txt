@@ -1,0 +1,33 @@
+.
+├── README.md                  # Project documentation and usage guide
+├── go.mod                     # Go module file with dependencies
+├── run_tests.sh               # Simple script to run all tests
+├── tests/
+│   ├── original/
+│   │   ├── injector_generator_test.go                 # Translated from InjectorGeneratorTest.java
+│   │   ├── preference_entity_annotated_class_test.go  # Translated from PreferenceEntityAnnotatedClassTest.java
+│   │   ├── preference_key_field_test.go               # Translated from PreferenceKeyFieldTest.java
+│   │   ├── app_component_test.go                      # Translated from AppComponentTest.java
+│   │   ├── junit_component_test.go                    # Translated from JunitComponentTest.java
+│   │   ├── profile_entity_test.go                     # Translated from ProfileEntityTest.java
+│   │   └── device_entity_test.go                      # Translated from DeviceEntityTest.java
+│   └── testutil.go                                   # Common test utilities/mocks
+└── public_tests/
+    ├── injector_generator_public_test.go              # Translated from InjectorGeneratorPublicTest.java
+    ├── preference_entity_annotated_class_public_test.go# Translated from PreferenceEntityAnnotatedClassPublicTest.java
+    ├── preference_key_field_public_test.go            # Translated from PreferenceKeyFieldPublicTest.java
+    ├── app_component_public_test.go                   # Translated from AppComponentPublicTest.java
+    ├── junit_component_public_test.go                 # Translated from JunitComponentPublicTest.java
+    ├── profile_entity_public_test.go                  # Translated from ProfileEntityPublicTest.java
+    └── device_entity_public_test.go                   # Translated from DeviceEntityPublicTest.java
+
+**Descriptions:**
+- `tests/original/`: Contains Go translations of all "original" test cases
+- `public_tests/`: Contains Go translations of all public tests
+- `testutil.go`: Helper utilities and mock simulating Java/Android/mockito behaviors
+- `run_tests.sh`: One-click script to run all Go tests (using `go test ./...`)
+- `go.mod`: Go module for dependency management
+
+**Instructions:**
+1. Run `go mod download` to fetch dependencies (if not already).
+2. Use `./run_tests.sh` to execute all tests at once.

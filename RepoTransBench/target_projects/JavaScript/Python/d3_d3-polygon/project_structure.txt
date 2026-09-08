@@ -1,0 +1,48 @@
+d3_d3-polygon Python Project Structure:
+
+.
+├── src
+│   └── d3polygon
+│       ├── __init__.py         # Exports all polygon operations
+│       ├── area.py             # polygon_area implementation
+│       ├── centroid.py         # polygon_centroid implementation
+│       ├── contains.py         # polygon_contains implementation
+│       ├── cross.py            # cross-product helper
+│       ├── hull.py             # polygon_hull implementation
+│       ├── index.py            # For d3-like import compatibility
+│       └── length.py           # polygon_length implementation
+├── tests
+│   └── original
+│       ├── test_area.py        # Area tests (original)
+│       ├── test_centroid.py    # Centroid tests (original)
+│       ├── test_contains.py    # Contains (point-in-polygon) tests (original)
+│       ├── test_cross.py       # Cross product helper tests (original)
+│       ├── test_hull.py        # Convex hull tests (original)
+│       ├── test_index.py       # Index (d3Polygon export) tests (original)
+│       ├── test_length.py      # Path length tests (original)
+│       └── test_require_source.py # Checks import success/coverage (original)
+├── public_tests
+│   └── test_centroid_public.py # Public centroid tests (translated from JS)
+├── requirements.txt            # Dependency file (pytest)
+├── run_tests.sh                # Simple one-command test runner
+└── project_structure.txt       # This file! Overview and setup info
+
+Directory explanations:
+- src/d3polygon/:     All polygon library implementations (area, centroid, etc)
+- tests/original/:    Full translated original JS tests (now in Python/pytest)
+- public_tests/:      Public centroid test (for public/verification scenarios)
+- requirements.txt:   Python dependencies (install with pip)
+- run_tests.sh:       (chmod +x) then './run_tests.sh' to test everything
+- project_structure.txt: This overview (structure/start info)
+
+## Setup & Testing Instructions
+
+1. Create virtualenv (recommended) and install packages:
+    python -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+
+2. Run all tests (original & public):
+    ./run_tests.sh
+
+All tests use pytest and do not require special arguments. Source is in src/d3polygon/.

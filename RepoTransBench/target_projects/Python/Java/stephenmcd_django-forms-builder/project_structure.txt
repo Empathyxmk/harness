@@ -1,0 +1,45 @@
+Project structure for the Java port of stephenmcd_django-forms-builder:
+
+.
+├── pom.xml
+├── run_tests.sh
+├── project_structure.txt
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── stephenmcd
+│   │               └── formsbuilder
+│   │                   ├── fields
+│   │                   │   ├── BooleanField.java
+│   │                   │   ├── Field.java
+│   │                   │   ├── Fields.java
+│   │                   │   ├── SelectField.java
+│   │                   │   └── Tuple.java
+│   │                   └── utils
+│   │                       └── Utils.java
+│   └── test
+│       └── java
+│           └── com
+│               └── stephenmcd
+│                   └── formsbuilder
+│                       ├── original
+│                       │   ├── CoreTest.java
+│                       │   ├── DocsConfPyTest.java
+│                       │   ├── FieldsTest.java
+│                       │   ├── FieldsUnitTest.java
+│                       │   ├── InitPyTest.java
+│                       │   ├── SetupPyTest.java
+│                       │   └── UtilsTest.java
+│                       └── publictests
+│                           ├── PublicFieldsTest.java
+│                           └── PublicFieldsUnitTest.java
+
+- pom.xml: Maven build configuration including JUnit and Mockito for all test execution.
+- run_tests.sh: Single-command execution, runs all tests (chmod +x).
+- src/main/java/com/stephenmcd/formsbuilder: Main Java source, mimicking only the logic minimally needed for tests.
+- src/main/java/com/stephenmcd/formsbuilder/fields: Contains logic/utility classes to allow tests to function and match test coverage (Fields, BooleanField, SelectField, Tuple).
+- src/main/java/com/stephenmcd/formsbuilder/utils: Utility logic as needed for translation.
+- src/test/java/com/stephenmcd/formsbuilder/original: All converted original test files (one class per test file).
+- src/test/java/com/stephenmcd/formsbuilder/publictests: All public test files (converted from public Python tests).
+- project_structure.txt: This file.

@@ -1,0 +1,29 @@
+spring-attic_sso-go/
+├── go.mod                       # Go module definition and dependencies (testify for assertions)
+├── README.md                    # Project overview, structure, and test instructions
+├── run_tests.sh                 # One-click shell script to run all Go tests
+│
+├── tests/
+│   ├── original/
+│   │   ├── application_test.go          # Translation of ApplicationTests.java (sanity check)
+│   │   └── sso_application_test.go      # Translation of SsoApplicationTest.java (internal/original test suite)
+│   └── testutil.go              # Helpers, mocks, and Go scaffolding for translating Java Spring-based logic/tests
+│
+├── public_tests/
+│   └── sso_application_public_test.go   # Translation of SsoApplicationPublicTest.java (public test suite)
+│
+└── project_structure.txt         # This file, describing the entire project structure and file roles
+
+Directories:
+- tests/original/        Internal/original tests (mirroring original Java structure).
+- public_tests/          Translated public-facing tests.
+- tests/testutil.go      Mocks and scaffolding needed for the tests (e.g., Filter, Chain, Principal).
+- go.mod                 Go module/dependency system; pulls in testify for richer assertions.
+- run_tests.sh           Minimal Bash script to run all tests with one command.
+
+**Testing:**
+- All test files follow Go conventions (`*_test.go`) and use Go's testing framework + testify as needed.
+- Run `./run_tests.sh` from the root to execute both original and public test suites.
+
+**Note:**
+No application logic is implemented (only minimal stubs/mocks in testutil.go for test coverage).

@@ -1,0 +1,11 @@
+{
+  "project_name": "yacy_yacy_grid_crawler",
+  "language": "Java",
+  "coverage": {
+    "line": 55.3,
+    "branch": 53.3
+  },
+  "timestamp": "2025-06-23T13:27:05.275030",
+  "original_path": "/workspace/runnable_filter/Java/yacy_yacy_grid_crawler",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/yacy_yacy_grid_crawler"
+}

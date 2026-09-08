@@ -1,0 +1,16 @@
+{
+  "project_name": "krissrex_google-authenticator-exporter",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 96.73,
+    "branch": 88.88
+  },
+  "timestamp": "2025-06-19T10:51:56.857155",
+  "original_path": "/workspace/runnable_filter/JavaScript/krissrex_google-authenticator-exporter",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/krissrex_google-authenticator-exporter",
+  "tests_path": [
+    "src/edbase32.test.js",
+    "src/index.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

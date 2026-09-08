@@ -1,0 +1,9 @@
+frida-detection/
+├── Cargo.toml           # Rust project configuration and dependencies
+├── src/
+│   └── lib.rs           # Main library code with frida detection functionality
+├── tests/
+│   ├── test_frida_detection.rs      # Original tests
+│   └── public/
+│       └── test_frida_detection_public.rs  # Public tests
+└── run_tests.sh         # Test execution script

@@ -1,0 +1,15 @@
+{
+  "name": "component_escape-html",
+  "version": "1.0.0",
+  "description": "HTML escape utility",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "coverage": "nyc --reporter=text --reporter=html mocha"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0",
+    "nyc": "^15.0.0"
+  },
+  "license": "MIT"
+}

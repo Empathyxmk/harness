@@ -1,0 +1,72 @@
+{
+  "project_name": "ZhaoKaiQiang_ParticleLayout",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:48:08.707859",
+  "original_path": "/workspace/verified_repos_v2/Java/ZhaoKaiQiang_ParticleLayout",
+  "public_test_result_path": "/workspace/public_test_results/Java/ZhaoKaiQiang_ParticleLayout",
+  "original_tests": {
+    "test_files": [
+      "app/src/androidTest/java/com/socks/particledeleteview/ApplicationTest.java",
+      "app/src/test/java/com/socks/particledeleteview/ExampleUnitTest.java",
+      "Leonids/src/androidTest/java/com/socks/leonids/ApplicationTest.java",
+      "Leonids/src/test/java/com/plattysoft/leonids/ParticleTest.java",
+      "Leonids/src/test/java/com/plattysoft/leonids/ParticleSystemDummyTest.java",
+      "Leonids/src/test/java/com/plattysoft/leonids/ParticleFieldTest.java",
+      "Leonids/src/test/java/com/plattysoft/leonids/AnimatedParticleTest.java",
+      "Leonids/src/test/java/com/plattysoft/leonids/modifiers/ParticleModifierTest.java",
+      "Leonids/src/test/java/com/socks/leonids/ExampleUnitTest.java",
+      "library/src/androidTest/java/com/socks/library/ApplicationTest.java",
+      "library/src/test/java/com/socks/library/ExampleUnitTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 11,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "app/src/test/java/com/socks/particledeleteview/ExampleUnitPublicTest.java",
+      "Leonids/src/test/java/com/plattysoft/leonids/ParticlePublicTest.java",
+      "Leonids/src/test/java/com/plattysoft/leonids/ParticleSystemDummyPublicTest.java",
+      "Leonids/src/test/java/com/plattysoft/leonids/ParticleFieldPublicTest.java",
+      "Leonids/src/test/java/com/plattysoft/leonids/AnimatedParticlePublicTest.java",
+      "Leonids/src/test/java/com/plattysoft/leonids/modifiers/ParticleModifierPublicTest.java",
+      "app/src/androidTest/java/com/socks/particledeleteview/ApplicationPublicTest.java",
+      "Leonids/src/androidTest/java/com/socks/leonids/ApplicationPublicTest.java",
+      "library/src/test/java/com/socks/library/ExampleUnitPublicTest.java",
+      "library/src/androidTest/java/com/socks/library/ApplicationPublicTest.java",
+      "Leonids/src/test/java/com/socks/leonids/ExampleUnitPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 13,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "app/src/test/java/com/socks/particledeleteview/ExampleUnitPublicTest.java",
+    "Leonids/src/test/java/com/plattysoft/leonids/ParticlePublicTest.java",
+    "Leonids/src/test/java/com/plattysoft/leonids/ParticleSystemDummyPublicTest.java",
+    "Leonids/src/test/java/com/plattysoft/leonids/ParticleFieldPublicTest.java",
+    "Leonids/src/test/java/com/plattysoft/leonids/AnimatedParticlePublicTest.java",
+    "Leonids/src/test/java/com/plattysoft/leonids/modifiers/ParticleModifierPublicTest.java",
+    "app/src/androidTest/java/com/socks/particledeleteview/ApplicationPublicTest.java",
+    "Leonids/src/androidTest/java/com/socks/leonids/ApplicationPublicTest.java",
+    "library/src/test/java/com/socks/library/ExampleUnitPublicTest.java",
+    "library/src/androidTest/java/com/socks/library/ApplicationPublicTest.java",
+    "Leonids/src/test/java/com/socks/leonids/ExampleUnitPublicTest.java",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

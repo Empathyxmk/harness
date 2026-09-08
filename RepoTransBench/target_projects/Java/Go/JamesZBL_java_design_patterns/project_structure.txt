@@ -1,0 +1,40 @@
+jameszbl_java_design_patterns/
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   └── original/
+│       ├── composite_writer_integration_test.go
+│       ├── composite_character_composite_test.go
+│       ├── composite_writer_test.go
+│       ├── composite_english_word_test.go
+│       ├── composite_english_sentence_test.go
+│       ├── composite_chinese_word_test.go
+│       ├── facade_course_facade_test.go
+│       ├── adapter_test_adapter_test.go
+│       ├── prototype_prototype_test.go
+│       ├── prototype_factory_test.go
+│       ├── factory_method_test.go
+│       ├── bridge_mordernwar_test.go
+│       ├── bridge_war_test.go
+│       ├── bridge_ancientwar_test.go
+│       ├── singleton_lazy_initialization_director_test.go
+│       ├── singleton_singleton_test.go
+│       ├── singleton_director_test.go
+│       ├── singleton_thread_safe_lazy_load_director_test.go
+│       ├── singleton_thread_safe_double_check_locking_test.go
+│       ├── singleton_enum_director_test.go
+│       ├── decorator_carpenter_operations_test.go
+│       ├── decorator_hammersmith_operations_test.go
+│       ├── builder_test_person_test.go
+│       └── abstract_factory_test.go
+├── public_tests/
+│   ├── composite_writer_integration_public_test.go
+│   ├── composite_character_composite_public_test.go
+│   ├── composite_writer_public_test.go
+│   ├── composite_english_word_public_test.go
+│   ├── composite_english_sentence_public_test.go
+│   ├── composite_chinese_word_public_test.go
+│
+└── (other main source files would live in modules, but are not needed for test structure)

@@ -1,0 +1,11 @@
+{
+  "project_name": "markushi_android-ui",
+  "language": "Java",
+  "coverage": {
+    "line": 59.1,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-23T13:48:09.633092",
+  "original_path": "/workspace/runnable_filter/Java/markushi_android-ui",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/markushi_android-ui"
+}

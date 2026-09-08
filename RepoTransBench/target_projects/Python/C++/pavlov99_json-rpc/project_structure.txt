@@ -1,0 +1,43 @@
+pavlov99_json-rpc C++ Project Structure:
+
+.
+├── CMakeLists.txt            # Root cmake: builds sources, links GoogleTest, defines test targets
+├── include/
+│   └── jsonrpc/              # C++ public headers (API and implementation interfaces)
+├── src/
+│   └── jsonrpc/              # C++ implementation source files
+│       ├── jsonrpc.cpp
+│       ├── jsonrpc1.cpp
+│       ├── jsonrpc2.cpp
+│       └── utils.cpp
+├── tests/
+│   ├── test_main.cpp         # GTest main()
+│   └── original/             # Original source-based test cases as C++ files
+│       ├── test_jsonrpc1.cpp
+│       ├── test_jsonrpc2.cpp
+│       ├── test_utils.cpp
+│       ├── test_backend_django_integration.cpp
+│       ├── test_backend_flask_integration.cpp
+│       ├── test_jsonrpc_errors.cpp
+│       ├── test_manager.cpp
+│       ├── test_examples20.cpp
+│       ├── test_bug29.cpp
+│       ├── test_base.cpp
+│       ├── test_pep3107.cpp
+│       ├── test_six_py.cpp
+│       ├── test_dispatcher.cpp
+│       ├── test_jsonrpc_py.cpp
+│       └── ...               # and all other test files
+├── public_tests/
+│       ├── test_jsonrpc1_public.cpp
+│       ├── test_jsonrpc2_public.cpp
+│       ├── test_utils_public.cpp
+│       └── ...
+├── run_tests.sh              # One-click test build-and-run script
+└── project_structure.txt     # This file: structure and setup explanations
+
+# How to build and run all tests:
+#   $ chmod +x run_tests.sh
+#   $ ./run_tests.sh
+#
+# Produces two test binaries: test_runner (original tests), public_test_runner (public tests)

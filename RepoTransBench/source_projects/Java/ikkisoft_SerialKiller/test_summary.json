@@ -1,0 +1,11 @@
+{
+  "project_name": "ikkisoft_SerialKiller",
+  "language": "Java",
+  "coverage": {
+    "line": 89.0,
+    "branch": 85.0
+  },
+  "timestamp": "2025-06-23T14:52:32.755081",
+  "original_path": "/workspace/runnable_filter/Java/ikkisoft_SerialKiller",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/ikkisoft_SerialKiller"
+}

@@ -1,0 +1,20 @@
+VerbalExpressionsCpp/
+├── CMakeLists.txt
+├── include/
+│   └── verbal_expressions.h
+├── src/
+│   ├── verbal_expressions.cpp
+│   └── CMakeLists.txt
+├── tests/
+│   ├── original/
+│   │   ├── test_verbal_expressions_extra_test.cpp
+│   │   └── verbal_expressions_test.cpp
+│   ├── test_main.cpp
+│   └── CMakeLists.txt
+├── public_tests/
+│   ├── test_public_verbal_expressions_test.cpp
+│   ├── test_public_verbal_expressions_extra_test.cpp
+│   └── CMakeLists.txt
+├── run_tests.sh
+├── README.md
+└── test_translation_progress.json

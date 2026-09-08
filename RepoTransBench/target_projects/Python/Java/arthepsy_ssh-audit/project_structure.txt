@@ -1,0 +1,35 @@
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── test_translation_progress.json
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/sshaudit/
+│   │           └── [Arthepsy SSH-Audit Java core code will be assembled here, placeholder for now]
+│   └── test/
+│       └── java/
+│           └── com/sshaudit/
+│               ├── original/
+│               │   ├── TestAuditConf.java
+│               │   ├── TestBanner.java
+│               │   ├── TestBuffer.java
+│               │   ├── TestErrors.java
+│               │   ├── TestOutput.java
+│               │   ├── TestSoftware.java
+│               │   ├── TestSSH1.java
+│               │   ├── TestSSH2.java
+│               │   └── TestVersionCompare.java
+│               └── publictests/
+│                   ├── PublicAuditConfTest.java
+│                   ├── PublicBannerTest.java
+│                   ├── PublicBufferTest.java
+│                   ├── PublicErrorsTest.java
+│                   ├── PublicOutputTest.java
+│                   ├── PublicSoftwareTest.java
+│                   ├── PublicSSH1Test.java
+│                   ├── PublicSSH2Test.java
+│                   └── PublicVersionCompareTest.java
+└── public_tests/
+    ├── run_public_tests.sh [for Python legacy public test runner reference only, not needed in Java]
+    └── public_test_summary.json [reference only, not needed in Java]

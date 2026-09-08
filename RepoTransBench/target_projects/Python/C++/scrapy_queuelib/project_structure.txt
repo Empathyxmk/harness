@@ -1,0 +1,43 @@
+scrapy_queuelib/
+├── include/                   # C++ API/public headers for queue types and interfaces
+│   ├── queue.h                # BaseQueue, FifoMemoryQueue, LifoMemoryQueue, etc.
+│   ├── pqueue.h               # PriorityQueue class
+│   └── rrqueue.h              # RoundRobinQueue class
+├── src/                       # Main C++ library source code
+│   ├── queue.cpp              # Implements queue classes
+│   ├── pqueue.cpp             # Implements PriorityQueue
+│   ├── rrqueue.cpp            # Implements RoundRobinQueue
+│   └── lib_helpers.cpp        # Helpers/utilities if needed
+│   └── CMakeLists.txt         # Library CMake build file
+├── tests/
+│   ├── test_main.cpp          # Google Test entry point
+│   └── original/              # All original (private/internal) test cases in C++
+│       ├── test_queue.cpp
+│       ├── test_queue_memory.cpp
+│       ├── test_pqueue.cpp
+│       ├── test_public_api.cpp
+│       ├── test_rrqueue.cpp
+├── public_tests/              # All public (open set) test cases in C++
+│   ├── test_public_queue.cpp
+│   ├── test_public_queue_memory.cpp
+│   ├── test_public_pqueue.cpp
+│   ├── test_public_rrqueue.cpp
+│   └── test_public_public_api.cpp
+├── CMakeLists.txt             # Top-level CMake build + test config
+├── run_tests.sh               # Main test execution script
+├── project_structure.txt      # THIS FILE: directory tree + file purpose
+└── README.md                  # Project/build instructions (optional)
+
+Instructions:
+-------------
+1. Build and run all tests with:
+   $ ./run_tests.sh
+   (will build to ./build/ and run all tests from both tests/original/ and public_tests/ with Google Test)
+
+2. All code is separated for clarity:
+   - All C++ sources are in src/ and include/
+   - Internal tests (from original repo) are in tests/original/; public tests in public_tests/
+
+3. Add or adapt src/ headers for actual implementation. Current test coverage uses mock/stub logic and covers interface/behavior only.
+
+4. The provided tests are complete translations of the Python tests. All logic and edge cases are preserved.

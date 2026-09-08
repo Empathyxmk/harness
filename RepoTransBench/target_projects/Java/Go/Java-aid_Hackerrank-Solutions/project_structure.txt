@@ -1,0 +1,18 @@
+project_root/
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   └── original/
+│       ├── triplesum_test.go
+│       ├── counttriplets_test.go
+│       ├── climbingtheleaderboard_test.go
+│       ├── makinganagrams_test.go
+│       └── stringsmakinganagrams_test.go
+└── public_tests/
+    ├── triplesum_public_test.go
+    ├── counttriplets_public_test.go
+    ├── climbingtheleaderboard_public_test.go
+    ├── makinganagrams_public_test.go
+    └── stringsmakinganagrams_public_test.go

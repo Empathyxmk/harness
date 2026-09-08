@@ -1,0 +1,46 @@
+facebookarchive_sparts-go/
+├── README.md                  # Documentation and usage instructions
+├── go.mod                     # Go module definition
+├── run_tests.sh               # One-click test runner script
+├── sparts/                    # (Placeholder for app/library code)
+├── public_tests/              # Public tests (from public_tests/*.py → *_test.go)
+│   ├── test_public_collections_extra_test.go
+│   ├── test_public_collections_test.go
+│   ├── test_public_compat_extra_test.go
+│   ├── test_public_counters_test.go
+│   ├── test_public_ctx_test.go
+│   ├── test_public_daemon_test.go
+│   ├── test_public_imports_test.go
+│   ├── test_public_setup_py_test.go
+│   ├── test_public_vservice_test.go
+├── tests/original/            # Original tests (from tests/*.py → *_test.go)
+│   ├── test_collections_extra_test.go
+│   ├── test_collections_test.go
+│   ├── test_compat_extra_test.go
+│   ├── test_counters_test.go
+│   ├── test_ctx_test.go
+│   ├── test_daemon_test.go
+│   ├── test_fb303_test.go
+│   ├── test_fileutils_test.go
+│   ├── test_imports_test.go
+│   ├── test_setup_py_test.go
+│   ├── test_timer_extra_test.go
+│   ├── test_timer_test.go
+│   ├── test_vservice_test.go
+│   ├── test_vtask_test.go
+│   ├── thrift/
+│   │   └── test_compiler_test.go
+│   ├── tasks/
+│   │   ├── test_dbus_test.go
+│   │   ├── test_file_test.go
+│   │   ├── test_periodic_test.go
+│   │   ├── test_poller_test.go
+│   │   ├── test_queue_deferred_test.go
+│   │   ├── test_queue_futures_test.go
+│   │   ├── test_queue_test.go
+│   │   ├── test_select_test.go
+│   │   ├── test_settaskoption_test.go
+│   │   ├── test_thrift_test.go
+│   │   ├── test_tornado_test.go
+│   │   └── thrift/
+│   │       └── test_multiplexed_test.go

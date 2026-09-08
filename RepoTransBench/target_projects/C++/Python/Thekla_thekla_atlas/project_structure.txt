@@ -1,0 +1,35 @@
+Project Structure: Thekla_thekla_atlas (Python version)
+
+├── requirements.txt             # Python dependencies (pytest)
+├── run_tests.sh                 # Simple test runner: runs all tests via pytest
+├── src/
+│   └── thekla_atlas_dummy.py    # Dummy Atlas class for testing, mimicking C++ public API
+├── tests/
+│   ├── __init__.py              # (empty or minimal)
+│   └── original/
+│       ├── __init__.py          # (empty or minimal)
+│       ├── test_thekla_atlas_basic.py   # Translated from thekla_atlas_basic_test.cpp
+│       └── test_thekla_atlas.py         # Translated from thekla_atlas_test.cpp (integration sim)
+├── public_tests/
+│   ├── __init__.py              # (empty or minimal)
+│   ├── test_thekla_atlas_basic_public.py # Translated from thekla_atlas_basic_public_test.cpp
+│   └── test_thekla_atlas_public.py      # Translated from thekla_atlas_public_test.cpp
+└── project_structure.txt        # This file: describes structure and usage
+
+Directory/Files Purposes:
+
+- requirements.txt: Lists dependencies for the project (pytest for testing)
+- run_tests.sh: One-click test runner – runs 'pytest' over everything
+- src/: Implementation (here, a dummy class to support the public test API)
+- tests/original/: Contains translations of the project's "original" (private/internal) C++ tests
+- public_tests/: Contains translations of public test cases (broader/differs from internal)
+- Each 'test_*.py' file: Direct translation of a matching C++ test file.
+- __init__.py: Can be empty; marks package directories for Python import
+- project_structure.txt: Describes/explains overall structure and test-running instructions
+
+Setup & Running:
+
+1. Install dependencies:   pip install -r requirements.txt
+2. To run ALL tests:       ./run_tests.sh
+
+All test files are fully-implemented and ready for pytest discovery.

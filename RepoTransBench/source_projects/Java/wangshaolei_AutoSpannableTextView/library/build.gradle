@@ -1,0 +1,40 @@
+// -- Add JaCoCo and JUnit dependencies if not already present --
+apply plugin: 'com.android.library'
+apply plugin: 'jacoco'
+
+android {
+    // ... existing content
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation "org.mockito:mockito-core:3.12.4"
+    testImplementation "org.mockito:mockito-inline:3.12.4"
+    testImplementation "androidx.test:core:1.5.0"
+    testImplementation "org.robolectric:robolectric:4.7.3"
+    // ... other dependencies
+}
+
+jacoco {
+    toolVersion = "0.8.10"
+}
+
+task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest']) {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+    def fileFilter = ['**/R.class',
+                      '**/R$*.class',
+                      '**/BuildConfig.*',
+                      '**/Manifest*.*',
+                      '**/*Test*.*']
+    def debugTree = fileTree(dir: "${buildDir}/intermediates/javac/debug", excludes: fileFilter)
+    sourceDirectories.setFrom(files(['src/main/java']))
+    classDirectories.setFrom(files([debugTree]))
+    executionData.setFrom(fileTree(dir: buildDir, includes: [
+            'jacoco/testDebugUnitTest.exec',
+            'outputs/code_coverage/debugAndroidTest/connected/**/*.ec'
+    ]))
+}

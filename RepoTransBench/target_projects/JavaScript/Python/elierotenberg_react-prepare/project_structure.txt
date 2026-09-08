@@ -1,0 +1,16 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── project_structure.txt
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_react_lifecycle.py
+│       ├── test_isreactcompositecomponent.py
+│       ├── test_isthenable.py
+│       ├── test_prepared.py
+│       └── test_prepare.py
+├── public_tests/
+│   └── __init__.py

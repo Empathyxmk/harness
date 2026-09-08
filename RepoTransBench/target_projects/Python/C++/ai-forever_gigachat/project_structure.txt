@@ -1,0 +1,37 @@
+ai-forever_gigachat-cpp/
+├── CMakeLists.txt
+├── include/
+│   └── gigachat/           # (library headers, e.g., Settings, Model, etc. - minimal created for test stubs)
+│       ├── Settings.h
+│       ├── Model.h
+│       └── ...
+├── src/
+│   └── gigachat/
+│       ├── Settings.cpp
+│       ├── Model.cpp
+│       └── ...
+├── tests/
+│   ├── original/
+│   │   ├── test_settings.cpp
+│   │   ├── test_assistants.cpp
+│   │   ├── test_examples.cpp
+│   │   ├── test_client.cpp
+│   │   ├── test_threads.cpp
+│   │   ├── test_get_image.cpp
+│   │   ├── test_stream_chat.cpp
+│   │   ├── test_post_auth.cpp
+│   │   ├── test_post_chat.cpp
+│   │   ├── test_get_models.cpp
+│   │   ├── test_post_token.cpp
+│   │   ├── test_get_model.cpp
+│   │   └── conftest.cpp
+│   └── test_main.cpp
+├── public_tests/
+│   ├── test_public_examples.cpp
+│   ├── test_public_client.cpp
+│   ├── test_public_assistants.cpp
+│   ├── test_public_settings.cpp
+│   ├── test_public_models.cpp
+├── run_tests.sh
+├── README.md
+├── test_translation_progress.json

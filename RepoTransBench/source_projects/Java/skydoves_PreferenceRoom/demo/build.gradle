@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+apply from: '../dependencies.gradle'
+
+android {
+    compileSdkVersion versions.compileSdk
+    defaultConfig {
+        applicationId "com.skydoves.preferenceroomdemo"
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.compileSdk
+        versionCode versions.versionCode
+        versionName versions.versionName
+        testInstrumentationRunner  "com.skydoves.preferenceroomdemo.JunitTestRunner"
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    implementation "com.google.android.material:material:$versions.googleMaterial"
+    implementation "com.google.code.gson:gson:$versions.gson"
+    implementation "com.facebook.stetho:stetho:$versions.stetho"
+
+    implementation project(":preferenceroom")
+    annotationProcessor project(":preferenceroom-compiler")
+    androidTestAnnotationProcessor project(":preferenceroom-compiler")
+
+    testImplementation "junit:junit:$versions.junit"
+    androidTestImplementation "androidx.test:runner:$versions.runner"
+    androidTestImplementation "androidx.test.ext:junit:$versions.junitExt"
+}
+
+apply from: '../spotless.gradle'

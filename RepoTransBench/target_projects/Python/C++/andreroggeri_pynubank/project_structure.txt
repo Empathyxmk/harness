@@ -1,0 +1,79 @@
+andreroggeri_pynubank/
+├── CMakeLists.txt
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── examples/
+│   ├── README.md
+│   ├── analysis.md
+│   ├── extract-all-paginated-feed-pages.md
+│   ├── img/
+│   │   ├── balance-evolution.PNG
+│   │   ├── category-chart.PNG
+│   │   ├── diagram.PNG
+│   │   ├── qrcode-web.png
+│   │   └── yield-evolution.png
+│   ├── login-certificate.md
+│   ├── login-qrcode.md
+│   ├── login-refresh-token.md
+│   └── pix.md
+├── htmlcov/
+│   └── ...
+├── include/
+│   └── pynubank/
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_auth_mode_and_exception.py
+│   ├── test_public_auth_mode_and_exception_test.cpp
+│   ├── test_public_certificate_generator.py
+│   ├── test_public_certificate_generator_test.cpp
+│   ├── test_public_cli.py
+│   ├── test_public_cli_test.cpp
+│   ├── test_public_discovery.py
+│   ├── test_public_discovery_test.cpp
+│   ├── test_public_http_client.py
+│   ├── test_public_http_client_test.cpp
+│   ├── test_public_init_is_alive.py
+│   ├── test_public_init_is_alive_test.cpp
+│   ├── test_public_mock_http_client.py
+│   ├── test_public_mock_http_client_test.cpp
+│   ├── test_public_nubank_client.py
+│   ├── test_public_nubank_client_test.cpp
+│   ├── test_public_parsing.py
+│   ├── test_public_parsing_test.cpp
+│   ├── test_public_setup_py_functional.py
+│   └── test_public_setup_py_functional_test.cpp
+├── pynubank/
+│   ├── __init__.py
+│   └── ...
+├── requirements-test.txt
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.cfg
+├── setup.py
+├── src/
+│   └── pynubank/
+├── test_summary.json
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── fixtures/
+│   │   ├── __init__.py
+│   │   ├── cert.cer
+│   │   ├── gen_certificate.py
+│   │   └── proxy.py
+│   ├── original/
+│   │   ├── test_auth_mode_and_exception_test.cpp
+│   │   ├── test_certificate_generator_test.cpp
+│   │   ├── test_cli_test.cpp
+│   │   ├── test_discovery_test.cpp
+│   │   ├── test_http_client_test.cpp
+│   │   ├── test_init_is_alive_test.cpp
+│   │   ├── test_mock_http_client_test.cpp
+│   │   ├── test_nubank_client_test.cpp
+│   │   ├── test_parsing_test.cpp
+│   │   └── test_setup_py_functional_test.cpp
+│   └── test_main.cpp
+└── tox.ini

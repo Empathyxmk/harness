@@ -1,0 +1,22 @@
+{
+  "project_name": "seemoo-lab_openwifipass",
+  "language": "Python",
+  "coverage": {
+    "line": 56.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T12:30:39.884067",
+  "original_path": "/workspace/runnable_filter/Python/seemoo-lab_openwifipass",
+  "test_result_path": "/workspace/test_enhancement_results/Python/seemoo-lab_openwifipass",
+  "tests_path": [
+    "tests/test_opack_extra.py",
+    "tests/test_tlv8.py",
+    "tests/test_connection.py",
+    "tests/test_keys.py",
+    "tests/test_grantorhandler.py",
+    "tests/test_scanner.py",
+    "tests/test_tlv8_extra.py",
+    "tests/test_opack.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

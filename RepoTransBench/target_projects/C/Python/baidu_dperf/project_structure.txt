@@ -1,0 +1,43 @@
+baidu_dperf-python/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── public_tests/
+│   ├── test_client_public.py
+│   ├── test_csum_public.py
+│   └── test_trace_public.py
+└── tests/
+    ├── original/
+    │   ├── test_client.py
+    │   ├── test_csum.py
+    │   ├── test_ctl.py
+    │   ├── test_mbuf.py
+    │   ├── test_trace.py
+    │   └── test_summary.py
+    └── __init__.py
+
+# Directory explanations:
+
+# public_tests/ : Contains all tests derived from public tests in the original C project.
+#                 These mimic public/compatibility test logic for user/public reference.
+# tests/original/: All tests translated from "unit/original" tests in the C repo:
+#                   - All core unit and functionality tests for internal/coverage verification.
+# requirements.txt: Lists project dependencies (pytest).
+# run_tests.sh: One-click test execution script for all tests (original and public).
+# project_structure.txt: This documentation file describing source tree and setup.
+
+# Setup and Testing Instructions:
+
+# 1. [Optional] (recommended for a clean env) Create a Python virtual environment:
+#      python3 -m venv venv
+#      source venv/bin/activate
+# 2. Install dependencies:
+#      pip install -r requirements.txt
+# 3. Run all tests (original and public):
+#      ./run_tests.sh
+
+# You can run individual suite(s) using pytest command-lines, e.g.:
+#      pytest tests/original/
+#      pytest public_tests/
+
+# All test files/modules are self-contained and do not require any C source dependencies.

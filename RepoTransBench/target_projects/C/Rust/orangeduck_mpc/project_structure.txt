@@ -1,0 +1,19 @@
+orangeduck_mpc/
+├── Cargo.toml              # Rust project configuration
+├── src/
+│   └── lib.rs              # Main library code (empty placeholder)
+├── tests/                  # Original test files
+│   ├── ptest.rs            # Test framework (equivalent to ptest.h/c)
+│   ├── main.rs             # Main test file (equivalent to test.c)
+│   ├── core_tests.rs       # Core tests
+│   ├── regex_tests.rs      # Regex tests
+│   ├── grammar_tests.rs    # Grammar tests
+│   └── combinators_tests.rs# Combinators tests
+├── public_tests/           # Public test files
+│   ├── test_public.rs      # Main public test file
+│   ├── core_public.rs      # Core public tests
+│   ├── regex_public.rs     # Regex public tests
+│   ├── grammar_public.rs   # Grammar public tests
+│   └── combinators_public.rs# Combinators public tests
+├── run_tests.sh            # Script to run all tests
+└── run_public_tests.sh     # Script to run only public tests

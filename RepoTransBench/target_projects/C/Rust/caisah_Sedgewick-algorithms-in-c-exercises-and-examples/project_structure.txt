@@ -1,0 +1,20 @@
+sedgewick_algorithms_exercises/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── array_sorts.rs
+│   └── linked_list_selection_sort.rs
+├── tests/
+│   └── original/
+│       ├── test_bubble_sort.rs
+│       ├── test_insertion_sort.rs
+│       ├── test_linked_list_selection_sort.rs
+│       └── test_shell_sort.rs
+├── public_tests/
+│   ├── test_bubble_sort_public.rs
+│   ├── test_insertion_sort_public.rs
+│   ├── test_linked_list_selection_sort_public.rs
+│   ├── test_linked_list_selection_sort_public_comprehensive.rs
+│   └── test_shell_sort_public.rs
+├── run_tests.sh
+└── project_structure.txt

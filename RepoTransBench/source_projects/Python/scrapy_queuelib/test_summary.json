@@ -1,0 +1,11 @@
+{
+  "project_name": "scrapy_queuelib",
+  "language": "Python",
+  "coverage": {
+    "line": 85.4,
+    "branch": 70.0
+  },
+  "timestamp": "2025-06-19T12:29:15.462339",
+  "original_path": "/workspace/runnable_filter/Python/scrapy_queuelib",
+  "test_result_path": "/workspace/test_enhancement_results/Python/scrapy_queuelib"
+}

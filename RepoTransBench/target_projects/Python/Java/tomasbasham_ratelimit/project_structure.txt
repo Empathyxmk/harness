@@ -1,0 +1,47 @@
+tomasbasham_ratelimit_java/
+├── pom.xml                                  # Maven build configuration (JUnit 5)
+├── run_tests.sh                             # Script to run all tests
+├── README.md                                # Project overview and usage
+├── project_structure.txt                    # This file (structure/map)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── tomasbasham/
+│   │               └── ratelimit/
+│   │                   ├── RateLimitDecorator.java     # (library placeholder)
+│   │                   ├── RateLimitException.java     # (library placeholder)
+│   │                   ├── Utils.java                  # (library placeholder)
+│   │                   └── ... (your implementation)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── tomasbasham/
+│                   └── ratelimit/
+│                       ├── original/
+│                       │   ├── DecoratorTest.java
+│                       │   ├── DecoratorDecoratorTests.java
+│                       │   ├── DecoratorClassCoreTest.java
+│                       │   ├── ExceptionTest.java
+│                       │   ├── ExceptionAdditionalTest.java
+│                       │   ├── InitModuleTest.java
+│                       │   ├── UtilsTest.java
+│                       │   ├── UtilsAdditionalTest.java
+│                       │   └── DecoratorsEdgeCasesTest.java
+│                       └── public_
+│                           ├── PublicInitModuleTest.java
+│                           ├── PublicDecoratorTest.java
+│                           ├── PublicDecoratorClassCoreTest.java
+│                           ├── PublicUtilsTest.java
+│                           ├── PublicUtilsAdditionalTest.java
+│                           ├── PublicDecoratorsEdgeCasesTest.java
+│                           ├── PublicExceptionTest.java
+│                           └── PublicExceptionAdditionalTest.java
+
+# Explanation:
+# - src/main/java/com/tomasbasham/ratelimit/: library code should go here (implementations -- not provided).
+# - src/test/java/com/tomasbasham/ratelimit/original/: all original Python tests, ported to Java.
+# - src/test/java/com/tomasbasham/ratelimit/public_/: all public Python tests, ported to Java.
+# - 'pom.xml': Maven build file specifies JUnit 5 and default test configuration.
+# - 'run_tests.sh': Simple Maven test runner, just needs to be made executable.
+# - 'README.md': Quickstart, info, and mapping notes.

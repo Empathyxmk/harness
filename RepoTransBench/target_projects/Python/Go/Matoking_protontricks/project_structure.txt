@@ -1,0 +1,48 @@
+Matoking_protontricks-go/
+├── go.mod                        # Go module definition
+├── go.sum                        # Go dependency checksums (auto generated after 'go mod tidy')
+├── README.md                     # Project-level documentation and instructions
+├── main.go                       # (Optional) Main entrypoint if needed
+├── module.go                     # (Optional) Main module/lib if split
+├── run_tests.sh                  # Simple script to run all tests (original and public)
+├── tests/
+│   ├── original/
+│   │   ├── test_config_functional_test.go
+│   │   ├── test_config_test.go
+│   │   ├── test_flatpak_test.go
+│   │   ├── test_gui_coverage_test.go
+│   │   ├── test_gui_test.go
+│   │   ├── test_main_test.go
+│   │   ├── test_util_test.go
+│   │   ├── test_steam_test.go
+│   │   ├── test_winetricks_func_test.go
+│   │   ├── test_winetricks_test.go
+│   │   ├── test_version_test.go
+│   │   └── ... (all other translated original test files)
+│   └── testutil.go               # Shared test utilities for Go (for fixtures, helpers)
+├── public_tests/
+│   ├── test_public__init__test.go       # For pytest __init__ equivalent (can be a dummy)
+│   ├── test_public__version_test.go
+│   ├── test_public_config_test.go
+│   ├── test_public_flatpak_test.go
+│   ├── test_public_util_test.go
+│   └── ...                        # All other public translated files
+└── README.md
+
+Key directory explanations:
+- tests/original/         : All original Matoking_protontricks tests, fully converted to Go, preserving all logic, assertions, edge cases, and coverage.
+- tests/testutil.go       : Test helper functions, types, and fixture setup mimicking Python's pytest fixtures, etc., reusable across all tests.
+- public_tests/           : Public test suite, translated to Go with same coverage and logic (all public_tests from original repo).
+- go.mod, go.sum          : Go's official module and dependency files (use 'go mod tidy' to populate if needed).
+- run_tests.sh            : One-click script. Runs 'go test -v ./tests/...' and 'go test -v ./public_tests/...'
+
+To run all tests:
+$ chmod +x run_tests.sh
+$ ./run_tests.sh
+
+
+Other notes:
+- Go test files should be named with *_test.go suffix.
+- All `func TestXxx...` functions will be detected by 'go test'.
+- Use `t.Errorf`, `t.Fatalf`, etc., for assertions and logging.
+- Fixtures and mock helpers are implemented in tests/testutil.go (which you should import in every test that references a test fixture or helper as in pytest's conftest.py).

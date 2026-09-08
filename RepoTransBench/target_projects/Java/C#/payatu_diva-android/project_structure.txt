@@ -1,0 +1,35 @@
+payatu_diva-android-csharp/
+├── src/
+│   └── PayatuDivaAndroid/
+│       ├── PayatuDivaAndroid.csproj           # Main project file for the app/library code (empty - only for test project reference)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj               # C# xUnit test project for original tests
+│       ├── ApplicationTests.cs                # C# translation of ApplicationTest.java
+│       ├── APICredsActivityTests.cs           # C# translation of APICredsActivityTest.java
+│       ├── InsecureDataStorage2ActivityTests.cs
+│       ├── ExampleUnitTests.cs
+│       ├── InputValidation2URISchemeActivityTests.cs
+│       ├── InsecureDataStorage1ActivityTests.cs
+│       └── AccessControl1ActivityTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj                     # C# xUnit test project for public tests (standalone)
+│   ├── ExampleUnitPublicTests.cs
+│   ├── InsecureDataStorage1ActivityPublicTests.cs
+│   ├── AccessControl1ActivityPublicTests.cs
+│   ├── APICredsActivityPublicTests.cs
+│   ├── InsecureDataStorage2ActivityPublicTests.cs
+│   └── InputValidation2URISchemeActivityPublicTests.cs
+├── PayatuDivaAndroid.sln                      # Solution file referencing all projects
+├── run_tests.sh                               # Simple script for running all tests
+├── README.md                                  # Project, setup and testing instructions
+└── project_structure.txt                      # This file - explains the directory structure
+
+Explanations:
+- src/PayatuDivaAndroid: Placeholder for main app code; real logic is not present due to test-only migration.
+- tests/original/: Contains full translated C# xUnit test cases for the original Java tests.
+- public_tests/: Contains the public-translated C# xUnit test cases.
+- *.csproj: .NET project files for each test group.
+- PayatuDivaAndroid.sln: The solution (meta) file for managing builds and references.
+- run_tests.sh: One-click test runner.
+- README.md: Instructions on building and running tests.

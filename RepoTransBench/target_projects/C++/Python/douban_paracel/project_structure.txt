@@ -1,0 +1,33 @@
+douban_paracel/
+├── AUTHORS
+├── CMakeLists.txt
+├── ChangeLog
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_balltree.py
+│   │   ├── test_update_alg_topic_model.py
+│   │   ├── test_proxy.py
+│   │   ├── test_decomp.py
+│   │   ├── test_update_alg_clustering_kmeans.py
+│   │   ├── test_kmeans.py
+│   │   ├── test_lr.py
+│   │   ├── test_update.py
+│   │   ├── test_kv.py
+│   │   ├── test_dummy.py
+│   │   ├── test_compile.py
+│   │   ├── test_utils.py
+│   │   ├── test_update_alg_regression_ridge_dummy.py
+│   │   └── test_server.py
+│   └── conftest.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_update_alg_topic_model_public.py
+│   └── test_update_alg_topic_model_glda_driver_dummy_public.py

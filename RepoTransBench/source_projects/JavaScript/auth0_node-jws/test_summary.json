@@ -1,0 +1,16 @@
+{
+  "project_name": "auth0_node-jws",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 98.2,
+    "branch": 95.2
+  },
+  "timestamp": "2025-06-19T09:57:02.564193",
+  "original_path": "/workspace/runnable_filter/JavaScript/auth0_node-jws",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/auth0_node-jws",
+  "tests_path": [
+    "test/jws.test.js",
+    "test/unit-extra.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

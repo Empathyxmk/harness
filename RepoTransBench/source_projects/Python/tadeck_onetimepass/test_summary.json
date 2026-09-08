@@ -1,0 +1,11 @@
+{
+  "project_name": "tadeck_onetimepass",
+  "language": "Python",
+  "coverage": {
+    "line": 97.0,
+    "branch": 95.5
+  },
+  "timestamp": "2025-06-23T10:37:54.659610",
+  "original_path": "/workspace/test_enhancement_results/Python/tadeck_onetimepass",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/tadeck_onetimepass"
+}

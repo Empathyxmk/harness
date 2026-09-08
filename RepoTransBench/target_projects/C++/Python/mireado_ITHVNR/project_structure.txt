@@ -1,0 +1,30 @@
+Project Structure Overview:
+
+mireado_ITHVNR_python/
+├── src/
+│   └── profile.py                    # Python port of main Profile logic (PORTED/RE-IMPLEMENTED)
+├── tests/
+│   └── original/
+│       ├── test_misc.py              # Original (non-public) test translation 1
+│       └── test_misc_extra.py        # Original (non-public) test translation 2
+├── public_tests/
+│   ├── test_misc_public.py           # Public test (translated from test_misc_public.cpp)
+│   └── test_misc_extra_public.py     # Public extra test
+├── requirements.txt                  # Python dependencies (pytest)
+├── run_tests.sh                      # One-click script to run all tests (pytest)
+└── project_structure.txt             # This file: overview and directory explanations
+
+Directory Explanations:
+- src/: Contains the core logic/classes ported from the C++ Profile handling (what was exercised by test files).
+- tests/original/: Translations of the "original" (developer/internal) C++ tests.
+- public_tests/: Translations of the "public" tests (meant for public users or grading, covers same logic with different data).
+- requirements.txt: Testing dependencies for the project (pytest).
+- run_tests.sh: Simple, one-click bash script to run all tests using pytest (must be executable: chmod +x).
+- project_structure.txt: This file. Describes structure for maintainers/users.
+
+Setup & Testing Instructions:
+1. Install dependencies:    pip install -r requirements.txt
+2. To run all tests:        ./run_tests.sh
+   (This runs both original and public tests under pytest.)
+3. To run specific suite:   pytest tests/original/
+                            pytest public_tests/

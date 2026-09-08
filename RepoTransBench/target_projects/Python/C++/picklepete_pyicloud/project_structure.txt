@@ -1,0 +1,39 @@
+picklepete_pyicloud-cpp/
+├── CMakeLists.txt                # CMake: configures the build, adds source and GTest
+├── include/
+│   └── ...                       # (public headers for project; empty or stubs now)
+├── public_tests/
+│   ├── test_public_drive.cpp     # C++ public test translation of test_public_drive.py
+│   ├── test_public_init.cpp      # C++ public test translation of test_public_init.py
+│   └── test_public_utils.cpp     # C++ public test translation of test_public_utils.py
+├── run_tests.sh                  # One-click build + run all original and public tests
+├── src/
+│   └── ...                       # (implementation - empty/stubs for test scaffolding)
+├── tests/
+│   ├── test_account.cpp          # C++ translation of tests/test_account.py
+│   ├── test_cmdline.cpp          # C++ translation of tests/test_cmdline.py
+│   ├── test_drive.cpp            # C++ translation of tests/test_drive.py
+│   ├── test_exceptions.cpp       # C++ translation of tests/test_exceptions.py
+│   ├── test_findmyiphone.cpp     # C++ translation of tests/test_findmyiphone.py
+│   ├── test_init.cpp             # C++ translation of tests/test_init.py
+│   ├── test_setup_file.cpp       # C++ translation of tests/test_setup_file.py
+│   └── test_utils.cpp            # C++ translation of tests/test_utils.py
+└── README.md
+
+DIRECTORY/FILE EXPLANATIONS
+---------------------------
+CMakeLists.txt            = Project config for CMake. Handles build, GTest fetch, adds all test executables.
+run_tests.sh              = Build and run all tests (original & public) in one click.
+src/                      = C++ source code(s), stubs or actual implementation.
+include/                  = C++ public headers (if present).
+tests/                    = Original test cases (translated from Python).
+public_tests/             = Public test suite for "public" test scenarios.
+README.md                 = Standard project readme.
+
+SETUP & TEST INSTRUCTIONS
+-------------------------
+1. Install CMake and a modern C++ compiler.
+2. Mark 'run_tests.sh' as executable if needed: chmod +x run_tests.sh
+3. Run all tests: ./run_tests.sh
+   - This will build in ./build/, compile, and run both test executables.
+4. Add your source/module code in src/ and headers to include/ as needed.

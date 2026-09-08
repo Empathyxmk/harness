@@ -1,0 +1,37 @@
+dwyl_learn-redis/
+├── README.md                # Project documentation, setup, and usage instructions
+├── requirements.txt         # Python dependencies (pytest, redis)
+├── run_tests.sh             # Simple executable script to run all tests
+├── project_structure.txt    # This file: overview and explanation of project structure
+├── examples/
+│   └── basic.js             # Example JavaScript file (referenced by tests)
+├── tests/
+│   ├── __init__.py                  # Package marker
+│   └── original/
+│       ├── __init__.py              # Package marker
+│       ├── test_basic_example.py    # Translated from test/basic.example.test.js
+│       ├── test_basic_spec.py       # Translated from test/basic.spec.js
+│       ├── test_examples_basic.py   # Translated from test/examples.basic.test.js
+│       └── test_test.py             # Translated from test/test.js
+├── public_tests/
+│   ├── __init__.py                              # Package marker
+│   ├── test_basic_example_public.py             # From basic.example.public.test.js
+│   ├── test_basic_public_spec.py                # From basic.public.spec.js
+│   ├── test_examples_basic_public.py            # From examples.basic.public.test.js
+│   └── test_public.py                           # From test.public.js
+└── ... (other files as in original project, e.g., configs)
+
+Directory/Files Explanation:
+- README.md: General documentation, setup, how to run tests, requirements.
+- requirements.txt: Python package dependencies for both redis and tests (pytest).
+- run_tests.sh: Minimal shell script to execute all tests (simply calls pytest).
+- examples/basic.js: Source example file (exists mainly to match test checks for its presence).
+- tests/original/: Contains all tests translated from JavaScript `test/` directory. Each file matches and implements the logic from the original JS test.
+- public_tests/: Contains public-facing test variants, matching the original "public_tests" logic and structure.
+- Each test is fully implemented, covering behavior, edge cases, and results as in the original project.
+
+Test Instructions:
+1. Ensure Redis server is running and accessible on default port (`localhost:6379`).
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run all tests: `./run_tests.sh`
+4. All tests (original and public) will execute, verifying both client logic and file existence as per source behavior.

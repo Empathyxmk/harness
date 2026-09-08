@@ -1,0 +1,37 @@
+navdeep-G_samplemod/
+├── CMakeLists.txt                        # Root CMake config
+├── include/
+│   ├── sample/
+│   │   ├── core.h                        # Core module public interface
+│   │   └── helpers.h                     # Helpers module public interface
+├── src/
+│   ├── core.cpp                          # Core code: add, get_hmm, hmm, safe_divide
+│   ├── core.h
+│   ├── helpers.cpp                       # Helpers: get_answer, invert_bool, shout
+│   ├── helpers.h
+│   └── CMakeLists.txt                    # Build for source libs
+├── tests/
+│   ├── test_basic.cpp                    # Translation of test_basic.py
+│   ├── test_advanced.cpp                 # Translation of test_advanced.py
+│   ├── test_core_helpers.cpp             # Translation of test_core_helpers.py
+│   └── CMakeLists.txt                    # Test build, produces test_runner
+├── public_tests/
+│   ├── test_public_basic.cpp             # Public version of add() tests
+│   ├── test_public_advanced.cpp          # Public version of safe_divide() tests
+│   ├── test_public_core_helpers.cpp      # Public helpers tests
+│   └── CMakeLists.txt                    # Public test build, produces public_test_runner
+├── run_tests.sh                          # One-click test/build/run script
+└── project_structure.txt                 # This doc
+
+Directory explanation:
+- include/sample/: Public headers for library functions used by all code/tests
+- src/: Implementation of core logic and helpers; CMakeLists creates libraries for linking
+- tests/: All translated original (private) tests, form test_runner
+- public_tests/: All translated public test cases, form public_test_runner
+- run_tests.sh: Build and runs both original and public tests in one step
+
+Build and test instructions:
+1. Make sure you have CMake and gtest (GoogleTest) installed.
+2. Run: `chmod +x run_tests.sh`
+3. Run: `./run_tests.sh`
+   - This will build everything and run both private and public tests.

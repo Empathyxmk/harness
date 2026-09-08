@@ -1,0 +1,60 @@
+{
+  "project_name": "Hitomis_CircleMenu",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:15:49.149914",
+  "original_path": "/workspace/verified_repos_v2/Java/Hitomis_CircleMenu",
+  "public_test_result_path": "/workspace/public_test_results/Java/Hitomis_CircleMenu",
+  "original_tests": {
+    "test_files": [
+      "app/src/androidTest/java/com/hitomi/circlemenu/ApplicationTest.java",
+      "app/src/test/java/com/hitomi/circlemenu/MainActivityTest.java",
+      "app/src/test/java/com/hitomi/circlemenu/ExampleUnitTest.java",
+      "cmlibrary/src/test/java/com/hitomi/cmlibrary/OnMenuStatusChangeListenerTest.java",
+      "cmlibrary/src/test/java/com/hitomi/cmlibrary/CircleMenuTest.java",
+      "cmlibrary/src/test/java/com/hitomi/cmlibrary/OnMenuSelectedListenerTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "app/src/test/java/com/hitomi/circlemenu/ExampleUnitPublicTest.java",
+      "app/src/test/java/com/hitomi/circlemenu/MainActivityPublicTest.java",
+      "app/src/androidTest/java/com/hitomi/circlemenu/ApplicationPublicTest.java",
+      "run_public_tests.sh",
+      "cmlibrary/src/test/java/com/hitomi/cmlibrary/CircleMenuPublicTest.java",
+      "cmlibrary/src/test/java/com/hitomi/cmlibrary/OnMenuStatusChangeListenerPublicTest.java",
+      "cmlibrary/src/test/java/com/hitomi/cmlibrary/OnMenuSelectedListenerPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "app/src/test/java/com/hitomi/circlemenu/ExampleUnitPublicTest.java",
+    "app/src/test/java/com/hitomi/circlemenu/MainActivityPublicTest.java",
+    "app/src/androidTest/java/com/hitomi/circlemenu/ApplicationPublicTest.java",
+    "run_public_tests.sh",
+    "cmlibrary/src/test/java/com/hitomi/cmlibrary/CircleMenuPublicTest.java",
+    "cmlibrary/src/test/java/com/hitomi/cmlibrary/OnMenuStatusChangeListenerPublicTest.java",
+    "cmlibrary/src/test/java/com/hitomi/cmlibrary/OnMenuSelectedListenerPublicTest.java",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "run_tests.sh"
+  ]
+}

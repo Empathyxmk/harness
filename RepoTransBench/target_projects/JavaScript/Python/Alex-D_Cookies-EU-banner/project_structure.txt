@@ -1,0 +1,30 @@
+project_root/
+├── src/
+│   ├── cookies_eu_banner.py         # Python implementation (minimal skeleton for test compatibility)
+│
+├── tests/
+│   ├── __init__.py                  # Init file for package discovery
+│   └── original/
+│       ├── __init__.py
+│       └── test_cookies_eu_banner.py   # Translated original tests from JS (src/cookies-eu-banner.test.js)
+│
+├── public_tests/
+│   ├── __init__.py
+│   └── test_cookies_eu_banner_public.py   # Translated public tests from JS (public_tests/cookies-eu-banner.public.test.js)
+│
+├── requirements.txt                 # Specifies Python dependencies (pytest included)
+├── run_tests.sh                     # Simple script to run all tests using pytest
+├── project_structure.txt            # This file: describes project layout, file purposes, and setup
+│
+# Structure details:
+#   src/                     - Python implementation, serving as shims and compatibility for tests
+#   tests/original/          - Direct translation of original author tests (maximum coverage)
+#   public_tests/            - Public-facing test cases (general/coverage/different data)
+#   requirements.txt         - List of dependencies; install with `pip install -r requirements.txt`
+#   run_tests.sh             - Run with `./run_tests.sh` to execute all tests via Pytest
+#
+# Setup and usage:
+#   1. Install dependencies: `pip install -r requirements.txt`
+#   2. Run all tests:        `./run_tests.sh`
+#
+# No additional configuration is needed. All test code is complete and checks all original edge-cases.

@@ -1,0 +1,67 @@
+{
+  "project_name": "Matoking_protontricks",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:49.646784",
+  "original_path": "/workspace/verified_repos_v2/Python/Matoking_protontricks",
+  "public_test_result_path": "/workspace/public_test_results/Python/Matoking_protontricks",
+  "original_tests": {
+    "test_files": [
+      "tests/test_gui.py",
+      "tests/test_util.py",
+      "tests/test__version.py",
+      "tests/test_gui_coverage.py",
+      "tests/test_winetricks_func.py",
+      "tests/test_config_functional.py",
+      "tests/test_flatpak.py",
+      "tests/test_steam.py",
+      "tests/test_winetricks.py",
+      "tests/test_config.py",
+      "tests/cli/test_desktop_install.py",
+      "tests/cli/test_main.py",
+      "tests/cli/test_launch.py",
+      "tests/cli/test_util.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 14,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public__version.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_config.py",
+      "public_tests/test_public_util.py",
+      "public_tests/test_public_flatpak.py",
+      "public_tests/test_public__init__.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_flatpak.py",
+      "public_tests/test_public_util.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public__version.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_config.py",
+    "public_tests/test_public_util.py",
+    "public_tests/test_public_flatpak.py",
+    "public_tests/test_public__init__.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_flatpak.py",
+    "public_tests/test_public_util.py",
+    "run_tests.sh"
+  ]
+}

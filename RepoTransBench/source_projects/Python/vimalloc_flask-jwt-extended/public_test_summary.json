@@ -1,0 +1,92 @@
+{
+  "project_name": "vimalloc_flask-jwt-extended",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:50:52.361967",
+  "original_path": "/workspace/verified_repos_v2/Python/vimalloc_flask-jwt-extended",
+  "public_test_result_path": "/workspace/public_test_results/Python/vimalloc_flask-jwt-extended",
+  "original_tests": {
+    "test_files": [
+      "tests/test_json.py",
+      "tests/test_user_lookup.py",
+      "tests/test_claims_verification.py",
+      "tests/test_headers.py",
+      "tests/test_additional_claims_loader.py",
+      "tests/test_jwt_header_loader.py",
+      "tests/test_get_methods_in_optional_endpoint.py",
+      "tests/test_add_context_processor.py",
+      "tests/test_get_jwt_in_non_protected_contexts.py",
+      "tests/test_decode_tokens.py",
+      "tests/test_blocklist.py",
+      "tests/test_options_method.py",
+      "tests/test_query_string.py",
+      "tests/test_multiple_token_locations.py",
+      "tests/test_examples_integrated.py",
+      "tests/test_asymmetric_crypto.py",
+      "tests/test_cookies.py",
+      "tests/test_view_decorators.py",
+      "tests/test_config.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 19,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_json.py",
+      "public_tests/test_public_user_lookup.py",
+      "public_tests/test_public_claims_verification.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_headers.py",
+      "public_tests/test_public_additional_claims_loader.py",
+      "public_tests/test_public_jwt_header_loader.py",
+      "public_tests/test_public_get_methods_in_optional_endpoint.py",
+      "public_tests/test_public_add_context_processor.py",
+      "public_tests/test_public_get_jwt_in_non_protected_contexts.py",
+      "public_tests/test_public_decode_tokens.py",
+      "public_tests/test_public_blocklist.py",
+      "public_tests/test_public_options_method.py",
+      "public_tests/test_public_query_string.py",
+      "public_tests/test_public_multiple_token_locations.py",
+      "public_tests/test_public_examples_integrated.py",
+      "public_tests/test_public_asymmetric_crypto.py",
+      "public_tests/test_public_cookies.py",
+      "public_tests/test_public_view_decorators.py",
+      "public_tests/test_public_config.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 20,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_json.py",
+    "public_tests/test_public_user_lookup.py",
+    "public_tests/test_public_claims_verification.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_headers.py",
+    "public_tests/test_public_additional_claims_loader.py",
+    "public_tests/test_public_jwt_header_loader.py",
+    "public_tests/test_public_get_methods_in_optional_endpoint.py",
+    "public_tests/test_public_add_context_processor.py",
+    "public_tests/test_public_get_jwt_in_non_protected_contexts.py",
+    "public_tests/test_public_decode_tokens.py",
+    "public_tests/test_public_blocklist.py",
+    "public_tests/test_public_options_method.py",
+    "public_tests/test_public_query_string.py",
+    "public_tests/test_public_multiple_token_locations.py",
+    "public_tests/test_public_examples_integrated.py",
+    "public_tests/test_public_asymmetric_crypto.py",
+    "public_tests/test_public_cookies.py",
+    "public_tests/test_public_view_decorators.py",
+    "public_tests/test_public_config.py"
+  ]
+}

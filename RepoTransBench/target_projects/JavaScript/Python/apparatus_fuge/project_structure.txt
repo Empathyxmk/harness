@@ -1,0 +1,43 @@
+project_root/
+├── src/
+│   └── apparatus_fuge/
+│       ├── __init__.py
+│       └── (put module implementations here: shell.py, fuge.py, commands.py, util.py, etc.)
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_basic.py
+│   │   ├── test_commands_coverage.py
+│   │   ├── test_commands_edge.py
+│   │   ├── test_commands_smoke.py
+│   │   ├── test_fuge.py
+│   │   ├── test_fuge_edge.py
+│   │   ├── test_shell.py
+│   │   ├── test_shell_edge.py
+│   │   ├── test_util.py
+│   │   └── test_util_extra.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_basic_public.py
+│   ├── test_commands_coverage_public.py
+│   ├── test_commands_edge_public.py
+│   ├── test_commands_smoke_public.py
+│   ├── test_fuge_public.py
+│   ├── test_fuge_edge_public.py
+│   ├── test_shell_public.py
+│   ├── test_shell_edge_public.py
+│   ├── test_util_public.py
+│   └── test_util_extra_public.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+- src/apparatus_fuge/: Place your actual implementation here, corresponding to JavaScript source files (shell, fuge, util, commands, etc.).
+- tests/original/: Contains the translations of all original (full coverage) test files.
+- public_tests/: Contains the translations of all public test files; these are minimal for safe, broad usage.
+- requirements.txt: Python dependencies (pytest required).
+- run_tests.sh: One-click script to run all tests.
+- README.md: Project and usage documentation.
+- project_structure.txt: This document; describes layout and file purposes.

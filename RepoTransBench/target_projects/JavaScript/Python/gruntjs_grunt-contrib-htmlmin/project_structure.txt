@@ -1,0 +1,37 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest for testing)
+├── run_tests.sh                    # Simple one-click script: executes all tests with pytest
+├── src/
+│   ├── htmlmin_module.py           # Central (mocked) HTML minifier, interface for tests
+├── tests/
+│   ├── __init__.py
+│   └── original/                   # Original (private/internal) test cases
+│       ├── __init__.py
+│       ├── test_htmlmin.py         # Translated original JavaScript logic/unit tests for task
+│       └── test_dummy.py           # Simple dummy test from JS
+├── public_tests/
+│   ├── __init__.py
+│   └── test_htmlmin_public.py      # Translated public spec (mapped test logic)
+├── test/
+│   ├── fixtures/
+│   │   ├── public_input.html       # HTML input file used by public tests (from JS)
+│   │   └── test.html              # HTML input file used by original tests (from JS)
+│   └── expected/
+│       └── test.html              # Expected output reference (not used in tests, but included for parity)
+└── project_structure.txt           # This file: structure and explanation
+
+# Directory explanations:
+# - src/: central placeholder/python module for the (mock) htmlmin Grunt-like task for tests to call
+# - tests/original/: All translated "original" JS suite tests. Names/logic preserved.
+# - public_tests/: All translated public JS tests.
+# - test/fixtures/: Input HTML used in tests (used directly by tests/original and public-tests).
+# - test/expected/: Expected/minified output (for parity, not directly verified in tests).
+# - requirements.txt: Project dependencies (only pytest required).
+# - run_tests.sh: One-click test runner (runs all tests with pytest).
+# - project_structure.txt: Overview, directory and file purposes.
+# 
+# Testing/Setup instructions:
+# 1. Ensure Python 3.7+ is installed.
+# 2. Run:     pip install -r requirements.txt
+# 3. Run all tests:    ./run_tests.sh
+# 4. Both public and internal/original test suites are executed.

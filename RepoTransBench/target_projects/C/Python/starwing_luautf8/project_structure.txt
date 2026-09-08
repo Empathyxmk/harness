@@ -1,0 +1,33 @@
+Project Structure:
+
+.
+├── requirements.txt                 # Python package dependencies
+├── run_tests.sh                     # Simple test execution script
+├── project_structure.txt            # This file: explains project structure
+├── README.md                        # (to add) Project usage and info
+├── src
+│   └── luautf8.py                   # Python port/mock of Lua UTF-8 library
+├── tests
+│   └── original
+│       ├── test_compat.py           # Python translation of test_compat.lua
+│       ├── test_lutf8lib.py         # Python translation of test_lutf8lib.c
+│       ├── test_pm.py               # Python translation of test_pm.lua
+│       └── test.lua.translate.txt   # Documentation; see note
+├── public_tests
+│   ├── test_compat_public.py        # Public port of test_compat_public.lua
+│   ├── test_pm_public.py            # Public port of test_pm_public.lua
+│   └── test_public.py               # Public port of test_public.lua
+
+Folders and Purpose:
+- src/: (Python) implementation source; luautf8.py provides a mockup.
+- tests/original/: Original author's full behavioral/coverage tests (all translated into pytest style).
+- public_tests/: Minimal and public (generated) tests, for interface and limited correctness checks.
+- run_tests.sh: Execute ALL tests in both original and public test folders.
+- requirements.txt: Only pytest required.
+- README.md: (to add) Usage instructions.
+
+Running Tests:
+- Ensure Python 3.x is installed.
+- (Optional) Create and activate a venv.
+- Install dependencies: `pip install -r requirements.txt`
+- Run all tests: `./run_tests.sh`

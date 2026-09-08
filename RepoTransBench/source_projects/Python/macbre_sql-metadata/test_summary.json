@@ -1,0 +1,11 @@
+{
+  "project_name": "macbre_sql-metadata",
+  "language": "Python",
+  "coverage": {
+    "line": 99.0,
+    "branch": 99.7
+  },
+  "timestamp": "2025-06-23T10:30:27.011171",
+  "original_path": "/workspace/test_enhancement_results/Python/macbre_sql-metadata",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/macbre_sql-metadata"
+}

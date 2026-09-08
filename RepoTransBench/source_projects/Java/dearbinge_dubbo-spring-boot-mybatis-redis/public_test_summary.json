@@ -1,0 +1,64 @@
+{
+  "project_name": "dearbinge_dubbo-spring-boot-mybatis-redis",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:41:20.734395",
+  "original_path": "/workspace/verified_repos_v2/Java/dearbinge_dubbo-spring-boot-mybatis-redis",
+  "public_test_result_path": "/workspace/public_test_results/Java/dearbinge_dubbo-spring-boot-mybatis-redis",
+  "original_tests": {
+    "test_files": [
+      "dearbinge-openapi/src/test/java/com/dearbinge/openapi/HttpSessionConfigTest.java",
+      "dearbinge-openapi/src/test/java/com/dearbinge/openapi/ParkingSpotDataTransTest.java",
+      "dearbinge-openapi/src/test/java/com/dearbinge/service/impl/ParkingBasicDataSyncTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "dearbinge-openapi/src/test/java/com/dearbinge/openapi/HttpSessionConfigPublicTest.java",
+      "dearbinge-openapi/src/test/java/com/dearbinge/openapi/ParkingSpotDataTransPublicTest.java",
+      "dearbinge-openapi/src/test/java/com/dearbinge/service/impl/ParkingBasicDataSyncPublicTest.java",
+      "run_public_tests.sh",
+      "dearbinge-openapi/src/test/java/com/dearbinge/openapi/HttpSessionConfigPublicTest.java",
+      "dearbinge-openapi/src/test/java/com/dearbinge/openapi/ParkingSpotDataTransPublicTest.java",
+      "dearbinge-openapi/src/test/java/com/dearbinge/service/impl/ParkingBasicDataSyncPublicTest.java",
+      "dearbinge-openapi/run_public_tests.sh",
+      "dearbinge-openapi/src/test/java/com/dearbinge/openapi/HttpSessionConfigPublicTest.java",
+      "dearbinge-openapi/src/test/java/com/dearbinge/openapi/ParkingSpotDataTransPublicTest.java",
+      "dearbinge-openapi/src/test/java/com/dearbinge/service/impl/ParkingBasicDataSyncPublicTest.java",
+      "dearbinge-openapi/run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "dearbinge-openapi/run_public_tests.sh",
+      "dearbinge-openapi/run_public_tests.sh"
+    ],
+    "total_public_test_files": 12,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "dearbinge-openapi/src/test/java/com/dearbinge/openapi/HttpSessionConfigPublicTest.java",
+    "dearbinge-openapi/src/test/java/com/dearbinge/openapi/ParkingSpotDataTransPublicTest.java",
+    "dearbinge-openapi/src/test/java/com/dearbinge/service/impl/ParkingBasicDataSyncPublicTest.java",
+    "run_public_tests.sh",
+    "dearbinge-openapi/pom.xml",
+    "dearbinge-openapi/pom.xml",
+    "dearbinge-openapi/src/test/java/com/dearbinge/openapi/HttpSessionConfigPublicTest.java",
+    "dearbinge-openapi/src/test/java/com/dearbinge/openapi/ParkingSpotDataTransPublicTest.java",
+    "dearbinge-openapi/src/test/java/com/dearbinge/service/impl/ParkingBasicDataSyncPublicTest.java",
+    "dearbinge-openapi/run_public_tests.sh",
+    "dearbinge-openapi/src/test/java/com/dearbinge/openapi/HttpSessionConfigPublicTest.java",
+    "dearbinge-openapi/src/test/java/com/dearbinge/openapi/ParkingSpotDataTransPublicTest.java",
+    "dearbinge-openapi/src/test/java/com/dearbinge/service/impl/ParkingBasicDataSyncPublicTest.java",
+    "dearbinge-openapi/run_public_tests.sh"
+  ]
+}

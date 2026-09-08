@@ -1,0 +1,55 @@
+{
+  "project_name": "TypeError_secure",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:49:44.041692",
+  "original_path": "/workspace/verified_repos_v2/Python/TypeError_secure",
+  "public_test_result_path": "/workspace/public_test_results/Python/TypeError_secure",
+  "original_tests": {
+    "test_files": [
+      "tests/secure/test_secure_api_minimal.py",
+      "tests/secure/test_secure.py",
+      "tests/secure/test_secure_protocols.py",
+      "tests/headers/test_x_frame_options.py",
+      "tests/headers/test_permissions_policy.py",
+      "tests/headers/test_server.py",
+      "tests/headers/test_strict_transport_security.py",
+      "tests/headers/test_cache_control.py",
+      "tests/headers/test_cross_origin_opener_policy.py",
+      "tests/headers/test_cross_origin_embedder_policy.py",
+      "tests/headers/test_referrer_policy.py",
+      "tests/headers/test_custom_header.py",
+      "tests/headers/test_content_security_policy.py",
+      "tests/headers/test_x_content_type_options.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 14,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/secure/test_secure_api_minimal_public.py",
+      "public_tests/secure/test_secure_protocols_public.py",
+      "public_tests/secure/test_secure_public.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 4,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/secure/test_secure_api_minimal_public.py",
+    "public_tests/secure/test_secure_protocols_public.py",
+    "public_tests/secure/test_secure_public.py",
+    "run_public_tests.sh"
+  ]
+}

@@ -1,0 +1,77 @@
+Project Structure for NeonOrbit_Dexplore (Python translation)
+==============================================================
+
+project_root/
+│
+├── src/
+│   └── neonorbit/
+│       └── dexplore/
+│           ├── (Python source code modules; not included in this test translation)
+│           └── __init__.py
+│
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_ref_pool_buffer.py                # RefPoolBufferTest.java
+│       ├── test_dex_decoder.py                    # DexDecoderTest.java
+│       ├── test_dex_container.py                  # DexContainerTest.java
+│       ├── test_dex_options.py                    # DexOptionsTest.java
+│       ├── test_reference_pool.py                 # ReferencePoolTest.java
+│       ├── test_dexplore.py                       # DexploreTest.java
+│       ├── test_dex_based.py                      # DexBasedTest.java
+│       ├── test_dex_opcodes.py                    # DexOpcodesTest.java
+│       ├── result/
+│       │   ├── __init__.py
+│       │   ├── test_method_data.py                # MethodDataTest.java
+│       │   ├── test_field_data.py                 # FieldDataTest.java
+│       │   └── test_class_data.py                 # ClassDataTest.java
+│       ├── util/
+│       │   ├── __init__.py
+│       │   └── test_dex_utils.py                  # DexUtilsTest.java
+│       ├── filter/
+│       │   ├── __init__.py
+│       │   ├── test_class_filter.py               # ClassFilterTest.java
+│       │   ├── test_dex_filter.py                 # DexFilterTest.java
+│       │   └── test_method_filter.py              # MethodFilterTest.java
+│       ├── cli/
+│       │   ├── __init__.py
+│       │   ├── test_dex_file_decoder.py           # DexFileDecoderTest.kt
+│       │   ├── test_command_line.py               # CommandLineTest.kt
+│       │   ├── test_dex_search_engine.py          # DexSearchEngineTest.kt
+│       │   ├── decompiler/
+│       │   │   ├── __init__.py
+│       │   │   └── test_dex_decompiler.py         # DexDecompilerTest.kt
+│       │   └── command/
+│       │       ├── __init__.py
+│       │       ├── test_search_command.py         # SearchCommandTest.kt
+│       │       ├── test_mapver_command.py         # MapverCommandTest.kt
+│       │       ├── test_decode_command.py         # DecodeCommandTest.kt
+│       │       ├── test_base_jcommander.py        # BaseJCommanderTest.kt
+│       │       └── test_tbatch_command.py         # TBatchCommandTest.kt
+│
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_ref_pool_buffer_public.py             # RefPoolBufferPublicTest.java
+│   ├── test_dex_container_public.py               # DexContainerPublicTest.java
+│   └── test_dex_decoder_public.py                 # DexDecoderPublicTest.java
+│
+├── requirements.txt               # Python dependencies for tests
+├── run_tests.sh                   # One-click run all tests script
+├── README.md                      # Project overview and instructions
+└── project_structure.txt          # This file: describes project layout and directory purposes
+
+Directory Explanations:
+- src/: (not included in translation) Intended for Python implementations of project logic.
+- tests/: Original (non-public) test translations from Java. Organized by logical area.
+- public_tests/: Public-released tests for external/public evaluation. 
+- requirements.txt: All Python dependencies for test execution (pytest, mock, etc)
+- run_tests.sh: Bash script to install deps and run all tests with pytest.
+- README.md: Project usage, development, and test instructions.
+- project_structure.txt: This file.
+
+Test Run Instructions:
+1. Ensure Python 3.x is installed.
+2. Run: ./run_tests.sh
+   - This installs all dependencies.
+   - Executes all tests in tests/ and public_tests/ via pytest.

@@ -1,0 +1,33 @@
+arobey1_LipSDP_python/
+├── src/
+│   └── lipsdp/
+│       ├── __init__.py                        # Package init
+│       ├── lipschitz_multi_layer.py           # Core logic (placeholder)
+│       ├── solve_sdp.py                       # Core logic (placeholder)
+│       ├── split_and_solve.py                 # Core logic (placeholder)
+│       ├── weight_utils.py                    # Weight utilities (placeholder)
+│       └── error_messages.py                  # Error message generation
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_lipschitz_multi_layer.py           # Original tests
+│       ├── test_solve_LipSDP.py
+│       ├── test_invalid_mode_message.py
+│       ├── test_split_and_solve.py
+│       ├── test_lipschitz_multi_layer_branch.py
+│       ├── test_error_messages.py
+│       └── test_cap_input_branch.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_lipschitz_multi_layer_public.py
+│   ├── test_solve_LipSDP_public.py
+│   ├── test_invalid_mode_message_public.py
+│   ├── test_split_and_solve_public.py
+│   ├── test_lipschitz_multi_layer_branch_public.py
+│   ├── test_error_messages_public.py
+│   └── test_cap_input_branch_public.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── project_structure.txt

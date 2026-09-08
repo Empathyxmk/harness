@@ -1,0 +1,27 @@
+project_root/
+├── src/
+│   └── koajs_cors/
+│       └── __init__.py                # Main CORS middleware implementation (placeholder for users to fill)
+├── tests/
+│   └── original/
+│       └── test_cors.py               # Original full coverage test cases (from test/cors.test.js)
+├── public_tests/
+│   └── test_cors_public.py            # Public (external, sample) test cases (from public_tests/cors.public.test.js)
+├── requirements.txt                   # All required python dependencies for running tests
+├── run_tests.sh                       # One-click test runner script (runs full suite with pytest)
+├── README.md                          # User/project documentation (add usage/setup info if needed)
+└── project_structure.txt              # This file: project directory and explanation
+
+# Directory explanations:
+# src/koajs_cors/: Main package (replace __init__.py with real library implementation).
+# tests/original/: All translated original/full tests from source repository.
+# public_tests/: All translated public/sanitized test cases.
+# requirements.txt: All dependencies (install with 'pip install -r requirements.txt').
+# run_tests.sh: Executable script to run all tests (use 'chmod +x run_tests.sh' to make executable).
+# README.md: Add installation, usage, and contribution instructions as needed.
+# project_structure.txt: This file (project skeleton and directory info).
+
+# How to run:
+# 1. Install requirements: pip install -r requirements.txt
+# 2. Make sure run_tests.sh is executable: chmod +x run_tests.sh
+# 3. Run ALL tests: ./run_tests.sh

@@ -1,0 +1,40 @@
+project_root/
+├── CMakeLists.txt                # Main project and test discovery config
+├── include/
+│   └── fields.h                  # C++ header for FernetField, EncryptedTextField, EncryptedCharField
+├── public_tests/
+│   ├── test_public_fields.cpp        # Public test: EncryptedTextField/etc
+│   └── test_public_fields_extra.cpp  # Public test: FernetField (bytes)
+├── run_tests.sh                  # Simple test execution script
+├── src/
+│   ├── CMakeLists.txt            # Library build config
+│   └── lib/
+│       └── fields.cpp            # Implementation of fields/crypto logic (mocked for test)
+├── tests/
+│   ├── original/
+│   │   ├── test_fields.cpp           # Original test: EncryptedTextField/EncryptedCharField etc
+│   │   └── test_fields_extra.cpp     # Original test: FernetField (bytes)
+│   └── test_main.cpp                 # Entry point for GoogleTest
+├── project_structure.txt         # This file: documentation & layout
+└── README.md                     # Project setup/usage info
+
+
+Directory Explanations:
+- include/: Contains project headers. All library/external symbols are declared here.
+- src/: Contains implementation (.cpp) files for project code.
+- src/CMakeLists.txt: Builds project library "fernet_fields".
+- public_tests/: Contains public (releaseable) test cases in C++/GoogleTest. Mirrors Python public tests.
+- tests/original/: Contains original (full coverage) test cases in C++/GoogleTest.
+- tests/test_main.cpp: Test runner's main() for both original and public tests.
+- CMakeLists.txt: Configures building, includes GoogleTest, collects all test files, builds the test runner.
+- run_tests.sh: One-click script to configure, build, and run all tests.
+- project_structure.txt: This file - explains project layout and instructions.
+- README.md: Project quick start, notes, test running info.
+
+Setup and Testing Instructions:
+1. Prerequisites: CMake 3.10+, a C++14 compiler, internet for GoogleTest download.
+2. To build & run all tests:
+   $ chmod +x run_tests.sh
+   $ ./run_tests.sh
+   This will build all original and public tests and run them, reporting results.
+3. For adding new tests, place them in tests/original/ (for private/original) or public_tests/ (for public).

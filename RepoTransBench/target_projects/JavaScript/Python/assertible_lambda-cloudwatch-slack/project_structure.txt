@@ -1,0 +1,38 @@
+python-assertible-lambda-cloudwatch-slack/
+├── README.md                 # Project description
+├── requirements.txt          # Python dependencies (pytest)
+├── run_tests.sh              # Simple one-click test execution script
+├── src/
+│   └── aws_lambda_cloudwatch_slack/
+│       ├── __init__.py
+│       ├── config.py         # (You should implement these modules with ported business logic)
+│       └── index.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_config.py                # Original config logic tests (from config.test.js)
+│       ├── test_index_basic.py           # Original index smoke/module tests
+│       └── test_index_handlers.py        # Original handler tests for Elastic Beanstalk and CodeDeploy
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_config_public.py             # Public tests for config logic
+│   ├── test_index_basic_public.py        # Public index exports & module tests
+│   └── test_index_handlers_public.py     # Public handler tests with public event/json
+└── project_structure.txt      # This file. Explains the layout and testing instructions.
+
+# Directory explanations:
+# - src/aws_lambda_cloudwatch_slack/: The application source code (implement your handlers/config code here).
+# - tests/original/: Complete translations of the original private/internal tests from the JavaScript repo.
+# - public_tests/: Translations of the public tests intended for open demo/educational verification.
+# - requirements.txt: Project Python dependencies (pytest for test running).
+# - run_tests.sh: Simply run this script to execute all tests (original and public).
+# - README.md: Include instructions for setting up and running the project.
+# - project_structure.txt: This documentation.
+
+# Usage:
+#   $ pip install -r requirements.txt
+#   $ chmod +x run_tests.sh
+#   $ ./run_tests.sh
+
+# This will run ALL original and public tests for the Python port.

@@ -1,0 +1,33 @@
+Project Structure (Python version, translated from Java):
+
+.
+├── src/
+│   └── example/
+│       └── hello_shiro.py     # Translated HelloShiro logic from Java, used by tests
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_hello_shiro.py         # All original HelloShiroTest.java suite logic
+│       ├── test_no_java_sources.py     # Placeholder test from Java
+│       └── test_meta.py                # Meta tests for project structure
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_hello_shiro_public.py      # All HelloShiroPublicTest.java logic with public input variations
+│   ├── test_no_java_sources_public.py  # Public placeholder test
+│   └── test_meta_public.py             # Public meta test for structure/files
+├── requirements.txt                    # Python dependencies for test (e.g., pytest)
+├── run_tests.sh                        # One-click script to run *all* tests (pytest in all subfolders)
+├── README.md                           # (If exists in source)
+├── LICENSE                             # (from source Java project)
+├── pom.xml                             # (from source, for reference/compatibility)
+└── project_structure.txt               # This file
+
+Directory/Files explained:
+- src/example/hello_shiro.py : Implements HelloShiro equivalent for use/test by Python.
+- tests/original/             : Contains all translated original Java tests from src/test/java of Java project.
+- public_tests/               : Contains all translated public test cases from src/test/java with "PublicTest" in name.
+- requirements.txt            : Python dependencies for test running (pytest).
+- run_tests.sh                : Executable script for running all Python tests.
+- project_structure.txt       : This documentation of layout.
+- LICENSE, pom.xml, README.md : Carried over for completeness/reference.

@@ -1,0 +1,11 @@
+{
+  "project_name": "mar-v-in_ArtHook",
+  "language": "Java",
+  "coverage": {
+    "line": 67.3,
+    "branch": 59.1
+  },
+  "timestamp": "2025-06-19T22:30:41.105759",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/mar-v-in_ArtHook",
+  "test_result_path": "/workspace/test_enhancement_results/Java/mar-v-in_ArtHook"
+}

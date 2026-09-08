@@ -1,0 +1,89 @@
+{
+  "project_name": "eleme_Amigo",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:40:45.744766",
+  "original_path": "/workspace/verified_repos_v2/Java/eleme_Amigo",
+  "public_test_result_path": "/workspace/public_test_results/Java/eleme_Amigo",
+  "original_tests": {
+    "test_files": [
+      "amigo-lib/src/androidTest/java/me/ele/amigo/AmigoIntegrationTest.java",
+      "amigo-lib/src/androidTest/java/me/ele/amigo/AmigoClassLoaderTest.java",
+      "amigo-lib/src/androidTest/java/me/ele/amigo/AmigoServiceTest.java",
+      "amigo-lib/src/androidTest/java/me/ele/amigo/utils/NativeLibLoaderTest.java",
+      "amigo-lib/src/androidTest/java/me/ele/amigo/utils/SysmLinkTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/LoadPatchErrorTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/PatchCheckerTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/AmigoTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/PatchInfoUtilTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/release/ApkReleaseActivityTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/reflect/UtilsTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/utils/MessageDigestUtilTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/utils/FileLockUtilTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/utils/ArrayUtilTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/utils/dexExtractor/DexExtractorOnArtVmTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/utils/dexExtractor/DexExtractorOnDalvikVmTest.java",
+      "app2/src/androidTest/java/com/example/app2/ExampleInstrumentedTest.java",
+      "app2/src/test/java/com/example/app2/ExampleUnitTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 18,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "amigo-lib/src/test/java/me/ele/amigo/PatchCheckerPublicTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/PatchInfoUtilPublicTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/LoadPatchErrorPublicTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/AmigoPublicTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/reflect/UtilsPublicTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/utils/MessageDigestUtilPublicTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/utils/ArrayUtilPublicTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/utils/FileLockUtilPublicTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/utils/dexExtractor/DexExtractorOnDalvikVmPublicTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/utils/dexExtractor/DexExtractorOnArtVmPublicTest.java",
+      "amigo-lib/src/test/java/me/ele/amigo/release/ApkReleaseActivityPublicTest.java",
+      "amigo-lib/src/androidTest/java/me/ele/amigo/AmigoIntegrationPublicTest.java",
+      "amigo-lib/src/androidTest/java/me/ele/amigo/AmigoClassLoaderPublicTest.java",
+      "amigo-lib/src/androidTest/java/me/ele/amigo/AmigoServicePublicTest.java",
+      "amigo-lib/src/androidTest/java/me/ele/amigo/utils/NativeLibLoaderPublicTest.java",
+      "amigo-lib/src/androidTest/java/me/ele/amigo/utils/SysmLinkPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 18,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "amigo-lib/src/test/java/me/ele/amigo/PatchCheckerPublicTest.java",
+    "amigo-lib/src/test/java/me/ele/amigo/PatchInfoUtilPublicTest.java",
+    "amigo-lib/src/test/java/me/ele/amigo/LoadPatchErrorPublicTest.java",
+    "amigo-lib/src/test/java/me/ele/amigo/AmigoPublicTest.java",
+    "amigo-lib/src/test/java/me/ele/amigo/reflect/UtilsPublicTest.java",
+    "amigo-lib/src/test/java/me/ele/amigo/utils/MessageDigestUtilPublicTest.java",
+    "amigo-lib/src/test/java/me/ele/amigo/utils/ArrayUtilPublicTest.java",
+    "amigo-lib/src/test/java/me/ele/amigo/utils/FileLockUtilPublicTest.java",
+    "amigo-lib/src/test/java/me/ele/amigo/utils/dexExtractor/DexExtractorOnDalvikVmPublicTest.java",
+    "amigo-lib/src/test/java/me/ele/amigo/utils/dexExtractor/DexExtractorOnArtVmPublicTest.java",
+    "amigo-lib/src/test/java/me/ele/amigo/release/ApkReleaseActivityPublicTest.java",
+    "amigo-lib/src/androidTest/java/me/ele/amigo/AmigoIntegrationPublicTest.java",
+    "amigo-lib/src/androidTest/java/me/ele/amigo/AmigoClassLoaderPublicTest.java",
+    "amigo-lib/src/androidTest/java/me/ele/amigo/AmigoServicePublicTest.java",
+    "amigo-lib/src/androidTest/java/me/ele/amigo/utils/NativeLibLoaderPublicTest.java",
+    "amigo-lib/src/androidTest/java/me/ele/amigo/utils/SysmLinkPublicTest.java",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "run_tests.sh"
+  ]
+}

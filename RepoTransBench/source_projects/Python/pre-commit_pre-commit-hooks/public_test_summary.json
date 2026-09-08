@@ -1,0 +1,94 @@
+{
+  "project_name": "pre-commit_pre-commit-hooks",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:49:28.899676",
+  "original_path": "/workspace/verified_repos_v2/Python/pre-commit_pre-commit-hooks",
+  "public_test_result_path": "/workspace/public_test_results/Python/pre-commit_pre-commit-hooks",
+  "original_tests": {
+    "test_files": [
+      "tests/test_check_builtin_literals_ext.py",
+      "tests/test_check_vcs_permalinks_ext.py",
+      "tests/test_setup_py_ext.py",
+      "tests/test_string_fixer_ext.py",
+      "tests/test_check_toml_ext.py",
+      "pre_commit_hooks/tests_should_end_in_test.py",
+      "tests/check_ast_test.py",
+      "tests/mixed_line_ending_test.py",
+      "tests/forbid_new_submodules_test.py",
+      "tests/detect_aws_credentials_test.py",
+      "tests/string_fixer_test.py",
+      "tests/removed_test.py",
+      "tests/check_added_large_files_test.py",
+      "tests/file_contents_sorter_test.py",
+      "tests/tests_should_end_in_test_test.py",
+      "tests/check_json_test.py",
+      "tests/debug_statement_hook_test.py",
+      "tests/readme_test.py",
+      "tests/check_symlinks_test.py",
+      "tests/check_xml_test.py",
+      "tests/fix_byte_order_marker_test.py",
+      "tests/no_commit_to_branch_test.py",
+      "tests/trailing_whitespace_fixer_test.py",
+      "tests/check_builtin_literals_test.py",
+      "tests/check_merge_conflict_test.py",
+      "tests/check_executables_have_shebangs_test.py",
+      "tests/check_toml_test.py",
+      "tests/destroyed_symlinks_test.py",
+      "tests/end_of_file_fixer_test.py",
+      "tests/check_shebang_scripts_are_executable_test.py",
+      "tests/requirements_txt_fixer_test.py",
+      "tests/check_case_conflict_test.py",
+      "tests/check_docstring_first_test.py",
+      "tests/util_test.py",
+      "tests/detect_private_key_test.py",
+      "tests/check_vcs_permalinks_test.py",
+      "tests/check_yaml_test.py",
+      "tests/sort_simple_yaml_test.py",
+      "tests/pretty_format_json_test.py",
+      "tests/check_illegal_windows_names_test.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 40,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_check_vcs_permalinks_ext.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_check_builtin_literals_ext.py",
+      "public_tests/test_public_setup_py_ext.py",
+      "public_tests/test_public_string_fixer_ext.py",
+      "public_tests/test_public_check_toml_ext.py",
+      "public_tests/test_public_check_merge_conflict_ext.py",
+      "public_tests/test_public_check_added_large_files_ext.py",
+      "public_tests/test_public_check_docstring_first_ext.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 10,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_check_vcs_permalinks_ext.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_check_builtin_literals_ext.py",
+    "public_tests/test_public_setup_py_ext.py",
+    "public_tests/test_public_string_fixer_ext.py",
+    "public_tests/test_public_check_toml_ext.py",
+    "public_tests/test_public_check_merge_conflict_ext.py",
+    "public_tests/test_public_check_added_large_files_ext.py",
+    "public_tests/test_public_check_docstring_first_ext.py",
+    "run_public_tests.sh"
+  ]
+}

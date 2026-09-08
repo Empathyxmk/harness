@@ -1,0 +1,46 @@
+Project Structure for injector-java (Python "injector" test translation)
+========================================================================
+
+Root Directory:
+.
+├── pom.xml                          # Maven build & dependency config for Java project
+├── run_tests.sh                     # Simple script to run all Java tests with one command
+├── project_structure.txt            # This file
+└── src/
+    └── test/
+        └── java/
+            └── com/
+                └── example/
+                    ├── original/
+                    │   ├── InjectorTest.java           # Translation of injector_test.py
+                    │   ├── TestInjectorInit.java       # Translation of test_injector_init.py
+                    │   └── TestSetupPy.java            # Translation of test_setup_py.py
+                    └── public_tests/
+                        ├── TestPublicInjector.java            # Translation of test_public_injector.py (public)
+                        ├── TestPublicInjectorInit.java        # Translation of test_public_injector_init.py (public)
+                        └── TestPublicSetupPy.java             # Translation of test_public_setup_py.py (public)
+
+Directory/Path Explanations:
+
+- pom.xml              : Standard Maven config file, manages dependencies and test configuration (JUnit 5).
+- run_tests.sh         : Run "mvn clean test" for one-click test execution.
+- src/test/java/       : Standard Maven/JUnit test location
+    └── com/example/original/     : All *original* translated Python test cases in Java.
+    └── com/example/public_tests/ : All *public* translated Python public test cases in Java.
+
+Test File Naming/Pattern:
+    All test classes end in "Test.java" as per Java conventions, each translating the corresponding Python test file.
+
+How to Run All Tests:
+-----------------------
+1. Ensure Maven is installed (mvn --version).
+2. In project root, run:
+       ./run_tests.sh
+   This runs all translated JUnit tests. Results output to stdout.
+
+Note:
+-----
+This project structure faithfully preserves the original and public test separation and logic from the Python code.
+You may copy the top-level "setup.py" into this repo root if you want the setup-related tests to function.
+
+========================================================================

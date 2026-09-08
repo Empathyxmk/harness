@@ -1,0 +1,51 @@
+Project Structure: yqueau_normal_integration (Python version)
+
+.
+├── requirements.txt
+├── run_tests.sh                     # One-click test run script
+├── README.md                        # Documentation and instructions
+├── src/
+│   └── normal_integration/
+│       ├── __init__.py
+│       └── core.py                  # Main placeholder implementations (mimic Matlab signatures)
+├── tests/
+│   ├── __init__.py
+│   ├── test_FFT_Poisson.py
+│   ├── test_dummy.py
+│   ├── test_horn_brooks.py
+│   ├── test_phi_integration.py
+│   ├── test_tv_integration.py
+│   ├── test_anisotropic_diffusion_integration.py
+│   ├── test_DCT_DST_Poisson.py
+│   ├── test_mumford_shah_integration.py
+│   ├── test_poisson_variants.py
+│   ├── test_make_gradient.py
+│   ├── test_smooth_integration.py
+│   └── test_all_methods_robustness.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_test_FFT_Poisson.py
+│   ├── test_public_test_dummy.py
+│   ├── test_public_test_horn_brooks.py
+│   ├── test_public_test_phi_integration.py
+│   ├── test_public_test_tv_integration.py
+│   ├── test_public_test_anisotropic_diffusion_integration.py
+│   ├── test_public_test_DCT_DST_Poisson.py
+│   ├── test_public_test_mumford_shah_integration.py
+│   ├── test_public_test_poisson_variants.py
+│   ├── test_public_test_make_gradient.py
+│   ├── test_public_test_smooth_integration.py
+│   └── test_public_test_all_methods_robustness.py
+
+Explanations:
+- requirements.txt:        Python dependencies (NumPy, pytest).
+- run_tests.sh:            Run all tests (original & public) with one command.
+- README.md:               Setup, usage, and test running instructions.
+- src/normal_integration:  Main source code package (placeholder functions here for test harness).
+- tests/:                  Original (internal) converted test suite.
+- public_tests/:           Public test suite (translated and adapted from Matlab public tests).
+
+Setup & Testing Instructions:
+1. Install dependencies:      pip install -r requirements.txt
+2. Run all tests:             ./run_tests.sh
+3. Tests will be discovered and run via pytest for both original and public_tests

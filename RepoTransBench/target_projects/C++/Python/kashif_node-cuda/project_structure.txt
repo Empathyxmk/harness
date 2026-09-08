@@ -1,0 +1,25 @@
+kashif_node-cuda-python/
+├── requirements.txt                  # Python dependencies (e.g., pytest)
+├── run_tests.sh                      # One-click test execution script
+├── README.md                         # Documentation and setup instructions
+├── src/                              # (empty or with translated Python code, not required by this task)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── conftest.py
+│       ├── test_bindings.py
+│       ├── test_ctx.py
+│       ├── test_device.py
+│       ├── test_function.py
+│       ├── test_mem.py
+│       └── test_module.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── test_bindings_public.py
+│   ├── test_ctx_public.py
+│   ├── test_device_public.py
+│   ├── test_function_public.py
+│   ├── test_mem_public.py
+│   ├── test_module_public.py

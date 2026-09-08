@@ -1,0 +1,27 @@
+project_root/
+├── src/
+│   ├── vec.py                 # Pure Python translation of vec.h/vec.c (dynamic vector)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_vec.py        # Complete original test suite (from test_vec.c)
+│       └── test_vec_negative.py # Edge/negative case tests (from test_vec_negative.c)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_vec.py     # Public translated vector functional tests
+│   └── test_public_vec_negative.py # Public negative/edge public tests
+├── requirements.txt           # Python testing dependencies
+├── run_tests.sh               # Simple all-in-one test launcher
+├── README.md
+└── project_structure.txt      # This documentation
+
+# Directory/Module explanations:
+
+src/                - Python source for vec functionality
+tests/original/     - Translated full-feature/coverage test cases from original repo
+public_tests/       - Translated public test cases for transparent/CI demo
+requirements.txt    - Python dependencies for development (install with pip)
+run_tests.sh        - One-click test execution (executes all tests via pytest)
+README.md           - Overview, installation, quickstart
+project_structure.txt - This file: structure and usage map

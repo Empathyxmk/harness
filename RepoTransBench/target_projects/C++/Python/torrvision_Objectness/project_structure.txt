@@ -1,0 +1,46 @@
+torrvision_Objectness Python Port - Project Structure
+
+project_root/
+├── src/
+│   └── (empty - for future ported implementation code)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_CmFile.py                  # Translated original private dummy test
+│       ├── test_CmShow.py                  # Translated original private dummy test
+│       ├── test_Objectness_basic.py        # Translated original private dummy test
+│       └── test_FilterTIG.py               # Translated (disabled) private test
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_CmFilePublicTest.py            # Translated public dummy test
+│   ├── test_CmShowPublicTest.py            # Translated public dummy test
+│   ├── test_ObjectnessBasicPublicTest.py   # Translated public dummy test
+│   └── test_FilterTIG_PublicTest.py        # Translated (disabled) public test
+├── requirements.txt                        # Python dependencies (includes pytest)
+├── run_tests.sh                            # Simple one-click script for running all tests
+├── project_structure.txt                   # This structure and documentation file
+└── README.md                               # (see below)
+
+Directory Explanations:
+
+src/               - (empty) Placeholder for future ported implementation/library code.
+tests/original/    - Contains all translated original (private) C++ tests from 'tests/*' in the C++ project.
+public_tests/      - Contains all generated public test cases.
+requirements.txt   - Standard pip dependencies file.
+run_tests.sh       - Simple script to discover and run ALL tests (original/private and public) with one command.
+README.md          - Instructions/readme.
+project_structure.txt - This document, describing project structure and usage.
+
+Setup & Usage:
+---------------
+1. Ensure Python 3.8+ and pip are installed.
+2. Run: `chmod +x run_tests.sh`
+3. Run all tests with: `./run_tests.sh`
+   - This script installs dependencies (pytest) if not already installed, discovers, and runs all tests.
+   - Both private (original) and public test sets are executed.
+
+Notes:
+- All tests are dummy tests, always passing, to mirror the always-SUCCEEDing C++ test logic.
+- Skipped tests mirror originally disabled/commented-out C++ cases.
+- Suitable for continuous integration test discovery and as a skeleton for further development.

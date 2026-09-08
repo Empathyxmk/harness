@@ -1,0 +1,20 @@
+vijos_jd4/
+├── go.mod
+├── run_tests.sh
+├── test_translation_progress.json
+├── README.md
+├── tests/
+│   └── original/
+│       ├── test_cache_test.go
+│       ├── test_log_and_config_test.go
+│       ├── test_pool_test.go
+│       ├── case_test.go
+│       ├── compare_test.go
+│       └── integration_test.go
+├── public_tests/
+│   ├── public_case_test.go
+│   ├── public_pool_test.go
+│   ├── public_log_and_config_test.go
+│   ├── public_cache_test.go
+│   ├── public_compare_test.go
+│   └── testutil.go

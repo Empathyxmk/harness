@@ -1,0 +1,16 @@
+{
+  "project_name": "expressjs_express-paginate",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 98.0
+  },
+  "timestamp": "2025-06-19T10:23:27.038824",
+  "original_path": "/workspace/runnable_filter/JavaScript/expressjs_express-paginate",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/expressjs_express-paginate",
+  "tests_path": [
+    "test/index-branch-coverage.test.js",
+    "test/index-test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

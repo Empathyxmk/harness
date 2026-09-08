@@ -1,0 +1,54 @@
+spotify_pythonflow_cpp/
+├── CMakeLists.txt                           # Root CMake build configuration
+├── README.md                                # Documentation and project instructions
+├── include/
+│   └── pythonflow/                          # Public library headers
+│       ├── core.h
+│       ├── pfmq.h
+│       ├── util.h
+│       └── operations.h
+├── src/
+│   ├── main.cpp                             # (Optional) Library entry or CLI stub
+│   ├── pythonflow/
+│   │   ├── core.cpp
+│   │   ├── pfmq.cpp
+│   │   ├── util.cpp
+│   │   └── operations.cpp
+├── tests/                                   # All "original" tests from Python version
+│   ├── test_core_basic.cpp
+│   ├── test_pfmq.cpp
+│   ├── test_pythonflow.cpp
+│   ├── test_util.cpp
+│   └── test_util_extra.cpp
+├── public_tests/                            # All public tests generated for students
+│   ├── test_public_core_basic.cpp
+│   ├── test_public_pfmq.cpp
+│   ├── test_public_pythonflow.cpp
+│   ├── test_public_util.cpp
+│   └── test_public_util_extra.cpp
+├── tests/test_main.cpp                      # Test runner main file (for both test folders)
+├── run_tests.sh                             # Simple test build and run script
+└── project_structure.txt                    # This guide (project tree and explanations)
+
+Directory explanations:
+
+- include/pythonflow/:      Header files for the pythonflow C++ port. All library/public headers live here.
+- src/pythonflow/:          Implementation files for the pythonflow library features.
+- tests/:                   Translated original (full) test cases (one .cpp for each .py). Uses Google Test.
+- public_tests/:            Translated public/subset test cases for students. Also uses Google Test.
+- CMakeLists.txt:           Standard CMake build/test configuration supporting Google Test.
+- tests/test_main.cpp:      Unified test main including all test files.
+- run_tests.sh:             One-click script to build and run all tests.
+- README.md:                How to build, install, and use the library and tests.
+
+How to build and run tests:
+
+1. Ensure you have a C++17 or newer toolchain and CMake 3.10+ installed.
+2. Run: `./run_tests.sh`
+   - This will build the pythonflow library (static or shared), build all tests, and run Google Test for both original and public tests automatically.
+3. All test results will print to console.
+
+Adding new tests:
+- Place original, full-coverage tests in `tests/`
+- Place public/assignment-facing tests in `public_tests/`
+- Use Google Test macros as shown in existing test files.

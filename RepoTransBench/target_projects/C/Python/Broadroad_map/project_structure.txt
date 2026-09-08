@@ -1,0 +1,37 @@
+Project Structure:
+------------------
+
+Broadroad_map_python/
+├── src/
+│   └── (Put your library modules here, e.g. map.py, rbtree.py)
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_map.py
+│   │   └── test_rbtree.py
+│   └── __init__.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_map_public.py
+│   └── test_rbtree_public.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+Directory/Files Explanation:
+----------------------------
+
+src/                  - Put your main source implementations here (modules for Map, RbTree, etc).
+tests/original/       - Python translations of the *original* test cases from the C project.
+public_tests/         - Python translations of the *public* test cases (public/generative).
+requirements.txt      - Python dependency list (specifically, pytest for running tests).
+run_tests.sh          - Simple script to run all tests with one command.
+README.md             - Project, test, and usage documentation.
+project_structure.txt - This file. Complete project tree and file explanations.
+
+Test Execution:
+---------------
+
+- All tests (original & public) are discovered and executed via pytest.
+- To run: `./run_tests.sh`

@@ -1,0 +1,40 @@
+markushi_android-ui Go Project Structure
+========================================
+
+.
+├── go.mod                     # Go module definition
+├── run_tests.sh               # One-click script to run ALL tests
+├── project_structure.txt      # This file: directory structure & guide
+├── tests/
+│   ├── original/
+│   │   ├── plusaction_test.go         # Original PlusAction tests (translated from Java)
+│   │   ├── draweraction_test.go       # Original DrawerAction tests (translated from Java)
+│   │   └── linesegment_test.go        # Original LineSegment tests (translated from Java)
+├── public_tests/
+│   ├── plusaction_public_test.go      # Public PlusAction test (translated from Java public test)
+│   ├── draweraction_public_test.go    # Public DrawerAction test (translated from Java public test)
+│   └── linesegment_public_test.go     # Public LineSegment tests (translated from Java public test)
+└── ...
+
+Directory Explanations:
+-----------------------
+- go.mod            : Go module file for dependency and build management.
+- run_tests.sh      : Run this script to build and execute ALL tests (original and public). Executable.
+- tests/original/   : Contains all original (non-public) tests, fully implemented in Go.
+- public_tests/     : Contains all public tests, fully implemented in Go.
+- project_structure.txt : This file, describes structure and setup.
+
+How to Run Tests:
+-----------------
+1. Ensure you have Go installed (>=1.18).
+2. Run:    ./run_tests.sh
+   - This will run ALL tests from both "tests/original" and "public_tests" directories.
+
+Naming and Imports:
+-------------------
+- Original tests use package "original" (in tests/original/*).
+- Public tests use package "public_tests" and import "original" for code under test.
+
+Test Coverage:
+--------------
+All original and public test logic from Java is fully implemented and translated. All test functions call equivalent logic in Go with identical behavior/checks.

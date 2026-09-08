@@ -1,0 +1,11 @@
+{
+  "project_name": "woodpecker-framework_ysoserial-for-woodpecker",
+  "language": "Java",
+  "coverage": {
+    "line": 55.1,
+    "branch": 51.7
+  },
+  "timestamp": "2025-06-20T04:20:47.000636",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/woodpecker-framework_ysoserial-for-woodpecker",
+  "test_result_path": "/workspace/test_enhancement_results/Java/woodpecker-framework_ysoserial-for-woodpecker"
+}

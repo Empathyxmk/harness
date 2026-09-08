@@ -1,0 +1,18 @@
+{
+  "project_name": "agarciadom_xeger",
+  "language": "Java",
+  "coverage": {
+    "line": 82.0,
+    "branch": 59.0
+  },
+  "timestamp": "2025-06-19T13:55:19.746712",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/agarciadom_xeger",
+  "test_result_path": "/workspace/test_enhancement_results/Java/agarciadom_xeger",
+  "tests_path": [
+    "src/test/java/nl/flotsam/xeger/XegerEdgeTest.java",
+    "src/test/java/nl/flotsam/xeger/XegerCoverageTest.java",
+    "src/test/java/nl/flotsam/xeger/XegerUtilsTest.java",
+    "src/test/java/nl/flotsam/xeger/XegerTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

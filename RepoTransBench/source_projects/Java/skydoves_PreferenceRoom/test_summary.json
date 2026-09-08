@@ -1,0 +1,11 @@
+{
+  "project_name": "skydoves_PreferenceRoom",
+  "language": "Java",
+  "coverage": {
+    "line": 66.7,
+    "branch": 53.3
+  },
+  "timestamp": "2025-06-20T02:49:42.084031",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/skydoves_PreferenceRoom",
+  "test_result_path": "/workspace/test_enhancement_results/Java/skydoves_PreferenceRoom"
+}

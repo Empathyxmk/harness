@@ -1,0 +1,31 @@
+project_root/
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── pymsteams/
+│   ├── pymsteams.go          # Go equivalent of Python library for test usage/mocks
+│   └── pymsteams_testutil.go # Testing utilities and HTTP post mocks
+├── tests/
+│   └── original/
+│       ├── cardsection_and_potentialaction_test.go  # Original Python test suite translated
+│       └── webhook_test.go                         # Original webhook tests translated
+├── public_tests/
+│   ├── public_cardsection_and_potentialaction_test.go # Public-facing tests
+│   └── public_webhook_test.go                         # Public-facing webhook tests
+└── (other directories/files as needed...)
+
+Directory Explanations:
+- go.mod: Go module definition. Ensures dependencies and module path.
+- README.md: Basic project documentation and usage.
+- run_tests.sh: Runs all tests in any sub-package using `go test ./...`
+- pymsteams/: Contains Go code mimicking (mocking) Microsoft Teams logic/interfaces for tests.
+- tests/original/: Translated original test cases, mirroring full private/internal logic.
+- public_tests/: Translated public test cases.
+
+Instructions:
+1. Ensure Go is installed.
+2. Run `./run_tests.sh` to execute all test cases (both original/internal and public).
+
+Note:
+- Source code is stubbed/mocked for test equivalence with Python; full Teams logic is not implemented.
+- To add new features, develop in pymsteams/, write tests in tests/original/ or public_tests/.

@@ -1,0 +1,24 @@
+.
+├── go.mod
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── and_sql_fragment_test.go
+│   │   ├── container_sql_fragment_test.go
+│   │   ├── elsql_bundle_test.go
+│   │   ├── elsql_test.go
+│   │   ├── empty_sql_params_test.go
+│   │   ├── equals_sql_fragment_test.go
+│   │   ├── fragment_test.go
+│   │   ├── line_test.go
+│   │   ├── loop_sql_fragment_test.go
+│   │   ├── map_sql_params_test.go
+│   │   ├── spring_sql_params_test.go
+│   │   ├── sql_fragments_test.go
+│   │   ├── value_sql_fragment_test.go
+│   └── testutil.go
+├── public_tests/
+│   ├── container_sql_fragment_public_test.go
+│   ├── elsql_bundle_public_test.go
+│   ├── spring_sql_params_public_test.go

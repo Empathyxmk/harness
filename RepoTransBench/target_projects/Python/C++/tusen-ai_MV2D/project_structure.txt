@@ -1,0 +1,40 @@
+.
+├── CMakeLists.txt            # Root CMake project
+├── include/
+│   └── mv2d_config.h         # Core data/config structs & loader
+├── src/
+│   ├── CMakeLists.txt        # Library target for code/config loader
+│   └── mv2d_config.cpp       # Implementation for config loader (mocked)
+├── tests/
+│   ├── test_main.cpp         # GoogleTest entrypoint
+│   ├── test_configs_data_py.cpp
+│   ├── test_configs_data_full_coverage.cpp
+│   ├── test_configs_exp_py.cpp
+│   └── test_configs_exp_attributes.cpp
+├── public_tests/
+│   ├── test_public_configs_data_py.cpp
+│   ├── test_public_configs_data_full_coverage.cpp
+│   ├── test_public_configs_exp_attributes.cpp
+│   ├── test_public_configs_exp_py.cpp
+│   └── test_public_torchserver_noop.cpp
+├── configs/
+│   └── mv2d/
+│       ├── data/
+│       │   ├── single_frame.json      # (Mock JSON config for tests)
+│       │   └── two_frames.json
+│       └── exp/
+│           ├── mv2d_r50_frcnn_single_frame_roi_1408x512_ep24.json
+│           ├── mv2d_r50_frcnn_single_frame_roi_1408x512_ep72.json
+│           ├── mv2d_r50_frcnn_two_frames_1408x512_ep24.json
+│           └── mv2d_r50_frcnn_two_frames_1408x512_ep72.json
+├── run_tests.sh              # One-click script to build and run all tests
+└── project_structure.txt     # This document
+
+Directory explanations:
+- include/: Header files for library and helpers.
+- src/:      Implementation of library/config loader.
+- tests/:    All original ("private"/developer) test cases, using GoogleTest.
+- public_tests/: Public-facing test cases (mimicking the Python public_tests structure).
+- configs/:  Mock configuration files encoded as JSON for testing (replace with production as needed).
+- run_tests.sh: Simple build-and-test script.
+- CMakeLists.txt: Standard build configuration for C++ using GoogleTest and nlohmann_json.

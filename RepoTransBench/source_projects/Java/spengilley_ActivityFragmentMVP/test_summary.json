@@ -1,0 +1,11 @@
+{
+  "project_name": "spengilley_ActivityFragmentMVP",
+  "language": "Java",
+  "coverage": {
+    "line": 63.6,
+    "branch": 60.0
+  },
+  "timestamp": "2025-06-20T02:59:51.150266",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/spengilley_ActivityFragmentMVP",
+  "test_result_path": "/workspace/test_enhancement_results/Java/spengilley_ActivityFragmentMVP"
+}

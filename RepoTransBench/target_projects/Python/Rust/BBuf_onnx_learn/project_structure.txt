@@ -1,0 +1,45 @@
+bbuf_onnx_learn/
+├── Cargo.toml                # Rust build/package configuration
+├── README.md                 # Project documentation
+├── run_tests.sh              # One-click test script for all tests
+├── project_structure.txt     # Project structure and explanations
+├── src/                      # Rust source code
+│   ├── lib.rs                # Library root
+│   ├── tools/                # tools module
+│   │   ├── mod.rs            # tools mod entry
+│   │   └── tool.rs           # tool.rs: add, sub, mul, div, Tool struct
+│   ├── onnxapi/              # onnxapi module
+│   │   ├── mod.rs
+│   │   └── creat_onnx_example.rs # make_identity, sum_list functions
+│   └── convert2onnx/
+│       ├── mod.rs
+│       └── pytorch2onnx_resize.rs # dummy_resize_func
+├── tests/
+│   └── original/             # Translation of original Python tests
+│       ├── test_tool.rs
+│       ├── test_tools_tool.rs
+│       ├── test_onnxapi_creat_onnx_example.rs
+│       └── test_convert2onnx_pytorch2onnx_resize.rs
+└── public_tests/             # Translation of public Python tests
+    ├── test_public_tool.rs
+    ├── test_public_tools_tool.rs
+    ├── test_public_onnxapi_creat_onnx_example.rs
+    └── test_public_convert2onnx_pytorch2onnx_resize.rs
+
+### Explanations:
+
+- **src/**: Rust "library" code, mirrors the Python API for testing.
+- **tests/original/**: Each file is a faithful translation of its respective original Python file.
+- **public_tests/**: Each file is a faithful translation of its respective public Python file.
+- **run_tests.sh**: Simple bash script. Run all tests via cargo (`cargo test --all -- --nocapture`).
+- **Cargo.toml**: Declares package and dependencies.
+- **README.md**: Documentation and instructions.
+- **project_structure.txt**: This reference/document.
+
+### Running the tests
+
+From the project root, run:
+
+    ./run_tests.sh
+
+All original and public tests will execute. All error and edge cases are covered.

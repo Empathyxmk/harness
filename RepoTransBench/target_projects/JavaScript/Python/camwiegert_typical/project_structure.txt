@@ -1,0 +1,50 @@
+camwiegert_typical_python/
+├── typical.py
+│   [Python module containing the re-implemented 'type' function]
+├── requirements.txt
+│   [Python dependencies: pytest and pytest-asyncio]
+├── run_tests.sh
+│   [Simple test execution script running all pytest-based tests]
+├── tests/
+│   ├── __init__.py
+│   │   [Makes 'tests' a Python package]
+│   └── original/
+│       ├── __init__.py
+│       │   [Makes 'original' test subpackage discoverable]
+│       └── test_async.py
+│           [Original (private/internal) async test cases for 'type']
+├── public_tests/
+│   ├── __init__.py
+│   │   [Makes 'public_tests' package discoverable]
+│   └── test_async_public.py
+│       [Translated public async test cases for 'type']
+└── project_structure.txt
+    [This file. Explains the directory tree, components, and setup/run instructions.]
+
+---- Explanation ----
+
+- **typical.py**: Main implementation. Contains Python-equivalent `type` function for tests.
+- **requirements.txt**: Lists dependencies. Install via `pip install -r requirements.txt`.
+- **run_tests.sh**: One-click script to run all tests (original + public).
+- **tests/original/**: Internal/original test cases, named and structured to match source test coverage.
+- **public_tests/**: Public version of tests, matching provided source logic and input variations.
+- **__init__.py**: All test dirs include this to ensure proper discovery for pytest/unittest.
+- **project_structure.txt**: Documents structure, dirs, and usage.
+
+---- Setup & Testing Instructions ----
+
+1. (Optionally) Create a fresh Python virtual environment.
+2. Install dependencies:
+       pip install -r requirements.txt
+3. Run all tests with one command:
+       ./run_tests.sh
+   All tests (original + public) will execute, showing summary output.
+
+- Run only original tests: `pytest tests/original/`
+- Run only public tests: `pytest public_tests/`
+
+---- Notes ----
+
+- All async and awaitable test code handled via pytest-asyncio and pytest's @pytest.mark.asyncio.
+- The `type` function is implemented to closely simulate the behavior under test.
+- Test discovery/organization mirrors the original JS project intent with clear separation of private/public tests.

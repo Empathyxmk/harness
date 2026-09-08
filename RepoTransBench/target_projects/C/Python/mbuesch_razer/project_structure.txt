@@ -1,0 +1,49 @@
+mbuesch_razer_python/
+├── requirements.txt                        # Python dependencies (pytest)
+├── run_tests.sh                            # Simple one-click script to run all tests (original + public)
+├── project_structure.txt                    # This file
+├── tests/
+│   ├── __init__.py                         # (needed for pytest discovery)
+│   ├── conftest.py                         # (optional pytest config)
+│   └── original/                           # All translated original test logic
+│       ├── __init__.py
+│       ├── test_buttonmapping.py
+│       ├── test_copperhead.py
+│       ├── test_deathadder2013.py
+│       ├── test_lachesis5k6.py
+│       ├── test_naga.py
+│       └── test_util.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_buttonmapping_public.py
+│   ├── test_copperhead_public.py
+│   ├── test_deathadder2013_public.py
+│   ├── test_lachesis5k6_public.py
+│   ├── test_naga_public.py
+│   └── test_util_public.py
+
+Directory and file explanations:
+
+- requirements.txt: lists dependencies (pytest).
+- run_tests.sh: simple script to install dependencies and run all tests (original & public).
+- project_structure.txt: this project structure documentation.
+- tests/: main folder for all test code.
+  - __init__.py, conftest.py: required for pytest test discovery.
+  - original/: contains Python translations of *all* original/internal (non-public) C test cases.
+- public_tests/: Python translations of *all* public C tests. Kept separate for clarity and traceability.
+- All test files use pytest-style naming and conventions.
+
+Test organization:
+- "tests/original/" = translations of original/internal C test files found in librazer/
+- "public_tests/" = translations of public/generated C tests found in librazer/
+- All test functions and values follow the original logic and data exactly, preserving all test detail.
+
+How to run all tests:
+$ chmod +x run_tests.sh
+$ ./run_tests.sh
+
+This will:
+  1. Install the needed test dependency (pytest)
+  2. Run *all* tests in both tests/ and public_tests/ using pytest
+
+No further configuration is needed.

@@ -1,0 +1,29 @@
+sockeqwe_fragmentargs/
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── fragmentargs_test.go
+│   │   ├── fragmentargs_staticinit_test.go
+│   │   ├── fragmentargs_injector_test.go
+│   │   ├── argsbundlerinterface_test.go
+│   │   ├── noneargsbundler_test.go
+│   │   ├── castedarraylistargsbundler_test.go
+│   │   ├── protectedaccess_test.go
+│   │   ├── innerclass_test.go
+│   │   ├── compile_test.go
+│   │   ├── compare_modifier_utils_test.go
+│   │   └── modifier_utils_default_modifier_test.go
+├── public_tests/
+│   ├── fragmentargs_staticinit_public_test.go
+│   ├── fragmentargs_injector_public_test.go
+│   ├── fragmentargs_public_test.go
+│   ├── noneargsbundler_public_test.go
+│   ├── castedarraylistargsbundler_public_test.go
+│   ├── argsbundlerinterface_public_test.go
+│   ├── protectedaccess_public_test.go
+│   ├── compare_modifier_utils_public_test.go
+│   ├── innerclass_public_test.go
+│   ├── compile_public_test.go

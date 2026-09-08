@@ -1,0 +1,36 @@
+project_root/
+├── requirements.txt
+│   - Python dependencies, add with `pip install -r requirements.txt`
+├── run_tests.sh
+│   - One-click script for running all tests (pytest, both public and original)
+├── project_structure.txt
+│   - This file describing the project tree and contents
+├── tests/
+│   └── original/
+│       ├── test_webhandler.py
+│       ├── test_targetnotfoundtoaster.py
+│       ├── test_urls.py
+│       ├── test_chain.py
+│       ├── test_stackmanager.py
+│       ├── test_stackstates.py
+│       ├── test_urls_class.py
+│       ├── test_stack.py
+│       ├── test_target.py
+│       ├── test_targetmap.py
+│       ├── test_invalidjsonexception.py
+│       └── test_preconditions.py
+│           - All original tests translated from Java. Each file contains complete test logic.
+├── public_tests/
+│   ├── test_webhandler_public.py
+│   ├── test_targetnotfoundtoaster_public.py
+│   ├── test_urls_public.py
+│   ├── test_invalidjsonexception_public.py
+│   ├── test_stackstates_public.py
+│   ├── test_target_public.py
+│   ├── test_urls_class_public.py
+│   ├── test_stack_public.py
+│   ├── test_preconditions_public.py
+│   ├── test_stackmanager_public.py
+│   ├── test_chain_public.py
+│   └── test_targetmap_public.py
+│       - All translated public test cases. Each file is fully implemented.

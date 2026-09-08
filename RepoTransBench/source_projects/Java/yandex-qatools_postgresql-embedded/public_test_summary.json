@@ -1,0 +1,85 @@
+{
+  "project_name": "yandex-qatools_postgresql-embedded",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:23:02.546219",
+  "original_path": "/workspace/verified_repos_v2/Java/yandex-qatools_postgresql-embedded",
+  "public_test_result_path": "/workspace/public_test_results/Java/yandex-qatools_postgresql-embedded",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/de/flapdoodle/embed/process/store/NonCachedPostgresArtifactStoreBuilderTest.java",
+      "src/test/java/de/flapdoodle/embed/process/store/CachedPostgresArtifactStoreTest.java",
+      "src/test/java/de/flapdoodle/embed/process/store/IMutableArtifactStoreTest.java",
+      "src/test/java/de/flapdoodle/embed/process/store/PostgresArtifactStoreTest.java",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/EmbeddedPostgresTest.java",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/AbstractPsqlTest.java",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/config/StorageTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/de/flapdoodle/embed/process/store/NonCachedPostgresArtifactStoreBuilderPublicTest.java",
+      "src/test/java/de/flapdoodle/embed/process/store/CachedPostgresArtifactStorePublicTest.java",
+      "src/test/java/de/flapdoodle/embed/process/store/IMutableArtifactStorePublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/de/flapdoodle/embed/process/store/PostgresArtifactStorePublicTest.java",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/EmbeddedPostgresPublicTest.java",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/AbstractPsqlPublicTest.java",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/config/StoragePublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/config/StoragePublicTest.java",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/config/StoragePublicTest.java",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/config/StoragePublicTest.java",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/config/StoragePublicTest.java",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/config/StoragePublicTest.java",
+      "src/test/java/de/flapdoodle/embed/process/store/NonCachedPostgresArtifactStoreBuilderPublicTest.java",
+      "src/test/java/de/flapdoodle/embed/process/store/IMutableArtifactStorePublicTest.java",
+      "src/test/java/de/flapdoodle/embed/process/store/CachedPostgresArtifactStorePublicTest.java",
+      "src/test/java/de/flapdoodle/embed/process/store/PostgresArtifactStorePublicTest.java",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/EmbeddedPostgresPublicTest.java",
+      "src/test/java/ru/yandex/qatools/embed/postgresql/AbstractPsqlPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 21,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/de/flapdoodle/embed/process/store/NonCachedPostgresArtifactStoreBuilderPublicTest.java",
+    "src/test/java/de/flapdoodle/embed/process/store/CachedPostgresArtifactStorePublicTest.java",
+    "src/test/java/de/flapdoodle/embed/process/store/IMutableArtifactStorePublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/de/flapdoodle/embed/process/store/PostgresArtifactStorePublicTest.java",
+    "src/test/java/ru/yandex/qatools/embed/postgresql/EmbeddedPostgresPublicTest.java",
+    "src/test/java/ru/yandex/qatools/embed/postgresql/AbstractPsqlPublicTest.java",
+    "src/test/java/ru/yandex/qatools/embed/postgresql/config/StoragePublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/ru/yandex/qatools/embed/postgresql/config/StoragePublicTest.java",
+    "src/test/java/ru/yandex/qatools/embed/postgresql/config/StoragePublicTest.java",
+    "src/test/java/ru/yandex/qatools/embed/postgresql/config/StoragePublicTest.java",
+    "src/test/java/ru/yandex/qatools/embed/postgresql/config/StoragePublicTest.java",
+    "src/test/java/ru/yandex/qatools/embed/postgresql/config/StoragePublicTest.java",
+    "src/test/java/de/flapdoodle/embed/process/store/NonCachedPostgresArtifactStoreBuilderPublicTest.java",
+    "src/test/java/de/flapdoodle/embed/process/store/IMutableArtifactStorePublicTest.java",
+    "src/test/java/de/flapdoodle/embed/process/store/CachedPostgresArtifactStorePublicTest.java",
+    "src/test/java/de/flapdoodle/embed/process/store/PostgresArtifactStorePublicTest.java",
+    "src/test/java/ru/yandex/qatools/embed/postgresql/EmbeddedPostgresPublicTest.java",
+    "src/test/java/ru/yandex/qatools/embed/postgresql/AbstractPsqlPublicTest.java",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

@@ -1,0 +1,38 @@
+.
+├── include/
+│   └── dummy_system.h              # C++ header(s) for domain/test models, stubs, and any shared declarations
+├── src/
+│   ├── CMakeLists.txt              # CMake config for library build
+│   └── dummy_system.cpp            # C++ sources for fakes/stubs (real app would have logic here)
+├── tests/
+│   ├── test_main.cpp               # GTest entrypoint
+│   └── original/                   # All translated original tests from Python
+│       ├── test_admin.cpp
+│       ├── test_apps.cpp
+│       ├── test_forms.cpp
+│       ├── test_models.cpp
+│       ├── test_runtests_py.cpp
+│       ├── test_urls.cpp
+│       ├── test_utils.cpp
+│       └── test_views.cpp
+├── CMakeLists.txt                  # Main project CMake (finds GoogleTest, builds all tests)
+├── run_tests.sh                    # One-click build+test script
+├── project_structure.txt           # This file
+└── README.md                       # (to be created/documented as needed)
+
+Explanations:
+
+- include/: C++ headers for domain/test objects shared across tests or modular code.
+- src/: Library modules, app logic (here, dummy for testing). `CMakeLists.txt` builds library for test linkage.
+- tests/: All translated test files (unit/integration) using Google Test.
+    - test_main.cpp: Test runner main().
+    - original/: All "original" Python tests, fully translated to C++/GTest.
+- CMakeLists.txt: Top-level build targets, finds GoogleTest, compiles all tests.
+- run_tests.sh: Simple one-click script: builds and runs all tests.
+- project_structure.txt: You are here! Overall tree document.
+
+Setup/Testing Instructions:
+
+1. Install CMake and GoogleTest development headers (`libgtest-dev`).
+2. Run: `chmod +x run_tests.sh && ./run_tests.sh`
+3. All tests compile, then run automatically.

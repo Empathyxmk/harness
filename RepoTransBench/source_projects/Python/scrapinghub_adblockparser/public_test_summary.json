@@ -1,0 +1,54 @@
+{
+  "project_name": "scrapinghub_adblockparser",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:21:56.123333",
+  "original_path": "/workspace/verified_repos_v2/Python/scrapinghub_adblockparser",
+  "public_test_result_path": "/workspace/public_test_results/Python/scrapinghub_adblockparser",
+  "original_tests": {
+    "test_files": [
+      "tests/test_rule_types.py",
+      "tests/test_utils.py",
+      "tests/test_adblockparser_api.py",
+      "tests/test_parsing.py",
+      "tests/test_options.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_rule_types.py",
+      "public_tests/test_public_utils.py",
+      "public_tests/test_public_adblockparser_api.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_options.py",
+      "public_tests/test_public_parsing.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_rule_types.py",
+    "public_tests/test_public_utils.py",
+    "public_tests/test_public_adblockparser_api.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_options.py",
+    "public_tests/test_public_parsing.py",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

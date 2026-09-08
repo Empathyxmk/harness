@@ -1,0 +1,35 @@
+Python Project Structure for justonedb_kafka-sink-pg-json (Translated from Java)
+
+├── requirements.txt
+│     - Python dependencies list (pytest is used for testing)
+├── run_tests.sh
+│     - Simple script to run all tests (both original and public)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_postgresql_sink_task.py
+│       └── test_postgresql_sink_connector.py
+|        - Contains full translations of original Java tests for both SinkTask and Connector
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_postgresql_sink_task_public.py
+│   └── test_postgresql_sink_connector_public.py
+|        - Contains translations of public Java tests, with their public-focused data
+└── project_structure.txt
+      - This file: describes the project tree, migration logic, and usage notes
+
+Directory Details
+-----------------
+tests/original/               - All original (non-public) test translations from the Java repo.
+public_tests/                 - Publicly shareable test translations guarding no sensitive config.
+requirements.txt              - List of test (and runtime, if needed) dependencies.
+run_tests.sh                  - Bash script, simply run './run_tests.sh' to execute all tests.
+project_structure.txt         - This documentation file.
+
+How to run tests:
+-----------------
+1. Install dependencies:      pip install -r requirements.txt
+2. Run tests:                 ./run_tests.sh
+
+Each file in `tests/original/` or `public_tests/` directly corresponds to a Java test class, preserving all original logic, scenarios, data, and assertions.

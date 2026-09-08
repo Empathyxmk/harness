@@ -1,0 +1,27 @@
+unitedstates_cpp_us/
+├── CMakeLists.txt                  # CMake configuration for the project and gtest
+├── include/
+│   └── us.h                        # Public API header for state logic (stubbed)
+├── public_tests/
+│   ├── test_public_extra_test.cpp  # C++ translations of public Python tests (test_public_extra.py)
+│   └── test_public_us_test.cpp     # C++ translations of public Python tests (test_public_us.py)
+├── src/
+│   └── lib/
+│       └── us.cpp                  # Sample logic implementation for testing purposes
+├── tests/
+│   ├── original/
+│   │   ├── test_extra_test.cpp     # C++ translation of original Python tests (test_extra.py)
+│   │   └── test_us_test.cpp        # C++ translation of original Python tests (test_us.py)
+│   └── test_main.cpp               # Main entrypoint for gtest executables
+├── run_tests.sh                    # Build and run all tests (both original and public)
+├── README.md                       # Documentation and development notes
+└── project_structure.txt           # This project directory overview
+
+# Directory explanations:
+# - include/: C++ public header files, API definitions
+# - src/lib/: Main logic implementation (stubs/fakes used here for test demonstration)
+# - tests/original/: Original (private) test translations
+# - public_tests/: Public test translations
+# - tests/test_main.cpp: Shared gtest entrypoint
+# - CMakeLists.txt: Build configuration, including GoogleTest and all test binaries
+# - run_tests.sh: Simple, one-click script to build and run all tests

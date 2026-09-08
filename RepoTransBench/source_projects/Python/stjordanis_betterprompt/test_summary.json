@@ -1,0 +1,11 @@
+{
+  "project_name": "stjordanis_betterprompt",
+  "language": "Python",
+  "coverage": {
+    "line": 97.0,
+    "branch": 80.0
+  },
+  "timestamp": "2025-06-23T10:37:06.288653",
+  "original_path": "/workspace/test_enhancement_results/Python/stjordanis_betterprompt",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/stjordanis_betterprompt"
+}

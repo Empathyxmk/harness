@@ -1,0 +1,37 @@
+camgunz_cmp Python Translation Project Structure
+
+project_root/
+├── src/
+│   └── camgunz_cmp/
+│       ├── __init__.py            # Package marker
+│       ├── buffer.py              # Buffer utility class (modeled after buf.c/.h)
+│       └── cmp.py                 # Main cmp MessagePack logic (stubs, for tests)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_msgpack.py        # Original tests: test_msgpack (end-to-end)
+│       └── test_fixedint.py       # Original tests: test_fixedint (format/invalids)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_msgpack.py     # Public test: public MessagePack int8
+│   └── test_public_fixedint.py    # Public test: public fixedint type uint8
+├── requirements.txt               # Python test dependencies (pytest)
+├── run_tests.sh                   # Simple one-click test execution script
+├── project_structure.txt          # This project structure file
+
+=======================================================
+
+src/               - Python source code (MessagePack/buffer/cmp logic)
+tests/original/    - Original ("private/internal") test cases from C project, translated to Python/pytest
+public_tests/      - Public versions of the test suite (analogous to C "tests_public.c" coverage)
+run_tests.sh       - Run *all* tests (original+public) in a single step via pytest
+requirements.txt   - Dependencies (install with: `pip install -r requirements.txt`)
+
+To run all tests:
+    chmod +x run_tests.sh
+    ./run_tests.sh
+
+To run only the original or public tests:
+    pytest tests/original/
+    pytest public_tests/

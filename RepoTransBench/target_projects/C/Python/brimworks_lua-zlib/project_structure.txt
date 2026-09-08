@@ -1,0 +1,22 @@
+project_root/
+├── src/
+│   └── pyzlib/
+│       └── __init__.py       # Python API wrapper emulating Lua zlib used by the tests
+├── tests/
+│   └── original/
+│       ├── test_zlib_checksum.py        # Original adler32/crc32 tests
+│       ├── test_zlib_edge.py            # Original edge/sanity compress/inflate tests
+│       ├── test_zlib_constants.py       # Original exported constants and metadata test
+│       └── test_main.py                 # Full translation of test.lua (comprehensive tests)
+├── public_tests/
+│   ├── test_public.py                    # Public Amnon David, roundtrip, table concat tests
+│   ├── test_zlib_checksum_public.py       # Public adler32/crc32 with new data tests
+│   ├── test_zlib_edge_public.py           # Public edge: space, binary string compress/decompress
+│   └── test_zlib_constants_public.py      # Public test for specific constants
+├── amnon_david.gz               # Required test data files (copied from source project)
+├── tom_macwright.gz             # Required test data files (copied from source project)
+├── tom_macwright.out            # Required test data files (copied from source project)
+├── requirements.txt             # Python dependencies (pytest)
+├── run_tests.sh                 # Main test runner (runs both original and public tests)
+├── README.md                    # Documentation and instructions
+├── project_structure.txt        # This file: directory and file explanations

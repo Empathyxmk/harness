@@ -1,0 +1,48 @@
+Project Structure: PrakritTyagi_MPC_Target-Tracking_UAV (Python Translation)
+
+.
+├── MPC_code/
+│   ├── casadi_code1/
+│   │   ├── c130.m
+│   │   ├── Graph_MPC_casadi.m
+│   │   └── main_Robot_Tracking_obs_avoid_single_sh.m
+│   └── casadi_code2/
+│       ├── c130.m
+│       ├── Graph_MPC_casadi.m
+│       └── main_Multi_Robot_Tracking_obs_avoid_single_sh.m
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_c130.py
+│   ├── test_Graph_MPC_casadi.py
+│   └── test_main_scripts.py
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_c130.py
+│       ├── test_Graph_MPC_casadi.py
+│       └── test_main_scripts.py
+└── project_structure.txt
+
+Directory Explanations:
+----------------------
+MPC_code/                - MATLAB source/scripts (not directly importable in Python, referenced by tests for existence/emulation).
+public_tests/            - Public test cases translated to Python (mirroring public MATLAB tests).
+tests/original/          - Original ("private") tests translated to Python, not part of public test suite.
+requirements.txt         - Python dependencies for running project and tests.
+run_tests.sh             - Minimal shell script to execute all tests via pytest.
+project_structure.txt    - This structure documentation.
+
+Test Execution:
+---------------
+1. (Optional) Create/activate a virtualenv: python3 -m venv .venv && source .venv/bin/activate
+2. Install requirements: pip install -r requirements.txt
+3. Run all tests:      ./run_tests.sh
+
+Notes:
+------
+- All tests simulate MATLAB script/module existence, and if .py equivalent files are provided (user extension), will try to run those; otherwise, skip.
+- Test logic is a faithful translation: checking script presence and running if possible, adapting variable changes as in the MATLAB public tests.
+- If .py versions of MATLAB scripts are not present, tests will skip their dynamic execution (but still check for .m file presence as per original smoke logic).

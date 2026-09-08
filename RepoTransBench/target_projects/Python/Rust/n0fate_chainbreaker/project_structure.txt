@@ -1,0 +1,35 @@
+n0fate_chainbreaker/                        # Project root
+├── Cargo.toml                              # Rust package manifest, dependencies config
+├── src/                                   # Project library source code root
+│   ├── lib.rs                             # Main Rust lib with modules for chainbreaker API stubs
+│   ├── schema.rs                          # Chainbreaker schema module
+│   ├── version.rs                         # Version module
+│   ├── results.rs                         # Results/printing/output module
+│   └── args_control.rs                    # Args control stub
+├── tests/                                 # Rust test modules (integration tests)
+│   └── original/                          # Original translated test files
+│       ├── test_schema.rs                 # Original schema tests
+│       ├── test_init_chainbreaker.rs      # Original Chainbreaker object/class tests
+│       ├── test_command_line.rs           # Original command line entrypoint tests
+│       ├── test_results.rs                # Original results format/output tests
+│       └── test_version.rs                # Version logic tests
+├── public_tests/                          # Directory for public (release/public) test translations
+│   └── chainbreaker/
+│       ├── test_public_init_chainbreaker.rs
+│       ├── test_public_command_line.rs
+│       ├── test_public_version.rs
+│       ├── test_public_schema.rs
+│       └── test_public_results.rs
+├── run_tests.sh                           # Simple script to run all tests (chmod +x required)
+└── project_structure.txt                   # This file: explains the structure and main files
+
+# Directory explanations:
+# src/        -- All functional Rust code (chainbreaker modules and stubs).
+# tests/      -- All "original" test files with full logic translated from Python.
+# public_tests/chainbreaker/ -- All public/released tests.
+# run_tests.sh -- One command to run all tests.
+
+# Setup/use:
+#   1. Build:    cargo build
+#   2. Test:     ./run_tests.sh
+#   (You may need: chmod +x run_tests.sh)

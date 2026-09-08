@@ -1,0 +1,61 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.0rc1, pytest-8.4.1, pluggy-1.6.0
+rootdir: /workspace/temp_public_testcase/public_test_generation_20250623_201953/pyga_parsley
+plugins: rerunfailures-15.1, mock-3.14.1, pyfakefs-5.9.0, asyncio-0.21.1, timeout-2.4.0, hypothesis-6.135.14, colcon-core-0.19.0, repeat-0.9.4, requests-mock-1.12.1, anyio-4.9.0, Faker-37.4.0, django-4.11.1, cov-6.2.1, pylama-8.4.1
+asyncio: mode=Mode.STRICT
+collected 386 items / 4 errors
+
+==================================== ERRORS ====================================
+______________________ ERROR collecting doc/test_calc.py _______________________
+ImportError while importing test module '/workspace/temp_public_testcase/public_test_generation_20250623_201953/pyga_parsley/doc/test_calc.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+doc/test_calc.py:1: in <module>
+    from calc import Calc
+doc/calc.py:2: in <module>
+    from parsley import makeGrammar
+E   ModuleNotFoundError: No module named 'parsley'
+____________ ERROR collecting examples/protocol/test_netstrings.py _____________
+ImportError while importing test module '/workspace/temp_public_testcase/public_test_generation_20250623_201953/pyga_parsley/examples/protocol/test_netstrings.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../verified_repos/Python/pyga_parsley/examples/protocol/test_netstrings.py:1: in <module>
+    import parsley
+E   ModuleNotFoundError: No module named 'parsley'
+__________________ ERROR collecting examples/test_iso8601.py ___________________
+ImportError while importing test module '/workspace/temp_public_testcase/public_test_generation_20250623_201953/pyga_parsley/examples/test_iso8601.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../verified_repos/Python/pyga_parsley/examples/test_iso8601.py:7: in <module>
+    from iso8601 import DateTimeParser
+examples/iso8601.py:4: in <module>
+    from parsley import makeGrammar
+E   ModuleNotFoundError: No module named 'parsley'
+________________ ERROR collecting examples/test_parsley_json.py ________________
+ImportError while importing test module '/workspace/temp_public_testcase/public_test_generation_20250623_201953/pyga_parsley/examples/test_parsley_json.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../verified_repos/Python/pyga_parsley/examples/test_parsley_json.py:3: in <module>
+    from parsley_json import JSONParser
+examples/parsley_json.py:1: in <module>
+    from parsley import makeGrammar
+E   ModuleNotFoundError: No module named 'parsley'
+=========================== short test summary info ============================
+ERROR doc/test_calc.py
+ERROR examples/protocol/test_netstrings.py
+ERROR examples/test_iso8601.py
+ERROR examples/test_parsley_json.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 4 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 4 errors in 0.93s ===============================

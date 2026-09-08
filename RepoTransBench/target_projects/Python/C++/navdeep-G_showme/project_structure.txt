@@ -1,0 +1,32 @@
+navdeep-G_showme-cpp/
+├── CMakeLists.txt                        # Root CMake project file
+├── README.md                             # Project README and setup guide
+├── include/
+│   └── showme/                           # C++ public headers for main lib
+│       ├── core.h                        # Core API header
+│       ├── decorators.h                  # Decorator simulation helpers
+│       └── utils.h                       # Utility functions (if needed)
+├── src/
+│   ├── main.cpp                          # (Optional) CLI or demonstration entry
+│   └── showme/
+│       ├── core.cpp                      # Main core implementation
+│       ├── decorators.cpp                # Decorator simulation (trace, docs, etc.)
+│       └── utils.cpp                     # Utilities implementation (if any)
+├── tests/
+│   └── original/
+│       ├── test_core_additional_test.cpp # Core "original" test logic
+│       ├── test_cputime_test.cpp         # cputime original test logic
+│       ├── test_docs_test.cpp            # docs original test logic
+│       ├── test_setup_py_test.cpp        # setup.py import/monkeypatch test logic
+│       ├── test_time_test.cpp            # time decorator original test logic
+│       ├── test_trace_test.cpp           # trace decorator original test logic
+│       └── test_main.cpp                 # Central test entry point, includes all tests
+├── public_tests/
+│   ├── test_public_core_additional_test.cpp
+│   ├── test_public_cputime_test.cpp
+│   ├── test_public_docs_test.cpp
+│   ├── test_public_setup_py_test.cpp
+│   ├── test_public_time_test.cpp
+│   ├── test_public_trace_test.cpp
+│   └── public_test_main.cpp              # Central public test entry point
+├── run_tests.sh                          # Simple one-click testing script (build & run)

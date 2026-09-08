@@ -1,0 +1,42 @@
+ChatApp Project Structure (C# .NET 7)
+======================================
+
+Project Root
+------------
+.
+├── ChatApp.sln                # Solution file referencing all test projects
+├── tests/
+│   ├── TestUtilities.cs       # (for shared utilities or fixtures)
+│   └── original/
+│       ├── ChatApplicationTests.csproj     # "application context loads" test
+│       ├── ChatApplicationTests.cs         # Minimal test
+│       ├── chatroom/
+│       │   ├── ChatRoomServiceTests.csproj # Original ChatRoomService tests
+│       │   └── ChatRoomServiceTests.cs     # Original tests with full logic
+│       └── chat/
+│           ├── ChatControllerTests.csproj  # Original ChatController tests
+│           └── ChatControllerTests.cs      # Original tests with full logic
+├── public_tests/
+│   ├── ChatRoomServicePublicTests.csproj   # Public ChatRoomService tests
+│   ├── ChatRoomServicePublicTests.cs       # Public tests, identical logic/public data
+│   ├── ChatControllerPublicTests.csproj    # Public ChatController tests
+│   └── ChatControllerPublicTests.cs        # Public tests, identical logic/public data
+└── run_tests.sh                # Run all tests with one command
+
+Directory Descriptions
+----------------------
+- ChatApp.sln                 : Solution file for .NET test projects.
+- tests/original/             : Contains original translated test cases.
+    - chatroom/ & chat/       : Organized by feature/domain as per original repo.
+- public_tests/               : Contains public test case translations.
+- run_tests.sh                : Simple script to run all tests (`dotnet test ChatApp.sln`).
+- TestUtilities.cs            : Placeholder for future shared test helpers (if needed).
+
+Test/Build Instructions
+-----------------------
+1. Install .NET 7 SDK (https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+2. Run all tests (original + public) with:
+     ./run_tests.sh
+   or directly:
+     dotnet test ChatApp.sln
+3. All test dependencies are managed via the *.csproj files (xUnit, Moq, etc.).

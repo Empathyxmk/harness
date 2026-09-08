@@ -1,0 +1,11 @@
+{
+  "project_name": "dadaewq_Install-Lion",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T15:41:15.892587",
+  "original_path": "/workspace/runnable_filter/Java/dadaewq_Install-Lion",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/dadaewq_Install-Lion"
+}

@@ -1,0 +1,37 @@
+project_root/
+├── requirements.txt               # Python dependencies (pytest, mock, redis)
+├── run_tests.sh                   # One-click test execution script
+├── project_structure.txt          # This file: explains project structure
+├── tests/
+│   └── original/
+│       ├── test_access_speed_limit.py       # Test for AccessSpeedLimit (loop, logic, LimitRule)
+│       ├── test_access_speed_limit_unit.py  # Unit test for AccessSpeedLimit with mock
+│       ├── test_limit_rule.py              # LimitRule class getters/setters and logic
+│       ├── test_zk_distributed_sequence_unit.py # ZK distributed sequence object w/ mocks
+│       ├── test_zk_reentrant_lock_template.py   # Multi-thread test for ZK Lock template
+│       ├── test_redis_reentrant_lock_template.py # Multi-thread test for Redis lock template
+│       ├── test_simple.py                  # Simple lock and template test
+├── public_tests/
+│   ├── test_access_speed_limit_public.py      # Public version of AccessSpeedLimit tests
+│   ├── test_limit_rule_public.py             # Public version of LimitRule tests
+│   ├── test_zk_distributed_sequence_public.py # Public ZK Sequence logic test
+│   ├── test_zk_reentrant_lock_template_public.py # Public ZK Lock template logic
+│   ├── test_simple_public.py                 # Simple addition/string assertion public test
+│   ├── test_redis_reentrant_lock_template_public.py # Public Redis lock try/unlock test
+# 
+# Directory explanations:
+# - requirements.txt: List of all Python dependencies for project and tests.
+# - run_tests.sh: Shell script to run all tests (original + public) using pytest. Executable.
+# - tests/original/: Contains translations of all original Java tests, organized with descriptive names.
+# - public_tests/: Contains public test-case translations (those shown for users/contestants).
+# 
+# Setup & Usage Instructions:
+# 1. Create virtual environment: python3 -m venv .venv && source .venv/bin/activate
+# 2. Install requirements: pip install -r requirements.txt
+# 3. Run all tests with ./run_tests.sh (make it executable: chmod +x run_tests.sh)
+# 4. All tests from both tests/original/ and public_tests/ will automatically run.
+#
+# Notes:
+# - These test files are direct semantic translations of the Java test logic,
+#   using built-in Python mock/dummy classes where needed to match logic or interface.
+# - To support full logic coverage, additional source implementation can be added in a src/ directory if real code is desired to be tested.

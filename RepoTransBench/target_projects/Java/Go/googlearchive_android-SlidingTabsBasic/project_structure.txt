@@ -1,0 +1,18 @@
+slidingtabsbasic/
+├── README.md                     # Project overview and instructions
+├── go.mod                        # Go modules with dependencies
+├── run_tests.sh                  # One-click test execution script
+├── project_structure.txt         # This file: structure & explanations
+├── tests/
+│   ├── original/
+│   │   ├── log_test.go                           # Original LogTest.java
+│   │   ├── logview_test.go                       # Original LogViewTest.java
+│   │   ├── messageonlylogfilter_test.go          # Original MessageOnlyLogFilterTest.java
+│   │   ├── slidingtabsbasicfragment_test.go      # Original SlidingTabsBasicFragmentTest.java
+│   │   └── sampletests_test.go                   # Original SampleTests.java (instrumentation test)
+│   ├── testutil.go                              # Mocks/Test utility definitions
+├── public_tests/
+│   ├── log_public_test.go                       # LogPublicTest.java
+│   ├── logview_public_test.go                   # LogViewPublicTest.java
+│   ├── messageonlylogfilter_public_test.go      # MessageOnlyLogFilterPublicTest.java
+│   ├── slidingtabsbasicfragment_public_test.go  # SlidingTabsBasicFragmentPublicTest.java

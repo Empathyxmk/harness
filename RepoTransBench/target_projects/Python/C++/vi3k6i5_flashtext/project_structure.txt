@@ -1,0 +1,65 @@
+vi3k6i5_flashtext_cpp/
+├── CMakeLists.txt                 # Top-level CMake config for building tests and sources
+├── README.md                      # Project description and setup instructions
+├── include/
+│   └── keyword_processor.h        # C++ header for core KeywordProcessor logic (to be implemented)
+├── src/
+│   ├── main.cpp                   # (optional) Main program entrypoint
+│   └── keyword_processor.cpp      # C++ implementation for KeywordProcessor (to be implemented)
+├── tests/
+│   ├── original/                  # All original test cases translated from Python
+│   │   ├── test_extract_fuzzy.cpp
+│   │   ├── test_kp_len.cpp
+│   │   ├── test_kp_term_in_kp.cpp
+│   │   ├── test_setup_py.cpp
+│   │   ├── test_dictionary_loading.cpp
+│   │   ├── test_kp_next_word.cpp
+│   │   ├── test_replace_fuzzy.cpp
+│   │   ├── test_extractor.cpp
+│   │   ├── test_kp_get_all_keywords.cpp
+│   │   ├── test_kp_exceptions.cpp
+│   │   ├── test_file_load.cpp
+│   │   ├── test_replacer.cpp
+│   │   ├── test_loading_keyword_list.cpp
+│   │   ├── test_kp_extract_span.cpp
+│   │   ├── test_remove_keywords.cpp
+│   ├── keyword_extractor_test_cases.json   # Translated/ported data from Python for parametric tests
+│   ├── keyword_remover_test_cases.json
+│   ├── keywords_format_one.txt
+│   ├── keywords_format_two.txt
+│   └── test_main.cpp               # GTest main() for all original tests
+├── public_tests/
+│   ├── test_public_dictionary_loading.cpp
+│   ├── test_public_extract_fuzzy.cpp
+│   ├── test_public_extractor.cpp
+│   ├── test_public_file_load.cpp
+│   ├── test_public_kp_exceptions.cpp
+│   ├── test_public_kp_extract_span.cpp
+│   ├── test_public_kp_get_all_keywords.cpp
+│   ├── test_public_kp_len.cpp
+│   ├── test_public_kp_next_word.cpp
+│   ├── test_public_kp_term_in_kp.cpp
+│   ├── test_public_loading_keyword_list.cpp
+│   ├── test_public_remove_keywords.cpp
+│   ├── test_public_replace_fuzzy.cpp
+│   ├── test_public_replacer.cpp
+│   ├── test_public_setup_py.cpp
+│   ├── test_main_public.cpp         # GTest main() for all public tests
+├── run_tests.sh                    # Build and run all C++ tests (original & public)
+└── project_structure.txt           # This file, explains all components
+
+Explanations:
+-----------
+- include/: C++ header files; main library header here.
+- src/: The main source implementation of KeywordProcessor in C++ (to be implemented/filled).
+- tests/original/: Original in-depth test coverage, translated from Python using GoogleTest.
+- public_tests/: Translated public tests (sample/coverage-style).
+- tests/keyword_extractor_test_cases.json, tests/keyword_remover_test_cases.json, tests/keywords_format_one.txt, tests/keywords_format_two.txt: Input data required for parametric tests (tests should parse these identically to the Python originals).
+- run_tests.sh: Builds everything with CMake, runs all tests (both original and public).
+- CMakeLists.txt: Sets up the build for everything, includes GoogleTest & configures all test suites.
+- test_main.cpp/test_main_public.cpp: Entrypoints for running tests in each group.
+Instructions:
+1. Install dependencies (see README or run_tests.sh will auto-provision with CMake).
+2. To build & test, run: `./run_tests.sh`
+Notes:
+- The main C++ implementation (KeywordProcessor class, etc.) must provide all methods as expected by the test cases. The test logic and datasets match the original Python repo.

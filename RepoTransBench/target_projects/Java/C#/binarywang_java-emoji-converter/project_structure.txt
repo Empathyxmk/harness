@@ -1,0 +1,32 @@
+binarywang-emoji-converter-cs/
+├── README.md
+├── src/
+│   └── Binarywang.EmojiConverter/
+│       ├── Binarywang.EmojiConverter.csproj
+│       ├── Program.cs
+│       └── Model/
+│           └── Emoji4Unicode.cs
+│       └── Util/
+│           └── EmojiUtils.cs
+│       └── EmojiConverter.cs
+│       └── EmojiReader.cs
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── EmojiConverterEdgeTests.cs
+│       ├── EmojiUtilsTests.cs
+│       ├── EmojiConverterTests.cs
+│       ├── EmojiReaderTests.cs
+│       └── Model/
+│           └── Emoji4UnicodeTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── EmojiConverterEdgePublicTests.cs
+│   ├── EmojiUtilsPublicTests.cs
+│   ├── EmojiConverterPublicTests.cs
+│   ├── EmojiReaderPublicTests.cs
+│   └── Model/
+│       └── Emoji4UnicodePublicTests.cs
+├── Binarywang.EmojiConverter.sln
+├── run_tests.sh
+├── test_translation_progress.json

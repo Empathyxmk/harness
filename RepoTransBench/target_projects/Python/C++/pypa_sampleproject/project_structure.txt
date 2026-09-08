@@ -1,0 +1,37 @@
+project_root/
+├── src/
+│   └── sample/
+│       ├── simple.h          # Logic for add_one
+│       ├── simple.cpp
+│       ├── init.h            # main() printing function
+│       └── init.cpp
+├── include/                  # (empty - ready for possible headers)
+├── tests/
+│   ├── test_simple.cpp       # Original tests for add_one/int/float/edgecases
+│   ├── test_init.cpp         # Original: test main() prints full phrase
+│   ├── test_noxfile.cpp      # Simulates original noxfile.py tests in C++
+│   └── test_main.cpp         # GTest main() for test_runner
+├── public_tests/
+│   ├── test_public_simple.cpp    # Public suite: alternative add_one edge/large/float/None cases
+│   ├── test_public_init.cpp      # Public: main prints contains "main application code" substring
+│   ├── test_public_noxfile.cpp   # Public: meta-test that "lint" exists, takes session, runs "flake8/mypy/..."
+│   └── test_public_main.cpp      # GTest main() for direct public_tests/ test run (not used by main test_runner)
+├── CMakeLists.txt            # CMake build for all sources and test suites
+├── run_tests.sh              # Simple one-click test execution: build+run
+└── project_structure.txt     # This file
+
+# Directory explanations:
+# - src/          : All C++ source implementations
+# - include/      : For headers (not strictly needed, but recommended for larger codebases)
+# - tests/        : Original tests from the Python suite, ported to C++ (uses GoogleTest)
+# - public_tests/ : Public tests as per the reference Python suite, ported C++
+# - CMakeLists.txt: Build config; links all tests, builds test_runner from src + test files
+# - run_tests.sh  : One command to build and run all tests
+# - test_main.cpp : Entry point for GoogleTest test_runner
+
+# Usage:
+#  1. Install cmake, g++, and make (and internet for first build to download GoogleTest)
+#  2. Run: chmod +x run_tests.sh && ./run_tests.sh
+#  3. All tests (original+public) will be built and executed with GoogleTest.
+# 
+# To run only public_tests/ as a separate executable, rebuild linking only those, or run ./test_runner and filter with --gtest_filter

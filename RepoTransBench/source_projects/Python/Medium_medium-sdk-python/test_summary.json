@@ -1,0 +1,11 @@
+{
+  "project_name": "Medium_medium-sdk-python",
+  "language": "Python",
+  "coverage": {
+    "line": 73.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T12:03:37.777024",
+  "original_path": "/workspace/runnable_filter/Python/Medium_medium-sdk-python",
+  "test_result_path": "/workspace/test_enhancement_results/Python/Medium_medium-sdk-python"
+}

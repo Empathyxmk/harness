@@ -1,0 +1,20 @@
+project_root/
+├── include/
+│   └── betterprompt.h         # C++ header for API and stubs
+├── src/
+│   └── betterprompt.cpp       # C++ code stub with minimal logic for tests
+├── tests/
+│   ├── test_main.cpp          # Main runner for GoogleTest
+│   └── original/
+│       ├── test_init_module.cpp
+│       ├── test_betterprompt.cpp
+│       ├── test_betterprompt_coverage.cpp
+│       └── test_betterprompt_edgecases.cpp
+├── public_tests/
+│   ├── test_public_init_module.cpp
+│   ├── test_public_betterprompt.cpp
+│   ├── test_public_betterprompt_edgecases.cpp
+│   └── test_public_betterprompt_coverage.cpp
+├── CMakeLists.txt             # CMake config for building project and tests with GoogleTest
+├── run_tests.sh               # Simple one-click test execution script
+└── project_structure.txt      # This file

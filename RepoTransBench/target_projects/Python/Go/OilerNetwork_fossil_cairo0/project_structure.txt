@@ -1,0 +1,32 @@
+OilerNetwork_fossil_cairo0 Go Project Structure
+
+.
+├── go.mod                      # Go module definition
+├── run_tests.sh                # One-click test execution script
+├── project_structure.txt       # This project structure description
+├── setup.py                    # The Python setup.py (used as test target)
+├── tests/
+│   └── original/
+│       └── setup_py_test.go    # Original logic tests translated from Python
+└── public_tests/
+    └── setup_py_public_test.go # Public test logic translated from Python
+
+Directory Explanations:
+- go.mod: Declares module path and Go version for the project.
+- run_tests.sh: Simple script to run all Go tests in the project; usage: ./run_tests.sh
+- setup.py: The original Python file - needed for these meta-tests (it's the file under test!).
+- tests/original/: Contains Go test(s) preserving the original internal logic from source project.
+- public_tests/: Contains Go test(s) modeling public test logic requirements.
+- project_structure.txt: This document.
+
+Setup/Testing Instructions:
+1. Ensure your project root contains an actual `setup.py` file (these tests check its presence/contents).
+2. Run all tests from the root with:
+   ./run_tests.sh
+   This invokes 'go test ./... -v' and will execute all Go test files in all subdirectories.
+
+Test Discovery:
+- Go automatically discovers *_test.go files in subdirectories, including tests/original/ and public_tests/.
+- All assertions and behaviors mimic those described in the original and public Python tests.
+
+No external dependencies are required beyond the Go standard library.

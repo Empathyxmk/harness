@@ -1,0 +1,37 @@
+gc-demo/
+├── Cargo.toml                # Rust project configuration and dependencies
+├── src/                      # Source code directory
+│   ├── lib.rs                # Main library module declarations
+│   ├── common/               # Common utilities and data structures
+│   │   ├── mod.rs            # Common module declaration
+│   │   ├── node.rs           # Node data structure definition
+│   │   └── mem.rs            # Memory management utilities
+│   ├── gc/                   # Garbage collection implementation
+│   │   ├── mod.rs            # GC module declaration
+│   │   ├── allocate.rs       # Allocation functions for GC
+│   │   └── mark_and_sweep.rs # Mark and sweep algorithm implementation
+│   └── refcount/             # Reference counting implementation
+│       ├── mod.rs            # Refcount module declaration
+│       ├── allocate.rs       # Allocation functions for refcount
+│       └── refcount.rs       # Reference counting implementation
+├── tests/                    # Original test directory
+│   └── original/             # Original test cases
+│       ├── gc/               # GC tests
+│       │   ├── test_gc_api.rs         # Basic GC API tests
+│       │   └── test_mark_and_sweep.rs # Mark and sweep tests
+│       └── refcount/         # Refcount tests
+│           └── test_refcount.rs       # Reference counting tests
+├── public_tests/             # Public test directory
+│   ├── gc/                   # GC public tests
+│   │   └── test_mark_and_sweep_public.rs # Public mark and sweep tests
+│   └── refcount/             # Refcount public tests
+│       └── test_refcount_public.rs        # Public reference counting tests
+└── run_tests.sh              # Test execution script
+
+Setup and Testing Instructions:
+1. This is a Rust project that requires Cargo to build and run
+2. To run all tests, simply execute: ./run_tests.sh
+3. To run specific tests, use: cargo test <test_name>
+4. The project structure follows Rust conventions with src/ for source code
+   and tests/ for test files
+5. Original tests are in tests/original/ and public tests are in public_tests/

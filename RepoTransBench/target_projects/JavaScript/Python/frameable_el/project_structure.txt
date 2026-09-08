@@ -1,0 +1,25 @@
+frameable_el_python/
+├── requirements.txt
+│   └── Python dependencies for running and testing, including pytest and pytest-asyncio.
+├── run_tests.sh
+│   └── Simple script to run all tests using pytest.
+├── tests/
+│   └── original/
+│       └── test_debug.py      # Translation of original test/debug.test.js from JS
+├── public_tests/
+│   └── test_debug_public.py   # Translation of public_tests/debug.public.test.js from JS
+└── project_structure.txt
+    └── This explanation file.
+
+Directory explanations:
+- requirements.txt: Python dependencies for the project and tests. Includes pytest and asyncio support.
+- run_tests.sh: Simple runner for all Python tests. Usage: ./run_tests.sh
+- tests/original/: Contains original ("private") test translations.
+- public_tests/: Contains public test translations.
+- project_structure.txt: List and description of all files and directories.
+
+Setup and testing instructions:
+1. (Optional) Create a virtualenv: python3 -m venv venv && source venv/bin/activate
+2. Install requirements:    pip install -r requirements.txt
+3. Run all tests:           ./run_tests.sh
+All tests should pass and cover the same logic as the original JavaScript versions.

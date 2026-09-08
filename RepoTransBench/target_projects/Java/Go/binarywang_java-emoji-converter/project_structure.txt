@@ -1,0 +1,18 @@
+.
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests
+│   └── original
+│       ├── emoji4unicode_test.go
+│       ├── emoji_converter_edge_test.go
+│       ├── emoji_converter_test.go
+│       ├── emoji_reader_test.go
+│       └── emoji_utils_test.go
+└── public_tests
+    ├── emoji4unicode_public_test.go
+    ├── emoji_converter_edge_public_test.go
+    ├── emoji_converter_public_test.go
+    ├── emoji_reader_public_test.go
+    └── emoji_utils_public_test.go

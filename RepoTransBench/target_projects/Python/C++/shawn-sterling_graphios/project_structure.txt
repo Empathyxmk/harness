@@ -1,0 +1,43 @@
+Project Structure
+-----------------
+
+graphios_cpp/
+├── CMakeLists.txt         # Root CMake configuration
+├── run_tests.sh           # Script to build and run all tests
+├── README.md              # (Not provided here, but recommended)
+├── include/               # C++ public headers
+│   ├── graphios.h         # Interfaces for main module
+│   └── graphios_backends.h
+├── src/                   # Application/library implementation sources
+│   ├── CMakeLists.txt
+│   ├── graphios.cpp
+│   └── graphios_backends.cpp
+├── tests/                 # All original/hidden test cases
+│   ├── CMakeLists.txt
+│   ├── test_main.cpp          # Test runner main()
+│   └── original/
+│       ├── test_graphios.cpp
+│       ├── test_graphios_backends.cpp
+│       └── test_setup.cpp
+├── public_tests/          # All public test cases
+│   ├── CMakeLists.txt
+│   ├── test_public_graphios.cpp
+│   ├── test_public_graphios_backends.cpp
+│   └── test_public_setup.cpp
+
+Key Directories:
+- src/: Implementation sources to be tested.
+- include/: C++ headers declaring library & interface.
+- tests/original/: All original/hidden tests as C++ Google Test unit tests.
+- public_tests/: All public tests as C++ Google Test unit tests.
+- build/: Created by CMake/Make, not versioned.
+- run_tests.sh: Build & run all tests in a single step.
+
+Testing Instructions:
+---------------------
+1. Ensure Google Test (gtest) is available for CMake (either system install or as submodule).
+2. Run: `chmod +x run_tests.sh && ./run_tests.sh`
+   This configures, builds, and runs both original and public tests.
+3. Test results are printed to the console.
+
+Each test file mirrors the logic, names, and assertions of the original Python tests, adapted for C++.

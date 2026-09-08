@@ -1,0 +1,11 @@
+{
+  "project_name": "Jxck_assert",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 71.34,
+    "branch": 62.58
+  },
+  "timestamp": "2025-06-19T10:48:30.679405",
+  "original_path": "/workspace/runnable_filter/JavaScript/Jxck_assert",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/Jxck_assert"
+}

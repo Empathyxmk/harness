@@ -1,0 +1,72 @@
+{
+  "project_name": "socialwifi_RouterOS-api",
+  "source_language": "Python",
+  "target_language": "Rust",
+  "timestamp": "2025-07-17T12:42:17.994657",
+  "original_path": "/workspace/source_projects/Python/socialwifi_RouterOS-api",
+  "translation_result_path": "/workspace/translated_test_results/Python/Rust/socialwifi_RouterOS-api",
+  "iterations_completed": 2,
+  "run_tests_script_available": true,
+  "run_tests_script_executable": true,
+  "files_copied_summary": {
+    "target_test_files": 18,
+    "additional_target_files": 2,
+    "common_files": 6,
+    "build_directories": 0,
+    "total_files": 26
+  },
+  "source_original_tests": [
+    "tests/test_api_communicator.py",
+    "tests/test_base_api.py",
+    "tests/test_sentence.py",
+    "tests/test_api_structure.py",
+    "tests/test_resource.py",
+    "tests/test_query.py",
+    "tests/test_api_socket.py",
+    "tests/test_socket.py",
+    "tests/test_login_router_os_api.py"
+  ],
+  "source_public_tests": [
+    "public_tests/test_public_base_api.py",
+    "public_tests/test_public_resource.py",
+    "public_tests/test_public_api_structure.py",
+    "public_tests/test_public_sentence.py",
+    "public_tests/test_public_api_socket.py",
+    "public_tests/test_public_query.py",
+    "public_tests/test_public_api_communicator.py",
+    "public_tests/test_public_login_router_os_api.py",
+    "public_tests/test_public_socket.py"
+  ],
+  "target_original_tests": [
+    "tests/original/test_api_communicator.rs",
+    "tests/original/test_base_api.rs",
+    "tests/original/test_sentence.rs",
+    "tests/original/test_api_structure.rs",
+    "tests/original/test_resource.rs",
+    "tests/original/test_query.rs",
+    "tests/original/test_api_socket.rs",
+    "tests/original/test_socket.rs",
+    "tests/original/test_login_router_os_api.rs"
+  ],
+  "target_public_tests": [
+    "public_tests/test_public_api_communicator.rs",
+    "public_tests/test_public_base_api.rs",
+    "public_tests/test_public_sentence.rs",
+    "public_tests/test_public_api_structure.rs",
+    "public_tests/test_public_resource.rs",
+    "public_tests/test_public_api_socket.rs",
+    "public_tests/test_public_query.rs",
+    "public_tests/test_public_login_router_os_api.rs",
+    "public_tests/test_public_socket.rs"
+  ],
+  "project_structure": "project_structure.txt",
+  "run_tests_script": "run_tests.sh",
+  "translation_stats": {
+    "source_tests_count": 18,
+    "target_tests_count": 18,
+    "source_original_count": 9,
+    "source_public_count": 9,
+    "target_original_count": 9,
+    "target_public_count": 9
+  }
+}

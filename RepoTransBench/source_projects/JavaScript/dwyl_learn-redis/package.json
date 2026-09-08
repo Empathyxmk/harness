@@ -1,0 +1,20 @@
+{
+  "name": "dwyl_learn-redis",
+  "version": "1.0.0",
+  "description": "Learn Redis with Node.js",
+  "main": "examples/basic.js",
+  "scripts": {
+    "test": "tape 'test/**/*.js'",
+    "coverage": "c8 --reporter=text --reporter=html npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "c8": "^8.0.1",
+    "jest": "^30.0.1",
+    "tape": "^5.9.0"
+  },
+  "dependencies": {
+    "redis": "^3.1.2"
+  }
+}

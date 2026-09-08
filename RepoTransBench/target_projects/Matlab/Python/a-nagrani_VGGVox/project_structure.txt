@@ -1,0 +1,24 @@
+Project structure for a-nagrani_VGGVox (Python version)
+=======================================================
+
+.
+├── src/                  # Source Python package
+│   ├── __init__.py       # Makes src a Python package
+│   └── example.py        # Implementation of the example() function
+├── tests/
+│   ├── __init__.py       # Test package marker
+│   └── original/
+│       ├── __init__.py   # Test package marker
+│       └── test_example.py     # Translated original tests for example.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_example.py        # Translated public tests for example.py
+├── requirements.txt      # Required dependencies (pytest)
+├── run_tests.sh          # Simple script to run all tests
+└── project_structure.txt # This file
+
+- All ORIGINAL tests from Matlab are in tests/original/test_example.py
+- PUBLIC test cases are in public_tests/test_example.py
+- src/example.py implements the "example" function based on the test usage patterns
+- Use `./run_tests.sh` to run all tests (make sure it's executable: chmod +x run_tests.sh)
+- Install dependencies with `pip install -r requirements.txt`

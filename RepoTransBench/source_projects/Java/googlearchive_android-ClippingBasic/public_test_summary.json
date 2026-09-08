@@ -1,0 +1,43 @@
+{
+  "project_name": "googlearchive_android-ClippingBasic",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:15:24.692114",
+  "original_path": "/workspace/verified_repos_v2/Java/googlearchive_android-ClippingBasic",
+  "public_test_result_path": "/workspace/public_test_results/Java/googlearchive_android-ClippingBasic",
+  "original_tests": {
+    "test_files": [
+      "Application/src/test/java/com/example/android/common/logger/LogTest.java",
+      "Application/src/test/java/com/example/android/common/logger/LogViewTest.java",
+      "Application/src/test/java/com/example/android/common/logger/MessageOnlyLogFilterTest.java"
+    ],
+    "test_scripts": [],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "Application/src/test/java/com/example/android/common/logger/LogPublicTest.java",
+      "Application/src/test/java/com/example/android/common/logger/LogViewPublicTest.java",
+      "Application/src/test/java/com/example/android/common/logger/MessageOnlyLogFilterPublicTest.java",
+      "Application/run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "Application/run_public_tests.sh"
+    ],
+    "total_public_test_files": 4,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "Application/src/test/java/com/example/android/common/logger/LogPublicTest.java",
+    "Application/src/test/java/com/example/android/common/logger/LogViewPublicTest.java",
+    "Application/src/test/java/com/example/android/common/logger/MessageOnlyLogFilterPublicTest.java",
+    "Application/run_public_tests.sh",
+    "Application/run_tests.sh"
+  ]
+}

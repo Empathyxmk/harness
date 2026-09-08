@@ -1,0 +1,72 @@
+code4craft_hello_design_pattern/
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── behavioral/
+│   │   │   ├── chain_of_responsibility/
+│   │   │   │   ├── hello_world_handler_test.go
+│   │   │   │   └── hello_world_object_handler_test.go
+│   │   │   ├── command/
+│   │   │   │   └── hello_world_print_command_test.go
+│   │   │   ├── interpreter/
+│   │   │   │   └── hello_world_interpreter_test.go
+│   │   │   ├── iterator/
+│   │   │   │   ├── hello_world_character_iterator_test.go
+│   │   │   │   └── hello_world_iterator_test.go
+│   │   │   ├── mediator/
+│   │   │   │   ├── hello_world_interjection_test.go
+│   │   │   │   ├── hello_world_mediator_test.go
+│   │   │   │   └── hello_world_object_test.go
+│   │   │   ├── memento/
+│   │   │   │   └── hello_world_memento_test.go
+│   │   │   ├── observer/
+│   │   │   │   ├── hello_world_observer_test.go
+│   │   │   │   └── subject_test.go
+│   │   │   ├── state/
+│   │   │   │   ├── hello_world_state_context_test.go
+│   │   │   │   └── hello_world_state_test.go
+│   │   │   ├── strategy/
+│   │   │   │   ├── hello_world_strategy_context_test.go
+│   │   │   │   └── java_hello_world_strategy_test.go
+│   │   │   ├── template_method/
+│   │   │   │   └── template_method_hello_world_test.go
+│   │   │   └── visitor/
+│   │   │       └── hello_world_visitor_test.go
+│   │   ├── creational/
+│   │   │   ├── abstract_factory/
+│   │   │   │   └── abstract_factory_test.go
+│   │   │   ├── builder/
+│   │   │   │   └── hello_world_builder_test.go
+│   │   │   ├── factory_method/
+│   │   │   │   └── factory_method_hello_world_factory_test.go
+│   │   │   ├── prototype/
+│   │   │   │   ├── hello_world_prototype_full_test.go
+│   │   │   │   └── hello_world_prototype_test.go
+│   │   │   └── singleton/
+│   │   │       ├── hello_world_singleton_full_test.go
+│   │   │       └── hello_world_singleton_test.go
+│   │   ├── structural/
+│   │   │   ├── adapter/
+│   │   │   │   └── hello_world_adapter_test.go
+│   │   │   ├── bridge/
+│   │   │   │   └── hello_world_bridge_test.go
+│   │   │   ├── composite/
+│   │   │   │   └── composite_hello_world_test.go
+│   │   │   ├── decorator/
+│   │   │   │   └── hello_world_decorator_test.go
+│   │   │   ├── facade/
+│   │   │   │   └── hello_world_facade_test.go
+│   │   │   ├── flyweight/
+│   │   │   │   └── hello_world_flyweight_test.go
+│   │   │   └── proxy/
+│   │   │       └── hello_world_proxy_test.go
+│   │   ├── hello_world_test.go
+│   │   ├── main_test.go
+│   │   └── split_hello_world_test.go
+├── public_tests/
+│   ├── hello_world_public_test.go
+│   ├── main_public_test.go
+│   └── split_hello_world_public_test.go

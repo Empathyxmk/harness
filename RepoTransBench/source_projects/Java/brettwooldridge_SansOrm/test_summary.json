@@ -1,0 +1,11 @@
+{
+  "project_name": "brettwooldridge_SansOrm",
+  "language": "Java",
+  "coverage": {
+    "line": 61.8,
+    "branch": 53.8
+  },
+  "timestamp": "2025-06-19T18:23:15.824015",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/brettwooldridge_SansOrm",
+  "test_result_path": "/workspace/test_enhancement_results/Java/brettwooldridge_SansOrm"
+}

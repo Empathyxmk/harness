@@ -1,0 +1,28 @@
+.
+├── README.md                    # Project overview and usage
+├── cssselect/                   # Main library code (stubbed, need implementation)
+│   ├── cssselect.go             # cssselect main types and placeholder functions
+│   ├── parser.go                # parser types and stubs
+│   └── xpath.go                 # XPathExpr struct and stub methods
+├── go.mod                       # Go module definition
+├── project_structure.txt        # This file: describes the project organization
+├── public_tests/                # Public subset of test cases (translated to Go)
+│   ├── test_public_api_imports_test.go
+│   ├── test_public_cssselect_test.go
+│   └── test_public_xpath_expr_test.go
+├── run_tests.sh                 # One-click script to run all tests
+└── tests/                       # Complete (original) test suite
+    ├── test_api_imports_test.go
+    └── test_xpath_expr_test.go
+
+Folders:
+- cssselect/: Holds the base Go implementation for CSS selector parsing (implement as needed).
+- tests/: Original, complete translated test suite.
+- public_tests/: Public subset of tests.
+- All *_test.go files: Translated from Python pytest/unittest syntax.
+
+Instructions:
+1. Implement the real logic in cssselect/ for all types and functions referenced in tests.
+2. To run all tests, use ./run_tests.sh from project root.
+
+All test files and their functions are complete; logic preserved from original Python sources.

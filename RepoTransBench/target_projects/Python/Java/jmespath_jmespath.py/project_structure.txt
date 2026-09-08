@@ -1,0 +1,45 @@
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── jmespath/
+│                   └── (library code here, e.g., Jmespath.java, etc.)
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── jmespath/
+│                   ├── original/
+│                   │   ├── AstTest.java
+│                   │   ├── CompatBranchTest.java
+│                   │   ├── CompatTest.java
+│                   │   ├── ComplianceTest.java
+│                   │   ├── CustomFunctionsTest.java
+│                   │   ├── ExceptionsBranchTest.java
+│                   │   ├── ExceptionsTest.java
+│                   │   ├── FunctionsTest.java
+│                   │   ├── InitPyTest.java
+│                   │   ├── LexerTest.java
+│                   │   ├── ParserTest.java
+│                   │   ├── SearchTest.java
+│                   │   ├── HypothesisTest.java
+│                   │   └── (other files, as needed)
+│                   └── public/
+│                       ├── PublicAstTest.java
+│                       ├── PublicCompatTest.java
+│                       ├── PublicComplianceBranchTest.java
+│                       ├── PublicComplianceTest.java
+│                       ├── PublicCustomFunctionsTest.java
+│                       ├── PublicExceptionsBranchTest.java
+│                       ├── PublicExceptionsTest.java
+│                       ├── PublicFunctionsTest.java
+│                       ├── PublicInitPyTest.java
+│                       ├── PublicLexerTest.java
+│                       ├── PublicParserTest.java
+│                       ├── PublicSearchTest.java
+│                       └── (other files, as needed)

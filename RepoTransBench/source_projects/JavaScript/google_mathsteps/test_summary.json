@@ -1,0 +1,15 @@
+{
+  "project_name": "google_mathsteps",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 95.7,
+    "branch": 90.4
+  },
+  "timestamp": "2025-06-19T10:32:52.350512",
+  "original_path": "/workspace/runnable_filter/JavaScript/google_mathsteps",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/google_mathsteps",
+  "tests_path": [
+    "test/lib/Negative.test.js"
+  ],
+  "run_tests_path": null
+}

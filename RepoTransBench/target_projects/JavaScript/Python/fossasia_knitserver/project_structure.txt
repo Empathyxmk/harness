@@ -1,0 +1,26 @@
+fossasia_knitserver_python/
+├── src/
+│   ├── __init__.py              # Package marker
+│   └── example.py               # Source logic
+├── tests/
+│   └── original/
+│       ├── __init__.py          # Package marker
+│       └── test_example.py      # Original test cases (directly translated)
+├── public_tests/
+│   ├── __init__.py              # Package marker
+│   └── test_example_public.py   # Public test cases (directly translated)
+├── requirements.txt             # Python test dependencies
+├── run_tests.sh                 # One-click test execution script
+└── project_structure.txt        # This file (structure & explanations)
+
+Directory explanations:
+src/               - All source code (business logic)
+tests/original/    - Original tests (all source test scenarios, most complete)
+public_tests/      - Public/derived example tests (for open evaluation)
+requirements.txt   - Required Python dependencies (install via pip)
+run_tests.sh       - Run all tests in one command (`./run_tests.sh`)
+project_structure.txt  - This file (project tree and explanations)
+
+To run tests:
+1. pip install -r requirements.txt
+2. ./run_tests.sh

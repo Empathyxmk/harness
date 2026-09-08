@@ -1,0 +1,47 @@
+pythonkoans-java/
+├── pom.xml                          # Maven build, all dependencies (JUnit 5, Mockito, Hamcrest)
+├── run_tests.sh                     # One-click test runner for all Java tests
+├── README.md                        # Project description & instructions
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── pythonkoans/
+│   │               └── ...         # (minimal necessary stubs if any)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── pythonkoans/
+│                   ├── original/
+│                   │   ├── PathToEnlightenmentTest.java
+│                   │   ├── MountainTest.java
+│                   │   ├── HelperTest.java
+│                   │   ├── ScentTest.java
+│                   │   ├── MockTest.java
+│                   │   ├── ContemplateKoansTest.java
+│                   │   └── SenseiTest.java
+│                   └── publictests/
+│                       ├── PublicScentTest.java
+│                       ├── PublicMountainTest.java
+│                       ├── PublicContemplateKoansTest.java
+│                       ├── PublicHelperTest.java
+│                       ├── PublicMockTest.java
+│                       ├── PublicSenseiTest.java
+│                       └── PublicPathToEnlightenmentTest.java
+
+Directory Explanations:
+-----------------------
+pom.xml            : Maven build configuration; pulls in JUnit 5/Mockito/Hamcrest.
+run_tests.sh       : Run this to execute all tests (JUnit).
+src/main/java/     : Main code stubs or legacy logic (minimal, as most tests are logic-only).
+src/test/java/com/pythonkoans/original/    : Internal/original test cases from the Python source.
+src/test/java/com/pythonkoans/publictests/ : Public test cases from the Python source.
+README.md          : Usage, setup and contribution info.
+
+Setup/Testing:
+--------------
+1. Ensure you have Java 11+ and Maven installed.
+2. Make script executable: chmod +x run_tests.sh
+3. To run all tests: ./run_tests.sh
+
+JUnit output will show both original and public tests. If any fail, see the test output for details.

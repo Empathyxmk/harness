@@ -1,0 +1,31 @@
+aksakalli_gtop_python/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── project_structure.txt
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_gtop.py
+│       ├── test_utils.py
+│       └── monitor/
+│           ├── __init__.py
+│           ├── test_cpu.py
+│           ├── test_disk.py
+│           ├── test_index.py
+│           ├── test_mem.py
+│           ├── test_net.py
+│           └── test_proc.py
+└── public_tests/
+    ├── __init__.py
+    └── monitor/
+        ├── __init__.py
+        ├── test_cpu_public.py
+        ├── test_disk_public.py
+        ├── test_index_public.py
+        ├── test_mem_public.py
+        ├── test_net_public.py
+        ├── test_proc_public.py
+    ├── test_gtop_public.py
+    ├── test_utils_public.py

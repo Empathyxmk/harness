@@ -1,0 +1,1 @@
+# Pytest automatically discovers tests; no main needed.

@@ -1,0 +1,37 @@
+softvar_json2html Go Project Structure:
+
+.
+├── go.mod                        # Go module file (dependencies, module name)
+├── run_tests.sh                  # Single-command test runner
+├── project_structure.txt         # Project structure documentation
+├── json2html/                    # (Placeholder) Implementation package for logic under test
+│   ├── jsonconv.go               # (Implementation of json2html utilities)
+│   └── ...                       # (Other Go source files as needed)
+├── tests/
+│   └── original/
+│       ├── json2html_core_test.go        # Core original test
+│       ├── json2html_additional_test.go  # Additional tests
+│       └── json2html_run_tests_test.go   # Data/e2e & edge tests (from run_tests.py)
+├── public_tests/
+│   ├── json2html_core_public_test.go             # Public version of core test
+│   └── json2html_additional_public_test.go       # Public version of additional test
+└── ... (other utility/support files as needed)
+
+Directory Explanations:
+
+- go.mod:           Go module definition, include all used packages.
+- run_tests.sh:     Run all tests (original and public) with 'go test ./...'.
+- project_structure.txt:   This documentation.
+- json2html/:       Package containing Go implementations for json2html logic.
+- tests/original/:  Original (non-public) test cases auto-converted from Python.
+- public_tests/:    Public test cases auto-converted from Python.
+
+Setup & Testing Instructions:
+1. Ensure Go >= 1.20 is installed.
+2. Implement the 'json2html' package (see json2html/jsonconv.go).
+3. To run all tests, just execute:
+   ./run_tests.sh
+
+This will run all original and public tests using Go's built-in testing framework.
+
+All test logic is directly translated from the Python source for 1:1 functional parity.

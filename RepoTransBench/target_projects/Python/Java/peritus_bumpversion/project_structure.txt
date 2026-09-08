@@ -1,0 +1,46 @@
+Java Project Structure for peritus_bumpversion
+=============================================
+
+.
+├── pom.xml                # Maven configuration with JUnit 5 and dependencies
+├── run_tests.sh           # One-click test runner (mvn clean test)
+├── README.md              # (To be added) Usage and project info
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/peritus/bumpversion/
+│   │           ├── functions/        # NumericFunction, ValuesFunction, and helpers (your logic here)
+│   │           ├── versionpart/      # VersionPart and configuration classes
+│   │           └── Main.java         # (Main entrypoint, optional)
+│   └── test/
+│       └── java/
+│           └── com/peritus/bumpversion/
+│               ├── original/                  # Original (private) project test cases
+│               │   ├── FunctionsTest.java
+│               │   ├── FunctionsEdgeTest.java
+│               │   ├── CliTest.java
+│               │   ├── InitVcsTest.java
+│               │   ├── BumpversionInitTest.java
+│               │   ├── VersionPartTest.java
+│               │   ├── VersionPartExtraTest.java
+│               │   └── InitEdgeCasesTest.java
+│               └── publictests/               # Public test cases (translated from public_tests)
+│                   ├── PublicFunctionsTest.java
+│                   ├── PublicFunctionsEdgeTest.java
+│                   ├── PublicCliTest.java
+│                   ├── PublicBumpversionInitTest.java
+│                   ├── PublicInitVcsTest.java
+│                   ├── PublicInitEdgeCasesTest.java
+│                   ├── PublicVersionPartTest.java
+│                   └── PublicVersionPartExtraTest.java
+
+Key:
+- All *Test.java files under original/ or publictests/ are complete JUnit 5 test classes translated from Python.
+- Source code (core classes you want to test) should be implemented under src/main/java/com/peritus/bumpversion/
+- Tests will be automatically discovered/run by Maven.
+
+To run all tests:
+$ ./run_tests.sh
+
+To run only public or only original tests:
+- By default, all are run. For subsets, use Maven includes/excludes or add CLI options as needed.

@@ -1,0 +1,24 @@
+project_root/
+├── src/
+│   └── libav_c99_to_c89/
+│       ├── __init__.py               # Marks libav_c99_to_c89 as a Python package.
+│       └── sample.py                 # Translated C source functions (add, max, is_even).
+├── tests/
+│   ├── __init__.py                   # Marks tests as a Python package.
+│   ├── original/                     # Directory for translated original test cases.
+│   │   ├── __init__.py               # Marks original tests as a Python package.
+│   │   └── test_sample_original.py   # Translated test cases from test_sample.c.
+│   └── conftest.py                   # Pytest configuration/fixtures (optional, but good practice).
+├── public_tests/
+│   ├── __init__.py                   # Marks public_tests as a Python package.
+│   └── test_sample_public.py         # Translated public test cases from test_sample_public.c.
+├── requirements.txt                  # Python package dependencies (e.g., pytest).
+├── run_tests.sh                      # Script to install dependencies and run all tests.
+└── project_structure.txt             # This file, documenting the project structure.
+
+Instructions to run tests:
+1. Ensure Python 3 and pip are installed.
+2. Navigate to the project_root directory.
+3. Run the test script: ./run_tests.sh
+   This script will install required dependencies (pytest) and then execute all
+   translated original and public tests using pytest.

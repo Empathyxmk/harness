@@ -1,0 +1,82 @@
+AndroidUtils.sln
+README.md
+README-CN.md
+project_structure.txt
+public_test_summary.json
+test_summary.json
+settings.gradle
+build.gradle
+gradle.properties
+gradlew
+gradlew.bat
+/app
+    build.gradle
+    proguard-rules.pro
+    /src
+        /androidTest
+            /java/com/example/administrator/androidutils
+                ExampleInstrumentedTest.java
+                ExampleInstrumentedPublicTest.java
+        /main
+            AndroidManifest.xml
+            /java/com/example/administrator/androidutils
+                MainActivity.java
+            /res
+                ... (various Android resources)
+        /test
+            /java/com/example/administrator/androidutils
+                ExampleUnitTest.java
+                ExampleUnitPublicTest.java
+/utils
+    build.gradle
+    proguard-rules.pro
+    /libs
+        settings.jar
+    /src
+        /androidTest
+            /java/com/example/utils
+                ExampleInstrumentedTest.java
+                ExampleInstrumentedPublicTest.java
+        /main
+            AndroidManifest.xml
+            /java/com/example/utils
+                AnimationUtils.java
+                AppUtils.java
+                AssetDatabaseOpenHelper.java
+                BitmapUtil.java
+                FileUtils.java
+                GsonUtil.java
+                LogUtils.java
+                PicassoUtil.java
+/tests
+    /original
+        AnimationUtilsTest.cs
+        AppUtilsTest.cs
+        AssetDatabaseOpenHelperTest.cs
+        BitmapUtilTest.cs
+        ExampleInstrumentedTest.cs
+        ExampleInstrumentedTest_utils.cs
+        ExampleUnitTest.cs
+        ExampleUnitTest_utils.cs
+        FileUtilsTest.cs
+        GsonUtilTest.cs
+        LogUtilsTest.cs
+        PicassoUtilTest.cs
+        original_tests.csproj
+/public_tests
+    AnimationUtilsPublicTest.cs
+    AppUtilsPublicTest.cs
+    AssetDatabaseOpenHelperPublicTest.cs
+    BitmapUtilPublicTest.cs
+    ExampleInstrumentedPublicTest.cs
+    ExampleInstrumentedPublicTest_utils.cs
+    ExampleUnitPublicTest.cs
+    ExampleUnitPublicTest_utils.cs
+    FileUtilsPublicTest.cs
+    GsonUtilPublicTest.cs
+    LogUtilsPublicTest.cs
+    PicassoUtilPublicTest.cs
+    public_tests.csproj
+/src
+    /AndroidUtils
+        AndroidUtils.csproj

@@ -1,0 +1,41 @@
+project_root/
+├── src/
+│   └── tree_model.py       # (USER: implement TreeModel here)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_more_edge_cases.py          # Original edge case tests
+│       └── test_tree_model_branches.py      # Original branch coverage and error tests
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_more_edge_cases_public.py       # Public edge case tests
+│   └── test_tree_model_branches_public.py   # Public branch coverage and error tests
+├── requirements.txt         # Python dependency list (pytest included)
+├── run_tests.sh            # Simple run script: runs all tests with pytest
+└── project_structure.txt    # This file: tree and file descriptions
+
+Directory overview:
+
+src/
+    tree_model.py
+        Implement the TreeModel class and node logic here so tests can import from src.tree_model.
+
+tests/original/
+    Original, full-coverage tests translated from the JS repository. Place your implementation in src/ so these import and execute correctly.
+
+public_tests/
+    Translations of public test cases (for public test exposure/execution).
+
+requirements.txt
+    Dependencies (install with: pip install -r requirements.txt)
+
+run_tests.sh
+    Run all tests (original and public) with one command via pytest.
+
+How to use:
+    1. Implement `TreeModel` in src/tree_model.py
+    2. Install dependencies:   pip install -r requirements.txt
+    3. Run tests:              ./run_tests.sh
+
+All test scenarios and logic are from the original JavaScript tests and preserved identically.

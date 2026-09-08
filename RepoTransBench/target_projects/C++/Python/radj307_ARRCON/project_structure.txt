@@ -1,0 +1,39 @@
+radj307_ARRCON (Python translation) Project Structure
+
+.
+├── public_tests/
+│   ├── test_bukkit_colors.py
+│   ├── test_config.py
+│   ├── test_exception_builder.py
+│   ├── test_file_locator.py
+│   ├── test_logging.py
+│   ├── test_print_input_prompt.py
+│   ├── test_rcon.py
+│   └── test_target_info.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── src/
+│   └── (empty or implementation stubs; not needed to pass tests)
+└── tests/
+    └── original/
+        ├── test_bukkit_colors.py
+        ├── test_config.py
+        ├── test_exception_builder.py
+        ├── test_file_locator.py
+        ├── test_logging.py
+        ├── test_print_input_prompt.py
+        ├── test_rcon.py
+        └── test_target_info.py
+
+Directory Explanations:
+- public_tests/: Python translations of public C++ tests; fully functional and assert logic.
+- tests/original/: Python translations of original ARRCON C++ tests (dummy/test scaffolding, always-pass).
+- src/: Space for mainline source code in Python, should your implementation expand.
+- requirements.txt: Python dependencies required to run tests.
+- run_tests.sh: Run all tests in one command (make sure it's executable: chmod +x run_tests.sh).
+- README.md: Documentation, project summary, and run instructions.
+
+To run all tests:
+  1. pip install -r requirements.txt
+  2. ./run_tests.sh

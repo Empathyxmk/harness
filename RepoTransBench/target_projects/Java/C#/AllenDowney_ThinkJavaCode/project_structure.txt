@@ -1,0 +1,53 @@
+AllenDowney_ThinkJavaCode/
+├── AllenDowney_ThinkJavaCode.sln
+├── src/
+│   └── AllenDowney.ThinkJavaCode/
+│       ├── AllenDowney.ThinkJavaCode.csproj
+│       ├── Series.cs
+│       ├── Time.cs
+│       ├── TimeClient.cs
+│       ├── Hello.cs
+│       ├── Goodbye.cs
+│       ├── Convert.cs
+│       ├── Deck.cs
+│       ├── Hand.cs
+│       └── (other production files as needed)
+├── tests/
+│   ├── original/
+│   │   ├── OriginalTests.csproj
+│   │   ├── Ap01/
+│   │   │   ├── SeriesTest.cs
+│   │   │   ├── SeriesFibonacciEdgeTest.cs
+│   │   ├── Ch01/
+│   │   │   └── HelloGoodbyeTest.cs
+│   │   ├── Ch03/
+│   │   │   └── ConvertTest.cs
+│   │   ├── Ch11/
+│   │   │   ├── TimeTest.cs
+│   │   │   ├── TimeClientTest.cs
+│   │   │   └── TimeAdditionalTest.cs
+│   │   ├── Ch13/
+│   │   │   └── TestTests.cs
+│   │   └── Ch14/
+│   │       └── TestTests.cs
+│   └── test_summary.json
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── Ap01/
+│   │   ├── SeriesPublicTest.cs
+│   │   ├── SeriesFibonacciEdgePublicTest.cs
+│   ├── Ch01/
+│   │   └── HelloGoodbyePublicTest.cs
+│   ├── Ch03/
+│   │   └── ConvertPublicTest.cs
+│   ├── Ch11/
+│   │   ├── TimePublicTest.cs
+│   │   ├── TimeClientPublicTest.cs
+│   │   └── TimeAdditionalPublicTest.cs
+│   ├── Ch13/
+│   │   └── PublicTest.cs
+│   └── Ch14/
+│       └── PublicTest.cs
+│   └── public_test_summary.json
+├── test_translation_progress.json
+└── run_tests.sh

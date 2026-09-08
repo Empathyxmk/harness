@@ -1,0 +1,54 @@
+PROJECT STRUCTURE
+
+code-not-found_spring-kafka-python/
+├── src/
+│   └── kafkaservice/
+│       ├── __init__.py
+│       └── kafka_service.py   # Python implementation of KafkaService
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       └── conftest.py        # (optional) pytest config
+│       └── test_kafka_service.py
+├── public_tests/
+│   ├── __init__.py
+│   └── conftest.py            # (optional) pytest config
+│   └── test_kafka_service_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+-----------------------------------------------------------
+DESCRIPTION OF DIRECTORIES AND FILES
+
+src/                  -> Source code root
+  kafkaservice/       
+    kafka_service.py  -> Implementation of KafkaService class matching test behaviors
+    __init__.py       -> Makes the package importable
+
+tests/original/       
+  test_kafka_service.py    -> Original translated tests from KafkaServiceTest.java
+  __init__.py             -> Package marker for tests
+  conftest.py             -> Optional pytest config for original tests
+
+public_tests/
+  test_kafka_service_public.py   -> Public translated tests from KafkaServicePublicTest.java
+  __init__.py                    -> Package marker for public tests
+  conftest.py                    -> Optional pytest config for public tests
+
+requirements.txt       -> Python dependencies (pytest only)
+run_tests.sh           -> Simple test script (runs ALL tests: both tests/ and public_tests/)
+project_structure.txt  -> This structure and directory documentation
+
+-----------------------------------------------------------
+SETUP & TESTING INSTRUCTIONS
+
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Run all tests:
+   ./run_tests.sh
+   (or)
+   pytest
+
+Both original and public tests will be discovered and executed.

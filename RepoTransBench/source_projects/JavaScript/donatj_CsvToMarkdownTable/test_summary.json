@@ -1,0 +1,16 @@
+{
+  "project_name": "donatj_CsvToMarkdownTable",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.91,
+    "branch": 88.46
+  },
+  "timestamp": "2025-06-19T10:15:43.349338",
+  "original_path": "/workspace/runnable_filter/JavaScript/donatj_CsvToMarkdownTable",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/donatj_CsvToMarkdownTable",
+  "tests_path": [
+    "test/test.js",
+    "test/module_exports.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

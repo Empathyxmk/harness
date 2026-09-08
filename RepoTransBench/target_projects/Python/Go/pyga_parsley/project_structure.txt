@@ -1,0 +1,51 @@
+pyga_parsley-go/
+├── go.mod                # Go module file for dependency management
+├── go.sum                # Go checksum file (auto-generated)
+├── README.md             # Project overview and instructions
+├── run_tests.sh          # One-click script to run all tests
+├── internal/
+│   ├── parsley/          # Parsley main package (core logic ported from Python)
+│   ├── ometa/            # OMeta implementation (grammar, interp, builder, etc.)
+│   ├── terml/            # TermL nodes and parser
+│   ├── iso8601/          # ISO8601 implementation (for original iso8601 tests)
+│   ├── netstrings/       # Netstrings protocol implementation (for original tests)
+│   ├── calc/             # Calc parser for calculator tests
+│   └── parsley_json/     # Parsley-powered JSON implementation
+├── tests/                # ORIGINAL test cases (all translated from 'tests/', 'examples/', 'terml/test/', 'ometa/test/', 'doc/')
+│   ├── test_parsley_test.go
+│   ├── test_parsley_end2end_test.go
+│   ├── test_grammar_import_test.go
+│   ├── test_ometa_interp_test.go
+│   ├── test_parsley_extra_test.go
+│   ├── test_vm_builder_integration_test.go
+│   ├── test_parsley_api_test.go
+│   ├── test_ometa_builder_test.go
+│   ├── test_ometa_vm_builder_test.go
+│   ├── test_builder_integration_test.go
+│   └── ... (one Go _test.go file per source test file)
+├── tests/original/       # (SYMLINK or ALIAS to tests/ or flat, as Go uses package names)
+├── public_tests/         # PUBLIC test cases (all test_public_xxx translated)
+│   ├── test_public_parsley_test.go
+│   ├── test_public_builder_test.go
+│   └── test_public_vm_builder_test.go
+│
+└── (all other Go source files as required: ometa, parsley, terml, etc.)
+
+Directory Explanations:
+- internal/: Contains the Go source implementations needed for the test suites (parsers, grammars, runtime, etc.)
+- tests/: All original (non-public) tests, ported from Python's full test suite.
+- public_tests/: Publicly generated tests, ported from the public_tests Python suite.
+- go.mod/go.sum: Go module files for dependency and version tracking.
+- run_tests.sh: One-click script to run ALL Go tests recursively.
+- README.md: Setup instructions, usage, project notes.
+
+Setup & Test Instructions:
+1. `go mod tidy` (once, to fetch dependencies)
+2. `chmod +x run_tests.sh`
+3. `./run_tests.sh` to run all tests (original and public).
+4. All tests use Go's standard testing package and are discovered recursively.
+
+Notes:
+- Test coverage matches original Python suite: both original/unittest/pytest and public_tests are ported.
+- Packages in `internal/` expose all public APIs for tests.
+- All dependencies are standard library or specified in go.mod.

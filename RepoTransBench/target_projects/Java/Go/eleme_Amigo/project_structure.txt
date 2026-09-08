@@ -1,0 +1,51 @@
+eleme_amigo/
+├── go.mod
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── amigo_integration_test.go
+│   │   ├── amigo_classloader_test.go
+│   │   ├── amigo_service_test.go
+│   │   ├── native_lib_loader_test.go
+│   │   ├── common_util_test.go
+│   │   ├── symlink_test.go
+│   │   ├── load_patch_error_test.go
+│   │   ├── patch_checker_test.go
+│   │   ├── amigo_test.go
+│   │   ├── patch_info_util_test.go
+│   │   ├── apk_release_activity_test.go
+│   │   ├── utils_reflect_test.go
+│   │   ├── message_digest_util_test.go
+│   │   ├── file_lock_util_test.go
+│   │   ├── array_util_test.go
+│   │   ├── dex_extractor_artvm_test.go
+│   │   ├── dex_extractor_dalvikvm_test.go
+│   │   ├── example_instrumented_test.go
+│   │   ├── example_unit_test.go
+│   │   └── testutil.go
+│   └── (other original/integration tests)
+├── public_tests/
+│   ├── amigo_integration_public_test.go
+│   ├── amigo_classloader_public_test.go
+│   ├── amigo_service_public_test.go
+│   ├── native_lib_loader_public_test.go
+│   ├── symlink_public_test.go
+│   ├── patch_checker_public_test.go
+│   ├── amigo_public_test.go
+│   ├── load_patch_error_public_test.go
+│   ├── patch_info_util_public_test.go
+│   ├── apk_release_activity_public_test.go
+│   ├── utils_reflect_public_test.go
+│   ├── array_util_public_test.go
+│   ├── file_lock_util_public_test.go
+│   ├── message_digest_util_public_test.go
+│   ├── dex_extractor_dalvikvm_public_test.go
+│   ├── dex_extractor_artvm_public_test.go
+│   └── testutil.go
+├── app/
+│   └── ele/
+│       └── amigo/
+│           ├── test_patched_activities.go
+│           └── test_patched_services.go
+└── README.md

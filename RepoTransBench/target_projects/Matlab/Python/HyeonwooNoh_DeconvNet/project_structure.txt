@@ -1,0 +1,29 @@
+project_root/
+├── README.md                   - Main project readme and test info
+├── requirements.txt            - Python dependencies for source and testing
+├── run_tests.sh                - Simple script: runs ALL tests using pytest
+├── src/
+│   └── hyeonwoonoh_deconvnet/  
+│       ├── __init__.py             - Makes src/ a package
+│       ├── inference/
+│       │   ├── __init__.py         
+│       │   ├── cache_fcn8s_results.py
+│       │   ├── generate_edeconvnet_crf_results.py
+│       │   ├── startup.py
+│       │   └── util/
+│       │       ├── __init__.py
+│       │       ├── preprocess_image.py
+│       │       └── preprocess_image_bb.py
+│       └── mock/
+│           ├── __init__.py
+│           └── caffe.py            - Mock Caffe interface for tests
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_cache_fcn8s_results.py
+│       ├── test_generate_edeconvnet_crf_results.py
+│       ├── test_preprocess_image.py
+│       ├── test_preprocess_image_bb.py
+│       └── test_startup.py
+├── public_tests/
+│   └── __init__.py             - (empty, since no public tests)

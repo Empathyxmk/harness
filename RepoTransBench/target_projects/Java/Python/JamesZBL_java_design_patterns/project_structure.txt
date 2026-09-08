@@ -1,0 +1,40 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_writer_integration.py
+│   │   ├── test_character_composite.py
+│   │   ├── test_writer.py
+│   │   ├── test_english_word.py
+│   │   ├── test_english_sentence.py
+│   │   ├── test_chinese_word.py
+│   │   ├── test_course_facade.py
+│   │   ├── test_adapter.py
+│   │   ├── test_prototype.py
+│   │   ├── test_factory.py
+│   │   ├── test_factory_method.py
+│   │   ├── test_mordern_war.py
+│   │   ├── test_war.py
+│   │   ├── test_ancient_war.py
+│   │   ├── test_lazy_initialization_director.py
+│   │   ├── test_singleton.py
+│   │   ├── test_director.py
+│   │   ├── test_thread_safe_lazy_load_director.py
+│   │   ├── test_thread_safe_double_check_locking.py
+│   │   ├── test_enum_director.py
+│   │   ├── test_carpenter_operations.py
+│   │   ├── test_hammersmith_operations.py
+│   │   ├── test_person.py
+│   │   ├── test_abstract_factory.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_writer_integration_public.py
+│   ├── test_character_composite_public.py
+│   ├── test_writer_public.py
+│   ├── test_english_word_public.py
+│   ├── test_english_sentence_public.py
+│   ├── test_chinese_word_public.py

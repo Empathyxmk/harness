@@ -1,0 +1,31 @@
+madisona_django_google_maps/
+├── Cargo.toml                      # Rust project manifest and dependencies
+├── src/
+│   └── lib.rs                      # (Empty, since library code is not ported)
+├── tests/
+│   ├── original/
+│   │   ├── test_widget.rs          # Rust translation of original test_widget.py
+│   │   ├── test_fields_models_widgets.rs
+│   │   ├── test_typename.rs
+│   │   ├── test_geolocation_field.rs
+│   │   ├── test_geopt_field.rs
+│   │   ├── test_setup_manage_urls.rs
+│   ├── simple_test.rs              # Translated sample/tests.py for basic addition test
+├── public_tests/
+│   ├── test_public_typename.rs
+│   ├── test_public_widget.rs
+│   ├── test_public_fields_models_widgets.rs
+├── run_tests.sh                    # Simple script for one-click test execution
+└── project_structure.txt           # This project structure document
+
+Directory explanations:
+- src/:         Main library root (empty for translation focus).
+- tests/:       Contains translated original test suite, organized by origin.
+- public_tests/:Contains public ("student visible") test translations.
+- run_tests.sh: One-click script to run all tests (`cargo test --all`).
+
+Setup and testing instructions:
+1. Install Rust and Cargo (see https://doc.rust-lang.org/book/ch01-01.html).
+2. Run all tests by executing:
+     ./run_tests.sh
+   This will automatically discover and run all tests in both tests/ and public_tests/.

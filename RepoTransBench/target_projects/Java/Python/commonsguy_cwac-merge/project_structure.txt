@@ -1,0 +1,35 @@
+commonsguy_cwac-merge Python project structure:
+
+.
+├── public_tests/
+│   ├── __init__.py
+│   └── test_merge_adapter_public.py        # Public test cases (translated from MergeAdapterPublicTest.java)
+├── requirements.txt                        # Python dependencies (pytest)
+├── run_tests.sh                            # One-click script to run all tests
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_merge_adapter.py           # Original test cases (from MergeAdapterTest.java)
+└── project_structure.txt                   # This file, describes the project structure
+
+Directory and file explanations:
+
+- tests/original/:      Contains translations of ALL original (private/complete) test cases from Java.
+- public_tests/:        Contains translations of ALL public/generative test cases.
+- requirements.txt:     Lists Python dependencies; install with `pip install -r requirements.txt`.
+- run_tests.sh:         Run to execute all tests (original + public) using pytest.
+- project_structure.txt:This description file.
+- __init__.py:          Ensures directories are recognized as packages for pytest.
+
+Getting started:
+
+1. Install requirements:
+   > pip install -r requirements.txt
+
+2. Run all tests (original + public):
+   > ./run_tests.sh
+
+3. To run only original or public tests individually:
+   > pytest tests/original/
+   > pytest public_tests/

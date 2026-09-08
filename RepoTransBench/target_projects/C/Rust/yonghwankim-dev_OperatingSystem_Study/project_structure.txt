@@ -1,0 +1,24 @@
+operating_system_study/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── main.rs
+├── tests/
+│   └── original/
+│       ├── bounded_buffer.rs
+│       ├── bounded_buffer_extra.rs
+│       ├── philosopher.rs
+│       ├── philosopher_extra.rs
+│       ├── pthread_scheduling.rs
+│       ├── pthread_scheduling_extra.rs
+│       └── driver_java.rs
+├── public_tests/
+│   ├── bounded_buffer_public.rs
+│   ├── bounded_buffer_extra_public.rs
+│   ├── philosopher_public.rs
+│   ├── philosopher_extra_public.rs
+│   ├── pthread_scheduling_public.rs
+│   ├── pthread_scheduling_extra_public.rs
+│   └── driver_java_public.rs
+├── run_tests.sh
+└── project_structure.txt

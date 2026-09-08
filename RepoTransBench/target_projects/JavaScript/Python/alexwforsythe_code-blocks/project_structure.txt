@@ -1,0 +1,31 @@
+alexwforsythe_code-blocks_python/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # One-click test execution script
+├── src/
+│   └── codeblocks/
+│       ├── __init__.py             # Initializes codeblocks package
+│       ├── colors.py               # colors module (provides colorToHex logic)
+│       └── util.py                 # util module (user prefs, cloning, etc.)
+├── tests/
+│   └── original/
+│       ├── __init__.py             # Test package
+│       ├── test_colors.py          # Original tests for colors module
+│       └── test_util.py            # Original tests for util module
+├── public_tests/
+│   ├── __init__.py                 # Test package
+│   ├── test_colors_public.py       # Public test cases for colors
+│   └── test_util_public.py         # Public test cases for util
+└── project_structure.txt           # Structure and instructions
+
+# Directory/file explanations:
+# - src/codeblocks/: Place source code modules here following Python best practices.
+# - tests/original/: Contains translations of original test cases from the JS repo.
+# - public_tests/: Contains translations of public test cases.
+# - requirements.txt: Lists Python dependencies for running tests (`pytest`).
+# - run_tests.sh: One-click script to execute ALL tests (original + public).
+# - project_structure.txt: Explains structure and setup.
+#
+# Setup and Testing Instructions:
+# 1. Ensure python3 and pip are installed.
+# 2. Run `pip install -r requirements.txt` to install dependencies.
+# 3. Run `./run_tests.sh` to execute all tests and see results.

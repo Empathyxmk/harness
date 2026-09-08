@@ -1,0 +1,24 @@
+gregmalcolm_python_koans/
+├── go.mod                     # Go module definition
+├── README.md                  # Project doc and run instructions
+├── project_structure.txt      # This file listing structure
+├── run_tests.sh               # One-click script to run all tests
+├── tests/
+│   ├── testutil.go            # Test utility/shared code (e.g., mocks, helpers)
+│   └── original/
+│       ├── path_to_enlightenment_test.go  # Original: filter_koan_names, koans_suite logic
+│       ├── mountain_test.go               # Original: Mountain test(s)
+│       ├── helper_test.go                 # Original: cls_name test(s)
+│       ├── scent_test.go                  # Original: scent.py tests/cli shelling
+│       ├── mock_test.go                   # Original: libs/mock.py API behaviors
+│       ├── contemplate_koans_test.go      # Original: contemplate_koans version/entrypoint
+│       └── sensei_test.go                 # Original: sensei.py result/error stack handling
+├── public_tests/
+│   ├── public_scent_test.go               # Public: basic dummy
+│   ├── public_mountain_test.go            # Public: Mountain API
+│   ├── public_contemplate_koans_test.go   # Public: doc/module
+│   ├── public_helper_test.go              # Public: helper.cls_name
+│   ├── public_mock_test.go                # Public: mock API
+│   ├── public_mock_calls_test.go          # Public: mock repeated call assertions
+│   ├── public_sensei_test.go              # Public: sensei presence/instance
+│   └── public_path_to_enlightenment_test.go # Public: path_to_enlightenment API

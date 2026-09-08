@@ -1,0 +1,16 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Simple script to run all tests
+├── src/
+│   └── libbmp/
+│       └── __init__.py             # Python BMP logic (stubbed for tests)
+├── tests/
+│   ├── __init__.py                 # For pytest discovery
+│   └── original/
+│       ├── __init__.py
+│       ├── test_test.py            # Original tests from test.c
+│       └── test_libbmp_ext.py      # Original "extended" test logic
+├── public_tests/
+│   ├── __init__.py                 # For pytest discovery
+│   ├── test_public_test.py         # Public analog of test.c
+│   └── test_public_test_libbmp_ext.py  # Public "extended" test logic

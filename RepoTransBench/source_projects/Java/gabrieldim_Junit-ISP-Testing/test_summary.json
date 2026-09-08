@@ -1,0 +1,11 @@
+{
+  "project_name": "gabrieldim_Junit-ISP-Testing",
+  "language": "Java",
+  "coverage": {
+    "line": 88.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:14:38.360493",
+  "original_path": "/workspace/test_enhancement_results/Java/gabrieldim_Junit-ISP-Testing",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/gabrieldim_Junit-ISP-Testing"
+}

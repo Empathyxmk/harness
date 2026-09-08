@@ -1,0 +1,18 @@
+{
+  "project_name": "eatonphil_pj",
+  "language": "Python",
+  "coverage": {
+    "line": 99.4,
+    "branch": 96.2
+  },
+  "timestamp": "2025-06-19T11:39:18.138451",
+  "original_path": "/workspace/runnable_filter/Python/eatonphil_pj",
+  "test_result_path": "/workspace/test_enhancement_results/Python/eatonphil_pj",
+  "tests_path": [
+    "tests/test_api.py",
+    "tests/test_lexer.py",
+    "tests/test_parser.py",
+    "tests/test_pj.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,31 @@
+Python Project Structure for donatj_CsvToMarkdownTable:
+
+.
+├── requirements.txt                     # Python dependencies (pytest only)
+├── run_tests.sh                         # One-click test execution script
+├── project_structure.txt                # Explanation of all project files/directories
+├── src/
+│   └── csv_to_markdown.py               # Implementation of csv_to_markdown for testing
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_csv_to_markdown.py      # Thorough tests for csv_to_markdown (original/coverage)
+│       └── test_module_exports.py       # Tests for export/import logic and dummy 'exports'
+├── public_tests/
+│   ├── __init__.py
+│   └── test_module_exports_public.py    # Public tests simulating module usage and non-module environments
+
+Directory Purposes:
+- src/         - Contains the implementation to be tested (csv_to_markdown.py)
+- tests/       - Main directory for test code
+- tests/original/ - Contains tests derived from the original repo's own test suite
+- public_tests/   - Contains public/visible tests for external/fairness checking
+- requirements.txt - Declares pytest dependency
+- run_tests.sh  - Easiest way to run all Python tests with one command
+
+Setup & Testing Instructions:
+1. (Recommended) Create virtual environment: python -m venv venv && source venv/bin/activate
+2. Install dependencies: pip install -r requirements.txt
+3. Run all tests: ./run_tests.sh
+   - This will run both original and public tests using pytest.

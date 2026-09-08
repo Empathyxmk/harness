@@ -1,0 +1,36 @@
+.
+├── README.md
+│   - Documentation and user instructions
+├── requirements.txt
+│   - Python package requirements (pytest used for tests)
+├── run_tests.sh
+│   - Simple, one-command test execution script for all tests
+├── src/
+│   └── json11.py
+│       - Python shim/mock of the json11 C++ interface, just enough for test translation
+├── tests/
+│   ├── original/
+│   │   ├── test_json11.py
+│   │   │   - Translation of C++ test.cpp (core/original tests)
+│   │   ├── test_json11_more.py
+│   │   │   - Translation of C++ test_more.cpp (additional original logic and edge cases)
+│   └── __init__.py
+│       - (optional, for package structure)
+├── public_tests/
+│   ├── test_public.py
+│   │   - Python translation of test_public.cpp (public test set)
+│   ├── test_more_public.py
+│   │   - Python translation of test_more_public.cpp (advanced public tests)
+│   └── __init__.py
+│       - (optional for test discovery)
+└── project_structure.txt
+    - This file: explanation of all files/directories
+
+### Directory Descriptions
+
+- `src/` -- (Library source, or test target. Here: a json11 shim to enable running the test translations.)
+- `tests/original/` -- Translated original (non-public) C++ tests
+- `public_tests/` -- Translated public test set C++ tests
+- `requirements.txt` -- Declares `pytest` dependency needed to run the suite
+
+### Running All Tests

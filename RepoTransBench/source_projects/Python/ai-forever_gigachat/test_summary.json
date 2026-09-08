@@ -1,0 +1,11 @@
+{
+  "project_name": "ai-forever_gigachat",
+  "language": "Python",
+  "coverage": {
+    "line": 97.0,
+    "branch": 96.7
+  },
+  "timestamp": "2025-06-19T11:21:14.579578",
+  "original_path": "/workspace/runnable_filter/Python/ai-forever_gigachat",
+  "test_result_path": "/workspace/test_enhancement_results/Python/ai-forever_gigachat"
+}

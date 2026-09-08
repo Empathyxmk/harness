@@ -1,0 +1,10 @@
+joke2k_django_environ/
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── fileaware_mapping_test.go
+│       ├── setup_module_test.go
+│       └── utils_test.go
+├── public_tests/
+├── project_structure.txt

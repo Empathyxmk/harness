@@ -1,0 +1,54 @@
+{
+  "project_name": "dylang_node-xml",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:25:09.236069",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/dylang_node-xml",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/dylang_node-xml",
+  "original_tests": {
+    "test_files": [
+      "test/xml.test.js",
+      "test/xml_api.test.js",
+      "test/escapeForXML.test.js",
+      "test/xml_internal.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 4,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/xml.public.test.js",
+      "public_tests/xml_api.public.test.js",
+      "public_tests/escapeForXML.public.test.js",
+      "public_tests/xml_internal.public.test.js",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/xml.public.test.js",
+    "public_tests/xml_api.public.test.js",
+    "public_tests/escapeForXML.public.test.js",
+    "public_tests/xml_internal.public.test.js",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "jest.config.js",
+    "run_public_tests.sh"
+  ]
+}

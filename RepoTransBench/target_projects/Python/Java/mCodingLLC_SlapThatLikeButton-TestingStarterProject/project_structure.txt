@@ -1,0 +1,49 @@
+SlapThatLikeButton Java Project Structure
+========================================
+
+Project Root
+├── pom.xml                # Maven build & dependency configuration
+├── run_tests.sh           # Simple script to run all tests at once
+├── project_structure.txt  # This project structure explanation
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/example/slapping/
+│   │           ├── LikeState.java           # Enum for like/dislike/empty state
+│   │           ├── SlapThatLikeButton.java  # Like/dislike logic (ported from Python)
+│   │           └── __init__.java            # Dummy package-initializer
+│   └── test/
+│       └── java/
+│           └── com/example/slapping/
+│               ├── original/
+│               │   ├── TestSlapThatLikeButton.java  # Original tests from source repo
+│               │   └── TestSlapping.java            # Original tests from source repo
+│               └── public_tests/
+│                   ├── TestPublicSlapThatLikeButton.java   # Public test cases (for open testing)
+│                   └── TestPublicSlapping.java             # Public test cases (for open testing)
+
+Directory Details:
+------------------
+src/main/java/com/example/slapping/
+    - Java implementation code (ports the tested logic from Python).
+    - This is where LikeState enum and SlapThatLikeButton logic live.
+
+src/test/java/com/example/slapping/original/
+    - All "original" test cases (private/internal). Direct port of Python's tests/...
+
+src/test/java/com/example/slapping/public_tests/
+    - All "public" test cases (open/public). Direct port of Python's public_tests/...
+
+pom.xml
+    - Declares project metadata, dependencies (JUnit 5), build plugins, etc.
+
+run_tests.sh
+    - One-click shell script for running all tests. Usage: ./run_tests.sh
+
+How to run all tests (after Java 11/Maven is installed):
+--------------------------------------------------------
+1. Make sure run_tests.sh is executable: chmod +x run_tests.sh
+2. Run all tests:
+    ./run_tests.sh
+
+This will invoke Maven to compile the code and run both original and public tests.

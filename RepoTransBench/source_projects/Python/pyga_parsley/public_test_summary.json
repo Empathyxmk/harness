@@ -1,0 +1,64 @@
+{
+  "project_name": "pyga_parsley",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:20:21.270002",
+  "original_path": "/workspace/verified_repos_v2/Python/pyga_parsley",
+  "public_test_result_path": "/workspace/public_test_results/Python/pyga_parsley",
+  "original_tests": {
+    "test_files": [
+      "test_parsley.py",
+      "ometa/test/test_builder.py",
+      "ometa/test/test_vm_builder.py",
+      "ometa/test/test_tube.py",
+      "ometa/test/test_protocol.py",
+      "ometa/test/test_runtime.py",
+      "ometa/test/test_pymeta.py",
+      "examples/test_iso8601.py",
+      "examples/test_parsley_json.py",
+      "examples/protocol/test_netstrings.py",
+      "doc/test_calc.py",
+      "tests/test_parsley_end2end.py",
+      "tests/test_grammar_import.py",
+      "tests/test_ometa_interp.py",
+      "tests/test_setup_py.py",
+      "tests/test_parsley_extra.py",
+      "tests/test_vm_builder_integration.py",
+      "tests/test_parsley_api.py",
+      "tests/test_ometa_builder.py",
+      "tests/test_ometa_vm_builder.py",
+      "tests/test_builder_integration.py",
+      "terml/test/test_quasiterm.py",
+      "terml/test/test_terml.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 23,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_parsley.py",
+      "public_tests/test_public_builder.py",
+      "public_tests/test_public_vm_builder.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 4,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_parsley.py",
+    "public_tests/test_public_builder.py",
+    "public_tests/test_public_vm_builder.py",
+    "run_public_tests.sh"
+  ]
+}

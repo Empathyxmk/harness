@@ -1,0 +1,10 @@
+{
+	"name": "microcache",
+	"version": "1.0.0",
+	"description": "micro library to handle in-memory cache (works in node+browser)",
+	"main": "microcache.js",
+	"devDependencies": {
+		"jest": "^30.0.1",
+		"nyc": "^17.1.0"
+	}
+}

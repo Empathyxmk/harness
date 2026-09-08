@@ -1,0 +1,15 @@
+{
+  "project_name": "c0ny1_chunked-coding-converter",
+  "language": "Java",
+  "coverage": {
+    "line": 95.1,
+    "branch": 86.4
+  },
+  "timestamp": "2025-06-23T11:34:02.414912",
+  "original_path": "/workspace/runnable_filter/Java/c0ny1_chunked-coding-converter",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/c0ny1_chunked-coding-converter",
+  "tests_path": [
+    "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

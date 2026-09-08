@@ -1,0 +1,88 @@
+{
+  "project_name": "PacktPublishing_Python-3-Object-Oriented-Programming-Third-Edition",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:21:15.844148",
+  "original_path": "/workspace/verified_repos_v2/Python/PacktPublishing_Python-3-Object-Oriented-Programming-Third-Edition",
+  "public_test_result_path": "/workspace/public_test_results/Python/PacktPublishing_Python-3-Object-Oriented-Programming-Third-Edition",
+  "original_tests": {
+    "test_files": [
+      "Chapter12/test_pytest_stats.py",
+      "Chapter12/test_flight_status.py",
+      "Chapter12/test_pytest_skipping.py",
+      "Chapter12/test_pytest_setups.py",
+      "Chapter12/test_with_pytest.py",
+      "Chapter12/test_pytest_cleanup.py",
+      "Chapter12/test_statslist_setup.py",
+      "Chapter12/test_skipping.py",
+      "Chapter12/test_echo_server.py",
+      "Chapter12/Case Study_ Vigenère cipher/test_vigenere.py",
+      "tests/test_car_flyweight.py",
+      "tests/test_window_command.py",
+      "tests/test_email_facade.py",
+      "tests/test_folder_composite.py",
+      "tests/test_pythonic_window_command.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 15,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_pytest_stats.py",
+      "public_tests/test_public_flight_status.py",
+      "public_tests/test_public_pytest_skipping.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_pytest_setups.py",
+      "public_tests/test_public_with_pytest.py",
+      "public_tests/test_public_pytest_cleanup.py",
+      "public_tests/test_public_statslist_setup.py",
+      "public_tests/test_public_pytest_stats.py",
+      "public_tests/test_public_flight_status.py",
+      "public_tests/test_public_statslist_setup.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_pytest_stats.py",
+      "public_tests/test_public_flight_status.py",
+      "public_tests/test_public_flight_status.py",
+      "public_tests/test_public_flight_status.py",
+      "public_tests/test_public_flight_status.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_flight_status.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 19,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_pytest_stats.py",
+    "public_tests/test_public_flight_status.py",
+    "public_tests/test_public_pytest_skipping.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_pytest_setups.py",
+    "public_tests/test_public_with_pytest.py",
+    "public_tests/test_public_pytest_cleanup.py",
+    "public_tests/test_public_statslist_setup.py",
+    "public_tests/test_public_pytest_stats.py",
+    "public_tests/test_public_flight_status.py",
+    "public_tests/test_public_statslist_setup.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_pytest_stats.py",
+    "public_tests/test_public_flight_status.py",
+    "public_tests/test_public_flight_status.py",
+    "public_tests/test_public_flight_status.py",
+    "public_tests/test_public_flight_status.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_flight_status.py"
+  ]
+}

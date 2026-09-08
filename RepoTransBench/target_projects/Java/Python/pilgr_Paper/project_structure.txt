@@ -1,0 +1,53 @@
+pilgr_Paper_python/
+├── src/
+│   └── paperdb/
+│       ├── __init__.py
+│       ├── paper.py               # Main PaperDB API (to be implemented)
+│       ├── book.py                # Book abstraction (to be implemented)
+│       ├── exceptions.py          # Custom exceptions (e.g., PaperDbException)
+│       ├── testdata/
+│       │   ├── __init__.py
+│       │   ├── person.py          # Person, PersonArg, PhoneNumber classes
+│       │   └── test_data_generator.py  # TestDataGenerator for test data creation
+│       └── utils/
+│           ├── __init__.py
+│           └── test_utils.py      # Helper utilities for tests
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_data.py                 # DataTest.java
+│       ├── test_custom_book.py          # CustomBookTest.java
+│       ├── test_paper.py                # PaperTest.java
+│       ├── test_version_upgrade.py      # VersionUpgradeTest.java
+│       ├── test_custom_book_location.py # CustomBookLocationTest.java
+│       ├── test_compatibility.py        # CompatibilityTest.java
+│       ├── test_multi_thread.py         # MultiThreadTest.java
+│       ├── test_deprecated_data.py      # deprecated/DataTest.java
+│       ├── test_paper_deprecated_api.py # deprecated/PaperDeprecatedAPITest.java
+│       ├── test_paper_db_exception.py   # PaperDbExceptionTest.java
+│       ├── test_key_locker.py           # KeyLockerTest.java
+│       ├── test_paper_table.py          # PaperTableTest.java
+│       ├── test_kotlin_compatibility.py # KotlinCompatibilityTest.kt
+│       ├── test_application.py          # ApplicationTest.java
+│       └── test_app_test_data_gen.py    # app/testdata/TestDataGenerator.java
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_data_public.py           # DataPublicTest.java
+│   ├── test_custom_book_public.py    # CustomBookPublicTest.java
+│   ├── test_paper_public.py          # PaperPublicTest.java
+│   └── test_paper_db_exception_public.py # PaperDbExceptionPublicTest.java
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+Key:
+- src/paperdb/: Library code (stubs/implementations required)
+- tests/original/: All original translated tests
+- public_tests/:     All translated public test cases
+- requirements.txt:  Python dependencies
+- run_tests.sh:      One-click test runner (calls pytest)
+- README.md:         Project info and instructions
+
+For details on each test file's content and mapping see source repo and translation mapping docs.

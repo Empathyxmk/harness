@@ -1,0 +1,30 @@
+orangetw_tsh/
+├── src/
+│   ├── __init__.py           # Makes 'src' a Python package.
+│   ├── aes.py                # Mock implementation/interface for AES functions.
+│   └── sha1.py               # Mock implementation/interface for SHA1 functions (uses hashlib).
+├── tests/
+│   ├── __init__.py           # Makes 'tests' a Python package.
+│   └── original/
+│       ├── __init__.py       # Makes 'original' a Python package.
+│       ├── test_aes_check.py # Translated original AES test cases.
+│       └── test_sha1_check.py# Translated original SHA1 test cases.
+├── public_tests/
+│   ├── __init__.py           # Makes 'public_tests' a Python package.
+│   ├── test_aes_public_check.py  # Translated public AES test cases.
+│   └── test_sha1_public_check.py # Translated public SHA1 test cases.
+├── requirements.txt          # Lists Python dependencies (pytest).
+├── run_tests.sh              # Shell script to install dependencies and run all tests.
+└── project_structure.txt     # This file, documenting the project structure.
+
+Explanation:
+- The `src` directory contains the Python "source code" (mocked interfaces in this case) that the tests interact with.
+- The `tests/original` directory holds the translated test cases that correspond to the original C test files (`test_aes_check.c`, `test_sha1_check.c`).
+- The `public_tests` directory holds the translated test cases that correspond to the public C test files (`test_aes_public_check.c`, `test_sha1_public_check.c`).
+- `pytest` is used as the testing framework. Test files and functions follow its naming conventions (`test_*.py`, `test_*`).
+- `requirements.txt` specifies `pytest` as a dependency.
+- `run_tests.sh` provides a single entry point to install dependencies and execute all tests using `pytest`. It sets `PYTHONPATH` to include `src` so that the test files can import the `aes` and `sha1` modules.
+
+To run tests:
+1. Make the `run_tests.sh` script executable: `chmod +x run_tests.sh`
+2. Run the tests: `./run_tests.sh`

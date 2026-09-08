@@ -1,0 +1,1256 @@
+" Author: Wolf Honore
+" Rocq indentation unit tests.
+
+Given coq (inductive):
+  Inductive ind :=
+  | con1 :
+  ind
+  | con2 : ind
+  | con3 : ind.
+
+Do (indent-inductive):
+  =ip
+
+Expect coq (indented-inductive):
+  Inductive ind :=
+    | con1 :
+        ind
+    | con2 : ind
+    | con3 : ind.
+
+Given coq (inductive-addline):
+  Inductive ind :=
+    | con1 :
+        ind
+
+Do (indent-inductive-addline):
+  G
+  o| con2 : ind.
+
+Expect coq (indented-inductive-addline):
+  Inductive ind :=
+    | con1 :
+        ind
+    | con2 : ind.
+
+Given coq (coinductive):
+  CoInductive ind :=
+  | con1 :
+  ind
+  | con2 : ind
+  | con3 : ind.
+
+Do (indent-coinductive):
+  =ip
+
+Expect coq (indented-coinductive):
+  CoInductive ind :=
+    | con1 :
+        ind
+    | con2 : ind
+    | con3 : ind.
+
+Given coq (variant):
+  Variant ind :=
+  | con1 :
+  ind
+  | con2 : ind
+  | con3 : ind.
+
+Do (indent-variant):
+  =ip
+
+Expect coq (indented-variant):
+  Variant ind :=
+    | con1 :
+        ind
+    | con2 : ind
+    | con3 : ind.
+
+Given coq (inductive-shift):
+  Inductive ind :=
+  | con1 :
+  ind
+  | con2 : ind
+  | con3 : ind.
+
+Execute (indent-inductive-shift-option-pre):
+  let g:coqtail_inductive_shift = 0
+
+Do (indent-inductive-shift):
+  =ip
+
+Expect coq (indented-inductive-shift):
+  Inductive ind :=
+  | con1 :
+      ind
+  | con2 : ind
+  | con3 : ind.
+
+Execute (indent-inductive-shift-option-post):
+  unlet g:coqtail_inductive_shift
+
+Given coq (rewrite):
+  Rewrite Rule pplus_rewrite :=
+  | ?n ++ 0 => ?n
+  | ?n ++ S ?m =>
+  S (?n ++ ?m)
+  | 0 ++ ?n => ?n
+  | S ?n ++ ?m => S (?n ++ ?m).
+
+Do (indent-rewrite):
+  =ip
+
+Expect coq (indented-rewrite):
+  Rewrite Rule pplus_rewrite :=
+    | ?n ++ 0 => ?n
+    | ?n ++ S ?m =>
+        S (?n ++ ?m)
+    | 0 ++ ?n => ?n
+    | S ?n ++ ?m => S (?n ++ ?m).
+
+Given coq (match):
+  Definition f (b : bool) :=
+  match b with
+  | true =>
+  true
+  | false => false
+  end.
+
+Do (indent-match):
+  =ip
+
+Expect coq (indented-match):
+  Definition f (b : bool) :=
+    match b with
+    | true =>
+        true
+    | false => false
+    end.
+
+Given coq (match-nested):
+  Definition f (b : bool) (i : ind) :=
+  match b with
+  | true =>
+  match i with
+  | con1 => true
+  | con2 =>
+  false
+  | _ => false
+  end
+  | false =>
+  match i with
+  | _ =>
+  false
+  end
+  end.
+
+Do (indent-match-nested):
+  =ip
+
+Expect coq (indented-match-nested):
+  Definition f (b : bool) (i : ind) :=
+    match b with
+    | true =>
+        match i with
+        | con1 => true
+        | con2 =>
+            false
+        | _ => false
+        end
+    | false =>
+        match i with
+        | _ =>
+            false
+        end
+    end.
+
+Given coq (match-consecutive):
+  Definition f (b : bool) :=
+      match b with
+      | _ => true
+      end.
+  Definition g (b : bool) :=
+    match b with
+    | _ => true
+
+Do (indent-match-consecutive):
+  G
+  oend.
+
+Expect coq (indented-match-consecutive):
+  Definition f (b : bool) :=
+      match b with
+      | _ => true
+      end.
+  Definition g (b : bool) :=
+    match b with
+    | _ => true
+    end.
+
+Given coq (match-not-first):
+  Definition f (b : bool) :=
+  let x := match b with
+  | _ => true
+  end.
+
+Do (indent-match-not-first):
+  =ip
+
+Expect coq (indented-match-not-first):
+  Definition f (b : bool) :=
+    let x := match b with
+             | _ => true
+             end.
+
+Given coq (ltac-match):
+  Ltac x :=
+  match goal with
+  | |- _ =>
+  lazymatch goal with
+  | |- _ =>
+  multimatch goal with
+  | |- _ => idtac
+
+Do (indent-ltac-match):
+  =ip
+  G
+  oend\<Return>| |- _ => idtac\<Return>end\<Return>end.
+
+Expect coq (indented-ltac-match):
+  Ltac x :=
+    match goal with
+    | |- _ =>
+        lazymatch goal with
+        | |- _ =>
+            multimatch goal with
+            | |- _ => idtac
+            end
+        | |- _ => idtac
+        end
+    end.
+
+Given coq (match-in-inductive):
+  Inductive ind :=
+  | con1 :
+  match true with
+  | _ =>
+  True
+  end -> x
+  | con2 : let _ := match true with _ => true end in x
+  | con3 : x.
+
+Do (indent-match-in-inductive):
+  =ip
+
+Expect coq (indented-match-in-inductive):
+  Inductive ind :=
+    | con1 :
+        match true with
+        | _ =>
+            True
+        end -> x
+    | con2 : let _ := match true with _ => true end in x
+    | con3 : x.
+
+Given coq (match-shift):
+  Definition f (b : bool) (i : ind) :=
+  match b with
+  | true =>
+  match i with
+  | con1 => true
+  | con2 =>
+  false
+  | _ => false
+  end
+  | false =>
+  match i with
+  | _ =>
+  false
+  end
+  end.
+
+Execute (indent-match-shift-option-pre):
+  let g:coqtail_match_shift = 1
+
+Do (indent-match-shift):
+  =ip
+
+Expect coq (indented-match-shift):
+  Definition f (b : bool) (i : ind) :=
+    match b with
+    | true =>
+      match i with
+      | con1 => true
+      | con2 =>
+        false
+      | _ => false
+      end
+    | false =>
+      match i with
+      | _ =>
+        false
+      end
+    end.
+
+Execute (indent-match-shift-option-post):
+  unlet g:coqtail_match_shift
+
+Given coq (ignore-double-pipe):
+  Inductive ind :=
+  | con1 :
+  true
+  || true
+  || true = true -> x.
+
+Do (indent-ignore-double-pipe):
+  =ip
+
+Expect coq (indented-ignore-double-pipe):
+  Inductive ind :=
+    | con1 :
+        true
+        || true
+        || true = true -> x.
+
+Given coq (no-indent-after-end):
+  Inductive ind :=
+  | con1_end :
+  ind.
+  Definition x :=
+  let y :=
+  match true with
+  | _ => true end in
+  y.
+  Definition y :=
+  let z :=
+  match true with
+  | _ => trueend
+  z
+
+Do (indent-no-indent-after-end):
+  =ip
+
+Expect coq (indented-no-indent-after-end):
+  Inductive ind :=
+    | con1_end :
+        ind.
+  Definition x :=
+    let y :=
+      match true with
+      | _ => true end in
+      y.
+  Definition y :=
+    let z :=
+      match true with
+      | _ => trueend
+          z
+
+Given coq (proof-body):
+  Lemma p : True.
+  Proof.
+  auto.
+  Qed.
+
+Do (indent-proof-body):
+  =ip
+
+Expect coq (indented-proof-body):
+  Lemma p : True.
+  Proof.
+    auto.
+  Qed.
+
+Given coq (proof-using-body):
+  Lemma p : True.
+  Proof using All.
+  auto.
+  Qed.
+
+Do (indent-proof-using-body):
+  =ip
+
+Expect coq (indented-proof-using-body):
+  Lemma p : True.
+  Proof using All.
+    auto.
+  Qed.
+
+Given coq (obligation-body):
+  Program Definition p (i : ind) : {i = i} + {i <> i} := _.
+  Next Obligation.
+  idtac.
+  Abort.
+  Obligation 1.
+  idtac.
+  Abort.
+  Next Obligation of p.
+  idtac.
+  Abort.
+  Obligation 1 of p.
+  decide equality.
+  Defined.
+
+Do (indent-obligation-body):
+  =ip
+
+Expect coq (indented-obligation-body):
+  Program Definition p (i : ind) : {i = i} + {i <> i} := _.
+  Next Obligation.
+    idtac.
+  Abort.
+  Obligation 1.
+    idtac.
+  Abort.
+  Next Obligation of p.
+    idtac.
+  Abort.
+  Obligation 1 of p.
+    decide equality.
+  Defined.
+
+Given coq (proof-body-empty):
+  Lemma p : True.
+  Proof.
+  Admitted.
+
+Do (indent-proof-body-empty):
+  =ip
+
+Expect coq (indented-proof-body-empty):
+  Lemma p : True.
+  Proof.
+  Admitted.
+
+Given coq (obligation-body-empty):
+  Program Definition p (i : ind) : {i = i} + {i <> i} := _.
+  Next Obligation.
+  Abort.
+  Obligation 1.
+  Abort.
+  Next Obligation of p.
+  Abort.
+  Obligation 1 of p.
+  Admitted.
+
+Do (indent-obligation-body-empty):
+  =ip
+
+Expect coq (indented-obligation-body-empty):
+  Program Definition p (i : ind) : {i = i} + {i <> i} := _.
+  Next Obligation.
+  Abort.
+  Obligation 1.
+  Abort.
+  Next Obligation of p.
+  Abort.
+  Obligation 1 of p.
+  Admitted.
+
+Given coq (obligation-fail):
+  Program Definition p (i : ind) : {i = i} + {i <> i} := ind_eq_dec.
+  Fail Next Obligation.
+  Definition x := 1.
+
+Do (indent-obligation-fail):
+  =ip
+
+Expect coq (indented-obligation-fail):
+  Program Definition p (i : ind) : {i = i} + {i <> i} := ind_eq_dec.
+  Fail Next Obligation.
+  Definition x := 1.
+
+Given coq (proof-one-line):
+  Lemma p : True.
+  Proof. Admitted.
+  Lemma q : True.
+  Proof. Admitted.
+
+Do (indent-proof-one-line):
+  =ip
+
+Expect coq (indented-proof-one-line):
+  Lemma p : True.
+  Proof. Admitted.
+  Lemma q : True.
+  Proof. Admitted.
+
+Given coq (sections):
+  Section S1.
+  Definition x := 1.
+
+  Section S2.
+  Definition y :=
+  2.
+  End S2.
+  Section S3.
+  Definition z := 3.
+  End S3.
+  End S1.
+
+Do (indent-sections):
+  =G
+
+Expect coq (indented-sections):
+  Section S1.
+    Definition x := 1.
+
+    Section S2.
+      Definition y :=
+        2.
+    End S2.
+    Section S3.
+      Definition z := 3.
+    End S3.
+  End S1.
+
+Given coq (empty-sections):
+  Section S1.
+  End S1.
+  Section S2.
+
+  End S2.
+
+Do (indent-empty-sections):
+  =G
+
+Expect coq (indented-empty-sections):
+  Section S1.
+  End S1.
+  Section S2.
+
+  End S2.
+
+Given coq (modules):
+  Module M1.
+  Definition x := 1.
+
+  Module M2.
+  Definition y :=
+    2.
+  End M2.
+  Module M3.
+  Definition z := 3.
+  End M3.
+  End M1.
+
+Do (indent-modules):
+  =G
+
+Expect coq (indented-modules):
+  Module M1.
+    Definition x := 1.
+
+    Module M2.
+      Definition y :=
+        2.
+    End M2.
+    Module M3.
+      Definition z := 3.
+    End M3.
+  End M1.
+
+Given coq (empty-modules):
+  Module M1.
+  End M1.
+  Module M2.
+
+  End M2.
+
+Do (indent-empty-modules):
+  =G
+
+Expect coq (indented-empty-modules):
+  Module M1.
+  End M1.
+  Module M2.
+
+  End M2.
+
+Given coq (one-line-modules):
+  Module M4 := M1.
+  Module M5 := M1 <+
+  M2.
+  Module M6. End M6.
+  Definition w := 4.
+
+Do (indent-one-line-modules):
+  =G
+
+Expect coq (indented-one-line-modules):
+  Module M4 := M1.
+  Module M5 := M1 <+
+    M2.
+  Module M6. End M6.
+  Definition w := 4.
+
+Given coq (record-same-line):
+  Record r := {
+  f1 : ind;
+  f2 : ind
+  }.
+
+Do (indent-record-same-line):
+  =ip
+
+Expect coq (indented-record-same-line):
+  Record r := {
+    f1 : ind;
+    f2 : ind
+  }.
+
+Given coq (record-new-line):
+  Record r :=
+  {
+  f1 : ind;
+  f2 : ind
+  }.
+
+Do (indent-record-new-line):
+  =ip
+
+Expect coq (indented-record-new-line):
+  Record r :=
+    {
+      f1 : ind;
+      f2 : ind
+    }.
+
+Given coq (record-constructor-same-line):
+  Definition d : r := {|
+  f1 := con1;
+  f2 := con2;
+  |}.
+
+Do (indent-record-constructor-same-line):
+  =ip
+
+Expect coq (indented-record-constructor-same-line):
+  Definition d : r := {|
+    f1 := con1;
+    f2 := con2;
+  |}.
+
+Given coq (record-constructor-new-line):
+  Definition d : r :=
+  {|
+  f1 := con1;
+  f2 := con2;
+  |}.
+
+Do (indent-record-constructor-new-line):
+  =ip
+
+Expect coq (indented-record-constructor-new-line):
+  Definition d : r :=
+    {|
+      f1 := con1;
+      f2 := con2;
+    |}.
+
+Given coq (record-constructor-nested):
+  Definition d : r :=
+  {|
+  f1 := {| f1 := con1; f2 := con2 |};
+  f2 := con3;
+  f3 := {|
+  f1 := con1;
+  f2 := con2
+  |}
+  |}.
+
+Do (indent-record-constructor-nested):
+  =ip
+
+Expect coq (indented-record-constructor-nested):
+  Definition d : r :=
+    {|
+      f1 := {| f1 := con1; f2 := con2 |};
+      f2 := con3;
+      f3 := {|
+        f1 := con1;
+        f2 := con2
+      |}
+    |}.
+
+Given coq (comments):
+  (* Comment
+  * abc
+  def
+  *)
+  Definition x := 1.
+  (* Comment
+  xyz
+  *)
+  Definition y := 2.
+  (* Comment *)
+  Section A.
+  (*
+  Comment
+  *)
+  Definition z := 3. (* Comment *)
+  (* C1
+  *)
+  (* C2
+  *)
+  Definition a := 4.
+  End A.
+  Inductive w :=
+  | a (*
+  *)
+  | b.
+
+Do (indent-comments):
+  =ip
+
+Expect coq (indented-comments):
+  (* Comment
+   * abc
+     def
+   *)
+  Definition x := 1.
+  (* Comment
+     xyz
+   *)
+  Definition y := 2.
+  (* Comment *)
+  Section A.
+    (*
+       Comment
+     *)
+    Definition z := 3. (* Comment *)
+    (* C1
+     *)
+    (* C2
+     *)
+    Definition a := 4.
+  End A.
+  Inductive w :=
+    | a (*
+         *)
+    | b.
+
+Execute (set-no-indent-comment):
+  let g:coqtail_noindent_comment = 1
+
+Given coq (no-indent-comments):
+    (* Comment
+   * abc
+  def
+   *)
+  Definition x := 1.
+   (* Comment
+   xyz
+  *)
+  Definition y := 2.
+       (* Comment *)
+  Section A.
+   (*
+  Comment
+       *)
+  Definition z := 3. (* Comment *)
+   (* C1
+       *)
+   (* C2
+       *)
+  Definition a := 4.
+  End A.
+  Inductive w :=
+  | a (*
+  *)
+  | b.
+
+Do (indent-no-indent-comments):
+  =ip
+
+Expect coq (indented-no-indent-comments):
+    (* Comment
+   * abc
+  def
+   *)
+  Definition x := 1.
+   (* Comment
+   xyz
+  *)
+  Definition y := 2.
+       (* Comment *)
+  Section A.
+   (*
+  Comment
+       *)
+    Definition z := 3. (* Comment *)
+   (* C1
+       *)
+   (* C2
+       *)
+    Definition a := 4.
+  End A.
+  Inductive w :=
+    | a (*
+  *)
+    | b.
+
+Execute (unset-no-indent-comment):
+  let g:coqtail_noindent_comment = 0
+
+Given coq (single-bullets):
+  Lemma p (b1 b2 b3 : bool) : True.
+  Proof.
+  destruct b1.
+  - destruct b2.
+  + destruct b3.
+  idtac.
+  *
+  auto.
+  * auto.
+  + auto.
+  - auto.
+  Qed.
+
+Do (indent-single-bullets):
+  =ip
+
+Expect coq (indented-single-bullets):
+  Lemma p (b1 b2 b3 : bool) : True.
+  Proof.
+    destruct b1.
+    - destruct b2.
+      + destruct b3.
+        idtac.
+        *
+          auto.
+        * auto.
+      + auto.
+    - auto.
+  Qed.
+
+Given coq (double-bullets):
+  Lemma p (b1 b2 b3 : bool) : True.
+  Proof.
+  (* Omitted *)
+  destruct b1.
+  -- destruct b2.
+  ++ destruct b3.
+  idtac.
+  **
+  auto.
+  ** auto.
+  ++ auto.
+  -- auto.
+
+Do (indent-double-bullets):
+  =ip
+
+Expect coq (indented-double-bullets):
+  Lemma p (b1 b2 b3 : bool) : True.
+  Proof.
+    (* Omitted *)
+    destruct b1.
+    -- destruct b2.
+       ++ destruct b3.
+          idtac.
+          **
+             auto.
+          ** auto.
+       ++ auto.
+    -- auto.
+
+Given coq (bullets-brackets):
+  Lemma p (b1 b2 b3 b4 b5 : bool) : True.
+  Proof.
+  destruct b1.
+  - destruct b2.
+  + destruct b3.
+  * assert (true = true).
+  {
+  destruct b4.
+  - auto.
+  - destruct b5.
+  + auto.
+  + auto.
+  }
+  * auto.
+  + auto.
+  - auto.
+  Qed.
+
+Do (indent-bullets-brackets):
+  =ip
+
+Expect coq (indented-bullets-brackets):
+  Lemma p (b1 b2 b3 b4 b5 : bool) : True.
+  Proof.
+    destruct b1.
+    - destruct b2.
+      + destruct b3.
+        * assert (true = true).
+          {
+            destruct b4.
+            - auto.
+            - destruct b5.
+              + auto.
+              + auto.
+          }
+        * auto.
+      + auto.
+    - auto.
+  Qed.
+
+Given coq (bullets-brackets2):
+  Goal True /\ True.
+  Proof.
+  split.
+  - assert True.
+  {
+  idtac.
+  + auto.
+  }
+  assert True.
+  {
+  - auto.
+  }
+  assert True.
+  { idtac.
+  - auto.
+  }
+  +
+  {
+  - auto.
+  }
+  - auto.
+  Qed.
+
+Do (indent-bullets-brackets2):
+  =ip
+
+Expect coq (indented-bullets2):
+  Goal True /\ True.
+  Proof.
+    split.
+    - assert True.
+      {
+        idtac.
+        + auto.
+      }
+      assert True.
+      {
+        - auto.
+      }
+      assert True.
+      { idtac.
+        - auto.
+      }
+      +
+        {
+          - auto.
+        }
+    - auto.
+  Qed.
+
+Given coq (bullets-brackets-nested):
+  Lemma p (b1 b2 b3 b4 b5 : bool) : True.
+  Proof.
+  destruct b1.
+  - destruct b2.
+  + destruct b3.
+  * assert (true = true).
+  {
+  destruct b4.
+  - assert (false = false).
+  {
+    destruct b5.
+    - auto.
+    - auto.
+  }
+  - auto.
+  }
+  * auto.
+  + auto.
+  - auto.
+  Qed.
+
+Do (indent-bullets-brackets-nested):
+  =ip
+
+Expect coq (indented-bullets-brackets-nested):
+  Lemma p (b1 b2 b3 b4 b5 : bool) : True.
+  Proof.
+    destruct b1.
+    - destruct b2.
+      + destruct b3.
+        * assert (true = true).
+          {
+            destruct b4.
+            - assert (false = false).
+              {
+                destruct b5.
+                - auto.
+                - auto.
+              }
+            - auto.
+          }
+        * auto.
+      + auto.
+    - auto.
+  Qed.
+
+Given coq (bullet-different-order):
+  Lemma p (b1 b2 b3 : bool) : True.
+  Proof.
+  destruct b1.
+  + destruct b2; [auto |].
+  - destruct b3.
+  * auto.
+  * auto.
+  + auto.
+  Qed.
+
+Do (indent-bullet-different-order):
+  =ip
+
+Expect coq (indented-bullet-different-order):
+  Lemma p (b1 b2 b3 : bool) : True.
+  Proof.
+    destruct b1.
+    + destruct b2; [auto |].
+      - destruct b3.
+        * auto.
+        * auto.
+    + auto.
+  Qed.
+
+Given coq (bracket-close-end-of-line):
+  Goal True /\ True.
+  Proof.
+  split.
+  { idtac.
+  auto. }
+  auto.
+  Qed.
+
+Do (indent-bracket-close-end-of-line):
+  =ip
+
+Expect coq (indented-bracket-close-end-of-line):
+  Goal True /\ True.
+  Proof.
+    split.
+    { idtac.
+      auto. }
+    auto.
+  Qed.
+
+Given coq (bracket-close-end-of-line-nested):
+  Goal (True /\ True) /\ True.
+  Proof.
+  split.
+  { split.
+  { auto. }
+  { auto. } }
+  auto.
+  Qed.
+
+Do (indent-bracket-close-end-of-line-nested):
+  =ip
+
+Expect coq (indented-bracket-close-end-of-line-nested):
+  Goal (True /\ True) /\ True.
+  Proof.
+    split.
+    { split.
+      { auto. }
+      { auto. } }
+    auto.
+  Qed.
+
+Given coq (bullets-bracket-close-end-of-line-nested):
+  Goal (True /\ (True /\ True)) /\ True.
+  Proof.
+  split.
+  - split.
+  {
+  auto. }
+  { split.
+  { auto. }
+  { auto. } }
+  - auto.
+  Qed.
+
+Do (indent-bullets-bracket-close-end-of-line-nested):
+  =ip
+
+Expect coq (indented-bullets-bracket-close-end-of-line-nested):
+  Goal (True /\ (True /\ True)) /\ True.
+  Proof.
+    split.
+    - split.
+      {
+        auto. }
+      { split.
+        { auto. }
+        { auto. } }
+    - auto.
+  Qed.
+
+Given coq (commented-bracket-open):
+  Goal (True /\ (True /\ True)) /\ True.
+  Proof.
+  split.
+  - split.
+  (* { *)
+  - auto.
+
+Do (indent-commented-bracket-open):
+  =ip
+
+Expect coq (indented-commented-bracket-open):
+  Goal (True /\ (True /\ True)) /\ True.
+  Proof.
+    split.
+    - split.
+      (* { *)
+    - auto.
+
+Given coq (commented-bracket-close):
+  Goal (True /\ (True /\ True)) /\ True.
+  Proof.
+  split.
+  - split.
+  (* } *)
+  - auto.
+
+Do (indent-commented-bracket-close):
+  =ip
+
+Expect coq (indented-commented-bracket-close):
+  Goal (True /\ (True /\ True)) /\ True.
+  Proof.
+    split.
+    - split.
+      (* } *)
+    - auto.
+
+Given coq (commented-bracket-match):
+  Goal (True /\ (True /\ True)) /\ True.
+  Proof.
+  split.
+  - split.
+  {
+  (* } *)
+  auto.
+
+Do (indent-commented-bracket-match):
+  =ip
+
+Expect coq (indented-commented-bracket-match):
+  Goal (True /\ (True /\ True)) /\ True.
+  Proof.
+    split.
+    - split.
+      {
+        (* } *)
+        auto.
+
+Given coq (match-bullet):
+  Lemma p (b1 : bool) : True.
+  Proof.
+    destruct b1.
+    - auto.
+      - auto.
+  Qed.
+
+Do (indent-match-bullet):
+  5G
+  $
+  ==
+
+Expect coq (indented-match-bullet):
+  Lemma p (b1 : bool) : True.
+  Proof.
+    destruct b1.
+    - auto.
+    - auto.
+  Qed.
+
+Given coq (indentkey-bullet):
+  Lemma p (b1 : bool) : True.
+  Proof.
+    destruct b1.
+    * auto.
+
+Do (indent-indentkey-bullet):
+  G
+  o** auto.\<ESC>
+  o*** auto.\<ESC>
+  o** auto.\<ESC>
+  o* auto.
+
+Expect coq (indented-indentkey-bullet):
+  Lemma p (b1 : bool) : True.
+  Proof.
+    destruct b1.
+    * auto.
+      ** auto.
+         *** auto.
+      ** auto.
+    * auto.
+
+Given coq (empty-line-in-proof):
+  Goal True.
+  Proof.
+
+  idtac.
+
+  idtac;               idtac.
+
+             auto.
+
+  Qed.
+
+Do (indent-empty-line-in-proof):
+  =G
+
+Expect coq (indented-empty-line-in-proof):
+  Goal True.
+  Proof.
+
+    idtac.
+
+    idtac;               idtac.
+
+    auto.
+
+  Qed.
+
+Given coq (empty-line-between-definitions):
+  Definition x :=
+  match tt with
+  | tt => tt
+  end.
+
+  Definition y := tt.
+
+Do (indent-empty-line-between-definitions):
+  =G
+
+Expect coq (indented-line-between-definitions):
+  Definition x :=
+    match tt with
+    | tt => tt
+    end.
+
+  Definition y := tt.
+
+Given coq (trailing-whitespace-vernac):
+  Require Import Init.
+  Require Import Nat.
+
+Do (indent-trailing-whitespace-vernac):
+  A \<ESC>
+  =ip
+  $
+  x
+
+Expect coq (indented-trailing-whitespace-vernac):
+  Require Import Init.
+  Require Import Nat.

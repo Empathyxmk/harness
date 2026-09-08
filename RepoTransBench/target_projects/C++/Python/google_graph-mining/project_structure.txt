@@ -1,0 +1,31 @@
+project_root/
+├── src/                       # Source Python code, if implemented. (empty/placeholder)
+│   └── (empty for test translation)
+├── tests/
+│   ├── __init__.py            # init to make tests a package
+│   └── original/
+│       ├── __init__.py
+│       ├── test_clustering_utils.py      # Original C++: tests/clustering_utils_test.cc
+│       ├── test_status_macros.py         # Original C++: tests/status_macros_test.cc
+│       ├── test_graph.py                 # Original C++: tests/graph_test.cc
+│       └── test_dendrogram.py            # Original C++: tests/dendrogram_test.cc
+├── public_tests/
+│   ├── __init__.py            # Make public_tests a package
+│   └── test_parhac_clusterer_public.py   # Public C++: tests/parhac_clusterer_public_test.cc
+├── requirements.txt           # Python dependencies (pytest)
+├── run_tests.sh               # One-click script: runs ALL tests
+└── project_structure.txt      # This file
+
+# Directory explanations:
+# - src/: Would contain main library code if ported (left empty for test migration)
+# - tests/original/: Original test logic, one file per translated C++ test
+# - public_tests/: All public test logic (translated), with helper public test stubs as needed
+# - requirements.txt: Lists pytest (required for all tests)
+# - run_tests.sh: Run both original and public tests; will exit with error if any fail
+# - __init__.py: Marks each test directory as a Python package (enables test discovery)
+
+# To set up:
+#   1. pip install -r requirements.txt
+#   2. ./run_tests.sh
+#
+# This will execute ALL tests including originals and public. All logic.

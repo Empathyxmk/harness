@@ -1,0 +1,82 @@
+{
+  "project_name": "viralogic_py-enumerable",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:27:32.611344",
+  "original_path": "/workspace/verified_repos_v2/Python/viralogic_py-enumerable",
+  "public_test_result_path": "/workspace/public_test_results/Python/viralogic_py-enumerable",
+  "original_tests": {
+    "test_files": [
+      "tests/test_functions.py",
+      "tests/test_decorators.py",
+      "tests/test_py_linq.py",
+      "tests/test_repeatable.py",
+      "tests/test_performance.py",
+      "tests/test_py_linq_branch.py",
+      "tests/test_core.py",
+      "tests/test_exceptions.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_decorators.py",
+      "public_tests/test_public_py_linq.py",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "public_tests/test_public_core.py",
+      "public_tests/test_public_exceptions.py",
+      "public_tests/test_public_functions.py",
+      "public_tests/test_public_repeatable.py",
+      "public_tests/test_public_performance.py",
+      "public_tests/test_public_py_linq_branch.py",
+      "public_tests/__init__.py",
+      "public_tests/conftest.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_exceptions.py",
+      "public_tests/test_public_core.py",
+      "public_tests/test_public_py_linq.py",
+      "public_tests/test_public_repeatable.py",
+      "public_tests/test_public_py_linq.py",
+      "public_tests/test_public_py_linq.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 19,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_decorators.py",
+    "public_tests/test_public_py_linq.py",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh",
+    "public_tests/test_public_core.py",
+    "public_tests/test_public_exceptions.py",
+    "public_tests/test_public_functions.py",
+    "public_tests/test_public_repeatable.py",
+    "public_tests/test_public_performance.py",
+    "public_tests/test_public_py_linq_branch.py",
+    "public_tests/__init__.py",
+    "public_tests/conftest.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_exceptions.py",
+    "public_tests/test_public_core.py",
+    "public_tests/test_public_py_linq.py",
+    "public_tests/test_public_repeatable.py",
+    "public_tests/test_public_py_linq.py",
+    "public_tests/test_public_py_linq.py"
+  ]
+}

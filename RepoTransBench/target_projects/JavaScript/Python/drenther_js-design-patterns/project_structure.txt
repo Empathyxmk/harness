@@ -1,0 +1,32 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_only_behavioral.py
+│       ├── test_strategy.py
+│       ├── test_chain_of_responsibility.py
+│       ├── test_command.py
+│       ├── test_mediator.py
+│       ├── test_template.py
+│       ├── test_state.py
+│       ├── test_observer.py
+│       ├── test_iterator.py
+│       ├── test_adapter.py
+│       ├── test_flyweight.py
+│       ├── test_proxy.py
+│       ├── test_decorator.py
+│       ├── test_composite.py
+│       ├── test_facade.py
+│       ├── test_factory.py
+│       ├── test_prototype.py
+│       ├── test_constructor.py
+│       └── test_singleton.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_state_public.py
+│   ├── test_strategy_public.py
+│   └── test_chain_of_responsibility_public.py
+└── project_structure.txt

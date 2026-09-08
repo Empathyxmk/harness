@@ -1,0 +1,28 @@
+project_root/
+├── requirements.txt
+│   - Python dependencies for running and testing the project (uses pytest).
+├── run_tests.sh
+│   - Simple one-click script to install dependencies and run all tests.
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_octomap_server_public.py
+│   └── test_transforms_public.py
+│       - Public generated test cases translated from C++ GTest to Python/pytest.
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_conversions.py
+│       ├── test_octomap_server.py
+│       └── test_transforms.py
+│           - Original private/internal tests, translated from C++.
+README:
+---
+To run all tests:
+    $ chmod +x run_tests.sh
+    $ ./run_tests.sh
+
+- All tests will be run (`pytest` discovers tests in both tests/ and public_tests/ by default).
+- The requirements.txt covers all dependencies needed for running the tests.
+- Both internal (original) and public tests are included and clearly separated.
+- Dummy implementations for C++-side functions are included in the test files to ensure tests are runnable and logic is preserved exactly as per the original tests.

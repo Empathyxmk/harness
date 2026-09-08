@@ -1,0 +1,37 @@
+project_root/
+├── requirements.txt                 # Python package dependencies (pytest, mock, etc.)
+├── run_tests.sh                     # One-click test execution script
+├── project_structure.txt            # This project structure overview
+├── tests/
+│   ├── original/
+│   │   ├── test_slidingtabsbasicfragment.py   # Original SlidingTabsBasicFragment tests
+│   │   ├── test_log.py                       # Original Log class tests
+│   │   ├── test_logview.py                   # Original LogView tests
+│   │   ├── test_messageonlylogfilter.py      # Original MessageOnlyLogFilter tests
+│   │   └── test_sampletests.py               # Original sample (integration) tests for MainActivity, SlidingTabsBasicFragment
+├── public_tests/
+│   ├── test_slidingtabsbasicfragment_public.py     # Public SlidingTabsBasicFragment tests
+│   ├── test_log_public.py                         # Public Log class tests
+│   ├── test_logview_public.py                     # Public LogView tests
+│   ├── test_messageonlylogfilter_public.py        # Public MessageOnlyLogFilter tests
+
+Structure Explanation
+---------------------
+- requirements.txt: All Python dependencies required for running the tests (pytest, unittest.mock, etc.)
+- run_tests.sh: Script to set up dependencies (pip install) and run all tests (original + public) with pytest.
+- project_structure.txt: This structure description and guidance on which directories/files house what.
+- tests/original/: Contains all converted unit and integration tests from the original Java sources.
+- public_tests/: Includes all public test translations from the Java sources.
+- All test source logic is adapted and preserved. Each test runs independently via pytest.
+
+Setup/Testing Instructions
+--------------------------
+1. Install Python 3.8+ and pip.
+2. Run all tests from project root via:
+      ./run_tests.sh
+   - This installs dependencies and executes all tests (including both original and public tests).
+3. To run only original or only public tests:
+      pytest tests/original/
+      pytest public_tests/
+
+The test classes are minimal mock-based equivalents of the original Java Android code, with identical logic to their Java source counterparts.

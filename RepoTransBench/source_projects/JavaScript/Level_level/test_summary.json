@@ -1,0 +1,16 @@
+{
+  "project_name": "Level_level",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:52:28.721224",
+  "original_path": "/workspace/runnable_filter/JavaScript/Level_level",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/Level_level",
+  "tests_path": [
+    "test/index.spec.js",
+    "test/browser.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

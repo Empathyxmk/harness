@@ -1,0 +1,40 @@
+project_root/
+├── requirements.txt              # Python dependencies (pytest)
+├── run_tests.sh                  # Simple bash script to execute all tests
+├── tests/                        # All original (complete) tests
+│   ├── __init__.py
+│   ├── conftest.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_arguments.py          # Translation of test/testArguments.cc
+│       ├── test_database_proxy.py     # For testDatabase_.cc and testDatabaseProxy.cc
+│       ├── test_dispatch.py           # For testDispatch.cc
+│       ├── test_environment_proxy.py  # For testEnvironment_.cc, testEnvironmentCustom.cc
+│       ├── test_mxarray.py            # For testMxArray.cc
+│       ├── test_mxtypes.py            # For testMxTypes.cc
+│       ├── test_session.py            # For testSession.cc
+│       ├── test_string.py             # For testString.cc
+├── public_tests/                 # Generated/standalone public tests
+│   ├── __init__.py
+│   ├── test_database_public.py        # For test/testDatabase__public.cpp
+│   └── test_environment_public.py     # For test/testEnvironment__public.cpp
+└── project_structure.txt         # (this file, describes directory and file purpose)
+
+Directory explanations:
+- requirements.txt:       Lists dependencies required for running tests (here, only pytest).
+- run_tests.sh:           Bash script for easy one-command test run of all test cases.
+- tests/:                 Contains all translated original (full coverage) tests from the C++ repo.
+    - original/:          Subdirectory for original test case translations.
+        - test_*.py:      Each file is a Python translation of a specific original C++ test file.
+    - __init__.py:        Makes tests a Python package/discoverable by pytest.
+    - conftest.py:        Pytest configuration, can be empty or have fixtures.
+- public_tests/:          Contains public/extra coverage translated tests (corresponds to public_test_summary.json).
+    - test_*_public.py:   Each file is a Python translation of the public C++ standalone tests.
+    - __init__.py:        For pytest discovery.
+- project_structure.txt:  Human-readable directory structure and file purpose.
+
+Setup & testing instructions:
+1. Make sure Python 3.7+ is installed.
+2. Run: ./run_tests.sh
+   - This will install dependencies (pytest) and run both original and public tests.
+3. All test results will be shown in the terminal.

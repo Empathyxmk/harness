@@ -1,0 +1,93 @@
+.
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── src/
+│   └── ch02_core/
+│       ├── __init__.py
+│       ├── parametrized/
+│       │   ├── __init__.py
+│       │   ├── word_counter.py
+│       │   └── parameterized_with_enumsource_test_support.py
+│       ├── hamcrest/
+│       │   ├── __init__.py
+│       │   └── customer.py
+│       ├── displayname/
+│       │   ├── __init__.py
+│       │   └── sut.py
+│       ├── repeated/
+│       │   ├── __init__.py
+│       │   └── calculator.py
+│       ├── dynamic/
+│       │   ├── __init__.py
+│       │   └── positive_number_predicate.py
+│       ├── lifecycle/
+│       │   ├── __init__.py
+│       │   ├── resource_for_all_tests.py
+│       │   └── sut.py
+│       ├── predicate/
+│       │   ├── __init__.py
+│       │   └── positive_number_predicate.py
+│       ├── assumptions/
+│       │   ├── __init__.py
+│       │   ├── sut.py
+│       │   ├── job.py
+│       │   └── environment/
+│       │       ├── __init__.py
+│       │       ├── java_specification.py
+│       │       ├── operation_system.py
+│       │       └── tests_environment.py
+│       ├── disabled/
+│       │   ├── __init__.py
+│       │   └── disabled_feature.py
+│       ├── tags/
+│       │   ├── __init__.py
+│       │   ├── customer.py
+│       │   └── customers_repository.py
+│       ├── nested/
+│       │   ├── __init__.py
+│       │   ├── customer.py
+│       │   └── gender.py
+│       ├── dependencyinjection/
+│       │   ├── __init__.py
+│       │   └── dependency_support.py
+│       └── assertions/
+│           ├── __init__.py
+│           ├── sut.py
+│           ├── job.py
+│           └── no_job_exception.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_parameterized_with_csv_file_source.py
+│       ├── test_parameterized_with_csv_source.py
+│       ├── test_parameterized_with_value_source.py
+│       ├── test_parameterized_with_enum_source.py
+│       ├── test_hamcrest_list.py
+│       ├── test_hamcrest_matchers.py
+│       ├── test_display_name.py
+│       ├── test_repeated_tests.py
+│       ├── test_dynamic_tests.py
+│       ├── test_sut_lifecycle.py
+│       ├── test_positive_number_predicate.py
+│       ├── test_assumptions.py
+│       ├── test_disabled_class.py
+│       ├── test_disabled_methods.py
+│       ├── test_customers_repository.py
+│       ├── test_customer.py
+│       ├── test_nested_tests.py
+│       ├── test_test_reporter.py
+│       ├── test_test_info.py
+│       ├── test_assert_throws.py
+│       ├── test_assert_all.py
+│       └── test_assert_timeout.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_parameterized_with_csv_source_public.py
+│   ├── test_parameterized_with_value_source_public.py
+│   ├── test_parameterized_with_csv_file_source_public.py
+│   └── test_parameterized_with_enum_source_public.py
+└── data/
+    ├── word_counter.csv
+    └── word_counter_public.csv

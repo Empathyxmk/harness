@@ -1,0 +1,11 @@
+{
+  "project_name": "rust-lang_homu",
+  "language": "Python",
+  "coverage": {
+    "line": 62.5,
+    "branch": 53.1
+  },
+  "timestamp": "2025-06-19T12:27:55.354816",
+  "original_path": "/workspace/runnable_filter/Python/rust-lang_homu",
+  "test_result_path": "/workspace/test_enhancement_results/Python/rust-lang_homu"
+}

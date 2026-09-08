@@ -1,0 +1,32 @@
+Hankkin_TaoBaoDetailDemo_CSharp/
+├── HankkinTaoBaoDetailDemo.sln                  # Visual Studio Solution File
+├── src/
+│   ├── Hankkin.TaoBaoDetailDemo/
+│   │   ├── Hankkin.TaoBaoDetailDemo.csproj
+│   │   ├── Program.cs                           # Main entry or placeholder
+│   │   └── [Models, Utils, etc as needed]
+│   └── Hankkin.Library/
+│       ├── Hankkin.Library.csproj
+│       ├── [CircleImageView.cs, ScrollViewContainer.cs, MyImageLoader.cs, StatusBarView.cs, ...]
+│       └── [Other source files or folders as needed]
+├── tests/
+│   └── original/
+│       ├── Hankkin.TaoBaoDetailDemo.Original.Tests.csproj
+│       ├── ApplicationTests.cs
+│       ├── ExampleUnitTestTests.cs
+│       ├── LibraryApplicationTests.cs
+│       ├── CircleImageViewTests.cs
+│       ├── ScrollViewContainerTests.cs
+│       ├── LibraryExampleUnitTestTests.cs
+│       ├── MyImageLoaderTests.cs
+│       └── StatusBarViewTests.cs
+├── public_tests/
+│   ├── Hankkin.TaoBaoDetailDemo.Public.Tests.csproj
+│   ├── ExamplePublicUnitTestTests.cs
+│   ├── LibraryExamplePublicUnitTestTests.cs
+│   ├── MyImageLoaderPublicTests.cs
+│   ├── ScrollViewContainerPublicTests.cs
+│   ├── StatusBarViewPublicTests.cs
+│   └── CircleImageViewPublicTests.cs
+├── run_tests.sh
+├── README.md

@@ -1,0 +1,18 @@
+{
+  "project_name": "dlew_rxjava-multiple-sources-sample",
+  "language": "Java",
+  "coverage": {
+    "line": 70.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T19:12:43.951843",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/dlew_rxjava-multiple-sources-sample",
+  "test_result_path": "/workspace/test_enhancement_results/Java/dlew_rxjava-multiple-sources-sample",
+  "tests_path": [
+    "src/test/java/net/danlew/sample/SourcesBranchTest.java",
+    "src/test/java/net/danlew/sample/DataTest.java",
+    "src/test/java/net/danlew/sample/SourcesTest.java",
+    "src/test/java/net/danlew/sample/SampleTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

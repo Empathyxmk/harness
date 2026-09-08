@@ -1,0 +1,16 @@
+project_root/
+├── pom.xml                                    # Maven build configuration, dependencies, plugins
+├── run_tests.sh                               # Simple script: runs all tests with 'mvn clean test'
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── signalfx/
+│                   └── maestro/
+│                       ├── original/
+│                       │   ├── TestLifecycle.java      # Original test cases (from tests/maestro/test_lifecycle.py)
+│                       │   └── TestLoader.java         # Original test cases (from tests/maestro/test_loader.py)
+│                       └── publictests/
+│                           ├── TestLifecyclePublic.java    # Public test cases
+│                           └── TestLoaderPublic.java       # Public test cases
+├── project_structure.txt                         # This file: directory and file explanations

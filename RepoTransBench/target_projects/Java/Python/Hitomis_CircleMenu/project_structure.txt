@@ -1,0 +1,30 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest is listed)
+├── run_tests.sh                    # Simple script to run all tests with one command
+├── project_structure.txt           # This file: describes the structure and each component
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_application.py             # From ApplicationTest.java
+│       ├── test_circle_menu.py             # From CircleMenuTest.java
+│       ├── test_example_unit.py            # From ExampleUnitTest.java
+│       ├── test_main_activity.py           # From MainActivityTest.java
+│       ├── test_on_menu_selected_listener.py # From OnMenuSelectedListenerTest.java
+│       └── test_on_menu_status_change_listener.py # From OnMenuStatusChangeListenerTest.java
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_application_public.py          # From ApplicationPublicTest.java
+│   ├── test_circle_menu_public.py          # From CircleMenuPublicTest.java
+│   ├── test_example_unit_public.py         # From ExampleUnitPublicTest.java
+│   ├── test_main_activity_public.py        # From MainActivityPublicTest.java
+│   ├── test_on_menu_selected_listener_public.py   # From OnMenuSelectedListenerPublicTest.java
+│   └── test_on_menu_status_change_listener_public.py # From OnMenuStatusChangeListenerPublicTest.java
+
+Instructions:
+-------------
+- Install Python dependencies using: `pip install -r requirements.txt`
+- To run ALL tests (original + public):   `./run_tests.sh`
+- Tests under `tests/original/` are original private/internal tests.
+- Tests under `public_tests/` are public tests.
+- The test code mimics the original Java test logic, adapted for Python and `pytest`/`unittest` style.

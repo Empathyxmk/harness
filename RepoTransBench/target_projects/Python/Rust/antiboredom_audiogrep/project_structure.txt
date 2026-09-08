@@ -1,0 +1,17 @@
+antiboredom_audiogrep/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── main.rs
+├── tests/
+│   └── original/
+│       ├── test_import_init.rs
+│       ├── test_api.rs
+│       ├── test_audiogrep.rs
+│       └── data/
+│           └── test.mp3
+├── public_tests/
+│   ├── test_import_init_public.rs
+│   ├── test_api_public.rs
+│   └── test_audiogrep_public.rs
+├── run_tests.sh

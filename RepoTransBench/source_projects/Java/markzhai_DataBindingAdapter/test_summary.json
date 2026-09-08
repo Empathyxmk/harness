@@ -1,0 +1,11 @@
+{
+  "project_name": "markzhai_DataBindingAdapter",
+  "language": "Java",
+  "coverage": {
+    "line": 81.8,
+    "branch": 62.1
+  },
+  "timestamp": "2025-06-19T09:26:24.442838",
+  "original_path": "/workspace/runnable_filter/Java/markzhai_DataBindingAdapter",
+  "test_result_path": "/workspace/test_enhancement_results/Java/markzhai_DataBindingAdapter"
+}

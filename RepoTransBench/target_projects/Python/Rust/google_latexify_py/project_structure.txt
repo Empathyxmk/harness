@@ -1,0 +1,66 @@
+google_latexify_rust/
+├── Cargo.toml
+├── run_tests.sh
+├── README.md
+├── src/
+│   ├── lib.rs
+│   └── # (src/ contains your main library code, not shown here)
+├── tests/
+│   ├── original/
+│   │   ├── test_utils.rs
+│   │   ├── integration_algorithmic_style.rs
+│   │   ├── integration_regression.rs
+│   │   ├── integration_function_expansion.rs
+│   │   ├── frontend.rs
+│   │   ├── ast_utils.rs
+│   │   ├── config.rs
+│   │   ├── generate_latex.rs
+│   │   ├── generate_latex2.rs
+│   │   ├── ast_utils_extra.rs
+│   │   ├── ipython_wrappers.rs
+│   │   ├── parser.rs
+│   │   ├── analyzers.rs
+│   │   ├── transformers_assignment_reducer.rs
+│   │   ├── transformers_identifier_replacer.rs
+│   │   ├── transformers_aug_assign_replacer.rs
+│   │   ├── transformers_function_expander.rs
+│   │   ├── transformers_docstring_remover.rs
+│   │   ├── transformers_prefix_trimmer.rs
+│   │   ├── codegen_identifier_converter.rs
+│   │   ├── codegen_function_codegen_match.rs
+│   │   ├── codegen_algorithmic_codegen.rs
+│   │   ├── codegen_expression_rules.rs
+│   │   ├── codegen_latex.rs
+│   │   ├── codegen_function_codegen.rs
+│   │   ├── codegen_expression_codegen.rs
+│   │   └── codegen_codegen_utils.rs
+├── public_tests/
+│   ├── test_public_utils.rs
+│   ├── integration_test_public_algorithmic_style.rs
+│   ├── integration_test_public_regression.rs
+│   ├── test_public_config.rs
+│   ├── test_public_ast_utils.rs
+│   ├── test_public_config_extra.rs
+│   ├── test_public_parser.rs
+│   ├── test_public_ipython_wrappers.rs
+│   ├── test_public_analyzers.rs
+│   └── test_public_frontend.rs
+│   └── mod.rs
+└── project_structure.txt
+
+# Directory explanations:
+# src/                -- Main Rust library source code (lib.rs, modules, etc.)
+# tests/original/     -- All tests translated from the original Python (original, non-public) tests
+# public_tests/       -- Public test cases corresponding to the Python public_tests/ (separated as a Rust test module)
+# run_tests.sh        -- Run all tests (simply calls “cargo test” for all test modules)
+# Cargo.toml          -- Rust package configuration (dependencies, build settings)
+# README.md           -- Project-level documentation (setup instructions, usage)
+# project_structure.txt -- This file (explains all directories and roles)
+
+# Setup and Running:
+#   1. Run: chmod +x run_tests.sh (if not already executable)
+#   2. Run all tests: ./run_tests.sh
+#   3. To run a specific file, use: cargo test --test file_name
+#   4. To run a specific test function, use: cargo test test_function_name
+
+# Note: All test logic is translated from the google_latexify_py Python repository and preserves test coverage and function.

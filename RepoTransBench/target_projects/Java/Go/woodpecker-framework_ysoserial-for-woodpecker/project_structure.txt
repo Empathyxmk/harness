@@ -1,0 +1,28 @@
+woodpecker-framework-ysoserial/
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   └── original/
+│       ├── strings_smoke_test.go
+│       ├── yso_config_smoke_test.go
+│       ├── strings_test.go
+│       ├── generate_payload_test.go
+│       ├── yso_config_test.go
+│       ├── serializer_deserializer_smoke_test.go
+│       ├── serializer_deserializer_test.go
+│       ├── custom_test.go
+│       ├── wrapped_test.go
+│       ├── rmi_registry_exploit_test.go
+│       └── [other original tests...]
+├── public_tests/
+│   ├── strings_public_test.go
+│   ├── yso_config_public_test.go
+│   ├── strings_smoke_public_test.go
+│   ├── serializer_deserializer_smoke_public_test.go
+│   ├── serializer_deserializer_public_test.go
+│   ├── yso_config_smoke_public_test.go
+│   ├── generate_payload_public_test.go
+│   └── [other public tests...]
+├── [other Go source code and test utility files as needed]

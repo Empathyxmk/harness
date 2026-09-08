@@ -1,0 +1,21 @@
+InstallLion/
+├── InstallLion.sln                 # C# Solution file including all projects
+├── README.md                       # Project docs and usage
+├── run_tests.sh                    # One-click test execution script (all tests)
+├── src/
+│   ├── InstallLion.csproj          # Main Calculator library project
+│   └── Calculator.cs               # Calculator implementation for all tests
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj    # xUnit test project for original tests
+│       └── CalculatorTests.cs      # Translated original Java tests
+└── public_tests/
+    ├── PublicTests.csproj          # xUnit test project for public tests
+    └── CalculatorPublicTests.cs    # Translated public Java tests
+
+Directory breakdown:
+- src/: Main application/library code (Calculator logic)
+- tests/original/: Original functional tests from Java
+- public_tests/: Public test set
+- InstallLion.sln: .NET solution file referencing all projects
+- run_tests.sh: Run all tests with a single command

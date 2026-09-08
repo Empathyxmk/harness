@@ -1,0 +1,41 @@
+{
+  "name": "rfx",
+  "version": "2.0.1",
+  "description": "A dead simple API to integrate rtypes into live code.",
+  "main": "source/index.js",
+  "scripts": {
+    "lint": "eslint test source",
+    "test": "node test/index.js",
+    "check": "npm run -s lint && npm -s test",
+    "watch": "watch 'clear && npm run -s lint && npm -s test' source test",
+    "update": "updtr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericelliott/rfx.git"
+  },
+  "keywords": [
+    "types",
+    "rtype",
+    "machine",
+    "effects",
+    "rfx",
+    "fx",
+    "processor"
+  ],
+  "author": "Eric Elliott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericelliott/rfx/issues"
+  },
+  "homepage": "https://github.com/ericelliott/rfx#readme",
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-config-airbnb-base": "11.1.3",
+    "eslint-plugin-import": "2.2.0",
+    "nyc": "^17.1.0",
+    "tape": "^4.6.3",
+    "updtr": "1.0.0",
+    "watch": "1.0.2"
+  }
+}

@@ -1,0 +1,64 @@
+Java Project Structure for NotHarshhaa_into-the-devops (JUnit/Maven)
+====================================================================
+
+.
+├── pom.xml                      # Maven build and dependency config file
+├── run_tests.sh                 # Single-command script to run ALL tests (chmod +x)
+├── project_structure.txt        # This file - explains structure and usage
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── notharshhaa/
+│   │               └── devops/
+│   │                   └── SyntaxLint.java     # Java ported logic
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── notharshhaa/
+│                   └── devops/
+│                       ├── original/
+│                       │   └── SyntaxLintOriginalTest.java   # Original (private) tests, full logic
+│                       └── public_tests/
+│                           └── SyntaxLintPublicTest.java     # Public tests, matching public Python set
+====================================================================
+
+Directory/Files Summary:
+------------------------
+
+pom.xml              - Declares dependencies (JUnit 5), build options for Maven.
+run_tests.sh         - Simple bash script runs all tests via 'mvn clean test'.
+src/main/java/...
+  SyntaxLint.java    - Java implementation of the lint checking logic, as ported from Python.
+src/test/java/.../original
+  SyntaxLintOriginalTest.java 
+                     - Direct, complete translation of the private/original Python tests. Uses JUnit.
+src/test/java/.../public_tests
+  SyntaxLintPublicTest.java  
+                     - Complete, direct translation of the public Python tests. Uses JUnit.
+
+How to run all tests:
+---------------------
+1. Ensure you have Java 11+ and Maven installed.
+2. Make sure run_tests.sh is executable: chmod +x run_tests.sh
+3. Run all tests:
+      ./run_tests.sh
+   or directly by Maven:
+      mvn clean test
+
+How to run only original (private) tests:
+-----------------------------------------
+      mvn test -Dtest="com.notharshhaa.devops.original.*Test"
+
+How to run only public tests:
+-----------------------------
+      mvn test -Dtest="com.notharshhaa.devops.public_tests.*Test"
+
+Add more custom tests:
+----------------------
+- Place new test classes in:
+   src/test/java/com/notharshhaa/devops/original/         (for original)
+   src/test/java/com/notharshhaa/devops/public_tests/     (for public)
+  Each test class must be named *Test.java and follow JUnit 5 standards.
+
+====================================================================

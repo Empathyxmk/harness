@@ -1,0 +1,15 @@
+keirf_amiga-stuff-python/
+├── requirements.txt                         # Python dependencies (crcmod, pytest)
+├── run_tests.sh                            # Simple script to run all tests
+├── project_structure.txt                    # This file: project structure & description
+├── README.md                               # Project overview & usage
+├── tests/
+│   ├── __init__.py                         # Test package init
+│   └── original/
+│       ├── __init__.py                     # Original test subpackage
+│       ├── test_util.py                    # Translated unit tests from util_test.c
+│       └── test_inflate.py                 # Translated from inflate/test_inflate.py (Python)
+├── public_tests/
+│   ├── __init__.py                         # Public test package
+│   ├── test_inflate_public.py              # Translated public test for inflate logic
+│   └── test_util_public.py                 # Translated public tests from util_public_test.c

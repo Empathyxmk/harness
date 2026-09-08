@@ -1,0 +1,26 @@
+project_root/
+├── go.mod                       # Go module definition
+├── run_tests.sh                 # Simple test runner script (./run_tests.sh)
+├── tests/
+│   └── original/
+│       ├── bezier_test.go       # Original Bezier tests (from BezierTest.java)
+│       ├── controltimedpoints_test.go   # Original ControlTimedPoints tests
+│       └── timedpoint_test.go   # Original TimedPoint tests
+├── public_tests/
+│   ├── bezier_public_test.go         # Public Bezier tests (from BezierPublicTest.java)
+│   ├── controltimedpoints_public_test.go # Public ControlTimedPoints tests
+│   └── timedpoint_public_test.go         # Public TimedPoint tests
+
+# Directory explanations:
+# - tests/original/: Contains complete translations of Java original test files. Helper structs used for self-containment.
+# - public_tests/: Public test cases, logic/coverage is a translation of corresponding *PublicTest.java files.
+# - go.mod: Go module declaration, required for Go project.
+# - run_tests.sh: One-click test execution, runs all tests recursively (unit, public, etc.)
+
+# Setup instructions:
+# 1. Install Go (version 1.20 or later)
+# 2. Clone/download the repository
+# 3. To run all tests, execute:
+#      ./run_tests.sh
+
+# No additional dependencies are required (all logic is self-contained).

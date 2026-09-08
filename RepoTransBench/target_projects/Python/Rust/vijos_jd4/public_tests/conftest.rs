@@ -1,0 +1,1 @@
+// No special initialization required in Rust; all modules found via Cargo and use statements.

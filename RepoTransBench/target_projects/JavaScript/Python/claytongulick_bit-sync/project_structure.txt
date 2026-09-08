@@ -1,0 +1,14 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── src/
+│   └── bit_sync.py            # Python implementation stub (not translated here)
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_bit_sync.py
+│       └── test_js_logic.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_bit_sync_public.py

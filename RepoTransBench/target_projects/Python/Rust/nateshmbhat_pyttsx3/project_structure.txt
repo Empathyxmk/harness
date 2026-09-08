@@ -1,0 +1,61 @@
+.
+├── Cargo.lock
+├── Cargo.toml
+├── LICENSE
+├── MANIFEST
+├── README.md
+├── docs/
+│   ├── Makefile
+│   ├── conf.py
+│   ├── drivers.rst
+│   ├── engine.rst
+│   ├── index.rst
+│   ├── install.rst
+│   └── support.rst
+├── example/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── repeatvoice.py
+│   └── voicefile.mp3
+├── makefile
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_driverproxy_api.py
+│   ├── test_public_engines.py
+│   ├── test_public_init_api.py
+│   └── test_public_pyttsx3.py
+├── pyproject.toml
+├── pyttsx3/
+│   ├── __init__.py
+│   ├── driver.py
+│   ├── drivers/
+│   │   ├── __init__.py
+│   │   ├── _espeak.py
+│   │   ├── avspeech.py
+│   │   ├── dummy.py
+│   │   ├── espeak.py
+│   │   ├── nsss.py
+│   │   └── sapi5.py
+│   ├── engine.py
+│   └── voice.py
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── dummy.rs
+│   └── lib.rs
+├── test_summary.json
+└── tests/
+    ├── __init__.py
+    ├── test_driverproxy_api.py
+    ├── test_driverproxy_api.rs
+    ├── test_engines.py
+    ├── test_engines.rs
+    ├── test_init_api.py
+    ├── test_init_api.rs
+    ├── test_public_driverproxy_api.rs
+    ├── test_public_engines.rs
+    ├── test_public_init_api.rs
+    ├── test_public_pyttsx3.rs
+    ├── test_pyttsx3.py
+    └── test_pyttsx3.rs

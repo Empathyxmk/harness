@@ -1,0 +1,34 @@
+.
+├── requirements.txt         # Python dependencies: pytest, pytest-mock
+├── run_tests.sh             # Script to run all tests (original and public)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_injecting_actionbar_activity.py
+│       ├── test_injecting_activity_module.py
+│       ├── test_injecting_fragment_module.py
+│       ├── test_injecting_preference_activity.py
+│       ├── test_injecting_preference_fragment.py
+│       ├── test_preconditions.py
+│       └── test_utils.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_injecting_actionbar_activity_public.py
+│   ├── test_injecting_activity_module_public.py
+│   ├── test_injecting_fragment_module_public.py
+│   ├── test_injecting_preference_activity_public.py
+│   ├── test_injecting_preference_fragment_public.py
+│   └── test_preconditions_public.py
+
+Explanations:
+- `requirements.txt`: Dependencies required to run tests. Install with `pip install -r requirements.txt`
+- `run_tests.sh`: Runs both original and public tests with pytest.
+- `tests/original/`: Contains all Python translations of the original Java tests.
+- `public_tests/`: Contains all Python translations of the public Java test variants.
+- `__init__.py` files: Make these directories proper Python packages for test discovery.
+
+Instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+3. To run only original or only public tests: `pytest tests/original/` or `pytest public_tests/`

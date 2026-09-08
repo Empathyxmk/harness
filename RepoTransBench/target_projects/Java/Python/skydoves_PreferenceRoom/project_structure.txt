@@ -1,0 +1,33 @@
+project_root/
+├── requirements.txt                            # Python package requirements (pytest, mock)
+├── run_tests.sh                                # Simple test runner: runs both original and public tests via pytest
+├── tests/
+│   ├── __init__.py                             # Init (empty)
+│   └── original/                               # All translated original Java test cases (unit/logic/system)
+│       ├── __init__.py                         # Init (empty)
+│       ├── test_injector_generator.py          # "InjectorGeneratorTest.java"
+│       ├── test_preference_entity_annotated_class.py  # "PreferenceEntityAnnotatedClassTest.java"
+│       ├── test_preference_key_field.py        # "PreferenceKeyFieldTest.java"
+│       ├── test_app_component.py               # "AppComponentTest.java"
+│       ├── test_junit_component.py             # "JunitComponentTest.java"
+│       ├── test_profile_entity.py              # "ProfileEntityTest.java"
+│       └── test_device_entity.py               # "DeviceEntityTest.java"
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_injector_generator_public.py           # "InjectorGeneratorPublicTest.java"
+│   ├── test_preference_key_field_public.py         # "PreferenceKeyFieldPublicTest.java"
+│   ├── test_preference_entity_annotated_class_public.py # "PreferenceEntityAnnotatedClassPublicTest.java"
+│   ├── test_app_component_public.py                # "AppComponentPublicTest.java"
+│   ├── test_junit_component_public.py              # "JunitComponentPublicTest.java"
+│   ├── test_device_entity_public.py                # "DeviceEntityPublicTest.java"
+│   └── test_profile_entity_public.py               # "ProfileEntityPublicTest.java"
+
+Explanations:
+- requirements.txt: Install Python dependencies. Run `pip install -r requirements.txt` before running tests.
+- run_tests.sh: One-command test execution for all tests (original and public). Usage: `chmod +x run_tests.sh && ./run_tests.sh`
+- tests/original/: Contains all original test logic as translated from Java.
+- public_tests/: Contains public tests matching the public variants in the source repo.
+- __init__.py files: Make Python treat directories as packages (for pytest discovery).
+Test instructions:
+1. Run `pip install -r requirements.txt`.
+2. Execute all tests with `./run_tests.sh`.

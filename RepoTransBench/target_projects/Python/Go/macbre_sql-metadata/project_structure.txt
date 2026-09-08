@@ -1,0 +1,39 @@
+project_root/
+├── go.mod                       # Go module definition
+├── README.md                    # Project documentation and instructions
+├── run_tests.sh                 # One-click test runner (runs all tests)
+├── public_tests/                # Directory for public tests
+│   ├── test_public_column_aliases_test.go      # Public: column alias tests
+│   ├── test_public_complex_aliases_test.go     # Public: complex alias tests
+│   └── test_public_drop_table_test.go          # Public: drop table tests
+├── tests/                       # Main test directory (private/original)
+│   ├── original/
+│   │   ├── test_column_aliases_test.go
+│   │   ├── test_complex_aliases_test.go
+│   │   ├── test_drop_table_test.go
+│   │   ├── test_mssql_server_test.go
+│   │   ├── test_alter_test.go
+│   │   ├── test_aliases_test.go
+│   │   ├── test_multiple_subqueries_test.go
+│   │   ├── test_redshift_test.go
+│   │   ├── test_keywords_lists_unit_test.go
+│   │   ├── test_fully_qualified_names_test.go
+│   │   ├── test_query_type_test.go
+│   │   ├── test_unions_test.go
+│   │   ├── test_sqlite_test.go
+│   │   ├── test_values_test.go
+│   │   ├── test_query_test.go
+│   │   ├── test_comments_test.go
+│   │   ├── test_hive_test.go
+│   │   ├── test_caching_test.go
+│   │   ├── test_create_table_test.go
+│   │   ├── test_getting_columns_test.go
+│   │   ├── test_normalization_test.go
+│   │   ├── test_limit_and_offset_test.go
+│   │   ├── test_token_unit_test.go
+│   │   ├── test_postgress_test.go
+│   │   ├── test_with_statements_test.go
+│   │   ├── test_compat_test.go
+│   │   ├── test_getting_tables_test.go
+│   │   └── test_truncate_table_test.go
+│   └── testutil.go               # Test utilities (shared mock/stub helpers etc.)

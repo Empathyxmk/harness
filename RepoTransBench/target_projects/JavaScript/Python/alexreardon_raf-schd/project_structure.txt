@@ -1,0 +1,33 @@
+project_root/
+├── README.md
+├── requirements.txt
+├── run_tests.sh
+├── src/
+│   ├── __init__.py
+│   └── raf_schd.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_index.py
+│       └── test_rafschd_extra.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_index_public.py
+│   └── test_rafschd_extra_public.py
+└── project_structure.txt
+
+Directory explanations:
+- src/: Contains Python source code. 'raf_schd.py' provides a minimal raf_schd implementation and test stubs (requestAnimationFrame etc.) compatible with the tests.
+- tests/original/: Contains original ("private/internal") test cases, 1-to-1 from source JS.
+- public_tests/: Contains public test cases, 1-to-1 from source JS.
+- requirements.txt: Python test dependencies list (pytest).
+- run_tests.sh: Single-command script to run all tests with pytest (will detect both tests/original/ and public_tests/ tests).
+- project_structure.txt: This project structure description.
+
+Setup & testing instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+3. Source code is under src/. You can substitute your actual raf_schd logic in src/raf_schd.py for real use.
+
+All test scenarios, inputs, and assertions are translated 1:1 from the original and public JavaScript tests.

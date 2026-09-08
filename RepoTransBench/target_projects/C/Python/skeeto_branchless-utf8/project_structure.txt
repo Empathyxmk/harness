@@ -1,0 +1,33 @@
+project_root/
+├── src/
+│   └── utf8/
+│       ├── __init__.py
+│       └── utf8.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_utf8_decode.py
+│       └── test_utf8_codec.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_utf8_decode_public.py
+│   └── test_utf8_codec_public.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── project_structure.txt
+
+Directory descriptions:
+src/utf8/            - Project Python source code (UTF-8 encode/decode functions)
+tests/original/      - Original (private/internal) tests ported from C tests.c/test_utf8_decode.c
+public_tests/        - Public tests ported from public C test variants
+requirements.txt     - Python dependencies (pytest)
+run_tests.sh         - One-click test script, installs requirements and runs all tests
+README.md            - Project and testing instructions
+project_structure.txt- This file, project layout and explanation
+
+To run all tests:
+  $ ./run_tests.sh
+
+src/utf8/utf8.py contains Python versions of utf8_encode/utf8_decode used by all test cases.

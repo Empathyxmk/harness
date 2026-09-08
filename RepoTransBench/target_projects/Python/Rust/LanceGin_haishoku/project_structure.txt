@@ -1,0 +1,50 @@
+haishoku_rs/
+├── src/
+│   ├── lib.rs          # Library entry-point, exports modules
+│   ├── alg.rs          # Color algorithm functions (sorting, grouping, histogram, etc.)
+│   ├── haillow.rs      # Hex/rgb color conversions
+│   ├── haishoku.rs     # Haishoku struct and related logic/tools
+│   └── version.rs      # Library version string, used in tests
+├── tests/
+│   └── original/
+│       ├── test_alg.rs                 # Original test_alg.py, covers grouping, sorting, mean, etc.
+│       ├── test_alg_more.rs            # Original test_alg_more.py
+│       ├── test_demo_script.rs         # Demo file and image existence checker
+│       ├── test_haillow.rs             # Hex/rgb conversions for full parity
+│       ├── test_haishoku_edgecases.rs  # Edge case for Haishoku instantiation
+│       ├── test_haishoku_class.rs      # Haishoku class/instance tests (init, monkeypatch equivalent)
+│       ├── test_haishoku.rs            # Haishoku instance test (class as return)
+│       ├── test_init_and_setup.rs      # Version string and LICENSE file existence
+│       # (base_test.py was a stub, omitted)
+├── public_tests/
+│   ├── test_public_alg.rs
+│   ├── test_public_alg_more.rs
+│   ├── test_public_base_test.rs
+│   ├── test_public_demo_script.rs
+│   ├── test_public_haillow.rs
+│   ├── test_public_haishoku_class.rs
+│   ├── test_public_haishoku_edgecases.rs
+│   ├── test_public_haishoku.rs
+│   ├── test_public_init_and_setup.rs
+├── demo/
+│   ├── demo.py
+│   └── demo_01.png
+├── LICENSE
+├── README.md
+├── Cargo.toml
+├── run_tests.sh              # EXECUTE: ./run_tests.sh to run all tests
+└── project_structure.txt     # This file, describes the project structure and usage
+
+# Directory Explanations:
+# src/              -- Rust library source files (main code for haishoku algorithms, classes)
+# tests/original/   -- Original test suite covering all tested functionality (converted from Python)
+# public_tests/     -- Minimal public test suite (faithful replicates of the public_tests)
+# demo/             -- Demo script and sample image, used in tests
+# LICENSE           -- License for project
+# README.md         -- Main documentation
+# run_tests.sh      -- Run all original and public tests together (cargo test)
+# project_structure.txt -- This file, describes all other files and setup steps.
+#
+# Testing Instructions:
+#  $ ./run_tests.sh
+# Will run all original and public Rust test cases.

@@ -1,0 +1,28 @@
+.
+├── Cargo.toml                # Rust package manifest and test executable registration
+├── src/
+│   └── lib.rs                # (Empty placeholder library)
+├── tests/
+│   └── original/
+│       ├── test_chunked_parser.rs    # Original non-public chunked parser tests (translated from C)
+│       └── test_chunkin_util.rs      # Original dummy util test (translated from C)
+├── public_tests/
+│   ├── test_chunked_parser_public.rs   # Public chunked parser tests (translated from C)
+│   └── test_chunkin_util_public.rs     # Public dummy util test (translated from C)
+├── run_tests.sh               # Simple test execution script, runs all tests using cargo test
+└── project_structure.txt      # This explanation
+
+# Directory and file explanations:
+
+- Cargo.toml: Rust package manifest, defines dependencies and registers test executables
+- src/lib.rs: Main source lib, empty for this translation as all logic is inline in the tests
+- tests/original/: Contains Rust test files translated from the original (non-public) C tests
+- public_tests/: Contains Rust test files translated from the public C tests
+- run_tests.sh: Simple script to run all tests (`cargo test`)
+- project_structure.txt: This documentation and structure map
+
+# Setup & test usage
+
+1. Prerequisites: Rust toolchain (https://rustup.rs)
+2. To run all tests: `./run_tests.sh`
+3. The output will indicate all original and public tests pass, following logic identical to the C harnesses.

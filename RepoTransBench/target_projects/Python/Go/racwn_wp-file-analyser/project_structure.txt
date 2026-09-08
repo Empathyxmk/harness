@@ -1,0 +1,13 @@
+racwn_wp-file-analyser-go/
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── wpanalyser/
+│   └── analyser.go
+├── tests/
+│   └── original/
+│       ├── test_analyser_branches_test.go
+│       └── test_analyser_core_test.go
+└── public_tests/
+    ├── test_public_analyser_core_test.go
+    └── test_public_analyser_branches_test.go

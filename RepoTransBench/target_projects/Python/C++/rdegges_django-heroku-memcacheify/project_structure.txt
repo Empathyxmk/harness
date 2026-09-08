@@ -1,0 +1,32 @@
+project_root/
+├── include/
+│   └── memcacheify.h            # C++ header for memcacheify logic and helpers
+├── src/
+│   └── memcacheify.cpp          # C++ implementation of memcacheify and env mocks
+├── tests/
+│   ├── test_memcacheify.cpp     # Translated original test file (pytest style)
+│   ├── test_memcacheify_classic.cpp # Translated tests from tests.py (unittest style)
+├── public_tests/
+│   └── test_public_memcacheify.cpp   # Translated public tests
+├── CMakeLists.txt               # CMake build configuration, adds Google Test
+├── run_tests.sh                 # Simple test run script (one-click)
+└── project_structure.txt        # This file: structure/documentation
+
+Directory explanations:
+- include/: Project headers (API for lib + test helpers)
+- src/: Implementation of memcacheify function/environment mock
+- tests/: All original/maintainer (private) test cases
+- public_tests/: All public user-facing test cases
+- CMakeLists.txt: C++ project and GoogleTest build config
+- run_tests.sh: Build and execute all tests (run from project root)
+- project_structure.txt: Documentation and setup instructions
+
+**Setup & Test Instructions:**
+1. Ensure you have CMake and a modern C++ compiler (g++ 7+ or clang++).
+2. Run: `chmod +x run_tests.sh` (if needed).
+3. Then: `./run_tests.sh`
+4. All test results will display in terminal using gtest.
+
+No additional configuration or dependencies are needed:
+- Google Test is fetched and built locally via CMake.
+- No Python code or interpreter required.

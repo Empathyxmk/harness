@@ -1,0 +1,18 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_gitlog.py
+│       ├── test_gitshow_file2.py
+│       ├── test_val_vs_ptr.py
+│       ├── test_impl.py
+│       ├── test_free_struct.py
+│       └── test_global_init.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_c_array_public.py
+│   └── test_asn1_public_api_usage.py

@@ -1,0 +1,28 @@
+Djilk.ROSBridgeClient C# Project Structure
+
+├── Djilk.ROSBridgeClient.sln             # Solution file (all projects referenced here)
+├── src/
+│   ├── Djilk.ROSBridgeClient.csproj      # Main project file
+│   └── Calculator.cs                     # Implementation of Calculator class
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj          # xUnit test project for original tests
+│       └── CalculatorTests.cs            # Original (private) test cases, translated from Java
+├── public_tests/
+│   ├── PublicTests.csproj                # xUnit test project for public tests
+│   └── CalculatorPublicTests.cs          # Public test cases, translated from Java
+├── run_tests.sh                          # One-click script to build and run *all* tests
+├── project_structure.txt                 # This file. Project layout documentation.
+
+Directory/Files Explanation:
+- src/:              Main codebase for the C# project
+- src/Calculator.cs: C# translation of the Calculator class
+- tests/original/:   Directory for original/private tests, not meant for public viewing
+- public_tests/:     Directory for public (student-facing) tests
+- .csproj files:     C# project descriptors for .NET Core
+- run_tests.sh:      Simple script to run all tests with one command
+- Djilk.ROSBridgeClient.sln: Solution file tying everything together
+
+Test Projects:
+- tests/original/OriginalTests.csproj and public_tests/PublicTests.csproj reference the main project, 
+  include xUnit/NUnit/MSTest dependencies, and are discoverable via 'dotnet test'.

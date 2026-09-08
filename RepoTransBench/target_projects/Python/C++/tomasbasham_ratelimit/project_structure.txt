@@ -1,0 +1,43 @@
+Project Structure for tomasbasham_ratelimit (C++ Translation)
+
+tomasbasham_ratelimit/
+├── include/                      # Public C++ headers for ratelimit API
+│   └── ratelimit/...
+├── src/                          # Main C++ source implementation
+│   └── lib/...
+├── tests/
+│   ├── test_main.cpp             # Main test runner for Google Test
+│   └── original/                 # Original test cases (translated from Python)
+│       ├── test_init_module.cpp
+│       ├── test_decorator_class_core.cpp
+│       ├── test_exception_additional.cpp
+│       ├── test_utils_additional.cpp
+│       ├── test_decorators_edge_cases.cpp
+│       ├── decorator_test.cpp
+│       ├── exception_test.cpp
+│       ├── utils_test.cpp
+│       ├── decorator_decorator_tests.cpp
+├── public_tests/                 # Public test cases (translated from Python)
+│   ├── test_public_init_module.cpp
+│   ├── test_public_decorator_class_core.cpp
+│   ├── test_public_exception_additional.cpp
+│   ├── test_public_utils_additional.cpp
+│   ├── test_public_decorators_edge_cases.cpp
+│   ├── test_public_utils_test.cpp
+│   ├── test_public_decorator_test.cpp
+│   ├── test_public_exception_test.cpp
+│   └── ...
+├── CMakeLists.txt                # CMake configuration for building/tests
+├── run_tests.sh                  # Simple script to build and run all tests
+├── README.md                     # Documentation, setup, usage
+├── project_structure.txt         # This project structure overview
+
+How to Build and Test:
+  $ chmod +x run_tests.sh
+  $ ./run_tests.sh
+
+This will configure, build, and run all tests for both original and public sets.
+All test cases are implemented in C++ using Google Test framework.
+
+Original tests -- in tests/original/
+Public tests   -- in public_tests/

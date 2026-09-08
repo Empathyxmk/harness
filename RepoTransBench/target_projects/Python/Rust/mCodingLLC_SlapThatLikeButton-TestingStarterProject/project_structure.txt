@@ -1,0 +1,16 @@
+.
+├── Cargo.lock
+├── Cargo.toml
+├── LICENSE
+├── README.md
+├── project_structure.txt
+├── public_tests
+│   ├── test_public_slap_that_like_button.rs
+│   └── test_public_slapping.rs
+├── run_tests.sh
+├── src
+│   ├── lib.rs
+│   ├── slap_that_like_button.rs
+└── tests
+    ├── test_slap_that_like_button.rs
+    └── test_slapping.rs

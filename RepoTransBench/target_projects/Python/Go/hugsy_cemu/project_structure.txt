@@ -1,0 +1,26 @@
+hugsy_cemu-go/
+├── README.md
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── settings_test.go
+│       ├── exports_test.go
+│       ├── utils_test.go
+│       ├── basic_test.go
+│       ├── arch_test.go
+│       ├── memory_test.go
+│       ├── os_test.go
+│       ├── errors_test.go
+│       └── log_test.go
+├── public_tests/
+│   ├── public_settings_test.go
+│   ├── public_exports_test.go
+│   ├── public_utils_test.go
+│   ├── public_basic_test.go
+│   ├── public_arch_test.go
+│   ├── public_memory_test.go
+│   ├── public_os_test.go
+│   ├── public_errors_test.go
+│   └── public_log_test.go
+└── test_translation_progress.json

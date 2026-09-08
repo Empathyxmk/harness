@@ -1,0 +1,96 @@
+JoonasVali_NaturalMouseMotion/
+├── JoonasVali.NaturalMouseMotion.sln
+├── LICENSE.txt
+├── README.MD
+├── changelog.txt
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── FlowPublicTest.cs
+│   ├── FlowUtilPublicTest.cs
+│   ├── MouseMotionPublicTest.cs
+│   ├── PublicTests.csproj
+│   ├── screenadjustednature/
+│   │   ├── ExtendedScreenPublicTest.cs
+│   │   ├── NegativePublicTest.cs
+│   │   ├── ScreenAdjustedNatureDefaultsPublicTest.cs
+│   │   └── ScreenAdjustedNaturePublicTest.cs
+│   ├── support/
+│   │   └── mousemotion/
+│   │       ├── DefaultOvershootManagerPublicTest.cs
+│   │       └── MovementFactoryPublicTest.cs
+│   └── util/
+│       └── MathUtilPublicTest.cs
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── JoonasVali.NaturalMouseMotion/
+│   │   └── JoonasVali.NaturalMouseMotion.csproj
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── github/
+│                   └── joonasvali/
+│                       └── naturalmouse/
+│                           ├── api/
+│                           │   ├── DeviationProvider.java
+│                           │   ├── MouseInfoAccessor.java
+│                           │   ├── MouseMotion.java
+│                           │   ├── MouseMotionFactory.java
+│                           │   ├── MouseMotionObserver.java
+│                           │   ├── NoiseProvider.java
+│                           │   ├── OvershootManager.java
+│                           │   ├── SpeedManager.java
+│                           │   └── SystemCalls.java
+│                           ├── support/
+│                           │   ├── DefaultMouseInfoAccessor.java
+│                           │   ├── DefaultMouseMotionNature.java
+│                           │   ├── DefaultNoiseProvider.java
+│                           │   ├── DefaultOvershootManager.java
+│                           │   ├── DefaultSpeedManager.java
+│                           │   ├── DefaultSystemCalls.java
+│                           │   ├── DoublePoint.java
+│                           │   ├── Flow.java
+│                           │   ├── MouseMotionNature.java
+│                           │   ├── NativeCallMouseInfoAccessor.java
+│                           │   ├── ScreenAdjustedNature.java
+│                           │   ├── SinusoidalDeviationProvider.java
+│                           │   └── mousemotion/
+│                           │       ├── Movement.java
+│                           │       └── MovementFactory.java
+│                           ├── tools/
+│                           │   └── SystemDiagnosis.java
+│                           └── util/
+│                               ├── FactoryTemplates.java
+│                               ├── FlowTemplates.java
+│                               ├── FlowUtil.java
+│                               ├── MathUtil.java
+│                               └── Pair.java
+├── test_summary.json
+└── tests/
+    └── original/
+        ├── FlowTest.cs
+        ├── FlowUtilTest.cs
+        ├── HeadlessEnvTest.cs
+        ├── MouseMotionTest.cs
+        ├── MouseMotionTestBase.cs
+        ├── OriginalTests.csproj
+        ├── screenadjustednature/
+        │   ├── ExtendedScreenTest.cs
+        │   ├── NegativeTest.cs
+        │   ├── ScreenAdjustedNatureDefaultsTest.cs
+        │   └── ScreenAdjustedNatureTest.cs
+        ├── support/
+        │   └── mousemotion/
+        │       ├── DefaultOvershootManagerTest.cs
+        │       └── MovementFactoryTest.cs
+        ├── testutils/
+        │   ├── MockDeviationProvider.cs
+        │   ├── MockMouse.cs
+        │   ├── MockNoiseProvider.cs
+        │   ├── MockRandom.cs
+        │   ├── MockSpeedManager.cs
+        │   └── MockSystemCalls.cs
+        └── util/
+            └── MathUtilTest.cs

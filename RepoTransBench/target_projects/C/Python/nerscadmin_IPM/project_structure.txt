@@ -1,0 +1,18 @@
+project_root/
+├── src/
+│   └── ipm_functions.py       # Contains the dummy function `add` (and potentially others)
+├── tests/
+│   ├── __init__.py            # Marks tests as a Python package
+│   └── original/
+│       ├── __init__.py        # Marks original tests as a Python package
+│       └── test_original_dummy.py # Translated test cases from test_cov_dummy.c
+├── public_tests/
+│   ├── __init__.py            # Marks public_tests as a Python package
+│   └── test_public_dummy.py   # Translated test cases from test_cov_dummy_public.c
+├── requirements.txt           # Lists Python dependencies (e.g., pytest)
+├── run_tests.sh               # Script to execute all tests
+└── project_structure.txt      # This document itself
+
+## Setup and Testing Instructions:
+
+1.  **Navigate to the project root:**

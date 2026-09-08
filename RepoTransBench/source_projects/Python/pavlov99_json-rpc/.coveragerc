@@ -1,0 +1,13 @@
+[run]
+omit=
+    jsonrpc/six.py
+    jsonrpc/tests/*
+source=jsonrpc
+
+[report]
+omit=
+    jsonrpc/six.py
+    jsonrpc/tests/*
+exclude_lines=
+    raise NotImplementedError()
+    def is_invalid_params_py2

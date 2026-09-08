@@ -1,0 +1,36 @@
+project_root/
+├── src/
+│   └── namer.py                # Implementation of color namer functionality (assumed module ported as required)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_index.py       # Original tests (mirroring test/index.test.js)
+├── public_tests/
+│   ├── __init__.py
+│   └── test_index_public.py    # Public tests (mirroring public_tests/index.public.test.js)
+├── requirements.txt            # Python dependencies (pytest, chroma-py)
+├── run_tests.sh                # One-click test executor (pytest)
+├── README.md                   # Documentation (to be created or expanded)
+└── project_structure.txt       # This file (structure + instructions)
+
+Directory descriptions:
+src/                - Source code of the Python package (color namer logic; assumes a `namer.py` entry point)
+tests/original/     - Original tests translated from JavaScript Jest (full coverage, all features)
+public_tests/       - Public test cases (as in original repo, separated for easy access/distribution)
+requirements.txt    - All required packages, install with: `pip install -r requirements.txt`
+run_tests.sh        - Simple script to execute all tests with one command
+README.md           - Project documentation and usage
+project_structure.txt- This file, explaining layout
+
+Setup & Testing Instructions:
+1. Install requirements:        `pip install -r requirements.txt`
+2. Run all tests:               `./run_tests.sh`
+3. For only original tests:     `pytest tests/original/`
+4. For only public tests:       `pytest public_tests/`
+
+Test file organization mirrors JS repo:
+- Original (private/full) tests:      tests/original/test_index.py
+- Public tests:                       public_tests/test_index_public.py
+
+All test logic is fully and strictly translated from the JavaScript source.

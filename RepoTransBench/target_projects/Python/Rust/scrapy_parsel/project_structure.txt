@@ -1,0 +1,25 @@
+scrapy_parsel_rust/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   ├── original/
+│   │   ├── test_selector_csstranslator.rs
+│   │   ├── test_selector_edgecases.rs
+│   │   ├── test_utils.rs
+│   │   ├── test_xpathfuncs.rs
+│   │   ├── test_csstranslator_edgecases.rs
+│   │   ├── test_selector_jmespath.rs
+│   │   ├── test_xml_attacks.rs
+│   │   └── test_selector.rs
+│   └── common/
+│       └── mod.rs
+├── public_tests/
+│   ├── test_public_csstranslator.rs
+│   ├── test_public_selector.rs
+│   ├── test_public_utils.rs
+│   └── test_public_xpathfuncs.rs
+├── run_tests.sh
+├── README.md
+├── test_translation_progress.json
+└── project_structure.txt

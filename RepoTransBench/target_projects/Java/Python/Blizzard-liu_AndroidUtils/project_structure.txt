@@ -1,0 +1,44 @@
+project_root/
+├── requirements.txt              # Python dependencies (pytest, mock)
+├── run_tests.sh                  # One-click script to run all tests
+├── README.md                     # (Not included here)
+├── tests/
+│   ├── __init__.py               # (empty, not shown)
+│   └── original/
+│       ├── test_example_instrumented_app.py                # Android-like instrumentation test logic
+│       ├── test_example_unit_app.py                        # Simple unit test
+│       ├── test_example_instrumented_utils.py              # Utils module "instrumented" emulation
+│       ├── test_animation_utils.py                         # AnimationUtils instantiation protection test
+│       ├── test_file_utils.py                              # Read/write file round-trip
+│       ├── test_asset_database_open_helper.py              # AssetDatabaseOpenHelper API and IO error handling
+│       ├── test_log_utils.py                               # LogUtils instantiation protection
+│       ├── test_gson_util.py                               # JSON<->dict/list/bean roundtrips
+│       ├── test_example_unit_utils.py                      # Simple unit test
+│       ├── test_picasso_util.py                            # PicassoUtil instantiation protection
+│       ├── test_bitmap_util.py                             # BitmapUtil image option calculation/coverage
+│       ├── test_app_utils.py                               # AppUtils version code/name retrieval & error handling
+├── public_tests/
+│   ├── __init__.py                  # (empty, not shown)
+│   ├── test_example_instrumented_app_public.py             # Public version: negative package name match
+│   ├── test_example_unit_app_public.py                     # Public version: multiplication logic
+│   ├── test_example_instrumented_utils_public.py           # Public utils instrumented negative match
+│   ├── test_example_unit_utils_public.py                   # Public: subtraction
+│   ├── test_animation_utils_public.py                      # Public AnimationUtils logic
+│   ├── test_gson_util_public.py                            # Public: simple int parse
+│   ├── test_picasso_util_public.py                         # Public: .jpeg URL check
+│   ├── test_asset_database_open_helper_public.py           # Public asset DB name test
+│   ├── test_app_utils_public.py                            # Public: is app foreground
+│   ├── test_bitmap_util_public.py                          # Public: image shape
+│   ├── test_log_utils_public.py                            # Public: log level check
+│   ├── test_file_utils_public.py                           # Public: file extension check
+
+# Directories:
+#  - tests/original/: All translated original (private) unit/integration tests
+#  - public_tests/:   All translated public/provided test cases
+
+# To run all tests:
+#  1. pip install -r requirements.txt
+#  2. ./run_tests.sh
+
+# Run logic:
+#  - pytest is standard Python test runner: will discover all tests/test_* automatically

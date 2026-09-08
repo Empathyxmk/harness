@@ -1,0 +1,15 @@
+{
+  "name": "codemeasandwich_graphql-query-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js",
+    "coverage": "nyc --reporter=text --reporter=html mocha test.js"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "mocha": "^10.8.2",
+    "nyc": "^15.1.0"
+  }
+}

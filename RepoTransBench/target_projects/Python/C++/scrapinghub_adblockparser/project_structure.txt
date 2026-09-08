@@ -1,0 +1,37 @@
+scrapinghub_adblockparser (C++ port) - Project Structure
+
+.
+├── CMakeLists.txt          # Project-wide CMake configuration for build & test
+├── README.md               # High-level description and usage
+├── project_structure.txt   # This project tree and directory explanations
+├── run_tests.sh            # One-click script: build all, run all tests
+├── include/
+│   └── adblockparser.h     # (Public header, library API)
+├── src/
+│   ├── main.cpp            # Example main (optional, not needed for tests)
+│   └── lib/
+│       ├── adblockparser.cpp # Core implementation (to be created/fleshed out)
+│       └── utils.cpp         # utils implementation (to be created)
+├── tests/
+│   ├── test_main.cpp       # Main test runner for GoogleTest
+│   └── original/
+│       ├── test_adblockparser_api.cpp  # Original test translation (API presence)
+│       ├── test_options.cpp            # Option parsing original tests
+│       ├── test_parsing.cpp            # Rule/block logic original tests
+│       ├── test_rule_types.cpp         # Comment/html rule original tests
+│       └── test_utils.cpp              # Utils/split_data original tests
+├── public_tests/
+│   ├── test_public_adblockparser_api.cpp # Public API test file
+│   ├── test_public_options.cpp          # Public options test file
+│   ├── test_public_parsing.cpp          # Public parsing test file
+│   ├── test_public_rule_types.cpp       # Public rule types tests
+│   └── test_public_utils.cpp            # Public utils split_data tests
+
+Legend:
+- src/ and include/ = C++ library implementation (to be developed or ported)
+- tests/original = Full original/verification test suite in C++
+- public_tests/  = Public tests in C++
+- tests/test_main.cpp = GoogleTest runner for all test code
+- run_tests.sh = Build and test all, simply run: ./run_tests.sh
+
+All tests are compiled and run via test_runner.

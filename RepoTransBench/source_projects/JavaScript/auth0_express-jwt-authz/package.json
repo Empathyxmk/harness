@@ -1,0 +1,15 @@
+{
+  "name": "auth0_express-jwt-authz",
+  "version": "1.0.0",
+  "description": "Express middleware for validating JWT scopes",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha test/*.js",
+    "coverage": "nyc npm test"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^10.8.2",
+    "nyc": "^17.1.0"
+  }
+}

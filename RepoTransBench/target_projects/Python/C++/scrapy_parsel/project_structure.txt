@@ -1,0 +1,26 @@
+scrapy_parsel/
+├── CMakeLists.txt
+├── src/
+│   ├── CMakeLists.txt
+│   ├── csstranslator.cpp
+│   ├── selector.cpp
+│   ├── utils.cpp
+│   ├── xpathfuncs.cpp
+├── include/
+│   ├── csstranslator.h
+│   ├── selector.h
+│   ├── utils.h
+│   ├── xpathfuncs.h
+├── tests/
+│   ├── test_main.cpp
+│   └── original/
+│       ├── test_utils.cpp
+│       ├── test_xpathfuncs.cpp
+│       ├── test_csstranslator_edgecases.cpp
+│       ├── test_selector_edgecases.cpp
+├── public_tests/
+│   ├── test_public_utils.cpp
+│   ├── test_public_xpathfuncs.cpp
+│   ├── test_public_selector.cpp
+│   ├── test_public_csstranslator.cpp
+├── run_tests.sh

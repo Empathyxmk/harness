@@ -1,0 +1,54 @@
+Java Overholt Project Structure
+==============================
+
+project_root/
+├── pom.xml                     # Maven build config for dependencies and build info
+├── run_tests.sh                # Simple test execution script (makes running all tests easy)
+├── project_structure.txt       # (this file)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── overholt/
+│   │               ├── settings/
+│   │               │   └── Settings.java         # App settings/config
+│   │               ├── middleware/
+│   │               │   ├── HTTPMethodOverrideMiddleware.java  # Middleware class for method override
+│   │               │   └── OverholtMiddleware.java            # Dummy middleware for public test exists
+│   │               ├── tasks/
+│   │               │   └── Tasks.java             # Task "email" methods (prints string as in Python code)
+│   │               └── wsgi/
+│   │                   ├── AppApplication.java    # Mimic Python WSGI app, with `mounts` attribute
+│   │                   └── Wsgi.java              # Mimic Python `wsgi.py`
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── overholt/
+│                   ├── original/
+│                   │   ├── MiddlewareTest.java    # All original tests for middleware
+│                   │   ├── SettingsTest.java      # App settings tests
+│                   │   ├── TasksTest.java         # Task function print/capture tests
+│                   │   └── WsgiTest.java          # WSGI existence and main tests
+│                   └── publictests/
+│                       ├── PublicMiddlewareTest.java # Public middleware tests
+│                       ├── PublicSettingsTest.java   # Public settings tests
+│                       ├── PublicTasksTest.java      # Public task print/capture tests
+│                       └── PublicWsgiTest.java       # Public WSGI application and mapping tests
+
+Directory/Files Purpose
+-----------------------
+pom.xml              -- Maven dependency configuration, JUnit5+Mockito included in test scope
+run_tests.sh         -- Execute `mvn clean test` for all tests in one command
+src/main/java/       -- Application source files (settings, middleware, tasks, wsgi emulation)
+src/test/java/       -- Tests following Java conventions:
+  - original/        -- Tests corresponding to original (private) Python test suite
+  - publictests/     -- Tests corresponding to public test suite
+
+How to run tests
+----------------
+1. Install JDK 11+ and Maven.
+2. (On Unix) Make sure run_tests.sh is executable: chmod +x run_tests.sh
+3. Run: ./run_tests.sh
+   - This builds the project and runs ALL tests (original+public).
+
+Test structure/naming follows Java conventions. Assertions, print capturing, and method override logic reflect original Python test behaviors.

@@ -1,0 +1,20 @@
+{
+  "project_name": "elierotenberg_react-prepare",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 86.6,
+    "branch": 78.4
+  },
+  "timestamp": "2025-06-19T10:18:56.094157",
+  "original_path": "/workspace/runnable_filter/JavaScript/elierotenberg_react-prepare",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/elierotenberg_react-prepare",
+  "tests_path": [
+    "src/tests/ReactLifeCycle.spec.js",
+    "src/tests/dispatched.spec.js",
+    "src/tests/isReactCompositeComponent.spec.js",
+    "src/tests/isThenable.spec.js",
+    "src/tests/prepare.spec.js",
+    "src/tests/prepared.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

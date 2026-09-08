@@ -1,0 +1,67 @@
+PROJECT STRUCTURE: amaas_rnn-speech-denoising (Python)
+
+amaas_rnn-speech-denoising/
+├── src/
+│   ├── __init__.py
+│   ├── drdae_obj.py                # Core function/module implementation
+│   ├── getAllFiles.py
+│   ├── htkread.py
+│   ├── htkwrite.py
+│   ├── initialize_weights.py
+│   ├── load_aurora.py
+│   ├── rnn_params2stack.py
+│   ├── rnn_stack2params.py
+│   ├── save_callback.py
+│   ├── train_aurora_local.py
+│   └── write_rec_dataset.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_drdae_obj.py
+│   ├── test_drdae_obj_branch.py
+│   ├── test_getAllFiles.py
+│   ├── test_getAllFiles_branch.py
+│   ├── test_htkread.py
+│   ├── test_htkread_branch.py
+│   ├── test_htkwrite.py
+│   ├── test_htkwrite_branch.py
+│   ├── test_initialize_weights.py
+│   ├── test_initialize_weights_branch.py
+│   ├── test_load_aurora.py
+│   ├── test_load_aurora_branch.py
+│   ├── test_rnn_params2stack.py
+│   ├── test_rnn_params2stack_branch.py
+│   ├── test_rnn_stack2params.py
+│   ├── test_rnn_stack2params_branch.py
+│   ├── test_save_callback.py
+│   ├── test_save_callback_branch.py
+│   ├── test_train_aurora_local.py
+│   ├── test_write_rec_dataset.py
+│   └── test_write_rec_dataset_branch.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_test_htkwrite.py
+│   ├── test_public_test_initialize_weights_branch.py
+│   └── test_public_test_train_aurora_local.py
+├── requirements.txt                # Python dependencies
+├── run_tests.sh                    # One-click test runner
+├── README.md
+└── project_structure.txt           # This file
+
+EXPLANATION:
+- src/: All main implementation files for core functions (translated from MATLAB).
+- tests/: Full set of original (non-public) Python test cases for core/library code.
+- public_tests/: Publicly released (usually simplified or restricted) test cases only.
+- requirements.txt: All dependencies needed for testing/running code.
+- run_tests.sh: One-click test runner, runs ALL tests (original + public).
+- README.md: Documentation for the repository.
+- project_structure.txt: Tree view and explanation of repo.
+
+INSTRUCTIONS:
+1. Install dependencies: 
+   pip install -r requirements.txt
+
+2. Run all tests:
+   ./run_tests.sh
+   # or directly with: pytest
+
+3. Structure intentionally mirrors MATLAB separation (original/public tests).

@@ -1,0 +1,42 @@
+project_root/
+├── go.mod                      # Go module definition file.
+├── main.go                     # (Your main implementation, entry point)
+├── rajinipp/                   # Library code for rajinipp, as Go packages.
+│   ├── runner/                 # Go version of runner, exposes NewRppRunner, RppRunner, etc.
+│   ├── lexer/                  # Lexer Go implementation.
+│   ├── exceptions/             # Exception implementations as Go types.
+│   ├── rajiniworld/            # Provides global vars/functions structures.
+│   ├── utils.go                # Utility/helpers such as YML reading.
+│   └── ... (other Go files)    # Adapter of all package logic from original.
+├── examples/                   # Example .rpp program files (copied from Python)
+├── tests/
+│   ├── original/               # All original test files translated to Go
+│   │   ├── exprs_test.go
+│   │   ├── flow_control_test.go
+│   │   ├── functions_test.go
+│   │   ├── init_module_test.go
+│   │   ├── lexer_and_exceptions_test.go
+│   │   ├── print_test.go
+│   │   ├── rajiniworld_test.go
+│   │   ├── runner_test.go
+│   ├── testutil.go             # Shared helpers, file IO, execution utilities
+├── public_tests/
+│   ├── public_exprs_test.go
+│   ├── public_flow_control_test.go
+│   ├── public_functions_test.go
+│   ├── public_init_module_test.go
+│   ├── public_lexer_and_exceptions_test.go
+│   ├── public_print_test.go
+│   ├── public_rajiniworld_test.go
+│   ├── public_runner_test.go
+├── run_tests.sh                # Simple, one-click runnable test script for Go
+└── project_structure.txt       # This structure and directory/tree documentation
+
+README:
+- All original and public test cases are translated under 'tests/original' and 'public_tests' respectively.
+- Place all '.rpp' files from examples/ for source test compatibility.
+- Main implementation code should go in rajinipp/, organized by functionality.
+- To run all tests: `./run_tests.sh`
+- To add dependencies, use `go mod tidy` and import in go.mod as needed.
+
+All test helpers are in tests/testutil.go. If you further port the interpreter to Go, hook up all testutil stubs and adapt accordingly.

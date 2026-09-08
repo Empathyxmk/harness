@@ -1,0 +1,41 @@
+.
+├── LICENSE
+├── Makefile
+├── Manifest.in
+├── OPACK.md
+├── README.md
+├── deploy.sh
+├── go.mod
+├── go.sum
+├── openwifipass/          # Put Go implementations of the library here (stubs required for tests)
+│   ├── connection.go
+│   ├── grantorhandler.go
+│   ├── keys.go
+│   ├── opack.go
+│   ├── scanner.go
+│   ├── tlv8.go
+│   ├── tlv8box.go
+│   └── ...
+├── run_tests.sh
+├── public_tests/
+│   ├── test_public_connection_test.go
+│   ├── test_public_grantorhandler_test.go
+│   ├── test_public_keys_test.go
+│   ├── test_public_opack_test.go
+│   ├── test_public_opack_extra_test.go
+│   ├── test_public_scanner_test.go
+│   ├── test_public_tlv8_test.go
+│   └── test_public_tlv8_extra_test.go
+├── tests/
+│   ├── original/
+│   │   ├── test_connection_test.go
+│   │   ├── test_grantorhandler_test.go
+│   │   ├── test_keys_test.go
+│   │   ├── test_opack_extra_test.go
+│   │   ├── test_opack_test.go
+│   │   ├── test_scanner_test.go
+│   │   ├── test_tlv8_extra_test.go
+│   │   └── test_tlv8_test.go
+│   └── testutil.go
+├── test_translation_progress.json
+└── README.md

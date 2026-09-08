@@ -1,0 +1,31 @@
+project_root/
+├── src/
+│   └── gozala_querystring/
+│       ├── __init__.py
+│       ├── encode.py
+│       └── decode.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_additional_encode_decode.py
+│       └── test_encode_decode_edge_cases.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_additional_encode_decode_public.py
+│   └── test_encode_decode_edge_cases_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Directory explanations:
+- src/gozala_querystring/: Source implementation for encode/decode functions.
+- tests/original/: Original test cases converted from the JavaScript project.
+- public_tests/: Public test cases for open access, as per original project structure.
+- requirements.txt: Python dependencies (pytest).
+- run_tests.sh: Simple script to execute all tests via pytest.
+- project_structure.txt: This file; shows project layout and directory purpose.
+
+Usage:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`

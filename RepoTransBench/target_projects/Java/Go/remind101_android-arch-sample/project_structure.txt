@@ -1,0 +1,39 @@
+.
+├── README.md                         # Project documentation and instructions
+├── go.mod                            # Go module configuration
+├── run_tests.sh                      # One-click test execution script
+├── tests/                            # All test code
+│   ├── original/                     # All tests faithfully translated from Java "non-public" original tests
+│   │   ├── application_test.go
+│   │   ├── counter_database_test.go
+│   │   ├── mvp_recycler_adapter_test.go
+│   │   ├── mvp_viewholder_test.go
+│   │   ├── presenter_manager_test.go
+│   │   ├── testutil.go
+│   │   ├── models/
+│   │   │   └── counter_test.go
+│   │   └── presenters/
+│   │       ├── base_presenter_test.go
+│   │       └── counter_presenter_test.go
+├── public_tests/                     # All tests faithfully translated from Java "*PublicTest.java" files
+│   ├── counter_database_public_test.go
+│   ├── mvp_recycler_adapter_public_test.go
+│   ├── mvp_viewholder_public_test.go
+│   ├── presenter_manager_public_test.go
+│   ├── testutil.go
+│   ├── models/
+│   │   └── counter_public_test.go
+│   └── presenters/
+│       ├── base_presenter_public_test.go
+│       └── counter_presenter_public_test.go
+
+# 
+# Directory Explanation:
+#
+# - README.md: Usage and structure info.
+# - go.mod: Module descriptor.
+# - run_tests.sh: Run all tests with one command.
+# - tests/original/: All non-public (original) test translations.
+# - public_tests/: All public test translations.
+#
+# To run ALL tests, simply use ./run_tests.sh

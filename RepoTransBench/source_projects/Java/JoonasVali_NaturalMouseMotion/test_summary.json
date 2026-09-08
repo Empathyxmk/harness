@@ -1,0 +1,11 @@
+{
+  "project_name": "JoonasVali_NaturalMouseMotion",
+  "language": "Java",
+  "coverage": {
+    "line": 56.7,
+    "branch": 51.3
+  },
+  "timestamp": "2025-06-23T14:42:09.613897",
+  "original_path": "/workspace/runnable_filter/Java/JoonasVali_NaturalMouseMotion",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/JoonasVali_NaturalMouseMotion"
+}

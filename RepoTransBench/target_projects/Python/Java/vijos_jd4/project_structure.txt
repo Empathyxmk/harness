@@ -1,0 +1,25 @@
+vijos_jd4-java/
+├── pom.xml
+├── run_tests.sh
+├── test_translation_progress.json
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/vijos/jd4/
+│   │            # (JD4 implementation classes, if ported)
+│   └── test/
+│       └── java/
+│           └── com/vijos/jd4/
+│               ├── original/
+│               │   ├── TestCache.java
+│               │   ├── TestLogAndConfig.java
+│               │   ├── TestPool.java
+│               │   ├── CaseTest.java
+│               │   ├── CompareTest.java
+│               │   └── IntegrationTest.java
+│               └── public_tests/
+│                   ├── PublicCaseTest.java
+│                   ├── PublicPoolTest.java
+│                   ├── PublicLogAndConfigTest.java
+│                   ├── PublicCacheTest.java
+│                   └── PublicCompareTest.java

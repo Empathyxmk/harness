@@ -1,0 +1,15 @@
+{
+  "project_name": "ded_klass",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.82,
+    "branch": 80.76
+  },
+  "timestamp": "2025-06-19T10:11:58.518503",
+  "original_path": "/workspace/runnable_filter/JavaScript/ded_klass",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/ded_klass",
+  "tests_path": [
+    "src/klass.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

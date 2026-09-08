@@ -1,0 +1,45 @@
+project_root/
+├── Cargo.toml                         # Rust build configuration and dependencies
+├── README.md                          # Documentation (to add: usage, structure, instructions)
+├── run_tests.sh                       # One-click test execution script
+├── src/
+│   ├── lib.rs                         # Crate root lib, exposes modules to tests
+│   ├── runner/
+│   │   ├── mod.rs                     # runner module entry
+│   │   ├── path_to_enlightenment.rs   # filter_koan_names, koans_suite logic
+│   │   ├── mountain.rs                # Mountain struct, for Koans
+│   │   ├── helper.rs                  # cls_name function (type name reflection)
+│   │   ├── sensei.rs                  # Sensei struct
+│   │   ├── writeln_decorator.rs       # WritelnDecorator struct
+│   │   └── mockable_test_result.rs    # MockableTestResult struct
+│   └── libs/
+│       ├── mod.rs                     # libs mod (helper for potential community)
+│       └── mock.rs                    # basic Mock, SentinelObject, etc.
+├── tests/
+│   └── original/
+│       ├── test_path_to_enlightenment.rs      # Translated filter_koan_names/koans_suite tests
+│       ├── test_helper.rs                    # Translated helper.cls_name tests
+│       ├── test_mountain.rs                  # Translated Mountain/stream/lesson walk tests
+│       └── test_mock.rs                      # Translated 'mock' and related pythonic tests
+├── public_tests/
+│   ├── test_public_helper.rs                 # Public test for helper functionality
+│   ├── test_public_mountain.rs               # Public Mountain creation and methods
+│   ├── test_public_path_to_enlightenment.rs  # Public module existence, interface
+│   ├── test_public_scent.rs                  # Always-pass dummy (no analog in Rust)
+│   ├── test_public_contemplate_koans.rs      # Existence/dummy doc
+│   ├── test_public_sensei.rs                 # Struct and methods existence in sensei.rs
+│   └── test_public_mock.rs                   # Public tests for public Mock and related logic
+
+# Test organization:
+# - All original tests are in tests/original/
+# - All public tests are in public_tests/
+# - Run all tests (including public) with ./run_tests.sh
+
+# Setup & Testing:
+# 1. Ensure Rust is installed (rustc, cargo).
+# 2. Run tests: ./run_tests.sh
+# 3. All tests (original + public) in tests/original/ and public_tests/ will run.
+
+# Each test file mirrors the logic of its Python counterpart faithfully.
+# src/ contains only minimal code to support compilation and test assertions,
+# as the primary focus is test translation.

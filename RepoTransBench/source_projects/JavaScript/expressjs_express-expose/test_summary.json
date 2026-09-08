@@ -1,0 +1,16 @@
+{
+  "project_name": "expressjs_express-expose",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.9,
+    "branch": 92.15
+  },
+  "timestamp": "2025-06-23T10:37:14.272799",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/expressjs_express-expose",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/expressjs_express-expose",
+  "tests_path": [
+    "test/color.test.js",
+    "test/express-expose.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

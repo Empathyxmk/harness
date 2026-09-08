@@ -1,0 +1,44 @@
+alingse_jsoncsv_cpp/
+├── README.md                        # Project overview and instructions
+├── CMakeLists.txt                   # CMake build configuration
+├── src/
+│   ├── main.cpp                     # Placeholder main (if required)
+│   └── jsoncsv/
+│       ├── dumptool.cpp             # Core logic (implementations or stubs for linking)
+│       ├── dumptool.h
+│       ├── jsontool.cpp
+│       ├── jsontool.h
+│       └── utils.h
+├── include/                         # Public headers (if needed)
+├── fixture/
+│   └── files/
+│       └── ...                      # Test fixture files (copied or symlinked as needed)
+├── tests/
+│   ├── CMakeLists.txt               # Tests build config
+│   ├── original/
+│   │   ├── test_dumptool.cpp
+│   │   ├── test_dumptool_extra.cpp
+│   │   ├── test_escape.cpp
+│   │   ├── test_jsoncsv.cpp
+│   │   ├── test_jsontool.cpp
+│   │   ├── test_jsontool_extra.cpp
+│   │   ├── test_main_extra.cpp
+│   │   └── test_mkexcel.cpp
+│   └── test_main.cpp                # GTest main entry point to run all tests
+├── public_tests/
+│   ├── CMakeLists.txt
+│   ├── test_public_dumptool.cpp
+│   ├── test_public_dumptool_extra.cpp
+│   ├── test_public_escape.cpp
+│   ├── test_public_jsoncsv.cpp
+│   ├── test_public_jsontool.cpp
+│   ├── test_public_jsontool_extra.cpp
+│   ├── test_public_mkexcel.cpp
+│   └── test_public_main.cpp         # GTest main for public tests
+└── run_tests.sh                     # One-click script to build and test everything
+
+- All test logic is preserved, fully implemented, and mapped to GTest.
+- tests/original/ contains all original test logic (1:1 map from Python).
+- public_tests/ contains all public test logic (data, values, and edge cases as in Python).
+- CMakeLists.txt builds all source and test targets.
+- run_tests.sh provides one-step build & test UX.

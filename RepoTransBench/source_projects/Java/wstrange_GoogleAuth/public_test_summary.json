@@ -1,0 +1,48 @@
+{
+  "project_name": "wstrange_GoogleAuth",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:56:05.945834",
+  "original_path": "/workspace/verified_repos_v2/Java/wstrange_GoogleAuth",
+  "public_test_result_path": "/workspace/public_test_results/Java/wstrange_GoogleAuth",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/com/warrenstrange/googleauth/ReseedingSecureRandomTest.java",
+      "src/test/java/com/warrenstrange/googleauth/GoogleAuthTest.java",
+      "src/test/java/com/warrenstrange/googleauth/GoogleAuthenticatorQRGeneratorUtilTest.java",
+      "src/test/java/com/warrenstrange/googleauth/KeyRepresentationTest.java",
+      "src/test/java/com/warrenstrange/googleauth/GoogleAuthenticatorExceptionTest.java",
+      "src/test/java/com/warrenstrange/googleauth/GoogleAuthenticatorQRGeneratorTest.java",
+      "src/test/java/com/warrenstrange/googleauth/GoogleAuthenticatorConfigTest.java",
+      "src/test/java/com/warrenstrange/googleauth/HmacHashFunctionTest.java",
+      "src/test/java/com/warrenstrange/googleauth/GoogleAuthenticatorKeyTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 9,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/com/warrenstrange/googleauth/ReseedingSecureRandomPublicTest.java",
+      "src/test/java/com/warrenstrange/googleauth/GoogleAuthenticatorQRGeneratorUtilPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 3,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/com/warrenstrange/googleauth/ReseedingSecureRandomPublicTest.java",
+    "src/test/java/com/warrenstrange/googleauth/GoogleAuthenticatorQRGeneratorUtilPublicTest.java",
+    "run_public_tests.sh"
+  ]
+}

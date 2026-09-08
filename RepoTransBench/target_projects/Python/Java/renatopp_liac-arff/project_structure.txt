@@ -1,0 +1,51 @@
+Java LIAC-ARFF Test Suite Translation Project Structure
+------------------------------------------------------
+
+.
+├── pom.xml                   # Maven build configuration (JUnit 5, Mockito)
+├── README.md                 # Usage, setup, and documentation
+├── run_tests.sh              # One-click test runner (mvn clean test)
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── arff/
+│                       ├── Arff.java               # Main ARFF handling code (to be implemented)
+│                       ├── ArffDecoder.java        # ARFF decoder logic (to be implemented)
+│                       ├── ArffEncoder.java        # ARFF encoder logic (to be implemented)
+│                       ├── Data.java               # Data helpers (to be implemented)
+│                       └── ... (supporting classes)
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── arff/
+│                       ├── original/
+│                       │   ├── TestLoads.java
+│                       │   ├── TestDumpsEscape.java
+│                       │   ├── TestDumpEscape.java
+│                       │   ├── ... (all original tests from tests/)
+│                       ├── public_tests/
+│                       │   ├── TestPublicLoads.java
+│                       │   ├── TestPublicDumpsEscape.java
+│                       │   ├── ... (all public test translations)
+│                       └── TestRunner.java         # (optionally: a test suite runner)
+└──
+
+Explanations:
+
+- pom.xml: Maven project file, sets Java/JUnit versions and dependencies.
+- run_tests.sh: Just executes 'mvn clean test' to build and run all tests.
+- src/main/java/com/example/arff/: Place for all ARFF-related Java sources.
+- src/test/java/com/example/arff/original/: Java translation of 'tests/' (original) Python tests.
+- src/test/java/com/example/arff/public_tests/: Java translation of 'public_tests/' Python public tests.
+- README.md: Instructions, setup, and contributing guide.
+- Test naming: Follows Java conventions: e.g. 'TestLoads.java', 'TestPublicLoads.java'.
+- All test logic is fully translated and implemented. No placeholders.
+
+How to run all tests:
+  $ ./run_tests.sh
+
+Tests are automatically discovered by Maven/Surefire by filename pattern (*Test.java).

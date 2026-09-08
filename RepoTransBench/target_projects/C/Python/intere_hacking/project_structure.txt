@@ -1,0 +1,25 @@
+intere_hacking/
+├── src/
+│   └── intere_hacking/
+│       ├── __init__.py
+│       ├── auth_overflow.py
+│       ├── commandline.py
+│       ├── crypt_test.py
+│       └── dtors_sample.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_auth_overflow.py
+│       ├── test_commandline.py
+│       ├── test_crypt_test.py
+│       └── test_dtors_sample.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_auth_overflow_public.py
+│   ├── test_commandline_public.py
+│   ├── test_crypt_test_public.py
+│   └── test_dtors_sample_public.py
+├── README.md
+├── requirements.txt
+└── run_tests.sh

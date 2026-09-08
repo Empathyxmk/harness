@@ -1,0 +1,30 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_abstract_dao.py         # Original AbstractDao test (from AbstractDaoTest.java)
+│       ├── test_columns.py              # Original Columns test (from ColumnsTest.java)
+│       ├── test_db.py                   # Original DB test (from DBTest.java)
+│       └── test_campaign_mgr_impl.py    # Original CampaignMgrImplTest (from CampaignMgrImplTest.java)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_abstract_dao_public.py      # Public test for AbstractDaoPublicTest.java
+│   ├── test_columns_public.py           # Public test for ColumnsPublicTest.java
+│   ├── test_db_public.py                # Public test for DBPublicTest.java
+│   └── test_campaign_mgr_impl_public.py # Public test for CampaignMgrImplPublicTest.java
+
+# Directory explanations:
+# - requirements.txt: Python dependencies for running all tests (pytest)
+# - run_tests.sh: One-click script to run ALL tests (original and public), using pytest
+# - tests/original/: All original (private) test cases, exact Java-to-Python translation, complete logic
+# - public_tests/: All public test cases, separate from originals
+# - __init__.py files: For test module discovery
+#
+# Setup:
+#   1. pip install -r requirements.txt
+#   2. ./run_tests.sh
+#
+# All tests (original & public) runnable via ./run_tests.sh

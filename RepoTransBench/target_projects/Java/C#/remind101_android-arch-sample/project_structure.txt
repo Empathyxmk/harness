@@ -1,0 +1,54 @@
+.
+├── src/
+│   └── Remind101ArchExample/
+│       ├── Remind101ArchExample.csproj
+│       ├── Program.cs
+│       ├── Models/
+│       │   └── Counter.cs
+│       ├── Presenters/
+│       │   ├── BasePresenter.cs
+│       │   └── CounterPresenter.cs
+│       ├── Views/
+│       │   └── CounterView.cs
+│       ├── CounterDatabase.cs
+│       ├── MvpRecyclerAdapter.cs
+│       ├── MvpRecyclerListAdapter.cs
+│       ├── MvpViewHolder.cs
+│       ├── PresenterManager.cs
+│       └── MainActivity.cs
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── ApplicationTests.cs
+│       ├── PresenterManagerTests.cs
+│       ├── CounterDatabaseTests.cs
+│       ├── MvpViewHolderTests.cs
+│       ├── MvpRecyclerAdapterTests.cs
+│       ├── Presenters/
+│       │   ├── CounterPresenterTests.cs
+│       │   └── BasePresenterTests.cs
+│       └── Models/
+│           └── CounterTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── PresenterManagerPublicTests.cs
+│   ├── CounterDatabasePublicTests.cs
+│   ├── MvpRecyclerAdapterPublicTests.cs
+│   ├── MvpViewHolderPublicTests.cs
+│   ├── Presenters/
+│   │   ├── BasePresenterPublicTests.cs
+│   │   └── CounterPresenterPublicTests.cs
+│   └── Models/
+│       └── CounterPublicTests.cs
+├── Remind101ArchExample.sln
+├── run_tests.sh
+├── README.md
+
+Explanations:
+- src/Remind101ArchExample/: All main source code, with subfolders for Models, Presenters, and Views.
+- tests/original/: Contains the original (non-public) test cases, organized similarly to the source structure.
+- public_tests/: Contains public test cases, similarly organized.
+- Remind101ArchExample.sln: Solution file encompassing all projects.
+- *.csproj files: .NET project configurations for source and tests.
+- run_tests.sh: Simple bash script to run all tests.
+- README.md: Documentation and instructions.

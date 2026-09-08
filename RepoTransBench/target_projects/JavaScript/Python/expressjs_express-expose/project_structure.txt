@@ -1,0 +1,30 @@
+project_root/
+├── src/
+│   ├── color_utils.py                # Python implementation for color operations, parses RGB hex, computes lightness/dark/dark
+│   └── expose_utils.py               # Python simulation for 'expose' (stubs JS variable/function exposure)
+├── tests/
+│   ├── __init__.py                   # Test pkg marker
+│   └── original/
+│       ├── __init__.py
+│       ├── test_color.py             # Translated original color utility tests
+│       └── test_expose.py            # Translated original expose middleware tests
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_color_public.py          # Translated public color utility test cases
+│   └── test_expose_public.py         # Translated public expose middleware test cases
+├── requirements.txt                  # Python dependencies (pytest)
+├── run_tests.sh                      # Simple one-click test execution script
+└── project_structure.txt             # This file
+
+Directory Explanations:
+- src/: Contains all source/helper code required to run/translate the tests, in pure Python.
+- tests/original/: Holds the original test cases (full behavior and variable name parity) as pytests.
+- public_tests/: Contains the public test suite, in pytest format.
+- requirements.txt: All dependencies to be installed by `pip install -r requirements.txt` (pytest for testing).
+- run_tests.sh: Run all tests using `pytest`. Execute with `./run_tests.sh`.
+- project_structure.txt: Explains the folder/file structure and content.
+
+Setup and Testing Instructions:
+1. Install requirements: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+3. Tests in both `tests/original/` and `public_tests/` will be discovered and executed using pytest.

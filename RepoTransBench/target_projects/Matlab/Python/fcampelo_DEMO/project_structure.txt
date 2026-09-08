@@ -1,0 +1,35 @@
+fcampelo_DEMO Python Project Structure:
+
+.
+├── Algorithms/                  # Placeholder Algorithms directory for includepaths test (empty)
+│   └── .keep                    # Dummy file to create the directory
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_dtlz.py             # Public-style tests for DTLZ modules
+│   └── test_includepaths.py     # Public-style tests for includepaths
+├── requirements.txt             # Python dependencies (pytest, numpy)
+├── run_tests.sh                 # Simple script to run all tests via pytest
+├── src/
+│   ├── __init__.py
+│   ├── dtlz.py                  # DTLZ test problem functions
+│   └── includepaths.py          # includepaths simulation (adds Algorithms to sys.path)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_dtlz.py         # Original-style DTLZ tests
+│       └── test_includepaths.py # Original-style includepaths test
+└── project_structure.txt        # This file (description of the overall project structure)
+
+Key directories/files:
+- src/: All source modules for the Python conversion (dtlz, includepaths)
+- Algorithms/: Placeholder to support includepaths.py test logic (matches Matlab path-add logic)
+- tests/original/: Translated "original" Matlab tests
+- public_tests/: Translated "public" Matlab tests
+- requirements.txt: All Python dependencies required to run tests
+- run_tests.sh: Bash script to run all tests with one command
+- project_structure.txt: This structure/documentation file
+
+Instructions:
+- Install dependencies: `pip install -r requirements.txt`
+- Run all tests: `./run_tests.sh`

@@ -1,0 +1,56 @@
+melvinkcx_fastapi-events/
+├── LICENSE
+├── README.md
+├── fastapi_events/
+│   └── ... (source Python implementation files)
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   └── ... (Python public test files)
+├── pytest.ini
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.py
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── Main.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── TestDispatcher.java
+│                   │   ├── TestEventPayloadSchemaRegistry.java
+│                   │   ├── TestInitAndErrors.java
+│                   │   ├── TestMiddlewareCore.java
+│                   │   ├── TestSetupPy.java
+│                   │   ├── TestTyping.java
+│                   │   ├── handlers/
+│                   │   │   ├── TestAwsHandler.java
+│                   │   │   ├── TestGcpHandler.java
+│                   │   │   └── TestLocalHandler.java
+│                   │   └── middleware/
+│                   │       ├── TestStarlette.java
+│                   │       └── TestStarlite.java
+│                   └── public_tests/
+│                       ├── TestPublicDispatcher.java
+│                       ├── TestPublicEventPayloadSchemaRegistry.java
+│                       ├── TestPublicInitAndErrors.java
+│                       ├── TestPublicMiddlewareCore.java
+│                       ├── TestPublicSetupPy.java
+│                       ├── TestPublicTyping.java
+│                       ├── handlers/
+│                       │   ├── TestPublicAwsHandler.java
+│                       │   ├── TestPublicGcpHandler.java
+│                       │   └── TestPublicLocalHandler.java
+│                       └── middleware/
+│                           ├── TestPublicStarlette.java
+│                           └── TestPublicStarlite.java
+├── test_summary.json
+├── tests/
+│   └── ... (Python original test files)
+└── tox.ini

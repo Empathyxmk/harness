@@ -1,0 +1,17 @@
+{
+  "project_name": "charmbracelet_tree-sitter-vhs",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:06:07.723804",
+  "original_path": "/workspace/runnable_filter/JavaScript/charmbracelet_tree-sitter-vhs",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/charmbracelet_tree-sitter-vhs",
+  "tests_path": [
+    "grammar.test.js",
+    "bindings/node/index.test.js",
+    "bindings/node/index.d.ts.test.ts"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

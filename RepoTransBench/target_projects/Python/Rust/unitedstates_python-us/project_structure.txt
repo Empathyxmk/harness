@@ -1,0 +1,17 @@
+project_root/
+├── src/
+│   ├── main.rs
+│   ├── lib.rs
+├── modules/
+│   └── us_states.rs
+├── tests/
+│   ├── original/
+│   │   ├── mod.rs
+│   │   ├── test_extra.rs
+│   │   └── test_us.rs
+├── public_tests/
+│   ├── test_public_extra.rs
+│   └── test_public_us.rs
+├── Cargo.toml
+├── run_tests.sh
+├── README.md

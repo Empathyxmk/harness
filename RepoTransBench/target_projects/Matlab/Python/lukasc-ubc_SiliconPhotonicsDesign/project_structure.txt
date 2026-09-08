@@ -1,0 +1,48 @@
+lukasc-ubc_SiliconPhotonicsDesign (Python translation)
+├── requirements.txt              # Python dependencies (pytest)
+├── run_tests.sh                  # Script to run all tests (pytest)
+├── project_structure.txt         # This file: project structure & explanations
+├── tests/
+│   └── original/
+│       ├── test_ch3_wg_1D_analytic.py         # Original test: 1D analytic
+│       ├── test_ch3_wg_1D_mode_profile.py     # Original test: 1D mode profile
+│       ├── test_ch3_wg_2D_mode_profile.py     # Original test: 2D mode profile
+│       ├── test_ch3_wg_EIM_profile.py         # Original test: EIM profile
+│       ├── test_ch3_wg_EIM_profile_functions.py  # Original test: EIM profile functions
+│       ├── test_ch4_Bragg_FDTD.py             # Original test: Bragg FDTD
+│       ├── test_ch4_DC_FDTD_sweeps.py         # Original test: DC FDTD sweeps
+│       ├── test_ch4_DC_GDS_import.py          # Original test: DC GDS import
+│       ├── test_ch4_RingResonator.py          # Original test: Ring Resonator
+│       ├── test_ch4_RingResonator_functions.py # Original test: Ring Resonator functions
+│       ├── test_ch4_TMM_Grating.py            # Original test: TMM Grating
+│       ├── test_ch4_TMM_Grating_functions.py  # Original test: TMM Grating functions
+│       ├── test_ch9_Sparam_passivity.py       # Original test: Sparam passivity
+│
+├── public_tests/
+│   ├── test_ch3_wg_1D_analytic.py             # Public test: 1D analytic
+│   ├── test_ch3_wg_1D_mode_profile.py         # Public test: 1D mode profile
+│   ├── test_ch3_wg_2D_mode_profile.py         # Public test: 2D mode profile
+│   ├── test_ch3_wg_EIM_profile.py             # Public test: EIM profile
+│   ├── test_ch3_wg_EIM_profile_functions.py   # Public test: EIM profile functions
+│   ├── test_ch4_Bragg_FDTD.py                 # Public test: Bragg FDTD
+│   ├── test_ch4_DC_FDTD_sweeps.py             # Public test: DC FDTD sweeps
+│   ├── test_ch4_DC_GDS_import.py              # Public test: DC GDS import
+│   ├── test_ch4_RingResonator_functions.py    # Public test: Ring Resonator functions
+│   ├── test_ch4_TMM_Grating.py                # Public test: TMM Grating
+│   ├── test_ch4_TMM_Grating_functions.py      # Public test: TMM Grating functions
+│   ├── test_ch9_Sparam_passivity.py           # Public test: Sparam passivity
+│
+# Directory explanations:
+#
+# requirements.txt           - Python dependency list, install via 'pip install -r requirements.txt'
+# run_tests.sh               - One-click script. Installs dependencies and runs all tests.
+# tests/original/            - Translations of the "original" Matlab test suite.
+# public_tests/              - Translations of the public test suite.
+# project_structure.txt      - Structure and directory explanations.
+#
+# How to set up & test:
+#
+# 1. Run 'chmod +x run_tests.sh' once if not already executable.
+# 2. Run './run_tests.sh' from the project root to execute *all* tests.
+#
+# By default, all tests from both original and public suites will be discovered by pytest.

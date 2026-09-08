@@ -1,0 +1,29 @@
+Go Project Structure for thomasa88_ParametricText
+
+.
+├── go.mod
+├── run_tests.sh
+├── README.md
+├── project_structure.txt
+├── tests
+│   └── original
+│       ├── paramparser_test.go    # Original tests for paramparser logic (ParamSpec parsing, eq, etc)
+│       ├── paramformatter_test.go # Original tests for paramformatter logic (mixed_frac_inch output)
+│       └── parser_test.go         # Original parser/edge test code for ParamSpec
+├── public_tests
+│   ├── test_public_parser_test.go        # Public tests for ParamSpec (name, value, str, eq)
+│   ├── test_public_paramformatter_test.go # Public tests for mixed_frac_inch public scenarios
+│   └── test_public_paramparser_test.go    # Public tests for ParamSpec, string, eq, etc.
+└── ...
+
+Explanations:
+- go.mod: Go module definition
+- run_tests.sh: Simple executable script to run all Go tests with one command
+- README.md: General project documentation (add project info here)
+- project_structure.txt: (This file) Project directory structure and explanations
+- tests/original: Contains translated original (private/internal) test cases from Python code using Go's testing framework
+- public_tests: Contains translated public tests accessible as sample/verification tests in Go using Go's testing framework
+
+Instructions:
+- To run all tests (both original & public), from project root execute: ./run_tests.sh
+- Requires Go 1.20+ to be installed

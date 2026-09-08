@@ -1,0 +1,15 @@
+.
+├── README.md                      # Project instructions & overview
+├── go.mod                         # Go module definition
+├── playtopausemorph.go            # Implementation: PlayToPauseMorph
+├── run_tests.sh                   # One-click test runner (go test ./...)
+├── project_structure.txt          # (This file) Project tree & description
+├── tests/
+│   ├── original/
+│   │   ├── play_to_pause_morph_additional_test.go   # Original: Additional tests
+│   │   ├── play_to_pause_morph_test.go              # Original: Main tests
+│   │   └── testutil.go                              # (Optional) helpers for original
+├── public_tests/
+│   ├── play_to_pause_morph_public_test.go           # Public: Main public-facing tests
+│   ├── play_to_pause_morph_additional_public_test.go # Public: Additional public tests
+│   └── testutil.go                                  # (Optional) helpers for public

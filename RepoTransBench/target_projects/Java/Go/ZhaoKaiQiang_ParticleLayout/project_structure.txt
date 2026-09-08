@@ -1,0 +1,30 @@
+project_root/
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── app_particledeleteview_application_test.go
+│       ├── app_particledeleteview_example_unit_test.go
+│       ├── leonids_application_test.go
+│       ├── leonids_particle_test.go
+│       ├── leonids_particlesystemdummy_test.go
+│       ├── leonids_particlefield_test.go
+│       ├── leonids_animatedparticle_test.go
+│       ├── leonids_modifiers_particlemodifier_test.go
+│       ├── socks_leonids_exampleunittest.go
+│       ├── library_application_test.go
+│       └── library_exampleunittest.go
+├── public_tests/
+│   ├── app_particledeleteview_application_public_test.go
+│   ├── app_particledeleteview_exampleunitpublic_test.go
+│   ├── leonids_application_public_test.go
+│   ├── leonids_particlesystemdummy_public_test.go
+│   ├── leonids_animatedparticle_public_test.go
+│   ├── leonids_particlepublic_test.go
+│   ├── leonids_particlefieldpublic_test.go
+│   ├── leonids_modifiers_particlemodifierpublic_test.go
+│   ├── socks_leonids_exampleunitpublic_test.go
+│   ├── library_application_public_test.go
+│   └── library_exampleunitpublic_test.go
+├── test_translation_progress.json
+└── project_structure.txt

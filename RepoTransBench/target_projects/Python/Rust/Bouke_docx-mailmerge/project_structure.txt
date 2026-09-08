@@ -1,0 +1,36 @@
+bouke_docx_mailmerge/
+├── Cargo.toml                # Rust package manifest, declares dependencies and test framework
+├── src/
+│   └── lib.rs                # Placeholder for the Rust implementation/core library code
+├── tests/
+│   ├── original/             # All original Python test translations go here (Rust integration-style tests)
+│   │   ├── mod.rs            # Module including all translated test files
+│   │   ├── test_merge_table_rows.rs
+│   │   ├── test_multiple_elements.rs
+│   │   ├── test_issue8.rs
+│   │   ├── test_issue64.rs
+│   │   ├── test_merge_table_multipart.rs
+│   │   ├── test_mailmerge_errors.rs
+│   │   ├── test_merge_pages.rs
+│   │   ├── test_mailmerge_parse.rs
+│   │   ├── test_macword2011.rs
+│   │   ├── test_merge_templates.rs
+│   │   ├── test_issue54_spaces.rs
+│   │   └── test_winword2010.rs
+├── public_tests/             # Reserved for public (example/minimal) tests; empty for this project.
+├── run_tests.sh              # Simple, one-click shell script to run all Rust tests
+└── project_structure.txt     # This file - explains the structure
+
+**Setup and Testing Instructions**
+1. Install Rust: https://rustup.rs/
+2. In the repo root, run `./run_tests.sh` to compile and run ALL tests.
+3. All Rust integration tests are under `tests/original/`, auto-discovered by Cargo.
+4. Add your implementation code in `src/lib.rs`.
+
+**Directories**
+- src/: Rust library code (actual mailmerge logic should be here for full port)
+- tests/original/: Complete and faithful Rust translations of original Python unittests
+- public_tests/: For public/minimal tests if/when needed
+- run_tests.sh: Run all tests (uses `cargo test`)
+- Cargo.toml: Project manifest and dependencies
+- project_structure.txt: This project tree and explanatory guide

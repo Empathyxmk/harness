@@ -1,0 +1,31 @@
+vpiotr_decimal_for_cpp/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── src/
+│   └── decimal/
+│       ├── __init__.py
+│       └── decimal.py                     # (Placeholder for the translated decimal implementation)
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_decimal_test_string.py
+│   │   ├── test_decimal_test.py
+│   │   ├── test_decimal_test_mult_div.py
+│   │   ├── test_decimal_test_round_oth.py
+│   │   ├── test_decimal_test_utils.py
+│   │   ├── test_decimal_test_utils_h.py
+│   │   ├── test_decimal_test_edge_cases.py
+│   │   ├── test_decimal_test_about.py
+│   │   ├── test_decimal_test_with_exponent.py
+│   │   ├── test_decimal_test_mult.py
+│   │   ├── test_decimal_test_div.py
+│   │   ├── test_decimal_test_type_level.py
+│   │   ├── test_decimal_test_modulo.py
+│   │   ├── test_decimal_test_arithmetic.py
+│   │   └── test_decimal_test_rounding.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_decimal_basic_public_test.py

@@ -1,0 +1,25 @@
+Project Structure:
+
+.
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── tests/
+│   ├── original/
+│   │   ├── test_aslr.py
+│   │   ├── test_namespace.py
+│   │   └── test_end_to_end.py
+├── public_tests/
+│   └── test_end_to_end_public.py
+
+Directory Explanation:
+- requirements.txt: Python dependencies (pytest for test running)
+- run_tests.sh: Simple script to execute all tests (one-click)
+- project_structure.txt: This structure and description file
+- tests/original/: All tests translated from C++ originals (including dummy header tests and full end-to-end)
+- public_tests/: All public tests (translated from provided public Python tests)
+
+How to Run Tests:
+1. Ensure Python 3 and pip are installed.
+2. Run: ./run_tests.sh
+   - This installs dependencies and executes both original and public tests.

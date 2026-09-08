@@ -1,0 +1,23 @@
+{
+  "project_name": "cyfonly_FLogger",
+  "language": "Java",
+  "coverage": {
+    "line": 75.0,
+    "branch": 56.0
+  },
+  "timestamp": "2025-06-23T10:30:20.037512",
+  "original_path": "/workspace/test_enhancement_results/Java/cyfonly_FLogger",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/cyfonly_FLogger",
+  "tests_path": [
+    "src/test/java/com/yun/flogger/test/CommUtilTest.java",
+    "src/test/java/com/yun/flogger/test/ConstantTest.java",
+    "src/test/java/com/yun/flogger/test/FLoggerCoreTest.java",
+    "src/test/java/com/yun/flogger/test/FLoggerTest.java",
+    "src/test/java/com/yun/flogger/test/FloggerTest.java",
+    "src/test/java/com/yun/flogger/test/FloggerThroughputTest.java",
+    "src/test/java/com/yun/flogger/test/LogFileItemTest.java",
+    "src/test/java/com/yun/flogger/test/LogManagerTest.java",
+    "src/test/java/com/yun/flogger/test/TimeUtilTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

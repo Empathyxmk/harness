@@ -1,0 +1,22 @@
+venmo_business_rules/
+├── Cargo.toml                 # Rust project configuration
+├── Cargo.lock                 # Auto-generated lock file
+├── src/
+│   ├── lib.rs                 # Main library entry point
+│   ├── variables.rs           # Logic for variables
+│   ├── operators.rs           # Logic for operators
+│   ├── actions.rs             # Logic for actions
+│   ├── engine.rs              # Logic for engine
+│   └── utils.rs               # Utility functions
+├── tests/
+│   └── original/              # Translated original Python tests
+│       ├── test_variables.rs
+│       ├── test_actions.rs
+│       └── ...
+├── public_tests/              # Translated public Python tests
+│   ├── test_public_variables.rs
+│   ├── test_public_actions.rs
+│   └── ...
+├── run_tests.sh               # Script to execute tests
+├── README.md                  # Project documentation
+└── LICENCE                    # Licence file

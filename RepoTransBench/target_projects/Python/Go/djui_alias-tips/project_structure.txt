@@ -1,0 +1,16 @@
+djui_alias-tips/
+├── alias_tips.go
+│   → Go implementation of the alias tips logic, exposing SuggestAlias and IsAliasRecommended.
+├── go.mod
+│   → Go module file for dependency management.
+├── run_tests.sh
+│   → Bash script to run all tests with one command.
+├── project_structure.txt
+│   → Description of the project structure and test locations.
+├── tests/
+│   └── original/
+│       └── alias_tips_test.go
+│           → Original (private) Go tests, translated from test_alias_tips.py.
+├── public_tests/
+│   └── alias_tips_public_test.go
+│       → Public Go tests, translated from test_public_alias_tips.py.

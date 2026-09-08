@@ -1,0 +1,15 @@
+{
+  "project_name": "brettlangdon_jsnice",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 75.0
+  },
+  "timestamp": "2025-06-19T10:01:01.993971",
+  "original_path": "/workspace/runnable_filter/JavaScript/brettlangdon_jsnice",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/brettlangdon_jsnice",
+  "tests_path": [
+    "lib/index.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

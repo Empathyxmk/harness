@@ -1,0 +1,81 @@
+{
+  "project_name": "CodingGay_BlackObfuscator-ASPlugin",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:14:30.888373",
+  "original_path": "/workspace/verified_repos_v2/Java/CodingGay_BlackObfuscator-ASPlugin",
+  "public_test_result_path": "/workspace/public_test_results/Java/CodingGay_BlackObfuscator-ASPlugin",
+  "original_tests": {
+    "test_files": [
+      "app/src/androidTest/java/top/niunaijun/blackobfuscator/asplugin/ExampleInstrumentedTest.java",
+      "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/AbxTest.java",
+      "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/MainActivityTest.java",
+      "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/ExampleUnitTest.java",
+      "plugin/src/test/java/top/niunaijun/blackobfuscator/core/ObfDexTest.java",
+      "plugin/src/test/java/top/niunaijun/blackobfuscator/core/MappingTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/AbxPublicTest.java",
+      "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/MainActivityPublicTest.java",
+      "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/ExampleUnitPublicTest.java",
+      "app/src/androidTest/java/top/niunaijun/blackobfuscator/asplugin/ExampleInstrumentedPublicTest.java",
+      "run_public_tests.sh",
+      "plugin/src/test/java/top/niunaijun/blackobfuscator/core/MappingPublicTest.java",
+      "plugin/src/test/java/top/niunaijun/blackobfuscator/core/ObfDexPublicTest.java",
+      "run_public_tests.sh",
+      "README_PUBLIC_TESTS_FAILING.md",
+      "README_PUBLIC_TESTS_FAILING.md",
+      "README_PUBLIC_TESTS_FAILING.md",
+      "README_PUBLIC_TESTS_FAILING.md",
+      "README_PUBLIC_TESTS_FAILING.md",
+      "plugin/src/test/java/top/niunaijun/blackobfuscator/core/ObfDexPublicTest.java",
+      "plugin/src/test/java/top/niunaijun/blackobfuscator/core/MappingPublicTest.java",
+      "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/AbxPublicTest.java",
+      "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/MainActivityPublicTest.java",
+      "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/ExampleUnitPublicTest.java",
+      "app/src/androidTest/java/top/niunaijun/blackobfuscator/asplugin/ExampleInstrumentedPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 20,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/AbxPublicTest.java",
+    "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/MainActivityPublicTest.java",
+    "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/ExampleUnitPublicTest.java",
+    "app/src/androidTest/java/top/niunaijun/blackobfuscator/asplugin/ExampleInstrumentedPublicTest.java",
+    "run_public_tests.sh",
+    "plugin/src/test/java/top/niunaijun/blackobfuscator/core/MappingPublicTest.java",
+    "plugin/src/test/java/top/niunaijun/blackobfuscator/core/ObfDexPublicTest.java",
+    "run_public_tests.sh",
+    "README_PUBLIC_TESTS_FAILING.md",
+    "README_PUBLIC_TESTS_FAILING.md",
+    "README_PUBLIC_TESTS_FAILING.md",
+    "README_PUBLIC_TESTS_FAILING.md",
+    "README_PUBLIC_TESTS_FAILING.md",
+    "plugin/src/test/java/top/niunaijun/blackobfuscator/core/ObfDexPublicTest.java",
+    "plugin/src/test/java/top/niunaijun/blackobfuscator/core/MappingPublicTest.java",
+    "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/AbxPublicTest.java",
+    "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/MainActivityPublicTest.java",
+    "app/src/test/java/top/niunaijun/blackobfuscator/asplugin/ExampleUnitPublicTest.java",
+    "app/src/androidTest/java/top/niunaijun/blackobfuscator/asplugin/ExampleInstrumentedPublicTest.java",
+    "run_public_tests.sh"
+  ]
+}

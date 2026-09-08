@@ -1,0 +1,65 @@
+Project Structure for Python Translation of focusaurus_express_code_structure
+
+.
+├── requirements.txt         # Python dependencies (pytest)
+├── run_tests.sh             # Simple script to run all tests
+├── project_structure.txt    # This structure/documentation file
+├── public_tests/            # Public tests accessible for learners
+│   ├── __init__.py          # Makes directory a Python package for pytest
+│   └── test_hello_public.py # Translated public test: verifies addition logic
+│
+# (No original tests provided; all available tests were public in the JS project.)
+
+======================
+Directory Explanations
+======================
+
+public_tests/         - Contains public-facing test cases, translated from "public_tests/hello.public.test.js".
+                        These tests serve as sample/educational tests.
+
+requirements.txt      - Declares all Python dependencies needed to run and test the project.
+                        (Only pytest is necessary for this translation.)
+
+run_tests.sh          - Minimal shell script to install dependencies (if needed) and run all tests using pytest.
+                        To use: `chmod +x run_tests.sh && ./run_tests.sh`
+
+project_structure.txt - This documentation you're reading.
+
+====================
+Setup & Instructions
+====================
+
+1. (Optional) Set up environment:
+   python3 -m venv venv
+   source venv/bin/activate
+
+2. Install required dependencies:
+   pip install -r requirements.txt
+
+3. Run all tests:
+   ./run_tests.sh
+
+There are no application (src/) files or original test files in the provided context—only the dummy public addition test is included.
+
+========================
+Test Discovery & Running
+========================
+
+- All test files named `test_*.py` in `public_tests/` are auto-discovered by pytest.
+- To run only public tests: `pytest public_tests/`
+- To run all tests (include other dirs in future): `pytest`
+
+==============================
+How This Structure Was Decided
+==============================
+
+- Follows standard Python test project conventions.
+- Maintains clear separation of public (learner/sample visible) tests.
+- Uses only pytest for easy use, clean output, and future extensibility.
+
+====================
+For Further Work
+====================
+
+- To add original (private) tests, create new files in `tests/original/`.
+- To expand application code, create a `src/` directory and implement modules/packages as needed.

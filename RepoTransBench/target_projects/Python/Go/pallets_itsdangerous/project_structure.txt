@@ -1,0 +1,36 @@
+pallets_itsdangerous Go Project Structure
+
+.
+├── go.mod                  # Go module file
+├── run_tests.sh            # Simple script to run all Go tests (chmod +x)
+├── README.md               # Translation notes and usage
+├── project_structure.txt   # This structure document
+├── src/
+│   └── itsdangerous/       # (Placeholder for actual Go implementation)
+│       ├── ...             # Implementations of Serializer, Signer, etc. (not included)
+├── tests/
+│   └── original/           # Original tests, one file per original Python test file
+│       ├── encoding_test.go
+│       ├── exc_test.go
+│       ├── init_test.go
+│       ├── serializer_test.go
+│       ├── signer_test.go
+│       ├── timed_test.go
+│       └── url_safe_test.go
+├── public_tests/           # Public test cases, one file per public Python test file
+│   ├── encoding_public_test.go
+│   ├── exc_public_test.go
+│   ├── init_public_test.go
+│   ├── serializer_public_test.go
+│   ├── signer_public_test.go
+│   ├── timed_public_test.go
+│   └── url_safe_public_test.go
+
+-- Directory explanations --
+- src/itsdangerous/: Placeholder for main Go implementation. Add your Go code here.
+- tests/original/: Translation of the Python original test cases.
+- public_tests/: Translation of publicly released test cases.
+
+-- How to run all tests --
+$ ./run_tests.sh
+(runs `go test ./...` to discover and execute all tests)

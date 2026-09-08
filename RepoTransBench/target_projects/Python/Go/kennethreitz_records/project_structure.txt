@@ -1,0 +1,29 @@
+kennethreitz_records/
+├── go.mod
+├── main.go
+├── records/
+│   ├── database.go              # Core logic (to be implemented as needed)
+│   ├── record.go
+│   ├── record_collection.go
+│   └── ... (other core files as needed)
+├── tests/
+│   └── original/
+│       ├── records_core_test.go
+│       ├── records_additional_test.go
+│       ├── records_test.go
+│       ├── test_105_test.go
+│       ├── test_69_test.go
+│       └── transactions_test.go
+│   ├── testutil.go
+│   └── conftest.go
+├── public_tests/
+│   ├── public_105_test.go
+│   ├── public_69_test.go
+│   ├── public_records_core_test.go
+│   ├── public_records_test.go
+│   ├── public_records_additional_test.go
+│   └── public_transactions_test.go
+├── run_tests.sh
+├── README.md
+├── test_translation_progress.json
+└── project_structure.txt

@@ -1,0 +1,119 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "Costa Coffee（南京南站店）",
+        "下载速度": "0.75 Mbps",
+        "Speedtest 链接": "http://www.speedtest.net/my-result/4643048535",
+        "参考价格": "25-30 元",
+        "评论 (@xhacker)": "出北出站口就到。",
+        "marker-color": "#C24740",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.782,
+          31.973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "Starbucks（南京苏宁商贸店）",
+        "下载速度": "5.0 Mbps",
+        "Speedtest 链接": "http://www.speedtest.net/my-result/4643486860",
+        "参考价格": "30-40 元",
+        "评论 (@xhacker)": "人挺少的，网速还不错。",
+        "marker-color": "#F3AE1A",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.78,
+          32.042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "The Cub",
+        "下载速度": "13 Mbps",
+        "Speedtest 链接": "http://www.speedtest.net/my-result/5220780633",
+        "参考价格": "20-40 元",
+        "评论 (@61)": "很简洁的咖啡馆，网速很快。",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.772,
+          32.052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "新杂志咖啡",
+        "下载速度": "3.65 Mbps",
+        "Speedtest 链接": "http://www.speedtest.net/my-result/i/2216341385",
+        "参考价格": "30-80 元",
+        "评论 (@61)": "人比较少，高铁南站附近，候车的可以在此休息。",
+        "marker-color": "#C24740",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8,
+          31.9721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "Café&Meal MUJI(南京东方福来德店)",
+        "下载速度": "36.49 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/11390646585",
+        "参考价格": "18-80 元",
+        "评论 (@Labelray)": "MUJI的配套咖啡馆，人不算多，网速很快。",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.778376,
+          32.042721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "蓝湾咖啡（云密城店）",
+        "下载速度": "31.15 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/i/5112923145",
+        "参考价格": "30-40 元",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe",
+        "评论 (@ciiiii)": "中午吃饭的人会比较多，其余时间比较安静"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.749776,
+          31.969316
+        ]
+      }
+    }
+  ]
+}

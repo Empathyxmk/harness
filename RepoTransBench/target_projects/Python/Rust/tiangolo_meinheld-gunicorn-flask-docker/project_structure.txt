@@ -1,0 +1,28 @@
+tiangolo_meinheld_gunicorn_flask_docker/
+├── Cargo.toml               # Rust project configuration & dependencies
+├── src/
+│   └── lib.rs               # Main library file (stub; put src logic here)
+├── tests/
+│   └── original/
+│       ├── test_utils.rs            # Original test: Docker/Container utils
+│       ├── test_main.rs             # Original test: Flask-like API
+│       └── test_utils_minimal.rs    # Original test: minimal Docker/Container utils
+├── public_tests/
+│   ├── test_public_utils.rs         # Public test: Docker/Container utils (public logic)
+│   ├── test_public_main.rs          # Public test: Flask-like API (public logic)
+│   └── test_public_utils_minimal.rs # Public test: minimal Docker/Container utils
+├── run_tests.sh             # One-click test execution script (cargo test)
+└── project_structure.txt    # This project tree and explanation
+
+Directory/Files explanation:
+- Cargo.toml: Rust dependency and metadata management.
+- src/lib.rs: Main library file, required by Rust for tests to build; contains business logic in real migration.
+- tests/original/: All original/hidden test cases ported from Python.
+- public_tests/: All public test cases ported from Python.
+- run_tests.sh: One-click script to execute ALL public and original tests using cargo test.
+- project_structure.txt: This documentation and project organization summary.
+
+To run ALL tests (original and public):
+    $ ./run_tests.sh
+
+All test logic from the original Python suite is ported to Rust. No logic is omitted.

@@ -1,0 +1,33 @@
+ainilife_zebra-dao Go Project Structure:
+
+.
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── tests/
+│   ├── original/
+│   │   ├── async_dao_callable_executor_test.go         # Original: AsyncDaoCallableExecutorTest.java
+│   │   ├── async_dao_exception_test.go                 # Original: AsyncDaoExceptionTest.java
+│   │   ├── async_dao_runnable_executor_test.go         # Original: AsyncDaoRunnableExecutorTest.java
+│   │   └── async_mapper_executor_test.go               # Original: AsyncMapperExecutorTest.java
+├── public_tests/
+│   ├── async_dao_callable_executor_public_test.go      # Public: AsyncDaoCallableExecutorPublicTest.java
+│   ├── async_dao_exception_public_test.go              # Public: AsyncDaoExceptionPublicTest.java
+│   ├── async_dao_runnable_executor_public_test.go      # Public: AsyncDaoRunnableExecutorPublicTest.java
+│   └── async_mapper_executor_public_test.go            # Public: AsyncMapperExecutorPublicTest.java
+
+Directory Explanations:
+- go.mod                        : Go module definition for dependencies and naming
+- run_tests.sh                  : Script to run all tests (original and public) with one command
+- project_structure.txt         : This file; documents project organization
+- tests/original/               : Contains all original test case translations from Java source
+    - *_test.go                 : Test files for module internals, logic, and class-level testing
+- public_tests/                 : Translated public ("public test") cases from Java
+    - *_public_test.go          : Test files meant for public test scenarios, coverage, and sandboxing
+
+Setup and Testing Instructions:
+1. Make sure Go is installed: https://golang.org/doc/install
+2. Run all tests (original + public) by executing:
+      ./run_tests.sh
+   This will invoke `go test ./...` and run all Go test files.
+3. Source files for main implementation should be placed at project root or inside main/ if extending.

@@ -1,0 +1,11 @@
+{
+  "project_name": "jaredhanson_passport",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 86.4,
+    "branch": 82.7
+  },
+  "timestamp": "2025-06-23T10:39:43.203245",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/jaredhanson_passport",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/jaredhanson_passport"
+}

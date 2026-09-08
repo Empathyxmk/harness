@@ -1,0 +1,32 @@
+project_root/
+├── encoder.py                # Source code for the encoder/decoder (must have encode and decode functions)
+├── requirements.txt          # Python dependencies (pytest for testing)
+├── run_tests.sh              # Simple one-click test execution script
+├── tests/
+│   ├── __init__.py           # Makes 'tests' a Python package
+│   └── original/
+│       ├── __init__.py       # Makes 'original' a Python package
+│       └── test_encoder.py   # ALL original test cases from Encoder.test.js
+├── public_tests/
+│   ├── __init__.py           # Makes 'public_tests' a Python package
+│   └── test_encoder_public.py# ALL public test cases from Encoder.public.test.js
+├── README.md                 # Documentation/usage (NOT provided here)
+└── project_structure.txt     # This file (project structure/explanation)
+
+Directory explanations:
+- encoder.py: The main encoder/decoder Python module. Must provide 'encode' and 'decode' functions.
+- requirements.txt: Lists project dependencies, including 'pytest' for testing.
+- run_tests.sh: Bash script for running ALL tests with one click (runs pytest).
+- tests/original/: Contains original (upstream/internal) test cases.
+- public_tests/: Contains public/assessment test cases.
+- __init__.py: Standard for package/module recognition in Python.
+- README.md: Usage, install, and reference documentation.
+- project_structure.txt: Overview of the repo structure (this file).
+
+Setup & Testing Instructions:
+1. Install dependencies:
+   $ pip install -r requirements.txt
+2. Run all tests:
+   $ ./run_tests.sh
+
+All test cases in 'tests/original/' and 'public_tests/' are fully implemented using pytest.

@@ -1,0 +1,49 @@
+project_root/
+├── README.md                 # Instructions and project context.
+├── go.mod                    # Go module initialization file.
+├── run_tests.sh              # One-click script to execute all tests.
+├── businessrules/            # (Production code translation of business_rules Python package)
+│   ├── actions.go
+│   ├── engine.go
+│   ├── fields.go
+│   ├── operators.go
+│   ├── utils.go
+│   └── variables.go
+├── tests/
+│   └── original/             # Original (private) test suite translated from Python
+│       ├── actions_class_test.go
+│       ├── engine_logic_test.go
+│       ├── integration_test.go
+│       ├── operators_class_test.go
+│       ├── operators_test.go
+│       ├── variables_class_test.go
+│       └── variables_test.go
+├── public_tests/             # Public test suite translation
+│   ├── public_actions_class_test.go
+│   ├── public_engine_logic_test.go
+│   ├── public_integration_test.go
+│   ├── public_operators_class_test.go
+│   ├── public_operators_test.go
+│   ├── public_variables_class_test.go
+│   └── public_variables_test.go
+
+# Directory explanations:
+# businessrules/        - Translated Go implementation of the original Python 'business_rules'.
+# tests/original/       - Original test suite, as faithfully translated from the Python repo.
+# public_tests/         - Public test suite, as generated for public review.
+# run_tests.sh          - Simple script to run ALL tests inside both 'tests/original/' and 'public_tests/'.
+# go.mod                - Project module and base dependency management.
+# README.md             - This file.
+
+# Notes:
+# - All test files are fully implemented Go test cases (see *_test.go files).
+# - No placeholders or empty test functions exist.
+# - Helper test utilities, if any, can be placed in 'tests/original/testutil.go' (none provided in translation).
+# - Run './run_tests.sh' for one-click testing.
+# - All test code uses Go's standard 'testing' package.
+
+# Setup:
+#   - Install Go 1.21+.
+#   - Run './run_tests.sh' from the project root.
+
+# (Production code from Python's business_rules must be translated to Go as well for full test passing.)

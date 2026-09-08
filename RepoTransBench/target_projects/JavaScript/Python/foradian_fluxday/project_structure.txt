@@ -1,0 +1,44 @@
+foradian_fluxday (Python version) - Project Structure
+
+.
+├── README.md                 # Project overview and instructions
+├── requirements.txt          # Python dependencies (pytest)
+├── run_tests.sh              # One-click test execution script
+├── project_structure.txt     # This structure and file explanations
+├── src/
+│   ├── __init__.py           # (optional) Package marker
+│   └── sample.py             # Implementation of 'add' and 'max'
+├── tests/
+│   ├── __init__.py           # (optional) Package marker
+│   └── original/
+│       ├── __init__.py       # (optional) Package marker
+│       └── test_sample.py    # Original tests (fully implemented)
+└── public_tests/
+    ├── __init__.py           # (optional) Package marker
+    └── test_sample_public.py # Public tests (fully implemented)
+
+## Directory and file explanations
+
+src/
+    Source code for the project.
+    - sample.py: Implements the 'add' and 'max' functions tested.
+
+tests/original/
+    All original (non-public) test cases.
+    - test_sample.py: Full translation of 'test/sample.test.js' from JS to Python, using pytest.
+
+public_tests/
+    All public test cases.
+    - test_sample_public.py: Full translation of 'public_tests/sample.public.test.js' from JS to Python, using pytest.
+
+requirements.txt
+    Test/depency requirements; mainly 'pytest'.
+
+run_tests.sh
+    Simple script executing all tests with a single command (`pytest`).
+
+README.md
+    Setup and usage instructions.
+
+project_structure.txt
+    This file.

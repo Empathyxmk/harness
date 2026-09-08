@@ -1,0 +1,20 @@
+screw-plus/
+├── Cargo.toml               # Rust project configuration
+├── src/
+│   ├── lib.rs               # Library root
+│   ├── b64.rs               # Base64 implementation
+│   └── tools/
+│       ├── mod.rs           # Tools module definition
+│       └── screw.rs         # Screw tool implementation
+├── tests/
+│   ├── mod.rs               # Tests module definition
+│   └── original/
+│       ├── mod.rs           # Original tests module definition
+│       ├── test_b64.rs      # Original B64 tests
+│       └── test_b64_table.rs# Original B64 table tests (empty)
+├── public_tests/
+│   ├── mod.rs               # Public tests module definition
+│   ├── test_b64_public.rs   # Public B64 tests
+│   └── test_b64_table_public.rs # Public B64 table tests
+├── run_tests.sh             # Script to run all tests
+└── run_public_tests.sh      # Script to run only public tests

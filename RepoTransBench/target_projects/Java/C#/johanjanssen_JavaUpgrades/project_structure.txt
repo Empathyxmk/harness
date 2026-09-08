@@ -1,0 +1,66 @@
+johanjanssen_JavaUpgrades_CSharp/
+├── src/
+│   └── Johanjanssen.JavaUpgrades/
+│       ├── Johanjanssen.JavaUpgrades.csproj        # C# main project file
+│       ├── Program.cs                              # Entry point if needed
+│       └── (Other translated main implementation code files & models)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj                    # Test project for original tests
+│       ├── MultiReleaseJar/
+│       │   ├── StudentTest.cs
+│       │   ├── StudentTest_Java17.cs
+│       │   └── ApplicationTest.cs
+│       ├── Java15/
+│       │   ├── NashornFixedTest.cs
+│       │   └── NashornBrokenTest.cs
+│       ├── Java11/
+│       │   ├── RemovedFontsTest.cs
+│       │   └── JavaeeRemovedBroken/
+│       │       ├── Bind/
+│       │       │   ├── JAXBServiceTest.cs
+│       │       │   └── JAXBStudentTest.cs
+│       │       ├── Annotation/
+│       │       │   └── AnnotationExampleTest.cs
+│       │       ├── Activation/
+│       │       │   └── ActivationExampleTest.cs
+│       │       ├── WS/
+│       │       │   └── WSExampleTest.cs
+│       │       └── Transaction/
+│       │           └── TransactionExampleTest.cs
+│       ├── Java17/
+│       │   ├── MockitoBrokenTest.cs
+│       │   └── MockitoFixedTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj                          # Test project for public tests
+│   ├── MultiReleaseJar/
+│   │   ├── StudentPublicTest.cs
+│   │   ├── StudentPublicTest_Java17.cs
+│   │   └── ApplicationPublicTest.cs
+│   ├── Java15/
+│   │   ├── NashornFixedPublicTest.cs
+│   │   └── NashornBrokenPublicTest.cs
+│   ├── Java11/
+│   │   ├── RemovedFontsPublicTest.cs
+│   │   └── JavaeeRemovedBroken/
+│   │       ├── ActivationPublicTest.cs
+│   │       ├── AnnotationPublicTest.cs
+│   │       ├── Bind/
+│   │       │   ├── JAXBStudentPublicTest.cs
+│   │       │   └── JAXBServicePublicTest.cs
+│   │       ├── TransactionPublicTest.cs
+│   │       └── WSPublicTest.cs
+├── Johanjanssen.JavaUpgrades.sln                   # .NET solution file
+├── run_tests.sh                                    # Simple test execution script
+├── README.md                                       # Project and usage instructions
+└── project_structure.txt                           # This structure description
+
+# Directory explanations:
+# - src/Johanjanssen.JavaUpgrades/: C# main implementation code including all classes, records, and models.
+# - tests/original/: All original (not public) translated test files, maintained in direct analogy to the original Java structure but collapsed for simplicity.
+# - public_tests/: All translated public test cases, with organization paralleling the original.
+# - Johanjanssen.JavaUpgrades.sln: Solution entrypoint referencing all projects.
+# - *.csproj files: .NET Core project files for building/running tests and application code.
+# - run_tests.sh: One-click script to run all tests in both original and public test projects.
+# - README.md: Basic info and guidance.
+# - project_structure.txt: (this document) Structure/usage guide.

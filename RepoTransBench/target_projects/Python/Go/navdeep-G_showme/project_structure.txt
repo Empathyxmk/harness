@@ -1,0 +1,32 @@
+navdeep-g-showme/
+├── go.mod                   # Go module definition
+├── run_tests.sh             # One-click test script for ALL tests (original + public)
+├── project_structure.txt    # This file: describes the project layout and usage
+├── tests/
+│   └── original/
+│       ├── test_core_additional_test.go   # Original test: decorators, coverage, edge cases
+│       ├── test_cputime_test.go           # Original test: cputime decorator
+│       ├── test_docs_test.go              # Original test: docs decorator
+│       ├── test_setup_py_test.go          # Original test: setup.py simulation tests
+│       ├── test_time_test.go              # Original test: time decorator
+│       └── test_trace_test.go             # Original test: trace decorator
+├── public_tests/
+│   ├── test_public_core_additional_test.go # Public: core feature coverage with varied data
+│   ├── test_public_cputime_test.go         # Public: cputime runs & returns float
+│   ├── test_public_docs_test.go            # Public: documentation string test
+│   ├── test_public_setup_py_test.go        # Public: setup main runs & prints
+│   ├── test_public_time_test.go            # Public: time function returns float in range
+│   └── test_public_trace_test.go           # Public: trace output test
+└── README.md                # (Not provided here; add project/documentation details)
+
+Directories:
+- tests/original/    Original, private test cases (maximum coverage, edge cases)
+- public_tests/      Public test suite (visible to contributors/CI)
+- .go files          All Go module source/tests; main business logic would go in navdeep-g-showme/ or submodule
+
+How to use:
+1. Install Go (>=1.20)
+2. Run all tests (original and public):
+   $ ./run_tests.sh
+
+All tests must pass, and include coverage analogous to original Python tests.

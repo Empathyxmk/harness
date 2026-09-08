@@ -1,0 +1,12 @@
+{
+  "name": "lessfish_leetcode",
+  "version": "1.0.0",
+  "description": "Leetcode Solutions with JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

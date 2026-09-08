@@ -1,0 +1,29 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   └── canvas_ity.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_canvas_ity.py
+│   ├── test_canvas_ity_edge.py
+│   └── test_main.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+
+----- DIR EXPLANATION -----
+
+src/                - Contains the (stub) canvas_ity module implementation. Replace with actual implementation for real use.
+public_tests/       - Contains all translated *public* tests from the C++ repo (no original tests exist in this repo).
+requirements.txt    - Declares test dependency (`pytest`) for simple setup.
+run_tests.sh        - One-click test execution script. Just `./run_tests.sh` to run everything.
+project_structure.txt - This file. Overview and usage info.
+
+----- SETUP & TESTING INSTRUCTIONS -----
+1. (Optional) Set up a Python virtual environment.
+2. Run: `pip install -r requirements.txt`
+3. Run all tests with: `./run_tests.sh`
+   - Only public_tests/ will be run; there are no original (private) tests.
+
+All test logic matches the original C++ public test suite.
+Replace the stub src/canvas_ity.py with the real implementation for real verification.

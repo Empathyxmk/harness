@@ -1,0 +1,30 @@
+project_root/
+├── src/
+│   └── code_tag/
+│       └── __init__.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_code_tag.py
+├── public_tests/
+│   ├── __init__.py
+│   └── esm/
+│       ├── __init__.py
+│       └── test_index_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Explanations:
+- src/code_tag/__init__.py: Python source for template literal tag functionality and its aliases.
+- tests/original/: All original (private/maintainer) test cases from the JavaScript project translated to Python using pytest.
+- public_tests/esm/: All public test cases visible for students/users, as translated from JavaScript public tests.
+- requirements.txt: Python dependencies (uses pytest for testing).
+- run_tests.sh: Bash script to easily run all tests with one command.
+- project_structure.txt: This file. Documents project structure, directory explanations, and setup instructions.
+
+How to run tests:
+1. Ensure you have Python 3.7+ and pip.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run all tests: `./run_tests.sh`

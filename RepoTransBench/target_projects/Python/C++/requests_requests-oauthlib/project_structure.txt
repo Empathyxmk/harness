@@ -1,0 +1,54 @@
+CppRequestsOAuthLib/
+├── CMakeLists.txt                # Root CMake configuration.
+├── README.md                     # Project and build instructions.
+├── include/                      # Public headers (for library & test sharing).
+│   └── requests_oauthlib/        # Library headers (mirrors Python package name).
+│       ├── OAuth1.h
+│       ├── OAuth2.h
+│       ├── OAuth2Session.h
+│       ├── compliance_fixes.h    # e.g., facebook_compliance_fix, etc.
+│       ├── core.h
+│       └── ...                   # Additional API headers as needed.
+├── src/                          # Implementation files.
+│   └── requests_oauthlib/        # Library sources.
+│       ├── OAuth1.cpp
+│       ├── OAuth2.cpp
+│       ├── OAuth2Session.cpp
+│       ├── compliance_fixes.cpp
+│       ├── core.cpp
+│       └── ...
+├── tests/                        # Original test cases.
+│   ├── CMakeLists.txt            # CMake file for original tests.
+│   ├── test_oauth2_session.cpp
+│   ├── test_oauth1_session.cpp
+│   ├── test_core.cpp
+│   ├── test_init_and_setup.cpp
+│   ├── test_oauth2_auth.cpp
+│   └── test_compliance_fixes.cpp
+├── public_tests/                 # Public (sample/visible) test cases.
+│   ├── CMakeLists.txt            # CMake file for public tests.
+│   ├── test_public_compliance_fixes.cpp
+│   ├── test_public_core.cpp
+│   ├── test_public_init_and_setup.cpp
+│   ├── test_public_oauth2_auth.cpp
+│   ├── test_public_oauth2_session.cpp
+│   └── test_public_oauth1_session.cpp
+├── build/                        # Build output directory (created by CMake).
+├── run_tests.sh                  # Simple test build & execution script.
+└── project_structure.txt         # This file (documenting structure).
+
+--- Directory Explanations ---
+include/:      Public headers for the OAuth library.
+src/:          C++ source files implementing the library.
+tests/:        Original tests, translated from Python, using GoogleTest.
+public_tests/: Public tests, using GoogleTest, separated as in the source repo.
+build/:        Out-of-source CMake build directory (created at build time).
+run_tests.sh:  Builds and runs all tests with a single command.
+
+--- Setup and Testing ---
+1. Ensure C++17 or newer and CMake, and gtest installed or let CMake fetch it.
+2. Run tests:
+   $ chmod +x run_tests.sh
+   $ ./run_tests.sh
+
+This builds both the library and all tests. Both original and public tests are built and run, and results are printed.

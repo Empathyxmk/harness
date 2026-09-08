@@ -1,0 +1,45 @@
+project_root/
+├── CMakeLists.txt
+│     - CMake build configuration for project and all tests
+├── include/
+│   └── iterative_stratification.hpp
+│       - C++ header interface for IterativeStratification (stub: replace with real)
+├── public_tests/
+│   ├── test_public_ml_stratifiers.cpp
+│   ├── test_public_iterative_stratification.cpp
+│   └── test_public_init_and_setup.cpp
+│       - Public test cases (translated from Python, equivalent logic)
+├── tests/
+│   ├── test_main.cpp
+│       - Google Test runner main()
+│   ├── test_ml_stratifiers.cpp
+│   ├── test_iterative_stratification.cpp
+│   └── test_init_and_setup.cpp
+│       - Original (private) test cases (fully translated from Python)
+├── src/
+│   └── lib/
+│       - (Placeholder for implementation source files)
+├── run_tests.sh
+│     - One-click build and run all tests (builds in build/ and runs test_runner)
+├── README.md
+│     - Project documentation
+├── LICENSE
+│     - Project license
+└── project_structure.txt
+      - This file: overview of structure, directory purposes, and usage
+
+---
+Structure Explanation:
+
+- include/: C++ public API headers. iterative_stratification.hpp defines the C++ interface used in all tests.
+- src/lib/: (Empty placeholder) Where actual algorithm implementation source would reside.
+- tests/: All original test files, named for each Python test file and containing equivalent logic in C++. test_main.cpp provides Google Test main entry point.
+- public_tests/: All public test files. These validate the interface and observable behaviors, including existence checks (README.md, LICENSE).
+- CMakeLists.txt: Complete build config, including GoogleTest automatic fetch & integration.
+- run_tests.sh: Simple script to configure, build, and run every test in one step.
+- README.md, LICENSE: Carried over from the Python repo. Used for test existence checks.
+
+-----
+Setup & Test Instructions:
+
+1. **Build and Run All Tests**

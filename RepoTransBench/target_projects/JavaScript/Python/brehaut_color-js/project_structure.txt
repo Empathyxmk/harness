@@ -1,0 +1,43 @@
+Project Structure Overview
+=========================
+
+brehaut_color-py/
+├── src/
+│   ├── __init__.py
+│   └── color.py
+│       - Python implementation/stub for the Color class.
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_color.py         # Translation of test/color-test.js (original, broad coverage)
+│       └── test_color_extra.py   # Translation of test/color-extra.test.js (original, extra/edge cases)
+├── public_tests/
+│   ├── __init__.py
+│   └── test_color_extra_public.py   # Translation of public_tests/color-extra.public.test.js
+├── requirements.txt
+│   - Lists pytest as dependency for test running
+├── run_tests.sh
+│   - Run "pytest" to execute all tests (original & public)
+├── project_structure.txt
+│   - This overview
+
+Directory Purpose
+-----------------
+- src/:       Source code for the project (including stub Color for test discovery)
+- tests/:     Contains all original/author-written test cases.
+- tests/original/:   Subfolder for original tests for clarity/organization.
+- public_tests/:     Contains public test variants generated for public validation.
+- requirements.txt:  Declares Python dependencies (pytest).
+- run_tests.sh:      Simple script to run all tests at once.
+- project_structure.txt:  This file, as project map and documentation.
+
+To run all tests:
+-----------------
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Run tests:
+   ./run_tests.sh
+
+All tests in both the 'tests/' and 'public_tests/' folders will be discovered and run.

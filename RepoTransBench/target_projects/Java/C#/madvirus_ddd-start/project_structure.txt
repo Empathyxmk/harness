@@ -1,0 +1,48 @@
+madvirus_ddd-start-csharp/
+├── src/
+│   └── MadvirusDddStart/
+│       ├── MadvirusDddStart.csproj
+│       ├── Program.cs
+│       └── (domain/application code & helpers) 
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── TypeDescriptorTests.cs
+│       ├── TypeResolverTests.cs
+│       ├── SpringConfigTests.cs
+│       ├── ShopApplicationTests.cs
+│       ├── MethodAccessTests.cs
+│       ├── AuthenticationTests.cs
+│       ├── WebAccessTests.cs
+│       ├── CouponTests.cs
+│       ├── NoOrderExceptionTests.cs
+│       ├── OrderControllerTests.cs
+│       ├── PlaceOrderServiceTests.cs
+│       ├── JpaOrderRepositoryIntTests.cs
+│       ├── JpaOrderViewDaoIntTests.cs
+│       ├── JpaOrderSummaryDaoIntTests.cs
+│       ├── SecurityCancelPolicyTests.cs
+│       ├── JpaProductRepositoryIntTests.cs
+│       ├── JpaArticleRepositoryIntTests.cs
+│       ├── LockManagerBasicTests.cs
+│       ├── OptimisticLockTests.cs
+│       ├── LockManagerMultiUserTests.cs
+│       ├── EventApiTests.cs
+│       ├── JdbcEventStoreTests.cs
+│       ├── EventForwarderTests.cs
+│       ├── EventHandlerGetEventTypeTests.cs
+│       ├── EventStoreHandlerAspectTests.cs
+│       ├── EventStoreHandlerTests.cs
+│       ├── TestEvent.cs
+│       ├── AsyncEventTests.cs
+│       ├── EventResetProcessorTests.cs
+│       └── shop-int-test.sql
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── TypeDescriptorPublicTests.cs
+│   ├── TypeResolverPublicTests.cs
+│   ├── SpringConfigPublicTests.cs
+├── MadvirusDddStart.sln
+├── run_tests.sh
+├── test_translation_progress.json
+└── README.md

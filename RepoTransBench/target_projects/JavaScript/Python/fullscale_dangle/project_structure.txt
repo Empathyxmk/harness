@@ -1,0 +1,79 @@
+fullscale_dangle_python/
+├── requirements.txt                     # Python dependencies file
+├── run_tests.sh                         # Simple bash script to run all tests
+├── src/                                 # Source Python modules
+│   ├── __init__.py
+│   ├── dangle_module.py                 # Core dangle module logic
+│   └── modules/
+│       ├── __init__.py
+│       ├── donut/
+│       │   ├── __init__.py
+│       │   └── donut.py                 # Donut chart logic
+│       ├── pie/
+│       │   ├── __init__.py
+│       │   └── pie.py                   # Pie chart logic
+│       ├── bar/
+│       │   ├── __init__.py
+│       │   └── bar.py                   # Bar chart logic
+│       ├── area/
+│       │   ├── __init__.py
+│       │   └── area.py                  # Area chart logic
+│       ├── column/
+│       │   ├── __init__.py
+│       │   └── column.py                # Column chart logic
+│       └── date_histo/
+│           ├── __init__.py
+│           └── datehisto.py             # Date histogram logic
+├── tests/                               # All test cases
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_dangle_module.py
+│   │   └── modules/
+│   │       ├── __init__.py
+│   │       ├── donut/
+│   │       │   └── test_donut.py
+│   │       ├── pie/
+│   │       │   └── test_pie.py
+│   │       ├── bar/
+│   │       │   └── test_bar.py
+│   │       ├── area/
+│   │       │   └── test_area.py
+│   │       ├── column/
+│   │       │   └── test_column.py
+│   │       └── date_histo/
+│   │           └── test_datehisto.py
+├── public_tests/                        # Public (external) test cases
+│   ├── __init__.py
+│   ├── test_dangle_module_public.py
+│   └── modules/
+│       ├── __init__.py
+│       ├── donut/
+│       │   └── test_donut_public.py
+│       ├── pie/
+│       │   └── test_pie_public.py
+│       ├── bar/
+│       │   └── test_bar_public.py
+│       ├── area/
+│       │   └── test_area_public.py
+│       ├── column/
+│       │   └── test_column_public.py
+│       └── date_histo/
+│           └── test_datehisto_public.py
+
+# Directory explanations:
+# - src/           : The Python source code for core and chart modules.
+# - tests/original/: Full original test suite, each chart module has its own directory.
+# - public_tests/  : Public tests as described in public_test_summary.json.
+# - requirements.txt: Lists the dependencies (pytest for testing).
+# - run_tests.sh   : Bash script to run all tests in one command.
+# - project_structure.txt: This structure/documentation file.
+
+# Setup and Testing Instructions:
+#
+# 1. Install dependencies:
+#    pip install -r requirements.txt
+#
+# 2. Run all tests:
+#    ./run_tests.sh
+#
+# Pytest will auto-discover all test files in both "tests/original/" and "public_tests/".

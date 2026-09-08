@@ -1,0 +1,102 @@
+pallets_itsdangerous/
+├── CHANGES.rst
+├── CONTRIBUTING.rst
+├── LICENSE.txt
+├── README.md
+├── docs/
+│   ├── Makefile
+│   ├── _static/
+│   ├── changes.rst
+│   ├── concepts.rst
+│   ├── conf.py
+│   ├── encoding.rst
+│   ├── exceptions.rst
+│   ├── index.rst
+│   ├── license.rst
+│   ├── make.bat
+│   ├── serializer.rst
+│   ├── signer.rst
+│   ├── timed.rst
+│   └── url_safe.rst
+├── htmlcov/
+│   └── ... (coverage HTML output)
+├── pom.xml
+├── project_structure.txt  # <- This file
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_encoding_public.py
+│   ├── test_exc_public.py
+│   ├── test_init_public.py
+│   ├── test_serializer_public.py
+│   ├── test_signer_public.py
+│   ├── test_timed_public.py
+│   └── test_url_safe_public.py
+├── pyproject.toml
+├── requirements/
+│   ├── build.in
+│   ├── build.txt
+│   ├── dev.in
+│   ├── dev.txt
+│   ├── docs.in
+│   ├── docs.txt
+│   ├── tests.in
+│   ├── tests.txt
+│   ├── typing.in
+│   └── typing.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── itsdangerous/        # Python source (not part of Java build)
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── itsdangerous/
+│   │               ├── BadSignature.java
+│   │               ├── BadTimeSignature.java
+│   │               ├── Itsdangerous.java
+│   │               ├── Serializer.java
+│   │               ├── SignatureExpired.java
+│   │               ├── Signer.java
+│   │               ├── TimedSerializer.java
+│   │               ├── URLSafeSerializer.java
+│   │               ├── encoding/
+│   │               │   └── EncodingUtils.java
+│   │               └── exc/
+│   │                   ├── BadData.java
+│   │                   ├── BadHeader.java
+│   │                   ├── BadPayload.java
+│   │                   ├── BadSignature.java
+│   │                   ├── BadTimeSignature.java
+│   │                   └── SignatureExpired.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── itsdangerous/
+│                   ├── original/
+│                   │   ├── EncodingTest.java
+│                   │   ├── ExcTest.java
+│                   │   ├── InitTest.java
+│                   │   ├── SerializerTest.java
+│                   │   ├── SignerTest.java
+│                   │   ├── TimedTest.java
+│                   │   └── UrlSafeTest.java
+│                   └── public_tests/
+│                       ├── EncodingPublicTest.java
+│                       ├── ExcPublicTest.java
+│                       ├── InitPublicTest.java
+│                       ├── SerializerPublicTest.java
+│                       ├── SignerPublicTest.java
+│                       ├── TimedPublicTest.java
+│                       └── UrlSafePublicTest.java
+├── test_summary.json
+├── tests/
+│   └── test_itsdangerous/
+│       ├── __init__.py
+│       ├── test_encoding.py
+│       ├── test_exc.py
+│       ├── test_init.py
+│       ├── test_serializer.py
+│       ├── test_signer.py
+│       ├── test_timed.py
+│       └── test_url_safe.py
+└── tox.ini

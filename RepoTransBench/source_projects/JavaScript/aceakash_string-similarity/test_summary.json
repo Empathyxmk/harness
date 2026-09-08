@@ -1,0 +1,17 @@
+{
+  "project_name": "aceakash_string-similarity",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:33:03.851002",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/aceakash_string-similarity",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/aceakash_string-similarity",
+  "tests_path": [
+    "src/spec/index.spec.js",
+    "src/spec/extra-coverage.spec.js",
+    "src/index.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

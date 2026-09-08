@@ -1,0 +1,25 @@
+redroid-modules/
+├── Cargo.toml              # Project configuration and dependencies
+├── run_tests.sh            # Test execution script
+├── src/                    # Source code directory
+│   ├── lib.rs              # Main library file
+│   ├── ashmem.rs           # Ashmem module implementation
+│   └── binder.rs           # Binder module implementation
+├── tests/                  # Original test directory
+│   └── original/           # Original test files
+│       ├── test_ashmem_deps.rs       # Tests for ashmem dependencies
+│       └── test_ashmem_ion_heap.rs   # Tests for ion heap functionality
+└── public_tests/           # Public test directory
+    ├── test_ashmem_deps_public.rs    # Public tests for ashmem dependencies
+    └── test_ashmem_ion_heap_public.rs # Public tests for ion heap functionality
+
+Directory explanations:
+- src/: Contains the main source code and module implementations
+- tests/original/: Contains the original test files converted from C to Rust
+- public_tests/: Contains the public test files converted from C to Rust
+
+Setup and Testing Instructions:
+1. Ensure Rust and Cargo are installed on your system
+2. Navigate to the project root directory
+3. Run all tests with: ./run_tests.sh
+4. Individual tests can be run with: cargo test --test <test_name>

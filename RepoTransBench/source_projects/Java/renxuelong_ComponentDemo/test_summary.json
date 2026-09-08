@@ -1,0 +1,11 @@
+{
+  "project_name": "renxuelong_ComponentDemo",
+  "language": "Java",
+  "coverage": {
+    "line": 93.7,
+    "branch": 75.0
+  },
+  "timestamp": "2025-06-20T02:09:51.120225",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/renxuelong_ComponentDemo",
+  "test_result_path": "/workspace/test_enhancement_results/Java/renxuelong_ComponentDemo"
+}

@@ -1,0 +1,47 @@
+project_root/
+├── requirements.txt                # Python project dependencies (pytest)
+├── run_tests.sh                    # Simple script to run all tests
+├── project_structure.txt           # Project structure and documentation
+├── tests/
+│   ├── __init__.py                 # Marks tests package
+│   └── original/
+│       ├── __init__.py             # Marks original tests package
+│       ├── test_hello_world.py     # Translation of hello_world_test.m
+│       └── test_smoke_mapping_network_syntax.py   # Translation of smoke_mapping_network_syntax_test.m
+├── public_tests/
+│   ├── __init__.py                 # Marks public tests package
+│   ├── test_hello_world_public.py  # Translation of hello_world_public_test.m
+│   └── test_smoke_mapping_network_syntax_public.py # Translation of smoke_mapping_network_syntax_public_test.m
+└── data/
+    ├── mapping/
+    │   ├── MobileNetV2_kcp_ws.m
+    │   ├── mnasnet_ykp_os.m
+    │   ├── ResNeXt50_yxp_os.m
+    │   └── Transformer_Complete.m
+    └── ...
+    # (other mapping/model/network .m files as present)
+  validation/
+    ├── eyeriss/
+    │   └── alexnet_rs_validation.m
+    └── maeri/
+        └── vgg16_maeri.m
+
+Directory Explanations:
+- requirements.txt: Python dependencies for running tests
+- run_tests.sh: One-click shell script to run all tests using pytest
+- project_structure.txt: Project structure and guide (this file)
+- tests/original/: Contains original (private) test translations from Matlab to Python
+- public_tests/: Contains public test translations from Matlab to Python
+- data/: Contains .m data and mapping files (used in smoke tests, not translated)
+- validation/: Contains network config files referenced for syntax tests (not translated)
+
+Setup & Testing Instructions:
+1. Create a Python (>=3.7) virtual environment (optional).
+2. Install dependencies: `pip install -r requirements.txt`
+3. To run **all tests** (original + public): `./run_tests.sh`
+   - This will use pytest to discover and run all test files.
+4. To run just original or public tests, use:
+   - `pytest tests/original/` for original tests,
+   - `pytest public_tests/` for public tests.
+
+All test code is fully native Python and does not require Matlab or Octave.

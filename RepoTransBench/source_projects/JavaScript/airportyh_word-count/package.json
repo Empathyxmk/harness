@@ -1,0 +1,16 @@
+{
+  "name": "word-count-paradigms",
+  "version": "1.0.0",
+  "description": "Different programming styles for implementing the same word count program.",
+  "dependencies": {
+    "mori": "^0.3.2"
+  },
+  "devDependencies": {
+    "jest": "^30.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Toby Ho",
+  "license": "MIT"
+}

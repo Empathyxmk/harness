@@ -1,0 +1,22 @@
+expressjs_vhost_python/
+├── src/
+│   └── vhost.py                # Python adaptation of vhost logic (to be implemented or stubbed for test translation)
+├── tests/
+│   ├── __init__.py
+│   └── test_vhost.py           # Original (private) test cases translated from test/test.js
+├── public_tests/
+│   ├── __init__.py
+│   └── test_vhost_public.py    # Public test cases translated from public_tests/vhost.public.test.js
+├── requirements.txt            # Python dependencies for tests
+├── run_tests.sh                # Script to run all tests
+├── README.md                   # Brief documentation
+└── project_structure.txt       # This file
+
+Directory explanations:
+- src/: Python source implementation (core vhost logic)
+- tests/: Original/internal tests from JS project, now as Python tests
+- public_tests/: Public exported tests, translated to Python
+- requirements.txt: Installable Python dependencies for running tests (pytest, requests)
+- run_tests.sh: One-click test runner, will install dependencies and run all tests
+- README.md: Setup and usage instructions for Python project
+- project_structure.txt: Project overview and directory/file purpose

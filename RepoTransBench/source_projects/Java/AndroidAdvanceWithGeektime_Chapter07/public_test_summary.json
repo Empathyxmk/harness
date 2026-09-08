@@ -1,0 +1,89 @@
+{
+  "project_name": "AndroidAdvanceWithGeektime_Chapter07",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:13:00.603502",
+  "original_path": "/workspace/verified_repos_v2/Java/AndroidAdvanceWithGeektime_Chapter07",
+  "public_test_result_path": "/workspace/public_test_results/Java/AndroidAdvanceWithGeektime_Chapter07",
+  "original_tests": {
+    "test_files": [
+      "systrace-sample-android/app/src/androidTest/java/matrix/tencent/com/matrix_android/ExampleInstrumentedTest.java",
+      "systrace-gradle-plugin/src/test/java/com/geektime/systrace/LogTest.java",
+      "systrace-gradle-plugin/src/test/java/com/geektime/systrace/ReflectUtilTest.java"
+    ],
+    "test_scripts": [],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "systrace-gradle-plugin/src/test/java/com/geektime/systrace/LogPublicTest.java",
+      "systrace-gradle-plugin/src/test/java/com/geektime/systrace/ReflectUtilPublicTest.java",
+      "systrace-sample-android/app/src/androidTest/java/matrix/tencent/com/matrix_android/ExampleInstrumentedPublicTest.java",
+      "systrace-gradle-plugin/run_public_tests.sh",
+      "systrace-sample-android/app/run_public_tests.sh",
+      "run_public_tests.sh",
+      "systrace-gradle-plugin/run_public_tests.sh",
+      "systrace-sample-android/app/run_public_tests.sh",
+      "run_public_tests.sh",
+      "systrace-gradle-plugin/run_public_tests.sh",
+      "systrace-sample-android/app/run_public_tests.sh",
+      "run_public_tests.sh",
+      "systrace-gradle-plugin/run_public_tests.sh",
+      "systrace-sample-android/app/run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "systrace-gradle-plugin/run_public_tests.sh",
+      "systrace-sample-android/app/run_public_tests.sh",
+      "run_public_tests.sh",
+      "systrace-gradle-plugin/run_public_tests.sh",
+      "systrace-sample-android/app/run_public_tests.sh",
+      "run_public_tests.sh",
+      "systrace-gradle-plugin/run_public_tests.sh",
+      "systrace-sample-android/app/run_public_tests.sh",
+      "run_public_tests.sh",
+      "systrace-gradle-plugin/run_public_tests.sh",
+      "systrace-sample-android/app/run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 15,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "systrace-gradle-plugin/src/test/java/com/geektime/systrace/LogPublicTest.java",
+    "systrace-gradle-plugin/src/test/java/com/geektime/systrace/ReflectUtilPublicTest.java",
+    "systrace-sample-android/app/src/androidTest/java/matrix/tencent/com/matrix_android/ExampleInstrumentedPublicTest.java",
+    "systrace-gradle-plugin/run_public_tests.sh",
+    "systrace-sample-android/app/run_public_tests.sh",
+    "systrace-gradle-plugin/run_tests.sh",
+    "systrace-sample-android/app/run_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh",
+    "systrace-gradle-plugin/run_public_tests.sh",
+    "systrace-sample-android/app/run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh",
+    "systrace-gradle-plugin/run_tests.sh",
+    "systrace-gradle-plugin/run_public_tests.sh",
+    "systrace-sample-android/app/run_tests.sh",
+    "systrace-sample-android/app/run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh",
+    "systrace-gradle-plugin/run_tests.sh",
+    "systrace-gradle-plugin/run_public_tests.sh",
+    "systrace-sample-android/app/run_tests.sh",
+    "systrace-sample-android/app/run_public_tests.sh",
+    "gradle.properties",
+    "systrace-gradle-plugin/gradle.properties",
+    "systrace-sample-android/app/gradle.properties",
+    "gradle.properties",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

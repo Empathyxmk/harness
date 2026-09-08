@@ -1,0 +1,72 @@
+Project Structure for Java Translation of supersaiyanmode_PyWebOSTV
+===================================================================
+
+supersaiyanmode_PyWebOSTV-java/
+├── README.md
+├── pom.xml                  # Maven configuration; includes JUnit 5 for testing
+├── run_tests.sh             # One-click script: runs all tests using Maven
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── pywebostv/
+│   │                   ├── controls/
+│   │                   │   └── ...        # (Stubs/helpers/mocks here if needed)
+│   │                   ├── connection/
+│   │                   │   └── ...        # (Stubs/helpers/mocks here if needed)
+│   │                   ├── model/
+│   │                   │   └── ...        # (Stubs/helpers/mocks here if needed)
+│   │                   ├── discovery/
+│   │                   │   └── ...        # (Stubs/helpers/mocks here if needed)
+│   │                   └── utils/
+│   │                       ├── FakeClient.java
+│   │                       └── FakeMouseClient.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── pywebostv/
+│                       ├── original/
+│                       │   ├── ControlsTest.java
+│                       │   ├── ConnectionTest.java
+│                       │   ├── SetupTest.java
+│                       │   ├── DiscoveryTest.java
+│                       │   └── ModelTest.java
+│                       └── publictests/
+│                           ├── PublicSetupTest.java
+│                           ├── PublicConnectionTest.java
+│                           ├── PublicControlsTest.java
+│                           ├── PublicDiscoveryTest.java
+│                           └── PublicModelTest.java
+
+Key Directories/Files:
+----------------------
+src/main/java/com/example/pywebostv/       - (Put protocol stubs, mocks, and main code helpers if needed, e.g., FakeClient)
+src/test/java/com/example/pywebostv/original/
+    - ControlsTest.java                    - All original tests from tests/test_controls.py
+    - ConnectionTest.java                  - All original tests from tests/test_connection.py
+    - SetupTest.java                       - All original tests from tests/test_setup.py
+    - DiscoveryTest.java                   - All original tests from tests/test_discovery.py
+    - ModelTest.java                       - All original tests from tests/test_model.py
+src/test/java/com/example/pywebostv/publictests/
+    - PublicSetupTest.java                 - All public tests from public_tests/test_public_setup.py
+    - PublicConnectionTest.java            - All public tests from public_tests/test_public_connection.py
+    - PublicControlsTest.java              - All public tests from public_tests/test_public_controls.py
+    - PublicDiscoveryTest.java             - All public tests from public_tests/test_public_discovery.py
+    - PublicModelTest.java                 - All public tests from public_tests/test_public_model.py
+src/main/java/com/example/pywebostv/utils/
+    - FakeClient.java, FakeMouseClient.java - Java mocks for test infrastructure
+
+README.md:
+----------
+- Overview and build/run instructions
+- Use: `./run_tests.sh` to build and test all cases
+
+run_tests.sh:
+-------------
+Minimal script that runs all tests via Maven/JUnit 5.
+
+pom.xml:
+--------
+Standard Maven pom with JUnit Jupiter (JUnit 5) as test dependency.

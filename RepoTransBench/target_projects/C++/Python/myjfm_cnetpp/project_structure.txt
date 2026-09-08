@@ -1,0 +1,58 @@
+myjfm_cnetpp_python/
+├── src/
+│   └── cnetpp/                  # Python implementation of library (to be implemented or mocked for tests to run)
+│       ├── __init__.py
+│       └── ...                  # (library code here)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_string_utils.py
+│       ├── test_uri.py
+│       ├── test_end_point.py
+│       ├── test_string_piece.py
+│       ├── test_memory_cache.py
+│       ├── test_csonpp.py
+│       ├── test_priority_queue.py
+│       ├── test_thread.py
+│       ├── test_thread_pool.py
+│       ├── test_http_request_response.py
+│       ├── test_ring_buffer.py
+│       ├── test_tcp_client.py
+│       └── ...
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_string_utils_public.py
+│   ├── test_uri_public.py
+│   ├── test_end_point_public.py
+│   ├── test_string_piece_public.py
+│   ├── test_priority_queue_public.py
+│   ├── test_csonpp_public.py
+│   ├── test_memory_cache_public.py
+│   ├── test_http_request_response_public.py
+│   ├── test_ring_buffer_public.py
+│   ├── test_tcp_client_public.py
+│   ├── test_thread_public.py
+│   └── test_thread_pool_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Explanations:
+- `src/cnetpp/`: Intended for the translated main Python library (not included, you provide or mock for tests)
+- `tests/original/`: All original test cases translated from the C++ repo, using pytest, one-to-one per original test file.
+- `public_tests/`: All public test cases, as per the "public_test_summary.json", translated and separated.
+- `requirements.txt`: Lists python dependencies (`pytest` required).
+- `run_tests.sh`: Minimal script, runs pytest for both `tests/` and `public_tests/`.
+- `project_structure.txt`: This file. Describes the overall project layout, directory purpose, and usage.
+
+Instructions:
+1. Install dependencies with `pip install -r requirements.txt`
+2. Place your Python source code in `src/cnetpp/` as per your package plan.
+3. All test source code is in `tests/original/` and `public_tests/`.
+4. Run all tests by executing `chmod +x run_tests.sh && ./run_tests.sh`
+
+Additional Notes:
+- The directory structure exactly mirrors the original and public tests from the C++ repository.
+- Tests require actual implementations or mocks for all used classes and functions in `src/cnetpp/`.
+- All test logic is preserved in translation.

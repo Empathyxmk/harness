@@ -1,0 +1,77 @@
+{
+  "project_name": "alastair_python-musicbrainzngs",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:15:04.916157",
+  "original_path": "/workspace/verified_repos_v2/Python/alastair_python-musicbrainzngs",
+  "public_test_result_path": "/workspace/public_test_results/Python/alastair_python-musicbrainzngs",
+  "original_tests": {
+    "test_files": [
+      "test/test_caa.py",
+      "test/test_mbxml_artist.py",
+      "test/test_mbxml_release_group.py",
+      "test/test_mbxml_recording.py",
+      "test/test_mbxml_event.py",
+      "test/test_getentity.py",
+      "test/test_query_and_examples.py",
+      "test/test_ratelimit.py",
+      "test/test_requests.py",
+      "test/test_mbxml_work.py",
+      "test/test_submit.py",
+      "test/test_collection.py",
+      "test/test_mbxml_instrument.py",
+      "test/test_mbxml_place.py",
+      "test/test_mbxml_label.py",
+      "test/test_mbxml_discid.py",
+      "test/test_browse.py",
+      "test/test_mbxml_search.py",
+      "test/test_mbxml_collection.py",
+      "test/test_mbxml_release.py",
+      "test/test_mbxml.py",
+      "test/test_search.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 22,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_caa.py",
+      "public_tests/test_public_mbxml_artist.py",
+      "public_tests/test_public_mbxml_release_group.py",
+      "run_public_tests.sh",
+      "public_tests/conftest.py",
+      "public_tests/test_public_mbxml_artist.py",
+      "public_tests/test_public_caa.py",
+      "public_tests/test_public_mbxml_release_group.py",
+      "public_tests/test_public_caa.py",
+      "public_tests/test_public_mbxml_artist.py",
+      "public_tests/test_public_mbxml_release_group.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 11,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_caa.py",
+    "public_tests/test_public_mbxml_artist.py",
+    "public_tests/test_public_mbxml_release_group.py",
+    "run_public_tests.sh",
+    "public_tests/conftest.py",
+    "public_tests/test_public_mbxml_artist.py",
+    "public_tests/test_public_caa.py",
+    "public_tests/test_public_mbxml_release_group.py",
+    "public_tests/test_public_caa.py",
+    "public_tests/test_public_mbxml_artist.py",
+    "public_tests/test_public_mbxml_release_group.py"
+  ]
+}

@@ -1,0 +1,38 @@
+jkrasnay_sqlbuilder/
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   ├── original/
+│   │   ├── abstract_sql_creator_test.go
+│   │   ├── delete_builder_test.go
+│   │   ├── insert_builder_test.go
+│   │   ├── parameterized_prepared_statement_creator_test.go
+│   │   ├── predicate_test.go
+│   │   ├── select_builder_test.go
+│   │   ├── select_creator_test.go
+│   │   ├── unique_string_generator_test.go
+│   │   ├── update_builder_test.go
+│   │   └── orm/
+│   │       ├── mapping_test.go
+│   │       ├── reflection_utils_test.go
+│   │       ├── string_list_converter_test.go
+│   │       ├── string_list_flattener_test.go
+│   │       └── string_map_converter_test.go
+│   └── testutil.go
+├── public_tests/
+│   ├── abstract_sql_creator_public_test.go
+│   ├── delete_builder_public_test.go
+│   ├── insert_builder_public_test.go
+│   ├── parameterized_prepared_statement_creator_public_test.go
+│   ├── predicate_public_test.go
+│   ├── select_builder_public_test.go
+│   ├── select_creator_public_test.go
+│   ├── unique_string_generator_public_test.go
+│   ├── update_builder_public_test.go
+│   └── orm/
+│       ├── mapping_public_test.go
+│       ├── reflection_utils_public_test.go
+│       ├── string_list_converter_public_test.go
+│       ├── string_list_flattener_public_test.go
+│       └── string_map_converter_public_test.go
+└── test_translation_progress.json

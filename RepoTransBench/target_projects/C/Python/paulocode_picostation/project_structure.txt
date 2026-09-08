@@ -1,0 +1,26 @@
+paulocode_picostation/
+├── src/
+│   ├── __init__.py           # Initializes src as a Python package
+│   ├── utils.py              # Python translation of utils.c functions
+│   ├── cmd.py                # Python translation of cmd.c functions and globals
+│   ├── subq.py               # Python translation of subq.c functions and globals
+│   └── hw_config_mock.py     # Mock implementations for hardware configuration functions
+├── tests/
+│   ├── __init__.py           # Initializes tests as a Python package
+│   ├── original/             # Directory for original test cases
+│   │   ├── __init__.py       # Initializes original tests as a Python package
+│   │   ├── test_cmd.py       # Translated original tests for cmd.c
+│   │   ├── test_utils.py     # Translated original tests for utils.c
+│   │   ├── test_subq.py      # Translated original tests for subq.c
+│   │   └── test_hw_config.py # Translated original tests for hw_config.c
+├── public_tests/
+│   ├── __init__.py           # Initializes public_tests as a Python package
+│   ├── test_cmd_public.py    # Translated public tests for cmd.c
+│   ├── test_utils_public.py  # Translated public tests for utils.c
+│   └── test_subq_public.py   # Translated public tests for subq.c
+├── requirements.txt          # Lists Python project dependencies (e.g., pytest)
+├── run_tests.sh              # Bash script to execute all Python tests
+└── project_structure.txt     # This file, documenting the project structure
+
+Setup and Testing Instructions:
+1.  **Install Python dependencies**:

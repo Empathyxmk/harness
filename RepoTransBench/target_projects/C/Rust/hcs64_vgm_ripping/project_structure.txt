@@ -1,0 +1,13 @@
+hcs64_vgm_ripping/
+├── src/
+│   └── lib.rs            # Main library code implementing add and sub functions
+├── tests/
+│   ├── mod.rs            # Test module organization
+│   ├── original/
+│   │   ├── mod.rs        # Original tests module organization
+│   │   └── test_sample.rs # Original tests for add and sub functions
+│   └── public/
+│       ├── mod.rs        # Public tests module organization
+│       └── test_sample_public.rs # Public tests for add and sub functions
+├── Cargo.toml            # Rust project configuration
+└── run_tests.sh          # Simple script to run all tests

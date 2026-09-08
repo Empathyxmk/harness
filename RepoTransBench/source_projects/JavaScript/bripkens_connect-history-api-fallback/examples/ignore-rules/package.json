@@ -1,0 +1,17 @@
+{
+  "name": "ignore-rules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "opn http://localhost:5555 && node ."
+  },
+  "author": "Ben Ripkens <bripkens@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "opn-cli": "3.1.0"
+  }
+}

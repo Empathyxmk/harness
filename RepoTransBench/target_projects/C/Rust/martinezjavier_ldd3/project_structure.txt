@@ -1,0 +1,12 @@
+martinezjavier_ldd3/
+├── Cargo.toml            # Rust project configuration
+├── src/
+│   └── lib.rs            # Main library code (translated from example_module.c/h)
+├── tests/
+│   └── original/
+│       └── test_example_module.rs  # Original tests translated from test_example_module.c
+├── public_tests/
+│   └── test_example_module_public.rs  # Public tests translated from test_example_module_public.c
+├── run_tests.sh          # Script to run all tests
+├── run_public_tests.sh   # Script to run only public tests
+└── project_structure.txt # This file

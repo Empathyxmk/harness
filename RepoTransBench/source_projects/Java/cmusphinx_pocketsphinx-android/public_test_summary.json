@@ -1,0 +1,50 @@
+{
+  "project_name": "cmusphinx_pocketsphinx-android",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:12:55.767267",
+  "original_path": "/workspace/verified_repos_v2/Java/cmusphinx_pocketsphinx-android",
+  "public_test_result_path": "/workspace/public_test_results/Java/cmusphinx_pocketsphinx-android",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/edu/cmu/pocketsphinx/RecognitionListenerTest.java",
+      "src/test/java/edu/cmu/pocketsphinx/HypothesisTest.java",
+      "src/test/java/edu/cmu/pocketsphinx/AssetsTest.java",
+      "src/test/java/edu/cmu/pocketsphinx/SpeechRecognizerSetupTest.java",
+      "src/test/java/edu/cmu/pocketsphinx/SpeechRecognizerTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/edu/cmu/pocketsphinx/RecognitionListenerPublicTest.java",
+      "src/test/java/edu/cmu/pocketsphinx/HypothesisPublicTest.java",
+      "src/test/java/edu/cmu/pocketsphinx/AssetsPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/edu/cmu/pocketsphinx/SpeechRecognizerSetupPublicTest.java",
+      "src/test/java/edu/cmu/pocketsphinx/SpeechRecognizerPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 6,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/edu/cmu/pocketsphinx/RecognitionListenerPublicTest.java",
+    "src/test/java/edu/cmu/pocketsphinx/HypothesisPublicTest.java",
+    "src/test/java/edu/cmu/pocketsphinx/AssetsPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/edu/cmu/pocketsphinx/SpeechRecognizerSetupPublicTest.java",
+    "src/test/java/edu/cmu/pocketsphinx/SpeechRecognizerPublicTest.java"
+  ]
+}

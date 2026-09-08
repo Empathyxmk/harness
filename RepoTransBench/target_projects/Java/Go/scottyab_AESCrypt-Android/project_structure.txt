@@ -1,0 +1,18 @@
+scottyab-aescrypt-go/
+├── go.mod                     # Go module definition
+├── run_tests.sh               # One-click test execution script
+├── tests/
+│   ├── original/
+│   │   ├── application_test.go        # Translation of ApplicationTest.java
+│   │   ├── aescrypt_reflection_test.go  # Reflection-related key tests
+│   │   ├── application_stub_test.go     # Stub/dummy test
+│   │   ├── aescrypt_test.go            # Main AES encrypt/decrypt unit tests & edge cases
+│   │   ├── aescrypt_debug_test.go      # Debug log and algorithm error handling tests
+│   │   ├── testutil.go                 # AES implementation and helpers for tests
+├── public_tests/
+│   ├── application_public_test.go      # Public translation of ApplicationPublicTest
+│   ├── aescrypt_public_test.go         # Public translation of AESCryptPublicTest
+│   ├── aescrypt_debug_public_test.go   # Debug/edge public tests
+│   ├── application_stub_public_test.go # Public stub/dummy test
+│   ├── aescrypt_reflection_public_test.go # Public reflection key tests
+│   ├── testutil.go                     # Copied AES implementation and helpers for public tests

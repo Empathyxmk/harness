@@ -1,0 +1,16 @@
+{
+  "project_name": "amio_micro-fork",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T09:52:49.389339",
+  "original_path": "/workspace/runnable_filter/JavaScript/amio_micro-fork",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/amio_micro-fork",
+  "tests_path": [
+    "test/enhancer.spec.js",
+    "test/index.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

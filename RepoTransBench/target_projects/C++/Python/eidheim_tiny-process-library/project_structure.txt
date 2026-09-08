@@ -1,0 +1,32 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # One-click run-all-tests script
+├── tests/
+│   ├── __init__.py                 # Test package marker
+│   └── original/
+│       ├── __init__.py
+│       ├── test_coverage.py        # Tests originally from coverage_test.cpp
+│       ├── test_io.py              # Tests originally from io_test.cpp
+│       ├── test_multithread.py     # Tests originally from multithread_test.cpp
+│       └── test_open_close.py      # Tests originally from open_close_test.cpp
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_coverage_public.py     # Public port of coverage_public_test.cpp
+│   ├── test_io_public.py           # Public port of io_public_test.cpp
+│   ├── test_multithread_public.py  # Public port of multithread_public_test.cpp
+│   └── test_open_close_public.py   # Public port of open_close_public_test.cpp
+└── project_structure.txt           # This file (structure/README)
+
+------------------------------
+**Directory & File Notes**
+
+- `requirements.txt`: Lists required test dependencies (pytest).
+- `run_tests.sh`: Single command to run ALL tests (original + public).
+- `tests/original/`: Contains all tests that correspond to C++'s original private/internal tests.
+- `public_tests/`: Contains tests corresponding to C++'s public tests.
+- `__init__.py`: Makes directories Python packages for test discovery.
+- `project_structure.txt`: Explains overall file structure and how to run tests.
+
+**How to run tests**:
+
+1. Install dependencies:

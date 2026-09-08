@@ -1,0 +1,38 @@
+project_root/
+├── src/
+│   └── bitarray_py/
+│       ├── __init__.py          # (Placeholder for translated bit array implementation)
+│       └── bitarray.py          # (Placeholder - actual BitArray python logic if needed)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_bit_array.py            # Translation of dev/bit_array_test.c
+│       ├── test_bitlock.py              # Translation of dev/bitlock_test.c
+│       └── test_bitlock_try.py          # Translation of dev/bitlock_try_test.c
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_bit_array_public.py         # Translation of dev/bit_array_public_test.c
+│   ├── test_bitlock_public.py           # Translation of dev/bitlock_public_test.c
+│   └── test_bitlock_try_public.py       # Translation of dev/bitlock_try_public_test.c
+├── requirements.txt              # Lists dependencies (pytest)
+├── run_tests.sh                  # Simple shell script to run all tests
+├── README.md                     # Project description and usage
+└── project_structure.txt         # This file: explains repo and directories
+
+---
+Directory & File Purposes:
+- src/bitarray_py/: (placeholder for your Python BitArray library implementation)
+- tests/original/: All translations of the original (private) C tests
+- public_tests/:   All translations of the public C tests
+- requirements.txt: List of pip dependencies (pytest for test running)
+- run_tests.sh:    One-click script to discover/run all tests using pytest
+- project_structure.txt: This summary and structure document
+
+Setup & Testing Instructions:
+1. Install dependencies:
+   $ pip install -r requirements.txt
+2. Run all tests:
+   $ ./run_tests.sh
+   (All original and public tests will run and show output)
+---

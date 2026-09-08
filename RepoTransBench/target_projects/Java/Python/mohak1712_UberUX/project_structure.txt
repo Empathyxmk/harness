@@ -1,0 +1,36 @@
+project_root/
+├── requirements.txt                # Python dependencies: pytest, pytest-mock
+├── run_tests.sh                    # Simple shell script to run all tests
+├── tests/
+│   ├── original/
+│   │   ├── test_base_activity.py          # Original: BaseActivityTest.java
+│   │   ├── test_cars_pager_adapter.py     # Original: CarsPagerAdapterTest.java
+│   │   ├── test_example_instrumented.py   # Original: ExampleInstrumentedTest.java
+│   │   ├── test_example_unit.py           # Original: ExampleUnitTest.java
+│   │   ├── test_get_polyline.py           # Original: getPolylineTest.java
+│   │   ├── test_login_activity.py         # Original: LoginActivityTest.java
+│   │   ├── test_login_with_phone.py       # Original: LoginWithPhoneTest.java
+│   │   ├── test_map_activity.py           # Original: MapActivityTest.java
+│   │   ├── test_password_activity.py      # Original: PasswordActivityTest.java
+├── public_tests/
+│   ├── test_base_activity_public.py           # Public: BaseActivityPublicTest.java
+│   ├── test_cars_pager_adapter_public.py      # Public: CarsPagerAdapterPublicTest.java
+│   ├── test_example_instrumented_public.py    # Public: ExampleInstrumentedPublicTest.java
+│   ├── test_example_unit_public.py            # Public: ExampleUnitPublicTest.java
+│   ├── test_get_polyline_public.py            # Public: getPolylinePublicTest.java
+│   ├── test_login_activity_public.py          # Public: LoginActivityPublicTest.java
+│   ├── test_login_with_phone_public.py        # Public: LoginWithPhonePublicTest.java
+│   ├── test_map_activity_public.py            # Public: MapActivityPublicTest.java
+│   ├── test_password_activity_public.py       # Public: PasswordActivityPublicTest.java
+
+# Directory explanations:
+# - requirements.txt : List of Python dependencies for running all tests (install via pip).
+# - run_tests.sh     : Bash script for one-command test run of both original and public tests.
+# - tests/original/  : Contains all Python translations of the original Java test logic.
+# - public_tests/    : Public test cases, separate inputs/coverages, translated to Python.
+
+# To set up:
+# 1. pip install -r requirements.txt
+# 2. ./run_tests.sh
+
+# Run ALL tests (original and public): ./run_tests.sh

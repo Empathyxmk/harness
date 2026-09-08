@@ -1,0 +1,64 @@
+{
+  "project_name": "NewBeginning6_Subdir-vul-find",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:19.806972",
+  "original_path": "/workspace/verified_repos_v2/Java/NewBeginning6_Subdir-vul-find",
+  "public_test_result_path": "/workspace/public_test_results/Java/NewBeginning6_Subdir-vul-find",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/org/example/ReTest.java",
+      "src/test/java/org/example/TxtFileTest.java",
+      "src/test/java/org/example/DefaultTextareaTest.java",
+      "src/test/java/org/example/DefaultTextTest.java",
+      "src/test/java/org/example/HttpTest.java",
+      "src/test/java/org/example/CheckTargetTest.java",
+      "src/test/java/org/example/GuiSmokeTest.java",
+      "src/test/java/org/example/MainSmokeTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/org/example/RePublicTest.java",
+      "src/test/java/org/example/TxtFilePublicTest.java",
+      "src/test/java/org/example/DefaultTextareaPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/org/example/DefaultTextPublicTest.java",
+      "src/test/java/org/example/HttpPublicTest.java",
+      "src/test/java/org/example/CheckTargetPublicTest.java",
+      "src/test/java/org/example/GuiSmokePublicTest.java",
+      "src/test/java/org/example/MainSmokePublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 10,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/org/example/RePublicTest.java",
+    "src/test/java/org/example/TxtFilePublicTest.java",
+    "src/test/java/org/example/DefaultTextareaPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/org/example/DefaultTextPublicTest.java",
+    "src/test/java/org/example/HttpPublicTest.java",
+    "src/test/java/org/example/CheckTargetPublicTest.java",
+    "src/test/java/org/example/GuiSmokePublicTest.java",
+    "src/test/java/org/example/MainSmokePublicTest.java",
+    "pom.xml",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

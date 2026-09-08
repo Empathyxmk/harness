@@ -1,0 +1,44 @@
+php_test_extension/
+├── Cargo.toml              # Rust package configuration
+├── src/
+│   └── lib.rs              # Main library code implementing the PHP extension functionality
+├── tests/
+│   └── test_lib.rs         # Original tests translated from the PHP extension
+├── public_tests/
+│   └── test_public.rs      # Public tests translated from the PHP extension
+├── run_tests.sh            # Simple script to run all tests
+└── project_structure.txt   # This file - documents the project structure
+
+Directory Structure Explanation:
+--------------------------------
+
+1. src/
+   - Contains the main library code that implements the PHP extension functionality
+   - lib.rs defines the core functions: test_test1(), test_test2(), and test_scale_ref()
+
+2. tests/
+   - Contains the original tests translated from the PHP extension
+   - test_lib.rs includes all tests from the original tests/ directory
+
+3. public_tests/
+   - Contains the public tests translated from the PHP extension
+   - test_public.rs includes all tests from the original tests_public/ directory
+
+4. run_tests.sh
+   - A simple bash script to run all tests
+   - Uses standard Rust testing commands
+
+Build and Test Instructions:
+---------------------------
+
+1. Building the project:
+   $ cargo build
+
+2. Running tests:
+   $ ./run_tests.sh
+   
+   Or manually:
+   $ cargo test --all
+
+The project uses Rust's built-in test framework, which automatically discovers
+and runs tests in both the tests/ and public_tests/ directories.

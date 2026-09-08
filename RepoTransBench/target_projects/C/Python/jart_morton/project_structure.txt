@@ -1,0 +1,27 @@
+.
+├── requirements.txt          # Python dependencies (pytest)
+├── README.md                 # Summary and instructions
+├── run_tests.sh              # Single command to run all tests
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── conftest.py
+│   │   ├── test_basic.py
+│   │   ├── test_edgecases.py
+│   │   └── test_unmorton_comprehensive.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_morton_edgecases_public.py
+│   └── test_unmorton_comprehensive_public.py
+
+Directory explanations:
+- requirements.txt: List of Python dependencies (uses pytest)
+- run_tests.sh: Executable bash script to run all tests with pytest in one click
+- README.md: Setup and testing instructions
+- tests/original/: Translated original internal logic tests from C
+- public_tests/: Translated public/benchmark edge-case and pattern tests from C
+
+Instructions:
+1. `python3 -m venv venv && source venv/bin/activate`
+2. `pip install -r requirements.txt`
+3. `./run_tests.sh`

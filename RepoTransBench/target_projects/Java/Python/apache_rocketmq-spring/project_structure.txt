@@ -1,0 +1,32 @@
+apache_rocketmq_spring_python/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_producer_application.py
+│       ├── test_producer_acl_application.py
+│       ├── test_consumer_application.py
+│       ├── test_ext_rocketmq_template_sample.py
+│       ├── test_string_consumer.py
+│       ├── test_rocketmq_template.py
+│       ├── test_ext_rocketmq_template.py
+│       ├── test_rocketmq_message_listener_bpp.py
+│       ├── test_rocketmq_auto_configuration.py
+│       ├── test_default_rocketmq_listener_container.py
+│       └── test_rocketmq_util.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_producer_application_public.py
+│   ├── test_producer_acl_application_public.py
+│   ├── test_consumer_application_public.py
+│   ├── test_ext_rocketmq_template_public_sample.py
+│   ├── test_string_consumer_public.py
+│   ├── test_ext_rocketmq_template_public.py
+│   ├── test_rocketmq_template_public.py
+│   ├── test_rocketmq_message_listener_bpp_public.py
+│   ├── test_rocketmq_auto_configuration_public.py
+│   ├── test_rocketmq_util_public.py
+│   └── test_default_rocketmq_listener_container_public.py

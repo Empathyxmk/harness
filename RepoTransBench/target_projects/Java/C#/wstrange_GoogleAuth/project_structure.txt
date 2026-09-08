@@ -1,0 +1,25 @@
+GoogleAuth/
+├── GoogleAuth.sln
+├── src/
+│   └── GoogleAuth/
+│       └── GoogleAuth.csproj
+├── tests/
+│   ├── original/
+│   │   ├── OriginalTests.csproj
+│   │   ├── ReseedingSecureRandomTest.cs
+│   │   ├── GoogleAuthTest.cs
+│   │   ├── GoogleAuthenticatorQRGeneratorUtilTest.cs
+│   │   ├── KeyRepresentationTest.cs
+│   │   ├── GoogleAuthenticatorExceptionTest.cs
+│   │   ├── GoogleAuthenticatorQRGeneratorTest.cs
+│   │   ├── GoogleAuthenticatorConfigTest.cs
+│   │   ├── HmacHashFunctionTest.cs
+│   │   ├── GoogleAuthenticatorKeyTest.cs
+│   │   └── TestUtilities.cs
+│   └── TestUtilities.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── ReseedingSecureRandomPublicTest.cs
+│   └── GoogleAuthenticatorQRGeneratorUtilPublicTest.cs
+├── run_tests.sh
+└── project_structure.txt

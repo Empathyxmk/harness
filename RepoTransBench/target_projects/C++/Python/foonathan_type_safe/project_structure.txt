@@ -1,0 +1,18 @@
+.
+├── README.md                # Project documentation
+├── requirements.txt         # Python dependency list (pytest)
+├── run_tests.sh             # Simple test runner script
+├── src/
+│   └── type_safe/
+│       ├── __init__.py
+│       └── mocks.py         # Minimal stubs/mocks for all required types
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   └── test_examples.py # Python translation of test/test_examples.cpp
+│   └── test_main.py         # Replaces CATCH_CONFIG_MAIN / test.cpp
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_output_parameter_public.py  # From example/output_parameter_public_test.cpp
+│   └── test_strong_typedef_public.py    # From example/strong_typedef_public_test.cpp

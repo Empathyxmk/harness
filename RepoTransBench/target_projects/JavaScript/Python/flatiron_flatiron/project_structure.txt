@@ -1,0 +1,32 @@
+flatiron_flatiron_python/
+├── requirements.txt                 # Python dependencies (pytest, requests)
+├── run_tests.sh                     # Simple all-tests launch script
+├── project_structure.txt            # This file: project map & explanation
+├── tests/
+│   └── original/
+│       ├── test_resourceful_app_app.py    # Original "resourceful-app-app.test.js" translation
+│       ├── test_static_app_app.py         # Original "static-app-app.test.js" translation
+│       ├── test_http_sample.py            # Original "http-sample.test.js" translation
+│       ├── test_flatiron.py               # Original "flatiron-test.js" translation
+│       ├── test_plugins_static.py         # Original "plugins/static-test.js" translation
+│       └── test_plugins_resourceful.py    # Original "plugins/resourceful-test.js" translation
+├── public_tests/
+│   └── examples/
+│       ├── test_http_sample_public.py             # Public translation of http-sample.public.test.js
+│       ├── test_resourceful_app_app_public.py     # Public translation of resourceful-app-app.public.test.js
+│       └── test_static_app_app_public.py          # Public translation of static-app-app.public.test.js
+
+Directory/Files Explanation:
+- requirements.txt: Declares all Python dependencies required to run the test suite.
+- run_tests.sh: Executable bash script to launch all tests with pytest in one command.
+- project_structure.txt: This file; documents root layout and file purposes.
+- tests/original/: Holds all original (private/internal) translated tests. Each test_x.py mirrors a JS file from the original.
+- public_tests/examples/: Holds all public test translations. Mirrors source structure and semantic logic of the JS public tests.
+
+To run ALL TESTS:
+  > pip install -r requirements.txt
+  > chmod +x run_tests.sh
+  > ./run_tests.sh
+
+- All tests run via `pytest` and include both "original" and "public" (if you want to run separately: `pytest tests/original/`, `pytest public_tests/`)
+- The source app modules must be converted to Python for the tests to physically run (tests gracefully skip if imports are unavailable).

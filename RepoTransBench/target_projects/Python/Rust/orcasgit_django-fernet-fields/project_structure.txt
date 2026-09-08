@@ -1,0 +1,27 @@
+fernet_fields_rs/
+├── Cargo.toml                  # Rust project manifest and dependencies
+├── README.md                   # Project overview, testing instructions, and notes
+├── run_tests.sh                # One-click test execution script (calls cargo test)
+├── src/
+│   └── lib.rs                  # Main library - FernetField, EncryptedTextField, EncryptedCharField implementations
+├── tests/
+│   └── original/
+│       ├── test_fields.rs      # Translation of fernet_fields/test/test_fields.py
+│       └── test_fields_extra.rs# Translation of fernet_fields/test/test_fields_extra.py
+├── public_tests/
+│   ├── test_public_fields.rs       # Translation of public_tests/test_public_fields.py
+│   └── test_public_fields_extra.rs # Translation of public_tests/test_public_fields_extra.py
+
+Directory explanations:
+- src/                               - Main Rust library source code.
+- tests/original/                    - Original internal project tests, exact logic translation.
+- public_tests/                      - Public/external test suite as provided for verification/open assessment.
+- run_tests.sh                       - Minimal test script: invokes all tests.
+- Cargo.toml                         - Rust build configuration, dependencies, and project metadata.
+- README.md                          - Quick start, test guide, and context.
+
+Usage:
+- To run all tests, simply invoke: ./run_tests.sh
+
+Setup:
+- Requires Rust toolchain (cargo) installed. No external Python or Django dependencies needed.

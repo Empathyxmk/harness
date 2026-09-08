@@ -1,0 +1,11 @@
+{
+  "project_name": "mherrmann_java-generator-functions",
+  "language": "Java",
+  "coverage": {
+    "line": 81.3,
+    "branch": 73.3
+  },
+  "timestamp": "2025-06-23T14:04:47.422263",
+  "original_path": "/workspace/runnable_filter/Java/mherrmann_java-generator-functions",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/mherrmann_java-generator-functions"
+}

@@ -1,0 +1,17 @@
+{
+  "project_name": "alexei_sprintf.js",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 91.81,
+    "branch": 85.43
+  },
+  "timestamp": "2025-06-19T09:50:53.647053",
+  "original_path": "/workspace/runnable_filter/JavaScript/alexei_sprintf.js",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/alexei_sprintf.js",
+  "tests_path": [
+    "test/test.js",
+    "test/test_validation.js",
+    "test/test_angular_sprintf.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

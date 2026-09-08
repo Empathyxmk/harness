@@ -1,0 +1,52 @@
+Project structure for Java port of rpkilby_jsonfield:
+
+/
+├── pom.xml                         # Maven build and dependency configuration
+├── run_tests.sh                    # Simple shell script to run all tests (chmod +x)
+├── project_structure.txt           # This file - explains the project structure
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── jsonfield/
+│   │                   ├── JSONField.java           # Java version of JSONField
+│   │                   ├── JSONUtil.java            # JSON utility functions (loads/dumps)
+│   │                   ├── forms/
+│   │                   │   └── JSONFormField.java   # Simulated Django FormField
+│   │                   ├── json/
+│   │                   │   └── json.java            # JSON module (like python 'json')
+│   │                   ├── models/
+│   │                   │   └── DummyModel.java      # Placeholder model
+│   │                   └── TestHelpers.java         # Test helpers for mapping/listing
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── TestFieldsTest.java      # Original deep test of JSONField API
+│                   │   ├── TestJsonfieldTest.java   # Original core logic tests for JSONField/json util
+│                   │   └── TestFormsTest.java       # Simulated form tests
+│                   └── public_tests/
+│                       ├── PublicFieldsTest.java    # Public equivalent of test_public_fields.py
+│                       ├── PublicJsonfieldTest.java # Public tests of JSON util
+│                       └── PublicFormsTest.java     # Public forms test logic
+
+Summary:
+* All original test logic is under `src/test/java/com/example/original/` (mirroring the original tests/ folder)
+* All public test logic is under `src/test/java/com/example/public_tests/` (mirroring public_tests/)
+* Source code that would be tested is under `src/main/java/com/example/jsonfield/`
+* `run_tests.sh` runs all tests via Maven
+* Use `mvn clean test` to execute all test suites
+
+Dependencies:
+* JUnit 5 for unit testing (`org.junit.jupiter`)
+* org.json for JSON utilities
+* AssertJ for advanced assertions (used for assertThrows/exception checks)
+
+How to run:
+* Ensure JDK 11+ and Maven are installed
+* Run `chmod +x run_tests.sh`
+* Run `./run_tests.sh` to execute all tests
+
+This structure allows for direct mapping of both original (internal) and public tests just as in the Python package.

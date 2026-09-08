@@ -1,0 +1,12 @@
+wesbarnett_snap-pac/
+├── go.mod
+├── run_tests.sh
+├── scripts/
+│   ├── snap_pac.go  # (Expected core library, not included here)
+├── tests/
+│   ├── original/
+│   │   ├── script_test.go
+│   │   └── snap_pac_test.go
+├── public_tests/
+│   ├── public_script_test.go
+│   └── public_snap_pac_test.go

@@ -1,0 +1,40 @@
+flask-recaptcha-java/
+├── pom.xml
+├── README.md
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/example/flaskrecaptcha/
+│   │           ├── DEFAULTS.java         # Static fallback defaults/settings
+│   │           ├── DummyApp.java         # Dummy app class for integration simulation in tests
+│   │           └── ReCaptcha.java        # Minimal functional ReCaptcha "library" (stub for testing)
+│   └── test/
+│       ├── java/
+│       │   └── com/example/flaskrecaptcha/
+│       │       ├── original/
+│       │       │   ├── ReCaptchaCoverageTest.java     # Translated from test_flask_recaptcha_coverage.py
+│       │       │   ├── ReCaptchaExtraTest.java        # Translated from test_flask_recaptcha_extra.py
+│       │       │   └── ReCaptchaTest.java             # Translated from test_flask_recaptcha.py
+│       │       └── publictests/
+│       │           ├── PublicFlaskRecaptchaCoverageTest.java   # Translated from test_public_flask_recaptcha_coverage.py
+│       │           ├── PublicFlaskRecaptchaExtraTest.java      # Translated from test_public_flask_recaptcha_extra.py
+│       │           └── PublicFlaskRecaptchaTest.java           # Translated from test_public_flask_recaptcha.py
+
+
+Description of Structure:
+
+- `pom.xml`: Maven configuration with dependencies (JUnit 5, Mockito for mocking).
+- `run_tests.sh`: Simple script for one-command test execution (`./run_tests.sh`).
+- `src/main/java/com/example/flaskrecaptcha/`: Package for minimal stub ReCaptcha implementation and helpers.
+    - `ReCaptcha.java`: Library simulation, enough to allow the tests to run.
+    - `DEFAULTS.java`: Simulates the Python DEFAULTS object.
+    - `DummyApp.java`: Mimics Flask app for context/test code registration.
+- `src/test/java/com/example/flaskrecaptcha/original/`: All original (existing) tests from the Python repo, in Java, fully translated.
+- `src/test/java/com/example/flaskrecaptcha/publictests/`: All public (generated/simplified) tests, translated to Java. These are simple interface/usage tests.
+- `README.md`: You can create a readme explaining dependencies, usage, and the test-run script.
+
+How to run tests:
+
+1. Install JDK 11+ and Maven.
+2. Run:

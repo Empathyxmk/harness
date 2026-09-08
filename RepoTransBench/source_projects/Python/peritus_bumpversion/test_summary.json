@@ -1,0 +1,22 @@
+{
+  "project_name": "peritus_bumpversion",
+  "language": "Python",
+  "coverage": {
+    "line": 72.0,
+    "branch": 74.0
+  },
+  "timestamp": "2025-06-19T12:15:38.087012",
+  "original_path": "/workspace/runnable_filter/Python/peritus_bumpversion",
+  "test_result_path": "/workspace/test_enhancement_results/Python/peritus_bumpversion",
+  "tests_path": [
+    "tests/test_bumpversion_init.py",
+    "tests/test_cli.py",
+    "tests/test_functions.py",
+    "tests/test_functions_edge.py",
+    "tests/test_init_edge_cases.py",
+    "tests/test_init_vcs.py",
+    "tests/test_version_part.py",
+    "tests/test_version_part_extra.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,41 @@
+Project Structure:
+
+.
+├── Props2Js.sln                  # Solution file for the overall project
+├── run_tests.sh                  # Simple script to build and run all tests
+├── src/
+│   └── Props2Js/
+│       ├── Props2Js.csproj       # Library/source project file
+│       ├── Props2Js.cs           # Main class for props2js logic
+│       └── PropertyConverter.cs  # Converter utilities
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj   # C# test project for original tests
+│       ├── Props2JsTest.cs       # Translated original Props2Js tests
+│       └── PropertyConverterTest.cs  # Translated original PropertyConverter tests
+├── public_tests/
+│   ├── PublicTests.csproj         # C# test project for public tests
+│   ├── Props2JsPublicTest.cs      # Translated public Props2Js tests
+│   └── PropertyConverterPublicTest.cs # Translated public PropertyConverter tests
+
+Directory and File Purpose:
+
+- src/Props2Js/              → Main source code for the ported library/app
+- src/Props2Js/Props2Js.cs   → Logic to parse the CLI and invoke conversion
+- src/Props2Js/PropertyConverter.cs → Static class with conversion utils
+- tests/original/            → Original (hidden) test suite, full coverage cases
+- public_tests/              → Public test suite, safe for students/users
+- *Test.cs                   → Individual test files for each original/public suite
+- *Tests.csproj              → Unit test project per suite; included in Props2Js.sln
+- run_tests.sh               → Simple all-encompassing test runner
+- Props2Js.sln               → .NET solution connecting everything
+- project_structure.txt      → This file describing layout and usage
+
+Setup and Testing:
+
+1. Install .NET 6.0 SDK or later (https://dotnet.microsoft.com/)
+2. From repository root, run:
+    chmod +x run_tests.sh
+    ./run_tests.sh
+
+This builds all projects and runs every test (original and public) using xUnit.

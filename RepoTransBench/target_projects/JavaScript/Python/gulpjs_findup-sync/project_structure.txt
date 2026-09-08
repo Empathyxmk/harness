@@ -1,0 +1,33 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Simple one-click test executor
+├── README.md                       # Project documentation (user instructions)
+├── src/
+│   └── findup_sync/
+│       ├── __init__.py             # Package marker
+│       └── findup_sync.py          # (Placeholder for library code: must implement API matching original)
+├── tests/
+│   ├── __init__.py                 # Package marker
+│   └── original/
+│       ├── __init__.py             # Package marker
+│       └── test_findup_sync.py     # Full translation of test/findup-sync.spec.js and test/test.js
+├── public_tests/
+│   ├── __init__.py                 # Package marker
+│   └── test_findup_sync_public.py  # Translation of public_tests/findup-sync.public.test.js
+└── test/
+    └── fixtures/
+        ... (same hierarchical test fixture files as the original JS project, required for test functionality)
+
+Explanations:
+- src/findup_sync/findup_sync.py:
+    Write your implementation of findup_sync in this module. Tests expect a function named `findup(...)` with the same behavior as the JavaScript API.
+- tests/original/test_findup_sync.py:
+    Contains all original ("spec" and thoroughness) test scenarios, fully ported and using pytest.
+- public_tests/test_findup_sync_public.py:
+    Contains the public-facing version of tests with alternative fixture files/patterns, fully ported and using pytest.
+- requirements.txt:
+    Declares pytest as test dependency.
+- run_tests.sh:
+    Execute all tests with `./run_tests.sh` (must be +x executable).
+- test/fixtures/:
+    Project-dependent test file tree: required for actual test runs. Directory and files must mirror source.

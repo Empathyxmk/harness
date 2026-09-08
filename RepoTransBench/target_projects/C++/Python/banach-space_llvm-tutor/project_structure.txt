@@ -1,0 +1,29 @@
+project_root/
+├── src/
+│   ├── hello.py          # Implementation of `hello` function, matching C++ semantics
+│   └── __init__.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_hello.py         # Original test cases (private/hidden)
+├── public_tests/
+│   ├── __init__.py
+│   └── test_hello_public.py      # Public test cases (fully visible)
+├── requirements.txt              # Python dependencies; install with `pip install -r requirements.txt`
+├── run_tests.sh                  # One-click script to run all tests (original & public)
+└── project_structure.txt         # This file; documents project layout and instructions
+
+Directory/Files purpose:
+- src/:                Implementation source code in Python.
+- tests/original/:     Original/private test cases, translated from C++ HelloWorldTest.cpp logic.
+- public_tests/:       Public test cases, translated from C++ HelloWorldPublicTest.cpp logic.
+- requirements.txt:    Project dependencies; install with `pip install -r requirements.txt`.
+- run_tests.sh:        Run all original and public tests with one command. Usage: `chmod +x run_tests.sh && ./run_tests.sh`
+- project_structure.txt: Documents structure and setup.
+
+Instructions:
+1. (Recommended) Setup a Python virtual environment.
+2. Run `pip install -r requirements.txt` to install `pytest`.
+3. Run `./run_tests.sh` to execute both original (hidden) and public test suites.
+4. Source code is in `src/hello.py`. Both test suites import and validate it.

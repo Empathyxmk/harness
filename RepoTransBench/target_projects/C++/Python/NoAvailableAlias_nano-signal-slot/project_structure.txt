@@ -1,0 +1,29 @@
+NoAvailableAlias_nano-signal-slot/
+├── README.md
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── __init__.py
+│   └── test_placeholder_public.py
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── __init__.py
+│   ├── placeholder.cpp
+│   └── placeholder.py
+├── test_summary.json
+└── tests/
+    ├── Test_placeholder.bin-Test_placeholder.gcda
+    ├── Test_placeholder.bin-Test_placeholder.gcno
+    ├── Test_placeholder.bin-placeholder.gcda
+    ├── Test_placeholder.bin-placeholder.gcno
+    ├── Test_placeholder.cpp
+    ├── Test_placeholder_public.bin-Test_placeholder_public.gcda
+    ├── Test_placeholder_public.bin-Test_placeholder_public.gcno
+    ├── Test_placeholder_public.bin-placeholder.gcda
+    ├── Test_placeholder_public.bin-placeholder.gcno
+    ├── Test_placeholder_public.cpp
+    └── original/
+        ├── __init__.py
+        └── test_placeholder.py

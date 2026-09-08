@@ -1,0 +1,54 @@
+zqqqqz2000_shshsh Go Project Structure
+
+.
+├── go.mod                    # Go module configuration
+├── README.md                 # Project info and usage
+├── run_tests.sh              # One-click test execution script
+├── project_structure.txt     # This project structure file
+├── shshsh/                   # (Placeholder) Source code root, to be implemented
+├── tests/
+│   ├── cwd_test.go
+│   ├── global_vars_test.go
+│   ├── logic_test.go
+│   ├── parameter_parse_test.go
+│   ├── pipe_class_test.go
+│   ├── pipe_manual_test.go
+│   ├── pipe_test.go
+│   ├── quick_manual_test.go
+│   ├── quick_test.go
+│   ├── redirect_test.go
+│   ├── shell_test.go
+│   ├── simple_cmd_test.go
+│   ├── streamer_test.go
+│   ├── utils_test.go
+│   └── zero_test.go
+└── public_tests/
+    ├── public_cwd_test.go
+    ├── public_global_vars_test.go
+    ├── public_logic_test.go
+    ├── public_parameter_parse_test.go
+    ├── public_pipe_class_test.go
+    ├── public_pipe_manual_test.go
+    ├── public_pipe_test.go
+    ├── public_quick_manual_test.go
+    ├── public_quick_test.go
+    ├── public_redirect_test.go
+    ├── public_shell_test.go
+    ├── public_simple_cmd_test.go
+    ├── public_streamer_test.go
+    ├── public_utils_test.go
+    ├── public_zero_test.go
+
+Directory Description:
+
+- shshsh/                -- Root source package (stubs, not implemented here)
+- tests/                 -- Original translated test cases (Go)
+- public_tests/          -- Public test cases (Go)
+- Each test file: *_test.go, Go conventions for tests
+- go.mod                 -- Minimal, use latest supported Go 1.x
+- run_tests.sh           -- Run all tests (`go test ./...`)
+
+Instructions:
+
+- Tests can be run in any Go environment with `go test ./...` or `./run_tests.sh`
+- All functionality covered by original Python tests is ported to corresponding Go tests

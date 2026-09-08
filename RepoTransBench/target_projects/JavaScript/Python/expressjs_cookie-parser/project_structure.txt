@@ -1,0 +1,35 @@
+expressjs_cookie-parser-python/
+├── src/
+│   └── cookie_parser/
+│       └── __init__.py              # Python implementation placeholder for cookie parser logic, for test imports.
+├── tests/
+│   ├── __init__.py                  # pytest discovery
+│   └── original/
+│       ├── __init__.py              # pytest discovery
+│       ├── test_index_unit_coverage.py      # Translated from test/index.unit.coverage.test.js
+│       └── test_unit_cookieParser_extra.py  # Translated from test/unit.cookieParser.extra.test.js
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_index_unit_coverage_public.py           # Translated from public_tests/index.unit.coverage.public.test.js
+│   └── test_unit_cookieParser_extra_public.py       # Translated from public_tests/unit.cookieParser.extra.public.test.js
+├── requirements.txt                      # Python dependencies (pytest)
+├── run_tests.sh                          # Simple all-tests script (pytest)
+├── project_structure.txt                  # This file
+│
+# Directory explanations:
+# - src/cookie_parser/: source code for cookie-parser-compatible interface/module
+# - tests/original/: original (non-public) test cases, direct translation from JS
+# - public_tests/: public test cases, direct translation from JS
+# - requirements.txt: Python dependencies; just pytest needed for now
+# - run_tests.sh: runs all tests (pytest finds both original and public tests)
+# - __init__.py: enables package/module discovery for pytest
+
+# To Run Tests:
+#   pip install -r requirements.txt
+#   ./run_tests.sh
+
+# To Run Only Original Tests (Optional advanced):
+#   pytest tests/original/
+#
+# To Run Only Public Tests:
+#   pytest public_tests/

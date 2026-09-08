@@ -1,0 +1,42 @@
+.
+├── f﻿﻿afaldo-zz_FABToolbar.sln  # Solution file at root, binds all projects
+├── Directory.Build.props        # (Optional) Shared build settings for .NET projects
+├── src
+│   └── FAFToolbar
+│       ├── FAFToolbar.csproj
+│       └── widget
+│           └── FABToolbarLayout.cs
+│       └── util
+│           └── ExpandAnimationUtils.cs
+│       └── Program.cs
+├── tests
+│   └── original
+│       ├── OriginalTests.csproj
+│       ├── widget
+│       │   └── FABToolbarLayoutTest.cs
+│       ├── util
+│       │   └── ExpandAnimationUtilsTest.cs
+│       ├── app
+│       │   └── ApplicationTest.cs
+│       └── library
+│           └── ApplicationTest.cs
+├── public_tests
+│   ├── PublicTests.csproj
+│   ├── widget
+│   │   └── FABToolbarLayoutPublicTest.cs
+│   ├── util
+│   │   └── ExpandAnimationUtilsPublicTest.cs
+│   ├── app
+│   │   └── ApplicationPublicTest.cs
+│   └── library
+│       └── ApplicationPublicTest.cs
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+Structure Explanation:
+- `src/FAFToolbar/` - Main project; stubs for library logic needed for the tests
+- `tests/original/` - All original (internal) test logic
+- `public_tests/` - Publically visible/expected tests
+- `fafaldo-zz_FABToolbar.sln` - Entry point for all dotnet commands
+- `run_tests.sh` - Script for running both test suites together

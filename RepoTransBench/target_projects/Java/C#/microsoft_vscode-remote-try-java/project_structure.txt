@@ -1,0 +1,29 @@
+microsoft_vscode-remote-try-java/
+├── CODE_OF_CONDUCT.md
+├── LICENSE
+├── README.md
+├── SECURITY.md
+├── microsoft_vscode-remote-try-java.sln
+├── src/
+│   ├── App.cs
+│   ├── MyCompany.App/
+│   │   ├── App.cs
+│   │   ├── MyCompany.App.csproj
+│   │   ├── Program.cs
+│   │   └── bin/...
+│   ├── main/java/com/mycompany/app/App.java  (legacy Java source)
+│   └── test/java/com/mycompany/app/{AppPublicTest.java,AppTest.java} (legacy Java tests)
+├── tests/
+│   └── original/
+│       ├── AppTests.cs
+│       ├── OriginalTests.csproj
+│       └── bin/...
+├── public_tests/
+│   ├── AppPublicTests.cs
+│   ├── PublicTests.csproj
+│   └── bin/...
+├── run_tests.sh
+├── run_public_tests.sh
+├── project_structure.txt
+├── public_test_summary.json
+└── test_summary.json

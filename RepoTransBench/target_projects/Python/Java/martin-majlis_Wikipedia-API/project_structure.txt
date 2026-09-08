@@ -1,0 +1,73 @@
+.
+├── API.rst
+├── CHANGES.rst
+├── CODE_OF_CONDUCT.md
+├── DEVELOPMENT.rst
+├── LICENSE
+├── MANIFEST.in
+├── Makefile
+├── README.md
+├── README.rst
+├── SECURITY.md
+├── SECURITY.rst
+├── conf.py
+├── example.py
+├── htmlcov/
+│   └── ...
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   └── *.py
+├── requirements-build.txt
+├── requirements-dev.txt
+├── requirements-doc.txt
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.py
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── wikiapi/
+│                       ├── original/
+│                       │   ├── BacklinksTest.java
+│                       │   ├── CategoriesTest.java
+│                       │   ├── CategoryMembersTest.java
+│                       │   ├── ExtractErrorsTest.java
+│                       │   ├── ExtractHtmlFormatTest.java
+│                       │   ├── ExtractWikiFormatTest.java
+│                       │   ├── LangLinksTest.java
+│                       │   ├── LinksTest.java
+│                       │   ├── MockDataTest.java
+│                       │   ├── NamespaceAndExtractFormatTest.java
+│                       │   ├── TestNamespaceAndExtractformatTest.java
+│                       │   ├── TestUtilsAndConstsTest.java
+│                       │   ├── TestWikipediaObjectTest.java
+│                       │   ├── UtilsAndConstsTest.java
+│                       │   ├── WikipediaObjectTest.java
+│                       │   ├── WikipediaPageTest.java
+│                       │   └── WikipediaTest.java
+│                       └── publictests/
+│                           ├── PublicBacklinksTest.java
+│                           ├── PublicCategoriesTest.java
+│                           ├── PublicCategorymembersTest.java
+│                           ├── PublicExtractErrorsTest.java
+│                           ├── PublicExtractHtmlFormatTest.java
+│                           ├── PublicExtractWikiFormatTest.java
+│                           ├── PublicLanglinksTest.java
+│                           ├── PublicLinksTest.java
+│                           ├── PublicNamespaceAndExtractFormatTest.java
+│                           ├── PublicUtilsAndConstsTest.java
+│                           ├── PublicWikipediaObjectTest.java
+│                           ├── PublicWikipediaPageTest.java
+│                           └── PublicWikipediaTest.java
+├── test_summary.json
+├── tests/
+│   └── *.py
+├── tox.ini
+└── wikipediaapi/
+    ├── __init__.py
+    └── api.rst

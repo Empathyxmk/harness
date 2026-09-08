@@ -1,0 +1,50 @@
+LanceGin_haishoku_cpp/
+├── CMakeLists.txt                # Top-level CMake configuration
+├── README.md                     # Project documentation and explanation
+├── include/
+│   └── haishoku/                 # Header files for haishoku library
+│       ├── alg.h
+│       ├── haillow.h
+│       └── haishoku.h
+├── src/
+│   └── haishoku/                 # Source files for haishoku library
+│       ├── alg.cpp
+│       ├── haillow.cpp
+│       └── haishoku.cpp
+├── demo/
+│   ├── demo.cpp                  # Demo code (translated functionality only)
+│   └── demo_01.png               # Example image for tests
+├── tests/
+│   ├── original/
+│   │   ├── test_alg.cpp
+│   │   ├── test_alg_more.cpp
+│   │   ├── test_demo_script.cpp
+│   │   ├── test_haishoku.cpp
+│   │   ├── test_haishoku_class.cpp
+│   │   ├── test_haillow.cpp
+│   │   ├── test_haishoku_edgecases.cpp
+│   │   ├── test_init_and_setup.cpp
+│   │   └── base_test.cpp
+│   └── test_main.cpp             # GTest main entry
+├── public_tests/
+│   ├── test_public_alg.cpp
+│   ├── test_public_alg_more.cpp
+│   ├── test_public_base_test.cpp
+│   ├── test_public_demo_script.cpp
+│   ├── test_public_haillow.cpp
+│   ├── test_public_haishoku.cpp
+│   ├── test_public_haishoku_class.cpp
+│   ├── test_public_haishoku_edgecases.cpp
+│   └── test_public_init_and_setup.cpp
+├── run_tests.sh                  # One-click test/run script
+└── project_structure.txt         # This file
+
+Directory Explanations:
+- include/haishoku/ : Header files for the haishoku C++ library.
+- src/haishoku/     : Library source files.
+- demo/             : Demo (sample) code and sample image for tests.
+- tests/original/   : Full translations of the original Python unit tests.
+- public_tests/     : Public-facing tests as per public_tests in project.
+- tests/test_main.cpp : Main GTest launcher for running all tests.
+- run_tests.sh      : Minimal shell script to build and run tests.
+- CMakeLists.txt    : Project's build and test configuration for CMake.

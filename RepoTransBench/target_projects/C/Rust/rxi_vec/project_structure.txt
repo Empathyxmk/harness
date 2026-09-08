@@ -1,0 +1,14 @@
+rxi_vec (Rust translation)
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   └── original/
+│       ├── test_vec.rs
+│       └── test_vec_negative.rs
+├── public_tests/
+│   ├── public_test_vec.rs
+│   └── public_test_vec_negative.rs
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json

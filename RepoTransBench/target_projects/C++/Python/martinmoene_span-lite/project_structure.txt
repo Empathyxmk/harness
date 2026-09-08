@@ -1,0 +1,13 @@
+project_root/
+├── requirements.txt                 # Python dependencies (pytest)
+├── run_tests.sh                     # One-click test execution script
+├── project_structure.txt            # Project tree and documentation
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_dummy.py            # Placeholder (no original source tests in C++ project)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_span_public.py          # Complete translation of example/02-span_public.cpp (in Python)
+│   └── test_span_public_safe.py     # Complete translation of example/02-span_public_safe.cpp (in Python)

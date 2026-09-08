@@ -1,0 +1,48 @@
+starlette-context-java/
+├── pom.xml
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── tomwojcik/
+│   │               └── starlettecontext/          # Here you would implement source logic analogs
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── tomwojcik/
+│                   └── starlettecontext/
+│                       ├── original/
+│                       │   ├── StarletteCompatibilityTest.java
+│                       │   ├── ContextMiddlewareTest.java
+│                       │   ├── PureAsgiMiddlewareTest.java
+│                       │   ├── RequestIdPluginTest.java
+│                       │   ├── CorrelationIdPluginTest.java
+│                       │   ├── WrongPluginTest.java
+│                       │   ├── UserAgentPluginTest.java
+│                       │   ├── PluginTest.java
+│                       │   ├── DatePluginTest.java
+│                       │   ├── ErrorResponsesTest.java
+│                       │   ├── ForwardedForPluginTest.java
+│                       │   ├── ExceptionsTest.java
+│                       │   ├── ApiKeyPluginTest.java
+│                       │   ├── ContextOnUnhandledExceptionTest.java
+│                       │   ├── ContextWithMiddlewareTest.java
+│                       │   ├── ContextNoMiddlewareTest.java
+│                       │   ├── ContextExistenceTest.java
+│                       │   ├── ContextPersistanceTest.java
+│                       │   ├── MockedContextObjectTest.java
+│                       │   ├── ContextManagerTest.java
+│                       │   ├── ContextObjectTest.java
+│                       │   └── ConftestUtil.java
+│                       └── public_tests/
+│                           ├── StarletteCompatibilityPublicTest.java
+│                           ├── DatePluginPublicTest.java
+│                           ├── PluginPublicTest.java
+│                           ├── UserAgentPluginPublicTest.java
+│                           ├── RequestIdPluginPublicTest.java
+│                           ├── ContextMiddlewarePublicTest.java
+│                           ├── CorrelationIdPluginPublicTest.java
+│                           └── PureAsgiMiddlewarePublicTest.java

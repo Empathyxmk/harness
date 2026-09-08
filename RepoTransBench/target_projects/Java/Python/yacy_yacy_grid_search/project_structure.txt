@@ -1,0 +1,41 @@
+yacy_yacy_grid_search (Python version)
+
+├── src/
+│   └── yacy_grid_search/
+│       ├── __init__.py                  # Python package marker
+│       ├── dummy_logic.py               # Implementation of DummyLogic class
+│       ├── search.py                    # Implementation of Search class
+│       └── sample_logic.py              # (Blank, see note)
+├── tests/
+│   ├── __init__.py                      # Python package marker
+│   └── original/
+│       ├── __init__.py                  # Python package marker
+│       ├── test_dummy_logic.py          # Original DummyLogicTest cases
+│       ├── test_search.py               # Original SearchTest cases
+│       └── test_sample_logic.py         # Original SampleLogicTest case
+├── public_tests/
+│   ├── __init__.py                      # Python package marker
+│   ├── test_dummy_logic_public.py       # Public DummyLogic test cases
+│   ├── test_sample_logic_public.py      # Public SampleLogic test case
+│   └── test_search_public.py            # Public Search test cases
+├── requirements.txt                     # List of required Python packages
+├── run_tests.sh                         # One-click test run script
+└── project_structure.txt                # This file (structure & explanations)
+
+Directory explanations:
+- src/yacy_grid_search/: Main package for source code translation of Search and DummyLogic.
+- tests/original/: Translated Python equivalents of *original* Java test classes.
+- public_tests/: Translated Python equivalents of *public* Java test classes.
+- requirements.txt: Python dependencies for running tests (`pytest`).
+- run_tests.sh: Run all tests (both original and public) with one command.
+- project_structure.txt: This file, for structure and documentation.
+
+Setup & Testing Instructions:
+1. Install dependencies:    pip install -r requirements.txt
+2. Run all tests:          ./run_tests.sh
+   (Both tests in tests/original/ and public_tests/ will be discovered by pytest.)
+
+Notes:
+- The code logic for DummyLogic and Search is implemented in Python under src/yacy_grid_search/.
+- sample_logic.py is present for structural congruence but is empty since its only purpose in tests was a trivial assertion.
+- All test functions and files fully translate the logic from their Java counterparts.

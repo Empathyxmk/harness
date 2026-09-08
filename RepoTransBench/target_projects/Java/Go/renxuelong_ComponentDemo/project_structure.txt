@@ -1,0 +1,49 @@
+renxuelong_ComponentDemo/
+├── go.mod                      # Go module definition
+├── README.md                   # Project intro and instructions
+├── run_tests.sh                # Script to run all tests (original & public)
+├── tests/
+│   └── original/
+│       ├── componentbase/
+│       │   ├── example_instrumented_test.go        # Instrumented test logic stubs
+│       │   ├── service_factory_test.go             # Test for ServiceFactory
+│       │   ├── example_unit_test.go                # "addition_isCorrect"
+│       │   └── empty_service/
+│       │       └── empty_account_service_test.go   # Tests for EmptyAccountService
+│       ├── login/
+│       │   ├── example_instrumented_test.go
+│       │   └── example_unit_test.go
+│       ├── share/
+│       │   ├── example_instrumented_test.go
+│       │   └── example_unit_test.go
+│       ├── base/
+│       │   ├── example_instrumented_test.go
+│       │   └── example_unit_test.go
+│       └── app/
+│           ├── example_instrumented_test.go
+│           └── example_unit_test.go
+├── public_tests/
+│   ├── componentbase/
+│   │   ├── example_instrumented_public_test.go
+│   │   ├── service_factory_public_test.go
+│   │   ├── example_unit_public_test.go
+│   │   └── empty_service/
+│   │       └── empty_account_service_public_test.go
+│   ├── login/
+│   │   ├── example_instrumented_public_test.go
+│   │   └── example_unit_public_test.go
+│   ├── share/
+│   │   ├── example_instrumented_public_test.go
+│   │   └── example_unit_public_test.go
+│   └── base/
+│       ├── example_instrumented_public_test.go
+│       └── example_unit_public_test.go
+
+Explanations:
+- `tests/original/`: Contains all direct translations of original (private/original) Java tests.
+- `public_tests/`: Contains all "public" tests as in public_test_summary.json.
+- Each test module (componentbase, login, share, base, app) has its own folder.
+- For Android-specific code, stubs or mocks are used as needed; focus on logic, not actual platform features.
+- `go.mod` handles dependency management.
+- `run_tests.sh` runs all tests in both original and public test trees.
+- No real app implementation files are present, only test logic and minimal stubs for necessary types.

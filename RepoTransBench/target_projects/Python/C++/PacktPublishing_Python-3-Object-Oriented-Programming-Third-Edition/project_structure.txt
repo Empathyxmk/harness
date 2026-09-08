@@ -1,0 +1,54 @@
+.
+├── CMakeLists.txt                        # Top-level CMake build config
+├── include/                              # C++ headers directory
+│   └── ...                               # (All C++ source headers go here, e.g. Chapter11, Chapter12, etc.)
+├── src/                                  # C++ source code directory
+│   └── ...                               # (All C++ implementation source files go here)
+├── tests/                                # Directory for original tests (converted to C++)
+│   ├── original/
+│   │   ├── test_car_flyweight.cpp
+│   │   ├── test_email_facade.cpp
+│   │   ├── test_folder_composite.cpp
+│   │   ├── test_pythonic_window_command.cpp
+│   │   └── test_window_command.cpp
+│   ├── Chapter12_test_pytest_stats.cpp
+│   ├── Chapter12_test_flight_status.cpp
+│   ├── Chapter12_test_pytest_skipping.cpp
+│   ├── Chapter12_test_pytest_setups.cpp
+│   ├── Chapter12_test_with_pytest.cpp
+│   ├── Chapter12_test_pytest_cleanup.cpp
+│   ├── Chapter12_test_statslist_setup.cpp
+│   ├── Chapter12_test_skipping.cpp
+│   ├── Chapter12_test_echo_server.cpp
+│   ├── Chapter12_CaseStudy_VigenereCipher_test_vigenere.cpp
+│   ├── test_main.cpp                     # GTest test launcher/main
+│   └── ...
+├── public_tests/                         # Directory for public tests (converted to C++)
+│   ├── test_public_pytest_stats.cpp
+│   ├── test_public_flight_status.cpp
+│   ├── test_public_pytest_skipping.cpp
+│   ├── test_public_pytest_setups.cpp
+│   ├── test_public_with_pytest.cpp
+│   ├── test_public_pytest_cleanup.cpp
+│   ├── test_public_statslist_setup.cpp
+│   └── ...
+├── run_tests.sh                          # One-click build and test script
+├── README.md                             # Project documentation
+└── build/                                # CMake build directory (generated at runtime)
+
+# Directory Explanations:
+# - include/:        Put reusable C++ header (.h) files here for all modules/classes.
+# - src/:           Place application / library C++ code here.
+# - tests/:         Contains C++ GTest original tests, organized as above; see test_main.cpp as entry point.
+# - public_tests/:  Contains C++ GTest public tests, one file per logical test suite.
+# - CMakeLists.txt: Project build system, configures src/, tests/, and public_tests/.
+# - run_tests.sh:   Minimal script to build and run all tests.
+# - README.md:      Documentation and setup instructions.
+# - build/:         Temporary build output directory.
+
+# How to Build and Run Tests:
+#  1. Run:  ./run_tests.sh
+#     - This will build all sources and tests, and run all test suites (original and public) using Google Test.
+#
+# All test translation is in C++ and test files use Google Test conventions.
+# See README.md for additional details.

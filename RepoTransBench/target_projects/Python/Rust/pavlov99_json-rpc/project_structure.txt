@@ -1,0 +1,15 @@
+project_root/
+├── src/
+│   ├── lib.rs  # Main Rust code
+├── tests/
+│   ├── original/  # Original tests translated
+│   │   ├── test_jsonrpc1.rs
+│   │   ├── test_jsonrpc.rs
+│   │   └── ...  # All original tests
+├── public_tests/  # Public tests translated
+│   ├── test_jsonrpc1_public.rs
+│   ├── test_utils_public.rs
+│   └── ...
+├── Cargo.toml  # Dependencies and project config
+├── run_tests.sh  # Script to run all tests
+└── project_structure.txt  # This file

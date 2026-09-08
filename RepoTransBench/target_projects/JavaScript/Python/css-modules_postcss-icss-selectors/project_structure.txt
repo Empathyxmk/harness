@@ -1,0 +1,22 @@
+.
+├── README.md                     # Documentation and instructions
+├── requirements.txt              # Python dependencies (pytest)
+├── run_tests.sh                  # One-click test execution script
+├── src/
+│   ├── __init__.py               # Makes directory a package
+│   └── icss_selectors.py         # Implementation of the ICSS selector rewriter
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_icss_selectors.py  # Original translated test cases
+└── public_tests/
+    ├── __init__.py
+    └── test_public_icss_selectors.py # Translated public test cases
+
+Explanations:
+- src/: Implementation source folder.
+- tests/original/: All tests translated from original repo logic.
+- public_tests/: All public tests as in original and summary.
+- run_tests.sh: Run all tests using pytest.
+- requirements.txt: Install with `pip install -r requirements.txt`.

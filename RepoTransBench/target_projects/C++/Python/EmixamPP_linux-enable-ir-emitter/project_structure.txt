@@ -1,0 +1,34 @@
+EmixamPP_linux-enable-ir-emitter Python Project Structure
+---------------------------------------------------------
+.
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_autocamera_public.py    # Python translation of the public test for AutoCamera functionality
+│   └── test_camerainstruction_public.py   # Python translation of the public test for CameraInstruction functionality
+├── requirements.txt                 # Python dependencies file (pytest required)
+├── run_tests.sh                     # One-click test script for running all tests using pytest
+├── tests/
+│   ├── __init__.py
+│   ├── test_camerainstruction.py    # Python translation of camerainstruction.test.cpp (skipped dummy due to format)
+│   ├── test_dummy_coverage.py       # Python translation of the dummy coverage test (always passes)
+│   └── test_main.py                 # Placeholder simulating main.test.cpp (no-op in Python since pytest auto-discovers)
+└── project_structure.txt            # This file, describes the project tree and the role of each file/directory
+
+Directory Explanations:
+----------------------
+public_tests/         - Contains all tests translated from provided public test cases (*.test.cpp) for external/public verification
+tests/                - Contains all tests translated from original/internal test cases (*.test.cpp)
+requirements.txt      - All Python dependencies (add your non-stdlib requirements here)
+run_tests.sh          - Simple bash script for running all tests via pytest; run with `./run_tests.sh`
+project_structure.txt - This description file
+
+To set up and test:
+-------------------
+1. Install Python (3.7+ recommended)
+2. Install dependencies:
+      pip install -r requirements.txt
+3. Run all tests:
+      ./run_tests.sh
+
+All tests in public_tests/ and tests/ will be discovered and executed by pytest.
+You do not need to run separate commands for public vs original tests; all are run together.

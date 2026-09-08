@@ -1,0 +1,52 @@
+careercup_CtCI-6th-Edition-JavaScript-ES2015-python/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── project_structure.txt
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_ch1_q1.py
+│       ├── test_ch1_q2.py
+│       ├── test_ch1_q3.py
+│       ├── test_ch1_q4.py
+│       ├── test_ch1_q5.py
+│       ├── test_ch1_q6.py
+│       ├── test_ch1_q7.py
+│       ├── test_ch1_q8.py
+│       ├── test_ch1_q9.py
+│       ├── test_ch2_q1.py
+│       ├── test_ch2_q2.py
+│       ├── test_ch2_q3.py
+│       ├── test_ch2_q4.py
+│       ├── test_ch2_q5.py
+│       ├── test_ch2_q6.py
+│       ├── test_ch2_q7.py
+│       ├── test_ch2_q8.py
+│       ├── test_ch3_q1.py
+│       ├── test_ch3_q2.py
+│       ├── test_ch3_q3.py
+│       ├── test_ch3_q4.py
+│       ├── test_ch3_q5.py
+│       ├── test_ch3_q6.py
+│       ├── test_ch4_q01.py
+│       ├── test_ch4_q02.py
+│       ├── test_ch4_q03.py
+│       ├── test_ch4_q04.py
+│       ├── test_ch4_q05.py
+│       ├── test_ch4_q06.py
+│       ├── test_ch4_q07.py
+│       ├── test_ch4_q08.py
+│       ├── test_ch4_q09.py
+│       ├── test_ch4_q10.py
+│       ├── test_ch4_q11.py
+│       ├── test_ch4_q12.py
+│       └── test_eslint.py
+└── public_tests/
+    ├── __init__.py
+    └── chapter4/
+        ├── __init__.py
+        ├── test_ch4_q07_public.py
+        ├── test_ch4_q08_public.py
+        └── test_ch4_q12_public.py

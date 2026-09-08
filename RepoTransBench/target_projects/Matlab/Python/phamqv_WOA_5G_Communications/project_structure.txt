@@ -1,0 +1,30 @@
+phamqv_WOA_5G_Communications Python Translation Project Structure
+
+├── requirements.txt
+│    Dependencies (pytest, numpy)
+├── run_tests.sh
+│    One-click test execution script (runs ALL tests)
+├── src/
+│    └── phamqv_woa_5g_communications/
+│         ├── __init__.py
+│         ├── CostFunction_Ex3.py      # Translated CostFunction_Ex3
+│         ├── WOA.py                   # Whale Optimization Algorithm
+│         └── channelModel.py          # Channel model functions
+├── tests/
+│    └── original/
+│         ├── test_CostFunction_Ex3.py
+│         ├── test_WOA.py
+│         └── test_channelModel.py
+│         # Original, private/internal tests
+├── public_tests/
+│    ├── test_CostFunction_Ex3_public.py
+│    ├── test_WOA_public.py
+│    └── test_channelModel_public.py
+│    # Public, visible/educational tests
+│
+Instructions:
+- Run "pip install -r requirements.txt" to install dependencies.
+- Run "./run_tests.sh" to execute all tests (original + public).
+- Source code is in "src/phamqv_woa_5g_communications/".
+- Original/private tests are in "tests/original/".
+- Public/visible tests are in "public_tests/".

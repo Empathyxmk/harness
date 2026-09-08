@@ -1,0 +1,42 @@
+fosfor15_SatCommSystem-QPSK-OFDM-LSEstimation-TransionosphericChannel Python Project Structure
+============================================================================================
+.
+├── README.md                       - Project documentation, instructions, and usage guide
+├── requirements.txt                - Python dependencies (pytest)
+├── run_tests.sh                    - One-click test runner (executes all tests)
+├── project_structure.txt           - This file (project structure and explanations)
+├── src/
+│   ├── BERTool_QPSK_OFDM_RicianChannel_LSEstimation.py  - [To be implemented] Main module/script for QPSK OFDM test
+│   └── BERTool_QPSK_RicianChannel.py                    - [To be implemented] Main module/script for QPSK Rician Channel test
+│   └── __init__.py                 - Makes src a Python package
+├── tests/
+│   ├── __init__.py                 - Makes tests a Python package
+│   └── original/
+│       ├── __init__.py             - Marks directory as a subpackage
+│       ├── test_BERTool_QPSK_OFDM_RicianChannel_LSEstimation.py  - Original "script run" test for OFDM LS
+│       └── test_BERTool_QPSK_RicianChannel.py                      - Original "script run" test for Rician Channel
+├── public_tests/
+│   ├── __init__.py                 - Makes directory a Python package
+│   ├── test_BERTool_QPSK_OFDM_RicianChannel_LSEstimation.py  - Public parameter-based test for OFDM LS
+│   └── test_BERTool_QPSK_RicianChannel.py                     - Public parameter-based test for Rician Channel
+
+Directory Details:
+------------------
+src/
+    Contains the main implementation source files. Each .py file corresponds to a Matlab script/function.
+    Functions MUST be implemented for the tests to work (see docstrings for expected signatures).
+tests/original/
+    Original Matlab tests – simply check the respective script runs without failing (sanity/coverage/trigger).
+    Do NOT test with varying parameters.
+public_tests/
+    Public behavioral/parameterized tests – check specific input/output requirements and functional correctness with various arguments.
+
+How to Run:
+-----------
+1. Install dependencies:       pip install -r requirements.txt
+2. Run all tests:              ./run_tests.sh
+
+To run only original tests:    pytest tests/original/
+To run only public tests:      pytest public_tests/
+
+All test logic is complete and ready for test implementation work on the src/ modules!

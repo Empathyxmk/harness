@@ -1,0 +1,26 @@
+{
+  "name": "grid-list",
+  "version": "0.4.1",
+  "description": "Drag and drop library for a two-dimensional resizable and responsive list of items",
+  "keywords": [
+    "grid",
+    "drag and drop",
+    "resizable",
+    "reponsive"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "c8": "^10.1.3",
+    "jasmine": "^5.8.0",
+    "jasmine-node": "~1.13.1",
+    "jest": "^30.0.2"
+  },
+  "main": "src/gridList.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hootsuite/grid.git"
+  },
+  "scripts": {
+    "test": "jasmine-node --verbose spec"
+  }
+}

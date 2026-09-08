@@ -1,0 +1,60 @@
+Bouke_docx-mailmerge/
+├── CMakeLists.txt
+├── LICENSE.txt
+├── MANIFEST.in
+├── README.rst
+├── htmlcov/
+│   └── ...
+├── mailmerge.py
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+├── requirements_dev.txt
+├── run_tests.sh
+├── setup.cfg
+├── setup.py
+├── test_summary.json
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── test_issue54_spaces.cpp
+│   │   ├── test_issue64.cpp
+│   │   ├── test_issue8.cpp
+│   │   ├── test_macword2011.cpp
+│   │   ├── test_mailmerge_errors.cpp
+│   │   ├── test_mailmerge_parse.cpp
+│   │   ├── test_merge_pages.cpp
+│   │   ├── test_merge_parse.cpp
+│   │   ├── test_merge_table_multipart.cpp
+│   │   ├── test_merge_table_rows.cpp
+│   │   ├── test_merge_templates.cpp
+│   │   ├── test_multiple_elements.cpp
+│   │   └── test_winword2010.cpp
+│   ├── test_issue54_spaces.py
+│   ├── test_issue64.py
+│   ├── test_issue8.docx
+│   ├── test_issue8.py
+│   ├── test_macword2011.docx
+│   ├── test_macword2011.py
+│   ├── test_mailmerge_errors.py
+│   ├── test_mailmerge_parse.py
+│   ├── test_main.cpp
+│   ├── test_merge_pages.docx
+│   ├── test_merge_pages.py
+│   ├── test_merge_pages_paged.docx
+│   ├── test_merge_table_multipart.docx
+│   ├── test_merge_table_multipart.py
+│   ├── test_merge_table_rows.docx
+│   ├── test_merge_table_rows.py
+│   ├── test_merge_templates.py
+│   ├── test_merge_templates_simple.docx
+│   ├── test_multiple_elements.docx
+│   ├── test_multiple_elements.py
+│   ├── test_spaces.docx
+│   ├── test_winword2010.docx
+│   ├── test_winword2010.py
+│   └── utils.py
+├── tox.ini
+└── venv/
+    └── ...

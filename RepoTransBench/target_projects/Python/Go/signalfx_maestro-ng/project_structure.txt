@@ -1,0 +1,28 @@
+signalfx_maestro_ng/
+├── go.mod                       # Go module definition, dependencies
+├── README.md                    # Documentation and info
+├── main.go                      # (empty or main-to-be) application entrypoint
+├── run_tests.sh                 # One-click script to run all Go tests
+├── public_tests/
+│   ├── lifecycle_public_test.go # Public tests for lifecycle logic
+│   └── loader_public_test.go    # Public tests for loader logic
+├── tests/
+│   └── original/
+│       ├── lifecycle_test.go    # Original lifecycle detailed test translations
+│       └── loader_test.go       # Original loader detailed test translations
+│
+└── testutil/
+    └── test_yaml.go             # Utility code for test YAML reading if needed
+
+## Directory explanations:
+- go.mod: Go module & dependency declaration (using testify for asserts, yaml.v3 for YAML)
+- public_tests/: Public-facing test cases, clean-room logic, suitable for end-user samples
+- tests/original/: Original repository engineering tests closely mapping Python source
+- run_tests.sh: Simple script to run all tests (`go test ./...`)
+- main.go: Placeholder app entrypoint (empty for now)
+- testutil/: Utility helpers for tests (e.g., YAML file helpers if needed)
+
+## Running tests:
+1. Make sure you have Go >=1.20 installed.
+2. Make the test script executable: chmod +x run_tests.sh
+3. Run all tests: ./run_tests.sh

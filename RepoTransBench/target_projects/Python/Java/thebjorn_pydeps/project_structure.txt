@@ -1,0 +1,25 @@
+thebjorn-pydeps/
+├── pom.xml
+├── run_tests.sh
+├── README.md
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── pydeps/      # (Placeholder for translated application code)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   └── ...     # 22 original test files as *Test.java
+│                   └── public/
+│                       └── ...     # 3 public test files as *Test.java
+├── public_tests/
+│   └── java/
+│       └── com/
+│           └── example/
+│               └── public/
+│                   └── ...         # Alternative public test location
+└── test_translation_progress.json

@@ -1,0 +1,11 @@
+{
+  "project_name": "owncloud_pyocclient",
+  "language": "Python",
+  "coverage": {
+    "line": 92.0,
+    "branch": 86.9
+  },
+  "timestamp": "2025-06-19T12:14:26.081823",
+  "original_path": "/workspace/runnable_filter/Python/owncloud_pyocclient",
+  "test_result_path": "/workspace/test_enhancement_results/Python/owncloud_pyocclient"
+}

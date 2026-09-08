@@ -1,0 +1,53 @@
+helius_microrl/
+├── Cargo.toml             # Rust project configuration file
+├── project_structure.txt  # This file describing the project structure
+├── public_tests/          # Directory for public tests
+│   └── test_microrl_public.rs  # Public tests for microrl
+├── run_public_tests.sh    # Script to run public tests only
+├── run_tests.sh           # Script to run all tests
+├── src/                   # Source code directory
+│   └── lib.rs             # Main library implementation
+└── tests/                 # Directory for original tests
+    └── original/
+        └── test_microrl.rs  # Original tests for microrl
+
+Project Explanation:
+--------------------
+1. src/lib.rs:
+   This file contains the Rust implementation of the microrl library.
+   It provides the same functionality as the original C library.
+
+2. tests/original/test_microrl.rs:
+   This file contains the original tests translated from C to Rust.
+   It tests the core functionality of the microrl library.
+
+3. public_tests/test_microrl_public.rs:
+   This file contains the public tests translated from C to Rust.
+   It tests the public API of the microrl library.
+
+4. Cargo.toml:
+   This file configures the Rust project, including dependencies
+   and test configuration.
+
+5. run_tests.sh:
+   A simple script to run all tests in the project.
+
+6. run_public_tests.sh:
+   A script to run only the public tests.
+
+Setup and Testing Instructions:
+------------------------------
+1. Install Rust and Cargo if not already installed:
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+2. Navigate to the project directory:
+   cd helius_microrl
+
+3. Run all tests:
+   ./run_tests.sh
+
+4. Run only public tests:
+   ./run_public_tests.sh
+
+5. For more detailed test output:
+   cargo test -- --nocapture

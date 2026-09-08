@@ -1,0 +1,11 @@
+{
+  "project_name": "mapio_GraphvizAnim",
+  "language": "Python",
+  "coverage": {
+    "line": 89.7,
+    "branch": 67.9
+  },
+  "timestamp": "2025-06-19T12:01:43.213198",
+  "original_path": "/workspace/runnable_filter/Python/mapio_GraphvizAnim",
+  "test_result_path": "/workspace/test_enhancement_results/Python/mapio_GraphvizAnim"
+}

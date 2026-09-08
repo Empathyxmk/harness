@@ -1,0 +1,24 @@
+medium-sdk-go/
+├── go.mod                         # Go module definition and requirements
+├── medium/
+│   └── client.go                  # Medium client logic and mockable methods for tests
+├── tests/
+│   └── original/
+│       ├── client_test.go         # Translated from tests/test_extra.py (original test)
+│       └── client_functional_test.go  # Functional/logic tests from tests/test.py
+├── public_tests/
+│   └── client_public_test.go      # Translated from public_tests/test_public_extra.py (public test)
+├── run_tests.sh                   # One-click Go test execution script
+├── project_structure.txt          # This file
+└── README.md                      # Project and usage info
+
+# Directory and file explanations:
+# - medium/ : Contains all source code and public API for Medium SDK (client.go for Client struct/etc.).
+# - tests/original/ : All original, possibly more extensive/edge-case and internal test logic.
+# - public_tests/ : Tests meant to be public/distributed (translates public_tests/ from Python structure).
+# - run_tests.sh : Run all tests in a single step with `./run_tests.sh`.
+# - go.mod : Requirement and dependency file.
+# - README.md : Setup, usage, and contribution documentation.
+
+# To run all tests, simply execute:
+#     ./run_tests.sh

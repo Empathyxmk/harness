@@ -1,0 +1,57 @@
+{
+  "project_name": "bitcoinjs_bip39",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:16:36.218547",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/bitcoinjs_bip39",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/bitcoinjs_bip39",
+  "original_tests": {
+    "test_files": [
+      "test/util_wordlists.test.js",
+      "test/ts_buildcheck.test.js",
+      "test/_wordlists.test.js",
+      "test/index.integration.test.js",
+      "test/_wordlists.integration.test.js",
+      "test/index.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/util_wordlists.public.test.js",
+      "public_tests/ts_buildcheck.public.test.js",
+      "public_tests/_wordlists.public.test.js",
+      "public_tests/index.integration.public.test.js",
+      "public_tests/_wordlists.integration.public.test.js",
+      "public_tests/index.public.test.js",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/util_wordlists.public.test.js",
+    "public_tests/ts_buildcheck.public.test.js",
+    "public_tests/_wordlists.public.test.js",
+    "public_tests/index.integration.public.test.js",
+    "public_tests/_wordlists.integration.public.test.js",
+    "public_tests/index.public.test.js",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

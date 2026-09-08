@@ -1,0 +1,34 @@
+Project structure for snoack_python_goto (Go translation):
+
+.
+├── go.mod                           # Go module definition file (module name, Go version)
+├── run_tests.sh                     # One-click test execution script (runs all tests)
+├── project_structure.txt            # This file: describes project structure and setup
+├── tests/
+│   └── original/
+│       ├── test_goto_internals_test.go  # Original internal translation of test_goto_internals.py
+│       └── test_goto_test.go           # Original translation of test_goto.py
+├── public_tests/
+│   ├── test_public_goto_test.go        # Public translation of test_public_goto.py
+│   └── test_public_goto_internals_test.go # Public translation of test_public_goto_internals.py
+└── README.md                       # Project documentation (optional)
+
+Directory purposes:
+- go.mod:              Go module definition and dependency version management
+- run_tests.sh:        Executable script to run all project tests (simply uses 'go test ./...')
+- tests/original/:     Contains Go translations of all original Python test files (full internal coverage)
+- public_tests/:       Contains Go translations of all public Python test files (public coverage)
+- project_structure.txt: This description of project layout and structure
+
+Setup & usage:
+1. Ensure Go (>=1.20) is installed and environment set up.
+2. Run tests with:
+      $ ./run_tests.sh
+   This will execute all tests, including both original and public, displaying summary and results.
+
+File naming conventions:
+- *_test.go is used for all test files, as required by Go's test system.
+- Package names use 'original' for original (internal) tests, 'public_tests' for public tests.
+- Test functions start with Test, matching Go standards.
+
+All test logic is fully implemented and executable.

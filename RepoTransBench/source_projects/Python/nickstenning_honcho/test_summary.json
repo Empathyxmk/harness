@@ -1,0 +1,29 @@
+{
+  "project_name": "nickstenning_honcho",
+  "language": "Python",
+  "coverage": {
+    "line": 66.0,
+    "branch": 91.7
+  },
+  "timestamp": "2025-06-19T12:09:25.669283",
+  "original_path": "/workspace/runnable_filter/Python/nickstenning_honcho",
+  "test_result_path": "/workspace/test_enhancement_results/Python/nickstenning_honcho",
+  "tests_path": [
+    "tests/test__init__.py",
+    "tests/test__version.py",
+    "tests/test_colour.py",
+    "tests/test_command.py",
+    "tests/test_doc_conf.py",
+    "tests/test_environ.py",
+    "tests/test_export_base.py",
+    "tests/test_export_runit.py",
+    "tests/test_export_supervisord.py",
+    "tests/test_export_systemd.py",
+    "tests/test_export_upstart.py",
+    "tests/test_invocation.py",
+    "tests/test_manager.py",
+    "tests/test_printer.py",
+    "tests/test_process.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

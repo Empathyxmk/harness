@@ -1,0 +1,16 @@
+{
+  "project_name": "orcasgit_django-fernet-fields",
+  "language": "Python",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T12:12:29.201886",
+  "original_path": "/workspace/runnable_filter/Python/orcasgit_django-fernet-fields",
+  "test_result_path": "/workspace/test_enhancement_results/Python/orcasgit_django-fernet-fields",
+  "tests_path": [
+    "fernet_fields/test/test_fields.py",
+    "fernet_fields/test/test_fields_extra.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

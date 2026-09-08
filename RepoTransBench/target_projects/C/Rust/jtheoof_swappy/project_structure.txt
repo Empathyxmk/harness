@@ -1,0 +1,30 @@
+swappy/
+├── Cargo.toml                 # Rust project configuration file
+├── src/                       # Source code directory
+│   ├── lib.rs                 # Main library file, exports modules
+│   ├── algebra.rs             # Implementation of algebra functions
+│   └── file.rs                # Implementation of file functions
+├── tests/                     # Original test directory
+│   └── original/              
+│       ├── algebra.rs         # Tests for algebra module
+│       └── file.rs            # Tests for file module
+├── public_tests/              # Public test directory
+│   ├── algebra_public.rs      # Public tests for algebra module
+│   └── file_public.rs         # Public tests for file module
+├── run_tests.sh               # Script to run original tests
+├── run_public_tests.sh        # Script to run public tests
+└── project_structure.txt      # This file, documenting the project structure
+
+The project uses Rust's built-in testing framework and Cargo for building and running tests.
+
+To run all tests:
+$ ./run_tests.sh
+
+To run public tests only:
+$ ./run_public_tests.sh
+
+To run specific tests:
+$ cargo test --test <test_name>
+
+To run all tests with verbose output:
+$ cargo test -- --nocapture

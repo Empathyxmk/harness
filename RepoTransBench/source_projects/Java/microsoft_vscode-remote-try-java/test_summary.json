@@ -1,0 +1,11 @@
+{
+  "project_name": "microsoft_vscode-remote-try-java",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T22:48:21.715574",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/microsoft_vscode-remote-try-java",
+  "test_result_path": "/workspace/test_enhancement_results/Java/microsoft_vscode-remote-try-java"
+}

@@ -1,0 +1,53 @@
+Translation Result Directory Listing
+Generated on: 2025-07-17T10:25:53.653830
+Project: ramonhagenaars_jsons
+Translation: Python → Rust
+============================================================
+
+ramonhagenaars_jsons/
+  .gitignore
+  project_structure.txt
+  README.md
+  Cargo.toml
+  run_tests.sh (executable)
+  setup.py
+  translation_summary.json
+  LICENSE
+  src/
+    lib.rs
+  resources/
+    jsons-logo.svg
+  public_tests/
+    test_public_dict.rs
+    test_public_timedelta.rs
+    test_public_enum.rs
+    test_public_tuple.rs
+    test_public_jsonserializable.rs
+  tests/
+    original/
+      test_tuple.rs
+      test_list.rs
+      test_defaultdict.rs
+      test_set.rs
+      test_common_impl.rs
+      test_jsonserializable.rs
+      test_primitive.rs
+      test_performance.rs
+      test_sconstruct.rs
+      test_counter.rs
+      test_fork.rs
+      test_dict_hashkey.rs
+      test_type_error.rs
+      test_specific_versions.rs
+      test_version.rs
+      test_ordered_dict.rs
+      test_compatibility_impl.rs
+      test_time.rs
+      test_enum.rs
+  docs/
+    index.rst
+    conf.py
+    faq.rst
+    api.rst
+    _templates/
+      sidebarintro.html

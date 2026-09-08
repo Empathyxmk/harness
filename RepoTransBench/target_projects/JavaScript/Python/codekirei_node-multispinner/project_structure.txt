@@ -1,0 +1,32 @@
+project_root/
+├── src/
+│   └── multispinner/
+│       ├── __init__.py
+│       ├── constants.py
+│       └── multispinner.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_index_integration.py
+│       └── test_index_utility.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_index_integration_public.py
+│   └── test_index_utility_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Directory explanations:
+- src/multispinner/: The main (minimal) Python implementation of the multispinner library purely to satisfy tests (should be replaced with full prod code if available).
+- tests/original/: Contains original translated test cases from source JavaScript "test" directory.
+- public_tests/: Contains public translated test cases from source JavaScript "public_tests" directory.
+- requirements.txt: Python dependencies for running tests (pytest, pytest-mock etc.).
+- run_tests.sh: Simple script for running all tests using pytest.
+- project_structure.txt: This file.
+
+Setup & test instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+   (or manually: `pytest`)

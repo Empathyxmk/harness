@@ -1,0 +1,35 @@
+Project Structure:
+
+bobvo23_flicker_stimulator/
+├── src/
+│   ├── __init__.py               # (may be empty, to indicate package)
+│   ├── flickermovie.py           # flickermovie logic
+│   ├── square_flicker.py         # square_flicker logic
+│   ├── lcms.py                   # lcms function
+│   ├── flickertexure.py          # flickertexure logic
+│   └── flickerTexture.py         # flickerTexture logic
+├── tests/
+│   └── original/
+│       ├── test_flickermovie.py      # Original test for flickermovie
+│       ├── test_square_flicker.py    # Original test for square_flicker
+│       ├── test_lcms.py              # Original test for lcms
+│       ├── test_flickertexure.py     # Original test for flickertexure
+│       └── test_flickerTexture.py    # Original test for flickerTexture
+├── public_tests/
+│   ├── test_public_flickermovie.py     # Public test for flickermovie
+│   ├── test_public_square_flicker.py   # Public test for square_flicker
+│   ├── test_public_lcms.py             # Public test for lcms
+│   ├── test_public_flickertexure.py    # Public test for flickertexure/flickermovie shape
+│   └── test_public_flickerTexture.py   # Public test for flickerTexture
+├── requirements.txt                  # Python dependencies
+├── run_tests.sh                      # One-click script to run all tests (pytest)
+├── project_structure.txt             # This structure + directory explanations
+├── README.md                         # (user doc, optional)
+
+Directory explanations:
+- src/:          Implementation source code for the project ("translated" module functions)
+- tests/original/:   Original test cases, closely reflecting original Matlab tests, translated to Python
+- public_tests/:     Public compatibility and edge test cases, as translated from corresponding Matlab files
+- requirements.txt:  Project dependencies (pytest, numpy)
+- run_tests.sh:      Simple bash script to run all tests
+- project_structure.txt: Provides a tree overview and directory/file explanations

@@ -1,0 +1,11 @@
+{
+  "project_name": "syrusakbary_aiodataloader",
+  "language": "Python",
+  "coverage": {
+    "line": 65.0,
+    "branch": 83.3
+  },
+  "timestamp": "2025-06-19T12:54:31.691396",
+  "original_path": "/workspace/runnable_filter/Python/syrusakbary_aiodataloader",
+  "test_result_path": "/workspace/test_enhancement_results/Python/syrusakbary_aiodataloader"
+}

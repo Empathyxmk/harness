@@ -1,0 +1,11 @@
+{
+  "project_name": "nschloe_termplotlib",
+  "language": "Python",
+  "coverage": {
+    "line": 54.0,
+    "branch": 75.4
+  },
+  "timestamp": "2025-06-19T12:10:23.852653",
+  "original_path": "/workspace/runnable_filter/Python/nschloe_termplotlib",
+  "test_result_path": "/workspace/test_enhancement_results/Python/nschloe_termplotlib"
+}

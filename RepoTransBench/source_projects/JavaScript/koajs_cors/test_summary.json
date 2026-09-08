@@ -1,0 +1,15 @@
+{
+  "project_name": "koajs_cors",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.01,
+    "branch": 94.54
+  },
+  "timestamp": "2025-06-19T10:49:35.812319",
+  "original_path": "/workspace/runnable_filter/JavaScript/koajs_cors",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/koajs_cors",
+  "tests_path": [
+    "test/cors.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

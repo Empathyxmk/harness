@@ -1,0 +1,18 @@
+project_root/
+├── src/
+│   └── optparse.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_optparse.py
+│       ├── test_optparse_extended.py
+│       └── test_runner.py
+└── public_tests/
+    ├── __init__.py
+    ├── test_optparse_public.py
+    └── test_optparse_extended_public.py

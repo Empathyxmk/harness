@@ -1,0 +1,32 @@
+samplemod_rs/
+├── Cargo.toml                  # Rust build configuration
+├── README.md                   # Project overview, build & test instructions
+├── project_structure.txt       # This structure/documentation file
+├── run_tests.sh                # One-click test runner
+├── src/
+│   ├── lib.rs                  # Module linkage
+│   ├── core.rs                 # Core module: math ops, 'hmm' logic
+│   └── helpers.rs              # Helper functions (shout, invert_bool, get_answer)
+├── tests/
+│   ├── basic.rs                # Original minimal assertion test
+│   ├── advanced.rs             # Original: advanced test (hmm/None)
+│   └── core_helpers.rs         # Original: core/helpers tests (stdout capture, etc)
+├── public_tests/
+│   ├── mod.rs                  # Integration test module (empty, required by Rust)
+│   ├── test_public_basic.rs    # Public translated: add tests
+│   ├── test_public_advanced.rs # Public translated: safe_divide tests
+│   └── test_public_core_helpers.rs # Public translated: shout, invert_bool tests
+
+---
+
+**Directory explanations:**
+- `src/` -- Rust library source (`core`, `helpers` modules)
+- `tests/` -- Original "private" test cases (unit-style, using Rust's test framework)
+- `public_tests/` -- Public test cases, translated one-to-one from Python
+- `Cargo.toml` -- Rust package configuration/deps
+- `run_tests.sh` -- Simple runner (`cargo test --all`)
+- `README.md`, `project_structure.txt` -- Instructions and documentation
+
+**Running all tests:**
+- Ensure Rust/Cargo is installed
+- `./run_tests.sh` (or `cargo test --all`)

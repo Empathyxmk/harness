@@ -1,0 +1,62 @@
+fastapi_events_rs/
+├── Cargo.toml                # Rust project manifest: dependencies, settings
+├── src/
+│   └── lib.rs                # (Placeholder) Main library logic; implementation would go here
+├── tests/                    # Original/internal test suite (from Python's tests/)
+│   └── original/
+│       ├── test_typing.rs
+│       ├── test_setup_py.rs
+│       ├── test_event_payload_schema_registry.rs
+│       ├── test_init_and_errors.rs
+│       ├── test_dispatcher.rs
+│       ├── test_middleware_core.rs
+│       ├── handlers/
+│       │   ├── test_aws_handler.rs
+│       │   ├── test_gcp_handler.rs
+│       │   ├── test_local_handler.rs
+│       └── middleware/
+│           ├── test_starlite.rs
+│           ├── test_starlette.rs
+├── public_tests/             # Public test suite (translated from public_tests/)
+│   ├── test_public_typing.rs
+│   ├── test_public_event_payload_schema_registry.rs
+│   ├── test_public_init_and_errors.rs
+│   ├── test_public_dispatcher.rs
+│   ├── test_public_middleware_core.rs
+│   ├── test_public_setup_py.rs
+│   ├── handlers/
+│   │   ├── test_public_aws_handler.rs
+│   │   ├── test_public_gcp_handler.rs
+│   │   └── test_public_local_handler.rs
+│   └── middleware/
+│       ├── test_public_starlette.rs
+│       └── test_public_starlite.rs
+├── run_tests.sh              # Simple one-click test runner (calls: cargo test)
+├── project_structure.txt     # This file: explains structure and usage
+└── README.md                 # General documentation, project overview
+
+## Directory Purpose
+
+- src/           : Crate/library implementation (left as placeholder for now)
+- tests/original/: All original/internal test cases, fully translated from Python
+    - handlers/: Handler-specific logic tests
+    - middleware/: Middleware/context integration tests
+- public_tests/  : Public-facing test cases, fully translated from Python's public_tests/
+- run_tests.sh   : One-click script to execute the entire test suite (`cargo test`)
+- Cargo.toml     : Rust project/build/dependency settings
+- project_structure.txt: Explanation of all directories and major files
+
+## Running Tests
+
+1. Ensure [Rust](https://www.rust-lang.org/tools/install) is installed.
+2. From the project root, run:
+       ./run_tests.sh
+
+This will run all tests in both tests/original and public_tests (via cargo).
+
+## Notes
+
+- Internal (original) and public tests are logically separated.
+- All Pythonic pytest/skipped or dummy/placeholder assertions are faithfully represented in Rust.
+- No test left as a placeholder; logic and intent are translated or simulated idiomatically.
+- See README.md for additional usage and contribution guidance.

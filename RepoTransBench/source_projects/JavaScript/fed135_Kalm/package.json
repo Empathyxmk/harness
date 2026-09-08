@@ -1,0 +1,52 @@
+{
+  "name": "kalm",
+  "version": "1.5.1",
+  "description": "The socket optimizer",
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha tests/unit --recursive && mocha tests/integration",
+    "test.watch": "mocha tests/unit --recursive --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fed135/Kalm.git"
+  },
+  "keywords": [
+    "socket",
+    "tcp",
+    "udp",
+    "client",
+    "server",
+    "service",
+    "peer",
+    "micro-service",
+    "low-latency",
+    "light",
+    "ipc",
+    "messaging",
+    "queue",
+    "kalm"
+  ],
+  "author": "frederic charette <fredericcharette@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/fed135/Kalm/issues"
+  },
+  "homepage": "https://github.com/fed135/Kalm#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.5.3",
+    "nyc": "^17.1.0",
+    "sinon": "^1.17.0"
+  },
+  "dependencies": {
+    "bsplit": "1.0.x",
+    "debug": "2.6.x"
+  },
+  "browser": {
+    "fs": false,
+    "net": false,
+    "dgram": false
+  },
+  "packageManager": "yarn@4.9.2+sha512.1fc009bc09d13cfd0e19efa44cbfc2b9cf6ca61482725eb35bbc5e257e093ebf4130db6dfe15d604ff4b79efd8e1e8e99b25fa7d0a6197c9f9826358d4d65c3c"
+}

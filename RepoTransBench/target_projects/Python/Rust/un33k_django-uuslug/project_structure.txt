@@ -1,0 +1,26 @@
+.
+├── Cargo.toml                         # Rust package descriptor
+├── README.md                          # Project documentation (to be filled)
+├── run_tests.sh                       # One-click test runner for all tests
+├── src/
+│   ├── lib.rs                         # Main library entrypoint
+│   ├── uuslug.rs                      # Slug generation and unique slug logic (stubbed)
+│   ├── models.rs                      # Test models (stubs for testing only)
+│   ├── apps.rs                        # Simulated Django apps module (stubs)
+│   └── setup.rs                       # Simulated setup.py for test compatibility (stub)
+├── tests/
+│   └── original/
+│       ├── test_models_integration.rs # Original: Model integration/slug generation tests
+│       ├── test_init.rs               # Original: Import/export symbol tests
+│       ├── test_uuslug_func.rs        # Original: uuslug unique slug function exception test
+│       ├── test_uuslug.rs             # Original: Slugify/dedup test suite (rich coverage)
+│       ├── test_setup.rs              # Original: Simulated setup.py command shortcut logic
+│       ├── test_apps_py.rs            # Original: AppConfig and Django apps interface tests
+│       └── tests_py.rs                # Original: Extensive Django TestCase logic, stopwords, slug uniqueness etc
+├── public_tests/
+│   ├── public_test_init.rs            # Public: Import/export tests (with __version__)
+│   ├── public_test_uuslug.rs          # Public: Slugify public API and variety tests
+│   ├── public_test_setup.rs           # Public: Simulated setup and python_requires public check
+│   ├── public_test_apps_py.rs         # Public: UuslugConfig name and verbose_name checks
+│   ├── public_test_uuslug_func.rs     # Public: uuslug instance error test
+│   └── public_test_models_integration.rs # Public: Model slug generation integration checks

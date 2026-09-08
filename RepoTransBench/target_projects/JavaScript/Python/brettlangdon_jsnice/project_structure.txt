@@ -1,0 +1,49 @@
+brettlangdon_jsnice Python Translation Project Structure
+======================================================
+
+Project Tree:
+-------------
+.
+├── requirements.txt             # Python dependencies (pytest for testing)
+├── run_tests.sh                 # Simple script to run all tests
+├── src/
+│   └── brettlangdon_jsnice/
+│       ├── __init__.py          # (Stub) nicify module, will be mocked in tests
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_index.py        # Translated original test cases from JS
+├── public_tests/
+│   ├── __init__.py
+│   └── lib/
+│       ├── __init__.py
+│       └── test_index_public.py # Translated public test cases from JS
+
+Directory/Files Purpose:
+------------------------
+- requirements.txt: Lists dependencies. 'pytest' is required for running tests.
+- run_tests.sh: Simple script to execute all tests using pytest.
+- src/brettlangdon_jsnice/__init__.py: Placeholder for the 'nicify' function. The tests mock all actual I/O.
+- tests/original/: Contains original translated test cases. All test logic matches 'lib/index.test.js' in source.
+- public_tests/lib/: Contains public translated test cases. All test logic matches 'public_tests/lib/index.public.test.js' in source.
+
+Setup & Testing Instructions:
+-----------------------------
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Run all tests:
+   ./run_tests.sh
+
+   This executes both original and public tests using pytest.
+
+
+NOTES:
+- The 'nicify' function and 'http' dependency are always mocked in tests; src/brettlangdon_jsnice/__init__.py is a stub.
+- All original JavaScript Jest tests and public test logic are faithfully reimplemented in pytest with equivalent logic, asserting identical scenarios, data, errors, and options handling.
+
+Extending Implementation:
+-------------------------
+- To implement actual functionality (not required for tests), edit src/brettlangdon_jsnice/__init__.py.
+- To add more tests, create new files in tests/original/ (for original logic) or public_tests/lib/ (for public tests).

@@ -1,0 +1,22 @@
+secure_package_template/            # (This could contain Go source, not provided in this conversion)
+go.mod                              # Go module definition
+tests/
+    original/
+        secure_package_template_test.go   # Original test for package import/version/py.typed simulation
+        version_test.go                  # Original version checks
+public_tests/
+    secure_package_template_test.go      # Public test for package import/version/py.typed simulation
+    version_test.go                      # Public test for version expectations (major==0, minor==7, etc)
+run_tests.sh                       # One-click test runner (go test ./...)
+README.md                          # Documentation placeholder (add as needed)
+project_structure.txt              # This project tree and explanations
+
+# Testing/conventions:
+# - All original (non-public) tests are in tests/original/
+# - All public tests are in public_tests/
+# - To simulate Python package imports and __version__ attribute, these Go tests
+#   use the plugin package to dynamically load a plugin and access "__version__".
+#   In a real Go project you would structure this as packages instead, but for
+#   translation of the original test logic, plugin dynamic loading is the closest analogy.
+# - The py.typed file existence is checked in ./src/secure_package_template/py.typed, matching original layout.
+# - All test logic and edge cases are preserved according to the original Python tests.

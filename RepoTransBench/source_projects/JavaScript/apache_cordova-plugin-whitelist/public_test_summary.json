@@ -1,0 +1,45 @@
+{
+  "project_name": "apache_cordova-plugin-whitelist",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:48:54.166155",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/apache_cordova-plugin-whitelist",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/apache_cordova-plugin-whitelist",
+  "original_tests": {
+    "test_files": [
+      "whitelist.test.js",
+      "tests/scripts/remove-access.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 2,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/whitelist.public.test.js",
+      "public_tests/scripts/remove-access.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/scripts/remove-access.js",
+      "public_tests/scripts/remove-access.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 5,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/whitelist.public.test.js",
+    "public_tests/scripts/remove-access.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/scripts/remove-access.js",
+    "public_tests/scripts/remove-access.public.test.js"
+  ]
+}

@@ -1,0 +1,36 @@
+marcoschwartz_aREST_python/
+├── requirements.txt             # Python dependencies (pytest)
+├── run_tests.sh                 # One-click test execution script
+├── project_structure.txt        # Overview of the project structure and purpose
+├── src/                         # (optional - for actual arest implementation, empty for test translation)
+│   └── __init__.py
+├── tests/                       # All original (private) test cases, fully translated from C++
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_stress.py           # Original test (stress_test.py)
+│   │   ├── test_serial.py           # Original test (serial_test.py)
+│   │   ├── test_http.py             # Original test (http_test.py)
+│   │   ├── test_lightweight.py      # Original test (lightweight_test.py)
+│   │   ├── test_url_decode.py       # Original test (testUrlDecode.ino as test)
+│   │   └── test_aREST_basic.py      # Original test from aREST_basic_test.cpp
+├── public_tests/                # All public test cases (as in C++ project, but Pythonic)
+│   ├── __init__.py
+│   ├── test_aREST_basic_public.py     # Public test from aREST_basic_public_test.cpp
+│   ├── test_serial_public.py          # serial_public_test.py
+│   ├── test_http_public.py            # http_public_test.py
+│   ├── test_lightweight_public.py     # lightweight_public_test.py
+│   └── test_stress_public.py          # stress_public_test.py
+
+------------------------------
+Directory Explanations:
+- requirements.txt:      Lists required Python dependencies (just pytest)
+- run_tests.sh:          Simple shell script to execute all tests (both original and public)
+- src/:                  (empty) Placeholder for main source code if needed
+- tests/original/:       All *original* translated tests from C++/Python
+- public_tests/:         All *public* test implementations, Pythonic, as per public summary
+
+Setup & Testing Instructions:
+1. Install dependencies:  `pip install -r requirements.txt`
+2. Run all tests:         `./run_tests.sh`
+3. Add source/package code in `src/` as needed for local development

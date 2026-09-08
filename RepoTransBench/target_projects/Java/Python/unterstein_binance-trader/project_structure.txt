@@ -1,0 +1,29 @@
+project_root/
+├── requirements.txt                  # Python dependencies for pip
+├── run_tests.sh                      # Simple test execution script (runs all tests with pytest)
+├── tests/
+│   ├── __init__.py                   # Mark tests as a package
+│   └── original/
+│       ├── __init__.py
+│       ├── test_binance_bot_application.py  # Original test for BinanceBotApplication
+│       ├── test_trading_client.py           # Original test for TradingClient
+│       └── test_binance_trader.py           # Original test for BinanceTrader
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_binance_bot_application_public.py # Public test for BinanceBotApplication
+│   ├── test_binance_trader_public.py         # Public test for BinanceTrader
+│   └── test_trading_client_public.py         # Public test for TradingClient
+└── project_structure.txt               # This structure and directory purpose overview
+
+# Directory and File Explanations:
+# requirements.txt       - Python dependencies, use "pip install -r requirements.txt" before testing.
+# run_tests.sh           - One-click script to run all tests.
+# tests/original/        - Python translations of original Java tests.
+# public_tests/          - Python translations of public Java test cases.
+# __init__.py            - Marks folders as Python packages for consistent test discovery.
+# project_structure.txt  - This file: shows the overall directory contents and their purpose.
+
+# How To Set Up And Run Tests:
+# 1. Install dependencies: pip install -r requirements.txt
+# 2. Run all tests:        ./run_tests.sh
+#    (You may need to: chmod +x run_tests.sh)

@@ -1,0 +1,47 @@
+project_root/
+├── CMakeLists.txt
+├── include/
+│   └── pyzbar/          # Placeholder for translated headers
+│       ├── locations.h
+│       ├── zbar_library.h
+│       ├── wrapper.h
+│       ├── pyzbar.h
+│       ├── pyzbar_error.h
+│       └── ...
+├── src/
+│   └── pyzbar/          # Placeholder for translated source
+│       ├── locations.cpp
+│       ├── zbar_library.cpp
+│       ├── wrapper.cpp
+│       ├── pyzbar.cpp
+│       ├── pyzbar_error.cpp
+│       └── ...
+│   └── bounding_box_and_polygon.cpp    # C++ translation of bounding_box_and_polygon.py logic
+│   └── main.cpp           # (could be empty or demo app)
+├── tests/
+│   ├── original/
+│   │   ├── test_bounding_box_and_polygon_py.cpp
+│   │   ├── test_locations.cpp
+│   │   ├── test_zbar_library.cpp
+│   │   ├── test_zbar_library_import.cpp
+│   │   ├── test_init.cpp
+│   │   ├── test_read_zbar.cpp
+│   │   ├── test_bounding_box_and_polygon_mod.cpp
+│   │   ├── test_scripts_read_zbar.cpp
+│   │   ├── test_wrapper.cpp
+│   │   ├── test_pyzbar_error.cpp
+│   │   ├── test_pyzbar.cpp
+│   │   └── test_dummy.cpp                 # for placeholder/dummy test
+├── public_tests/
+│   ├── test_bounding_box_and_polygon_public.cpp
+│   ├── test_locations_public.cpp
+│   ├── test_zbar_library_public.cpp
+│   ├── test_pyzbar_error_public.cpp
+│   ├── test_pyzbar_public.cpp
+│   ├── test_zbar_library_import_public.cpp
+│   ├── test_wrapper_public.cpp
+│   ├── test_read_zbar_public.cpp
+│   ├── test_init_public.cpp
+│   └── test_scripts_read_zbar_public.cpp
+├── run_tests.sh
+└── test_translation_progress.json

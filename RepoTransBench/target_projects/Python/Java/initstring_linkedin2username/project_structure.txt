@@ -1,0 +1,28 @@
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── project_structure.txt
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/initstring/linkedin2username/
+│   │           ├── Linkedin2Username.java
+│   │           └── NameMutator.java
+│   └── test/
+│       └── java/
+│           └── com/initstring/
+│               ├── original/
+│               │   ├── TestGeoregions.java
+│               │   ├── TestLinkedin2Username.java
+│               │   ├── TestImportPython.java
+│               │   ├── TestNamemutator.java
+│               │   └── TestLinkedin2UsernameMinimal.java
+│               └── public_/
+│                   ├── TestPublicLinkedin2UsernameMinimal.java
+│                   ├── TestPublicGeoregions.java
+│                   ├── TestPublicLinkedin2Username.java
+│                   ├── TestPublicImportPython.java
+│                   └── TestPublicNamemutator.java
+└── src/test/resources/
+    ├── mock-employee-response
+    └── mock-employee-response-last-page

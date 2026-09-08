@@ -1,0 +1,17 @@
+{
+  "project_name": "unterstein_binance-trader",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 75.0
+  },
+  "timestamp": "2025-06-20T03:56:10.001571",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/unterstein_binance-trader",
+  "test_result_path": "/workspace/test_enhancement_results/Java/unterstein_binance-trader",
+  "tests_path": [
+    "src/test/java/io/github/unterstein/BinanceBotApplicationTest.java",
+    "src/test/java/io/github/unterstein/TradingClientTest.java",
+    "src/test/java/io/github/unterstein/BinanceTraderTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

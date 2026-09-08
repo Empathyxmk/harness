@@ -1,0 +1,11 @@
+{
+  "project_name": "oxsecurity_MaskerLogger",
+  "language": "Python",
+  "coverage": {
+    "line": 98.2,
+    "branch": 96.1
+  },
+  "timestamp": "2025-06-23T10:33:50.608477",
+  "original_path": "/workspace/test_enhancement_results/Python/oxsecurity_MaskerLogger",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/oxsecurity_MaskerLogger"
+}

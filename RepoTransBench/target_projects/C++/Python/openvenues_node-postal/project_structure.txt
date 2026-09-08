@@ -1,0 +1,19 @@
+project_root/
+├── README.md                     # Project overview and usage instructions
+├── requirements.txt              # Python requirements (lists pytest)
+├── run_tests.sh                  # Simple script for one-click test execution
+├── src/
+│   └── postal/
+│       ├── __init__.py           # Exposes fake expand and parser in package
+│       └── fake_bindings.py      # Simulated implementation of expand/parser APIs
+├── tests/
+│   └── original/
+│       ├── test_additional_parser_expand.py   # Original: covers type edge cases
+│       ├── test_fake_mocha.py                # Original: import smoke test
+│       ├── test_index.py                     # Original: main API tests for expand/parser
+│       └── test_index_smoke.py               # Original: smoke and binding missing
+├── public_tests/
+│   ├── test_additional_parser_expand_public.py # Public: edge cases/fuzzing diff data
+│   ├── test_fake_mocha_public.py              # Public: import smoke test
+│   ├── test_index_public.py                   # Public: expand/parser public variants
+│   └── test_index_smoke_public.py             # Public: binding error, API surface

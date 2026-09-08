@@ -1,0 +1,18 @@
+fourmilab_ent_random_sequence_tester/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── randtest.rs
+│   ├── iso8859.rs
+│   └── chisq.rs
+├── tests/
+│   └── original/
+│       ├── test_randtest.rs
+│       ├── test_iso8859.rs
+│       └── test_chisq.rs
+├── public_tests/
+│   ├── test_randtest_public.rs
+│   ├── test_iso8859_public.rs
+│   └── test_chisq_public.rs
+├── run_tests.sh
+└── project_structure.txt

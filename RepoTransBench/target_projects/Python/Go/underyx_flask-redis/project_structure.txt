@@ -1,0 +1,43 @@
+underyx_flask_redis/
+├── README.md                               # Documentation (existing or add Go-specific doc)
+├── go.mod                                  # Go module definition and dependencies
+├── run_tests.sh                            # Simple script for running all Go tests
+├── project_structure.txt                   # This file (documents the Go project structure)
+├── tests/
+│   ├── original/
+│   │   ├── test_additional_test.go         # Original Python unit test: additional, Go version
+│   │   ├── test_client_test.go             # Original Python unit test: client, Go version
+│   │   ├── test_init_py_test.go            # Original Python unit test: __init__.py, Go version
+│   │   ├── test_setup_py_test.go           # Original Python unit test: setup.py, Go version
+│   └── integration/
+│       └── test_client_test.go             # Original Python integration test: client, Go version
+├── public_tests/
+│   ├── unit/
+│   │   ├── test_public_additional_test.go  # Public unit test variant, Go version
+│   │   ├── test_public_client_test.go      # Public unit test variant, Go version
+│   │   ├── test_public_init_py_test.go     # Public unit test variant, Go version
+│   │   ├── test_public_setup_py_test.go    # Public unit test variant, Go version
+│   └── integration/
+│       └── test_public_client_test.go      # Public integration test variant, Go version
+└── (src code, e.g. flask_redis/*, is omitted here; only tests are ported)
+
+### Directory Explanations ###
+
+go.mod                       - Defines the Go module and dependencies (uses testify for some assertions).
+README.md                    - Project documentation (add Go running instructions here).
+run_tests.sh                 - One-click test runner for all Go tests.
+project_structure.txt        - This file; describes the Go project structure and test setup.
+
+tests/original/              - Translations of ALL original Python tests from "test/unit/*" and "test/integration/*".
+public_tests/unit/           - Translations of ALL public Python unit tests from "public_tests/unit/*".
+public_tests/integration/    - Translations of ALL public Python integration tests from "public_tests/integration/*".
+
+Each test file is fully implemented and includes all assertion logic.
+Some names and simulated behaviors are required for translation, as the Go code does not include the business logic of underyx/flask-redis.
+
+### Running the Tests ###
+1. Ensure Go (1.20+) and dependencies are installed (go mod tidy is optional).
+2. To run all tests:
+   ./run_tests.sh
+
+All tests (original and public) will be executed automatically.

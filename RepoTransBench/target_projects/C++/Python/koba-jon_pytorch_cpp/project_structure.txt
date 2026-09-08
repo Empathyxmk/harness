@@ -1,0 +1,25 @@
+project_root/
+├── src/
+│   └── package_name/
+│       ├── __init__.py
+│       └── module.py
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_loss.py
+│   │   ├── test_networks.py
+│   │   ├── test_dummy.py
+│   │   ├── test_anomaly_detection.py
+│   │   ├── test_semantic_segmentation.py
+│   │   └── test_wae_vae_models.py
+│   └── conftest.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_loss_public.py
+│   ├── test_dummy_public.py
+│   └── test_networks_public.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+└── README.md

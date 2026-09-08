@@ -1,0 +1,46 @@
+pypa_sampleproject/
+├── LICENSE.txt
+├── README.md
+├── noxfile.py
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests
+│   ├── test_public_init.py
+│   ├── test_public_noxfile.py
+│   └── test_public_simple.py
+├── pyproject.toml
+├── run_public_tests.sh
+├── run_tests.sh
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── example
+│   │               ├── Main.java
+│   │               ├── Noxfile.java
+│   │               └── sample
+│   │                   ├── Init.java
+│   │                   └── Simple.java
+│   ├── sample
+│   │   ├── __init__.py
+│   │   ├── package_data.dat
+│   │   └── simple.py
+│   └── test
+│       └── java
+│           └── com
+│               └── example
+│                   ├── original
+│                   │   ├── TestInit.java
+│                   │   ├── TestNoxfile.java
+│                   │   └── TestSimple.java
+│                   └── public_tests
+│                       ├── PublicInitTest.java
+│                       ├── PublicNoxfileTest.java
+│                       └── PublicSimpleTest.java
+├── test_summary.json
+└── tests
+    ├── __init__.py
+    ├── test_init.py
+    ├── test_noxfile.py
+    └── test_simple.py

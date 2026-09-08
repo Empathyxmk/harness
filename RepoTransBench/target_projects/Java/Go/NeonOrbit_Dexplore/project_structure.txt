@@ -1,0 +1,28 @@
+.
+├── README.md                # Project overview and setup instructions
+├── go.mod                   # Go module (dependencies)
+├── go.sum                   # Go dependency checksums
+├── run_tests.sh             # One-click test runner for all Go tests
+├── project_structure.txt    # This file: project structure and explanations
+├── tests/
+│   ├── testutil.go          # Shared test helpers/mocks/utilities for all tests
+│   └── original/
+│       ├── refpoolbuffer_test.go       # RefPoolBufferTest.java
+│       ├── dexdecodertest.go           # DexDecoderTest.java
+│       ├── dexcontainertest.go         # DexContainerTest.java
+│       ├── dexbasedtest.go             # DexBasedTest.java
+│       ├── dexoptionstest.go           # DexOptionsTest.java
+│       ├── dexopcodestest.go           # DexOpcodesTest.java
+│       ├── referencepooltest.go        # ReferencePoolTest.java
+│       ├── dexploretest.go             # DexploreTest.java
+│       ├── result_methoddatatest.go    # MethodDataTest.java
+│       ├── result_fielddatatest.go     # FieldDataTest.java
+│       ├── result_classdatatest.go     # ClassDataTest.java
+│       ├── util_dexutilstest.go        # DexUtilsTest.java
+│       ├── filter_classfiltertest.go   # filter/ClassFilterTest.java
+│       ├── filter_dexfiltertest.go     # filter/DexFilterTest.java
+│       └── filter_methodfiltertest.go  # filter/MethodFilterTest.java
+├── public_tests/
+│   ├── refpoolbuffer_public_test.go       # RefPoolBufferPublicTest.java
+│   ├── dexcontainer_public_test.go        # DexContainerPublicTest.java
+│   └── dexdecoder_public_test.go          # DexDecoderPublicTest.java

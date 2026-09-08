@@ -1,0 +1,15 @@
+{
+  "project_name": "danielktaylor_fabric-js-editor",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:10:51.437808",
+  "original_path": "/workspace/runnable_filter/JavaScript/danielktaylor_fabric-js-editor",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/danielktaylor_fabric-js-editor",
+  "tests_path": [
+    "src/js/app/state.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

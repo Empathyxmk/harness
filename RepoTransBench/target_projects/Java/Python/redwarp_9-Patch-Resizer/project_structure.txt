@@ -1,0 +1,30 @@
+project_root/
+├── requirements.txt      # Python dependency definitions (pytest, Pillow)
+├── run_tests.sh          # Simple script to run all tests (original+public)
+├── README.md             # Documentation for the project (not shown here)
+├── tests/                # All test code (original/author tests)
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_file_tools.py        # Original FileTools tests from Java
+│       ├── test_output.py            # Original Output enum/logic tests from Java
+│       └── test_image_writer.py      # Original ImageWriter functionality tests
+├── public_tests/         # All public (generated) tests
+│   ├── __init__.py
+│   ├── test_file_tools_public.py     # Public FileTools tests
+│   ├── test_output_public.py         # Public Output enum/logic tests
+│   └── test_image_writer_public.py   # Public ImageWriter tests
+└── project_structure.txt # (this file) Describes structure and setup
+
+Directory explanations:
+- requirements.txt: lists all required Python dependencies (pytest for testing, Pillow for image tests)
+- run_tests.sh: executable script to run all tests in one click (runs both original and public tests)
+- tests/original/: direct translation of author's original Java test cases. 
+- public_tests/: direct translation of all public test cases generated from the Java repo.
+- README.md: you should document how to set up dependencies and run the tests.
+- __init__.py: makes packages/discovery for pytest effective.
+
+Setup and test instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+3. See output for test summary (pytest will report pass/fail status)

@@ -1,0 +1,17 @@
+caoym_jjvm-go/
+├── README.md
+├── go.mod
+├── project_structure.txt
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── jjvm_test.go
+│       ├── virtualmachine_test.go
+│       ├── jvmdefaultclassloader_test.go
+│       └── jvmfieldmethod_test.go
+├── public_tests/
+│   ├── jjvm_public_test.go
+│   ├── virtualmachine_public_test.go
+│   ├── jvmdefaultclassloader_public_test.go
+│   └── jvmfieldmethod_public_test.go
+└── test_translation_progress.json

@@ -1,0 +1,11 @@
+{
+  "project_name": "pavlov99_json-rpc",
+  "language": "Python",
+  "coverage": {
+    "line": 93.0,
+    "branch": 95.1
+  },
+  "timestamp": "2025-06-23T10:34:09.012016",
+  "original_path": "/workspace/test_enhancement_results/Python/pavlov99_json-rpc",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/pavlov99_json-rpc"
+}

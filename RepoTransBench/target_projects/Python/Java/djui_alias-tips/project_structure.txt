@@ -1,0 +1,37 @@
+djui-alias-tips Java Translation - Project Structure
+
+.
+├── pom.xml                       # Maven build configuration file
+├── run_tests.sh                  # One-click test execution script (runs all tests)
+├── project_structure.txt         # This file - documents the directory structure and purpose
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── alias_tips/
+│   │                   └── AliasTips.java         # Main implementation (minimal stub for testability)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   └── TestAliasTips.java     # Original test cases (from test_alias_tips.py)
+│                   └── public_tests/
+│                       └── TestPublicAliasTips.java # Public test cases (from public_tests/test_public_alias_tips.py)
+└── README.md                     # (Recommend adding usage info here)
+
+DIRECTORY PURPOSE:
+- src/main/java/com/example/alias_tips/AliasTips.java: The main logic class, stubbed to match test interface.
+- src/test/java/com/example/original/TestAliasTips.java: Contains all original test scenarios exactly as verified in the source project.
+- src/test/java/com/example/public_tests/TestPublicAliasTips.java: All public/variant/edge-case tests as found in the public Python tests.
+- run_tests.sh: Run this script from project root for one-click execution of all tests. Uses 'mvn clean test'.
+
+SETUP & USAGE:
+1. Make sure you have Java 11+ and Maven installed.
+2. To run all tests: 
+    $ ./run_tests.sh
+   or
+    $ mvn clean test
+
+All test output will show in the console.

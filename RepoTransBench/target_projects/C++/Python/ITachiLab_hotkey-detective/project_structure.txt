@@ -1,0 +1,33 @@
+project_root/
+├── src/
+│   └── hotkey_detective/
+│       ├── __init__.py
+│       ├── core.py
+│       └── hotkey_table.py
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_core.py
+│       ├── test_hotkeytable.py
+│       └── test_sample.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_core_public.py
+│   ├── test_hotkeytable_public.py
+│   └── test_sample_public.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+
+Directory explanations:
+- src/hotkey_detective/: Source code for Hotkey Detective core features, hotkey table, etc.
+- tests/original/: Original (private) tests, directly translated from C++ Catch2 tests.
+- public_tests/: Public test cases meant for public demonstration or student self-testing.
+- requirements.txt: Python dependencies, install with 'pip install -r requirements.txt'
+- run_tests.sh: One-click test execution for ALL tests (original+public).
+- project_structure.txt: This file, describes the project structure and directory purposes.
+
+Setup & Testing Instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+3. Source code in src/, tests in tests/original/ (private) and public_tests/ (public).

@@ -1,0 +1,16 @@
+{
+  "project_name": "asciimoo_drawille",
+  "language": "Python",
+  "coverage": {
+    "line": 86.0,
+    "branch": 87.5
+  },
+  "timestamp": "2025-06-19T11:28:16.827774",
+  "original_path": "/workspace/runnable_filter/Python/asciimoo_drawille",
+  "test_result_path": "/workspace/test_enhancement_results/Python/asciimoo_drawille",
+  "tests_path": [
+    "tests.py",
+    "tests_drawille_extra.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

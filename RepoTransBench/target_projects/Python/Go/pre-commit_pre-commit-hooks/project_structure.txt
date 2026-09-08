@@ -1,0 +1,67 @@
+precommit_hooks/
+│
+├── go.mod
+├── run_tests.sh
+├── README.md
+│
+├── pre_commit_hooks/
+│   ├── check_added_large_files.go
+│   ├── check_builtin_literals.go
+│   ├── check_docstring_first.go
+│   ├── check_merge_conflict.go
+│   ├── check_toml.go
+│   ├── check_vcs_permalinks.go
+│   ├── string_fixer.go
+│   ├── ... (others)
+│
+├── tests/
+│   ├── original/
+│   │   ├── check_added_large_files_test.go
+│   │   ├── check_ast_test.go
+│   │   ├── check_builtin_literals_test.go
+│   │   ├── check_case_conflict_test.go
+│   │   ├── check_docstring_first_test.go
+│   │   ├── check_executables_have_shebangs_test.go
+│   │   ├── check_illegal_windows_names_test.go
+│   │   ├── check_json_test.go
+│   │   ├── check_merge_conflict_test.go
+│   │   ├── check_shebang_scripts_are_executable_test.go
+│   │   ├── check_symlinks_test.go
+│   │   ├── check_toml_test.go
+│   │   ├── check_vcs_permalinks_test.go
+│   │   ├── check_xml_test.go
+│   │   ├── check_yaml_test.go
+│   │   ├── debug_statement_hook_test.go
+│   │   ├── destroyed_symlinks_test.go
+│   │   ├── detect_aws_credentials_test.go
+│   │   ├── detect_private_key_test.go
+│   │   ├── end_of_file_fixer_test.go
+│   │   ├── file_contents_sorter_test.go
+│   │   ├── fix_byte_order_marker_test.go
+│   │   ├── forbid_new_submodules_test.go
+│   │   ├── mixed_line_ending_test.go
+│   │   ├── no_commit_to_branch_test.go
+│   │   ├── pretty_format_json_test.go
+│   │   ├── readme_test.go
+│   │   ├── removed_test.go
+│   │   ├── requirements_txt_fixer_test.go
+│   │   ├── sort_simple_yaml_test.go
+│   │   ├── string_fixer_test.go
+│   │   ├── tests_should_end_in_test_test.go
+│   │   ├── trailing_whitespace_fixer_test.go
+│   │   ├── util_test.go
+│   └── (other original tests...)
+│
+├── public_tests/
+│   ├── public_check_added_large_files_ext_test.go
+│   ├── public_check_string_fixer_ext_test.go
+│   ├── public_check_builtin_literals_ext_test.go
+│   ├── public_check_toml_ext_test.go
+│   ├── public_check_merge_conflict_ext_test.go
+│   ├── public_check_docstring_first_ext_test.go
+│   ├── public_setup_py_ext_test.go
+│   ├── public_check_vcs_permalinks_ext_test.go
+│   └── (future public tests...)
+│
+├── test_translation_progress.json
+└── (other config files)

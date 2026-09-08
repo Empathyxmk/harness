@@ -1,0 +1,41 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   ├── scenario_tree.py                  # Mocked scenario_tree for testing/coverage
+│   ├── simple_economic_dispatch.py       # Mocked simple_EconomicDispatch_YALMIP for testing/coverage
+│   └── two_stage_suc_tree.py             # Mocked TwoStage_SUC_tree for testing/coverage
+├── tests/
+│   ├── __init__.py
+│   └── original/                         # Directory for original Matlab test translations
+│       ├── __init__.py
+│       ├── test_simple_economic_dispatch_yalmip.py
+│       ├── test_scenario_tree.py
+│       ├── test_two_stage_suc_tree.py
+│       ├── test_scenario_tree_extended.py
+│       ├── test_scenario_tree_behavior.py
+│       └── test_scenario_tree_errors.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_simple_economic_dispatch_yalmip_public.py
+│   ├── test_scenario_tree_public.py
+│   ├── test_two_stage_suc_tree_public.py
+│   ├── test_scenario_tree_extended_public.py
+│   ├── test_scenario_tree_behavior_public.py
+│   └── test_scenario_tree_errors_public.py
+├── requirements.txt                      # Python dependencies for both src and tests
+├── run_tests.sh                          # Simple one-click test run script
+└── project_structure.txt                 # This file; describes project contents
+
+Directory & File Explanations:
+  src/                 - Contains Python implementations or stubs for tested functions.
+  tests/original/      - Original ("private") Matlab tests, fully translated to Python.
+  public_tests/        - Public/assignment-oriented test cases, fully translated.
+  requirements.txt     - Lists all required Python packages/dependencies.
+  run_tests.sh         - Single-command test runner for all tests.
+  project_structure.txt- Overview/explanation of the project layout and each area's purpose.
+
+Test Execution Instructions:
+1. (Optional) Create a virtualenv and activate it.
+2. Run `pip install -r requirements.txt` to install dependencies.
+3. Execute all tests with `./run_tests.sh`
+   - This script will run both original and public tests using pytest; output will show all results.

@@ -1,0 +1,17 @@
+OthersideAI_chronology_cpp/
+├── CMakeLists.txt                # Project build config with test & gtest integration
+├── README.md                     # Project intro, structure and developer instructions
+├── run_tests.sh                  # One-click test build & execution script
+├── include/
+│   └── chronological.h           # Public headers for package functions
+├── src/
+│   └── chronological.cpp         # Implementation source
+├── tests/
+│   ├── test_chronological.cpp            # Original test: dummy_add
+│   ├── test_chronological_extra.cpp      # Original test: dummy_mul
+│   ├── test_chronological_branches.cpp   # Original test: dummy_positive
+│   └── test_main.cpp                     # Test runner entrypoint
+├── public_tests/
+│   ├── test_public_chronological.cpp         # Public test: dummy_add
+│   ├── test_public_chronological_extra.cpp   # Public test: dummy_mul
+│   └── test_public_chronological_branches.cpp# Public test: dummy_positive

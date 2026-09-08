@@ -1,0 +1,35 @@
+.
+├── go.mod                         # Go module definition, sets the module name and Go version
+├── run_tests.sh                   # Simple script to run all tests with `go test ./...`
+├── project_structure.txt          # This file; documents the project structure and usage
+├── tests/
+│   ├── original/
+│   │   ├── application_test.go                    # Original test for Application
+│   │   ├── circle_menu_test.go                    # Dummy test for CircleMenu
+│   │   ├── example_unittest_test.go               # Simple arithmetic unit test
+│   │   ├── main_activity_test.go                  # MainActivity logic test with mocks
+│   │   ├── on_menu_selected_listener_test.go      # Listener test for menu selection
+│   │   ├── on_menu_status_change_listener_test.go # Listener test for menu status changes
+│   │   └── testutil.go                            # Place for helpers (none used here)
+├── public_tests/
+│   ├── application_public_test.go                  # Public test for Application
+│   ├── circle_menu_public_test.go                  # Public test for CircleMenu functionality
+│   ├── example_unit_public_test.go                 # Public arithmetic unit test
+│   ├── main_activity_public_test.go                # Public MainActivity test with multiple calls
+│   ├── on_menu_selected_listener_public_test.go    # Public Listener test for selection
+│   └── on_menu_status_change_listener_public_test.go # Public Listener test for menu status (public scenario)
+└── README.md                       # Project documentation
+
+DIRECTORY EXPLANATIONS:
+- tests/original/: Contains original tests translated from Java. Structure and logic preserved.
+- public_tests/: Contains public tests translated and slightly altered per public test logic.
+- run_tests.sh: One-click script for running all unit tests (`go test ./...`).
+- go.mod: Go module file.
+
+USAGE:
+1. Ensure Go (>=1.20) is installed and in your PATH.
+2. To run ALL tests (original & public): `./run_tests.sh`
+   - Or directly via: `go test ./...`
+3. Tests are organized following Go best practices; each test file is a `_test.go` and tests are `Test...` functions.
+
+No additional build configuration is necessary for standard Go tests.

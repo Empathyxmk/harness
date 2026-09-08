@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "test": "node tests/whitespace_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdorfman/Awesome-JSON-Datasets"
+  },
+  "license": "CC0 1.0",
+  "dependencies": {
+    "markdownlint": "^0.6.1"
+  },
+  "devDependencies": {
+    "jest": "^30.0.1",
+    "nyc": "^17.1.0"
+  }
+}

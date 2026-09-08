@@ -1,0 +1,35 @@
+.
+├── README.md                 # Project overview
+├── requirements.txt          # Python dependencies (pytest)
+├── run_tests.sh              # One-click test runner
+├── src/
+│   └── step.py               # (If ported logic for 'Step', for real system use)
+├── tests/
+│   ├── __init__.py
+│   ├── helper.py             # Test helper for original tests
+│   ├── callback_test.py      # Translated callbackTest.js
+│   ├── edge_case_test.py     # Translated edgeCaseTest.js
+│   ├── error_test.py         # Translated errorTest.js
+│   ├── fn_test.py            # Translated fnTest.js
+│   ├── group_test.py         # Translated groupTest.js
+│   └── parallel_test.py      # Translated parallelTest.js
+└── public_tests/
+    ├── __init__.py
+    ├── helper.py                 # Test helper for public tests
+    ├── callback_public_test.py   # Translated callback.public.test.js
+    ├── edge_case_public_test.py  # Translated edge_case.public.test.js
+    ├── error_public_test.py      # Translated error.public.test.js
+    ├── fn_public_test.py         # Translated fn.public.test.js
+    ├── group_public_test.py      # Translated group.public.test.js
+    └── parallel_public_test.py   # Translated parallel.public.test.js
+
+# Directory Explanations:
+# src/              - Source modules (Step implementation if ported)
+# tests/            - Original (private) translated test cases
+# public_tests/     - Public translated test cases
+# requirements.txt  - Python dependencies
+# run_tests.sh      - Run all tests with: ./run_tests.sh
+
+# Setup & Testing Instructions:
+# 1. Install dependencies: pip install -r requirements.txt
+# 2. Run all tests:        ./run_tests.sh

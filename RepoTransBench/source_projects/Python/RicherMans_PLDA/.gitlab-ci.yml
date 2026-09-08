@@ -1,0 +1,28 @@
+before_script:
+  - apt-get update
+  - apt-get upgrade -y && apt-get install -y cmake python-dev python-pip
+  - pip install -r pip_install.txt
+
+
+stages:
+  - build
+  - test
+
+
+build_app:
+  stage: build
+  tags:
+    - anaconda
+  script:
+    - mkdir build
+    - cd build
+    - cmake -DCMAKE_BUILD_TYPE=DEBUG ../
+    - make -j2
+
+
+test_app:
+  stage: test
+  tags:
+    - anaconda
+  script:
+    - python python/test.py

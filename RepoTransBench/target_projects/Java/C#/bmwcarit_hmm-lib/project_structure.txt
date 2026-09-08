@@ -1,0 +1,23 @@
+bmwcarit_hmm-lib-dotnet/
+├── bmwcarit_hmm-lib.sln
+├── src/
+│   └── BmwcaritHmmLib/
+│       ├── BmwcaritHmmLib.csproj
+│       ├── (Placeholder for library source: ForwardBackwardAlgorithm.cs, ...)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── TransitionTest.cs
+│       ├── ForwardBackwardAlgorithmTest.cs
+│       ├── SequenceStateTest.cs
+│       ├── UtilsTest.cs
+│       └── ViterbiAlgorithmTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── TransitionPublicTest.cs
+│   ├── ForwardBackwardAlgorithmPublicTest.cs
+│   ├── SequenceStatePublicTest.cs
+│   ├── UtilsPublicTest.cs
+│   └── ViterbiAlgorithmPublicTest.cs
+├── run_tests.sh
+└── test_translation_progress.json

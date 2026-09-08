@@ -1,0 +1,41 @@
+jwise_HoRNDIS Python Project Structure
+
+.
+├── requirements.txt           # Python dependency file (requires pytest)
+├── run_tests.sh               # Simple script to run all tests (original and public)
+├── project_structure.txt      # This file: overview and directory explanations
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py
+│   │   └── test_HoRNDIS.py   # Original (private/coverage) test ported from test_HoRNDIS.cpp
+├── public_tests/
+│   ├── __init__.py
+│   └── test_HoRNDIS_public.py # Public test ported from test_HoRNDIS_public.cpp
+
+Directory/Files Breakdown:
+--------------------------
+requirements.txt
+    - Specifies required Python packages for running tests (pytest is used).
+
+run_tests.sh
+    - Makes sure dependencies are installed, and runs ALL tests (both original and public) with pytest.
+    - Usage: chmod +x run_tests.sh && ./run_tests.sh
+
+tests/original/
+    - Contains Python translations of private/original (non-public) C++ tests.
+
+public_tests/
+    - Contains Python translations of public C++ tests (used for released/public validation).
+
+__init__.py files
+    - Make directories recognized as Python packages by test frameworks.
+
+project_structure.txt
+    - Documentation for project and testing structure.
+
+Instructions:
+-------------
+1. Install Python 3.x (if not installed).
+2. Make script executable: chmod +x run_tests.sh
+3. Run all tests:        ./run_tests.sh
+   - This installs dependencies and runs both original and public test suites.

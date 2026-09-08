@@ -1,0 +1,20 @@
+glb-director/
+├── Cargo.toml          # Rust package configuration
+├── src/
+│   ├── lib.rs          # Library implementation with all functions
+│   └── main.rs         # Main executable
+├── tests/
+│   ├── mod.rs          # Test module configuration
+│   ├── original/       # Original tests (from test_glb_director.c)
+│   │   ├── mod.rs      # Original tests module configuration
+│   │   └── test_glb_director.rs
+│   └── public/         # Public tests (from test_glb_director_public.c)
+│       ├── mod.rs      # Public tests module configuration
+│       └── test_glb_director_public.rs
+└── run_tests.sh        # Test execution script
+
+Key Components:
+- src/lib.rs: Contains all function implementations (add, sum, is_palindrome, sign, max_of_three, average, factorial)
+- tests/original/: Contains original tests for add, is_palindrome, and sign functions
+- tests/public/: Contains public tests for sum, is_palindrome, max_of_three, average, and factorial functions
+- run_tests.sh: Simple script to run all tests with a single command

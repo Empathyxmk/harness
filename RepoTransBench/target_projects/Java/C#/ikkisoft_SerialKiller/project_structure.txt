@@ -1,0 +1,21 @@
+project_root/
+├── ProjectName.sln
+├── src/
+│   └── Ikkisoft.SerialKiller/
+│       ├── Ikkisoft.SerialKiller.csproj
+│       └── (core .cs files - not included in this test translation batch)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── ConfigurationTest.cs
+│       ├── PatternListTest.cs
+│       ├── SerialKillerSpeedTest.cs
+│       └── SerialKillerTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── ConfigurationPublicTest.cs
+│   ├── PatternListPublicTest.cs
+│   ├── SerialKillerPublicTest.cs
+│   └── SerialKillerSpeedPublicTest.cs
+├── run_tests.sh
+├── test_translation_progress.json

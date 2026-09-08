@@ -1,0 +1,105 @@
+{
+  "project_name": "caoym_jjvm",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T15:20:50.992847",
+  "original_path": "/workspace/verified_repos_v2/Java/caoym_jjvm",
+  "public_test_result_path": "/workspace/public_test_results/Java/caoym_jjvm",
+  "iterations_completed": 12,
+  "token_usage_stats": {
+    "project_structure_tokens": 643,
+    "test_files_tokens": 1929,
+    "test_files_count": 8,
+    "source_files_tokens": 0,
+    "source_files_count": 0,
+    "total_content_tokens": 2572,
+    "average_tokens_per_test_file": 241,
+    "average_tokens_per_source_file": 0
+  },
+  "original_tests": {
+    "test_files": [
+      "src/test/java/org/caoym/jjvm/JJvmTest.java",
+      "src/test/java/org/caoym/jjvm/VirtualMachineTest.java",
+      "src/test/java/org/caoym/jjvm/JvmDefaultClassLoaderTest.java",
+      "src/test/java/org/caoym/jjvm/lang/JvmFieldMethodTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 4,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/org/caoym/jjvm/JJvmPublicTest.java",
+      "src/test/java/org/caoym/jjvm/VirtualMachinePublicTest.java",
+      "src/test/java/org/caoym/jjvm/JvmDefaultClassLoaderPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/org/caoym/jjvm/lang/JvmFieldMethodPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/org/caoym/jjvm/JJvmPublicTest.java",
+      "src/test/java/org/caoym/jjvm/VirtualMachinePublicTest.java",
+      "src/test/java/org/caoym/jjvm/JvmDefaultClassLoaderPublicTest.java",
+      "src/test/java/org/caoym/jjvm/lang/JvmFieldMethodPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/org/caoym/jjvm/JJvmPublicTest.java",
+      "src/test/java/org/caoym/jjvm/VirtualMachinePublicTest.java",
+      "src/test/java/org/caoym/jjvm/JvmDefaultClassLoaderPublicTest.java",
+      "src/test/java/org/caoym/jjvm/lang/JvmFieldMethodPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/org/caoym/jjvm/JJvmPublicTest.java",
+      "src/test/java/org/caoym/jjvm/VirtualMachinePublicTest.java",
+      "src/test/java/org/caoym/jjvm/JvmDefaultClassLoaderPublicTest.java",
+      "src/test/java/org/caoym/jjvm/lang/JvmFieldMethodPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/org/caoym/jjvm/JJvmPublicTest.java",
+      "src/test/java/org/caoym/jjvm/VirtualMachinePublicTest.java",
+      "src/test/java/org/caoym/jjvm/JvmDefaultClassLoaderPublicTest.java",
+      "src/test/java/org/caoym/jjvm/lang/JvmFieldMethodPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 26,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/org/caoym/jjvm/JJvmPublicTest.java",
+    "src/test/java/org/caoym/jjvm/VirtualMachinePublicTest.java",
+    "src/test/java/org/caoym/jjvm/JvmDefaultClassLoaderPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/org/caoym/jjvm/lang/JvmFieldMethodPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/org/caoym/jjvm/JJvmPublicTest.java",
+    "src/test/java/org/caoym/jjvm/VirtualMachinePublicTest.java",
+    "src/test/java/org/caoym/jjvm/JvmDefaultClassLoaderPublicTest.java",
+    "src/test/java/org/caoym/jjvm/lang/JvmFieldMethodPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/org/caoym/jjvm/JJvmPublicTest.java",
+    "src/test/java/org/caoym/jjvm/VirtualMachinePublicTest.java",
+    "src/test/java/org/caoym/jjvm/JvmDefaultClassLoaderPublicTest.java",
+    "src/test/java/org/caoym/jjvm/lang/JvmFieldMethodPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/org/caoym/jjvm/JJvmPublicTest.java",
+    "src/test/java/org/caoym/jjvm/VirtualMachinePublicTest.java",
+    "src/test/java/org/caoym/jjvm/JvmDefaultClassLoaderPublicTest.java",
+    "src/test/java/org/caoym/jjvm/lang/JvmFieldMethodPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/org/caoym/jjvm/JJvmPublicTest.java",
+    "src/test/java/org/caoym/jjvm/VirtualMachinePublicTest.java",
+    "src/test/java/org/caoym/jjvm/JvmDefaultClassLoaderPublicTest.java",
+    "src/test/java/org/caoym/jjvm/lang/JvmFieldMethodPublicTest.java",
+    "run_public_tests.sh"
+  ]
+}

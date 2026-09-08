@@ -1,0 +1,81 @@
+{
+  "project_name": "ai-forever_gigachat",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:16:31.933938",
+  "original_path": "/workspace/verified_repos_v2/Python/ai-forever_gigachat",
+  "public_test_result_path": "/workspace/public_test_results/Python/ai-forever_gigachat",
+  "original_tests": {
+    "test_files": [
+      "tests/unit_tests/gigachat/test_settings.py",
+      "tests/unit_tests/gigachat/test_assistants.py",
+      "tests/unit_tests/gigachat/test_models.py",
+      "tests/unit_tests/gigachat/test_examples.py",
+      "tests/unit_tests/gigachat/test_client.py",
+      "tests/unit_tests/gigachat/test_threads.py",
+      "tests/unit_tests/gigachat/test_get_image.py",
+      "tests/unit_tests/gigachat/api/test_stream_chat.py",
+      "tests/unit_tests/gigachat/api/test_post_auth.py",
+      "tests/unit_tests/gigachat/api/test_post_chat.py",
+      "tests/unit_tests/gigachat/api/test_get_models.py",
+      "tests/unit_tests/gigachat/api/test_post_token.py",
+      "tests/unit_tests/gigachat/api/test_get_model.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 13,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_settings.py",
+      "public_tests/test_public_assistants.py",
+      "public_tests/__init__.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_models.py",
+      "public_tests/test_public_examples.py",
+      "public_tests/test_public_client.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_models.py",
+      "public_tests/test_public_examples.py",
+      "public_tests/test_public_client.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_client.py",
+      "public_tests/test_public_assistants.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_models.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 16,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_settings.py",
+    "public_tests/test_public_assistants.py",
+    "public_tests/__init__.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_models.py",
+    "public_tests/test_public_examples.py",
+    "public_tests/test_public_client.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_models.py",
+    "public_tests/test_public_examples.py",
+    "public_tests/test_public_client.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_client.py",
+    "public_tests/test_public_assistants.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_models.py"
+  ]
+}

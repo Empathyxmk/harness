@@ -1,0 +1,18 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_startup.py
+│   │   ├── test_proposal_visual_debug.py
+│   │   ├── test_proposal_config.py
+│   │   └── test_faster_rcnn_build.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_startup_public.py
+│   ├── test_proposal_config_public.py
+│   ├── test_proposal_visual_debug_public.py
+│   └── test_faster_rcnn_build_public.py

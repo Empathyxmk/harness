@@ -1,0 +1,21 @@
+intere_hacking/
+├── Cargo.toml             # Project configuration and dependencies
+├── src/
+│   ├── main.rs            # Main application entry point
+│   ├── lib.rs             # Library code exports
+│   └── bin/               # Binary implementations
+│       ├── auth_overflow.rs
+│       ├── commandline.rs
+│       ├── crypt_test.rs
+│       └── dtors_sample.rs
+├── tests/                 # Original tests directory
+│   ├── test_auth_overflow.rs
+│   ├── test_commandline.rs
+│   ├── test_crypt_test.rs
+│   └── test_dtors_sample.rs
+├── public_tests/          # Public tests directory
+│   ├── test_auth_overflow_public.rs
+│   ├── test_commandline_public.rs
+│   ├── test_crypt_test_public.rs
+│   └── test_dtors_sample_public.rs
+└── run_tests.sh           # Test execution script

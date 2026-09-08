@@ -1,0 +1,34 @@
+hootsuite_grid_python/
+├── src/
+│   ├── __init__.py                # (empty init for src package)
+│   └── gridList.py                # Source implementation (to be implemented)
+├── tests/
+│   ├── __init__.py                # For test discovery, can be empty
+│   └── original/
+│       ├── __init__.py            # For original test discovery (none in this project)
+├── public_tests/
+│   ├── __init__.py                # For test discovery, can be empty
+│   └── test_gridList_public.py    # Public test cases (translated from JS)
+├── requirements.txt               # Python dependencies (pytest)
+├── run_tests.sh                   # Simple script to run all tests
+├── README.md                      # (Add basic documentation for usage/setup)
+└── project_structure.txt          # This file, documents project layout
+
+Directory explanations:
+- src/:                Source package for main implementation (e.g., GridList class)
+- tests/original/:     Directory reserved for original/internal tests (none in this repo, left for future extension)
+- public_tests/:       Contains all public test cases, converted from JavaScript
+- requirements.txt:    Project dependency list (pytest)
+- run_tests.sh:        Run all tests easily with ./run_tests.sh
+- README.md:           Usage/setup documentation (to be written)
+- project_structure.txt: This project structure overview file
+
+Setup/Testing instructions:
+1. (Optional) Create virtual environment:
+   python3 -m venv venv && source venv/bin/activate
+2. Install dependencies:
+   pip install -r requirements.txt
+3. Run all tests:
+   ./run_tests.sh
+
+Python test targets (pytest) will run all test files in tests/ and public_tests/.

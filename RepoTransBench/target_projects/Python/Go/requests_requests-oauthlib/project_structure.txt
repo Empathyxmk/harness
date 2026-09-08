@@ -1,0 +1,28 @@
+requests_requests-oauthlib/
+├── AUTHORS.rst
+├── HISTORY.rst
+├── LICENSE
+├── MANIFEST.in
+├── README.md
+├── README.rst
+├── SECURITY.md
+├── docs/
+├── go.mod
+├── go.sum
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── compliance_fixes_test.go
+│       ├── core_test.go
+│       ├── init_and_setup_test.go
+│       ├── oauth1_session_test.go
+│       ├── oauth2_auth_test.go
+│       ├── oauth2_session_test.go
+│       └── ...
+├── public_tests/
+│   ├── public_core_test.go
+│   ├── public_init_and_setup_test.go
+│   ├── public_oauth2_auth_test.go
+│   ├── public_oauth2_session_test.go
+│   └── ...
+├── (other files/folders)

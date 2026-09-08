@@ -1,0 +1,17 @@
+project_root/
+├── requirements.txt                 # Python dependencies for project and test frameworks
+├── run_tests.sh                     # Simple script to run all tests with pytest
+├── public_tests/
+│   ├── test_Action_public.py        # Translated public Action test cases in Python
+│   └── test_Promise_public.py       # Translated public Promise test cases in Python
+│
+# (Original JS tests would go in tests/original/ or tests/ if translated)
+#
+# Directory Explanations:
+# - public_tests/: Contains all public test cases, visible for public/candidate testing.
+# - requirements.txt: Specifies project dependencies, here only pytest for tests.
+# - run_tests.sh: Bash script for one-command execution of ALL tests.
+#
+# Setup & Test Instructions:
+# 1. Install dependencies: `pip install -r requirements.txt`
+# 2. Run all tests: `./run_tests.sh`

@@ -1,0 +1,12 @@
+thebjorn_pydeps/
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── file_test.go
+│       ├── json_test.go
+│       ├── funny_names_test.go
+├── public_tests/
+│   ├── public_file_test.go
+│   ├── public_funny_names_test.go
+│   ├── public_json_test.go

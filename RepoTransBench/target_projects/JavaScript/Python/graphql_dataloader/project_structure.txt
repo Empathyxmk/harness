@@ -1,0 +1,44 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   └── dataloader.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_abuse.py
+│       ├── test_browser.py
+│       ├── test_dataloader.py
+│       ├── test_oldbrowser.py
+│       └── test_unhandled.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_abuse_public.py
+│   ├── test_browser_public.py
+│   ├── test_dataloader_public.py
+│   ├── test_oldbrowser_public.py
+│   └── test_unhandled_public.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+
+Explanations:
+- src/: Source code for DataLoader implementation (dataloader.py).
+- tests/original/: Translated original test cases from the original JavaScript tests.
+- public_tests/: Translated public tests from the JS repo's public_tests directory.
+- requirements.txt: Lists project dependencies (pytest).
+- run_tests.sh: Simple shell script to run all tests with pytest (one-click).
+- project_structure.txt: This file (structure overview).
+
+Test/Run Instructions:
+1. Create a Python 3+ virtual environment:
+   python3 -m venv venv
+   source venv/bin/activate
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. To run all tests:
+   ./run_tests.sh
+
+   This runs both the original and public tests using pytest.

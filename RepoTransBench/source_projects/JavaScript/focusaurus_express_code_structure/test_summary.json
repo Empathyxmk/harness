@@ -1,0 +1,20 @@
+{
+  "project_name": "focusaurus_express_code_structure",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 96.5,
+    "branch": 80.8
+  },
+  "timestamp": "2025-06-19T10:26:30.317154",
+  "original_path": "/workspace/runnable_filter/JavaScript/focusaurus_express_code_structure",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/focusaurus_express_code_structure",
+  "tests_path": [
+    "app/index.tape.js",
+    "app/customers/customer-model.tape.js",
+    "app/customers/router.tape.js",
+    "app/site/router.tape.js",
+    "app/users/need-user.tape.js",
+    "app/users/router.tape.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

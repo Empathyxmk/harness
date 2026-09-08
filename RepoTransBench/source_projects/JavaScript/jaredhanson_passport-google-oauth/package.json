@@ -1,0 +1,15 @@
+{
+  "name": "jaredhanson_passport-google-oauth",
+  "version": "1.0.0",
+  "description": "Test package for passport-google-oauth",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --require test/bootstrap/node 'test/**/*.test.js'",
+    "coverage": "nyc --reporter=text --reporter=html npm test"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "mocha": "^10.8.2",
+    "nyc": "^15.0.0"
+  }
+}

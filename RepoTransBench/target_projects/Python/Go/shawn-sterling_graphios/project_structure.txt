@@ -1,0 +1,30 @@
+project_root/
+├── go.mod
+├── main.go (stub or your Go logic code)
+├── graphios.go (your Go implementation if ported)
+├── tests/
+│   └── original/
+│       ├── test_graphios_test.go
+│       ├── test_graphios_backends_test.go
+│       └── test_setup_test.go
+├── public_tests/
+│   ├── test_public_graphios_test.go
+│   ├── test_public_graphios_backends_test.go
+│   └── test_public_setup_test.go
+├── run_tests.sh
+├── project_structure.txt
+
+# Directory explanations:
+# go.mod                - Go module file
+# main.go, graphios.go  - Your Go source implementation (should be placed here)
+# tests/original/       - Original (author) test cases, translated from Python
+# public_tests/         - Public test cases, as per public Python tests
+# run_tests.sh          - One-command runner for all tests
+# project_structure.txt - This file (structure and explanation)
+
+# Test execution:
+# Run: ./run_tests.sh
+# This will execute all tests recursively.
+
+# To add code:
+# Implement the appropriate Go code in main.go/graphios.go (matching expected function signatures/types).

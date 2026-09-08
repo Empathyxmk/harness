@@ -1,0 +1,11 @@
+{
+  "project_name": "Cybereason_Logout4Shell",
+  "language": "Java",
+  "coverage": {
+    "line": 66.7,
+    "branch": 55.6
+  },
+  "timestamp": "2025-06-19T18:54:10.751525",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/Cybereason_Logout4Shell",
+  "test_result_path": "/workspace/test_enhancement_results/Java/Cybereason_Logout4Shell"
+}

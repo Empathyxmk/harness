@@ -1,0 +1,45 @@
+macbre_sql-metadata-java/
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/example/sqlmetadata/
+│   │           └── ... (put main Java implementation here)
+│   └── test/
+│       └── java/
+│           └── com/example/sqlmetadata/
+│               ├── original/
+│               │   ├── All original test case files here (one class per test file, *Test.java suffix)
+│               └── public/
+│                   ├── All public test case files here (from public_tests/)
+├── public_tests/
+│   └── test.sql
+├── pom.xml
+├── run_tests.sh
+├── README.md
+├── project_structure.txt
+
+Directory details:
+
+- src/main/java/com/example/sqlmetadata/:
+    Main Java source files (implement Parser, QueryType, etc).
+
+- src/test/java/com/example/sqlmetadata/original/:
+    All original (full coverage) tests, organized by file, named *Test.java.
+
+- src/test/java/com/example/sqlmetadata/public/:
+    Public test cases only, mimicking public_tests contents in Java.
+
+- public_tests/test.sql:
+    Raw SQL file for complex alias test. Used by several tests for realistic SQL bodies.
+
+- pom.xml:
+    Maven project file. Handles dependencies for JUnit 5 and Mockito.
+
+- run_tests.sh:
+    Run all tests in one command.
+
+- README.md:
+    Instructions for building and running tests.
+
+- project_structure.txt:
+    This structure description.

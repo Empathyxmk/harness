@@ -1,0 +1,54 @@
+MengRao_tscns Python Translation Project Structure and Documentation
+
+Project Root
+│
+├── requirements.txt            # Python dependencies (pytest)
+├── run_tests.sh                # Simple shell script to run all tests
+│
+├── src/                        # All implementation source code
+│   ├── __init__.py             # Makes src a Python package
+│   └── tscns.py                # Python version of TSCNS API (for test harness)
+│
+├── tests/                      # Original (private/internal) tests
+│   ├── original/               # "Original" C++ tests translated to Python
+│   │   ├── __init__.py
+│   │   └── test_tscns.py       # All original tests from "tscns_test.cc"
+│
+├── public_tests/               # Public (example or assignment) tests
+│   ├── __init__.py
+│   └── test_tscns_public.py    # All public test logic from "tscns_public_test.cpp"
+│
+├── project_structure.txt       # This file
+│
+└── README.md                   # (Optional manual)
+                                 
+= Directory explanations =
+
+src/:
+    Contains all necessary source modules/classes (here, only tscns.py)
+    tscns.py is an API scaffold with realistic-enough logic for all tests to execute
+
+tests/original/:
+    Contains Python translations of original project test files, using pytest.
+    Use: pytest tests/original/
+
+public_tests/:
+    Contains Python translations of public test cases.
+    Use: pytest public_tests/
+
+run_tests.sh:
+    Runs ALL tests in all test folders above (pytest auto-discovers).
+
+requirements.txt:
+    All dependencies needed for project and testing (here, only pytest).
+
+How to set up and run tests:
+-------------------------------------------------
+1. (Optional, but recommended) Use a virtualenv:
+      python3 -m venv venv && source venv/bin/activate
+2. Install dependencies:
+      pip install -r requirements.txt
+3. Run all tests:
+      ./run_tests.sh
+   (Or run specific groups: pytest tests/original/, pytest public_tests/)
+-------------------------------------------------

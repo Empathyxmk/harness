@@ -1,0 +1,26 @@
+.
+├── go.mod
+├── run_tests.sh
+├── README.md
+├── project_structure.txt
+├── tests/
+│   ├── original/
+│   │   ├── configuration_test.go
+│   │   ├── exampleinstrumentedtest_test.go
+│   │   ├── exampleinstrumentedtest2_test.go
+│   │   ├── exampleunittest_test.go
+│   │   ├── exampleinstrumentedpublictest_test.go
+│   │   ├── filehelper_test.go
+│   │   ├── filehelperminimal_test.go
+│   │   ├── singlewritermultiplereaderfile_test.go
+│   │   ├── squareimageview_test.go
+│   │   └── db/
+│   │       ├── ruledatabase_test.go
+│   │       ├── ruledatabaseitemupdaterunnable_test.go
+│   │       ├── ruledatabaseupdatetask_test.go
+│   │       ├── ruledatabaseupdatejobservice_test.go
+│   │   └── vpn/
+│   │       └── vpnwatchdog_test.go
+├── public_tests/
+│   ├── exampleinstrumentedpublic_test.go
+│   ├── exampleunitpublic_test.go

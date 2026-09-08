@@ -1,0 +1,15 @@
+mod test_dictionary_loading;
+mod test_extract_fuzzy;
+mod test_extractor;
+mod test_file_load;
+mod test_kp_exceptions;
+mod test_kp_extract_span;
+mod test_kp_get_all_keywords;
+mod test_kp_len;
+mod test_kp_next_word;
+mod test_kp_term_in_kp;
+mod test_loading_keyword_list;
+mod test_remove_keywords;
+mod test_replace_fuzzy;
+mod test_replacer;
+mod test_setup_py;

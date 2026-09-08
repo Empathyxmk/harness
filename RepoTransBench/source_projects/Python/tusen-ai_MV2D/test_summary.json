@@ -1,0 +1,18 @@
+{
+  "project_name": "tusen-ai_MV2D",
+  "language": "Python",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T13:01:17.196259",
+  "original_path": "/workspace/runnable_filter/Python/tusen-ai_MV2D",
+  "test_result_path": "/workspace/test_enhancement_results/Python/tusen-ai_MV2D",
+  "tests_path": [
+    "tests/test_configs_exp_attributes.py",
+    "tests/test_configs_data_py.py",
+    "tests/test_configs_exp_py.py",
+    "tests/test_configs_data_full_coverage.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

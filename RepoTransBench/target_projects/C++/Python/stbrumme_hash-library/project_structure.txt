@@ -1,0 +1,13 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── public_tests/
+│   ├── __init__.py
+│   └── test_crc32_md5_sha1_sha256_keccak_public.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_crc32_md5_sha1_sha256_keccak.py
+│       └── test_tests_vecs.py

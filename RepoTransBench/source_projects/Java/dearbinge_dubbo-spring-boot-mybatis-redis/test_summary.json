@@ -1,0 +1,11 @@
+{
+  "project_name": "dearbinge_dubbo-spring-boot-mybatis-redis",
+  "language": "Java",
+  "coverage": {
+    "line": 56.9,
+    "branch": 51.3
+  },
+  "timestamp": "2025-06-19T08:52:53.672046",
+  "original_path": "/workspace/runnable_filter/Java/dearbinge_dubbo-spring-boot-mybatis-redis",
+  "test_result_path": "/workspace/test_enhancement_results/Java/dearbinge_dubbo-spring-boot-mybatis-redis"
+}

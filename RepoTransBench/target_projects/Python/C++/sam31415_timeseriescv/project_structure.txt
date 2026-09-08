@@ -1,0 +1,37 @@
+sam31415_timeseriescv_cpp/
+├── src/
+│   └── [put library source code here, e.g., main.cpp, lib modules]
+├── include/
+│   └── [C++ header files for your library]
+├── tests/
+│   ├── test_main.cpp            # Test runner main()
+│   └── original/
+│       ├── test_cross_validation.cpp
+│       ├── test_cross_validation_errors.cpp
+│       └── cross_validation_stub.h  # Stubs for classes to enable test compilation
+├── public_tests/
+│   ├── test_public_cross_validation.cpp
+│   └── test_public_cross_validation_errors.cpp
+├── CMakeLists.txt               # Build configuration for all tests
+├── run_tests.sh                 # Simple one-click script to build+run all tests
+└── project_structure.txt        # (THIS FILE) Documentation of project tree
+
+Directory explanations:
+- src/:         Your actual library implementation (not included in this test translation). Place your C++ translation of `timeseriescv.cross_validation` here.
+- include/:     Public and private headers for your library.
+- tests/:       All original (private/internal) tests, translated from Python. 
+                Folder 'original/' keeps the original test cases.
+                tests/test_main.cpp is the unified test entry point using Google Test.
+- public_tests/:  Translated public test cases, one file per test file.
+- CMakeLists.txt: Build configuration for Google Test project.
+- run_tests.sh:   Simple script to build and execute all tests with a single command.
+- project_structure.txt:  This file.
+
+Setup/Usage instructions:
+1. Ensure Google Test (GTest) is installed on your system.
+2. Place your library source files (C++ port of the actual timeseriescv.cross_validation code)
+   into 'src/' and 'include/' directories as necessary.
+3. Run tests with:
+       ./run_tests.sh
+   from the project root.
+4. All original and public tests will be built and run.

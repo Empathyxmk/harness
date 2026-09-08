@@ -1,0 +1,20 @@
+supersaiyanmode_pywebostv/
+├── go.mod                            # Go module definition file
+├── run_tests.sh                      # Simple script to run all Go tests (make executable: chmod +x run_tests.sh)
+├── README.md                         # Project documentation (add Go-specific setup and usage info here)
+├── pywebostv/                        # (Placeholder for Go ported library implementation, if needed)
+├── tests/                            # Original tests translated from Python to Go
+│   ├── original/                     # Folder for original comprehensive tests
+│   │   ├── controls_test.go
+│   │   ├── connection_test.go
+│   │   ├── discovery_test.go
+│   │   ├── model_test.go
+│   │   ├── setup_test.go
+│   │   └── testutil.go               # Test helpers/mocks (e.g., FakeClient, FakeMouseClient)
+├── public_tests/                     # Public test suite, suitable for open/external consumption
+│   ├── public_controls_test.go
+│   ├── public_connection_test.go
+│   ├── public_discovery_test.go
+│   ├── public_model_test.go
+│   ├── public_setup_test.go
+│   └── testutil.go                   # Test helpers/mocks for public tests

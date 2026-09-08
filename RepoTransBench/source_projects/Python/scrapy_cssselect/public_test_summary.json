@@ -1,0 +1,50 @@
+{
+  "project_name": "scrapy_cssselect",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:22:51.626269",
+  "original_path": "/workspace/verified_repos_v2/Python/scrapy_cssselect",
+  "public_test_result_path": "/workspace/public_test_results/Python/scrapy_cssselect",
+  "original_tests": {
+    "test_files": [
+      "tests/test_cssselect.py",
+      "tests/test_api_imports.py",
+      "tests/test_xpath_expr.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_api_imports.py",
+      "public_tests/test_public_xpath_expr.py",
+      "public_tests/test_public_cssselect.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_cssselect.py",
+      "public_tests/test_public_cssselect.py",
+      "public_tests/test_public_cssselect.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_api_imports.py",
+    "public_tests/test_public_xpath_expr.py",
+    "public_tests/test_public_cssselect.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_cssselect.py",
+    "public_tests/test_public_cssselect.py",
+    "public_tests/test_public_cssselect.py"
+  ]
+}

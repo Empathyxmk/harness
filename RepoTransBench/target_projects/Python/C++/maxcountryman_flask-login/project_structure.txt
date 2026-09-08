@@ -1,0 +1,22 @@
+project_root/
+├── CMakeLists.txt            # Top-level CMake config, finds and adds tests and src
+├── README.md                 # Usage, setup, and test instructions
+├── run_tests.sh              # One-click test runner for all tests
+├── src/
+│   ├── CMakeLists.txt        # Src build recipe for library
+│   ├── about.h/.cpp          # About info and deprecation warning mock
+│   ├── config.h/.cpp         # Static config values for tests
+│   ├── mixins.h/.cpp         # UserMixin/AnonymousUserMixin logic
+│   └── test_client.h/.cpp    # FlaskLoginClient mock and DummyUserLike
+├── tests/
+│   ├── test_main.cpp         # GTest main entry point
+│   ├── test_about.cpp        # Test about warnings and attributes
+│   ├── test_config.cpp       # Test config values
+│   └── test_mixins.cpp       # Tests for (Anonymous)UserMixin logic
+│   └── original/             # (Optional: place other original Python tests here, ported to C++)
+├── public_tests/
+│   ├── test_public_about.cpp     # Public test for about warnings
+│   ├── test_public_client.cpp    # Public test for FlaskLoginClient
+│   ├── test_public_config.cpp    # Public test for config settings
+│   ├── test_public_login.cpp     # Public test for login manager
+│   └── test_public_mixins.cpp    # Public test for (Anonymous)UserMixin logic

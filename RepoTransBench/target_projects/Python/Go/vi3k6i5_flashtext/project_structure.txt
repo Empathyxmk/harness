@@ -1,0 +1,48 @@
+project_root/
+├── go.mod                            # Go modules file for dependency management
+├── run_tests.sh                      # Script to run all Go tests in one command
+├── README.md                         # Project overview and usage info
+├── main.go                           # Main package file (could be a stub for library)
+├── flashtext/
+│   └── keyword_processor.go          # Go implementation of KeywordProcessor (to create)
+├── tests/
+│   ├── original/
+│   │   ├── extract_fuzzy_test.go
+│   │   ├── kp_len_test.go
+│   │   ├── kp_term_in_kp_test.go
+│   │   ├── setup_py_test.go
+│   │   ├── dictionary_loading_test.go
+│   │   ├── kp_next_word_test.go
+│   │   ├── replace_fuzzy_test.go
+│   │   ├── extractor_test.go
+│   │   ├── kp_get_all_keywords_test.go
+│   │   ├── kp_exceptions_test.go
+│   │   ├── file_load_test.go
+│   │   ├── replacer_test.go
+│   │   ├── loading_keyword_list_test.go
+│   │   ├── kp_extract_span_test.go
+│   │   └── remove_keywords_test.go
+│   └── testutil.go                   # Shared helpers/utilities for Go tests (to create as needed)
+├── public_tests/
+│   ├── extract_fuzzy_test.go
+│   ├── kp_len_test.go
+│   ├── kp_term_in_kp_test.go
+│   ├── setup_py_test.go
+│   ├── dictionary_loading_test.go
+│   ├── kp_next_word_test.go
+│   ├── replace_fuzzy_test.go
+│   ├── extractor_test.go
+│   ├── kp_get_all_keywords_test.go
+│   ├── kp_exceptions_test.go
+│   ├── file_load_test.go
+│   ├── replacer_test.go
+│   ├── loading_keyword_list_test.go
+│   ├── kp_extract_span_test.go
+│   ├── remove_keywords_test.go
+│   └── ... (other public test Go files)
+└── testdata/
+    ├── keyword_remover_test_cases.json
+    ├── keyword_extractor_test_cases.json
+    ├── keywords_format_one.txt
+    ├── keywords_format_two.txt
+    └── ... (any other data files used in tests)

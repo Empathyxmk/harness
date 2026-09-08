@@ -1,0 +1,166 @@
+CHANGES
+=======
+
+master
+------
+
+0.7.3
+-----
+* PATENTS: Updated to version 2 (http://fb.me/patents2)
+* CPPServerTask: new module sparts.tasks.thrift.cppserver uses TCppServer wrapper from fbthrift
+* ThriftServer: support for TMultiplexedProcessor in server via MULTIPLEX=True
+* ThriftClient: support for TMultiplexedProtocol in client via `multiplex_service` kwarg
+* fileutils: added `readfilebytes`, `writefilebytes` for raw binary bulk IO
+* SelectTask: play more nicely with frameworks that steal sys.stdout
+* DirectoryWatcherTask: log warning instead of crash if directory doesn't exist
+* ThriftClient: detect usage errors in constructor more easily
+* bugfix: fix sparts.thrift.compiler.compile() convenience method
+* Split sparts.tasks.thrift into submodules, handler, server, nbserver
+
+0.7.2
+------
+* bugfix: Unbreak default values for VService options with names with underscores
+* bugfix: Improve stability of dbus implementation with multithreading
+* PeriodicTask.execute_async(): returns a future that succeeds or raises upon successful
+  completion (or an exception occurs) in the next execute call.
+* dbus: Allow dbus to be used (e.g., for signal handling) even if thrift isn't installed
+* dbus: Added support for system bus by passing --{task}-system-bus
+* TryLater.after: implement after kwarg to TryLater to wait seconds before retrying (PeriodicTask)
+* Updated six dependency to require >= 1.5.0
+
+0.7.1
+-----
+* bugfix: pypi 0.7.0 release has broken logging due to uncommitted changes.  Use 0.7.1 instead.
+* VService.DEFAULT_LOGFILE and --logfile option to log to a file instead of stderr
+* bugfix: race condition in tasks.select popen helpers bay result in false negative result
+* bugfix: VTask.OPT_PREFIX can now contain "-"
+* `sparts.tasks.tui` introduces a UITask suitable for building npycurses UIs that play nicely with sparts
+* `sparts.collections` introduces a PriorityQueue and UniqueQueue
+* `sparts.tasks.select` introduces a SelectTask, helpers for working with Popen
+* `sparts.tasks.queue` introduces a PriorityQueueTask and UniqueQueueTask
+
+0.6.1
+------
+* Fix vservice initialization when daemonize is not installed
+* Add `map` and `submit` API to QueueTask
+
+0.6.0
+-----
+* Support for POSIX daemonization helpers (--daemonize, --kill, --status, etc) if `daemonize` is installed.
+* ThriftHandlerTask subclasses now verify it implements MODULE.Iface
+* `QueueTask` new counters: queue_depth, n_trylater, n_unhandled, n_completed, execute_duration_ms
+* Add http-based thrift support to sparts.thrift.client
+* Tasks now accessible via attributes on `service.tasks` by name and via `get()` and `require()`
+* Fixed a race condition in deferred errback handling in QueueTask
+* ExecuteContext (for QueueTask) now supports a `future` keyword argument.
+* `sparts.timer` with `Timer` class for tracking timings
+* `sparts.counters.Callback` counter that take a callback to be called to return the value.
+* Better support for counters defined in `initTask()` (instead of declaratively)
+* New function: sparts.timer.run_until_true(f, timeout)
+* Improved unittest stability
+* Improved support for v6
+* Improved support for fbthrift
+
+0.5.1
+-----
+* Renamed FB303ProcessorTask to FB303HandlerTask
+* NBServerTask can now specify a MODULE to dictate which thrift handler task should be used
+  in the event that more than one has been registered.
+* Changed thrift handler semantics: you must set a MODULE instead of PROCESSOR on things now
+
+
+0.5.0
+-----
+* Moved counters from sparts.sparts to sparts.counters
+* Fix some bugs in DirectoryWatcherTask, counters
+* Add an initService() hook to VService
+* Added a hook to do per-thread Task-specific initialization, initTaskThread()
+* `sparts.thrift.client` with ThriftClient helper to reduce synchronous thrift client boilerplate
+* Basic python3 support, python2.6 support via `six` dependency.
+* `sparts.ctx` module with common helpful context managers
+* `sparts.thrift.compiler` with helpers to generate thrift on-the-fly
+* Various unittest, documentation improvements
+* Handle string args to sparts.tasks.twisted_command.CommandTask better
+
+0.4.1
+-----
+* Fixed a major bug that prevents mixing tasks that have both samples and standard counters
+* Fixed logspew in (thrift) NBServerTask shutdown
+* Improved unittest usability and performance significantly
+
+0.4.0
+-----
+* New tasks.twisted_command.CommandTask for executing and tailing commands in subprocesses
+* Shutdown on unhandled exceptions in tasks, initialization
+* Support for `required`, `choices` in option()s
+* PeriodicTask (and subclasses) now handle thrown TryLater correctly
+* Make TornadoTask (subclasses) implicitly DEP TornadoIOLoopTask
+* initFromCLI() takes an optional `name` kwarg for using VService directly
+* Support shutdown from other tasks
+* bugfix in 'store_true' options always returning True even when False
+* bugfix in TwistedReactorTask for failed worker processes: may interfere with signal handlers
+
+0.3.1
+-----
+* Declarative heirarchical Counters and Samples support
+* FB303 integration with sparts counters
+* "name" is no longer required for declarative options
+* Support global Task registry as an alternetive to VService subclassing
+* Implement DEPS for VTask declarative dependencies
+* Add blocking getValue(timeout=None) to PollerTask
+* Minor logging improvements, new counter for TornadoHTTPTask
+* bugfix in http_thrift demo
+* bugfix for subclasses in VService.requireTask() and .getTask()
+* bugfix in runit support
+
+0.2.3
+-----
+* Implemented PollerTask
+* Support runit installation if psutil is installed
+* bugfix in PeriodicTask when calculating sleep times
+
+
+0.2.2.2
+-------
+* Remove unittests from distro
+
+0.2.2.1
+-------
+* Support building/installing via pip
+
+0.2.2
+-----
+* Add new DBusServiceTask::addHandlers() to make it easier to add handlers 
+* Fix TornadoTask to support binding multiple interfaces properly
+* Add deferred / callback support to QueueTask
+* Support binding TornadoTask to a UNIX socket
+
+0.2.1
+-----
+* Hooks to improve dbus extensibility
+
+0.2.0
+-----
+* Export FB303 over dbus
+* Implemented various other sparts-specific services for dbus
+* Some dbus API changes since 0.1.4 (forcing a minor version update)
+
+0.1.4
+-----
+* dbus tasks
+
+0.1.3
+-----
+* task "workers" attribute to set number of worker threads
+* new task, sparts.tasks.queue.QueueTask
+* tweak thread name based on number of workers, worker id
+
+0.1.2
+-----
+* reverse task stop order
+* improved ipv6 / multi-if support for HTTP
+* twisted reactor, base twisted tasks
+* re-generate (fb303) thrift bindings during setup.py build
+* argparse instantiation tweaks
+* serveBG() service method
+* added unittests

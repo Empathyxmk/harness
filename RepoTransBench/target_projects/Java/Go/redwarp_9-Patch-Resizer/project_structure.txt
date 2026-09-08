@@ -1,0 +1,29 @@
+redwarp_9_patch_resizer/
+├── go.mod                      # Go module file, manages dependencies
+├── run_tests.sh                # One-click test execution script
+├── tests/
+│   └── original/
+│       ├── filetools_test.go           # Original FileTools tests
+│       ├── imagewriter_test.go         # Original ImageWriter tests
+│       └── output_test.go              # Original Output enum tests
+├── public_tests/
+│   ├── filetools_public_test.go        # Public FileTools tests
+│   ├── imagewriter_public_test.go      # Public ImageWriter tests
+│   └── output_public_test.go           # Public Output enum tests
+└── project_structure.txt        # This documentation file
+
+Directory Overview:
+- tests/original/: All original Java JUnit test translations, mapped to Go's `testing` package.
+- public_tests/: Public (open) test cases, mapped from *PublicTest.java files in Java.
+- go.mod: Go module/dependency file.
+- run_tests.sh: Minimal shell script to execute all tests across the repo.
+
+How to run tests:
+1. Ensure you have Go 1.20 or later and `github.com/stretchr/testify` installed (done automatically via `go mod tidy`).
+2. Run `./run_tests.sh` from project root.
+3. Both `tests/original/` and `public_tests/` suites will be discovered and run by Go's test tooling.
+
+Test logic:
+- All file/image tests create and clean up temporary files.
+- All error and edge cases from the Java tests are implemented in Go.
+- All original and public test separation is preserved.

@@ -1,0 +1,18 @@
+{
+  "project_name": "fed135_Kalm",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 91.62,
+    "branch": 75.34
+  },
+  "timestamp": "2025-06-19T10:23:55.074837",
+  "original_path": "/workspace/runnable_filter/JavaScript/fed135_Kalm",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/fed135_Kalm",
+  "tests_path": [
+    "tests/unit/Store.extra.spec.js",
+    "tests/unit/index.extra.spec.js",
+    "tests/unit/toplevel-index.spec.js",
+    "tests/unit/Timer.extra.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

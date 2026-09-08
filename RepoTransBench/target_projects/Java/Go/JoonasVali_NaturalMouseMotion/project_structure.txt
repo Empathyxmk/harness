@@ -1,0 +1,32 @@
+project_root/
+├── go.mod                      # Go module definition file
+├── run_tests.sh                # One-click test execution script (runs all tests)
+├── README.md                   # Project and usage documentation
+├── main.go                     # (Placeholder for main pkg or example code if needed)
+├── module.go                   # (Placeholder for shared logic or struct if needed)
+├── tests/
+│   ├── testutil.go             # Test utils, shared mocks/stubs for original tests
+│   └── original/
+│       ├── flow_test.go                             # FlowTest.java
+│       ├── flow_util_test.go                        # FlowUtilTest.java
+│       ├── mouse_motion_test_base.go                # MouseMotionTestBase.java (infrastructure)
+│       ├── mouse_motion_test.go                     # MouseMotionTest.java
+│       ├── headless_env_test.go                     # HeadlessEnvTest.java
+│       ├── math_util_test.go                        # MathUtilTest.java
+│       ├── movement_factory_test.go                 # MovementFactoryTest.java
+│       ├── default_overshoot_manager_test.go        # DefaultOvershootManagerTest.java
+│       ├── screenadjustednature_test.go             # ScreenAdjustedNatureTest.java
+│       ├── extended_screen_test.go                  # ExtendedScreenTest.java
+│       ├── negative_test.go                         # NegativeTest.java
+│       └── screenadjustednature_defaults_test.go    # ScreenAdjustedNatureDefaultsTest.java
+├── public_tests/
+│   ├── flow_public_test.go
+│   ├── flow_util_public_test.go
+│   ├── mouse_motion_public_test.go
+│   ├── math_util_public_test.go
+│   ├── screenadjustednature_public_test.go
+│   ├── screenadjustednature_defaults_public_test.go
+│   ├── negative_public_test.go
+│   ├── extended_screen_public_test.go
+│   ├── default_overshoot_manager_public_test.go
+│   └── movement_factory_public_test.go

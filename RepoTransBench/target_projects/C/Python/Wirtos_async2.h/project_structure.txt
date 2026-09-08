@@ -1,0 +1,45 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   └── async2.py
+│       - Python implementation and stubs for async2 API.
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_async2_api.py
+│       ├── test_async2_arr_edgecases.py
+│       ├── test_example_main.py
+│       └── test_integration_async2.py
+│           - Original (private) tests translated from C.
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_async2_api.py
+│   ├── test_async2_arr_edgecases.py
+│   └── test_example_main.py
+│       - Public tests (less-case revealing) for async2 API.
+├── requirements.txt
+│   - Python dependencies (pytest)
+├── run_tests.sh
+│   - One-click test script (runs all tests)
+└── project_structure.txt
+    - This file.
+
+Directory explanations:
+- src/: Python codebase and API stubs (replace async2.py with your real code as needed)
+- tests/original/: Original (“private”) test translations matching the source project’s C coverage, including integration coverage.
+- public_tests/: Public-facing tests derived from public source tests
+- requirements.txt: Installs pytest for testing
+- run_tests.sh: Run all tests via 'pytest'
+- project_structure.txt: This file (describes layout)
+
+**Setup & Testing instructions:**
+1. Install Python 3.7+.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run all tests: `./run_tests.sh`
+
+To run only original or public tests:
+- pytest tests/original/
+- pytest public_tests/
+
+**Test output**: Standard pytest output, passes/fails for all cases, replicating C test logic.

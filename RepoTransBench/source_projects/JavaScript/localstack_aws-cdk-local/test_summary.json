@@ -1,0 +1,15 @@
+{
+  "project_name": "localstack_aws-cdk-local",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 96.42
+  },
+  "timestamp": "2025-06-19T10:53:22.686246",
+  "original_path": "/workspace/runnable_filter/JavaScript/localstack_aws-cdk-local",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/localstack_aws-cdk-local",
+  "tests_path": [
+    "__tests__/index.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

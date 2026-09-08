@@ -1,0 +1,48 @@
+Project Structure: Broadroad_map (Rust)
+
+.
+├── Cargo.toml
+├── README.md
+├── run_tests.sh
+├── src
+│   ├── lib.rs        # Library root: re-exports modules
+│   ├── map.rs        # Map implementation API stub (to be implemented)
+│   └── rbtree.rs     # Red-black tree API stub (to be implemented)
+├── public_tests
+│   ├── test_map_public.rs      # Translation of test_map_public.c
+│   └── test_rbtree_public.rs   # Translation of test_rbtree_public.c
+├── tests
+│   └── original
+│       ├── test_map.rs         # Original test_map.c translated to Rust
+│       └── test_rbtree.rs      # Original test_rbtree.c translated to Rust
+
+# Directory Explanation
+
+- src/: Primary library modules.
+  - Implements the 'map' and 'rbtree' structures/APIs used in all tests. 
+  - At present, only stubs are included; you must complete them.
+
+- tests/original/: Translated original tests from the C project.
+  - test_map.rs: Covers basic and edge-case map/rbtree operations.
+  - test_rbtree.rs: Red-black tree correctness & structural tests.
+  - Uses standard Rust #[test] unit test framework.
+
+- public_tests/: Translated public test suite (as in challenge/exam/public case settings).
+  - test_map_public.rs, test_rbtree_public.rs: Public evaluation cases.
+  - Use #[test] and can be run via 'cargo test' as integration tests.
+
+- Cargo.toml: Standard Rust manifest.
+- run_tests.sh: Ultra-simple script to run all tests.
+- README.md: Usage and high-level notes.
+
+# Test Execution
+
+1. Make sure you have Rust (cargo) installed.
+2. Run:
+   ./run_tests.sh
+   (or alternatively, cargo test)
+
+# Implementation Instructions
+
+- To make tests pass, implement the required APIs for 'map' and 'rbtree' in src/map.rs and src/rbtree.rs.
+- The test stubs are structured exactly after their C source, with full feature and edge-case parity.

@@ -1,0 +1,32 @@
+analang_como_lang_ng/
+├── Cargo.toml                    # Rust project manifest
+├── src/
+│   └── lib.rs                    # Library code (simulates stubs for test dependencies)
+├── tests/
+│   ├── original/
+│   │   ├── test_como_ast.rs          # Translated original test (dummy AST test)
+│   │   ├── test_como_executor.rs     # Translated original executor test
+│   │   ├── test_como_io.rs           # Translated original IO test
+│   │   ├── test_como_opcode.rs       # Translated original opcode test
+│   │   └── test_como_stack.rs        # Translated original stack test
+│   └── public/
+│       ├── test_como_ast_public.rs       # Translated public AST test
+│       ├── test_como_executor_public.rs  # Translated public executor test
+│       ├── test_como_io_public.rs        # Translated public IO test
+│       ├── test_como_opcode_public.rs    # Translated public opcode test
+│       └── test_como_stack_public.rs     # Translated public stack test
+├── run_tests.sh                  # One-click all-test runner
+├── README.md                     # Documentation and usage info
+├── project_structure.txt         # This file: project overview
+#
+# Directory explanations:
+#   src/            - Library source code (minimal stubs & scaffolding for test targets)
+#   tests/original/ - Translation of original C unit tests
+#   tests/public/   - Translation of public “reference” tests (sometimes generated from C)
+#   run_tests.sh    - Simple script to execute all test suites
+#
+# To run tests:
+#   chmod +x run_tests.sh
+#   ./run_tests.sh
+#
+# All tests are written with Rust’s standard #[test] framework and can be individually run with `cargo test`.

@@ -1,0 +1,21 @@
+{
+  "project_name": "gregmalcolm_python_koans",
+  "language": "Python",
+  "coverage": {
+    "line": 76.0,
+    "branch": 83.7
+  },
+  "timestamp": "2025-06-19T11:46:23.540613",
+  "original_path": "/workspace/runnable_filter/Python/gregmalcolm_python_koans",
+  "test_result_path": "/workspace/test_enhancement_results/Python/gregmalcolm_python_koans",
+  "tests_path": [
+    "runner/runner_tests/test_path_to_enlightenment.py",
+    "runner/runner_tests/test_mountain.py",
+    "runner/runner_tests/test_helper.py",
+    "runner/runner_tests/test_scent.py",
+    "runner/runner_tests/test_mock.py",
+    "runner/runner_tests/test_contemplate_koans.py",
+    "runner/runner_tests/test_sensei.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

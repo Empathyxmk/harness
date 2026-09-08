@@ -1,0 +1,29 @@
+project_root/
+├── src/
+│   └── unicore.py                # Python mock implementation for Unicore parser interface (for tests)
+├── tests/
+│   └── original/
+│       └── test_unicore_parser.py  # Translation of gps-parser-test.cpp (all original tests)
+├── public_tests/
+│   └── test_unicore_parser_public.py   # Translation of gps-parser-public-test.cpp (all public tests)
+├── requirements.txt              # Python test dependencies
+├── run_tests.sh                  # One-click test script
+└── project_structure.txt         # This file: project structure and setup notes
+
+---
+Directory explanations:
+- src/: contains the Python implementation (possibly a thin test harness or fully implemented translation as needed by the tests)
+- tests/original/: contains original, non-public/internal test cases
+- public_tests/: contains public-facing translated tests (e.g. for OJ or user validation)
+- requirements.txt: use `pip install -r requirements.txt` to install dependencies.
+- run_tests.sh: use `./run_tests.sh` to run all tests (original and public).
+- project_structure.txt: explanation of layout and setup instructions
+
+Setup & Usage:
+1. Install dependencies:
+      pip install -r requirements.txt
+2. Run all tests:
+      ./run_tests.sh
+   (or just 'pytest' from the command line)
+
+All tests use pytest. No additional configuration is needed.

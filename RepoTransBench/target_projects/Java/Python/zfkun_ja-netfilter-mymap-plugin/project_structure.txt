@@ -1,0 +1,30 @@
+zfkun_ja-netfilter-mymap-plugin (Python Port)
+├── requirements.txt         # Python dependencies (pytest)
+├── run_tests.sh             # One-click test script for all tests (original & public)
+├── README.md                # Project info and setup instructions
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_map_transformer.py     # Original test cases for MapTransformer
+│       ├── test_put_filter.py          # Original test cases for PutFilter
+│       └── test_my_plugin_entry.py     # Original test cases for MyPluginEntry
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_map_transformer_public.py  # Public test cases for MapTransformer
+│   ├── test_put_filter_public.py       # Public test cases for PutFilter
+│   └── test_my_plugin_entry_public.py  # Public test cases for MyPluginEntry
+
+# Directory explanations:
+# - requirements.txt: Declares python dependencies (pytest only needed for tests)
+# - run_tests.sh: Executes all test suites from both tests/original/ and public_tests/
+# - tests/original/: Original test cases (translated from Java)
+# - public_tests/: Public tests (translated from Java *PublicTest.java)
+# - __init__.py files: Ensure directories are treated as packages; empty files.
+# - Each test file is independent and includes required minimal test implementations.
+# 
+# Setup & testing instructions:
+#  1. Install dependencies: `pip install -r requirements.txt`
+#  2. Run all tests: `./run_tests.sh`
+#  3. All code under test is embedded with each respective test file for stand-alone testability, 
+#     matching the behavior of the Java test logic.

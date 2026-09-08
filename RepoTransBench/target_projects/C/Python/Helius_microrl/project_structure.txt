@@ -1,0 +1,23 @@
+project_root/
+├── src/                                # Contains the Python equivalent of the microrl library (mocked)
+│   └── microrl/
+│       ├── __init__.py                 # Makes microrl a Python package
+│       └── microrl.py                  # Mock implementation of microrl C functions and struct
+├── tests/                              # Directory for all test cases
+│   ├── __init__.py                     # Makes tests a Python package
+│   ├── original/                       # Original test cases translated from C
+│   │   ├── __init__.py                 # Makes original tests a Python package
+│   │   └── test_microrl.py             # Translated test_microrl.c
+│   └── public/                         # Public test cases translated from C
+│       ├── __init__.py                 # Makes public tests a Python package
+│       └── test_microrl_public.py      # Translated test_microrl_public.c
+├── requirements.txt                    # Lists Python dependencies (e.g., pytest)
+├── run_tests.sh                        # Script to install dependencies and run all tests
+└── project_structure.txt               # This document detailing the project structure
+
+Setup and Testing Instructions:
+1.  Navigate to the project_root directory.
+2.  Make the run_tests.sh script executable: `chmod +x run_tests.sh`
+3.  Run all tests using the script: `./run_tests.sh`
+    The script will first install the required Python packages (pytest) from `requirements.txt`
+    and then execute all tests found in the `tests/` directory (both original and public).

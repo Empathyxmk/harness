@@ -1,0 +1,11 @@
+cgaebel_pipe/           # project root
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   └── original/
+│       ├── pipe_test.rs
+│       └── pipe_test_more.rs
+├── public_tests/
+│   └── pipe_public_test.rs
+├── run_tests.sh

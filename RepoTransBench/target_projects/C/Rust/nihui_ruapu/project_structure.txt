@@ -1,0 +1,15 @@
+nihui_ruapu/
+├── Cargo.toml             # Rust project configuration
+├── build.rs               # Build script to compile C code
+├── ruapu.h                # Original C header file (to be copied from source)
+├── src/
+│   ├── lib.rs             # Rust FFI bindings to the C code
+│   ├── main.rs            # Simple main file
+│   └── ruapu-binding.c    # C binding file including ruapu.h
+├── tests/
+│   ├── original.rs        # Integration test file for original tests
+│   └── original/
+│       └── mod.rs         # Original tests translated to Rust
+├── public_tests/
+│   └── public_tests.rs    # Public tests translated to Rust
+└── run_tests.sh           # Script to run all tests

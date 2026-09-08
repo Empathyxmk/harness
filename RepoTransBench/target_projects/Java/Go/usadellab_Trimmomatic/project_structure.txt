@@ -1,0 +1,27 @@
+usadellab_trimmomatic/
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── tests/
+│   └── original/
+│       ├── pairomatic_test.go
+│       ├── trimstats_test.go
+│       └── trimmomatic_test.go
+├── public_tests/
+│   ├── pairomatic_public_test.go
+│   ├── trimstats_public_test.go
+│   └── trimmomatic_public_test.go
+└── README.md
+
+Descriptions:
+- go.mod: Go module definition for dependency management.
+- run_tests.sh: Simple one-click script to execute all Go tests recursively.
+- project_structure.txt: Overview and explanation of the Go repository structure.
+- tests/original/: Contains Go translations of all "original" (internal) test cases from the Java project.
+- public_tests/: Contains Go translations of all "public" tests.
+- README.md: Documentation and instructions (to be added).
+
+How to run tests:
+1. Ensure you have Go installed (go 1.18+ recommended).
+2. From the project root, run: ./run_tests.sh
+3. All original and public tests will run automatically.

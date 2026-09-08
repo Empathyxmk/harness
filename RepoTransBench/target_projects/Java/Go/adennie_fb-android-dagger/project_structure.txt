@@ -1,0 +1,19 @@
+project_root/
+├── go.mod                        # Go module definition and dependency configuration
+├── run_tests.sh                  # Simple script to run all Go tests
+├── tests/
+│   ├── original/
+│   │   ├── injectingactionbaractivity_test.go      # Original InjectingActionBarActivity tests (Go)
+│   │   ├── injectingactivitymodule_test.go         # Original InjectingActivityModule tests (Go)
+│   │   ├── injectingfragmentmodule_test.go         # Original InjectingFragmentModule tests (Go)
+│   │   ├── injectingpreferenceactivity_test.go     # Original InjectingPreferenceActivity tests (Go)
+│   │   ├── injectingpreferencefragment_test.go     # Original InjectingPreferenceFragment tests (Go)
+│   │   ├── preconditions_test.go                   # Preconditions tests (Go)
+│   └── testutil.go                 # Test helpers and mocks used by both test classes
+├── public_tests/
+│   ├── injectingactionbaractivity_public_test.go   # Public test for InjectingActionBarActivity
+│   ├── injectingactivitymodule_public_test.go      # Public test for InjectingActivityModule
+│   ├── injectingfragmentmodule_public_test.go      # Public test for InjectingFragmentModule
+│   ├── injectingpreferenceactivity_public_test.go  # Public test for InjectingPreferenceActivity
+│   ├── injectingpreferencefragment_public_test.go  # Public test for InjectingPreferenceFragment
+│   ├── preconditions_public_test.go                # Public test for Preconditions/checks

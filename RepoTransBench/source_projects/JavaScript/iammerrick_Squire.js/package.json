@@ -1,0 +1,25 @@
+{
+  "name": "squirejs",
+  "main": "./src/Squire",
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "babel-jest": "^30.0.1",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha": "~0.4.7",
+    "jest": "^30.0.1",
+    "nyc": "^17.1.0",
+    "playwright": "^1.53.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iammerrick/Squire.js"
+  },
+  "version": "0.2.1",
+  "author": "Merrick Christensen <merrick.christensen@gmail.com> (http://www.merrickchristensen.com/)",
+  "contributors": [
+    "Jamison Dance <jergason@gmail.com> (http://jamisondance.com)"
+  ]
+}

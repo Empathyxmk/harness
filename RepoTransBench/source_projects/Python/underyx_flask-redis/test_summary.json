@@ -1,0 +1,11 @@
+{
+  "project_name": "underyx_flask-redis",
+  "language": "Python",
+  "coverage": {
+    "line": 96.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:37:50.164603",
+  "original_path": "/workspace/test_enhancement_results/Python/underyx_flask-redis",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/underyx_flask-redis"
+}

@@ -1,0 +1,50 @@
+{
+  "project_name": "ikr_money-math",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:29:33.853394",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/ikr_money-math",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/ikr_money-math",
+  "original_tests": {
+    "test_files": [
+      "spec/money.spec.js",
+      "spec/money-extra.spec.js",
+      "spec/unit-money-internal.spec.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/money.public.test.js",
+      "public_tests/money-extra.public.test.js",
+      "public_tests/unit-money-internal.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/money-extra.public.test.js",
+      "public_tests/unit-money-internal.public.test.js",
+      "public_tests/unit-money-internal.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/money.public.test.js",
+    "public_tests/money-extra.public.test.js",
+    "public_tests/unit-money-internal.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/money-extra.public.test.js",
+    "public_tests/unit-money-internal.public.test.js",
+    "public_tests/unit-money-internal.public.test.js"
+  ]
+}

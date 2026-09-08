@@ -1,0 +1,19 @@
+thebjorn_pydeps_rs/
+├── Cargo.toml
+├── run_tests.sh
+├── project_structure.txt
+├── src/
+│   ├── lib.rs
+│   ├── filemaker.rs
+│   ├── simpledeps.rs
+│   └── test_helpers.rs
+├── tests/
+│   └── original/
+│       ├── test_file.rs
+│       ├── test_json.rs
+│       ├── test_funny_names.rs
+│       └── test_skip.rs
+├── public_tests/
+│   ├── test_public_file.rs
+│   ├── test_public_funny_names.rs
+│   └── test_public_json.rs

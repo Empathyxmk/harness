@@ -1,0 +1,45 @@
+.
+├── CMakeLists.txt
+├── README.md
+├── include/
+│   └── (header files for library code if necessary)
+├── public_tests/
+│   ├── handlers/
+│   │   ├── test_public_aws_handler.cpp
+│   │   ├── test_public_gcp_handler.cpp
+│   │   └── test_public_local_handler.cpp
+│   ├── middleware/
+│   │   ├── test_public_starlette.cpp
+│   │   └── test_public_starlite.cpp
+│   ├── test_public_dispatcher.cpp
+│   ├── test_public_event_payload_schema_registry.cpp
+│   ├── test_public_init_and_errors.cpp
+│   ├── test_public_middleware_core.cpp
+│   ├── test_public_setup_py.cpp
+│   └── test_public_typing.cpp
+├── run_tests.sh
+├── src/
+│   └── (core library implementation files if needed)
+├── tests/
+│   └── original/
+│       ├── handlers/
+│       │   ├── test_aws_handler.cpp
+│       │   ├── test_gcp_handler.cpp
+│       │   └── test_local_handler.cpp
+│       ├── middleware/
+│       │   ├── test_starlette.cpp
+│       │   └── test_starlite.cpp
+│       ├── test_dispatcher.cpp
+│       ├── test_event_payload_schema_registry.cpp
+│       ├── test_init_and_errors.cpp
+│       ├── test_middleware_core.cpp
+│       ├── test_setup_py.cpp
+│       └── test_typing.cpp
+
+Description:
+
+- `src/` and `include/`: Placeholders for implementation, not needed just for running tests, but included for C++ conventions.
+- `tests/original/`: Full translation of core/original Python tests to C++. Split in subdirectories for `handlers/` and `middleware/` as in Python.
+- `public_tests/`: C++ versions of public-API tests only. Mirror structure of Python's `public_tests/`.
+- `CMakeLists.txt`: Handles fetching Google Test, scanning all test .cpps, and setting up test binaries.
+- `run_tests.sh`: One-command build and test execution.

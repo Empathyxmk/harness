@@ -1,0 +1,45 @@
+redwarp-9patch-resizer-cs/
+├── src/
+│   └── Redwarp.NinePatchResizer/
+│       ├── Redwarp.NinePatchResizer.csproj
+│       ├── FileTools.cs                 # (Stubbed/main logic - not included, only class skeletons, for compilation)
+│       ├── worker/
+│       │   ├── Output.cs
+│       │   └── ImageWriter.cs
+│       └── Properties/
+│           └── AssemblyInfo.cs
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── FileToolsTests.cs            # From FileToolsTest.java
+│       ├── OutputTests.cs               # From OutputTest.java
+│       └── ImageWriterTests.cs          # From ImageWriterTest.java
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── FileToolsPublicTests.cs          # From FileToolsPublicTest.java
+│   ├── OutputPublicTests.cs             # From OutputPublicTest.java
+│   └── ImageWriterPublicTests.cs        # From ImageWriterPublicTest.java
+├── Redwarp.NinePatchResizer.sln         # Solution for both src and tests
+├── run_tests.sh                         # Simple script for running all tests
+├── README.md                            # Project usage/intro
+└── project_structure.txt                # (this file)
+
+Directory/Organization Notes:
+- src/Redwarp.NinePatchResizer: Main source code (business logic), C# project.
+  * worker/: Sub-namespace folder, mimicking original Java package
+  * .cs files here are stubbed with class skeletons to ensure the test projects build.
+- tests/original: Original Java tests (FileToolsTest, OutputTest, ImageWriterTest), translated to C# and using xUnit or MSTest.
+- public_tests: Public Java tests (FileToolsPublicTest, OutputPublicTest, ImageWriterPublicTest), translated to C#.
+- *.csproj files: Project files for .NET, referencing required dependencies (e.g., xunit, MSTest, System.Drawing.Common).
+- Redwarp.NinePatchResizer.sln: Solution file including source and both test projects.
+- run_tests.sh: Runs all tests in the solution via dotnet CLI.
+- README.md: Usage and developer guide.
+
+Build & Run Instructions:
+1. Prerequisites: .NET 6+ SDK
+2. Build solution: `dotnet build`
+3. Run ALL tests: `./run_tests.sh`
+4. To run only original tests: `dotnet test tests/original/`
+5. To run only public tests: `dotnet test public_tests/`
+
+Test/Source code coverage is identical to the original Java test logic.

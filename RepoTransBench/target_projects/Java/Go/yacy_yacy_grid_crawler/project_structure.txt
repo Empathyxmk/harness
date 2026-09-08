@@ -1,0 +1,30 @@
+project_root/
+├── go.mod                       # Go module/dependency definition
+├── main.go                      # (implement actual core logic here)
+├── module.go                    # (implement core module logic here)
+├── README.md                    # Documentation and usage instructions
+├── run_tests.sh                 # Single-click test executor for all Go tests
+├── tests/
+│   ├── original/
+│   │   ├── blacklist_test.go
+│   │   ├── crawler_test.go
+│   │   ├── crawlerlistener_test.go
+│   │   ├── crawlstartservicetest.go
+│   │   ├── crawlerdefaultvaluesservicetest.go
+│   │   └── democoveragetest.go
+│   ├── testutil.go              # All test helpers and stubs for mocks
+├── public_tests/
+│   ├── blacklist_public_test.go
+│   ├── crawler_public_test.go
+│   ├── crawlerlistener_public_test.go
+│   ├── crawlstartservice_public_test.go
+│   ├── crawlerdefaultvaluesservice_public_test.go
+│   └── democoverage_public_test.go
+└── project_structure.txt        # This file: project structure tree and explanations
+
+- `tests/original/`: Direct Go translations of Java original tests
+- `tests/testutil.go`: Mocks and helpers needed for all (original/public) tests
+- `public_tests/`: Go translations of Java public test suite, logic mirrors public variants
+- `main.go`, `module.go`: Place actual core logic here (`Blacklist`, `Crawler`, ...)
+- `go.mod`: Manages Go module/dependency versions (`testify` for assertions in tests)
+- `run_tests.sh`: One-click script to run all tests with `go test ./...`

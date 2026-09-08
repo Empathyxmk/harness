@@ -1,0 +1,22 @@
+.
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── tadeck/
+│   │               └── onetimepass/
+│   │                   └── Onetimepass.java      # (library main, to be implemented)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── tadeck/
+│                   └── onetimepass/
+│                       ├── original/
+│                       │   ├── OnetimepassCoreTest.java
+│                       │   └── OnetimepassExtraTest.java
+│                       └── publictests/
+│                           ├── PublicOnetimepassCoreTest.java
+│                           └── PublicOnetimepassExtraTest.java
+└── project_structure.txt

@@ -1,0 +1,40 @@
+tartley_colorama/
+├── colorama/                    # Translated source code (Go implementations if/when porting main logic)
+├── tests/
+│   ├── original/                # Original test cases translated from Python to Go
+│   │   ├── ansi_test.go
+│   │   ├── ansi_test_extra.go
+│   │   ├── ansitowin32_test.go
+│   │   ├── ansitowin32_test_extra.go
+│   │   ├── imports_test.go
+│   │   ├── initialise_test.go
+│   │   ├── initialise_test_branch.go
+│   │   ├── initialise_test_extra.go
+│   │   ├── isatty_test.go
+│   │   ├── win32_test.go
+│   │   ├── win32_test_extra.go
+│   │   ├── winterm_test.go
+│   │   ├── winterm_test_branch.go
+│   │   └── winterm_test_extra.go
+│   └── testutil.go              # Shared test helpers for Go, if applicable
+├── public_tests/                # Public test cases translated from Python to Go
+│   ├── test_public_initialise.go
+│   ├── test_public_win32.go
+│   └── test_public_winterm.go
+├── go.mod                       # Go module file
+├── run_tests.sh                 # Simple script to run all tests
+├── README.md                    # Project documentation
+└── project_structure.txt        # This file, project structure and explanation
+
+# Directory explanations:
+# - colorama/: main package source code (you must port the core to Go for a working lib; this translation is focused on tests)
+# - tests/original/: tests mapping to the original maintainer's test suite, full branch and edge coverage
+# - public_tests/: public-available subset of tests (for assignment/public sharing/CI gate)
+# - run_tests.sh: minimal test runner for all suites (uses go test ./...)
+# - go.mod: module/dependency management
+#
+# To run ALL tests, simply:
+#   chmod +x run_tests.sh
+#   ./run_tests.sh
+#
+# This will discover and run all tests in /tests/original and /public_tests.

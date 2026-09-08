@@ -1,0 +1,30 @@
+project_root/
+├── src/
+│   └── koajs_static.py         # Minimal implementation stub for test execution
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_index.py       # ALL original test cases for index.js
+│       └── test_index_extra.py # Original extra test cases
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_index_extra_public.py # Public extra test variants
+│   └── test_index_public.py       # Public main variants
+├── requirements.txt           # Python dependencies for tests
+├── run_tests.sh               # One-click test execution for all tests
+└── project_structure.txt      # This file
+
+# Directory Explanations:
+# src/koajs_static.py -- Contains a minimal server and stubbed functions for tests to import. Replace with real static server implementation for production.
+# tests/original/ -- Contains translations of the original JavaScript tests (index.js and index.extra.js).
+# public_tests/    -- Contains public test variants with different fixtures/URIs as done in the JS public tests.
+# requirements.txt -- Python testing dependencies (pytest, requests, aiohttp).
+# run_tests.sh     -- Simple bash script to run all tests with pytest.
+# __init__.py      -- Required to treat folders as Python packages.
+# project_structure.txt -- This structure README/explanation.
+
+# Setup/Testing Instructions:
+# 1. Install requirements:      pip install -r requirements.txt
+# 2. Run all tests:             ./run_tests.sh
+# 3. Both original and public test suites will be executed.

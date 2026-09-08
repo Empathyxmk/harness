@@ -1,0 +1,33 @@
+Flet_prettier-bytes Python Project Structure
+===========================================
+
+.
+├── src/
+│   └── flet_prettier_bytes/
+│       └── __init__.py        # Implementation of prettier_bytes()
+├── tests/
+│   └── original/
+│       └── test_index_extra.py   # Translation of the original suite's main edge/negative tests
+├── public_tests/
+│   └── test_index_extra_public.py  # Translation of the public edge/negative/alternate tests
+├── requirements.txt            # Python dependencies (pytest)
+├── run_tests.sh                # Simple script: run all tests with pytest
+└── project_structure.txt       # This project structure and instructions
+
+Directory Explanations
+----------------------
+* src/flet_prettier_bytes/: Contains the implementation of `prettier_bytes()`.
+* tests/original/: Contains tests directly translated from the original (private) JavaScript tests.
+* public_tests/: Contains public/alternate test suite.
+* requirements.txt: Python dependencies (install via `pip install -r requirements.txt`).
+* run_tests.sh: Shell script – run `chmod +x run_tests.sh` and execute with `./run_tests.sh` to run all tests (original + public).
+* project_structure.txt: This document.
+
+Setup and Testing Instructions
+------------------------------
+1. **Install dependencies**: `pip install -r requirements.txt`
+2. **Run all tests**:       `./run_tests.sh`
+3. **Run specific tests**:  `pytest tests/original/`
+4. **Run public tests**:    `pytest public_tests/`
+
+Test coverage, logic, and error handling match the original and public JavaScript test suites.

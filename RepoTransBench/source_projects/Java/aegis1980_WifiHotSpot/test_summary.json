@@ -1,0 +1,11 @@
+{
+  "project_name": "aegis1980_WifiHotSpot",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:12:50.323363",
+  "original_path": "/workspace/test_enhancement_results/Java/aegis1980_WifiHotSpot",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/aegis1980_WifiHotSpot"
+}

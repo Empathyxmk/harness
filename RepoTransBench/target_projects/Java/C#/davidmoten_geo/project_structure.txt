@@ -1,0 +1,116 @@
+davidmoten_geo/
+├── LICENSE
+├── README.md
+├── generate-site.sh
+├── geo/
+│   ├── pom.xml
+│   └── src/
+│       ├── main/
+│       │   ├── java/
+│       │   │   └── com/
+│       │   │       └── github/
+│       │   │           └── davidmoten/
+│       │   │               └── geo/
+│       │   │                   ├── Base32.java
+│       │   │                   ├── Coverage.java
+│       │   │                   ├── CoverageLongs.java
+│       │   │                   ├── Direction.java
+│       │   │                   ├── GeoHash.java
+│       │   │                   ├── LatLong.java
+│       │   │                   ├── Parity.java
+│       │   │                   ├── package-info.java
+│       │   │                   └── util/
+│       │   │                       └── Preconditions.java
+│       │   └── spotbugs/
+│       │       └── filter.xml
+│       └── test/
+│           ├── java/
+│           │   └── com/
+│           │       └── github/
+│           │           └── davidmoten/
+│           │               └── geo/
+│           │                   ├── Base32PublicTest.java
+│           │                   ├── Base32Test.java
+│           │                   ├── Benchmarks.java
+│           │                   ├── CoverageLongsPublicTest.java
+│           │                   ├── CoverageLongsTest.java
+│           │                   ├── CoveragePublicTest.java
+│           │                   ├── CoverageTest.java
+│           │                   ├── DirectionPublicTest.java
+│           │                   ├── DirectionTest.java
+│           │                   ├── GeoHashMinimalPublicTest.java
+│           │                   ├── GeoHashMinimalTest.java
+│           │                   ├── GeoHashPublicTest.java
+│           │                   ├── GeoHashTest.java
+│           │                   ├── LatLongPublicTest.java
+│           │                   ├── LatLongTest.java
+│           │                   ├── TestingUtil.java
+│           │                   ├── db/
+│           │                   │   ├── DatabasePublicTest.java
+│           │                   │   └── DatabaseTest.java
+│           │                   ├── mem/
+│           │                   │   └── GeomemPublicTest.java
+│           │                   └── util/
+│           │                       ├── PreconditionsPublicTest.java
+│           │                       └── PreconditionsTest.java
+│           └── resources/
+│               └── create.sql
+├── geo-mem/
+│   ├── pom.xml
+│   └── src/
+│       ├── main/
+│       │   └── java/
+│       │       └── com/
+│       │           └── github/
+│       │               └── davidmoten/
+│       │                   └── geo/
+│       │                       └── mem/
+│       │                           ├── Geomem.java
+│       │                           └── Info.java
+│       └── test/
+│           └── java/
+│               └── com/
+│                   └── github/
+│                       └── davidmoten/
+│                           └── geo/
+│                               └── mem/
+│                                   ├── GeomemPublicTest.java
+│                                   └── GeomemTest.java
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── Base32PublicTest.cs
+│   ├── CoverageLongsPublicTest.cs
+│   ├── CoveragePublicTest.cs
+│   ├── DatabasePublicTest.cs
+│   ├── DirectionPublicTest.cs
+│   ├── GeoHashMinimalPublicTest.cs
+│   ├── GeoHashPublicTest.cs
+│   ├── GeomemMemPublicTest.cs
+│   ├── GeomemPublicTest.cs
+│   ├── LatLongPublicTest.cs
+│   ├── PreconditionsPublicTest.cs
+│   └── PublicTests.csproj
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   └── main/
+│       └── checkstyle/
+│           ├── checkstyle.xml
+│           └── suppressions.xml
+├── test_summary.json
+├── test_translation_progress.json
+└── tests/
+    └── original/
+        ├── Base32Test.cs
+        ├── CoverageLongsTest.cs
+        ├── CoverageTest.cs
+        ├── DatabaseTest.cs
+        ├── DavidMoten.Geo.Tests.csproj
+        ├── DirectionTest.cs
+        ├── GeoHashMinimalTest.cs
+        ├── GeomemTest.cs
+        ├── LatLongTest.cs
+        ├── PreconditionsTest.cs
+        └── TestingUtil.cs

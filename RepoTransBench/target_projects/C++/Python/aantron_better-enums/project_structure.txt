@@ -1,0 +1,25 @@
+project_root/
+├── requirements.txt                    # Python dependency list, includes pytest
+├── run_tests.sh                        # Simple, one-click script to run all tests
+├── tests/
+│   ├── __init__.py                     # (empty or utility, to make "tests" package)
+│   └── original/
+│       ├── __init__.py                 # (empty file to mark as a package)
+│       ├── test_basic_enum.py          # Python translation of basic_enum_test.cpp
+│       └── test_advanced_enum.py       # Python translation of advanced_enum_test.cpp
+├── public_tests/
+│   ├── __init__.py                     # (empty file to mark as a package)
+│   ├── test_basic_enum_public.py       # Python translation of basic_enum_public_test.cpp
+│   └── test_advanced_enum_public.py    # Python translation of advanced_enum_public_test.cpp
+
+Directory Explanations:
+- requirements.txt: Lists Python dependencies; install with `pip install -r requirements.txt`
+- run_tests.sh: Run all the tests with `./run_tests.sh`
+- tests/original/: Contains translations of original project tests from C++
+- public_tests/: Contains translations of public tests from C++
+- \_\_init\_\_.py: Empty files to support Python package/module structure
+
+Setup & Testing Instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+All tests (original and public) are run by default by pytest, since both test directories use pytest conventions.

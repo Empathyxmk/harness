@@ -1,0 +1,36 @@
+ghaiklor_llvm-kaleidoscope/
+├── README.md                      # Project documentation and usage
+├── requirements.txt               # Python test dependencies (pytest)
+├── run_tests.sh                   # Simple test runner script
+├── project_structure.txt          # This project structure and description file
+├── src/
+│   └── __init__.py                # (empty, for future implementation code; optional)
+├── tests/
+│   ├── __init__.py                # Makes tests a package
+│   └── original/
+│       ├── __init__.py
+│       ├── test_BinaryExprAST.py
+│       ├── test_PrototypeAST.py
+│       ├── test_CallExprAST.py
+│       ├── test_logger.py
+│       ├── test_NumberExprAST.py
+│       └── test_VariableExprAST.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_BinaryExprAST_public.py
+│   ├── test_CallExprAST_public.py
+│   ├── test_logger_public.py
+│   ├── test_NumberExprAST_public.py
+│   ├── test_PrototypeAST_public.py
+│   └── test_VariableExprAST_public.py
+
+Directory explanations:
+
+- `src/` — Room for implementation code (optional if only running pre-existing test logic)
+- `tests/original/` — Full logic tests corresponding to original C++ test scenarios (all coverage and assertions)
+- `public_tests/` — Public/educational tests only, translated from provided C++ public tests
+- `requirements.txt` — Lists Python test dependencies (here: pytest)
+- `run_tests.sh` — Runs all tests with a single command
+- `README.md` — Describes repo structure and use
+
+Basic usage:

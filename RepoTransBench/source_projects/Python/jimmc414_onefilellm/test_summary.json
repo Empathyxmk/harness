@@ -1,0 +1,11 @@
+{
+  "project_name": "jimmc414_onefilellm",
+  "language": "Python",
+  "coverage": {
+    "line": 65.2,
+    "branch": 56.0
+  },
+  "timestamp": "2025-06-19T11:52:39.646587",
+  "original_path": "/workspace/runnable_filter/Python/jimmc414_onefilellm",
+  "test_result_path": "/workspace/test_enhancement_results/Python/jimmc414_onefilellm"
+}

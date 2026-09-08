@@ -1,0 +1,18 @@
+{
+  "project_name": "githubocto_repo-visualizer",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 98.21,
+    "branch": 91.3
+  },
+  "timestamp": "2025-06-19T10:31:02.659826",
+  "original_path": "/workspace/runnable_filter/JavaScript/githubocto_repo-visualizer",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/githubocto_repo-visualizer",
+  "tests_path": [
+    "src/process-dir.test.js",
+    "src/utils.test.js",
+    "src/should-exclude-path.test.js",
+    "src/should-exclude-path.test.ts"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

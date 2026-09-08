@@ -1,0 +1,45 @@
+.
+├── README.md                    # Project documentation and overview
+├── go.mod                       # Go module definition
+├── run_tests.sh                 # Script to run all Go tests with one click
+├── vasco/                       # Stubs/mocks for main package and dependencies required by tests
+│   ├── ...                      # Implementations for types used in tests (ProgramRepresentation, DataFlowSolution, etc.)
+├── tests/
+│   └── original/                # All original test cases from Java src/test/java/vasco/**
+│       ├── backward_forward_interprocedural_analysis_test.go
+│       ├── callsite_test.go
+│       ├── callsite_test_extra.go
+│       ├── context_test.go
+│       ├── context_transition_table_test.go
+│       ├── context_transition_table_test_extra.go
+│       ├── dataflowsolution_test.go
+│       ├── interprocedural_analysis_test.go
+│       ├── old_forward_interprocedural_analysis_test.go
+│       ├── program_representation_test.go
+│       ├── callgraph/
+│       │   ├── call_graph_test.go
+│       │   ├── call_graph_transformer_test.go
+│       │   ├── points_to_analysis_test.go
+│       │   └── points_to_graph_test.go
+│       ├── soot/
+│       │   └── examples/
+│       │       ├── copy_constant_test.go
+│       │       └── sign_test.go
+│       └── tests/
+│           ├── call_graph_test_case.go
+│           ├── copy_constant_test_case.go
+│           └── sign_test_case.go
+└── public_tests/
+    ├── context_public_test.go
+    ├── context_transition_table_public_test.go
+    ├── dataflowsolution_public_test.go
+    ├── interprocedural_analysis_public_test.go
+    ├── old_forward_interprocedural_analysis_public_test.go
+    ├── program_representation_public_test.go
+
+File/Directory explanations:
+- `vasco/`: Contains minimal implementations and type definitions (in Go) for the project, providing just enough API/fields to make all tests build and work according to logic. No functional dataflow analysis is re-implemented.
+- `tests/original/`: All converted tests from Java's `src/test/java/vasco/` hierarchy, grouped to match original logic and paths.
+- `public_tests/`: All public tests from `src/test/java/vasco/*PublicTest.java`.
+- `run_tests.sh`: One-click Go test runner (recurses all test dirs).
+- `go.mod`: Module file for Go dependencies.

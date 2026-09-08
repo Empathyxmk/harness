@@ -1,0 +1,71 @@
+{
+  "project_name": "renxuelong_ComponentDemo",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:57.673669",
+  "original_path": "/workspace/verified_repos_v2/Java/renxuelong_ComponentDemo",
+  "public_test_result_path": "/workspace/public_test_results/Java/renxuelong_ComponentDemo",
+  "original_tests": {
+    "test_files": [
+      "componentbase/src/androidTest/java/com/loong/componentbase/ExampleInstrumentedTest.java",
+      "componentbase/src/test/java/com/loong/componentbase/ServiceFactoryTest.java",
+      "componentbase/src/test/java/com/loong/componentbase/ExampleUnitTest.java",
+      "componentbase/src/test/java/com/loong/componentbase/empty_service/EmptyAccountServiceTest.java",
+      "login/src/androidTest/java/com/loong/login/ExampleInstrumentedTest.java",
+      "login/src/test/java/com/loong/login/ExampleUnitTest.java",
+      "share/src/androidTest/java/com/loong/share/ExampleInstrumentedTest.java",
+      "share/src/test/java/com/loong/share/ExampleUnitTest.java",
+      "base/src/androidTest/java/com/loong/base/ExampleInstrumentedTest.java",
+      "base/src/test/java/com/loong/base/ExampleUnitTest.java"
+    ],
+    "test_scripts": [],
+    "total_original_test_files": 10,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "componentbase/src/test/java/com/loong/componentbase/ServiceFactoryPublicTest.java",
+      "componentbase/src/test/java/com/loong/componentbase/ExampleUnitPublicTest.java",
+      "componentbase/src/test/java/com/loong/componentbase/empty_service/EmptyAccountServicePublicTest.java",
+      "componentbase/src/androidTest/java/com/loong/componentbase/ExampleInstrumentedPublicTest.java",
+      "run_public_tests.sh",
+      "login/src/test/java/com/loong/login/ExampleUnitPublicTest.java",
+      "login/src/androidTest/java/com/loong/login/ExampleInstrumentedPublicTest.java",
+      "share/src/test/java/com/loong/share/ExampleUnitPublicTest.java",
+      "share/src/androidTest/java/com/loong/share/ExampleInstrumentedPublicTest.java",
+      "base/src/test/java/com/loong/base/ExampleUnitPublicTest.java",
+      "base/src/androidTest/java/com/loong/base/ExampleInstrumentedPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 13,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "componentbase/src/test/java/com/loong/componentbase/ServiceFactoryPublicTest.java",
+    "componentbase/src/test/java/com/loong/componentbase/ExampleUnitPublicTest.java",
+    "componentbase/src/test/java/com/loong/componentbase/empty_service/EmptyAccountServicePublicTest.java",
+    "componentbase/src/androidTest/java/com/loong/componentbase/ExampleInstrumentedPublicTest.java",
+    "run_public_tests.sh",
+    "login/src/test/java/com/loong/login/ExampleUnitPublicTest.java",
+    "login/src/androidTest/java/com/loong/login/ExampleInstrumentedPublicTest.java",
+    "share/src/test/java/com/loong/share/ExampleUnitPublicTest.java",
+    "share/src/androidTest/java/com/loong/share/ExampleInstrumentedPublicTest.java",
+    "base/src/test/java/com/loong/base/ExampleUnitPublicTest.java",
+    "base/src/androidTest/java/com/loong/base/ExampleInstrumentedPublicTest.java",
+    "run_tests.sh",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

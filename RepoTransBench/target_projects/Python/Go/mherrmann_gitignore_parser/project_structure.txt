@@ -1,0 +1,23 @@
+mherrmann_gitignore_parser Go Port Structure
+
+.
+├── go.mod                 # Go module definition
+├── README.md              # Project documentation and usage
+├── run_tests.sh           # Single script to run all tests
+├── gitignore_parser.go    # [NOT IMPLEMENTED] Go version of the main parser (API needed for tests to run)
+├── tests/
+│   └── original/
+│       ├── extra_tests_test.go                # Translated from extra_tests.py
+│       └── tests_test.go                      # Translated from tests.py
+├── public_tests/
+│   └── test_public_gitignore_parser_test.go   # Translated from public_tests/test_public_gitignore_parser.py
+└── project_structure.txt    # This file: overview and instructions
+
+### Directory Details:
+
+- gitignore_parser.go: Go implementation of the gitignore parser. (Placeholder: not translated/generated.)
+- tests/original/: Holds the original (non-public) tests in Go format.
+- public_tests/: Holds generated/official public Go tests.
+- run_tests.sh: Executable bash script to run all tests via `go test ./...`.
+
+### How To Run All Tests

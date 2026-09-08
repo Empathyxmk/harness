@@ -1,0 +1,29 @@
+payatu_diva-android-go-port/
+├── go.mod                  # Go module definition
+├── README.md               # Documentation and instructions
+├── run_tests.sh            # One-click test execution script
+├── project_structure.txt   # This structure file
+├── tests/
+│   └── original/
+│       ├── access_control1_activity_test.go
+│       ├── apicreds_activity_test.go
+│       ├── application_test.go
+│       ├── example_unit_test.go
+│       ├── insecure_data_storage1_activity_test.go
+│       ├── insecure_data_storage2_activity_test.go
+│       └── input_validation2_uri_scheme_activity_test.go
+├── public_tests/
+│   ├── access_control1_activity_public_test.go
+│   ├── apicreds_activity_public_test.go
+│   ├── example_unit_public_test.go
+│   ├── input_validation2_uri_scheme_activity_public_test.go
+│   ├── insecure_data_storage1_activity_public_test.go
+│   └── insecure_data_storage2_activity_public_test.go
+
+# Directory Explanations:
+# - tests/original/     : Go translations of all original test cases from Java source.
+# - public_tests/       : Go translations of all public test cases from the Java project's public tests.
+# - run_tests.sh        : Shell script to run the complete Go test suite across all packages.
+# - go.mod              : Standard Go module file.
+# - README.md           : Getting started, running, and explanations.
+# - project_structure.txt: This structure overview and explanations.

@@ -1,0 +1,32 @@
+project_root/
+├── src/
+│   └── echo_server.py        # Python stub echo server and testable classes (translates echo.cc/echo_stub.h)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_echo.py      # Translated original test
+├── public_tests/
+│   ├── __init__.py
+│   └── test_echo_public.py   # Translated public test
+├── requirements.txt          # Python dependencies
+├── run_tests.sh              # One-click script: runs all Python tests
+├── project_structure.txt     # This file: describes structure and contents
+
+# Directory explanations:
+# src/              - Implementation of EchoServer and required stub/test classes (Python translation of C++ src/)
+# tests/original/   - Original (non-public) tests, directly translated from tests/test_echo.cc
+# public_tests/     - Public/Coverage tests, translated from tests/test_echo_public.cc, for public score/coverage
+# requirements.txt  - List of required Python packages ("pytest")
+# run_tests.sh      - One-click test script; runs all tests using pytest
+# project_structure.txt - Structure and documentation (this file)
+
+# Setup/Testing Instructions:
+# 1. (Optional) Create virtualenv
+#    python3 -m venv venv
+#    source venv/bin/activate
+# 2. Install requirements:
+#    pip install -r requirements.txt
+# 3. Run all tests:
+#    chmod +x run_tests.sh
+#    ./run_tests.sh

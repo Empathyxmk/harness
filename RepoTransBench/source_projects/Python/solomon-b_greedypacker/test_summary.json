@@ -1,0 +1,23 @@
+{
+  "project_name": "solomon-b_greedypacker",
+  "language": "Python",
+  "coverage": {
+    "line": 89.0,
+    "branch": 90.4
+  },
+  "timestamp": "2025-06-19T12:51:00.080504",
+  "original_path": "/workspace/runnable_filter/Python/solomon-b_greedypacker",
+  "test_result_path": "/workspace/test_enhancement_results/Python/solomon-b_greedypacker",
+  "tests_path": [
+    "test/test_api.py",
+    "test/test_guillotine.py",
+    "test/test_init_imports.py",
+    "test/test_maximal_rectangles_constructor.py",
+    "test/test_maximalrectangles.py",
+    "test/test_setup_script.py",
+    "test/test_shelf.py",
+    "test/test_skyline.py",
+    "test/test_skyline_construction.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

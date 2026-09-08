@@ -1,0 +1,25 @@
+betterprompt_rust/
+├── Cargo.toml                # Cargo manifest file for Rust project
+├── run_tests.sh              # Simple bash script to run all tests
+├── README.md                 # Documentation and setup instructions
+├── src/
+│   └── lib.rs                # Main library source (contains core logic)
+├── tests/
+│   ├── test_betterprompt.rs                     # Original logic/metadata tests
+│   ├── test_betterprompt_coverage.rs            # Coverage/edge/float logic tests
+│   ├── test_betterprompt_edgecases.rs           # Edge/environment/fail path tests
+│   └── test_init_module.rs                      # Module export test (original)
+└── public_tests/
+    ├── test_public_betterprompt.rs              # Public API and call_openai public logic tests
+    ├── test_public_betterprompt_coverage.rs     # Public perplexity/edge/float logic tests
+    ├── test_public_betterprompt_edgecases.rs    # Public edge/env/mock tests
+    └── test_public_init_module.rs               # Public module export test
+
+- **src/lib.rs**: All core logic and types, translation of the betterprompt logic for tests.
+- **tests/**: Contains the translated original ("private/internal") test cases.
+- **public_tests/**: All public test cases supplied, translated to Rust.
+- **run_tests.sh**: Simple script; runs all tests across both test folders with one command (`./run_tests.sh`).
+- **Cargo.toml**: Rust build config, includes dependencies for tests.
+- **README.md**: Instructions for setup (not shown here, would explain build, test, and structure).
+- Run all tests: `./run_tests.sh` (must have Rust & cargo installed).
+- Both `tests` and `public_tests` are registered for Rust integration tests. Public tests may be moved to `tests/` if needed for build system.

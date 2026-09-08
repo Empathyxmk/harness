@@ -1,0 +1,48 @@
+happyfish100_fastdfs-client-csharp/
+├── src/
+│   └── FastDFSClient/
+│       ├── FastDFSClient.csproj           # Main library project file
+│       ├── Program.cs                     # (optional) Main entry point if needed
+│       └── ... (FastDFS library classes)  # Implementation source files (placeholder)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj           # Test project file for original tests
+│       ├── StructBaseTest.cs
+│       ├── FdfsTest.cs
+│       ├── FileInfoTest.cs
+│       ├── DownloadCallbackTest.cs
+│       ├── TestTests.cs                   # (Test.java main logic as C# test)
+│       ├── TrackerClientTest.cs
+│       ├── Test1Tests.cs                  # (Test1.java main logic as C# test)
+│       ├── ClientGlobalTests.cs           # (ClientGlobalTests.java translation)
+│       ├── IniFileReaderTests.cs          # (IniFileReaderTests.java translation)
+│       ├── TestClientTests.cs             # (TestClient.java main logic wrapper)
+│       ├── TestClient1Tests.cs            # (TestClient1.java main logic wrapper)
+│       ├── TestAppenderTests.cs           # (TestAppender.java main logic wrapper)
+│       ├── TestAppender1Tests.cs          # (TestAppender1.java main logic wrapper)
+│       ├── TestLoadTests.cs               # (TestLoad.java load test logic)
+│       └── ... (helper/mocks if needed)
+├── public_tests/
+│   ├── PublicTests.csproj                 # Test project file for public tests
+│   ├── StructBasePublicTest.cs
+│   ├── FileInfoPublicTest.cs
+│   ├── DownloadCallbackPublicTest.cs
+│   ├── TrackerClientPublicTest.cs
+├── FastDFSClient.sln                      # .NET solution file
+├── run_tests.sh                           # Single-command test runner (dotnet test)
+├── README.md                              # Project & usage documentation
+└── project_structure.txt                  # This structure description and guide
+
+Directory/design notes:
+- Original tests are in `tests/original/`
+- Public tests are in `public_tests/`
+- Both original and public tests are organized as their own C# test projects for modularity
+- Main library code would be in `src/FastDFSClient/` (add production code here if translated/implemented)
+- Each test project references the core FastDFSClient project (add as needed)
+- Tests use xUnit for unit testing, Moq for mocking (install via NuGet)
+- You can run *all* tests (original & public) via `dotnet test` at repo root or `./run_tests.sh`
+
+Setup:
+1. Make sure .NET 7+ SDK is installed (`dotnet --version`)
+2. Restore dependencies: `dotnet restore`
+3. Run all tests: `./run_tests.sh`

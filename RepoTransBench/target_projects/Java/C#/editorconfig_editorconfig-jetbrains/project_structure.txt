@@ -1,0 +1,16 @@
+project_root/
+├── EditorConfigJetBrains.sln                # .NET Core solution file
+├── README.md
+├── run_tests.sh                             # Shell script to run all tests
+├── project_structure.txt                    # (This file) Project directory overview
+├── src/
+│   └── EditorConfigJetBrains/
+│       ├── EditorConfigJetBrains.csproj     # Core library project file
+│       └── Utils.cs                        # Main utility/static logic under test
+├── tests/
+│   └── original/
+│       ├── UtilsTests.cs                   # Original developer/private test cases
+│       └── UtilsTests.csproj               # Test project file for original tests
+├── public_tests/
+│   ├── UtilsPublicTests.cs                 # Public test cases
+│   └── PublicTests.csproj                  # Test project file for public tests

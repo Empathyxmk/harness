@@ -1,0 +1,30 @@
+whwlsfb_JDumpSpider Go Project Structure
+
+.
+├── go.mod                    # Go module descriptor (declares Go module and version)
+├── main.go                   # (Not provided, main implementation stub needed)
+├── README.md                 # This file, project overview and instructions
+├── run_tests.sh              # One-click shell script to execute all tests
+├── tests/
+│   └── original/
+│       ├── main_test.go              # Translated original MainTest.java
+│       ├── datasource04_test.go      # Translated original DataSource04Test.java
+│       └── envproperty01_test.go     # Translated original EnvProperty01Test.java
+├── public_tests/
+│   ├── main_public_test.go           # Translated MainPublicTest.java
+│   ├── datasource04_public_test.go   # Translated DataSource04PublicTest.java
+│   └── envproperty01_public_test.go  # Translated EnvProperty01PublicTest.java
+└── project_structure.txt     # This file
+
+Folders:
+- tests/original/: All original (private/internal) test case translations.
+- public_tests/: All public test translations.
+- ./: Go module, main/implementation code, build/run scripts, and documentation.
+
+How to run all tests:
+  $ ./run_tests.sh
+This will run all unit tests (original and public).
+
+To add your implementation, provide missing source files such as main.go or package files (not included here).
+
+All test logic and coverage is preserved from the original Java suite.

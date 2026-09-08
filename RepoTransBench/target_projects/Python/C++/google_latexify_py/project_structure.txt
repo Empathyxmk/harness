@@ -1,0 +1,45 @@
+google_latexify_cpp/
+├── CMakeLists.txt         # Project configuration (uses GoogleTest)
+├── include/               # Public headers for library code
+│   └── ...                # (To be filled with actual header files)
+├── src/                   # Source code implementation (stubs/real code)
+│   ├── main.cpp           # (Optional) main for binary (not needed for lib/tests)
+│   ├── latexify/          # C++ translation of latexify python module
+│   └── integration_tests/ # C++ translation of integration tests
+├── tests/
+│   └── original/          # Original tests translated from src/
+│       ├── algorithmic_style_test.cpp
+│       ├── regression_test.cpp
+│       ├── function_expansion_test.cpp
+│       ├── frontend_test.cpp
+│       ├── ast_utils_test.cpp
+│       ├── config_test.cpp
+│       ├── generate_latex_test.cpp
+│       ├── ast_utils_extra_test.cpp
+│       ├── ipython_wrappers_test.cpp
+│       ├── parser_test.cpp
+│       ├── analyzers_test.cpp
+│       └── ... (all other original test sources)
+├── public_tests/
+│   ├── integration_test_public_algorithmic_style.cpp
+│   ├── integration_test_public_regression.cpp
+│   ├── test_public_config.cpp
+│   ├── test_public_config_extra.cpp
+│   ├── test_public_utils.cpp
+│   ├── test_public_analyzers.cpp
+│   ├── test_public_ast_utils.cpp
+│   ├── test_public_parser.cpp
+│   ├── test_public_ipython_wrappers.cpp
+│   ├── test_public_frontend.cpp
+├── run_tests.sh           # Simple build & run script for all tests
+├── README.md              # (User documentation and build instructions)
+└── project_structure.txt  # This file (directory overview)
+
+Directory explanations:
+- include/:        All public header files for the latexify C++ library (API surface).
+- src/:           All implementation code for latexify functionalities.
+- tests/original/: All C++ test files corresponding to the original Python test suite.
+- public_tests/:   All C++ test files corresponding to the Python public test suite.
+- run_tests.sh:    Simple shell script to build and run the full test suite.
+- CMakeLists.txt:  Build configuration using CMake and GoogleTest.
+- README.md:       Usage and contribution instructions.

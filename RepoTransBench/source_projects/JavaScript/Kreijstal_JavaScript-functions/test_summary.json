@@ -1,0 +1,21 @@
+{
+  "project_name": "Kreijstal_JavaScript-functions",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 65.39,
+    "branch": 59.76
+  },
+  "timestamp": "2025-06-19T10:51:23.603663",
+  "original_path": "/workspace/runnable_filter/JavaScript/Kreijstal_JavaScript-functions",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/Kreijstal_JavaScript-functions",
+  "tests_path": [
+    "parser/lang.test.js",
+    "parser/tree.test.js",
+    "parser/parser-constants.test.js",
+    "parser/Step.test.js",
+    "parser/regex-rules.test.js",
+    "parser/parser.test.js",
+    "PureFunctions2.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

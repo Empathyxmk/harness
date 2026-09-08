@@ -1,0 +1,45 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_closure.py
+│       ├── test_constructors.py
+│       ├── test_dynamic.py
+│       ├── test_exception.py
+│       ├── test_fannkuch.py
+│       ├── test_function.py
+│       ├── test_iteration.py
+│       ├── test_javascript_start_end.py
+│       ├── test_json.py
+│       ├── test_object.py
+│       ├── test_operators.py
+│       ├── test_prototype.py
+│       ├── test_reference.py
+│       ├── test_scope.py
+│       ├── test_stdlib.py
+│       ├── test_this.py
+│       └── test_underscore.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_closure.py
+│   ├── test_public_constructors.py
+│   ├── test_public_dynamic.py
+│   ├── test_public_exception.py
+│   ├── test_public_fannkuch.py
+│   ├── test_public_function.py
+│   ├── test_public_iteration.py
+│   ├── test_public_javascript_start_end.py
+│   ├── test_public_json.py
+│   ├── test_public_object.py
+│   ├── test_public_operators.py
+│   ├── test_public_prototype.py
+│   ├── test_public_reference.py
+│   ├── test_public_scope.py
+│   ├── test_public_stdlib.py
+│   ├── test_public_this.py
+│   └── test_public_underscore.py

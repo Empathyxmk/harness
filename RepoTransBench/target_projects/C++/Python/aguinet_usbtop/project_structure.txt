@@ -1,0 +1,32 @@
+aguinet_usbtop-python/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── README.md
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_tools.py
+│       ├── test_usb_bus.py
+│       ├── test_usb_device.py
+│       └── test_usb_stats.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_usb_bus_public.py
+
+Structure explanations:
+
+- requirements.txt: Python dependencies, includes pytest for running tests.
+- run_tests.sh: Simple shell script to run all tests with one command.
+- README.md: Project description, setup, and usage instructions.
+- project_structure.txt: This file, describing layout and role of all files/folders.
+- tests/original/: Contains Python translation of original C++ tests for internal features.
+- public_tests/: Contains Python translation of public test cases, mirroring the original public test exposure.
+- __init__.py: Present for namespace packaging; not necessary to populate.
+- All test_*.py: Fully implemented pytest-based test modules, directly mirroring the logic and edge cases from the C++ original/public tests.
+
+Test instructions:
+1. Install Python (>= 3.6) and pip.
+2. Install requirements: `pip install -r requirements.txt`
+3. Run all tests: `./run_tests.sh`

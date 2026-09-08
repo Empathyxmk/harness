@@ -1,0 +1,21 @@
+{
+  "project_name": "powergo_pytracking",
+  "language": "Python",
+  "coverage": {
+    "line": 97.0,
+    "branch": 96.0
+  },
+  "timestamp": "2025-06-19T12:18:45.668752",
+  "original_path": "/workspace/runnable_filter/Python/powergo_pytracking",
+  "test_result_path": "/workspace/test_enhancement_results/Python/powergo_pytracking",
+  "tests_path": [
+    "tests/test_tracking_unit.py",
+    "tests/test_pytracking.py",
+    "tests/test_init_exports.py",
+    "tests/test_crypto.py",
+    "tests/test_webhook.py",
+    "tests/test_html.py",
+    "tests/test_django.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

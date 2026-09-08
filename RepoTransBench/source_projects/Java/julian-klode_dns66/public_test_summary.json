@@ -1,0 +1,80 @@
+{
+  "project_name": "julian-klode_dns66",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:17:04.023677",
+  "original_path": "/workspace/verified_repos_v2/Java/julian-klode_dns66",
+  "public_test_result_path": "/workspace/public_test_results/Java/julian-klode_dns66",
+  "original_tests": {
+    "test_files": [
+      "app/src/androidTest/java/org/jak_linux/dns66/ExampleInstrumentedTest.java",
+      "app/src/test/java/org/jak_linux/dns66/ConfigurationTest.java",
+      "app/src/test/java/org/jak_linux/dns66/SquareImageViewTest.java",
+      "app/src/test/java/org/jak_linux/dns66/FileHelperMinimalTest.java",
+      "app/src/test/java/org/jak_linux/dns66/FileHelperTest.java",
+      "app/src/test/java/org/jak_linux/dns66/ExampleUnitTest.java",
+      "app/src/test/java/org/jak_linux/dns66/SingleWriterMultipleReaderFileTest.java",
+      "app/src/test/java/org/jak_linux/dns66/db/RuleDatabaseItemUpdateRunnableTest.java",
+      "app/src/test/java/org/jak_linux/dns66/db/RuleDatabaseUpdateTaskTest.java",
+      "app/src/test/java/org/jak_linux/dns66/db/RuleDatabaseTest.java",
+      "app/src/test/java/org/jak_linux/dns66/vpn/DnsPacketProxyTest.java",
+      "app/src/test/java/org/jak_linux/dns66/vpn/AdVpnThreadTest.java",
+      "app/src/test/java/org/jak_linux/dns66/vpn/VpnWatchdogTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 13,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "app/src/test/java/org/jak_linux/dns66/ConfigurationPublicTest.java",
+      "app/src/test/java/org/jak_linux/dns66/SquareImageViewPublicTest.java",
+      "app/src/test/java/org/jak_linux/dns66/ExamplePublicUnitTest.java",
+      "app/src/androidTest/java/org/jak_linux/dns66/ExampleInstrumentedPublicTest.java",
+      "run_public_tests.sh",
+      "app/src/test/java/org/jak_linux/dns66/FileHelperMinimalPublicTest.java",
+      "app/src/test/java/org/jak_linux/dns66/FileHelperPublicTest.java",
+      "app/src/test/java/org/jak_linux/dns66/SingleWriterMultipleReaderFilePublicTest.java",
+      "app/src/test/java/org/jak_linux/dns66/ExamplePublicUnitTest2.java",
+      "run_public_tests.sh",
+      "app/src/test/java/org/jak_linux/dns66/db/RuleDatabaseItemUpdateRunnablePublicTest.java",
+      "app/src/test/java/org/jak_linux/dns66/db/RuleDatabasePublicTest.java",
+      "app/src/test/java/org/jak_linux/dns66/db/RuleDatabaseUpdateTaskPublicTest.java",
+      "app/src/test/java/org/jak_linux/dns66/db/RuleDatabaseUpdateJobServicePublicTest.java",
+      "app/src/test/java/org/jak_linux/dns66/ExamplePublicUnitTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 16,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "app/src/test/java/org/jak_linux/dns66/ConfigurationPublicTest.java",
+    "app/src/test/java/org/jak_linux/dns66/SquareImageViewPublicTest.java",
+    "app/src/test/java/org/jak_linux/dns66/ExamplePublicUnitTest.java",
+    "app/src/androidTest/java/org/jak_linux/dns66/ExampleInstrumentedPublicTest.java",
+    "run_public_tests.sh",
+    "app/src/test/java/org/jak_linux/dns66/FileHelperMinimalPublicTest.java",
+    "app/src/test/java/org/jak_linux/dns66/FileHelperPublicTest.java",
+    "app/src/test/java/org/jak_linux/dns66/SingleWriterMultipleReaderFilePublicTest.java",
+    "app/src/test/java/org/jak_linux/dns66/ExamplePublicUnitTest2.java",
+    "run_public_tests.sh",
+    "app/src/test/java/org/jak_linux/dns66/db/RuleDatabaseItemUpdateRunnablePublicTest.java",
+    "app/src/test/java/org/jak_linux/dns66/db/RuleDatabasePublicTest.java",
+    "app/src/test/java/org/jak_linux/dns66/db/RuleDatabaseUpdateTaskPublicTest.java",
+    "app/src/test/java/org/jak_linux/dns66/db/RuleDatabaseUpdateJobServicePublicTest.java",
+    "app/src/test/java/org/jak_linux/dns66/ExamplePublicUnitTest.java",
+    "run_public_tests.sh"
+  ]
+}

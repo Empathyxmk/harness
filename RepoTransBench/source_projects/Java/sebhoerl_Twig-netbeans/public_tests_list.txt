@@ -1,0 +1,10 @@
+src/test/java/org/netbeans/modules/php/twig/editor/TwigDataObjectPublicTest.java
+src/test/java/org/netbeans/modules/php/twig/editor/TwigEditorKitPublicTest.java
+src/test/java/org/netbeans/modules/php/twig/editor/completion/TwigCompletionHandlerPublicTest.java
+src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigStructureScannerPublicTest.java
+src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigStructureItemPublicTest.java
+src/test/java/org/netbeans/modules/php/twig/editor/gsf/TwigLanguagePublicTest.java
+src/test/java/org/netbeans/modules/php/twig/editor/parsing/TwigParserResultPublicTest.java
+src/test/java/org/netbeans/modules/php/twig/editor/parsing/TwigParserPublicTest.java
+src/test/java/org/netbeans/modules/php/twig/editor/format/TwigFormatterPublicTest.java
+src/test/java/org/netbeans/modules/php/twig/editor/lexer/TwigTopTokenIdPublicTest.java

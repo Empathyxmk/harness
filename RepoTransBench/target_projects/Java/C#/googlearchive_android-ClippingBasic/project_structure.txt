@@ -1,0 +1,57 @@
+Project Structure and Directory Map for ClippingBasic C# Port
+=============================================================
+
+ClippingBasic/
+├── ClippingBasic.sln               # Root .NET solution file
+├── src/
+│   └── ClippingBasicSample/        # Main library/project source folder
+│       ├── ClippingBasicSample.csproj   # Main library project file
+│       ├── Log/
+│       │   ├── Log.cs
+│       │   ├── LogNode.cs
+│       │   ├── LogView.cs
+│       │   ├── MessageOnlyLogFilter.cs
+│       │   └── ... (other ported logic classes)
+│       ├── MainActivity.cs
+│       └── ClippingBasicFragment.cs
+├── tests/
+│   └── original/                   # Original private/internal test suite
+│       ├── OriginalTests.csproj    # xUnit project file for original tests
+│       ├── LogTest.cs
+│       ├── LogViewTest.cs
+│       ├── MessageOnlyLogFilterTest.cs
+│       └── SampleTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj          # xUnit project file for public tests
+│   ├── LogPublicTest.cs
+│   ├── LogViewPublicTest.cs
+│   └── MessageOnlyLogFilterPublicTest.cs
+├── run_tests.sh                    # Bash script for running all tests
+├── README.md                       # Description and instructions
+
+-------------------------------------------------
+
+Directory Explanations:
+- src/ClippingBasicSample/: Main app and logic (models, activities, loggers).
+- tests/original/: "Original" (private/internal) test files from Java test suite, ported to xUnit.
+- public_tests/: Public test files from the Java public test set, also xUnit.
+- Each test csproj references ../src/ClippingBasicSample/ for code-under-test.
+- run_tests.sh: One-click script. Runs both original and public xUnit suites.
+
+Setup Notes:
+1. To install .NET:
+   See: https://dotnet.microsoft.com/download
+
+2. Restore dependencies:
+   dotnet restore
+
+3. One-click test all:
+   ./run_tests.sh
+
+-------------------------------------------------
+
+Test Projects:
+- tests/original/OriginalTests.csproj: xUnit project; all internal/original tests.
+- public_tests/PublicTests.csproj: xUnit project; all public tests.
+
+-------------------------------------------------

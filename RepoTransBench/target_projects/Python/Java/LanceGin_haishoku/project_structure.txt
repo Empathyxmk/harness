@@ -1,0 +1,60 @@
+LanceGin_haishoku (Java port) Project Structure
+------------------------------------------------
+
+.
+├── pom.xml                    # Maven build and dependency descriptor
+├── run_tests.sh               # Script to run all tests with a single command
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── haishoku/
+│   │                    # (Production source: alg/, haillow/, haishoku/, etc - to be implemented)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── TestAlg.java                 # Original tests (translated from tests/)
+│                   │   ├── TestAlgMore.java
+│                   │   ├── TestDemoScript.java
+│                   │   ├── TestHaishoku.java
+│                   │   ├── TestHaishokuClass.java
+│                   │   ├── TestHaishokuEdgeCases.java
+│                   │   ├── TestHaillow.java
+│                   │   ├── TestInitAndSetup.java
+│                   │   └── BaseTest.java
+│                   └── public_tests/
+│                       ├── PublicBaseTest.java
+│                       ├── PublicInitAndSetupTest.java
+│                       ├── PublicDemoScriptTest.java
+│                       ├── PublicHaishokuClassTest.java
+│                       ├── PublicHaishokuEdgecasesTest.java
+│                       ├── PublicHaishokuTest.java
+│                       ├── PublicHaillowTest.java
+│                       ├── PublicAlgMoreTest.java
+│                       └── PublicAlgTest.java
+├── demo/
+│   ├── demo.py                # Demo script (data file for demo test)
+│   └── demo_01.png            # Sample image, for demo/disc tests
+├── LICENSE                    # License file
+├── README.md                  # Documentation
+└── ...                        # Additional source files as needed
+
+------------------------------------------------
+
+Directory/Files Explanation:
+- pom.xml                : Maven build file, includes JUnit 5 test dependency
+- run_tests.sh           : Unix shell script for running all Java tests via Maven
+- src/main/java/         : Place source implementation here (alg/, haillow/, haishoku/, etc.)
+- src/test/java/com/example/original/      : Java translations of original Python tests (from tests/ directory)
+- src/test/java/com/example/public_tests/  : Java translations of public Python tests (from public_tests/ directory)
+- demo/                  : Contains demo.py and demo_01.png for tests referencing them
+- LICENSE, README.md     : Standard documentation and legal files
+
+To run all tests:
+  $ chmod +x run_tests.sh
+  $ ./run_tests.sh
+
+This builds & tests using Maven and JUnit5. All test code is fully ported from the original and public Python tests.

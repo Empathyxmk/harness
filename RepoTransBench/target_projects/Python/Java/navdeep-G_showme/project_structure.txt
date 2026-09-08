@@ -1,0 +1,47 @@
+navdeep-g-showme/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── showme/
+│   │               ├── Showme.java              # Decorator simulation utilities
+│   │               └── core/
+│   │                   └── Core.java            # Core logic (minimal dummy implementations for testing)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── showme/
+│                   ├── original/
+│                   │   ├── CpuTimeTest.java         # Test for cputime decorator/functionality
+│                   │   ├── CoreAdditionalTest.java  # Additional core tests (scopes & decorators)
+│                   │   ├── DocsTest.java            # Tests for docs decorator
+│                   │   ├── SetupPyTest.java         # Simulates setup.py argument/branch test
+│                   │   ├── TimeTest.java            # Test for time decorator
+│                   │   └── TraceTest.java           # Tests for trace decorator
+│                   └── public_tests/
+│                       ├── PublicCoreAdditionalTest.java   # public core extra tests
+│                       ├── PublicCpuTimeTest.java          # public cputime API tests
+│                       ├── PublicDocsTest.java             # public docs coverage test
+│                       ├── PublicSetupPyTest.java          # public setup.py simulation test
+│                       ├── PublicTimeTest.java             # public time API test
+│                       └── PublicTraceTest.java            # public trace API test
+
+# ----------------------------------------------------------------------
+# Directory explanations:
+# - src/main/java/com/showme/core/Core.java          : Simulated core API for testing purposes.
+# - src/main/java/com/showme/Showme.java             : Utility class to simulate decorators.
+# - src/test/java/com/showme/original/               : Original (private) test cases translated from Python.
+# - src/test/java/com/showme/public_tests/           : Public test cases translated from public_tests.
+# - pom.xml                                          : Maven dependencies and build configuration (uses JUnit 5, Mockito).
+# - run_tests.sh                                     : Bundled script for running all tests, invokes Maven.
+#
+# ----------------------------------------------------------------------
+# Instructions:
+# 1. Ensure Java 11+ and Maven are installed.
+# 2. To run all tests, simply execute:
+#      ./run_tests.sh
+#    This will build the code and run all original and public tests.
+#
+# No additional configuration is needed.

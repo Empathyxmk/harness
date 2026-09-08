@@ -1,0 +1,28 @@
+project_root/
+├── README.md
+├── requirements.txt                # Python dependencies ('pytest', 'h5py', etc.)
+├── run_tests.sh                    # One-click test execution script
+├── src/
+│   └── ayanc_mdepth/
+│       ├── __init__.py             # Python package init
+│       ├── consensus.py            # Matlab consensus.m logic (Python translation)
+│       ├── doForward.py            # Matlab doForward.m logic (Python translation)
+│       └── loadModel.py            # Matlab loadModel.m logic (Python translation)
+├── tests/
+│   └── original/                   # Original Matlab test translations
+│       ├── test_consensus.py
+│       ├── test_doForward.py
+│       ├── test_loadModel.py
+│       └── test_smoke.py
+├── public_tests/                   # Public Matlab test translations
+│   ├── test_consensus_public.py
+│   ├── test_doForward_public.py
+│   ├── test_loadModel_public.py
+│   └── test_smoke_public.py
+└── training/
+    └── filters_init.caffemodel.h5  # Referenced H5 file for model loading tests (MUST EXIST for tests to pass)
+
+> Instructions:
+> - To run all tests: `./run_tests.sh`
+> - Source and tests are separated for clarity.
+> - For actual use, make sure required files such as the H5 model exist in the correct locations.

@@ -1,0 +1,25 @@
+.
+├── Cargo.toml
+├── src
+│   ├── lib.rs
+│   └── main.rs
+├── tests
+│   └── original
+│       ├── mod.rs
+│       └── test_support.rs
+├── public_tests
+│   ├── mod.rs
+│   └── testfiles_public_mod.rs
+├── testfiles
+│   ├── test0000.txt
+│   ├── test0001.txt
+│   └── test0002.txt
+├── testfiles_public
+│   ├── test_public_0000.txt
+│   ├── test_public_0001.txt
+│   └── test_public_0002.txt
+├── tests.json
+├── tests.json.bak
+├── tests_public.json
+├── run_tests.sh
+└── project_structure.txt

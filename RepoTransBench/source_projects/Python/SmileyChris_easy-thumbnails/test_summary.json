@@ -1,0 +1,30 @@
+{
+  "project_name": "SmileyChris_easy-thumbnails",
+  "language": "Python",
+  "coverage": {
+    "line": 88.0,
+    "branch": 74.6
+  },
+  "timestamp": "2025-06-23T10:36:46.926713",
+  "original_path": "/workspace/test_enhancement_results/Python/SmileyChris_easy-thumbnails",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/SmileyChris_easy-thumbnails",
+  "tests_path": [
+    "easy_thumbnails/tests/test_files.py",
+    "easy_thumbnails/tests/test_namers.py",
+    "easy_thumbnails/tests/test_models.py",
+    "easy_thumbnails/tests/test_aliases.py",
+    "easy_thumbnails/tests/test_storage.py",
+    "easy_thumbnails/tests/test_animated_formats.py",
+    "easy_thumbnails/tests/test_thumbnail_cleanup.py",
+    "easy_thumbnails/tests/test_source_generators.py",
+    "easy_thumbnails/tests/test_conf.py",
+    "easy_thumbnails/tests/test_widgets.py",
+    "easy_thumbnails/tests/test_svg_processors.py",
+    "easy_thumbnails/tests/test_engine.py",
+    "easy_thumbnails/tests/test_fields.py",
+    "easy_thumbnails/tests/test_management.py",
+    "easy_thumbnails/tests/test_templatetags.py",
+    "easy_thumbnails/tests/test_pixel_processors.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

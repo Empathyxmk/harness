@@ -1,0 +1,21 @@
+pywizlight-java-translation/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── TestDiscoveryCore.java
+│                   │   ├── TestScenes.java
+│                   │   ├── TestBulbSocket.java
+│                   │   ├── TestVersionAndSetup.java
+│                   │   └── ...
+│                   └── public_tests/
+│                       ├── TestPublicBulbHero12370.java
+│                       ├── TestPublicBulbSocket.java
+│                       ├── TestPublicDiscoveryCore.java
+│                       ├── TestPublicScenes.java
+│                       └── TestPublicUtils.java
+└── project_structure.txt

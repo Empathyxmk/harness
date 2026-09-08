@@ -1,0 +1,15 @@
+.
+├── requirements.txt              # Python dependencies (pytest)
+├── run_tests.sh                  # One-click test execution script
+├── public_tests/                 # Public test cases (Pytest)
+│   └── test_generator_public.py  # Translated public test cases from GeneratorPublicTest.java
+├── tests/
+│   └── original/
+│       └── test_generator.py     # Translated original test cases from GeneratorTest.java
+└── project_structure.txt         # This file - describes the structure
+
+- requirements.txt: Lists dependencies, install with `pip install -r requirements.txt`.
+- run_tests.sh: Run all tests (original and public) with `./run_tests.sh`.
+- public_tests/: Contains public tests, easy to isolate for public validation.
+- tests/original/: Contains original/full test suite as in Java's GeneratorTest.java.
+- All test logic fully translated from Java. No placeholders, all edge cases and expected behaviours covered.

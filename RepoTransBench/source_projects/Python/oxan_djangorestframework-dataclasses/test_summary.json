@@ -1,0 +1,22 @@
+{
+  "project_name": "oxan_djangorestframework-dataclasses",
+  "language": "Python",
+  "coverage": {
+    "line": 97.0,
+    "branch": 94.5
+  },
+  "timestamp": "2025-06-23T10:34:08.981421",
+  "original_path": "/workspace/test_enhancement_results/Python/oxan_djangorestframework-dataclasses",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/oxan_djangorestframework-dataclasses",
+  "tests_path": [
+    "tests/test_field_generation.py",
+    "tests/test_field_utils.py",
+    "tests/test_fields.py",
+    "tests/test_functional.py",
+    "tests/test_issues.py",
+    "tests/test_py312.py",
+    "tests/test_serializers.py",
+    "tests/test_typing_utils.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

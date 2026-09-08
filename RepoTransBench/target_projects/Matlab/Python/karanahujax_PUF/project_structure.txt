@@ -1,0 +1,24 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── src/
+│   ├── __init__.py
+│   ├── expr.py
+│   ├── gf2dec.py
+│   ├── generation_procedure.py
+│   └── reproduction_procedure.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_expr.py
+│   ├── test_gf2dec.py
+│   ├── test_generation_procedure.py
+│   ├── test_reproduction_procedure.py
+│   └── test_exprrunner.py
+└── public_tests/
+    ├── __init__.py
+    ├── test_public_expr.py
+    ├── test_public_gf2dec.py
+    ├── test_public_generation_procedure.py
+    ├── test_public_reproduction_procedure.py
+    └── test_public_exprrunner.py

@@ -1,0 +1,43 @@
+{
+  "name": "freezer-js",
+  "version": "0.14.1",
+  "description": "A tree data structure that is always updated from the root, making easier to think in a reactive way.",
+  "main": "freezer.js",
+  "homepage": "https://github.com/arqex/freezer",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha tests",
+    "build": "node ./node_modules/gulp/bin/gulp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arqex/freezer.git"
+  },
+  "keywords": [
+    "react",
+    "reactive",
+    "store",
+    "flux",
+    "state",
+    "cursor",
+    "tree",
+    "immutable"
+  ],
+  "author": "arqex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arqex/freezer/issues"
+  },
+  "devDependencies": {
+    "benchmark": "~1.0.0",
+    "c8": "^10.1.3",
+    "chai": "~2.0.0",
+    "gulp": "~3.8.11",
+    "gulp-insert": "~0.4.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-uglify": "^1.5.3",
+    "immutable": "~3.6.2",
+    "mocha": "^11.7.1",
+    "tape": "^4.4.0",
+    "unit.js": "~1.0.2"
+  }
+}

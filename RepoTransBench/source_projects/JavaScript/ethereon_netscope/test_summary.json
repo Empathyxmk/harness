@@ -1,0 +1,11 @@
+{
+  "project_name": "ethereon_netscope",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 67.45,
+    "branch": 54.13
+  },
+  "timestamp": "2025-06-19T10:22:11.621929",
+  "original_path": "/workspace/runnable_filter/JavaScript/ethereon_netscope",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/ethereon_netscope"
+}

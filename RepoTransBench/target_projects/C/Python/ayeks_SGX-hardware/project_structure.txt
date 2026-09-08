@@ -1,0 +1,26 @@
+project_root/
+├── public_tests/
+│   ├── __init__.py                # Makes public_tests a Python package
+│   ├── test_cpuid_public.py       # Translated public test for cpuid
+│   ├── test_main_public.py        # Translated public test for main
+│   ├── test_rdmsr_public.py       # Translated public test for rdmsr
+│   ├── test_vdso_public.py        # Translated public test for vdso
+│   └── test_xsave_public.py       # Translated public test for xsave
+├── requirements.txt               # Lists Python dependencies (pytest)
+├── run_tests.sh                   # Script to run all tests
+├── src/
+│   └── __init__.py                # Placeholder, actual stubs are in test files as in C
+└── tests/
+    ├── __init__.py                # Makes tests a Python package
+    └── original/
+        ├── __init__.py            # Makes original tests a Python subpackage
+        ├── test_cpuid.py          # Translated original test for cpuid
+        ├── test_main.py           # Translated original test for main
+        ├── test_rdmsr.py          # Translated original test for rdmsr
+        ├── test_vdso.py           # Translated original test for vdso
+        └── test_xsave.py          # Translated original test for xsave
+
+## Setup and Test Execution Instructions:
+
+### 1. Install Dependencies:
+Make sure you have `pip` installed.

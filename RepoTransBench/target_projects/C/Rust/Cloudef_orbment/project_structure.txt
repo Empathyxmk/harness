@@ -1,0 +1,26 @@
+cloudef_orbment/
+├── Cargo.toml                  # Rust package manifest
+├── README.md                   # Project overview and instructions
+├── project_structure.txt       # This structure and annotations
+├── run_tests.sh                # One-click script to run all tests
+├── src/
+│   └── lib.rs                  # Root library (empty placeholder)
+├── tests/
+│   └── original/
+│       ├── parse_prefix_test.rs           # Original parse_prefix logic tests
+│       ├── validate_key_test.rs           # Original validate_key logic tests
+│       ├── test_configuration.rs          # Dummy configuration test (from test_configuration.c)
+│       ├── test_crappy_borders.rs         # Dummy borders test (from test_crappy_borders.c)
+│       └── test_keybind.rs                # Dummy keybind test (from test_keybind.c)
+└── public_tests/
+    ├── parse_prefix_public_test.rs        # Public parse_prefix logic tests
+    └── validate_key_public_test.rs        # Public validate_key logic tests
+
+Directory explanations:
+- src/                - Library code placeholder; left empty as C project only provided test logic.
+- tests/original/     - Rust adaptation of all original C test cases.
+- public_tests/       - Rust adaptation of generated public C test cases.
+- Cargo.toml          - Specifies Rust crate/package and any dev dependencies.
+- run_tests.sh        - Executable bash script to run all tests using Cargo.
+- README.md           - Instructions and project translation/usage notes.
+- project_structure.txt - This file, mapping all major components.

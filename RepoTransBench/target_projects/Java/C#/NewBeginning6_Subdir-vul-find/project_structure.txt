@@ -1,0 +1,71 @@
+NewBeginning6_Subdir-vul-find-csharp/
+├── README.md                           # Project documentation and instructions
+├── NewBeginning6_Subdir.sln            # Solution file (references projects)
+├── src/
+│   └── NewBeginning6_Subdir/
+│       ├── NewBeginning6_Subdir.csproj # Main class library project file
+│       ├── Program.cs                  # Main entry (if any, placeholder)
+│       └── Models/                     # Place all ported models/classes here
+│           ├── Re.cs                   # Ported from Java (expected)
+│           ├── TxtFile.cs              # Ported from Java (expected)
+│           ├── DefaultTextarea.cs      # Ported from Java (expected)
+│           ├── DefaultText.cs          # Ported from Java (expected)
+│           ├── Http.cs                 # Ported from Java (expected)
+│           ├── CheckTarget.cs          # Ported from Java (expected)
+│           ├── Gui.cs                  # Ported from Java (expected)
+│           └── Main.cs                 # Ported from Java (expected)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj        # Test project for original tests
+│       ├── ReTests.cs
+│       ├── TxtFileTests.cs
+│       ├── DefaultTextareaTests.cs
+│       ├── DefaultTextTests.cs
+│       ├── HttpTests.cs
+│       ├── CheckTargetTests.cs
+│       ├── GuiSmokeTests.cs
+│       └── MainSmokeTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj              # Test project for public tests
+│   ├── RePublicTests.cs
+│   ├── TxtFilePublicTests.cs
+│   ├── DefaultTextareaPublicTests.cs
+│   ├── DefaultTextPublicTests.cs
+│   ├── HttpPublicTests.cs
+│   ├── CheckTargetPublicTests.cs
+│   ├── GuiSmokePublicTests.cs
+│   └── MainSmokePublicTests.cs
+├── run_tests.sh                        # One-click script to build and test all
+└── project_structure.txt               # This file, explaining structure
+
+-------------------------------------------------------------------------------
+
+Directory/Files:
+----------------
+- README.md: Includes build instructions, test instructions, and project info.
+- NewBeginning6_Subdir.sln: Solution file to manage all projects and tests in .NET.
+- src/NewBeginning6_Subdir/: Production source code.
+    - Models/: Contains all core (migrated) classes from the Java source.
+    - Program.cs: Placeholder/main entry, if needed.
+    - *.csproj: Project file for building the library.
+- tests/original/: All original (non-public) tests.
+    - *.csproj: xUnit test project configuration.
+    - *Tests.cs: Each translated test file from original Java.
+- public_tests/: All public tests.
+    - *.csproj: xUnit test project configuration.
+    - *PublicTests.cs: Each translated test file from Java.
+- run_tests.sh: Simple shell script to run all tests in one click.
+- project_structure.txt: This full description.
+
+-------------------------------------------------------------------------------
+
+Setup & Usage:
+--------------
+1. Prerequisite: .NET 6+ SDK installed.
+2. Build all projects:
+   $ dotnet build
+
+3. To run all tests (original+public):
+   $ ./run_tests.sh
+
+-------------------------------------------------------------------------------

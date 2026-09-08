@@ -1,0 +1,21 @@
+{
+  "project_name": "jaredhanson_passport-twitter",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:39:49.058371",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/jaredhanson_passport-twitter",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/jaredhanson_passport-twitter",
+  "tests_path": [
+    "test/apierror.test.js",
+    "test/index.test.js",
+    "test/package.test.js",
+    "test/profile.parse.test.js",
+    "test/profile.test.js",
+    "test/strategy.test.js",
+    "test/strategy.profile.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

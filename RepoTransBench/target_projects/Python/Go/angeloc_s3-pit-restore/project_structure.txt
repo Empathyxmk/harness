@@ -1,0 +1,30 @@
+angeloc_s3-pit-restore-go/
+├── go.mod                     # Go module definition
+├── run_tests.sh               # One-click test runner. Usage: ./run_tests.sh
+├── project_structure.txt      # This file. Overview, directory explanations & instructions
+├── tests/
+│   └── original/
+│       ├── setup_py_test.go           # Tests for setup.py mimicking the Python originals
+│       ├── s3_pit_restore_smoke_test.go     # Smoke/CLI tests for s3-pit-restore
+│       └── s3_pit_restore_unittest_test.go  # Tests for generating directory tree logic
+├── public_tests/
+│   ├── setup_py_public_test.go              # Public tests for setup.py (author/etc)
+│   ├── s3_pit_restore_unittest_public_test.go  # Public generate_tree-style test (diff names)
+│   └── s3_pit_restore_smoke_public_test.go     # Public CLI smoke/invalid arg tests
+└── README.md                        # Project and test running info (optional)
+
+Directory explanations:
+- tests/original/:      Holds tests from the original (not public) Python source. Each file is a Go _test.go file reproducing the corresponding logic.
+- public_tests/:        Translated public tests derived from Python public tests. Each file matches logic and edge cases of its Python version.
+- run_tests.sh:         Simple shell script to run all Go tests across subdirs. Usage: `./run_tests.sh`
+- go.mod:               Declares this as a Go module. No external dependencies required for these tests.
+- project_structure.txt: This file.
+
+Test execution instructions:
+1. Ensure Go is installed and in your PATH (go >= 1.18+ recommended).
+2. In the project root, run:
+       chmod +x run_tests.sh
+       ./run_tests.sh
+   This will discover and run all original and public translated test cases.
+
+All test implementation logic mirrors the original Python, using standard Go approaches for CLI, file, and output assertions.

@@ -1,0 +1,17 @@
+{
+  "project_name": "ElaWorkshop_awesome-cn-cafe",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 94.33,
+    "branch": 83.33
+  },
+  "timestamp": "2025-06-19T10:19:53.095171",
+  "original_path": "/workspace/runnable_filter/JavaScript/ElaWorkshop_awesome-cn-cafe",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/ElaWorkshop_awesome-cn-cafe",
+  "tests_path": [
+    "tools/lint.test.js",
+    "tools/housekeeper.test.js",
+    "tools/utils.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,14 @@
+yankils_hello-world/ (C# solution and translation of Java project)
+├── src/
+│   ├── YankilsHelloWorld.csproj       # Main project file for the library (contains Greeter class)
+│   └── Greeter.cs                     # C# implementation of Greeter
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj       # Project file for original tests (from Java's TestGreeter.java)
+│       └── TestGreeterTests.cs        # Translated original test class
+├── public_tests/
+│   ├── PublicTests.csproj             # Project file for public tests (from Java's GreeterPublicTest.java)
+│   └── GreeterPublicTests.cs          # Translated public test class
+├── YankilsHelloWorld.sln              # Solution file referencing all projects
+├── run_tests.sh                       # Simple script to build and run all tests with one command
+└── project_structure.txt              # This explanation/document

@@ -1,0 +1,24 @@
+wendy512_stream_python/
+├── requirements.txt                          # Python dependencies (pytest, mock)
+├── run_tests.sh                              # Simple execution script for all tests
+├── tests/                                    # Directory for all original (private) tests
+│   ├── original/
+│   │   ├── test_pulsar_state_configure.py    # PulsarStateConfigure logic (singleton, configure, client)
+│   │   ├── test_pulsar_sink.py               # PulsarSink logic (configure/produce/stop/branches)
+│   │   ├── test_pulsar_source.py             # PulsarSource logic (configure/consumer/stop/branches)
+│   │   ├── test_mqtt_state_configure.py      # MqttStateConfigure logic (singleton/validate/exception)
+│   │   └── test_mqtt_sink.py                 # MqttSink logic (configure/process/send)
+├── public_tests/                             # Directory for public (student-facing) tests
+│   ├── test_pulsar_state_configure_public.py # Public PulsarStateConfigure tests
+│   ├── test_pulsar_sink_public.py            # Public PulsarSink tests
+│   ├── test_pulsar_source_public.py          # Public PulsarSource tests
+│   ├── test_mqtt_state_configure_public.py   # Public MqttStateConfigure tests
+│   └── test_mqtt_sink_public.py              # Public MqttSink tests
+
+# README, docs, and source/ dir would go here in main project. For testing, see requirements.txt and run ./run_tests.sh
+
+Instructions:
+1. Install dependencies: pip install -r requirements.txt
+2. Run all tests (original + public): ./run_tests.sh
+3. Test files are organized as per Java project: 'tests/original/' for full original tests, 'public_tests/' for public test logic.
+4. Edit/Add more tests in the same structure. Run tests at any time with ./run_tests.sh

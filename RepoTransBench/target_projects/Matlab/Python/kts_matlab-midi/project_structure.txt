@@ -1,0 +1,35 @@
+project_root/
+├── src/
+│   ├── __init__.py                     # Python package marker, needed for imports
+│   ├── midi2freq.py                    # MIDI note to frequency mapping function
+│   ├── synth.py                        # Synthesis routines
+│   ├── readmidi.py                     # MIDI file reading utility
+│   └── ...                             # Further source modules as needed
+├── tests/
+│   ├── __init__.py                     # Python package marker
+│   └── original/
+│       ├── __init__.py                 # Python package marker
+│       ├── test_midi2freq.py           # Original Matlab TestMidi2Freq (all test cases)
+│       ├── test_readmidi.py            # Original Matlab TestReadMidi (all test cases)
+│       └── test_synth.py               # Original Matlab TestSynth (all test cases)
+├── public_tests/
+│   ├── __init__.py                     # Python package marker
+│   ├── test_public_midi2freq.py        # Translated from PublicTestMidi2Freq.m
+│   ├── test_public_readmidi.py         # Translated from PublicTestReadMidi.m
+│   ├── test_public_synth.py            # Translated from PublicTestSynth.m
+├── requirements.txt                    # Python dependencies (pytest, numpy)
+├── run_tests.sh                        # Simple bash script: executes all tests via pytest
+├── project_structure.txt               # Description of layout, file roles, and test running instructions
+└── README.md                           # (not provided, but recommended for project usage/overview)
+
+# Directory explanations:
+# src/              Source code modules for the project (implement midi, synth, etc)
+# tests/original/   Original (private) translated Matlab test cases, mapped to Python via pytest
+# public_tests/     Public test cases, each in its own Python file, runnable by pytest
+# requirements.txt  List of required Python dependencies for test and source code
+# run_tests.sh      One-click script to execute all tests
+# project_structure.txt  This file, describing layout and test execution for maintainers
+
+# Test execution:
+# 1. Install dependencies:   pip install -r requirements.txt
+# 2. Run all tests:          ./run_tests.sh    (or: bash run_tests.sh)

@@ -1,0 +1,44 @@
+pypa_sampleproject Rust Port Project Structure
+=============================================
+
+project_root/
+├── Cargo.toml                 # Rust project configuration, dependencies, project metadata
+├── README.md                  # Project documentation (if provided)
+├── run_tests.sh               # One-click test execution script (cargo test)
+├── project_structure.txt      # This structure overview file
+├── src/
+│   ├── lib.rs                 # Main library entry, brings together all modules
+│   ├── simple.rs              # Implements add_one function (Python sample.simple)
+│   ├── appinit.rs             # Contains main() logic (Python sample/__init__.py style)
+│   └── noxfile.rs             # Mocks Python noxfile.py session logic for test support
+├── tests/
+│   └── original/              # Directory for original (private/internal) tests
+│       ├── test_init.rs       # Translated original test for main() output
+│       ├── test_noxfile.rs    # Translated logic test for noxfile-like sessions
+│       └── test_simple.rs     # add_one various value and error tests
+└── public_tests/
+    ├── test_public_init.rs    # Translated public version of main() test
+    ├── test_public_noxfile.rs # Public variant for noxfile structure logic
+    └── test_public_simple.rs  # Public add_one tests
+
+Directory Key:
+--------------
+src/:             All project (main) modules. All code-under-test goes here.
+tests/original/:  Strict port of original project tests found in /tests in the Python repo.
+public_tests/:    Ported public/hidden tests from /public_tests in the Python repo.
+
+- All Rust test files (*.rs) use #[test] functions.
+- Add Rust/Cargo test files under either tests/original or public_tests for clear separation.
+- You may add README.md for notes.
+
+Running Tests:
+--------------
+$ ./run_tests.sh
+
+(Executes all tests using Cargo's test framework.)
+
+To run only original or only public tests:
+  - Original: cargo test --test test_init --test test_simple --test test_noxfile
+  - Public:   cargo test --test test_public_init --test test_public_simple --test test_public_noxfile
+
+But ./run_tests.sh will always run all.

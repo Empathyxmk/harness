@@ -1,0 +1,44 @@
+Project Structure:
+.
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── ubisoft/
+│   │               └── laforge/
+│   │                   ├── utils/
+│   │                   │   ├── QuaternionUtils.java               # quaternion math helpers
+│   │                   │   └── FKUtils.java                      # forward kinematics stub
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── ubisoft/
+│                   └── laforge/
+│                       ├── original/
+│                       │   ├── TestQuaternionUtils.java          # Translated original test_utils.py
+│                       │   ├── TestFKUtils.java                  # Translated forward kinematics/fk-related tests
+│                       │   ├── TestEvaluateDummy.java            # Placeholder for evaluate_test.py
+│                       │   ├── TestBenchmarksStub.java           # Structure for lafan1/test_benchmarks.py
+│                       │   └── TestExtractStub.java              # Structure for lafan1/test_extract.py
+│                       └── public_tests/
+│                           ├── TestUtilsPublic.java              # From public_tests/test_utils_public.py
+│                           ├── TestExtractPublic.java            # From public_tests/test_extract_public.py
+│                           ├── TestEvaluatePublic.java           # From public_tests/test_evaluate_public.py
+│                           └── TestBenchmarksPublic.java         # From public_tests/test_benchmarks_public.py
+
+- `pom.xml`: Maven project file specifying dependencies and build.
+- `run_tests.sh`: Shell script for one-click test execution (`mvn clean test`).
+- `src/main/java/com/ubisoft/laforge/utils/`: Location for custom math utilities (minimal for test satisfaction).
+- `src/test/java/com/ubisoft/laforge/original/`: Contains translations of the original python test suite.
+- `src/test/java/com/ubisoft/laforge/public_tests/`: Contains translations of provided Python public test cases.
+- All test files use JUnit5 and follow standard Java best practices.
+
+# Setup and Testing Instructions:
+
+## Prerequisites
+- JDK 11+ and Maven 3.x installed
+- Unix-like shell for `run_tests.sh` (ensure executable: `chmod +x run_tests.sh`)
+
+## To run ALL tests:

@@ -1,0 +1,27 @@
+nickjj_ansible-docker/                  # Project root
+├── pom.xml                             # Maven build descriptor with deps & test config
+├── run_tests.sh                        # Simple executable script to run all tests
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── nickjj/
+│   │               ├── dummy/          # DummyHost, DummyUser, DummyFile, DummyRunResult logic
+│   │               │   ├── DummyHost.java
+│   │               │   ├── DummyUser.java
+│   │               │   ├── DummyFile.java
+│   │               │   └── DummyRunResult.java
+│   │               ├── logic/          # DummyLogic with increment/total/isEven logic
+│   │               │   └── DummyLogic.java
+│   │               └── hostmock/       # HostMock class for public/mock host testing
+│   │                   └── HostMock.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── nickjj/
+│                   ├── original/       # All translated original (private) test cases
+│                   │   ├── DummyLogicTest.java
+│                   │   └── DummyHostMockTest.java
+│                   └── publictests/    # All public translated test cases
+│                       ├── PublicDummyLogicTest.java
+│                       └── PublicHostMockTest.java

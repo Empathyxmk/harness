@@ -1,0 +1,14 @@
+project_root/
+├── requirements.txt                     # Python dependencies
+├── run_tests.sh                         # One-click test runner for all tests
+├── README.md                            # Project documentation (add instructions here)
+├── project_structure.txt                # This project structure file
+├── tests/
+│   ├── __init__.py                      # (empty, for module recognition)
+│   └── original/
+│       ├── __init__.py                  # (empty)
+│       ├── test_parser.py               # Translated core parser test suite (unit tests)
+│       └── test_dummy_gtest_equivalents.py  # Unit tests for dummy GTest-ported cases
+├── public_tests/
+│   ├── __init__.py                      # (empty)
+│   └── test_parser_public.py            # Public test suite (unit tests)

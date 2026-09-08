@@ -1,0 +1,10 @@
+project_root/
+├── contribute.go                # Main implementation (to be written; API assumed by tests)
+├── go.mod                       # Go module file (dependency management)
+├── run_tests.sh                 # Simple script to run all tests
+├── README.md                    # Instructions and project info
+├── tests/
+│   └── original/
+│       └── contribute_test.go   # Translated original test_contribute.py 
+├── public_tests/
+│   └── public_contribute_test.go # Translated public test_public_contribute.py

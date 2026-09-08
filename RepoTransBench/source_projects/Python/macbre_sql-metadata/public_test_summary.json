@@ -1,0 +1,69 @@
+{
+  "project_name": "macbre_sql-metadata",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:16:53.951758",
+  "original_path": "/workspace/verified_repos_v2/Python/macbre_sql-metadata",
+  "public_test_result_path": "/workspace/public_test_results/Python/macbre_sql-metadata",
+  "original_tests": {
+    "test_files": [
+      "test/test_column_aliases.py",
+      "test/test_complex_aliases.py",
+      "test/test_drop_table.py",
+      "test/test_mssql_server.py",
+      "test/test_alter.py",
+      "test/test_aliases.py",
+      "test/test_multiple_subqueries.py",
+      "test/test_redshift.py",
+      "test/test_keywords_lists_unit.py",
+      "test/test_fully_qualified_names.py",
+      "test/test_query_type.py",
+      "test/test_unions.py",
+      "test/test_sqlite.py",
+      "test/test_values.py",
+      "test/test_query.py",
+      "test/test_comments.py",
+      "test/test_hive.py",
+      "test/test_caching.py",
+      "test/test_create_table.py",
+      "test/test_getting_columns.py",
+      "test/test_normalization.py",
+      "test/test_limit_and_offset.py",
+      "test/test_token_unit.py",
+      "test/test_postgress.py",
+      "test/test_with_statements.py",
+      "test/test_compat.py",
+      "test/test_getting_tables.py",
+      "test/test_truncate_table.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 28,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_column_aliases.py",
+      "public_tests/test_public_complex_aliases.py",
+      "public_tests/test_public_drop_table.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 4,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_column_aliases.py",
+    "public_tests/test_public_complex_aliases.py",
+    "public_tests/test_public_drop_table.py",
+    "run_public_tests.sh"
+  ]
+}

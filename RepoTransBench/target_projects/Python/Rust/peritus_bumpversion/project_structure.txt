@@ -1,0 +1,39 @@
+peritus_bumpversion Rust Project Structure
+
+.
+├── Cargo.toml                # Rust package configuration and dependencies.
+├── src/
+│   ├── lib.rs                # Main library module root.
+│   ├── main.rs               # CLI entry point (stub).
+│   ├── functions.rs          # Core NumericFunction and ValuesFunction with helpers.
+│   ├── version_part.rs       # VersionPart and configuration logic.
+│   └── bump_mod.rs           # Public interface/mocks for main/init logic and VCS.
+├── tests/
+│   └── original/
+│       ├── test_bumpversion_init.rs
+│       ├── test_cli.rs
+│       ├── test_functions.rs
+│       ├── test_functions_edge.rs
+│       ├── test_init_edge_cases.rs
+│       ├── test_init_vcs.rs
+│       ├── test_version_part.rs
+│       └── test_version_part_extra.rs
+├── public_tests/
+│   ├── test_public_bumpversion_init.rs
+│   ├── test_public_cli.rs
+│   ├── test_public_functions.rs
+│   ├── test_public_functions_edge.rs
+│   ├── test_public_init_edge_cases.rs
+│   ├── test_public_init_vcs.rs
+│   ├── test_public_version_part.rs
+│   └── test_public_version_part_extra.rs
+├── run_tests.sh              # One-click test execution script (runs all tests).
+└── project_structure.txt     # This documentation.
+
+Notes:
+- All source code is under src/.
+- Unit/regression/original tests are under tests/original/.
+- Public tests (as per public_tests/ in the original project) are under public_tests/.
+- To run all tests, just execute: ./run_tests.sh
+- Cargo handles build and dependency management automatically.
+- Per Rust conventions, tests in public_tests/ are also discovered if run individually (e.g., `cargo test --test public_tests/test_public_functions` if refactored as integration tests).

@@ -1,0 +1,36 @@
+rgri_tex2nix Go Project Structure
+=================================
+
+.
+├── go.mod                   # Go module definition
+├── README.md                # Project description and basic usage
+├── run_tests.sh             # Simple executable script to run all tests
+├── project_structure.txt    # This file; documents the project structure
+├── tex2nix/
+│   └── dummy.go             # Minimal placeholder for package 'tex2nix'
+├── tests/
+│   ├── test_full_test.go    # Original test: minimal dummy from Python
+│   └── test_init_test.go    # Original test: logic-heavy migrated from Python
+└── public_tests/
+    ├── test_public_init_test.go  # Public test cases (API, version, various pipelines)
+    └── test_public_full_test.go  # Public "end-to-end" test case
+
+Directory explanations:
+-----------------------
+tex2nix/          : Source code package, currently a placeholder so tests build.
+tests/            : Original project tests, mapped from Python's tests/.
+public_tests/     : Public test interface, mapped from Python's public_tests/.
+
+How to run tests:
+-----------------
+From the root directory, just run:
+
+    ./run_tests.sh
+
+This runs `go test ./...` to find and run all test files (`*_test.go`) in all subdirs.
+
+File conventions:
+-----------------
+- Test files are named with `_test.go`
+- Packages are either 'tex2nix' (for public or unit API tests) or 'main' where needed.
+- All test logic is fully implemented with no empty or placeholder test functions.

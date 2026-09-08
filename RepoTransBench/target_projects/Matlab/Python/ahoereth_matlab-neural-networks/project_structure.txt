@@ -1,0 +1,32 @@
+ahoereth_matlab-neural-networks-python/
+├── requirements.txt                     # Python package dependencies (pytest, numpy)
+├── run_tests.sh                         # Simple bash script to run all tests
+├── README.md                            # Project documentation and instructions
+├── src/
+│   ├── __init__.py                      # Python package marker
+│   └── neural_net.py                    # Neural network core implementation
+├── tests/
+│   ├── __init__.py                      # Test package marker
+│   ├── test_apply_neural_net.py         # Original tests for apply_neural_net
+│   ├── test_generate_neural_net.py      # Original tests for generate_neural_net
+│   ├── test_train_neural_net.py         # Original tests for train_neural_net
+│   └── test_train_neural_net_static.py  # Original tests for train_neural_net_static
+├── public_tests/
+│   ├── __init__.py                      # Public test package marker
+│   ├── test_public_apply_neural_net.py      # Public test for apply_neural_net
+│   ├── test_public_generate_neural_net.py   # Public test for generate_neural_net
+│   ├── test_public_train_neural_net.py      # Public test for train_neural_net
+│   └── test_public_train_neural_net_static.py # Public test for train_neural_net_static
+
+Structure Explanation:
+- `src/`: Core implementation of neural network, including generate_neural_net, apply_neural_net, and both training methods.
+- `tests/`: Original tests translated from Matlab to Python using pytest, covering all features and edge cases.
+- `public_tests/`: Public sample tests, separated for transparency and as extra examples.
+- `requirements.txt`: Required pip packages for running project and tests.
+- `run_tests.sh`: Bash script to execute all tests with one command.
+- `README.md`: Usage instructions and documentation.
+
+How to run tests:
+1. Install Python 3.8+ and pip.
+2. Run `pip install -r requirements.txt`
+3. Execute `./run_tests.sh` from the project root to run all tests.

@@ -1,0 +1,32 @@
+project_root/
+├── requirements.txt               # Python dependencies for development and tests
+├── run_tests.sh                   # One-click test execution script (runs both original and public tests)
+├── tests/
+│   ├── __init__.py                # Makes this a Python package
+│   └── original/
+│       ├── __init__.py
+│       ├── test_main_activity.py  # Translation of MainActivityTest.java
+│       ├── test_worker.py         # Translation of WorkerTest.java
+│       └── utils/
+│           ├── __init__.py
+│           └── test_assets_util.py# Translation of AssetsUtilTest.java
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_main_activity_public.py       # Translation of MainActivityPublicTest.java
+│   ├── test_worker_public.py              # Translation of WorkerPublicTest.java
+│   └── utils/
+│       ├── __init__.py
+│       └── test_assets_util_public.py     # Translation of AssetsUtilPublicTest.java
+└── README.md                      # Project documentation (not shown here)
+
+# Directory Explanations:
+# tests/original/        - Contains Python translations of the original Java tests from the repository.
+# public_tests/          - Public variant/unit tests matching public Java test coverage.
+# requirements.txt       - Lists Python dependencies for running all tests (pytest, mock).
+# run_tests.sh           - Simple executable script to run all original and public tests in one shot.
+# __init__.py files      - Make subdirectories Python packages and test collection compatible.
+#
+# Setup and Testing Instructions:
+# 1. pip install -r requirements.txt
+# 2. chmod +x run_tests.sh
+# 3. ./run_tests.sh

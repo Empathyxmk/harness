@@ -1,0 +1,29 @@
+viralogic_py_enumerable/
+├── Cargo.toml                  # Rust project manifest and dependency file
+├── README.md                   # Project documentation and basic usage info
+├── run_tests.sh                # One-click script to run all tests
+├── src/
+│   ├── lib.rs                  # Root Rust library module
+│   ├── enumerable.rs           # Library Enumerable logic (stub for now)
+│   ├── core.rs                 # Core types (Node, RepeatableIterable, etc.) (stub for now)
+│   ├── decorators.rs           # Simulated decorator logic (stub for now)
+│   └── exceptions.rs           # Exception types for error tests and usage
+├── tests/
+│   ├── test_core.rs            # Original test: core.rs logic
+│   ├── test_decorators.rs      # Original test: decorators logic
+│   ├── test_exceptions.rs      # Original test: exception instantiation
+│   ├── test_functions.rs       # Original test: Enumerable and other things
+│   ├── test_performance.rs     # Original test: performance (skipped/stubbed)
+│   ├── test_py_linq.rs         # Original test: py_linq tests
+│   ├── test_py_linq_branch.rs  # Original test: branch and coverage tests
+│   ├── test_repeatable.rs      # Original test: RepeatableIterable checks
+├── public_tests/
+│   ├── test_public_core.rs             # Public test: core logic
+│   ├── test_public_decorators.rs       # Public test: decorator logic
+│   ├── test_public_exceptions.rs       # Public test: public error types and messages
+│   ├── test_public_functions.rs        # Public test: public enum/iter/len etc
+│   ├── test_public_performance.rs      # Public test: "performance"
+│   ├── test_public_py_linq.rs          # Public test: public py_linq logic
+│   ├── test_public_py_linq_branch.rs   # Public test: py_linq branch logic
+│   ├── test_public_repeatable.rs       # Public test: RepeatableIterable
+└── (other files such as LICENSE, docs/, etc.)

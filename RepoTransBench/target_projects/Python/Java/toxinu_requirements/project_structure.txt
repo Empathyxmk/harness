@@ -1,0 +1,19 @@
+toxinu_requirements Java Project Structure:
+
+.
+├── pom.xml
+├── run_tests.sh
+├── src
+│   └── test
+│       └── java
+│           └── com
+│               └── example
+│                   ├── original
+│                   │   ├── RequirementTest.java
+│                   │   └── RequirementsTest.java
+│                   ├── public_tests
+│                   │   ├── RequirementPublicTest.java
+│                   │   └── RequirementsPublicTest.java
+│                   ├── Requirement.java      # STUB for testing
+│                   └── Requirements.java     # STUB for testing
+└── project_structure.txt

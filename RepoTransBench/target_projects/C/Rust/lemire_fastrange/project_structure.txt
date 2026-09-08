@@ -1,0 +1,17 @@
+lemire_fastrange/
+├── Cargo.toml                  # Rust project configuration
+├── README.md                   # Project documentation
+├── run_tests.sh                # Test execution script
+├── src/
+│   └── lib.rs                  # Main library implementation
+├── tests/                      # Original tests
+│   ├── tests.rs                # Basic tests
+│   ├── test_fastrange_extra.rs # Additional tests for fastrange
+│   ├── test_fastrange_sizeint.rs # Tests for size_t functionality
+│   ├── test_fastrange64_fallback.rs # Tests for fallback functionality
+│   └── test_cpp.rs             # Tests from the C++ implementation
+└── public_tests/               # Public tests
+    ├── tests_public.rs         # Basic public tests
+    ├── test_fastrange_extra_public.rs # Additional public tests
+    ├── test_fastrange_sizeint_public.rs # Public size_t tests
+    └── test_fastrange64_fallback_public.rs # Public fallback tests

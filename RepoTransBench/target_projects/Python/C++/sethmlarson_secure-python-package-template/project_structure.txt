@@ -1,0 +1,35 @@
+project_root/
+├── CMakeLists.txt                    # CMake build configuration for entire project
+├── include/
+│   └── secure_package_template/
+│       ├── version.h                 # Declares version string (mimics __version__ attribute from Python)
+│       └── pytyped.h                 # Declarations for py.typed file access helpers
+├── public_tests/
+│   ├── test_public_secure_package_template.cpp   # Public C++ tests for core "import", version, and py.typed
+│   └── test_public_version.cpp                  # Public C++ tests for version attributes
+├── run_tests.sh                      # Simple script: builds and runs all tests
+├── src/
+│   └── secure_package_template/
+│       ├── version.cpp               # Version module implementation (minimal)
+│       ├── pytyped.cpp               # Implementation for py.typed file helpers (minimal)
+│       └── py.typed                  # Marker file for typing (just as in Python package)
+├── tests/
+│   ├── test_main.cpp                 # Single main for GoogleTest discovery
+│   ├── test_secure_package_template.cpp      # Original C++ translation of core tests
+│   └── test_version.cpp              # Original C++ translation of version tests
+└── project_structure.txt             # This file: explains project organization
+
+Directory & File Purposes:
+- /include/secure_package_template/: Headers for main library code, e.g., version and py.typed helpers.
+- /src/secure_package_template/: Minimal implementation for the "library", including a version string and py.typed utilities, plus the marker file as in the original Python package.
+- /tests/: All original ("private") test cases translated from Python.
+- /public_tests/: All public tests, with the same logic as the public Python test suite.
+- /run_tests.sh: Builds and runs all tests; simple one-command operation (chmod +x enabled).
+- /CMakeLists.txt: Sets up GoogleTest, builds static library, links all tests, and manages build/test targets.
+- /project_structure.txt: This summary and explanation for contributors.
+
+Instructions:
+1. Prerequisites: CMake >= 3.10, a C++17 compiler.
+2. To build and run all tests, just execute:
+   $ ./run_tests.sh
+3. All tests (original/private and public) are run together via GoogleTest. Output indicates separate test cases for public and private logic.

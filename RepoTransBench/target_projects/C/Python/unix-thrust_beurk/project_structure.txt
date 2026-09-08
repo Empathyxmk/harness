@@ -1,0 +1,30 @@
+unix-thrust_beurk-python/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── README.md
+├── src/
+│   └── (Put ported/app source code here if needed)
+├── tests/
+│   └── original/
+│       ├── test_cleanup_login_records.py
+│       ├── test_config.py
+│       ├── test_debug.py
+│       ├── test_drop_shell_backdoor.py
+│       ├── test_hide_tcp_ports.py
+│       ├── test_init.py
+│       ├── test_is_attacker.py
+│       ├── test_is_hidden_file.py
+│       └── test_is_procnet.py
+├── public_tests/
+│   ├── test_init_public.py
+│   └── test_is_procnet_public.py
+
+Directory explanations:
+- requirements.txt   : Python pip requirements (pytest).
+- run_tests.sh       : Simple shell script, runs all tests via pytest.
+- project_structure.txt: This file, describes all structure.
+- README.md          : Project overview, setup and usage instructions.
+- src/               : (Empty) Placeholder for source code, if ported.
+- tests/original/    : All original C unit tests, translated to Python with identical logic.
+- public_tests/      : Public/generator-provided tests, translated to Python.

@@ -1,0 +1,21 @@
+zephyrproject-rtos_example-application/
+├── Cargo.toml            # Rust project configuration
+├── README.md             # Project documentation
+├── run_tests.sh          # Script to run all tests
+├── src/
+│   └── lib.rs            # Main library with mock implementations
+└── tests/
+    ├── mod.rs            # Main test module
+    ├── original/         # Original tests translated from C
+    │   ├── mod.rs        # Original tests module
+    │   ├── test_blink.rs
+    │   ├── test_compile_drivers_and_lib.rs
+    │   ├── test_custom.rs
+    │   ├── test_custom_full.rs
+    │   └── test_example_sensor.rs
+    └── public/           # Public tests translated from C
+        ├── mod.rs        # Public tests module
+        ├── test_blink_public.rs
+        ├── test_custom_full_public.rs
+        ├── test_custom_public.rs
+        └── test_example_sensor_public.rs

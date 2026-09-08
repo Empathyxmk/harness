@@ -1,0 +1,26 @@
+Jude95_Utils_CSharp/
+├── Jude95_Utils.sln
+├── src/
+│   └── Jude95_Utils/
+│       ├── Jude95_Utils.csproj
+│       ├── JActivityManager.cs
+│       ├── JFileManager.cs
+│       ├── JTimeTransform.cs
+│       ├── JUtils.cs
+│       └── DummyActivity.cs
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── ApplicationTest.cs
+│       ├── JTimeTransformTest.cs
+│       ├── JActivityManagerTest.cs
+│       └── JFileManagerTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── ApplicationPublicTest.cs
+│   ├── JTimeTransformPublicTest.cs
+│   ├── JActivityManagerPublicTest.cs
+│   └── JFileManagerPublicTest.cs
+├── TestUtilities.cs
+├── run_tests.sh
+└── test_translation_progress.json

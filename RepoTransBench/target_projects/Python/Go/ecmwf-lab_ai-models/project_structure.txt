@@ -1,0 +1,26 @@
+project_root/
+├── go.mod                        # Go module definition
+├── README.md                     # Project documentation and instructions
+├── run_tests.sh                  # One-click script to run all test suites
+├── src/
+│   └── ai_models/                # (Placeholder for Go source package; not implemented here)
+├── tests/
+│   ├── conftest.go               # Setup code for original tests (adds source to package path if needed)
+│   ├── test_checkpoint_test.go   # Original: checkpoint logic tests
+│   ├── test_code_test.go         # Original: (empty) code test
+│   ├── test_main_basic_test.go   # Original: main module basic tests
+│   └── test_stepper_test.go      # Original: stepper tests
+├── public_tests/
+│   ├── conftest.go               # Setup code for public tests (adds source to package path if needed)
+│   ├── test_public_checkpoint_test.go    # Public checkpoint logic tests
+│   ├── test_public_code_test.go          # Public code and string tests
+│   ├── test_public_main_basic_test.go    # Public main args and error handling tests
+│   └── test_public_stepper_test.go       # Public stepper tests
+
+Explanations:
+- src/ai_models/           Intended location for Go application code (not implemented in this test translation).
+- tests/                   Contains all original tests, converted from Python to Go, fully functional.
+- public_tests/            Contains all public tests, converted from Python to Go, fully functional.
+- run_tests.sh             Runs all tests with Go tooling, one line.
+- go.mod                   Go module declaration.
+- README.md                Project & usage info.

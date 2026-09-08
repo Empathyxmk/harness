@@ -1,0 +1,37 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_FeatureCollectionTest.py
+│   │   ├── test_GeoJsonObjectVisitorTest.py
+│   │   ├── test_GeometryTest.py
+│   │   ├── test_FeatureUnitTest.py
+│   │   ├── test_ToStringTest.py
+│   │   ├── test_FeatureTest.py
+│   │   ├── test_LineStringUnitTest.py
+│   │   ├── test_LngLatAltTest.py
+│   │   ├── test_MultiLineStringUnitTest.py
+│   │   └── jackson/
+│   │       ├── __init__.py
+│   │       ├── test_CrsTest.py
+│   │       ├── test_MultiPoligonTest.py
+│   │       ├── test_LineStringTest.py
+│   │       ├── test_MultiPointTest.py
+│   │       ├── test_LngLatAltSerializerTest.py
+│   │       ├── test_GeoJsonObjectTest.py
+│   │       ├── test_GeometryCollectionTest.py
+│   │       ├── test_MultiLineStringTest.py
+│   │       ├── test_LngLatAltDeserializerTest.py
+│   │       ├── test_PointTest.py
+│   │       └── test_PolygonTest.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_FeatureCollectionPublicTest.py
+│   ├── test_public_GeoJsonObjectVisitorPublicTest.py
+│   ├── test_public_GeometryPublicTest.py
+│   ├── test_public_FeatureUnitPublicTest.py
+│   └── test_public_ToStringPublicTest.py

@@ -1,0 +1,16 @@
+JLErvin_berry_python/
+├── src/
+│   ├── __init__.py
+│   └── utils.py               # Implementations of utils functions for testing
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_utils.py      # Translated test_utils.c
+│   │   └── test_man.py        # Translated test_man.sh
+│   └── conftest.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_utils_public.py   # Translated test_utils_public.c
+├── requirements.txt           # Required dependencies
+└── run_tests.sh               # Test execution script

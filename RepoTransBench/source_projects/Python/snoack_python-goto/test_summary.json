@@ -1,0 +1,16 @@
+{
+  "project_name": "snoack_python-goto",
+  "language": "Python",
+  "coverage": {
+    "line": 87.0,
+    "branch": 61.0
+  },
+  "timestamp": "2025-06-19T12:52:29.679689",
+  "original_path": "/workspace/runnable_filter/Python/snoack_python-goto",
+  "test_result_path": "/workspace/test_enhancement_results/Python/snoack_python-goto",
+  "tests_path": [
+    "test_goto.py",
+    "test_goto_internals.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

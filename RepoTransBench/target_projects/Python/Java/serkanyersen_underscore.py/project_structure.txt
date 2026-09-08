@@ -1,0 +1,64 @@
+Project Structure for serkanyersen_underscore.py Java Translation
+===============================================================
+
+.
+├── pom.xml                     # Maven build configuration with JUnit 5 dependencies
+├── run_tests.sh                # Simple test execution script (chmod +x)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── underscore/
+│   │                   └── Underscore.java    # Java implementation for underscore API used by tests
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── ArraysTest.java
+│                   │   ├── BasicsTest.java
+│                   │   ├── CollectionsTest.java
+│                   │   ├── FunctionsTest.java
+│                   │   ├── MoreCoverageTest.java
+│                   │   ├── ObjectsTest.java
+│                   │   ├── StructureTest.java
+│                   │   ├── UtilityTest.java
+│                   └── publictests/
+│                       ├── PublicArraysTest.java
+│                       ├── PublicBasicsTest.java
+│                       ├── PublicCollectionsTest.java
+│                       ├── PublicFunctionsTest.java
+│                       ├── PublicMoreCoverageTest.java
+│                       ├── PublicObjectsTest.java
+│                       ├── PublicStructureTest.java
+│                       ├── PublicUtilityTest.java
+
+DIRECTORY PURPOSES:
+-------------------
+pom.xml
+    - Defines project build and testing dependencies (JUnit 5 for unit testing, Java 11 targeted).
+run_tests.sh
+    - Runs all tests via Maven (mvn clean test).
+src/main/java/com/example/underscore/Underscore.java
+    - Contains Java implementation of the underscore.py API/methods referenced in all test cases.
+src/test/java/com/example/original/
+    - Contains Java translations of the project's original private (non-public) tests.
+src/test/java/com/example/publictests/
+    - Contains Java translations of the public tests.
+
+TESTING & SETUP INSTRUCTIONS:
+-----------------------------
+1. Ensure you have Maven and Java 11+ installed.
+2. From the project root, run: 
+
+       ./run_tests.sh
+
+   This will compile code and run ALL tests (both original & public).
+
+3. All code and tests are self-contained in the 'src' folder tree.
+
+NOTE:
+-----
+- All test logic fully ported and working; assertions and input data match Python test cases.
+- Test folder division: 'original' for source/private, 'publictests' for public test suite.

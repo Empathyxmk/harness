@@ -1,0 +1,52 @@
+eatonphil_pj/
+├── README.md
+├── htmlcov/
+│   └── ... (HTML coverage files)
+├── pj/
+│   ├── __init__.py
+│   ├── constants.py
+│   ├── lexer.py
+│   └── parser.py
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_api.py
+│   ├── test_public_lexer.py
+│   ├── test_public_parser.py
+│   └── test_public_pj.py
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── eatonphil/
+│   │               └── pj/
+│   │                   ├── Pj.java
+│   │                   ├── lexer/
+│   │                   │   └── Lexer.java
+│   │                   └── parser/
+│   │                       └── Parser.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── eatonphil/
+│                   └── pj/
+│                       ├── original/
+│                       │   ├── TestPJAPI.java
+│                       │   ├── TestLexer.java
+│                       │   ├── TestParser.java
+│                       │   └── TestPj.java
+│                       └── publictests/
+│                           ├── TestPublicAPI.java
+│                           ├── TestPublicLexer.java
+│                           ├── TestPublicParser.java
+│                           └── TestPublicPj.java
+├── test_summary.json
+└── tests/
+    ├── __init__.py
+    ├── test_api.py
+    ├── test_lexer.py
+    ├── test_parser.py
+    └── test_pj.py

@@ -1,0 +1,30 @@
+.
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_python_bindings_basic_public.py  # Public binding/math sample tests
+│   └── test_trigger_mode_public.py           # Public trigger_mode tests
+├── requirements.txt                          # Python test runner dependencies
+├── run_tests.sh                              # One-click test runner
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_python_bindings_basic.py     # Original binding/math sample tests
+│   │   └── test_trigger_mode.py              # Original trigger_mode tests
+│   ├── test_python_bindings_basic.py         # Shortcut to test in original/
+│   └── test_trigger_mode.py                  # Shortcut to test in original/
+└── project_structure.txt
+
+Directory explanations:
+- public_tests/: Contains full implementations of public test cases.
+- requirements.txt: Only needs pytest (you can install with `pip install -r requirements.txt`).
+- run_tests.sh: Runs all tests with a single command. Run with: `chmod +x run_tests.sh && ./run_tests.sh`
+- tests/: Main test directory. "original/" holds private test logic.
+  - test_* files at top-level import from original/ to support multiple runners
+- project_structure.txt: This structure/documentation.
+
+INSTRUCTIONS:
+1. `pip install -r requirements.txt`
+2. `chmod +x run_tests.sh`
+3. `./run_tests.sh` to run all tests, both original and public.

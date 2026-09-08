@@ -1,0 +1,35 @@
+{
+  "project_name": "florianheinemann_passwordless",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 94.3,
+    "branch": 94.1
+  },
+  "timestamp": "2025-06-23T10:38:12.872163",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/florianheinemann_passwordless",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/florianheinemann_passwordless",
+  "tests_path": [
+    "test/init.test.js",
+    "test/root/index.js.test.js",
+    "test/root/Gruntfile.test.js",
+    "test/acceptToken/stateless.test.js",
+    "test/acceptToken/session.test.js",
+    "test/acceptToken/acceptToken.test.js",
+    "test/restricted/restricted.test.js",
+    "test/mock/tokenstoremock.test.js",
+    "test/logout/logout.test.js",
+    "test/integration/token-reuse.test.js",
+    "test/integration/two-step-auth.test.js",
+    "test/integration/no-success-redirect.test.js",
+    "test/integration/ttl.test.js",
+    "test/integration/stateless.test.js",
+    "test/integration/originRedirect.test.js",
+    "test/integration/standard.test.js",
+    "test/integration/two-delivery-methods.test.js",
+    "test/user/user.test.js",
+    "test/delivery/requestToken.test.js",
+    "test/delivery/addDelivery.test.js",
+    "test/delivery/severalStrategies.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

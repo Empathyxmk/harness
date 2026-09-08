@@ -1,0 +1,54 @@
+jeffhammond_dpcpp-tutorial Python Translation Project Structure
+=================================================================
+
+project_root/
+├── requirements.txt            # Python package requirements (pytest)
+├── run_tests.sh                # Simple one-click test execution script (runs all tests)
+├── README.md                   # Documentation (see source README.md for project context)
+├── test_summary.json           # Original test summary for metadata (untouched, just data file)
+├── public_test_summary.json    # Public test summary (untouched, just data file)
+│
+├── tests/
+│   ├── original/               # All original (private/host/dummy) tests
+│   │   ├── __init__.py
+│   │   ├── test_makefile_dummy.py
+│   │   ├── test_readme_dummy.py
+│   │   ├── test_saxpy_cc_dummy.py
+│   │   ├── test_saxpy_dummy.py
+│   │   ├── test_saxpy_usm2_dummy.py
+│   │   ├── test_saxpy_usm3_dummy.py
+│   │   ├── test_saxpy_usm_dummy.py
+│   │   ├── test_tutorial_functional.py
+│   │   ├── test_tutorial_host.py
+│   │   ├── test_tutorial_smoke.py
+│   │   └── test_summary_json_test.py
+│
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_makefile_dummy_public.py
+│   ├── test_readme_dummy_public.py
+│   ├── test_saxpy_cc_dummy_public.py
+│   ├── test_saxpy_dummy_public.py
+│   ├── test_saxpy_usm2_dummy_public.py
+│   ├── test_saxpy_usm3_dummy_public.py
+│   ├── test_saxpy_usm_dummy_public.py
+│   ├── test_tutorial_functional_public.py
+│   ├── test_tutorial_host_public.py
+│   ├── test_tutorial_smoke_public.py
+│   ├── test_saxpy_usm_uservalid_public.py
+│   ├── test_saxpy_usm3_uservalid_public.py
+│   └── test_public_test_summary_json.py
+
+README:
+-------
+
+- To install dependencies (pytest): `pip install -r requirements.txt`
+- To run all tests: `./run_tests.sh`
+- Original test results and coverage simulated by `tests/original/`
+- Public/CI-facing tests are in `public_tests/`
+- Executable SYCL-based tests are "simulated" in Python; if missing the native binaries, the related public tests will skip or print notice.
+
+Notes:
+- All test logic fully implemented; all asserts present as in the C++ sources.
+- This layout is pytest-native (all test files and functions discovered by `pytest`).
+- This translation does **not** include any SYCL or DPC++ functionality in Python; all tests are "host-only" logical/coverage equivalents.

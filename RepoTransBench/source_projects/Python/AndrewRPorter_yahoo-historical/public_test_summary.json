@@ -1,0 +1,53 @@
+{
+  "project_name": "AndrewRPorter_yahoo-historical",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:42:27.350407",
+  "original_path": "/workspace/verified_repos_v2/Python/AndrewRPorter_yahoo-historical",
+  "public_test_result_path": "/workspace/public_test_results/Python/AndrewRPorter_yahoo-historical",
+  "original_tests": {
+    "test_files": [
+      "tests/test_init_import.py",
+      "tests/test_setup_py.py",
+      "tests/test_fetcher_core.py",
+      "tests/test_constants.py",
+      "tests/test_fetch.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_init_import.py",
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_fetcher_core.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_constants.py",
+      "public_tests/test_public_fetch.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_init_import.py",
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_fetcher_core.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_constants.py",
+    "public_tests/test_public_fetch.py",
+    "run_public_tests.sh"
+  ]
+}

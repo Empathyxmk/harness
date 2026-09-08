@@ -1,0 +1,11 @@
+{
+  "project_name": "JamesZBL_java_design_patterns",
+  "language": "Java",
+  "coverage": {
+    "line": 86.2,
+    "branch": 62.5
+  },
+  "timestamp": "2025-06-23T14:48:11.640351",
+  "original_path": "/workspace/runnable_filter/Java/JamesZBL_java_design_patterns",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/JamesZBL_java_design_patterns"
+}

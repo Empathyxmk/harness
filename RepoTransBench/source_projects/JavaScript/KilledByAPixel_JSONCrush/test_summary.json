@@ -1,0 +1,15 @@
+{
+  "project_name": "KilledByAPixel_JSONCrush",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:40:03.874131",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/KilledByAPixel_JSONCrush",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/KilledByAPixel_JSONCrush",
+  "tests_path": [
+    "test/JSONCrush.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

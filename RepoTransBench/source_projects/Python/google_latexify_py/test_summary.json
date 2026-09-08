@@ -1,0 +1,11 @@
+{
+  "project_name": "google_latexify_py",
+  "language": "Python",
+  "coverage": {
+    "line": 92.5,
+    "branch": 77.0
+  },
+  "timestamp": "2025-06-19T11:46:44.738908",
+  "original_path": "/workspace/runnable_filter/Python/google_latexify_py",
+  "test_result_path": "/workspace/test_enhancement_results/Python/google_latexify_py"
+}

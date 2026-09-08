@@ -1,0 +1,24 @@
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── racwn/
+│   │               └── wpanalyser/
+│   │                   └── analyser/
+│   │                       └── Analyser.java            # (Implement/main entry file, expected)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── racwn/
+│                   └── wpanalyser/
+│                       ├── original/
+│                       │   ├── TestAnalyserBranches.java
+│                       │   ├── TestAnalyserCore.java
+│                       │   └── AnalyserTests.java
+│                       └── public_tests/
+│                           ├── PublicAnalyserBranchesTest.java
+│                           └── PublicAnalyserCoreTest.java
+├── test_translation_progress.json

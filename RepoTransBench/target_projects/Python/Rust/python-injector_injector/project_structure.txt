@@ -1,0 +1,45 @@
+project_root/
+├── Cargo.toml                      # Rust package config
+├── src/
+│   └── lib.rs                      # Main crate lib file (empty for this exercise)
+├── tests/
+│   └── original/
+│       ├── injector_test.rs        # Original test: module + meta
+│       ├── test_injector_init.rs   # Original test: module meta & attributes
+│       └── test_setup_py.rs        # Original test: setup.py file presence
+├── public_tests/
+│   ├── test_public_injector.rs         # Public: DI logic, singletons, injection
+│   ├── test_public_injector_init.rs    # Public: injector instance, config "type"
+│   └── test_public_setup_py.rs         # Public: setup.py file contents checks (version/description)
+├── run_tests.sh                     # Simple script: run all tests
+└── project_structure.txt            # You are here: structure & explanation
+
+
+Directory Explanations:
+----------------------
+src/lib.rs
+    - Main Rust module. Empty here, but where crate logic would go.
+
+tests/original/
+    - Translations of Python's original test files (test_injector_init.py, injector_test.py, test_setup_py.py).
+    - Separate directory for clarity and equivalence.
+
+public_tests/
+    - Translations of Python's public_tests/ content (test_public_injector.py, etc.).
+    - Standalone tests simulating public contract and verification as in Python repo.
+
+Cargo.toml
+    - Rust build/package configuration.
+
+run_tests.sh
+    - Make executable! Runs all tests with `cargo test --all`.
+
+project_structure.txt
+    - This document: Describes project layout, file purposes, and test/usage info.
+
+Test & Setup Instructions:
+--------------------------
+1. Install Rust toolchain if missing (`rustup`).
+2. Ensure `setup.py` and `injector/py.typed` exist (as checked by file-based tests).
+3. Make sure run_tests.sh is executable: `chmod +x run_tests.sh`
+4. Run all tests: `./run_tests.sh`

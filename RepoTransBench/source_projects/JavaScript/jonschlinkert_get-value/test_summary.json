@@ -1,0 +1,11 @@
+{
+  "project_name": "jonschlinkert_get-value",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 90.3,
+    "branch": 73.9
+  },
+  "timestamp": "2025-06-19T10:44:25.235845",
+  "original_path": "/workspace/runnable_filter/JavaScript/jonschlinkert_get-value",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/jonschlinkert_get-value"
+}

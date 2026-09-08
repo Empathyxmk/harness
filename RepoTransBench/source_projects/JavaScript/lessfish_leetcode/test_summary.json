@@ -1,0 +1,18 @@
+{
+  "project_name": "lessfish_leetcode",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 95.65
+  },
+  "timestamp": "2025-06-19T10:52:02.206023",
+  "original_path": "/workspace/runnable_filter/JavaScript/lessfish_leetcode",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/lessfish_leetcode",
+  "tests_path": [
+    "Algorithms/Number Complement/number-complement.test.js",
+    "Algorithms/Maximum Depth of Binary Tree/maximum-depth-of-binary-tree.test.js",
+    "Algorithms/Battleships in a Board/battleships-in-a-board.test.js",
+    "Algorithms/Sort Characters By Frequency/sort-characters-by-frequency.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,22 @@
+project_root/
+├── src/                                # Contains the main source code of the project.
+│   └── danmar_simplecpp/               # Python package for simplecpp.
+│       ├── __init__.py                 # Initializes the Python package.
+│       └── simplecpp.py                # Contains the implementation of add, subtract, multiply, and hello functions.
+├── tests/                              # Directory for original test cases.
+│   ├── __init__.py                     # Initializes the tests package.
+│   └── original/                       # Subdirectory for original tests.
+│       ├── __init__.py                 # Initializes the original tests package.
+│       └── test_simplecpp_original.py  # Translated original test cases from test.cpp.
+├── public_tests/                       # Directory for public test cases.
+│   ├── __init__.py                     # Initializes the public_tests package.
+│   └── test_simplecpp_public.py        # Translated public test cases from test_public.cpp.
+├── requirements.txt                    # Lists Python dependencies (e.g., pytest).
+├── run_tests.sh                        # A simple bash script to install dependencies and run all tests.
+└── project_structure.txt               # This file, documenting the project structure.
+
+To run tests:
+1. Make sure Python 3 and pip are installed.
+2. Navigate to the project_root directory.
+3. Run `./run_tests.sh`
+This script will install required Python packages and then execute all test cases found in 'tests/' and 'public_tests/' directories using pytest.

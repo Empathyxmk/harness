@@ -1,0 +1,18 @@
+BootloaderSpoofer.sln                        # Solution file: groups all projects
+README.md                                   # Project documentation
+run_tests.sh                                # One-click test execution script
+project_structure.txt                       # Project tree and structure documentation
+
+src/
+└── BootloaderSpoofer/
+    ├── BootloaderSpoofer.cs                # Main implementation of BootloaderSpoofer
+    └── BootloaderSpoofer.csproj            # Project file for BootloaderSpoofer
+
+tests/
+└── original/
+    ├── BootloaderSpooferTest.cs            # Original/hidden tests (full logic C# xUnit)
+    └── OriginalTests.csproj                # Test project for original/hidden tests
+
+public_tests/
+├── BootloaderSpooferPublicTest.cs          # Public tests (full logic C# xUnit)
+└── PublicTests.csproj                      # Test project for public tests

@@ -1,0 +1,20 @@
+hcs64_vgm_ripping/
+├── src/                            # Source code directory
+│   └── vgm_ripping/               # Main package
+│       ├── __init__.py            # Package initialization
+│       └── sample.py              # Implementation of add and sub functions
+├── tests/                          # Original tests directory
+│   ├── __init__.py                # Test package initialization
+│   └── original/                  # Original tests subdirectory
+│       ├── __init__.py            # Original tests package initialization
+│       └── test_sample.py         # Original tests for sample.py
+├── public_tests/                   # Public tests directory
+│   ├── __init__.py                # Public tests package initialization
+│   └── test_sample_public.py      # Public tests for sample.py
+├── conftest.py                     # pytest configuration file
+├── setup.py                        # Package setup file
+├── requirements.txt                # Project dependencies
+├── run_tests.sh                    # Script to run all tests
+├── run_original_tests.sh           # Script to run only original tests
+├── run_public_tests.sh             # Script to run only public tests
+└── README.md                       # Project documentation

@@ -1,0 +1,27 @@
+project_root/
+├── src/
+│   └── gulp_cached/
+│       ├── __init__.py              # Simulated module for test compatibility
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_index_spec.py       # Original (private) test cases
+├── public_tests/
+│   ├── __init__.py
+│   └── test_index_public_test.py    # Public test cases
+├── requirements.txt                 # Python dependencies (pytest)
+├── run_tests.sh                     # One-click test execution script
+├── project_structure.txt            # This project structure/documentation file
+
+Directory explanations:
+- src/gulp_cached/: Python module placeholder emulating 'gulp-cached' (needed for test translation, basic logic only)
+- tests/original/: Contains translations of original (not public) test cases from JS
+- public_tests/: Contains translations of public JS test cases
+- requirements.txt: Lists Python dependencies (primarily pytest)
+- run_tests.sh: Simple script to run all tests (pytest)
+- project_structure.txt: This file; documents the structure and purpose
+
+Instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`

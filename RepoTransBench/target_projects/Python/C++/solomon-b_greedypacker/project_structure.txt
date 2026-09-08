@@ -1,0 +1,68 @@
+solomon-b_greedypacker C++ Translation Project Structure
+
+.
+├── CMakeLists.txt            # CMake build configuration for all components
+├── include/                  # C++ header files for library code
+│   └── ...                   # (to be implemented)
+├── public_tests/             # Translated public test cases (C++/GTest)
+│   ├── test_public_api.cpp
+│   ├── test_public_guillotine.cpp
+│   ├── test_public_init_imports.cpp
+│   ├── test_public_maximal_rectangles_constructor.cpp
+│   ├── test_public_maximalrectangles.cpp
+│   ├── test_public_shelf.cpp
+│   ├── test_public_skyline.cpp
+│   ├── test_public_skyline_construction.cpp
+│   └── ...
+├── README.md                 # Project and build usage guide
+├── run_tests.sh              # Script to build and execute all tests
+├── src/                      # C++ library source code (to be implemented)
+│   ├── main.cpp
+│   ├── binmanager.cpp
+│   ├── guillotine.cpp
+│   ├── item.cpp
+│   ├── maximal_rectangles.cpp
+│   ├── shelf.cpp
+│   ├── skyline.cpp
+│   └── ...
+├── tests/                    # Unit and regression tests (original)
+│   ├── original/
+│   │   ├── test_api.cpp
+│   │   ├── test_guillotine.cpp
+│   │   ├── test_init_imports.cpp
+│   │   ├── test_maximal_rectangles_constructor.cpp
+│   │   ├── test_maximalrectangles.cpp
+│   │   ├── test_setup_script.cpp
+│   │   ├── test_shelf.cpp
+│   │   ├── test_skyline.cpp
+│   │   └── test_skyline_construction.cpp
+│   └── test_main.cpp        # GTest main function
+└── README.md                # Root documentation
+
+Key Components:
+
+- include/: 
+    C++ library headers for greedypacker algorithms and objects.
+
+- src/: 
+    C++ implementation files for greedypacker functionality.
+
+- tests/original/: 
+    C++ translations of original Python test files (unit/regression, developer-facing).
+
+- public_tests/: 
+    C++ translations of public test files (for API/examples/public validation).
+
+- CMakeLists.txt: 
+    Build system configuration for library and tests, using Google Test.
+
+- run_tests.sh: 
+    One-command build and test runner script.
+
+- README.md: 
+    Top-level documentation and setup help.
+
+Instructions:
+1. Install CMake and g++/clang++ (and GoogleTest if not bundled with CMake).
+2. Run `chmod +x run_tests.sh` if needed.
+3. Execute all tests using: `./run_tests.sh`

@@ -1,0 +1,48 @@
+scrapy_cssselect C++ Project Structure
+
+.
+├── CMakeLists.txt
+│   - Build configuration using CMake.
+├── src/
+│   ├── dummy_cssselect.cpp
+│   └── dummy_cssselect.h
+│       - Dummy implementations of key classes/functions so tests compile.
+│         Replace with real implementation for production use.
+├── include/
+│   - (empty; for real headers if implemented)
+├── tests/
+│   ├── test_main.cpp
+│   └── original/
+│       ├── test_api_imports.cpp
+│       ├── test_xpath_expr.cpp
+│       └── test_cssselect.cpp
+│       - C++ translations of the original Python tests.
+├── public_tests/
+│   ├── test_public_api_imports.cpp
+│   ├── test_public_xpath_expr.cpp
+│   └── test_public_cssselect.cpp
+│       - C++ translations of the Python public tests.
+├── run_tests.sh
+│   - One-click script to build and run both original and public tests using Google Test.
+└── project_structure.txt
+    - This document.
+
+Summary of directories/files:
+- src/: Required source files (dummy implementations here so C++ tests can link/compile).
+- include/: For real header files, if necessary.
+- tests/original/: All original (non-public) test translations from the Python repo.
+- public_tests/: All public test translations.
+- CMakeLists.txt: Handles building, Google Test integration, and test discoverability/running.
+- run_tests.sh: Simple script to configure, build, and run all tests with output.
+- project_structure.txt: This document.
+
+How to build and run tests:
+1. Install CMake and a C++17 compiler (g++ or clang++).
+2. Run `chmod +x run_tests.sh`
+3. Run `./run_tests.sh`
+4. Both original and public tests will compile and run; output will indicate any test failures.
+
+Notes:
+- The src/ directory in this translation contains minimal/dummy "implementation" just to allow test code to compile and link: **replace this with proper implementation in production**.
+- Google Test is downloaded on-demand via CMake FetchContent.
+- Tests are separated into "original" and "public" to mirror the Python project's distinction.

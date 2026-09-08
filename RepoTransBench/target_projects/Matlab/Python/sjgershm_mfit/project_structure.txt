@@ -1,0 +1,55 @@
+sjgershm_mfit Python Project Structure
+-------------------------------------
+
+.
+├── README.md                   # Project documentation and setup instructions
+├── requirements.txt            # Python dependencies
+├── run_tests.sh                # One-click script to run all tests
+├── src/
+│   ├── __init__.py             # src package init
+│   ├── logdet.py               # Python implementation of logdet (needs to be implemented)
+│   ├── logsumexp.py            # Python implementation of logsumexp
+│   ├── mfit_opts.py            # Python implementation of mfit_opts
+│   ├── mfit_summary.py         # Python implementation of mfit_summary
+│   └── ...                     # (other source files/modules if needed)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_logdet.py
+│       ├── test_logdet_extra.py
+│       ├── test_logsumexp.py
+│       ├── test_logsumexp_extra.py
+│       ├── test_mfit_opts.py
+│       ├── test_mfit_opts_edge.py
+│       ├── test_mfit_summary.py
+│       └── test_mfit_summary_edge.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_logdet_extra_public.py
+│   ├── test_logdet_public.py
+│   ├── test_logsumexp_extra_public.py
+│   ├── test_logsumexp_public.py
+│   ├── test_mfit_opts_edge_public.py
+│   ├── test_mfit_opts_public.py
+│   ├── test_mfit_summary_edge_public.py
+│   └── test_mfit_summary_public.py
+
+Explanations:
+-------------------
+src/             - All core source modules translated from Matlab (.m) to Python (.py)
+tests/original/  - Original (private/internal) test cases (fully translated)
+public_tests/    - Public (student/consumable) test cases (fully translated)
+requirements.txt - Lists dependencies for pip install
+run_tests.sh     - Simple bash script, just run `./run_tests.sh` after installing requirements
+README.md        - Usage, install, and test docs
+
+Test discovery:
+- All tests in tests/original/ and public_tests/ are found and run automatically by pytest.
+
+Setup instructions:
+1. python3 -m venv venv && source venv/bin/activate
+2. pip install -r requirements.txt
+3. ./run_tests.sh
+
+You must implement logdet, logsumexp, mfit_opts, mfit_summary (and any used helpers) in src/ for the tests to pass.

@@ -1,0 +1,49 @@
+project_root/
+├── src/                                   # Source code directory
+│   ├── __init__.py                        # Marks src as a Python package
+│   ├── custom/                            # Custom library/module
+│   │   ├── __init__.py
+│   │   ├── custom.py                      # Translated custom.c (e.g., custom_get_value)
+│   │   └── custom_math.py                 # Translated custom_add/subtract (from original test context)
+│   ├── blink/                             # Blink driver module
+│   │   ├── __init__.py
+│   │   └── gpio_led.py                    # Translated gpio_led_on/off (mocks)
+│   └── sensor/                            # Sensor driver module
+│       ├── __init__.py
+│       └── example_sensor.py              # Translated example_sensor_read (mock)
+├── tests/                                 # Directory for original test cases
+│   ├── __init__.py                        # Marks tests as a Python package
+│   └── original/                          # Original unit tests
+│       ├── __init__.py
+│       ├── test_blink.py                  # Translated from tests/unit/test_blink.c
+│       ├── test_compile_drivers_and_lib.py# Translated from tests/unit/test_compile_drivers_and_lib.c
+│       ├── test_custom.py                 # Translated from tests/unit/test_custom.c
+│       ├── test_custom_full.py            # Translated from tests/unit/test_custom_full.c
+│       └── test_example_sensor.py         # Translated from tests/unit/test_example_sensor.c
+├── public_tests/                          # Directory for public test cases
+│   ├── __init__.py                        # Marks public_tests as a Python package
+│   ├── test_blink_public.py               # Translated from tests/unit/test_blink_public.c
+│   ├── test_custom_full_public.py         # Translated from tests/unit/test_custom_full_public.c
+│   ├── test_custom_public.py              # Translated from tests/unit/test_custom_public.c
+│   └── test_example_sensor_public.py      # Translated from tests/unit/test_example_sensor_public.c
+├── requirements.txt                       # Lists Python dependencies (e.g., pytest)
+├── run_tests.sh                           # Script to execute all tests
+└── project_structure.txt                  # This file, documenting the project layout
+
+### Setup and Testing Instructions:
+
+1.  **Navigate to the project root**:
+    `cd /workspace/zephyrproject-rtos_example-application_python` (or wherever the project root is)
+
+2.  **Run Tests**:
+    Execute the provided test script:
+    `./run_tests.sh`
+
+    This script will:
+    - Create a Python virtual environment (`venv`).
+    - Activate the virtual environment.
+    - Install `pytest` (and any other dependencies listed in `requirements.txt`).
+    - Run all test files found in `tests/original/` and `public_tests/` directories.
+    - Deactivate the virtual environment.
+
+    You should see output from pytest indicating the pass/fail status of each test, along with any print statements from the translated tests.

@@ -1,0 +1,19 @@
+project_root/
+├── CMakeLists.txt
+├── include/
+│   └── utils.h
+│   └── onefilellm.h
+├── src/
+│   ├── utils.cpp
+│   └── onefilellm.cpp
+├── tests/
+│   ├── test_utils.cpp           # Original test translation
+│   ├── test_all.cpp             # Original (comprehensive) test suite translation
+│   └── CMakeLists.txt
+├── public_tests/
+│   ├── test_public_all.cpp
+│   ├── test_public_utils.cpp
+│   └── CMakeLists.txt
+├── run_tests.sh
+├── test_translation_progress.json
+└── README.md

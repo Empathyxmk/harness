@@ -1,0 +1,11 @@
+{
+  "project_name": "d3_d3-queue",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 92.3,
+    "branch": 85.29
+  },
+  "timestamp": "2025-06-23T10:36:06.242203",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/d3_d3-queue",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/d3_d3-queue"
+}

@@ -1,0 +1,25 @@
+/workspace/antirez_smaz_python
+├── src/                                # Contains the Python source code for the smaz library
+│   └── smaz_py/                        # Python package for smaz
+│       ├── __init__.py                 # Initializes the smaz_py package
+│       └── smaz.py                     # Mock implementation of smaz_compress and smaz_decompress
+├── tests/                              # Directory for original test cases
+│   ├── __init__.py                     # Makes 'tests' a Python package
+│   ├── original/                       # Subdirectory for original test cases
+│   │   ├── __init__.py                 # Makes 'original' a Python package
+│   │   ├── test_smaz_original.py       # Translated from C's smaz_test.c
+│   │   └── test_smaz_extra.py          # Translated from C's smaz_extra_tests.c
+│   └── conftest.py                     # Pytest fixture for providing the smaz mock functions to tests
+├── public_tests/                       # Directory for public test cases
+│   ├── __init__.py                     # Makes 'public_tests' a Python package
+│   └── test_smaz_public.py             # Translated from C's smaz_public_test.c
+├── requirements.txt                    # Lists Python dependencies (pytest)
+├── run_tests.sh                        # Script to install dependencies and run all tests
+└── project_structure.txt               # This file, documenting the project structure
+
+To run tests:
+1. Navigate to the project root: `cd /workspace/antirez_smaz_python`
+2. Make the test script executable: `chmod +x run_tests.sh`
+3. Run all tests: `./run_tests.sh`
+
+This setup uses pytest for testing. The `smaz.py` file in `src/smaz_py` provides a mock implementation of the `smaz_compress` and `smaz_decompress` functions to enable direct translation of C test logic, especially handling buffer size checks and error returns.

@@ -1,0 +1,60 @@
+Project structure for Java translation of kbialek_deye-inverter-mqtt tests:
+
+.
+├── pom.xml                  # Maven project configuration (JUnit, Mockito dependencies etc)
+├── run_tests.sh             # Simple 1-click script to compile and run ALL tests with Maven
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── deyeinvertermqtt/
+│                       # (Place your Java implementation code here)
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── deyeinvertermqtt/
+│                       ├── original/
+│                       │   ├── DeyeActivePowerRegulationTest.java
+│                       │   ├── DeyeAtConnectorTest.java
+│                       │   ├── DeyeConfigTest.java
+│                       │   ├── DeyeEventsTest.java
+│                       │   ├── DeyeInverterStateTest.java
+│                       │   ├── DeyeModbusTcpCustomTest.java
+│                       │   ├── DeyeModbusTcpTest.java
+│                       │   ├── DeyeMqttTest.java
+│                       │   ├── DeyeMultiInverterDataAggregatorTest.java
+│                       │   ├── DeyeSensorTest.java
+│                       │   ├── DeyeSetTimeProcessorTest.java
+│                       │   ├── PluginsDeyePluginSampleTest.java
+│                       │   ├── SrcDeyeDockerEntrypointTest.java
+│                       │   ├── SrcDeyeMultiInverterDataAggregatorTest.java
+│                       │   └── DeyeTimeOfUseServiceTest.java
+│                       └── public/
+│                           ├── PublicActivePowerRegulationTest.java
+│                           ├── PublicAtConnectorTest.java
+│                           ├── PublicConfigTest.java
+│                           ├── PublicDockerEntrypointTest.java
+│                           ├── PublicEventsTest.java
+│                           ├── PublicInverterStateTest.java
+│                           ├── PublicMultiInverterDataAggregatorTest.java
+│                           ├── PublicPluginSampleTest.java
+│                           ├── PublicSensorTest.java
+│                           └── PublicTimeOfUseServiceTest.java
+└── README.md                # Project overview, setup, build & usage instructions
+
+Directories:
+- src/main/java/com/example/deyeinvertermqtt/ : Source Java codebase.
+- src/test/java/com/example/deyeinvertermqtt/original/ : Unit tests translated from original Python 'tests/'.
+- src/test/java/com/example/deyeinvertermqtt/public/ : Unit tests translated from Python 'public_tests/'.
+
+How to run tests:
+1. Install Java 11+ and Maven.
+2. Run:
+   ./run_tests.sh
+
+All tests (unit + public) are discovered by Maven Surefire (JUnit). To run only original or only public tests, use:
+- mvn test -Dtest="com.example.deyeinvertermqtt.original.**.*Test"
+- mvn test -Dtest="com.example.deyeinvertermqtt.public.**.*Test"

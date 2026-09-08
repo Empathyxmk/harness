@@ -1,0 +1,11 @@
+{
+  "project_name": "Blizzard-liu_AndroidUtils",
+  "language": "Java",
+  "coverage": {
+    "line": 61.0,
+    "branch": 56.2
+  },
+  "timestamp": "2025-06-19T18:16:16.318977",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/Blizzard-liu_AndroidUtils",
+  "test_result_path": "/workspace/test_enhancement_results/Java/Blizzard-liu_AndroidUtils"
+}

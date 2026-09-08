@@ -1,0 +1,11 @@
+{
+  "project_name": "tomwojcik_starlette-context",
+  "language": "Python",
+  "coverage": {
+    "line": 100.0,
+    "branch": 98.7
+  },
+  "timestamp": "2025-06-19T12:59:32.498550",
+  "original_path": "/workspace/runnable_filter/Python/tomwojcik_starlette-context",
+  "test_result_path": "/workspace/test_enhancement_results/Python/tomwojcik_starlette-context"
+}

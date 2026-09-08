@@ -1,0 +1,45 @@
+spotify_docker-maven-plugin-csharp/
+├── ProjectName.sln
+├── src/
+│   └── ProjectName/
+│       ├── ProjectName.csproj
+│       ├── Program.cs
+│       └── (Put C# port of src/main/java/com/spotify/docker/... code here for full builds)
+├── tests/
+│   ├── OriginalTests.csproj
+│   ├── TestUtilities.cs
+│   ├── original/
+│   │   ├── GitTests.cs
+│   │   ├── CompositeImageNameTests.cs
+│   │   ├── TagMojoTests.cs
+│   │   ├── UtilsTests.cs
+│   │   ├── RemoveImageMojoTests.cs
+│   │   ├── BuildMojoTests.cs
+│   │   ├── AbstractDockerMojoTests.cs
+│   │   ├── PushMojoTests.cs
+│   │   ├── DockerBuildInformationTests.cs
+│   │   └── ImageDependencyTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── CompositeImageNamePublicTests.cs
+│   ├── GitPublicTests.cs
+│   ├── TagMojoPublicTests.cs
+│   ├── UtilsPublicTests.cs
+│   ├── RemoveImageMojoPublicTests.cs
+│   ├── BuildMojoPublicTests.cs
+│   ├── AbstractDockerMojoPublicTests.cs
+│   ├── PushMojoPublicTests.cs
+│   ├── DockerBuildInformationPublicTests.cs
+│   └── ImageDependencyPublicTests.cs
+├── run_tests.sh
+├── README.md
+
+Explanation:
+- ProjectName.sln: .NET solution aggregating src/ and test projects.
+- src/ProjectName/: Placeholder for actual ported main code if you choose to port production code.
+- tests/OriginalTests.csproj: xUnit C# project for original Java tests. Each file in original/ matches one source Java test file. 
+- tests/original/: All original Java test logic, in C# (xUnit).
+- public_tests/PublicTests.csproj: xUnit C# project for public Java tests. Logic mirrors corresponding Java public tests.
+- public_tests/: All public test cases in C#, following public surface coverage.
+- run_tests.sh: One-click minimal test-run shell script.
+- README.md: Instructions and C# project overview.

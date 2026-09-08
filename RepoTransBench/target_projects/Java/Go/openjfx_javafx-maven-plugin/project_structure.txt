@@ -1,0 +1,33 @@
+openjfx_javafx_maven_plugin/
+├── go.mod                - Go module descriptor, declares module name and dependencies
+├── README.md             - Project description and test instructions
+├── run_tests.sh          - Simple shell script to run all Go tests
+├── project_structure.txt - This file, describing project tree and files
+├── src/                  - Source code stubs or minimal implementation (as no Java sources provided)
+│   └── org/
+│       └── openjfx/
+│           ├── javafxbasemojo.go             - Go stub for JavaFXBaseMojo class
+│           ├── javafxjlinkmojo.go            - Go stub for JavaFXJLinkMojo class
+│           ├── javafxrunmojo.go              - Go stub for JavaFXRunMojo class
+│           └── model/
+│               └── runtimepathoption.go      - Go enum translation for RuntimePathOption
+├── tests/
+│   └── original/
+│       ├── javafxbasemojotest_test.go        - JavaFXBaseMojo original tests
+│       ├── javafxjlinkmojotest_test.go       - JavaFXJLinkMojo original tests
+│       ├── javafxrunmojotest_test.go         - JavaFXRunMojo original tests
+│       ├── javafxrunmojotestcase_test.go     - JavaFXRunMojoTestCase original tests (integration/more complex logic)
+│       ├── testjavafxrun0_test.go            - TestJavaFXRun0 "main" test
+│       ├── testjavafxrun1_test.go            - TestJavaFXRun1 "JavaFXRun1" print test
+│       ├── testlauncher_test.go              - TestLauncher test
+│       └── model/
+│           └── runtimepathoptiontest_test.go - RuntimePathOption original enum test
+├── public_tests/
+│   ├── javafxbasemojopublictest_test.go      - Public test for JavaFXBaseMojo
+│   ├── javafxjlinkmojopublictest_test.go     - Public test for JavaFXJLinkMojo
+│   ├── javafxrunmojopublictest_test.go       - Public test for JavaFXRunMojo
+│   └── model/
+│       └── runtimepathoptionpublictest_test.go - Public test for RuntimePathOption
+
+- To add more code, implement under src/.
+- To add more tests: use tests/original for "private"/original, public_tests/ for public testcases.

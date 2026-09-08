@@ -1,0 +1,16 @@
+{
+  "project_name": "indutny_fft.js",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 93.75
+  },
+  "timestamp": "2025-06-19T10:38:16.513630",
+  "original_path": "/workspace/runnable_filter/JavaScript/indutny_fft.js",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/indutny_fft.js",
+  "tests_path": [
+    "test/fft-test.js",
+    "test/fft-extra-test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

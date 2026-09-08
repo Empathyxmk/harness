@@ -1,0 +1,24 @@
+antiboredom_audiogrep-java/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── antiboredom/
+│   │               └── audiogrep/
+│   │                   └── Audiogrep.java        # (implementation placeholder for compilation)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── antiboredom/
+│                   └── audiogrep/
+│                       ├── original/
+│                       │   ├── TestImportInit.java
+│                       │   ├── TestApi.java
+│                       │   └── TestAudiogrep.java
+│                       └── public_tests/
+│                           ├── TestImportInitPublic.java
+│                           ├── TestApiPublic.java
+│                           └── TestAudiogrepPublic.java
+└── test_translation_progress.json

@@ -1,0 +1,106 @@
+ververica_flink_sql_gateway_go/
+├── README.md
+├── go.mod
+├── go.sum
+├── run_tests.sh                # Simple test runner
+├── project_structure.txt       # This file: project tree and explanations
+├── main.go                     # (Optional) Main entry point for app, if needed
+├── module.go                   # (Optional) Core module logic if needed
+├── tests/
+│   ├── original/
+│   │   ├── gateway_options_test.go
+│   │   ├── gateway_options_parser_test.go
+│   │   ├── sql_gateway_test.go
+│   │   ├── operation/
+│   │   │   ├── create_view_operation_test.go
+│   │   │   ├── use_catalog_operation_test.go
+│   │   │   ├── sql_command_parser_test.go
+│   │   │   ├── show_catalogs_operation_test.go
+│   │   │   ├── drop_view_operation_test.go
+│   │   │   ├── reset_operation_test.go
+│   │   │   ├── show_current_database_operation_test.go
+│   │   │   ├── use_database_operation_test.go
+│   │   │   ├── show_functions_operation_test.go
+│   │   │   ├── show_views_operation_test.go
+│   │   │   ├── show_modules_operation_test.go
+│   │   │   ├── explain_operation_test.go
+│   │   │   ├── show_tables_operation_test.go
+│   │   │   ├── ddl_operation_test.go
+│   │   │   ├── explain_operation_exception_test.go
+│   │   │   ├── show_current_catalog_operation_test.go
+│   │   │   ├── operation_with_user_jar_test.go
+│   │   │   ├── describe_table_operation_test.go
+│   │   │   ├── show_databases_operation_test.go
+│   │   │   ├── set_operation_test.go
+│   │   │   ├── operation_test_base.go
+│   │   │   ├── operation_test_utils.go
+│   │   ├── sink/
+│   │   │   ├── test_table_sink_factory_base.go
+│   │   ├── source/
+│   │   │   ├── test_table_source_factory_base.go
+│   │   ├── config/
+│   │   │   ├── dependency_test.go
+│   │   │   ├── execution_context_test.go
+│   │   │   ├── environment_test.go
+│   │   ├── utils/
+│   │   │   ├── resource_file_utils.go
+│   │   │   ├── user_defined_functions.go
+│   │   │   ├── simple_catalog_factory.go
+│   │   │   ├── environment_file_util.go
+│   ├── testutil.go             # Common test helpers
+│
+├── public_tests/
+│   ├── gateway_options_public_test.go
+│   ├── gateway_options_parser_public_test.go
+│   ├── sql_gateway_public_test.go
+│   ├── operation/
+│   │   ├── create_view_operation_public_test.go
+│   │   ├── use_catalog_operation_public_test.go
+│   │   ├── sql_command_parser_public_test.go
+│   │   ├── show_catalogs_operation_public_test.go
+│   │   ├── drop_view_operation_public_test.go
+│   │   ├── reset_operation_public_test.go
+│   │   ├── show_current_database_operation_public_test.go
+│   │   ├── use_database_operation_public_test.go
+│   │   ├── show_functions_operation_public_test.go
+│   │   ├── show_views_operation_public_test.go
+│   │   ├── show_modules_operation_public_test.go
+│   │   ├── explain_operation_public_test.go
+│   │   ├── show_tables_operation_public_test.go
+│   │   ├── ddl_operation_public_test.go
+│   │   ├── explain_operation_exception_public_test.go
+│   │   ├── show_current_catalog_operation_public_test.go
+│   │   ├── operation_with_user_jar_public_test.go
+│   │   ├── describe_table_operation_public_test.go
+│   │   ├── show_databases_operation_public_test.go
+│   │   ├── set_operation_public_test.go
+│   ├── config/
+│   │   ├── dependency_public_test.go
+│   │   ├── execution_context_public_test.go
+│   │   ├── environment_public_test.go
+│
+├── (src/)                      # Source code if needed, for running tests
+│
+Explanations:
+
+- run_tests.sh: Runs all Go unit tests: both original and public sets
+- project_structure.txt: Provides this tree and explanatory notes for structure
+- go.mod / go.sum: Go module and dependency management
+- main.go / module.go: Core (non-test) code, optional if needed for tests to run
+- tests/original/: Translations of all original Java test cases (structure preserves test groupings)
+- public_tests/: Translations of public Java test cases (structure mirrors original for clarity)
+- _test.go files: Go convention for test files, executed with `go test`
+- package structure: Go package names and imports should reflect directory for clarity
+- testutil.go: Common helper functions for both original and public tests
+
+SETUP & RUNNING TESTS:
+----------------------
+1. (If not already) install Go 1.18+ (https://golang.org/dl/)
+2. In this project root, initialize and tidy:
+   > go mod tidy
+3. Run all tests (original and public):
+   > ./run_tests.sh
+
+Both original/ and public_tests/ may import testutil.go for testing helpers, and will reference types/mocks from respective packages as appropriate.
+
+All tests are fully implemented with proper assertions, parallel-able, no skips or placeholders.

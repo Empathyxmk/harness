@@ -1,0 +1,38 @@
+Project Structure and Explanation:
+
+.
+├── README.md
+├── requirements.txt             # Python dependencies for testing and running
+├── run_tests.sh                 # One-click script to run ALL tests (original and public)
+├── src/
+│   ├── __init__.py
+│   └── # (Place source modules here. E.g. main.py, ann_train.py, etc.)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_main.py
+│       ├── test_ann_train.py
+│       ├── test_getImages.py
+│       ├── test_getTestData.py
+│       ├── test_ann_methods.py
+│       ├── test_mortgage.py
+│       ├── test_crossover.py
+│       ├── test_crosscheck.py
+│       ├── test_generate.py
+│       ├── test_gademo.py
+│       ├── test_TSP.py
+│       ├── test_mutation.py
+│       └── test_cost.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_main.py
+│   ├── test_public_ann_train.py
+│   └── test_public_getImages.py
+
+Directories:
+- src/:        Place for all source Python modules (logic to be tested).
+- tests/original/:  All original translated test cases from Matlab.
+- public_tests/:    All public test cases, using public test data scenarios.
+- run_tests.sh:     Runs pytest, automatically discovers and runs all tests from both test directories.
+- requirements.txt: Declares required Python dependencies (pytest, numpy, pillow).

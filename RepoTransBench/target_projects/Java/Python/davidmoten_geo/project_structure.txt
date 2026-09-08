@@ -1,0 +1,117 @@
+davidmoten_geo/
+├── LICENSE
+├── README.md
+├── generate-site.sh
+├── geo
+│   ├── pom.xml
+│   └── src
+│       ├── main
+│       │   ├── java
+│       │   │   └── com
+│       │   │       └── github
+│       │   │           └── davidmoten
+│       │   │               └── geo
+│       │   │                   ├── Base32.java
+│       │   │                   ├── Coverage.java
+│       │   │                   ├── CoverageLongs.java
+│       │   │                   ├── Direction.java
+│       │   │                   ├── GeoHash.java
+│       │   │                   ├── LatLong.java
+│       │   │                   ├── Parity.java
+│       │   │                   ├── package-info.java
+│       │   │                   └── util
+│       │   │                       └── Preconditions.java
+│       │   └── spotbugs
+│       │       └── filter.xml
+│       └── test
+│           ├── java
+│           │   └── com
+│           │       └── github
+│           │           └── davidmoten
+│           │               └── geo
+│           │                   ├── Base32PublicTest.java
+│           │                   ├── Base32Test.java
+│           │                   ├── Benchmarks.java
+│           │                   ├── CoverageLongsPublicTest.java
+│           │                   ├── CoverageLongsTest.java
+│           │                   ├── CoveragePublicTest.java
+│           │                   ├── CoverageTest.java
+│           │                   ├── DirectionPublicTest.java
+│           │                   ├── DirectionTest.java
+│           │                   ├── GeoHashMinimalPublicTest.java
+│           │                   ├── GeoHashMinimalTest.java
+│           │                   ├── GeoHashPublicTest.java
+│           │                   ├── GeoHashTest.java
+│           │                   ├── LatLongPublicTest.java
+│           │                   ├── LatLongTest.java
+│           │                   ├── TestingUtil.java
+│           │                   ├── db
+│           │                   │   ├── DatabasePublicTest.java
+│           │                   │   └── DatabaseTest.java
+│           │                   ├── mem
+│           │                   │   └── GeomemPublicTest.java
+│           │                   └── util
+│           │                       ├── PreconditionsPublicTest.java
+│           │                       └── PreconditionsTest.java
+│           └── resources
+│               └── create.sql
+├── geo-mem
+│   ├── pom.xml
+│   └── src
+│       ├── main
+│       │   └── java
+│       │       └── com
+│       │           └── github
+│       │               └── davidmoten
+│       │                   └── geo
+│       │                       └── mem
+│       │                           ├── Geomem.java
+│       │                           └── Info.java
+│       └── test
+│           └── java
+│               └── com
+│                   └── github
+│                       └── davidmoten
+│                           └── geo
+│                               └── mem
+│                                   ├── GeomemPublicTest.java
+│                                   └── GeomemTest.java
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests
+│   ├── __init__.py
+│   ├── public_test_summary.json
+│   ├── test_base32_public.py
+│   ├── test_coverage_public.py
+│   ├── test_coveragelongs_public.py
+│   ├── test_direction_public.py
+│   ├── test_geohashminimal_public.py
+│   ├── test_geomem_public.py
+│   ├── test_latlong_public.py
+│   └── test_preconditions_public.py
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── src
+│   └── main
+│       └── checkstyle
+│           ├── checkstyle.xml
+│           └── suppressions.xml
+├── test_summary.json
+├── test_translation_progress.json
+└── tests
+    ├── __init__.py
+    └── original
+        ├── __init__.py
+        ├── test_base32.py
+        ├── test_coverage.py
+        ├── test_coveragelongs.py
+        ├── test_database.py
+        ├── test_direction.py
+        ├── test_geohashminimal.py
+        ├── test_geomem.py
+        ├── test_latlong.py
+        ├── test_preconditions.py
+        ├── test_summary.json
+        └── test_testing_util.py

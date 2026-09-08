@@ -1,0 +1,28 @@
+{
+  "project_name": "martin-majlis_Wikipedia-API",
+  "language": "Python",
+  "coverage": {
+    "line": 95.0,
+    "branch": 80.6
+  },
+  "timestamp": "2025-06-19T12:02:27.240346",
+  "original_path": "/workspace/runnable_filter/Python/martin-majlis_Wikipedia-API",
+  "test_result_path": "/workspace/test_enhancement_results/Python/martin-majlis_Wikipedia-API",
+  "tests_path": [
+    "tests/test_wikipedia_object.py",
+    "tests/test_namespace_and_extractformat.py",
+    "tests/test_utils_and_consts.py",
+    "tests/links_test.py",
+    "tests/extract_errors_test.py",
+    "tests/extract_html_format_test.py",
+    "tests/categorymembers_test.py",
+    "tests/categories_test.py",
+    "tests/wikipedia_test.py",
+    "tests/extract_wiki_format_test.py",
+    "tests/backlinks_test.py",
+    "tests/wikipedia_page_test.py",
+    "tests/langlinks_test.py",
+    "tests/mock_data.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

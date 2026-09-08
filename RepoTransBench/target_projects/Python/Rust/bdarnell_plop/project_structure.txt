@@ -1,0 +1,34 @@
+bdarnell_plop/
+├── Cargo.toml
+├── README.md
+├── run_tests.sh
+├── src/
+│   ├── lib.rs
+├── tests/
+│   └── original/
+│       ├── callgraph_test.rs
+│       ├── collector_test.rs
+│       ├── platform_test.rs
+│       ├── setup_test.rs
+│       └── viewer_test.rs
+├── public_tests/
+│   ├── test_public_callgraph.rs
+│   ├── test_public_collector.rs
+│   ├── test_public_platform.rs
+│   ├── test_public_setup.rs
+│   └── test_public_viewer.rs
+
+Directory Descriptions:
+- src/lib.rs: Main Rust library code; holds "core" logic stubs and struct definitions to compile/run tests.
+- tests/original/: Original internal tests translated from Python, mapped as Rust test modules.
+- public_tests/: Public test cases as Rust test modules.
+- Cargo.toml: Rust project definition and dependency setup.
+- run_tests.sh: One-click script to run all tests (`cargo test --all`).
+- README.md: (Create as necessary) Basic usage/documentation.
+
+To Build and Test:
+1. Ensure [Rust toolchain](https://rust-lang.org/) is installed.
+2. Make sure run_tests.sh is executable: `chmod +x run_tests.sh`
+3. Run all tests with: `./run_tests.sh`
+
+All test modules are mapped 1-to-1 from the original (including edge cases, panics, structure, and logic). Public and original tests are kept separate. All dependencies are standard and documented in Cargo.toml.

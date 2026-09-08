@@ -1,0 +1,40 @@
+Project Structure for toxinu_requirements (C++)
+
+.
+├── CMakeLists.txt                  # CMake configuration for building tests and source
+├── include/
+│   └── requirements.h              # (Stub) Header for Requirement/Requirements - replace with real logic as needed
+├── public_tests/
+│   ├── test_public_base.cpp        # Translated public test (RequirementsPublicTestCase, functional)
+│   └── test_public_requirements.cpp# Translated public test (PublicRequirementsTest, functional)
+├── run_tests.sh                    # Simple test build+run script (./run_tests.sh)
+├── src/
+│   ├── requirements.cpp            # (Stub) Implementation for Requirement/Requirements - replace with real logic as needed
+│   └── lib/
+│       └── CMakeLists.txt          # Placeholder/submodule structure
+├── tests/
+│   ├── test_base.cpp               # Translated original test (RequirementsTestCase fixture, functional)
+│   └── test_requirements.cpp       # Translated original test (RequirementsTest, functional)
+└── README.md                       # Documentation and usage (to be provided)
+
+Directory explanations:
+
+- include/: All public headers (requirements.h defines Requirement, Requirements interface for tests)
+- src/: Implementation code (requirements.cpp is a stub for making tests compile, fill this with real implementation as needed)
+- src/lib/: Placeholder for future submodules
+- tests/: Translated original tests in C++ (GoogleTest)
+- public_tests/: Translated public test suite in C++ (GoogleTest)
+- run_tests.sh: One-click script to build and run all tests
+- CMakeLists.txt: Build configuration, auto-discovers and builds both public and original tests into single runner
+
+SETUP INSTRUCTIONS:
+
+1. Install GoogleTest and CMake (on Ubuntu: `apt install libgtest-dev cmake g++`)
+2. Place your production Requirement/Requirements implementation into src/ and include/
+3. Run `chmod +x run_tests.sh`
+4. Execute all tests:
+       ./run_tests.sh
+
+All test logic mirrors the Python versions, including error checks, requirement parsing, file structure handling, and edge case coverage.
+
+To add more source/test files, expand `src/` and `tests/`/`public_tests/` as needed, and CMake will build/run automatically.

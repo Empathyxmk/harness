@@ -1,0 +1,27 @@
+project_root/
+├── src/
+│   └── randexp/
+│       ├── __init__.py         # (empty or with minimal code; main code expected here)
+│       └── randexp.py          # (expected implementation: not included)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_custom_max.py
+│       ├── test_custom_prng.py
+│       ├── test_custom_range.py
+│       ├── test_main.py
+│       ├── test_sugar.py
+│       └── test_tests.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_custom_max_public.py
+│   ├── test_custom_prng_public.py
+│   ├── test_custom_range_public.py
+│   ├── test_main_public.py
+│   ├── test_sugar_public.py
+│   └── test_tests_public.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+└── project_structure.txt

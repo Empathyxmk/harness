@@ -1,0 +1,13 @@
+.
+├── drawille.go             # (main package implementation, to be implemented)
+├── go.mod                  # Go module file
+├── README.md               # Project documentation and instructions
+├── run_tests.sh            # Script to run all tests
+├── tests/
+│   └── original/
+│       ├── tests_drawille_extra_test.go      # Translated extra tests from Python
+│       ├── tests_test.go                     # Main suite translation
+│       └── speed_test_test.go                # Speed test ported
+├── public_tests/
+│   ├── test_public_drawille_extra_test.go    # Public ported tests
+│   └── test_public_speed_test.go             # Public speed test

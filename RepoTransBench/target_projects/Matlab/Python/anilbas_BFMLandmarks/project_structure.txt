@@ -1,0 +1,28 @@
+project_root/
+├── requirements.txt              # Python dependencies
+├── run_tests.sh                  # Script to execute all tests
+├── README.md                     # Documentation (if present)
+├── Landmarks21_BFM.anl           # Landmark data, used by tests and src
+├── Landmarks68_BFM.anl           # Landmark data, used by tests and src
+├── img/                          # Image files for landmark display tests
+│   ├── 21.jpg
+│   └── 68.jpg
+├── src/
+│   └── bfm_landmarks/
+│       ├── __init__.py           # Package init
+│       ├── landmarks.py          # Landmark functions: read, show, plot, etc.
+│       └── demo.py               # Demo script logic (converted from demo.m)
+├── tests/
+│   └── original/
+│       ├── __init__.py           # (empty, for package import)
+│       ├── test_readLandmarks.py     # Test reading landmarks, both 68 & 21
+│       ├── test_showLandmarks.py     # Test showing 68 landmarks on an image
+│       ├── test_demo_basic.py        # Tests demo (visual output, non-interactive)
+│       ├── test_plotLandmarks_unit.py    # Unit test of plotting simple landmarks
+│       └── testLandmarks_simple.py      # Simulated version of Matlab's 3D patch test
+├── public_tests/
+│   ├── __init__.py                    # (empty, for package import)
+│   ├── test_public_readLandmarks.py   # Public test: reading 21 & 68 landmarks, alternate order
+│   ├── test_public_showLandmarks.py   # Public test: showLandmarks with 21 landmarks on 21.jpg
+│   ├── test_public_demo_basic.py      # Public test: demo execution
+│   └── test_public_plotLandmarks_unit.py  # Public test: plot landmarks with different data

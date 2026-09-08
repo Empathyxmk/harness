@@ -1,0 +1,50 @@
+elebetsamer_bootstrap-snippets-visual-studio/
+├── BootstrapSnippets/
+│   ├── BootstrapSnippets.csproj
+│   ├── LICENSE.txt
+│   ├── Snippets/
+│   │   └── HTML/
+│   │       └── Bootstrap/
+│   │           ├── *.png
+│   │           ├── *.snippet
+│   ├── logo.png
+│   ├── logo.svg
+│   ├── packages.config
+│   ├── preview.png
+│   ├── snippets.pkgdef
+│   └── source.extension.vsixmanifest
+├── BootstrapSnippets.sln
+├── LICENSE
+├── README.md
+├── build.js
+├── build.test.js
+├── change-log.md
+├── coverage/
+│   ├── base.css
+│   ├── block-navigation.js
+│   ├── build.js.html
+│   ├── favicon.png
+│   ├── index.html
+│   ├── prettify.css
+│   ├── prettify.js
+│   ├── sort-arrow-sprite.png
+│   └── sorter.js
+├── package-lock.json
+├── package.json
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── __init__.py
+│   ├── build.public.test.js
+│   └── test_build_public.py
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── snippet-listing-markdown.handlebars
+├── snippet-listing.md
+├── test_summary.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       └── test_build.py
+└── visual-studio-marketplace-overview.md

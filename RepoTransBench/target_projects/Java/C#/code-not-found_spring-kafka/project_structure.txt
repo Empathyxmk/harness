@@ -1,0 +1,14 @@
+KafkaServiceApp/
+├── KafkaServiceApp.sln                   # Solution file that references main project and both test projects
+├── run_tests.sh                          # One-click test execution script (runs all tests)
+├── src/
+│   └── KafkaService/
+│       ├── KafkaService.csproj           # Main service library project file
+│       └── KafkaService.cs               # Service logic implementation (class under test)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj          # xUnit test project for original tests
+│       └── KafkaServiceTest.cs           # Translation of KafkaServiceTest.java (original comprehensive tests)
+├── public_tests/
+│   ├── PublicTests.csproj                # xUnit test project for public tests
+│   └── KafkaServicePublicTest.cs         # Translation of KafkaServicePublicTest.java (public sample tests)

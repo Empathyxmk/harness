@@ -1,0 +1,68 @@
+sacmehta_delight/
+├── go.mod                     # Go module definition and dependencies
+├── run_tests.sh               # Simple script to run all Go tests
+├── README.md                  # Project documentation and setup instructions
+├── main.go                    # Entry point (if any application logic is present)
+├── [core source code]         # Main implementation code (migrated as needed)
+├── tests/
+│   ├── original/              # (if needed for internal tests)
+│   ├── test_label_smoothing_test.go
+│   ├── test_average_checkpoints_test.go
+│   ├── test_memory_efficient_fp16_test.go
+│   ├── test_character_token_embedder_test.go
+│   ├── test_utils_test.go
+│   ├── test_token_block_dataset_test.go
+│   ├── test_sequence_generator_test.go
+│   ├── test_dictionary_test.go
+│   ├── test_multihead_attention_test.go
+│   ├── test_fairseq_checkpoint_utils_test.go
+│   ├── test_run_experiment_advanced_test.go
+│   ├── test_metrics_test.go
+│   ├── test_convtbc_test.go
+│   ├── test_fairseq_data_utils_test.go
+│   ├── test_fairseq_dictionary_test.go
+│   ├── test_sequence_scorer_test.go
+│   ├── test_multi_corpus_sampled_dataset_test.go
+│   ├── test_train_test.go
+│   ├── test_iterators_test.go
+│   ├── test_export_test.go
+│   ├── test_sparse_multihead_attention_test.go
+│   ├── test_file_io_test.go
+│   ├── test_concat_dataset_test.go
+│   ├── test_resampling_dataset_test.go
+│   ├── test_main_scripts_test.go
+│   ├── test_cli_entrypoints_test.go
+│   ├── test_bmuf_test.go
+│   ├── test_reproducibility_test.go
+│   ├── test_fairseq_bleu_test.go
+│   ├── test_binaries_test.go
+│   ├── test_backtranslation_dataset_test.go
+│   ├── test_noising_test.go
+│   ├── speech_recognition/
+│   │   ├── test_cross_entropy_test.go
+│   │   ├── test_collaters_test.go
+│   │   ├── test_vggtransformer_test.go
+├── public_tests/
+│   ├── test_public_label_smoothing_test.go
+│   ├── test_public_token_block_dataset_test.go
+│   ├── test_public_character_token_embedder_test.go
+│   ├── test_public_sequence_generator_test.go
+│   ├── test_public_average_checkpoints_test.go
+│   ├── test_public_memory_efficient_fp16_test.go
+│   ├── test_public_utils_test.go
+│   └── [duplicate/deduplicated public tests as needed]
+└── [any other core package directories: sacmehta_delight/, delight/, etc.]
+
+-----------------------------------------------------------------------------------
+Directory explanations:
+- go.mod: Go module definition and dependency versions.
+- run_tests.sh: Runs all the Go tests in `tests/` (original) and `public_tests/` using `go test`.
+- main.go: (Optional) Main entrypoint for application (not needed for pure library).
+- tests/: Contains all translations of the original Python test cases, organized with one Go file per original Python file. Keeps structure and naming as in Python for clarity.
+- public_tests/: Contains public test case translations, fully implemented in Go, simulating public API and minimal reproducible cases.
+- Each `*_test.go` is a standard Go test file and can be run with `go test ...`.
+
+Setup & Test instructions:
+1. Make sure you have Go 1.20+ installed.
+2. Run `go mod tidy` to install dependencies (`testify` is used for richer assertions).
+3. To run all tests, just use:

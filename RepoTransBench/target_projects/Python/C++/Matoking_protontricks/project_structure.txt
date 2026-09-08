@@ -1,0 +1,30 @@
+Matoking_protontricks_cpp/
+├── CMakeLists.txt
+├── include/
+│   └── (headers for implementation; empty for now)
+├── src/
+│   └── main.cpp
+├── tests/
+│   ├── CMakeLists.txt
+│   ├── test_gui.cpp
+│   ├── test_util.cpp
+│   ├── test_version.cpp
+│   ├── test_gui_coverage.cpp
+│   ├── test_winetricks_func.cpp
+│   ├── test_config_functional.cpp
+│   ├── test_flatpak.cpp
+│   ├── test_steam.cpp
+│   ├── test_winetricks.cpp
+│   ├── test_config.cpp
+│   └── cli/
+│       ├── test_desktop_install.cpp
+│       └── (cli batch expansion)
+├── public_tests/
+│   ├── test_public_init.cpp
+│   ├── test_public_version.cpp
+│   ├── test_public_flatpak.cpp
+│   ├── test_public_util.cpp
+│   └── test_public_config.cpp
+├── run_tests.sh
+├── test_translation_progress.json
+└── README.md

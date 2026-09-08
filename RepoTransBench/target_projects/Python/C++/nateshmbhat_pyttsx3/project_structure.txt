@@ -1,0 +1,34 @@
+project_root/
+├── CMakeLists.txt
+│   # CMake build config to build and run all tests
+├── include/
+│   # (optional) C++ project public headers, reusable across src/tests
+├── src/
+│   # (optional) C++ source files (can be empty for pure test stubs/mocks)
+├── tests/
+│   ├── test_main.cpp
+│   │   # Entry point for all tests (GoogleTest main)
+│   └── original/
+│       ├── test_driverproxy_api.cpp
+│       │   # C++ translation of tests/test_driverproxy_api.py
+│       ├── test_engines.cpp
+│       │   # C++ translation of tests/test_engines.py (skipped tests)
+│       ├── test_init_api.cpp
+│       │   # C++ translation of tests/test_init_api.py
+│       └── test_pyttsx3.cpp
+│           # C++ translation of tests/test_pyttsx3.py
+├── public_tests/
+│   ├── test_public_driverproxy_api.cpp
+│   │   # C++ translation of public_tests/test_public_driverproxy_api.py
+│   ├── test_public_engines.cpp
+│   │   # C++ translation of public_tests/test_public_engines.py (skipped)
+│   ├── test_public_init_api.cpp
+│   │   # C++ translation of public_tests/test_public_init_api.py
+│   └── test_public_pyttsx3.cpp
+│       # C++ translation of public_tests/test_public_pyttsx3.py
+├── run_tests.sh
+│   # Bash script to build and run both original and public tests (`./run_tests.sh`)
+├── README.md
+│   # Instructions and explanations for the C++ project and test suite
+└── project_structure.txt
+    # This file (overview of directories and their purposes)

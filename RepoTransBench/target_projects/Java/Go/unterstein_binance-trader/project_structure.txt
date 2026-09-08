@@ -1,0 +1,23 @@
+project_root/
+├── go.mod                                  # Go module file for dependency management
+├── run_tests.sh                            # Simple script to run all tests (chmod +x for execution)
+├── tests/
+│   ├── original/
+│   │   ├── binancebotapplication_test.go   # Original test: BinanceBotApplication main launch
+│   │   ├── binancetrader_test.go           # Original test: BinanceTrader business logic and shutdown
+│   │   ├── testutil.go                     # Test utility stub for sharing across original tests
+│   │   └── tradingclient_test.go           # Original test: TradingClient connection, buy/sell logic
+├── public_tests/
+│   ├── binancebotapplication_public_test.go # Public test: BinanceBotApplication main with args
+│   ├── binancetrader_public_test.go         # Public test: BinanceTrader business logic with alt symbols
+│   ├── testutil.go                          # Test utility for sharing across public tests
+│   └── tradingclient_public_test.go          # Public test: TradingClient public scenario coverage
+└── project_structure.txt                   # (This file) Overview of the project tree and file purposes
+
+# Directory explanations:
+# tests/original/      - Contains the original Java test translations covering connection, trade, and main launch logic.
+# public_tests/        - Contains the public test case translations as required for open testing and challenge validation.
+# run_tests.sh         - Run all tests with: ./run_tests.sh
+# go.mod               - Go module management file, no extra dependencies required for testing.
+# testutil.go          - Stubs for possible future utility/test helpers (currently not required).
+# To run all tests:    - From root, run: chmod +x run_tests.sh && ./run_tests.sh

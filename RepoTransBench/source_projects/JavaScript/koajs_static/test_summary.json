@@ -1,0 +1,16 @@
+{
+  "project_name": "koajs_static",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 92.59,
+    "branch": 91.3
+  },
+  "timestamp": "2025-06-23T10:41:19.540162",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/koajs_static",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/koajs_static",
+  "tests_path": [
+    "test/index.test.js",
+    "test/index.extra.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

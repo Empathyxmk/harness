@@ -1,0 +1,53 @@
+.
+├── go.mod                           # Go module file, defines dependencies and module name.
+├── README.md                        # Project documentation
+├── run_tests.sh                     # Simple script to run all tests.
+├── project_structure.txt            # This file. Describes project structure.
+├── src/                             # (Placeholder if business logic for test dependencies needs to go here)
+│
+├── tests/                           # All test cases (Go equivalents of 'original tests')
+│   └── original/
+│       ├── benchmark_test.go
+│       ├── cpu_metric_sender_test.go
+│       ├── cpu_metric_test.go
+│       ├── flink_nexmark_options_test.go
+│       ├── metric_benchmark_metric_test.go
+│       ├── metric_flink_rest_client_test.go
+│       ├── metric_tps_metric_test.go
+│       ├── nexmark_configuration_test.go
+│       ├── nexmark_generator_test.go
+│       ├── nexmark_global_configuration_test.go
+│       ├── source_nexmark_table_source_factory_test.go
+│       ├── workload_suite_test.go
+│
+├── public_tests/                    # All Go equivalents of 'public tests'
+│   ├── benchmark_public_test.go
+│   ├── cpu_metric_public_test.go
+│   ├── cpu_metric_sender_public_test.go
+│   ├── flink_nexmark_options_public_test.go
+│   ├── metric_benchmark_metric_public_test.go
+│   ├── metric_flink_rest_client_public_test.go
+│   ├── metric_tps_metric_public_test.go
+│   ├── nexmark_configuration_public_test.go
+│   ├── nexmark_generator_public_test.go
+│   ├── nexmark_global_configuration_public_test.go
+│   ├── source_nexmark_table_source_factory_public_test.go
+│   ├── workload_suite_public_test.go
+│
+└── (src/package structure can be filled in as needed if business logic/class stubs are required for tests)
+
+---
+**Legend:**
+
+- `tests/original/`: Fully-implemented Go tests for all original test scenarios from the Java codebase.
+- `public_tests/`  : Fully-implemented Go tests for all public test scenarios, as per public_test_summary.json.
+- `src/`           : Business logic. If full port is desired, main project source would go here. For test scaffolding, test utilities and supporting types/mocks are added here as needed.
+
+**How to run**:  
+Execute `./run_tests.sh` from the project root; it will discover and run all Go test files recursively.
+
+**Adding code**:  
+When translating Nexmark logic, add Go code (types, methods, utilities) in `src/` and import into tests as needed.
+
+**Test dependencies and helper function stubs**  
+If some dependencies are missing and require minimal implementation for tests to build/run, provide minimalistic stubs in `src/` or local test files (`_test.go`).

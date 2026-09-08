@@ -1,0 +1,26 @@
+{
+  "project_name": "piskvorky_sqlitedict",
+  "language": "Python",
+  "coverage": {
+    "line": 91.0,
+    "branch": 83.6
+  },
+  "timestamp": "2025-06-23T10:36:18.867474",
+  "original_path": "/workspace/test_enhancement_results/Python/piskvorky_sqlitedict",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/piskvorky_sqlitedict",
+  "tests_path": [
+    "tests/test_autocommit.py",
+    "tests/test_coverage_ext.py",
+    "tests/test_named_db.py",
+    "tests/test_onimport.py",
+    "tests/test_sqlitedict_basic.py",
+    "tests/test_sqlitedict_branches.py",
+    "tests/test_sqlitedict_edgecases.py",
+    "tests/test_sqlitedict_errors.py",
+    "tests/test_sqlitedict_extra.py",
+    "tests/test_sqlitedict_extremes.py",
+    "tests/test_temp_db.py",
+    "tests/test_core.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,28 @@
+.
+├── go.mod                  # Go module file (declares this Go project)
+├── main.go                 # Placeholder for main app logic
+├── module.go               # Placeholder for any shared modules
+├── tests/
+│   ├── original/
+│   │   ├── bluetoothle_service_test.go               # Original test: BluetoothLeServiceTestBasic.java
+│   │   ├── device_control_activity_test.go           # Original test: DeviceControlActivityTestBasic.java
+│   │   ├── device_scan_activity_test.go              # Original test: DeviceScanActivityTestBasic.java
+│   │   ├── sample_gatt_attributes_edge_test.go       # Original test: SampleGattAttributesEdgeTest.java
+│   │   └── sample_gatt_attributes_test.go            # Original test: SampleGattAttributesTest.java
+│   └── testutil.go                                  # Shared helpers/mocks if needed
+├── public_tests/
+│   ├── sample_gatt_attributes_edge_public_test.go    # Public test: SampleGattAttributesEdgePublicTest.java
+│   └── sample_gatt_attributes_public_test.go         # Public test: SampleGattAttributesPublicTest.java
+├── run_tests.sh            # Simple test execution script
+├── project_structure.txt   # THIS FILE: describes directory structure/purpose
+├── README.md               # How to build/run tests
+
+Directories:
+- tests/original/      : All tests translated from original Java source (private/internal).
+- public_tests/        : All public tests, from Java source with 'PublicTest' suffix.
+- tests/testutil.go    : Shared helpers (could be empty if unused).
+- run_tests.sh         : Minimal script to execute all tests.
+
+Top-level Go files are placeholders for the ported application and can be extended/replaced.
+
+To run all tests: `./run_tests.sh`

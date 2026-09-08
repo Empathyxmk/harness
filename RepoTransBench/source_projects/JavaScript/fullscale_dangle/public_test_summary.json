@@ -1,0 +1,56 @@
+{
+  "project_name": "fullscale_dangle",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:28:06.618052",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/fullscale_dangle",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/fullscale_dangle",
+  "original_tests": {
+    "test_files": [
+      "src/dangle.module.test.js",
+      "src/modules/donut/donut.test.js",
+      "src/modules/pie/pie.test.js",
+      "src/modules/bar/bar.test.js",
+      "src/modules/area/area.test.js",
+      "src/modules/column/column.test.js",
+      "src/modules/date-histo/datehisto.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/dangle.module.public.test.js",
+      "public_tests/modules/donut/donut.public.test.js",
+      "public_tests/modules/pie/pie.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/modules/bar/bar.public.test.js",
+      "public_tests/modules/area/area.public.test.js",
+      "public_tests/modules/column/column.public.test.js",
+      "public_tests/modules/date-histo/datehisto.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/dangle.module.public.test.js",
+    "public_tests/modules/donut/donut.public.test.js",
+    "public_tests/modules/pie/pie.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/modules/bar/bar.public.test.js",
+    "public_tests/modules/area/area.public.test.js",
+    "public_tests/modules/column/column.public.test.js",
+    "public_tests/modules/date-histo/datehisto.public.test.js"
+  ]
+}

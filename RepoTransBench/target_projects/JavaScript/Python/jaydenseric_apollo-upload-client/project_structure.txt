@@ -1,0 +1,22 @@
+python_apollo_upload_client/
+├── src/
+│   └── jaydenseric_apollo_upload_client/
+│       ├── __init__.py
+│       ├── formDataAppendFile.py         # Source implementation, provides formDataAppendFile function
+│       ├── isExtractableFile.py          # Source implementation, provides isExtractableFile function
+│       └── createUploadLink.py           # Source implementation, provides createUploadLink function
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_formDataAppendFile.py    # Original test for formDataAppendFile
+│       ├── test_isExtractableFile.py     # Original test for isExtractableFile
+│       └── test_createUploadLink.py      # Original test for createUploadLink
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_formDataAppendFile.py        # Public test for formDataAppendFile
+│   ├── test_isExtractableFile.py         # Public test for isExtractableFile
+│   └── test_createUploadLink.py          # Public test for createUploadLink
+├── requirements.txt                      # Python dependencies (pytest)
+├── run_tests.sh                          # One-click test execution script (runs all via pytest)
+└── project_structure.txt                 # This file

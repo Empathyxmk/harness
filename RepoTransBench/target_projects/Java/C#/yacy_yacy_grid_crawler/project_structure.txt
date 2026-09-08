@@ -1,0 +1,54 @@
+yacy_yacy_grid_crawler-csharp/
+├── src/
+│   └── yacy_yacy_grid_crawler/
+│       ├── yacy_yacy_grid_crawler.csproj
+│       ├── Program.cs                # (Stub main entry, for buildability)
+│       ├── coverage/
+│       │   └── DemoCoverage.cs       # (Stub implementation for DemoCoverage, just enough for C# tests)
+│       └── crawler/
+│           ├── Blacklist.cs          # (Stub implementation for Blacklist, just enough for C# tests)
+│           ├── Crawler.cs            # (Stub implementation for Crawler)
+│           ├── CrawlerListener.cs    # (Stub implementation for CrawlerListener)
+│           └── api/
+│               ├── CrawlStartService.cs                # (Stub)
+│               ├── CrawlerDefaultValuesService.cs      # (Stub)
+│               └── ServiceResponse.cs                  # (Stub)
+│               └── Query.cs                            # (Stub)
+│       └── tools/
+│           └── MultiProtocolURL.cs    # (Stub for MultiProtocolURL)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── BlacklistTests.cs
+│       ├── CrawlerTests.cs
+│       ├── CrawlerListenerTests.cs
+│       ├── CrawlStartServiceTests.cs
+│       ├── CrawlerDefaultValuesServiceTests.cs
+│       ├── DemoCoverageTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── BlacklistPublicTests.cs
+│   ├── CrawlerPublicTests.cs
+│   ├── CrawlerListenerPublicTests.cs
+│   ├── CrawlStartServicePublicTests.cs
+│   ├── CrawlerDefaultValuesServicePublicTests.cs
+│   ├── DemoCoveragePublicTests.cs
+├── yacy_yacy_grid_crawler.sln
+├── run_tests.sh
+└── README.md
+
+Explanations:
+- src/: The main application source code. Contains stub implementations to allow compiling and running tests.
+- tests/original/: Contains all C# translations of the Java *Test.java (original) test files using xUnit.
+- public_tests/: All C# translations of the Java *PublicTest.java public test files using xUnit.
+- *.csproj: Project files for C# .NET support.
+- Program.cs: Main entry point for build, can be empty/"Hello World".
+- run_tests.sh: Simple script to run all tests using `dotnet test` from the solution root.
+- yacy_yacy_grid_crawler.sln: Solution file to group all projects for testing.
+
+Setup & Testing Instructions:
+1. Install .NET SDK (https://dotnet.microsoft.com/download)
+2. To restore and build: Run `dotnet build`
+3. To run all tests: Run `./run_tests.sh`
+4. Tests are divided between 'original' (in tests/original/) and 'public' (in public_tests/) for clarity.
+5. All stub source implementations ensure that test logic can compile and run—extend for more real functionality.

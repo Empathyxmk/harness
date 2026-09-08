@@ -1,0 +1,40 @@
+Translation Result Directory Listing
+Generated on: 2025-07-17T12:42:17.995146
+Project: socialwifi_RouterOS-api
+Translation: Python → Rust
+============================================================
+
+socialwifi_RouterOS-api/
+  .gitignore
+  project_structure.txt
+  MANIFEST.in
+  README.md
+  Cargo.toml
+  run_tests.sh (executable)
+  setup.py
+  translation_summary.json
+  LICENSE
+  src/
+    main.rs
+    lib.rs
+  public_tests/
+    test_public_query.rs
+    test_public_resource.rs
+    test_public_sentence.rs
+    test_public_socket.rs
+    test_public_api_socket.rs
+    test_public_api_communicator.rs
+    test_public_base_api.rs
+    test_public_api_structure.rs
+    test_public_login_router_os_api.rs
+  tests/
+    original/
+      test_socket.rs
+      test_api_structure.rs
+      test_query.rs
+      test_resource.rs
+      test_base_api.rs
+      test_api_communicator.rs
+      test_login_router_os_api.rs
+      test_api_socket.rs
+      test_sentence.rs

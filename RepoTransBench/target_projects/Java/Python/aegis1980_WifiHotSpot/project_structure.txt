@@ -1,0 +1,19 @@
+aegis1980_WifiHotSpot (Python)
+├── README.md               # Project overview & run instructions
+├── requirements.txt        # Python dependencies (pytest)
+├── run_tests.sh            # Simple one-click test script (executes all tests)
+├── src/
+│   └── aegis1980/
+│       └── hotspot/
+│           ├── __init__.py
+│           └── hotspot_manager.py    # Main logic class (HotSpotManager)
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_hotspot_manager.py   # All original, full-coverage test cases
+├── public_tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   └── test_hotspot_manager_public.py # All public/visible tests

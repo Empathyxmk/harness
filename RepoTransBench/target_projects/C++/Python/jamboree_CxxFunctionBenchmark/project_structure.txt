@@ -1,0 +1,28 @@
+project_root/
+├── requirements.txt              # Python dependencies
+├── run_tests.sh                  # One-click test execution script
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_function_h.py           # Original test: add function
+│       ├── test_function_inplace_function.py (moved/renamed to test_inplace_function.py)
+│       └── test_function_rigtorp.py     # Original test: multiply function
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_function_h_public.py        # Public test: add function (different data)
+│   ├── test_inplace_function_public.py  # Public tests for inplace_function simulation
+│   └── test_function_rigtorp_public.py  # Public test: multiply function (different data)
+
+Directory Explanations:
+- requirements.txt: Specifies dependencies (pytest)
+- run_tests.sh: Simple script to run all tests via pytest
+- tests/original/: Contains the translated original (private) C++ tests
+- public_tests/: Contains the translated public C++ tests
+- __init__.py: Files for package recognition; no logic
+
+Instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+
+All tests use pytest and are self-contained.

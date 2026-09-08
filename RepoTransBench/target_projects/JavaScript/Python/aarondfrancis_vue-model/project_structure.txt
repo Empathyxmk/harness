@@ -1,0 +1,56 @@
+aarondfrancis_vue-model-python/
+├── src/
+│   ├── __init__.py
+│   ├── Model.py
+│   ├── PubSub.py
+│   ├── Errors.py
+│   ├── VueModel.py
+│   └── lib/
+│       ├── __init__.py
+│       ├── promise_delay.py
+│       └── set_nested.py
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_pubsub.py
+│       ├── test_model.py
+│       ├── test_errors.py
+│       ├── test_vuemodel.py
+│       ├── test_vuemodel_spec.py
+│       └── lib/
+│           ├── __init__.py
+│           ├── test_set_nested.py
+│           └── test_promise_delay.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_pubsub_public.py
+│   ├── test_model_public.py
+│   ├── test_errors_public.py
+│   ├── test_vuemodel_public.py
+│   ├── test_vuemodel_public_spec.py
+│   └── lib/
+│       ├── __init__.py
+│       ├── test_set_nested_public.py
+│       └── test_promise_delay_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Directory explanations:
+
+src/                 # Source python package modules (converted from JS)
+src/lib/             # Supporting utility modules for source
+tests/original/      # All original (non-public) translated test cases
+tests/original/lib/  # Test utilities for nested functionalities
+public_tests/        # Translated public test cases (for student/public visibility)
+public_tests/lib/    # Public test cases for supporting utilities
+requirements.txt     # Pin required dependencies (pytest et al)
+run_tests.sh         # One-click test execution script
+project_structure.txt# This file (directory documentation)
+
+Setup:
+
+- Place your Python implementation code under src/ and src/lib/
+- Run all tests with:   ./run_tests.sh
+- Install dependencies: pip install -r requirements.txt
+- Run individual folders: pytest tests/original/, pytest public_tests/

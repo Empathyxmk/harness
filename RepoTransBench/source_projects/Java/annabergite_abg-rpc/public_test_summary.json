@@ -1,0 +1,84 @@
+{
+  "project_name": "annabergite_abg-rpc",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:13:28.045588",
+  "original_path": "/workspace/verified_repos_v2/Java/annabergite_abg-rpc",
+  "public_test_result_path": "/workspace/public_test_results/Java/annabergite_abg-rpc",
+  "original_tests": {
+    "test_files": [
+      "abg-register-zk/src/test/java/rpc/abg/zk/discover/ZooKeeperDiscoverIntegrationTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/discover/ZooKeeperDiscoverTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/registry/ZooKeeperRegisterAdvancedTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/registry/ZooKeeperRegisterTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/common/ForeverRetryPolicyTest.java",
+      "abg-kryo/src/test/java/rpc/abg/serialization/kryo/FastSerializerTest.java",
+      "abg-kryo/src/test/java/rpc/abg/serialization/kryo/ByteBufOutputTest.java",
+      "abg-jmh/src/main/java/rpc/abg/benchmark/protostuff/ProtostuffSerializerTest.java",
+      "abg-jmh/src/main/java/rpc/abg/benchmark/string/StringTest.java",
+      "abg-jmh/src/main/java/rpc/abg/benchmark/kryo/KryoByteBufTest.java",
+      "abg-jmh/src/main/java/rpc/abg/benchmark/client/HelloReferTest.java",
+      "abg-jmh/src/main/java/rpc/abg/benchmark/client/HelloBootTest.java",
+      "abg-jmh/src/main/java/rpc/abg/benchmark/client/TruboClientBootTest.java",
+      "abg-jmh/src/main/java/rpc/abg/benchmark/client/TruboClientFilterTest.java",
+      "abg-jmh/src/main/java/rpc/abg/benchmark/server/TruboServerBootTest.java",
+      "abg-jmh/src/main/java/rpc/abg/benchmark/server/TruboServerFilterTest.java",
+      "abg-jmh/src/main/java/rpc/abg/benchmark/unsafe/UnsafeTest.java",
+      "abg-jmh/src/main/java/rpc/abg/test/MethodParamClassFactoryTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 18,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "abg-register-zk/src/test/java/rpc/abg/zk/discover/ZooKeeperDiscoverIntegrationPublicTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/discover/ZooKeeperDiscoverPublicTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/registry/ZooKeeperRegisterAdvancedPublicTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/registry/ZooKeeperRegisterPublicTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/common/ForeverRetryPolicyPublicTest.java",
+      "run_public_tests.sh",
+      "abg-register-zk/src/test/java/rpc/abg/zk/registry/ZooKeeperRegisterPublicTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/common/ForeverRetryPolicyPublicTest.java",
+      "run_public_tests.sh",
+      "abg-register-zk/src/test/java/rpc/abg/zk/discover/ZooKeeperDiscoverPublicTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/discover/ZooKeeperDiscoverIntegrationPublicTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/registry/ZooKeeperRegisterAdvancedPublicTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/registry/ZooKeeperRegisterPublicTest.java",
+      "abg-register-zk/src/test/java/rpc/abg/zk/common/ForeverRetryPolicyPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 15,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "abg-register-zk/src/test/java/rpc/abg/zk/discover/ZooKeeperDiscoverIntegrationPublicTest.java",
+    "abg-register-zk/src/test/java/rpc/abg/zk/discover/ZooKeeperDiscoverPublicTest.java",
+    "abg-register-zk/src/test/java/rpc/abg/zk/registry/ZooKeeperRegisterAdvancedPublicTest.java",
+    "abg-register-zk/src/test/java/rpc/abg/zk/registry/ZooKeeperRegisterPublicTest.java",
+    "abg-register-zk/src/test/java/rpc/abg/zk/common/ForeverRetryPolicyPublicTest.java",
+    "run_public_tests.sh",
+    "abg-register-zk/src/test/java/rpc/abg/zk/registry/ZooKeeperRegisterPublicTest.java",
+    "abg-register-zk/src/test/java/rpc/abg/zk/common/ForeverRetryPolicyPublicTest.java",
+    "run_public_tests.sh",
+    "abg-register-zk/src/test/java/rpc/abg/zk/discover/ZooKeeperDiscoverPublicTest.java",
+    "abg-register-zk/src/test/java/rpc/abg/zk/discover/ZooKeeperDiscoverIntegrationPublicTest.java",
+    "abg-register-zk/src/test/java/rpc/abg/zk/registry/ZooKeeperRegisterAdvancedPublicTest.java",
+    "abg-register-zk/src/test/java/rpc/abg/zk/registry/ZooKeeperRegisterPublicTest.java",
+    "abg-register-zk/src/test/java/rpc/abg/zk/common/ForeverRetryPolicyPublicTest.java",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

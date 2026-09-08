@@ -1,0 +1,26 @@
+bewimm_kinodynamic_rrt_star/
+├── src/
+│   └── bewimm_kinodynamic_rrt_star/
+│       ├── __init__.py
+│       ├── (function sources: rrt_star, quad_is_state_free.py, quad_sample_free_states.py, etc.)
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_init_quad.py
+│   │   ├── test_quad_functions.py
+│   │   ├── test_core_utilities.py
+│   │   ├── test_collision_and_sampling.py
+│   │   ├── test_state_space_functions.py
+│   │   ├── test_utility_functions.py
+│   │   └── (additional files if needed)
+│   └── data/
+│       ├── obstacles.npy
+│       └── waypoints.npy
+├── public_tests/
+│   ├── __init__.py
+│   └── test_public_rrt_quad.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+└── test_translation_progress.json

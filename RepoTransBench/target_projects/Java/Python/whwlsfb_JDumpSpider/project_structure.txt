@@ -1,0 +1,25 @@
+.
+├── requirements.txt          # Python dependencies file (installs pytest)
+├── run_tests.sh              # One-click bash script to run all tests
+├── tests/
+│   └── original/
+│       ├── test_datasource04.py        # Original test for DataSource04
+│       ├── test_envproperty01.py       # Original test for EnvProperty01
+│       └── test_main.py                # Original test for Main logic
+├── public_tests/
+│   ├── test_datasource04_public.py     # Public test for DataSource04
+│   ├── test_envproperty01_public.py    # Public test for EnvProperty01
+│   └── test_main_public.py             # Public test for Main
+└── README.md                  # Project readme (not supplied here)
+
+Directory explanations:
+- requirements.txt: Lists dependencies required to run tests (`pytest`).
+- run_tests.sh: Simple bash script to run all tests with one command.
+- tests/original/: Contains all tests translated from original Java test files.
+- public_tests/: Contains all tests translated from public Java test files.
+- README.md: (Add project description and instructions as needed)
+
+Setup and testing instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+3. Tests are split into original (private) and public cases as in the original project.

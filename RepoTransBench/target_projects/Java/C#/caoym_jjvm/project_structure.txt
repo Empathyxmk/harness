@@ -1,0 +1,22 @@
+caoym_jjvm_dotnet/
+├── caoym_jjvm.sln
+├── src/
+│   └── CaoymJjvm/
+│       ├── CaoymJjvm.csproj
+│       └── (main library code: JJvm.cs, VirtualMachine.cs, etc.)
+├── tests/
+│   ├── original/
+│   │   ├── OriginalTests.csproj
+│   │   ├── JJvmTest.cs
+│   │   ├── VirtualMachineTest.cs
+│   │   ├── JvmDefaultClassLoaderTest.cs
+│   │   └── JvmFieldMethodTest.cs
+│   └── TestUtilities.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── JJvmPublicTest.cs
+│   ├── VirtualMachinePublicTest.cs
+│   ├── JvmDefaultClassLoaderPublicTest.cs
+│   └── JvmFieldMethodPublicTest.cs
+├── run_tests.sh
+└── test_translation_progress.json

@@ -1,0 +1,50 @@
+{
+  "project_name": "tusen-ai_MV2D",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:25:14.761951",
+  "original_path": "/workspace/verified_repos_v2/Python/tusen-ai_MV2D",
+  "public_test_result_path": "/workspace/public_test_results/Python/tusen-ai_MV2D",
+  "original_tests": {
+    "test_files": [
+      "tools/deployment/test_torchserver.py",
+      "tests/test_configs_exp_attributes.py",
+      "tests/test_configs_data_py.py",
+      "tests/test_configs_exp_py.py",
+      "tests/test_configs_data_full_coverage.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_configs_data_py.py",
+      "public_tests/test_public_configs_exp_attributes.py",
+      "public_tests/test_public_configs_exp_py.py",
+      "public_tests/test_public_configs_data_full_coverage.py",
+      "public_tests/test_public_torchserver_noop.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 6,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_configs_data_py.py",
+    "public_tests/test_public_configs_exp_attributes.py",
+    "public_tests/test_public_configs_exp_py.py",
+    "public_tests/test_public_configs_data_full_coverage.py",
+    "public_tests/test_public_torchserver_noop.py",
+    "run_public_tests.sh"
+  ]
+}

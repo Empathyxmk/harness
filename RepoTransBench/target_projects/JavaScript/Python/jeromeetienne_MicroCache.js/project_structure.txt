@@ -1,0 +1,28 @@
+jeromeetienne_microcache_python/
+├── src/
+│   ├── __init__.py
+│   └── microcache.py              # Python implementation of MicroCache
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_microcache.py     # Complete translation of original test cases
+├── public_tests/
+│   ├── __init__.py
+│   └── test_microcache_public.py  # Complete translation of public test cases
+├── requirements.txt               # Python dependencies file (pytest)
+├── run_tests.sh                   # Simple test execution script
+├── project_structure.txt          # This file
+│
+# Directory and file explanations:
+#
+# src/                 - Contains the Python source/library implementation (`microcache.py`)
+# tests/original/      - Original (non-public) test cases, fully translated to Python/pytest
+# public_tests/        - Public test cases (e.g., those used for user-facing examples), translated to Python/pytest
+# requirements.txt     - Python dependencies (lists pytest for testing)
+# run_tests.sh         - One-click script to run all tests (pytest)
+# project_structure.txt- This documentation file describing the project layout and use
+#
+# Setup & Testing Instructions:
+# 1. Install dependencies:   pip install -r requirements.txt
+# 2. Run all tests:          ./run_tests.sh

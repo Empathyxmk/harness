@@ -1,0 +1,30 @@
+.
+├── pom.xml
+├── run_tests.sh
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── osslacker
+│   │               └── slacker
+│   │                   ├── API.java
+│   │                   ├── Auth.java
+│   │                   ├── BaseAPI.java
+│   │                   ├── Channels.java
+│   │                   ├── Error.java
+│   │                   ├── Response.java
+│   │                   └── utilities
+│   │                       └── Utilities.java
+│   └── test
+│       └── java
+│           └── com
+│               └── osslacker
+│                   ├── public_tests
+│                   │   ├── TestPublicChannelsTest.java
+│                   │   ├── TestPublicInitTest.java
+│                   │   └── TestPublicUtilitiesTest.java
+│                   └── tests
+│                       └── original
+│                           ├── TestChannelsTest.java
+│                           ├── TestInitTest.java
+│                           └── TestUtilitiesTest.java

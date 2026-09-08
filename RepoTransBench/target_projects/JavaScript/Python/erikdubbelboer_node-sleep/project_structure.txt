@@ -1,0 +1,32 @@
+project_root/
+├── src/
+│   └── sleep_module.py       # Sleep functions: sleep, msleep, usleep (Python implementation of original index.js)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_index.py     # Unit tests for function input validation/branches (from test/index.test.js)
+│       └── test_sleep_module_api.py   # Integration/timing and exception tests (from test.js)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_index_public.py          # Public test logic (from public_tests/index.public.test.js)
+│   ├── test_api_public.py            # Public input/output (from public_tests/api.public.test.js)
+│   └── test_sleep_api_public.py      # Public integration/timing (from public_tests/sleep_api.public.test.js)
+├── requirements.txt           # Python dependencies (pytest)
+├── run_tests.sh               # One-click test execution (installs requirements, runs pytest)
+├── project_structure.txt      # This file: explains layout and usage
+└── README.md                  # Project summary & usage instructions
+
+Directory explanations:
+- src/: Python implementation source code (port of index.js)
+- tests/original/: All original unit/integration tests from the source repo
+- public_tests/: Public/coverage tests (direct translations of public JS tests)
+- requirements.txt: Python dependencies
+- run_tests.sh: Installs requirements and runs all tests with pytest
+- project_structure.txt: This file
+- README.md: Project summary/documentation and test instructions
+
+Test/usage instructions:
+1. Run `./run_tests.sh` from project root. All tests will execute via pytest.
+2. Source code is in src/sleep_module.py.
+3. All necessary test logic (including timing checks and exception cases) is implemented.

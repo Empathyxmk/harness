@@ -1,0 +1,74 @@
+{
+  "project_name": "birajpatel_GridListViewAdapters",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:12:26.269986",
+  "original_path": "/workspace/verified_repos_v2/Java/birajpatel_GridListViewAdapters",
+  "public_test_result_path": "/workspace/public_test_results/Java/birajpatel_GridListViewAdapters",
+  "original_tests": {
+    "test_files": [
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/BaseGridAdapterTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/CursorFilterTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/RowViewHolderTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/ListGridAdapterTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/CardTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/CursorGridAdapterTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/dataholders/CardPositionInfoTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/dataholders/CardDataHolderTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/dataholders/RowDataHolderTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/utils/PositionCalculatorTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/utils/GridDataStructureTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/utils/ViewHolderPositionTaggerTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/utils/MaxCardsInfoTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 13,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/BaseGridAdapterPublicTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/CursorFilterPublicTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/RowViewHolderPublicTest.java",
+      "run_public_tests.sh",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/ListGridAdapterPublicTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/CardPublicTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/CursorGridAdapterPublicTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/dataholders/CardDataHolderPublicTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/dataholders/CardPositionInfoPublicTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/dataholders/RowDataHolderPublicTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/utils/PositionCalculatorPublicTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/utils/GridDataStructurePublicTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/utils/ViewHolderPositionTaggerPublicTest.java",
+      "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/utils/MaxCardsInfoPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 14,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/BaseGridAdapterPublicTest.java",
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/CursorFilterPublicTest.java",
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/RowViewHolderPublicTest.java",
+    "run_public_tests.sh",
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/ListGridAdapterPublicTest.java",
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/CardPublicTest.java",
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/CursorGridAdapterPublicTest.java",
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/dataholders/CardDataHolderPublicTest.java",
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/dataholders/CardPositionInfoPublicTest.java",
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/dataholders/RowDataHolderPublicTest.java",
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/utils/PositionCalculatorPublicTest.java",
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/utils/GridDataStructurePublicTest.java",
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/utils/ViewHolderPositionTaggerPublicTest.java",
+    "Studio/GridListViewAdapters/gridlistviewadapters/src/test/java/com/birin/gridlistviewadapters/utils/MaxCardsInfoPublicTest.java"
+  ]
+}

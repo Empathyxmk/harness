@@ -1,0 +1,18 @@
+libfixmath_rs/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── fix16.rs
+│   └── fract32.rs
+├── tests/
+│   ├── data.rs                  # Testcases array
+│   ├── original/
+│   │   ├── tests_fract32.rs
+│   │   ├── tests_basic.rs
+│   │   ├── tests_macros.rs
+│   │   ├── tests_lerp.rs
+│   │   ├── tests_sqrt.rs
+│   │   ├── tests_str.rs
+│   └── public_tests/
+│       ├── test_fract32.rs
+│       ├── test_sqrt.rs

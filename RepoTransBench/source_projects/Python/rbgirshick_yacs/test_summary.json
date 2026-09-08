@@ -1,0 +1,11 @@
+{
+  "project_name": "rbgirshick_yacs",
+  "language": "Python",
+  "coverage": {
+    "line": 94.7,
+    "branch": 87.5
+  },
+  "timestamp": "2025-06-19T12:23:30.364516",
+  "original_path": "/workspace/runnable_filter/Python/rbgirshick_yacs",
+  "test_result_path": "/workspace/test_enhancement_results/Python/rbgirshick_yacs"
+}

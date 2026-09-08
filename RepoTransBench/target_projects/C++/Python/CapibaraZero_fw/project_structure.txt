@@ -1,0 +1,43 @@
+CapibaraZero_fw Python Test Project Structure:
+
+.
+├── requirements.txt             # Python dependencies
+├── run_tests.sh                 # Simple test execution script (runs all original and public tests)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_appsjs.py                  # Original private test for AppsJS
+│       ├── test_battery_monitor.py         # Original private test for battery monitor
+│       ├── test_ble.py                     # Original private test for BLE
+│       ├── test_captive_portal_callback.py # Original private test for captive portal callback
+│       ├── test_deepsleep.py               # Original private test for DeepSleep
+│       ├── test_ir_attacks_task.py         # Original private test for IR attacks task
+│       ├── test_io.py                      # Original private test for IO
+│       ├── test_main.py                    # Original private test for main
+│       ├── test_peripherals.py             # Original private test for Peripherals
+│       ├── test_storage.py                 # Original private test for Storage
+│       ├── test_timer.py                   # Original private test for Timer
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_appsjs_public.py               # Public test for AppsJS
+│   ├── test_battery_monitor_public.py      # Public test for battery monitor
+│   ├── test_ble_public.py                  # Public test for BLE
+│   ├── test_captive_portal_callback_public.py # Public test for captive portal callback
+│   ├── test_deepsleep_public.py            # Public test for DeepSleep
+│   ├── test_ir_attacks_task_public.py      # Public test for IR attacks task
+│   ├── test_io_public.py                   # Public test for IO
+│   ├── test_main_public.py                 # Public test for main
+│   ├── test_peripherals_public.py          # Public test for Peripherals
+│   ├── test_storage_public.py              # Public test for Storage
+│   ├── test_timer_public.py                # Public test for Timer
+
+Instructions:
+- Install Python dependencies: `pip install -r requirements.txt`
+- Run all tests (original + public): `./run_tests.sh`
+- All original (private) tests are in `tests/original/`.
+- All public tests are in `public_tests/`.
+
+Notes:
+- Each test file is a direct translation from the original C++/GTest dummy test logic.  
+- The project does not require any source or implementation files to execute the dummy tests.

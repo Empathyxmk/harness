@@ -1,0 +1,24 @@
+willthames_ansible-inventory-grapher-go/
+├── go.mod                              # Go module file for dependency management
+├── run_tests.sh                        # One-click script to run all tests (`chmod +x` to use)
+├── project_structure.txt                # Project tree and documentation (this file)
+├── tests/
+│   └── original/
+│       ├── init_test.go                # Original Python test_init.py translated to Go
+│       ├── inventory_test.go           # Original Python test_inventory.py translated to Go
+│       ├── variables_test.go           # Original Python test_variables.py translated to Go
+│       ├── vault_test.go               # Original Python test_vault.py translated to Go
+│       └── version_test.go             # Original Python test_version.py translated to Go
+├── public_tests/
+│   ├── init_public_test.go             # Public version of Python public_tests/test_public_init.py (Go)
+│   ├── inventory_public_test.go        # Public version of public_tests/test_public_inventory.py (Go)
+│   ├── variables_public_test.go        # Public version of public_tests/test_public_variables.py (Go)
+│   ├── vault_public_test.go            # Public version of public_tests/test_public_vault.py (Go)
+│   └── version_public_test.go          # Public version of public_tests/test_public_version.py (Go)
+└── README.md (not shown)               # Standard documentation
+
+- All Go test files use Go's built-in testing package.
+- All test logic and assertions faithfully translated from Python, no placeholders used.
+- Private (internal/original) and public tests are kept in different folders for organization.
+- To run all tests, run `./run_tests.sh`.
+- No external test dependencies required beyond standard Go toolchain.

@@ -1,0 +1,41 @@
+{
+  "project_name": "alexjlockwood_adp-path-morph-play-to-pause",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:12:19.212820",
+  "original_path": "/workspace/verified_repos_v2/Java/alexjlockwood_adp-path-morph-play-to-pause",
+  "public_test_result_path": "/workspace/public_test_results/Java/alexjlockwood_adp-path-morph-play-to-pause",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/adp/pathmorph/PlayToPauseMorphAdditionalTest.java",
+      "src/test/java/adp/pathmorph/PlayToPauseMorphTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 2,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/adp/pathmorph/PlayToPauseMorphPublicTest.java",
+      "src/test/java/adp/pathmorph/PlayToPauseMorphAdditionalPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 3,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/adp/pathmorph/PlayToPauseMorphPublicTest.java",
+    "src/test/java/adp/pathmorph/PlayToPauseMorphAdditionalPublicTest.java",
+    "run_public_tests.sh"
+  ]
+}

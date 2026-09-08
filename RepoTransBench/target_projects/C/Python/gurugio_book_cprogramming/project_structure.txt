@@ -1,0 +1,23 @@
+gurugio_book_cprogramming/
+├── src/
+│   └── gurugio_book/
+│       ├── __init__.py
+│       ├── error_handle.py        # Python version of error_handle.c
+│       ├── foreach.py             # Python version of foreach.c
+│       └── long_if.py             # Python version of long_if.c
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_error_handle.py   # Translated from test_error_handle.c
+│   │   ├── test_foreach.py        # Translated from test_foreach.c
+│   │   └── test_long_if.py        # Translated from test_long_if.c
+│   └── conftest.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_error_handle.py       # Translated from test_error_handle_public.c
+│   └── test_foreach.py            # Translated from test_foreach_public.c
+├── requirements.txt               # Dependencies for the project
+├── run_tests.sh                   # Script to run all tests
+├── run_public_tests.sh            # Script to run public tests only
+└── README.md

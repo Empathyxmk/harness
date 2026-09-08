@@ -1,0 +1,24 @@
+{
+  "name": "denghongcai_forsaken-mail",
+  "version": "1.0.0",
+  "description": "Temporary mail receives with blacklisted shortids",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --runInBand",
+    "test:coverage": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "author": "Hongcai Deng",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "supertest": "^6.3.3",
+    "mock-fs": "^5.2.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "debug": "^4.3.4",
+    "express": "^4.17.1",
+    "mailin": "^3.0.4",
+    "shortid": "^2.2.16"
+  }
+}

@@ -1,0 +1,27 @@
+yandex-qatools_postgresql-embedded-dotnet/
+├── README.md                         # Project documentation
+├── yandex-qatools_postgresql-embedded-dotnet.sln # .NET Solution file
+├── src/
+│   └── YandexQatools.PostgresqlEmbedded/
+│       ├── YandexQatools.PostgresqlEmbedded.csproj # Main library project (placeholder)
+│       └── [Implementation Source Files]           # (Not present - only dummies for test compilation)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj      # Test project for original (non-public) tests
+│       ├── NonCachedPostgresArtifactStoreBuilderTests.cs
+│       ├── CachedPostgresArtifactStoreTests.cs
+│       ├── IMutableArtifactStoreTests.cs
+│       ├── PostgresArtifactStoreTests.cs
+│       ├── EmbeddedPostgresTests.cs
+│       ├── AbstractPsqlTests.cs
+│       └── StorageTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj            # Test project for public tests
+│   ├── NonCachedPostgresArtifactStoreBuilderPublicTests.cs
+│   ├── CachedPostgresArtifactStorePublicTests.cs
+│   ├── IMutableArtifactStorePublicTests.cs
+│   ├── PostgresArtifactStorePublicTests.cs
+│   ├── EmbeddedPostgresPublicTests.cs
+│   ├── AbstractPsqlPublicTests.cs
+│   └── StoragePublicTests.cs
+├── run_tests.sh                      # One-click script to run all tests

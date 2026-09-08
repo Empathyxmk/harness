@@ -1,0 +1,38 @@
+GeneratorFunctions.sln
+README.md
+run_tests.sh
+src/
+    Generator/
+        GeneratorLib.csproj
+        Generator.cs
+tests/
+    original/
+        OriginalTests.csproj
+        GeneratorTest.cs
+public_tests/
+    PublicTests.csproj
+    GeneratorPublicTest.cs
+
+Directory explanations:
+
+src/Generator/
+    GeneratorLib.csproj     -- Class library project for the core generator implementation (Generator<T>).
+    Generator.cs            -- Complete C# port of abstract Generator (and base/non-generic type).
+
+tests/original/
+    OriginalTests.csproj    -- xUnit test project (depends on GeneratorLib).
+    GeneratorTest.cs        -- Exact translation of Java original tests to C# using xUnit, including all edge and error cases.
+
+public_tests/
+    PublicTests.csproj      -- xUnit test project for public tests.
+    GeneratorPublicTest.cs  -- Translation of Java public tests (alternative example/parameters) to C# xUnit.
+
+GeneratorFunctions.sln      -- Visual Studio solution linking all projects.
+run_tests.sh                -- Simple script to run all tests (just: ./run_tests.sh).
+
+Instructions:
+1. Run `dotnet restore` to install all dependencies.
+2. Build everything: `dotnet build`
+3. Run ALL tests with: `./run_tests.sh`
+   - Runs both original (full) and public tests
+   - Anything failing will print errors.

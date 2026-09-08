@@ -1,0 +1,22 @@
+project_root/
+├── requirements.txt                  # Python dependencies list (includes pytest)
+├── run_tests.sh                      # Simple shell script to execute all tests
+├── tests/                            # Top-level test directory for original tests
+│   ├── original/                     # Original (non-public) test cases
+│   │   ├── test_blacklist.py         # Original Blacklist tests (translation of Java BlacklistTest.java)
+│   │   ├── test_crawler.py           # Original Crawler tests (translation of CrawlerTest.java)
+│   │   ├── test_crawler_listener.py  # Original CrawlerListener tests (translation of CrawlerListenerTest.java)
+│   │   ├── api/
+│   │   │   ├── test_crawlstartservice.py   # Original test for CrawlStartService
+│   │   │   └── test_crawlerdefaultvaluesservice.py # Original test for CrawlerDefaultValuesService
+│   │   └── coverage/
+│   │       └── test_demo_coverage.py # Original DemoCoverage tests
+├── public_tests/                     # Directory for PUBLIC (shareable) test cases
+│   ├── test_blacklist_public.py
+│   ├── test_crawler_public.py
+│   ├── test_crawler_listener_public.py
+│   ├── api/
+│   │   ├── test_crawlerdefaultvaluesservice_public.py
+│   │   └── test_crawlstartservice_public.py
+│   └── coverage/
+│       └── test_demo_coverage_public.py

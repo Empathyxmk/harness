@@ -1,0 +1,42 @@
+andreroggeri_pynubank/
+├── go.mod                              # Go module definition
+├── README.md                           # Main documentation
+├── run_tests.sh                        # One-click test execution script
+├── tests/
+│   ├── original/
+│   │   ├── auth_mode_and_exception_test.go          # Original test: auth modes, exceptions
+│   │   ├── certificate_generator_test.go            # Original test: certificate generator
+│   │   ├── cli_test.go                             # Original test: CLI
+│   │   ├── discovery_test.go                       # Original test: Discovery & is_alive
+│   │   ├── http_client_test.go                     # Original test: HttpClient edge cases
+│   │   ├── init_is_alive_test.go                   # Original test: is_alive default test
+│   │   ├── mock_http_client_test.go                # Original test: mocked http client
+│   │   ├── nubank_client_test.go                   # Original test: Nubank client checks
+│   │   ├── parsing_test.go                         # Original test: Parsing, parse_float, etc.
+│   │   └── setup_py_functional_test.go             # Original test: Emulate setup.py read test
+├── public_tests/
+│   ├── public_auth_mode_and_exception_test.go       # Public test: auth mode/exception coverage
+│   ├── public_certificate_generator_test.go         # Public test: certificate generator
+│   ├── public_cli_test.go                          # Public test: CLI
+│   ├── public_discovery_test.go                    # Public test: Discovery
+│   ├── public_http_client_test.go                  # Public test: HttpClient
+│   ├── public_init_is_alive_test.go                # Public test: is_alive and version
+│   ├── public_mock_http_client_test.go             # Public test: mocked http client
+│   ├── public_nubank_client_test.go                # Public test: Nubank client
+│   ├── public_parsing_test.go                      # Public test: parsing, parse_float
+│   └── public_setup_py_functional_test.go          # Public test: setup.py-related functional test
+└── README.md
+
+# Directory and file explanations:
+# - tests/original/: All source Python "original" tests, translated and fully implemented using Go's testing and testify packages.
+# - public_tests/: All public Python test equivalents, with relevant test logic and scenarios, Go translated and self-standing.
+# - run_tests.sh: Runs *all* tests detected by `go test ./...`.
+# - go.mod: Declares required Go packages (including testify for rich assertions).
+# - README.md: Guidance for project usage, test running, background info.
+# 
+# To execute all tests:
+#    1. Make sure you have Go 1.18+ installed.
+#    2. Run `chmod +x run_tests.sh` if needed.
+#    3. Run `./run_tests.sh`
+# 
+# All test cases (original and public) will run, reporting all assertion failures and coverage like in Python.

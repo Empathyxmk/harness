@@ -1,0 +1,38 @@
+amio_micro-fork (Python translation)
+├── requirements.txt                # Python dependencies (pytest, requests)
+├── run_tests.sh                    # One-click test runner (runs all tests)
+├── project_structure.txt           # This file
+├── tests/                          # All original tests
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_enhancer.py        # Translation of enhancer.spec.js
+│       └── test_index.py           # Translation of index.spec.js
+├── public_tests/                   # All public tests
+│   ├── __init__.py
+│   ├── test_enhancer_public.py     # Translation of enhancer.public.test.js
+│   └── test_index_public.py        # Translation of index.public.test.js
+
+# Directory explanations:
+# - requirements.txt: Lists all required Python packages.
+# - run_tests.sh: Simply executes pytest on all tests (original and public).
+# - tests/original/: Contains all "original" translated test cases.
+# - public_tests/: Contains all "public" translated test cases.
+# - project_structure.txt: This file, explains the layout for reference.
+
+# Setup & Testing instructions:
+#
+# 1. (Optional, recommended) Use a virtualenv or venv:
+#    python3 -m venv venv && source venv/bin/activate
+# 2. Install dependencies:
+#    pip install -r requirements.txt
+# 3. Run all tests:
+#    ./run_tests.sh
+#
+# All tests (original and public) will execute via pytest and should pass if the amio_micro_fork Python backend is implemented accordingly.
+#
+# To run only original tests:
+#    pytest tests/original/
+#
+# To run only public tests:
+#    pytest public_tests/

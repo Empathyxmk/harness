@@ -1,0 +1,89 @@
+{
+  "project_name": "davidmoten_geo",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T15:20:35.908988",
+  "original_path": "/workspace/verified_repos_v2/Java/davidmoten_geo",
+  "public_test_result_path": "/workspace/public_test_results/Java/davidmoten_geo",
+  "iterations_completed": 9,
+  "token_usage_stats": {
+    "project_structure_tokens": 923,
+    "test_files_tokens": 13938,
+    "test_files_count": 21,
+    "source_files_tokens": 0,
+    "source_files_count": 0,
+    "total_content_tokens": 14861,
+    "average_tokens_per_test_file": 663,
+    "average_tokens_per_source_file": 0
+  },
+  "original_tests": {
+    "test_files": [
+      "geo/src/test/java/com/github/davidmoten/geo/LatLongTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/GeoHashTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/DirectionTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/GeoHashMinimalTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/CoverageLongsTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/CoverageTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/Base32Test.java",
+      "geo/src/test/java/com/github/davidmoten/geo/db/DatabaseTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/util/PreconditionsTest.java",
+      "geo/target/generated-test-sources/test-annotations/com/github/davidmoten/geo/jmh_generated/Benchmarks_decodeHash_jmhTest.java",
+      "geo/target/generated-test-sources/test-annotations/com/github/davidmoten/geo/jmh_generated/Benchmarks_hashContains_jmhTest.java",
+      "geo-mem/src/test/java/com/github/davidmoten/geo/mem/GeomemTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 12,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "geo/src/test/java/com/github/davidmoten/geo/LatLongPublicTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/GeoHashPublicTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/DirectionPublicTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/Base32PublicTest.java",
+      "run_public_tests.sh",
+      "geo/src/test/java/com/github/davidmoten/geo/GeoHashMinimalPublicTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/CoverageLongsPublicTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/CoveragePublicTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/util/PreconditionsPublicTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/db/DatabasePublicTest.java",
+      "geo/src/test/java/com/github/davidmoten/geo/mem/GeomemPublicTest.java",
+      "geo-mem/src/test/java/com/github/davidmoten/geo/mem/GeomemPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 13,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "geo/src/test/java/com/github/davidmoten/geo/LatLongPublicTest.java",
+    "geo/src/test/java/com/github/davidmoten/geo/GeoHashPublicTest.java",
+    "geo/src/test/java/com/github/davidmoten/geo/DirectionPublicTest.java",
+    "geo/src/test/java/com/github/davidmoten/geo/Base32PublicTest.java",
+    "run_public_tests.sh",
+    "geo/src/test/java/com/github/davidmoten/geo/GeoHashMinimalPublicTest.java",
+    "geo/src/test/java/com/github/davidmoten/geo/CoverageLongsPublicTest.java",
+    "geo/src/test/java/com/github/davidmoten/geo/CoveragePublicTest.java",
+    "geo/src/test/java/com/github/davidmoten/geo/util/PreconditionsPublicTest.java",
+    "geo/src/test/java/com/github/davidmoten/geo/db/DatabasePublicTest.java",
+    "geo/src/test/java/com/github/davidmoten/geo/mem/GeomemPublicTest.java",
+    "geo-mem/src/test/java/com/github/davidmoten/geo/mem/GeomemPublicTest.java",
+    "geo/pom.xml",
+    "geo-mem/pom.xml",
+    "pom.xml",
+    "geo/pom.xml",
+    "geo-mem/pom.xml",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

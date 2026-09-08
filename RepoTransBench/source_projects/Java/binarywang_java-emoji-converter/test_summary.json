@@ -1,0 +1,11 @@
+{
+  "project_name": "binarywang_java-emoji-converter",
+  "language": "Java",
+  "coverage": {
+    "line": 56.0,
+    "branch": 53.2
+  },
+  "timestamp": "2025-06-19T18:15:15.204789",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/binarywang_java-emoji-converter",
+  "test_result_path": "/workspace/test_enhancement_results/Java/binarywang_java-emoji-converter"
+}

@@ -1,0 +1,17 @@
+{
+  "project_name": "alexa-samples_skill-sample-nodejs-fact",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 98.1,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T09:51:40.372797",
+  "original_path": "/workspace/runnable_filter/JavaScript/alexa-samples_skill-sample-nodejs-fact",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/alexa-samples_skill-sample-nodejs-fact",
+  "tests_path": [
+    "lambda/custom/personalizationStorageUtil.test.js",
+    "lambda/custom/personalizationUtil.test.js",
+    "lambda/custom/index.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

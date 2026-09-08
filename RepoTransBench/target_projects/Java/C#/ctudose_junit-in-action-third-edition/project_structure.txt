@@ -1,0 +1,76 @@
+ctudose_junit_in_action_third_edition/
+├── src/
+│   └── Ch02Core/
+│       ├── Ch02Core.csproj
+│       ├── Parametrized/
+│       │   ├── WordCounter.cs
+│       │   └── [other production source files...]
+│       ├── Hamcrest/
+│       │   └── Customer.cs
+│       ├── Tags/
+│       │   ├── Customer.cs
+│       │   └── CustomersRepository.cs
+│       ├── Lifecycle/
+│       │   ├── ResourceForAllTests.cs
+│       │   └── SUT.cs
+│       ├── Assumptions/
+│       │   ├── Environment/
+│       │   │   ├── JavaSpecification.cs
+│       │   │   ├── OperationSystem.cs
+│       │   │   └── TestsEnvironment.cs
+│       │   ├── Job.cs
+│       │   └── SUT.cs
+│       ├── Predicate/
+│       │   └── PositiveNumberPredicate.cs
+│       └── [other utility/production files as needed]
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── Parametrized/
+│       │   ├── ParameterizedWithCsvFileSourceTest.cs
+│       │   ├── ParameterizedWithCsvSourceTest.cs
+│       │   ├── ParameterizedWithValueSourceTest.cs
+│       │   └── ParameterizedWithEnumSourceTest.cs
+│       ├── Hamcrest/
+│       │   ├── HamcrestListTest.cs
+│       │   └── HamcrestMatchersTest.cs
+│       ├── DisplayName/
+│       │   └── DisplayNameTest.cs
+│       ├── Repeated/
+│       │   └── RepeatedTestsTest.cs
+│       ├── Dynamic/
+│       │   └── DynamicTestsTest.cs
+│       ├── Lifecycle/
+│       │   └── SUTTest.cs
+│       ├── Predicate/
+│       │   └── PositiveNumberPredicateTest.cs
+│       ├── Assumptions/
+│       │   └── AssumptionsTest.cs
+│       ├── Disabled/
+│       │   ├── DisabledClassTest.cs
+│       │   └── DisabledMethodsTest.cs
+│       ├── Tags/
+│       │   ├── CustomersRepositoryTest.cs
+│       │   └── CustomerTest.cs
+│       ├── Nested/
+│       │   └── NestedTestsTest.cs
+│       ├── DependencyInjection/
+│       │   ├── TestReporterTest.cs
+│       │   └── TestInfoTest.cs
+│       ├── Assertions/
+│       │   ├── AssertThrowsTest.cs
+│       │   ├── AssertAllTest.cs
+│       │   └── AssertTimeoutTest.cs
+│       └── [test utility code as needed]
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── Parametrized/
+│   │   ├── ParameterizedWithCsvFileSourcePublicTest.cs
+│   │   ├── ParameterizedWithCsvSourcePublicTest.cs
+│   │   ├── ParameterizedWithValueSourcePublicTest.cs
+│   │   └── ParameterizedWithEnumSourcePublicTest.cs
+│   └── [test resources as needed]
+├── ctudose_junit_in_action_third_edition.sln
+├── run_tests.sh
+├── test_translation_progress.json
+└── README.md

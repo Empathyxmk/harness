@@ -1,0 +1,76 @@
+tonyo_pyope/
+├── HISTORY.rst
+├── LICENSE
+├── MANIFEST.in
+├── Makefile
+├── README.md
+├── README.rst
+├── conftest.py
+├── go.mod
+├── htmlcov/
+│   ├── class_index.html
+│   ├── conftest_py.html
+│   ├── coverage_html_cb_6fb7b396.js
+│   ├── favicon_32_cb_58284776.png
+│   ├── function_index.html
+│   ├── index.html
+│   ├── keybd_closed_cb_ce680311.png
+│   ├── status.json
+│   ├── style_cb_81f8c14c.css
+│   ├── z_0eedf7b1c33536f2_six_py.html
+│   ├── z_41207d94ac41bfc9___init___py.html
+│   ├── z_41207d94ac41bfc9_pytest_xprocess_py.html
+│   ├── z_41207d94ac41bfc9_xprocess_py.html
+│   ├── z_a25c756d057ee110___init___py.html
+│   ├── z_a25c756d057ee110_errors_py.html
+│   ├── z_a25c756d057ee110_hgd_py.html
+│   ├── z_a25c756d057ee110_ope_py.html
+│   ├── z_a25c756d057ee110_stat_py.html
+│   ├── z_a25c756d057ee110_util_py.html
+│   ├── z_a44f0ac069e85531_test_errors_py.html
+│   ├── z_a44f0ac069e85531_test_ope_py.html
+│   ├── z_a44f0ac069e85531_test_range_py.html
+│   ├── z_a44f0ac069e85531_test_setup_py_py.html
+│   ├── z_a44f0ac069e85531_test_stat_core_py.html
+│   ├── z_a44f0ac069e85531_test_stat_py.html
+│   ├── z_a44f0ac069e85531_test_utils_py.html
+│   ├── z_c4ffa8a422684190___init___py.html
+│   ├── z_c4ffa8a422684190_more_py.html
+│   └── z_c4ffa8a422684190_recipes_py.html
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_errors.py
+│   ├── test_public_ope.py
+│   ├── test_public_range.py
+│   ├── test_public_setup_py.py
+│   ├── test_public_stat.py
+│   ├── test_public_stat_core.py
+│   └── test_public_utils.py
+├── pyope/
+│   ├── __init__.py
+│   ├── errors.py
+│   ├── hgd.py
+│   ├── ope.py
+│   ├── stat.py
+│   └── util.py
+├── requirements_dev.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.cfg
+├── setup.py
+├── test_summary.json
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── test_ope_test.go
+│   │   ├── test_range_test.go
+│   │   └── test_setup_py_test.go
+│   ├── test_errors.py
+│   ├── test_ope.py
+│   ├── test_range.py
+│   ├── test_setup_py.py
+│   ├── test_stat.py
+│   ├── test_stat_core.py
+│   └── test_utils.py
+└── tox.ini

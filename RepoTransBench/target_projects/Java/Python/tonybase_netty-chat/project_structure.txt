@@ -1,0 +1,36 @@
+project_root/
+├── requirements.txt                        # Python dependencies (pytest, mock)
+├── run_tests.sh                            # Simple script to run ALL tests (original & public)
+├── project_structure.txt                   # This file: explains project layout
+├── tests/
+│   ├── __init__.py                         # (empty) marks test module
+│   └── original/                           # Original (private) tests translated from Java
+│       ├── __init__.py                     # (empty) marks original test submodule
+│       ├── test_chat_operation.py          # Original test for ChatOperation
+│       └── test_message_operation.py       # Original test for MessageOperation
+├── public_tests/
+│   ├── __init__.py                         # (empty) marks public test module
+│   ├── test_chat_operation_public.py       # Public test for ChatOperation (edge/altered cases)
+│   └── test_message_operation_public.py    # Public test for MessageOperation (edge/altered cases)
+└── ... (your source code would live under src/ or package_name/, not included in this migration)
+
+Directory/Files Explanation:
+- requirements.txt: All Python dependencies are listed here (pytest, mock).
+- run_tests.sh: One-click test runner; installs requirements and runs all tests.
+- tests/original/: Contains the original (private/internal) tests, mirroring the Java source logic.
+- public_tests/: Contains public (released/sample) test cases, mirroring the Java public test logic.
+- __init__.py: Denotes Python package directories, required for pytest discovery.
+- project_structure.txt: This document explaining the project layout, setup, and directory purposes.
+
+Setup/Testing Instructions:
+1. Make sure Python 3.8+ is installed.
+2. Run: `chmod +x run_tests.sh`
+3. Execute: `./run_tests.sh`
+   - This will install dependencies and run both original and public test suites.
+4. To run tests individually:
+   - `pytest tests/original/` for original tests
+   - `pytest public_tests/` for public tests
+
+Note:
+- All Java logic is simulated by stubs/mocks so these tests are immediately runnable and maintain translated test logic.
+- Integrate your code under a proper `src/` directory as needed for real implementation.

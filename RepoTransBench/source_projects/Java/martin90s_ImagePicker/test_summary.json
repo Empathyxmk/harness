@@ -1,0 +1,11 @@
+{
+  "project_name": "martin90s_ImagePicker",
+  "language": "Java",
+  "coverage": {
+    "line": 62.3,
+    "branch": 55.0
+  },
+  "timestamp": "2025-06-19T22:33:08.382400",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/martin90s_ImagePicker",
+  "test_result_path": "/workspace/test_enhancement_results/Java/martin90s_ImagePicker"
+}

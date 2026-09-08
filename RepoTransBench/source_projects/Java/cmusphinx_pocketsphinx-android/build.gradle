@@ -1,0 +1,33 @@
+// Fixed: Remove Android plugin and use pure Java, for JVM unit testing and JaCoCo support
+
+apply plugin: 'java'
+apply plugin: 'jacoco'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation "junit:junit:4.13.2"
+    testImplementation "org.mockito:mockito-core:3.11.2"
+}
+
+jacoco {
+    toolVersion = "0.8.7"
+}
+
+test {
+    useJUnit()
+    finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "passport-local",
+  "version": "1.0.0",
+  "description": "Local username and password authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "local",
+    "auth",
+    "authn",
+    "authentication",
+    "username",
+    "password"
+  ],
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaredhanson/passport-local.git"
+  },
+  "bugs": {
+    "url": "http://github.com/jaredhanson/passport-local/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/jaredhanson"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "passport-strategy": "1.x.x"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "chai-passport-strategy": "^0.1.0",
+    "make-node": "0.4.6",
+    "mocha": "^2.5.3",
+    "nyc": "^17.1.0"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}

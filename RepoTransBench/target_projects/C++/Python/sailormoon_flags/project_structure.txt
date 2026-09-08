@@ -1,0 +1,55 @@
+project_root/
+├── requirements.txt           # Python dependencies (includes pytest)
+├── run_tests.sh               # Simple script to run all tests with pytest
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_flags_test.py              # Original translated tests
+│       └── test_flags_extra_test.py        # Original edge/extra tests
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_flags_test_public.py           # Public visible translated test
+│   └── test_flags_extra_test_public.py     # Public visible edge test
+└── project_structure.txt                   # This file: directory/documentation
+
+=======================
+Project Directory Descriptions
+=======================
+
+- requirements.txt
+    Standard Python dependency file; contains 'pytest' for running tests.
+
+- run_tests.sh
+    Bash script for one-click execution of all tests in both tests/original/ and public_tests/ directories.
+
+- tests/
+    All "original" (private/internal) translated tests from C++. Main suite for internal and edge testing.
+
+    - original/
+        Contains test cases translated directly from C++:
+            - test_flags_test.py: Core Flags class behavior/unit test suite.
+            - test_flags_extra_test.py: Edge and extra test cases for Flags.
+
+- public_tests/
+    Public/transparency tests, translated from public-facing C++ test cases:
+        - test_flags_test_public.py: Main scenario suite, public facing.
+        - test_flags_extra_test_public.py: Edge/variant suite, public facing.
+
+- project_structure.txt
+    This file; describes the entire folder/file layout and all contents.
+
+======================
+Setup & Running Instructions
+======================
+
+1. Ensure you have Python 3.7+ installed.
+2. Install all dependencies:
+       pip install -r requirements.txt
+3. Execute all tests (both original & public) with one command:
+       ./run_tests.sh
+   Or run only one directory:
+       pytest tests/original/
+       pytest public_tests/
+
+All test logic is fully translated from C++ and thoroughly validated by pytest.

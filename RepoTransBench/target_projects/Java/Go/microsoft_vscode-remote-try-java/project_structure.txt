@@ -1,0 +1,26 @@
+go.mod                             # Go module definitions
+app/
+  └── app.go                       # Contains App's GetMessage() and EvaluateNumber()
+tests/
+  └── original/
+      └── app_test.go              # Original test cases (AppTest.java in Go)
+public_tests/
+  └── app_public_test.go           # Public test cases (AppPublicTest.java in Go)
+run_tests.sh                       # One-click script: runs all tests.
+
+# Structure Explanation
+
+go.mod:
+    - Go Module definition (use your VCS path if published)
+
+app/app.go:
+    - Implements the functions under test
+
+tests/original/app_test.go:
+    - Translated original test suite. Imports `app` code using Go module path.
+
+public_tests/app_public_test.go:
+    - Translated public test suite. Imports `app` code using Go module path.
+
+run_tests.sh:
+    - Minimal script to execute all tests with one command: `./run_tests.sh`

@@ -1,0 +1,42 @@
+{
+  "name": "lazy-linq",
+  "version": "1.0.2",
+  "authors": [
+    "anstinus <anstinus@gmail.com>"
+  ],
+  "description": "A full port of LINQ for javascript. It works fully in 'lazy' mode for the best performance.",
+  "main": "linq-browser.js",
+  "keywords": [
+    "linq",
+    "lazy",
+    "deferred",
+    "performance",
+    "algorithm"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "homepage": "https://github.com/Anstinus/lazy-linq/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Anstinus/lazy-linq.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".tmp",
+    "src",
+    "linq.js",
+    "gulpfile.js"
+  ],
+  "dependencies": {
+    "babel-polyfill": "~0.0.1"
+  }
+}

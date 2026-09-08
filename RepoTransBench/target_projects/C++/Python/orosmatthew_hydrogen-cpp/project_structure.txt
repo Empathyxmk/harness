@@ -1,0 +1,39 @@
+or osmatthew_hydrogen-python/
+├── src/                                   # (Source code, empty __init__.py provided)
+│   └── __init__.py
+├── tests/
+│   ├── __init__.py                        # Tests package init
+│   └── original/                          # Original (private) tests, direct C++ test logic ported
+│       ├── __init__.py
+│       ├── test_arena.py
+│       ├── test_parser.py
+│       ├── test_tokenization.py
+│       └── test_main.py
+├── public_tests/                          # Public test cases, translated from provided public C++ tests
+│   ├── __init__.py
+│   ├── test_arena_public.py
+│   ├── test_parser_public.py
+│   └── test_tokenization_public.py
+├── requirements.txt                       # Python dependencies: pytest included
+├── run_tests.sh                           # One-click test script; runs all tests with pytest
+├── project_structure.txt                  # This tree and explanations
+│
+# Setup & Test Instructions:
+#
+# 1. Install requirements:
+#      pip install -r requirements.txt
+#
+# 2. Run all tests (original and public):
+#      ./run_tests.sh
+#
+#    This runs all discovered pytest tests in both 'tests/' and 'public_tests/'.
+#
+# 3. Add your implementation code in src/ as needed.
+#
+# Directory explanations:
+#  - src/:         Implementation source files (empty here).
+#  - tests/original/:  "Private"/full coverage tests, translated from original C++.
+#  - public_tests/:    Public/visible tests, matching public C++ test logic.
+#  - requirements.txt: Python test requirements.
+#  - run_tests.sh:     Shell script for one-click Python test execution.
+#  - project_structure.txt: This structure and instructions.

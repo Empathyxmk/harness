@@ -1,0 +1,22 @@
+.
+├── go.mod                        # Go module definition
+├── kafkaservice/
+│   └── kafkaservice.go           # Implementation of KafkaService ("main" library code)
+├── public_tests/
+│   └── kafka_service_public_test.go # Public test set (from KafkaServicePublicTest.java)
+├── tests/
+│   └── original/
+│       └── kafka_service_test.go    # Original test set (from KafkaServiceTest.java)
+├── run_tests.sh                  # One-click test execution script
+├── README.md                     # Project/documentation overview
+└── project_structure.txt         # Project structure and descriptions
+
+**Directory and File Descriptions:**
+
+- kafkaservice/: Source Go implementation for KafkaService, based on test cases.
+- tests/original/: "Original"/internal tests, translated line-for-line from Java.
+- public_tests/: "Public" tests from Java, translated for the public grader.
+- go.mod: Go module definition/dependency file.
+- run_tests.sh: Minimal script to run all Go tests with a single command.
+- README.md: Setup instructions and documentation.
+- project_structure.txt: This file—explains the repo layout.

@@ -1,0 +1,2 @@
+Optimizer,objfname,ExecutionTime,Iter1,Iter2,Iter3,Iter4,Iter5,Iter6,Iter7,Iter8,Iter9,Iter10
+SSA,F1,0.08,0.0,21921.66,13018.0,8656.34,7556.94,6692.83,6160.65,5806.73,5530.75,5319.41

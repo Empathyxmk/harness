@@ -1,0 +1,101 @@
+{
+  "project_name": "duereg_js-algorithms",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:41:29.060001",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/duereg_js-algorithms",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/duereg_js-algorithms",
+  "original_tests": {
+    "test_files": [
+      "spec/dataStructures/queue.two.spec.js",
+      "spec/dataStructures/trie.add.spec.js",
+      "spec/dataStructures/stack.two.spec.js",
+      "spec/dataStructures/maxHeap.ten.spec.js",
+      "spec/dataStructures/minHeap.ten.constructor.spec.js",
+      "spec/dataStructures/minHeap.two.spec.js",
+      "spec/dataStructures/trie.getPrefix.spec.js",
+      "spec/dataStructures/maxHeap.two.spec.js",
+      "spec/dataStructures/suffixTree.spec.js",
+      "spec/dataStructures/maxHeap.one.spec.js",
+      "spec/dataStructures/trie.sort.spec.js",
+      "spec/dataStructures/trie.getValue.spec.js",
+      "spec/dataStructures/binaryHeap.one.spec.js",
+      "spec/dataStructures/minHeap.one.spec.js",
+      "spec/dataStructures/linkedList.one.spec.js",
+      "spec/dataStructures/trie.remove.spec.js",
+      "spec/dataStructures/minHeap.ten.spec.js",
+      "spec/dataStructures/maxHeap.ten.constructor.spec.js",
+      "spec/dataStructures/queue.one.spec.js",
+      "spec/dataStructures/linkedList.three.spec.js",
+      "spec/dataStructures/stack.one.spec.js",
+      "spec/dataStructures/binarySearchTree.spec.js",
+      "spec/dataStructures/linkedList.two.spec.js",
+      "spec/algo/8-oop/blackjack/card.spec.js",
+      "spec/algo/8-oop/blackjack/hand.spec.js",
+      "spec/algo/8-oop/blackjack/blackjackHand.spec.js",
+      "spec/algo/8-oop/blackjack/deck.spec.js",
+      "spec/algo/8-oop/blackjack/blackjackCard.spec.js",
+      "spec/algo/11-sorting/mergeSort.spec.js",
+      "spec/algo/11-sorting/quickSort.spec.js",
+      "spec/algo/2-linkedLists/addTwoLists.spec.js",
+      "spec/algo/2-linkedLists/partition.spec.js",
+      "spec/algo/2-linkedLists/deDupe.recursive.spec.js",
+      "spec/algo/2-linkedLists/deDupe.spec.js",
+      "spec/algo/2-linkedLists/kthToLast.spec.js",
+      "spec/algo/2-linkedLists/palindrome.spec.js",
+      "spec/algo/3-stacks/hanoi.spec.js",
+      "spec/algo/3-stacks/sort.spec.js",
+      "spec/algo/3-stacks/stackQueue.spec.js",
+      "spec/algo/1-strings/permutation.spec.js",
+      "spec/algo/1-strings/compress.spec.js",
+      "spec/algo/1-strings/escape.spec.js",
+      "spec/algo/1-strings/shuffle.spec.js",
+      "spec/algo/4-binaryTrees/isRoute.spec.js",
+      "spec/algo/4-binaryTrees/isSubtree.spec.js",
+      "spec/algo/4-binaryTrees/verifyIsBst.spec.js",
+      "spec/algo/4-binaryTrees/printSum.spec.js",
+      "spec/algo/4-binaryTrees/isBalanced.spec.js",
+      "spec/algo/4-binaryTrees/makeList.spec.js",
+      "spec/algo/4-binaryTrees/createBst.spec.js",
+      "spec/algo/4-searching/depthFirstSearch.spec.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 51,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/dataStructures/queue.two.public.test.js",
+      "public_tests/dataStructures/stack.two.public.test.js",
+      "public_tests/dataStructures/trie.add.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/dataStructures/trie.add.public.test.js",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/dataStructures/queue.two.public.test.js",
+    "public_tests/dataStructures/stack.two.public.test.js",
+    "public_tests/dataStructures/trie.add.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/dataStructures/trie.add.public.test.js",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

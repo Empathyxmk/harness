@@ -1,0 +1,28 @@
+gabrieldim_Junit-ISP-Testing_CSharp/
+├── TestingSets.sln                # .NET Solution file connecting library, original and public tests
+├── src/
+│   ├── TestingSets.csproj         # C# Class Library project for "TestingSets"
+│   └── TestingSets.cs             # Main implementation (setDifference logic)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj   # Test project for original (private) tests
+│       └── TestingSetsTests.cs    # Translated private tests from TestingSetsTest.java
+├── public_tests/
+│   ├── PublicTests.csproj         # Test project for public tests
+│   └── TestingSetsPublicTests.cs  # Translated public tests from TestingSetsPublicTest.java
+├── run_tests.sh                   # Simple test runner (runs ALL tests)
+└── project_structure.txt          # This file (structure and explanations)
+
+Directory Descriptions:
+- src/: Implementation code for the TestingSets class.
+- tests/original/: Original (private) test suite, matching TestingSetsTest.java.
+- public_tests/: Public test suite, matching TestingSetsPublicTest.java.
+- *.csproj: .NET project definitions for code and tests, using xUnit.
+- TestingSets.sln: Solution file to group code & tests for 'dotnet test'.
+- run_tests.sh: One-click script to build and run all tests.
+
+How to run tests:
+  1. Install .NET 6.0 SDK or higher.
+  2. In the repo root, run: ./run_tests.sh
+
+Test output will show ALL tests in both original and public suites.

@@ -1,0 +1,41 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_cosine.py
+│   │   ├── test_ratcliffobershelp_more.py
+│   │   ├── test_levenshtein.py
+│   │   ├── test_optimal_string_alignment.py
+│   │   ├── test_damerau.py
+│   │   ├── test_metriclcs.py
+│   │   ├── test_normalized_levenshtein.py
+│   │   ├── test_weighted_levenshtein.py
+│   │   ├── test_longest_common_subsequence.py
+│   │   ├── test_ratcliffobershelp.py
+│   │   ├── test_jaro_winkler.py
+│   │   ├── test_weighted_levenshtein_branch.py
+│   │   ├── test_sorensen_dice.py
+│   │   ├── test_qgram.py
+│   │   ├── test_ngram.py
+│   │   ├── test_character_substitution_interface.py
+│   │   ├── test_jaccard.py
+│   │   ├── test_null_empty.py
+│   │   └── experimental/
+│   │       ├── __init__.py
+│   │       └── test_sift4.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_normalized_levenshtein_public.py
+│   ├── test_cosine_public.py
+│   ├── test_metriclcs_public.py
+│   ├── test_levenshtein_public.py
+│   ├── test_optimal_string_alignment_public.py
+│   └── test_ratcliffobershelp_more_public.py
+└── test_resources/
+    ├── 11328-1.txt
+    └── 71816-2.txt

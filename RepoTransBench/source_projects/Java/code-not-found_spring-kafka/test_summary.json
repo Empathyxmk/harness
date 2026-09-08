@@ -1,0 +1,15 @@
+{
+  "project_name": "code-not-found_spring-kafka",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T11:40:41.901340",
+  "original_path": "/workspace/runnable_filter/Java/code-not-found_spring-kafka",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/code-not-found_spring-kafka",
+  "tests_path": [
+    "src/test/java/com/example/kafkaservice/KafkaServiceTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

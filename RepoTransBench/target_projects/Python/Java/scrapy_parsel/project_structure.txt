@@ -1,0 +1,42 @@
+scrapy-parsel-java/
+├── pom.xml
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── parsel/
+│   │                   ├── Selector.java
+│   │                   ├── SelectorList.java
+│   │                   ├── csstranslator/
+│   │                   │    ├── GenericTranslator.java
+│   │                   │    ├── HTMLTranslator.java
+│   │                   │    ├── TranslatorProtocol.java
+│   │                   │    └── XPathExpr.java
+│   │                   └── utils/
+│   │                        └── Utils.java
+│   │                   └── xpathfuncs/
+│   │                        └── XPathFuncs.java
+│   │                   (other main classes to be completed as needed)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── parsel/
+│                       ├── original/
+│                       │   ├── SelectorCsstranslatorTest.java
+│                       │   ├── SelectorEdgecasesTest.java
+│                       │   ├── UtilsTest.java
+│                       │   ├── XpathfuncsTest.java
+│                       │   ├── CsstranslatorEdgecasesTest.java
+│                       │   ├── SelectorJmespathTest.java
+│                       │   ├── XmlAttacksTest.java
+│                       │   └── SelectorTest.java
+│                       └── public_tests/
+│                           ├── PublicCsstranslatorTest.java
+│                           ├── PublicSelectorTest.java
+│                           ├── PublicXpathfuncsTest.java
+│                           └── PublicUtilsTest.java

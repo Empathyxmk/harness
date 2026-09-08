@@ -1,0 +1,30 @@
+commoncrawl_news-crawl-csharp/
+├── src/
+│   └── CommonCrawlNewsCrawl/
+│       ├── CommonCrawlNewsCrawl.csproj      # Main library project file
+│       ├── FastURLFilter.cs                 # Library class stubs (add functionality here)
+│       ├── News/
+│       │   ├── ContentDetector.cs
+│       │   ├── NewsSiteMapParserBolt.cs
+│       │   ├── NewsSiteMapParser.cs
+│       │   ├── PreFilterBolt.cs
+│       │   └── PunycodeURLNormalizer.cs
+│       └── Utilities/                       # (optional) helper classes
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj             # Test project for original (private) tests
+│       ├── FastURLFilterTests.cs            # Translated from FastURLFilterTest.java
+│       ├── ContentDetectorTests.cs          # from ContentDetectorTest.java
+│       ├── PreFilterBoltTests.cs            # from PreFilterBoltTest.java
+│       ├── PunycodeURLNormalizerTests.cs    # from PunycodeURLNormalizerTest.java
+│       └── NewsSiteMapParserBoltTests.cs    # from NewsSiteMapParserTest.java
+├── public_tests/
+│   ├── PublicTests.csproj                   # Test project for public tests
+│   ├── FastURLFilterPublicTests.cs          # from FastURLFilterPublicTest.java
+│   ├── ContentDetectorPublicTests.cs        # from ContentDetectorPublicTest.java
+│   ├── PreFilterBoltPublicTests.cs          # from PreFilterBoltPublicTest.java
+│   ├── PunycodeURLNormalizerPublicTests.cs  # from PunycodeURLNormalizerPublicTest.java
+│   └── NewsSiteMapParserPublicTests.cs      # from NewsSiteMapParserPublicTest.java
+├── CommonCrawlNewsCrawl.sln                 # Solution file (includes src and all test projects)
+├── README.md                                # Setup and usage documentation
+├── run_tests.sh                             # Simple script to run all tests

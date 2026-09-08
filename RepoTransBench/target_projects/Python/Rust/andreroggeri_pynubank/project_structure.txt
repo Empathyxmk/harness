@@ -1,0 +1,10 @@
+project_root/
+├── src/
+│   ├── lib.rs                  # Main library source code (empty, for now)
+├── tests/                      # Original tests
+│   ├── test_auth_mode_and_exception.rs
+│   ├── etc...                  # (additional tests)
+├── public_tests/               # Public tests if there are any
+├── Cargo.toml                  # Manages dependencies, package information
+├── run_tests.sh                # BASH script to execute all tests
+└── README.md                   # Documentation file explaining usage, setup, etc.

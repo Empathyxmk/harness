@@ -1,0 +1,51 @@
+{
+  "project_name": "powergo_pytracking",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:20:29.193414",
+  "original_path": "/workspace/verified_repos_v2/Python/powergo_pytracking",
+  "public_test_result_path": "/workspace/public_test_results/Python/powergo_pytracking",
+  "original_tests": {
+    "test_files": [
+      "tests/test_tracking_unit.py",
+      "tests/test_pytracking.py",
+      "tests/test_init_exports.py",
+      "tests/test_crypto.py",
+      "tests/test_webhook.py",
+      "tests/test_html.py",
+      "tests/test_django.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_tracking_unit_public.py",
+      "public_tests/test_pytracking_public.py",
+      "public_tests/test_init_exports_public.py",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 5,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_tracking_unit_public.py",
+    "public_tests/test_pytracking_public.py",
+    "public_tests/test_init_exports_public.py",
+    "run_public_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

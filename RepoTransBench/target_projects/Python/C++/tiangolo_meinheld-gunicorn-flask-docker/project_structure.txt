@@ -1,0 +1,14 @@
+project_root/
+├── CMakeLists.txt             # CMake configuration (fetches GoogleTest and nlohmann_json)
+├── README.md                  # Build and usage instructions
+├── run_tests.sh               # Run all C++ tests with one command
+├── tests/                     # Original (internal) test cases (*_test.cpp)
+│   ├── test_utils_test.cpp
+│   ├── test_main_test.cpp
+│   └── test_utils_minimal_test.cpp
+├── public_tests/              # Public (user-facing) test cases (*_test.cpp)
+│   ├── test_public_utils_minimal_test.cpp
+│   ├── test_public_utils_test.cpp
+│   └── test_public_main_test.cpp
+...
+(Relies on GoogleTest and nlohmann_json, fetched automatically by CMake.)

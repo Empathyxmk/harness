@@ -1,0 +1,16 @@
+.
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── test_discovery_core_test.go
+│       ├── test_scenes_test.go
+│       ├── test_utils_test.go
+│       ├── test_version_and_setup_test.go
+│       └── test_public_version_and_setup_test.go
+├── public_tests/
+│   ├── test_public_bulb_hero_1_23_70_test.go
+│   ├── test_public_bulb_socket_test.go
+│   ├── test_public_discovery_core_test.go
+│   ├── test_public_scenes_test.go
+│   └── test_public_utils_test.go

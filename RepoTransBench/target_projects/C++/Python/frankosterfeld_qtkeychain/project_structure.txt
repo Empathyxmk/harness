@@ -1,0 +1,18 @@
+project_root/
+├── requirements.txt           # Python dependencies (pytest)
+├── run_tests.sh               # Test runner script (all tests)
+├── project_structure.txt      # Project structure description
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_keychainclass.py          # Original test_keychainclass.cpp
+│   │   ├── test_haiku.py                  # Original test_haiku.cpp
+│   │   ├── test_gnomekeyring.py           # Original test_gnomekeyring.cpp
+│   │   └── testclient_args.py             # Original testclient_args.cpp
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_keychainclass_public_test.py  # Translated test_keychainclass_public_test.cpp
+│   ├── basic_public_test.py               # Translated basic_public_test.cpp
+│   └── testclient_args_public_test.py     # Translated testclient_args_public_test.cpp
+README.md                                  # (add project description here)

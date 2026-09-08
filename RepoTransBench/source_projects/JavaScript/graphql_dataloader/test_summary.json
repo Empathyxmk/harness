@@ -1,0 +1,19 @@
+{
+  "project_name": "graphql_dataloader",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:38:36.307797",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/graphql_dataloader",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/graphql_dataloader",
+  "tests_path": [
+    "src/__tests__/abuse.test.js",
+    "src/__tests__/browser.test.js",
+    "src/__tests__/dataloader.test.js",
+    "src/__tests__/oldbrowser.test.js",
+    "src/__tests__/unhandled.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

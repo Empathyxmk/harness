@@ -1,0 +1,30 @@
+project_root/
+├── requirements.txt                  # Python dependencies (pytest only)
+├── run_tests.sh                      # Simple test execution script (runs all tests with pytest)
+├── src/
+│   ├── __init__.py                   # (empty) marks src as a package directory
+│   └── buddy.py                      # Python stub for the buddy allocator logic (API-matched to tests)
+├── tests/
+│   ├── __init__.py                   # (empty)
+│   └── original/
+│       ├── __init__.py               # (empty)
+│       ├── test_core.py              # Translated from test.c (core/original test scenarios)
+│       ├── test_edgecases.py         # Translated from test_edgecases.c (edge cases)
+│       └── test_extra.py             # Translated from test_extra.c (extra/boundary/error cases)
+├── public_tests/
+│   ├── __init__.py                   # (empty)
+│   └── test_public.py                # Translated from test_public.c (public visible test)
+└── project_structure.txt             # (this file)
+
+Directory/Module Explanations:
+- src/                : Python source implementation (stub provided; to be replaced by correct buddy allocator code)
+- tests/original/     : Original tests (main, edgecases, extras) mapped directly from source C tests.
+- public_tests/       : Public tests (from test_public.c etc) mapped to Python, kept separate for clarity.
+- run_tests.sh        : One-click script to run all tests (simply calls 'pytest').
+- requirements.txt    : Python dependencies, just 'pytest'.
+- \_\_init\_\_.py     : Mark folders as Python packages (required for import/discovery by pytest).
+- project_structure.txt: This documentation file.
+
+How to Run Tests/Setup:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`

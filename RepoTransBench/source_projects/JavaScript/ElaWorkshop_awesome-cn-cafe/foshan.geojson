@@ -1,0 +1,67 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "No.3 coffee",
+        "下载速度": "119 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/i/4372194491",
+        "美式咖啡": "18元",
+        "拿铁": "20元",
+        "评论 (@hackettyu)": "No 3 号豆子是 SOE 耶加雪菲",
+        "厕所": "附近有",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.273,
+          22.926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "Coffeemade.咖啡制造",
+        "下载速度": "260.23 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/i/4409090781",
+        "黑咖啡": "18-23元",
+        "单品咖啡": "38元",
+        "评论 (@hackettyu)": "咖啡：豆单的选择挺多的，美式咖啡两种豆子，手冲咖啡6款；工作：位置还挺多的，有一张大桌子",
+        "厕所": "店里有",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.257,
+          22.852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "Belling coffee",
+        "下载速度": "34.8 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/i/4448807007",
+        "黑咖啡": "18元",
+        "评论 (@hackettyu)": "咖啡：都是自烘焙的豆子；工作：定位为社区咖啡店，不太适合办公",
+        "厕所": "店里有",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.21,
+          22.93
+        ]
+      }
+    }
+  ]
+}

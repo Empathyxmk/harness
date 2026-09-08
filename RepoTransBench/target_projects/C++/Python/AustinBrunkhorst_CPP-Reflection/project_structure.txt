@@ -1,0 +1,28 @@
+.
+├── requirements.txt                  # Python dependencies for pytest
+├── run_tests.sh                      # One-click script for running all tests
+├── tests/
+│   ├── __init__.py                   # Python package marker for tests
+│   └── original/
+│       ├── __init__.py               # Python package marker for original tests
+│       ├── test_json11.py            # Translation of tests/test_json11.cpp
+│       ├── test_MetaUtils.py         # Translation of tests/test_MetaUtils.cpp
+│       └── test_Cursor.py            # Skipped/marked test (from test_Cursor.cpp)
+├── public_tests/
+│   ├── __init__.py                   # Python package marker for public tests
+│   ├── test_json11_public.py         # Translation of tests/test_json11_public.cpp
+│   ├── test_MetaUtils_public.py      # Translation of tests/test_MetaUtils_public.cpp
+│   └── test_Cursor_public.py         # Skipped/marked test (from test_Cursor_public.cpp)
+
+# Directory explanations:
+#   requirements.txt      - Specify that pytest is required for running the tests
+#   run_tests.sh          - Run all tests (original and public) using pytest
+#   tests/original/       - Contains direct translations of "original" C++ test files
+#   public_tests/         - Contains direct translations of "public" C++ test files
+#   __init__.py           - Marks folders as Python packages for import/discovery
+#
+# Instructions:
+#   1. (optional) Install dependencies: `pip install -r requirements.txt`
+#   2. Make sure run_tests.sh is executable: `chmod +x run_tests.sh`
+#   3. Run all tests: `./run_tests.sh`
+#   All tests from both original and public sources will execute and report via pytest.

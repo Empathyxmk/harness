@@ -1,0 +1,29 @@
+rbgirshick_yacs/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs               # Library root, exposes the config module
+│   └── config.rs            # Core configuration node implementation for tests (minimal, not full YACS)
+├── tests/
+│   └── test_config_additional.rs    # Original full-coverage test file (logic ported from Python)
+├── public_tests/
+│   └── test_public_config_additional.rs   # Translated public-facing test (adapted for public test data)
+├── run_tests.sh             # One-click script: just run all tests (`cargo test --all`)
+└── project_structure.txt    # This project structure file
+
+# Directory and file purposes:
+# - Cargo.toml: Rust package manifest, declares dependencies (serde, serde_yaml, tempfile) and dev-deps.
+# - src/: Core library source code.
+#   - lib.rs: Entry point; exposes modules.
+#   - config.rs: Provides a minimal config node to support original/public test logic translation.
+# - tests/: Original/internal tests, strict 1:1 translation of the Python tests and their scenarios.
+# - public_tests/: Translations of public test cases, with changes in test data for public/validation purposes.
+# - run_tests.sh: Executable bash script, runs *all* tests (original + public) with one simple command.
+# - project_structure.txt: This documentation file explaining structure and contents.
+
+# Setup and test instructions:
+# 1. Make sure you have [Rust](https://rustup.rs/) installed.
+# 2. Run `chmod +x run_tests.sh` once, if needed.
+# 3. Run all tests in both tests/ and public_tests/ by invoking:
+#      ./run_tests.sh
+#
+# All tests should pass if the config logic functions as per the test suite.

@@ -1,0 +1,42 @@
+ai-forever-gigachat-go/
+├── go.mod                      # Go module file, declares dependencies
+├── run_tests.sh                # One-click script to run all Go tests (`go test ./...`)
+├── README.md                   # Project documentation
+├── src/
+│   └── gigachat/               # (Placeholder for the main package implementation)
+│       └── *.go                # (Real implementation would go here)
+├── tests/
+│   └── original/
+│       ├── test_settings_test.go         # Original tests translated from Python
+│       ├── test_assistants_test.go
+│       ├── test_examples_test.go
+│       ├── test_client_test.go
+│       ├── test_threads_test.go
+│       ├── test_get_image_test.go
+│       └── api/
+│           ├── test_stream_chat_test.go
+│           ├── test_post_auth_test.go
+│           ├── test_post_chat_test.go
+│           ├── test_get_models_test.go
+│           ├── test_post_token_test.go
+│           └── test_get_model_test.go
+├── public_tests/
+│   ├── test_public_assistants_test.go
+│   ├── test_public_client_test.go
+│   ├── test_public_examples_test.go
+│   ├── test_public_models_test.go
+│   └── test_public_settings_test.go
+
+# Directory and file explanation:
+# - src/gigachat/          : (Placeholder) Actual Go application/library implementation would be put here.
+# - tests/original/        : Direct translation of all "original" Python test files to Go tests, using standard Go unit test conventions.
+# - public_tests/          : Direct translation of all "public" Python test files suitable for outside evaluation, following Go test conventions.
+# - go.mod                 : Go module file with required dependencies (e.g., testify for advanced assertions).
+# - run_tests.sh           : Simple script to run all tests in the repo with `go test ./...`.
+# - README.md              : Project documentation and setup instructions.
+
+# To run all tests:
+# $ chmod +x run_tests.sh
+# $ ./run_tests.sh
+
+# Note: All test logic is preserved, but implementations may call into placeholder/mocks if real Go implementation is missing.

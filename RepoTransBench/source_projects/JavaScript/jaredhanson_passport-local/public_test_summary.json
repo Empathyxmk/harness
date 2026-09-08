@@ -1,0 +1,51 @@
+{
+  "project_name": "jaredhanson_passport-local",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:29:48.296661",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/jaredhanson_passport-local",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/jaredhanson_passport-local",
+  "original_tests": {
+    "test_files": [
+      "test/strategy.test.js",
+      "test/strategy.normal.test.js",
+      "test/strategy.options.test.js",
+      "test/strategy.fields.test.js",
+      "test/package.test.js",
+      "test/strategy.fail.test.js",
+      "test/index.test.js",
+      "test/utils.test.js",
+      "test/strategy.error.test.js",
+      "test/strategy.passreq.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 10,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/strategy.public.test.js",
+      "public_tests/strategy.normal.public.test.js",
+      "public_tests/strategy.options.public.test.js",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 4,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/strategy.public.test.js",
+    "public_tests/strategy.normal.public.test.js",
+    "public_tests/strategy.options.public.test.js",
+    "run_public_tests.sh"
+  ]
+}

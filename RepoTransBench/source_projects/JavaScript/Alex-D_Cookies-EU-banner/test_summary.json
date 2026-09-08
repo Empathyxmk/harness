@@ -1,0 +1,15 @@
+{
+  "project_name": "Alex-D_Cookies-EU-banner",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 95.23,
+    "branch": 78.57
+  },
+  "timestamp": "2025-06-19T09:52:35.018802",
+  "original_path": "/workspace/runnable_filter/JavaScript/Alex-D_Cookies-EU-banner",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/Alex-D_Cookies-EU-banner",
+  "tests_path": [
+    "src/cookies-eu-banner.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

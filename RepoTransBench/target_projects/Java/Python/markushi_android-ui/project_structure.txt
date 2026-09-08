@@ -1,0 +1,56 @@
+project_root/
+├── requirements.txt                 # Python dependencies
+├── run_tests.sh                     # One-click test execution script
+├── project_structure.txt            # This file: project tree/explanations/setup
+├── tests/
+│   ├── __init__.py                  # Package init for tests
+│   └── original/
+│       ├── __init__.py              # Package init for original tests
+│       ├── test_drawer_action.py    # Original DrawerAction tests
+│       ├── test_line_segment.py     # Original LineSegment tests
+│       └── test_plus_action.py      # Original PlusAction tests
+├── public_tests/
+│   ├── __init__.py                  # Package init for public tests
+│   ├── test_drawer_action_public.py # Public DrawerAction tests
+│   ├── test_line_segment_public.py  # Public LineSegment tests
+│   └── test_plus_action_public.py   # Public PlusAction tests
+
+---------------------------------------------------
+Directory explanations:
+
+requirements.txt
+    - Python dependency spec; 'pytest' is required for running tests.
+
+run_tests.sh
+    - Executable script to run all (original and public) tests using pytest.
+    - Usage: chmod +x run_tests.sh; then run with ./run_tests.sh
+
+tests/
+    - Top-level test directory.
+
+tests/original/
+    - All original test cases translated from the project's Java tests.
+
+public_tests/
+    - All public test cases translated from Java.
+
+__init__.py files
+    - Mark their directories as Python packages/modules.
+
+project_structure.txt
+    - Describes the project structure and role of each file.
+
+Setup and usage instructions
+----------------------------
+1. (Optional but recommended) Set up a virtualenv:
+    python3 -m venv venv
+    source venv/bin/activate
+
+2. Install dependencies:
+    pip install -r requirements.txt
+
+3. Run all tests:
+    chmod +x run_tests.sh
+    ./run_tests.sh
+
+Results for all original and public tests will be displayed.

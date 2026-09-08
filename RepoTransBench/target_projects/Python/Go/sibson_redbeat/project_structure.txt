@@ -1,0 +1,54 @@
+sibson_redbeat/
+├── go.mod                  # Go modules/dependency definition
+├── README.md               # Project and test running documentation
+├── run_tests.sh            # One-click test execution script (all test directories)
+├── project_structure.txt   # This file - directory and file explanation
+├── redbeat/                # Stubs of main package and test utilities
+│   ├── decoder.go          # Stubbed interfaces to allow test compilation (to be implemented)
+│   ├── redbeat.go          # Core stubs mimicking Python classes for test compatibility
+│   ├── schedules.go        # RRule and schedule stubs for testing rrule logic
+│   ├── schedulers.go       # RedBeatScheduler and entry stubs for test imports
+│   └── testutil.go         # Test helpers, time utilities, etc.
+├── tests/                  # Original (internal) tests: full port of Python test logic (Go)
+│   ├── basecase.go         # (Simulated base class for custom test setup, stubs)
+│   ├── test_config_test.go
+│   ├── test_decoder_extra_test.go
+│   ├── test_decoder_test.go
+│   ├── test_entry_test.go
+│   ├── test_init_py_test.go
+│   ├── test_json_test.go
+│   ├── test_schedules_extra_test.go
+│   ├── test_schedules_test.go
+│   ├── test_scheduler_test.go
+│   ├── test_schedulers_import_test.go
+│   ├── test_setup_py_test.go
+│   └── test_utils_test.go
+├── public_tests/           # Public-friendly Go test suite
+│   ├── test_public_entry_test.go
+│   ├── test_public_json_test.go
+│   └── test_public_schedules_extra_test.go
+
+---
+
+### Directory Explanations:
+
+- `redbeat/`:
+    Core stubs implementing types, methods, and test helpers so the tests will compile and run, even if the actual business logic is not implemented (as source is not available).
+
+- `tests/`:
+    Full translation of the "original" Python tests, covering all tested logic (decoder, entry, config, scheduler, etc.). Replicates results and checks of the Python suite.
+
+- `public_tests/`:
+    Lighter "public" test cases — mirror the logic of their Python public counterparts.
+
+---
+
+## Setup and Test Instructions
+
+1. Install [Go](https://golang.org/).
+2. Install dependencies (automatically via `go mod download`).
+3. Run `./run_tests.sh` to execute all tests.
+
+---
+
+> NOTE: If modifying stubs under `redbeat/`, ensure public and original test logic remains valid.

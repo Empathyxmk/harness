@@ -1,0 +1,34 @@
+unitedstates-go-us/
+├── go.mod                      # Go module definition file
+├── run_tests.sh                # One-click test execution script (chmod +x)
+├── project_structure.txt       # This file: project structure documentation
+├── tests/
+│   ├── original/
+│   │   ├── test_extra_test.go  # Original test (from us/tests/test_extra.py)
+│   │   └── test_us_test.go     # Original test (from us/tests/test_us.py)
+│   └── testutil.go             # Shared test utilities
+├── public_tests/
+│   ├── test_public_us_test.go     # Translated public test
+│   └── test_public_extra_test.go  # Translated public test
+├── us/
+│   ├── states.go                # Implement States, Lookup, etc.
+│   ├── metaphone.go             # Metaphone function
+│   ├── usa.go                   # United States of America constants
+│   └── ...                      # Other source files (implementations)
+└── README.md                    # Project documentation
+
+Directory explanations:
+- go.mod: Go module dependencies and project info.
+- run_tests.sh: Simple, one-command test runner.
+- project_structure.txt: Overview and explanation.
+- tests/original/: Original "private" (non-public) translated test cases.
+- public_tests/: Public test cases (for open testing/assessment).
+- tests/testutil.go: Shared utilities among all tests.
+- us/: Main package with core library source code, types, constants, mappings.
+- README.md: Explains usage, build, test, and contact info.
+
+Setup and testing:
+1. Install Go 1.20+ (https://golang.org/dl/)
+2. Clone this repo; run `go mod tidy` to fetch dependencies.
+3. Run all tests: `./run_tests.sh` (ensure it is executable).
+4. Both original and public tests will run and report results.

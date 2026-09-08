@@ -1,0 +1,58 @@
+ramonhagenaars_jsons/
+├── go.mod
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── jsonserializable_test.go
+│   │   ├── enum_test.go
+│   │   ├── tuple_test.go
+│   │   ├── timedelta_test.go
+│   │   ├── dict_test.go
+│   │   ├── exception_test.go
+│   │   ├── transform_test.go
+│   │   ├── deque_test.go
+│   │   ├── dumpb_and_loadb_test.go
+│   │   ├── decimal_test.go
+│   │   ├── chain_map_test.go
+│   │   ├── iterable_test.go
+│   │   ├── path_test.go
+│   │   ├── custom_serializer_test.go
+│   │   ├── suppress_warnings_test.go
+│   │   ├── validation_test.go
+│   │   ├── case_transformer_test.go
+│   │   ├── complex_number_test.go
+│   │   ├── verbosity_test.go
+│   │   ├── decorator_test.go
+│   │   ├── attrs_test.go
+│   │   ├── dumps_and_loads_test.go
+│   │   ├── object_test.go
+│   │   ├── timezone_test.go
+│   │   ├── str_test.go
+│   │   ├── datetime_test.go
+│   │   ├── date_test.go
+│   │   ├── setup_test.go
+│   │   ├── various_test.go
+│   │   ├── union_test.go
+│   │   ├── performance_test.go
+│   │   ├── set_test.go
+│   │   ├── time_test.go
+│   │   ├── defaultdict_test.go
+│   │   ├── compatibility_impl_test.go
+│   │   ├── type_error_test.go
+│   │   ├── version_test.go
+│   │   ├── specific_versions_test.go
+│   │   ├── dict_hashkey_test.go
+│   │   ├── primitive_test.go
+│   │   ├── list_test.go
+│   │   ├── common_impl_test.go
+│   │   ├── ordered_dict_test.go
+│   │   ├── counter_test.go
+│   │   ├── sconstruct_test.go
+│   │   └── fork_test.go
+├── public_tests/
+│   ├── public_jsonserializable_test.go
+│   ├── public_tuple_test.go
+│   ├── public_enum_test.go
+│   ├── public_timedelta_test.go
+│   └── public_dict_test.go

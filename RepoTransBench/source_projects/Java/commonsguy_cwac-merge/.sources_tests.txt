@@ -1,0 +1,2 @@
+src/test/java/com/commonsguy/cwac/merge/MergeAdapterPublicTest.java
+src/test/java/com/commonsguy/cwac/merge/MergeAdapterTest.java

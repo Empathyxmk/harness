@@ -1,0 +1,51 @@
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── nhm/
+│   │               └── pyzbar/
+│   │                   ├── Pyzbar.java
+│   │                   ├── locations/
+│   │                   │   ├── BoundingBoxUtils.java
+│   │                   │   └── Rect.java
+│   │                   ├── pyzbar/
+│   │                   │   └── ZBarSymbol.java
+│   │                   ├── pyzbar_error/
+│   │                   │   └── PyZbarError.java
+│   │                   ├── scripts/
+│   │                   │   └── ReadZBar.java
+│   │                   ├── wrapper/
+│   │                   │   └── Wrapper.java
+│   │                   └── zbar_library/
+│   │                       └── ZBarLibrary.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── nhm/
+│                   └── pyzbar/
+│                       ├── original/
+│                       │   ├── TestBoundingBoxAndPolygonModule.java
+│                       │   ├── TestBoundingBoxAndPolygonPy.java
+│                       │   ├── TestInit.java
+│                       │   ├── TestLocations.java
+│                       │   ├── TestPyzbar.java
+│                       │   ├── TestPyzbarError.java
+│                       │   ├── TestReadZbar.java
+│                       │   ├── TestScriptsReadZbar.java
+│                       │   ├── TestWrapper.java
+│                       │   ├── TestZBarLibrary.java
+│                       │   └── TestZBarLibraryImport.java
+│                       └── public_tests/
+│                           ├── TestBoundingBoxAndPolygonPublic.java
+│                           ├── TestInitPublic.java
+│                           ├── TestLocationsPublic.java
+│                           ├── TestPyzbarErrorPublic.java
+│                           ├── TestPyzbarPublic.java
+│                           ├── TestReadZbarPublic.java
+│                           ├── TestScriptsReadZbarPublic.java
+│                           ├── TestWrapperPublic.java
+│                           ├── TestZBarLibraryImportPublic.java
+│                           └── TestZBarLibraryPublic.java

@@ -1,0 +1,49 @@
+scrapinghub_adblockparser-java/
+├── pom.xml                              # Maven build and project configuration
+├── run_tests.sh                         # One-click script to run all tests
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── scrapinghub/
+│   │               └── adblockparser/
+│   │                   ├── AdblockRule.java
+│   │                   ├── AdblockRules.java
+│   │                   ├── AdblockParsingError.java
+│   │                   └── utils/
+│   │                       └── Utils.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── scrapinghub/
+│                   └── adblockparser/
+│                       ├── original/
+│                       │   ├── TestAdblockparserApi.java
+│                       │   ├── TestRuleTypes.java
+│                       │   ├── TestUtils.java
+│                       │   ├── TestOptions.java
+│                       │   └── TestParsing.java
+│                       └── publictests/
+│                           ├── TestPublicAdblockparserApi.java
+│                           ├── TestPublicOptions.java
+│                           ├── TestPublicRuleTypes.java
+│                           ├── TestPublicParsing.java
+│                           └── TestPublicUtils.java
+
+Directory explanations:
+- pom.xml: Maven build config with dependencies (JUnit 5, optional AssertJ/Mockito)
+- run_tests.sh: Simple script to execute all tests using Maven
+- src/main/java/...: Java source code (stubs for AdblockRule, AdblockRules, etc.)
+- src/main/java/com/scrapinghub/adblockparser/utils/Utils.java: Utility class split_data for test usage
+- src/test/java/com/scrapinghub/adblockparser/original: Original tests directly translated from Python (unmodified, full test logic)
+- src/test/java/com/scrapinghub/adblockparser/publictests: Public translated test set (for public exposure)
+- You can run all tests with: ./run_tests.sh (from repo root)
+
+Setup and testing instructions:
+1. Ensure you have Java 11+ and Maven installed.
+2. Make run_tests.sh executable: chmod +x run_tests.sh
+3. Run all tests with: ./run_tests.sh
+4. All original and public test cases will be executed via Maven/JUnit 5.
+
+NOTE: Java model implementations (AdblockRule, AdblockRules, etc.) here are minimal stubs to allow test code translation. 
+For a real port, you must replace them with full parsing/matching logic matching the original Python.

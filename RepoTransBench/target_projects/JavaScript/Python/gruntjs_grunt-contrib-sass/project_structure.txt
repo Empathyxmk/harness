@@ -1,0 +1,26 @@
+project_root/
+├── requirements.txt          # Python dependencies (includes pytest)
+├── run_tests.sh              # One-click test script: runs all tests via pytest
+├── project_structure.txt     # This structure file (overview and explanation)
+├── tests/                    # Directory for all original (translated) tests
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_dummy.py                 # Translated from test/test.test.js
+│       ├── test_sass_lib_check.py        # Translated from test/sass-lib-check.test.js
+│       └── test_sass_task.py             # Translated from test/sass-task.test.js
+├── public_tests/             # Directory for all public (translated) tests
+│   ├── __init__.py
+│   ├── test_dummy_public.py              # Translated from public_tests/test.public.test.js
+│   ├── test_sass_lib_check_public.py     # Translated from public_tests/sass-lib-check.public.test.js
+│   └── test_sass_task_public.py          # Translated from public_tests/sass-task.public.test.js
+
+# Directory explanations:
+# - requirements.txt: Install all dependencies with `pip install -r requirements.txt` (only pytest needed here)
+# - run_tests.sh: Executable bash script to run all tests (original and public) in one command
+# - tests/original/: ALL original tests, identically ported from JavaScript (Jest) to Python (pytest)
+# - public_tests/: ALL public tests, identically ported, using public-facing data variants where appropriate
+
+# To run all tests, simply:
+#   1. Install dependencies: pip install -r requirements.txt
+#   2. Execute: ./run_tests.sh

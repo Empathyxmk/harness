@@ -1,0 +1,32 @@
+ramonhagenaars_jsons/
+├── CMakeLists.txt
+├── LICENSE
+├── README.md
+├── SConstruct.py
+├── docs/
+│   ├── _templates/
+│   │   └── sidebarintro.html
+│   ├── api.rst
+│   ├── conf.py
+│   ├── faq.rst
+│   └── index.rst
+├── htmlcov/
+│   ├── (HTML coverage reports and assets)
+├── jsons/
+│   ├── (Python source files)
+├── tests/
+│   ├── original/
+│   │   ├── test_compatibility_impl_test.cpp
+│   │   ├── test_defaultdict_test.cpp
+│   │   ├── test_dict_hashkey_test.cpp
+│   │   ├── test_performance_test.cpp
+│   │   ├── test_primitive_test.cpp
+│   │   ├── test_set_test.cpp
+│   │   ├── test_specific_versions_test.cpp
+│   │   ├── test_time_test.cpp
+│   │   ├── test_type_error_test.cpp
+│   │   ├── test_version_test.cpp
+│   └── test_main.cpp
+├── include/
+│   └── (C++ headers, if needed)
+├── run_tests.sh

@@ -1,0 +1,35 @@
+tonyo_pyope/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── github/
+│   │               └── tonyo/
+│   │                   └── pyope/
+│   │                       └── (main code placeholder)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── github/
+│                   └── tonyo/
+│                       └── pyope/
+│                           ├── original/
+│                           │   ├── StatCoreTest.java
+│                           │   ├── UtilsTest.java
+│                           │   ├── OpeTest.java
+│                           │   ├── SetupPyTest.java
+│                           │   ├── StatTest.java
+│                           │   ├── RangeTest.java
+│                           │   └── ErrorsTest.java
+│                           └── public_tests/
+│                               ├── PublicErrorsTest.java
+│                               ├── PublicStatTest.java
+│                               ├── PublicRangeTest.java
+│                               ├── PublicOpeTest.java
+│                               ├── PublicSetupPyTest.java
+│                               ├── PublicStatCoreTest.java
+│                               └── PublicUtilsTest.java
+├── test_translation_progress.json
+└── project_structure.txt

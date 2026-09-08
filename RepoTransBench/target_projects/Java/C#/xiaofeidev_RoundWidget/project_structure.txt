@@ -1,0 +1,51 @@
+xiaofeidev_RoundWidget-CSharp/
+├── ProjectName.sln
+│
+├── src/
+│   └── RoundWidget/
+│       ├── RoundWidget.csproj
+│       └── [Production class stubs, e.g. RoundImageView.cs, RoundFrameLayout.cs, RoundStatusImpl.cs, SizeUtils.cs, etc.]
+│
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── ExampleInstrumentedTest.cs
+│       ├── ExampleUnitTest.cs
+│       ├── RoundImageViewTest.cs
+│       ├── RoundFrameLayoutTest.cs
+│       ├── RoundStatusImplTest.cs
+│       ├── RoundStatusTest.cs
+│       ├── RoundStatusImplBuilderTest.cs
+│       └── SizeUtilsTest.cs
+│
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── ExampleUnitPublicTest.cs
+│   ├── RoundImageViewPublicTest.cs
+│   ├── RoundFrameLayoutPublicTest.cs
+│   ├── RoundStatusImplBuilderPublicTest.cs
+│   ├── RoundStatusImplPublicTest.cs
+│   ├── RoundStatusPublicTest.cs
+│   └── SizeUtilsPublicTest.cs
+│
+├── run_tests.sh
+│
+├── README.md
+│
+└── [Supporting files: Directory explanations and usage]
+
+# Directory Explanations:
+# - src/RoundWidget: Contains the main code for the "library". You should implement all classes/stubs here.
+# - tests/original: Contains translations of all "original" test cases from Java, using xUnit and referencing src/RoundWidget.
+# - public_tests: Contains all "public" tests, matching the Java test logic, using xUnit.
+# - run_tests.sh: One-click script to build and run all tests.
+# - ProjectName.sln: Solution file that references all projects for IDE/build.
+# - README.md: Project usage, setup, and documentation.
+
+# Setup & Testing Instructions:
+# 1. Ensure .NET 6 or later is installed.
+# 2. To build and test everything: `./run_tests.sh`
+# 3. To run only original tests: `dotnet test tests/original`
+# 4. To run only public tests: `dotnet test public_tests`
+
+# All tests translated from Java to C# with preservation of all Java-side assertions and logic.

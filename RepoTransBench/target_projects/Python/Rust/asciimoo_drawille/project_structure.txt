@@ -1,0 +1,31 @@
+asciimoo_drawille/
+├── Cargo.toml                # Rust project manifest
+├── src/
+│   └── lib.rs                # Library implementation and stubs for drawille functionality
+├── tests/
+│   └── original/
+│       ├── tests.rs                # Translated from tests.py
+│       └── tests_drawille_extra.rs # Translated from tests_drawille_extra.py
+├── public_tests/
+│   ├── test_public_speed_test.rs       # Translated from public_tests/test_public_speed_test.py
+│   └── test_public_drawille_extra.rs   # Translated from public_tests/test_public_drawille_extra.py
+├── examples/
+│   └── speed_test.rs        # Example benchmark program, translated from examples/speed_test.py
+├── run_tests.sh             # Bash script: runs all tests (`cargo test`)
+└── project_structure.txt    # This file. Documents the Rust project structure.
+
+Directory explanations:
+- `src/`: Main Rust library code; all "drawille" stub logic defined here.
+- `tests/original/`: Full translation of original project test logic, organized per-file.
+- `public_tests/`: Translated public test cases (mirroring provided public Python tests).
+- `examples/`: Sample/benchmark code, not run via cargo test but can be run via `cargo run --example speed_test` if added to `[examples]`.
+- `run_tests.sh`: Simple script to run all tests.
+- `Cargo.toml`: Manifest; use `cargo test` to run all tests.
+
+How to run tests:
+1. Ensure Rust toolchain ("cargo") is installed.
+2. Run: `./run_tests.sh`
+3. All tests from both `tests/original/` and `public_tests/` will execute.
+
+How to run the benchmark:
+- `cargo run --example speed_test` (if example is registered as such in Cargo.toml/examples).

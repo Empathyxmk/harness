@@ -1,0 +1,37 @@
+project_root/
+├── main.go
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── project_structure.txt
+├── public_test_summary.json
+├── pytest.ini
+├── run_public_tests.sh
+├── setup.py
+├── test_summary.json
+├── tox.ini
+├── fastapi_events/
+│   ├── (Python source files)
+├── public_tests/
+│   ├── handlers/
+│   │   ├── test_public_aws_handler_test.go
+│   │   ├── test_public_gcp_handler_test.go
+│   │   └── test_public_local_handler_test.go
+│   ├── middleware/
+│   │   ├── test_public_starlette_test.go
+│   │   └── test_public_starlite_test.go
+│   ├── (other public test .go files)
+├── tests/
+│   ├── handlers/
+│   │   ├── test_aws_handler_test.go
+│   │   ├── test_gcp_handler_test.go
+│   │   └── test_local_handler_test.go
+│   ├── middleware/
+│   │   ├── test_starlette_test.go
+│   │   └── test_starlite_test.go
+│   ├── test_dispatcher_test.go
+│   ├── test_event_payload_schema_registry_test.go
+│   ├── test_init_and_errors_test.go
+│   ├── test_middleware_core_test.go
+│   ├── test_setup_py_test.go
+│   └── test_typing_test.go

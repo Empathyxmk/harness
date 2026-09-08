@@ -1,0 +1,63 @@
+{
+  "project_name": "baer_pint",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:15:35.336210",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/baer_pint",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/baer_pint",
+  "original_tests": {
+    "test_files": [
+      "test/jobQueue.spec.js",
+      "test/Job.spec.js",
+      "test/cli.spec.js",
+      "test/build_test.spec.js",
+      "test/pint.spec.js",
+      "test/Pintfile.spec.js",
+      "test/cli_full.spec.js",
+      "test/util.spec.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/jobQueue.public.test.js",
+      "public_tests/Job.public.test.js",
+      "public_tests/cli.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/build_test.public.test.js",
+      "public_tests/pint.public.test.js",
+      "public_tests/Pintfile.public.test.js",
+      "public_tests/cli_full.public.test.js",
+      "public_tests/util.public.test.js",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 10,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/jobQueue.public.test.js",
+    "public_tests/Job.public.test.js",
+    "public_tests/cli.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/build_test.public.test.js",
+    "public_tests/pint.public.test.js",
+    "public_tests/Pintfile.public.test.js",
+    "public_tests/cli_full.public.test.js",
+    "public_tests/util.public.test.js",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

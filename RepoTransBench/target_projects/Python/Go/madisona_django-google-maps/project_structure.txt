@@ -1,0 +1,15 @@
+madisona_django_google_maps/
+├── go.mod                      # Go module file for dependencies
+├── run_tests.sh                # One-click Go test execution script
+├── tests/
+│   └── original/
+│       ├── fields_models_widgets_test.go   # Original fields/models/widgets logic tests
+│       ├── geolocation_field_test.go       # Geolocation field model translation tests
+│       ├── geopt_field_test.go             # GeoPt field tests (all logic/edges)
+│       ├── setup_manage_urls_test.go       # Simulated logic for project files/urls
+│       ├── typename_test.go                # Typename string/class tests
+│       └── widget_test.go                  # Widget rendering logic tests
+├── public_tests/
+│   ├── public_fields_models_widgets_test.go # Public fields/models/widgets test set
+│   ├── public_typename_test.go              # Public class/str type test
+│   └── public_widget_test.go                # Public widget rendering test

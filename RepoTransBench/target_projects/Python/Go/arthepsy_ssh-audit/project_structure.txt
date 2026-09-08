@@ -1,0 +1,33 @@
+project_root/
+├── go.mod
+├── go.sum
+├── main.go
+├── sshaudit/                  # (for future library code or binding code)
+│   └── ... (not present yet)
+├── tests/
+│   ├── original/
+│   │   ├── auditconf_test.go
+│   │   ├── banner_test.go
+│   │   ├── buffer_test.go
+│   │   ├── errors_test.go
+│   │   ├── output_test.go
+│   │   ├── software_test.go
+│   │   ├── ssh1_test.go
+│   │   ├── ssh2_test.go
+│   │   ├── version_compare_test.go
+│   ├── conftest.go              # Test helpers and fixtures for original
+│   └── testutil.go
+├── public_tests/
+│   ├── auditconf_public_test.go
+│   ├── banner_public_test.go
+│   ├── buffer_public_test.go
+│   ├── errors_public_test.go
+│   ├── output_public_test.go
+│   ├── software_public_test.go
+│   ├── ssh1_public_test.go
+│   ├── ssh2_public_test.go
+│   ├── version_compare_public_test.go
+│   └── testutil_public.go
+├── run_tests.sh
+├── test_translation_progress.json
+└── README.md

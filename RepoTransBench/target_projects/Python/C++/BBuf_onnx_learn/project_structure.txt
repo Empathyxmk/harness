@@ -1,0 +1,49 @@
+BBuf_onnx_learn C++ Project Structure:
+
+.
+├── CMakeLists.txt           # Top-level CMake build config for project and tests
+├── include/                 # Public headers directory (exposed APIs for the library)
+│   ├── tools/
+│   │   └── tool.h           # Arithmetic and Tool class APIs
+│   ├── onnxapi/
+│   │   └── creat_onnx_example.h    # Example ONNX utility APIs
+│   └── convert2onnx/
+│       └── pytorch2onnx_resize.h   # Dummy resize utility API
+├── src/                     # Source implementation files
+│   ├── tools/
+│   │   └── tool.cpp
+│   ├── onnxapi/
+│   │   └── creat_onnx_example.cpp
+│   └── convert2onnx/
+│       └── pytorch2onnx_resize.cpp
+│   └── CMakeLists.txt       # Library target for implementations
+├── tests/                   # Top-level for all tests
+│   ├── test_main.cpp        # Google Test main entry point
+│   └── original/            # All 'original' (private) translated tests
+│       ├── test_tool.cpp
+│       ├── test_tools_tool.cpp
+│       ├── test_onnxapi_creat_onnx_example.cpp
+│       └── test_convert2onnx_pytorch2onnx_resize.cpp
+├── public_tests/            # All public test cases (translated)
+│   ├── test_public_tool.cpp
+│   ├── test_public_tools_tool.cpp
+│   ├── test_public_onnxapi_creat_onnx_example.cpp
+│   └── test_public_convert2onnx_pytorch2onnx_resize.cpp
+├── run_tests.sh             # One-click all-tests build & runner script
+├── README.md                # General project documentation (fill in as needed)
+└── project_structure.txt    # This project structure explanation
+
+Directory Explanations:
+- include/: All exported public headers for main library components.
+- src/: Implementation .cpp files for main modules.
+- tests/original/: C++ translations of original (private) Python tests.
+- public_tests/: C++ translations of public Python test suites.
+- tests/test_main.cpp: Unified Google Test main entrypoint for all tests.
+- run_tests.sh: Simple script to configure, build, and run all tests in one call.
+
+Setup & Testing Instructions:
+1. Ensure you have CMake >=3.14 and GoogleTest installed, or have CMake download it as needed.
+2. To build and run all tests, simply execute:
+      ./run_tests.sh
+   from the repository root.
+3. All test results are shown in the terminal upon execution.

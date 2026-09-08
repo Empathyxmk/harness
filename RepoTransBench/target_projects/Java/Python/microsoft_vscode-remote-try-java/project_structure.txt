@@ -1,0 +1,32 @@
+project_root/
+├── src/
+│   └── mycompany/
+│       └── app/
+│           ├── __init__.py           # (empty, for Python package)
+│           └── app.py                # Application logic (translated from App.java)
+├── tests/
+│   ├── __init__.py                   # (empty, for Python package)
+│   └── original/
+│       ├── __init__.py               # (empty, for Python package)
+│       └── test_app.py               # Translated from AppTest.java (original tests)
+├── public_tests/
+│   ├── __init__.py                   # (empty, for Python package)
+│   └── test_app_public.py            # Translated from AppPublicTest.java (public tests)
+├── requirements.txt                  # Python dependencies (pytest)
+├── run_tests.sh                      # Simple test runner script (runs all tests)
+├── README.md                         # Project documentation
+└── project_structure.txt             # This project structure overview
+
+# Directory Explanations:
+# src/mycompany/app/        - Contains the translated application logic from Java source.
+# tests/original/           - Contains the original (private) tests from Java, translated to Python.
+# public_tests/             - Contains the public tests (e.g., for grading/public feedback), translated from Java.
+# requirements.txt          - Python dependency list (pytest for testing).
+# run_tests.sh              - Executable script to run all tests in one command.
+# README.md                 - Project description and instructions.
+# project_structure.txt     - This tree: describes all files and directories.
+
+# Setup & Testing Instructions:
+# 1. Install requirements:    pip install -r requirements.txt
+# 2. Run all tests:           ./run_tests.sh
+#    (or just 'pytest', but run_tests.sh ensures convenience and consistency)

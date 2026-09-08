@@ -1,0 +1,84 @@
+{
+  "project_name": "pavlov99_json-rpc",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:21:00.152946",
+  "original_path": "/workspace/verified_repos_v2/Python/pavlov99_json-rpc",
+  "public_test_result_path": "/workspace/public_test_results/Python/pavlov99_json-rpc",
+  "original_tests": {
+    "test_files": [
+      "jsonrpc/tests/test_jsonrpc1.py",
+      "jsonrpc/tests/test_jsonrpc.py",
+      "jsonrpc/tests/test_utils.py",
+      "jsonrpc/tests/test_backend_django_integration.py",
+      "jsonrpc/tests/test_six_py.py",
+      "jsonrpc/tests/test_pep3107.py",
+      "jsonrpc/tests/test_bug29.py",
+      "jsonrpc/tests/test_jsonrpc_errors.py",
+      "jsonrpc/tests/test_jsonrpc2.py",
+      "jsonrpc/tests/test_jsonrpc_py.py",
+      "jsonrpc/tests/test_backend_flask_integration.py",
+      "jsonrpc/tests/test_examples20.py",
+      "jsonrpc/tests/test_dispatcher.py",
+      "jsonrpc/tests/test_manager.py",
+      "jsonrpc/tests/test_base.py",
+      "jsonrpc/tests/test_backend_flask/test_backend.py",
+      "jsonrpc/tests/test_backend_django/test_backend.py",
+      "build/lib/jsonrpc/tests/test_jsonrpc1.py",
+      "build/lib/jsonrpc/tests/test_jsonrpc.py",
+      "build/lib/jsonrpc/tests/test_utils.py",
+      "build/lib/jsonrpc/tests/test_backend_django_integration.py",
+      "build/lib/jsonrpc/tests/test_six_py.py",
+      "build/lib/jsonrpc/tests/test_pep3107.py",
+      "build/lib/jsonrpc/tests/test_bug29.py",
+      "build/lib/jsonrpc/tests/test_jsonrpc_errors.py",
+      "build/lib/jsonrpc/tests/test_jsonrpc2.py",
+      "build/lib/jsonrpc/tests/test_jsonrpc_py.py",
+      "build/lib/jsonrpc/tests/test_backend_flask_integration.py",
+      "build/lib/jsonrpc/tests/test_examples20.py",
+      "build/lib/jsonrpc/tests/test_dispatcher.py",
+      "build/lib/jsonrpc/tests/test_manager.py",
+      "build/lib/jsonrpc/tests/test_base.py",
+      "build/lib/jsonrpc/tests/test_backend_flask/test_backend.py",
+      "build/lib/jsonrpc/tests/test_backend_django/test_backend.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 34,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_jsonrpc1_public.py",
+      "public_tests/test_utils_public.py",
+      "run_public_tests.sh",
+      "public_tests/test_jsonrpc2_public.py",
+      "public_tests/test_jsonrpc2_public.py",
+      "public_tests/test_jsonrpc2_public.py",
+      "public_tests/test_jsonrpc1_public.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_jsonrpc1_public.py",
+    "public_tests/test_utils_public.py",
+    "run_public_tests.sh",
+    "public_tests/test_jsonrpc2_public.py",
+    "public_tests/test_jsonrpc2_public.py",
+    "public_tests/test_jsonrpc2_public.py",
+    "public_tests/test_jsonrpc1_public.py",
+    "run_public_tests.sh"
+  ]
+}

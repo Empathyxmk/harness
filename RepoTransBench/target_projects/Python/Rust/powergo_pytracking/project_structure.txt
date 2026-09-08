@@ -1,0 +1,23 @@
+powergo_pytracking_rs/
+├── Cargo.toml               # Rust project manifest (dependencies, metadata)
+├── README.md                # Project readme and instructions
+├── src/
+│   └── lib.rs               # Library source root (stub with all test interfaces exposed)
+├── tests/
+│   └── original/
+│       ├── test_init_exports.rs
+│       └── test_tracking_unit.rs
+├── public_tests/
+│   ├── test_init_exports_public.rs
+│   └── test_tracking_unit_public.rs
+├── run_tests.sh             # Simple script: chmod +x and run to execute all tests
+└── project_structure.txt    # This file. Overview of all files and structure
+
+Directory/Files explanation:
+- src/lib.rs:      Minimal stub exposing types, constants, and functions for test compilation and execution.
+- tests/original/: All original Python tests, rewritten to Rust, organized as Rust integration tests.
+- public_tests/:   Public test suite (per contest requirements), rewritten to Rust.
+- run_tests.sh:    Runs all tests (`cargo test`) with a single command.
+- Cargo.toml:      Standard Rust package manifest, lists dependencies and dev-dependencies.
+- README.md:       Project overview and instructions.
+- project_structure.txt: This overview file.

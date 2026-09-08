@@ -1,0 +1,22 @@
+project_root/
+├── go.mod                         # Go module definition and dependencies
+├── run_tests.sh                   # Simple script for one-click test execution
+├── project_structure.txt          # Project structure and directory explanations
+├── tests/
+│   └── original/
+│       ├── admin_test.go          # Original tests: admin actions, users, posts
+│       ├── apps_test.go           # Original tests: app config
+│       ├── forms_test.go          # Original tests: form validations
+│       ├── models_test.go         # Original tests: model functions/logic
+│       ├── runtests_py_test.go    # Original test: dummy (no-op in Go)
+│       ├── urls_test.go           # Original tests: url resolving simulation
+│       ├── utils_test.go          # Original tests: utils for mail/ajax/logger
+#
+# Additional directories/files can be added as the codebase is ported from Python → Go.
+#
+# Setup:
+#   1. Ensure Go is installed (go1.20 or above).
+#   2. Run `go mod tidy` to fetch dependencies if needed.
+#   3. Run `./run_tests.sh` to execute all tests.
+#
+# All tests use Go's standard testing package and testify for assertions/mocking.

@@ -1,0 +1,24 @@
+jebej_matlabwebsocket_python/
+├── requirements.txt
+├── setup.cfg
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_examples_basic.py
+│       ├── test_client_securewarn.py
+│       ├── test_client_openrepeat.py
+│       ├── test_websocketconnection_misc.py
+│       ├── test_websocketcore.py
+│       ├── test_server_edge_cases.py
+│       └── test_client_options.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_websocketcore_public.py
+│   ├── test_client_securewarn_public.py
+│   ├── test_client_openrepeat_public.py
+│   ├── test_websocketconnection_misc_public.py
+│   ├── test_server_edge_cases_public.py
+│   ├── test_client_options_public.py
+│   └── test_examples_basic_public.py

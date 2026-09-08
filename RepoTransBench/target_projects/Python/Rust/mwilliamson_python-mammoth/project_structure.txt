@@ -1,0 +1,30 @@
+project_root/
+├── Cargo.toml
+├── LICENSE
+├── NEWS
+├── README.md
+├── coverage.xml
+├── htmlcov/
+│   └── ... (HTML coverage artifacts)
+├── tests/
+│   ├── test_docx_body_xml.rs
+│   ├── test_docx_document_xml.rs
+│   ├── test_docx_office_xml.rs
+│   ├── test_docx_notes_xml.rs
+│   ├── test_docx_numbering_xml.rs
+│   ├── test_docx_xmlparser.rs
+│   ├── test_docx_files.rs
+│   ├── test_docx_uris.rs
+│   ├── test_docx_comments_xml.rs
+│   ├── test_transforms.rs
+│   ├── test_images.rs
+│   ├── test_mammoth.rs
+│   ├── test_cli_skip.rs
+│   ├── test_images_module.rs
+│   ├── test_setup_py.rs
+│   ├── test_zips.rs
+│   ├── test_lists.rs
+│   ├── test_document_matchers_module.rs
+│   ├── test_conversion_module.rs
+│   └── test_html_paths_module.rs
+├── test_translation_progress.json

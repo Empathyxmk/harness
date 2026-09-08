@@ -1,0 +1,11 @@
+{
+  "project_name": "GoogleCloudPlatform_localllm",
+  "language": "Python",
+  "coverage": {
+    "line": 87.9,
+    "branch": 70.2
+  },
+  "timestamp": "2025-06-19T11:46:09.882687",
+  "original_path": "/workspace/runnable_filter/Python/GoogleCloudPlatform_localllm",
+  "test_result_path": "/workspace/test_enhancement_results/Python/GoogleCloudPlatform_localllm"
+}

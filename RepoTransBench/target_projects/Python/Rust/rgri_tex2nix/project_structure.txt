@@ -1,0 +1,23 @@
+project_root/
+├── src/
+│   ├── lib.rs                   # Library root
+│   └── tex2nix.rs               # Core logic (translates main tex2nix module logic)
+├── tests/
+│   └── original/
+│       ├── test_full.rs         # Rust translation of tests/test_full.py
+│       └── test_init.rs         # Rust translation of tests/test_init.py
+├── public_tests/
+│   ├── test_public_init.rs      # Translated public test cases on API/behavior
+│   └── test_public_full.rs      # Translated public integration test case
+├── Cargo.toml                   # Rust build and dependency config
+├── README.md                    # Overview and instructions
+├── run_tests.sh                 # Simple all-tests execution script
+├── project_structure.txt        # This structure doc
+
+**Explanation:**
+
+- `src/tex2nix.rs`: Contains the "core logic" and testable functions simulated/ported from Python.
+- `src/lib.rs`: Library root referencing the core.
+- `tests/original/`: All "original" (authors-only) test cases.
+- `public_tests/`: All public-facing test scenarios.
+- `run_tests.sh`: One-click script to run all tests using Rust's test system.

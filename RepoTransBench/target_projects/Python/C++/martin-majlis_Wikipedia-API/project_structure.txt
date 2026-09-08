@@ -1,0 +1,15 @@
+wikipediaapi-cpp/
+├── CMakeLists.txt
+├── include/
+│   └── [C++ headers for Wikipedia API, enums, helpers]
+├── src/
+│   └── [C++ source files for Wikipedia API classes]
+├── tests/
+│   ├── original/
+│   │   └── [original test_xxx.cpp ...]         # Original test cases (translated from Python)
+│   └── test_main.cpp
+├── public_tests/
+│   └── [public_test_xxx.cpp ...]               # Public test cases (translated from Python public)
+├── run_tests.sh                                # One-click test/build script
+├── README.md
+└── external/                                   # (optional, e.g. for gtest download)

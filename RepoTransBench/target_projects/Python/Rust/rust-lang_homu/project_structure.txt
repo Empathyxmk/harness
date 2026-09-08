@@ -1,0 +1,33 @@
+homu_rust/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── utils.rs
+│   ├── mainmod.rs
+│   ├── auth.rs
+│   ├── comments.rs
+│   ├── parse_issue_comment.rs
+├── tests/
+│   ├── original/
+│   │    ├── test_utils.rs
+│   │    ├── test_main.rs
+│   │    ├── test_comments.rs
+│   │    ├── test_auth.rs
+│   │    ├── test_pr_body.rs
+│   │    ├── test_parse_issue_comment.rs
+├── public_tests/
+│   ├── test_public_auth.rs
+│   ├── test_public_pr_body.rs
+│   ├── test_public_parse_issue_comment.rs
+│   ├── test_public_comments.rs
+│   ├── test_public_main.rs
+│   ├── test_public_utils.rs
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+
+Note:
+- All test files are fully implemented.
+- Library code is in src/ to allow test imports.
+- All logic matches original Python tests for functionality.
+- More batches can be integrated by placing new files in the appropriate test directories.

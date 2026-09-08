@@ -1,0 +1,41 @@
+{
+  "project_name": "Bouke_docx-mailmerge",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": false,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-24T05:27:45.362043",
+  "original_path": "/workspace/verified_repos_v2/Python/Bouke_docx-mailmerge",
+  "public_test_result_path": "/workspace/public_test_results/Python/Bouke_docx-mailmerge",
+  "original_tests": {
+    "test_files": [
+      "tests/test_merge_table_rows.py",
+      "tests/test_multiple_elements.py",
+      "tests/test_issue8.py",
+      "tests/test_issue64.py",
+      "tests/test_merge_table_multipart.py",
+      "tests/test_mailmerge_errors.py",
+      "tests/test_merge_pages.py",
+      "tests/test_mailmerge_parse.py",
+      "tests/test_macword2011.py",
+      "tests/test_merge_templates.py",
+      "tests/test_issue54_spaces.py",
+      "tests/test_winword2010.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 12,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [],
+    "test_scripts": [],
+    "total_public_test_files": 0,
+    "generated_public_tests": false
+  },
+  "created_files": []
+}

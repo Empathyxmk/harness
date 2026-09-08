@@ -1,0 +1,32 @@
+Project Structure for knightliao_pikaQ (Go translation)
+
+project_root/
+├── go.mod                           # Go module definition for dependencies
+├── run_tests.sh                     # Executable script to run all tests (original + public)
+├── tests/
+│   └── original/
+│       ├── abstract_dao_test.go     # Tests for AbstractDao behavior (original)
+│       ├── db_test.go               # Test for DB constant (original)
+│       ├── columns_test.go          # Test for Columns constant (original)
+│       └── campaign_mgr_impl_test.go# Tests for CampaignMgrImpl logic (original)
+├── public_tests/
+│   ├── abstract_dao_public_test.go  # Public-facing variant for AbstractDao
+│   ├── db_public_test.go            # Public-facing DB constant test
+│   ├── columns_public_test.go       # Public-facing Columns constant test
+│   └── campaign_mgr_impl_public_test.go # Public-facing test for CampaignMgrImpl
+├── project_structure.txt            # This structure description doc
+
+Directory and File Purpose:
+
+- go.mod: Basic Go module setup, needed for dependency management.
+- run_tests.sh: Simple executable shell script to run all Go tests at once.
+- tests/original/: Holds all tests translated from original Java test suite. Mirrors precise logic, ensures private/internal expectations.
+- public_tests/: Holds all tests translated from public Java test suite. May have assertions/logic suitable for public code assessment/coverage.
+- project_structure.txt: This document for reference.
+
+Setup/Testing Instructions:
+
+1. Install Go (https://golang.org/doc/install) if not present.
+2. (Optional) Run `go mod tidy` if dependencies added to go.mod.
+3. Run tests: `./run_tests.sh`
+   - This script will execute all Go tests found in tests/ and public_tests/ recursively.

@@ -1,0 +1,29 @@
+happyfish100_fastdfs-client-go/
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── main.go                   # (Optional stub)
+├── module.go                 # (Optional stub)
+├── tests/
+│   ├── original/
+│   │   ├── struct_base_test.go
+│   │   ├── fdfs_test.go
+│   │   ├── file_info_test.go
+│   │   ├── download_callback_test.go
+│   │   ├── test_basics_test.go
+│   │   └── tracker_client_test.go
+│   └── testutil.go
+└── public_tests/
+    ├── struct_base_public_test.go
+    ├── file_info_public_test.go
+    ├── download_callback_public_test.go
+    └── tracker_client_public_test.go
+
+Descriptions:
+- `go.mod`: Go module and dependencies.
+- `README.md`: Project and test suite documentation.
+- `run_tests.sh`: Run all Go tests with one command.
+- `main.go`, `module.go`: Placeholders for the (optional) library.
+- `tests/original/`: All tests closely ported from original Java.
+- `public_tests/`: Public/CI-style verification tests.
+- `tests/testutil.go`: Shared helpers/utilities for tests.

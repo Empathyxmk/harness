@@ -1,0 +1,15 @@
+{
+  "project_name": "Shpota_github-activity-generator",
+  "language": "Python",
+  "coverage": {
+    "line": 95.8,
+    "branch": 91.7
+  },
+  "timestamp": "2025-06-19T12:48:45.918478",
+  "original_path": "/workspace/runnable_filter/Python/Shpota_github-activity-generator",
+  "test_result_path": "/workspace/test_enhancement_results/Python/Shpota_github-activity-generator",
+  "tests_path": [
+    "test_contribute.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

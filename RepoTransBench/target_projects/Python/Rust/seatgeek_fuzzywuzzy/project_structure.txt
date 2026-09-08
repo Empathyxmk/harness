@@ -1,0 +1,25 @@
+project_root/
+├── Cargo.toml                 # Rust project manifest (dependencies, metadata)
+├── src/
+│   ├── lib.rs                 # Library root, exports modules
+│   ├── fuzz.rs                # Fuzzy matching algorithms (stubs for test purposes)
+│   ├── process.rs             # String processing/extraction logic (stubbed for tests)
+│   ├── utils.rs               # Utilities for processing strings/type consistency (stub for tests)
+│   ├── string_processing.rs   # Utilities for processing strings (strip, upper, lower, regex replace)
+│   └── string_matcher.rs      # Implementation for a string matcher (stub for tests)
+├── tests/
+│   ├── original/
+│   │   ├── test_utils_and_stringmatcher.rs    # Original comprehensive util/stringmatcher tests
+│   │   └── test_process_py.rs                 # Original process/fuzzy extract tests
+├── public_tests/
+│   ├── test_public_utils_and_stringmatcher.rs # Public utility/stringmatcher tests
+│   ├── test_public_process_py.rs              # Public process/extraction tests
+├── run_tests.sh                 # One-click test runner (runs all Rust tests via cargo)
+└── project_structure.txt        # This project structure and explanations
+
+-- src/ contains the library modules needed for testing.
+-- tests/original/ contains all original test cases, using Rust's #[test] system.
+-- public_tests/ contains all public test cases (mirrored from the Python structure).
+-- run_tests.sh runs all tests with a single command.
+-- Cargo.toml specifies dependencies (regex and lazy_static for test support).
+-- Tests can be executed with: ./run_tests.sh

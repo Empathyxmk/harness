@@ -1,0 +1,16 @@
+{
+  "project_name": "IonicaBizau_scrape-it",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:38:58.710361",
+  "original_path": "/workspace/runnable_filter/JavaScript/IonicaBizau_scrape-it",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/IonicaBizau_scrape-it",
+  "tests_path": [
+    "test/lib-index.spec.js",
+    "test/cli-api-examples.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

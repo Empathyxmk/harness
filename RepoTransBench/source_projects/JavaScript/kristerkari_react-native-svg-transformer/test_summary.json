@@ -1,0 +1,11 @@
+{
+  "project_name": "kristerkari_react-native-svg-transformer",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 81.8,
+    "branch": 66.7
+  },
+  "timestamp": "2025-06-19T10:52:50.300819",
+  "original_path": "/workspace/runnable_filter/JavaScript/kristerkari_react-native-svg-transformer",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/kristerkari_react-native-svg-transformer"
+}

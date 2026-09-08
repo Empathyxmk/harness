@@ -1,0 +1,19 @@
+project_root/
+├── CMakeLists.txt
+├── LICENSE
+├── Makefile
+├── README.md
+├── coverage.info
+├── coverage_html/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_main_parseArgument.py
+│       ├── test_main_parseArgument_coverage.py
+│       ├── test_main_parseArgument_coverage_ext2.py
+│       └── test_main_parseArgument_edge.py
+├── public_tests/
+│   └── __init__.py

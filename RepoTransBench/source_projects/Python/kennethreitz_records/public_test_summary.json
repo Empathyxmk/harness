@@ -1,0 +1,57 @@
+{
+  "project_name": "kennethreitz_records",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:43:32.887656",
+  "original_path": "/workspace/verified_repos_v2/Python/kennethreitz_records",
+  "public_test_result_path": "/workspace/public_test_results/Python/kennethreitz_records",
+  "original_tests": {
+    "test_files": [
+      "tests/test_records_core.py",
+      "tests/test_69.py",
+      "tests/test_records.py",
+      "tests/test_105.py",
+      "tests/test_records_additional.py",
+      "tests/test_transactions.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_records_core.py",
+      "public_tests/test_public_69.py",
+      "public_tests/test_public_records.py",
+      "public_tests/test_public_105.py",
+      "public_tests/test_public_records_additional.py",
+      "public_tests/test_public_transactions.py",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_records_core.py",
+    "public_tests/test_public_69.py",
+    "public_tests/test_public_records.py",
+    "public_tests/test_public_105.py",
+    "public_tests/test_public_records_additional.py",
+    "public_tests/test_public_transactions.py",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

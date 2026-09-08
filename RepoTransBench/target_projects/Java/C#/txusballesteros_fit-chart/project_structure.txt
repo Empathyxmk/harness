@@ -1,0 +1,52 @@
+Project Structure: txusballesteros_fit-chart (C# Translation)
+=============================================================
+
+/
+├── FitChart.sln                     # .NET solution file including library and both test projects
+├── run_tests.sh                     # One-click test runner for all original & public tests
+├── src/
+│   └── FitChart/
+│       ├── FitChart.csproj          # Library project file
+│       ├── AnimationMode.cs         # Enum for AnimationMode
+│       ├── BaseRenderer.cs          # Abstract base class for renderers
+│       ├── FitChartValue.cs         # Model representing a chart value
+│       ├── LinearValueRenderer.cs   # Concrete renderer (linear mode)
+│       ├── OverdrawValueRenderer.cs # Concrete renderer (overdraw mode)
+│       ├── Renderer.cs              # Renderer interface
+│       ├── RendererFactory.cs       # Factory for renderers
+│       ├── RectF.cs                 # Stand-in for android.graphics.RectF
+│       └── Path.cs                  # Stand-in for android.graphics.Path
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj     # xUnit test project for original (private) tests
+│       ├── BaseRendererTest.cs
+│       ├── RendererFactoryTest.cs
+│       ├── OverdrawValueRendererTest.cs
+│       ├── LinearValueRendererTest.cs
+│       └── FakeClassesForTest.cs    # Stub, for completeness
+├── public_tests/
+│   ├── PublicTests.csproj           # xUnit test project for public tests
+│   ├── BaseRendererPublicTest.cs
+│   ├── RendererFactoryPublicTest.cs
+│   ├── OverdrawValueRendererPublicTest.cs
+│   ├── LinearValueRendererPublicTest.cs
+│   └── FakeClassesForPublicTest.cs  # Stub, for completeness
+
+How to Build & Run Tests:
+-------------------------
+1. Install .NET 6.0 SDK or later (https://dotnet.microsoft.com/).
+2. From the project root, run:
+
+   ./run_tests.sh
+
+   This will build all code and run all (original and public) tests.
+   Output will indicate which tests passed or failed.
+
+Directory Descriptions:
+-----------------------
+- src/FitChart/:      Business and utility code (translated library classes from Java).
+- tests/original/:    xUnit test project containing the original test cases (private/internal).
+- public_tests/:      xUnit test project with public test cases.
+- run_tests.sh:       Runs all tests in all test projects using dotnet CLI.
+
+Project is ready for development, editing, and CI/CD usage.

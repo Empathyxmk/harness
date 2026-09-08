@@ -1,0 +1,17 @@
+{
+  "project_name": "jshttp_http-errors",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 98.5
+  },
+  "timestamp": "2025-06-23T10:40:00.473063",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/jshttp_http-errors",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/jshttp_http-errors",
+  "tests_path": [
+    "test/createError-coverage.test.js",
+    "test/index-extra.test.js",
+    "test/test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

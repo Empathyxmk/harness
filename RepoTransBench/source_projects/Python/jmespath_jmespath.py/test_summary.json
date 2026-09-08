@@ -1,0 +1,11 @@
+{
+  "project_name": "jmespath_jmespath.py",
+  "language": "Python",
+  "coverage": {
+    "line": 98.0,
+    "branch": 98.7
+  },
+  "timestamp": "2025-06-23T10:30:27.134734",
+  "original_path": "/workspace/test_enhancement_results/Python/jmespath_jmespath.py",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/jmespath_jmespath.py"
+}

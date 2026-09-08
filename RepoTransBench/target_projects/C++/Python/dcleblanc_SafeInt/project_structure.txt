@@ -1,0 +1,20 @@
+project_root/
+├── requirements.txt                # Python dependencies list (pytest)
+├── run_tests.sh                    # Simple runner script for all tests
+├── project_structure.txt           # This structure doc
+├── tests/
+│   ├── original/
+│   │   ├── test_safe_math_basic.py # Original dummy test translated
+│   │   └── test_compile.py         # Original compile_test translated
+├── public_tests/
+│   ├── test_safe_math_basic_public.py      # Dummy public test translation
+│   ├── test_safe_math_public_ops.py        # All SafeInt arithmetic public operation tests
+│   └── test_compile_public.py              # Public compile (typecast) test
+# (source/ directory omitted - only test translation is in-scope)
+# How to run tests:
+#   1. Install dependencies: pip install -r requirements.txt
+#   2. Run all tests with:   ./run_tests.sh
+#
+# Organization:
+#   - tests/original/:      Original (internal) test suite translations
+#   - public_tests/:        Public/externally visible test suite translations

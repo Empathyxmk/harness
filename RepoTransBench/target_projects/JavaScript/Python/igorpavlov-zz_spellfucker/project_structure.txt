@@ -1,0 +1,94 @@
+Project Structure: igorpavlov-zz_spellfucker (Python translation)
+
+.
+├── LICENSE.txt
+│     - Project license information.
+├── README.md
+│     - Project overview and usage information.
+├── coverage/
+│     - (Legacy) JavaScript coverage reports, safe to ignore for Python code.
+├── gulpfile.js
+│     - (Legacy) JavaScript gulp build file, not used in Python.
+├── package-lock.json
+│     - (Legacy) JS dependency tree, not used in Python.
+├── package.json
+│     - (Legacy) JavaScript project config.
+├── public_test_summary.json
+│     - Details about public and original test breakdown.
+├── public_tests/
+│     - Directory for public test files (see below).
+│
+│   ├── spellfucker.advanced.public.test.js
+│   └── spellfucker.public.test.js
+│     - [Legacy JavaScript public tests, reference only]
+│   └── (For Python public tests, see below for recommended structure)
+│
+├── requirements.txt
+│     - Python dependency list. Install using `pip install -r requirements.txt`.
+│     - Contains `pytest` for test running.
+├── run_public_tests.sh
+│     - (Legacy JS) For Python, use `./run_tests.sh` (see below)
+├── run_tests.sh
+│     - **Primary script to run all Python tests at once.**
+│     - Usage: `chmod +x run_tests.sh` (set once if needed)
+│             `./run_tests.sh`
+│     - Runs all tests using pytest (from both `tests/` and `public_tests/`).
+├── src/
+│     - **Python source code lives here.**
+│
+│   ├── spellfucker.js      [Legacy; JS implementation]
+│   └── spellfucker.py      **[Python module to be tested by all test cases]**
+│
+├── test_summary.json
+│     - Summary of test coverage/results (reference).
+├── tests/
+│     - Primary Python test directory.
+│
+│   ├── original/
+│   │   ├── test_spellfucker.py           (Tests basic and main spellfucker logic)
+│   │   └── test_spellfucker_advanced.py  (Advanced and edge-case spellfucker tests)
+│   ├── quicktest.jest.js                 [Legacy; JS, not migrated]
+│   ├── quicktest.js                      [Legacy; utility/demo, see below]
+│   ├── spellfucker.advanced.test.js      [Legacy; reference, see above translation]
+│   └── spellfucker.test.js               [Legacy; reference]
+└── project_structure.txt
+      - **This file: explains the directory layout and testing process**
+
+Recommended/Expected Python Structure
+-------------------------------------
+src/spellfucker.py
+    - Python version of spellfucker function/logic.
+
+tests/original/test_spellfucker.py
+    - Core "original" Python tests for main spellfucker behaviors.
+tests/original/test_spellfucker_advanced.py
+    - Advanced/edge case Python tests for spellfucker.
+
+public_tests/
+    - [If included] Python versions of public test cases.
+    - Place Python test files as: public_tests/test_*.py
+
+How to install and run tests
+----------------------------
+1. (Optional) Set up a virtualenv:
+      python3 -m venv venv
+      source venv/bin/activate
+
+2. Install dependencies:
+      pip install -r requirements.txt
+
+3. Run all tests:
+      ./run_tests.sh
+
+
+Testing framework
+-----------------
+- Uses `pytest`. All tests use standard "test_" naming and assertions.
+- Can also run directly with `pytest` command.
+
+
+Extra notes
+------------
+- All code and test files are in pure Python (unless legacy/JS for reference).
+- Only src/spellfucker.py is required for spellfucker implementation under test.
+- Source coverage and JS files are legacy, retained for reference; Python users may ignore.

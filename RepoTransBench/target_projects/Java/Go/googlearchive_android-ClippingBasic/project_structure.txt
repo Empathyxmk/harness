@@ -1,0 +1,25 @@
+.
+├── go.mod                       # Go module file, dependency management
+├── README.md                    # Documentation and instructions
+├── main.go                      # App code placeholder
+├── module.go                    # Additional module code placeholder
+├── run_tests.sh                 # Run all Go tests script (chmod +x for Unix)
+├── tests/
+│   ├── testutil.go              # Shared test mocks/utilities for all tests
+│   └── original/
+│       ├── log_test.go          # LogTest Java translation
+│       ├── logview_test.go      # LogViewTest Java translation
+│       ├── messageonlylogfilter_test.go   # MessageOnlyLogFilterTest Java translation
+│       └── sampletests_test.go  # SampleTests Java translation
+├── public_tests/
+│   ├── log_public_test.go               # LogPublicTest Java translation
+│   ├── logview_public_test.go           # LogViewPublicTest Java translation
+│   └── messageonlylogfilter_public_test.go  # MessageOnlyLogFilterPublicTest Java translation
+
+# Directory/Files explanation:
+# - main.go/module.go: (Placeholder; app logic would go here.)
+# - tests/original/: All internal/original translated tests from Java.
+# - public_tests/: All public tests as defined from the Java repo, translated to Go.
+# - tests/testutil.go: Shared utilities, mocks, and stub logic for all tests.
+# - go.mod: Go module info + dependencies.
+# - run_tests.sh: Single-command script to run all Go tests in the project.

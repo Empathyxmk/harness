@@ -1,0 +1,19 @@
+{
+  "project_name": "hapijs_catbox",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:34:38.172237",
+  "original_path": "/workspace/runnable_filter/JavaScript/hapijs_catbox",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/hapijs_catbox",
+  "tests_path": [
+    "test/client.js",
+    "test/connection.js",
+    "test/esm.js",
+    "test/index.js",
+    "test/policy.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

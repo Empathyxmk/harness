@@ -1,0 +1,39 @@
+.
+├── requirements.txt                   # Python dependencies (pytest, mock)
+├── run_tests.sh                       # Simple script to run all tests
+├── README.md                          # Project documentation
+├── src/
+│   ├── __init__.py
+│   └── (your package source code: placeholder)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_net_tcp_node.py
+│       ├── test_net_transport_http.py
+│       ├── test_net_tcp_ws_proxy.py
+│       ├── test_net_tcp_chrome_sockets.py
+│       ├── test_pack_codec.py
+│       ├── test_object_codec.py
+│       ├── test_config_codec.py
+│       ├── test_zlib.py
+│       ├── test_mem_db.py
+│       ├── test_pack_ops.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_net_tcp_chrome_sockets_public.py
+│   ├── test_net_tcp_node_public.py
+│   ├── test_net_tcp_ws_proxy_public.py
+│   └── test_net_transport_http_public.py
+
+Top-level files:
+- requirements.txt: basic requirements for running, especially pytest/mock for test execution and mocking
+- run_tests.sh: one-click test runner
+- README.md: project documentation (not included but should exist for context/setup)
+
+src/: (your library source code would go here, if/when ported – here as a placeholder)
+tests/original/: Fully translated original JavaScript tests using pytest/mocking.
+public_tests/: Fully translated public tests using pytest/mocking.
+
+You can run all tests simply by invoking:
+    ./run_tests.sh

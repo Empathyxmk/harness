@@ -1,0 +1,57 @@
+Java Project Structure for alastair_python-musicbrainzngs
+
+.
+├── pom.xml                       # Maven build and dependency configuration
+├── run_tests.sh                  # One-click test execution script (runs all tests)
+├── README.md                     # Project documentation and setup instructions
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── musicbrainzngs/
+│   │                   └── [Library code would go here]
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── musicbrainzngs/
+│                       ├── original/
+│                       │   ├── CaaTest.java
+│                       │   ├── MbxmlArtistTest.java
+│                       │   ├── MbxmlReleaseGroupTest.java
+│                       │   ├── MbxmlRecordingTest.java
+│                       │   ├── MbxmlEventTest.java
+│                       │   ├── GetEntityTest.java
+│                       │   ├── QueryAndExamplesTest.java
+│                       │   ├── RateLimitTest.java
+│                       │   ├── RequestsTest.java
+│                       │   ├── MbxmlWorkTest.java
+│                       │   ├── SubmitTest.java
+│                       │   ├── CollectionTest.java
+│                       │   ├── MbxmlInstrumentTest.java
+│                       │   ├── MbxmlPlaceTest.java
+│                       │   ├── MbxmlLabelTest.java
+│                       │   ├── MbxmlDiscidTest.java
+│                       │   ├── BrowseTest.java
+│                       │   ├── MbxmlSearchTest.java
+│                       │   ├── MbxmlCollectionTest.java
+│                       │   ├── MbxmlReleaseTest.java
+│                       │   ├── MbxmlTest.java
+│                       │   └── SearchTest.java
+│                       └── public_tests/
+│                           ├── PublicCaaTest.java
+│                           ├── PublicMbxmlArtistTest.java
+│                           └── PublicMbxmlReleaseGroupTest.java
+│
+├── public_tests/
+│   ├── [Public test marker files, if needed]
+│
+├── README.md                     # Setup and usage documentation
+└── project_structure.txt         # This file
+
+- All main (library) code goes inside src/main/java/com/example/musicbrainzngs/
+- All *original* tests (full/complete) go in src/test/java/com/example/musicbrainzngs/original/
+- All *public* tests go in src/test/java/com/example/musicbrainzngs/public_tests/
+- Test class and method names follow the JUnit/Java conventions
+- You can build and run all tests with: ./run_tests.sh or mvn test

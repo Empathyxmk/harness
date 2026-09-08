@@ -1,0 +1,11 @@
+{
+  "project_name": "csstools_postcss-write-svg",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 98.1,
+    "branch": 88.6
+  },
+  "timestamp": "2025-06-23T10:35:52.010359",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/csstools_postcss-write-svg",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/csstools_postcss-write-svg"
+}

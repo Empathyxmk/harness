@@ -1,0 +1,29 @@
+Project Structure for EricElliott RFX Python Translation
+
+.
+├── requirements.txt               # Python dependencies (pytest)
+├── run_tests.sh                   # Simple script to execute all tests
+├── public_tests/
+│   ├── __init__.py                # Makes directory a package (empty)
+│   └── test_rfx_public.py         # Translated public tests from rfx.public.test.js
+├── src/
+│   ├── __init__.py                # Your (future) package source root (empty)
+│   └── rfx.py                     # (NO implementation provided, assumed to be implemented by the user)
+└── README.md                      # Project documentation (to be completed by user)
+
+Directory Explanations:
+- public_tests/:        Contains all public-facing test cases, directly ported from the JavaScript public test suite.
+- src/:                Houses the source code for your package (e.g., rfx.py). No logic included here, just structure for future code.
+- requirements.txt:     Lists all Python package dependencies. Here, only "pytest" is required for testing.
+- run_tests.sh:         Simple script to run all tests with a single command (`./run_tests.sh`). Uses pytest.
+- README.md:            Starting point for project docs (not provided; user to fill in as desired).
+
+Setup Instructions:
+1. (Recommended) Use a Python virtual environment.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run all tests: `./run_tests.sh`
+
+NOTES:
+- No original (private) tests provided in the JS repo; all tests are public.
+- Translated tests use the pytest framework and reside in public_tests/.
+- The actual rfx implementation is not provided. The tests include a local mock to ensure the test functions themselves are faithfully ported, but for real code, implement rfx in src/rfx.py.

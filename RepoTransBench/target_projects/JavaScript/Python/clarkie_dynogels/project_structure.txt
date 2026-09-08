@@ -1,0 +1,38 @@
+clarkie_dynogels/
+├── README.md                          # Project readme
+├── requirements.txt                   # Python dependencies
+├── run_tests.sh                       # One-click test runner (runs all tests)
+├── src/                               # Main source code (to be ported if necessary)
+│   └── clarkie_dynogels/              # Project source package
+│       ├── __init__.py
+│       └── ...                        # Module implementations (not included in this translation)
+├── tests/                             # All Python tests
+│   ├── __init__.py
+│   └── original/                      # Exact translations of JavaScript original tests
+│       ├── __init__.py
+│       ├── test_examples_createTable.py
+│       ├── test_examples_dynamicKeys.py
+│       ├── test_examples_optionalAttributes.py
+│       ├── test_examples_queryFilter.py
+│       └── test_index_proxy.py
+└── public_tests/                      # Publicly visible Python test cases
+    ├── __init__.py
+    ├── test_examples_createTable_public.py
+    ├── test_examples_dynamicKeys_public.py
+    ├── test_examples_optionalAttributes_public.py
+    ├── test_examples_queryFilter_public.py
+    └── test_index_proxy_public.py
+
+Directory explanations:
+- src/clarkie_dynogels/: Placeholder for main package code if ported (not included in this snapshot).
+- tests/original/: Translated original JavaScript test cases using pytest & unittest mock.
+- public_tests/: Translated public test cases using pytest & unittest mock.
+- requirements.txt: Python dependencies, including pytest.
+- run_tests.sh: One-click script to run *all* tests (both public and original) via pytest.
+- README.md: Project and test suite documentation (to be filled in for users).
+
+**Setup & Testing Instructions:**
+1. Install python3 and pip if not already installed.
+2. Run `pip install -r requirements.txt` to install python dependencies.
+3. Run tests with `./run_tests.sh`
+   - This discovers and runs all tests in `tests/` and `public_tests/` using pytest.

@@ -1,0 +1,40 @@
+googlesamples_assistant_sdk_python/
+├── src/
+│   └── assistant/
+│       ├── __init__.py
+│       ├── base64_encode.py
+│       └── json_util.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_base64_encode.py
+│       └── test_json_util.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_base64_encode_public.py
+│   └── test_json_util_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Structure Explanation:
+- src/assistant/:
+    - Production library code for base64 encoding and JSON utilities.
+- tests/original/:
+    - Translations of original private/internal C++ tests to pytest, for full functionality and coverage.
+- public_tests/:
+    - Translations of public C++ tests (the "_public_test.cc" files), for broad/simple validation.
+- requirements.txt:
+    - Lists Python test dependencies (pytest included).
+- run_tests.sh:
+    - Runs all tests (original and public) with one command using pytest.
+- project_structure.txt:
+    - This file, documents structure and purposes.
+Setup & Usage:
+1. (Optional) Create a virtual environment and install dependencies:
+    > python3 -m venv venv
+    > source venv/bin/activate
+    > pip install -r requirements.txt
+2. To run all tests (original and public):
+    > ./run_tests.sh

@@ -1,0 +1,25 @@
+project_root/
+│
+├── src/
+│   └── boost_uuid/
+│       ├── __init__.py
+│       └── uuid.py           # (implementations or stubs, as needed for test stubs)
+│
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_alignment.py
+│       ├── test_alignment_2.py
+│       ├── test_attribute_packed.py
+│       ├── test_uuid_smoke.py
+│       ├── test_uuid_edge_cases.py
+│       # ... (all other translated original test files)
+│
+├── public_tests/
+│   ├── __init__.py
+│   └── test_quick_public_test.py
+│
+├── requirements.txt        # Python dependencies (pytest)
+├── run_tests.sh            # Simple bash script to run all tests
+└── README.md

@@ -1,0 +1,47 @@
+{
+  "project_name": "creationix_js-git",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:22:14.645503",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/creationix_js-git",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/creationix_js-git",
+  "original_tests": {
+    "test_files": [
+      "test/net-tcp-node.test.js",
+      "test/net-transport-http.test.js",
+      "test/net-tcp-ws-proxy.test.js",
+      "test/net-tcp-chrome-sockets.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 4,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/net-tcp-node.public.test.js",
+      "public_tests/net-transport-http.public.test.js",
+      "public_tests/net-tcp-ws-proxy.public.test.js",
+      "public_tests/net-tcp-chrome-sockets.public.test.js",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 5,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/net-tcp-node.public.test.js",
+    "public_tests/net-transport-http.public.test.js",
+    "public_tests/net-tcp-ws-proxy.public.test.js",
+    "public_tests/net-tcp-chrome-sockets.public.test.js",
+    "run_public_tests.sh"
+  ]
+}

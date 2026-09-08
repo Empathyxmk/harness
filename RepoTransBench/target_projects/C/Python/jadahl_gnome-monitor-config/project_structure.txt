@@ -1,0 +1,19 @@
+gnome-monitor-config-python/
+├── src/
+│   └── gmc_display_config/
+│       ├── __init__.py
+│       ├── display_config.py
+│       └── display_config_manager.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_display_config.py
+│       └── test_display_config_manager.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_display_config_public.py
+│   └── test_display_config_manager_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt

@@ -1,0 +1,37 @@
+.
+├── README.md                    # Project overview and instructions
+├── go.mod                       # Go modules and dependency management
+├── run_tests.sh                 # Script to run all tests
+├── project_structure.txt        # This project structure file
+├── tests/
+│   ├── testutil.go              # Common test helpers and mocks
+│   └── original/
+│       ├── access_speed_limit_unit_test.go
+│       ├── access_speed_limit_test.go
+│       ├── limit_rule_test.go
+│       ├── redis_reentrant_lock_template_test.go
+│       ├── simple_test.go
+│       ├── zk_distributed_sequence_unit_test.go
+│       └── zk_reentrant_lock_template_test.go
+└── public_tests/
+    ├── access_speed_limit_public_test.go
+    ├── limit_rule_public_test.go
+    ├── redis_reentrant_lock_template_public_test.go
+    ├── simple_public_test.go
+    ├── zk_distributed_sequence_public_test.go
+    └── zk_reentrant_lock_template_public_test.go
+
+Explanation:
+
+- `tests/original/`: Contains translations of all internal/original Java test cases. Each Go file corresponds to a Java test class.
+- `public_tests/`: Contains translations of all Java public test cases. Those maintain their public visibility.
+- `tests/testutil.go`: Provides shared helpers and mocks for use in both types of tests (especially for mocking Redis/ZK).
+- `run_tests.sh`: The recommended entry point for running all tests.
+- `go.mod`: Sets up dependencies - Go modules are used, and testify is included for rich assertions.
+- `README.md`: Overview, instructions, and usage notes.
+- `project_structure.txt`: This documentation.
+
+To add new tests, follow Go's convention:
+- Name test files `*_test.go`
+- Use `TestXxx` functions
+- Place originals under `tests/original/`, publics under `public_tests/`

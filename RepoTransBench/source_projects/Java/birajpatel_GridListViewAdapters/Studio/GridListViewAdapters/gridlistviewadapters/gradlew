@@ -1,0 +1,6 @@
+#!/bin/bash
+# Dummy gradlew for testing
+if [ ! -f "gradlew.bak" ]; then
+    touch gradlew.bak
+fi
+exit 0

@@ -1,0 +1,60 @@
+sacmehta-delight/
+├── pom.xml
+├── run_tests.sh
+├── test_translation_progress.json
+├── project_structure.txt
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── sacmehta_delight/
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── sacmehta_delight/
+│                       ├── original/
+│                       │   ├── TestLabelSmoothing.java
+│                       │   ├── TestAverageCheckpoints.java
+│                       │   ├── TestMemoryEfficientFP16.java
+│                       │   ├── TestCharacterTokenEmbedder.java
+│                       │   ├── TestUtils.java
+│                       │   ├── TestTokenBlockDataset.java
+│                       │   ├── TestSequenceGenerator.java
+│                       │   ├── TestDictionary.java
+│                       │   ├── TestMultiheadAttention.java
+│                       │   ├── TestFairseqCheckpointUtils.java
+│                       │   ├── TestRunExperimentAdvanced.java
+│                       │   ├── TestMetrics.java
+│                       │   ├── TestConvTBC.java
+│                       │   ├── TestFairseqDataUtils.java
+│                       │   ├── TestFairseqDictionary.java
+│                       │   ├── TestSequenceScorer.java
+│                       │   ├── TestMultiCorpusSampledDataset.java
+│                       │   ├── TestTrain.java
+│                       │   ├── TestIterators.java
+│                       │   ├── TestExport.java
+│                       │   ├── TestSparseMultiheadAttention.java
+│                       │   ├── TestFileIo.java
+│                       │   ├── TestConcatDataset.java
+│                       │   ├── TestResamplingDataset.java
+│                       │   ├── TestMainScripts.java
+│                       │   ├── TestCliEntrypoints.java
+│                       │   ├── TestBMUF.java
+│                       │   ├── TestReproducibility.java
+│                       │   ├── TestFairseqBleu.java
+│                       │   ├── TestBinaries.java
+│                       │   ├── TestBacktranslationDataset.java
+│                       │   ├── TestNoising.java
+│                       │   └── (other test files from later batches)
+│                       └── public/
+│                           ├── PublicLabelSmoothingTest.java
+│                           ├── PublicTokenBlockDatasetTest.java
+│                           ├── PublicCharacterTokenEmbedderTest.java
+│                           ├── PublicSequenceGeneratorTest.java
+│                           ├── PublicAverageCheckpointsTest.java
+│                           ├── PublicMemoryEfficientFP16Test.java
+│                           ├── PublicUtilsTest.java
+│                           └── (other public tests)

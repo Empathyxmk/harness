@@ -1,0 +1,15 @@
+project_root/
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_index_public.py
+│   └── test_old_public.py
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── test_autocrop.py
+│   │   ├── test_enums.py
+│   │   ├── test_index.py
+│   │   ├── test_old.py
+│   │   └── test_rsvg_handle.py

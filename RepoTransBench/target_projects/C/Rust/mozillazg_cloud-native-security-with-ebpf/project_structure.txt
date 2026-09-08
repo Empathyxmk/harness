@@ -1,0 +1,15 @@
+cloud-native-security-with-ebpf/
+├── Cargo.toml            # Rust project configuration
+├── src/
+│   └── lib.rs            # Main library implementation
+├── tests/
+│   └── test_example.rs   # Original test implementation
+├── public_tests/
+│   └── test_example_public.rs # Public test implementation
+└── run_tests.sh          # Test execution script
+
+Setup and Testing Instructions:
+1. Install Rust and Cargo if not already installed (https://rustup.rs/)
+2. Run all tests with: ./run_tests.sh
+3. Run only original tests: cargo test --test test_example
+4. Run only public tests: cargo test --test test_example_public

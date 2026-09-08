@@ -1,0 +1,60 @@
+{
+  "project_name": "venmo_business-rules",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:25:49.943940",
+  "original_path": "/workspace/verified_repos_v2/Python/venmo_business-rules",
+  "public_test_result_path": "/workspace/public_test_results/Python/venmo_business-rules",
+  "original_tests": {
+    "test_files": [
+      "tests/test_variables_class.py",
+      "tests/test_engine_logic.py",
+      "tests/test_integration.py",
+      "tests/test_actions_class.py",
+      "tests/test_operators.py",
+      "tests/test_operators_class.py",
+      "tests/test_variables.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_variables_class.py",
+      "public_tests/test_public_engine_logic.py",
+      "public_tests/test_public_integration.py",
+      "public_tests/test_public_actions_class.py",
+      "public_tests/test_public_operators.py",
+      "public_tests/test_public_operators_class.py",
+      "public_tests/test_public_variables.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_actions_class.py",
+      "public_tests/test_public_variables.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 10,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_variables_class.py",
+    "public_tests/test_public_engine_logic.py",
+    "public_tests/test_public_integration.py",
+    "public_tests/test_public_actions_class.py",
+    "public_tests/test_public_operators.py",
+    "public_tests/test_public_operators_class.py",
+    "public_tests/test_public_variables.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_actions_class.py",
+    "public_tests/test_public_variables.py"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "project_name": "apache_rocketmq-spring",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T15:18:05.412661",
+  "original_path": "/workspace/verified_repos_v2/Java/apache_rocketmq-spring",
+  "public_test_result_path": "/workspace/public_test_results/Java/apache_rocketmq-spring",
+  "iterations_completed": 3,
+  "token_usage_stats": {
+    "project_structure_tokens": 4875,
+    "test_files_tokens": 16409,
+    "test_files_count": 22,
+    "source_files_tokens": 0,
+    "source_files_count": 0,
+    "total_content_tokens": 21284,
+    "average_tokens_per_test_file": 745,
+    "average_tokens_per_source_file": 0
+  },
+  "original_tests": {
+    "test_files": [
+      "rocketmq-spring-boot-samples/rocketmq-producer-simple-demo/src/test/java/org/apache/rocketmq/samples/springboot/ProducerApplicationTest.java",
+      "rocketmq-spring-boot-samples/rocketmq-produce-acl-demo/src/test/java/org/apache/rocketmq/samples/springboot/ProducerACLApplicationTest.java",
+      "rocketmq-spring-boot-samples/rocketmq-consume-demo/src/test/java/org/apache/rocketmq/samples/springboot/ConsumerApplicationTest.java",
+      "rocketmq-spring-boot-samples/rocketmq-consume-demo/src/test/java/org/apache/rocketmq/samples/springboot/ExtRocketMQTemplateTest.java",
+      "rocketmq-spring-boot-samples/rocketmq-consume-demo/src/test/java/org/apache/rocketmq/samples/springboot/consumer/StringConsumerTest.java",
+      "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/core/RocketMQTemplateTest.java",
+      "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/core/ExtRocketMQTemplateTest.java",
+      "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/annotation/RocketMQMessageListenerBeanPostProcessorTest.java",
+      "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/autoconfigure/RocketMQAutoConfigurationTest.java",
+      "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/support/DefaultRocketMQListenerContainerTest.java",
+      "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/support/RocketMQUtilTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 11,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "rocketmq-spring-boot-samples/rocketmq-producer-simple-demo/src/test/java/org/apache/rocketmq/samples/springboot/ProducerApplicationPublicTest.java",
+      "rocketmq-spring-boot-samples/rocketmq-produce-acl-demo/src/test/java/org/apache/rocketmq/samples/springboot/ProducerACLApplicationPublicTest.java",
+      "rocketmq-spring-boot-samples/rocketmq-consume-demo/src/test/java/org/apache/rocketmq/samples/springboot/ConsumerApplicationPublicTest.java",
+      "run_public_tests.sh",
+      "rocketmq-spring-boot-samples/rocketmq-consume-demo/src/test/java/org/apache/rocketmq/samples/springboot/ExtRocketMQTemplatePublicTest.java",
+      "rocketmq-spring-boot-samples/rocketmq-consume-demo/src/test/java/org/apache/rocketmq/samples/springboot/consumer/StringConsumerPublicTest.java",
+      "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/core/ExtRocketMQTemplatePublicTest.java",
+      "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/core/RocketMQTemplatePublicTest.java",
+      "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/annotation/RocketMQMessageListenerBeanPostProcessorPublicTest.java",
+      "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/autoconfigure/RocketMQAutoConfigurationPublicTest.java",
+      "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/support/DefaultRocketMQListenerContainerPublicTest.java",
+      "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/support/RocketMQUtilPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 12,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "rocketmq-spring-boot-samples/rocketmq-producer-simple-demo/src/test/java/org/apache/rocketmq/samples/springboot/ProducerApplicationPublicTest.java",
+    "rocketmq-spring-boot-samples/rocketmq-produce-acl-demo/src/test/java/org/apache/rocketmq/samples/springboot/ProducerACLApplicationPublicTest.java",
+    "rocketmq-spring-boot-samples/rocketmq-consume-demo/src/test/java/org/apache/rocketmq/samples/springboot/ConsumerApplicationPublicTest.java",
+    "run_public_tests.sh",
+    "rocketmq-spring-boot-samples/rocketmq-consume-demo/src/test/java/org/apache/rocketmq/samples/springboot/ExtRocketMQTemplatePublicTest.java",
+    "rocketmq-spring-boot-samples/rocketmq-consume-demo/src/test/java/org/apache/rocketmq/samples/springboot/consumer/StringConsumerPublicTest.java",
+    "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/core/ExtRocketMQTemplatePublicTest.java",
+    "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/core/RocketMQTemplatePublicTest.java",
+    "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/annotation/RocketMQMessageListenerBeanPostProcessorPublicTest.java",
+    "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/autoconfigure/RocketMQAutoConfigurationPublicTest.java",
+    "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/support/DefaultRocketMQListenerContainerPublicTest.java",
+    "rocketmq-spring-boot/src/test/java/org/apache/rocketmq/spring/support/RocketMQUtilPublicTest.java"
+  ]
+}

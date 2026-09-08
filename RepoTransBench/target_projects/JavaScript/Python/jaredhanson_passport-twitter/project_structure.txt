@@ -1,0 +1,23 @@
+project_root/
+├── requirements.txt                # Python dependencies for the project
+├── run_tests.sh                    # Executable script to run all tests via pytest
+├── tests/
+│   ├── __init__.py                 # Makes 'tests' a Python package
+│   └── original/
+│       ├── __init__.py             # Makes 'original' a Python package
+│       ├── test_apierror.py        # Translated original test for apierror
+│       ├── test_index.py           # Translated original test for index.js
+│       ├── test_package.py         # Translated original test for package.js
+│       ├── test_profile.py         # Translated JSON fixture profile tests
+│       ├── test_profile_parse.py   # Translated profile.parse tests
+│       └── fixtures/
+│           ├── account/
+│           │   ├── theSeanCook.json              # Fixture file for profile test
+│           │   └── theSeanCook-include_email.json# Fixture with email
+│           └── users/
+│               ├── rsarver.json                  # User fixture
+│               └── rsarver-without-id_str.json   # Fixture without id_str
+├── public_tests/
+│   ├── __init__.py                 # Makes 'public_tests' a Python package
+│   ├── test_apierror_public.py     # Public APIError tests
+│   └── test_strategy_public.py     # Public Strategy tests (translated)

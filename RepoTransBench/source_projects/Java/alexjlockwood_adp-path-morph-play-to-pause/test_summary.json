@@ -1,0 +1,11 @@
+{
+  "project_name": "alexjlockwood_adp-path-morph-play-to-pause",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:12:46.447168",
+  "original_path": "/workspace/test_enhancement_results/Java/alexjlockwood_adp-path-morph-play-to-pause",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/alexjlockwood_adp-path-morph-play-to-pause"
+}

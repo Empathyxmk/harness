@@ -1,0 +1,44 @@
+{
+  "project_name": "angeloc_s3-pit-restore",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-24T05:27:49.922788",
+  "original_path": "/workspace/verified_repos_v2/Python/angeloc_s3-pit-restore",
+  "public_test_result_path": "/workspace/public_test_results/Python/angeloc_s3-pit-restore",
+  "original_tests": {
+    "test_files": [
+      "tests/test_setup_py.py",
+      "tests/test_s3_pit_restore_unittest.py",
+      "tests/test_s3_pit_restore_smoke.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_s3_pit_restore_unittest.py",
+      "public_tests/test_public_s3_pit_restore_smoke.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 4,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_s3_pit_restore_unittest.py",
+    "public_tests/test_public_s3_pit_restore_smoke.py",
+    "run_public_tests.sh"
+  ]
+}

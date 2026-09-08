@@ -1,0 +1,26 @@
+jmespath_jp/   # Project root
+
+├── Cargo.toml   # Rust package and dependency info.
+├── src/
+│   └── lib.rs   # Library code, includes JpWrapper struct implementing the search logic that mimics jp_wrapper.py.
+├── tests/
+│   └── original/
+│       ├── test_jp_wrapper.rs   # Translated original Python tests from test_jp_wrapper.py.
+│       └── test_jp_wrapper.py   # [Legacy/retired] Python original test - left only for reference.
+├── public_tests/
+│   ├── test_public_jp_wrapper.rs   # Translated public Python tests from public_tests/test_public_jp_wrapper.py.
+│   └── test_public_jp_wrapper.py   # [Legacy/retired] Python public test - left only for reference.
+├── run_tests.sh   # Simple one-click test runner (calls `cargo test`).
+└── project_structure.txt   # This documentation file, describing structure and use.
+
+Structure Explanation:
+- **src/lib.rs**: Main crate code. Provides `JpWrapper` for test invocation.
+- **tests/original/**: Contains original (private) tests ported directly from Python. The `.py` file is legacy/non-functional after migration.
+- **public_tests/**: Contains public test suite ported from public Python public_tests. The `.py` file is legacy/non-functional after migration.
+- **Cargo.toml**: Rust dependency and build manifest.
+- **run_tests.sh**: Minimal script to run all tests (`chmod +x` recommended).
+- **project_structure.txt**: You are reading this file.
+
+Testing and Setup Instructions:
+1. Ensure the `jp` binary (from the original project) is present in the project root, executable.
+2. Build and run all tests with:

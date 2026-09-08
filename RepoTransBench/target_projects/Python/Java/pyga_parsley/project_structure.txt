@@ -1,0 +1,32 @@
+pyga_parsley/
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── parsley/
+│                       ├── original/
+│                       │   ├── BuilderIntegrationTest.java
+│                       │   ├── GrammarImportTest.java
+│                       │   ├── NetstringsTest.java
+│                       │   ├── OmetaInterpTest.java
+│                       │   ├── OmMetaVmBuilderTest.java
+│                       │   ├── ParlseyApiTest.java
+│                       │   ├── ParsleyApiTest.java
+│                       │   ├── ParsleyEnd2EndTest.java
+│                       │   ├── ParsleyTest.java
+│                       │   ├── QuasitermNodeTest.java
+│                       │   ├── QuasitermTest.java
+│                       │   ├── StackTestCaseTest.java
+│                       │   └── TermlTest.java
+│                       └── public/
+│                           ├── PublicBuilderTest.java
+│                           ├── PublicParsleyTest.java
+│                           ├── PublicQuasitermTest.java
+│                           ├── PublicTermlTest.java
+│                           ├── PublicVmBuilderTest.java
+│                           └── StackPublicTestCaseTest.java
+├── pom.xml
+├── run_tests.sh
+├── README.md
+└── project_structure.txt

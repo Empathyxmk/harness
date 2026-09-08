@@ -1,0 +1,11 @@
+{
+  "project_name": "venmo_business-rules",
+  "language": "Python",
+  "coverage": {
+    "line": 97.8,
+    "branch": 92.3
+  },
+  "timestamp": "2025-06-19T13:01:53.850205",
+  "original_path": "/workspace/runnable_filter/Python/venmo_business-rules",
+  "test_result_path": "/workspace/test_enhancement_results/Python/venmo_business-rules"
+}

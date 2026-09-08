@@ -1,0 +1,43 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest, mockito, openpyxl)
+├── run_tests.sh                    # Single script to run all tests
+├── project_structure.txt           # This documentation file
+├── tests/
+│   ├── __init__.py                 # test module marker
+│   └── original/
+│       ├── test_student_java17.py
+│       ├── test_student.py
+│       ├── test_application.py
+│       ├── test_nashorn_fixed.py
+│       ├── test_nashorn_broken.py
+│       ├── test_font_example.py
+│       ├── test_jaxb_service.py
+│       ├── test_jaxb_student.py
+│       ├── test_annotation_example.py
+│       ├── test_activation_example.py
+│       ├── test_ws_example.py
+│       ├── test_transaction_example.py
+│       ├── test_example_enum_broken.py
+│       └── test_example_enum_fixed.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_student_java17_public.py
+│   ├── test_student_public.py
+│   ├── test_application_public.py
+│   ├── test_nashorn_fixed_public.py
+│   ├── test_nashorn_broken_public.py
+│   ├── test_font_example_public.py
+│   ├── test_jaxb_student_public.py
+│   ├── test_jaxb_service_public.py
+│   ├── test_annotation_example_public.py
+│   ├── test_activation_example_public.py
+│   ├── test_ws_example_public.py
+│   └── test_transaction_example_public.py
+
+Instructions:
+- `requirements.txt` lists dependencies. Install with `pip install -r requirements.txt`
+- Tests are organized into:
+   - `tests/original/`: All tests translated from original Java sources.
+   - `public_tests/`: Translated public test suite.
+- `run_tests.sh` runs all tests in both directories.
+- All tests use `pytest` conventions and can be run independently or together.

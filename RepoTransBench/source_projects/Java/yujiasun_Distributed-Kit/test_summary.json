@@ -1,0 +1,11 @@
+{
+  "project_name": "yujiasun_Distributed-Kit",
+  "language": "Java",
+  "coverage": {
+    "line": 52.0,
+    "branch": 53.8
+  },
+  "timestamp": "2025-06-20T04:47:21.219629",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/yujiasun_Distributed-Kit",
+  "test_result_path": "/workspace/test_enhancement_results/Java/yujiasun_Distributed-Kit"
+}

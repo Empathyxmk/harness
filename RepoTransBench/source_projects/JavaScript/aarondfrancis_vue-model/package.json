@@ -1,0 +1,51 @@
+{
+  "name": "vue-model",
+  "version": "2.0.7",
+  "description": "A Javascript plugin for the excellent Vue.js framework that gives you the ability to transform your plain data into rich models with built-in and customizable HTTP actions.",
+  "main": "src/VueModel.js",
+  "scripts": {
+    "test": "karma start --single-run",
+    "test:watch": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aarondfrancis/vue-model.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue",
+    "model",
+    "restful"
+  ],
+  "author": "Aaron Francis <aarondfrancis@gmail.com> (http://aaronfrancis.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aarondfrancis/vue-model/issues"
+  },
+  "homepage": "https://github.com/aarondfrancis/vue-model#readme",
+  "dependencies": {
+    "promise": "^8.0.1"
+  },
+  "devDependencies": {
+    "axios": "^1.10.0",
+    "browserify": "^14.5.0",
+    "chai": "^5.2.0",
+    "global-jsdom": "^26.0.0",
+    "jasmine-core": "^2.8.0",
+    "jsdom": "^26.1.0",
+    "karma": "^1.7.1",
+    "karma-browserify": "^5.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "lodash": "^4.17.21",
+    "mocha": "^10.8.2",
+    "nyc": "^17.1.0",
+    "promise.prototype.finally": "^3.1.8",
+    "proxyquire": "^2.1.3",
+    "puppeteer": "^24.10.1",
+    "sinon": "^21.0.0",
+    "vue": "^2.7.16",
+    "watchify": "^3.9.0"
+  }
+}

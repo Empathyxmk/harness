@@ -1,0 +1,23 @@
+project_root/
+├── src/
+│   ├── __init__.py          # Python package marker for src
+│   └── lrucache.py          # LRUCache implementation for test parity
+├── tests/
+│   ├── __init__.py          # Python package marker for tests
+│   └── original/
+│       ├── __init__.py      # Python package marker for original tests
+│       ├── test_basics.py   # Tests: basic cache usage (set/get/remove/clear/stats)
+│       ├── test_exceptions.py # Tests: argument and error handling
+│       ├── test_extra_coverage.py # Edge cases, coverage, and constructor options
+│       ├── test_maxage.py   # maxAge expiry tests
+│       └── test_maxelements.py # maxElements eviction tests
+├── requirements.txt         # Python dependencies for pytest
+├── README.md                # Overview and usage
+├── run_tests.sh             # One-click test execution script
+└── project_structure.txt    # This file (explains the project structure)
+
+Directory summary:
+- `src/`: package code; LRUCache implementation provided for test execution.
+- `tests/original/`: all test files originally in C++/JS, now in Python with pytest.
+- `requirements.txt`: use `pip install -r requirements.txt` to set up dependencies.
+- `run_tests.sh`: run all tests using `pytest`.

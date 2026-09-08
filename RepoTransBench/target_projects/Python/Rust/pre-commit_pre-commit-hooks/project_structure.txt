@@ -1,0 +1,23 @@
+pre_commit_hooks-rust/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── main.rs
+├── tests/
+│   └── original/
+│       ├── test_check_builtin_literals_ext.rs
+│       ├── test_check_vcs_permalinks_ext.rs
+│       ├── test_check_toml_ext.rs
+│       ├── test_string_fixer_ext.rs
+│       └── test_setup_py_ext.rs
+├── public_tests/
+│   ├── test_public_check_added_large_files_ext.rs
+│   ├── test_public_string_fixer_ext.rs
+│   ├── test_public_check_builtin_literals_ext.rs
+│   ├── test_public_check_toml_ext.rs
+│   ├── test_public_check_merge_conflict_ext.rs
+│   ├── test_public_check_docstring_first_ext.rs
+│   ├── test_public_setup_py_ext.rs
+│   └── test_public_check_vcs_permalinks_ext.rs
+├── run_tests.sh
+└── project_structure.txt

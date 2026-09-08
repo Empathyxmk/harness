@@ -1,0 +1,56 @@
+Project structure:
+
+.
+├── src/
+│   └── Tuenti.SmsRadar/
+│       ├── Tuenti.SmsRadar.csproj           # Main library project for SmsRadar logic
+│       ├── SharedPreferencesSmsStorage.cs   # Testable in-memory implementation
+│       ├── ISmsStorage.cs                   # Storage interface
+│       ├── SmsStorage.cs                    # In-memory SMS storage for tests
+│       ├── SmsType.cs                       # SMS type & helpers
+│       ├── Sms.cs                           # SMS value type
+│       ├── TimeProvider.cs                  # TimeProvider implementation
+│       ├── SmsListener.cs                   # Listener interface
+│       ├── SmsCursorParser.cs               # Static test simplification for parse logic
+│       └── SmsRadarService.cs               # Stub for test instantiation
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj             # xUnit test project for ALL original tests
+│       ├── SharedPreferencesSmsStorageTests.cs
+│       ├── SmsCursorParserTests.cs
+│       ├── SmsRadarServiceTests.cs
+│       ├── SmsObserverTests.cs
+│       ├── SmsStorageTests.cs
+│       ├── SmsTests.cs
+│       ├── SmsTypeTests.cs
+│       └── TimeProviderTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj                   # xUnit test project for ALL public tests
+│   ├── SharedPreferencesSmsStoragePublicTests.cs
+│   ├── SmsCursorParserPublicTests.cs
+│   ├── SmsObserverPublicTests.cs
+│   ├── SmsRadarServicePublicTests.cs
+│   ├── SmsStoragePublicTests.cs
+│   ├── SmsTestPublicTests.cs
+│   ├── SmsTypePublicTests.cs
+│   └── TimeProviderPublicTests.cs
+├── Tuenti.SmsRadar.sln                      # Solution file referencing all projects
+├── run_tests.sh                             # Simple script to build and run ALL tests
+├── project_structure.txt                    # This project structure document
+└── README.md                                # (Add instructions here as needed)
+
+# Directory explanations:
+
+src/:          All main production library code; pure C# logic for SmsRadar.
+tests/original/:     xUnit tests directly ported from Java's original test set, organized per class.
+public_tests/:       Translations of the public test suite, fully functional and discoverable.
+run_tests.sh: Simple one-click bash script to build and run all tests.
+Tuenti.SmsRadar.sln: Solution file for easy IDE/devtool use.
+project_structure.txt: This file.
+README.md: Project summary and usage (to be filled as needed).
+
+# How to build and test:
+
+1. Install .NET 6 SDK or later (https://dotnet.microsoft.com/download).
+2. Run: chmod +x ./run_tests.sh
+3. Run: ./run_tests.sh   (will build and run all original and public tests)

@@ -1,0 +1,44 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest, mock)
+├── run_tests.sh                    # Simple one-click script to run all tests
+├── tests/
+│   ├── __init__.py                 # Test package marker (can be empty)
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_application.py                   # Translated ApplicationTest
+│   │   ├── test_presenter_manager.py             # Translated PresenterManagerTest
+│   │   ├── test_counter_database.py              # Translated CounterDatabaseTest
+│   │   ├── test_mvp_view_holder.py               # Translated MvpViewHolderTest
+│   │   ├── test_mvp_recycler_adapter.py          # Translated MvpRecyclerAdapterTest
+│   │   ├── presenters/
+│   │   │   ├── __init__.py
+│   │   │   ├── test_counter_presenter.py         # Translated CounterPresenterTest
+│   │   │   └── test_base_presenter.py            # Translated BasePresenterTest
+│   │   ├── models/
+│   │   │   ├── __init__.py
+│   │   │   └── test_counter.py                   # Translated CounterTest
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_presenter_manager_public.py                  # Translated PresenterManagerPublicTest
+│   ├── test_counter_database_public.py                   # Translated CounterDatabasePublicTest
+│   ├── test_mvp_recycler_adapter_public.py               # Translated MvpRecyclerAdapterPublicTest
+│   ├── test_mvp_view_holder_public.py                    # Translated MvpViewHolderPublicTest
+│   ├── presenters/
+│   │   ├── __init__.py
+│   │   ├── test_base_presenter_public.py        # Translated BasePresenterPublicTest
+│   │   └── test_counter_presenter_public.py     # Translated CounterPresenterPublicTest
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── test_counter_public.py               # Translated CounterPublicTest
+
+# Instructions:
+# - To install test dependencies: `pip install -r requirements.txt`
+# - To run all tests (original + public): `./run_tests.sh`
+# - To run only public tests: `pytest public_tests/`
+# - To run only original tests: `pytest tests/original/`
+#
+# PUBLIC TESTS are located in `public_tests/`
+# ORIGINAL (private) tests are located in `tests/original/`
+# Each is separated for clarity and compliance with intended public/private scope.
+#
+# All Java test logic is functionally preserved in Python via unittest/pytest style.

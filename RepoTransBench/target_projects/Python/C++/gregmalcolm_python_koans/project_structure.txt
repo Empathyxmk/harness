@@ -1,0 +1,44 @@
+project_root/
+├── src/
+│   ├── main.cpp
+│   └── lib/
+│       ├── mountain.h
+│       ├── mountain.cpp
+│       ├── sensei.h
+│       ├── sensei.cpp
+│       ├── path_to_enlightenment.h
+│       ├── path_to_enlightenment.cpp
+│       ├── helper.h
+│       ├── helper.cpp
+│       ├── mockable_test_result.h
+│       ├── mockable_test_result.cpp
+│       ├── mock.h
+│       ├── mock.cpp
+│       ├── contemplate_koans.h
+│       ├── contemplate_koans.cpp
+│       └── scent.h
+│       └── scent.cpp
+├── include/
+│   └── (symlinks or core headers)
+├── tests/
+│   └── original/
+│       ├── test_path_to_enlightenment.cpp
+│       ├── test_mountain.cpp
+│       ├── test_helper.cpp
+│       ├── test_scent.cpp
+│       ├── test_mock.cpp
+│       ├── test_contemplate_koans.cpp
+│       ├── test_sensei.cpp
+│       └── test_main.cpp
+├── public_tests/
+│   ├── test_public_scent.cpp
+│   ├── test_public_mountain.cpp
+│   ├── test_public_contemplate_koans.cpp
+│   ├── test_public_helper.cpp
+│   ├── test_public_mock.cpp
+│   ├── test_public_sensei.cpp
+│   └── test_public_path_to_enlightenment.cpp
+├── CMakeLists.txt
+├── run_tests.sh
+├── README.md
+├── test_translation_progress.json

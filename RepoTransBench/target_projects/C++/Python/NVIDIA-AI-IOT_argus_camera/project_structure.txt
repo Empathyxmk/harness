@@ -1,0 +1,31 @@
+project_root/
+├── argus_camera/
+│   ├── __init__.py
+│   ├── argus_camera.py
+│   └── cpp.i
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_argus_camera_public.py
+│   └── test_argus_camera_config_public.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_argus_camera.py
+│       └── test_argus_camera_config.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+
+Directory description:
+
+- argus_camera/: Placeholder for the core library code; not implemented here but kept for source compatibility.
+- tests/original/: Contains FULLY IMPLEMENTED Python translations of original C++ test cases.
+    - test_argus_camera.py: Tests for IArgusCamera and DummyCamera class logic (read, create_argus_camera, etc.)
+    - test_argus_camera_config.py: Tests construction of the stub IArgusCamera class.
+- public_tests/: Contains FULLY IMPLEMENTED Python translations of C++ public tests (named *_public.cpp originally).
+    - test_argus_camera_public.py: PublicDummyCamera variant checks, stub checks.
+    - test_argus_camera_config_public.py: Public construction tests.
+- requirements.txt: Declares test dependency (pytest).
+- run_tests.sh: One-click script to execute all tests in tests/ and public_tests/.
+- README.md: Explains the project, layout, and usage instructions.

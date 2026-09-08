@@ -1,0 +1,19 @@
+{
+  "project_name": "krasimir_webpack-library-starter",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:50:14.420137",
+  "original_path": "/workspace/runnable_filter/JavaScript/krasimir_webpack-library-starter",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/krasimir_webpack-library-starter",
+  "tests_path": [
+    "src/__tests__/dog.spec.js",
+    "src/__tests__/cat.spec.js",
+    "src/__tests__/index.spec.js",
+    "src/__tests__/webpackconfig.spec.js",
+    "src/__tests__/dog_extended.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

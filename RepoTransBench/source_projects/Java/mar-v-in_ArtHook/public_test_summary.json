@@ -1,0 +1,59 @@
+{
+  "project_name": "mar-v-in_ArtHook",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:23:00.283446",
+  "original_path": "/workspace/verified_repos_v2/Java/mar-v-in_ArtHook",
+  "public_test_result_path": "/workspace/public_test_results/Java/mar-v-in_ArtHook",
+  "original_tests": {
+    "test_files": [
+      "xposed/src/test/java/de/larma/arthook/xposed/ZygoteInitTest.java",
+      "xposed/src/test/java/de/larma/arthook/xposed/UtilsTest.java",
+      "xposed/src/test/java/de/larma/arthook/xposed/XposedTest.java",
+      "xposed/src/test/java/de/larma/arthook/xposed/RuntimeInitTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 4,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "xposed/src/test/java/de/larma/arthook/xposed/ZygoteInitPublicTest.java",
+      "xposed/src/test/java/de/larma/arthook/xposed/UtilsPublicTest.java",
+      "xposed/src/test/java/de/larma/arthook/xposed/XposedPublicTest.java",
+      "xposed/src/test/java/de/larma/arthook/xposed/RuntimeInitPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "xposed/src/test/java/de/larma/arthook/xposed/ZygoteInitPublicTest.java",
+    "xposed/src/test/java/de/larma/arthook/xposed/UtilsPublicTest.java",
+    "xposed/src/test/java/de/larma/arthook/xposed/XposedPublicTest.java",
+    "xposed/src/test/java/de/larma/arthook/xposed/RuntimeInitPublicTest.java",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh",
+    "build.gradle",
+    "lib/build.gradle",
+    "test/build.gradle",
+    "xposed/build.gradle",
+    "gradle/wrapper/gradle-wrapper.properties",
+    "run_public_tests.sh"
+  ]
+}

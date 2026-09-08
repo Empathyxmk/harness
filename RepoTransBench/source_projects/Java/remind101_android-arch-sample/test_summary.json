@@ -1,0 +1,11 @@
+{
+  "project_name": "remind101_android-arch-sample",
+  "language": "Java",
+  "coverage": {
+    "line": 72.8,
+    "branch": 63.3
+  },
+  "timestamp": "2025-06-20T02:08:41.138399",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/remind101_android-arch-sample",
+  "test_result_path": "/workspace/test_enhancement_results/Java/remind101_android-arch-sample"
+}

@@ -1,0 +1,24 @@
+qingkouwei_oarplayer/
+├── requirements.txt                   # Python dependencies (pytest)
+├── run_tests.sh                       # One-click test execution script
+├── tests/
+│   ├── __init__.py                    # marks tests/ as a Python package
+│   └── original/
+│       ├── __init__.py                # marks original/ as a Python package
+│       ├── test_oar_frame_queue.py    # Logic translation of C++ oar_frame_queue.cpp tests
+│       ├── test_nativemediacodec_instrumented.py  # Android instrumented (mock) test
+│       ├── test_nativemediacodec_unit.py          # Simple unit test, as in Java
+│       ├── test_oarplayer_instrumented.py         # Instrumented test for srsrtmpplayer
+│       ├── test_oarplayer_unit.py                 # Simple unit test for oarplayer module
+│       ├── test_app_instrumented.py               # Instrumented test for app module
+│       └── test_app_unit.py                       # Simple unit test for app module
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_oar_frame_queue_public.py             # Public logic/test data for frame queue
+│   ├── test_nativemediacodec_instrumented_public.py # Public "instrumented" test (different assertion)
+│   ├── test_nativemediacodec_unit_public.py      # Public simple addition test (different data)
+│   ├── test_oarplayer_instrumented_public.py     # Public instrumented srsrtmpplayer test (different assertion)
+│   ├── test_oarplayer_unit_public.py             # Public addition test (different data)
+│   ├── test_oarplayer_instrumented_public_repeat.py # For repeated file in summary
+│   ├── test_app_instrumented_public.py           # Public instrumented test for app module
+│   └── test_app_unit_public.py                   # Public simple addition test for app

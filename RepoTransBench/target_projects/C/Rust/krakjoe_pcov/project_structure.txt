@@ -1,0 +1,19 @@
+krakjoe_pcov/
+├── Cargo.toml
+├── README.md
+├── run_tests.sh
+├── project_structure.txt
+├── src/
+│   └── lib.rs
+├── tests/
+│   ├── original/
+│   │   ├── test_summary_json.rs
+│   │   ├── test_results_log.rs
+│   │   ├── run_tests_sh.rs
+│   │   ├── test_php_ini.rs
+│   │   └── run_tests_php.rs
+│   └── mod.rs
+├── public_tests/
+│   ├── run_public_tests_sh.rs
+│   └── public_test_summary_json.rs
+└── test_translation_progress.json

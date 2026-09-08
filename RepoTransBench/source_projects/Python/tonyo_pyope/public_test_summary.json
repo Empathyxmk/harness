@@ -1,0 +1,84 @@
+{
+  "project_name": "tonyo_pyope",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T15:02:31.221589",
+  "original_path": "/workspace/verified_repos_v2/Python/tonyo_pyope",
+  "public_test_result_path": "/workspace/public_test_results/Python/tonyo_pyope",
+  "original_tests": {
+    "test_files": [
+      "tests/test_stat_core.py",
+      "tests/test_utils.py",
+      "tests/test_ope.py",
+      "tests/test_setup_py.py",
+      "tests/test_stat.py",
+      "tests/test_range.py",
+      "tests/test_errors.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_stat_core.py",
+      "public_tests/test_public_utils.py",
+      "public_tests/test_public_ope.py",
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_stat.py",
+      "public_tests/test_public_range.py",
+      "public_tests/test_public_errors.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_ope.py",
+      "public_tests/test_public_stat.py",
+      "public_tests/test_public_stat_core.py",
+      "public_tests/test_public_utils.py",
+      "public_tests/test_public_utils.py",
+      "public_tests/test_public_ope.py",
+      "public_tests/test_public_stat.py",
+      "public_tests/test_public_stat_core.py",
+      "public_tests/test_public_utils.py",
+      "public_tests/test_public_stat.py",
+      "public_tests/test_public_stat_core.py",
+      "public_tests/test_public_utils.py",
+      "public_tests/test_public_stat.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 22,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_stat_core.py",
+    "public_tests/test_public_utils.py",
+    "public_tests/test_public_ope.py",
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_stat.py",
+    "public_tests/test_public_range.py",
+    "public_tests/test_public_errors.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_ope.py",
+    "public_tests/test_public_stat.py",
+    "public_tests/test_public_stat_core.py",
+    "public_tests/test_public_utils.py",
+    "public_tests/test_public_utils.py",
+    "public_tests/test_public_ope.py",
+    "public_tests/test_public_stat.py",
+    "public_tests/test_public_stat_core.py",
+    "public_tests/test_public_utils.py",
+    "public_tests/test_public_stat.py",
+    "public_tests/test_public_stat_core.py",
+    "public_tests/test_public_utils.py",
+    "public_tests/test_public_stat.py"
+  ]
+}

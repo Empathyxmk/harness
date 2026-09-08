@@ -1,0 +1,44 @@
+tuenti_smsradar Go Project Structure:
+
+.
+├── README.md                       # Project overview and usage
+├── go.mod                          # Go module declaration and dependencies
+├── run_tests.sh                    # Simple script: runs all tests
+├── project_structure.txt           # This structure documentation
+├── tests/
+│   └── original/
+│       ├── shared_preferences_sms_storage_test.go
+│       ├── time_provider_test.go
+│       ├── sms_storage_test.go
+│       ├── sms_cursor_parser_test.go
+│       ├── sms_radar_service_test.go
+│       ├── sms_observer_test.go
+│       ├── sms_type_test.go
+│       ├── shared_preferences_sms_storage_dummy_test.go
+│       ├── sms_test.go
+│       ├── time_provider_dummy_test.go
+│       ├── sms_storage_dummy_test.go
+│       ├── sms_type_dummy_test.go
+│       └── testutil.go             # Shared helpers, minimal stubs
+├── public_tests/
+│   ├── shared_preferences_sms_storage_public_test.go
+│   ├── time_provider_public_test.go
+│   ├── sms_storage_public_test.go
+│   ├── sms_cursor_parser_public_test.go
+│   ├── sms_type_public_test.go
+│   ├── sms_observer_public_test.go
+│   ├── sms_radar_service_public_test.go
+│   ├── sms_test_public_test.go
+│   └── testutil_public.go          # Shared helpers/stubs for public tests
+└──
+
+Directory Explanations:
+- `tests/original/`: All original (private) test cases, named *_test.go per Go convention.
+- `public_tests/`: All public-facing tests, as derived from the source.
+- `testutil.go`/`testutil_public.go`: Minimal stubs/mocks to provide test isolation for types/functions (since production code is not provided).
+- `run_tests.sh`: Script to run all tests recursively.
+
+How to Run:
+    ./run_tests.sh
+
+No app/business logic is included: only the test harness and mocks to exercise the original tests.

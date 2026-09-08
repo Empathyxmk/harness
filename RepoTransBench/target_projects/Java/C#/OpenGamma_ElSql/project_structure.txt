@@ -1,0 +1,30 @@
+OpenGamma_ElSql/
+├── OpenGamma.ElSql.sln
+├── src/
+│   └── OpenGamma.ElSql/
+│       ├── OpenGamma.ElSql.csproj
+│       ├── (ElSql core library code: ElSql.cs, ElSqlConfig.cs, etc.)
+│       └── ... (other production code files)
+├── tests/
+│   └── original/
+│       ├── OpenGamma.ElSql.Tests.csproj
+│       ├── SpringSqlParamsTest.cs
+│       ├── ContainerSqlFragmentTest.cs
+│       ├── ElSqlBundleTest.cs
+│       ├── EqualsSqlFragmentTest.cs
+│       ├── ElSqlTest.cs
+│       ├── LineTest.cs
+│       ├── AndSqlFragmentTest.cs
+│       ├── FragmentTest.cs
+│       ├── EmptySqlParamsTest.cs
+│       ├── LoopSqlFragmentTest.cs
+│       ├── SqlFragmentsTest.cs
+│       ├── MapSqlParamsTest.cs
+│       └── ValueSqlFragmentTest.cs
+├── public_tests/
+│   ├── OpenGamma.ElSql.PublicTests.csproj
+│   ├── ElSqlBundlePublicTest.cs
+│   ├── SpringSqlParamsPublicTest.cs
+│   └── ContainerSqlFragmentPublicTest.cs
+├── test_translation_progress.json
+├── run_tests.sh

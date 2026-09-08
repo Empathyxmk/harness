@@ -1,0 +1,11 @@
+{
+  "project_name": "LatencyUtils_LatencyUtils",
+  "language": "Java",
+  "coverage": {
+    "line": 54.2,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-23T14:19:14.226296",
+  "original_path": "/workspace/runnable_filter/Java/LatencyUtils_LatencyUtils",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/LatencyUtils_LatencyUtils"
+}

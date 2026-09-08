@@ -1,0 +1,75 @@
+easy_thumbnails_rs/
+├── Cargo.toml                # Rust project manifest
+├── src/
+│   ├── lib.rs                # Main library file, re-exports all modules
+│   ├── files.rs
+│   ├── namers.rs
+│   ├── models.rs
+│   ├── aliases.rs
+│   ├── storage.rs
+│   ├── animated_formats.rs
+│   ├── thumbnail_cleanup.rs
+│   ├── source_generators.rs
+│   ├── conf.rs
+│   ├── widgets.rs
+│   ├── svg_processors.rs
+│   ├── engine.rs
+│   ├── fields.rs
+│   ├── management.rs
+│   ├── templatetags.rs
+│   └── pixel_processors.rs
+├── tests/
+│   └── original/
+│       ├── test_files.rs              # All original testcases translated
+│       ├── test_namers.rs
+│       ├── test_models.rs
+│       ├── test_aliases.rs
+│       ├── test_storage.rs
+│       ├── test_animated_formats.rs
+│       ├── test_thumbnail_cleanup.rs
+│       ├── test_source_generators.rs
+│       ├── test_conf.rs
+│       ├── test_widgets.rs
+│       ├── test_svg_processors.rs
+│       ├── test_engine.rs
+│       ├── test_fields.rs
+│       ├── test_management.rs
+│       ├── test_templatetags.rs
+│       └── test_pixel_processors.rs
+├── public_tests/
+│   ├── test_files_public.rs           # All public testcases translated
+│   ├── test_namers_public.rs
+│   ├── test_models_public.rs
+│   ├── test_aliases_public.rs
+│   ├── test_storage_public.rs
+│   ├── test_animated_formats_public.rs
+│   ├── test_thumbnail_cleanup_public.rs
+│   ├── test_source_generators_public.rs
+│   ├── test_conf_public.rs
+│   ├── test_widgets_public.rs
+│   ├── test_engine_public.rs
+│   ├── test_fields_public.rs
+│   ├── test_pixel_processors_public.rs
+│   ├── test_templatetags_public.rs
+│   └── ... (further public test files)
+├── run_tests.sh               # One-click test runner (bash, calls cargo test)
+├── README.md                  # Project overview and usage
+└── project_structure.txt      # This project structure document
+
+# Explanations:
+# - src/: Core library code. Each file is a Rust module, analogous to Python modules.
+# - tests/original/: Translated original Python unit/integration tests (Rust style, #[test]).
+# - public_tests/: Translated public test suite (Rust).
+# - Cargo.toml: Declares dependencies and project metadata.
+# - run_tests.sh: Minimal Bash script to run all Rust tests with one command.
+# - project_structure.txt: Current directory/project tree and documentation.
+
+# Setup and Usage:
+# 1. Install Rust toolchain (https://rustup.rs).
+# 2. In repo root, run: ./run_tests.sh
+# 3. All tests from `tests/original/` and `public_tests/` are discovered, built, and executed.
+# 4. Core logic stubs in src/, fully buildable and extendable.
+
+# Adding More Tests:
+# - Place Rust `#[test]` files in `tests/original/` or `public_tests/`.
+# - Run ./run_tests.sh to execute all tests.

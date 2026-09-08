@@ -1,0 +1,22 @@
+rbgirshick_yacs/
+├── go.mod
+├── README.md
+├── project_structure.txt
+├── run_tests.sh
+├── yacs/
+│   ├── config.go
+│   └── testutil.go
+├── tests/
+│   ├── config_additional_test.go
+│   └── test_config_additional.py
+└── public_tests/
+    ├── public_config_additional_test.go
+    └── test_public_config_additional.go
+    └── test_public_config_additional.py
+
+# Folder explanations:
+# - yacs/: Main package code (minimal implementation of yacs.config.CfgNode for necessary API)
+# - tests/: Original tests translated from Python (Go)
+# - public_tests/: Public tests translated from Python (Go)
+
+# To run all tests: ./run_tests.sh

@@ -1,0 +1,32 @@
+parametric_text/
+├── Cargo.toml               # Rust crate manifest
+├── src/
+│   ├── lib.rs               # Main library file, exposes APIs
+│   ├── paramparser.rs       # Rust translation of paramparser.py
+│   └── paramformatter.rs    # Rust translation of paramformatter.py
+├── tests/
+│   └── original/
+│       ├── parser_test.rs            # Translated test/parser_test.py
+│       ├── test_paramparser.rs       # Translated test/test_paramparser.py
+│       └── test_paramformatter.rs    # Translated test/test_paramformatter.py
+├── public_tests/
+│   ├── test_public_paramparser.rs    # Translated public_tests/test_public_paramparser.py
+│   ├── test_public_paramformatter.rs # Translated public_tests/test_public_paramformatter.py
+│   └── test_public_parser.rs         # Translated public_tests/test_public_parser.py
+├── run_tests.sh              # Simple one-click test execution script
+└── project_structure.txt     # This file
+
+Directory explanations:
+- src/:      Rust source code, library modules for paramparser/paramformatter.
+- tests/original/: Rust unit tests directly ported from original test suite.
+- public_tests/:  Rust unit tests ported from public test suite, (as integration tests).
+- Cargo.toml:  Project manifest, configure dependencies and version.
+- run_tests.sh:  Run all tests (original and public) with one command: ./run_tests.sh
+- project_structure.txt:  This document. Outlines layout and purpose.
+
+Test/integration running:
+    ./run_tests.sh
+No additional dependencies are required; default Rust testing via cargo is used.
+
+Original tests are in `tests/original/`.  
+Public ("open" or summary) tests are in `public_tests/`.

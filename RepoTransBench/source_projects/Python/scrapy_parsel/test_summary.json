@@ -1,0 +1,11 @@
+{
+  "project_name": "scrapy_parsel",
+  "language": "Python",
+  "coverage": {
+    "line": 96.0,
+    "branch": 95.4
+  },
+  "timestamp": "2025-06-23T10:36:16.386197",
+  "original_path": "/workspace/test_enhancement_results/Python/scrapy_parsel",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/scrapy_parsel"
+}

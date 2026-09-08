@@ -1,0 +1,32 @@
+project_root/
+├── README.md                   # Project overview and instructions
+├── requirements.txt            # Python dependencies (pytest)
+├── run_tests.sh                # One-click test execution script
+├── src/
+│   └── libhfs_unicode.py       # Minimal unicode logic implementation for tests
+├── tests/
+│   ├── __init__.py             # Tests package init
+│   └── original/
+│       ├── __init__.py         # Original tests package init
+│       └── test_unicode.py     # Translation of C source tests
+├── public_tests/
+│   ├── __init__.py             # Public tests package init
+│   └── test_unicode_public.py  # Translated public C tests
+
+Breakdown:
+- src/:
+    Holds the python version of the unicode logic, just enough to run/test the suite.
+- tests/original/:
+    Contains the translation of all project-internal/original C unit tests.
+- public_tests/:
+    Contains all translated public/extra/externalized test cases.
+- requirements.txt:
+    For `pytest` dependency.
+- run_tests.sh:
+    One-click to run all tests.
+- README.md:
+    Documentation and instructions.
+
+Usage:
+- Run `pip install -r requirements.txt` to install test dependencies.
+- Call `./run_tests.sh` to run the full suite.

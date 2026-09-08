@@ -1,0 +1,39 @@
+project_root/
+├── CMakeLists.txt
+├── include/
+│   └── [header files for ovh_celery_dyrygent API & mocks]
+├── src/
+│   └── lib/
+│       ├── workflow.cpp
+│       ├── tasks.cpp
+│       ├── entities.cpp
+│       └── inspect.cpp
+├── tests/
+│   ├── test_main.cpp
+│   └── original/
+│       ├── test_tasks.cpp
+│       ├── test_imports_and_version.cpp
+│       ├── test_workflows_core.cpp
+│       ├── test_workflows.cpp
+│       ├── test_inspect.cpp
+│       └── component/
+│           ├── test_celery.cpp
+│           ├── test_tasks.cpp
+│           └── test_workflows.cpp
+│       └── integration/
+│           └── test_integration.cpp
+├── public_tests/
+│   ├── unit/
+│   │   ├── test_inspect_public.cpp
+│   │   ├── test_tasks_public.cpp
+│   │   ├── test_workflows_core_public.cpp
+│   │   ├── test_imports_and_version_public.cpp
+│   │   └── test_workflows_public.cpp
+│   ├── component/
+│   │   ├── test_celery_public.cpp
+│   │   ├── test_tasks_public.cpp
+│   │   └── test_workflows_public.cpp
+│   └── integration/
+│       └── test_integration_public.cpp
+├── run_tests.sh
+└── tests/test_main.cpp

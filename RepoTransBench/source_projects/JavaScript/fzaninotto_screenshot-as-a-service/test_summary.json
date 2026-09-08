@@ -1,0 +1,11 @@
+{
+  "project_name": "fzaninotto_screenshot-as-a-service",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 51.61,
+    "branch": 51.85
+  },
+  "timestamp": "2025-06-19T10:27:35.592529",
+  "original_path": "/workspace/runnable_filter/JavaScript/fzaninotto_screenshot-as-a-service",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/fzaninotto_screenshot-as-a-service"
+}

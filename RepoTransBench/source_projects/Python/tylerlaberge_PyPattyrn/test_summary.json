@@ -1,0 +1,11 @@
+{
+  "project_name": "tylerlaberge_PyPattyrn",
+  "language": "Python",
+  "coverage": {
+    "line": 69.6,
+    "branch": 51.7
+  },
+  "timestamp": "2025-06-19T13:01:40.960391",
+  "original_path": "/workspace/runnable_filter/Python/tylerlaberge_PyPattyrn",
+  "test_result_path": "/workspace/test_enhancement_results/Python/tylerlaberge_PyPattyrn"
+}

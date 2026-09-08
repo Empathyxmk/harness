@@ -1,0 +1,22 @@
+asynts_pico-os/
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── project_structure.txt
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_armed_scope_guard.py
+│       ├── test_circular_queue.py
+│       ├── test_Generator.py
+│       ├── test_RelocationTable.py
+│       ├── test_StringTable.py
+│       └── test_main.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_generator_public.py
+│   ├── test_relocation_table_public.py
+│   ├── test_string_table_public.py
+│   └── test_main_public.py
+...

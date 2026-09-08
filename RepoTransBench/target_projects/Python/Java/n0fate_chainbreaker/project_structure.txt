@@ -1,0 +1,41 @@
+n0fate_chainbreaker-java/
+├── pom.xml                      # Maven build and dependency config
+├── run_tests.sh                 # One-click test run script (mvn clean test)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── n0fate/
+│   │               └── chainbreaker/
+│   │                   └── Dummy.java  # Non-empty required (replace with real code)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── n0fate/
+│                   └── chainbreaker/
+│                       ├── original/
+│                       │   ├── SchemaTest.java         # Original (private/dev) test translations
+│                       │   ├── InitChainbreakerTest.java
+│                       │   ├── CommandLineTest.java
+│                       │   ├── ResultsTest.java
+│                       │   └── VersionTest.java
+│                       └── publictests/
+│                           ├── PublicInitChainbreakerTest.java  # Public test translations
+│                           ├── PublicCommandLineTest.java
+│                           ├── PublicVersionTest.java
+│                           ├── PublicSchemaTest.java
+│                           └── PublicResultsTest.java
+└── project_structure.txt        # This file (project structure doc)
+
+# Directory explanations:
+# - src/main/java/...: (Application code)
+# - src/test/java/com/n0fate/chainbreaker/original/: Private/dev test logic (from tests/)
+# - src/test/java/com/n0fate/chainbreaker/publictests/: Public test logic (from public_tests/)
+# - pom.xml:           Maven dependencies and test setup (JUnit 5, etc.)
+# - run_tests.sh:      ./run_tests.sh runs all tests (original + public)
+# 
+# Setup/Run:
+#   $ chmod +x run_tests.sh
+#   $ ./run_tests.sh
+# 
+# All tests under both test/original/ and test/publictests/ will be executed.

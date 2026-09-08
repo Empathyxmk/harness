@@ -1,0 +1,48 @@
+project_root/
+├── CMakeLists.txt
+├── include/
+│   └── (library *.h files as needed, e.g. jwt_utils.h)
+├── src/
+│   └── (library *.cpp files as needed, e.g. jwt_utils.cpp)
+├── tests/
+│   ├── original/
+│   │   ├── test_json_test.cpp
+│   │   ├── test_user_lookup_test.cpp
+│   │   ├── test_claims_verification_test.cpp
+│   │   ├── test_headers_test.cpp
+│   │   ├── test_additional_claims_loader_test.cpp
+│   │   ├── test_jwt_header_loader_test.cpp
+│   │   ├── test_get_methods_in_optional_endpoint_test.cpp
+│   │   ├── test_add_context_processor_test.cpp
+│   │   ├── test_get_jwt_in_non_protected_contexts_test.cpp
+│   │   ├── test_decode_tokens_test.cpp
+│   │   ├── test_blocklist_test.cpp
+│   │   ├── test_options_method_test.cpp
+│   │   ├── test_query_string_test.cpp
+│   │   ├── test_multiple_token_locations_test.cpp
+│   │   ├── test_examples_integrated_test.cpp
+│   │   ├── test_asymmetric_crypto_test.cpp
+│   │   └── test_cookies_test.cpp
+│   ├── test_main.cpp
+├── public_tests/
+│   ├── test_public_additional_claims_loader_test.cpp
+│   ├── test_public_options_method_test.cpp
+│   ├── test_public_json_test.cpp
+│   ├── test_public_multiple_token_locations_test.cpp
+│   ├── test_public_jwt_header_loader_test.cpp
+│   ├── test_public_asymmetric_crypto_test.cpp
+│   ├── test_public_cookies_test.cpp
+│   ├── test_public_add_context_processor_test.cpp
+│   ├── test_public_view_decorators_test.cpp
+│   ├── test_public_query_string_test.cpp
+│   ├── test_public_user_lookup_test.cpp
+│   ├── test_public_get_jwt_in_non_protected_contexts_test.cpp
+│   ├── test_public_claims_verification_test.cpp
+│   ├── test_public_get_methods_in_optional_endpoint_test.cpp
+│   ├── test_public_decode_tokens_test.cpp
+│   ├── test_public_blocklist_test.cpp
+│   ├── test_public_examples_integrated_test.cpp
+│   ├── test_public_headers_test.cpp
+│   └── test_public_config_test.cpp
+├── run_tests.sh
+└── test_translation_progress.json

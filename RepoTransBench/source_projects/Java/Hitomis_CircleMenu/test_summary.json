@@ -1,0 +1,11 @@
+{
+  "project_name": "Hitomis_CircleMenu",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T20:30:58.805273",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/Hitomis_CircleMenu",
+  "test_result_path": "/workspace/test_enhancement_results/Java/Hitomis_CircleMenu"
+}

@@ -1,0 +1,60 @@
+{
+  "project_name": "casidiablo_multidex",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:13:08.608257",
+  "original_path": "/workspace/verified_repos_v2/Java/casidiablo_multidex",
+  "public_test_result_path": "/workspace/public_test_results/Java/casidiablo_multidex",
+  "original_tests": {
+    "test_files": [
+      "library/test/src/android/support/multidex/MultiDexTest.java",
+      "library/test/src/android/support/multidex/MultiDexStandaloneTest.java",
+      "library/test/src/android/support/multidex/ZipUtilTest.java",
+      "library/test/src/android/support/multidex/MultiDexExtractorTest.java",
+      "library/test/src/android/support/multidex/ZipUtilExtraTest.java",
+      "library/test/src/android/support/multidex/MultiDexApplicationTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "library/test/src/android/support/multidex/MultiDexPublicTest.java",
+      "library/test/src/android/support/multidex/MultiDexStandalonePublicTest.java",
+      "run_public_tests.sh",
+      "library/test/src/android/support/multidex/ZipUtilPublicTest.java",
+      "library/test/src/android/support/multidex/ZipUtilExtraPublicTest.java",
+      "library/test/src/android/support/multidex/MultiDexExtractorPublicTest.java",
+      "library/test/src/android/support/multidex/MultiDexApplicationPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "library/test/src/android/support/multidex/MultiDexPublicTest.java",
+    "library/test/src/android/support/multidex/MultiDexStandalonePublicTest.java",
+    "run_public_tests.sh",
+    "library/test/src/android/support/multidex/ZipUtilPublicTest.java",
+    "library/test/src/android/support/multidex/ZipUtilExtraPublicTest.java",
+    "library/test/src/android/support/multidex/MultiDexExtractorPublicTest.java",
+    "library/test/src/android/support/multidex/MultiDexApplicationPublicTest.java",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

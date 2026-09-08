@@ -1,0 +1,33 @@
+syrusakbary_aiodataloader/
+├── src/
+│   └── lib.rs
+├── tests/
+│   └── original/
+│       ├── test_aiodataloader.rs
+│       └── test_additional_aiodataloader.rs
+├── public_tests/
+│   ├── test_public_aiodataloader.rs
+│   └── test_public_additional_aiodataloader.rs
+├── Cargo.toml
+├── README.md
+├── run_tests.sh
+└── project_structure.txt
+
+---
+
+- **src/**: Rust library root. All test modules use the src crate.
+  - **lib.rs**: Add your DataLoader/iscoroutine implementation here.
+- **tests/original/**: All "original" non-public Python tests, faithfully converted to fully-implemented Rust with all logic/edge cases.
+- **public_tests/**: All "public" test cases (for public test results), faithfully converted to Rust.
+- **Cargo.toml**: Rust package config. All dependencies to run tests (tokio, futures, once_cell) are present.
+- **run_tests.sh**: One-click test runner (runs both `tests/` and `public_tests/`).
+- **README.md**: High-level usage and test organization notes.
+- **project_structure.txt**: This file, for structure documentation and usage.
+
+**How to add your library code:**
+
+- Implement the `dataloader` module and any necessary helpers in `src/lib.rs` so all translated tests pass!
+- All tests assume the same logic and interface as the Python reference.
+
+**To run all tests:**  
+`./run_tests.sh`

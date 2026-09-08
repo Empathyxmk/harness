@@ -1,0 +1,17 @@
+{
+  "project_name": "scrapy-plugins_scrapy-jsonrpc",
+  "language": "Python",
+  "coverage": {
+    "line": 56.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T12:29:07.880976",
+  "original_path": "/workspace/runnable_filter/Python/scrapy-plugins_scrapy-jsonrpc",
+  "test_result_path": "/workspace/test_enhancement_results/Python/scrapy-plugins_scrapy-jsonrpc",
+  "tests_path": [
+    "tests/test_txweb.py",
+    "tests/test_jsonrpc.py",
+    "tests/test_serialize.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

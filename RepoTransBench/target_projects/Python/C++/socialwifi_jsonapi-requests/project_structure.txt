@@ -1,0 +1,37 @@
+project_root/
+├── CMakeLists.txt                               # Top-level CMake configuration file for building project and tests
+├── README.md                                    # Project documentation and setup instructions
+├── include/                                     # Header files for the C++ codebase
+│   └── ...                                      # (headers, e.g., configuration.h, data.h, request_factory.h, etc.)
+├── src/                                         # Implementation files for library
+│   ├── main.cpp                                 # (could be empty or demo)
+│   └── ...                                      # (e.g., configuration.cpp, data.cpp, request_factory.cpp, etc.)
+├── tests/                                       # Original tests, mapped from Python 'tests/'
+│   ├── test_auth.cpp
+│   ├── test_data.cpp
+│   ├── test_orm.cpp
+│   ├── test_request_factory.cpp
+│   ├── test_request_factory_branch.cpp
+│   └── test_main.cpp                            # Test runner main for Google Test
+├── public_tests/                                # Public tests provided by the challenge, mapped to C++
+│   ├── test_public_auth.cpp
+│   ├── test_public_data.cpp
+│   ├── test_public_orm.cpp
+│   ├── test_public_request_factory.cpp
+│   ├── test_public_request_factory_branch.cpp
+│   └── test_public_main.cpp                     # Test runner main for Google Test (public tests)
+└── run_tests.sh                                 # Simple test runner script, builds and runs all tests
+
+Explanations:
+- include/: All public headers for API to be tested. They must declare the C++ analogues of the interfaces found in the Python code. Test mocks/classes must reference these.
+- src/: Sources for the project. If functionality is not implemented yet, provide the basic stubs so tests can link/compile.
+- tests/: Contains all the C++ translations of the original 'tests/' Python files, one per file. Also includes the main() runner for Google Test.
+- public_tests/: Contains all the C++ translations of the public test files. Also includes a main() runner for Google Test.
+- CMakeLists.txt: CMake configuration; defines the targets for unit tests.
+- run_tests.sh: One-click script to configure, build, and run all test binaries.
+- README.md: Project overview and instructions.
+
+Test Structure:
+- Each .cpp test file corresponds to a Python test file, with the same classes and logic, using Google Test.
+- Each test method is converted to a TEST() or TEST_F() case.
+- Both original (private) and public (challenge) tests are built as separate targets/binaries to mirror the Python arrangement.

@@ -1,0 +1,14 @@
+codeplea_genann_rs/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   └── original/
+│       ├── test.rs
+│       └── test_edgecases.rs
+├── public_tests/
+│   ├── test_public_edgecases.rs
+│   ├── test_public_preset_read.rs
+│   └── test_public_xor_and.rs
+├── run_tests.sh
+└── project_structure.txt

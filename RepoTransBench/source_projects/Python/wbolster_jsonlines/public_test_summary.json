@@ -1,0 +1,55 @@
+{
+  "project_name": "wbolster_jsonlines",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:26:43.728016",
+  "original_path": "/workspace/verified_repos_v2/Python/wbolster_jsonlines",
+  "public_test_result_path": "/workspace/public_test_results/Python/wbolster_jsonlines",
+  "original_tests": {
+    "test_files": [
+      "tests/test_jsonlines_extra.py",
+      "tests/test_typing.py",
+      "tests/test_jsonlines.py",
+      "tests/test_error_conditions.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 4,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_jsonlines_extra.py",
+      "public_tests/test_public_typing.py",
+      "public_tests/test_public_jsonlines.py",
+      "public_tests/test_public_error_conditions.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_error_conditions.py",
+      "public_tests/test_public_error_conditions.py",
+      "public_tests/test_public_error_conditions.py",
+      "public_tests/test_public_error_conditions.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_jsonlines_extra.py",
+    "public_tests/test_public_typing.py",
+    "public_tests/test_public_jsonlines.py",
+    "public_tests/test_public_error_conditions.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_error_conditions.py",
+    "public_tests/test_public_error_conditions.py",
+    "public_tests/test_public_error_conditions.py",
+    "public_tests/test_public_error_conditions.py"
+  ]
+}

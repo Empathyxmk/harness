@@ -1,0 +1,29 @@
+{
+  "name": "insane",
+  "version": "2.6.2",
+  "description": "Lean and configurable whitelist-oriented HTML sanitizer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bevacqua/insane.git"
+  },
+  "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (https://ponyfoo.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bevacqua/insane/issues"
+  },
+  "homepage": "https://github.com/bevacqua/insane",
+  "main": "insane.js",
+  "browser": {
+    "he": "./she.js"
+  },
+  "scripts": {
+    "test": "tape test/**/*.js"
+  },
+  "devDependencies": {
+    "assignment": "^2.2.1",
+    "he": "^1.2.0",
+    "jest": "^30.0.1",
+    "sinon": "1.17.5",
+    "tape": "3.5.0"
+  }
+}

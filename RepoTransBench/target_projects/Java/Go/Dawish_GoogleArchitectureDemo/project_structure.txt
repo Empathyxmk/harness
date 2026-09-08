@@ -1,0 +1,45 @@
+dawish_googlearchitecturedemo/
+├── go.mod
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── coremodel/
+│   │   │   ├── example_instrumented_test.go
+│   │   │   ├── exampleunit_test.go
+│   │   │   └── util/
+│   │   │       ├── jsonutil_test.go
+│   │   │       ├── switchschedulers_test.go
+│   │   │       └── netutils_test.go
+│   │   ├── universal/
+│   │   │   ├── example_instrumented_test.go
+│   │   │   └── exampleunit_test.go
+│   │   ├── girls/
+│   │   │   ├── example_instrumented_test.go
+│   │   │   └── exampleunit_test.go
+│   │   ├── specific/
+│   │   │   ├── example_instrumented_test.go
+│   │   │   └── exampleunit_test.go
+│   │   ├── common/
+│   │   │   ├── example_instrumented_test.go
+│   │   │   ├── exampleunit_test.go
+│   │   │   ├── testservice.go
+│   │   │   └── testserviceimpl.go
+│   │   ├── news/
+│   │   │   ├── example_instrumented_test.go
+│   │   │   └── exampleunit_test.go
+│   │   ├── opensource/
+│   │   │   ├── example_instrumented_test.go
+│   │   │   └── exampleunit_test.go
+│   └── testutil.go
+├── public_tests/
+│   ├── coremodel/
+│   │   ├── example_instrumented_public_test.go
+│   │   ├── exampleunit_public_test.go
+│   │   ├── publictests/
+│   │   │   └── exampleunit_public_test.go
+│   │   └── util/
+│   │       ├── jsonutil_public_test.go
+│   │       ├── netutils_public_test.go
+│   │       └── switchschedulers_public_test.go
+├── README.md

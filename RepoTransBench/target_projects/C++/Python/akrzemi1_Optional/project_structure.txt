@@ -1,0 +1,32 @@
+project_root/
+├── requirements.txt                # Python requirements file (pytest)
+├── run_tests.sh                    # Script to run all tests with one command
+├── project_structure.txt           # This file: project structure overview
+├── tests/
+│   ├── __init__.py                 # Makes 'tests' a Python package
+│   └── original/
+│       ├── __init__.py             # For original test module
+│       ├── test_optional_extra.py  # Translated from test_optional_extra.cpp
+│       └── test_type_traits.py     # Translated from test_type_traits.cpp
+├── public_tests/
+│   ├── __init__.py                 # Makes 'public_tests' a package
+│   ├── test_optional_extra_public.py
+│   ├── test_type_traits_public.py
+│   └── test_optional_public.py
+└── README.md                       # (Instructional: Add usage/setup)
+
+# Directory/Files explanation:
+# - requirements.txt: Lists 'pytest' for dependency installation.
+# - run_tests.sh: Simple executable to run ALL tests using pytest.
+# - tests/original/: All original (non-public) translated tests.
+# - public_tests/: All auto-generated public tests, clearly separated.
+# - __init__.py: Required for package/module recognition.
+# - project_structure.txt: Overview and instructions.
+# - README.md: For instructions to set up and test (add more as needed).
+
+# Setup:
+#   pip install -r requirements.txt
+# Testing:
+#   chmod +x run_tests.sh
+#   ./run_tests.sh
+# All tests from both 'tests/original' and 'public_tests' will be discovered and executed.

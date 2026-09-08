@@ -1,0 +1,44 @@
+drakeet_Floo_CSharp/
+├── src/
+│   └── Drakeet.Floo/
+│       ├── Drakeet.Floo.csproj                # Source library project
+│       ├── Program.cs                         # (if needed, minimal or none)
+│       ├── Urls.cs                            # Placeholder for Url/URLs functionality (for test compile)
+│       ├── OtherClassStubs.cs                 # Stubs for types used in tests (Stack, Chain, Preconditions, etc)
+│       └── ...                                # Any additional necessary stubs for test compilation
+├── tests/
+│   └── original/
+│       ├── Drakeet.Floo.OriginalTests.csproj  # Test project for original tests
+│       ├── ChainTests.cs
+│       ├── InvalidJsonExceptionTests.cs
+│       ├── PreconditionsTests.cs
+│       ├── StackManagerTests.cs
+│       ├── StackStatesTests.cs
+│       ├── StackTests.cs
+│       ├── TargetTests.cs
+│       ├── TargetMapTests.cs
+│       ├── UrlsTests.cs
+│       ├── sample/
+│       │   ├── WebHandlerTests.cs
+│       │   ├── TargetNotFoundToasterTests.cs
+│       │   └── URLsTests.cs
+│       └── TestUtilities.cs                    # Shared test utilities/mocks if needed
+├── public_tests/
+│   ├── Drakeet.Floo.PublicTests.csproj         # Test project for public tests
+│   ├── ChainPublicTests.cs
+│   ├── InvalidJsonExceptionPublicTests.cs
+│   ├── PreconditionsPublicTests.cs
+│   ├── StackManagerPublicTests.cs
+│   ├── StackStatesPublicTests.cs
+│   ├── StackPublicTests.cs
+│   ├── TargetMapPublicTests.cs
+│   ├── TargetPublicTests.cs
+│   ├── UrlsPublicTests.cs
+│   ├── sample/
+│   │   ├── WebHandlerPublicTests.cs
+│   │   ├── TargetNotFoundToasterPublicTests.cs
+│   │   └── URLsPublicTests.cs
+├── Drakeet.Floo.sln                            # Solution containing src/tests/public_tests
+├── run_tests.sh                                # Simple script to run all tests
+├── README.md                                   # Project / test setup and run instructions
+└── (other standard solution files)

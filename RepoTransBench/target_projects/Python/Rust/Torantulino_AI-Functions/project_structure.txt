@@ -1,0 +1,45 @@
+torantulino_ai_functions/              # Project root (Rust crate)
+│
+├── Cargo.toml                         # Rust package manifest (dependencies, metadata, etc.)
+├── run_tests.sh                       # Simple shell script to run all tests with `cargo test`
+├── src/
+│   └── lib.rs                         # Library source with AI function stubs and test hooks
+│
+├── tests/
+│   └── original/
+│       └── test_ai_function.rs        # Rust translations of original private tests
+│
+├── public_tests/
+│   └── test_public_ai_function.rs     # Rust translations of public test suite
+│
+├── project_structure.txt              # This file (project structure + documentation)
+│
+└── README.md                          # Project information (not included here, recommended)
+
+# Directory explanations:
+
+src/lib.rs
+    Provides the main ai_function logic, used both in production and test.
+    Mocks for OpenAI/completions are injected via a stub to be overridden by tests.
+
+tests/original/
+    Contains all Rust translations of the project's "original" (i.e., internal/private) test cases.
+    Uses #[test] functions and asserts equivalently to the Python originals.
+
+public_tests/
+    Contains all Rust translations of the public tests, also using #[test].
+
+run_tests.sh
+    One-click bash script; runs all tests using `cargo test`. Usage:
+        chmod +x run_tests.sh
+        ./run_tests.sh
+
+Cargo.toml
+    Standard Rust project manifest.
+    Includes the minimal [dev-dependencies] needed for test mocking (here, lazy_static).
+
+How to run tests:
+    1. If not already, run: chmod +x run_tests.sh
+    2. To run all tests (original and public): ./run_tests.sh
+
+No manual dependency installation is required; all test dependencies are in Cargo.toml.

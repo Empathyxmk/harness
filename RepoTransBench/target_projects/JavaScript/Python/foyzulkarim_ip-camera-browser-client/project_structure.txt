@@ -1,0 +1,27 @@
+project_root/
+├── run_tests.sh               # Simple script to run all tests. Usage: ./run_tests.sh
+├── requirements.txt           # Python dependencies (pytest included)
+├── src/
+│   ├── __init__.py            # Marks src/ as a Python package
+│   └── ip_camera_utils.py     # Core source code: logic for get_snapshot_url, is_online
+├── tests/
+│   ├── __init__.py            # Marks tests/ as a Python package
+│   └── original/
+│       ├── __init__.py        # Marks tests/original/ as package
+│       └── test_ip_camera_utils.py  # Original test cases from JavaScript 'tests/ipCameraUtils.test.js'
+├── public_tests/
+│   ├── __init__.py            # Marks public_tests/ as Python package
+│   └── test_ip_camera_utils_public.py # Public tests from 'public_tests/ipCameraUtils.public.test.js'
+
+# Explanations:
+# - src/: Source code for application logic to be tested.
+# - tests/original/: Original (non-public) test cases as per original repo
+# - public_tests/: Public test cases as per public_tests in source repo
+# - requirements.txt: Install with `pip install -r requirements.txt`
+# - run_tests.sh: Run all tests in the project with `./run_tests.sh`
+#   (pytest will discover tests in both tests/ and public_tests/)
+# 
+# Setup:
+#   pip install -r requirements.txt
+# To run all tests:
+#   ./run_tests.sh

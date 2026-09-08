@@ -1,0 +1,53 @@
+{
+  "project_name": "1321928757_Concurrent-MulThread",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:48:34.126427",
+  "original_path": "/workspace/verified_repos_v2/Java/1321928757_Concurrent-MulThread",
+  "public_test_result_path": "/workspace/public_test_results/Java/1321928757_Concurrent-MulThread",
+  "original_tests": {
+    "test_files": [
+      "4-thread-query-master/src/test/java/com/luckysj/demo/concurrent/UserServiceImplTest.java",
+      "3-moniyace-master/src/main/java/com/luckysj/demo/concurrent/ConcurrenceTest.java",
+      "6-AQS-customize-synchronizer/src/main/java/com/luckysj/synchronizer/Test.java",
+      "5-simple-thread-pool/src/main/java/com/luckysj/threadpool/MainTest.java",
+      "7-lock-performance-test/src/main/java/com/luckys/locktest/LockPerformanceTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "4-thread-query-master/src/test/java/com/luckysj/demo/concurrent/UserServiceImplPublicTest.java",
+      "3-moniyace-master/src/test/java/com/luckysj/demo/concurrent/ConcurrencePublicTest.java",
+      "6-AQS-customize-synchronizer/src/test/java/com/luckysj/synchronizer/OnlySyncByAQSPublicTest.java",
+      "5-simple-thread-pool/src/test/java/com/luckysj/threadpool/MainPublicTest.java",
+      "7-lock-performance-test/src/test/java/com/luckys/locktest/LockPerformancePublicTest.java",
+      "run_public_tests.sh",
+      "4-thread-query-master/src/test/java/com/luckysj/demo/concurrent/UserServiceImplPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "4-thread-query-master/src/test/java/com/luckysj/demo/concurrent/UserServiceImplPublicTest.java",
+    "3-moniyace-master/src/test/java/com/luckysj/demo/concurrent/ConcurrencePublicTest.java",
+    "6-AQS-customize-synchronizer/src/test/java/com/luckysj/synchronizer/OnlySyncByAQSPublicTest.java",
+    "5-simple-thread-pool/src/test/java/com/luckysj/threadpool/MainPublicTest.java",
+    "7-lock-performance-test/src/test/java/com/luckys/locktest/LockPerformancePublicTest.java",
+    "run_public_tests.sh",
+    "4-thread-query-master/src/test/java/com/luckysj/demo/concurrent/UserServiceImplTest.java",
+    "4-thread-query-master/src/test/java/com/luckysj/demo/concurrent/UserServiceImplPublicTest.java"
+  ]
+}

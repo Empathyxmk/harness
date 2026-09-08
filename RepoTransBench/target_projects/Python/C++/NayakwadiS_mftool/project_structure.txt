@@ -1,0 +1,38 @@
+Project Structure for NayakwadiS_mftool (C++ Translation):
+
+.
+├── CMakeLists.txt            # Root CMake config, includes both test directories.
+├── include/                  # (Optional) Project headers (if implementing source in future).
+├── public_tests/             # Public-facing C++ test cases (Google Test).
+│   ├── CMakeLists.txt        # Build config for public tests.
+│   ├── test_public_mftool_class.cpp
+│   ├── test_public_utils.cpp
+│   └── test_public_mftool_init.cpp
+├── run_tests.sh              # Simple script: builds and runs all C++ tests (original & public)
+├── src/                      # (Optional) Implementation code (would contain main logic if present).
+├── tests/                    # Original/internal C++ test cases (Google Test).
+│   ├── CMakeLists.txt
+│   ├── test_mftool_class.cpp
+│   ├── test_mftool_init.cpp
+│   ├── test_utils.cpp
+│   └── mftool_tests.cpp
+└── project_structure.txt     # This file (structure/description)
+
+Directory/Component Descriptions:
+- /tests: All original/internal test cases translated to C++ using Google Test.
+- /public_tests: All public/demo test cases translated to C++ using Google Test.
+- /run_tests.sh: One-click build and run script for all tests (make sure it's executable via 'chmod +x run_tests.sh').
+- /CMakeLists.txt: Root CMake build file, sets C++ standard, configures all test binaries.
+- /include: Placeholder for library headers if main library code is ported to C++.
+- /src: Placeholder for library implementation files if ported.
+- /project_structure.txt: Documentation of project tree and explanation.
+
+Dependencies:
+- Google Test (GTest)
+- nlohmann/json and jsoncpp (header-only, for JSON operations used in stubs)
+  * Install system-wide or as per package manager: e.g., `apt-get install libgtest-dev nlohmann-json3-dev libjsoncpp-dev`.
+
+Build/Run Instructions:
+1. Install the dependencies above.
+2. Run:   ./run_tests.sh
+   - This builds both test binaries and executes all tests (original and public).

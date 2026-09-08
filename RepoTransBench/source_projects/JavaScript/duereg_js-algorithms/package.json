@@ -1,0 +1,64 @@
+{
+  "name": "js-algorithms",
+  "description": "Javascript versions of classic software development algorithms",
+  "version": "1.9.2",
+  "main": "index.js",
+  "repository": "git@github.com:duereg/js-algorithms.git",
+  "devDependencies": {
+    "c8": "^10.1.3",
+    "eslint": "^8.48.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.3",
+    "jasmine": "^4.6.0",
+    "lodash": "^4.17.11",
+    "nyc": "^17.1.0",
+    "sinon": "^10.0.0"
+  },
+  "author": {
+    "name": "Matt Blair",
+    "email": "matt@mattblair.co",
+    "url": "http://blog.mattblair.co"
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=8"
+  },
+  "maintainers": [
+    {
+      "name": "Matt Blair",
+      "email": "matt@mattblair.co",
+      "web": "http://blog.mattblair.co"
+    }
+  ],
+  "scripts": {
+    "pretest": "npm install",
+    "test": "node_modules/.bin/jasmine",
+    "lint": "eslint ./ --fix"
+  },
+  "keywords": [
+    "algorithms",
+    "dataStructures",
+    "binaryHeap",
+    "binarySearchTree",
+    "bst",
+    "linkedList",
+    "maxHeap",
+    "minHeap",
+    "queue",
+    "stack",
+    "stackQueue",
+    "trie",
+    "permutation",
+    "shuffle",
+    "Fisher-Yates",
+    "palindrome",
+    "sort",
+    "depthFirstSearch",
+    "mergeSort",
+    "quickSort",
+    "smallestEnclosingCircle",
+    "suffixTree"
+  ]
+}

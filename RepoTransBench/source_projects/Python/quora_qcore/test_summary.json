@@ -1,0 +1,31 @@
+{
+  "project_name": "quora_qcore",
+  "language": "Python",
+  "coverage": {
+    "line": 95.0,
+    "branch": 88.4
+  },
+  "timestamp": "2025-06-19T12:22:32.726008",
+  "original_path": "/workspace/runnable_filter/Python/quora_qcore",
+  "test_result_path": "/workspace/test_enhancement_results/Python/quora_qcore",
+  "tests_path": [
+    "qcore/tests/test_enum.py",
+    "qcore/tests/test_asserts.py",
+    "qcore/tests/test_decorators.py",
+    "qcore/tests/test_testing.py",
+    "qcore/tests/test_examples.py",
+    "qcore/tests/test_debug_extra.py",
+    "qcore/tests/test_microtime.py",
+    "qcore/tests/test_debug.py",
+    "qcore/tests/test_events.py",
+    "qcore/tests/test_caching.py",
+    "qcore/tests/test_errors_extra.py",
+    "qcore/tests/test_helpers.py",
+    "qcore/tests/test_microtime_extra.py",
+    "qcore/tests/test_disallow_inheritance.py",
+    "qcore/tests/test_errors.py",
+    "qcore/tests/test_inspection.py",
+    "qcore/tests/test_inspectable_class.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

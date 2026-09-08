@@ -1,0 +1,32 @@
+openwifipass-cpp/
+├── CMakeLists.txt
+├── README.md
+├── include/
+│   └── (headers for library code)
+├── public_tests/
+│   ├── test_public_connection.cpp
+│   ├── test_public_grantorhandler.cpp
+│   ├── test_public_keys.cpp
+│   ├── test_public_opack.cpp
+│   ├── test_public_opack_extra.cpp
+│   ├── test_public_scanner.cpp
+│   ├── test_public_tlv8.cpp
+│   ├── test_public_tlv8_extra.cpp
+│   └── (other public test .cpp files)
+├── src/
+│   ├── main.cpp
+│   └── lib/
+│       ├── (library implementation .cpp/.h)
+├── tests/
+│   └── original/
+│       ├── test_connection.cpp
+│       ├── test_grantorhandler.cpp
+│       ├── test_keys.cpp
+│       ├── test_opack.cpp
+│       ├── test_opack_extra.cpp
+│       ├── test_scanner.cpp
+│       ├── test_tlv8.cpp
+│       ├── test_tlv8_extra.cpp
+│       └── (other original test .cpp files)
+├── run_tests.sh
+└── test_translation_progress.json

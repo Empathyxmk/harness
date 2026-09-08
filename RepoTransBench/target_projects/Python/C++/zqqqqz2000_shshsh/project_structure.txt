@@ -1,0 +1,39 @@
+Project Structure for zqqqqz2000_shshsh (C++ translation)
+=========================================================
+
+.
+├── CMakeLists.txt                   # Top-level build configuration (uses GoogleTest)
+├── README.md                        # Project README
+├── include/                         # Common C++ headers (empty or stubs if source is unavailable)
+├── public_tests/                    # All translated public tests (test_public_*.cpp)
+│   └── ...                          # Each file corresponds to a public Python test
+├── run_tests.sh                     # Simple, one-click test execution script
+├── src/                             # Project source code (empty or stub if original implementation not provided)
+│   └── CMakeLists.txt               # Library or stub build rules
+├── tests/
+│   ├── original/                    # All translated original test cases
+│   │   └── ...                      # Each file = one original Python test
+│   └── test_main.cpp                # Main entry for GoogleTest runner
+└── project_structure.txt            # This documentation
+
+Directory Explanations:
+-----------------------
+include/           - For project header files (.h). Add your APIs & class declarations here.
+src/               - Implementation files (.cpp). Here goes your core logic if implemented.
+public_tests/      - Contains public test cases, matching all public_tests/test_public_*.py.
+tests/original/    - Contains original (private/internal) test cases, matching tests/test_*.py.
+tests/test_main.cpp- The main() for test harness—compiles all test code for GoogleTest.
+run_tests.sh       - Build everything and run all tests via ./run_tests.sh (exits nonzero if any test fails).
+CMakeLists.txt     - Configures the build, test target, and GoogleTest fetching.
+
+To build and test:
+------------------
+1. Make sure you have CMake and a C++17 compiler installed.
+2. Run:
+      chmod +x run_tests.sh
+      ./run_tests.sh
+3. All tests (original + public) will run and show results.
+
+Stub implementation:
+--------------------
+- All tests are translated and ready-to-run. If implementations are stubbed, failing test assertions will be expected until implementation is provided.

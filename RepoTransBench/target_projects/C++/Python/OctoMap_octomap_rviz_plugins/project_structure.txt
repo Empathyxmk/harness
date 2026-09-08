@@ -1,0 +1,42 @@
+Project Structure for Python Test Translation
+=============================================
+
+octomap_rviz_plugins/
+├── requirements.txt               # Python dependencies: pytest etc.
+├── run_tests.sh                   # Simple script to run all (original and public) tests
+├── project_structure.txt          # This file: documentation of the file tree and structure
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_occupancy_grid_display.py    # Translation of occupancy_grid_display_test.cpp
+│       └── test_occupancy_map_display.py     # Translation of occupancy_map_display_test.cpp
+└── public_tests/
+    ├── __init__.py
+    ├── test_occupancy_grid_display_public.py # Translation of occupancy_grid_display_public_test.cpp
+    └── test_occupancy_map_display_public.py  # Translation of occupancy_map_display_public_test.cpp
+
+----------------------------------------------------------------------------
+
+- tests/original/: Contains the original ("private/internal") test suite; all tests migrated 1-to-1 from the corresponding C++ sources.
+- public_tests/:   Contains the public test suite; all tests migrated 1-to-1 from corresponding public test C++ sources.
+- requirements.txt: Declares dependencies (e.g., pytest for running and authoring tests).
+- run_tests.sh:     Script for one-click test execution. It sets up a virtual environment, installs dependencies if necessary, then runs both original and public tests.
+- project_structure.txt: This file, documenting the tree and usage.
+- __init__.py files: Present to make directories Python packages.
+----------------------------------------------------------------------------
+
+SETUP
+-----
+1. Make sure you have Python 3.x installed.
+2. Run one command to execute all tests:
+       ./run_tests.sh
+
+   This will:
+     - Create a virtual environment in .venv_testdir if missing
+     - Install dependencies from requirements.txt
+     - Run all original tests (tests/original/)
+     - Run all public tests (public_tests/)
+     - Output results using pytest
+
+There are no placeholder or unimplemented test cases: test logic and success criteria are directly translated from C++.

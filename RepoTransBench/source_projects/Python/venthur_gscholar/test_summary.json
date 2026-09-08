@@ -1,0 +1,11 @@
+{
+  "project_name": "venthur_gscholar",
+  "language": "Python",
+  "coverage": {
+    "line": 85.8,
+    "branch": 59.6
+  },
+  "timestamp": "2025-06-19T13:02:50.793088",
+  "original_path": "/workspace/runnable_filter/Python/venthur_gscholar",
+  "test_result_path": "/workspace/test_enhancement_results/Python/venthur_gscholar"
+}

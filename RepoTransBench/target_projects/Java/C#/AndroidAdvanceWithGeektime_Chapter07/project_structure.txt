@@ -1,0 +1,43 @@
+AndroidAdvanceWithGeektime_Chapter07/
+├── AndroidAdvanceWithGeektime_Chapter07.sln           # .NET solution file for all modules
+├── run_tests.sh                                       # Simple one-click script to execute ALL tests
+├── src/
+│   ├── SystraceGradlePlugin/
+│   │   ├── SystraceGradlePlugin.csproj                # C# class library (core logic, Log, ReflectUtil, etc.)
+│   │   ├── Log.cs                                     # Log system implementation
+│   │   └── ReflectUtil.cs                             # Reflection utility used by tests
+│   └── SystraceSampleAndroidApp/
+│       ├── SystraceSampleAndroidApp.csproj            # C# class library (simulated app code)
+│       └── TestIgnoreFile.cs                          # App code simulation (used by logic/tests)
+├── tests/
+│   └── original/
+│       ├── TestsOriginal.csproj                       # Test csproj for original tests
+│       ├── ExampleInstrumentedTest.cs                 # Original instrumented ("app context") test
+│       ├── LogTest.cs                                 # All original Log* tests
+│       └── ReflectUtilTest.cs                         # All original ReflectUtil* tests
+├── public_tests/
+│   ├── PublicTests.csproj                             # Test csproj for public test cases
+│   ├── ExampleInstrumentedPublicTest.cs               # Public instrumented ("app context") test
+│   ├── LogPublicTest.cs                               # All public Log* tests
+│   └── ReflectUtilPublicTest.cs                       # All public ReflectUtil* tests
+
+Structure notes:
+- The `src` directory holds the two main logical components: the plugin-like code, and a "simulated" app side to mimic coverage.
+- All original unit and instrumented tests are in `tests/original/`.
+- All public test cases are in `public_tests/`.
+- Test projects reference the relevant src projects as dependencies (ProjectReference).
+- `run_tests.sh` will build and execute ALL tests in one command (`dotnet test`).
+- All dependencies are managed via csproj with `xunit` as test framework.
+- No Android dependencies are included - context and app simulation classes are used for C#/.NET.
+
+How to build and test:
+1. Install .NET 6 SDK (if not already installed).
+2. From the project root, simply run:
+   
+   ./run_tests.sh
+
+   This will execute ALL tests (original + public) across the repo.
+
+3. For individual test runs (advanced):
+    - dotnet test tests/original/
+    - dotnet test public_tests/

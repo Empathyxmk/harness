@@ -1,0 +1,19 @@
+github_glb-director-python/
+├── src/
+│   └── glb_director/
+│       ├── __init__.py
+│       └── glb_director.py       # Main implementation of all functions
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py               # Test configuration for pytest
+│   └── original/
+│       ├── __init__.py
+│       └── test_glb_director.py  # Original tests
+├── public_tests/
+│   ├── __init__.py
+│   └── test_glb_director_public.py  # Public tests
+├── requirements.txt              # Project dependencies
+├── run_tests.sh                  # Script to run all tests
+├── run_original_tests.sh         # Script to run original tests only
+├── run_public_tests.sh           # Script to run public tests only
+└── project_structure.txt         # This file

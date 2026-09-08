@@ -1,0 +1,34 @@
+project_root/
+├── CMakeLists.txt
+├── include/
+│   ├── caa.h
+│   ├── compat.h
+│   ├── mbxml.h
+│   ├── musicbrainzngs.h
+│   └── (other headers: helper/test headers as needed)
+├── src/
+│   ├── caa.cpp
+│   ├── compat.cpp
+│   ├── mbxml.cpp
+│   ├── musicbrainzngs.cpp
+│   └── (other core .cpp files)
+├── tests/
+│   ├── original/
+│   │   ├── test_caa.cpp
+│   │   ├── test_mbxml_artist.cpp
+│   │   ├── test_mbxml_release_group.cpp
+│   │   ├── ... (other original test files translated)
+│   ├── public/         # for C++ public tests if desired, otherwise public_tests/
+│   ├── test_main.cpp
+│   └── test_helpers/
+│       ├── fake_opener.h
+│       ├── fake_opener.cpp
+│       └── (other stubs/mocks)
+├── public_tests/
+│   ├── test_public_caa.cpp
+│   ├── test_public_mbxml_artist.cpp
+│   ├── test_public_mbxml_release_group.cpp
+│   └── (other public test files translated)
+├── run_tests.sh
+├── README.md
+└── (other project files)

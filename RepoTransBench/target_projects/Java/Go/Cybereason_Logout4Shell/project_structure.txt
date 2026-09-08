@@ -1,0 +1,19 @@
+.
+├── go.mod                        # Go module definition and dependency management
+├── run_tests.sh                  # One-click script to run all tests
+├── README.md                     # Project overview and instructions
+├── project_structure.txt         # This file; describes the layout
+├── tests/
+│   ├── testutil.go               # Shared mockups and simulation for logger/threadcontext
+│   └── original/
+│       └── log4j_test.go         # Original test suite, ported from Java (Log4jTest.java)
+└── public_tests/
+    └── log4j_public_test.go      # Public test suite, ported from Java (Log4jPublicTest.java)
+
+# Directory Descriptions:
+# tests/              : All helper code and test utilities.
+# tests/original/     : Translated original (non-public) tests, full logic.
+# public_tests/       : Translated public test suite, as released for external evaluation.
+# run_tests.sh        : Runs all tests recursively. Simply execute `./run_tests.sh`.
+# README.md           : High level instructions and info.
+# project_structure.txt: Describes the layout and purposes.

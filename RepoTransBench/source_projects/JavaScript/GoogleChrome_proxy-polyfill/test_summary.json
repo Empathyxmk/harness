@@ -1,0 +1,16 @@
+{
+  "project_name": "GoogleChrome_proxy-polyfill",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 91.1,
+    "branch": 71.9
+  },
+  "timestamp": "2025-06-19T10:30:51.358383",
+  "original_path": "/workspace/runnable_filter/JavaScript/GoogleChrome_proxy-polyfill",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/GoogleChrome_proxy-polyfill",
+  "tests_path": [
+    "test.js",
+    "test/proxy_polyfill.edge.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

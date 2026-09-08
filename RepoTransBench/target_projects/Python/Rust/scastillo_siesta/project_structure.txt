@@ -1,0 +1,32 @@
+scastillo_siesta/
+├── Cargo.toml                 # Rust crate definition & dependencies
+├── src/
+│   └── lib.rs                 # Main crate library code (siesta APIs, Resource, API, Auth, etc)
+├── tests/
+│   └── original/              # All tests translated from siesta/tests/*
+│       ├── test_auth.rs
+│       ├── test_init.rs
+│       └── test_siesta.rs
+├── public_tests/              # All tests translated from siesta/tests_public/*
+│   ├── test_public_auth.rs
+│   ├── test_public_init.rs
+│   └── test_public_siesta.rs
+├── run_tests.sh               # Simple script to run all tests (`./run_tests.sh`)
+└── project_structure.txt      # This file (explains layout, content, usage)
+
+Paths and descriptions:
+- Cargo.toml: Crate metadata and dependencies for Rust.
+- src/lib.rs: Implements API, Resource, and auth logic, mimicking the Python implementation for all test features.
+- tests/original/: Contains Rust files, direct translations of the original test suite from siesta/tests/.
+- public_tests/: Contains Rust files, direct translations of the public test suite from siesta/tests_public/.
+- run_tests.sh: Minimal script for one-step test execution (runs all tests in all folders).
+- project_structure.txt: Overview and commentary on folder layout and file purposes.
+
+Setup:
+1. Build/test: Run `./run_tests.sh` (make script executable: `chmod +x run_tests.sh`)
+2. Project is a full-feature test harness for the scastillo_siesta Python API, ported to Rust.
+
+Notes:
+- All tests are self-contained and require no network or real backends.
+- You can add additional Rust source modules to src/ as needed.
+- Tests use standard Rust crate testing infrastructure. Public and original tests are separated for clarity.

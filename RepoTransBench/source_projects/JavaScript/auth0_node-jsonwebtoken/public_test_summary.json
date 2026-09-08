@@ -1,0 +1,40 @@
+{
+  "project_name": "auth0_node-jsonwebtoken",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": false,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:40:30.075803",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/auth0_node-jsonwebtoken",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/auth0_node-jsonwebtoken",
+  "original_tests": {
+    "test_files": [
+      "test/option-complete.test.js",
+      "test/claim-aud.test.js",
+      "test/claim-exp.test.js",
+      "test/sign-verify.additional.test.js",
+      "test/option-nonce.test.js",
+      "test/header-kid.test.js",
+      "test/claim-nbf.test.js",
+      "test/claim-iat.test.js",
+      "test/claim-jti.test.js",
+      "test/option-maxAge.test.js",
+      "test/claim-iss.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 11,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [],
+    "test_scripts": [],
+    "total_public_test_files": 0,
+    "generated_public_tests": false
+  },
+  "created_files": []
+}

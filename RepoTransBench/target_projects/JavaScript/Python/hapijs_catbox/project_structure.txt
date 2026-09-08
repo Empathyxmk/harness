@@ -1,0 +1,23 @@
+project_root/
+├── requirements.txt        # Python dependencies (pytest for test running)
+├── run_tests.sh           # Executable script to run all tests with pytest
+├── public_tests/
+│   ├── __init__.py        # Makes public_tests a Python package
+│   ├── test_client_public.py   # Translated public tests for client functionality
+│   ├── test_index_public.py    # Translated public tests for main Catbox interface
+│   └── test_policy_public.py   # Translated public tests for policy (caching logic)
+├── tests/
+│   ├── __init__.py        # Empty; reserved for original tests (none for public version)
+│   └── original/
+│       └── __init__.py    # Empty; placeholder for possible original test conversion
+└── project_structure.txt  # This file, describes the directory layout
+
+# Directory Explanations:
+# - public_tests/: All translated public tests from public_tests/*.public.test.js, adapted for pytest
+# - tests/: Placeholder for original (non-public) tests if ever needed
+# - run_tests.sh: Simple shell script to run ALL tests (public and original, as present) using pytest
+# - requirements.txt: Declares pytest as a dependency for running tests
+
+# Test Running Instructions:
+# 1. Install dependencies: `pip install -r requirements.txt`
+# 2. Run all tests: `./run_tests.sh`

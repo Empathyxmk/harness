@@ -1,0 +1,1451 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">70.44% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>112/159</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">51.63% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>79/153</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>20/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">74% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>111/150</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">56x</span>
+<span class="cline-any cline-yes">56x</span>
+<span class="cline-any cline-yes">56x</span>
+<span class="cline-any cline-yes">200x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">28x</span>
+<span class="cline-any cline-yes">28x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">//     (c) 2012-2018 Airbnb, Inc.
+//
+//     polyglot.js may be freely distributed under the terms of the BSD
+//     license. For all licensing information, details, and documentation:
+//     http://airbnb.github.com/polyglot.js
+//
+//
+// Polyglot.js is an I18n helper library written in JavaScript, made to
+// work both in the browser and in Node. It provides a simple solution for
+// interpolation and pluralization, based off of Airbnb's
+// experience adding I18n functionality to its Backbone.js and Node apps.
+//
+// Polylglot is agnostic to your translation backend. It doesn't perform any
+// translation; it simply gives you a way to manage translated phrases from
+// your client- or server-side JavaScript application.
+//
+&nbsp;
+'use strict';
+&nbsp;
+var entries = require('object.entries');
+var warning = require('warning');
+var has = require('hasown');
+&nbsp;
+var warn = function warn(message) {
+  warning(false, message);
+};
+&nbsp;
+var defaultReplace = String.prototype.replace;
+var split = String.prototype.split;
+&nbsp;
+// #### Pluralization methods
+// The string that separates the different phrase possibilities.
+var delimiter = '||||';
+&nbsp;
+var russianPluralGroups = function (n) {
+  var lastTwo = n % 100;
+  var end = lastTwo % 10;
+  if (lastTwo !== 11 &amp;&amp; end === 1) {
+    return 0;
+  }
+  if (2 &lt;= end &amp;&amp; end &lt;= 4 &amp;&amp; !(lastTwo &gt;= 12 &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >lastTwo &lt;= 14)</span>) {
+    return 1;
+  }
+  return 2;
+};
+&nbsp;
+var defaultPluralRules = {
+  // Mapping from pluralization group plural logic.
+  pluralTypes: {
+    arabic: <span class="fstat-no" title="function not covered" >fu</span>nction (n) {
+      // http://www.arabeyes.org/Plural_Forms
+<span class="cstat-no" title="statement not covered" >      if (n &lt; 3) { <span class="cstat-no" title="statement not covered" >return n; </span>}</span>
+      var lastTwo = <span class="cstat-no" title="statement not covered" >n % 100;</span>
+<span class="cstat-no" title="statement not covered" >      if (lastTwo &gt;= 3 &amp;&amp; lastTwo &lt;= 10) <span class="cstat-no" title="statement not covered" >return 3;</span></span>
+<span class="cstat-no" title="statement not covered" >      return lastTwo &gt;= 11 ? 4 : 5;</span>
+    },
+    bosnian_serbian: russianPluralGroups,
+    chinese: function () { return 0; },
+    croatian: russianPluralGroups,
+    french: <span class="fstat-no" title="function not covered" >fu</span>nction (n) { <span class="cstat-no" title="statement not covered" >return n &gt;= 2 ? 1 : 0; </span>},
+    german: function (n) { return n !== 1 ? 1 : 0; },
+    russian: russianPluralGroups,
+    lithuanian: <span class="fstat-no" title="function not covered" >fu</span>nction (n) {
+<span class="cstat-no" title="statement not covered" >      if (n % 10 === 1 &amp;&amp; n % 100 !== 11) { <span class="cstat-no" title="statement not covered" >return 0; </span>}</span>
+<span class="cstat-no" title="statement not covered" >      return n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 9 &amp;&amp; (n % 100 &lt; 11 || n % 100 &gt; 19) ? 1 : 2;</span>
+    },
+    czech: <span class="fstat-no" title="function not covered" >fu</span>nction (n) {
+<span class="cstat-no" title="statement not covered" >      if (n === 1) { <span class="cstat-no" title="statement not covered" >return 0; </span>}</span>
+<span class="cstat-no" title="statement not covered" >      return (n &gt;= 2 &amp;&amp; n &lt;= 4) ? 1 : 2;</span>
+    },
+    polish: <span class="fstat-no" title="function not covered" >fu</span>nction (n) {
+<span class="cstat-no" title="statement not covered" >      if (n === 1) { <span class="cstat-no" title="statement not covered" >return 0; </span>}</span>
+      var end = <span class="cstat-no" title="statement not covered" >n % 10;</span>
+<span class="cstat-no" title="statement not covered" >      return 2 &lt;= end &amp;&amp; end &lt;= 4 &amp;&amp; (n % 100 &lt; 10 || n % 100 &gt;= 20) ? 1 : 2;</span>
+    },
+    icelandic: <span class="fstat-no" title="function not covered" >fu</span>nction (n) { <span class="cstat-no" title="statement not covered" >return (n % 10 !== 1 || n % 100 === 11) ? 1 : 0; </span>},
+    slovenian: <span class="fstat-no" title="function not covered" >fu</span>nction (n) {
+      var lastTwo = <span class="cstat-no" title="statement not covered" >n % 100;</span>
+<span class="cstat-no" title="statement not covered" >      if (lastTwo === 1) {</span>
+<span class="cstat-no" title="statement not covered" >        return 0;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      if (lastTwo === 2) {</span>
+<span class="cstat-no" title="statement not covered" >        return 1;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      if (lastTwo === 3 || lastTwo === 4) {</span>
+<span class="cstat-no" title="statement not covered" >        return 2;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      return 3;</span>
+    },
+    romanian: <span class="fstat-no" title="function not covered" >fu</span>nction (n) {
+<span class="cstat-no" title="statement not covered" >      if (n === 1) { <span class="cstat-no" title="statement not covered" >return 0; </span>}</span>
+      var lastTwo = <span class="cstat-no" title="statement not covered" >n % 100;</span>
+<span class="cstat-no" title="statement not covered" >      if (n === 0 || (lastTwo &gt;= 2 &amp;&amp; lastTwo &lt;= 19)) { <span class="cstat-no" title="statement not covered" >return 1; </span>}</span>
+<span class="cstat-no" title="statement not covered" >      return 2;</span>
+    },
+    ukrainian: russianPluralGroups
+  },
+&nbsp;
+  // Mapping from pluralization group to individual language codes/locales.
+  // Will look up based on exact match, if not found and it's a locale will parse the locale
+  // for language code, and if that does not exist will default to 'en'
+  pluralTypeToLanguages: {
+    arabic: ['ar'],
+    bosnian_serbian: ['bs-Latn-BA', 'bs-Cyrl-BA', 'srl-RS', 'sr-RS'],
+    chinese: ['id', 'id-ID', 'ja', 'ko', 'ko-KR', 'lo', 'ms', 'th', 'th-TH', 'zh'],
+    croatian: ['hr', 'hr-HR'],
+    german: ['fa', 'da', 'de', 'en', 'es', 'fi', 'el', 'he', 'hi-IN', 'hu', 'hu-HU', 'it', 'nl', 'no', 'pt', 'sv', 'tr'],
+    french: ['fr', 'tl', 'pt-br'],
+    russian: ['ru', 'ru-RU'],
+    lithuanian: ['lt'],
+    czech: ['cs', 'cs-CZ', 'sk'],
+    polish: ['pl'],
+    icelandic: ['is', 'mk'],
+    slovenian: ['sl-SL'],
+    romanian: ['ro'],
+    ukrainian: ['uk', 'ua']
+  }
+};
+&nbsp;
+function langToTypeMap(mapping) {
+  var ret = {};
+  var mappingEntries = entries(mapping);
+  for (var i = 0; i &lt; mappingEntries.length; i += 1) {
+    var type = mappingEntries[i][0];
+    var langs = mappingEntries[i][1];
+    for (var j = 0; j &lt; langs.length; j += 1) {
+      ret[langs[j]] = type;
+    }
+  }
+  return ret;
+}
+&nbsp;
+function pluralTypeName(pluralRules, locale) {
+  var langToPluralType = langToTypeMap(pluralRules.pluralTypeToLanguages);
+  return langToPluralType[locale]
+    || langToPluralType[split.call(locale, /-/, 1)[0]]
+    || langToPluralType.en;
+}
+&nbsp;
+function pluralTypeIndex(pluralRules, pluralType, count) {
+  return pluralRules.pluralTypes[pluralType](count);
+}
+&nbsp;
+function createMemoizedPluralTypeNameSelector() {
+  var localePluralTypeStorage = {};
+&nbsp;
+  return function (pluralRules, locale) {
+    var pluralType = localePluralTypeStorage[locale];
+&nbsp;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (pluralType &amp;&amp; !pluralRules.pluralTypes[pluralType]) {
+<span class="cstat-no" title="statement not covered" >      pluralType = null;</span>
+<span class="cstat-no" title="statement not covered" >      localePluralTypeStorage[locale] = pluralType;</span>
+    }
+&nbsp;
+    if (!pluralType) {
+      pluralType = pluralTypeName(pluralRules, locale);
+&nbsp;
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (pluralType) {
+        localePluralTypeStorage[locale] = pluralType;
+      }
+    }
+&nbsp;
+    return pluralType;
+  };
+}
+&nbsp;
+function escape(token) {
+  return token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&amp;');
+}
+&nbsp;
+function constructTokenRegex(opts) {
+  var prefix = (opts &amp;&amp; opts.prefix) || '%{';
+  var suffix = (opts &amp;&amp; opts.suffix) || '}';
+&nbsp;
+  if (prefix === delimiter || suffix === delimiter) {
+    throw new RangeError('"' + delimiter + '" token is reserved for pluralization');
+  }
+&nbsp;
+  return new RegExp(escape(prefix) + '(.*?)' + escape(suffix), 'g');
+}
+&nbsp;
+var memoizedPluralTypeName = createMemoizedPluralTypeNameSelector();
+&nbsp;
+var defaultTokenRegex = /%\{(.*?)\}/g;
+&nbsp;
+// ### transformPhrase(phrase, substitutions, locale)
+//
+// Takes a phrase string and transforms it by choosing the correct
+// plural form and interpolating it.
+//
+//     transformPhrase('Hello, %{name}!', {name: 'Spike'});
+//     // "Hello, Spike!"
+//
+// The correct plural form is selected if substitutions.smart_count
+// is set. You can pass in a number instead of an Object as `substitutions`
+// as a shortcut for `smart_count`.
+//
+//     transformPhrase('%{smart_count} new messages |||| 1 new message', {smart_count: 1}, 'en');
+//     // "1 new message"
+//
+//     transformPhrase('%{smart_count} new messages |||| 1 new message', {smart_count: 2}, 'en');
+//     // "2 new messages"
+//
+//     transformPhrase('%{smart_count} new messages |||| 1 new message', 5, 'en');
+//     // "5 new messages"
+//
+// You should pass in a third argument, the locale, to specify the correct plural type.
+// It defaults to `'en'` with 2 plural forms.
+function transformPhrase(
+  phrase,
+  substitutions,
+  locale,
+  tokenRegex,
+  pluralRules,
+  replaceImplementation
+) {
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof phrase !== 'string') {
+<span class="cstat-no" title="statement not covered" >    throw new TypeError('Polyglot.transformPhrase expects argument #1 to be string');</span>
+  }
+&nbsp;
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (substitutions == null) {
+<span class="cstat-no" title="statement not covered" >    return phrase;</span>
+  }
+&nbsp;
+  var result = phrase;
+  var interpolationRegex = tokenRegex || <span class="branch-1 cbranch-no" title="branch not covered" >defaultTokenRegex;</span>
+  var replace = replaceImplementation || <span class="branch-1 cbranch-no" title="branch not covered" >defaultReplace;</span>
+&nbsp;
+  // allow number as a pluralization shortcut
+  var options = typeof substitutions === 'number' ? <span class="branch-0 cbranch-no" title="branch not covered" >{ smart_count: substitutions } </span>: substitutions;
+&nbsp;
+  // Select plural form: based on a phrase text that contains `n`
+  // plural forms separated by `delimiter`, a `locale`, and a `substitutions.smart_count`,
+  // choose the correct plural form. This is only done if `count` is set.
+  if (options.smart_count != null &amp;&amp; phrase) {
+    var pluralRulesOrDefault = pluralRules || <span class="branch-1 cbranch-no" title="branch not covered" >defaultPluralRules;</span>
+    var texts = split.call(phrase, delimiter);
+    var bestLocale = locale || <span class="branch-1 cbranch-no" title="branch not covered" >'en';</span>
+    var pluralType = memoizedPluralTypeName(pluralRulesOrDefault, bestLocale);
+    var pluralTypeWithCount = pluralTypeIndex(
+      pluralRulesOrDefault,
+      pluralType,
+      options.smart_count
+    );
+&nbsp;
+    result = defaultReplace.call(texts[pluralTypeWithCount] || <span class="branch-1 cbranch-no" title="branch not covered" >texts[0],</span> /^[^\S]*|[^\S]*$/g, '');
+  }
+&nbsp;
+  // Interpolate: Creates a `RegExp` object for each interpolation placeholder.
+  result = replace.call(result, interpolationRegex, function (expression, argument) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!has(options, argument) || options[argument] == null) { <span class="cstat-no" title="statement not covered" >return expression; </span>}
+    return options[argument];
+  });
+&nbsp;
+  return result;
+}
+&nbsp;
+// ### Polyglot class constructor
+function Polyglot(options) {
+  var opts = options || {};
+  this.phrases = {};
+  this.extend(opts.phrases || {});
+  this.currentLocale = opts.locale || 'en';
+  var allowMissing = opts.allowMissing ? transformPhrase : null;
+  this.onMissingKey = typeof opts.onMissingKey === 'function' ? <span class="branch-0 cbranch-no" title="branch not covered" >opts.onMissingKey </span>: allowMissing;
+  this.warn = opts.warn || warn;
+  this.replaceImplementation = opts.replace || defaultReplace;
+  this.tokenRegex = constructTokenRegex(opts.interpolation);
+  this.pluralRules = opts.pluralRules || defaultPluralRules;
+}
+&nbsp;
+// ### polyglot.locale([locale])
+//
+// Get or set locale. Internally, Polyglot only uses locale for pluralization.
+Polyglot.prototype.locale = function (newLocale) {
+  if (newLocale) this.currentLocale = newLocale;
+  return this.currentLocale;
+};
+&nbsp;
+// ### polyglot.extend(phrases)
+//
+// Use `extend` to tell Polyglot how to translate a given key.
+//
+//     polyglot.extend({
+//       "hello": "Hello",
+//       "hello_name": "Hello, %{name}"
+//     });
+//
+// The key can be any string.  Feel free to call `extend` multiple times;
+// it will override any phrases with the same key, but leave existing phrases
+// untouched.
+//
+// It is also possible to pass nested phrase objects, which get flattened
+// into an object with the nested keys concatenated using dot notation.
+//
+//     polyglot.extend({
+//       "nav": {
+//         "hello": "Hello",
+//         "hello_name": "Hello, %{name}",
+//         "sidebar": {
+//           "welcome": "Welcome"
+//         }
+//       }
+//     });
+//
+//     console.log(polyglot.phrases);
+//     // {
+//     //   'nav.hello': 'Hello',
+//     //   'nav.hello_name': 'Hello, %{name}',
+//     //   'nav.sidebar.welcome': 'Welcome'
+//     // }
+//
+// `extend` accepts an optional second argument, `prefix`, which can be used
+// to prefix every key in the phrases object with some string, using dot
+// notation.
+//
+//     polyglot.extend({
+//       "hello": "Hello",
+//       "hello_name": "Hello, %{name}"
+//     }, "nav");
+//
+//     console.log(polyglot.phrases);
+//     // {
+//     //   'nav.hello': 'Hello',
+//     //   'nav.hello_name': 'Hello, %{name}'
+//     // }
+//
+// This feature is used internally to support nested phrase objects.
+Polyglot.prototype.extend = function (morePhrases, prefix) {
+  var phraseEntries = entries(morePhrases || <span class="branch-1 cbranch-no" title="branch not covered" >{})</span>;
+  for (var i = 0; i &lt; phraseEntries.length; i += 1) {
+    var key = phraseEntries[i][0];
+    var phrase = phraseEntries[i][1];
+    var prefixedKey = prefix ? prefix + '.' + key : key;
+    if (typeof phrase === 'object') {
+      this.extend(phrase, prefixedKey);
+    } else {
+      this.phrases[prefixedKey] = phrase;
+    }
+  }
+};
+&nbsp;
+// ### polyglot.unset(phrases)
+// Use `unset` to selectively remove keys from a polyglot instance.
+//
+//     polyglot.unset("some_key");
+//     polyglot.unset({
+//       "hello": "Hello",
+//       "hello_name": "Hello, %{name}"
+//     });
+//
+// The unset method can take either a string (for the key), or an object hash with
+// the keys that you would like to unset.
+Polyglot.prototype.unset = function (morePhrases, prefix) {
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof morePhrases === 'string') {
+    delete this.phrases[morePhrases];
+  } else {
+    var phraseEntries = <span class="cstat-no" title="statement not covered" >entries(morePhrases || {});</span>
+<span class="cstat-no" title="statement not covered" >    for (var i = 0; i &lt; phraseEntries.length; i += 1) {</span>
+      var key = <span class="cstat-no" title="statement not covered" >phraseEntries[i][0];</span>
+      var phrase = <span class="cstat-no" title="statement not covered" >phraseEntries[i][1];</span>
+      var prefixedKey = <span class="cstat-no" title="statement not covered" >prefix ? prefix + '.' + key : key;</span>
+<span class="cstat-no" title="statement not covered" >      if (typeof phrase === 'object') {</span>
+<span class="cstat-no" title="statement not covered" >        this.unset(phrase, prefixedKey);</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        delete this.phrases[prefixedKey];</span>
+      }
+    }
+  }
+};
+&nbsp;
+// ### polyglot.clear()
+//
+// Clears all phrases. Useful for special cases, such as freeing
+// up memory if you have lots of phrases but no longer need to
+// perform any translation. Also used internally by `replace`.
+Polyglot.prototype.clear = function () {
+  this.phrases = {};
+};
+&nbsp;
+// ### polyglot.replace(phrases)
+//
+// Completely replace the existing phrases with a new set of phrases.
+// Normally, just use `extend` to add more phrases, but under certain
+// circumstances, you may want to make sure no old phrases are lying around.
+Polyglot.prototype.replace = function (newPhrases) {
+  this.clear();
+  this.extend(newPhrases);
+};
+&nbsp;
+// ### polyglot.t(key, options)
+//
+// The most-used method. Provide a key, and `t` will return the
+// phrase.
+//
+//     polyglot.t("hello");
+//     =&gt; "Hello"
+//
+// The phrase value is provided first by a call to `polyglot.extend()` or
+// `polyglot.replace()`.
+//
+// Pass in an object as the second argument to perform interpolation.
+//
+//     polyglot.t("hello_name", {name: "Spike"});
+//     =&gt; "Hello, Spike"
+//
+// If you like, you can provide a default value in case the phrase is missing.
+// Use the special option key "_" to specify a default.
+//
+//     polyglot.t("i_like_to_write_in_language", {
+//       _: "I like to write in %{language}.",
+//       language: "JavaScript"
+//     });
+//     =&gt; "I like to write in JavaScript."
+//
+Polyglot.prototype.t = function (key, options) {
+  var phrase, result;
+  var opts = options == null ? {} : options;
+  if (typeof this.phrases[key] === 'string') {
+    phrase = this.phrases[key];
+  } else if (typeof opts._ === 'string') {
+    phrase = opts._;
+  } else if (this.onMissingKey) {
+    var onMissingKey = this.onMissingKey;
+    result = onMissingKey(
+      key,
+      opts,
+      this.currentLocale,
+      this.tokenRegex,
+      this.pluralRules,
+      this.replaceImplementation
+    );
+  } else {
+    this.warn('Missing translation for key: "' + key + '"');
+    result = key;
+  }
+  if (typeof phrase === 'string') {
+    result = transformPhrase(
+      phrase,
+      opts,
+      this.currentLocale,
+      this.tokenRegex,
+      this.pluralRules,
+      this.replaceImplementation
+    );
+  }
+  return result;
+};
+&nbsp;
+// ### polyglot.has(key)
+//
+// Check if polyglot has a translation for given key
+Polyglot.prototype.has = <span class="fstat-no" title="function not covered" >fu</span>nction (key) {
+<span class="cstat-no" title="statement not covered" >  return has(this.phrases, key);</span>
+};
+&nbsp;
+// export transformPhrase
+Polyglot.transformPhrase = function <span class="fstat-no" title="function not covered" >transform(</span>phrase, substitutions, locale) {
+<span class="cstat-no" title="statement not covered" >  return transformPhrase(phrase, substitutions, locale);</span>
+};
+&nbsp;
+module.exports = Polyglot;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Jun 23 2025 19:17:48 GMT+0000 (Coordinated Universal Time)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>

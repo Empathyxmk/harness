@@ -1,0 +1,52 @@
+clarkduvall-serpy-java/
+│
+├── pom.xml                        # Maven build configuration, JUnit and AssertJ test dependencies
+├── run_tests.sh                   # Single-command test runner (mvn clean test)
+│
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── serpy/
+│   │                   ├── Field.java           # Field interface
+│   │                   ├── Serializer.java      # Base serializer (reflection based, Python-like)
+│   │                   ├── DictSerializer.java  # Dictionary serializer
+│   │                   ├── Obj.java             # Dumb object for dynamic field setting, like Python's Obj
+│   │                   └── fields/
+│   │                       ├── StrField.java
+│   │                       ├── IntField.java
+│   │                       ├── FloatField.java
+│   │                       ├── BoolField.java
+│   │                       ├── MethodField.java
+│   │                       └── FieldImpl.java   # Plain field, with attr/label options
+│   │
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── TestIntegrationSerpySerializer.java  # Original Python tests (integration)
+│                   │   ├── TestSerializer.java                  # Original Python tests (serializer)
+│                   │   └── TestFields.java                      # Original Python tests (fields)
+│                   └── public_tests/
+│                       ├── PublicTestIntegration.java           # Public test translation, integration
+│                       ├── PublicTestFields.java                # Public test translation, field
+│                       └── PublicTestSerializer.java            # Public test translation, serializer
+│
+├── project_structure.txt          # This file, describes all parts and purpose
+
+# Directory explanations
+- src/main/java/com/example/serpy/      : Core minimal serpy-like Java framework with serializer, fields, and helper Obj
+- src/main/java/com/example/serpy/fields: Java implementations of StrField, IntField, etc.
+- src/test/java/com/example/original/   : Translations of original Python tests (strict logic/unit tests)
+- src/test/java/com/example/public_tests/: Java translations of public test cases
+- run_tests.sh                         : One-click CI test runner (uses Maven/JUnit 5)
+- pom.xml                              : Project and test dependencies, handles builds and test running
+
+# Setup and testing instructions:
+1. Install Maven (https://maven.apache.org/download.cgi)
+2. Run: chmod +x run_tests.sh
+3. Run: ./run_tests.sh
+
+All tests (original + public) will run and output results.

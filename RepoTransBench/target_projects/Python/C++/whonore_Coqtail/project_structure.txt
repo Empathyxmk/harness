@@ -1,0 +1,33 @@
+.
+├── CMakeLists.txt
+├── README.md
+├── public_tests
+│   ├── test_public_coqtail_py.cpp
+│   ├── test_public_coqtail_py.py
+│   ├── test_public_coqtop_py.cpp
+│   ├── test_public_coqtop_py.py
+│   ├── test_public_matcher.cpp
+│   ├── test_public_matcher.py
+│   ├── test_public_parse.cpp
+│   ├── test_public_parse.py
+│   ├── test_public_version.cpp
+│   ├── test_public_version.py
+│   ├── test_public_xmlInterface_py.cpp
+│   └── test_public_xmlInterface_py.py
+├── run_tests.sh
+├── tests
+│   └── original
+│       ├── test_coqtail_py.cpp
+│       ├── test_coqtop.cpp
+│       ├── test_coqtop_py.cpp
+│       ├── test_matcher.cpp
+│       ├── test_parse.cpp
+│       ├── test_version.cpp
+│       ├── test_xmlInterface.cpp
+│       └── test_xmlInterface_py.cpp
+├── [ALL OTHER PROJECT FILES, see full project tree above]
+
+Key:
+- C++ original (full) tests: tests/original/*.cpp
+- C++ public/minimal tests: public_tests/*.cpp
+- All tests run via test_runner using Google Test by running ./run_tests.sh

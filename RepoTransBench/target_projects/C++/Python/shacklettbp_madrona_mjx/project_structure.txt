@@ -1,0 +1,25 @@
+shacklettbp_madrona_mjx (Python translation)
+├── public_tests/
+│   ├── __init__.py                 # Package marker for public tests
+│   └── test_smoke_public.py        # Public smoke test translated from C++
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # One-click test runner script
+└── project_structure.txt           # This project structure and explanation file
+
+Project Structure Explanation:
+
+- public_tests/: Contains all public tests. These are translated from the C++ `public_tests/smoke_public_test.cpp`. Additional public tests should be placed here as Python `test_*.py` files.
+- requirements.txt: Lists Python dependencies required for running the tests. Install via `pip install -r requirements.txt`.
+- run_tests.sh: Simple bash script that runs all tests in public_tests/. It will also attempt to run original tests if added under tests/ or tests/original/.
+- project_structure.txt: This file. Explains the purpose of files and directories.
+
+SETUP & INSTRUCTIONS:
+
+1. (Optional) Create/activate a Python 3.8+ virtual environment.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Make the test script executable: `chmod +x run_tests.sh`
+4. Run all tests: `./run_tests.sh`
+
+NOTES:
+- No original tests were found in the C++ source, so the tests/ directory does not exist by default.
+- To add additional public or original tests, use standard Python pytest conventions and directory layout.

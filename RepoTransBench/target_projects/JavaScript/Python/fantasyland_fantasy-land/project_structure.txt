@@ -1,0 +1,23 @@
+fantasyland_fantasy-land-python/
+├── src/
+│   ├── __init__.py
+│   └── fantasyland.py      # Core implementation mapping Fantasy Land spec keys to string values
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_fantasyland.py   # Original test suite: translated from test/index.test.js
+├── public_tests/
+│   ├── __init__.py
+│   └── test_fantasyland_public.py  # Public test suite: translated from public_tests/index.public.test.js
+├── requirements.txt               # Python dependencies (pytest)
+├── run_tests.sh                   # Simple script to run all tests
+└── project_structure.txt          # This file: explains structure
+
+Directory and File Purposes:
+- src/: Core library implementation. Here, 'fantasyland.py' replicates the exported mapping logic.
+- tests/original/: Original/complete test cases (from test/index.test.js), validating all facets of the Fantasy Land mapping.
+- public_tests/: Public test cases (from public_tests/index.public.test.js), similar coverage but structure/order may differ.
+- requirements.txt: Lists dependencies (pytest).
+- run_tests.sh: One-click test execution; runs pytest on all tests.
+- project_structure.txt: This documentation.

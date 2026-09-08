@@ -1,0 +1,50 @@
+eruffaldi_ukfmanifold/
+├── src/
+│   └── ukfmanifold/
+│       ├── __init__.py
+│       └── # (Put main library code here: converted from Matlab as needed)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_q2dcm.py
+│       ├── test_isnormq.py
+│       ├── test_qmult.py
+│       ├── test_qdecomp.py
+│       ├── test_qvqc.py
+│       ├── test_qconj.py
+│       ├── test_qnorm.py
+│       ├── test_qcvq.py
+│       ├── test_isq.py
+│       ├── test_dcm2q.py
+│       └── test_unit.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_q2dcm.py
+│   ├── test_public_isnormq.py
+│   ├── test_public_qmult.py
+│   ├── test_public_isq.py
+│   ├── test_public_qconj.py
+│   ├── test_public_qnorm.py
+│   ├── test_public_qcvq.py
+│   ├── test_public_qdecomp.py
+│   ├── test_public_qvqc.py
+│   ├── test_public_dcm2q.py
+│   └── test_public_unit.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+# Directory Explanations:
+src/ukfmanifold/        - Place for the main library code ported from Matlab. (Stubs or real code, as needed.)
+tests/original/         - Python translations of original (private) Matlab tests. (pytest-based.)
+public_tests/           - Python translations of public Matlab tests. (pytest-based.)
+requirements.txt        - All dependencies needed to run tests (install via pip).
+run_tests.sh            - One-click test runner, launches all tests.
+README.md               - Project documentation, usage.
+project_structure.txt   - This structure and explanation.
+
+# To install and run tests:
+pip install -r requirements.txt
+./run_tests.sh

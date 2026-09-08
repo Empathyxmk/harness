@@ -1,0 +1,34 @@
+google_eslint-config-google-python/
+├── index.py
+│     → Python version of the original config index.js, exposing `rules` as a dict.
+├── requirements.txt
+│     → Lists test dependencies (pytest).
+├── run_tests.sh
+│     → Single script to run all tests using pytest.
+├── project_structure.txt
+│     → This documentation file.
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_index.py
+│       └── test_test.py
+│     → All original (private) tests, translated to Python.
+└── public_tests/
+    ├── __init__.py
+    └── test_index_public.py
+      → Public version of tests with alternate scenarios, in Python.
+
+----
+Directory explanations and instructions:
+- index.py:
+    The config module under test (minimal dummy Python version for testing).
+- requirements.txt:
+    Declares test dependencies (pytest).
+- tests/original/:
+    Contains Python translations of all original tests from JS.
+- public_tests/:
+    Python translations of all public tests.
+- run_tests.sh:
+    Runs all tests with `pytest`. Make executable with `chmod +x run_tests.sh`.
+- To run all tests (original and public), execute: ./run_tests.sh

@@ -1,0 +1,25 @@
+nerscadmin_ipm/
+├── Cargo.toml                # Rust project configuration file
+├── src/
+│   └── lib.rs                # Main library file with function implementations
+├── tests/
+│   └── original/
+│       └── test_cov_dummy.rs # Original test cases
+├── public_tests/
+│   └── test_cov_dummy_public.rs # Public test cases
+├── run_tests.sh              # Script to run original tests
+├── run_public_tests.sh       # Script to run public tests
+└── run_all_tests.sh          # Script to run all tests
+
+The project structure follows Rust conventions:
+- src/ contains the library code
+- tests/ contains original test cases
+- public_tests/ contains public test cases
+- Cargo.toml defines the project and its dependencies
+- run_*.sh scripts provide simple test execution
+
+Setup and Testing Instructions:
+1. Ensure Rust and Cargo are installed
+2. Run original tests: ./run_tests.sh
+3. Run public tests: ./run_public_tests.sh
+4. Run all tests: ./run_all_tests.sh

@@ -1,0 +1,19 @@
+pdf_redactor_rs/               (Project root)
+├── Cargo.toml                 (Rust crate manifest and dependency list)
+├── README.md                  (Project documentation - describe library/purpose)
+├── run_tests.sh               (Simple test runner for all tests: ./run_tests.sh)
+├── src/
+│   ├── lib.rs                 (Root lib file, exports modules)
+│   └── pdf_redactor.rs        (Main module with RedactorOptions, redactor stub, struct logic)
+├── tests/
+│   └── original/              (Original/private tests translated from Python)
+│       ├── test_redactor.rs               (Full translation of core tests)
+│       ├── test_redactor_error.rs         (Error-handling tests)
+│       ├── test_redactor_filters.rs       (Filters/mechanics unit tests)
+│       └── test_redactor_options.rs       (Struct construction/options tests)
+├── public_tests/
+│   ├── test_public_redactor.rs            (Basic public API test translation)
+│   ├── test_public_redactor_error.rs      (Public error-handling scenarios)
+│   ├── test_public_redactor_filters.rs    (Public content filter test cases)
+│   └── test_public_redactor_options.rs    (Public struct usage tests)
+└── project_structure.txt

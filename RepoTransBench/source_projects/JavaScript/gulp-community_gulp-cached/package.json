@@ -1,0 +1,17 @@
+{
+  "name": "gulp-cached",
+  "version": "1.0.0",
+  "description": "Test project for coverage",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "devDependencies": {
+    "lodash.defaults": "^4.2.0",
+    "mocha": "^10.8.2",
+    "nyc": "^15.1.0",
+    "should": "^13.2.3",
+    "through2": "^4.0.2",
+    "vinyl": "^2.2.1"
+  }
+}

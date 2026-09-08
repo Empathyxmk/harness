@@ -1,0 +1,33 @@
+name: Test
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [18, 20, 22]
+    name: Node ${{ matrix.node }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Use node ${{ matrix.node }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install
+        run: npm install --ignore-scripts
+      - name: Install Playwright
+        if: matrix.node == 22
+        run: npx playwright install --with-deps
+      - name: Test
+        run: npm test
+      - name: Test browsers
+        if: matrix.node == 22
+        run: npm run test-browsers-local
+      - name: Coverage
+        run: npm run coverage
+      - name: Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          files: coverage/lcov.info
+          token: ${{ secrets.CODECOV_TOKEN }}

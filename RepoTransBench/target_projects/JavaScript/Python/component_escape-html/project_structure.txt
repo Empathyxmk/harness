@@ -1,0 +1,42 @@
+component_escape-html-python/
+├── src/
+│   └── escape_html.py
+│       - Implementation of the escape_html function (Python port of JS logic)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_escape_html.py
+│           - Translated "original" test cases from JavaScript, using pytest
+├── public_tests/
+│   ├── __init__.py
+│   └── test_escape_html_public.py
+│       - Translated "public" test cases from JavaScript, using pytest
+├── requirements.txt
+│   - Lists pytest as a required dependency for test execution
+├── run_tests.sh
+│   - One-click test runner. Installs dependencies and executes all tests.
+└── project_structure.txt
+    - This file. Explains the structure.
+
+# Directory/Files Explained:
+- src/: All source code goes here. escape_html.py implements the core escape_html function.
+- tests/original/: All original (internal) tests translated from JavaScript live here. Follows pytest test discovery.
+- public_tests/: All generated/confirmed public tests reside here, separated from original tests.
+- requirements.txt: Python dependencies (pytest required for running tests).
+- run_tests.sh: Simple shell script to install dependencies and run all discovered tests.
+- project_structure.txt: This file. Documents the layout and purposes.
+
+# Setup & Testing Instructions:
+
+1. (Recommended) Create a virtual environment:
+   python3 -m venv venv
+   source venv/bin/activate
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Run all tests:
+   ./run_tests.sh
+
+- This will run both original and public tests using pytest, reporting all output.

@@ -1,0 +1,25 @@
+AndrewRPorter_yahoo_historical/
+├── CMakeLists.txt
+├── include/
+│   ├── yahoo_historical_fetcher_stub.h
+│   └── yahoo_historical_constants_stub.h
+├── public_tests/
+│   ├── test_public_constants.cpp
+│   ├── test_public_fetch.cpp
+│   ├── test_public_fetcher_core.cpp
+│   ├── test_public_init_import.cpp
+│   └── test_public_setup_py.cpp
+├── run_tests.sh
+├── src/
+│   ├── CMakeLists.txt
+│   ├── yahoo_historical_constants_stub.cpp
+│   └── yahoo_historical_fetcher_stub.cpp
+├── tests/
+│   ├── original/
+│   │    ├── test_constants.cpp
+│   │    ├── test_fetch.cpp
+│   │    ├── test_fetcher_core.cpp
+│   │    ├── test_init_import.cpp
+│   │    └── test_setup_py.cpp
+│   └── test_main.cpp
+└── test_translation_progress.json

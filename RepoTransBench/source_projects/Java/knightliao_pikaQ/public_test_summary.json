@@ -1,0 +1,51 @@
+{
+  "project_name": "knightliao_pikaQ",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:16:46.029963",
+  "original_path": "/workspace/verified_repos_v2/Java/knightliao_pikaQ",
+  "public_test_result_path": "/workspace/public_test_results/Java/knightliao_pikaQ",
+  "original_tests": {
+    "test_files": [
+      "pikaq-demos/pikaq-web-demo/src/test/java/com/baidu/pikaq/demo/service/AbstractDaoTest.java",
+      "pikaq-demos/pikaq-web-demo/src/test/java/com/baidu/pikaq/demo/service/DBTest.java",
+      "pikaq-demos/pikaq-web-demo/src/test/java/com/baidu/pikaq/demo/service/ColumnsTest.java",
+      "pikaq-demos/pikaq-web-demo/src/test/java/com/baidu/pikaq/demo/service/campaign/service/impl/CampaignMgrImplTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 4,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "pikaq-demos/pikaq-web-demo/src/test/java/com/baidu/pikaq/demo/service/AbstractDaoPublicTest.java",
+      "pikaq-demos/pikaq-web-demo/src/test/java/com/baidu/pikaq/demo/service/DBPublicTest.java",
+      "pikaq-demos/pikaq-web-demo/src/test/java/com/baidu/pikaq/demo/service/ColumnsPublicTest.java",
+      "pikaq-demos/pikaq-web-demo/src/test/java/com/baidu/pikaq/demo/service/campaign/service/impl/CampaignMgrImplPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 6,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "pikaq-demos/pikaq-web-demo/src/test/java/com/baidu/pikaq/demo/service/AbstractDaoPublicTest.java",
+    "pikaq-demos/pikaq-web-demo/src/test/java/com/baidu/pikaq/demo/service/DBPublicTest.java",
+    "pikaq-demos/pikaq-web-demo/src/test/java/com/baidu/pikaq/demo/service/ColumnsPublicTest.java",
+    "pikaq-demos/pikaq-web-demo/src/test/java/com/baidu/pikaq/demo/service/campaign/service/impl/CampaignMgrImplPublicTest.java",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "run_tests.sh"
+  ]
+}

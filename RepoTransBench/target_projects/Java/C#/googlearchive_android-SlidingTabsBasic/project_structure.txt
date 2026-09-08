@@ -1,0 +1,50 @@
+googlearchive_android-SlidingTabsBasic C# Conversion
+===================================================
+
+.
+├── SlidingTabsBasic.sln              # Solution file for the whole project
+├── src/
+│   └── SlidingTabsBasic/
+│       ├── SlidingTabsBasic.csproj      # Main (empty) library project
+│       ├── SlidingTabsBasicFragment.cs  # C# port of core Android fragment (API dummy)
+│       └── Common/
+│           ├── Logger/
+│           │   ├── Log.cs               # Logging API and interface/implementation
+│           │   ├── LogView.cs           # Logging view class (API mimic for tests)
+│           │   └── MessageOnlyLogFilter.cs
+│           └── View/
+│               └── SlidingTabLayout.cs  # Dummy for test compatibility
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj         # xUnit test project: contains all "original" test conversions
+│       ├── SlidingTabsBasicFragmentTests.cs
+│       ├── LogTests.cs
+│       ├── LogViewTests.cs
+│       ├── MessageOnlyLogFilterTests.cs
+│       └── SampleTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj               # xUnit test project: contains all "public" test conversions
+│   ├── SlidingTabsBasicFragmentPublicTests.cs
+│   ├── LogPublicTests.cs
+│   ├── LogViewPublicTests.cs
+│   └── MessageOnlyLogFilterPublicTests.cs
+├── run_tests.sh                         # Simple script to build and run all tests in all projects
+
+===================================================
+Directory/Files Explanation:
+---------------------------
+- src/SlidingTabsBasic/           : Main code base for the project (contains dummy C# code for compatibility).
+- tests/original/                 : All "original" test files (exact translations of Application/src/test/ and Application/tests/src/...).
+- public_tests/                   : All "public" test files (from Application/src/test/.../PublicTest.java).
+- run_tests.sh                    : Simple script to run all tests (dotnet test SlidingTabsBasic.sln).
+
+How to run tests:
+-----------------
+$ chmod +x run_tests.sh
+$ ./run_tests.sh
+
+This will compile all code and run xUnit tests in both original and public test projects.
+
+Project has standard .NET 7.0 structure and uses xUnit + Moq for all tests.
+
+All logic and test coverage mirrors the original Java source.

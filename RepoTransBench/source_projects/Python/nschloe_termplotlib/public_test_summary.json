@@ -1,0 +1,57 @@
+{
+  "project_name": "nschloe_termplotlib",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:28.167823",
+  "original_path": "/workspace/verified_repos_v2/Python/nschloe_termplotlib",
+  "public_test_result_path": "/workspace/public_test_results/Python/nschloe_termplotlib",
+  "original_tests": {
+    "test_files": [
+      "tests/test_barh.py",
+      "tests/test_subplot.py",
+      "tests/test_scatter.py",
+      "tests/test_figure.py",
+      "tests/test_plot.py",
+      "tests/test_hist.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_barh.py",
+      "public_tests/test_public_subplot.py",
+      "public_tests/test_public_scatter.py",
+      "public_tests/test_public_figure.py",
+      "public_tests/test_public_plot.py",
+      "public_tests/test_public_hist.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_figure.py",
+      "public_tests/test_public_hist.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_barh.py",
+    "public_tests/test_public_subplot.py",
+    "public_tests/test_public_scatter.py",
+    "public_tests/test_public_figure.py",
+    "public_tests/test_public_plot.py",
+    "public_tests/test_public_hist.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_figure.py",
+    "public_tests/test_public_hist.py"
+  ]
+}

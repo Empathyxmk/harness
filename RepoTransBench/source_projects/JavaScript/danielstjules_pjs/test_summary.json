@@ -1,0 +1,18 @@
+{
+  "project_name": "danielstjules_pjs",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 94.32,
+    "branch": 88.63
+  },
+  "timestamp": "2025-06-19T10:11:35.441149",
+  "original_path": "/workspace/runnable_filter/JavaScript/danielstjules_pjs",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/danielstjules_pjs",
+  "tests_path": [
+    "spec/pjsMiscSpec.js",
+    "spec/pjsReduceSpec.js",
+    "spec/pjsSpec.js",
+    "spec/utilsSpec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

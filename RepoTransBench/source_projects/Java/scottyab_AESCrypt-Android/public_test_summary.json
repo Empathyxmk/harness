@@ -1,0 +1,56 @@
+{
+  "project_name": "scottyab_AESCrypt-Android",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:46.925622",
+  "original_path": "/workspace/verified_repos_v2/Java/scottyab_AESCrypt-Android",
+  "public_test_result_path": "/workspace/public_test_results/Java/scottyab_AESCrypt-Android",
+  "original_tests": {
+    "test_files": [
+      "aescrypt/src/androidTest/java/com/scottyab/aescrypt/ApplicationTest.java",
+      "aescrypt/src/test/java/com/scottyab/aescrypt/AESCryptReflectionTest.java",
+      "aescrypt/src/test/java/com/scottyab/aescrypt/ApplicationStubTest.java",
+      "aescrypt/src/test/java/com/scottyab/aescrypt/AESCryptTest.java",
+      "aescrypt/src/test/java/com/scottyab/aescrypt/AESCryptDebugTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "aescrypt/src/test/java/com/scottyab/aescrypt/ApplicationPublicTest.java",
+      "aescrypt/src/test/java/com/scottyab/aescrypt/AESCryptReflectionPublicTest.java",
+      "aescrypt/src/test/java/com/scottyab/aescrypt/ApplicationStubPublicTest.java",
+      "run_public_tests.sh",
+      "aescrypt/src/test/java/com/scottyab/aescrypt/AESCryptDebugPublicTest.java",
+      "aescrypt/src/test/java/com/scottyab/aescrypt/AESCryptPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "aescrypt/src/test/java/com/scottyab/aescrypt/ApplicationPublicTest.java",
+    "aescrypt/src/test/java/com/scottyab/aescrypt/AESCryptReflectionPublicTest.java",
+    "aescrypt/src/test/java/com/scottyab/aescrypt/ApplicationStubPublicTest.java",
+    "run_public_tests.sh",
+    "aescrypt/src/test/java/com/scottyab/aescrypt/AESCryptDebugPublicTest.java",
+    "aescrypt/src/test/java/com/scottyab/aescrypt/AESCryptPublicTest.java",
+    "aescrypt/build.gradle",
+    "build.gradle",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

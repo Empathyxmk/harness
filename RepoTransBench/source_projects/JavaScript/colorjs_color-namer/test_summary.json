@@ -1,0 +1,15 @@
+{
+  "project_name": "colorjs_color-namer",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 96.77,
+    "branch": 92.85
+  },
+  "timestamp": "2025-06-19T10:07:43.033333",
+  "original_path": "/workspace/runnable_filter/JavaScript/colorjs_color-namer",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/colorjs_color-namer",
+  "tests_path": [
+    "test/index.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

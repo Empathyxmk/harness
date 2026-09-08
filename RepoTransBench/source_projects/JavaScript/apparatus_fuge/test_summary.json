@@ -1,0 +1,24 @@
+{
+  "project_name": "apparatus_fuge",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 93.33,
+    "branch": 88.13
+  },
+  "timestamp": "2025-06-23T10:33:25.879894",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/apparatus_fuge",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/apparatus_fuge",
+  "tests_path": [
+    "test/basic.test.js",
+    "test/commands_coverage.test.js",
+    "test/commands_edge.test.js",
+    "test/commands_smoke.test.js",
+    "test/fuge.test.js",
+    "test/fuge_edge.test.js",
+    "test/shell.test.js",
+    "test/shell_edge.test.js",
+    "test/util.test.js",
+    "test/util_extra.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

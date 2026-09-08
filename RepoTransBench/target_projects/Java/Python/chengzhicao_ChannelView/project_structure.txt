@@ -1,0 +1,19 @@
+project_root/
+├── src/
+│   └── (placeholder for main application code)
+├── tests/
+│   └── original/
+│       ├── test_example_instrumented.py
+│       ├── test_example_unit.py
+│       ├── test_channel.py
+│       ├── test_default_style_adapter.py
+│       └── test_example_unit_channel.py
+├── public_tests/
+│   ├── test_example_instrumented_public_app.py
+│   ├── test_example_unit_public_app.py
+│   ├── test_example_instrumented_public_channel.py
+│   └── test_example_unit_public_channel.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── project_structure.txt

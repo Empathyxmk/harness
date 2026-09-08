@@ -1,0 +1,28 @@
+RicherMans_PLDA_CPP/
+├── CMakeLists.txt
+├── README.md
+├── src/
+│   ├── main.cpp
+│   ├── liblda/
+│   │   ├── lda.h
+│   │   ├── lda.cpp
+│   │   ├── plda.h
+│   │   ├── plda.cpp
+│   │   └── extractdvector.h
+│   │   └── extractdvector.cpp
+├── include/
+│   ├── (symlinked or duplicated headers from src/liblda for public use)
+├── tests/
+│   ├── original/
+│   │   ├── test_extractdvector_test.cpp
+│   │   ├── ldatest_test.cpp
+│   │   ├── pldatest_test.cpp
+│   └── test_main.cpp
+├── public_tests/
+│   ├── test_public_ldacomp_test.cpp
+│   ├── test_public_ldatest_test.cpp
+│   ├── test_public_extractdvector_test.cpp
+│   └── test_public_main.cpp
+├── run_tests.sh
+├── test_translation_progress.json
+└── README.md

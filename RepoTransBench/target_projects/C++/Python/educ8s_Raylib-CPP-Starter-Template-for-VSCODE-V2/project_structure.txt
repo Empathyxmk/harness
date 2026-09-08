@@ -1,0 +1,20 @@
+educ8s_Raylib-CPP-Starter-Template-for-VSCODE-V2-python/
+├── src/
+│   └── ball.py                  # Ball class logic translated from C++
+├── tests/
+│   └── original/
+│       └── test_ball.py         # Original translated C++ unit tests
+├── public_tests/
+│   └── test_ball_public.py      # Public test cases from test_ball_public.cpp
+├── requirements.txt             # Dependencies (pytest)
+├── README.md                    # Basic usage and structure info
+├── run_tests.sh                 # One-click test runner script
+└── project_structure.txt        # This file, shows directory and file purposes
+
+Descriptions:
+- src/ball.py: Implements the Ball class logic for all test cases.
+- tests/original/: Contains translations of all original private/internal C++ test cases.
+- public_tests/: Contains translations of all public C++ test cases.
+- requirements.txt: Use `pip install -r requirements.txt` to install pytest dependency.
+- run_tests.sh: Shell script to run all tests at once via pytest.
+- README.md: Explains how to setup, test, and the overall structure.

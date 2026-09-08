@@ -1,0 +1,26 @@
+project_root/
+├── README.md                     # Project documentation and instructions
+├── pom.xml                       # Maven config (JUnit5/Gson for tests)
+├── run_tests.sh                  # One-click test execution (mvn clean test)
+├── project_structure.txt         # This structure description file
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── (empty)           # No main Java source, tests only
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── tusenai/
+│                   └── mv2d/
+│                       ├── original/
+│                       │   ├── ConfigsDataFullCoverageTest.java          # Translated original test
+│                       │   ├── ConfigsDataPyTest.java                    # Translated original test
+│                       │   ├── ConfigsExpAttributesTest.java             # Translated original test
+│                       │   ├── ConfigsExpPyTest.java                     # Translated original test
+│                       │   └── TorchServerCLITest.java                   # Translated original CLI/integration test
+│                       └── publictests/
+│                           ├── PublicConfigsDataFullCoverageTest.java    # Public test translation
+│                           ├── PublicConfigsDataPyTest.java              # Public test translation
+│                           ├── PublicConfigsExpAttributesTest.java       # Public test translation
+│                           ├── PublicConfigsExpPyTest.java               # Public test translation
+│                           └── PublicTorchServerNoopTest.java            # Public test placeholder

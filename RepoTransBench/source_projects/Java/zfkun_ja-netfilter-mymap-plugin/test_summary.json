@@ -1,0 +1,17 @@
+{
+  "project_name": "zfkun_ja-netfilter-mymap-plugin",
+  "language": "Java",
+  "coverage": {
+    "line": 89.0,
+    "branch": 92.0
+  },
+  "timestamp": "2025-06-20T04:53:19.560373",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/zfkun_ja-netfilter-mymap-plugin",
+  "test_result_path": "/workspace/test_enhancement_results/Java/zfkun_ja-netfilter-mymap-plugin",
+  "tests_path": [
+    "src/test/java/com/zfkun/plugins/mymap/MapTransformerTest.java",
+    "src/test/java/com/zfkun/plugins/mymap/PutFilterTest.java",
+    "src/test/java/com/zfkun/plugins/mymap/MyPluginEntryTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

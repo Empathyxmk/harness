@@ -1,0 +1,36 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── SQL/
+│   └── ... (SQL schema/data files - not needed for Python tests)
+├── tests/
+│   └── original/
+│       ├── test_ecommerce_starter_application.py      # Context loads test (from EcommerceStarterApplicationTests.java)
+│       ├── test_filesystem_storage_service.py         # FileSystemStorageServiceTest.java
+│       ├── test_redis_cache.py                        # RedisCacheTest.java
+│       ├── test_storage_filenotfound_exception.py     # StorageFileNotFoundExceptionTest.java
+│       ├── test_storage_properties.py                 # StoragePropertiesTest.java
+│       └── test_storage_service.py                    # StorageServiceTest.java
+├── public_tests/
+│   ├── test_filesystem_storage_service_public.py       # FileSystemStorageServicePublicTest.java
+│   ├── test_redis_cache_public.py                      # RedisCachePublicTest.java
+│   ├── test_storage_filenotfound_exception_public.py   # StorageFileNotFoundExceptionPublicTest.java
+│   ├── test_storage_properties_public.py               # StoragePropertiesPublicTest.java
+│   └── test_storage_service_public.py                  # StorageServicePublicTest.java
+├── project_structure.txt
+├── requirements.txt                  # Python dependencies (pytest + mock/unittest)
+└── run_tests.sh                      # One-click test execution script
+
+# Directory Explanations:
+# - requirements.txt         : Pip dependencies required for all tests
+# - run_tests.sh             : Simple script to execute all tests with one click
+# - tests/original/          : Translated "original" test cases from Java (all non-public tests, including context-load)
+# - public_tests/            : Public test cases translated from *PublicTest.java
+# - project_structure.txt    : Overview of project structure and usage
+#
+# Setup & Testing:
+#   pip install -r requirements.txt
+#   ./run_tests.sh
+#
+# All original and public tests will be discovered & run by pytest.

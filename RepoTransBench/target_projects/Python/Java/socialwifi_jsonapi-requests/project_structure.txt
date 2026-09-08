@@ -1,0 +1,19 @@
+src/
+└── test/
+    └── java/
+        └── com/
+            └── socialwifi/
+                └── jsonapi/
+                    ├── original/
+                    │   ├── AuthTest.java
+                    │   ├── DataTest.java
+                    │   ├── OrmTest.java
+                    │   ├── RequestFactoryBranchTest.java
+                    │   └── RequestFactoryTest.java
+                    └── public/
+                        ├── PublicAuthTest.java
+                        ├── PublicDataTest.java
+                        ├── PublicOrmExtraTest.java
+                        ├── PublicOrmTest.java
+                        ├── PublicRequestFactoryBranchTest.java
+                        └── PublicRequestFactoryTest.java

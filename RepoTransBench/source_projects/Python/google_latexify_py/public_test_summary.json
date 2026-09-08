@@ -1,0 +1,86 @@
+{
+  "project_name": "google_latexify_py",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:15:13.458134",
+  "original_path": "/workspace/verified_repos_v2/Python/google_latexify_py",
+  "public_test_result_path": "/workspace/public_test_results/Python/google_latexify_py",
+  "original_tests": {
+    "test_files": [
+      "src/latexify/test_utils.py",
+      "src/integration_tests/algorithmic_style_test.py",
+      "src/integration_tests/regression_test.py",
+      "src/integration_tests/function_expansion_test.py",
+      "src/latexify/frontend_test.py",
+      "src/latexify/ast_utils_test.py",
+      "src/latexify/config_test.py",
+      "src/latexify/generate_latex_test.py",
+      "src/latexify/ast_utils_extra_test.py",
+      "src/latexify/ipython_wrappers_test.py",
+      "src/latexify/parser_test.py",
+      "src/latexify/analyzers_test.py",
+      "src/latexify/transformers/assignment_reducer_test.py",
+      "src/latexify/transformers/identifier_replacer_test.py",
+      "src/latexify/transformers/aug_assign_replacer_test.py",
+      "src/latexify/transformers/function_expander_test.py",
+      "src/latexify/transformers/docstring_remover_test.py",
+      "src/latexify/transformers/prefix_trimmer_test.py",
+      "src/latexify/codegen/identifier_converter_test.py",
+      "src/latexify/codegen/function_codegen_match_test.py",
+      "src/latexify/codegen/algorithmic_codegen_test.py",
+      "src/latexify/codegen/expression_rules_test.py",
+      "src/latexify/codegen/latex_test.py",
+      "src/latexify/codegen/function_codegen_test.py",
+      "src/latexify/codegen/expression_codegen_test.py",
+      "src/latexify/codegen/codegen_utils_test.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 26,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_utils.py",
+      "public_tests/integration_test_public_algorithmic_style.py",
+      "public_tests/integration_test_public_regression.py",
+      "public_tests/test_public_config.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_ast_utils.py",
+      "public_tests/test_public_config_extra.py",
+      "public_tests/test_public_parser.py",
+      "public_tests/test_public_ipython_wrappers.py",
+      "public_tests/test_public_analyzers.py",
+      "public_tests/test_public_frontend.py",
+      "public_tests/__init__.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 13,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_utils.py",
+    "public_tests/integration_test_public_algorithmic_style.py",
+    "public_tests/integration_test_public_regression.py",
+    "public_tests/test_public_config.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_ast_utils.py",
+    "public_tests/test_public_config_extra.py",
+    "public_tests/test_public_parser.py",
+    "public_tests/test_public_ipython_wrappers.py",
+    "public_tests/test_public_analyzers.py",
+    "public_tests/test_public_frontend.py",
+    "public_tests/__init__.py",
+    "run_public_tests.sh"
+  ]
+}

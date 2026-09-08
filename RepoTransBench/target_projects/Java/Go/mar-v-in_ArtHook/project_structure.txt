@@ -1,0 +1,41 @@
+mar-v-in_ArtHook Go Translation Project Structure
+================================================
+
+.
+├── go.mod                  # Go module definition and dependencies
+├── run_tests.sh            # Simple script to execute all Go tests
+├── project_structure.txt   # This structure overview and description
+├── tests/
+│   └── original/
+│       ├── runtime_init_test.go    # Original: RuntimeInitTest.java
+│       ├── utils_test.go           # Original: UtilsTest.java
+│       ├── xposed_test.go          # Original: XposedTest.java
+│       └── zygote_init_test.go     # Original: ZygoteInitTest.java
+├── public_tests/
+│   ├── runtime_init_public_test.go  # Public: RuntimeInitPublicTest.java
+│   ├── utils_public_test.go         # Public: UtilsPublicTest.java
+│   ├── xposed_public_test.go        # Public: XposedPublicTest.java
+│   └── zygote_init_public_test.go   # Public: ZygoteInitPublicTest.java
+
+Directory/Files Description
+---------------------------
+- go.mod:               Go module and dependency declaration (includes testify for mocks/assertions).
+- run_tests.sh:         One-click script to run all tests in any directory (original and public).
+- tests/original/:      All original Java test cases translated to Go. Structure and logic preserved.
+- public_tests/:        All public Java test cases translated to Go. Structure and logic preserved.
+- project_structure.txt:Project structure and explanation, for easy understanding.
+
+Setup & Usage
+-------------
+1. Ensure you have Go 1.20+ and git installed.
+2. Run `go mod tidy` to download dependencies.
+3. To execute all tests (original and public), run:
+       ./run_tests.sh
+   All tests will run from both test directories.
+
+Test Organization
+-----------------
+- tests/original/:      Core/original tests matching Java source tests.
+- public_tests/:        Public/visibility limited tests matching public Java tests.
+
+All test files are complete, fully working, and implement the entire logic of their Java counterparts with Go idioms and testify for assertions/mocks.

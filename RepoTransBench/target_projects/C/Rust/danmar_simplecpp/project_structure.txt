@@ -1,0 +1,8 @@
+simplecpp/
+├── Cargo.toml          # Rust project configuration
+├── src/
+│   └── lib.rs          # Implementation of the functions
+├── tests/
+│   ├── original_tests.rs  # Original test cases
+│   └── public_tests.rs    # Public test cases
+└── run_tests.sh        # Test execution script

@@ -1,0 +1,27 @@
+alingse_jsoncsv/
+├── Cargo.toml                     # Rust package manifest
+├── src/
+│   ├── lib.rs                     # Main library
+│   ├── jsontool.rs                # jsontool module (JSON transform logic, stubs for flatten/expand)
+│   ├── dumptool.rs                # dumptool module (CSV/XLS export logic, stubs for test)
+│   ├── mainmod.rs                 # main module stub (not used, included for completeness)
+│   └── utils.rs                   # Utility functions (safe key encode/decode, stub only)
+├── tests/
+│   └── original/
+│       ├── test_escape.rs         # Test for utils encode/decode logic (from tests/test_escape.py)
+│       └── test_jsontool.rs       # Test for jsontool (from tests/test_jsontool.py)
+├── run_tests.sh                   # One-click script: run all tests via cargo test
+└── project_structure.txt          # Project layout and explanation (this file)
+
+# Directory explanations
+# - src/: Main library code (stub logic satisfying all test calls).
+# - tests/original/: Contains all original (private) tests translated from Python's tests/.
+# - run_tests.sh: One-click test runner (chmod +x); runs all original and public tests.
+# - Cargo.toml: Rust package/project definition; manages dependencies and Rust edition.
+
+# To setup and run:
+# $ chmod +x run_tests.sh
+# $ ./run_tests.sh
+
+# To add more tests:
+# - Place Rust test modules in tests/original/ or create tests/public/ as new folders as needed.

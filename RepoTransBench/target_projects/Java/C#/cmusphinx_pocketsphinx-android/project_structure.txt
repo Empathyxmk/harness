@@ -1,0 +1,47 @@
+PocketSphinx.sln                      # Visual Studio Solution for entire project
+src/
+    PocketSphinx/
+        PocketSphinx.csproj           # Main library project
+        Hypothesis.cs                 # Main class for Hypothesis
+        RecognitionListener.cs        # Listener interface
+        Assets.cs                     # Assets class with stubbed behavior for testability
+        SpeechRecognizerSetup.cs      # Recognizer setup class and config
+        SpeechRecognizer.cs           # Recognizer logic and listener management
+tests/
+    original/
+        OriginalTests.csproj          # xUnit test project for ORIGINAL test cases
+        HypothesisTests.cs            # Original test cases for Hypothesis
+        AssetsTests.cs                # Original test cases for Assets
+        RecognitionListenerTests.cs   # Original test cases for RecognitionListener
+        SpeechRecognizerSetupTests.cs # Original test cases for SpeechRecognizerSetup
+        SpeechRecognizerTests.cs      # Original test cases for SpeechRecognizer
+public_tests/
+    PublicTests.csproj                # xUnit test project for PUBLIC test cases
+    HypothesisPublicTests.cs          # Public test cases for Hypothesis
+    AssetsPublicTests.cs              # Public test cases for Assets
+    RecognitionListenerPublicTests.cs # Public test cases for RecognitionListener
+    SpeechRecognizerSetupPublicTests.cs # Public test cases for SpeechRecognizerSetup
+    SpeechRecognizerPublicTests.cs    # Public test cases for SpeechRecognizer
+
+README.md                            # Documentation and instructions
+run_tests.sh                         # Simple executable that runs all tests with dotnet
+project_structure.txt                # This file: explanation and overview of architecture
+
+---
+
+**Setup and Usage**
+
+1. Install [.NET 6 SDK+](https://dotnet.microsoft.com/download).
+2. Restore and build all projects:
+       dotnet restore
+       dotnet build
+3. Run all tests with:
+       ./run_tests.sh
+
+**Directory explanation:**
+- `src/PocketSphinx/`     : Main product/library code
+- `tests/original/`       : Contains original (non-public) test cases, mapped from src/test/java/**/*.Test.java
+- `public_tests/`         : Contains public test cases, mapped from *PublicTest.java, for public correctness validation
+- Each test project references the main `PocketSphinx` code library
+
+---

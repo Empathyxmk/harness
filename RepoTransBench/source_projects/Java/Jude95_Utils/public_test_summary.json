@@ -1,0 +1,60 @@
+{
+  "project_name": "Jude95_Utils",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:41:13.614093",
+  "original_path": "/workspace/verified_repos_v2/Java/Jude95_Utils",
+  "public_test_result_path": "/workspace/public_test_results/Java/Jude95_Utils",
+  "original_tests": {
+    "test_files": [
+      "utils/src/androidTest/java/com/jude/utils/ApplicationTest.java",
+      "utils/src/test/java/com/jude/utils/JTimeTransformTest.java",
+      "utils/src/test/java/com/jude/utils/JActivityManagerTest.java",
+      "utils/src/test/java/com/jude/utils/JFileManagerTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 4,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "utils/src/test/java/com/jude/utils/JTimeTransformPublicTest.java",
+      "utils/src/test/java/com/jude/utils/JActivityManagerPublicTest.java",
+      "utils/src/test/java/com/jude/utils/JFileManagerPublicTest.java",
+      "utils/src/test/java/com/jude/utils/ApplicationPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 6,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "utils/src/test/java/com/jude/utils/JTimeTransformPublicTest.java",
+    "utils/src/test/java/com/jude/utils/JActivityManagerPublicTest.java",
+    "utils/src/test/java/com/jude/utils/JFileManagerPublicTest.java",
+    "utils/src/test/java/com/jude/utils/ApplicationPublicTest.java",
+    "run_public_tests.sh",
+    "utils/build.gradle",
+    "utils/gradle.properties",
+    "utils/gradle.properties",
+    "utils/build.gradle",
+    "utils/build.gradle",
+    "utils/gradle.properties",
+    "utils/build.gradle",
+    "utils/build.gradle",
+    "utils/build.gradle",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

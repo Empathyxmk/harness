@@ -1,0 +1,23 @@
+jalvesaq_colorout/
+├── Cargo.toml              # Rust project configuration and dependencies
+├── src/
+│   └── lib.rs              # Main library code with implementations of tested functions
+├── tests/                  # Original tests directory
+│   ├── mod.rs              # Test module configuration
+│   └── original/           # Original tests subdirectory
+│       ├── mod.rs          # Original tests module configuration
+│       ├── test_colorout.rs      # Translated C test_colorout.c
+│       └── test_iscolorout.rs    # Translated R test-isColorOut.R
+├── public_tests/           # Public tests directory
+│   └── test_colorout_public.rs   # Translated public test_colorout_public.c
+└── run_tests.sh            # Script to run all tests
+
+The project follows standard Rust structure:
+- src/lib.rs contains the main library code with function implementations
+- tests/ contains the original tests (C and R translated to Rust)
+- public_tests/ contains the public tests
+- run_tests.sh provides a simple way to execute all tests
+
+To run tests:
+1. Ensure Rust and Cargo are installed
+2. Run ./run_tests.sh from the project root

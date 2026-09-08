@@ -1,0 +1,41 @@
+MaskerLogger/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── oxsecurity/
+│   │               └── maskerlogger/
+│   │                   ├── ahocorasickregexmatch/
+│   │                   │   ├── AhoCorasick.java
+│   │                   │   └── RegexMatcher.java
+│   │                   ├── maskerformatter/
+│   │                   │   ├── AbstractMaskedLogger.java
+│   │                   │   ├── MaskerFormatter.java
+│   │                   │   └── MaskerFormatterJson.java
+│   │                   ├── secretsinlogsexample/
+│   │                   │   └── SecretsInLogsExample.java
+│   │                   └── utils/
+│   │                       └── Utils.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── oxsecurity/
+│                   └── maskerlogger/
+│                       ├── original/
+│                       │   ├── TestUtils.java
+│                       │   ├── TestMaskedLogger.java
+│                       │   ├── TestMaskerFormatter.java
+│                       │   ├── TestUtilsAdditional.java
+│                       │   ├── TestSecretsInLogsExample.java
+│                       │   ├── TestAhoCorasickRegexMatch.java
+│                       │   └── TestAhoCorasickRegexMatchAdditional.java
+│                       └── publictests/
+│                           ├── TestPublicAhoCorasickRegexMatch.java
+│                           ├── TestPublicAhoCorasickRegexMatchAdditional.java
+│                           ├── TestPublicMaskerFormatter.java
+│                           ├── TestPublicMaskedLogger.java
+│                           ├── TestPublicSecretsInLogsExample.java
+│                           ├── TestPublicUtils.java
+│                           └── TestPublicUtilsAdditional.java

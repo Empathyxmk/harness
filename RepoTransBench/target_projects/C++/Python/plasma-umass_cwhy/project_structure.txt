@@ -1,0 +1,39 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # One-click test execution script (calls pytest)
+├── project_structure.txt           # This file (project structure and explanations)
+├── tests/
+│   ├── __init__.py                 # (empty/init file for test folder)
+│   └── original/                   # Original tests from C++
+│       ├── __init__.py
+│       ├── test_ctre_test.py
+│       ├── test_push_back_pointer.py
+│       ├── test_redefined_function.py
+│       ├── test_reverse_iterator.py
+│       └── test_sfinae_ambiguous.py
+├── public_tests/                   # Public test cases, functionally equivalent
+│   ├── __init__.py
+│   ├── test_ctre_test_public.py
+│   ├── test_push_back_pointer_public.py
+│   ├── test_redefined_function_public.py
+│   ├── test_reverse_iterator_public.py
+│   └── test_sfinae_ambiguous_public.py
+
+Explanation:
+
+- requirements.txt: Declares pytest as a test dependency for easy installation (pip install -r requirements.txt).
+- run_tests.sh: Minimal script. Runs all tests (original and public) in one go with 'pytest'.
+- tests/original/: Contains Python translations of all original C++ test logic.
+- public_tests/: Contains Python translations of all public C++ test cases for coverage/verification.
+- project_structure.txt: Describes the project structure and instructions.
+- __init__.py files: Mark directories as Python packages, helps pytest/discovery.
+
+Setup & Testing Instructions:
+
+1. Install dependencies: `pip install -r requirements.txt`
+2. To run ALL tests (original and public): `./run_tests.sh`
+3. You can also run individual test folders:
+   - For only original tests: `pytest tests/original/`
+   - For only public tests: `pytest public_tests/`
+
+All test files are fully implemented and should run with a standard Python 3 interpreter and pytest installed.

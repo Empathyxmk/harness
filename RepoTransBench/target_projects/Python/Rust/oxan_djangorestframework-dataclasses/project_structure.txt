@@ -1,0 +1,37 @@
+.
+├── Cargo.toml                  # Rust project manifest: dependencies, package metadata.
+├── src/
+│   ├── lib.rs                  # Library entry point.
+│   └── models.rs               # Core datatypes/structs used for serialization logic.
+├── tests/
+│   └── original/               # All original (non-public) test cases from the translated Python suite.
+│       ├── test_functional.rs
+│       ├── test_issues.rs
+│       ├── test_fields.rs
+│       ├── test_field_generation.rs
+│       ├── test_py312.rs
+│       ├── test_typing_utils.rs
+│       ├── test_field_utils.rs
+│       └── mod.rs              # (optional: index to re-export test modules)
+├── public_tests/               # All public test cases for the public test suite.
+│   ├── test_public_functional.rs
+│   ├── test_public_issues.rs
+│   ├── test_public_serializers.rs
+│   └── mod.rs                  # (optional: index for public test modules)
+├── run_tests.sh                # Run all tests, simple one-click execution.
+└── project_structure.txt       # This description file.
+
+# Purpose:
+# - src/: All model definitions; only extend if real business logic structs grow.
+# - tests/original/: All test logic from the "tests/" Python directory.
+# - public_tests/: Complete translation of the public test suite.
+# - run_tests.sh: Runs all tests (including public_tests and tests/original) using Cargo.
+# - Cargo.toml: Manages dependencies (serde, rust_decimal, chrono, uuid, etc.) for JSON/struct testing.
+# - project_structure.txt: Directory and file role explanations.
+# 
+# Usage:
+#   $ ./run_tests.sh
+#   # Or, directly via cargo:
+#   $ cargo test --all
+#
+# No other dependencies or scripts required; all logic is in main, src, and test modules.

@@ -1,0 +1,78 @@
+{
+  "project_name": "woodpecker-framework_ysoserial-for-woodpecker",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:47:52.296550",
+  "original_path": "/workspace/verified_repos_v2/Java/woodpecker-framework_ysoserial-for-woodpecker",
+  "public_test_result_path": "/workspace/public_test_results/Java/woodpecker-framework_ysoserial-for-woodpecker",
+  "original_tests": {
+    "test_files": [
+      "src/main/java/me/gv7/woodpecker/yso/payloads/annotation/PayloadTest.java",
+      "src/test/java/TemaplateTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/StringsSmokeTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/YsoConfigSmokeTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/StringsTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/GeneratePayloadTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/YsoConfigTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/SerializerDeserializerSmokeTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/SerializerDeserializerTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/test/CustomTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/test/WrappedTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/test/exploit/RMIRegistryExploitTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/test/payloads/JRMPReverseConnectTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/test/payloads/CommandExecTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/test/payloads/FileUploadTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/test/payloads/TestHarnessTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/test/payloads/PayloadsTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/test/payloads/MyfacesTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/test/payloads/RemoteClassLoadingTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/test/payloads/JRMPReverseConnectSMTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/payloads/custom/BcelWithArgsTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 21,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/me/gv7/woodpecker/yso/StringsPublicTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/YsoConfigPublicTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/StringsSmokePublicTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/YsoConfigSmokePublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/me/gv7/woodpecker/yso/GeneratePayloadPublicTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/SerializerDeserializerPublicTest.java",
+      "src/test/java/me/gv7/woodpecker/yso/SerializerDeserializerSmokePublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 10,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/me/gv7/woodpecker/yso/StringsPublicTest.java",
+    "src/test/java/me/gv7/woodpecker/yso/YsoConfigPublicTest.java",
+    "src/test/java/me/gv7/woodpecker/yso/StringsSmokePublicTest.java",
+    "src/test/java/me/gv7/woodpecker/yso/YsoConfigSmokePublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/me/gv7/woodpecker/yso/GeneratePayloadPublicTest.java",
+    "src/test/java/me/gv7/woodpecker/yso/SerializerDeserializerPublicTest.java",
+    "src/test/java/me/gv7/woodpecker/yso/SerializerDeserializerSmokePublicTest.java",
+    "run_public_tests.sh",
+    "pom.xml",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "project_name": "arqex_freezer",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 95.6,
+    "branch": 90.7
+  },
+  "timestamp": "2025-06-23T10:32:36.990739",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/arqex_freezer",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/arqex_freezer"
+}

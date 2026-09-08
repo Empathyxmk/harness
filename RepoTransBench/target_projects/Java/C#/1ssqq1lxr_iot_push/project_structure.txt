@@ -1,0 +1,55 @@
+Project Structure for 1ssqq1lxr_iot_push (C# Translation)
+
+.
+├── ProjectName.sln                           # Main solution file
+├── src/
+│   └── ProjectName/
+│       ├── ProjectName.csproj                # Main source project (placeholder)
+│       ├── Program.cs                        # (Optional) Main entry point
+│       └── ...                               # Source code (to be filled if needed)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj              # xUnit test project for original tests
+│       ├── IpUtilsTest.cs                    # Original tests from Java
+│       ├── MqttHanderTest.cs
+│       ├── MqttHandlerIntfTest.cs
+│       ├── ServerMqttHandlerServiceTest.cs
+│       ├── ClientMqttHandlerServiceTest.cs
+│       ├── ExceptionTest.cs
+│       ├── PropertiesTest.cs
+│       ├── EnumsTest.cs
+│       ├── ExecutorQueueTest.cs
+│       ├── StandardThreadExecutorTest.cs
+│       ├── ScheduledTest.cs
+│       ├── PoolTest.cs
+│       ├── DefaultThreadFactoryTest.cs
+│       ├── MqttClientProducerTest.cs
+│       ├── MqttClientConsumerTest.cs
+│       ├── MqttClientConsumerTest1.cs
+│       └── springTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj                    # xUnit test project for public tests
+│   ├── IpUtilsPublicTest.cs
+│   ├── MqttHanderPublicTest.cs
+│   ├── ClientMqttHandlerServicePublicTest.cs
+│   ├── ServerMqttHandlerServicePublicTest.cs
+│   ├── MqttHandlerIntfPublicTest.cs
+│   ├── ExecutorQueuePublicTest.cs
+│   ├── DefaultThreadFactoryPublicTest.cs
+├── run_tests.sh                              # Simple script to run ALL tests
+├── README.md                                 # Instructions for building and running tests
+
+Explanations:
+- src/ProjectName/ contains the main application code (scaffold only, actual business logic not ported here).
+- tests/original/ contains all original (non-public) .cs test files translated from Java, and their test csproj.
+- public_tests/ contains all public .cs test files translated from Java, and their test csproj.
+- Each test file is a 1:1 C# xUnit translation of a corresponding Java test, with the same test logic, inputs, and assertions.
+- run_tests.sh is a single-point script to build and run all tests easily (`dotnet test`).
+- ProjectName.sln ties all projects together for unified development/test/build.
+- README.md documents how to build, test, and use the translation.
+
+How to Run Tests:
+  $ chmod +x run_tests.sh
+  $ ./run_tests.sh
+
+This will build and run all tests (original and public).

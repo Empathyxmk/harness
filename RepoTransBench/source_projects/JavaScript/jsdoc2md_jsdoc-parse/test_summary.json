@@ -1,0 +1,17 @@
+{
+  "project_name": "jsdoc2md_jsdoc-parse",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 96.26,
+    "branch": 88.57
+  },
+  "timestamp": "2025-06-19T10:45:42.811159",
+  "original_path": "/workspace/runnable_filter/JavaScript/jsdoc2md_jsdoc-parse",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/jsdoc2md_jsdoc-parse",
+  "tests_path": [
+    "test/transform.test.js",
+    "test/transform-extra.test.js",
+    "test/index.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

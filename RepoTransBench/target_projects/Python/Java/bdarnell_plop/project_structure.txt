@@ -1,0 +1,41 @@
+Project Structure (Java, Maven):
+
+.
+├── pom.xml                          # Maven project/build configuration
+├── run_tests.sh                     # Simple one-click test-running script
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── example
+│   │               └── plop
+│   │                   ├── [core source files translated or created as needed]
+│   └── test
+│       └── java
+│           └── com
+│               └── example
+│                   └── plop
+│                       ├── original
+│                       │   ├── CollectorTest.java
+│                       │   ├── ViewerTest.java
+│                       │   ├── CallgraphTest.java
+│                       │   ├── PlatformTest.java
+│                       │   └── SetupTest.java
+│                       └── public_tests
+│                           ├── PublicCollectorTest.java
+│                           ├── PublicViewerTest.java
+│                           ├── PublicCallgraphTest.java
+│                           ├── PublicPlatformTest.java
+│                           └── PublicSetupTest.java
+
+Explanations:
+- pom.xml: Maven build/configuration file, declares project and dependencies
+- run_tests.sh: Executes all tests using `mvn test`
+- src/main/java: Place to implement any ported or stubbed libraries needed for tests
+- src/test/java/com/example/plop/original: All original (private) translated tests
+- src/test/java/com/example/plop/public_tests: All public translated tests
+- All test files follow JUnit5 and Java conventions
+
+Running tests:
+$ chmod +x run_tests.sh
+$ ./run_tests.sh

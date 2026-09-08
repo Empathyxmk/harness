@@ -1,0 +1,48 @@
+{
+  "project_name": "githubocto_repo-visualizer",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:27:54.023624",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/githubocto_repo-visualizer",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/githubocto_repo-visualizer",
+  "original_tests": {
+    "test_files": [
+      "src/process-dir.test.js",
+      "src/utils.test.js",
+      "src/should-exclude-path.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/process-dir.public.test.js",
+      "public_tests/utils.public.test.js",
+      "public_tests/should-exclude-path.public.test.js",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 5,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/process-dir.public.test.js",
+    "public_tests/utils.public.test.js",
+    "public_tests/should-exclude-path.public.test.js",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

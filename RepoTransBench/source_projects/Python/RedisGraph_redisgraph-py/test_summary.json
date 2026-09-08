@@ -1,0 +1,11 @@
+{
+  "project_name": "RedisGraph_redisgraph-py",
+  "language": "Python",
+  "coverage": {
+    "line": 60.0,
+    "branch": 94.4
+  },
+  "timestamp": "2025-06-23T10:36:05.680027",
+  "original_path": "/workspace/test_enhancement_results/Python/RedisGraph_redisgraph-py",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/RedisGraph_redisgraph-py"
+}

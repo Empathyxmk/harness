@@ -1,0 +1,20 @@
+{
+  "project_name": "madisona_django-google-maps",
+  "language": "Python",
+  "coverage": {
+    "line": 82.4,
+    "branch": 88.9
+  },
+  "timestamp": "2025-06-19T12:01:01.159275",
+  "original_path": "/workspace/runnable_filter/Python/madisona_django-google-maps",
+  "test_result_path": "/workspace/test_enhancement_results/Python/madisona_django-google-maps",
+  "tests_path": [
+    "django_google_maps/tests/test_widget.py",
+    "django_google_maps/tests/test_typename.py",
+    "django_google_maps/tests/test_geolocation_field.py",
+    "django_google_maps/tests/test_geopt_field.py",
+    "django_google_maps/tests/test_setup_manage_urls.py",
+    "django_google_maps/tests/test_fields_models_widgets.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

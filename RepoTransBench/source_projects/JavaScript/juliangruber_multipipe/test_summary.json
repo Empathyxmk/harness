@@ -1,0 +1,15 @@
+{
+  "project_name": "juliangruber_multipipe",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:46:48.380207",
+  "original_path": "/workspace/runnable_filter/JavaScript/juliangruber_multipipe",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/juliangruber_multipipe",
+  "tests_path": [
+    "test/multipipe.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

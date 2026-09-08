@@ -1,0 +1,27 @@
+maskerlogger/
+├── src/
+│   ├── ahocorasick_regex_match.rs
+│   ├── lib.rs
+│   ├── masker_formatter.rs
+│   ├── secrets_in_logs_example.rs
+│   └── utils.rs
+├── tests/
+│   ├── original/
+│   │   ├── test_ahocorasick_regex_match.rs
+│   │   ├── test_ahocorasick_regex_match_additional.rs
+│   │   ├── test_masked_logger.rs
+│   │   ├── test_masker_formatter.rs
+│   │   ├── test_secrets_in_logs_example.rs
+│   │   ├── test_utils.rs
+│   │   └── test_utils_additional.rs
+│   └── public/
+│       ├── test_public_ahocorasick_regex_match.rs
+│       ├── test_public_ahocorasick_regex_match_additional.rs
+│       ├── test_public_masked_logger.rs
+│       ├── test_public_masker_formatter.rs
+│       ├── test_public_secrets_in_logs_example.rs
+│       ├── test_public_utils.rs
+│       └── test_public_utils_additional.rs
+├── Cargo.toml
+├── project_structure.txt
+├── run_tests.sh

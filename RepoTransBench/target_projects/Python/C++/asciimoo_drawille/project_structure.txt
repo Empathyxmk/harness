@@ -1,0 +1,36 @@
+asciimoo_drawille/         # Project root
+├── include/               # All C++ header files
+│   └── drawille.h         # Main interface header for testing & implementation
+├── src/                   # Source code for implementation
+│   ├── CMakeLists.txt     # CMake subproject config for src/
+│   └── drawille.cpp       # Main implementation (stub/minimal for test compilation)
+├── tests/                 # All test code for original tests
+│   ├── original/          # Original test cases translated from Python
+│   │   ├── tests.cpp
+│   │   ├── tests_drawille_extra.cpp
+│   │   └── speed_test.cpp
+│   └── test_main.cpp      # Common entrypoint for all test executables
+├── public_tests/          # All public test cases
+│   ├── test_public_drawille_extra.cpp
+│   └── test_public_speed_test.cpp
+├── CMakeLists.txt         # Top-level CMake build file
+├── run_tests.sh           # Simple one-click test runner (build+run all tests)
+└── project_structure.txt  # [THIS FILE] Directory documentation
+
+# Directory and File Purposes:
+
+- include/: Project header files, including the main interface to be used by all tests and implementations.
+- src/: Actual implementation of the codebase (minimal/stub for compilation here; should be expanded for real use).
+- tests/original/: All tests directly from the original Python test files (unit, functional, edge cases).
+- public_tests/: Public tests designed to validate submission correctness/compatibility.
+- tests/test_main.cpp: Singleton entry point for running GoogleTest in all test binaries.
+- CMakeLists.txt: CMake configuration for building/testing the project, including gtest integration.
+- run_tests.sh: Build and run all tests with a single CLI command; minimal and user-friendly.
+- project_structure.txt: THIS file; maps/explains the project structure.
+
+# Setup and Testing Instructions:
+
+1. Ensure cmake and a C++17 compiler are installed.
+2. Run: `chmod +x run_tests.sh`
+3. Execute: `./run_tests.sh` from the root directory.
+4. Both original and public test suites will build and run; results printed to terminal.

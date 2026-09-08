@@ -1,0 +1,87 @@
+{
+  "project_name": "code4craft_hello-design-pattern",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T15:24:18.181099",
+  "original_path": "/workspace/verified_repos_v2/Java/code4craft_hello-design-pattern",
+  "public_test_result_path": "/workspace/public_test_results/Java/code4craft_hello-design-pattern",
+  "iterations_completed": 2,
+  "token_usage_stats": {
+    "project_structure_tokens": 1906,
+    "test_files_tokens": 4713,
+    "test_files_count": 38,
+    "source_files_tokens": 0,
+    "source_files_count": 0,
+    "total_content_tokens": 6619,
+    "average_tokens_per_test_file": 124,
+    "average_tokens_per_source_file": 0
+  },
+  "original_tests": {
+    "test_files": [
+      "src/test/java/helloworld/HelloWorldTest.java",
+      "src/test/java/helloworld/MainTest.java",
+      "src/test/java/helloworld/SplitHelloWorldTest.java",
+      "src/test/java/helloworld/creational/prototype/HelloWorldPrototypeFullTest.java",
+      "src/test/java/helloworld/creational/prototype/HelloWorldPrototypeTest.java",
+      "src/test/java/helloworld/creational/singleton/HelloWorldSingletonFullTest.java",
+      "src/test/java/helloworld/creational/singleton/HelloWorldSingletonTest.java",
+      "src/test/java/helloworld/creational/builder/HelloWorldBuilderTest.java",
+      "src/test/java/helloworld/creational/abstract_factory/AbstractFactoryTest.java",
+      "src/test/java/helloworld/creational/factory_method/FactoryMethodHelloWorldFactoryTest.java",
+      "src/test/java/helloworld/structural/composite/CompositeHelloWorldTest.java",
+      "src/test/java/helloworld/structural/facade/HelloWorldFacadeTest.java",
+      "src/test/java/helloworld/structural/adapter/HelloWorldAdapterTest.java",
+      "src/test/java/helloworld/structural/bridge/HelloWorldBridgeTest.java",
+      "src/test/java/helloworld/structural/proxy/HelloWorldProxyTest.java",
+      "src/test/java/helloworld/structural/flyweight/HelloWorldFlyWeightTest.java",
+      "src/test/java/helloworld/structural/decorator/HelloWorldDecoratorTest.java",
+      "src/test/java/helloworld/behavioral/mediator/HelloWorldInterjectionTest.java",
+      "src/test/java/helloworld/behavioral/mediator/HelloWorldObjectTest.java",
+      "src/test/java/helloworld/behavioral/mediator/HelloWorldMediatorTest.java",
+      "src/test/java/helloworld/behavioral/strategy/HelloWorldStrategyContextTest.java",
+      "src/test/java/helloworld/behavioral/strategy/JavaHelloWorldStrategyTest.java",
+      "src/test/java/helloworld/behavioral/chain_of_responsibility/HelloWorldHandlerTest.java",
+      "src/test/java/helloworld/behavioral/chain_of_responsibility/HelloWorldObjectHandlerTest.java",
+      "src/test/java/helloworld/behavioral/observer/HelloWorldObserverTest.java",
+      "src/test/java/helloworld/behavioral/observer/SubjectTest.java",
+      "src/test/java/helloworld/behavioral/template_method/TemplateMethodHelloWorldTest.java",
+      "src/test/java/helloworld/behavioral/command/HelloWorldPrintCommandTest.java",
+      "src/test/java/helloworld/behavioral/memento/HelloWorldMementoTest.java",
+      "src/test/java/helloworld/behavioral/state/HelloWorldStateContextTest.java",
+      "src/test/java/helloworld/behavioral/state/HelloWorldStateTest.java",
+      "src/test/java/helloworld/behavioral/visitor/HelloWorldVisitorTest.java",
+      "src/test/java/helloworld/behavioral/iterator/HelloWorldIteratorTest.java",
+      "src/test/java/helloworld/behavioral/iterator/HelloWorldCharacterIteratorTest.java",
+      "src/test/java/helloworld/behavioral/interpreter/HelloWorldInterpreterTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 35,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/helloworld/HelloWorldPublicTest.java",
+      "src/test/java/helloworld/SplitHelloWorldPublicTest.java",
+      "src/test/java/helloworld/MainPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 4,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/helloworld/HelloWorldPublicTest.java",
+    "src/test/java/helloworld/SplitHelloWorldPublicTest.java",
+    "src/test/java/helloworld/MainPublicTest.java",
+    "run_public_tests.sh"
+  ]
+}

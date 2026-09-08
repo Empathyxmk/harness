@@ -1,0 +1,57 @@
+{
+  "project_name": "c0ny1_chunked-coding-converter",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:42:52.236836",
+  "original_path": "/workspace/verified_repos_v2/Java/c0ny1_chunked-coding-converter",
+  "public_test_result_path": "/workspace/public_test_results/Java/c0ny1_chunked-coding-converter",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 1,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterPublicTest.java",
+      "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterPublicTest.java",
+      "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterPublicTest.java",
+    "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterTest.java",
+    "run_public_tests.sh",
+    "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterTest.java",
+    "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterPublicTest.java",
+    "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterTest.java",
+    "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterPublicTest.java",
+    "src/test/java/com/c0ny1/chunked/coding/converter/ChunkedCodingConverterPublicTest.java"
+  ]
+}

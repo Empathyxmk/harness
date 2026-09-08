@@ -1,0 +1,33 @@
+project_root/
+├── src/
+│   └── chinamapdeviation/
+│       └── __init__.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_china_map_deviation.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_china_map_deviation.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+
+Structure explanation:
+
+- src/chinamapdeviation/: Placeholder for the main package; all test scaffolds duplicated in tests for independence.
+- tests/original/: Contains all original translated tests from Matlab, matching original test logic, input, and coverage.
+- public_tests/: Contains all public translated tests from Matlab, using public data and edge cases.
+- requirements.txt: Python package requirements (pytest).
+- run_tests.sh: Simple script to run all tests (both original and public) with one command using pytest.
+- project_structure.txt: This project structure and documentation file.
+- All test modules are implemented to be run by pytest automatically.
+
+Setup and testing instructions:
+
+1. Install requirements:
+    pip install -r requirements.txt
+2. Run all tests:
+    ./run_tests.sh
+   (You may need to "chmod +x run_tests.sh" the first time.)

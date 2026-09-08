@@ -1,0 +1,32 @@
+cloudwu_coroutine_python/
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── src/
+│   └── coroutine/
+│       └── __init__.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_coroutine.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_coroutine_public.py
+
+Directory explanations:
+- requirements.txt           # Python dependencies, includes pytest
+- run_tests.sh               # Simple script to run all tests via pytest
+- README.md                  # Project/documentation entrypoint
+- src/coroutine/             # (Empty/stub) placeholder for source; real code not tested here (only mocks in tests)
+- tests/original/            # Translated "original" test cases from test_coroutine.c
+- public_tests/              # Translated "public" test cases from test_coroutine_public.c
+
+Setup Instructions:
+1. Install Python 3.x and pip if not installed.
+2. Install test dependencies: `pip install -r requirements.txt`
+3. Run all tests with: `./run_tests.sh`
+
+Testing Instructions:
+- All tests are organized under `tests/original/` (originals) and `public_tests/` (public).
+- The project uses pytest and includes coroutine system mocks inside the tests to mimic the C API behavior.

@@ -1,0 +1,53 @@
+charlesnicholson_nanoprintf/
+├── CMakeLists.txt
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTORS.md
+├── LICENSE
+├── README.md
+├── b
+├── build.py
+├── examples/
+│   ├── use_npf_directly/
+│   │   ├── main.cc
+│   │   ├── main_public_test.cc
+│   │   ├── main_public_test.cpp
+│   │   ├── your_project_nanoprintf.cc
+│   │   └── your_project_nanoprintf_public_test.cc
+│   └── wrap_npf/
+│       ├── main.cc
+│       ├── your_project_printf.cc
+│       └── your_project_printf.h
+├── nanoprintf.h
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── __init__.py
+│   └── test_main_public.py
+├── pyrightconfig.json
+├── requirements.txt
+├── ruff.toml
+├── run_public_tests.sh
+├── run_tests.sh
+├── test_summary.json
+├── test_translation_progress.json
+└── tests/
+    ├── __init__.py
+    ├── alltests.cc
+    ├── compilation_c.c
+    ├── conformance-conformance.gcno
+    ├── conformance-doctest_main.gcno
+    ├── conformance.cc
+    ├── doctest.h
+    ├── doctest_main.cc
+    ├── include_multiple.c
+    ├── mpaland-conformance
+    ├── npf_test_main.cpp
+    ├── original/
+    │   ├── __init__.py
+    │   ├── test_alltests_cc.py
+    │   ├── test_doctest_h.py
+    │   ├── test_nanoprintf.py
+    │   └── test_test_summary_json.py
+    ├── size_report.py
+    ├── static_main.c
+    └── static_nanoprintf.c

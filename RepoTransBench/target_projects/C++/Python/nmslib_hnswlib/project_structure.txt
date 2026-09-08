@@ -1,0 +1,37 @@
+nmslib_hnswlib/
+├── requirements.txt                 # Python dependencies
+├── run_tests.sh                     # Shell script to run all tests
+├── README.md                        # Project overview and instructions
+├── src/
+│   └── nmslib_hnswlib/              # (Placeholder for translated/implemented library code)
+│       └── __init__.py
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_bindings.py
+│   │   ├── test_bindings_getdata.py
+│   │   ├── test_bindings_labels.py
+│   │   ├── test_bindings_metadata.py
+│   │   ├── test_bindings_pickle.py
+│   │   ├── test_bindings_recall.py
+│   │   ├── test_bindings_replace.py
+│   │   ├── test_bindings_filter.py
+│   │   ├── test_bindings_stress_mt_replace.py
+│   │   ├── test_bindings_resize.py
+│   │   ├── test_bindings_spaces.py
+│   │   ├── test_git_tester.py
+│   │   ├── test_speedtest.py
+│   │   ├── test_draw_git_test_plots.py
+│   │   └── test_cpp_*               # C++ test file translations, e.g., test_cpp_searchKnnCloserFirst.py
+│   └── conftest.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_bindings_public.py
+└── README.md
+
+* `src/nmslib_hnswlib/` — main source package directory (placeholder for translated core library)
+* `tests/original/` — all original (C++ and Python) test case translations (as pytest/unittest)
+* `public_tests/` — public sample "smoke" tests, user-facing diagnostics
+* `requirements.txt` — Python dependencies for running all tests
+* `run_tests.sh` — run all tests in one click

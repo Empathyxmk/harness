@@ -1,0 +1,31 @@
+AESCrypt-Android/                # Project Root
+├── src/
+│   └── AESCrypt/
+│       ├── AESCrypt.cs          # AES encryption/decryption implementation (ported from Java)
+│       └── AESCrypt.csproj      # .NET class library project for AES logic
+├── tests/
+│   └── original/
+│       ├── AESCryptTest.cs
+│       ├── AESCryptDebugTest.cs
+│       ├── AESCryptReflectionTest.cs
+│       ├── ApplicationStubTest.cs
+│       ├── ApplicationTest.cs
+│       └── OriginalTests.csproj # xUnit test project with original tests
+├── public_tests/
+│   ├── ApplicationPublicTest.cs
+│   ├── AESCryptDebugPublicTest.cs
+│   ├── AESCryptPublicTest.cs
+│   ├── AESCryptReflectionPublicTest.cs
+│   ├── ApplicationStubPublicTest.cs
+│   └── PublicTests.csproj       # xUnit test project with public tests
+├── AESCrypt-Android.sln         # Visual Studio solution linking all components
+├── run_tests.sh                 # Simple one-click script to execute ALL tests
+└── project_structure.txt        # This file - describes project organization
+
+# Directory/Files Explanation:
+# src/AESCrypt/           - Contains the AESCrypt C# implementation library
+# tests/original/         - xUnit project for original Java-authored tests (ported to C#)
+# public_tests/           - xUnit project for generated/curated public tests (ported to C#)
+# run_tests.sh            - Run all tests with a single command
+# .sln + .csproj files    - Standard .NET Core build/project structure
+# All projects reference src/AESCrypt/AESCrypt.csproj for cryptographic logic

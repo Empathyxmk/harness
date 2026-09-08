@@ -1,0 +1,17 @@
+expressjs_cookie_session-python/
+├── README.md                         # Project overview and usage
+├── requirements.txt                  # Python dependencies (includes pytest)
+├── run_tests.sh                      # Simple script to run all tests
+├── src/
+│   ├── __init__.py                   # Makes src a package
+│   └── index.py                      # Translated module stub (replace with actual code)
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py               # Package marker
+│   │   ├── test_cookie_session.py    # Original test: cookie-session.spec.js
+│   │   ├── test_unit_index.py        # Original test: unit.index.test.js
+│   │   └── test_placeholder.py       # Original placeholder test
+├── public_tests/
+│   ├── __init__.py                   # Package marker
+│   ├── test_cookie_session_public.py # Public test for cookie-session
+│   └── test_unit_index_public.py     # Public test for unit.index

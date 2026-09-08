@@ -1,0 +1,37 @@
+chemzqm_stack-source-map-python/
+├── requirements.txt
+├── run_tests.sh
+├── src/
+│   └── stack_source_map.py
+├── tests/
+│   └── original/
+│       ├── test_babel.py             # Async/Promise original test (always fails by design)
+│       ├── test_index.py             # Main original Node.js-like tests (location not defined)
+│       ├── test_isolated_env.py      # Tests simulating a browser file protocol environment (location.protocol == 'file:')
+│       ├── test_legacy_skip.py       # Skipped test as in JavaScript
+│       ├── test_patch.py             # Patch/original repeated and option manipulation tests
+├── public_tests/
+│   ├── test_index_public.py          # Public version of Node.js/no-location tests
+│   └── test_isolated_env_public.py   # Public version of file protocol browser test
+└── README.md
+
+--------------------------------------------------------------------------------
+Directory explanations:
+- src/                  -- source Python module (implementation stub for stack_source_map)
+- tests/original/       -- original test suite, direct JavaScript test logic translation
+- public_tests/         -- public/altered sample test suite per original public JS tests
+- requirements.txt      -- Python dependencies (pytest)
+- run_tests.sh          -- One-click execution script for all tests (pytest)
+- project_structure.txt -- This file; describes project tree and usage
+
+--------------------------------------------------------------------------------
+Setup & Testing Instructions:
+1. Install requirements:   pip install -r requirements.txt
+2. Run all tests:          ./run_tests.sh
+   (or: pytest)
+3. Both original and public tests run by default (pytest auto-discovers public_tests/ and tests/)
+
+Note:
+- The 'src/stack_source_map.py' implements a stub module to make all translated tests runnable.
+- Some tests (e.g. test_babel.py) are expected to always fail, to match original JavaScript tests.
+--------------------------------------------------------------------------------

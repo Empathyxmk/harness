@@ -1,0 +1,47 @@
+ComponentDemo.sln                 # Visual Studio solution file for all projects
+
+src/
+  ComponentDemo/
+    ComponentDemo.csproj          # (Empty) main code project for test linking
+
+tests/
+  original/
+    ComponentDemo.Tests.csproj                 # xUnit test project for all original tests
+    ExampleInstrumentedTest_ComponentBase.cs   # componentbase ExampleInstrumentedTest translation
+    ServiceFactoryTest.cs                      # componentbase ServiceFactoryTest translation (+infra)
+    ExampleUnitTest_ComponentBase.cs           # componentbase ExampleUnitTest translation
+    EmptyAccountServiceTest.cs                 # componentbase/empty_service/EmptyAccountServiceTest translation
+    ExampleInstrumentedTest_Login.cs           # login ExampleInstrumentedTest translation
+    ExampleUnitTest_Login.cs                   # login ExampleUnitTest translation
+    ExampleInstrumentedTest_ComponentDemo.cs   # app ExampleInstrumentedTest translation
+    ExampleUnitTest_ComponentDemo.cs           # app ExampleUnitTest translation
+    ExampleInstrumentedTest_Share.cs           # share ExampleInstrumentedTest translation
+    ExampleUnitTest_Share.cs                   # share ExampleUnitTest translation
+    ExampleInstrumentedTest_Base.cs            # base ExampleInstrumentedTest translation
+    ExampleUnitTest_Base.cs                    # base ExampleUnitTest translation
+
+public_tests/
+  ComponentDemo.PublicTests.csproj               # xUnit test project for all public tests
+  ExampleInstrumentedPublicTest_ComponentBase.cs # componentbase ExampleInstrumentedPublicTest translation
+  ExampleUnitPublicTest_ComponentBase.cs         # componentbase ExampleUnitPublicTest translation
+  ServiceFactoryPublicTest.cs                    # componentbase ServiceFactoryPublicTest translation (+infra)
+  EmptyAccountServicePublicTest.cs               # componentbase/empty_service/EmptyAccountServicePublicTest translation
+  ExampleInstrumentedPublicTest_Login.cs         # login ExampleInstrumentedPublicTest translation
+  ExampleUnitPublicTest_Login.cs                 # login ExampleUnitPublicTest translation
+  ExampleInstrumentedPublicTest_Share.cs         # share ExampleInstrumentedPublicTest translation
+  ExampleUnitPublicTest_Share.cs                 # share ExampleUnitPublicTest translation
+  ExampleInstrumentedPublicTest_Base.cs          # base ExampleInstrumentedPublicTest translation
+  ExampleUnitPublicTest_Base.cs                  # base ExampleUnitPublicTest translation
+
+run_tests.sh                         # One-click script, runs all tests via dotnet test
+
+README.md                            # (not provided, placeholder)
+project_structure.txt                # This file, project/directory descriptions
+
+Setup & Testing Instructions:
+----------------------------------------------
+1. Install .NET 6+ SDK (https://dotnet.microsoft.com/download)
+2. Run all tests:      ./run_tests.sh
+3. To run interactively: dotnet test tests/original/     # or public_tests/
+----------------------------------------------
+Each test file is a 1-to-1 accurate translation of the Java/Kotlin test cases, logic preserved.

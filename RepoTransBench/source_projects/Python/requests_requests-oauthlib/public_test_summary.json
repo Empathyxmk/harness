@@ -1,0 +1,62 @@
+{
+  "project_name": "requests_requests-oauthlib",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:22:06.548333",
+  "original_path": "/workspace/verified_repos_v2/Python/requests_requests-oauthlib",
+  "public_test_result_path": "/workspace/public_test_results/Python/requests_requests-oauthlib",
+  "original_tests": {
+    "test_files": [
+      "tests/test_oauth2_session.py",
+      "tests/test_oauth1_session.py",
+      "tests/test_core.py",
+      "tests/test_init_and_setup.py",
+      "tests/test_oauth2_auth.py",
+      "tests/test_compliance_fixes.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_core.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_init_and_setup.py",
+      "public_tests/test_public_oauth2_auth.py",
+      "public_tests/test_public_compliance_fixes.py",
+      "public_tests/test_public_oauth2_session.py",
+      "public_tests/test_public_oauth1_session.py",
+      "public_tests/test_public_core.py",
+      "public_tests/test_public_core.py",
+      "public_tests/test_public_core.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 11,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_core.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_init_and_setup.py",
+    "public_tests/test_public_oauth2_auth.py",
+    "public_tests/test_public_compliance_fixes.py",
+    "public_tests/test_public_oauth2_session.py",
+    "public_tests/test_public_oauth1_session.py",
+    "public_tests/test_public_core.py",
+    "public_tests/test_public_core.py",
+    "public_tests/test_public_core.py",
+    "run_public_tests.sh"
+  ]
+}

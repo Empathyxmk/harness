@@ -1,0 +1,45 @@
+serkanyersen_underscore/
+├── Cargo.toml                # Rust project configuration
+├── src/
+│   ├── lib.rs                # lib entry, exports underscore.rs
+│   └── underscore.rs         # Rust implementation of core underscore-like functions
+├── tests/
+│   └── original/
+│       ├── test_arrays.rs        # Original full arrays tests
+│       ├── test_basics.rs        # Original basics tests
+│       ├── test_collections.rs   # Original collections tests
+│       ├── test_functions.rs     # Original functions tests
+│       ├── test_more_coverage.rs # Original "more_coverage" tests
+│       ├── test_objects.rs       # Original objects tests
+│       ├── test_structure.rs     # Original structure tests
+│       └── test_utility.rs       # Original utility tests
+├── public_tests/
+│   ├── test_public_arrays.rs
+│   ├── test_public_basics.rs
+│   ├── test_public_collections.rs
+│   ├── test_public_functions.rs
+│   ├── test_public_more_coverage.rs
+│   ├── test_public_objects.rs
+│   ├── test_public_structure.rs
+│   └── test_public_utility.rs
+├── README.md                 # This documentation
+├── project_structure.txt     # Project structure and explanation (this file)
+└── run_tests.sh              # One-click test runner
+
+- `src/underscore.rs`  
+  Contains the Rust port of the core underscore-like functions. 
+
+- `tests/original/`  
+  Contains all full coverage, original test cases ported from Python.
+
+- `public_tests/`  
+  Contains public, smaller version of tests ported from public example Python test suite.
+
+- `run_tests.sh`  
+  One-liner to compile and run the tests.
+
+- `Cargo.toml`  
+  Cargo setup with dependencies.
+
+To run all tests, just:  
+    ./run_tests.sh

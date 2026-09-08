@@ -1,0 +1,28 @@
+signalfx_maestro_ng/
+├── Cargo.toml
+├── README.md
+├── src/
+│   └── lib.rs
+├── tests/
+│   └── original/
+│       ├── test_lifecycle.rs
+│       └── test_loader.rs
+├── public_tests/
+│   ├── test_lifecycle_public.rs
+│   └── test_loader_public.rs
+├── run_tests.sh
+└── project_structure.txt
+
+Directory explanations:
+- Cargo.toml: Rust dependency and build configuration
+- README.md: Project documentation and Rust usage
+- src/lib.rs: Library stub (add crate logic here)
+- tests/original/: All translated original test cases from the Python repo
+- public_tests/: Rust translations of public test cases, using only public/dummy structures, safe for public review
+- run_tests.sh: Single-command Rust test runner (executes all tests in main, tests, and public_tests folders)
+- project_structure.txt: This file; summary of project organization and contents
+
+Setup and testing:
+1. Make sure you have Rust and Cargo installed (https://rustup.rs)
+2. Run all tests: `./run_tests.sh`
+3. All tests from both original and public suites will be run by `cargo test`

@@ -1,0 +1,11 @@
+{
+  "project_name": "kaimallea_node-googl",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 83.9,
+    "branch": 54.5
+  },
+  "timestamp": "2025-06-19T10:47:48.302606",
+  "original_path": "/workspace/runnable_filter/JavaScript/kaimallea_node-googl",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/kaimallea_node-googl"
+}

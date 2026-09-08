@@ -1,0 +1,17 @@
+{
+  "project_name": "trent-b_iterative-stratification",
+  "language": "Python",
+  "coverage": {
+    "line": 57.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T13:00:55.763400",
+  "original_path": "/workspace/runnable_filter/Python/trent-b_iterative-stratification",
+  "test_result_path": "/workspace/test_enhancement_results/Python/trent-b_iterative-stratification",
+  "tests_path": [
+    "tests/test_init_and_setup.py",
+    "tests/test_iterative_stratification.py",
+    "tests/test_ml_stratifiers.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

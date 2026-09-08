@@ -1,0 +1,13 @@
+cofyc_argparse_rs/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── fake_argparse.rs
+├── tests/
+│   └── original/
+│       └── argparse_unit_test.rs
+├── public_tests/
+│   └── argparse_unit_test_public.rs
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json

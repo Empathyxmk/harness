@@ -1,0 +1,11 @@
+{
+  "project_name": "angeloc_s3-pit-restore",
+  "language": "Python",
+  "coverage": {
+    "line": 68.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T11:26:29.707700",
+  "original_path": "/workspace/runnable_filter/Python/angeloc_s3-pit-restore",
+  "test_result_path": "/workspace/test_enhancement_results/Python/angeloc_s3-pit-restore"
+}

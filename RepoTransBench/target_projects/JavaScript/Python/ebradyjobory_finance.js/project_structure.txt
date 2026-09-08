@@ -1,0 +1,36 @@
+ebradyjobory_finance_python/
+├── src/
+│   └── finance/
+│       ├── __init__.py
+│       └── finance.py         # Translated finance class (stub, must be implemented)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_finance_edge.py     # Original translated (private) test cases
+├── public_tests/
+│   ├── __init__.py
+│   └── test_finance_edge_public.py  # Public translated test cases
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Run all tests in one click
+└── project_structure.txt           # This documentation file
+
+# Directory and File Descriptions:
+
+src/finance/              - Python package containing the translated Finance class.
+src/finance/finance.py    - Placeholder for the actual Business Logic (must be implemented for tests to work)
+tests/original/           - Original/private test cases from the JS repo, translated to Python with identical logic.
+public_tests/             - Public edge test cases from JS repo, translated; organized for separation.
+requirements.txt          - All dependencies for running tests (pytest).
+run_tests.sh              - One-click shell script to run all tests via pytest.
+project_structure.txt     - This explanation and overview document.
+
+## Setup & Test Instructions
+
+1. Install dependencies:  
+   `pip install -r requirements.txt`
+
+2. Run **all tests** with one command:  
+   `./run_tests.sh`
+
+3. Add your actual Finance implementation in `src/finance/finance.py` for tests to pass.

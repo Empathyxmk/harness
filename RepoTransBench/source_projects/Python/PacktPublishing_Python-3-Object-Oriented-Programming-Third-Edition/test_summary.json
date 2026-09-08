@@ -1,0 +1,19 @@
+{
+  "project_name": "PacktPublishing_Python-3-Object-Oriented-Programming-Third-Edition",
+  "language": "Python",
+  "coverage": {
+    "line": 99.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T12:13:02.611184",
+  "original_path": "/workspace/runnable_filter/Python/PacktPublishing_Python-3-Object-Oriented-Programming-Third-Edition",
+  "test_result_path": "/workspace/test_enhancement_results/Python/PacktPublishing_Python-3-Object-Oriented-Programming-Third-Edition",
+  "tests_path": [
+    "tests/test_car_flyweight.py",
+    "tests/test_window_command.py",
+    "tests/test_email_facade.py",
+    "tests/test_folder_composite.py",
+    "tests/test_pythonic_window_command.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

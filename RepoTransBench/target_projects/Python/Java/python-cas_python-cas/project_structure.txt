@@ -1,0 +1,49 @@
+cas-java-port/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── org/
+│   │           └── cas/
+│   │               ├── CASClientBase.java       # Core CAS client base (partial stub for tests)
+│   │               ├── CASError.java           # Exception class for CAS errors
+│   │               ├── SingleLogoutMixin.java  # Helper functions for SAML SLO
+│   │               ├── CASClient.java          # CASClient class stub
+│   │               ├── CASClientV2.java        # CASClientV2 stub
+│   │               ├── CASClientWithSAMLV1.java# CASClientWithSAMLV1 stub for logout request tests
+│   │               └── Main.java               # Main entry point (stub)
+│   └── test/
+│       └── java/
+│           └── org/
+│               └── cas/
+│                   ├── original/
+│                   │   ├── TestCASClientBase.java      # Original tests: test_cas.py
+│                   │   ├── TestCASErrorAndSLO.java     # Original tests: test_cas_error_and_slo.py
+│                   │   ├── TestCASUncovered.java       # Skipped network tests
+│                   │   ├── TestCASSmokeTest.java       # test_cas_smoketest.py
+│                   │   ├── TestCASExtra.java           # test_cas_extra.py
+│                   └── public_tests/
+│                       ├── PublicTestCASClientBase.java      # Public test_public_cas.py
+│                       ├── PublicTestCASErrorAndSLO.java     # Public test_public_cas_error_and_slo.py
+│                       ├── PublicTestCASUncovered.java       # Skipped public network tests
+│                       ├── PublicTestCASSmokeTest.java       # Public test_public_cas_smoketest.py
+│                       ├── PublicTestCASExtra.java           # Public test_public_cas_extra.py
+
+Breakdown:
+- pom.xml: Maven build config, dependencies (JUnit, dom4j for XML)
+- run_tests.sh: One-click test execution
+- src/main/java/org/cas/: Stubs/classes required for tests to compile/run
+- src/test/java/org/cas/original/: Fully translated private/original test cases
+- src/test/java/org/cas/public_tests/: Public test cases, mapped to Java and using different data
+
+Instructions:
+1. Install Java 1.8+ and Maven 3.x
+2. Run all tests (original + public): ./run_tests.sh
+3. View original tests under src/test/java/org/cas/original/
+4. View public tests under src/test/java/org/cas/public_tests/
+5. Add/replace CAS logic in src/main/java/org/cas/ if needed for production use
+
+NOTE:
+- All test logic from Python is preserved. Any logic which required network access remains @Disabled (skipped) in Java.
+- CASClient, CASClientBase, etc. are partial stubs to support testing only; flesh out fully for app/library use.

@@ -1,0 +1,35 @@
+sam31415_timeseriescv Rust Project Structure
+============================================
+
+Root/
+├── Cargo.toml                    # Rust build and dependency manifest
+├── src/
+│   ├── lib.rs                    # Library root, exposes modules
+│   └── cross_validation.rs       # Core logic (placeholder/stub for testing)
+├── tests/
+│   ├── original/
+│   │   ├── test_cross_validation.rs            # Original (private) test cases
+│   │   └── test_cross_validation_errors.rs     # Original error/edge-case tests
+├── public_tests/
+│   ├── test_public_cross_validation.rs         # Public-facing test cases
+│   └── test_public_cross_validation_errors.rs  # Public error/edge-case tests
+├── run_tests.sh                   # One-click test execution script
+└── project_structure.txt          # This file
+
+Directory/Files Explanation:
+---------------------------
+Cargo.toml            : Rust crate metadata and dependencies.
+src/                  : Library code (stubs for this translation, real logic not yet implemented).
+tests/original/       : Original/private tests (full translation of Python private tests).
+public_tests/         : Public test suite (full translation of public Python tests).
+run_tests.sh          : Minimal, one-click test runner (`./run_tests.sh`).
+project_structure.txt : This structure and documentation file.
+
+Testing & Usage:
+----------------
+1. Ensure you have Rust & Cargo installed.
+2. To run all tests (including original and public), simply do:
+
+    ./run_tests.sh
+
+All code and tests are organized so you can add the real logic in `src/` without changing the test structure.

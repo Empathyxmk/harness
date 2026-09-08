@@ -1,0 +1,44 @@
+project_root/
+├── src/
+│   ├── __init__.py           # (not shown, can be empty)
+│   ├── rosenbrock.py         # Rosenbrock function implementation
+│   └── differential_evolution.py # Differential Evolution implementation
+├── tests/
+│   ├── __init__.py           # Makes 'tests' a package
+│   ├── test_rosenbrock.py    # Private/original tests for the Rosenbrock function
+│   └── test_differential_evolution.py # Private/original tests for the differential evolution optimizer
+├── public_tests/
+│   ├── __init__.py           # Makes 'public_tests' a package
+│   ├── test_rosenbrock_public.py     # Public tests for Rosenbrock
+│   └── test_differential_evolution_public.py # Public tests for differential evolution
+├── requirements.txt          # Python and test dependencies (pytest, numpy)
+├── run_tests.sh              # One-click test execution script
+├── README.md                 # Overview and usage instructions
+└── project_structure.txt     # This file: full tree and explanations
+
+Directory/Files Explanation
+--------------------------
+src/                   - Python module source code
+    rosenbrock.py      - Rosenbrock function for optimization (scalar, two args)
+    differential_evolution.py - Differential Evolution on Rosenbrock
+
+tests/                 - Original/private tests (mirroring Matlab's /tests)
+    test_rosenbrock.py - Covers Rosenbrock at specific points and edges
+    test_differential_evolution.py - Tests DE with various parameterizations
+
+public_tests/          - Public tests (mirroring Matlab's /tests_public)
+    test_rosenbrock_public.py - Additional/alternate tests for Rosenbrock
+    test_differential_evolution_public.py - Additional/alternate DE tests
+
+requirements.txt       - Python, pytest, numpy
+run_tests.sh           - Execute all tests with one command (run from project root)
+README.md              - Instructions
+project_structure.txt  - This file
+
+How to run ALL tests:
+---------------------
+1. Install Python 3.8+ and pip, if not already present.
+2. `pip install -r requirements.txt`
+3. `chmod +x run_tests.sh`
+4. Run: `./run_tests.sh`
+   (Runs both private/original and public test sets)

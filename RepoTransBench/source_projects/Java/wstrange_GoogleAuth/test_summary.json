@@ -1,0 +1,23 @@
+{
+  "project_name": "wstrange_GoogleAuth",
+  "language": "Java",
+  "coverage": {
+    "line": 80.0,
+    "branch": 63.0
+  },
+  "timestamp": "2025-06-20T04:22:22.038343",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/wstrange_GoogleAuth",
+  "test_result_path": "/workspace/test_enhancement_results/Java/wstrange_GoogleAuth",
+  "tests_path": [
+    "src/test/java/com/warrenstrange/googleauth/ReseedingSecureRandomTest.java",
+    "src/test/java/com/warrenstrange/googleauth/GoogleAuthTest.java",
+    "src/test/java/com/warrenstrange/googleauth/GoogleAuthenticatorQRGeneratorUtilTest.java",
+    "src/test/java/com/warrenstrange/googleauth/KeyRepresentationTest.java",
+    "src/test/java/com/warrenstrange/googleauth/GoogleAuthenticatorExceptionTest.java",
+    "src/test/java/com/warrenstrange/googleauth/GoogleAuthenticatorQRGeneratorTest.java",
+    "src/test/java/com/warrenstrange/googleauth/GoogleAuthenticatorConfigTest.java",
+    "src/test/java/com/warrenstrange/googleauth/HmacHashFunctionTest.java",
+    "src/test/java/com/warrenstrange/googleauth/GoogleAuthenticatorKeyTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

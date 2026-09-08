@@ -1,0 +1,66 @@
+Java skorokithakis_shortuuid Port Project Structure
+
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── project_structure.txt
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── shortuuid/
+│   │                   ├── (shortuuid core library source files)*
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── shortuuid/
+│                       ├── original/
+│                       │   ├── CliTest.java
+│                       │   ├── CliArgparseErrorsTest.java
+│                       │   ├── DjangoFieldsTest.java
+│                       │   ├── MainAdditionalTest.java
+│                       │   ├── MainBranchesTest.java
+│                       │   ├── ShortUUIDInitImportsTest.java
+│                       │   └── ShortUUIDTest.java
+│                       └── public_tests/
+│                           ├── PublicCliTest.java
+│                           ├── PublicCliArgparseErrorsTest.java
+│                           ├── PublicDjangoFieldsTest.java
+│                           ├── PublicMainAdditionalTest.java
+│                           ├── PublicMainBranchesTest.java
+│                           ├── PublicShortUUIDTest.java
+│                           └── PublicShortUUIDInitImportsTest.java
+└── README.md
+
+* The implementation files for the shortuuid library are not included in this port.
+  Replace `(shortuuid core library source files)` with actual library files if desired.
+  Tests assume compatible Java implementations of ShortUUID, encode, decode, etc.
+
+Directory Explanations:
+-----------------------
+src/main/java/com/example/shortuuid/         - (Optional) Place your ShortUUID Java library files here.
+src/test/java/com/example/shortuuid/original - All tests ported directly from the original Python implementation.
+src/test/java/com/example/shortuuid/public_tests - Public tests, equivalent to `public_tests/` in Python source.
+pom.xml                                      - Maven build definition, dependencies, test config.
+run_tests.sh                                 - Script to run all tests with a single command.
+README.md                                    - Project and build/test instructions.
+project_structure.txt                        - This project structure/readme file.
+
+How to Run Tests:
+-----------------
+1. Make sure you have Java 11+ and Maven installed.
+2. Run:
+    ./run_tests.sh
+
+This will build the project and run all tests.
+
+If you want to run only a subset (e.g., just public or original tests), use Maven test filter:
+    # Run only original tests
+    mvn test -Dtest="com.example.shortuuid.original.*Test"
+
+    # Run only public tests
+    mvn test -Dtest="com.example.shortuuid.public_tests.*Test"
+
+-----------------------

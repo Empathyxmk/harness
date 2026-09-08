@@ -1,0 +1,59 @@
+project_root/
+├── requirements.txt            # Python dependencies (pytest)
+├── run_tests.sh                # Simple one-click test execution script
+├── README.md                   # Project and usage documentation
+├── src/                        # (Optional) Python source implementation (not included - port needed if needed)
+│   └── (Calculator or support modules would go here)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_BasicStep.py
+│       ├── test_ContextManager.py
+│       ├── test_CukeCommands.py
+│       ├── test_Regex.py
+│       ├── test_StepCallChain.py
+│       ├── test_StepManager.py
+│       ├── test_Table.py
+│       ├── test_Tag.py
+│       ├── test_ContextHandling.py
+│       ├── test_HookRegistration.py
+│       ├── test_StepRegistration.py
+│       ├── test_TaggedHookRegistration.py
+│       ├── test_WireProtocol.py
+│       ├── test_WireServer.py
+│       └── drivers/
+│           ├── test_BoostDriver.py
+│           ├── test_GenericDriver.py
+│           ├── test_GTestDriver.py
+│           └── test_QtTestDriver.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_calculator_public.py
+└── project_structure.txt       # (this file) Project tree and structure description
+
+Description:
+- requirements.txt: Lists Python dependencies. Just `pytest` for this project.
+- run_tests.sh: One-click test execution. Installs dependencies and runs pytest over all tests.
+- README.md: Usage, running, and project description.
+- src/: (Optional) Python source files/modules needed for tests. For translation, only test files are included.
+- tests/original/: All original (private) test translations from C++ GTest etc. to Python/pytest.
+- tests/original/drivers/: Driver-layer test translations.
+- public_tests/: Publicly visible Python tests (from CalculatorPublicTest.cpp).
+- project_structure.txt: This file.
+
+How to run tests:
+-----------------
+1. Make sure you have Python 3.x installed.
+2. Make the test runner script executable: `chmod +x run_tests.sh`
+3. Execute: `./run_tests.sh`
+   - This installs dependencies (`pytest`) and runs ALL tests including both original and public suites.
+
+Test organization:
+- All original test cases are under `tests/original/`
+- Public test cases (Calculator public API) are under `public_tests/`
+- No source implementation of Calculator is translated, only test logic. For full test execution, provide equivalent src/ modules.
+
+Notes:
+- All test logic preserves the structure, assertions, edge cases, and expected results as in the original C++ repository.
+- The test translation uses idiomatic Python/pytest constructs.

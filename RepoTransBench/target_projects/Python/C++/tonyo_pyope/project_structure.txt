@@ -1,0 +1,51 @@
+tonyo_pyope/
+├── CMakeLists.txt
+├── HISTORY.rst
+├── LICENSE
+├── MANIFEST.in
+├── Makefile
+├── README.rst
+├── conftest.py
+├── htmlcov/
+│   └── ... (coverage HTML files)
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_errors.py
+│   ├── test_public_ope.py
+│   ├── test_public_range.py
+│   ├── test_public_setup_py.py
+│   ├── test_public_stat.py
+│   ├── test_public_stat_core.py
+│   └── test_public_utils.py
+├── pyope/
+│   ├── __init__.py
+│   ├── errors.py
+│   ├── hgd.py
+│   ├── ope.py
+│   ├── stat.py
+│   └── util.py
+├── requirements_dev.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.cfg
+├── setup.py
+├── test_summary.json
+├── test_translation_progress.json
+├── tests/
+│   ├── test_errors.cpp
+│   ├── test_ope.cpp
+│   ├── test_range.cpp
+│   ├── test_setup_py.cpp
+│   ├── test_stat.cpp
+│   ├── test_stat_core.cpp
+│   ├── test_utils.cpp
+│   ├── test_errors.py
+│   ├── test_ope.py
+│   ├── test_range.py
+│   ├── test_setup_py.py
+│   ├── test_stat.py
+│   ├── test_stat_core.py
+│   ├── test_utils.py
+│   └── test_main.cpp
+└── tox.ini

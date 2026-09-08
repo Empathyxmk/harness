@@ -1,0 +1,16 @@
+{
+  "project_name": "lovell_farmhash",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.87,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:40:22.238728",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/lovell_farmhash",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/lovell_farmhash",
+  "tests_path": [
+    "test/index.spec.js",
+    "test/unit.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

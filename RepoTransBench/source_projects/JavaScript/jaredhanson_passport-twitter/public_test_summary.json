@@ -1,0 +1,46 @@
+{
+  "project_name": "jaredhanson_passport-twitter",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:30:13.185503",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/jaredhanson_passport-twitter",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/jaredhanson_passport-twitter",
+  "original_tests": {
+    "test_files": [
+      "test/strategy.test.js",
+      "test/strategy.profile.test.js",
+      "test/apierror.test.js",
+      "test/package.test.js",
+      "test/profile.parse.test.js",
+      "test/profile.test.js",
+      "test/index.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "test_public/apierror.public.test.js",
+      "run_public_tests.sh",
+      "test_public/strategy.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 3,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "test_public/apierror.public.test.js",
+    "run_public_tests.sh",
+    "test_public/strategy.public.test.js"
+  ]
+}

@@ -1,0 +1,65 @@
+Project Structure
+=================
+
+flask-babel-java/
+│
+├── pom.xml
+│   Maven project descriptor. Specifies dependencies (JUnit 5, Mockito, AssertJ), build plugins, and project metadata.
+│
+├── run_tests.sh
+│   Shell script for easily running all tests with a single command.
+│
+├── README.md
+│   Basic instructions for setup and usage.
+│
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/example/flaskbabel/
+│   │           (Implementation classes; not included in this migration.)
+│   └── test/
+│       └── java/
+│           └── com/example/flaskbabel/
+│               ├── original/
+│               │   (All translated original tests from 'tests/' directory.)
+│               │   e.g.
+│               │     - AppFactoryTest.java
+│               │     - DateFormattingTest.java
+│               │     - ForceLocaleTest.java
+│               │     - GettextTest.java
+│               │     - InitSmokeTest.java
+│               │     - IntegrationTest.java
+│               │     - MultipleAppsTest.java
+│               │     - NumberFormattingTest.java
+│               │     - SpeakLaterTest.java
+│               └── public/
+│                   (All translated public tests from the 'public_tests/' directory.)
+│                   e.g.
+│                     - PublicAppFactoryTest.java
+│                     - PublicDateFormattingTest.java
+│                     - PublicForceLocaleTest.java
+│                     - PublicGettextTest.java
+│                     - PublicInitSmokeTest.java
+│                     - PublicIntegrationTest.java
+│                     - PublicMultipleAppsTest.java
+│                     - PublicNumberFormattingTest.java
+│                     - PublicSpeakLaterTest.java
+
+─────────────────────────────
+Instructions
+────────────
+1. Install Maven (`apt install maven`) if not already installed.
+2. Ensure you have Java 11+.
+3. To run all tests, execute:
+       ./run_tests.sh
+4. Tests for 'original' and 'public' are organized separately under
+   src/test/java/com/example/flaskbabel/original/ and src/test/java/com/example/flaskbabel/public/
+
+─────────────────────────────
+Notes
+──────
+- The Java test code is a faithful translation of the Python test logic. 
+  It assumes analogous implementation in Java for the Flask-Babel-like API.
+- You will need to supply actual implementation classes and methods under src/main/java/com/example/flaskbabel/
+  for the tests to compile and run.
+- All code and file structure follows Maven and JUnit5 conventions.

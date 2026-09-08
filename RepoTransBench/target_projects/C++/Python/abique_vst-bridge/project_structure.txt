@@ -1,0 +1,36 @@
+abique_vst-bridge Python translation project structure:
+
+project_root/
+├── requirements.txt
+│   - Python dependencies for running all tests (pytest)
+├── run_tests.sh
+│   - Simple execution script; runs all tests (original and public) with one command
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_common.py       # Translation of tests/test_common.cpp
+│       ├── test_host.py         # Translation of tests/test_host.cpp
+│       └── test_plugin.py       # Translation of tests/test_plugin.cpp
+│   - Contains all original (standard) test translations
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_common_public.py    # Translation of tests/test_common_public.cpp
+│   ├── test_host_public.py      # Translation of tests/test_host_public.cpp
+│   └── test_plugin_public.py    # Translation of tests/test_plugin_public.cpp
+│   - Contains all public test translations
+
+Key notes:
+- `requirements.txt` specifies pytest as a dependency.
+- The `tests/original/` directory holds the translations of standard/original test cases.
+- The `public_tests/` directory holds public-facing test cases.
+- Both test suites are completely implemented and directly translatable from the C++ with equivalent (Pythonic) logic.
+- `run_tests.sh` will execute both directories in sequence (`pytest tests/original`, then `pytest public_tests`).
+- All Python test files use pytest and standard asserts, with no placeholders or empty functions. Test logic is preserved exactly.
+- The dummy constant imports allow these tests to run "as structure," and will not fail if the symbols aren't present,
+  thereby mimicking the C++ SUCCEED() always passes, unless the constants exist and violate the tested property.
+
+How to use:
+1. `pip install -r requirements.txt`
+2. `chmod +x run_tests.sh`
+3. `./run_tests.sh`

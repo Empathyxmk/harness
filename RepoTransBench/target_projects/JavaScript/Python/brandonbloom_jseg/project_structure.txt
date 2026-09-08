@@ -1,0 +1,16 @@
+.
+├── project_structure.txt              # This file - describes structure
+├── README.md                         # Project documentation
+├── requirements.txt                  # Python dependencies
+├── run_tests.sh                      # One-click test runner script
+├── public_test_summary.json          # Metadata for public test translation
+├── public_tests/                     # Public (sample/visible) tests
+│   ├── test_scalars_public.py        # Public test: scalar validation
+│   ├── test_validation_public.py     # Public test: value validation
+│   ├── test_json_public.py           # Public test: JSON round-trip and validation
+│   ├── test_keys_public.py           # Public test: key uniqueness
+│   └── __init__.py                   # (empty, for module recognition)
+└── tests/                            # Directory for original tests
+    ├── original/                     # Where original tests would go (none present)
+    │   └── __init__.py               # (empty)
+    └── __init__.py                   # (empty)

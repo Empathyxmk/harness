@@ -1,0 +1,20 @@
+{
+  "project_name": "un33k_django-uuslug",
+  "language": "Python",
+  "coverage": {
+    "line": 59.0,
+    "branch": 76.9
+  },
+  "timestamp": "2025-06-23T10:38:26.024783",
+  "original_path": "/workspace/test_enhancement_results/Python/un33k_django-uuslug",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/un33k_django-uuslug",
+  "tests_path": [
+    "uuslug/tests/test_models_integration.py",
+    "uuslug/tests/test_init.py",
+    "uuslug/tests/test_uuslug_func.py",
+    "uuslug/tests/test_uuslug.py",
+    "uuslug/tests/test_setup.py",
+    "uuslug/tests/test_apps_py.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

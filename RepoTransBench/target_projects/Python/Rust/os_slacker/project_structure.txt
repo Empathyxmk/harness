@@ -1,0 +1,16 @@
+os_slacker/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── slacker.rs
+│   └── utilities.rs
+├── tests/
+│   └── original/
+│       ├── test_channels.rs
+│       ├── test_init.rs
+│       └── test_utilities.rs
+├── public_tests/
+│   ├── test_public_channels.rs
+│   ├── test_public_init.rs
+│   └── test_public_utilities.rs
+├── run_tests.sh

@@ -1,0 +1,22 @@
+{
+  "project_name": "d3_d3-polygon",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:34:59.041038",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/d3_d3-polygon",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/d3_d3-polygon",
+  "tests_path": [
+    "test/area-test.js",
+    "test/centroid-test.js",
+    "test/contains-test.js",
+    "test/cross-test.js",
+    "test/hull-test.js",
+    "test/index-test.js",
+    "test/length-test.js",
+    "test/require-source-test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,37 @@
+project_root/
+├── grammar.js                # Original JS grammar definition file (required by tests)
+├── requirements.txt          # Python requirements for dependencies (e.g., pytest)
+├── run_tests.sh              # One-click test execution (runs pytest)
+├── src/
+│   └── node-types.json       # (Optional) Node type information, read by tests if present
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_grammar.py           # Translated from grammar.test.js
+│       ├── test_index_d_ts.py        # Translated from index.d.ts.test.ts (placeholder logic)
+│       ├── test_node_index.py        # Translated from bindings/node/index.test.js
+│       └── test_binding_go.py        # Translated from binding_test.go
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_grammar_public.py        # Translated from public_tests/grammar.public.test.js
+│   └── test_bindings_node_index_public.py  # Translated from public_tests/bindings_node_index.public.test.js
+└── README.md                  # Instructions and project overview
+
+Directory Explanations:
+- tests/original/: All test cases translated from the original JavaScript and Go, for "private/internal" API/implementation verification.
+- public_tests/: Test cases translated from public-facing public_tests/ in the JS source, to verify visible/public behaviors and structural requirements.
+- grammar.js, src/node-types.json: Required fixture files for test reads/mocks.
+- requirements.txt: Lists pytest (for pip install -r requirements.txt).
+- run_tests.sh: Runs all tests via pytest with a single command.
+- README.md: Add instructions for setup and running the test suite.
+
+**Setup and Test Instructions:**
+1. (Optional) Install dependencies:
+   pip install -r requirements.txt
+2. Run all tests (original and public):
+   ./run_tests.sh
+
+**Note:** If you wish to run only public or only original tests, use:
+   pytest public_tests/
+   pytest tests/original/

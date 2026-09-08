@@ -1,0 +1,33 @@
+eatonphil_pj/
+├── Cargo.toml                  # Rust project manifest for package & dependencies
+├── src/
+│   └── lib.rs                  # Library source with (stub) API for test linkage
+├── tests/
+│   └── original/               # Original (private) translated tests from Python
+│       ├── test_api.rs
+│       ├── test_lexer.rs
+│       ├── test_parser.rs
+│       └── test_pj.rs
+├── public_tests/               # Public translated tests
+│   ├── test_public_api.rs
+│   ├── test_public_lexer.rs
+│   ├── test_public_parser.rs
+│   └── test_public_pj.rs
+├── run_tests.sh                # Simple test execution script
+└── project_structure.txt       # This file: structure & directory descriptions
+
+Directory/Files:
+- src/lib.rs:        Rust library crate; stub pj, lexer, & parser modules for test linking.
+- tests/original/:   All original tests translated from Python (was tests/)
+- public_tests/:     All public test cases translated from public_tests/
+- Cargo.toml:        Standard Rust project (cargo) manifest, with [dev-dependencies] for serde_json.
+- run_tests.sh:      One command to run all tests (cargo test, discovers both tests/ and public_tests/)
+- project_structure.txt: This project tree & file/directory description/instructions.
+
+Instructions:
+1. Install Rust toolchain.
+2. Run all tests: `./run_tests.sh`
+3. Add your library implementation to src/lib.rs.
+4. Place new private tests in tests/original/, public in public_tests/.
+
+Both original and public tests are available for full coverage & compliance.

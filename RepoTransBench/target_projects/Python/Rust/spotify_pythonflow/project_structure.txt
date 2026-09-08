@@ -1,0 +1,53 @@
+spotify_pythonflow_rs/
+├── Cargo.toml         # Cargo manifest with dependencies and project metadata
+├── src/
+│   ├── lib.rs         # Library root for core project (stubbed: outlines Graph, Operation, pfmq, util, etc.)
+│   └── main.rs        # Binary entrypoint (not used for testing/library-only)
+├── tests/
+│   └── original/      # Directory for original (private) converted test cases
+│       ├── test_core_basic.rs
+│       ├── test_pfmq.rs
+│       ├── test_pythonflow.rs
+│       ├── test_util.rs
+│       └── test_util_extra.rs
+├── public_tests/      # Directory for public (public_tests/*) translated test cases
+│   ├── test_public_core_basic.rs
+│   ├── test_public_pfmq.rs
+│   ├── test_public_pythonflow.rs
+│   ├── test_public_util.rs
+│   └── test_public_util_extra.rs
+├── run_tests.sh       # Simple script to run all tests with cargo test.
+└── project_structure.txt # This file (describes the structure and folder meanings)
+
+# Directory Explanations:
+
+src/
+    lib.rs      - Main library with Rust analogs for core components (stubs, for test wiring)
+    main.rs     - Binary entrypoint; not used by tests
+
+tests/original/
+    test_core_basic.rs, test_pfmq.rs, ... - Integration tests translated from original Python tests
+
+public_tests/
+    test_public_*.rs - Public test translations
+
+Cargo.toml
+    - Describes project, dependencies, and test/development dependencies
+
+run_tests.sh
+    - One-click script for running ALL tests via Cargo (unit, integration, public).
+      Usage: ./run_tests.sh
+
+# Setup and Testing Instructions
+1. Ensure Rust and Cargo are installed (`rustup` recommended)
+2. From project root, run:
+    chmod +x run_tests.sh
+    ./run_tests.sh
+3. All tests in tests/original/ and public_tests/ will execute.
+4. Test success/failure will be reported on CLI output.
+
+# NOTE:
+- Helpful/documented _stubs_ for Graph, Operation, util, etc. exist in src/lib.rs for compilation;
+  these must be replaced with real implementations for full logic validation.
+- All test logic, structure, and cases as in Python source are preserved, but some
+  (esp. involving "pfmq" or graph algebra) are structure-only unless source code is ported.

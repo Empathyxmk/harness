@@ -1,0 +1,39 @@
+project_root/
+├── src/
+│   └── polyglot/
+│       └── __init__.py                  # Python Polyglot class & exceptions (translated from JS)
+├── tests/
+│   └── original/
+│       ├── test_polyglot.py             # Original test: polyglot.spec.js
+│       ├── test_polyglot_coverage_extra.py # Original test: polyglot-coverage-extra.spec.js
+│       └── test_polyglot_utils.py       # Original test: polyglot-utils.spec.js
+├── public_tests/
+│   ├── test_polyglot_public.py          # Public test: polyglot.public.test.js
+│   ├── test_polyglot_coverage_extra_public.py # Public test: polyglot-coverage-extra.public.test.js
+│   └── test_polyglot_utils_public.py    # Public test: polyglot-utils.public.test.js
+├── requirements.txt                     # Python test dependencies (pytest)
+├── run_tests.sh                         # Simple one-click test execution script (runs all tests)
+├── project_structure.txt                # This project directory structure and documentation
+└── README.md                            # Documentation (describe usage, how to run tests, etc.)
+
+Directory explanations:
+- src/polyglot/__init__.py:
+    Core Polyglot class (Python translation of JS Polyglot library), including helper exceptions.
+- tests/original/:
+    Contains original (private/internal) test cases, faithful translation of all core test logic.
+- public_tests/:
+    Contains public test cases (translated from public JS tests), with distinct data to match public test expectations.
+- requirements.txt:
+    Lists project dependencies needed to run tests. Install via `pip install -r requirements.txt`.
+- run_tests.sh:
+    Simple script to execute all tests in one command: `./run_tests.sh`.
+- project_structure.txt:
+    This document, describing the layout and purpose of each file/folder.
+- README.md:
+    Overview, installation instructions, usage, and testing guide.
+
+Setup and Testing Instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh` (ensure script is executable: `chmod +x run_tests.sh`)
+3. Add Polyglot implementation in src/polyglot/__init__.py if not already complete.
+4. Tests are organized so both private/original and public-test logic is preserved and independently verifiable.

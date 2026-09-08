@@ -1,0 +1,11 @@
+{
+  "project_name": "redwarp_9-Patch-Resizer",
+  "language": "Java",
+  "coverage": {
+    "line": 55.6,
+    "branch": 54.5
+  },
+  "timestamp": "2025-06-20T02:07:40.300665",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/redwarp_9-Patch-Resizer",
+  "test_result_path": "/workspace/test_enhancement_results/Java/redwarp_9-Patch-Resizer"
+}

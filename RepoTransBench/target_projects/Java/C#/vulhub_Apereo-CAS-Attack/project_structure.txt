@@ -1,0 +1,24 @@
+.
+├── ApereoCasAttack.sln
+│   # The Visual Studio solution file
+├── run_tests.sh
+│   # One-click script to build and run all tests with .NET and xUnit
+├── src/
+│   └── ApereoCasAttack/
+│       ├── App.cs
+│       │   # Main logic class, implements command-line and attack logic, static App.Main & PerformAttack
+│       ├── Program.cs
+│       │   # (Optional entry point) makes the project a valid console app; calls App.Main
+│       └── ApereoCasAttack.csproj
+│           # Project file for main library/console app
+├── tests/
+│   └── original/
+│       ├── AppTests.cs
+│       │   # C# xUnit translation of Java's AppTest.java; tests all App functionality
+│       └── OriginalTests.csproj
+│           # xUnit test project for "original" (non-public) tests
+├── public_tests/
+│   ├── AppPublicTests.cs
+│   │   # C# xUnit translation of Java's AppPublicTest.java; broad public tests for attack, helpers, etc.
+│   └── PublicTests.csproj
+│       # xUnit test project for public test set

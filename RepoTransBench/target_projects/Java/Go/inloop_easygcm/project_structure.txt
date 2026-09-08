@@ -1,0 +1,30 @@
+project_root/
+├── go.mod                         # Go module definition file
+├── run_tests.sh                   # One-click test runner script (executes all tests)
+├── project_structure.txt          # This file, describes project structure and usage
+├── tests/
+│   ├── original/
+│   │   ├── connection_utils_test.go          # Translated ConnectionUtilsTest.java (and mock types)
+│   │   ├── easygcm_listener_service_test.go  # Translated EasyGcmListenerServiceTest.java and stub
+│   │   ├── gcm_helper_test.go                # Translated GcmHelperTest.java
+│   │   ├── gcm_registration_service_test.go  # Translated GcmRegistrationServiceTest.java
+│   │   ├── network_state_receiver_test.go    # Translated NetworkStateReceiverTest.java, stubbers
+│   │   └── testutil.go                      # (Optional) helpers for tests or shared types
+│
+├── public_tests/
+│   ├── connection_utils_public_test.go         # Translated ConnectionUtilsPublicTest.java
+│   ├── easygcm_listener_service_public_test.go # Translated EasyGcmListenerServicePublicTest.java
+│   ├── gcm_helper_public_test.go               # Translated GcmHelperPublicTest.java
+│   ├── gcm_registration_service_public_test.go # Translated GcmRegistrationServicePublicTest.java
+│   ├── network_state_receiver_public_test.go   # Translated NetworkStateReceiverPublicTest.java
+│
+├── README.md                       # (Optional) Usage documentation [not included here]
+│
+├── [src/ or pkg/]                  # (not present: code-under-test stubbed in test files)
+│
+Usage:
+- To run all tests, use: `./run_tests.sh`
+- Tests under `tests/original/` are original (internal) test translations.
+- Tests under `public_tests/` are public tests and cover public-facing scenarios.
+- Mocks and stubs are used to emulate Android-specific classes and behaviors per the Java test logic.
+- Dependencies: Go 1.20+, github.com/stretchr/testify for mocks/assertions (see go.mod)

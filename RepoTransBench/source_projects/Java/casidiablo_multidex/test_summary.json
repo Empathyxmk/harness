@@ -1,0 +1,11 @@
+{
+  "project_name": "casidiablo_multidex",
+  "language": "Java",
+  "coverage": {
+    "line": 55.6,
+    "branch": 51.3
+  },
+  "timestamp": "2025-06-19T18:31:51.637059",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/casidiablo_multidex",
+  "test_result_path": "/workspace/test_enhancement_results/Java/casidiablo_multidex"
+}

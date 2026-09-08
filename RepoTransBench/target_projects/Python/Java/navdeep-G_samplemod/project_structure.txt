@@ -1,0 +1,68 @@
+navdeep-G_samplemod/
+├── LICENSE
+├── MANIFEST.in
+├── Makefile
+├── README.rst
+├── docs/
+│   ├── Makefile
+│   ├── conf.py
+│   ├── index.rst
+│   └── make.bat
+├── htmlcov/
+│   ├── class_index.html
+│   ├── coverage_html_cb_6fb7b396.js
+│   ├── favicon_32_cb_58284776.png
+│   ├── function_index.html
+│   ├── index.html
+│   ├── keybd_closed_cb_ce680311.png
+│   ├── status.json
+│   ├── style_cb_81f8c14c.css
+│   ├── z_f68f564e18166338___init___py.html
+│   ├── z_f68f564e18166338_core_py.html
+│   └── z_f68f564e18166338_helpers_py.html
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_advanced.py
+│   ├── test_public_basic.py
+│   └── test_public_core_helpers.py
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── sample/
+│   ├── __init__.py
+│   ├── core.py
+│   └── helpers.py
+├── setup.py
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── navdeepg/
+│   │               └── samplemod/
+│   │                   ├── Main.java
+│   │                   ├── core/
+│   │                   │   └── Core.java
+│   │                   └── helpers/
+│   │                       └── Helpers.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── navdeepg/
+│                   └── samplemod/
+│                       ├── original/
+│                       │   ├── AdvancedTestSuite.java
+│                       │   ├── BasicTestSuite.java
+│                       │   └── TestCoreHelpers.java
+│                       └── public_tests/
+│                           ├── TestPublicAdvanced.java
+│                           ├── TestPublicBasic.java
+│                           └── TestPublicCoreHelpers.java
+├── test_summary.json
+└── tests/
+    ├── __init__.py
+    ├── context.py
+    ├── test_advanced.py
+    ├── test_basic.py
+    └── test_core_helpers.py

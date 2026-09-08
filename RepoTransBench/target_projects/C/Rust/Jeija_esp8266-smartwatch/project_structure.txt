@@ -1,0 +1,19 @@
+esp8266_smartwatch/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── i2cdevice.rs
+│   ├── util.rs
+│   └── vector.rs
+├── tests/
+│   ├── original/
+│   │   ├── mod.rs
+│   │   ├── test_i2cdevice.rs
+│   │   ├── test_util.rs
+│   │   └── test_vector.rs
+├── public_tests/
+│   ├── mod.rs
+│   ├── test_i2cdevice_public.rs
+│   ├── test_util_public.rs
+│   └── test_vector_public.rs
+├── run_tests.sh

@@ -1,0 +1,71 @@
+{
+  "project_name": "LatencyUtils_LatencyUtils",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T15:17:38.931585",
+  "original_path": "/workspace/verified_repos_v2/Java/LatencyUtils_LatencyUtils",
+  "public_test_result_path": "/workspace/public_test_results/Java/LatencyUtils_LatencyUtils",
+  "iterations_completed": 3,
+  "token_usage_stats": {
+    "project_structure_tokens": 464,
+    "test_files_tokens": 9861,
+    "test_files_count": 14,
+    "source_files_tokens": 0,
+    "source_files_count": 0,
+    "total_content_tokens": 10325,
+    "average_tokens_per_test_file": 704,
+    "average_tokens_per_source_file": 0
+  },
+  "original_tests": {
+    "test_files": [
+      "src/test/java/org/LatencyUtils/MovingAverageIntervalEstimatorTest.java",
+      "src/test/java/org/LatencyUtils/IntervalEstimatorTest.java",
+      "src/test/java/org/LatencyUtils/TimeCappedMovingAverageIntervalEstimatorTest.java",
+      "src/test/java/org/LatencyUtils/SimplePauseDetectorTest.java",
+      "src/test/java/org/LatencyUtils/TimeServicesTest.java",
+      "src/test/java/org/LatencyUtils/LatencyStatsTest.java",
+      "src/test/java/org/LatencyUtils/PauseDetectorListenerTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/org/LatencyUtils/MovingAverageIntervalEstimatorPublicTest.java",
+      "src/test/java/org/LatencyUtils/IntervalEstimatorPublicTest.java",
+      "src/test/java/org/LatencyUtils/TimeCappedMovingAverageIntervalEstimatorPublicTest.java",
+      "src/test/java/org/LatencyUtils/SimplePauseDetectorPublicTest.java",
+      "src/test/java/org/LatencyUtils/TimeServicesPublicTest.java",
+      "src/test/java/org/LatencyUtils/LatencyStatsPublicTest.java",
+      "src/test/java/org/LatencyUtils/PauseDetectorListenerPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/org/LatencyUtils/MovingAverageIntervalEstimatorPublicTest.java",
+    "src/test/java/org/LatencyUtils/IntervalEstimatorPublicTest.java",
+    "src/test/java/org/LatencyUtils/TimeCappedMovingAverageIntervalEstimatorPublicTest.java",
+    "src/test/java/org/LatencyUtils/SimplePauseDetectorPublicTest.java",
+    "src/test/java/org/LatencyUtils/TimeServicesPublicTest.java",
+    "src/test/java/org/LatencyUtils/LatencyStatsPublicTest.java",
+    "src/test/java/org/LatencyUtils/PauseDetectorListenerPublicTest.java",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "run_tests.sh"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "randexp",
+  "description": "Create random strings that match a given regular expression.",
+  "keywords": [
+    "regex",
+    "regexp",
+    "regular expression",
+    "random",
+    "test"
+  ],
+  "version": "0.5.3",
+  "homepage": "http://fent.github.io/randexp.js/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fent/randexp.js.git"
+  },
+  "author": "fent (https://github.com/fent)",
+  "main": "./lib/randexp.js",
+  "files": [
+    "lib",
+    "types/index.d.ts"
+  ],
+  "scripts": {
+    "version": "gulp build && git add build",
+    "test": "istanbul cover node_modules/.bin/_mocha -- test/*-test.js",
+    "dtslint": "dtslint types --onlyTestTsNext"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "drange": "^2.0.1",
+    "ret": "^0.3.2"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "gulp": "^4.0.0",
+    "gulp-header": "^2.0.1",
+    "gulp-insert": "^0.5.0",
+    "gulp-uglify": "^3.0.0",
+    "istanbul": "*",
+    "mocha": "^7.2.0",
+    "nyc": "^17.1.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "license": "MIT",
+  "types": "./types"
+}

@@ -1,0 +1,18 @@
+jtheoof_swappy/
+├── src/
+│   └── swappy/
+│       ├── __init__.py
+│       ├── algebra.py
+│       └── file.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_algebra.py
+│   └── test_file.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_algebra_public.py
+│   └── test_file_public.py
+├── run_tests.sh
+├── run_public_tests.sh
+├── requirements.txt
+└── README.md

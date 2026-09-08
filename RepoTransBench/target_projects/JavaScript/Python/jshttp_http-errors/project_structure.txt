@@ -1,0 +1,51 @@
+Project Structure:
+
+jshttp-http-errors/
+│
+├── src/
+│   └── http_errors/
+│       └── __init__.py
+│              - Main implementation of http-errors compatible API.
+│
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_createError_coverage.py
+│       └── test_index_extra.py
+│              - Original test cases, translated from JavaScript Mocha to Python pytest.
+│
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_createError_coverage_public.py
+│   └── test_index_extra_public.py
+│              - Public test cases, translated from original/generative JavaScript tests.
+│
+├── requirements.txt
+│       - Specifies required Python dependencies (pytest).
+│
+├── run_tests.sh
+│       - Simple script to run all tests with one command.
+│
+├── README.md, LICENSE, HISTORY.md
+│       - Documentation, legal, and change history inherited from original repo.
+│
+├── coverage/, scripts/, etc.
+│       - Other legacy or documentation directories/files retained for completeness.
+│
+├── project_structure.txt
+│       - This document, describing the project layout and instructions.
+│
+
+Instructions:
+
+1. Setup:
+   - Install dependencies: `pip install -r requirements.txt`
+
+2. Run all tests:
+   - Make the script executable if necessary: `chmod +x run_tests.sh`
+   - Execute all tests: `./run_tests.sh`
+
+Both `tests/original/` and `public_tests/` will be collected and run by pytest.
+
+All original and public tests have been translated from JavaScript Mocha to Python pytest, preserving test intent and edge cases.

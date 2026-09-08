@@ -1,0 +1,66 @@
+{
+  "project_name": "ovh_celery-dyrygent",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:57:26.722063",
+  "original_path": "/workspace/verified_repos_v2/Python/ovh_celery-dyrygent",
+  "public_test_result_path": "/workspace/public_test_results/Python/ovh_celery-dyrygent",
+  "original_tests": {
+    "test_files": [
+      "tests/unit/test_tasks.py",
+      "tests/unit/test_imports_and_version.py",
+      "tests/unit/test_workflows_core.py",
+      "tests/unit/test_workflows.py",
+      "tests/unit/test_inspect.py",
+      "tests/component/test_celery.py",
+      "tests/component/test_tasks.py",
+      "tests/component/test_workflows.py",
+      "tests/integration/test_integration.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 9,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/unit/test_tasks_public.py",
+      "public_tests/unit/test_imports_and_version_public.py",
+      "public_tests/unit/test_workflows_core_public.py",
+      "run_public_tests.sh",
+      "public_tests/unit/test_inspect_public.py",
+      "public_tests/unit/test_workflows_public.py",
+      "public_tests/component/test_celery_public.py",
+      "public_tests/component/test_tasks_public.py",
+      "public_tests/component/test_workflows_public.py",
+      "public_tests/integration/test_integration_public.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 11,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/unit/test_tasks_public.py",
+    "public_tests/unit/test_imports_and_version_public.py",
+    "public_tests/unit/test_workflows_core_public.py",
+    "run_public_tests.sh",
+    "public_tests/unit/test_inspect_public.py",
+    "public_tests/unit/test_workflows_public.py",
+    "public_tests/component/test_celery_public.py",
+    "public_tests/component/test_tasks_public.py",
+    "public_tests/component/test_workflows_public.py",
+    "public_tests/integration/test_integration_public.py",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

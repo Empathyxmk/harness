@@ -1,0 +1,50 @@
+sethmlarson_secure-python-package-template/
+├── CHANGELOG.md
+├── LICENSE
+├── README.md
+├── SECURITY.md
+├── newsfragments/
+│   └── title_template.j2
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_secure_package_template.py
+│   └── test_public_version.py
+├── pyproject.toml
+├── requirements/
+│   ├── publish.in
+│   ├── publish.txt
+│   ├── test.in
+│   └── test.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── securepackagetemplate/
+│   │   │               ├── SecurePackageTemplate.java
+│   │   │               └── Version.java
+│   │   └── resources/
+│   │       └── py.typed
+│   ├── secure_package_template/
+│   │   ├── __init__.py
+│   │   ├── _version.py
+│   │   └── py.typed
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── securepackagetemplate/
+│                       ├── original/
+│                       │   ├── SecurePackageTemplateTest.java
+│                       │   └── VersionTest.java
+│                       └── publictests/
+│                           ├── PublicSecurePackageTemplateTest.java
+│                           └── PublicVersionTest.java
+├── test_summary.json
+└── tests/
+    ├── test_secure_package_template.py
+    └── test_version.py

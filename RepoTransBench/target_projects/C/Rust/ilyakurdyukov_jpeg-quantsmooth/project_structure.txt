@@ -1,0 +1,17 @@
+jpeg-quantsmooth/
+├── Cargo.toml                  # Rust package configuration
+├── run_tests.sh                # Simple test execution script
+├── src/                        # Source code directory
+│   ├── lib.rs                  # Main library module
+│   ├── bitmap.rs               # Bitmap implementation
+│   └── libjpegqs.rs            # JPEG quantization control implementation
+├── tests/                      # Original test directory
+│   ├── lib.rs                  # Test entry point
+│   └── original/               # Original tests
+│       ├── mod.rs              # Module definition
+│       ├── test_bitmap.rs      # Bitmap tests
+│       └── test_libjpegqs.rs   # JPEG quantization control tests
+└── public_tests/               # Public test directory
+    ├── mod.rs                  # Module definition
+    ├── test_bitmap.rs          # Public bitmap tests
+    └── test_libjpegqs.rs       # Public JPEG quantization control tests

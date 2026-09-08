@@ -1,0 +1,30 @@
+project_root/
+├── requirements.txt               # Python dependencies file (contains pytest)
+├── run_tests.sh                   # Simple shell script to run all tests with pytest
+├── src/
+│   └── linq.py                    # (Assumed main implementation source, must define all linq/mergeSortTestPack logic)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_mergeSort.py                    # Full original sort algorithm tests
+│       ├── test_mergeSort_internal.py           # Full original mergeSort internal tests
+│       └── test_linq_helper.py                  # Helper function tests
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_mergeSort_internal_public.py        # Public mergeSort internals tests (different data)
+│   └── test_mergeSort_public.py                 # Public sort algorithm tests (different data)
+└── project_structure.txt            # This structure overview and file purposes
+
+Directory explanations:
+- src/: All code implementation (linq.py should contain all LINQ/mergeSort logic required by tests).
+- tests/original/: Original test suite, covering internals and spec-level tests as in the JS repo.
+- public_tests/: Public "challenge" tests, distinct and non-overlapping data from original.
+- requirements.txt: Python dependency requirements (pytest used for all test discovery/execution).
+- run_tests.sh: One-click test script (runs pytest for all discovered tests).
+- project_structure.txt: This file; maps and documents all major files and folder structure.
+
+Setup instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh` (or `bash run_tests.sh`)
+3. Source code must reside in `src/linq.py`—implement all methods/classes needed by tests.

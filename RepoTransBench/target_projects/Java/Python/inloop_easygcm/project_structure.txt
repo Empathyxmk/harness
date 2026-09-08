@@ -1,0 +1,24 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── original/
+│   │   ├── test_connection_utils.py
+│   │   ├── test_easygcm_listener_service.py
+│   │   ├── test_network_state_receiver.py
+│   │   ├── test_gcm_registration_service.py
+│   │   └── test_gcm_helper.py
+├── public_tests/
+│   ├── test_connection_utils_public.py
+│   ├── test_easygcm_listener_service_public.py
+│   ├── test_network_state_receiver_public.py
+│   ├── test_gcm_registration_service_public.py
+│   └── test_gcm_helper_public.py
+
+# Directory Explanations:
+# - requirements.txt: Python dependencies, install with `pip install -r requirements.txt`
+# - run_tests.sh: Simple one-click script to run all tests (original & public)
+# - tests/original/: Contains all translated "original" test cases from the Java project.
+# - public_tests/: Contains all translated "public" test cases from the Java project.
+# Each test file replicates the logic of its Java counterpart using Python & pytest.
+# To run all tests: first `pip install -r requirements.txt`, then `./run_tests.sh`

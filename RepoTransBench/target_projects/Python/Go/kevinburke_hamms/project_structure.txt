@@ -1,0 +1,30 @@
+kevinburke_hamms/
+├── go.mod                  # Go module definition
+├── README.md               # Project documentation and usage
+├── run_tests.sh            # One-click test runner script
+├── hamms/
+│   ├── hamms.go            # Simulated core package for hamms
+│   └── main_stub.go        # Provides a main() for hamms Main() calls in Go
+├── thread.go               # Simulated thread logic for concurrency and test
+├── tests/
+│   └── original/
+│       ├── endpoints_test.go      # Original test_endpoints.py
+│       ├── hamms_misc_test.go     # Original test_hamms_misc.py
+│       ├── hamms_server_test.go   # Original test_hamms_server.py
+│       ├── init_py_test.go        # Original test_init_py.py
+│       ├── main_py_test.go        # Original test_main_py.py
+│       ├── morse_test.go          # Original test_morse.py
+│       ├── thread_py_test.go      # Original test_thread_py.py
+│       └── utils_test.go          # Original test_utils.py
+├── public_tests/
+│   ├── endpoints_test.go          # Public endpoints tests
+│   ├── hamms_misc_test.go         # Public hamms_misc tests
+│   ├── hamms_server_test.go       # Public hamms_server tests
+│   ├── init_py_test.go            # Public init_py tests
+│   ├── main_py_test.go            # Public main_py tests
+│   ├── morse_test.go              # Public morse tests
+│   ├── thread_py_test.go          # Public thread_py tests
+│   └── utils_test.go              # Public utils tests
+
+Each test mirrors the original or public logic from the Python reference.
+Test execution: run `./run_tests.sh` (runs all tests in all subdirs).

@@ -1,0 +1,21 @@
+{
+  "project_name": "fullscale_dangle",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:27:58.312946",
+  "original_path": "/workspace/runnable_filter/JavaScript/fullscale_dangle",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/fullscale_dangle",
+  "tests_path": [
+    "src/dangle.module.test.js",
+    "src/modules/area/area.test.js",
+    "src/modules/bar/bar.test.js",
+    "src/modules/column/column.test.js",
+    "src/modules/date-histo/datehisto.test.js",
+    "src/modules/donut/donut.test.js",
+    "src/modules/pie/pie.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

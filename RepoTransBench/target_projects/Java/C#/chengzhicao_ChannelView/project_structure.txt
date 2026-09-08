@@ -1,0 +1,23 @@
+chengzhicaochannelview/
+├── chengzhicaochannelview.sln       # Solution file; open with VS or use dotnet CLI
+├── run_tests.sh                     # One click test script for all original and public tests
+├── README.md                        # Project overview and test instructions
+├── project_structure.txt            # This file - project structure and directory purpose
+├── tests/
+│   └── original/
+│       ├── AppSampleInstrumentedTests.cs      # From app/src/androidTest/java/com/cheng/sample/ExampleInstrumentedTest.java
+│       ├── AppSampleUnitTests.cs              # From app/src/test/java/com/cheng/sample/ExampleUnitTest.java
+│       ├── ChannelViewInstrumentedTests.cs    # From channelview/src/androidTest/java/com/cheng/channel/ExampleInstrumentedTest.java
+│       ├── ChannelTests.cs                    # From channelview/src/test/java/com/cheng/channel/ChannelTest.java
+│       ├── ChannelViewUnitTests.cs            # From channelview/src/test/java/com/cheng/channel/ExampleUnitTest.java
+│       ├── DefaultStyleAdapterTests.cs        # From channelview/src/test/java/com/cheng/channel/DefaultStyleAdapterTest.java
+│       ├── test_summary.json                  # Translated test summary for original tests
+│       └── README.md
+│   └── OriginalTests.csproj                   # .NET test project file
+├── public_tests/
+│   ├── AppSampleInstrumentedPublicTests.cs    # From app/src/androidTest/java/com/cheng/sample/ExampleInstrumentedPublicTest.java
+│   ├── AppSampleUnitPublicTests.cs            # From app/src/test/java/com/cheng/sample/ExampleUnitPublicTest.java
+│   ├── ChannelViewInstrumentedPublicTests.cs  # From channelview/src/androidTest/java/com/cheng/channel/ExampleInstrumentedPublicTest.java
+│   ├── ChannelViewUnitPublicTests.cs          # From channelview/src/test/java/com/cheng/channel/ExampleUnitPublicTest.java
+│   ├── PublicTests.csproj                     # .NET test project file
+│   └── README.md

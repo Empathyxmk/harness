@@ -1,0 +1,58 @@
+YacyGridSearch C# Project Structure
+======================================
+
+.
+├── YacyGridSearch.sln              # Solution file (builds all projects and tests)
+├── run_tests.sh                    # Simple script to run all tests (chmod +x)
+├── project_structure.txt           # This file: Structure/explanations/instructions
+├── src/
+│   └── YacyGridSearch/
+│       ├── YacyGridSearch.csproj   # Main library project (Search, DummyLogic, etc.)
+│       ├── Search.cs               # Implementation of Search
+│       ├── DummyLogic.cs           # Implementation of DummyLogic
+│       └── SampleLogic.cs          # (Empty/sample logic)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj    # xUnit test project (.NET 6)
+│       ├── SearchTest.cs           # Original Search tests (logic, edge cases)
+│       ├── DummyLogicTest.cs       # Original DummyLogic tests
+│       └── SampleLogicTest.cs      # Sample logic "always true" test
+└── public_tests/
+    ├── PublicTests.csproj          # xUnit test project for public tests
+    ├── SearchPublicTest.cs         # Public test variants for Search
+    ├── DummyLogicPublicTest.cs     # Public test variants for DummyLogic
+    └── SampleLogicPublicTest.cs    # Public sample logic test
+
+Directory/Files explained:
+--------------------------
+- src/YacyGridSearch/:
+    Main C# library implementation. Add source .cs files here.
+
+- tests/original/:
+    xUnit test project for the original (private/internal) test cases.
+    Only these test files are used for internal/maintainer validation.
+
+- public_tests/:
+    xUnit test project containing the public test suite (used for public validation/grading/etc).
+    This includes only the public variants of test logic (with changed test data).
+
+- run_tests.sh:
+    Runs ALL test projects (original + public) with one command.
+
+- YacyGridSearch.sln:
+    .NET Core solution, containing all projects (main + all test projects).
+
+Setup & Test Instructions:
+--------------------------
+1. Install .NET 6+ SDK (https://dotnet.microsoft.com/)
+2. From the repo root, run:
+       chmod +x ./run_tests.sh
+       ./run_tests.sh
+3. All tests (both original and public) will be run and results displayed.
+   Use your IDE or `dotnet test` directly to run/inspect specific test projects.
+
+Test Structure:
+---------------
+- orginal tests:       ./tests/original/
+- public tests:        ./public_tests/
+- source/library code: ./src/YacyGridSearch/

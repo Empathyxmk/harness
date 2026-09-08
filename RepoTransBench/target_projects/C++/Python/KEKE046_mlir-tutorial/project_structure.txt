@@ -1,0 +1,48 @@
+project_root/
+├── requirements.txt        # Python dependencies (pytest)
+├── run_tests.sh            # Simple shell script to run all tests
+├── project_structure.txt   # This file. Project structure/documentation.
+├── README.md               # Project information and basic usage instructions.
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_ex1_io.py               # Original dummy test (Ex1 I/O)
+│       ├── test_ex2_build.py            # Original dummy test (Ex2 Build)
+│       ├── test_ex3_dialect.py          # Binary/CLI smoke tests for Ex3 Dialect
+│       ├── test_ex4_beautiful_dialect.py# Binary/CLI smoke for Ex4 Beautiful Dialect
+│       ├── test_ex5_pass.py             # Binary/CLI smoke for Ex5 Pass
+│       └── test_ex6_pattern.py          # Binary/CLI smoke for Ex6 Pattern
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_ex1_io_public.py            # Public variant test (Ex1 I/O)
+│   ├── test_ex2_build_public.py         # Public variant (Ex2 Build)
+│   ├── test_ex3_dialect_public.py       # Public variant (Ex3 Dialect)
+│   ├── test_ex4_beautiful_dialect_public.py # Public variant (Ex4 Beautiful Dialect)
+│   ├── test_ex5_pass_public.py          # Public variant (Ex5 Pass)
+│   └── test_ex6_pattern_public.py       # Public variant (Ex6 Pattern)
+│
+Description of directories:
+- requirements.txt: Lists dependencies for Python (pytest)
+- run_tests.sh: One-click script to install deps+run all tests (original and public)
+- README.md: Basic information, how to run, and test separation notes
+- project_structure.txt: This file, showing organization
+- tests/original/: All original tests, directly mimicking C++ logic (including subprocess checks)
+- public_tests/: Public (alternative/smoke) tests per assignment
+- All tests are auto-discoverable with pytest. No manual test runner required.
+
+Setup & Running:
+----------------
+1. Run: `./run_tests.sh`
+   → This installs dependencies and runs all tests (original and public).
+2. To run only original or public tests:
+   - `pytest tests/original/`       # Only original tests
+   - `pytest public_tests/`         # Only public tests
+   - `pytest`                       # All tests
+
+Testing conventions:
+--------------------
+- All test files/functions use pytest standard naming.
+- All subprocess calls mimic C++ `system()` exit code logic and check for non-crash (exit >= 0) or exit==0 as in original.
+- Tests are self-contained, no placeholders or dummy stubs except where source logic was also dummy/no-logic.
+- Directory __init__.py files for test module discovery.

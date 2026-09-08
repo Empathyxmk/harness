@@ -1,0 +1,11 @@
+{
+  "project_name": "whonore_Coqtail",
+  "language": "Python",
+  "coverage": {
+    "line": 50.0,
+    "branch": 94.7
+  },
+  "timestamp": "2025-06-19T13:06:05.630008",
+  "original_path": "/workspace/runnable_filter/Python/whonore_Coqtail",
+  "test_result_path": "/workspace/test_enhancement_results/Python/whonore_Coqtail"
+}

@@ -1,0 +1,22 @@
+MultipleSourcesSample/            # Main solution directory
+├── MultipleSourcesSample.sln     # Dotnet solution file
+├── run_tests.sh                  # To run all tests
+├── src/
+│   └── MultipleSourcesSample/
+│       ├── MultipleSourcesSample.csproj  # Class Library project file
+│       ├── Data.cs                       # Data entity
+│       ├── Sample.cs                     # Helper for thread sleep etc.
+│       └── Sources.cs                    # Sources (Memory, Disk, Network) with Rx logic
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj   # Test project for ORIGINAL tests
+│       ├── DataTests.cs           # Original test cases for Data
+│       ├── SourcesBranchTests.cs  # Original test cases for Sources branching
+│       ├── SourcesTests.cs        # Original test cases for Sources (memory, disk, network)
+│       └── SampleTests.cs         # Original test cases for Sample
+├── public_tests/
+│   ├── PublicTests.csproj         # Test project for PUBLIC tests
+│   ├── DataPublicTests.cs         # Public test cases for Data
+│   ├── SourcesBranchPublicTests.cs # Public test cases for SourcesBranch
+│   ├── SourcesPublicTests.cs      # Public test cases for Sources
+│   └── SamplePublicTests.cs       # Public test cases for Sample

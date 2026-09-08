@@ -1,0 +1,27 @@
+martinmoene_optional-lite-python/
+├── src/
+│   └── optional_lite/
+│       └── __init__.py                # minimal Optional/nullopt implementation for tests
+├── tests/
+│   └── original/
+│       ├── __init__.py                # package marker
+│       └── test_optional_edge_cases.py   # original (private) translated test
+├── public_tests/
+│   ├── __init__.py                    # package marker
+│   └── test_optional_edge_cases_public.py   # public translated test
+├── requirements.txt                   # testing requirements (pytest)
+├── run_tests.sh                       # one-click test script
+└── project_structure.txt              # this file
+
+# Directory Purpose
+# src/optional_lite/      : Python 'optional' abstraction for tests (minimal, only for translation)
+# tests/original/         : Translated original (private) tests from C++
+# public_tests/           : Translated public tests from C++
+# requirements.txt        : Lists test dependencies
+# run_tests.sh            : Runs all tests via pytest
+
+# Setup and Testing Instructions
+# 1. Install requirements:         pip install -r requirements.txt
+# 2. Run all tests:                ./run_tests.sh
+
+# Both private (original) and public test suites are run together via pytest.

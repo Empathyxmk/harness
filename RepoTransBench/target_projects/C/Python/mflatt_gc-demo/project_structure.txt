@@ -1,0 +1,25 @@
+mflatt_gc-demo/
+├── src/                                  # Source code for the mocked GC components
+│   └── mflatt_gc_demo/
+│       ├── __init__.py                   # Makes 'mflatt_gc_demo' a Python package
+│       ├── common.py                     # Defines mock data structures (Node, ConsCell)
+│       ├── gc_core.py                    # Mocked functions and global state for the GC (Mark & Sweep)
+│       └── refcount_core.py              # Mocked functions and state for the RefCount GC
+├── tests/                                # Directory for original test cases
+│   ├── __init__.py                       # Makes 'tests' a Python package
+│   └── original/                         # Original C tests translated to Python
+│       ├── __init__.py                   # Makes 'original' a Python package
+│       ├── test_gc_api.py                # Translated gc/test_gc_api.c
+│       ├── test_mark_and_sweep.py        # Translated gc/test_mark_and_sweep.c
+│       └── test_refcount.py              # Translated refcount/test_refcount.c
+├── public_tests/                         # Directory for public test cases
+│   ├── __init__.py                       # Makes 'public_tests' a Python package
+│   ├── test_mark_and_sweep_public.py     # Translated gc/test_mark_and_sweep_public.c
+│   └── test_refcount_public.py           # Translated refcount/test_refcount_public.c
+├── requirements.txt                      # Lists Python dependencies (pytest)
+├── run_tests.sh                          # Script to install dependencies and run all tests
+└── project_structure.txt                 # This file, documenting the project structure
+
+Setup and Testing Instructions:
+
+1.  **Navigate to the project root:**

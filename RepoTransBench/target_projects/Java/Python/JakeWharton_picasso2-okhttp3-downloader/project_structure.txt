@@ -1,0 +1,34 @@
+project_root/
+├── src/
+│   └── picasso/
+│       ├── __init__.py
+│       └── okhttp3_downloader.py          # Python version of OkHttp3Downloader, minimal logic to support tests
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_okhttp3_downloader_additional.py
+│       ├── test_okhttp3_downloader_disk_cache.py
+│       ├── test_okhttp3_downloader.py
+│       ├── test_okhttp3_downloader_ctor.py
+│       └── test_okhttp3_downloader_load_error.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_okhttp3_downloader_additional_public.py
+│   ├── test_okhttp3_downloader_disk_cache_public.py
+│   ├── test_okhttp3_downloader_load_error_public.py
+│   ├── test_okhttp3_downloader_public.py
+│   └── test_okhttp3_downloader_ctor_public.py
+├── requirements.txt      # Python testing dependencies (pytest)
+├── README.md             # Project description and instructions
+├── run_tests.sh          # Simple test runner script
+└── project_structure.txt # This file: describes directories and file purposes
+
+Directory Explanations:
+- src/picasso/: Python implementation of "OkHttp3Downloader"
+- tests/original/: Original test suite, 1-to-1 with Java original test files
+- public_tests/: Public test suite, 1-to-1 with Java public test files
+- requirements.txt: Testing dependencies
+- run_tests.sh: Run all tests with one command
+- README.md: Documentation
+- project_structure.txt: Overview of the structure

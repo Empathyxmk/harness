@@ -1,0 +1,19 @@
+project_root/
+├── Cargo.toml
+├── run_tests.sh
+├── src/
+│   ├── lib.rs
+│   ├── utils.rs
+│   ├── cmd.rs
+│   └── subq.rs
+├── tests/
+│   └── original/
+│       ├── test_utils.rs
+│       ├── test_hw_config.rs
+│       ├── test_subq.rs
+│       └── test_cmd.rs
+├── public_tests/
+│   ├── test_utils_public.rs
+│   ├── test_cmd_public.rs
+│   └── test_subq_public.rs
+└── project_structure.txt

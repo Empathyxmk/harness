@@ -1,0 +1,11 @@
+{
+  "project_name": "ocpsoft_prettytime",
+  "language": "Java",
+  "coverage": {
+    "line": 57.1,
+    "branch": 51.8
+  },
+  "timestamp": "2025-06-20T01:21:02.998374",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/ocpsoft_prettytime",
+  "test_result_path": "/workspace/test_enhancement_results/Java/ocpsoft_prettytime"
+}

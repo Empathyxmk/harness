@@ -1,0 +1,30 @@
+{
+  "project_name": "dominictarr_event-stream",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 85.63,
+    "branch": 66.66
+  },
+  "timestamp": "2025-06-19T10:15:56.170704",
+  "original_path": "/workspace/runnable_filter/JavaScript/dominictarr_event-stream",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/dominictarr_event-stream",
+  "tests_path": [
+    "test/connect.asynct.js",
+    "test/es_index_main.test.js",
+    "test/filter.asynct.js",
+    "test/flatmap.asynct.js",
+    "test/merge.asynct.js",
+    "test/parse.asynct.js",
+    "test/pause.asynct.js",
+    "test/pipeline.asynct.js",
+    "test/readArray.asynct.js",
+    "test/readable.asynct.js",
+    "test/replace.asynct.js",
+    "test/simple-map.asynct.js",
+    "test/spec.asynct.js",
+    "test/split.asynct.js",
+    "test/stringify.js",
+    "test/writeArray.asynct.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

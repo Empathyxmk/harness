@@ -1,0 +1,38 @@
+Project Structure for Python Translation (mmozeiko_CxxProfiler)
+---------------------------------------------------------------
+
+project_root/
+├── requirements.txt             # Python dependency manifest (pytest)
+├── run_tests.sh                 # Simple test script: runs all original + public tests (chmod +x)
+├── tests/
+│   ├── __init__.py              # Makes 'tests' a package
+│   └── original/
+│       ├── __init__.py          # Makes 'original' a package
+│       ├── test_symbols.py      # Translated from C++ test_symbols.cpp (dummy/placeholder)
+│       ├── test_source_loader.py# Translated from C++ test_source_loader.cpp (dummy/placeholder)
+│       └── test_utils.py        # Translated from C++ test_utils.cpp (dummy/placeholder)
+├── public_tests/
+│   ├── __init__.py              # Makes 'public_tests' a package
+│   ├── test_source_loader_public.py # Translated from test_source_loader_public.cpp
+│   ├── test_utils_public.py     # Translated from test_utils_public.cpp
+│   └── test_symbols_public.py   # Translated from test_symbols_public.cpp
+
+Directory Explanations:
+-----------------------
+- requirements.txt:    List of python dependencies for pip (just pytest)
+- run_tests.sh:        Bash script to run all the tests in both original and public groups
+- tests/original/:     Contains tests translated from C++ "original" test files (dummy coverage only)
+- public_tests/:       Contains translated public/visible test cases
+
+How to Run All Tests:
+---------------------
+1. Install dependencies:
+       pip install -r requirements.txt
+
+2. Make sure run_tests.sh is executable:
+       chmod +x run_tests.sh
+
+3. Run all tests:
+       ./run_tests.sh
+
+Both suite and public test groups will run consecutively using pytest.

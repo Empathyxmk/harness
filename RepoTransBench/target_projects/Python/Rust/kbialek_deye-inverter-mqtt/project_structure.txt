@@ -1,0 +1,76 @@
+kbialek_deye_inverter_mqtt/
+├── Cargo.toml
+├── README.md                  # Project overview and how-to-run
+├── src/                       # Core src code (translated/ported/adapted logic as needed)
+│   ├── lib.rs                 # Root for library code and modules
+│   ├── main.rs                # (if app entrypoint; otherwise not present)
+│   ├── deye_active_power_regulation.rs
+│   ├── deye_at_connector.rs
+│   ├── deye_config.rs
+│   ├── deye_connector.rs
+│   ├── deye_daemon.rs
+│   ├── deye_docker_entrypoint.rs
+│   ├── deye_events.rs
+│   ├── deye_inverter_state.rs
+│   ├── deye_modbus.rs
+│   ├── deye_modbus_tcp.rs
+│   ├── deye_modbus_tcp_custom.rs
+│   ├── deye_mqtt.rs
+│   ├── deye_multi_inverter_data_aggregator.rs
+│   ├── deye_observation.rs
+│   ├── deye_sensor.rs
+│   ├── deye_set_time_processor.rs
+│   ├── deye_sensors.rs
+│   ├── deye_sensors_aggregated.rs
+│   └── ... (other modules as needed)
+├── tests/                     # Original (private/full) tests
+│   ├── original/
+│   │   ├── deye_active_power_regulation_test.rs
+│   │   ├── deye_at_connector_inttest.rs
+│   │   ├── deye_at_connector_test.rs
+│   │   ├── deye_config_test.rs
+│   │   ├── deye_events_test.rs
+│   │   ├── deye_inverter_state_test.rs
+│   │   ├── deye_modbus_tcp_custom_test.rs
+│   │   ├── deye_modbus_tcp_test.rs
+│   │   ├── deye_mqtt_inttest.rs
+│   │   ├── deye_mqtt_test.rs
+│   │   ├── deye_multi_inverter_data_aggregator_test.rs
+│   │   ├── deye_sensor_test.rs
+│   │   ├── deye_set_time_processor_test.rs
+│   │   ├── plugins_deye_plugin_sample_test.rs
+│   │   ├── src_deye_docker_entrypoint_test.rs
+│   │   └── src_deye_multi_inverter_data_aggregator_test.rs
+│   └── common/                # Place for shared test utilities (mod.rs)
+│       └── mod.rs
+├── public_tests/              # Public (student-style/minimal) tests
+│   ├── public_deye_active_power_regulation_test.rs
+│   ├── public_deye_at_connector_test.rs
+│   ├── public_deye_config_test.rs
+│   ├── public_deye_events_test.rs
+│   ├── public_deye_inverter_state_test.rs
+│   ├── public_deye_multi_inverter_data_aggregator_test.rs
+│   ├── public_deye_sensor_test.rs
+│   ├── public_deye_timeofuse_service_test.rs
+│   ├── public_plugins_deye_plugin_sample_test.rs
+│   ├── public_src_deye_docker_entrypoint_test.rs
+│   └── ...
+├── run_tests.sh               # One-click script to run all tests with `cargo test`
+├── project_structure.txt      # This file: tree with explanations and instructions
+└── README.md                  # Usage, build, and test documentation
+
+Explanations:
+- `src/`: All main project code, with each component in its own module for easier test and code separation.
+- `tests/original/`: Original, full coverage/private tests translated from Python, including all edge and integration cases.
+- `public_tests/`: Public/Student facing tests for minimal interface, correctness, and core logic checks.
+- `run_tests.sh`: Simple wrapper script for `cargo test`, for easy full-project test execution.
+- `project_structure.txt`: This comprehensive tree, mapping, and how-to-use documentation.
+
+Instructions:
+1. To build the project, use: `cargo build`
+2. To run all tests, use: `./run_tests.sh`
+3. To run only public or original tests, use: `cargo test --test public_test_name` or `cargo test --test original_test_name`
+4. Add source files/modules in `src/`. Add any new tests in `tests/original/` or `public_tests/`.
+5. Dependencies are managed via Cargo.toml.
+
+NOTE: See `README.md` for detailed build and development info.

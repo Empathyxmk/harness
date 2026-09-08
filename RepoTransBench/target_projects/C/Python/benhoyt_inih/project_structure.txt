@@ -1,0 +1,39 @@
+Python project structure for benhoyt_inih:
+
+project_root/
+├── src/
+│   └── inih/
+│       └── __init__.py        # Python module for INI parser (placeholder; not implemented)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_alloc.py          # Original alloc tests
+│       ├── test_string.py         # Original ini_parse_string tests
+│       ├── test_unittest.py       # Original "unittest" C main
+│       ├── test_coverage.py       # Coverage/branch and options tests
+│       └── test_coverage2.py      # Additional edge/bad file/section cases
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_alloc.py          # Public alloc test with different data
+│   ├── test_public_string.py         # Public ini_parse_string edge tests
+│   ├── test_public_coverage.py       # Public coverage/options tests
+│   └── test_public_coverage2.py      # Public error/edge/coverage2
+├── requirements.txt              # Python dependencies (pytest)
+├── run_tests.sh                  # Simple one-click script to run ALL tests
+└── project_structure.txt         # This file: explains the project layout
+
+Directory/Files:
+- src/inih/__init__.py      : Place your Python inih/INI parser library. (Currently a stub with 'NotImplementedError')
+- tests/original/           : Translated original C test logic as Python pytest functions.
+- public_tests/             : Translated auto-generated public test logic as Python pytest functions.
+- requirements.txt          : Lists all dependencies (pytest).
+- run_tests.sh              : Run ALL tests easily; just `./run_tests.sh`.
+- project_structure.txt     : Explains this project structure.
+
+How to run tests:
+1. Ensure Python 3 and pip are installed.
+2. (recommended) Run: `pip install -r requirements.txt`
+3. Run *all* tests: `./run_tests.sh`
+
+Test outputs will be printed as per the original C logic for reference/inspection.

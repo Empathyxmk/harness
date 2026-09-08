@@ -1,0 +1,20 @@
+trailofbits_protofuzz-go/
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── tests/
+│   ├── original/
+│   │   ├── test_protofuzz_test.go
+│   │   ├── test_values_test.go
+│   │   ├── test_gen_test.go
+│   │   ├── test_log_test.go
+│   │   ├── test_pbimport_test.go
+│   │   ├── test_protofuzz_proto.go
+│   │   └── testutil.go
+├── public_tests/
+│   ├── test_public_pbimport_test.go
+│   ├── test_public_protofuzz_test.go
+│   ├── test_public_log_test.go
+│   ├── test_public_values_test.go
+│   └── test_public_gen_test.go
+└── test_translation_progress.json

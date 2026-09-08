@@ -1,0 +1,33 @@
+springframeworkguru_spring5webapp_python/
+├── src/
+│   └── spring5webapp/
+│       ├── __init__.py
+│       ├── sample_branching_service.py       # Contains SampleBranchingService class with categorize_number and is_even
+│       └── spring5webapp_application.py      # Contains main(args) function simulating the application main entry point
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_sample_branching_service.py  # Tests for SampleBranchingService (original)
+│       └── test_spring5webapp_application_main.py    # Main/app context tests (original)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_sample_branching_service_public.py           # Public tests for SampleBranchingService
+│   └── test_spring5webapp_application_main_public.py     # Public main method tests
+├── requirements.txt         # Python dependencies (pytest)
+├── run_tests.sh             # Test execution script
+├── README.md                # Documentation and instructions
+└── project_structure.txt    # Directory tree and description
+
+Explanations:
+- src/spring5webapp/: Application source code. All logic implemented here for testability.
+- tests/original/: Translations of the original Java test cases.
+- public_tests/: Translations of public Java test cases.
+- requirements.txt: Lists required dependencies (only pytest needed).
+- run_tests.sh: Makes it easy to run all tests at once.
+- README.md: Quickstart, explanations, and guide.
+- project_structure.txt: Shows and describes the overall layout.
+
+How to run:
+1. Install dependencies from requirements.txt (`pip install -r requirements.txt`)
+2. Run `./run_tests.sh` to execute all tests.

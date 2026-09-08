@@ -1,0 +1,53 @@
+Project Structure for Python translation of txusballesteros_fit-chart
+===================================================================
+
+.
+├── requirements.txt       # Python dependencies (pytest, mock)
+├── run_tests.sh           # Simple script to run ALL tests with "pytest"
+├── project_structure.txt  # This file: overview of the project structure
+├── src/
+│   └── fitchart/
+│       ├── __init__.py
+│       ├── base_renderer.py
+│       ├── fake_classes.py
+│       ├── linear_value_renderer.py
+│       ├── overdraw_value_renderer.py
+│       └── renderer_factory.py
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_base_renderer.py
+│       ├── test_fake_classes_for_test.py
+│       ├── test_linear_value_renderer.py
+│       ├── test_overdraw_value_renderer.py
+│       └── test_renderer_factory.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_base_renderer_public.py
+│   ├── test_fake_classes_for_public_test.py
+│   ├── test_linear_value_renderer_public.py
+│   ├── test_overdraw_value_renderer_public.py
+│   └── test_renderer_factory_public.py
+
+Directory explanations:
+----------------------
+src/fitchart/      : Contains Python translations of the source/core classes of FitChart
+tests/original/    : Python translations of the original Java test cases
+public_tests/      : Python translations of the public Java tests (for public use)
+requirements.txt   : Declares Python dependencies (pytest, mock)
+run_tests.sh       : Minimal, standard script to run ALL tests via pytest
+project_structure.txt : This documentation file
+
+Setup/Testing Instructions:
+--------------------------
+1. Install requirements:
+   pip install -r requirements.txt
+
+2. Run all tests:
+   ./run_tests.sh
+   (or: pytest)
+
+3. Test layout:
+   - All tests are discovered automatically by pytest.
+   - Original project tests:  tests/original/
+   - Public project tests:    public_tests/

@@ -1,0 +1,16 @@
+{
+  "project_name": "bripkens_connect-history-api-fallback",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 98.1,
+    "branch": 97.6
+  },
+  "timestamp": "2025-06-19T10:01:54.462806",
+  "original_path": "/workspace/runnable_filter/JavaScript/bripkens_connect-history-api-fallback",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/bripkens_connect-history-api-fallback",
+  "tests_path": [
+    "test/index.test.js",
+    "test/utils.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

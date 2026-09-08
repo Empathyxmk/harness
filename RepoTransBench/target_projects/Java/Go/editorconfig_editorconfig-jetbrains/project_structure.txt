@@ -1,0 +1,20 @@
+editorconfig/
+├── go.mod                        # Go module definition
+├── main.go                       # Entrypoint, required for go module completeness
+├── utils.go                      # Implementation of utility functions and types
+├── README.md                     # Documentation and instructions
+├── run_tests.sh                  # Simple script for running all tests
+├── tests/
+│   └── original/
+│       └── utils_test.go         # Original tests from UtilsTest.java
+├── public_tests/
+│   └── utils_public_test.go      # Public tests from UtilsPublicTest.java
+└── project_structure.txt         # Description of project structure
+
+- `utils.go`: Core utility functions (`configValueForKey`, messages, OutPair interface)
+- `main.go`: Minimal, required for Go modules (does nothing in CLI)
+- `tests/original/`: Original translated test cases (private/internal)
+- `public_tests/`: Public test cases (translated for public reference)
+- `run_tests.sh`: Script to easily run all tests with a single command
+- `go.mod`: Declares the Go module
+- `README.md`: Explains structure and usage

@@ -1,0 +1,73 @@
+{
+  "project_name": "nexmark_nexmark",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:11.346388",
+  "original_path": "/workspace/verified_repos_v2/Java/nexmark_nexmark",
+  "public_test_result_path": "/workspace/public_test_results/Java/nexmark_nexmark",
+  "original_tests": {
+    "test_files": [
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/FlinkNexmarkOptionsTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/BenchmarkTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/NexmarkConfigurationTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/workload/WorkloadSuiteTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/FlinkRestClientTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/CpuMetricSenderTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/CpuMetricTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/TpsMetricTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/BenchmarkMetricTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/source/NexmarkTableSourceFactoryTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/utils/NexmarkGlobalConfigurationTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/generator/NexmarkGeneratorTest.java"
+    ],
+    "test_scripts": [],
+    "total_original_test_files": 12,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/FlinkNexmarkOptionsPublicTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/BenchmarkPublicTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/NexmarkConfigurationPublicTest.java",
+      "nexmark-flink/run_public_tests.sh",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/workload/WorkloadSuitePublicTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/FlinkRestClientPublicTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/CpuMetricSenderPublicTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/CpuMetricPublicTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/TpsMetricPublicTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/BenchmarkMetricPublicTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/source/NexmarkTableSourceFactoryPublicTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/utils/NexmarkGlobalConfigurationPublicTest.java",
+      "nexmark-flink/src/test/java/com/github/nexmark/flink/generator/NexmarkGeneratorPublicTest.java",
+      "nexmark-flink/run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "nexmark-flink/run_public_tests.sh",
+      "nexmark-flink/run_public_tests.sh"
+    ],
+    "total_public_test_files": 14,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "nexmark-flink/src/test/java/com/github/nexmark/flink/FlinkNexmarkOptionsPublicTest.java",
+    "nexmark-flink/src/test/java/com/github/nexmark/flink/BenchmarkPublicTest.java",
+    "nexmark-flink/src/test/java/com/github/nexmark/flink/NexmarkConfigurationPublicTest.java",
+    "nexmark-flink/run_public_tests.sh",
+    "nexmark-flink/src/test/java/com/github/nexmark/flink/workload/WorkloadSuitePublicTest.java",
+    "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/FlinkRestClientPublicTest.java",
+    "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/CpuMetricSenderPublicTest.java",
+    "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/CpuMetricPublicTest.java",
+    "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/TpsMetricPublicTest.java",
+    "nexmark-flink/src/test/java/com/github/nexmark/flink/metric/BenchmarkMetricPublicTest.java",
+    "nexmark-flink/src/test/java/com/github/nexmark/flink/source/NexmarkTableSourceFactoryPublicTest.java",
+    "nexmark-flink/src/test/java/com/github/nexmark/flink/utils/NexmarkGlobalConfigurationPublicTest.java",
+    "nexmark-flink/src/test/java/com/github/nexmark/flink/generator/NexmarkGeneratorPublicTest.java",
+    "nexmark-flink/run_tests.sh",
+    "nexmark-flink/run_public_tests.sh"
+  ]
+}

@@ -1,0 +1,22 @@
+project_root/
+├── README.md                          # Project overview and instructions
+├── go.mod                             # Go module definition
+├── run_tests.sh                       # Script to run all tests
+├── tools/
+│   └── tool.go                        # Implements Add, Sub, Mul, Div, Tool type
+├── onnxapi/
+│   └── creat_onnx_example.go          # Implements MakeIdentity, SumList
+├── convert2onnx/
+│   └── pytorch2onnx_resize.go         # Implements DummyResizeFunc
+├── tests/
+│   ├── original/
+│   │   ├── tool_test.go               # Original test: tools/tool.go
+│   │   ├── tools_tool_test.go         # Original test: tools/tool.go (more edge cases)
+│   │   ├── onnxapi_creat_onnx_example_test.go # Original test: onnxapi/creat_onnx_example.go
+│   │   ├── convert2onnx_pytorch2onnx_resize_test.go # Original test: convert2onnx/pytorch2onnx_resize.go
+│   │   └── testutil.go                # (Reserved for helpers)
+├── public_tests/
+│   ├── public_tool_test.go            # Public test for tools/tool.go
+│   ├── public_tools_tool_test.go      # Public test with more edge cases
+│   ├── public_onnxapi_creat_onnx_example_test.go # Public test for onnxapi/creat_onnx_example.go
+│   └── public_convert2onnx_pytorch2onnx_resize_test.go # Placeholder public test

@@ -1,0 +1,35 @@
+myriadrf_LoRa-SDR/
+├── README.md                   # Overview and instructions for test suite usage
+├── requirements.txt            # Python testing dependencies (pytest)
+├── run_tests.sh                # Simple one-click script to run all tests
+├── tests/
+│   ├── __init__.py             # Test package marker for pytest discovery
+│   └── original/               # Original translated C++ test cases
+│       ├── __init__.py
+│       ├── test_blockgen.py
+│       ├── test_loradecoder.py
+│       ├── test_lorademod.py
+│       ├── test_loraencoder.py
+│       └── test_loramod.py
+└── public_tests/
+    ├── __init__.py
+    ├── test_blockgen_public.py
+    ├── test_loradecoder_public.py
+    ├── test_lorademod_public.py
+    ├── test_loraencoder_public.py
+    └── test_loramod_public.py
+
+# Directory Explanations:
+
+# - tests/original/: Contains basic link/construction tests from the original suite (Google Test style), now in pytest format.
+# - public_tests/: Contains the public Catch2-based test logic, translated to pytest. These are minimal, self-contained, and do not require LoRa-SDR internals to execute.
+# - requirements.txt: Declares test environment dependencies.
+# - run_tests.sh: Runs all test suites in both directories.
+# - README.md: Provides project/test usage/structure instructions.
+
+# How to use:
+
+# 1. Install dependencies with: pip install -r requirements.txt
+# 2. Run all tests with:        ./run_tests.sh
+
+# Both test sets are discovered and run by pytest.

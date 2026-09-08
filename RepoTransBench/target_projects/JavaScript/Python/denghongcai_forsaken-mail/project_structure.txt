@@ -1,0 +1,38 @@
+denghongcai_forsaken-mail (Python port) Project Structure
+
+├── requirements.txt                # Python dependencies, includes pytest
+├── run_tests.sh                    # One-click test execution script
+├── src/
+│   └── modules/                    # (Placeholder for ported modules)
+│       ├── __init__.py
+│       ├── config.py               # (Ported from modules/config.js if available)
+│       ├── io.py                   # (Ported from modules/io.js if available)
+│       ├── mailin.py               # (Ported from modules/mailin.js if available)
+│   └── routes/
+│       ├── __init__.py
+│       ├── api.py                  # (Ported from routes/api.js)
+│   └── app.py                      # Entry-point of web app, ported as needed
+├── tests/
+│   └── original/                   # All translated original test cases
+│       ├── test_app.py
+│       ├── test_modules_config.py
+│       ├── test_modules_io.py
+│       ├── test_modules_mailin.py
+│       ├── test_routes_api.py
+├── public_tests/
+│   └── test_public_app_client_placeholder.py # Public placeholder test
+└── project_structure.txt           # This file, describes project layout and components
+
+Directory/Files explanation:
+- requirements.txt: Declares dependencies (pytest).
+- run_tests.sh: Runs all tests (pytest finds tests across tests/ and public_tests/).
+- src/: Your main Python sources, ported from JS if/when source code is needed.
+- tests/original/: Translated unit/integration tests from original JS repo.
+- public_tests/: Publicly visible test cases (shell/placeholder here).
+- project_structure.txt: This architectural overview.
+
+Setup & Testing instructions:
+1. Install dependencies with: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+   - (Or manually: `pytest`)
+3. Place/port your actual source code in src/.

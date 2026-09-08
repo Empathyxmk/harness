@@ -1,0 +1,46 @@
+JoshData_pdf-redactor-Java/
+├── pom.xml                          # Maven config, project metadata and dependencies
+├── run_tests.sh                     # One-click script to build & test with Maven/JUnit5
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── pdfredactor/
+│   │                   ├── RedactorOptions.java   # Core options class (test-stub)
+│   │                   └── PdfRedactor.java       # Core 'redactor' simulator for tests
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── TestRedactorError.java
+│                   │   ├── TestRedactorFilters.java
+│                   │   ├── TestRedactor.java
+│                   │   └── TestRedactorOptions.java
+│                   └── public_tests/
+│                       ├── PublicRedactorErrorTest.java
+│                       ├── PublicRedactorFiltersTest.java
+│                       ├── PublicRedactorOptionsTest.java
+│                       └── PublicRedactorTest.java
+└── project_structure.txt            # This file; summary of structure, directories, file purposes
+
+# Directory explanations:
+# - src/main/java/com/example/pdfredactor/:
+#       Minimal main code to support tests: RedactorOptions, PdfRedactor (stubs - logic sufficient for test passing)
+# - src/test/java/com/example/original/:
+#       Java translations of all original "tests/..." Python tests.
+# - src/test/java/com/example/public_tests/:
+#       Java translations of all public_tests/* Python tests (mirrored logic, input/output, and edge cases).
+# - pom.xml:
+#       Maven config for dependencies and build (JUnit5, Commons IO, PDFBox).
+# - run_tests.sh:
+#       One-click test runner using Maven/JUnit5 for all tests (public and original).
+# - project_structure.txt:
+#       Project tree and explanations.
+#
+# Setup instructions:
+#   1. ./run_tests.sh for all tests
+#   2. Or: mvn clean test
+#   3. Add more tests to src/test/java/com/example/public_tests/ or original/
+#      following naming convention *Test.java

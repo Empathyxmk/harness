@@ -1,0 +1,80 @@
+Project Structure: jtsang4_claude-to-chatgpt (C++ Version)
+
+.
+├── CMakeLists.txt                 # CMake build configuration (root)
+├── Dockerfile
+├── LICENSE
+├── README.md
+├── README_CN.md
+├── README_JA.md
+├── cloudflare-worker.js
+├── docker-compose.yaml
+├── poetry.lock                    # Python original, kept for reference
+├── pyproject.toml                 # Python original, kept for reference
+├── wrangler.toml
+├── run_tests.sh                   # One-click script to build+run all tests
+├── project_structure.txt          # This file; project layout and instructions
+├── include/
+│   └── claude_to_chatgpt/         # C++ library headers for main logic
+│       ├── adapter.h
+│       ├── app.h
+│       ├── logger.h
+│       ├── models.h
+│       └── util.h
+├── src/
+│   └── claude_to_chatgpt/         # C++ library source files for main logic
+│       ├── adapter.cpp
+│       ├── app.cpp
+│       ├── logger.cpp
+│       ├── models.cpp
+│       └── util.cpp
+│   └── CMakeLists.txt             # Subdirectory CMake config
+├── tests/
+│   ├── test_adapter.cpp           # Original test (C++)
+│   ├── test_app_routes.cpp        # Original test (C++)
+│   ├── test_logger.cpp            # Original test (C++)
+│   ├── test_models.cpp            # Original test (C++)
+│   ├── test_util.cpp              # Original test (C++)
+│   └── test_main.cpp              # Test runner main for all original tests
+├── public_tests/
+│   ├── test_public_adapter.cpp    # Public test (C++)
+│   ├── test_public_app_routes.cpp # Public test (C++)
+│   ├── test_public_logger.cpp     # Public test (C++)
+│   ├── test_public_models.cpp     # Public test (C++)
+│   ├── test_public_util.cpp       # Public test (C++)
+│   └── test_public_main.cpp       # Test runner main for all public tests
+
+-----------------------------------------------------------------------------------
+Directory/Files explanation:
+
+- include/claude_to_chatgpt/      - C++ headers for core functionality
+- src/claude_to_chatgpt/          - Corresponding C++ implementation files (.cpp)
+- tests/                          - All original translated tests from Python,
+                                   each matching test_* file implementing
+                                   complete test logic with Google Test.
+                                   test_main.cpp runs all.
+- public_tests/                   - All public-translated tests, preserved logic,
+                                   for public releases. test_public_main.cpp runs these.
+- run_tests.sh                    - Build-and-run script. Just run: ./run_tests.sh
+- CMakeLists.txt                  - Top level CMake config. You need CMake >= 3.14
+- project_structure.txt           - This documentation file.
+-----------------------------------------------------------------------------------
+Instructions:
+
+1. Install dependencies:
+   - Requires C++17, CMake >= 3.14, Google Test (added via FetchContent or package).
+
+2. To build and run all tests:
+   $ chmod +x run_tests.sh
+   $ ./run_tests.sh
+
+   - This will build everything in ./build, then run both original and public tests.
+
+3. Add/Modify tests:
+   - Add new C++ test cases in tests/ (original) or public_tests/ (public).
+   - Source logic in src/ and headers in include/ as needed.
+
+4. To clean build:
+   $ rm -rf build
+
+-----------------------------------------------------------------------------------

@@ -1,0 +1,46 @@
+AutoSpannableTextView/
+|
+|-- AutoSpannableTextView.sln                # Visual Studio solution including all projects
+|-- run_tests.sh                             # Simple test execution script (dotnet test ...)
+|-- project_structure.txt                    # (this file) Project structure and explanation
+|
+|-- src/
+|   |-- AutoSpannableTextView/
+|       |-- AutoSpannableTextView.csproj     # Main C# source library project
+|       |-- AutoLinkStyleTextView.cs         # Dummy implementation for test linkage
+|
+|-- tests/
+|   |-- original/
+|       |-- OriginalTests.csproj             # xUnit project for original test cases
+|       |-- ApplicationTest.cs               # Translated original Java ApplicationTest
+|       |-- ExampleUnitTest.cs               # Translated original ExampleUnitTest
+|       |-- AutoLinkStyleTextViewTest.cs     # Translated original core logic/unit test
+|
+|-- public_tests/
+|   |-- PublicTests.csproj                   # xUnit project for public tests
+|   |-- ApplicationPublicTest.cs             # Translated public ApplicationPublicTest
+|   |-- ExampleUnitPublicTest.cs             # Translated public ExampleUnitPublicTest
+|   |-- AutoLinkStyleTextViewPublicTest.cs   # Translated public variant logic test
+|
+# --------
+# Directory/Files Explanation:
+#
+# src/AutoSpannableTextView/            : Main source code area. Needs only minimal dummy implementation for test logic.
+#   - AutoLinkStyleTextView.cs          : C# ported stub of the Android class for C# test compatibility.
+#
+# tests/original/                       : Original (private/internal) test suite, ported to xUnit for C#.
+#   - Each *.cs file                    : One test class per file, mirroring original Java logic and coverage.
+#
+# public_tests/                         : Public test suite, ported to xUnit for C#.
+#   - Each *.cs file                    : One test class per file, mirroring source "public" test coverage.
+#
+# Each test project uses xUnit and Moq for mocking (where needed).
+# All tests can be run with dotnet test using the run_tests.sh script at the project root.
+#
+# Prerequisites: .NET 6+ SDK
+# To install dependencies and run tests:
+#   1. cd [project root]
+#   2. chmod +x run_tests.sh
+#   3. ./run_tests.sh
+#
+# This structure allows both Visual Studio and CLI (.NET SDK) workflows.

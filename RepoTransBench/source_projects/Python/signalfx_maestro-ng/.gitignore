@@ -1,0 +1,9 @@
+/build/
+/dist/
+/maestro_ng.egg-info/
+/site/
+*.pyc
+/.tox
+
+docs/_build
+.idea/

@@ -1,0 +1,46 @@
+{
+  "project_name": "jwtk_njwt",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": false,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:30:47.145078",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/jwtk_njwt",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/jwtk_njwt",
+  "original_tests": {
+    "test_files": [],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 0,
+    "found_existing_tests": false
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/algs.public.test.js",
+      "public_tests/builder.public.test.js",
+      "public_tests/jwt-body.public.test.js",
+      "public_tests/jwt.public.test.js",
+      "public_tests/key-resolver.public.test.js",
+      "public_tests/exports.public.test.js",
+      "public_tests/run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "public_tests/run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/algs.public.test.js",
+    "public_tests/builder.public.test.js",
+    "public_tests/jwt-body.public.test.js",
+    "public_tests/jwt.public.test.js",
+    "public_tests/key-resolver.public.test.js",
+    "public_tests/exports.public.test.js",
+    "public_tests/run_public_tests.sh"
+  ]
+}

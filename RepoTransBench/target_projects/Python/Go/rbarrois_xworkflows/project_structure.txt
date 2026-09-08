@@ -1,0 +1,23 @@
+project_root/
+├── go.mod                     # Go module initialization file
+├── run_tests.sh               # Simple script to run all tests (chmod +x)
+├── README.md                  # Project documentation (not included here for brevity)
+├── src/
+│   └── xworkflows/
+│       ├── base.go            # Main workflow logic (to be implemented; stubbed for tests)
+│       ├── compat.go          # Compatibility utilities (stubbed as needed)
+│       ├── utils.go           # Utilities (iterclass, etc.; stubbed for tests)
+│       └── __init__.py        # Not used, for parity with original layout
+├── tests/                     
+│   └── original/
+│       ├── base_test.go       # Tests translated from tests/test_base.py
+│       ├── compat_test.go     # Tests translated from tests/test_compat.py
+│       ├── init_test.go       # Tests translated from tests/test_init.py
+│       ├── using_test.go      # Tests translated from tests/test_using.py
+│       └── utils_test.go      # Tests translated from tests/test_utils.py
+├── public_tests/
+│   ├── test_public_base_test.go     # Go translation of public base-level tests
+│   ├── test_public_compat_test.go   # Go translation of public compat tests
+│   ├── test_public_init_test.go     # Go translation of public init tests
+│   ├── test_public_using_test.go    # Go translation of public using tests
+│   └── test_public_utils_test.go    # Go translation of public utils tests

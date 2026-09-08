@@ -1,0 +1,19 @@
+wstrange_GoogleAuth-go/
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── reseeding_secure_random_test.go
+│       ├── google_auth_test.go
+│       ├── google_authenticator_qr_generator_util_test.go
+│       ├── key_representation_test.go
+│       ├── google_authenticator_exception_test.go
+│       ├── google_authenticator_qr_generator_test.go
+│       ├── google_authenticator_config_test.go
+│       ├── hmac_hash_function_test.go
+│       └── google_authenticator_key_test.go
+├── public_tests/
+│   ├── reseeding_secure_random_public_test.go
+│   └── google_authenticator_qr_generator_util_public_test.go
+├── test_translation_progress.json
+└── project_structure.txt

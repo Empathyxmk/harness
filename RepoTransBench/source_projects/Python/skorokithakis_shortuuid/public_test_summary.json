@@ -1,0 +1,103 @@
+{
+  "project_name": "skorokithakis_shortuuid",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:24:59.143827",
+  "original_path": "/workspace/verified_repos_v2/Python/skorokithakis_shortuuid",
+  "public_test_result_path": "/workspace/public_test_results/Python/skorokithakis_shortuuid",
+  "original_tests": {
+    "test_files": [
+      "shortuuid/test_cli.py",
+      "shortuuid/test_shortuuid.py",
+      "shortuuid/test_main_additional.py",
+      "shortuuid/test_django_fields.py",
+      "shortuuid/test_shortuuid_init_imports.py",
+      "shortuuid/test_cli_argparse_errors.py",
+      "shortuuid/test_main_branches.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_cli.py",
+      "public_tests/test_public_shortuuid.py",
+      "public_tests/test_public_main_additional.py",
+      "public_tests/test_public_django_fields.py",
+      "public_tests/test_public_shortuuid_init_imports.py",
+      "public_tests/test_public_cli_argparse_errors.py",
+      "public_tests/test_public_main_branches.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_cli.py",
+      "public_tests/test_public_main_additional.py",
+      "public_tests/test_public_main_branches.py",
+      "public_tests/test_public_shortuuid.py",
+      "public_tests/test_public_main_additional.py",
+      "public_tests/test_public_main_branches.py",
+      "public_tests/test_public_shortuuid.py",
+      "public_tests/test_public_main_additional.py",
+      "public_tests/test_public_main_branches.py",
+      "public_tests/test_public_shortuuid.py",
+      "public_tests/test_public_main_additional.py",
+      "public_tests/test_public_main_branches.py",
+      "public_tests/test_public_shortuuid.py",
+      "public_tests/test_public_cli.py",
+      "public_tests/test_public_cli_argparse_errors.py",
+      "public_tests/test_public_django_fields.py",
+      "public_tests/test_public_shortuuid_init_imports.py",
+      "public_tests/test_public_cli.py",
+      "public_tests/test_public_cli_argparse_errors.py",
+      "public_tests/test_public_main_additional.py",
+      "public_tests/test_public_main_branches.py",
+      "public_tests/test_public_shortuuid.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 31,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_cli.py",
+    "public_tests/test_public_shortuuid.py",
+    "public_tests/test_public_main_additional.py",
+    "public_tests/test_public_django_fields.py",
+    "public_tests/test_public_shortuuid_init_imports.py",
+    "public_tests/test_public_cli_argparse_errors.py",
+    "public_tests/test_public_main_branches.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_cli.py",
+    "public_tests/test_public_main_additional.py",
+    "public_tests/test_public_main_branches.py",
+    "public_tests/test_public_shortuuid.py",
+    "public_tests/test_public_main_additional.py",
+    "public_tests/test_public_main_branches.py",
+    "public_tests/test_public_shortuuid.py",
+    "public_tests/test_public_main_additional.py",
+    "public_tests/test_public_main_branches.py",
+    "public_tests/test_public_shortuuid.py",
+    "public_tests/test_public_main_additional.py",
+    "public_tests/test_public_main_branches.py",
+    "public_tests/test_public_shortuuid.py",
+    "public_tests/test_public_cli.py",
+    "public_tests/test_public_cli_argparse_errors.py",
+    "public_tests/test_public_django_fields.py",
+    "public_tests/test_public_shortuuid_init_imports.py",
+    "public_tests/test_public_cli.py",
+    "public_tests/test_public_cli_argparse_errors.py",
+    "public_tests/test_public_main_additional.py",
+    "public_tests/test_public_main_branches.py",
+    "public_tests/test_public_shortuuid.py",
+    "run_public_tests.sh"
+  ]
+}

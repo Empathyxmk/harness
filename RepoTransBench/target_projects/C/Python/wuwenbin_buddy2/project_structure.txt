@@ -1,0 +1,16 @@
+wuwenbin_buddy2/
+├── src/
+│   └── buddy2/
+│       ├── __init__.py
+│       └── buddy2.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_buddy2.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_buddy2.py
+├── requirements.txt
+├── run_tests.sh
+└── README.md

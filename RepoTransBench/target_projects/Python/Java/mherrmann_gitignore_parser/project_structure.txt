@@ -1,0 +1,45 @@
+gitignore-parser/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── gitignore/
+│   │                   ├── GitignoreParser.java         # Library main Java API
+│   │                   ├── GitignoreMatcher.java        # Core matcher logic (simulates Python version)
+│   │                   ├── IgnoreRule.java              # Rule object for pattern rules
+│   │                   └── RuleParser.java              # Support for ruleFromPattern
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── gitignore/
+│                       ├── original/
+│                       │   ├── ExtraTestsTest.java      # Original extra_tests.py (unit test)
+│                       │   └── TestsTest.java           # Original tests.py (unit test)
+│                       └── public_tests/
+│                           └── PublicGitignoreParserTest.java # Public generated test cases
+└── project_structure.txt     # This file. Shows overall structure and explanation.
+
+# Structure explanation:
+# - src/main/java/com/example/gitignore/:
+#     Implementation code for the minimal Gitignore parser and helpers.
+# - src/test/java/com/example/gitignore/original/:
+#     Tests converted from original Python tests (tests.py, extra_tests.py).
+# - src/test/java/com/example/gitignore/public_tests/:
+#     Public test cases (from public_tests/test_public_gitignore_parser.py).
+# - pom.xml:
+#     Maven build configuration; includes JUnit and Mockito dependencies.
+# - run_tests.sh:
+#     Simple script to run all tests (`mvn clean test`).
+# - project_structure.txt:
+#     This explanation file.
+
+# Setup & Testing:
+# 1. Install Java 11+ and Maven.
+# 2. Run `chmod +x run_tests.sh`
+# 3. Execute `./run_tests.sh` to run all tests.
+
+# All functionality and coverage from the Python tests is maintained.

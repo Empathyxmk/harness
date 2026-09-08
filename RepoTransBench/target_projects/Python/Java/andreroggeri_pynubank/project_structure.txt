@@ -1,0 +1,13 @@
+pynubank-java (project root)
+├── pom.xml  (Maven build/config, dependencies and test setup)
+├── run_tests.sh  (One-click test execution script: runs all Java/JUnit tests)
+├── src/
+│   ├── main/java/com/example/pynubank/
+│   │   ├── (core library classes; stubs for compilation; most are dummies for test building)
+│   └── test/java/com/example/pynubank/
+│       └── original/
+│           └── (original test files from 'tests/' translated to Java + JUnit)
+│       └── public/
+│           └── (public test files from 'public_tests/' translated to Java + JUnit)
+├── README.md  (how to build and run tests)
+└── project_structure.txt (this file)

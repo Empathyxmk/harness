@@ -1,0 +1,26 @@
+project_root/
+├── Cargo.toml             -- Rust build/package definition
+├── README.md              -- Project-level documentation and test instructions
+├── run_tests.sh           -- Simple script to build and execute all tests (chmod +x)
+├── src/
+│   ├── lib.rs             -- Main Rust library file (exports dummy stubs and types for tests)
+│   ├── controls.rs        -- Stubs (controls API used in tests)
+│   ├── connection.rs      -- Stubs (connection API used in tests)
+│   ├── model.rs           -- Stubs (model API used in tests)
+│   ├── discovery.rs       -- Stubs (discovery API used in tests)
+│   ├── utils.rs           -- Rust translations for FakeClient/FakeMouseClient and helpers
+├── tests/
+│   └── original/
+│        ├── test_controls.rs      -- Rust port of tests/test_controls.py
+│        ├── test_connection.rs    -- Rust port of tests/test_connection.py
+│        ├── test_discovery.rs     -- Rust port of tests/test_discovery.py
+│        ├── test_model.rs         -- Rust port of tests/test_model.py
+│        ├── test_setup.rs         -- Rust port of tests/test_setup.py
+├── public_tests/
+│   ├── test_public_controls.rs    -- Rust port of public_tests/test_public_controls.py
+│   ├── test_public_connection.rs  -- Rust port of public_tests/test_public_connection.py
+│   ├── test_public_discovery.rs   -- Rust port of public_tests/test_public_discovery.py
+│   ├── test_public_model.rs       -- Rust port of public_tests/test_public_model.py
+│   ├── test_public_setup.rs       -- Rust port of public_tests/test_public_setup.py
+│   ├── mod.rs                     -- Test mod (to allow `cargo test` discovery)
+│   ├── utils.rs                   -- Utility mock support for public test cases

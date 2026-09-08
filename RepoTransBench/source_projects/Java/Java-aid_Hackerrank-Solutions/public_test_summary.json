@@ -1,0 +1,76 @@
+{
+  "project_name": "Java-aid_Hackerrank-Solutions",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:42:17.181255",
+  "original_path": "/workspace/verified_repos_v2/Java/Java-aid_Hackerrank-Solutions",
+  "public_test_result_path": "/workspace/public_test_results/Java/Java-aid_Hackerrank-Solutions",
+  "original_tests": {
+    "test_files": [
+      "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/search/TripleSumTest.java",
+      "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/dictionaries/CountTripletsTest.java",
+      "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/ClimbingTheLeaderboardTest.java",
+      "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/MakingAnagramsTest.java",
+      "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/StringsMakingAnagramsTest.java",
+      "HackerRankDashboard/Languages/Java/src/main/java/com/javaaid/hackerrank/solutions/languages/java/bignumber/JavaPrimalityTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/search/TripleSumPublicTest.java",
+      "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/dictionaries/CountTripletsPublicTest.java",
+      "run_public_tests.sh",
+      "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/ClimbingTheLeaderboardPublicTest.java",
+      "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/MakingAnagramsPublicTest.java",
+      "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/StringsMakingAnagramsPublicTest.java",
+      "run_public_tests.sh",
+      "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/search/TripleSumPublicTest.java",
+      "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/dictionaries/CountTripletsPublicTest.java",
+      "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/ClimbingTheLeaderboardPublicTest.java",
+      "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/MakingAnagramsPublicTest.java",
+      "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/StringsMakingAnagramsPublicTest.java",
+      "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/search/TripleSumPublicTest.java",
+      "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/dictionaries/CountTripletsPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 15,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/search/TripleSumPublicTest.java",
+    "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/dictionaries/CountTripletsPublicTest.java",
+    "run_public_tests.sh",
+    "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/ClimbingTheLeaderboardPublicTest.java",
+    "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/MakingAnagramsPublicTest.java",
+    "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/StringsMakingAnagramsPublicTest.java",
+    "run_public_tests.sh",
+    "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/search/TripleSumPublicTest.java",
+    "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/dictionaries/CountTripletsPublicTest.java",
+    "HackerRankDashboard/Interview-Preparation-Kit/pom.xml",
+    "HackerRankDashboard/CoreCS/Implementation/pom.xml",
+    "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/ClimbingTheLeaderboardPublicTest.java",
+    "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/MakingAnagramsPublicTest.java",
+    "HackerRankDashboard/CoreCS/Implementation/src/test/java/org/javaaid/hackerrank/solutions/implementation/bruteforce/StringsMakingAnagramsPublicTest.java",
+    "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/search/TripleSumPublicTest.java",
+    "HackerRankDashboard/Interview-Preparation-Kit/src/test/java/com/javaaid/dictionaries/CountTripletsPublicTest.java",
+    "HackerRankDashboard/Interview-Preparation-Kit/pom.xml",
+    "HackerRankDashboard/CoreCS/Implementation/pom.xml",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

@@ -1,0 +1,21 @@
+os_slacker/
+├── CMakeLists.txt
+├── include/
+│   └── slacker.h
+├── public_tests/
+│   ├── CMakeLists.txt
+│   ├── test_main.cpp
+│   ├── test_public_channels.cpp
+│   ├── test_public_init.cpp
+│   └── test_public_utilities.cpp
+├── run_tests.sh
+├── src/
+│   ├── CMakeLists.txt
+│   └── dummy.cpp
+├── tests/
+│   ├── CMakeLists.txt
+│   ├── test_channels.cpp
+│   ├── test_init.cpp
+│   ├── test_main.cpp
+│   └── test_utilities.cpp
+└── project_structure.txt

@@ -1,0 +1,20 @@
+project_root/
+├── go.mod                       # Go module descriptor
+├── main.go                      # App entrypoint (not strictly needed, present for completeness)
+├── calculator.go                # Source: Calculator implementation (add, subtract, multiply, divide)
+├── README.md                    # Project overview and instructions
+├── project_structure.txt        # This file
+├── run_tests.sh                 # One-click test runner (executes all tests)
+├── tests/
+│   └── original/
+│       └── calculator_test.go   # Original translated test cases from CalculatorTest.java
+└── public_tests/
+    └── calculator_public_test.go # Public translated test cases from CalculatorPublicTest.java
+
+Directory explanations:
+- calculator.go: main calculator implementation (migrated based on usage in tests)
+- main.go: optional application entrypoint (not required for tests)
+- tests/original: contains all original tests, exactly matching Java `CalculatorTest.java` logic and data
+- public_tests: contains all public test cases, exactly matching Java `CalculatorPublicTest.java` logic and scenarios
+- run_tests.sh: simple runner that executes all tests using `go test ./...`
+- go.mod: module/dependency configuration for Go

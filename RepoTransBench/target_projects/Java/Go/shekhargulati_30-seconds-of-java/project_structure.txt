@@ -1,0 +1,19 @@
+.
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── public_tests/
+│   ├── snippets_public_test.go
+│   └── snippets_edge_public_test.go
+└── tests/
+    ├── original/
+    │   ├── snippets_edge_test.go
+    │   └── snippets_test.go
+    └── testutil.go
+
+- go.mod: Go module definition.
+- README.md: Project documentation.
+- run_tests.sh: Executable script to run all tests.
+- public_tests/: Folder containing public test cases (translated from Java public tests).
+- tests/original/: Folder containing original and edge test cases (translated from Java).
+- tests/testutil.go: Shared test helpers for flattening, equality checks, etc.

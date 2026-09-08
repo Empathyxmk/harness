@@ -1,0 +1,18 @@
+cdown_psi-notify/
+├── src/
+│   └── cdown_psi_notify/
+│       ├── __init__.py         # Marks cdown_psi_notify as a Python package
+│       └── psi_notify.py       # Translated core utility functions from psi-notify.c/h
+├── tests/
+│   ├── __init__.py             # Marks tests as a Python package
+│   └── original/
+│       ├── __init__.py         # Marks original tests as a Python package
+│       └── test_original_core.py   # Translated tests from C's test/test.c (original)
+├── public_tests/
+│   ├── __init__.py             # Marks public_tests as a Python package
+│   ├── test_public_core.py     # Translated public tests from C's test/public_test.c
+│   ├── test_public_extra.py    # Translated public tests from C's test/public_test_extra.c
+│   └── test_public_source_extra.py # Translated public tests from C's test/test_extra.c (moved from original)
+├── requirements.txt            # Lists Python dependencies (e.g., pytest)
+├── run_tests.sh                # Script to install dependencies and run all tests
+└── project_structure.txt       # This document describing the project structure

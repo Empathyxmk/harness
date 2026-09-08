@@ -1,0 +1,81 @@
+mcyeh_mstamp (Python translation)
+
+├── requirements.txt           # Python dependencies (numpy, scipy, matplotlib, pytest)
+├── run_tests.sh               # Simple script: runs all tests with pytest
+├── README.md                  # Project documentation (instructions, usage, design overview)
+├── src/
+│   └── mcyeh_mstamp/
+│       ├── __init__.py
+│       ├── mstamp_stamp.py    # Core algorithms/functions; to be implemented or imported here
+│       ├── mstamp_stomp.py    # Placeholder; auxiliary methods if needed
+│       ├── plot_motif.py      # Plotting utilities
+│       └── toy_data.npy       # Numpy-serialized toy example data
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_demo.py
+│       ├── test_demo_script.py
+│       ├── test_extract_and_guide.py
+│       ├── test_extract_motif_params.py
+│       ├── test_mstamp.py
+│       ├── test_mstamp_any_par.py
+│       ├── test_mstamp_par.py
+│       ├── test_mstamp_par_batch.py
+│       ├── test_plot_and_unconstrain.py
+│       ├── test_plot_motif.py
+│       └── test_unconstrain_and_any.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_demo.py
+│   ├── test_public_extract_and_guide.py
+│   ├── test_public_extract_motif_params.py
+│   ├── test_public_mstamp_any_par.py
+│   ├── test_public_mstamp_par.py
+│   ├── test_public_plot_motif.py
+│   └── test_public_unconstrain_and_any.py
+
+-------------------------------------------------
+Directory explanations:
+
+src/mcyeh_mstamp/:
+    - The source Python package, containing implementations of mstamp, mstamp_par, mstamp_any, etc. 
+    - toy_data.npy is a numpy array version of the Matlab .mat toy_data for use by tests.
+    - mstamp_stamp.py: main algorithm implementations.
+
+tests/original/:
+    - All "original" (i.e., full) tests translated from MATLAB/mcyeh_mstamp/MATLAB/tests/
+    - One test file per original .m test, converted to Python using pytest and numpy.
+    - These files contain comprehensive functional, parameter, and edge-case tests.
+
+public_tests/:
+    - All public test cases as translated from MATLAB/mcyeh_mstamp/MATLAB/tests_public/
+    - Each file is a public test in pytest, using unique synthetic test data.
+    - Designed for third-party or open-sourced evaluation.
+
+requirements.txt:
+    - All Python dependencies for running code and tests (numpy / scipy / pytest / matplotlib).
+
+run_tests.sh:
+    - Simplest run command: `./run_tests.sh` will find and run all tests via pytest.
+
+README.md:
+    - High-level instructions, requirements, running tests, and Python translation notes.
+
+-------------------------------------------------
+Setup & Testing instructions:
+
+1. (Optional, recommended) Create a virtual environment:
+   python -m venv venv
+   source venv/bin/activate
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Run all tests:
+   ./run_tests.sh
+
+-------------------------------------------------
+Note: 
+- All test and source Python files are import-safe and do not rely on Matlab files.
+- If needed, convert toy_data.mat to toy_data.npy using scipy.io.loadmat and numpy.save before running original tests.

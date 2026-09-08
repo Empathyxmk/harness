@@ -1,0 +1,16 @@
+{
+  "project_name": "hokaccha_node-jwt-simple",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 98.61,
+    "branch": 96.0
+  },
+  "timestamp": "2025-06-23T10:39:29.371096",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/hokaccha_node-jwt-simple",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/hokaccha_node-jwt-simple",
+  "tests_path": [
+    "test/internal-util.test.js",
+    "test/jwt.encode_decode.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

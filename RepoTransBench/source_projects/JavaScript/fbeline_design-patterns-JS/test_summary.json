@@ -1,0 +1,19 @@
+{
+  "project_name": "fbeline_design-patterns-JS",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:24:47.765769",
+  "original_path": "/workspace/runnable_filter/JavaScript/fbeline_design-patterns-JS",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/fbeline_design-patterns-JS",
+  "tests_path": [
+    "test/factory.test.js",
+    "test/prototype.test.js",
+    "test/factory_es6.test.js",
+    "test/prototype_es6.test.js",
+    "test/singleton_es6.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

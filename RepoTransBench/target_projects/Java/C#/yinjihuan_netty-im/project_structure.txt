@@ -1,0 +1,25 @@
+yinjihuan_netty-im-dotnet/
+├── README.md                           # Project overview and setup instructions
+├── netty-im/
+│   ├── NettyImServer/
+│   │   ├── NettyImServer.csproj        # Main server project
+│   │   └── ... (main source files - not included here)
+├── tests/
+│   └── original/
+│       ├── NettyImServer.Tests.csproj  # C# xUnit project for original tests
+│       ├── ImServerAppTests.cs
+│       ├── ConnectionPoolTests.cs
+│       ├── ImServerTests.cs
+│       ├── MessageControllerTests.cs
+│       ├── NettyHttpServerTests.cs
+│       └── ServerPoHandlerTests.cs
+├── public_tests/
+│   ├── NettyImServer.PublicTests.csproj # C# xUnit project for public tests
+│   ├── ImServerAppPublicTests.cs
+│   ├── ConnectionPoolPublicTests.cs
+│   ├── ImServerPublicTests.cs
+│   ├── MessageControllerPublicTests.cs
+│   ├── NettyHttpServerPublicTests.cs
+│   └── ServerPoHandlerPublicTests.cs
+├── yinjihuan_netty-im-dotnet.sln       # .NET Solution file
+├── run_tests.sh                        # One-click test execution script

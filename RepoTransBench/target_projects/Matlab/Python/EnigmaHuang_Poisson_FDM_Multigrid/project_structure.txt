@@ -1,0 +1,27 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── src/
+│   └── enigmahuang_poisson_fdm_multigrid/
+│       ├── __init__.py
+│       └── [all source files: gs_iter.py, jacobi_iter.py, multigrid1d_vcycle_genmat.py, multigrid2d_vcycle_genmat.py, multigrid3d_vcycle_genmat.py, multigrid_solver.py, poisson1d_3pt_genmat.py, poisson2d_5pt_genmat.py, poisson3d_7pt_genmat.py, etc.]
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_gs_iter.py
+│       ├── test_poisson2d.py
+│       ├── test_multigrid_solver.py
+│       ├── test_multigrid1d_genmat.py
+│       ├── test_poisson3d.py
+│       ├── test_multigrid3d_genmat.py
+│       └── test_poisson1d.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_multigrid1d_genmat_public.py
+│   ├── test_gs_iter_public.py
+│   ├── test_multigrid3d_genmat_public.py
+│   ├── test_poisson3d_public.py
+│   ├── test_multigrid_solver_public.py
+│   ├── test_poisson2d_public.py
+│   └── test_poisson1d_public.py

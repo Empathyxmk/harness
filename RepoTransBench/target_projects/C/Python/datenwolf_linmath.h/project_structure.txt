@@ -1,0 +1,16 @@
+datenwolf_linmath_py/
+├── src/
+│   └── linmath/
+│        ├── __init__.py      # Pure Python minimal linmath module (only test-used stubs)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│        ├── __init__.py
+│        ├── test_linmath.py              # Translation of C linmath_test.c (original full tests)
+│        └── test_linmath_extra.py        # Translation of C linmath_test_extra.c
+├── public_tests/
+│   ├── __init__.py
+│   └── test_linmath_public.py            # Translation of C linmath_test_public.c
+├── requirements.txt                      # Python dependencies: numpy, pytest
+├── run_tests.sh                          # Run all tests (pytest) with one command
+├── project_structure.txt                 # This file (structure overview)

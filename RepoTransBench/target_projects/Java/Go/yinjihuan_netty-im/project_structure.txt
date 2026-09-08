@@ -1,0 +1,27 @@
+yinjihuan_netty-im-go/
+├── go.mod                        # Go module and dependency definition
+├── README.md                     # Project overview and instructions
+├── run_tests.sh                  # One-click test runner (all tests, original & public)
+├── tests/
+│   ├── testutil.go               # Mock and stub implementations for server types
+│   └── original/
+│       ├── im_server_app_test.go             # Translated: ImServerAppTest.java
+│       ├── connection_pool_test.go           # Translated: ConnectionPoolTest.java
+│       ├── im_server_test.go                 # Translated: ImServerTest.java
+│       ├── message_controller_test.go        # Translated: MessageControllerTest.java
+│       ├── netty_http_server_test.go         # Translated: NettyHttpServerTest.java
+│       └── server_po_handler_test.go         # Translated: ServerPoHandlerTest.java
+├── public_tests/
+│   ├── im_server_app_public_test.go          # Translated: ImServerAppPublicTest.java
+│   ├── connection_pool_public_test.go        # Translated: ConnectionPoolPublicTest.java
+│   ├── im_server_public_test.go              # Translated: ImServerPublicTest.java
+│   ├── message_controller_public_test.go     # Translated: MessageControllerPublicTest.java
+│   ├── netty_http_server_public_test.go      # Translated: NettyHttpServerPublicTest.java
+│   └── server_po_handler_public_test.go      # Translated: ServerPoHandlerPublicTest.java
+
+Directory Explanations:
+- tests/original/: Go translation of the project's original/internal Java test suite.
+- public_tests/: Go translation of the *public* Java test suite.
+- tests/testutil.go: Utilities, mocks, and stubs required for the tests to compile/run.
+- go.mod: Module file with dependencies (use 'go mod tidy' to manage dependencies).
+- run_tests.sh: Runs all tests recursively (from project root) with `go test ./...`.

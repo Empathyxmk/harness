@@ -1,0 +1,38 @@
+project_root/
+├── src/
+│   └── envify/
+│       ├── __init__.py         # (empty placeholder for package)
+│       ├── custom.py           # (placeholder module, see README.md)
+│       └── index.py            # (placeholder module, see README.md)
+├── bin/
+│   ├── envify                  # (placeholder executable, see README.md)
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_index.py       # Original tests translated from index.test.js
+│   │   ├── test_custom.py      # Original tests translated from custom.test.js
+│   │   └── test_envify_bin.py  # Original tests translated from bin/envify.test.js
+│   └── test_legacy_tape.py     # Tape-based legacy test.js translated
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_index_public.py               # Public tests from index.public.test.js
+│   ├── test_custom_public.py              # Public tests from custom.public.test.js
+│   └── bin/
+│       ├── __init__.py
+│       └── test_envify_bin_public.py      # Public tests from bin/envify.public.test.js
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+
+----
+Directory explanations:
+- src/envify/:          Source code modules.
+- bin/:                 Executable CLI mock (for test).
+- tests/original/:      All original (non-public) translated test cases.
+- tests/test_legacy_tape.py: Translated legacy test.js using pytest.
+- public_tests/:        Publicly released test cases, matching public_test_summary.
+- requirements.txt:     Python dependencies for testing (pytest).
+- run_tests.sh:         Run all tests with one command.
+- README.md:            Project and translation notes.
+- project_structure.txt: This file.

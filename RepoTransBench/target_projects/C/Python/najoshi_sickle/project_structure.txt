@@ -1,0 +1,27 @@
+.
+├── README.md                       # Project description and instructions
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # One-click test execution – runs pytest across all tests
+├── project_structure.txt           # This file (project tree and explanations)
+├── src/                            # Python implementation stubs (placeholder for sickle code)
+│   ├── __init__.py                 # Marks src as package
+│   └── main.py                     # Entry point: sickle CLI stub, arg checks, --help/--version, etc.
+├── tests/
+│   ├── __init__.py                 # Marks tests as package
+│   └── original/                   # Translated original C test logic (preserves original coverage and edge cases)
+│       ├── __init__.py
+│       ├── test_print_record.py
+│       ├── test_print_record_edge.py
+│       ├── test_sickle_args.py
+│       ├── test_sliding_quality.py
+│       ├── test_sliding_window_edge.py
+│       ├── test_trim_paired_args.py
+│       ├── test_trim_paired_failures.py
+│       ├── test_trim_single_args.py
+│       ├── test_trim_single_failures.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_print_record_edge_public.py
+│   ├── test_print_record_public.py
+│   ├── test_sliding_quality_public.py
+│   └── test_sliding_window_edge_public.py

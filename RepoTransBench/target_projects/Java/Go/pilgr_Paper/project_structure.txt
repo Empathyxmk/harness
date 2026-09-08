@@ -1,0 +1,36 @@
+project_root/
+├── go.mod                       # Go module and dependency management
+├── README.md                    # Project Overview and instructions
+├── run_tests.sh                 # One-click test execution script
+├── project_structure.txt        # This structure and directory explanation
+├── tests/
+│   ├── original/                # Original test suite from Java translation
+│   │   ├── data_test.go         # DataTest.java
+│   │   ├── custom_book_test.go  # CustomBookTest.java
+│   │   ├── paper_test.go        # PaperTest.java
+│   │   ├── version_upgrade_test.go        # VersionUpgradeTest.java
+│   │   ├── custom_book_location_test.go   # CustomBookLocationTest.java
+│   │   ├── compatibility_test.go          # CompatibilityTest.java
+│   │   ├── multithread_test.go            # MultiThreadTest.java
+│   │   ├── deprecated_data_test.go        # deprecated/DataTest.java
+│   │   ├── deprecated_paper_deprecated_api_test.go   # deprecated/PaperDeprecatedAPITest.java
+│   │   ├── paperdb_exception_test.go       # PaperDbExceptionTest.java
+│   │   ├── paper_test_junit.go             # PaperTest.java (Junit version)
+│   │   ├── keylocker_test.go               # KeyLockerTest.java
+│   │   ├── paper_table_test.go             # PaperTableTest.java
+│   │   ├── application_test.go             # ApplicationTest.java (Android fundamentals, stubbed)
+│   │   ├── kotlin_compatibility_test.go    # KotlinCompatibilityTest.kt
+│   │   └── testutil.go         # Shared testing utilities equivalent to Java testdata
+│   │
+├── public_tests/
+│   ├── data_public_test.go      # DataPublicTest.java
+│   ├── custom_book_public_test.go # CustomBookPublicTest.java
+│   ├── paper_public_test.go     # PaperPublicTest.java
+│   ├── paperdb_exception_public_test.go # PaperDbExceptionPublicTest.java
+│
+# All test files are functional and can be run/edited independently.
+# The tests/ directory can have additional files with testdata generators,
+# structs (Person, PhoneNumber, etc.), and mocks used by both test suites.
+#
+# All tests run with: `./run_tests.sh` which simply runs `go test ./...`
+#

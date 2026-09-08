@@ -1,0 +1,35 @@
+idiap_kaldi-ivector-python/
+├── requirements.txt                   # Python dependencies for the project (pytest)
+├── run_tests.sh                       # One-click script to run all tests (original and public)
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py                # Package initializer for original tests
+│   │   ├── test_conv_ivector_extractor.py   # Translated original test: sanity check
+│   │   └── test_main.py               # Empty; pytest handles discovery
+│   └── __init__.py                    # (optional) initializer for main tests folder
+├── public_tests/
+│   ├── __init__.py                    # Package initializer for public tests
+│   ├── test_conv_ivector_extractor_public.py   # Translated public test: alternate sanity check
+│   └── test_main_public.py            # Empty; pytest handles discovery
+└── project_structure.txt              # This file: outlines the project tree and test organization
+
+# Directory explanations and usage:
+
+requirements.txt          : Lists dependencies needed to run tests (`pytest`)
+run_tests.sh              : Run `chmod +x run_tests.sh` to make it executable; runs all tests with a single command
+tests/original/           : Contains translations of all *original* C++ test files (preserved organization)
+public_tests/             : Contains all *public* C++ test files, fully translated
+test_* files              : Each file is a fully implemented Python test corresponding to the C++ version; logic preserved
+__init__.py               : Allows `pytest` and Python to recognize the folders as packages; helps test discovery
+
+# Setup and testing instructions
+
+1. (Recommended) Create a virtualenv:
+      python3 -m venv venv
+      source venv/bin/activate
+2. Install dependencies:
+      pip install -r requirements.txt
+3. Run all tests:
+      ./run_tests.sh
+
+All tests are self-contained; both original and public checks are run in a single pass.

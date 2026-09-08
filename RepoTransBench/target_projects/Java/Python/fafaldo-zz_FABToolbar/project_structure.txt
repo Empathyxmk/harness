@@ -1,0 +1,28 @@
+fafaldo-zz_FABToolbar/
+├── requirements.txt
+│   - Python dependencies (pytest and pytest-mock for mocking support)
+├── run_tests.sh
+│   - Script to run all tests (original and public) using pytest
+├── tests/
+│   └── original/
+│       ├── test_application_app.py               # Original ApplicationTest from app
+│       ├── test_application_library.py           # Original ApplicationTest from library
+│       ├── test_fabtoolbar_layout.py             # FABToolbarLayoutTest (widget)
+│       └── test_expand_animation_utils.py        # ExpandAnimationUtilsTest (util)
+│   - All original (non-public) tests
+├── public_tests/
+│   ├── test_application_app_public.py            # Public ApplicationPublicTest from app
+│   ├── test_application_library_public.py        # Public ApplicationPublicTest from library
+│   ├── test_fabtoolbar_layout_public.py          # FABToolbarLayoutPublicTest (widget)
+│   └── test_expand_animation_utils_public.py     # ExpandAnimationUtilsPublicTest (util)
+│   - All public test cases (as specified)
+└── project_structure.txt
+    - This project structure document
+
+**Instructions:**
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+   - This will run both original and public tests using `pytest`.
+3. All test cases are implemented; no placeholder or incomplete logic.
+4. Project separates original tests (`tests/original/`) and public tests (`public_tests/`).
+5. `pytest-mock` is required for proper mocking (as per Mockito usage in the original Java tests).

@@ -1,0 +1,34 @@
+kennnethreitz-records-java/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── kennethreitz/
+│   │               └── records/
+│   │                   ├── Record.java
+│   │                   ├── RecordCollection.java
+│   │                   ├── Database.java
+│   │                   └── (supporting classes ...)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── kennethreitz/
+│                   └── records/
+│                       ├── original/
+│                       │   ├── TestRecordsCore.java
+│                       │   ├── Test69.java
+│                       │   ├── TestRecords.java
+│                       │   ├── Test105.java
+│                       │   ├── TestRecordsAdditional.java
+│                       │   └── TestTransactions.java
+│                       └── public_tests/
+│                           ├── Public105Test.java
+│                           ├── PublicRecordsAdditionalTest.java
+│                           ├── Public69Test.java
+│                           ├── PublicRecordsCoreTest.java
+│                           ├── PublicTransactionsTest.java
+│                           └── PublicRecordsTest.java
+├── test_translation_progress.json
+└── ...

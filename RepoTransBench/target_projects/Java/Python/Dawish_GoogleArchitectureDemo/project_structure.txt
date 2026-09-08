@@ -1,0 +1,37 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_exampleinstrumented_architecture_google_coremodel.py
+│   │   ├── test_exampleinstrumented_google_architecture_coremodel.py
+│   │   ├── test_exampleunittest_architecture_google_coremodel.py
+│   │   ├── test_exampleunittest_google_architecture_coremodel.py
+│   │   ├── test_jsonutil.py
+│   │   ├── test_switchschedulers.py
+│   │   ├── test_netutils.py
+│   │   ├── test_exampleinstrumented_app_universal.py
+│   │   ├── test_exampleunittest_app_universal.py
+│   │   ├── test_exampleinstrumented_module_girls.py
+│   │   ├── test_exampleunittest_module_girls.py
+│   │   ├── test_exampleinstrumented_app_specific.py
+│   │   ├── test_exampleunittest_app_specific.py
+│   │   ├── test_exampleinstrumented_lib_common.py
+│   │   ├── test_exampleunittest_lib_common.py
+│   │   ├── test_exampleinstrumented_module_news.py
+│   │   ├── test_exampleunittest_module_news.py
+│   │   ├── test_exampleinstrumented_lib_opensource.py
+│   │   └── test_exampleunittest_lib_opensource.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_exampleinstrumented_public_architecture_google_coremodel.py
+│   ├── test_exampleinstrumented_public_google_architecture_coremodel.py
+│   ├── test_exampleunittest_public_architecture_google_coremodel.py
+│   ├── test_exampleunittest_public_google_architecture_coremodel.py
+│   ├── test_exampleunitpublictest_google_architecture_coremodel_publictests.py
+│   ├── test_jsonutil_public.py
+│   ├── test_netutils_public.py
+│   └── test_switchschedulers_public.py

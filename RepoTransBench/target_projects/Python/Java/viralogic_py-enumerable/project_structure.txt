@@ -1,0 +1,26 @@
+project_root/
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── viralogic/
+│                   └── enumerable/
+│                       ├── original/
+│                       │   ├── CoreTest.java
+│                       │   ├── DecoratorsTest.java
+│                       │   ├── ExceptionsTest.java
+│                       │   ├── FunctionsTest.java
+│                       │   ├── PerformanceTest.java
+│                       │   ├── PyLinqTest.java
+│                       │   ├── PyLinqBranchTest.java
+│                       │   ├── RepeatableTest.java
+│                       │   └── TestFixtures.java
+│                       └── publictests/
+│                           ├── PublicCoreTest.java
+│                           ├── PublicDecoratorsTest.java
+│                           ├── PublicExceptionsTest.java
+│                           ├── PublicFunctionsTest.java
+│                           ├── PublicPerformanceTest.java
+│                           ├── PublicPyLinqTest.java
+│                           ├── PublicPyLinqBranchTest.java
+│                           └── PublicRepeatableTest.java

@@ -1,0 +1,20 @@
+{
+  "project_name": "aarondfrancis_vue-model",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.72,
+    "branch": 84.21
+  },
+  "timestamp": "2025-06-23T10:33:05.024794",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/aarondfrancis_vue-model",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/aarondfrancis_vue-model",
+  "tests_path": [
+    "src/PubSub.test.js",
+    "src/Model.test.js",
+    "src/Errors.test.js",
+    "src/VueModel.test.js",
+    "src/lib/set-nested.test.js",
+    "src/lib/promise-delay.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

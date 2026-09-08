@@ -1,0 +1,33 @@
+project_root/
+├── CMakeLists.txt                # CMake configuration for building sources and tests, including GoogleTest dependency
+├── include/
+│   └── gitignore_parser.h        # Parser header file (exported API used by tests)
+├── src/
+│   └── gitignore_parser.cpp      # Parser stub implementation for tests to link
+├── tests/
+│   ├── original/
+│   │   ├── extra_tests.cpp       # Translated original Python tests from extra_tests.py
+│   │   └── tests.cpp             # Translated original Python tests from tests.py
+│   └── test_main.cpp             # GoogleTest test runner main()
+├── public_tests/
+│   └── test_public_gitignore_parser.cpp # Translated public Python tests
+├── run_tests.sh                  # Simple one-click script: builds and runs all tests
+├── project_structure.txt         # (This file) Project organization and file explanations
+
+Directory explanations:
+- include/: Public header files, visible to tests and client code
+- src/:     Implementation source files for the parser (stub implementation provided, replace with real for production)
+- tests/original/: Translated original Python test files (all main and extra test coverage)
+- public_tests/:  Translated public Python test files (mirrors public_tests in the original Python project)
+- tests/test_main.cpp: Main function for GoogleTest
+- CMakeLists.txt: Build and test automation with CMake and GoogleTest
+- run_tests.sh: Build and run all tests (original and public) with one command
+
+Setup and test instructions:
+1. Make sure you have cmake and a C++17 (or later) compiler installed.
+2. Ensure run_tests.sh is executable (`chmod +x run_tests.sh`).
+3. Run all tests with: `./run_tests.sh`
+   - This will build both the original and public tests and execute them.
+   - All tests use Google Test; failures will be reported in a standard format.
+
+To implement the actual parser, edit src/gitignore_parser.cpp and include/gitignore_parser.h.

@@ -1,0 +1,34 @@
+teslamotors_ttpoe/
+├── Cargo.toml           # Rust project configuration
+├── src/
+│   └── lib.rs           # Core library code
+├── tests/
+│   ├── original_tests.rs # Original test cases
+│   └── public_tests.rs   # Public test cases
+├── run_tests.sh         # Script to run all tests
+├── run_public_tests.sh  # Script to run public tests only
+└── project_structure.txt # This document
+
+Directory Explanations:
+- src/: Contains the core library code that implements the functionality being tested
+- tests/: Contains all test files
+  - original_tests.rs: Contains all original test cases
+  - public_tests.rs: Contains all public test cases
+- run_tests.sh: Simple script to run all tests with one command
+- run_public_tests.sh: Script to run only public tests
+
+Setup Instructions:
+1. Ensure Rust and Cargo are installed (https://www.rust-lang.org/tools/install)
+2. Clone the repository
+3. Make the test scripts executable: chmod +x run_tests.sh run_public_tests.sh
+4. Run all tests: ./run_tests.sh
+5. Run only public tests: ./run_public_tests.sh
+
+Test Organization:
+- Original tests: The core test functionality from the original C codebase
+- Public tests: Public test cases with different data and expectations
+
+Testing Framework:
+- Using Rust's built-in testing framework
+- Tests are organized in separate files for clarity
+- Each test function maps to a corresponding function in the original C code

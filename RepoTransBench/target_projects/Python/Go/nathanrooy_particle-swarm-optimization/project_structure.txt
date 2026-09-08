@@ -1,0 +1,13 @@
+nathanrooy_particle-swarm-optimization-go/
+├── go.mod
+├── run_tests.sh
+├── README.md
+├── public_tests/
+│   ├── test_public_cost_functions_test.go
+│   ├── test_public_pso_simple_test.go
+│   └── test_public_pso_test.go
+├── tests/
+│   ├── test_cost_functions_test.go
+│   ├── test_pso_simple_test.go
+│   └── test_pso_test.go
+│   └── testutil.go

@@ -1,0 +1,36 @@
+project_root/
+├── src/
+│   └── bootloader_spoofer/
+│       ├── __init__.py
+│       └── bootloader_spoofer.py            # Python implementation of BootloaderSpoofer class
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_bootloader_spoofer.py       # All original tests from BootloaderSpooferTest.java
+├── public_tests/
+│   ├── __init__.py
+│   └── test_bootloader_spoofer_public.py    # Public tests from BootloaderSpooferPublicTest.java
+├── requirements.txt                         # Python dependencies; includes pytest
+├── run_tests.sh                             # Simple executable test script
+├── project_structure.txt                    # This file - explains project directories and files
+└── README.md                                # Project and test suite overview
+
+Directory explanations:
+- src/bootloader_spoofer/:
+    - Contains implementation of BootloaderSpoofer class (Python version).
+- tests/original/:
+    - Contains translated unit tests from the original Java project ("original" tests).
+- public_tests/:
+    - Contains public test cases (from BootloaderSpooferPublicTest.java).
+- requirements.txt:
+    - Specifies required Python packages (pytest).
+- run_tests.sh:
+    - One-click script: execute all tests with `./run_tests.sh`.
+- README.md:
+    - Overview and instructions for the Python project and its tests.
+
+Setup/Running instructions:
+1. Install requirements: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+3. All logic for both original and public tests is covered and directly executable.

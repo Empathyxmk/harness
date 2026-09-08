@@ -1,0 +1,11 @@
+include CREDITS ChangeLog LICENSE README.rst
+
+graft src/xworkflows
+
+graft docs
+graft tests
+
+prune docs/_build
+global-exclude *.py[cod] __pycache__ .*.sw[po] *~
+
+include Makefile tox.ini

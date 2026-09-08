@@ -1,0 +1,42 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_abstract_sql_creator.py
+│       ├── test_insert_builder.py
+│       ├── test_select_builder.py
+│       ├── test_parameterized_prepared_statement_creator.py
+│       ├── test_predicate.py
+│       ├── test_update_builder.py
+│       ├── test_unique_string_generator.py
+│       ├── test_delete_builder.py
+│       ├── test_select_creator.py
+│       └── orm/
+│           ├── __init__.py
+│           ├── test_string_list_converter.py
+│           ├── test_string_map_converter.py
+│           ├── test_reflection_utils.py
+│           ├── test_string_list_flattener.py
+│           └── test_mapping.py
+└── public_tests/
+    ├── __init__.py
+    ├── test_abstract_sql_creator.py
+    ├── test_insert_builder.py
+    ├── test_select_builder.py
+    ├── test_delete_builder.py
+    ├── test_update_builder.py
+    ├── test_unique_string_generator.py
+    ├── test_parameterized_prepared_statement_creator.py
+    ├── test_predicate.py
+    └── orm/
+        ├── __init__.py
+        ├── test_mapping.py
+        ├── test_string_list_converter.py
+        ├── test_string_map_converter.py
+        ├── test_string_list_flattener.py
+        ├── test_reflection_utils.py

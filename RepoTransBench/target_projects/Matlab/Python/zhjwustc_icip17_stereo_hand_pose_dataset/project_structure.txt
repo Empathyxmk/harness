@@ -1,0 +1,19 @@
+zhjwustc_icip17_stereo_hand_pose_dataset/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── src/
+│   └── handpose/
+│       ├── __init__.py
+│       ├── position_calc.py
+│       └── rodrigues.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_functions.py
+│       └── test_position_calc.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_functions.py
+│   └── test_public_position_calc.py

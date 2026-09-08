@@ -1,0 +1,34 @@
+graphios/ (Rust cargo project root)
+├── Cargo.toml                # Rust project manifest
+├── src/
+│   ├── lib.rs                # Main library code (stubbed for tests)
+│   └── graphios_backends.rs  # Backends logic for testing
+├── tests/
+│   ├── test_setup.rs         # Original setup.py import test
+│   ├── test_graphios.rs      # Original graphios (main) test
+│   └── test_graphios_backends.rs # Original backends test
+├── public_tests/
+│   ├── test_public_graphios.rs            # Public graphios API tests
+│   ├── test_public_graphios_backends.rs   # Public backends utility tests
+│   └── test_public_setup.rs               # Public check for setup.py existence
+├── run_tests.sh               # One-click test script (runs all tests)
+└── project_structure.txt      # This structure description
+
+# Directory explanations:
+# - src/: Source files (stub implementations to support test logic).
+# - tests/: "Original" test cases translated from Python.
+# - public_tests/: "Public" test cases, also from provided Python.
+# - Cargo.toml: Project/config/dependency manifest for Rust/Cargo.
+# - run_tests.sh: Simple shell script to run all tests automatically.
+# - project_structure.txt: Structure and instruction doc.
+
+# Setup & test instructions:
+# 1. Install Rust and Cargo if not already present (see https://rustup.rs/).
+# 2. To run all tests (original and public): 
+#        ./run_tests.sh
+# 3. To run all tests manually:
+#        cargo test            (for everything)
+#        cargo test --test test_graphios   (to run only specific files)
+#
+# Files in src/ are stubbed enough for tests to run.
+# If you want real logic, expand implementations in src/lib.rs and src/graphios_backends.rs.

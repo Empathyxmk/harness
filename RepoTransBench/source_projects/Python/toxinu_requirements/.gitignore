@@ -1,0 +1,11 @@
+dist
+build
+*.pyc
+*.egg-info
+__pycache__
+.tox
+htmlcov
+.cache
+.coverage
+examples/dist
+examples/build

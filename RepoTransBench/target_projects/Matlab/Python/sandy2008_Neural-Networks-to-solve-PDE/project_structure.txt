@@ -1,0 +1,39 @@
+project_root/
+├── requirements.txt          # Python dependencies required to run and test the project
+├── run_tests.sh              # Simple test execution script (runs all tests with 'pytest')
+├── src/                      # Source code directory for PDE utility functions and neural net code
+│   └── pde_utils/
+│       ├── __init__.py       # Makes pde_utils a Python module
+│       ├── auto_grad.py      # auto_grad function (and scalar helper)
+│       ├── autograd_full.py  # AutoGrad implementation, including scalar helper
+│       ├── loss_function.py  # Domain-specific loss function for original tests
+│       ├── loss_function_public.py # Simpler MSE loss for public tests
+│       ├── neural_network.py # Implementation for both original and public NN interfaces
+│       ├── psy_trial.py      # Domain trial/ansatz function
+│       └── sigmoid.py        # Sigmoid activation function
+├── tests/                    # Directory containing original, comprehensive test cases
+│   └── original/
+│       ├── test_AutoGrad.py
+│       ├── test_auto_grad.py
+│       ├── test_loss_function.py
+│       ├── test_neural_network.py
+│       ├── test_psy_trial.py
+│       └── test_sigmoid.py
+├── public_tests/             # Directory for public-facing/simple test suite
+│   ├── test_AutoGrad_public.py
+│   ├── test_auto_grad_public.py
+│   ├── test_loss_function_public.py
+│   ├── test_neural_network_public.py
+│   ├── test_psy_trial_public.py
+│   └── test_sigmoid_public.py
+
+Setup Instructions:
+- Install requirements: `pip install -r requirements.txt`
+- Run all tests: `./run_tests.sh`
+
+Directory/Module explanations:
+- src/pde_utils/: Core implementations for all tested features (auto-grad, loss, NN, etc.)
+- tests/original/: Full test suite that mirrors the entire original Matlab test coverage
+- public_tests/: Simpler, public-facing subset of tests based on public_test directory in Matlab project
+- requirements.txt: Declares all dependencies (pytest, numpy)
+- run_tests.sh: Single-command test execution for all tests

@@ -1,0 +1,31 @@
+project_root/
+├── requirements.txt                  # Python dependencies (pytest)
+├── run_tests.sh                      # Test execution script (run all tests)
+├── src/
+│   └── sprintf.py                    # (Placeholder) Python implementation of sprintfjs
+├── tests/
+│   └── original/
+│       ├── test_test.py                      # Original test.js conversion
+│       ├── test_test_angular_sprintf.py      # Original test_angular_sprintf.js (skipped)
+│       └── test_test_validation.py           # Original test_validation.js
+├── public_tests/
+│   ├── test_sprintfjs_public.py              # public_tests/sprintfjs.public.test.js
+│   └── test_sprintfjs_validation_public.py   # public_tests/sprintfjs_validation.public.test.js
+└── project_structure.txt             # This structure overview file
+
+# Directory and file explanations:
+# - requirements.txt: Contains pytest as the test dependency for Python.
+# - run_tests.sh: Simple script to run all tests in one command using pytest.
+# - src/: Place your python implementation of sprintf.js (as sprintf.py). The .py file should provide `sprintf` and `vsprintf`.
+# - tests/original/: Contains translations of all original repository tests from the JavaScript repo.
+# - public_tests/: Contains translations of all public tests provided in the JavaScript repo.
+# - project_structure.txt: This file, describing the directory structure and setup.
+#
+# Setup instructions:
+#   1. (Optional) Create/implement src/sprintf.py with `sprintf` and `vsprintf` functions/classes callable by all tests.
+#   2. Install dependencies: `pip install -r requirements.txt`
+#   3. Run all tests: `./run_tests.sh`
+#   4. All tests in both tests/original and public_tests/ will be executed.
+#
+# To run only original tests: `pytest tests/original/`
+# To run only public tests:    `pytest public_tests/`

@@ -1,0 +1,77 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.0rc1, pytest-8.4.1, pluggy-1.6.0
+rootdir: /workspace/temp_public_testcase/public_test_generation_20250625_144819/sbidy_pywizlight
+plugins: rerunfailures-15.1, mock-3.14.1, pyfakefs-5.9.0, hypothesis-6.86.0, asyncio-0.21.1, mock-resources-2.12.2, colcon-core-0.19.0, repeat-0.9.4, requests-mock-1.12.1, anyio-4.9.0, Faker-37.4.0, django-4.11.1, cov-6.2.1, pylama-8.4.1
+asyncio: mode=Mode.STRICT
+collected 0 items / 6 errors
+
+==================================== ERRORS ====================================
+__ ERROR collecting pywizlight/public_tests/test_public_bulb_hero_1_23_70.py ___
+ImportError while importing test module '/workspace/temp_public_testcase/public_test_generation_20250625_144819/sbidy_pywizlight/pywizlight/public_tests/test_public_bulb_hero_1_23_70.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywizlight/public_tests/test_public_bulb_hero_1_23_70.py:1: in <module>
+    from pywizlight.bulblibrary import bulb_types
+E   ModuleNotFoundError: No module named 'pywizlight'
+_____ ERROR collecting pywizlight/public_tests/test_public_bulb_socket.py ______
+ImportError while importing test module '/workspace/temp_public_testcase/public_test_generation_20250625_144819/sbidy_pywizlight/pywizlight/public_tests/test_public_bulb_socket.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywizlight/public_tests/test_public_bulb_socket.py:2: in <module>
+    from pywizlight.bulblibrary import bulb_types
+E   ModuleNotFoundError: No module named 'pywizlight'
+____ ERROR collecting pywizlight/public_tests/test_public_discovery_core.py ____
+ImportError while importing test module '/workspace/temp_public_testcase/public_test_generation_20250625_144819/sbidy_pywizlight/pywizlight/public_tests/test_public_discovery_core.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywizlight/public_tests/test_public_discovery_core.py:2: in <module>
+    from pywizlight.discovery import _wiz_mdns_name, _default_mac
+E   ModuleNotFoundError: No module named 'pywizlight'
+________ ERROR collecting pywizlight/public_tests/test_public_scenes.py ________
+ImportError while importing test module '/workspace/temp_public_testcase/public_test_generation_20250625_144819/sbidy_pywizlight/pywizlight/public_tests/test_public_scenes.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywizlight/public_tests/test_public_scenes.py:1: in <module>
+    from pywizlight.scenes import get_scene_name_from_id
+E   ModuleNotFoundError: No module named 'pywizlight'
+________ ERROR collecting pywizlight/public_tests/test_public_utils.py _________
+ImportError while importing test module '/workspace/temp_public_testcase/public_test_generation_20250625_144819/sbidy_pywizlight/pywizlight/public_tests/test_public_utils.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywizlight/public_tests/test_public_utils.py:1: in <module>
+    from pywizlight.utils import _clamp
+E   ModuleNotFoundError: No module named 'pywizlight'
+__ ERROR collecting pywizlight/public_tests/test_public_version_and_setup.py ___
+ImportError while importing test module '/workspace/temp_public_testcase/public_test_generation_20250625_144819/sbidy_pywizlight/pywizlight/public_tests/test_public_version_and_setup.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywizlight/public_tests/test_public_version_and_setup.py:1: in <module>
+    from pywizlight import __version__
+E   ModuleNotFoundError: No module named 'pywizlight'
+=========================== short test summary info ============================
+ERROR pywizlight/public_tests/test_public_bulb_hero_1_23_70.py
+ERROR pywizlight/public_tests/test_public_bulb_socket.py
+ERROR pywizlight/public_tests/test_public_discovery_core.py
+ERROR pywizlight/public_tests/test_public_scenes.py
+ERROR pywizlight/public_tests/test_public_utils.py
+ERROR pywizlight/public_tests/test_public_version_and_setup.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 6 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 6 errors in 0.27s ===============================

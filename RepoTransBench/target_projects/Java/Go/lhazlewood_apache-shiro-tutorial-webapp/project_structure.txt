@@ -1,0 +1,42 @@
+Project Structure
+=================
+
+github.com/example/lhazlewood_apache-shiro-tutorial-webapp/
+├── go.mod                     # Go module definition
+├── tests/
+│   └── original/
+│       └── helloshiro_test.go # All original test cases (includes meta and placeholder)
+├── public_tests/
+│   └── helloshiro_public_test.go  # All public test cases (mirrors Java public test logic)
+├── run_tests.sh               # Simple one-click script to run all tests
+├── project_structure.txt      # This file: explains project structure and usage
+└── README.md                  # Project information (not included here, but recommended)
+
+Directory Explanations:
+-----------------------
+- go.mod:         Go module configuration file for dependency management.
+- tests/original: Contains all original test cases translated from Java to Go,
+                  including tests for HelloShiro authentication logic, meta, and placeholder tests.
+- public_tests:   Contains all public test cases as per Java public tests,
+                  maintaining identical public coverage and data.
+- run_tests.sh:   Script to run all unit tests (original and public) in one command.
+- project_structure.txt: This file, provides overview and file purposes.
+
+Setup & Testing Instructions:
+-----------------------------
+1. Ensure you have Go installed, version 1.20 or later.
+   (https://golang.org/doc/install)
+
+2. From the repository root, run:
+       ./run_tests.sh
+
+   This will recursively run all tests in the repository.
+
+3. Add your main application code as needed. The test scaffolding here is a
+   direct, faithful translation of the Java test logic using Go's testing tools.
+
+4. To run only a specific suite, you can use:
+       go test ./tests/original/...
+       go test ./public_tests/...
+
+5. All placeholder and meta tests behave as in the Java version.

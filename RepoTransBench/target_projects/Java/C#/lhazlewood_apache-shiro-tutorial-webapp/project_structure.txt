@@ -1,0 +1,30 @@
+lhazlewood_apache-shiro-tutorial-webapp-csharp/
+├── src/
+│   ├── HelloShiroProject.csproj      # C# class library project file
+│   └── HelloShiro.cs                # Main class implementing the same logic as Java's HelloShiro.java
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj     # Test project (original/hidden) - references src
+│       ├── HelloShiroTest.cs        # Main HelloShiro original test translation
+│       ├── NoJavaSourcesTest.cs     # Placeholder test from Java suite
+│       └── MetaTest.cs              # Project file structure test
+├── public_tests/
+│   ├── PublicTests.csproj           # Test project (public)
+│   ├── HelloShiroPublicTest.cs      # Public HelloShiro test translation
+│   ├── NoJavaSourcesPublicTest.cs   # Public version of no-main-Java-sources test
+│   └── MetaPublicTest.cs            # Public version of meta/structure test
+├── README.md                        # Documentation and run commands
+├── run_tests.sh                     # One-click test script: runs all tests in both test projects
+├── project_structure.txt            # This file: tree and structure explanation
+
+Explanations:
+- `src/` - Contains the main application class (`HelloShiro`) and library project file.
+- `tests/original/` - All original (hidden/internal) tests, organized as an xUnit project.
+- `public_tests/` - All public tests, organized as a separate xUnit project.
+- `.csproj` test projects reference the main src/ project for access to implementation.
+- `run_tests.sh` - Runs all tests in both test projects (original + public). See README for usage.
+
+How to run tests:
+1. Ensure you have .NET SDK installed.
+2. Run `./run_tests.sh`
+3. All original and public tests will be executed. Output is printed to the terminal.

@@ -1,0 +1,52 @@
+project_root/
+├── requirements.txt                 # Python testing/dependency requirements
+├── run_tests.sh                     # Executable script to run all tests with one command
+├── README.md                        # Project documentation
+├── project_structure.txt            # This structure and explanations (this file)
+├── tests/
+│   ├── __init__.py                  # (empty/init)
+│   ├── original/
+│   │   ├── __init__.py              # (empty/init)
+│   │   ├── test_flink_nexmark_options.py
+│   │   ├── test_benchmark.py
+│   │   ├── test_nexmark_configuration.py
+│   │   ├── test_nexmark_generator.py
+│   │   ├── test_benchmark_metric.py
+│   │   ├── test_cpu_metric.py
+│   │   ├── test_cpu_metric_sender.py
+│   │   ├── test_flink_rest_client.py
+│   │   ├── test_tps_metric.py
+│   │   ├── test_nexmark_global_configuration.py
+│   │   ├── test_nexmark_table_source_factory.py
+│   │   ├── test_workload_suite.py
+│   └── ... (other original tests)   # All other original test cases
+├── public_tests/
+│   ├── __init__.py                  # (empty/init)
+│   ├── test_flink_nexmark_options_public.py
+│   ├── test_benchmark_public.py
+│   ├── test_nexmark_configuration_public.py
+│   ├── test_nexmark_generator_public.py
+│   ├── test_benchmark_metric_public.py
+│   ├── test_cpu_metric_public.py
+│   ├── test_cpu_metric_sender_public.py
+│   ├── test_flink_rest_client_public.py
+│   ├── test_tps_metric_public.py
+│   ├── test_nexmark_global_configuration_public.py
+│   ├── test_nexmark_table_source_factory_public.py
+│   ├── test_workload_suite_public.py
+│   └── ... (all public tests)       # Other public test cases
+└── ...
+
+Directory explanation:
+- requirements.txt: Lists required Python dependencies (pytest, etc.)
+- run_tests.sh: Simple executable that runs all tests using pytest
+- project_structure.txt: This explanation and directory tree
+- tests/original/: Contains original (non-public) ported test cases
+- public_tests/: Contains public ported test cases
+- Each test file implements exactly the same scenarios as the original Java.
+- __init__.py: Marks directory as a Python package/module.
+
+Testing instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Make script executable: `chmod +x run_tests.sh`
+3. Run all tests: `./run_tests.sh`

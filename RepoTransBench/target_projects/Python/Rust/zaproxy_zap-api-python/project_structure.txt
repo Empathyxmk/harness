@@ -1,0 +1,41 @@
+zaproxy_zap_api_rust/
+├── Cargo.toml                   # Rust package configuration and dependencies
+├── Cargo.lock                   # Cargo lockfile
+├── README.md                    # Documentation and usage instructions (add as needed)
+├── run_tests.sh                 # Shell script: runs all Rust tests via cargo
+├── src/
+│   ├── lib.rs                   # Rust library root, exposes modules
+│   └── zapv2/
+│       ├── mod.rs               # Aggregates ZAP "API" modules for test harness
+│       ├── brk.rs               # Module: breakpoints (mocked for tests)
+│       ├── automation.rs        # Module: automation endpoints (mocked)
+│       ├── rule_config.rs       # Module: ruleConfig endpoints (mocked)
+│       ├── client.rs            # Testable stub ZAP client/transport (mocked)
+│       └── core.rs              # Core API (public tests mock)
+├── tests/
+│   ├── original/
+│   │   ├── test_brk.rs
+│   │   ├── test_client.rs
+│   │   ├── test_automation.rs
+│   │   └── test_rule_config.rs
+│   └── public/
+│       ├── test_public_brk.rs
+│       ├── test_public_client.rs
+│       ├── test_public_automation.rs
+│       └── test_public_rule_config.rs
+
+Directory explanations:
+- src/                : Contains all rust library code and API adapter modules (test harness mocks).
+- tests/original/     : Translated, functionally equivalent unit tests for original Python suite.
+- tests/public/       : Fully functional translations of public_tests from Python in Rust.
+- run_tests.sh        : One-step shell script to run *all* tests using cargo.
+- Cargo.toml          : Rust/cargo build and dependency configuration.
+- README.md           : Add user/developer notes and usage as desired.
+
+How to run all tests:
+- Grant execution permission if needed: `chmod +x run_tests.sh`
+- Run: `./run_tests.sh`
+or
+- Directly: `cargo test`
+
+All tests (original and public) will be run automatically and must pass.

@@ -1,0 +1,13 @@
+CesiumGS_obj2gltf_python/
+├── requirements.txt
+├── README.md
+├── run_tests.sh
+├── test_translation_progress.json
+├── src/
+│   ├── __init__.py
+│   └── loadTexture.py           # (stubbed: actual implementation needed)
+├── public_tests/
+│   ├── __init__.py
+│   └── lib/
+│       ├── __init__.py
+│       └── test_load_texture.py

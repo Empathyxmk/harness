@@ -1,0 +1,78 @@
+softvar_json2html/
+├── LICENSE
+├── MANIFEST.in
+├── README.md
+├── cov_report.txt
+├── examples/
+│   ├── basic.py
+│   ├── clubbing_keys_of_array_of_objects.py
+│   ├── deep_nesting.py
+│   └── setting_custom_attrs.py
+├── git-hooks/
+│   ├── commit-msg
+│   └── pre-push
+├── json2html/
+│   ├── __init__.py
+│   └── jsonconv.py
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_json2html_additional.py
+│   └── test_public_json2html_core.py
+├── pytest_output.txt
+├── requirements-ci.txt
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.cfg
+├── setup.py
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── json2html/
+│   │                   ├── Json2Html.java
+│   │                   └── Json2HtmlStatic.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── Json2HtmlAdditionalTest.java
+│                   │   ├── Json2HtmlClassicPyUnittestTest.java
+│                   │   ├── Json2HtmlCoreTest.java
+│                   │   └── RunTestsJson2HtmlTest.java
+│                   └── public_tests/
+│                       ├── PublicJson2HtmlAdditionalTest.java
+│                       └── PublicJson2HtmlCoreTest.java
+├── test/
+│   ├── __init__.py
+│   ├── basic.json
+│   ├── basic.txt
+│   ├── basic2.json
+│   ├── basic2.txt
+│   ├── basic_list.json
+│   ├── basic_list.txt
+│   ├── clubbing_keys_of_array_of_objects.json
+│   ├── clubbing_keys_of_array_of_objects.txt
+│   ├── clubbing_top_level.json
+│   ├── clubbing_top_level.txt
+│   ├── deep_nesting.json
+│   ├── deep_nesting.txt
+│   ├── empty
+│   ├── list.json
+│   ├── list.txt
+│   ├── no_clubbing_keys_of_array_of_objects.json
+│   ├── no_clubbing_keys_of_array_of_objects.txt
+│   ├── run_tests.py
+│   ├── setting_custom_attrs.json
+│   ├── setting_custom_attrs.txt
+│   ├── test_json2html_additional.py
+│   ├── test_json2html_core.py
+│   ├── xss_check1.json
+│   ├── xss_check1.txt
+│   ├── xss_check2.json
+│   └── xss_check2.txt
+└── test_summary.json

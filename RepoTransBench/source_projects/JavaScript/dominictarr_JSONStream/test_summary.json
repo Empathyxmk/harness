@@ -1,0 +1,11 @@
+{
+  "project_name": "dominictarr_JSONStream",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 77.95,
+    "branch": 78.87
+  },
+  "timestamp": "2025-06-23T10:36:21.022068",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/dominictarr_JSONStream",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/dominictarr_JSONStream"
+}

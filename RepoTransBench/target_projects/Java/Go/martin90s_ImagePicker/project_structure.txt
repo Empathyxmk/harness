@@ -1,0 +1,25 @@
+.
+├── README.md                # Project documentation (see for usage and explanation)
+├── go.mod                   # Go module file for dependency management
+├── run_tests.sh             # Simple script to run all tests with one command
+├── public_tests/            # Folder containing all translated "public" tests
+│   ├── capture_photo_helper_public_test.go
+│   ├── file_choose_interceptor_public_test.go
+│   ├── image_loader_public_test.go
+│   ├── photo_load_listener_public_test.go
+│   └── s_image_picker_public_test.go
+└── tests/
+    └── original/            # Folder containing all translated "original" Java tests
+        ├── capture_photo_helper_test.go
+        ├── example_instrumented_test.go
+        ├── example_unit_test.go
+        ├── file_choose_interceptor_test.go
+        ├── image_loader_test.go
+        ├── photo_load_listener_test.go
+        └── s_image_picker_test.go
+
+Explanations:
+- All test files are Go "_test.go" files and follow Go testing conventions.
+- "tests/original/" mirrors original Java unit/instrumentation tests.
+- "public_tests/" mirrors generated/curated public tests.
+- Use `./run_tests.sh` for automatic, convenient all-tests execution.

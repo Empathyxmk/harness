@@ -1,0 +1,16 @@
+.
+├── requirements.txt                # Python dependencies for testing (pytest)
+├── run_tests.sh                    # Simple script to run all tests with pytest
+├── README.md                       # Project and test instructions (to be filled in)
+├── tests/
+│   ├── __init__.py                 # Python test package marker
+│   └── original/
+│       ├── __init__.py             # Python test package marker
+│       ├── test_block_basic_esnext_02.py    # Py test for skipped ESNext test
+│       ├── test_block_editable_03.py        # Py test for block 03-editable (full logic)
+│       └── test_block_tweet_04.py           # Py test for block 04-tweet (full logic)
+├── public_tests/
+│   ├── __init__.py                 # Python test package marker
+│   ├── test_block_basic_esnext_02_public.py         # Public version of ESNext (skipped)
+│   ├── test_block_editable_03_public.py             # Public version, different props
+│   └── test_block_tweet_04_public.py                # Public version, alt props/data

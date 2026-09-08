@@ -1,0 +1,20 @@
+{
+  "project_name": "arithmetric_aws-lambda-ses-forwarder",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T09:55:05.380559",
+  "original_path": "/workspace/runnable_filter/JavaScript/arithmetric_aws-lambda-ses-forwarder",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/arithmetric_aws-lambda-ses-forwarder",
+  "tests_path": [
+    "test/fetchMessage.js",
+    "test/handler.js",
+    "test/parseEvent.js",
+    "test/processMessage.js",
+    "test/sendMessage.js",
+    "test/transformRecipients.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

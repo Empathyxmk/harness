@@ -1,0 +1,17 @@
+project_root/
+├── go.mod                     # Go module declaration
+├── README.md                  # Project documentation and setup instructions
+├── run_tests.sh               # One-click test execution script
+├── src/                       # (Placeholder) Source code implementation directory
+├── tests/
+│   └── original/
+│       ├── brk_test.go        # Original test: testing API breakpoints (translated from test_brk.py)
+│       ├── client_test.go     # Original test: client logic and API key, error cases (test_client.py)
+│       ├── automation_test.go # Original test: automation component tests (test_automation.py)
+│       ├── ruleconfig_test.go # Original test: ruleConfig component logic (test_ruleConfig.py)
+│       └── testutil.go        # Test utilities / dummy stubs (helpers)
+├── public_tests/
+│   ├── brk_public_test.go         # Public test: additional/alternate breakpoint scenarios
+│   ├── client_public_test.go      # Public test: alternate client core checks
+│   ├── automation_public_test.go  # Public test: public automation scenario
+│   ├── ruleconfig_public_test.go  # Public test: alternate ruleConfig scenario

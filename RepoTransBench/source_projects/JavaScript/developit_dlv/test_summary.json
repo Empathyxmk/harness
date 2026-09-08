@@ -1,0 +1,16 @@
+{
+  "project_name": "developit_dlv",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 84.61
+  },
+  "timestamp": "2025-06-23T10:36:58.760612",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/developit_dlv",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/developit_dlv",
+  "tests_path": [
+    "dlv.test.js",
+    "test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

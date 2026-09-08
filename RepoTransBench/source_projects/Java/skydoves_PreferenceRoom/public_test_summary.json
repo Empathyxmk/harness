@@ -1,0 +1,59 @@
+{
+  "project_name": "skydoves_PreferenceRoom",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:19:13.133690",
+  "original_path": "/workspace/verified_repos_v2/Java/skydoves_PreferenceRoom",
+  "public_test_result_path": "/workspace/public_test_results/Java/skydoves_PreferenceRoom",
+  "original_tests": {
+    "test_files": [
+      "preferenceroom-compiler/src/test/java/com/skydoves/processor/InjectorGeneratorTest.java",
+      "preferenceroom-compiler/src/test/java/com/skydoves/processor/PreferenceEntityAnnotatedClassTest.java",
+      "preferenceroom-compiler/src/test/java/com/skydoves/processor/PreferenceKeyFieldTest.java",
+      "demo/src/androidTest/java/com/skydoves/preferenceroomdemo/components/AppComponentTest.java",
+      "demo/src/androidTest/java/com/skydoves/preferenceroomdemo/components/JunitComponentTest.java",
+      "demo/src/androidTest/java/com/skydoves/preferenceroomdemo/entities/ProfileEntityTest.java",
+      "demo/src/androidTest/java/com/skydoves/preferenceroomdemo/entities/DeviceEntityTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "preferenceroom-compiler/src/test/java/com/skydoves/processor/InjectorGeneratorPublicTest.java",
+      "preferenceroom-compiler/src/test/java/com/skydoves/processor/PreferenceEntityAnnotatedClassPublicTest.java",
+      "preferenceroom-compiler/src/test/java/com/skydoves/processor/PreferenceKeyFieldPublicTest.java",
+      "run_public_tests.sh",
+      "demo/src/androidTest/java/com/skydoves/preferenceroomdemo/components/AppComponentPublicTest.java",
+      "demo/src/androidTest/java/com/skydoves/preferenceroomdemo/components/JunitComponentPublicTest.java",
+      "demo/src/androidTest/java/com/skydoves/preferenceroomdemo/entities/ProfileEntityPublicTest.java",
+      "demo/src/androidTest/java/com/skydoves/preferenceroomdemo/entities/DeviceEntityPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "preferenceroom-compiler/src/test/java/com/skydoves/processor/InjectorGeneratorPublicTest.java",
+    "preferenceroom-compiler/src/test/java/com/skydoves/processor/PreferenceEntityAnnotatedClassPublicTest.java",
+    "preferenceroom-compiler/src/test/java/com/skydoves/processor/PreferenceKeyFieldPublicTest.java",
+    "run_public_tests.sh",
+    "demo/src/androidTest/java/com/skydoves/preferenceroomdemo/components/AppComponentPublicTest.java",
+    "demo/src/androidTest/java/com/skydoves/preferenceroomdemo/components/JunitComponentPublicTest.java",
+    "demo/src/androidTest/java/com/skydoves/preferenceroomdemo/entities/ProfileEntityPublicTest.java",
+    "demo/src/androidTest/java/com/skydoves/preferenceroomdemo/entities/DeviceEntityPublicTest.java",
+    "run_public_tests.sh"
+  ]
+}

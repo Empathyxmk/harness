@@ -1,0 +1,40 @@
+xiaofeidev_RoundWidget Python Translation Structure
+
+/
+├── requirements.txt              # Python dependencies (pytest)
+├── run_tests.sh                  # Script to run ALL tests (original and public)
+├── README.md                     # Project overview and usage
+├── project_structure.txt         # This project structure description
+├── tests/                        # All original (non-public) tests
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_example_unit.py
+│       ├── test_round_frame_layout.py
+│       ├── test_round_image_view.py
+│       ├── test_round_status_impl.py
+│       ├── test_round_status.py
+│       ├── test_round_status_impl_builder.py
+│       └── test_size_utils.py
+├── public_tests/                 # All public test cases
+│   ├── __init__.py
+│   ├── test_example_unit_public.py
+│   ├── test_round_frame_layout_public.py
+│   ├── test_round_image_view_public.py
+│   ├── test_round_status_impl_builder_public.py
+│   ├── test_round_status_public.py
+│   ├── test_round_status_impl_public.py
+│   └── test_size_utils_public.py
+
+Directory Explanations:
+- requirements.txt:       All Python dependencies (pytest for testing).
+- run_tests.sh:           Make executable (`chmod +x`) for one-command testing: executes all tests via pytest.
+- README.md:              Project readme (add usage/build info as needed).
+- project_structure.txt:  This structure documentation for reference/setup.
+- tests/original:         Translated original (private/internal) test cases from Java (JUnit).
+- public_tests:           Translated public tests (used for public grading/demo, etc).
+
+Running Tests:
+$ pip install -r requirements.txt
+$ ./run_tests.sh
+  --Runs all tests in both `tests/` and `public_tests/` via pytest.

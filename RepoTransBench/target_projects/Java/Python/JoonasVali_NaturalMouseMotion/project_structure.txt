@@ -1,0 +1,47 @@
+project_root/
+├── requirements.txt             # Python dependencies for the project and tests.
+├── run_tests.sh                 # Simple script to run all tests using pytest.
+├── README.md                    # Documentation and instructions (to be created by user).
+├── src/
+│   ├── __init__.py
+│   └── naturalmouse/
+│       ├── __init__.py
+│       ├── api/
+│       │   └── ...              # Ported API classes (from Java src).
+│       ├── support/
+│       │   ├── __init__.py
+│       │   └── mousemotion/
+│       │       └── ...          # Support logic and mousemotion logic.
+│       ├── tools/
+│       │   └── ...              # (if needed)
+│       └── util/
+│           └── ...              # Utility functions.
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_mouse_motion_base.py
+│       ├── test_mouse_motion.py
+│       ├── test_flow_util.py
+│       ├── test_flow.py
+│       ├── test_headless_env.py
+│       ├── test_math_util.py
+│       ├── test_movement_factory.py
+│       ├── test_default_overshoot_manager.py
+│       ├── test_screen_adjusted_nature.py
+│       ├── test_extended_screen.py
+│       ├── test_negative.py
+│       └── test_screen_adjusted_nature_defaults.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_mouse_motion_public.py
+│   ├── test_flow_util_public.py
+│   ├── test_flow_public.py
+│   ├── test_math_util_public.py
+│   ├── test_movement_factory_public.py
+│   ├── test_default_overshoot_manager_public.py
+│   ├── test_screen_adjusted_nature_public.py
+│   ├── test_extended_screen_public.py
+│   ├── test_negative_public.py
+│   ├── test_screen_adjusted_nature_defaults_public.py
+└── project_structure.txt        # This file (documenting the project tree).

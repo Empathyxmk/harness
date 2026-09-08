@@ -1,0 +1,15 @@
+{
+  "project_name": "jonkemp_gulp-inline-css",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 92.1,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:44:14.526846",
+  "original_path": "/workspace/runnable_filter/JavaScript/jonkemp_gulp-inline-css",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/jonkemp_gulp-inline-css",
+  "tests_path": [
+    "test/main.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,15 @@
+onefilellm/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── onefilellm.rs
+│   └── utils.rs
+├── tests/
+│   └── original/
+│       ├── test_all.rs
+│       └── test_utils.rs
+├── public_tests/
+│   ├── test_public_all.rs
+│   └── test_public_utils.rs
+├── run_tests.sh
+└── project_structure.txt

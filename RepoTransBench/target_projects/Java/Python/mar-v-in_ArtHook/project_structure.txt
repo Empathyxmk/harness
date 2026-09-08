@@ -1,0 +1,38 @@
+mar-v-in_ArtHook-python/
+├── README.md                # Documentation
+├── requirements.txt         # Python dependencies (pytest, pytest-mock)
+├── run_tests.sh             # One-click test execution script
+├── project_structure.txt    # This file: describes structure
+├── src/
+│   └── arthook/
+│       ├── __init__.py
+│       └── xposed/
+│           ├── __init__.py
+│           ├── xposed.py       # Core logic: Xposed
+│           ├── utils.py        # Utility functions (call_main, etc.)
+│           ├── zygoteinit.py   # ZygoteInit logic
+│           └── runtimeinit.py  # RuntimeInit logic
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── test_utils.py           # Translated: UtilsTest.java
+│       ├── test_xposed.py          # Translated: XposedTest.java
+│       ├── test_zygote_init.py     # Translated: ZygoteInitTest.java
+│       └── test_runtime_init.py    # Translated: RuntimeInitTest.java
+└── public_tests/
+    ├── __init__.py
+    ├── test_utils_public.py        # Translated: UtilsPublicTest.java
+    ├── test_xposed_public.py       # Translated: XposedPublicTest.java
+    ├── test_zygote_init_public.py  # Translated: ZygoteInitPublicTest.java
+    └── test_runtime_init_public.py # Translated: RuntimeInitPublicTest.java
+
+Directory and file purposes:
+- src/arthook/xposed/: Python modules for Xposed, Utils, ZygoteInit, RuntimeInit (test-accessible stubs where needed).
+- tests/original/: Original test translations from Java.
+- public_tests/: Public test set translations.
+- requirements.txt: List of required Python packages (pytest, pytest-mock).
+- run_tests.sh: Executable script to run all tests via pytest.
+- project_structure.txt: This file; documents structure and file purposes.
+To run all tests:
+    pip install -r requirements.txt
+    ./run_tests.sh

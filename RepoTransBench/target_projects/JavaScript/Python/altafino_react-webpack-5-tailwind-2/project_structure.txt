@@ -1,0 +1,54 @@
+Project Structure: Python Version of altafino_react-webpack-5-tailwind-2
+
+.
+├── public_tests/
+│   ├── __init__.py
+│   ├── config/
+│   │   ├── __init__.py
+│   │   ├── test_paths_public.py
+│   │   ├── test_webpack_common_public.py
+│   │   ├── test_webpack_dev_public.py
+│   │   ├── test_webpack_prod_public.py
+│   │   └── test_webpack_stag_public.py
+│   ├── test_postcss_config_public.py
+│   ├── test_tailwind_config_public.py
+│   ├── src/
+│   │   ├── __init__.py
+│   │   ├── test_app_public.py
+│   │   └── test_index_public.py
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_app.py
+│   │   ├── test_index.py
+│   │   ├── test_postcss_config.py
+│   │   ├── test_tailwind_config.py
+│   │   ├── config/
+│   │   │   ├── __init__.py
+│   │   │   ├── test_paths.py
+│   │   │   ├── test_webpack_common.py
+│   │   │   ├── test_webpack_dev.py
+│   │   │   ├── test_webpack_prod.py
+│   │   │   └── test_webpack_stag.py
+├── README.md
+
+Explanations:
+- public_tests/         : Contains public-facing test cases (translated from public *.public.test.js)
+- public_tests/config/  : Public tests for configuration files
+- public_tests/src/     : Public tests for src modules
+- tests/                : All original (non-public) test cases
+- tests/original/       : Original test cases as found in the JS repo (not public)
+- tests/original/config/: Tests targeting configuration modules
+- requirements.txt      : Lists the Python dependencies (pytest)
+- run_tests.sh          : One-click test execution script (runs all tests via pytest)
+- README.md             : Main readme/instructions file
+
+Usage:
+- To run all tests, execute: ./run_tests.sh
+
+Note:
+- Each test module is named to reflect its target and public/original status.
+- All required test logic is fully implemented and executable with pytest.

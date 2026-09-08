@@ -1,0 +1,15 @@
+{
+  "project_name": "gulpjs_findup-sync",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:34:02.529071",
+  "original_path": "/workspace/runnable_filter/JavaScript/gulpjs_findup-sync",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/gulpjs_findup-sync",
+  "tests_path": [
+    "test/findup-sync.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

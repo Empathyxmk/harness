@@ -1,0 +1,9 @@
+bmp/
+├── Cargo.toml              # Rust package configuration
+├── src/
+│   └── lib.rs              # BMP library implementation
+├── tests/
+│   └── lib.rs              # Original tests (translated from test.c)
+├── public_tests/
+│   └── lib.rs              # Public tests (translated from test_public.c)
+└── run_tests.sh            # Test execution script

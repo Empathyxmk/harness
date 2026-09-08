@@ -1,0 +1,38 @@
+Project Structure for rveachkc_pymsteams (C++ translation):
+
+.
+├── CMakeLists.txt              # CMake configuration (defines build rules, fetches GoogleTest)
+├── include/
+│   └── pymsteams.h             # Main library header (contains stub/mock API for tests)
+├── src/
+│   └── pymsteams.cpp           # Library implementation (minimal, see header)
+├── tests/
+│   ├── test_cardsection_and_potentialaction.cpp  # Original internal regression tests
+│   └── test_webhook.cpp                          # Original internal tests for webhook/card
+├── public_tests/
+│   ├── test_public_cardsection_and_potentialaction.cpp # Publicly viewable version of tests
+│   └── test_public_webhook.cpp                          # Publicly viewable tests for webhooks/cards
+├── run_tests.sh                # One-click script to build and run all tests
+├── project_structure.txt       # (THIS FILE) Project structure and explanation
+└── README.md                   # Instructions and project intro (to be created/further filled)
+
+Key Directories/Files:
+- include/          : Header file(s) (API for pymsteams emulated for testing)
+- src/              : Implementation code (minimal for test build)
+- tests/            : Original test translations (internal/maintainer)
+- public_tests/     : Public test translations (public-facing regression coverage)
+- run_tests.sh      : Top-level script to build and invoke all tests
+- CMakeLists.txt    : Build config, includes GoogleTest via FetchContent
+
+How to Build/Run:
+1. Ensure you have CMake and a C++17 compiler installed
+2. Run: `chmod +x run_tests.sh && ./run_tests.sh`
+   - This builds the project in ./build and runs all test suites (internal+public)
+
+Test Results:
+- All tests will run, and GoogleTest will print summary to stdout
+- Both private/internal and public-facing test cases are covered
+
+NOTE:
+- The actual business logic is stubbed/mocked in the header for tests to run standalone.
+- In a production scenario, real code would replace the header-implemented "API".

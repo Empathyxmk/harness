@@ -1,0 +1,28 @@
+gurugio_book_cprogramming/
+├── Cargo.toml              # Rust project configuration
+├── src/
+│   └── lib.rs              # Main library implementation
+├── tests/
+│   ├── lib.rs              # Test integration
+│   └── original/           # Original test cases
+│       ├── mod.rs          # Module organization
+│       ├── test_foreach.rs         # Test for foreach.c
+│       ├── test_error_handle.rs    # Test for error_handle.c
+│       ├── test_long_if.rs         # Test for long-if.c
+│       └── test_caos_types.rs      # Test for caos_types.h
+├── public_tests/
+│   ├── lib.rs              # Public tests organization
+│   ├── test_foreach_public.rs      # Public test for foreach.c
+│   └── test_error_handle_public.rs # Public test for error_handle.c
+└── run_tests.sh            # Simple test execution script
+
+The project structure follows standard Rust conventions:
+- src/ contains the library implementation
+- tests/ contains the original tests
+- public_tests/ contains the public tests generated for verification
+- Cargo.toml defines project metadata and dependencies
+- run_tests.sh provides a simple way to run all tests
+
+To run the tests:
+1. Ensure Rust and Cargo are installed
+2. Run ./run_tests.sh from the project root

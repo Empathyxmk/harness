@@ -1,0 +1,85 @@
+.
+├── Adafruit_DHT
+│   ├── Beaglebone_Black.py
+│   ├── Raspberry_Pi.py
+│   ├── Raspberry_Pi_2.py
+│   ├── Test.py
+│   ├── __init__.py
+│   ├── common.py
+│   └── platform_detect.py
+├── Cargo.toml
+├── LICENSE
+├── MANIFEST.in
+├── README.md
+├── coverage_branch.txt
+├── coverage_line.txt
+├── coverage_results.txt
+├── examples
+│   ├── AdafruitDHT.py
+│   ├── google_spreadsheet.py
+│   └── simpletest.py
+├── project_structure.txt
+├── public_test_summary.json
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.py
+├── source
+│   ├── Beaglebone_Black
+│   │   ├── bbb_dht_read.c
+│   │   ├── bbb_dht_read.h
+│   │   ├── bbb_mmio.c
+│   │   └── bbb_mmio.h
+│   ├── Raspberry_Pi
+│   │   ├── pi_dht_read.c
+│   │   ├── pi_dht_read.h
+│   │   ├── pi_mmio.c
+│   │   └── pi_mmio.h
+│   ├── Raspberry_Pi_2
+│   │   ├── pi_2_dht_read.c
+│   │   ├── pi_2_dht_read.h
+│   │   ├── pi_2_mmio.c
+│   │   └── pi_2_mmio.h
+│   ├── Test
+│   │   ├── test_common_dht_read
+│   │   ├── test_common_dht_read.c
+│   │   ├── test_common_dht_read.gcda
+│   │   ├── test_common_dht_read.gcno
+│   │   ├── test_common_dht_read_public
+│   │   ├── test_common_dht_read_public.c
+│   │   ├── test_common_dht_read_public.gcda
+│   │   ├── test_common_dht_read_public.gcno
+│   │   ├── test_dht_read
+│   │   ├── test_dht_read.c
+│   │   ├── test_dht_read.gcda
+│   │   ├── test_dht_read.gcno
+│   │   ├── test_dht_read.h
+│   │   ├── test_dht_read_public
+│   │   ├── test_dht_read_public.c
+│   │   ├── test_dht_read_public.gcda
+│   │   ├── test_dht_read_public.gcno
+│   │   ├── test_runner
+│   │   ├── test_runner.c
+│   │   ├── test_runner.gcda
+│   │   ├── test_runner.gcno
+│   │   ├── test_runner_public
+│   │   ├── test_runner_public.c
+│   │   ├── test_runner_public.gcda
+│   │   └── test_runner_public.gcno
+│   ├── _Beaglebone_Black_Driver.c
+│   ├── _Raspberry_Pi_2_Driver.c
+│   ├── _Raspberry_Pi_Driver.c
+│   ├── _Test_Driver.c
+│   ├── common_dht_read.c
+│   └── common_dht_read.h
+├── src
+│   └── lib.rs
+├── test_summary.json
+└── tests
+    ├── original
+    │   ├── test_common_dht_read.rs
+    │   ├── test_dht_read.rs
+    │   └── test_runner.rs
+    └── public
+        ├── test_common_dht_read_public.rs
+        ├── test_dht_read_public.rs
+        └── test_runner_public.rs

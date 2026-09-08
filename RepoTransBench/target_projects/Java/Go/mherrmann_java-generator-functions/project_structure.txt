@@ -1,0 +1,31 @@
+mherrmann_java-generator-functions/
+├── LICENSE
+├── README.md
+├── generator/
+│   └── generator.go
+├── go.mod
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   └── generator_public_test.go
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── io/
+│   │           └── herrmann/
+│   │               └── generator/
+│   │                   └── Generator.java
+│   └── test/
+│       └── java/
+│           └── io/
+│               └── herrmann/
+│                   └── generator/
+│                       ├── GeneratorPublicTest.java
+│                       └── GeneratorTest.java
+├── test_summary.json
+└── tests/
+    └── original/
+        └── generator_test.go

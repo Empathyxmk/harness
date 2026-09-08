@@ -1,0 +1,16 @@
+{
+  "project_name": "jedp_porter-stemmer",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 98.36
+  },
+  "timestamp": "2025-06-19T10:42:34.343495",
+  "original_path": "/workspace/runnable_filter/JavaScript/jedp_porter-stemmer",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/jedp_porter-stemmer",
+  "tests_path": [
+    "test/porter.spec.js",
+    "test/porter-branches.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

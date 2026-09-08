@@ -1,0 +1,29 @@
+seatgeek_fuzzywuzzy/
+├── go.mod                     # Go module definition and dependencies
+├── README.md                  # Project overview and run instructions
+├── run_tests.sh               # Simple shell script to run all Go tests
+├── fuzzywuzzy/                # (Placeholder) Core implementation package (put library here)
+│   ├── fuzz.go
+│   ├── process.go
+│   ├── stringmatcher.go
+│   ├── string_processing.go
+│   ├── utils.go
+├── tests/                     # Original Python test translations (now in Go)
+│   ├── test_utils_and_stringmatcher_test.go
+│   ├── test_process_py_test.go
+│   ├── test_fuzzywuzzy_test.go
+│   ├── test_fuzzywuzzy_hypothesis_test.go
+│   ├── test_fuzzywuzzy_pytest_test.go
+├── public_tests/              # Public variant test translations (in Go)
+│   ├── test_public_utils_and_stringmatcher_test.go
+│   ├── test_public_process_py_test.go
+│   ├── test_public_fuzzywuzzy_test.go
+│   ├── test_public_fuzzywuzzy_hypothesis_test.go
+│   ├── test_public_fuzzywuzzy_pytest_test.go
+
+NOTES:
+- All `_test.go` files are Go test files and will be picked up by `go test ./...`
+- Place your actual seatgeek_fuzzywuzzy implementation code in the `fuzzywuzzy/` package.
+- `run_tests.sh` just executes `go test ./...` for all subpackages.
+
+For details of each test file, compare the contents to the original Python tests and public variants.

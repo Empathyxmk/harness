@@ -1,0 +1,38 @@
+project_root/
+├── README.md
+├── requirements.txt                 # Python dependencies (pytest, numpy)
+├── run_tests.sh                     # One-click test execution script
+├── src/
+│   └── hgpvision/
+│       ├── __init__.py
+│       ├── attitude.py              # AttitudeBase implementation (from .m test coverage; sufficient for test logic)
+│       ├── ins_solver.py            # InsSolver minimal implementation with coverage for test logic
+│       └── sim_main.py              # simMain implementation for global variable simulation
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_attitude_base.py                # Translated: test_AttitudeBase.m
+│       ├── test_attitude_base_branches.py       # Translated: test_AttitudeBase_branches.m
+│       ├── test_attitude_base_error_cases.py    # Translated: test_AttitudeBase_error_cases.m
+│       ├── test_ins_solver_branches.py          # Translated: test_InsSolver_branches.m
+│       ├── test_ins_solver_edge_cases.py        # Translated: test_InsSolver_edge_cases.m
+│       ├── test_ins_solver_smoke.py             # Translated: test_InsSolver_smoke.m
+│       ├── test_sim_main_branches.py            # Translated: test_simMain_branches.m
+│       └── test_sim_main_output.py              # Translated: test_simMain_output.m
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_attitude_base_branches_public.py    # Translated: test_AttitudeBase_branches_public.m
+│   ├── test_attitude_base_error_cases_public.py # Translated: test_AttitudeBase_error_cases_public.m
+│   ├── test_attitude_base_public.py             # Translated: test_AttitudeBase_public.m
+│   ├── test_ins_solver_branches_public.py       # Translated: test_InsSolver_branches_public.m
+│   ├── test_ins_solver_edge_cases_public.py     # Translated: test_InsSolver_edge_cases_public.m
+│   ├── test_ins_solver_smoke_public.py          # Translated: test_InsSolver_smoke_public.m
+│   ├── test_sim_main_branches_public.py         # Translated: test_simMain_branches_public.m
+│   └── test_sim_main_output_public.py           # Translated: test_simMain_output_public.m
+
+Notes:
+- All tests translated with equivalent logic, inputs, and edge cases.
+- Run all tests with `./run_tests.sh`.
+- Install dependencies with `pip install -r requirements.txt`.
+- `src/hgpvision/` contains minimal implementation to enable test translation to run and validate all behaviors as per the original Matlab tests.
+- Original and public tests are separated per requirements.

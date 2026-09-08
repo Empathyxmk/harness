@@ -1,0 +1,51 @@
+project_root/
+├── README.md
+├── requirements.txt                       # Python dependencies, mostly pytest.
+├── run_tests.sh                           # Simple test runner: one-click run.
+├── src/                                   # All Python source files.
+│   ├── __init__.py
+│   ├── lettermixer.py                     # (Placeholder) Logic for lettermixer program.
+│   └── markovchain.py                     # (Placeholder) Logic for markovchain program.
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_lettermixer.py            # Original lettermixer input tests.
+│   │   └── test_markovchain.py            # Original markovchain input tests.
+│   └── 2020-lettermixer/
+│       ├── test_basic.txt                 # Original C test input data.
+│       ├── test_symbols.txt
+│       ├── test_empty.txt
+│       ├── public_test_alpha.txt          # Public Python test input data.
+│       ├── public_test_unicode.txt
+│       ├── public_test_punctuation.txt
+│   └── 2020-markovchain/
+│       ├── test_input.txt
+│       ├── test_short.txt
+│       ├── test_input2.txt
+│       ├── test_empty.txt
+│       ├── public_test_input_A.txt
+│       ├── public_test_input_B.txt
+│       ├── public_test_empty.txt
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_lettermixer_public.py         # Public tests for lettermixer.
+│   └── test_markovchain_public.py         # Public tests for markovchain.
+└── project_structure.txt                  # (This file) Explanation of all files/folders.
+
+# Directory/filename explanations:
+# - src/: All Python solution/logic code. Fill in lettermixer.py/markovchain.py with actual implementations.
+# - tests/original/: Python tests auto-adapted from "original" test cases of the C repo.
+#     These check basic functional correctness (input doesn't crash, returns string).
+# - public_tests/: Python tests using "public" input cases.
+# - tests/2020-lettermixer/, tests/2020-markovchain/: These subfolders store the actual input files used by tests.
+# - requirements.txt: Must have pytest or any other dependencies.
+# - run_tests.sh: Installs dependencies and tests everything via pytest in one command.
+# - README.md: Add a project description/instructions here.
+# - project_structure.txt: This doc.
+
+# Setup & Testing:
+#   1. Ensure Python 3 is installed.
+#   2. Run `./run_tests.sh` from the project root.
+#   3. All tests (original & public) will be executed.
+#   4. Add actual code to src/lettermixer.py and src/markovchain.py.

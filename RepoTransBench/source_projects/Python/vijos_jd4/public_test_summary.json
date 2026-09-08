@@ -1,0 +1,56 @@
+{
+  "project_name": "vijos_jd4",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:50:51.198846",
+  "original_path": "/workspace/verified_repos_v2/Python/vijos_jd4",
+  "public_test_result_path": "/workspace/public_test_results/Python/vijos_jd4",
+  "original_tests": {
+    "test_files": [
+      "jd4/test_cache.py",
+      "jd4/test_log_and_config.py",
+      "jd4/test_pool.py",
+      "jd4/case_test.py",
+      "jd4/compare_test.py",
+      "jd4/integration_test.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_cache.py",
+      "public_tests/test_public_log_and_config.py",
+      "public_tests/test_public_pool.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_case.py",
+      "public_tests/test_public_compare.py",
+      "public_tests/conftest.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_cache.py",
+    "public_tests/test_public_log_and_config.py",
+    "public_tests/test_public_pool.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_case.py",
+    "public_tests/test_public_compare.py",
+    "public_tests/conftest.py",
+    "run_public_tests.sh"
+  ]
+}

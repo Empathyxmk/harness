@@ -1,0 +1,57 @@
+maxcountryman_flask-login-java/
+│
+├── pom.xml                         # Maven build configuration, JUnit/Mockito dependencies
+├── run_tests.sh                    # One-click script to run all tests (via Maven)
+├── README.md                       # Documentation and usage summary
+│
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── maxcountryman/
+│   │               └── flasklogin/
+│   │                   ├── Main.java       # Dummy harness
+│   │                   ├── about/          # Simulates __about__.py
+│   │                   │   └── About.java
+│   │                   ├── config/         # Simulates config.py
+│   │                   │   └── Config.java
+│   │                   ├── mixins/         # User/Anonymous user mixin Java ports
+│   │                   │   ├── UserMixin.java
+│   │                   │   └── AnonymousUserMixin.java
+│   │                   ├── testclient/     # FlaskLoginClient test class
+│   │                   │   └── FlaskLoginClient.java
+│   │                   └── login/          # Simulated LoginManager functionality
+│   │                       └── LoginManager.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── maxcountryman/
+│                   └── flasklogin/
+│                       ├── original/
+│                       │   ├── TestConfig.java
+│                       │   ├── TestMixins.java
+│                       │   ├── TestAbout.java
+│                       │   ├── TestClient.java
+│                       │   └── TestLoginManager.java
+│                       └── publictests/
+│                           ├── TestPublicConfig.java
+│                           ├── TestPublicMixins.java
+│                           ├── TestPublicAbout.java
+│                           ├── TestPublicClient.java
+│                           └── TestPublicLoginManager.java
+│
+└── project_structure.txt           # This project tree and directory explanation
+
+
+Directory Explanation:
+- pom.xml: Maven configuration. Declares dependencies, Java/JUnit versions.
+- run_tests.sh: One-click script to run all tests (`mvn clean test`).
+- src/main/java/com/...: Production code structure (minimal - just test support classes here).
+- src/test/java/com/.../original/: All test code translated from the original Python tests (tests/, test_client.py, etc).
+- src/test/java/com/.../publictests/: All translated public test cases.
+- project_structure.txt: This tree and description.
+
+How to run tests:
+1. Install Java 17+ and Maven.
+2. Run `chmod +x run_tests.sh` if needed.
+3. Execute `./run_tests.sh` - all original and public tests execute and report status.

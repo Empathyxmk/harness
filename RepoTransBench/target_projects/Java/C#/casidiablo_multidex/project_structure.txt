@@ -1,0 +1,48 @@
+Casidiablo.MultiDex/
+├── Casidiablo.MultiDex.sln                      # .NET solution file for the project and test suites
+├── run_tests.sh                                 # One-click script to run all tests (dotnet test)
+├── project_structure.txt                        # This file; describes layout and instructions
+├── src/
+│   └── Casidiablo.MultiDex/
+│       ├── Casidiablo.MultiDex.csproj           # Main library project file
+│       ├── MultiDex.cs                          # Implementation of MultiDex.isVMMultidexCapable and helpers
+│       ├── MultiDexApplication.cs               # Mock Application for tests
+│       ├── MultiDexExtractor.cs                 # Mock extractor/loader for test
+│       ├── ZipUtil.cs                           # Mocked-up ZipUtil for tests
+│       └── ZipEntryReader.cs                    # Test utility for reading zip entries (simulates Java logic)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj                 # xUnit test project for "original" (private) tests
+│       ├── MultiDexTest.cs
+│       ├── MultiDexStandaloneTest.cs
+│       ├── ZipUtilTest.cs
+│       ├── MultiDexExtractorTest.cs
+│       ├── ZipUtilExtraTest.cs
+│       └── MultiDexApplicationTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj                       # xUnit test project for "public" tests
+│   ├── MultiDexPublicTest.cs
+│   ├── MultiDexStandalonePublicTest.cs
+│   ├── ZipUtilPublicTest.cs
+│   ├── ZipUtilExtraPublicTest.cs
+│   ├── MultiDexExtractorPublicTest.cs
+│   └── MultiDexApplicationPublicTest.cs
+
+------------------------------------------------------------------------------
+Directory & File Overview:
+- src/Casidiablo.MultiDex/       -- Main code (minimal functional for tests)
+- tests/original/                -- Original (private) test cases, fully translated from Java
+- public_tests/                  -- Public (student-facing/open) test cases, fully translated from Java
+- run_tests.sh                   -- Launches dotnet test on solution (all test suites)
+- Casidiablo.MultiDex.sln        -- Solution binds code and both test suites
+------------------------------------------------------------------------------
+Setup & Usage:
+1. Requires .NET 6 SDK or later.
+2. Run: `./run_tests.sh` -- Restores, builds, and executes all tests.
+3. All test files are runnable and fully implemented using xUnit.
+
+Test Organization:
+- "original" tests mirror original private test coverage.
+- "public_tests" matches all public student-facing test cases.
+
+------------------------------------------------------------------------------

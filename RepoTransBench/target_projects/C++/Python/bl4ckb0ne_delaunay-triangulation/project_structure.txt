@@ -1,0 +1,38 @@
+Project Structure Overview
+
+bl4ckb0ne_delaunay-triangulation-python/
+├── src/
+│   └── dt/
+│       ├── __init__.py
+│       ├── vector2.py
+│       ├── edge.py
+│       ├── triangle.py
+│       └── delaunay.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_tests.py         # Original (private) translated tests
+├── public_tests/
+│   ├── __init__.py
+│   └── test_public_tests.py      # Public translated tests
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+Directory Descriptions:
+- src/dt/:           (Not yet implemented) Python module for computational geometry.
+- tests/original/:   Original C++ private test cases, now as Python code.
+- public_tests/:     Public test suite as Python, matching public C++ test logic.
+- requirements.txt:  Python requirements for running tests (`pytest`).
+- run_tests.sh:      Simple script to execute all tests.
+- README.md:         Project & usage documentation.
+- project_structure.txt:  This file.
+
+How to run tests:
+  1. Implement the geometry classes in src/dt/ (Vector2, Edge, Triangle, Delaunay).
+  2. pip install -r requirements.txt
+  3. ./run_tests.sh
+
+Tests will be discovered automatically.

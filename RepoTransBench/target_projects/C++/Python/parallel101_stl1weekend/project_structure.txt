@@ -1,0 +1,48 @@
+Project Structure for Python Translation of parallel101_stl1weekend
+
+.
+├── src/
+│   └── (source code for library/implementation if needed; empty if just tests)
+├── tests/
+│   ├── original/
+│   │   ├── test_array.py
+│   │   ├── test_function.py
+│   │   ├── test_list.py
+│   │   ├── test_map.py
+│   │   ├── test_optional.py
+│   │   ├── test_set.py
+│   │   ├── test_sharedptr.py
+│   │   ├── test_string.py
+│   │   ├── test_unique_ptr.py
+│   │   ├── test_unorderedmap.py
+│   │   ├── test_utility.py
+│   │   ├── test_variant.py
+│   │   └── test_vector.py
+│   └── __init__.py
+├── public_tests/
+│   ├── test_hexdump_public.py
+│   └── __init__.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── project_structure.txt
+
+Explanations:
+- src/            : Project source root (empty or for future code)
+- tests/original/ : Translated original C++ test files, now as pytest-compatible Python tests
+- public_tests/   : Public test suite (originally C++ public test, now Python/pytest)
+- requirements.txt: List of dependencies (here, just pytest)
+- run_tests.sh    : Script to execute all tests with one command
+- README.md       : General usage instructions
+- __init__.py     : Marks test directories as Python packages
+
+Setup & Testing Instructions:
+1. Install dependencies:
+     pip install -r requirements.txt
+2. Run all tests:
+     ./run_tests.sh
+   or, manually:
+     pytest tests/original
+     pytest public_tests
+- All tests use pytest
+- You can extend src/ with your Python library code if porting implementation

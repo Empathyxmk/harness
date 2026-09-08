@@ -1,0 +1,22 @@
+googlecloudplatform_localllm/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── modeldownload.rs
+│   ├── modelfiles.rs
+│   └── modelserving.rs
+├── tests/
+│   └── original/
+│       ├── test_modeldownload_full.rs
+│       ├── test_modelserving_full.rs
+│       ├── test_modelfiles_full.rs
+│       ├── test_modeldownload.rs
+│       └── test_modelfiles.rs
+├── public_tests/
+│   ├── test_public_modelserving_full.rs
+│   ├── test_public_modeldownload.rs
+│   ├── test_public_modeldownload_full.rs
+│   ├── test_public_modelfiles_full.rs
+│   └── test_public_modelfiles.rs
+├── run_tests.sh
+└── project_structure.txt

@@ -1,0 +1,11 @@
+{
+  "project_name": "baer_pint",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 79.5,
+    "branch": 52.94
+  },
+  "timestamp": "2025-06-19T09:57:50.472673",
+  "original_path": "/workspace/runnable_filter/JavaScript/baer_pint",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/baer_pint"
+}

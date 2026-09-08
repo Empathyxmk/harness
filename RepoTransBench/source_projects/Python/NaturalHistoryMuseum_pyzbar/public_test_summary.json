@@ -1,0 +1,77 @@
+{
+  "project_name": "NaturalHistoryMuseum_pyzbar",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:57:23.728911",
+  "original_path": "/workspace/verified_repos_v2/Python/NaturalHistoryMuseum_pyzbar",
+  "public_test_result_path": "/workspace/public_test_results/Python/NaturalHistoryMuseum_pyzbar",
+  "original_tests": {
+    "test_files": [
+      "pyzbar/tests/test_locations.py",
+      "pyzbar/tests/test_zbar_library.py",
+      "pyzbar/tests/test_zbar_library_import.py",
+      "pyzbar/tests/test_init.py",
+      "pyzbar/tests/test_read_zbar.py",
+      "pyzbar/tests/test_bounding_box_and_polygon.py",
+      "pyzbar/tests/test_scripts_read_zbar.py",
+      "pyzbar/tests/test_wrapper.py",
+      "pyzbar/tests/test_pyzbar_error.py",
+      "pyzbar/tests/test_pyzbar.py",
+      "tests/test_bounding_box_and_polygon_py.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 11,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_locations_public.py",
+      "public_tests/test_zbar_library_public.py",
+      "public_tests/test_zbar_library_import_public.py",
+      "run_public_tests.sh",
+      "public_tests/test_init_public.py",
+      "public_tests/test_bounding_box_and_polygon_public.py",
+      "public_tests/test_read_zbar_public.py",
+      "public_tests/test_pyzbar_error_public.py",
+      "public_tests/test_pyzbar_public.py",
+      "public_tests/test_scripts_read_zbar_public.py",
+      "public_tests/test_wrapper_public.py",
+      "public_tests/test_zbar_library_public.py",
+      "public_tests/test_zbar_library_import_public.py",
+      "run_public_tests.sh",
+      "public_tests/test_bounding_box_and_polygon_public.py",
+      "public_tests/test_locations_public.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 16,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_locations_public.py",
+    "public_tests/test_zbar_library_public.py",
+    "public_tests/test_zbar_library_import_public.py",
+    "run_public_tests.sh",
+    "public_tests/test_init_public.py",
+    "public_tests/test_bounding_box_and_polygon_public.py",
+    "public_tests/test_read_zbar_public.py",
+    "public_tests/test_pyzbar_error_public.py",
+    "public_tests/test_pyzbar_public.py",
+    "public_tests/test_scripts_read_zbar_public.py",
+    "public_tests/test_wrapper_public.py",
+    "public_tests/test_zbar_library_public.py",
+    "public_tests/test_zbar_library_import_public.py",
+    "run_public_tests.sh",
+    "public_tests/test_bounding_box_and_polygon_public.py",
+    "public_tests/test_locations_public.py"
+  ]
+}

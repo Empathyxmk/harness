@@ -1,0 +1,35 @@
+Project Structure for Python Translation of lorisleiva_tailwindcss-plugins
+
+.
+├── requirements.txt            # Python dependencies, includes pytest
+├── run_tests.sh                # Simple script to run all tests using pytest
+├── project_structure.txt       # This file; project structure and instructions
+├── tests/
+│   ├── __init__.py
+│   └── original/               # Original test suite (from JS test/ directory)
+│       ├── __init__.py
+│       ├── test_animations.py
+│       ├── test_gradients.py
+│       ├── test_index.py
+│       ├── test_keyframes.py
+│       └── test_pagination.py
+├── public_tests/               # Public test suite (from JS public_tests/ directory)
+│   ├── __init__.py
+│   ├── test_animations_public.py
+│   ├── test_gradients_public.py
+│   ├── test_index_public.py
+│   ├── test_keyframes_public.py
+│   └── test_pagination_public.py
+
+Directory/Files:
+- requirements.txt         : Lists Python dependencies; install via `pip install -r requirements.txt`
+- run_tests.sh             : Runs ALL tests (original + public) with one command; ensure it's executable (`chmod +x run_tests.sh`)
+- tests/original/          : Contains original (private/complete) test translations
+- public_tests/            : Contains the public-only test translations (from public_tests/*.public.test.js in JS)
+- Each test file fully covers the logic of the original or public JavaScript AVA test file.
+
+Instructions:
+- Install dependencies: `pip install -r requirements.txt`
+- To run all tests: `./run_tests.sh` (runs both original and public suites)
+- To run only public tests: `pytest public_tests/`
+- To run only original tests: `pytest tests/original/`

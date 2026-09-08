@@ -1,0 +1,15 @@
+{
+  "project_name": "ericelliott_rfx",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:20:48.196696",
+  "original_path": "/workspace/runnable_filter/JavaScript/ericelliott_rfx",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/ericelliott_rfx",
+  "tests_path": [
+    "test/index.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,40 @@
+vatri_spring-rest-ecommerce-dotnet/
+├── src/
+│   └── Vatri.Ecommerce/
+│       ├── Vatri.Ecommerce.csproj
+│       ├── Program.cs
+│       └── Storage/
+│           ├── StorageService.cs
+│           ├── StorageProperties.cs
+│           ├── StorageException.cs
+│           ├── StorageFileNotFoundException.cs
+│           ├── FileSystemStorageService.cs
+│       └── Cache/
+│           ├── RedisCache.cs
+│   └── README.md
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── StorageServiceTest.cs
+│       ├── StorageFileNotFoundExceptionTest.cs
+│       ├── StoragePropertiesTest.cs
+│       ├── FileSystemStorageServiceTest.cs
+│       ├── RedisCacheTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── StorageServicePublicTest.cs
+│   ├── StorageFileNotFoundExceptionPublicTest.cs
+│   ├── StoragePropertiesPublicTest.cs
+│   ├── FileSystemStorageServicePublicTest.cs
+│   ├── RedisCachePublicTest.cs
+├── Vatri.Ecommerce.sln
+├── run_tests.sh
+├── README.md
+
+Explanations:
+- src/Vatri.Ecommerce/: Main project source code. Dummy or scaffold implementations for storage and cache (since tests won't run without them).
+- tests/original/: Contains C# xUnit original tests translated from the Java project.
+- public_tests/: Contains the public test cases as in the Java public test suite.
+- *.csproj & .sln: .NET Core project and solution files.
+- run_tests.sh: Runs all tests in both original and public test projects.
+- project_structure.txt: This file.

@@ -1,0 +1,26 @@
+mattupstate_overholt (Go project structure)
+├── go.mod                 # Module definition for Go dependencies
+├── run_tests.sh           # One-click test execution script
+├── project_structure.txt  # This file, describing the project layout
+├── overholt/
+│   ├── settings.go          # Implementation of settings variables (to be implemented)
+│   ├── tasks.go             # Implementation for task email (to be implemented)
+│   ├── middleware.go        # HTTPMethodOverrideMiddleware implementation (to be implemented)
+├── wsgi/
+│   └── wsgi.go              # WSGI application wrapper and helpers (to be implemented)
+├── tests/
+│   └── original/
+│       ├── settings_test.go      # Translation of test_settings.py
+│       ├── wsgi_test.go          # Translation of test_wsgi.py
+│       ├── tasks_test.go         # Translation of test_tasks.py
+│       └── middleware_test.go    # Translation of test_middleware.py
+├── public_tests/
+│   ├── settings_public_test.go   # Translation of test_public_settings.py
+│   ├── wsgi_public_test.go       # Translation of test_public_wsgi.py
+│   ├── tasks_public_test.go      # Translation of test_public_tasks.py
+│   └── middleware_public_test.go # Translation of test_public_middleware.py
+
+- All test logic from the original Python files is converted to Go and located in tests/original/ for original tests and public_tests/ for public tests.
+- The main package source files (settings.go, tasks.go, middleware.go, wsgi.go) must be implemented to make the tests pass; stubs or full code.
+- All Go tests are standard *_test.go files using Go's testing package.
+- To run all tests, simply execute `./run_tests.sh` from the project root.

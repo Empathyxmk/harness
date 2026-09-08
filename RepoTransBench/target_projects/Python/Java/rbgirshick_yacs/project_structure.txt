@@ -1,0 +1,27 @@
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── yacs/
+│   │                   └── CfgNode.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   └── ConfigAdditionalTest.java
+│                   └── public_tests/
+│                       └── PublicConfigAdditionalTest.java
+
+Structure Explanation:
+- pom.xml: Maven configuration provides dependencies, build/test integration.
+- run_tests.sh: Executable script to run all tests with `mvn clean test`.
+- src/main/java/com/example/yacs/CfgNode.java: (Stubbed) minimal version of the core config node for test running.
+- src/test/java/com/example/original/ConfigAdditionalTest.java: Test class with ALL original test cases from tests/test_config_additional.py.
+- src/test/java/com/example/public_tests/PublicConfigAdditionalTest.java: Test class with ALL public test cases from public_tests/test_public_config_additional.py.
+- src/: Standard Maven project layout, separates main source and test code.
+- Each test class is fully implemented with translation of test logic, inputs, and assertions from the corresponding Python.

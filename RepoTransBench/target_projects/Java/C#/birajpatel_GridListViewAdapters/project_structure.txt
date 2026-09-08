@@ -1,0 +1,45 @@
+project_root/
+├── GridListViewAdapters.sln                  # Solution file
+├── src/
+│   └── GridListViewAdapters/
+│       ├── GridListViewAdapters.csproj       # Main project file
+│       ├── BaseGridAdapter.cs                # Main library source (and similarly for all library files)
+│       ├── ...                               # (other main source files for adapters, dataholders, utils, etc.)
+│       └── ... 
+├── tests/
+│   ├── original/
+│   │   ├── BaseGridAdapterTests.cs           # Original functional tests (from Java)
+│   │   ├── CursorFilterTests.cs
+│   │   ├── RowViewHolderTests.cs
+│   │   ├── ListGridAdapterTests.cs
+│   │   ├── CardTests.cs
+│   │   ├── CursorGridAdapterTests.cs
+│   │   ├── dataholders/
+│   │   │   ├── CardPositionInfoTests.cs
+│   │   │   ├── CardDataHolderTests.cs
+│   │   │   ├── RowDataHolderTests.cs
+│   │   ├── utils/
+│   │   │   ├── PositionCalculatorTests.cs
+│   │   │   ├── GridDataStructureTests.cs
+│   │   │   ├── ViewHolderPositionTaggerTests.cs
+│   │   │   └── MaxCardsInfoTests.cs
+│   └── originalTests.csproj
+├── public_tests/
+│   ├── BaseGridAdapterPublicTests.cs      # Public test suite (adapted public interface tests)
+│   ├── CursorFilterPublicTests.cs
+│   ├── RowViewHolderPublicTests.cs
+│   ├── ListGridAdapterPublicTests.cs
+│   ├── CardPublicTests.cs
+│   ├── CursorGridAdapterPublicTests.cs
+│   ├── dataholders/
+│   │   ├── CardDataHolderPublicTests.cs
+│   │   ├── CardPositionInfoPublicTests.cs
+│   │   ├── RowDataHolderPublicTests.cs
+│   ├── utils/
+│   │   ├── PositionCalculatorPublicTests.cs
+│   │   ├── GridDataStructurePublicTests.cs
+│   │   ├── ViewHolderPositionTaggerPublicTests.cs
+│   │   └── MaxCardsInfoPublicTests.cs
+│   └── PublicTests.csproj
+├── run_tests.sh
+├── README.md

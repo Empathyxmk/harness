@@ -1,0 +1,41 @@
+dong-hao_EM3DVP Python Project Structure
+
+/
+├── requirements.txt                 # Python dependencies (pytest, numpy)
+├── run_tests.sh                     # One-click script to run all tests (via pytest)
+│
+├── src/                             # (Placeholder) Source code of the application
+│   └── __init__.py                  # Necessary for a Python package
+│   └── (module stubs or ported logic would go here)
+│
+├── tests/                           # All internal/original test cases
+│   └── __init__.py                  # Mark as a module
+│   └── original/                    # Subdirectory for original Matlab test logic
+│       ├── test_add_noise.py        # Original: tests/test_add_noise.m
+│       ├── test_import_xyz2.py      # Original: tests/test_import_xyz2.m
+│       ├── test_load_WinG_model.py  # Original: tests/test_load_WinG_model.m
+│       └── test_load_asc.py         # Original: tests/test_load_asc.m
+│
+├── public_tests/                    # All public test cases
+│   ├── test_public_add_noise.py         # From: public_tests/public_test_add_noise.m
+│   ├── test_public_import_xyz2.py       # From: public_tests/public_test_import_xyz2.m
+│   ├── test_public_load_WinG_model.py   # From: public_tests/public_test_load_WinG_model.m
+│   └── test_public_load_asc.py          # From: public_tests/public_test_load_asc.m
+│
+├── README.md                        # Basic project description/instructions
+│
+└── project_structure.txt            # This file: project structure and explanations
+
+Directory explanations:
+- requirements.txt:         Python dependencies (install via pip install -r requirements.txt)
+- run_tests.sh:             One-click script to run all tests (chmod +x run_tests.sh; then ./run_tests.sh)
+- src/:                     (Placeholder) for source logic to be ported/implemented in Python
+- tests/original/:          All original (internal) test cases translated from Matlab
+- public_tests/:            All public translated test cases for users
+- README.md:                Placeholder documentation
+- project_structure.txt:    This file
+
+To run all tests:
+$ pip install -r requirements.txt
+$ chmod +x run_tests.sh
+$ ./run_tests.sh

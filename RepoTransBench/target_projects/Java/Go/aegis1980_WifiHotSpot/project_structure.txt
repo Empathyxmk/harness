@@ -1,0 +1,26 @@
+.
+├── go.mod                # Go module declaration
+├── hotspot/
+│   └── HotSpotManager.go           # Implementation of HotSpotManager (Go port)
+├── tests/
+│   └── original/
+│       └── HotSpotManager_test.go  # Original (private) tests
+├── public_tests/
+│   └── HotSpotManager_public_test.go # Public tests
+├── run_tests.sh          # One-click test runner script (go test ./...)
+└── README.md             # Project description and instructions
+
+hotspot/:
+    Contains the core Go implementation of the HotSpotManager logic.
+
+tests/original/:
+    Contains Go test file translating all original (private) Java tests.
+
+public_tests/:
+    Contains Go test file translating all public Java tests.
+
+run_tests.sh:
+    Simple script to run all Go tests recursively.
+
+README.md:
+    Documentation, setup, and project structure overview.

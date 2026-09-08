@@ -1,0 +1,19 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_triple_sum.py
+│   │   ├── test_count_triplets.py
+│   │   ├── test_climbing_the_leaderboard.py
+│   │   ├── test_making_anagrams.py
+│   │   └── test_strings_making_anagrams.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_triple_sum_public.py
+│   ├── test_count_triplets_public.py
+│   ├── test_climbing_the_leaderboard_public.py
+│   ├── test_making_anagrams_public.py
+│   └── test_strings_making_anagrams_public.py

@@ -1,0 +1,45 @@
+yandex-qatools_postgresql-embedded-python/
+├── README.md
+├── requirements.txt                # Python dependencies (pytest, etc.)
+├── run_tests.sh                    # One-click shell script to run all tests (chmod +x)
+├── src/
+│   └── (put reusable src code here if ported from Java; not required for this test-only translation)
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_non_cached_postgres_artifact_store_builder.py
+│   │   ├── test_cached_postgres_artifact_store.py
+│   │   ├── test_immutable_artifact_store.py
+│   │   ├── test_postgres_artifact_store.py
+│   │   ├── test_embedded_postgres.py
+│   │   ├── test_abstract_psql.py
+│   │   └── test_storage.py
+│   └── resources/
+│       ├── test.backup
+│       └── test.binary_dump
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_non_cached_postgres_artifact_store_builder_public.py
+│   ├── test_postgres_artifact_store_public.py
+│   ├── test_immutable_artifact_store_public.py
+│   ├── test_cached_postgres_artifact_store_public.py
+│   ├── test_embedded_postgres_public.py
+│   ├── test_abstract_psql_public.py
+│   └── test_storage_public.py
+
+Legend:
+- tests/original/ : All original (private) test cases
+- public_tests/   : All public, dummy-isolated test cases
+- tests/resources/: Test resources (fixtures, backup .sql/.bin dumps)
+- src/            : For source code if any Python port is needed (not strictly needed for translated tests)
+- All dependencies listed in requirements.txt
+- Full pytest compatibility; tests discoverable with `pytest`
+- Run `./run_tests.sh` to execute everything
+
+Setup:
+$ pip install -r requirements.txt
+$ chmod +x run_tests.sh
+$ ./run_tests.sh
+
+Note: Some original Java tests expect a full Java-based embedded postgres which may not map directly to Python. Dummy classes and simplified logic are used for portability.

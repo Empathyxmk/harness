@@ -1,0 +1,65 @@
+project_root/
+├── requirements.txt
+│     # Python test dependencies (pytest)
+├── setup.py
+│     # Package config for posix_py
+├── src/
+│   └── posix_py/
+│       ├── __init__.py
+│           # Python binding stubs for POSIX functions (to be fully implemented)
+├── tests/
+│   ├── __init__.py  # optional
+│   └── original/
+│       ├── test_chroot.py
+│       ├── test_chroot_edge.py
+│       ├── test_getegid.py
+│       ├── test_getegid_edge.py
+│       ├── test_geteuid.py
+│       ├── test_geteuid_edge.py
+│       ├── test_getgrnam.py
+│       ├── test_gethostname.py
+│       ├── test_getpgid.py
+│       ├── test_getpgid_edge.py
+│       ├── test_getpgid_error.py
+│       ├── test_getppid.py
+│       ├── test_getppid_edge.py
+│       ├── test_getpwnam.py
+│       ├── test_getrlimit.py
+│       ├── test_initgroups.py
+│       ├── test_main_errors.py
+│       ├── test_setegid.py
+│       ├── test_seteuid.py
+│       ├── test_setpgid.py
+│       ├── test_setpgid_edge.py
+│       ├── test_setregid.py
+│       ├── test_setreuid.py
+│       ├── test_setrlimit.py
+│       ├── test_setsid.py
+│       ├── test_setsid_edge.py
+│       └── test_syslog.py
+│           # Fully implemented test translations from original test/unit/
+├── public_tests/
+│        ├── test_public_getegid.py
+│        ├── test_public_geteuid.py
+│        ├── test_public_getgrnam.py
+│        ├── test_public_gethostname.py
+│        ├── test_public_getpgid.py
+│        ├── test_public_getppid.py
+│        ├── test_public_getpwnam.py
+│        ├── test_public_setegid.py
+│        ├── test_public_seteuid.py
+│        ├── test_public_setpgid.py
+│        ├── test_public_setsid.py
+│           # Public test translations from public-test-*.js
+├── run_tests.sh
+│     # Simple script for one-click test execution
+└── project_structure.txt
+      # This file (structure overview and usage hints)
+
+# How to Run All Tests:
+#   1. Ensure Python 3.6+ is installed.
+#   2. ./run_tests.sh
+
+# How to Run Only Original or Public Tests:
+#   pytest tests/original/
+#   pytest public_tests/

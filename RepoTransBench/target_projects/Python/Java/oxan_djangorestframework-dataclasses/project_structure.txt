@@ -1,0 +1,58 @@
+oxan_djangorestframework-dataclasses/
+├── CHANGELOG.rst
+├── LICENSE
+├── README.rst
+├── codecov.yml
+├── htmlcov/
+│   └── ... (HTML code coverage assets)
+├── manage.py
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_functional.py
+│   ├── test_public_issues.py
+│   └── test_public_serializers.py
+├── pyproject.toml
+├── rest_framework_dataclasses/
+│   ├── __init__.py
+│   ├── field_utils.py
+│   ├── fields.py
+│   ├── py.typed
+│   ├── serializers.py
+│   ├── types.py
+│   └── typing_utils.py
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── DjangoSettingsTest.java
+│                   │   ├── FieldGenerationTest.java
+│                   │   ├── FieldUtilsTest.java
+│                   │   ├── FieldsTest.java
+│                   │   ├── FunctionalTest.java
+│                   │   ├── IssuesTest.java
+│                   │   ├── Py312Test.java
+│                   │   ├── SerializersTest.java
+│                   │   └── TypingUtilsTest.java
+│                   └── publictests/
+│                       ├── PublicFunctionalTest.java
+│                       ├── PublicIssuesTest.java
+│                       └── PublicSerializersTest.java
+├── test_summary.json
+├── tests/
+│   ├── __init__.py
+│   ├── django_settings.py
+│   ├── test_field_generation.py
+│   ├── test_field_utils.py
+│   ├── test_fields.py
+│   ├── test_functional.py
+│   ├── test_issues.py
+│   ├── test_py312.py
+│   ├── test_serializers.py
+│   └── test_typing_utils.py
+└── tox.ini

@@ -1,0 +1,11 @@
+{
+  "project_name": "AndroidAdvanceWithGeektime_Chapter07",
+  "language": "Java",
+  "coverage": {
+    "line": 87.0,
+    "branch": 90.9
+  },
+  "timestamp": "2025-06-19T17:42:23.163496",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/AndroidAdvanceWithGeektime_Chapter07",
+  "test_result_path": "/workspace/test_enhancement_results/Java/AndroidAdvanceWithGeektime_Chapter07"
+}

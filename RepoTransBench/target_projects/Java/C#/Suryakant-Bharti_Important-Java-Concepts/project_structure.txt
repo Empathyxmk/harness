@@ -1,0 +1,60 @@
+Project Structure for Suryakant-Bharti_Important-Java-Concepts (C# translation)
+-------------------------------------------------------------------------------
+
+Suryakant-Bharti_Important-Java-Concepts/
+├── src/
+│   └── SuryakantBhartiImportantJavaConcepts/
+│       ├── SuryakantBhartiImportantJavaConcepts.csproj        # Project file for main src
+│       ├── Adder.cs                                          # Adder class
+│       ├── ExampleOverloading.cs                             # ExampleOverloading class
+│       └── OverloadingCalculation2.cs                        # OverloadingCalculation2 class (with Main)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj                              # Test project for original (private) tests
+│       ├── AdderTests.cs                                     # Tests for Adder
+│       ├── ExampleOverloadingTests.cs                        # Tests for ExampleOverloading
+│       ├── ManualMainTests.cs                                # Manual tests for main logic
+│       └── OverloadingCalculation2Tests.cs                   # Tests for OverloadingCalculation2
+├── public_tests/
+│   ├── PublicTests.csproj                                    # Test project for public tests
+│   ├── AdderPublicTests.cs                                   # Public Tests for Adder
+│   ├── ExampleOverloadingPublicTests.cs                      # Public Tests for ExampleOverloading
+│   ├── ManualMainPublicTests.cs                              # Dummy Public Test for ManualMain
+│   └── OverloadingCalculation2PublicTests.cs                 # Public Tests for OverloadingCalculation2
+├── SuryakantBhartiImportantJavaConcepts.sln                  # Solution file
+├── run_tests.sh                                              # One script to build and run both test sets
+├── project_structure.txt                                     # This file (project tree and guide)
+└── README.md                                                 # Project documentation and instructions
+
+-------------------------------------------------------------------------------
+DIRECTORY EXPLANATIONS:
+
+src/SuryakantBhartiImportantJavaConcepts/:
+    Contains the main C# implementation files and class library for the sample project.
+
+tests/original/:
+    Contains the unit tests translated from the original, non-public ("private") Java tests.
+    - All logic, assertions, and test coverage from the original suite are included here.
+
+public_tests/:
+    Contains public test cases (from AdderPublicTest.java, ExampleOverloadingPublicTest.java, etc).
+    - These are designed for demonstration to users and for grading in public settings.
+
+-------------------------------------------------------------------------------
+BUILD & RUN INSTRUCTIONS:
+
+Prerequisites:
+- .NET 7 SDK+ required (install via https://dotnet.microsoft.com/download)
+
+Steps:
+1. To build and test everything, simply run:
+    ./run_tests.sh
+
+   This script builds the code and then runs both the "original" and "public" tests,
+   reporting summary results for each set.
+
+Notes:
+- All test logic (assertions, test data, etc.) are identical to the original Java/JUnit suite.
+- Projects use 'xUnit' for best C# testing framework compatibility.
+
+-------------------------------------------------------------------------------

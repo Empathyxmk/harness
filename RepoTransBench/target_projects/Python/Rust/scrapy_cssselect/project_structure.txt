@@ -1,0 +1,23 @@
+scrapy_cssselect_rs/
+├── Cargo.toml                   # Rust package manifest and dependencies
+├── src/
+│   ├── lib.rs                   # Library entry, stubs for cssselect api
+│   ├── parser.rs                # Parser module (stub, testable interface)
+│   └── xpath.rs                 # XPathExpr implementation (minimal for passing tests)
+├── tests/
+│   ├── original/                # Original (private) test cases
+│   │   ├── test_api_imports.rs
+│   │   └── test_xpath_expr.rs
+├── public_tests/
+│   ├── test_public_api_imports.rs
+│   └── test_public_xpath_expr.rs
+├── run_tests.sh                 # Script to run all tests (one-click)
+├── project_structure.txt        # This file: describes full layout
+# 
+# src/ contains library code (not fully implemented, stubbed to allow tests to compile).
+# tests/original/ contains original test cases from Python ported to Rust.
+# public_tests/ contains translated public test cases.
+#
+# To add more parser and main logic, implement in src/, ensuring all API signatures
+# used in the tests exist. All xfail/not implemented features are marked by unimplemented!()
+# Compile with `cargo build`, test with `./run_tests.sh`.

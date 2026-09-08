@@ -1,0 +1,20 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_bubble_sort.py
+│       ├── test_insertion_sort.py
+│       ├── test_list_selection_sort.py
+│       └── test_shell_sort.py
+└── public_tests/
+    ├── __init__.py
+    ├── test_bubble_sort_public.py
+    ├── test_insertion_sort_public.py
+    ├── test_list_selection_sort_public.py
+    ├── test_list_selection_sort_main_public.py
+    └── test_shell_sort_public.py

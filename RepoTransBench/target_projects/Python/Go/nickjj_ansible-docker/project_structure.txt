@@ -1,0 +1,26 @@
+project_root/
+├── README.md                                # Project overview and instructions
+├── go.mod                                   # Go module definition
+├── run_tests.sh                             # One-click test runner
+├── project_structure.txt                    # This structure description
+├── tests/
+│   ├── original/
+│   │   ├── dummy_logic_test.go              # Original DummyHost logic tests
+│   │   └── host_mock_test.go                # Host/infra simulation tests
+│   └── testutil.go                          # Common test helpers: dummy logic, mock host/etc
+├── public_tests/
+│   ├── public_dummy_logic_test.go           # Public sanitized DummyLogic tests
+│   └── public_host_mock_test.go             # Public/alternate HostMock and logic tests
+
+# Explanations:
+
+/tests/original/            - Full Go translations of the original Python private test cases
+/public_tests/              - Go translations of public/alternate test cases
+/tests/testutil.go          - All supporting structs, helpers, and test "mocks" for both suites
+go.mod                      - Go dependency/module file
+run_tests.sh                - Run all tests with one command
+README.md                   - Everything you need to know
+project_structure.txt       - This structure summary
+
+# To run all tests:
+#   ./run_tests.sh

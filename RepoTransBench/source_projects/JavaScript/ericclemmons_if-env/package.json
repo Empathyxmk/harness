@@ -1,0 +1,13 @@
+{
+  "name": "ericclemmons_if-env",
+  "version": "1.0.0",
+  "main": "bin/if-env.js",
+  "scripts": {
+    "test": "mocha --recursive test"
+  },
+  "devDependencies": {
+    "chai": "4.5.0",
+    "mocha": "10.8.2",
+    "nyc": "15.1.0"
+  }
+}

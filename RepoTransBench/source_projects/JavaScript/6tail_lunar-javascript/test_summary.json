@@ -1,0 +1,39 @@
+{
+  "project_name": "6tail_lunar-javascript",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 63.6,
+    "branch": 57.16
+  },
+  "timestamp": "2025-06-19T09:45:15.519411",
+  "original_path": "/workspace/runnable_filter/JavaScript/6tail_lunar-javascript",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/6tail_lunar-javascript",
+  "tests_path": [
+    "__tests__/EightChar.test.js",
+    "__tests__/Foto.test.js",
+    "__tests__/Fu.test.js",
+    "__tests__/Holiday.test.js",
+    "__tests__/I18n.test.js",
+    "__tests__/JieQi.test.js",
+    "__tests__/LiuYao.test.js",
+    "__tests__/Lunar.test.js",
+    "__tests__/LunarMonth.test.js",
+    "__tests__/LunarYear.test.js",
+    "__tests__/NineStar.test.js",
+    "__tests__/ShuJiu.test.js",
+    "__tests__/Solar.test.js",
+    "__tests__/SolarHalfYear.test.js",
+    "__tests__/SolarMonth.test.js",
+    "__tests__/SolarSeason.test.js",
+    "__tests__/SolarUtil.test.js",
+    "__tests__/SolarWeek.test.js",
+    "__tests__/SolarYear.test.js",
+    "__tests__/WuHou.test.js",
+    "__tests__/XingZuo.test.js",
+    "__tests__/Xun.test.js",
+    "__tests__/Yun.test.js",
+    "__tests__/index.test.js",
+    "__tests__/lunar_solar.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

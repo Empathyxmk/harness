@@ -1,0 +1,38 @@
+Ir1d_DARKFACE_eval_tools/
+├── py_ir1d_darkface_eval_tools/
+│   ├── __init__.py
+│   ├── boxoverlap.py
+│   ├── read_gt.py
+│   └── read_pred.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_boxoverlap.py       # Full original tests for boxoverlap
+│       ├── test_read_gt.py          # Full original tests for read_gt
+│       └── test_read_pred.py        # Full original tests for read_pred
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_boxoverlap.py           # Public interface tests for boxoverlap
+│   ├── test_read_gt.py              # Public interface tests for read_gt
+│   └── test_read_pred.py            # Public interface tests for read_pred
+├── requirements.txt
+├── README.md
+├── run_tests.sh
+└── project_structure.txt
+
+Directory Explanations:
+- py_ir1d_darkface_eval_tools/: Python source implementations, one file per main Matlab module being tested.
+- tests/original/: Full original test coverage, translated 1:1 from the original `test/Test*` Matlab files.
+- public_tests/: Translated public test suite, corresponding to `test/PublicTest*` files.
+- run_tests.sh: Minimal script to execute all tests using pytest (recursively all test dirs).
+- requirements.txt: Python dependencies for running tests and source (pytest, numpy).
+- README.md: Project and running/testing instructions.
+- project_structure.txt: (this file) project layout and explanation.
+
+Testing Instructions:
+1. Ensure Python 3.x and pip are installed.
+2. (Optional but recommended) Create and activate a virtual environment.
+3. Run: `pip install -r requirements.txt`
+4. Run all tests: `./run_tests.sh`
+All tests (original and public) will be discovered and run.

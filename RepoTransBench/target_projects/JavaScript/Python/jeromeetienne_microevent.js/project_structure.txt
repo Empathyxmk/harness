@@ -1,0 +1,33 @@
+project_root/
+├── requirements.txt                  # Python dependencies (pytest)
+├── run_tests.sh                      # Simple script to run all tests (pytest)
+├── README.md                         # (placeholder/readme)
+├── src/
+│   ├── __init__.py
+│   ├── microevent.py                 # MicroEvent implementation (stub for test needs)
+│   └── microevent_debug.py           # MicroEvent "debug" variant (stub)
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_microevent.py              # Original tests for microevent.js
+│   │   ├── test_microevent_extra.py        # Additional branches and edge cases
+│   │   └── test_microevent_debug.py        # Tests for microevent-debug.js variant
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_microevent_public.py           # Public branch: MicroEvent core, using alternate values
+│   ├── test_microevent_extra_public.py     # Public: extra/branch coverage
+│   └── test_microevent_debug_public.py     # Public: debug variant event system tests
+
+------------------------------------------------------------------------------------
+Directory explanations:
+- src/:           Contains microevent core/event code (Python stubs for compatibility with test suite).
+- tests/original/:  Fully translated original tests from JS ('tests/') covering all functional and edge paths.
+- public_tests/:  Equivalent to JS 'public_tests/' - public-facing alternates, using different event/param data.
+- run_tests.sh:   One-click execution; will run all tests from both public and original (pytest).
+- requirements.txt: Declares pytest as the test framework dependency.
+
+Test execution instructions:
+1. (Recommended) Use virtualenv: python3 -m venv venv && source venv/bin/activate
+2. Install requirements: pip install -r requirements.txt
+3. Run all tests via: ./run_tests.sh
+------------------------------------------------------------------------------------

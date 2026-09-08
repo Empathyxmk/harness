@@ -1,0 +1,25 @@
+/
+├── CSharpDubboMyBatisRedis.sln
+├── src/
+│   └── DearBingeOpenApi/
+│       ├── DearBingeOpenApi.csproj
+│       ├── HttpSessionConfig.cs
+│       ├── ParkingSpotDataTrans.cs
+│       ├── InfrastructDeal.cs
+│       └── Service/
+│           └── Impl/
+│               └── ParkingBasicDataSync.cs
+├── tests/
+│   ├── original/
+│   │   ├── OriginalTests.csproj
+│   │   ├── HttpSessionConfigTests.cs
+│   │   ├── ParkingSpotDataTransTests.cs
+│   │   └── ParkingBasicDataSyncTests.cs
+│   └── TestUtilities.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── HttpSessionConfigPublicTests.cs
+│   ├── ParkingSpotDataTransPublicTests.cs
+│   └── ParkingBasicDataSyncPublicTests.cs
+├── run_tests.sh
+├── test_translation_progress.json

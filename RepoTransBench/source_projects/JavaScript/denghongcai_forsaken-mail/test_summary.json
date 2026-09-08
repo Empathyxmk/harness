@@ -1,0 +1,20 @@
+{
+  "project_name": "denghongcai_forsaken-mail",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 92.85
+  },
+  "timestamp": "2025-06-19T10:15:48.614403",
+  "original_path": "/workspace/runnable_filter/JavaScript/denghongcai_forsaken-mail",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/denghongcai_forsaken-mail",
+  "tests_path": [
+    "tests/app.test.js",
+    "tests/modules_config.test.js",
+    "tests/modules_io.test.js",
+    "tests/modules_mailin.test.js",
+    "tests/public_app_client_placeholder.test.js",
+    "tests/routes_api.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

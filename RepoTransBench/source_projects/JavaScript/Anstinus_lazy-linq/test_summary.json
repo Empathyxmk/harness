@@ -1,0 +1,19 @@
+{
+  "project_name": "Anstinus_lazy-linq",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 98.05,
+    "branch": 94.9
+  },
+  "timestamp": "2025-06-19T09:54:20.281994",
+  "original_path": "/workspace/runnable_filter/JavaScript/Anstinus_lazy-linq",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/Anstinus_lazy-linq",
+  "tests_path": [
+    "src/spec/mergeSort.internal.spec.js",
+    "src/spec/linq.eval.spec.js",
+    "src/spec/mergeSort.spec.js",
+    "src/spec/linq.chain.spec.js",
+    "src/spec/linq.helper.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,39 @@
+stjordanis_betterprompt-java/
+├── pom.xml                    # Maven project configuration and dependencies (JUnit 5, Mockito)
+├── run_tests.sh               # Simple script to execute all tests via Maven
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── betterprompt/
+│   │               └── BetterPrompt.java     # Main class implementing required logic & dummies
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── betterprompt/
+│                   ├── original/
+│                   │   ├── InitModuleTest.java
+│                   │   ├── BetterPromptCoverageTest.java
+│                   │   ├── BetterPromptEdgeCasesTest.java
+│                   │   └── BetterPromptTest.java
+│                   └── public_tests/
+│                       ├── PublicInitModuleTest.java
+│                       ├── PublicBetterPromptCoverageTest.java
+│                       ├── PublicBetterPromptEdgecasesTest.java
+│                       └── PublicBetterPromptTest.java
+└── project_structure.txt      # Project layout and explanation
+
+# Directory explanations:
+# - pom.xml: Maven project and dependency config. Includes JUnit 5 and Mockito for testing & mocking.
+# - run_tests.sh: One-liner script for full test execution (./run_tests.sh). Runs ALL tests (both original and public).
+# - src/main/java/com/betterprompt/BetterPrompt.java: Java package with all main static logic, dummy classes, and export stubs.
+# - src/test/java/com/betterprompt/original/: All original (private) tests, directly ported from the Python "tests" directory.
+# - src/test/java/com/betterprompt/public_tests/: All public test cases, directly ported from the Python "public_tests" directory.
+#   * Public and original Java tests follow the naming and code from the Python side.
+# - project_structure.txt: This project structure documentation and file purpose notes.
+# 
+# Setup & test instructions:
+# 1. Ensure JDK 11+ and Maven are installed.
+# 2. Run all tests: `./run_tests.sh`
+# 3. Maven will build the project and execute all tests (original and public).
+#

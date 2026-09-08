@@ -1,0 +1,11 @@
+{
+  "project_name": "NetEase_arrow",
+  "language": "Java",
+  "coverage": {
+    "line": 55.0,
+    "branch": 61.1
+  },
+  "timestamp": "2025-06-19T23:15:29.183116",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/NetEase_arrow",
+  "test_result_path": "/workspace/test_enhancement_results/Java/NetEase_arrow"
+}

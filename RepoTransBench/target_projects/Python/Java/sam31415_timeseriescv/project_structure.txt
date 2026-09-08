@@ -1,0 +1,39 @@
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── sam31415/
+│   │               └── timeseriescv/
+│   │                   └── (PLACEHOLDER for actual library source files, if any)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── sam31415/
+│                   └── timeseriescv/
+│                       ├── original/
+│                       │   ├── BaseTimeSeriesCrossValidator.java
+│                       │   ├── CombPurgedKFoldCV.java
+│                       │   ├── CrossValidationTestUtils.java
+│                       │   ├── PurgedWalkForwardCV.java
+│                       │   ├── TestCrossValidation.java
+│                       │   └── TestCrossValidationErrors.java
+│                       └── public_tests/
+│                           ├── TestPublicCrossValidation.java
+│                           └── TestPublicCrossValidationErrors.java
+
+Legend:
+- pom.xml: Maven project config, dependencies, plugin setup.
+- run_tests.sh: Simple test runner (calls mvn clean test).
+- src/main/java: Placeholder for actual library sources (the timeseriescv logic, if ported to Java).
+- src/test/java: All test code.
+  - original/: All original (private) test case translations.
+  - public_tests/: All public test case translations.
+
+Instructions:
+1. Ensure Java 11+ and Maven are installed.
+2. Place/expand actual source library under src/main/java/com/sam31415/timeseriescv/ for full testing.
+3. Run all tests with: ./run_tests.sh
+4. To run only original or only public tests, use Maven with test includes (see README).

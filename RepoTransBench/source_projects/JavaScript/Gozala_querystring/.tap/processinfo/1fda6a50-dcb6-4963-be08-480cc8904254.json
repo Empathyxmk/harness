@@ -1,0 +1,244 @@
+{
+  "date": "2025-06-19T10:31:18.444Z",
+  "argv": [
+    "/usr/local/bin/node",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/test/tap-index.js"
+  ],
+  "execArgv": [
+    "--import=file:///workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import.mjs",
+    "--import=file:///workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/import.mjs",
+    "--enable-source-maps",
+    "--import=file:///workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/processinfo/dist/esm/import.mjs"
+  ],
+  "NODE_OPTIONS": "\"\" \"--require\" \"/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/node-preload/preload-path/node-preload.js\" \"--import=file:///workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/processinfo/dist/esm/import.mjs\" --require /workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/node-preload/preload-path/node-preload.js",
+  "cwd": "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring",
+  "pid": 1572090,
+  "ppid": 1572028,
+  "parent": null,
+  "uuid": "1fda6a50-dcb6-4963-be08-480cc8904254",
+  "files": [
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/test/tap-index.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/find-star-match.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/index.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/walk-up-path/dist/mjs/index.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/dist/esm/index.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/glob.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/has-magic.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/ignore.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/brace-expansion/index.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/dist/esm/assert-valid-pattern.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/dist/esm/ast.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/dist/esm/escape.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/dist/esm/unescape.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/pattern.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/path-scurry/dist/esm/index.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/walker.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/dist/esm/brace-expressions.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/path-scurry/node_modules/lru-cache/dist/esm/index.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/minipass/dist/esm/index.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/processor.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/loader.mjs",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/hooks.mjs",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/mock-service-client.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/mock-service.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/stack/dist/esm/index.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/index.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/is-relative-require.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/export-line.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/munge-mocks.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/resolve-mock-entry-point.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/service-key.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/commonjs/service-key.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/stack/dist/esm/call-site-like.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/stack/dist/esm/require-resolve.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/get-all-conditional-values.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/get-all-conditions.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/get-unique-condition-sets.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-all-exports.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-conditional-value.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-all-local-imports.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-import.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/is-windows.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/stack/dist/esm/parse.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/errors.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/get-conditional-values-list.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/read-pkg.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/get-named-exports-list.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-export.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/star-glob.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/to-path.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/file-exists.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/find-dep-package.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/to-file-url.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-dependency-export.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-package-import.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/read-json.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/test/index.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/index.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/decode.js",
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/encode.js"
+  ],
+  "sources": {
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/find-star-match.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/find-star-match.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/index.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/src/index.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/walk-up-path/dist/mjs/index.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/walk-up-path/src/index.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/dist/esm/index.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/src/index.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/glob.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/src/glob.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/has-magic.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/src/has-magic.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/ignore.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/src/ignore.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/dist/esm/assert-valid-pattern.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/src/assert-valid-pattern.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/dist/esm/ast.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/src/ast.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/dist/esm/escape.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/src/escape.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/dist/esm/unescape.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/src/unescape.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/pattern.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/src/pattern.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/path-scurry/dist/esm/index.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/path-scurry/src/index.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/walker.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/src/walker.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/dist/esm/brace-expressions.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/minimatch/src/brace-expressions.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/path-scurry/node_modules/lru-cache/dist/esm/index.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/path-scurry/node_modules/lru-cache/src/index.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/minipass/dist/esm/index.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/minipass/src/index.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/dist/esm/processor.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/node_modules/glob/src/processor.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/mock-service.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/src/mock-service.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/stack/dist/esm/index.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/stack/src/index.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/index.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/index.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/is-relative-require.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/is-relative-require.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/export-line.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/src/export-line.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/munge-mocks.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/src/munge-mocks.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/resolve-mock-entry-point.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/src/resolve-mock-entry-point.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/esm/service-key.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/src/service-key.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/dist/commonjs/service-key.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/mock/src/service-key-cjs.cts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/stack/dist/esm/call-site-like.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/stack/src/call-site-like.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/stack/dist/esm/require-resolve.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/stack/src/require-resolve.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/get-all-conditional-values.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/get-all-conditional-values.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/get-all-conditions.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/get-all-conditions.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/get-unique-condition-sets.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/get-unique-condition-sets.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-all-exports.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/resolve-all-exports.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-conditional-value.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/resolve-conditional-value.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-all-local-imports.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/resolve-all-local-imports.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-import.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/resolve-import.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/is-windows.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/is-windows.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/stack/dist/esm/parse.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/@tapjs/stack/src/parse.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/errors.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/errors.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/get-conditional-values-list.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/get-conditional-values-list.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/read-pkg.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/read-pkg.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/get-named-exports-list.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/get-named-exports-list.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-export.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/resolve-export.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/star-glob.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/star-glob.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/to-path.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/to-path.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/file-exists.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/file-exists.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/find-dep-package.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/find-dep-package.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/to-file-url.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/to-file-url.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-dependency-export.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/resolve-dependency-export.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/resolve-package-import.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/resolve-package-import.ts"
+    ],
+    "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/dist/esm/read-json.js": [
+      "/workspace/temp_testcase/test_generation_20250619_103046/Gozala_querystring/node_modules/resolve-import/src/read-json.ts"
+    ]
+  },
+  "root": "1fda6a50-dcb6-4963-be08-480cc8904254",
+  "externalID": "test/tap-index.js",
+  "code": 0,
+  "signal": null,
+  "runtime": 310.403473,
+  "globalsAdded": [
+    "__coverage__"
+  ]
+}

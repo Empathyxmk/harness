@@ -1,0 +1,59 @@
+{
+  "project_name": "aksakalli_gtop",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:41:43.745477",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/aksakalli_gtop",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/aksakalli_gtop",
+  "original_tests": {
+    "test_files": [
+      "lib/gtop.test.js",
+      "lib/utils.test.js",
+      "lib/monitor/disk.test.js",
+      "lib/monitor/mem.test.js",
+      "lib/monitor/net.test.js",
+      "lib/monitor/proc.test.js",
+      "lib/monitor/index.test.js",
+      "lib/monitor/cpu.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/lib/gtop.public.test.js",
+      "public_tests/lib/utils.public.test.js",
+      "public_tests/lib/monitor/disk.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/lib/monitor/mem.public.test.js",
+      "public_tests/lib/monitor/net.public.test.js",
+      "public_tests/lib/monitor/proc.public.test.js",
+      "public_tests/lib/monitor/index.public.test.js",
+      "public_tests/lib/monitor/cpu.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/lib/gtop.public.test.js",
+    "public_tests/lib/utils.public.test.js",
+    "public_tests/lib/monitor/disk.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/lib/monitor/mem.public.test.js",
+    "public_tests/lib/monitor/net.public.test.js",
+    "public_tests/lib/monitor/proc.public.test.js",
+    "public_tests/lib/monitor/index.public.test.js",
+    "public_tests/lib/monitor/cpu.public.test.js"
+  ]
+}

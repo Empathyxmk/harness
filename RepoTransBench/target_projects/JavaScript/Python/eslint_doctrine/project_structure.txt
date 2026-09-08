@@ -1,0 +1,25 @@
+project_root/
+├── requirements.txt               # Python dependencies
+├── run_tests.sh                   # One-click test script
+├── public_tests/                  # ALL public test cases (translated from JS)
+│   ├── __init__.py
+│   ├── test_midstream_public.py   # Translated from midstream.public.test.js
+│   ├── test_parse_public.py       # Translated from parse.public.test.js
+│   ├── test_strict_public.py      # Translated from strict.public.test.js
+│   ├── test_stringify_public.py   # Translated from stringify.public.test.js
+│   └── test_unwrap_public.py      # Translated from unwrap.public.test.js
+└── project_structure.txt          # This file: structure and explanation
+
+Directory explanations:
+- requirements.txt:       All Python dependencies, including pytest for testing
+- run_tests.sh:           Simple executable shell script to run all tests with pytest
+- public_tests/:          Directory for all public tests (each in its own Python file)
+- __init__.py:            Marks public_tests/ as a Python package, allows test discovery
+- test_*.py:              Translated test modules for each feature from JS source
+
+To run all tests:
+    1. Install python3 and pip if not present.
+    2. pip install -r requirements.txt
+    3. ./run_tests.sh
+
+Tests are discovered using pytest conventions, mapped directly from the original JavaScript Mocha/Should.js structure.

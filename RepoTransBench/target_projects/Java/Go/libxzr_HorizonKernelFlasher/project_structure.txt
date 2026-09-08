@@ -1,0 +1,31 @@
+libxzr_HorizonKernelFlasher/
+├── go.mod                        # Go module definition, declares dependencies (testify for mocking/assertions)
+├── run_tests.sh                  # Simple one-click script to execute all tests
+├── tests/
+│   ├── original/
+│   │   ├── main_activity_test.go       # Original translated tests for MainActivity
+│   │   ├── worker_test.go              # Original translated tests for Worker
+│   │   ├── assets_util_test.go         # Original translated tests for AssetsUtil
+│   │   └── testutil.go                 # (Stub) - place for helpers if needed
+├── public_tests/
+│   ├── main_activity_public_test.go    # Public version of MainActivity tests
+│   ├── worker_public_test.go           # Public version of Worker tests
+│   └── assets_util_public_test.go      # Public version of AssetsUtil tests
+└── project_structure.txt               # This structure file (documentation)
+
+Directory Explanations:
+- go.mod: Defines Go modules and dependencies (uses testify for mocking/assertions).
+- run_tests.sh: Run `./run_tests.sh` from the project root to execute ALL Go tests.
+- tests/original: Contains all original test cases translated from Java to Go.
+- tests/original/testutil.go: Space for common helper code for original tests, if needed.
+- public_tests: Contains all "public" test cases translated from Java; mirrors organization of original tests.
+
+Setup & Testing Instructions:
+1. **Install Go:** Ensure you have Go 1.20+ installed (`go version`)
+2. **Install dependencies:** `go mod tidy`
+3. **Run ALL tests:** From repo root, invoke:  
+   `./run_tests.sh`
+   or directly:  
+   `go test ./...`
+
+All tests are self-contained and run in-memory, using testify for assertions and mocking.

@@ -1,0 +1,18 @@
+pyga_parsley/
+├── Cargo.toml                 # Rust project configuration
+├── Cargo.lock                 # Rust dependency lockfile
+├── src/
+│   └── lib.rs                 # Main library file
+├── tests/
+│   ├── original/              # Original test cases translated from Python
+│   │   ├── test_builder_integration.rs
+│   │   ├── test_parsley_api.rs
+│   │   ├── test_vm_builder_integration.rs
+│   │   ├── test_parsley_end2end.rs
+│   │   └── ...
+│   ├── public/                # Public test cases
+│   │   ├── test_public_parsley.rs
+│   │   ├── test_public_builder.rs
+│   │   └── test_public_vm_builder.rs
+├── run_tests.sh               # Script to execute all tests
+├── README.md                  # Project documentation

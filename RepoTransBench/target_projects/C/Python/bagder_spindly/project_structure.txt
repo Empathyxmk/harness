@@ -1,0 +1,26 @@
+bagder_spindly/
+├── src/                                  # Source code directory for core logic (minimal implementation for testing)
+│   ├── __init__.py                       # Initializes src as a Python package
+│   ├── spdy_error.py                     # SPDY error constants
+│   ├── spdy_frame.py                     # SPDY frame structure and parsing logic
+│   ├── spdy_rst_stream.py                # SPDY RST_STREAM structure and parsing logic
+│   ├── spdy_headers.py                   # SPDY headers structure and parsing logic (includes mockable function)
+│   ├── spdy_nv_block.py                  # Placeholder for SPDY NV block structure
+│   ├── spindly_phys.py                   # Placeholder for spindly physical layer structure
+│   └── spdy_data.py                      # Data structure for byte cursor
+├── tests/                                # Directory for original test cases
+│   ├── __init__.py                       # Initializes tests as a Python package
+│   ├── original/                         # Subdirectory for original test cases
+│   │   ├── __init__.py                   # Initializes original as a Python package
+│   │   ├── test_spdy_frame.py            # Translated from tests/test_spdy_frame.c
+│   │   ├── test_spdy_rst_stream.py       # Translated from tests/test_spdy_rst_stream.c
+│   │   └── test_spdy_headers.py          # Translated from tests/test_spdy_headers.c (uses mocks)
+│   └── testdata.py                       # Translated from tests/testdata.c (contains byte data)
+├── public_tests/                         # Directory for public test cases
+│   ├── __init__.py                       # Initializes public_tests as a Python package
+│   ├── test_spdy_frame_public.py         # Translated from tests/test_spdy_frame_public.c
+│   ├── test_spdy_rst_stream_public.py    # Translated from tests/test_spdy_rst_stream_public.c
+│   └── test_spdy_headers_public.py       # Translated from tests/test_spdy_headers_public.c (uses specific mocks)
+├── requirements.txt                      # Lists Python dependencies (e.g., pytest)
+├── run_tests.sh                          # Script to execute all tests
+└── project_structure.txt                 # This file, documenting the project layout

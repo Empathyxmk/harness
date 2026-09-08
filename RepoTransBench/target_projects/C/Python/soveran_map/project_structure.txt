@@ -1,0 +1,18 @@
+project_root/
+├── map.c                               # The original C source file (System Under Test)
+├── requirements.txt                    # Lists Python dependencies (pytest)
+├── run_tests.sh                        # Script to compile C code and run all Python tests
+├── src/                                # Placeholder for potential Python source code (empty for this project)
+│   └── __init__.py                     # Marks src as a Python package
+├── test_inputs/                        # Directory for static test input files
+│   ├── input                           # Input data for original tests
+│   └── public_input                    # Input data for public tests
+├── tests/                              # Contains original and shared test components
+│   ├── __init__.py                     # Marks tests as a Python package
+│   ├── conftest.py                     # Pytest configuration and shared fixtures (e.g., C compilation, map execution helper)
+│   └── original/                       # Directory for translated original test cases
+│       ├── __init__.py                 # Marks original as a Python package
+│       └── test_map_original.py        # Translated tests from test/tests.sh
+└── public_tests/                       # Directory for translated public test cases
+    ├── __init__.py                     # Marks public_tests as a Python package
+    └── test_map_public.py              # Translated tests from test/public_tests.sh

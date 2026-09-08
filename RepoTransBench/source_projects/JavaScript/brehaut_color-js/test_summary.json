@@ -1,0 +1,16 @@
+{
+  "project_name": "brehaut_color-js",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 82.2,
+    "branch": 79.04
+  },
+  "timestamp": "2025-06-19T10:01:15.170908",
+  "original_path": "/workspace/runnable_filter/JavaScript/brehaut_color-js",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/brehaut_color-js",
+  "tests_path": [
+    "test/color-extra.test.js",
+    "test/color-test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

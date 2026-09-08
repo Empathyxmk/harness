@@ -1,0 +1,13 @@
+{
+  "name": "gozala_querystring",
+  "version": "1.0.0",
+  "description": "Querystring encode/decode implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "devDependencies": {
+    "jest": "^29.6.0"
+  }
+}

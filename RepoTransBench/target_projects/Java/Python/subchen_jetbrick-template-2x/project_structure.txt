@@ -1,0 +1,39 @@
+project_root/
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_directive_include.py
+│       ├── test_directive_if.py
+│       ├── test_directive_stop.py
+│       ├── test_directive_invalid.py
+│       ├── test_directive_call.py
+│       ├── test_directive_tag.py
+│       ├── test_directive_macro.py
+│       ├── test_issue_inconsistent_class.py
+│       ├── test_option_syntax.py
+│       ├── test_option_loadmacro.py
+│       ├── test_option_strict.py
+│       ├── test_option_import.py
+│       ├── test_option_safecall.py
+│       ├── test_option_trim_leading_whitespaces.py
+│       ├── test_operator_ternary.py
+│       ├── test_operator_unary.py
+│       ├── test_operator_equals.py
+│       ├── test_operator_binary.py
+│       ├── test_operator_bitwise.py
+│       ├── test_invoker_security_manager.py
+│       ├── test_invoker_index_get.py
+│       ├── test_invoker_new_object.py
+│       ├── test_invoker_function.py
+│       ├── test_invoker_void.py
+│       ├── test_invoker_method_extension.py
+│       ├── test_invoker_field.py
+│       ├── test_invoker_interface.py
+│       ├── test_invoker_new_array.py
+│       ├── test_invoker_method.py
+│       ├── test_config_trim_directive_whitespaces.py
+│       ├── test_config_trim_directive_comments_custom.py
+│       └── test_config_trim_directive_comments.py

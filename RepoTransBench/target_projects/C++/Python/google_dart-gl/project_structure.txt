@@ -1,0 +1,44 @@
+google_dart-gl-python/
+├── requirements.txt         # Python dependencies (pytest)
+├── run_tests.sh             # Simple test runner script (one-click)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_util.py     # Translated "private/original" test cases
+├── public_tests/
+│   ├── __init__.py
+│   └── test_util_public.py  # Translated "public" test cases
+└── project_structure.txt    # This file: structure and instructions
+
+-------------------------------------------------
+Directory explanations:
+
+requirements.txt
+    - Lists required dependencies (pytest) to run the tests.
+
+run_tests.sh
+    - Run ALL tests (original + public) in one step: `./run_tests.sh`
+
+tests/original/
+    - Contains Python translations of original/private C++ test cases from the `tests/` folder of the C++ project.
+
+public_tests/
+    - Contains Python translations of public/generated test cases.
+
+Instructions:
+1. Install dependencies:
+       pip install -r requirements.txt
+
+2. Run all tests:
+       ./run_tests.sh
+
+   (Both `tests/original/` and `public_tests/` will be executed.)
+
+3. To run only original/private tests:
+       pytest tests/original/
+
+4. To run only public tests:
+       pytest public_tests/
+
+-------------------------------------------------

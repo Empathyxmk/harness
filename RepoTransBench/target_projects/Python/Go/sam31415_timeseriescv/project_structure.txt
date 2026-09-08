@@ -1,0 +1,30 @@
+sam31415_timeseriescv/               # Go module root
+├── go.mod                           # Module configuration; declares the Go module and dependencies
+├── run_tests.sh                     # Simple one-click test runner (runs all tests with go test ./...)
+├── README.md                        # Project/usage documentation (not shown here)
+├── timeseriescv/                    # Package source (you'll need to implement actual library here)
+│   ├── cross_validation.go          # Translated source (not shown; here would live the core logic: PurgedWalkForwardCV, embargo, etc.)
+│   └── ...                          # Further library files needed
+├── tests/                           # Test root for all internal/original test cases
+│   └── original/                    # Original (non-public) tests
+│       ├── test_cross_validation_test.go
+│       └── test_cross_validation_errors_test.go
+├── public_tests/                    # Public/hidden test cases for grading
+│   ├── test_public_cross_validation_test.go
+│   └── test_public_cross_validation_errors_test.go
+
+# Directory explanations:
+# - go.mod: Module setup & dependency tracking
+# - run_tests.sh: Runs all module/unit tests (original & public) with one command
+# - timeseriescv/: All main library/package source code
+# - tests/original/: All original "private" tests (translated from Python original tests)
+# - public_tests/: All public tests (translated from Python public_tests)
+# - README.md: Usage, examples, and description
+
+# Setup and Testing:
+# 1. Install Go (>=1.18).
+# 2. To run ALL tests (original + public), simply:
+#      ./run_tests.sh
+# 3. To run a particular test package:
+#      go test ./tests/original
+#      go test ./public_tests

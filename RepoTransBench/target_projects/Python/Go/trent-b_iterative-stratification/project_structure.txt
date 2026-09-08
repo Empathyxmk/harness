@@ -1,0 +1,29 @@
+trent-b_iterative-stratification-go/
+├── go.mod                        # Go module definition, includes test dependency
+├── README.md                     # Project readme/documentation
+├── LICENSE                       # License file
+├── run_tests.sh                  # Simple one-click test runner for all tests in project
+├── tests/
+│   ├── ml_stratifiers_test.go    # Original test logic for ml_stratifiers
+│   ├── iterative_stratification_test.go # Original stratification tests
+│   └── init_and_setup_test.go    # Original project/package/disk presence tests
+├── public_tests/
+│   ├── ml_stratifiers_public_test.go   # Public test logic for ml_stratifiers
+│   ├── iterative_stratification_public_test.go # Public stratification tests
+│   └── init_and_setup_public_test.go   # Public project/package/disk presence tests
+└── project_structure.txt         # This project structure document
+
+# Directory explanations:
+# - go.mod:         Declares the module and its dependencies (here, only testify for assertions)
+# - run_tests.sh:   Main entrypoint; runs all Go tests for both tests/* and public_tests/*
+# - README.md:      Project documentation (mirrored from original if desired)
+# - LICENSE:        License file (mirrored from original if desired)
+# - tests/:         Directory for original, internal project test logic (ported from Python)
+# - public_tests/:  Directory for public-facing test logic (ported from Python)
+# - *_test.go:      Go convention for test files (recognized by `go test`)
+
+# Setup and Testing Instructions:
+# 1. Ensure Go is installed (v1.20+ recommended).
+# 2. Install dependencies: `go mod tidy`.
+# 3. Run all tests (original and public) with: `./run_tests.sh`.
+# 4. To run tests for a specific package: `go test ./tests/...` or `go test ./public_tests/...`

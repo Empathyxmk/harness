@@ -1,0 +1,70 @@
+{
+  "project_name": "kristerkari_react-native-svg-transformer",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": false,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:58:39.755963",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/kristerkari_react-native-svg-transformer",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/kristerkari_react-native-svg-transformer",
+  "original_tests": {
+    "test_files": [
+      "index.test.js",
+      "expo/index.test.js",
+      "react-native/index.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/index.public.test.js",
+      "public_tests/expo/index.public.test.js",
+      "public_tests/react-native/index.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/expo/index.public.test.js",
+      "public_tests/react-native/index.public.test.js",
+      "public_tests/index.public.test.js",
+      "public_tests/expo/index.public.test.js",
+      "public_tests/react-native/index.public.test.js",
+      "public_tests/index.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 10,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/index.public.test.js",
+    "public_tests/expo/index.public.test.js",
+    "public_tests/react-native/index.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/expo/index.public.test.js",
+    "public_tests/react-native/index.public.test.js",
+    "public_tests/index.public.test.js",
+    "public_tests/expo/index.public.test.js",
+    "public_tests/react-native/index.public.test.js",
+    "public_tests/index.public.test.js"
+  ],
+  "finished_data": {
+    "tests_path": [
+      "index.test.js",
+      "expo/index.test.js",
+      "react-native/index.test.js"
+    ],
+    "run_tests_path": "run_tests.sh",
+    "public_tests_path": [
+      "public_tests/index.public.test.js",
+      "public_tests/expo/index.public.test.js",
+      "public_tests/react-native/index.public.test.js"
+    ],
+    "run_public_tests_path": "run_public_tests.sh"
+  }
+}

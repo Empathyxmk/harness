@@ -1,0 +1,11 @@
+{
+  "project_name": "czz1233_GBByPass",
+  "language": "Java",
+  "coverage": {
+    "line": 91.7,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:14:18.744278",
+  "original_path": "/workspace/test_enhancement_results/Java/czz1233_GBByPass",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/czz1233_GBByPass"
+}

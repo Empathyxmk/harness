@@ -1,0 +1,11 @@
+{
+  "project_name": "fenjuly_ToggleExpandLayout",
+  "language": "Java",
+  "coverage": {
+    "line": 66.2,
+    "branch": 52.3
+  },
+  "timestamp": "2025-06-23T15:24:31.570917",
+  "original_path": "/workspace/runnable_filter/Java/fenjuly_ToggleExpandLayout",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/fenjuly_ToggleExpandLayout"
+}

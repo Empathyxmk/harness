@@ -1,0 +1,32 @@
+bevacqua_insane_python/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── project_structure.txt
+├── src/
+│   ├── __init__.py
+│   ├── attributes.py
+│   ├── defaults.py
+│   ├── elements.py
+│   ├── insane.py
+│   ├── lowercase.py
+│   ├── parser.py
+│   ├── sanitizer.py
+│   ├── toMap.py
+│   └── she.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_attributes.py
+│       ├── test_insane.py
+│       ├── test_parser.py
+│       ├── test_sanitizer.py
+│       └── test_toMap.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_attributes_public.py
+│   ├── test_parser_public.py
+│   ├── test_toMap_public.py
+│   ├── test_insane_public.py
+│   └── test_sanitizer_public.py

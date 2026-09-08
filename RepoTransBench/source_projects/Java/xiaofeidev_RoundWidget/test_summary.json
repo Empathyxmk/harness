@@ -1,0 +1,11 @@
+{
+  "project_name": "xiaofeidev_RoundWidget",
+  "language": "Java",
+  "coverage": {
+    "line": 68.2,
+    "branch": 59.4
+  },
+  "timestamp": "2025-06-20T04:25:58.399016",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/xiaofeidev_RoundWidget",
+  "test_result_path": "/workspace/test_enhancement_results/Java/xiaofeidev_RoundWidget"
+}

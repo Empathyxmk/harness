@@ -1,0 +1,42 @@
+C# Project Structure for agarciadom_xeger translation
+
+project_root/
+├── src/
+│   └── XegerLib/
+│       ├── XegerLib.csproj        # C# project file for main library
+│       └── Xeger.cs               # Xeger implementation (minimal for test compliance)
+├── tests/
+│   └── original/
+│       ├── XegerLib.Tests.Original.csproj      # Test project file for original tests
+│       ├── XegerEdgeTest.cs                     # Original edge test cases (translated)
+│       ├── XegerCoverageTest.cs                 # Original coverage test cases (translated)
+│       ├── XegerUtilsTest.cs                    # Original util test cases (translated)
+│       └── XegerTest.cs                         # Original main test cases (translated)
+├── public_tests/
+│   ├── XegerLib.Tests.Public.csproj              # Test project file for public tests
+│   ├── XegerEdgePublicTest.cs                    # Public version of edge tests
+│   ├── XegerCoveragePublicTest.cs                # Public version of coverage tests
+│   ├── XegerUtilsPublicTest.cs                   # Public version of util tests
+│   └── XegerPublicTest.cs                        # Public functional test
+├── run_tests.sh                                  # Test execution script
+└── project_structure.txt                         # This structure file
+
+Directory Descriptions:
+- src/XegerLib: Main source code library. Complete Xeger implementation should reside here.
+- tests/original: Original (non-public) translated tests. Use `dotnet test tests/original/`.
+- public_tests: Public version (non-proprietary) translated tests. Use `dotnet test public_tests/`.
+- run_tests.sh: Simple shell script to run all tests using .NET CLI.
+- project_structure.txt: This documentation file.
+
+Setup & Testing Instructions:
+1. Install .NET 6 SDK or later
+2. Install dependencies (will auto-resolve with first `dotnet restore`)
+3. To run ALL tests:
+   $ ./run_tests.sh
+4. To only run original or public tests:
+   $ dotnet test tests/original/
+   $ dotnet test public_tests/
+
+Custom Notes:
+- Xeger.cs includes only a minimal working stub required to make the test projects pass compile.
+- For actual use, Xeger.cs should be fully implemented to match the behavior for all supported regex patterns.

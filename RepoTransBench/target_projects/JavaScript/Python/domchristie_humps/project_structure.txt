@@ -1,0 +1,33 @@
+project_root/
+├── src/
+│   └── humps/
+│       ├── __init__.py              # Placeholder for Python humps implementation (not provided here)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_humps_extra.py      # Translation of test/humps-extra.test.js
+│       └── test_humps.py            # Translation of test/test.js
+├── public_tests/
+│   ├── __init__.py
+│   └── test_humps_extra_public.py   # Translation of public_tests/humps-extra.public.test.js
+├── requirements.txt                 # Dependency list for pip (pytest)
+├── run_tests.sh                     # Simple test execution script (run with ./run_tests.sh)
+└── project_structure.txt            # This file: documentation of the Python project tree
+
+Directory Explanations:
+- src/humps/:      Place your Python implementation (humps/__init__.py). Not provided here—stub/placeholder only.
+- tests/original/: Contains the original, private test suite, fully translated from JavaScript Mocha to Python Pytest.
+- public_tests/:   Contains translated public test(s) that users can view and run.
+- requirements.txt: Required pip dependencies, especially pytest for testing.
+- run_tests.sh:    Run all tests (original + public) with one command: './run_tests.sh'
+- project_structure.txt: Contains this tree and documentation.
+
+Setup:
+1. Install dependencies: pip install -r requirements.txt
+2. Implement the humps library in src/humps/__init__.py.
+3. Run all tests: ./run_tests.sh
+
+NOTE:
+- Tests are translated line-for-line from the original/test and public test JS files, preserving logic, assertions, and behaviors. All edge cases and JS-specific data behaviors (like undefined handling) are carefully ported.
+- You must provide a compatible implementation of the humps package in src/humps/__init__.py for the tests to pass.

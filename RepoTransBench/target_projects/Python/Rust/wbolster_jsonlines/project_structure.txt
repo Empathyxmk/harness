@@ -1,0 +1,34 @@
+wbolster_jsonlines_rs/
+├── Cargo.toml               # Rust package manifest
+├── src/
+│   └── lib.rs               # Library code (minimal, stub for tests)
+├── tests/
+│   ├── test_jsonlines.rs          # Original test set 1 (translated)
+│   ├── test_jsonlines_extra.rs    # Original test set 2 (translated)
+│   ├── test_typing.rs             # Original typing/compile checks
+│   └── test_error_conditions.rs   # Error conditions for original tests
+├── public_tests/
+│   ├── test_public_jsonlines.rs         # Public test set 1 (translated)
+│   ├── test_public_jsonlines_extra.rs   # Public test set 2
+│   ├── test_public_error_conditions.rs  # Public error/resilience tests
+│   └── test_public_typing.rs            # Public typing/compile checks
+├── run_tests.sh                # One-click test running script
+└── project_structure.txt       # Explanation of project structure
+
+Directory / File explanations:
+- src/lib.rs:       Contains a minimal jsonlines API stub for testing; real port would need a full implementation.
+- Cargo.toml:       Manages Rust dependencies and build config.
+- tests/:           Contains translations of the original 'tests/' Python tests. Run with cargo test.
+- public_tests/:    Contains translations of the 'public_tests/' Python tests, in Rust test format.
+- run_tests.sh:     Simple script to run *all* tests via cargo.
+- project_structure.txt:  This file, explaining structure and instructions.
+
+Setup & Testing Instructions:
+1. Ensure Rust (cargo) is installed.
+2. To run all tests: ./run_tests.sh   or  cargo test
+3. Code and test stubs are provided for translation/demo; real-world usage requires expanding src/lib.rs.
+
+Notes:
+- Public tests are structurally separate, but with Rust's standard cargo test, both will run together. You can ignore the distinction for most purposes.
+- Add your production code to src/lib.rs, and ensure all tests pass.
+- To add additional tests, place them in tests/ or public_tests/ folders.

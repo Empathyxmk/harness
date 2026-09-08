@@ -1,0 +1,188 @@
+" Author: Wolf Honore
+" _CoqProject parsing unit tests.
+
+Before (initialize):
+  call coqtail#compat#init('../python/')
+
+Execute (dot):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  call writefile(['-R . top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', d . '/', 'top'], args
+
+Execute (absolute-cwd):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  call writefile(['-R ' . d . ' top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', d . '/', 'top'], args
+
+Execute (relative-subdir):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  let sd = 'relative-subdir'
+  let dsd = join([d, sd], '/')
+  call mkdir(dsd)
+  call writefile(['-R ' . sd . ' top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', dsd . '/', 'top'], args
+
+Execute (relative-dot-subdir):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  let sd = 'relative-dot-subdir'
+  let dsd = join([d, sd], '/')
+  call mkdir(dsd)
+  call writefile(['-R ./' . sd . ' top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', dsd . '/', 'top'], args
+
+Execute (absolute-subdir):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  let sd = 'absolute-subdir'
+  let dsd = join([d, sd], '/')
+  call mkdir(dsd)
+  call writefile(['-R ' . dsd . ' top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', dsd . '/', 'top'], args
+
+Execute (sibling-dir):
+  let d = fnamemodify(tempname(), ':p:h')
+  let sd1 = 'sibling-dir1'
+  let sd2 = 'sibling-dir2'
+  let dsd1 = join([d, sd1], '/')
+  let dsd2 = join([d, sd2], '/')
+  let f = join([dsd1, 'f'], '/')
+  call mkdir(dsd1)
+  call mkdir(dsd2)
+  call writefile(['-R ../' . sd2 . ' top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', dsd2 . '/', 'top'], args
+
+Execute (split-line):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  call writefile(['-R', '.', 'top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', d . '/', 'top'], args
+
+Execute (multi-option-diff-lines):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  call writefile(['-R . top', '-Q . top2'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', d . '/', 'top', '-Q', d . '/', 'top2'], args
+
+Execute (multi-option-same-line):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  call writefile(['-R . top -Q . top2'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', d . '/', 'top', '-Q', d . '/', 'top2'], args
+
+Execute (extra-whitespace):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  call writefile([' -R  .  top '], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', d . '/', 'top'], args
+
+Execute (alternate-R):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  call writefile(['-R . -as top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', d . '/', '-as', 'top'], args
+
+Execute (I):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  call writefile(['-I . -R . top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-I', d . '/', '-R', d . '/', 'top'], args
+
+Execute (alternate-I):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  call writefile(['-include . -I . -as top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-include', d . '/', '-I', d . '/', '-as', 'top'], args
+
+Execute (expand-space):
+  let d = tempname()
+  let sd = 'space subdir'
+  let dsd = join([d, sd], '/')
+  call mkdir(dsd, 'p')
+  let f = join([dsd, '1'], '/')
+  call writefile(['-R . top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', dsd . '/', 'top'], args
+
+Execute (quote-space):
+  let d = tempname()
+  let sd = 'space subdir'
+  let dsd = join([d, sd], '/')
+  call mkdir(dsd, 'p')
+  let f = join([dsd, '1'], '/')
+  call writefile(['-R "' . dsd . '" top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', dsd . '/', 'top'], args
+
+Execute (quote-strip):
+  let d = tempname()
+  let sd = 'subdir'
+  let dsd = join([d, sd], '/')
+  call mkdir(dsd, 'p')
+  let f = join([dsd, '1'], '/')
+  call writefile(['-R "' . dsd . '" top'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', dsd . '/', 'top'], args
+
+Execute (quote-empty):
+  let f = tempname()
+  let d = fnamemodify(f, ':p:h')
+  call writefile(['-R . ""'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-R', d . '/', ''], args
+
+Execute (arg):
+  let f = tempname()
+  call writefile(['-arg -w -arg all'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-w', 'all'], args
+
+" See https://rocq-prover.org/doc/v8.19/refman/practical-tools/utilities.html#quoting-arguments-to-coqc
+Execute (double-quote-arg):
+  let f = tempname()
+  call writefile(['-arg "-w all"'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-w', 'all'], args
+
+Execute (single-quote-in-double-quote-arg):
+  let f = tempname()
+  call writefile(["-arg \"-set 'Default Goal Selector=!'\""], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['-set', 'Default Goal Selector=!'], args
+
+Execute (single-quote-not-in-double-quote-arg):
+  let f1 = tempname()
+  call writefile(["-arg 'foo bar'"], f1)
+  let args1 = coqtail#coqproject#parse(f1)
+  let f2 = tempname()
+  call writefile(["-arg foo \"bar'\""], f2)
+  let args2 = coqtail#coqproject#parse(f2)
+  AssertEqual args1, args2
+
+Execute (ignore-files):
+  let f = tempname()
+  call writefile(['-arg a', '-byte', 'A.v'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['a'], args
+
+Execute (ignore-comments):
+  let f = tempname()
+  call writefile(['# abc', '-arg a', '# def', '-arg b', '# ghi'], f)
+  let args = coqtail#coqproject#parse(f)
+  AssertEqual ['a', 'b'], args

@@ -1,0 +1,35 @@
+PaulSec_API-dnsdumpster.com C++ Project Structure
+
+.
+├── CMakeLists.txt
+├── include/
+│   └── DNSDumpsterAPI.h                # C++ interface for DNSDumpsterAPI (testable API)
+├── public_tests/
+│   ├── test_public_api.cpp             # Public-facing API test cases (translated)
+│   └── test_public_dnsdumpsterapi.cpp  # Public-facing API structure/attribute/result tests (translated)
+├── run_tests.sh                        # One-click test build and execution script
+├── src/
+│   └── lib/
+│       └── DNSDumpsterAPI.cpp          # Dummy implementation for linking and test-running
+├── tests/
+│   ├── original/
+│   │   ├── test_api_test.cpp           # Translated original test_api.py
+│   │   └── test_dnsdumpsterapi_test.cpp# Translated original test_dnsdumpsterapi.py
+│   └── test_main.cpp                   # GTest main entrypoint
+└── README.md                           # (not implemented here, but place for project info)
+
+Explanations:
+- CMakeLists.txt: Project and test configuration/build file. Handles GoogleTest, sources, and test executables.
+- include/: Public headers for API under test, exposes C++ interface mimicking the Python DNSDumpsterAPI.
+- src/lib/: Source/dummy implementation, always present for building (real API logic would go here).
+- tests/original/: Contains all original (private/internal) test files from the Python repo, fully translated to C++ (using GTest and modern C++).
+- tests/test_main.cpp: GTest program entrypoint.
+- public_tests/: Fully translated public tests, matching the public Python tests in input/output and logic, using C++ types and idioms.
+- run_tests.sh: Minimal script, builds and runs *all* tests (original and public) with one command.
+- README.md: Place for documentation/setup instructions, project overview.
+
+Instructions:
+1. Install CMake ≥3.10 and a C++14-compliant compiler.
+2. Install Python if not present (for GoogleTest FetchContent build dependency only).
+3. Run `chmod +x run_tests.sh`, then `./run_tests.sh` from the project root to build and run all tests.
+4. All tests (*original and public*) execute; status/results are shown in the terminal.

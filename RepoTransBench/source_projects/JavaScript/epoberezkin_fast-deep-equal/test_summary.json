@@ -1,0 +1,16 @@
+{
+  "project_name": "epoberezkin_fast-deep-equal",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.91,
+    "branch": 83.82
+  },
+  "timestamp": "2025-06-19T10:21:50.449524",
+  "original_path": "/workspace/runnable_filter/JavaScript/epoberezkin_fast-deep-equal",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/epoberezkin_fast-deep-equal",
+  "tests_path": [
+    "spec/index.spec.js",
+    "spec/react.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

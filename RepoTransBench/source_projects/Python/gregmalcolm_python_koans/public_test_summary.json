@@ -1,0 +1,86 @@
+{
+  "project_name": "gregmalcolm_python_koans",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:15:32.573605",
+  "original_path": "/workspace/verified_repos_v2/Python/gregmalcolm_python_koans",
+  "public_test_result_path": "/workspace/public_test_results/Python/gregmalcolm_python_koans",
+  "original_tests": {
+    "test_files": [
+      "runner/runner_tests/test_path_to_enlightenment.py",
+      "runner/runner_tests/test_mountain.py",
+      "runner/runner_tests/test_helper.py",
+      "runner/runner_tests/test_scent.py",
+      "runner/runner_tests/test_mock.py",
+      "runner/runner_tests/test_contemplate_koans.py",
+      "runner/runner_tests/test_sensei.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_path_to_enlightenment.py",
+      "public_tests/test_public_helper.py",
+      "public_tests/test_public_mountain.py",
+      "public_tests/test_public_scent.py",
+      "public_tests/test_public_mock.py",
+      "public_tests/test_public_contemplate_koans.py",
+      "public_tests/test_public_sensei.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_mock.py",
+      "public_tests/test_public_contemplate_koans.py",
+      "public_tests/test_public_scent.py",
+      "public_tests/test_public_helper.py",
+      "public_tests/test_public_sensei.py",
+      "public_tests/test_public_path_to_enlightenment.py",
+      "public_tests/test_public_mountain.py",
+      "public_tests/test_public_mock.py",
+      "public_tests/test_public_contemplate_koans.py",
+      "public_tests/test_public_mountain.py",
+      "public_tests/test_public_sensei.py",
+      "public_tests/test_public_path_to_enlightenment.py",
+      "public_tests/test_public_helper.py",
+      "public_tests/test_public_scent.py",
+      "public_tests/test_public_sensei.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 23,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_path_to_enlightenment.py",
+    "public_tests/test_public_helper.py",
+    "public_tests/test_public_mountain.py",
+    "public_tests/test_public_scent.py",
+    "public_tests/test_public_mock.py",
+    "public_tests/test_public_contemplate_koans.py",
+    "public_tests/test_public_sensei.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_mock.py",
+    "public_tests/test_public_contemplate_koans.py",
+    "public_tests/test_public_scent.py",
+    "public_tests/test_public_helper.py",
+    "public_tests/test_public_sensei.py",
+    "public_tests/test_public_path_to_enlightenment.py",
+    "public_tests/test_public_mountain.py",
+    "public_tests/test_public_mock.py",
+    "public_tests/test_public_contemplate_koans.py",
+    "public_tests/test_public_mountain.py",
+    "public_tests/test_public_sensei.py",
+    "public_tests/test_public_path_to_enlightenment.py",
+    "public_tests/test_public_helper.py",
+    "public_tests/test_public_scent.py",
+    "public_tests/test_public_sensei.py"
+  ]
+}

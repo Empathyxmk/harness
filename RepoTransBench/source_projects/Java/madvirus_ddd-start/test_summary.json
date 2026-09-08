@@ -1,0 +1,11 @@
+{
+  "project_name": "madvirus_ddd-start",
+  "language": "Java",
+  "coverage": {
+    "line": 56.0,
+    "branch": 52.0
+  },
+  "timestamp": "2025-06-23T13:49:13.997120",
+  "original_path": "/workspace/runnable_filter/Java/madvirus_ddd-start",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/madvirus_ddd-start"
+}

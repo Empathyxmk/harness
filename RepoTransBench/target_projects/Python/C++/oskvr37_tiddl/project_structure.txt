@@ -1,0 +1,31 @@
+oskvr37_tiddl-cpp/
+├── CMakeLists.txt
+├── include/
+│   └── tiddl/
+│       ├── exceptions.h
+│       ├── utils.h
+│       └── config.h
+├── src/
+│   ├── CMakeLists.txt
+│   ├── (source files for implementation - stubs for compilation)
+├── tests/
+│   ├── CMakeLists.txt
+│   ├── test_exceptions_unit.cpp
+│   ├── (other translated test_xxx.cpp files for original tests)
+├── public_tests/
+│   ├── CMakeLists.txt
+│   ├── (translated test_public_xxx.cpp files for public tests)
+├── build/
+│   ├── (cmake build directory)
+├── run_tests.sh
+└── README.md
+
+Explanations:
+- CMakeLists.txt: Top-level cmake configuration, sets up Google Test, project, and subdirectories.
+- include/: Public headers for core library (exceptions, utils, config, etc.).
+- src/: Source code implementation for Tiddl core library (add real code as needed, CMake expects suitable headers).
+- tests/: Original/internal/unit test translations, built as 'test_runner'.
+- public_tests/: Public tests, built as 'public_test_runner'.
+- build/: cmake build output directory (auto-generated).
+- run_tests.sh: Script to build and run *all* tests (both internal and public).
+- README.md: Usage, build, and documentation notes.

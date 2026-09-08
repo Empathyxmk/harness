@@ -1,0 +1,142 @@
+google_latexify_py/
+├── CODEOWNERS
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── checks.sh
+├── docs/
+│   ├── getting_started.md
+│   ├── index.md
+│   └── parameters.md
+├── example.jpg
+├── examples/
+│   └── latexify_examples.ipynb
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── __init__.py
+│   ├── integration_test_public_algorithmic_style.py
+│   ├── integration_test_public_regression.py
+│   ├── test_public_analyzers.py
+│   ├── test_public_ast_utils.py
+│   ├── test_public_config.py
+│   ├── test_public_config_extra.py
+│   ├── test_public_frontend.py
+│   ├── test_public_ipython_wrappers.py
+│   ├── test_public_parser.py
+│   └── test_public_utils.py
+├── pyproject.toml
+├── pytest.ini
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── conftest.py
+│   ├── integration_tests/
+│   │   ├── __init__.py
+│   │   ├── algorithmic_style_test.py
+│   │   ├── function_expansion_test.py
+│   │   ├── integration_utils.py
+│   │   └── regression_test.py
+│   ├── latexify/
+│   │   ├── __init__.py
+│   │   ├── _version.py
+│   │   ├── analyzers.py
+│   │   ├── analyzers_test.py
+│   │   ├── ast_utils.py
+│   │   ├── ast_utils_extra_test.py
+│   │   ├── ast_utils_test.py
+│   │   ├── codegen/
+│   │   │   ├── __init__.py
+│   │   │   ├── algorithmic_codegen.py
+│   │   │   ├── algorithmic_codegen_test.py
+│   │   │   ├── codegen_utils.py
+│   │   │   ├── codegen_utils_test.py
+│   │   │   ├── expression_codegen.py
+│   │   │   ├── expression_codegen_test.py
+│   │   │   ├── expression_rules.py
+│   │   │   ├── expression_rules_test.py
+│   │   │   ├── function_codegen.py
+│   │   │   ├── function_codegen_match_test.py
+│   │   │   ├── function_codegen_test.py
+│   │   │   ├── identifier_converter.py
+│   │   │   ├── identifier_converter_test.py
+│   │   │   ├── latex.py
+│   │   │   └── latex_test.py
+│   │   ├── config.py
+│   │   ├── config_test.py
+│   │   ├── conftest.py
+│   │   ├── exceptions.py
+│   │   ├── frontend.py
+│   │   ├── frontend_test.py
+│   │   ├── generate_latex.py
+│   │   ├── generate_latex_test.py
+│   │   ├── generate_latex_test2.py
+│   │   ├── ipython_wrappers.py
+│   │   ├── ipython_wrappers_test.py
+│   │   ├── parser.py
+│   │   ├── parser_test.py
+│   │   ├── test_utils.py
+│   │   └── transformers/
+│   │       ├── __init__.py
+│   │       ├── assignment_reducer.py
+│   │       ├── assignment_reducer_test.py
+│   │       ├── aug_assign_replacer.py
+│   │       ├── aug_assign_replacer_test.py
+│   │       ├── docstring_remover.py
+│   │       ├── docstring_remover_test.py
+│   │       ├── function_expander.py
+│   │       ├── function_expander_test.py
+│   │       ├── identifier_replacer.py
+│   │       ├── identifier_replacer_test.py
+│   │       ├── prefix_trimmer.py
+│   │       └── prefix_trimmer_test.py
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── latexify/
+│                       ├── original/
+│                       │   ├── AnalyzersTest.java
+│                       │   ├── AstUtilsTest.java
+│                       │   ├── ConfigTest.java
+│                       │   ├── FrontendTest.java
+│                       │   ├── GenerateLatexTest.java
+│                       │   ├── GenerateLatexTest2.java
+│                       │   ├── IpynbWrappersTest.java
+│                       │   ├── ParserTest.java
+│                       │   ├── TestUtilsTest.java
+│                       │   └── UtilsTest.java
+│                       ├── original/
+│                       │   └── analyzers/
+│                       │       └── AnalyzersExtraTest.java
+│                       │   └── astutils/
+│                       │       └── AstUtilsExtraTest.java
+│                       │   └── codegen/
+│                       │       ├── AlgorithmicCodegenTest.java
+│                       │       ├── CodegenUtilsTest.java
+│                       │       ├── ExpressionCodegenTest.java
+│                       │       ├── ExpressionRulesTest.java
+│                       │       ├── FunctionCodegenMatchTest.java
+│                       │       ├── FunctionCodegenTest.java
+│                       │       ├── IdentifierConverterTest.java
+│                       │       └── LatexTest.java
+│                       │   └── transformers/
+│                       │       ├── AssignmentReducerTest.java
+│                       │       ├── AugAssignReplacerTest.java
+│                       │       ├── DocstringRemoverTest.java
+│                       │       ├── FunctionExpanderTest.java
+│                       │       ├── IdentifierReplacerTest.java
+│                       │       └── PrefixTrimmerTest.java
+│                       └── publictests/
+│                           ├── PublicAnalyzersTest.java
+│                           ├── PublicAstUtilsTest.java
+│                           ├── PublicConfigExtraTest.java
+│                           ├── PublicConfigTest.java
+│                           ├── PublicFrontendTest.java
+│                           ├── PublicIntegrationAlgorithmicStyleTest.java
+│                           ├── PublicIntegrationRegressionTest.java
+│                           ├── PublicIpynbWrappersTest.java
+│                           ├── PublicParserTest.java
+│                           └── PublicUtilsTest.java
+└── test_summary.json

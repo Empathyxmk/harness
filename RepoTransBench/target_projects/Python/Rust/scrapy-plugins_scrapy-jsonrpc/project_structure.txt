@@ -1,0 +1,27 @@
+scrapy_jsonrpc/ (Rust ported project)
+
+├── Cargo.toml
+│   - Rust project metadata and dependencies.
+├── src/
+│   ├── lib.rs                      # Main library, exposing modules.
+│   ├── txweb.rs                    # txweb error types and logic, including JsonResource.
+│   ├── jsonrpc.rs                  # JSON-RPC logic and helpers, error/result formatting.
+│   └── serialize.rs                # Serialization utilities.
+├── tests/
+│   └── original/
+│       ├── test_jsonrpc.rs         # Original JSON-RPC comprehensive tests.
+│       ├── test_serialize.rs       # Original serialization coverage tests.
+│       └── test_txweb.rs           # Original txweb JsonResource and error handling.
+├── public_tests/
+│   ├── test_public_jsonrpc.rs      # Public test: jsonrpc_result_obj, error_obj functions.
+│   ├── test_public_serialize.rs    # Public test: serialization, UTF-8 helpers.
+│   └── test_public_txweb.rs        # Public test: Error properties, display, handler mimic.
+├── run_tests.sh
+│   - Simple script: executes all tests via cargo test.
+└── project_structure.txt
+    - This file: describes the structure and purpose.
+
+INSTRUCTIONS:
+- To run tests: execute `./run_tests.sh` (from project root)
+- All Rust implementation/mocks to support tests is present in src/
+- Original vs public test coverage is separated into `tests/original/` and `public_tests/` as in Python source.

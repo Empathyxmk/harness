@@ -1,0 +1,35 @@
+project_root/
+├── requirements.txt                # Python dependencies (only pytest needed)
+├── run_tests.sh                    # Simple test execution script (runs all tests via pytest)
+├── src/                            # Project source code (original JS code would be here, now Python)
+│   ├── __init__.py                 
+│   ├── index.py                    # Ported 'index.js' module for reactMixin logic
+│   └── toUnsafe.py                 # Ported 'toUnsafe.js' function logic
+├── tests/                          # All test code (original test cases in tests/original)
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_index_unit.py      # Translated from test/index.unit.test.js
+│       ├── test_toUnsafe.py        # Translated from test/toUnsafe.test.js
+│       └── test_toUnsafe_extra.py  # Translated from test/toUnsafe.extra.test.js
+├── public_tests/                   # All public test cases
+│   ├── __init__.py
+│   ├── test_index_unit_public.py       # Translated from public_tests/index.unit.public.test.js
+│   ├── test_toUnsafe_public.py         # Translated from public_tests/toUnsafe.public.test.js
+│   └── test_toUnsafe_extra_public.py   # Translated from public_tests/toUnsafe.extra.public.test.js
+└── project_structure.txt           # This file, explains project and directory structure
+
+# Directory and file explanations:
+
+# requirements.txt      - Declares test dependency (pytest).
+# run_tests.sh          - Simple bash script to run all tests using pytest.
+# src/                  - Contains ported core logic: toUnsafe (lifecycle renamer), index (react-mixin main).
+# tests/original/       - Original test cases translated from JS (mirrors JS test/ dir).
+# public_tests/         - Public test cases, mirrors JS 'public_tests/'.
+# project_structure.txt - This document, summarizes Python project structure and content.
+
+# To install dependencies:
+#   pip install -r requirements.txt
+# To run all tests:
+#   chmod +x run_tests.sh
+#   ./run_tests.sh

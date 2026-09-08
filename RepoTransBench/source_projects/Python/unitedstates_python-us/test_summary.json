@@ -1,0 +1,11 @@
+{
+  "project_name": "unitedstates_python-us",
+  "language": "Python",
+  "coverage": {
+    "line": 86.0,
+    "branch": 97.6
+  },
+  "timestamp": "2025-06-19T13:02:10.787658",
+  "original_path": "/workspace/runnable_filter/Python/unitedstates_python-us",
+  "test_result_path": "/workspace/test_enhancement_results/Python/unitedstates_python-us"
+}

@@ -1,0 +1,53 @@
+{
+  "project_name": "antiboredom_audiogrep",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:49:42.861438",
+  "original_path": "/workspace/verified_repos_v2/Python/antiboredom_audiogrep",
+  "public_test_result_path": "/workspace/public_test_results/Python/antiboredom_audiogrep",
+  "original_tests": {
+    "test_files": [
+      "audiogrep/tests/test_import_init.py",
+      "audiogrep/tests/test_api.py",
+      "audiogrep/tests/test_audiogrep.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "audiogrep/tests_public/test_import_init_public.py",
+      "audiogrep/tests_public/test_api_public.py",
+      "audiogrep/tests_public/test_audiogrep_public.py",
+      "run_public_tests.sh",
+      "audiogrep/tests_public/test_api_public.py",
+      "audiogrep/tests_public/test_audiogrep_public.py",
+      "audiogrep/tests_public/test_import_init_public.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "audiogrep/tests_public/test_import_init_public.py",
+    "audiogrep/tests_public/test_api_public.py",
+    "audiogrep/tests_public/test_audiogrep_public.py",
+    "run_public_tests.sh",
+    "audiogrep/tests_public/test_api_public.py",
+    "audiogrep/tests_public/test_audiogrep_public.py",
+    "audiogrep/tests_public/test_import_init_public.py",
+    "run_public_tests.sh"
+  ]
+}

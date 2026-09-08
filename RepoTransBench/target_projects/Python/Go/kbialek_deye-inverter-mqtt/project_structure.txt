@@ -1,0 +1,84 @@
+project_root/
+├── go.mod                      # Go module definition and dependencies tracking
+├── README.md                   # Project documentation and usage info
+├── main.go                     # (if needed) Application entry point or CLI
+├── src/
+│   ├── deye_active_power_regulation.go
+│   ├── deye_at_connector.go
+│   ├── deye_cli.go
+│   ├── deye_config.go
+│   ├── deye_connector.go
+│   ├── deye_connector_factory.go
+│   ├── deye_daemon.go
+│   ├── deye_docker_entrypoint.go
+│   ├── deye_events.go
+│   ├── deye_inverter_state.go
+│   ├── deye_modbus.go
+│   ├── deye_modbus_tcp.go
+│   ├── deye_modbus_tcp_custom.go
+│   ├── deye_mqtt.go
+│   ├── deye_mqtt_publisher.go
+│   ├── deye_multi_inverter_data_aggregator.go
+│   ├── deye_observation.go
+│   ├── deye_plugin_loader.go
+│   ├── deye_processor_factory.go
+│   ├── deye_sensor.go
+│   ├── deye_sensors.go
+│   ├── deye_sensors_aggregated.go
+│   ├── deye_sensors_deye_hybrid.go
+│   ├── deye_sensors_deye_sg01hp3.go
+│   ├── deye_sensors_deye_sg04lp3.go
+│   ├── deye_sensors_deye_sg04lp3_computed.go
+│   ├── deye_sensors_igen_dtsd422.go
+│   ├── deye_sensors_settings.go
+│   ├── deye_set_time_processor.go
+│   ├── deye_tcp_connector.go
+│   └── deye_timeofuse_service.go
+├── plugins/
+│   └── deye_plugin_sample.go
+├── tests/
+│   └── original/
+│       ├── deye_active_power_regulation_test.go
+│       ├── deye_at_connector_inttest.go
+│       ├── deye_at_connector_test.go
+│       ├── deye_config_test.go
+│       ├── deye_events_test.go
+│       ├── deye_inverter_state_test.go
+│       ├── deye_modbus_tcp_custom_test.go
+│       ├── deye_modbus_tcp_test.go
+│       ├── deye_mqtt_inttest.go
+│       ├── deye_mqtt_test.go
+│       ├── deye_multi_inverter_data_aggregator_test.go
+│       ├── deye_sensor_test.go
+│       ├── deye_set_time_processor_test.go
+│       ├── plugins_deye_plugin_sample_test.go
+│       ├── src_deye_docker_entrypoint_test.go
+│       └── src_deye_multi_inverter_data_aggregator_test.go
+├── public_tests/
+│   ├── public_deye_active_power_regulation_test.go
+│   ├── public_deye_at_connector_test.go
+│   ├── public_deye_config_test.go
+│   ├── public_deye_events_test.go
+│   ├── public_deye_inverter_state_test.go
+│   ├── public_deye_multi_inverter_data_aggregator_test.go
+│   ├── public_deye_sensor_test.go
+│   ├── public_deye_timeofuse_service_test.go
+│   ├── public_plugins_deye_plugin_sample_test.go
+│   ├── public_src_deye_docker_entrypoint_test.go
+├── run_tests.sh                # One-click script to run all Go tests
+└── README.md                   # Documentation for setup, development, and testing
+
+Directory Notes:
+- src/: Main Go implementation ("src" mirrors Python source usage, not Go standard but kept for transition). Consider re-exporting with canonical Go package paths once stable.
+- plugins/: Go translation of plugin samples, to mirror Python plugins.
+- tests/original/: Complete translations of all original Python unit/integration tests, named with *_test.go and using Go's testing package.
+- public_tests/: Complete translations of all public sample/coverage/demo tests, for external validation, education, and compliance.
+- run_tests.sh: Standard single-command test script – no arguments, just ./run_tests.sh
+- go.mod: Required for Go package and dependency management (run "go mod tidy" as needed).
+- README.md: Usage, development, build, and test instructions for new Go repo users.
+
+Quick Start:
+1. `go mod tidy` – download dependencies.
+2. `./run_tests.sh` – runs all unit, integration, and public tests with Go's standard test runner.
+
+All tests (`*_test.go`) in `tests/original/` and `public_tests/` will be discovered automatically by `go test ./...` and run.

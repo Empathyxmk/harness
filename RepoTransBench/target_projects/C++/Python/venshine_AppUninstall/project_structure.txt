@@ -1,0 +1,50 @@
+project_root/
+│
+├── requirements.txt
+│   - Python dependencies (pytest)
+│
+├── run_tests.sh
+│   - Simple bash script to run all tests (pytest)
+│
+├── project_structure.txt
+│   - Description of the project tree
+│
+├── src/
+│   └── appuninstall/
+│       ├── __init__.py
+│       └── uninstall.py
+│       - Implementation of the 'uninstall' features and C++ function analogs
+│
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_uninstall.py
+│       - Translated ORIGINAL tests from uninstall_test.cpp
+│
+└── public_tests/
+    ├── __init__.py
+    └── test_uninstall_public.py
+    - PUBLIC test cases, translated from uninstall_public_test.cpp
+────────────────────────────────────────────────────
+Directory explanations:
+- src/appuninstall/: 
+    Python module source code, mimicking logic of C++ uninstall.cpp.
+- tests/original/:
+    Python version of internal/original C++ test cases.
+- public_tests/: 
+    Python translation of public testing suite.
+- requirements.txt: 
+    List of required Python packages (pytest for testing).
+- run_tests.sh:
+    Simple test script to run all tests at once using pytest.
+
+Setup Instructions:
+1. (Optional) Create a virtualenv:
+     python3 -m venv venv && source venv/bin/activate
+2. Install dependencies:
+     pip install -r requirements.txt
+3. Run all tests:
+     ./run_tests.sh
+
+All tests will run via pytest, combining both original and public test suites.

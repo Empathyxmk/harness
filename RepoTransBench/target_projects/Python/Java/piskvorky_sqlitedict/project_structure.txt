@@ -1,0 +1,73 @@
+piskvorky_sqlitedict/
+├── CHANGELOG.md
+├── LICENSE.md
+├── MAINTAINERS.md
+├── MANIFEST.in
+├── Makefile
+├── README.rst
+├── benchmarks/
+│   └── test_insert.py
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_coverage_ext.py
+│   └── test_public_sqlitedict_extremes.py
+├── release/
+│   └── summarize_pr.py
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.py
+├── sqlitedict.py
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               ├── SqliteDict.java
+│   │               └── Util.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── AutocommitTest.java
+│                   │   ├── NamedSqliteDictTest.java
+│                   │   ├── OnImportTest.java
+│                   │   ├── SqliteDictBasicTest.java
+│                   │   ├── SqliteDictBranchedTest.java
+│                   │   ├── SqliteDictCoreTest.java
+│                   │   ├── SqliteDictCoverageExtTest.java
+│                   │   ├── SqliteDictEdgecasesTest.java
+│                   │   ├── SqliteDictErrorsTest.java
+│                   │   ├── SqliteDictExtraTest.java
+│                   │   ├── SqliteDictExtremeTest.java
+│                   │   ├── SqliteDictExtremesTest.java
+│                   │   └── TempSqliteDictTest.java
+│                   └── public_tests/
+│                       ├── PublicCoverageExtTest.java
+│                       └── PublicSqliteDictExtremesTest.java
+├── test_summary.json
+├── tests/
+│   ├── accessories.py
+│   ├── autocommit.py
+│   ├── db/
+│   │   ├── autocommit.sqlite
+│   │   ├── sqlitedict-override-test.sqlite
+│   │   └── sqlitedict-with-def.sqlite
+│   ├── db-encode-key/
+│   │   └── sqlitedict.sqlite
+│   ├── db-permdenied
+│   ├── test_autocommit.py
+│   ├── test_core.py
+│   ├── test_coverage_ext.py
+│   ├── test_named_db.py
+│   ├── test_onimport.py
+│   ├── test_sqlitedict_basic.py
+│   ├── test_sqlitedict_branches.py
+│   ├── test_sqlitedict_edgecases.py
+│   ├── test_sqlitedict_errors.py
+│   ├── test_sqlitedict_extra.py
+│   ├── test_sqlitedict_extremes.py
+│   └── test_temp_db.py
+└── tox.ini

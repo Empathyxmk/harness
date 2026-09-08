@@ -1,0 +1,18 @@
+{
+  "project_name": "BBuf_onnx_learn",
+  "language": "Python",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T11:30:44.399505",
+  "original_path": "/workspace/runnable_filter/Python/BBuf_onnx_learn",
+  "test_result_path": "/workspace/test_enhancement_results/Python/BBuf_onnx_learn",
+  "tests_path": [
+    "test_tool.py",
+    "test_tools_tool.py",
+    "test_onnxapi_creat_onnx_example.py",
+    "test_convert2onnx_pytorch2onnx_resize.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,29 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── project_structure.txt
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_activity.py
+│       ├── test_injection.py
+│       ├── test_dependency.py
+│       ├── test_key.py
+│       ├── test_singleton.py
+│       ├── test_transitive_dependency.py
+│       ├── test_provider_injection.py
+│       ├── test_field_injection.py
+│       ├── test_module_override.py
+│       ├── test_named_dependency.py
+│       ├── test_qualified_dependency.py
+│       ├── test_circular_dependency.py
+│       ├── test_ambiguous_module.py
+│       ├── test_polymorphic_dependency.py
+│       ├── test_pojo_provided_through_module.py
+│       └── test_startup_comparison.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_injection_public.py
+│   └── test_dependency_public.py

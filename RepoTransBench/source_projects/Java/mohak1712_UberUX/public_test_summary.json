@@ -1,0 +1,62 @@
+{
+  "project_name": "mohak1712_UberUX",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:17:36.647166",
+  "original_path": "/workspace/verified_repos_v2/Java/mohak1712_UberUX",
+  "public_test_result_path": "/workspace/public_test_results/Java/mohak1712_UberUX",
+  "original_tests": {
+    "test_files": [
+      "app/src/androidTest/java/mohak/uberux/ExampleInstrumentedTest.java",
+      "app/src/test/java/mohak/uberux/LoginActivityTest.java",
+      "app/src/test/java/mohak/uberux/CarsPagerAdapterTest.java",
+      "app/src/test/java/mohak/uberux/getPolylineTest.java",
+      "app/src/test/java/mohak/uberux/PasswordActivityTest.java",
+      "app/src/test/java/mohak/uberux/MapActivityTest.java",
+      "app/src/test/java/mohak/uberux/ExampleUnitTest.java",
+      "app/src/test/java/mohak/uberux/BaseActivityTest.java",
+      "app/src/test/java/mohak/uberux/LoginWithPhoneTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 9,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "app/src/test/java/mohak/uberux/CarsPagerAdapterPublicTest.java",
+      "app/src/test/java/mohak/uberux/LoginActivityPublicTest.java",
+      "app/src/test/java/mohak/uberux/ExampleUnitPublicTest.java",
+      "app/src/test/java/mohak/uberux/ExampleInstrumentedPublicTest.java",
+      "run_public_tests.sh",
+      "app/src/test/java/mohak/uberux/LoginWithPhonePublicTest.java",
+      "app/src/test/java/mohak/uberux/PasswordActivityPublicTest.java",
+      "app/src/test/java/mohak/uberux/BaseActivityPublicTest.java",
+      "app/src/test/java/mohak/uberux/getPolylinePublicTest.java",
+      "app/src/test/java/mohak/uberux/MapActivityPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 10,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "app/src/test/java/mohak/uberux/CarsPagerAdapterPublicTest.java",
+    "app/src/test/java/mohak/uberux/LoginActivityPublicTest.java",
+    "app/src/test/java/mohak/uberux/ExampleUnitPublicTest.java",
+    "app/src/test/java/mohak/uberux/ExampleInstrumentedPublicTest.java",
+    "run_public_tests.sh",
+    "app/src/test/java/mohak/uberux/LoginWithPhonePublicTest.java",
+    "app/src/test/java/mohak/uberux/PasswordActivityPublicTest.java",
+    "app/src/test/java/mohak/uberux/BaseActivityPublicTest.java",
+    "app/src/test/java/mohak/uberux/getPolylinePublicTest.java",
+    "app/src/test/java/mohak/uberux/MapActivityPublicTest.java"
+  ]
+}

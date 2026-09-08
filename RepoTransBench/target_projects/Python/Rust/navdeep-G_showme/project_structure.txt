@@ -1,0 +1,46 @@
+Project Structure for navdeep-G_showme (Rust translation)
+==========================================================
+
+showme/
+├── Cargo.toml            # Rust crate configuration
+├── run_tests.sh          # Simple script to run all tests
+├── project_structure.txt # Explanation of structure & instructions
+├── src/
+│   ├── lib.rs            # Root library file (exports modules)
+│   └── core.rs           # Core utilities, ported for test coverage
+├── tests/
+│   └── original/
+│       ├── test_docs.rs
+│       ├── test_trace.rs
+│       ├── test_core_additional.rs
+│       ├── test_setup_py.rs
+│       ├── test_time.rs
+│       └── test_cputime.rs
+├── public_tests/
+│   ├── test_public_docs.rs
+│   ├── test_public_trace.rs
+│   ├── test_public_core_additional.rs
+│   ├── test_public_cputime.rs
+│   ├── test_public_time.rs
+│   └── test_public_setup_py.rs
+
+Directory Explanations:
+-----------------------
+src/              - Library source code, modules provided to support tests.
+tests/original/   - Original test cases from showme/tests/ in Python project.
+public_tests/     - Public test cases ported from public_tests/ in the Python project.
+
+Build & run instructions:
+-------------------------
+- To run all tests (original + public):  
+  $ chmod +x run_tests.sh  
+  $ ./run_tests.sh
+
+- To run only original set:  
+  $ cargo test --test test_docs --test test_trace --test test_core_additional --test test_setup_py --test test_time --test test_cputime
+
+- To run only public tests:  
+  $ cargo test --test test_public_docs --test test_public_trace --test test_public_core_additional --test test_public_cputime --test test_public_time --test test_public_setup_py
+
+No external dependencies are required for this translation.
+All test logic is included and covered.

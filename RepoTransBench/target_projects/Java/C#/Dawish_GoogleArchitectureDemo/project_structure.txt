@@ -1,0 +1,51 @@
+Dawish_GoogleArchitectureDemo/
+├── DawishGoogleArchitectureDemo.sln
+├── src/
+│   └── DawishGoogleArchitectureDemo/
+│       ├── DawishGoogleArchitectureDemo.csproj
+│       └── (application code: classes, models, utilities etc.)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── ExampleInstrumentedTests/
+│       │   ├── ArchitectureGoogleCoremodelExampleInstrumentedTest.cs
+│       │   ├── GoogleArchitectureCoremodelExampleInstrumentedTest.cs
+│       │   ├── GoogleArchitectureExampleInstrumentedTest.cs
+│       │   ├── GoogleArchitectureGirlsExampleInstrumentedTest.cs
+│       │   ├── GoogleArchitectureSpecificExampleInstrumentedTest.cs
+│       │   ├── GoogleArchitectureCommonExampleInstrumentedTest.cs
+│       │   ├── GoogleArchitectureNewsExampleInstrumentedTest.cs
+│       │   ├── GoogleArchitectureOpensourceExampleInstrumentedTest.cs
+│       ├── ExampleUnitTests/
+│       │   ├── ArchitectureGoogleCoremodelExampleUnitTest.cs
+│       │   ├── GoogleArchitectureCoremodelExampleUnitTest.cs
+│       │   ├── GoogleArchitectureExampleUnitTest.cs
+│       │   ├── GoogleArchitectureGirlsExampleUnitTest.cs
+│       │   ├── GoogleArchitectureSpecificExampleUnitTest.cs
+│       │   ├── GoogleArchitectureCommonExampleUnitTest.cs
+│       │   ├── GoogleArchitectureNewsExampleUnitTest.cs
+│       │   ├── GoogleArchitectureOpensourceExampleUnitTest.cs
+│       ├── CoreModelUtil/
+│       │   ├── JsonUtilTest.cs
+│       │   ├── SwitchSchedulersTest.cs
+│       │   ├── NetUtilsTest.cs
+│       ├── CommonService/
+│       │   ├── TestService.cs
+│       │   └── TestServiceImpl.cs
+│       └── test_summary.json
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── ExampleInstrumentedPublicTests/
+│   │   ├── ArchitectureGoogleCoremodelExampleInstrumentedPublicTest.cs
+│   │   └── GoogleArchitectureCoremodelExampleInstrumentedPublicTest.cs
+│   ├── ExampleUnitPublicTests/
+│   │   ├── ArchitectureGoogleCoremodelExampleUnitPublicTest.cs
+│   │   ├── GoogleArchitectureCoremodelExampleUnitPublicTest.cs
+│   │   └── PublictestsExampleUnitPublicTest.cs
+│   ├── CoreModelUtil/
+│   │   ├── JsonUtilPublicTest.cs
+│   │   ├── NetUtilsPublicTest.cs
+│   │   ├── SwitchSchedulersPublicTest.cs
+│   ├── public_test_summary.json
+├── run_tests.sh
+├── test_translation_progress.json

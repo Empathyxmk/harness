@@ -1,0 +1,15 @@
+.
+├── go.mod                          # Go module definition
+├── README.md                       # Project documentation
+├── run_tests.sh                    # One-click script to run all tests
+├── src/
+│   └── slapping/
+│       └── slap_that_like_button.go # Main implementation of the like button logic
+├── tests/
+│   └── original/                   # Directory for original (non-public) tests
+│       ├── slapping_test.go
+│       ├── slap_that_like_button_test.go
+│       └── testutil.go             # (Helper, placeholder)
+├── public_tests/
+│   ├── public_slap_that_like_button_test.go # Translated public tests
+│   └── public_slapping_test.go

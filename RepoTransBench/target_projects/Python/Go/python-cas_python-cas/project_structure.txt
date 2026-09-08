@@ -1,0 +1,22 @@
+casproject/
+├── go.mod
+├── main.go                # (placeholder for optional main logic)
+├── cas/                   # package containing Go translation of cas.py functionality (to be implemented as needed)
+│   └── cas.go
+├── tests/
+│   ├── original/
+│   │   ├── cas_test.go
+│   │   ├── cas_error_and_slo_test.go
+│   │   ├── cas_uncovered_test.go
+│   │   ├── cas_smoketest.go
+│   │   └── cas_extra_test.go
+│   └── testutil.go        # (for common test helpers, if needed)
+├── public_tests/
+│   ├── public_cas_test.go
+│   ├── public_cas_error_and_slo_test.go
+│   ├── public_cas_uncovered_test.go
+│   ├── public_cas_smoketest.go
+│   └── public_cas_extra_test.go
+├── run_tests.sh
+├── README.md
+├── test_translation_progress.json

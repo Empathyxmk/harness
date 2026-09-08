@@ -1,0 +1,49 @@
+Project Structure:
+
+/
+├── Demo.sln
+├── src/
+│   ├── SsoApplication.cs              # Main implementation file (simulated logic as per test needs)
+│   └── SsoApplication.csproj          # Project file for source
+├── tests/
+│   └── original/
+│       ├── ApplicationTests.cs        # Basic sanity test (translated from Java)
+│       ├── SsoApplicationTest.cs      # All original test cases from src/test/java/demo/SsoApplicationTest.java
+│       └── OriginalTests.csproj       # xUnit+Moq test project file
+├── public_tests/
+│   ├── SsoApplicationPublicTest.cs    # Translated public tests from src/test/java/demo/SsoApplicationPublicTest.java
+│   └── PublicTests.csproj             # xUnit+Moq test project file
+├── run_tests.sh                       # Simple script to run all tests
+└── project_structure.txt              # This file (project tree and instructions)
+
+Directory/Files AND Purposes:
+----------------------------------------------------------
+- Demo.sln                : Solution file - binds src & test projects.
+- src/SsoApplication.cs   : Contains the simulated SSO logic and classes needed for tests.
+- src/SsoApplication.csproj: Project descriptor for SsoApplication.
+- tests/original/         : Contains all original (non-public) test code, matching Java test logic.
+- public_tests/           : Contains all public test cases, matching Java logic but in public C# tests.
+- run_tests.sh            : One-click run-all-tests script.
+- project_structure.txt   : This description/reference file.
+
+----------------------------------------------------------
+Setup Instructions:
+
+1. Prerequisites:
+   - .NET 6.0 SDK or higher
+   - bash
+
+2. To restore packages and build:
+   dotnet restore
+   dotnet build
+
+3. To run ALL tests:
+   ./run_tests.sh
+
+   Or, for specific test projects:
+   dotnet test tests/original/OriginalTests.csproj
+   dotnet test public_tests/PublicTests.csproj
+
+4. Test results will display in standard output.
+
+----------------------------------------------------------

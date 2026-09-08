@@ -1,0 +1,45 @@
+MaskerLogger C++ Project Structure
+==================================
+.
+├── CMakeLists.txt
+├── src/
+│   ├── CMakeLists.txt
+│   ├── ahocorasick_regex_match.cpp
+│   ├── masker_formatter.cpp
+│   ├── utils.cpp
+│   └── lib/
+│       ├── (extra modules as needed)
+├── include/
+│   ├── ahocorasick_regex_match.h
+│   ├── masker_formatter.h
+│   ├── utils.h
+│   └── (headers as needed)
+├── tests/
+│   ├── original/
+│   │   ├── test_utils.cpp
+│   │   ├── test_masked_logger.cpp
+│   │   ├── test_masker_formatter.cpp
+│   │   ├── test_utils_additional.cpp
+│   │   ├── test_secrets_in_logs_example.cpp
+│   │   ├── test_ahocorasick_regex_match.cpp
+│   │   └── test_ahocorasick_regex_match_additional.cpp
+│   ├── test_main.cpp
+├── public_tests/
+│   ├── test_public_utils.cpp
+│   ├── test_public_masked_logger.cpp
+│   ├── test_public_masker_formatter.cpp
+│   ├── test_public_utils_additional.cpp
+│   ├── test_public_secrets_in_logs_example.cpp
+│   ├── test_public_ahocorasick_regex_match.cpp
+│   ├── test_public_ahocorasick_regex_match_additional.cpp
+│   └── conftest.cpp (not needed in C++, can be omitted)
+├── run_tests.sh
+└── README.md
+
+Key Points:
+- All tests based on Google Test (gtest)
+- All testable logic implemented in src/ and include/
+- tests/original/ holds translations of original Python tests
+- public_tests/ holds translations of "public" test files
+- All tests runnable with ./run_tests.sh
+- Batch translation tracked via test_translation_progress.json

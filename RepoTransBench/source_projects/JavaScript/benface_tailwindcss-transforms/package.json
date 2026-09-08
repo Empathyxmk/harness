@@ -1,0 +1,24 @@
+{
+  "name": "tailwindcss-transforms",
+  "version": "2.2.0",
+  "description": "Tailwind CSS plugin to generate transform utilities",
+  "author": "Benoît Rouleau <benoit.rouleau@icloud.com>",
+  "license": "ISC",
+  "repository": "https://github.com/benface/tailwindcss-transforms.git",
+  "bugs": "https://github.com/benface/tailwindcss-transforms/issues",
+  "homepage": "https://github.com/benface/tailwindcss-transforms",
+  "scripts": {
+    "test": "jest",
+    "release": "f(){ release-it $1 && github-release-from-changelog ;};f"
+  },
+  "devDependencies": {
+    "github-release-from-changelog": "^2.1.0",
+    "jest": "^29.7.0",
+    "jest-matcher-css": "^1.1.0",
+    "lodash": "^4.17.21",
+    "nyc": "^17.1.0",
+    "postcss": "^7.0.39",
+    "release-it": "^12.4.3",
+    "tailwindcss": "^1.9.6"
+  }
+}

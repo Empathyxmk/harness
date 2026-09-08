@@ -1,0 +1,11 @@
+{
+  "project_name": "1321928757_Concurrent-MulThread",
+  "language": "Java",
+  "coverage": {
+    "line": 69.4,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-23T11:06:55.710003",
+  "original_path": "/workspace/runnable_filter/Java/1321928757_Concurrent-MulThread",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/1321928757_Concurrent-MulThread"
+}

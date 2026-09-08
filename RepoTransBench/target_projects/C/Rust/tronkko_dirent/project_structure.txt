@@ -1,0 +1,21 @@
+tronkko_dirent_rust/
+├── Cargo.toml
+├── src/
+│   ├── main.rs
+│   ├── lib.rs
+│   └── examples/
+│       ├── mod.rs
+│       ├── cat.rs
+│       ├── scandir.rs
+│       ├── find.rs
+│       └── ls.rs
+├── tests/
+│   └── original/
+│       ├── test_examples_cat.rs
+│       ├── test_examples_scandir.rs
+│       ├── test_examples_find.rs
+│       └── test_examples_ls.rs
+├── public_tests/
+│   └── run_public_tests.rs
+├── run_tests.sh
+└── project_structure.txt

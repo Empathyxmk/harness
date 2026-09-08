@@ -1,0 +1,106 @@
+olzhasar_pytest-watcher/
+├── CHANGELOG.md
+├── Cargo.toml
+├── LICENSE
+├── README.md
+├── docs/
+│   ├── Makefile
+│   ├── _static/
+│   │   └── preview.gif
+│   ├── conf.py
+│   ├── index.md
+│   ├── make.bat
+│   └── requirements.txt
+├── htmlcov/
+│   └── ... (html coverage files)
+├── poetry.lock
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_commands.py
+│   ├── test_public_commands.rs
+│   ├── test_public_config.py
+│   ├── test_public_config.rs
+│   ├── test_public_config_missing_file.py
+│   ├── test_public_config_missing_file.rs
+│   ├── test_public_constants.py
+│   ├── test_public_constants.rs
+│   ├── test_public_event_handler.py
+│   ├── test_public_event_handler.rs
+│   ├── test_public_import_packages.py
+│   ├── test_public_import_packages.rs
+│   ├── test_public_main_module.py
+│   ├── test_public_main_module.rs
+│   ├── test_public_parse.py
+│   ├── test_public_parse.rs
+│   ├── test_public_parse_arguments.py
+│   ├── test_public_parse_arguments.rs
+│   ├── test_public_terminal.py
+│   ├── test_public_terminal.rs
+│   ├── test_public_trigger.py
+│   ├── test_public_trigger.rs
+│   ├── test_public_watcher.py
+│   ├── test_public_watcher.rs
+│   ├── test_public_watcher_imports.py
+│   └── test_public_watcher_imports.rs
+├── pyproject.toml
+├── pytest_watcher/
+│   ├── __init__.py
+│   ├── __main__.py
+│   ├── commands.py
+│   ├── config.py
+│   ├── constants.py
+│   ├── event_handler.py
+│   ├── parse.py
+│   ├── terminal.py
+│   ├── trigger.py
+│   └── watcher.py
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── commands.rs
+│   ├── config.rs
+│   ├── constants.rs
+│   ├── event_handler.rs
+│   ├── lib.rs
+│   ├── parse.rs
+│   ├── terminal.rs
+│   ├── trigger.rs
+│   └── watcher.rs
+├── test_summary.json
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── original/
+│   │   ├── test_commands.rs
+│   │   ├── test_config.rs
+│   │   ├── test_config_missing_file.rs
+│   │   ├── test_constants.rs
+│   │   ├── test_event_handler.rs
+│   │   ├── test_import_packages.rs
+│   │   ├── test_main_module.rs
+│   │   ├── test_parse.rs
+│   │   ├── test_parse_arguments.rs
+│   │   ├── test_terminal.rs
+│   │   ├── test_trigger.rs
+│   │   ├── test_watcher.rs
+│   │   └── test_watcher_imports.rs
+│   ├── test_commands.py
+│   ├── test_config.py
+│   ├── test_config_missing_file.py
+│   ├── test_constants.py
+│   ├── test_event_handler.py
+│   ├── test_import_packages.py
+│   ├── test_main_module.py
+│   ├── test_parse.py
+│   ├── test_parse_arguments.py
+│   ├── test_terminal.py
+│   ├── test_trigger.py
+│   ├── test_watcher.py
+│   ├── test_watcher_imports.py
+│   └── tmp/
+│       └── test/
+│           └── nested/
+│               └── dir/
+└── tox.ini

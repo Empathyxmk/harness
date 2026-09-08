@@ -1,0 +1,85 @@
+{
+  "project_name": "careercup_CtCI-6th-Edition-JavaScript-ES2015",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:42:18.354351",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/careercup_CtCI-6th-Edition-JavaScript-ES2015",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/careercup_CtCI-6th-Edition-JavaScript-ES2015",
+  "original_tests": {
+    "test_files": [
+      "src/chapter4/ch4-q12.spec.js",
+      "src/chapter4/ch4-q08.spec.js",
+      "src/chapter4/ch4-q07.spec.js",
+      "src/chapter4/ch4-q06.spec.js",
+      "src/chapter4/ch4-q02.spec.js",
+      "src/chapter4/ch4-q10.spec.js",
+      "src/chapter4/ch4-q05.spec.js",
+      "src/chapter4/ch4-q03.spec.js",
+      "src/chapter4/ch4-q04.spec.js",
+      "src/chapter4/ch4-q11.spec.js",
+      "src/chapter4/ch4-q01.spec.js",
+      "src/chapter4/ch4-q09.spec.js",
+      "src/chapter3/ch3-q1.spec.js",
+      "src/chapter3/ch3-q5.spec.js",
+      "src/chapter3/ch3-q6.spec.js",
+      "src/chapter3/ch3-q3.spec.js",
+      "src/chapter3/ch3-q2.spec.js",
+      "src/chapter3/ch3-q4.spec.js",
+      "src/chapter2/ch2-q7.spec.js",
+      "src/chapter2/ch2-q5.spec.js",
+      "src/chapter2/ch2-q2.spec.js",
+      "src/chapter2/ch2-q8.spec.js",
+      "src/chapter2/ch2-q3.spec.js",
+      "src/chapter2/ch2-q1.spec.js",
+      "src/chapter2/ch2-q6.spec.js",
+      "src/chapter2/ch2-q4.spec.js",
+      "src/chapter1/ch1-q8.spec.js",
+      "src/chapter1/ch1-q6.spec.js",
+      "src/chapter1/ch1-q7.spec.js",
+      "src/chapter1/ch1-q5.spec.js",
+      "src/chapter1/ch1-q1.spec.js",
+      "src/chapter1/ch1-q3.spec.js",
+      "src/chapter1/ch1-q4.spec.js",
+      "src/chapter1/ch1-q9.spec.js",
+      "src/chapter1/ch1-q2.spec.js",
+      "test/eslint.spec.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 36,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/chapter4/ch4-q12.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/chapter4/ch4-q08.public.test.js",
+      "public_tests/chapter4/ch4-q07.public.test.js",
+      "public_tests/chapter4/ch4-q12.public.test.js",
+      "public_tests/chapter4/ch4-q12.public.test.js",
+      "public_tests/chapter4/ch4-q12.public.test.js",
+      "public_tests/chapter4/ch4-q12.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/chapter4/ch4-q12.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/chapter4/ch4-q08.public.test.js",
+    "public_tests/chapter4/ch4-q07.public.test.js",
+    "public_tests/chapter4/ch4-q12.public.test.js",
+    "public_tests/chapter4/ch4-q12.public.test.js",
+    "public_tests/chapter4/ch4-q12.public.test.js",
+    "public_tests/chapter4/ch4-q12.public.test.js"
+  ]
+}

@@ -1,0 +1,52 @@
+qwe14789cn_SP/
+├── README.md                     # Project overview and instructions
+├── requirements.txt              # Python test and runtime dependencies
+├── run_tests.sh                  # One-click test execution script
+├── src/
+│   └── sp/
+│       ├── __init__.py           # (Empty, enables as Python module)
+│       └── *.py                  # Implementation files - NOT provided here
+├── tests/
+│   └── original/
+│       ├── __init__.py           # (Empty, for pytest discovery)
+│       ├── test_array_pattern.py
+│       ├── test_b2array.py
+│       ├── test_b2d.py
+│       ├── test_b2f.py
+│       ├── test_capon_doa_est.py
+│       ├── test_d2b.py
+│       ├── test_d2h.py
+│       ├── test_dbm2vpp.py
+│       ├── test_dbm2w.py
+│       ├── test_find_nearest_pos.py
+│       ├── test_gaussian.py
+│       ├── test_h2d.py
+│       ├── test_lagrange_farrow_matrix.py
+│       ├── test_randn_complex.py
+│       ├── test_sig_delay.py
+│       ├── test_vpp2dbm.py
+│       └── test_w2dbm.py
+├── public_tests/
+│   ├── __init__.py               # (Empty, for pytest discovery)
+│   ├── test_array_pattern.py
+│   ├── test_b2array.py
+│   ├── test_b2b.py
+│   ├── test_b2d.py
+│   ├── test_b2f.py
+│   ├── test_b2h.py
+│   ├── test_capon_doa_est.py
+│   ├── test_complex2vector.py
+│   ├── test_d2h.py
+│   ├── test_dbm2vpp.py
+│   ├── test_dbm2w.py
+│   ├── test_find_nearest_pos.py
+│   ├── test_h2d.py
+│   ├── test_h2f.py
+│   ├── test_lagrange_farrow_matrix.py
+│   ├── test_lms.py
+│   ├── test_lms2.py
+│   ├── test_sig_delay.py
+│   ├── test_vpp2dbm.py
+│   ├── test_w2dbm.py
+│   ├── test_bpsk_diff.py
+└──

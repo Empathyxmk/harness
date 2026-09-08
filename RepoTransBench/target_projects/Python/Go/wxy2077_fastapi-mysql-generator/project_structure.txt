@@ -1,0 +1,52 @@
+project_root/
+├── go.mod                       # Go module definition
+├── run_tests.sh                 # One-click Go test runner
+├── tests/
+│   └── original/                # All original (private/internal) test cases translated from Python
+│       ├── demo_scheduler/
+│       │   └── test_main_scheduler_test.go
+│       ├── demo_casbin/
+│       │   └── test_casbin_examples_test.go
+│       └── api/
+│           └── v1/
+│               ├── test_cron_test.go
+│               ├── test_casbin_test.go
+│               └── test_user_test.go
+├── public_tests/                # All public test cases translated from Python
+│   ├── demo_scheduler/
+│   │   └── test_public_main_scheduler_test.go
+│   ├── demo_casbin/
+│   │   └── test_public_casbin_examples_test.go
+│   └── api/
+│       └── v1/
+│           ├── test_public_cron_test.go
+│           ├── test_public_casbin_test.go
+│           └── test_public_user_test.go
+├── README.md                    # Project documentation
+└── project_structure.txt        # This file: project tree, directory explanation, instructions
+
+—
+Directory Explanations
+----------------------
+- go.mod:          Go module & dependency definition for the whole project.
+- run_tests.sh:    Minimal script to run all Go tests (original and public) with one command (`./run_tests.sh`).
+- tests/original/: Original ("private") tests translated from Python, organized per component.
+- public_tests/:   Public/lesson tests, used for external verification and reference solutions.
+- README.md:       General setup and usage instructions for the Go project.
+- project_structure.txt: This overview of project contents.
+
+Setup and Test Instructions
+---------------------------
+1. You must have [Go installed](https://golang.org/dl/).
+2. Place any Go code required for the application into relevant package directories.
+3. Run all tests with:
+       ./run_tests.sh
+   This will automatically find and run all *_test.go tests in all subdirectories.
+
+4. The tests are separated as:
+   - **Original tests**: In `tests/original/`, corresponding to source/internal test cases.
+   - **Public tests**:   In `public_tests/`, corresponding to public/lesson test cases.
+
+5. To add dependencies, edit `go.mod` and run `go mod tidy`.
+
+6. All tests use the standard Go `testing` package plus `stretchr/testify` for assertions.

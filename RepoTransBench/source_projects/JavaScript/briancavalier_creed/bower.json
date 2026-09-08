@@ -1,0 +1,34 @@
+{
+  "name": "creed",
+  "homepage": "https://github.com/briancavalier/creed",
+  "authors": [
+    "Brian Cavalier <brian@hovercraftstudios.com>"
+  ],
+  "license": "MIT",
+  "description": "Sophisticated and functionally-minded async with advanced features: coroutines, promises, ES2015 iterables, fantasy-land",
+  "main": "dist/creed.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briancavalier/creed.git"
+  },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "promise",
+    "promises",
+    "promises/a+",
+    "promises-aplus",
+    "async"
+  ],
+  "ignore": [
+    "**/.*",
+    "package.json",
+    "src",
+    "test",
+    "node_modules",
+    "bower_components"
+  ]
+}

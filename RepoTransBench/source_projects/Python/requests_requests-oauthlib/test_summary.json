@@ -1,0 +1,20 @@
+{
+  "project_name": "requests_requests-oauthlib",
+  "language": "Python",
+  "coverage": {
+    "line": 81.0,
+    "branch": 86.7
+  },
+  "timestamp": "2025-06-19T12:25:18.286229",
+  "original_path": "/workspace/runnable_filter/Python/requests_requests-oauthlib",
+  "test_result_path": "/workspace/test_enhancement_results/Python/requests_requests-oauthlib",
+  "tests_path": [
+    "tests/test_oauth2_session.py",
+    "tests/test_oauth1_session.py",
+    "tests/test_core.py",
+    "tests/test_init_and_setup.py",
+    "tests/test_oauth2_auth.py",
+    "tests/test_compliance_fixes.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,11 @@
+{
+  "project_name": "wendy512_stream",
+  "language": "Java",
+  "coverage": {
+    "line": 67.1,
+    "branch": 54.3
+  },
+  "timestamp": "2025-06-23T17:24:02.164169",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/wendy512_stream",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/wendy512_stream"
+}

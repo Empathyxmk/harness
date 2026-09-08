@@ -1,0 +1,53 @@
+{
+  "project_name": "yacy_yacy_grid_crawler",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:20:49.073583",
+  "original_path": "/workspace/verified_repos_v2/Java/yacy_yacy_grid_crawler",
+  "public_test_result_path": "/workspace/public_test_results/Java/yacy_yacy_grid_crawler",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/net/yacy/grid/crawler/BlacklistTest.java",
+      "src/test/java/net/yacy/grid/crawler/CrawlerTest.java",
+      "src/test/java/net/yacy/grid/crawler/CrawlerListenerTest.java",
+      "src/test/java/net/yacy/grid/crawler/api/CrawlStartServiceTest.java",
+      "src/test/java/net/yacy/grid/crawler/api/CrawlerDefaultValuesServiceTest.java",
+      "src/test/java/net/yacy/grid/coverage/DemoCoverageTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/net/yacy/grid/crawler/BlacklistPublicTest.java",
+      "src/test/java/net/yacy/grid/crawler/CrawlerPublicTest.java",
+      "src/test/java/net/yacy/grid/crawler/CrawlerListenerPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/net/yacy/grid/crawler/api/CrawlStartServicePublicTest.java",
+      "src/test/java/net/yacy/grid/crawler/api/CrawlerDefaultValuesServicePublicTest.java",
+      "src/test/java/net/yacy/grid/coverage/DemoCoveragePublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/net/yacy/grid/crawler/BlacklistPublicTest.java",
+    "src/test/java/net/yacy/grid/crawler/CrawlerPublicTest.java",
+    "src/test/java/net/yacy/grid/crawler/CrawlerListenerPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/net/yacy/grid/crawler/api/CrawlStartServicePublicTest.java",
+    "src/test/java/net/yacy/grid/crawler/api/CrawlerDefaultValuesServicePublicTest.java",
+    "src/test/java/net/yacy/grid/coverage/DemoCoveragePublicTest.java"
+  ]
+}

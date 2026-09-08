@@ -1,0 +1,21 @@
+solomon-b_greedypacker-java/
+├── pom.xml                      # Maven build configuration with JUnit 5 and AssertJ dependencies
+├── run_tests.sh                 # Simple bash script for one-click test execution
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── solomonb/
+│   │               └── greedypacker/
+│   │                    # (Java implementation for greedypacker goes here: BinManager, Item, etc)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── solomonb/
+│                   └── greedypacker/
+│                       ├── original/
+│                       │   └── *Test.java   # Java translations of all original Python tests (from test/)
+│                       └── public_tests/
+│                           └── *Test.java   # Java translations of public Python tests (from public_tests/)
+├── README.md                    # Documentation for building and testing the Java project
+├── project_structure.txt        # This file. Describes the directory layout, test separation, and usage.

@@ -1,0 +1,31 @@
+LeanFlutter Launch At Startup - Python Project Structure
+
+.
+├── requirements.txt              # Python dependencies (pytest).
+├── run_tests.sh                  # One-click script to run all tests.
+├── project_structure.txt         # This structure doc.
+├── tests/
+│   ├── __init__.py               # Marks 'tests' as a package.
+│   └── original/                 # Original (private) tests from C++ project.
+│       ├── __init__.py
+│       └── test_utils.py         # Original minimal test (from utils_test.cpp)
+├── public_tests/
+│   ├── __init__.py
+│   └── test_utils_public.py      # Public version (from utils_public_test.cpp)
+
+Directory/Files explanation:
+
+- requirements.txt: Specifies the required Python dependencies for running tests (pytest).
+- run_tests.sh: Simple one-click test runner; installs dependencies if needed, then runs all tests in both original and public test directories using pytest. Make sure to run `chmod +x run_tests.sh` before executing.
+- tests/original/test_utils.py: Translation of C++ 'tests/utils_test.cpp'. Contains the minimal SUCCEED()-style test.
+- public_tests/test_utils_public.py: Translation of 'tests/utils_public_test.cpp'. Contains an actual assertion (1 + 1 == 2) for public verification.
+- __init__.py files: Mark directories as Python packages.
+- project_structure.txt: This explanation file.
+
+Instructions:
+
+1. (Optional) Ensure Python 3 and pip are installed.
+2. Run: ./run_tests.sh
+   - This will install dependencies if needed and run all tests via pytest.
+
+You may extend this structure for application source code in a 'src/' directory if desired.

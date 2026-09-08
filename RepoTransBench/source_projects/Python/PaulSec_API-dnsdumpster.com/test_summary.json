@@ -1,0 +1,11 @@
+{
+  "project_name": "PaulSec_API-dnsdumpster.com",
+  "language": "Python",
+  "coverage": {
+    "line": 67.6,
+    "branch": 55.0
+  },
+  "timestamp": "2025-06-19T12:14:55.024155",
+  "original_path": "/workspace/runnable_filter/Python/PaulSec_API-dnsdumpster.com",
+  "test_result_path": "/workspace/test_enhancement_results/Python/PaulSec_API-dnsdumpster.com"
+}

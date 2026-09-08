@@ -1,0 +1,22 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── src/
+│   └── tools/
+│       ├── __init__.py
+│       ├── lint.py
+│       ├── housekeeper.py
+│       └── utils.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_lint.py
+│       ├── test_housekeeper.py
+│       └── test_utils.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_utils_public.py
+│   ├── test_lint_public.py
+│   └── test_housekeeper_public.py

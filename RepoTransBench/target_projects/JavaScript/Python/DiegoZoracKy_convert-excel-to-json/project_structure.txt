@@ -1,0 +1,33 @@
+project_root/
+├── src/
+│   └── convert_excel_to_json/
+│       ├── __init__.py
+│       └── convert_excel_to_json.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_convert_excel_to_json.py
+│   ├── test_convert_excel_to_json_extra.py
+│   └── test_main.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_convert_excel_to_json_public.py
+│   ├── test_convert_excel_to_json_extra_public.py
+│   └── test_main_public.py
+├── requirements.txt
+├── run_tests.sh
+└── README.md
+
+Directory explanations:
+- src/convert_excel_to_json/: Python package containing the main converter logic. You should implement the convert_excel_to_json function here.
+- tests/: Contains full original (private/internal) test suite, closely matching the JS originals.
+- public_tests/: Contains public-facing test suite matching the JS public tests.
+- requirements.txt: Python dependencies (install with pip install -r requirements.txt).
+- run_tests.sh: Run all tests (original and public) with one click using pytest.
+- README.md: (Instructions, basic usage, etc.)
+
+Setup & Testing:
+1. (optional) python3 -m venv venv && source venv/bin/activate
+2. pip install -r requirements.txt
+3. ./run_tests.sh
+
+All test input Excel files required are in place as per the JS repo (tests/test-data.xlsx, tests/test-data-2.xlsx).

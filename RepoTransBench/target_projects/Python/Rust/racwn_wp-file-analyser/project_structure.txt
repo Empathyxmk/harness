@@ -1,0 +1,14 @@
+racwn_wp_file_analyser/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── analyser.rs
+├── tests/
+│   └── original/
+│       ├── test_analyser_core.rs
+│       └── test_analyser_branches.rs
+├── public_tests/
+│   ├── test_public_analyser_core.rs
+│   └── test_public_analyser_branches.rs
+├── run_tests.sh
+└── project_structure.txt

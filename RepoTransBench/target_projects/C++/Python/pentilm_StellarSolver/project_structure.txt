@@ -1,0 +1,56 @@
+Project Structure
+=================
+.
+├── requirements.txt             # Python dependencies (pytest)
+├── run_tests.sh                 # Simple test execution script for ALL tests
+├── project_structure.txt        # This file: explanation and structure
+├── tests/
+│   ├── original/                # All original translated test cases from C++
+│   │   ├── __init__.py
+│   │   ├── conftest.py
+│   │   ├── test_ParticleSystem.py
+│   │   ├── test_debug.py
+│   │   └── test_main_util.py
+│   └──                         # (Possibility for more original test files)
+├── public_tests/                # All public (released/generated) test cases
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── test_ParticleSystem_public.py
+│   ├── test_debug_public.py
+│   └── test_main_util_public.py
+
+Directory/Files Explanation
+---------------------------
+requirements.txt
+    All Python dependencies for running the tests. Just 'pytest' is required here.
+
+run_tests.sh
+    Run this script (after 'chmod +x run_tests.sh') to execute all tests (original and public) automatically using pytest.
+
+project_structure.txt
+    This explanation and tree. Outlines the project layout.
+
+tests/original/
+    Contains Python translations of ALL *original* C++ test files.
+    Each file (e.g. test_ParticleSystem.py, test_debug.py, test_main_util.py) corresponds directly to its C++ counterpart.
+    __init__.py and conftest.py aid pytest in discovery; keep __init__.py even if empty.
+
+public_tests/
+    Contains Python translations of ALL *public* C++ test files.
+    File names are preserved (e.g. test_ParticleSystem_public.py).
+    __init__.py and conftest.py aid pytest in discovery.
+
+How to Setup & Run
+------------------
+1. Ensure Python 3.7+ and pip are installed.
+2. Install dependencies:
+      pip install -r requirements.txt
+3. Run all tests using:
+      ./run_tests.sh
+
+This will run BOTH original and public tests automatically.
+
+Notes
+-----
+- All test logic from the C++ source is fully translated to Python and executable via pytest.
+- Place additional modules (should the main solver be translated) in a suitable src/ directory if the simulator itself is ported.

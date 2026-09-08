@@ -1,0 +1,27 @@
+.
+├── README.md                    # Project documentation and usage instructions
+├── go.mod                       # Go module file with dependencies
+├── run_tests.sh                 # Bash script for running all tests
+├── formsbuilder/                # Main package (stubs required for test execution)
+│   ├── fields.go                # Implementation for fields logic used in tests
+│   ├── utils.go                 # Implementation for utils logic used in tests
+│   ├── settings.go              # Stubbed configuration used in tests
+│   └── version.go               # __version__ stub
+├── tests/
+│   └── original/                # All translated original tests
+│       ├── core_test.go
+│       ├── docs_conf_py_test.go
+│       ├── fields_test.go
+│       ├── fields_unit_test.go
+│       ├── init_py_test.go
+│       ├── py_test.go
+│       ├── setup_py_test.go
+│       └── utils_test.go
+└── public_tests/
+    ├── test_public_fields_test.go
+    └── test_public_fields_unit_test.go
+
+- All Python test files are mapped to corresponding Go "_test.go" files.
+- Each Go test package has its own "_test.go" files in its directory.
+- All subdirectories are packages for the sake of test isolation.
+- All implementation files (`formsbuilder/`) are minimal stubs to make tests fully pass.

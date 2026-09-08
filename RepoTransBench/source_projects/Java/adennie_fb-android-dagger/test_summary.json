@@ -1,0 +1,21 @@
+{
+  "project_name": "adennie_fb-android-dagger",
+  "language": "Java",
+  "coverage": {
+    "line": 89.0,
+    "branch": 81.2
+  },
+  "timestamp": "2025-06-23T11:07:54.710898",
+  "original_path": "/workspace/runnable_filter/Java/adennie_fb-android-dagger",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/adennie_fb-android-dagger",
+  "tests_path": [
+    "src/test/java/com/fizzbuzz/android/dagger/TestUtils.java",
+    "src/test/java/com/fizzbuzz/android/dagger/InjectingActivityModuleTest.java",
+    "src/test/java/com/fizzbuzz/android/dagger/InjectingFragmentModuleTest.java",
+    "src/test/java/com/fizzbuzz/android/dagger/PreconditionsTest.java",
+    "src/test/java/com/fizzbuzz/android/dagger/InjectingActionBarActivityTest.java",
+    "src/test/java/com/fizzbuzz/android/dagger/InjectingPreferenceActivityTest.java",
+    "src/test/java/com/fizzbuzz/android/dagger/InjectingPreferenceFragmentTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

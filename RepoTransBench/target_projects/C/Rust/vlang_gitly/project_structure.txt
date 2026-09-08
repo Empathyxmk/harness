@@ -1,0 +1,173 @@
+project_root/
+├── Cargo.toml
+├── LICENSE
+├── Makefile
+├── README.md
+├── api/
+│   ├── api.v
+│   ├── branch.v
+│   ├── commit.v
+│   └── issue.v
+├── config/
+│   └── loader.v
+├── config.json
+├── git/
+│   ├── branch_test.v
+│   ├── libgit.v
+│   ├── util.v
+│   └── utils_test.v
+├── git2.h
+├── highlight/
+│   ├── c.v
+│   ├── cpp.v
+│   ├── cs.v
+│   ├── d.v
+│   ├── go.v
+│   ├── highlight.v
+│   ├── java.v
+│   ├── javascript.v
+│   ├── langs.v
+│   ├── lua.v
+│   ├── markdown.v
+│   ├── markdown_test.v
+│   ├── python.v
+│   ├── rust.v
+│   ├── typescript.v
+│   └── v.v
+├── libgit2/
+│   ├── git2/
+│   │   └── types.h
+│   ├── git2.h
+│   ├── gitlog.c
+│   ├── gitshow_file2.c
+│   ├── include/
+│   │   ├── git2/
+│   │   │   ├── annotated_commit.h
+│   │   │   ├── apply.h
+│   │   │   ├── attr.h
+│   │   │   ├── blame.h
+│   │   │   ├── blob.h
+│   │   │   ├── branch.h
+│   │   │   ├── buffer.h
+│   │   │   ├── cert.h
+│   │   │   ├── checkout.h
+│   │   │   ├── cherrypick.h
+│   │   │   ├── clone.h
+│   │   │   ├── commit.h
+│   │   │   ├── common.h
+│   │   │   ├── config.h
+│   │   │   ├── cred_helpers.h
+│   │   │   ├── credential.h
+│   │   │   ├── credential_helpers.h
+│   │   │   ├── deprecated.h
+│   │   │   ├── describe.h
+│   │   │   ├── diff.h
+│   │   │   ├── email.h
+│   │   │   ├── errors.h
+│   │   │   ├── experimental.h
+│   │   │   ├── filter.h
+│   │   │   ├── global.h
+│   │   │   ├── graph.h
+│   │   │   ├── ignore.h
+│   │   │   ├── index.h
+│   │   │   ├── indexer.h
+│   │   │   ├── mailmap.h
+│   │   │   ├── merge.h
+│   │   │   ├── message.h
+│   │   │   ├── net.h
+│   │   │   ├── notes.h
+│   │   │   ├── object.h
+│   │   │   ├── odb.h
+│   │   │   ├── odb_backend.h
+│   │   │   ├── oid.h
+│   │   │   ├── oidarray.h
+│   │   │   ├── pack.h
+│   │   │   ├── patch.h
+│   │   │   ├── pathspec.h
+│   │   │   ├── proxy.h
+│   │   │   ├── rebase.h
+│   │   │   ├── refdb.h
+│   │   │   ├── reflog.h
+│   │   │   ├── refs.h
+│   │   │   ├── refspec.h
+│   │   │   ├── remote.h
+│   │   │   ├── repository.h
+│   │   │   ├── reset.h
+│   │   │   ├── revert.h
+│   │   │   ├── revparse.h
+│   │   │   ├── revwalk.h
+│   │   │   ├── signature.h
+│   │   │   ├── stash.h
+│   │   │   ├── status.h
+│   │   │   ├── stdint.h
+│   │   │   ├── strarray.h
+│   │   │   ├── submodule.h
+│   │   │   ├── sys/
+│   │   │   │   ├── alloc.h
+│   │   │   │   ├── commit.h
+│   │   │   │   ├── commit_graph.h
+│   │   │   │   ├── config.h
+│   │   │   │   ├── cred.h
+│   │   │   │   ├── credential.h
+│   │   │   │   ├── diff.h
+│   │   │   │   ├── email.h
+│   │   │   │   ├── errors.h
+│   │   │   │   ├── filter.h
+│   │   │   │   ├── hashsig.h
+│   │   │   │   ├── index.h
+│   │   │   │   ├── mempack.h
+│   │   │   │   ├── merge.h
+│   │   │   │   ├── midx.h
+│   │   │   │   ├── odb_backend.h
+│   │   │   │   ├── openssl.h
+│   │   │   │   ├── path.h
+│   │   │   │   ├── refdb_backend.h
+│   │   │   │   ├── refs.h
+│   │   │   │   ├── remote.h
+│   │   │   │   ├── repository.h
+│   │   │   │   ├── stream.h
+│   │   │   │   └── transport.h
+│   │   │   ├── tag.h
+│   │   │   ├── trace.h
+│   │   │   ├── transaction.h
+│   │   │   ├── transport.h
+│   │   │   ├── tree.h
+│   │   │   ├── types.h
+│   │   │   ├── version.h
+│   │   │   └── worktree.h
+│   │   └── git2.h
+│   ├── test_gitlog
+│   ├── test_gitlog.c
+│   ├── test_gitlog.gcda
+│   ├── test_gitlog.gcno
+│   ├── test_gitshow_file2
+│   ├── test_gitshow_file2.c
+│   ├── test_gitshow_file2.gcda
+│   └── test_gitshow_file2.gcno
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── c_array_public_test.rs
+│   └── x_encoding_asn1_public_api_test.rs
+├── run.sh
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── activity.v
+│   ├── admin.v
+│   ├── admin_routes.v
+│   ├── avatar.v
+│   ├── avatar_test.v
+│   ├── ... (many V source files omitted)
+│   └── lib.rs
+├── tests/
+│   ├── original/
+│   │   ├── bench_test_val_vs_ptr.rs
+│   │   ├── c_struct_free_test_free_struct.rs
+│   │   ├── crypto_blake2s_testdata_test_vectors.rs
+│   │   ├── libgit2_test_gitlog.rs
+│   │   ├── libgit2_test_gitshow_file2.rs
+│   │   ├── project_with_c_code_2_modc_test_impl.rs
+│   │   └── test_global_init_test.rs
+
+└── test_translation_progress.json

@@ -1,0 +1,46 @@
+google_mail-importer/
+├── README.md              # Project documentation
+├── go.mod                 # Go module config and dependencies
+├── run_tests.sh           # Script for running all Go tests (chmod +x)
+├── project_structure.txt  # This project structure file
+├── pkg/
+│   └── ...                # (Placeholder for main logic, not migrated here)
+├── tests/
+│   ├── testutil.go                    # Shared helpers/mocks for tests
+│   └── original/
+│       ├── command_line_arguments_test.go    # Translated: CommandLineArgumentsTest.java
+│       ├── flags_module_test.go              # Translated: FlagsModuleTest.java
+│       ├── importer_test.go                  # Translated: ImporterTest.java
+│       ├── io_provider_test.go               # Translated: IoProviderTest.java
+│       ├── mail_provider_test.go             # Translated: MailProviderTest.java
+│       ├── gmail_service_module_test.go      # Translated: GmailServiceModuleTest.java
+│       ├── gmail_syncer_test.go              # Translated: GmailSyncerTest.java
+│       ├── unsuccessful_response_chainer_test.go # Translated: UnsuccessfulResponseHandlerChainerTest.java
+│       ├── javax_mail_storage_test.go         # Translated: JavaxMailStorageTest.java
+│       ├── module_tester.go                   # Translated: ModuleTester.java
+│       ├── xmozilla_status_test.go            # Translated: XMozillaStatusTest.java
+│       ├── thunderbird_mail_storage_test.go   # Translated: ThunderbirdMailStorageTest.java
+│       ├── thunderbird_local_message_test.go  # Translated: ThunderbirdLocalMessageTest.java
+├── public_tests/
+│   ├── command_line_arguments_public_test.go    # Translated: CommandLineArgumentsPublicTest.java
+│   ├── flags_module_public_test.go              # Translated: FlagsModulePublicTest.java
+│   ├── mail_provider_public_test.go             # Translated: MailProviderPublicTest.java
+│   ├── io_provider_public_test.go               # Translated: IoProviderPublicTest.java
+│   ├── gmail_service_module_public_test.go      # Translated: GmailServiceModulePublicTest.java
+│   ├── gmail_syncer_public_test.go              # Translated: GmailSyncerPublicTest.java
+│   ├── unsuccessful_response_chainer_public_test.go # Translated: UnsuccessfulResponseHandlerChainerPublicTest.java
+│   ├── javax_mail_storage_public_test.go         # Translated: JavaxMailStoragePublicTest.java
+│   ├── thunderbird_mail_storage_public_test.go   # Translated: ThunderbirdMailStoragePublicTest.java
+│   ├── thunderbird_local_message_public_test.go  # Translated: ThunderbirdLocalMessagePublicTest.java
+│   ├── xmozilla_status_public_test.go            # Translated: XMozillaStatusPublicTest.java
+│   ├── module_tester_public_test.go              # Translated: ModuleTesterPublicTest.java
+
+Directories:
+- `tests/original/` contains all original non-public (full) tests from Java.
+- `public_tests/` contains the public test suite.
+- All tests use Go's standard testing framework (and testify/mock when needed).
+
+Setup/Run:
+- Install Go 1.20+. Clone repo. `chmod +x run_tests.sh` if needed.
+- Run tests: `./run_tests.sh`
+- Or: `go test ./...`

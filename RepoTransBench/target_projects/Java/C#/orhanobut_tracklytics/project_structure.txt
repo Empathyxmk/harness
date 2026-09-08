@@ -1,0 +1,30 @@
+orhanobut_tracklytics_csharp/
+├── orhanobut_tracklytics.sln
+├── src/
+│   └── Orhanobut.Tracklytics/
+│       ├── Orhanobut.Tracklytics.csproj
+│       └── (production code: Tracklytics, Event, TracklyticsAspect, interfaces, attributes etc.)
+├── tests/
+│   ├── original/
+│   │   ├── OriginalTests.csproj
+│   │   ├── TracklyticsAspectTest.cs
+│   │   ├── TrackSuperAttributeAnnotationTest.cs
+│   │   ├── EventTest.cs
+│   │   ├── TrackableAttributeAnnotationTest.cs
+│   │   ├── TracklyticsTest.cs
+│   │   ├── AttributeAnnotationTest.cs
+│   │   ├── TrackableInterfaceTest.cs
+│   │   └── TrackingTest.cs
+│   └── TestUtilities.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── TracklyticsPublicTest.cs
+│   ├── TrackableInterfacePublicTest.cs
+│   ├── TracklyticsAspectPublicTest.cs
+│   ├── TrackSuperAttributeAnnotationPublicTest.cs
+│   ├── TrackableAttributeAnnotationPublicTest.cs
+│   ├── AttributeAnnotationPublicTest.cs
+│   └── EventPublicTest.cs
+├── run_tests.sh
+├── test_translation_progress.json
+└── README.md

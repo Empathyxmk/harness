@@ -1,0 +1,2 @@
+# This file was incorrectly containing '[pytest]' which is not valid Python code and caused test collection errors.
+# Removing any content; leave as empty or Python comments only to avoid import errors.

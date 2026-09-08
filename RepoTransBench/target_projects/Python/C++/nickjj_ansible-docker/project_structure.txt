@@ -1,0 +1,32 @@
+project_root/
+├── CMakeLists.txt                # CMake configuration for building logic and tests
+├── include/
+│   ├── dummy_logic.h             # Header for DummyHost/logic classes
+│   └── host_mock.h               # Header for HostMock class
+├── public_tests/
+│   ├── test_public_dummy_logic.cpp   # C++ translations of public dummy logic tests
+│   └── test_public_host_mock.cpp     # C++ translations of public host mock tests
+├── run_tests.sh                  # Script to build and run all tests in one step
+├── src/
+│   ├── dummy_logic.cpp           # Implementation for dummy logic and classes
+│   └── host_mock.cpp             # Implementation for HostMock
+├── tests/
+│   ├── original/
+│   │   ├── test_dummy_logic.cpp      # C++ translation of original dummy_logic.py tests
+│   │   └── test_host_mock.cpp        # C++ translation of original test_host_mock.py tests
+│   └── test_main.cpp             # C++ GTest main file
+└── project_structure.txt         # This file: project structure and explanations
+
+Directory and file purpose:
+- include/: Headers for reusable logic and mocks.
+- src/: Implementation (.cpp) files for reusable components/classes.
+- public_tests/: C++ versions of public tests, checks intended for external/visible testing.
+- tests/original/: C++ versions of original tests, direct translation from internal tests.
+- tests/test_main.cpp: Entry point aggregating all tests into a single runner.
+- CMakeLists.txt: Build configuration—will link all sources and setup GTest.
+- run_tests.sh: Simple bash script for full build & all test execution.
+
+=== Setup and Testing ===
+1. Ensure GoogleTest is installed on the system (libgtest-dev, CMake).
+2. Run: ./run_tests.sh
+   - This runs all tests (both public and original) and reports results.

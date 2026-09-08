@@ -1,0 +1,19 @@
+medium_sdk_rust/
+├── Cargo.toml
+│   # Rust package manifest: dependencies, test config
+├── README.md
+│   # Project introduction, setup, and test-running instructions
+├── run_tests.sh
+│   # Simple shell script to run all tests with one command
+├── src/
+│   └── lib.rs
+│       # Stubbed library interface for Medium SDK logic (to support tests)
+├── tests/
+│   ├── test.rs
+│   │   # Translated comprehensive original tests from Python
+│   └── original/
+│       └── test_extra.rs
+│           # Translated `test_extra.py` (original extra test)
+├── public_tests/
+│   └── test_public_extra.rs
+│       # Translated public test (`test_public_extra.py`)

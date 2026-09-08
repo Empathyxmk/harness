@@ -1,0 +1,31 @@
+project_root/
+├── requirements.txt
+│     # Python dependencies (pytest)
+├── run_tests.sh
+│     # Simple test runner for all tests
+├── tests/
+│   ├── original/
+│   │   ├── test_async_mapper_executor.py         # Test for AsyncMapperExecutor (original)
+│   │   ├── test_async_dao_runnable_executor.py   # Test for AsyncDaoRunnableExecutor (original)
+│   │   ├── test_async_dao_exception.py           # Test for AsyncDaoException (original)
+│   │   └── test_async_dao_callable_executor.py   # Test for AsyncDaoCallableExecutor (original)
+├── public_tests/
+│   ├── test_async_mapper_executor_public.py      # Public test for AsyncMapperExecutor
+│   ├── test_async_dao_runnable_executor_public.py# Public test for AsyncDaoRunnableExecutor
+│   ├── test_async_dao_exception_public.py        # Public test for AsyncDaoException
+│   └── test_async_dao_callable_executor_public.py# Public test for AsyncDaoCallableExecutor
+└── project_structure.txt
+      # This structure description file
+
+# Explanation:
+# - requirements.txt: Only 'pytest' (Python testing framework) is listed as a required dependency.
+# - run_tests.sh: Bash script that executes all Python tests using pytest (runs both original and public tests).
+# - tests/original/: Contains the translations of the Java original (private) test files.
+# - public_tests/: Contains translations of 'PublicTest' Java test files, kept separate for distinction.
+# - project_structure.txt: This file, describing structure and purposes.
+
+# Setup & Run Instructions:
+# 1. Install dependencies: pip install -r requirements.txt
+# 2. To run all tests: ./run_tests.sh
+
+# There is no source code (src/) translation here; only test scaffolding is provided.

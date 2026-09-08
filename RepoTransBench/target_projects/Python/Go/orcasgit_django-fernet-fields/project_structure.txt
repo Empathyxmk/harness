@@ -1,0 +1,23 @@
+orcasgit_django_fernet_fields/
+├── README.md             # Project info and test running instructions
+├── go.mod                # Go module and dependency management
+├── run_tests.sh          # One-click script to run all tests
+├── fernetfields/
+│   └── fields.go         # Placeholder/mock implementation (minimal) for FernetField/Encrypted fields
+├── tests/
+│   ├── testutil.go       # Shared test helpers/utilities
+│   └── original/
+│       ├── test_fields_extra_test.go  # Original test: fernet_fields/test/test_fields_extra.py
+│       └── test_fields_test.go        # Original test: fernet_fields/test/test_fields.py
+└── public_tests/
+    ├── test_public_fields_extra_test.go # Public test: public_tests/test_public_fields_extra.py
+    └── test_public_fields_test.go       # Public test: public_tests/test_public_fields.py
+
+fernetfields/         - Go package (would contain core implementation)
+tests/
+    testutil.go       - Test helpers, field constructors, assertion helpers
+    original/         - Translated original test suite
+public_tests/         - Translated public test suite
+run_tests.sh          - Simple script: executes all tests with one command
+go.mod                - Declares module & dependencies (including testify for assertions)
+README.md             - Instructions and structure explanation

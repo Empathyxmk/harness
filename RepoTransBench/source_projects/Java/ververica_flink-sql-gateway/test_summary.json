@@ -1,0 +1,11 @@
+{
+  "project_name": "ververica_flink-sql-gateway",
+  "language": "Java",
+  "coverage": {
+    "line": 56.3,
+    "branch": 54.5
+  },
+  "timestamp": "2025-06-23T17:36:44.464359",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/ververica_flink-sql-gateway",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/ververica_flink-sql-gateway"
+}

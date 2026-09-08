@@ -1,0 +1,33 @@
+nickjj_ansible_docker/                         # Project root, Rust package
+├── Cargo.toml                                 # Rust package definition and dependencies
+├── README.md                                  # Project documentation (add usage, etc.)
+├── run_tests.sh                               # One-click test execution script (./run_tests.sh)
+├── src/
+│   ├── lib.rs                                 # Rust library entrypoint (mod declarations)
+│   ├── dummy_logic.rs                         # Logic for dummy tests and public arithmetic logic
+│   └── host_mock.rs                           # DummyHost, DummyFile, DummyUser, HostMock, etc.
+├── tests/
+│   └── original/
+│       ├── test_dummy_logic.rs                # Translation of original tests/test_dummy_logic.py
+│       └── test_host_mock.rs                  # Translation of original tests/test_host_mock.py
+├── public_tests/
+│   ├── test_public_dummy_logic.rs             # Public test cases for dummy_logic
+│   └── test_public_host_mock.rs               # Public test cases for HostMock
+└── project_structure.txt                      # This structure file
+
+Directory Explanations:
+- src/: All application/library Rust code.
+- tests/original/: Translations of all private/original Python tests.
+- public_tests/: Translations of public test suite.
+- run_tests.sh: Simple test runner, runs *all* tests and exits on failure.
+- project_structure.txt: This file.
+
+Setup/Testing Instructions:
+1. Install Rust toolchain (`rustc`, `cargo`) if not already present.
+2. Make the test script executable: `chmod +x run_tests.sh`
+3. Run all tests with: `./run_tests.sh`
+   - This runs *both* original and public tests.
+
+Notes:
+- No explicit test discovery config is needed; all `tests/` and `public_tests/` test files are found by Cargo.
+- Source code and test code are fully Rust-native.

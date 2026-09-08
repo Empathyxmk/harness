@@ -1,0 +1,15 @@
+{
+  "project_name": "chiteroman_BootloaderSpoofer",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:12:21.454544",
+  "original_path": "/workspace/test_enhancement_results/Java/chiteroman_BootloaderSpoofer",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/chiteroman_BootloaderSpoofer",
+  "tests_path": [
+    "src/test/java/com/example/BootloaderSpooferTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

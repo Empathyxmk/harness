@@ -1,0 +1,44 @@
+{
+  "project_name": "aMarCruz_rollup-plugin-cleanup",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:56:53.825943",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/aMarCruz_rollup-plugin-cleanup",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/aMarCruz_rollup-plugin-cleanup",
+  "original_tests": {
+    "test_files": [
+      "test/create-filter.test.js",
+      "test/parse-options.test.js",
+      "test/index.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/create-filter.public.test.js",
+      "public_tests/parse-options.public.test.js",
+      "public_tests/index.public.test.js",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 4,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/create-filter.public.test.js",
+    "public_tests/parse-options.public.test.js",
+    "public_tests/index.public.test.js",
+    "run_public_tests.sh"
+  ]
+}

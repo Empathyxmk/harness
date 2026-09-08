@@ -1,0 +1,11 @@
+{
+  "project_name": "zsoltherpai_feather",
+  "language": "Java",
+  "coverage": {
+    "line": 68.4,
+    "branch": 61.1
+  },
+  "timestamp": "2025-06-20T04:59:39.470873",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/zsoltherpai_feather",
+  "test_result_path": "/workspace/test_enhancement_results/Java/zsoltherpai_feather"
+}

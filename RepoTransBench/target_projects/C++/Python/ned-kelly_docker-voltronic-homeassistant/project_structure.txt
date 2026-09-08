@@ -1,0 +1,23 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── src/
+│   └── inverter_cli/
+│       ├── __init__.py
+│       ├── tools.py
+│       ├── inputparser.py
+│       └── inverter.py
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_tools.py
+│   │   ├── test_inputparser.py
+│   │   └── test_inverter.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_tools_public.py
+│   ├── test_inputparser_public.py
+│   └── test_inverter_public.py

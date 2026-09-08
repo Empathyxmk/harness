@@ -1,0 +1,20 @@
+project_root/
+├── CMakeLists.txt
+├── run_tests.sh
+├── tests/
+│   ├── CMakeLists.txt
+│   ├── original/
+│   │   ├── test_protofuzz.cpp
+│   │   ├── test_values.cpp
+│   │   ├── test_gen.cpp
+│   │   ├── test_log.cpp
+│   │   ├── test_pbimport.cpp
+│   │   └── test.proto
+├── public_tests/
+│   ├── CMakeLists.txt
+│   ├── test_public_pbimport.cpp
+│   ├── test_public_protofuzz.cpp
+│   ├── test_public_log.cpp
+│   ├── test_public_values.cpp
+│   └── test_public_gen.cpp
+└── README.md (not generated, suggested for future addition)

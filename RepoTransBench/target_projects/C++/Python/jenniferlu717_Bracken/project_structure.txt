@@ -1,0 +1,41 @@
+jenniferlu717_Bracken Python Translation Project Structure
+=========================================================
+
+project_root/
+├── src/
+│   ├── __init__.py            # Marks this as a package.
+│   ├── ctime.py               # Implements `ctime_format_seconds` and `ctime_format_millis`
+│   └── taxonomy.py            # Implements `get_rank` and `get_rank_depth`
+│
+├── tests/
+│   └── original/              # Holds original tests (from src/tests/*.cpp)
+│       ├── __init__.py
+│       ├── test_ctime.py      # Translated: tests for ctime formatting (original)
+│       └── test_taxonomy.py   # Translated: tests for taxonomy (original)
+│
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_ctime_public.py   # Translated: public ctime formatting tests
+│   └── test_taxonomy_public.py# Translated: public taxonomy tests
+│
+├── requirements.txt           # Dependencies (pytest)
+├── run_tests.sh               # Simple one-command test runner
+└── project_structure.txt      # Project tree + explanations
+
+Directory/Files Explanation:
+---------------------------
+src/:              All source modules. Each C++ header/functionality has a matching .py file here.
+
+tests/original/:   All tests translated from original (private/internal) C++ tests.
+
+public_tests/:     All tests translated from the generated/marked public C++ tests.
+
+requirements.txt:  All dependencies, install via `pip install -r requirements.txt`.
+
+run_tests.sh:      Run all tests (original and public) with one click, using pytest.
+
+How to Run Tests:
+-----------------
+1. python3 -m venv venv && source venv/bin/activate      # (Recommended) Create and activate a virtual environment
+2. pip install -r requirements.txt                       # Install dependencies
+3. ./run_tests.sh                                       # Run all tests (original and public)

@@ -1,0 +1,61 @@
+{
+  "project_name": "remind101_android-arch-sample",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:34.242650",
+  "original_path": "/workspace/verified_repos_v2/Java/remind101_android-arch-sample",
+  "public_test_result_path": "/workspace/public_test_results/Java/remind101_android-arch-sample",
+  "original_tests": {
+    "test_files": [
+      "app/src/androidTest/java/com/remind101/archexample/ApplicationTest.java",
+      "app/src/test/java/com/remind101/archexample/PresenterManagerTest.java",
+      "app/src/test/java/com/remind101/archexample/CounterDatabaseTest.java",
+      "app/src/test/java/com/remind101/archexample/MvpViewHolderTest.java",
+      "app/src/test/java/com/remind101/archexample/MvpRecyclerAdapterTest.java",
+      "app/src/test/java/com/remind101/archexample/presenters/CounterPresenterTest.java",
+      "app/src/test/java/com/remind101/archexample/presenters/BasePresenterTest.java",
+      "app/src/test/java/com/remind101/archexample/models/CounterTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "app/src/test/java/com/remind101/archexample/PresenterManagerPublicTest.java",
+      "app/src/test/java/com/remind101/archexample/CounterDatabasePublicTest.java",
+      "run_public_tests.sh",
+      "app/src/test/java/com/remind101/archexample/MvpRecyclerAdapterPublicTest.java",
+      "app/src/test/java/com/remind101/archexample/MvpViewHolderPublicTest.java",
+      "app/src/test/java/com/remind101/archexample/presenters/BasePresenterPublicTest.java",
+      "app/src/test/java/com/remind101/archexample/presenters/CounterPresenterPublicTest.java",
+      "app/src/test/java/com/remind101/archexample/models/CounterPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "app/src/test/java/com/remind101/archexample/PresenterManagerPublicTest.java",
+    "app/src/test/java/com/remind101/archexample/CounterDatabasePublicTest.java",
+    "run_public_tests.sh",
+    "app/src/test/java/com/remind101/archexample/MvpRecyclerAdapterPublicTest.java",
+    "app/src/test/java/com/remind101/archexample/MvpViewHolderPublicTest.java",
+    "app/src/test/java/com/remind101/archexample/presenters/BasePresenterPublicTest.java",
+    "app/src/test/java/com/remind101/archexample/presenters/CounterPresenterPublicTest.java",
+    "app/src/test/java/com/remind101/archexample/models/CounterPublicTest.java",
+    "run_public_tests.sh",
+    "run_tests.sh"
+  ]
+}

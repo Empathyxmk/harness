@@ -1,0 +1,42 @@
+dmoulding_boilermake Python Project Structure
+=============================================
+
+.
+├── src/
+│   └── dmoulding_boilermake/
+│       ├── __init__.py
+│       └── animal.py               # Source: core animal classes, inferred from C++ test logic
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_animals.py         # Original/private tests (translated from test_animals.cpp)
+├── public_tests/
+│   ├── __init__.py
+│   └── test_animals_public.py      # Public tests (translated from test_animals_public.cpp)
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Test execution script (runs all original and public tests)
+└── project_structure.txt           # This file (project structure and instructions)
+
+Directory Explanations:
+-----------------------
+src/dmoulding_boilermake/       - Python implementation of animal classes, all logic here
+tests/original/                 - Translated "original/private" C++ tests (basic construction)
+public_tests/                   - Translated "public" C++ tests (uses additional accessors & speak())
+requirements.txt                - Lists Python dependencies needed (pytest)
+run_tests.sh                    - One-click script to run tests using pytest on all test folders
+
+Setup & Testing Instructions:
+-----------------------------
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Run all tests (original and public):
+   ./run_tests.sh
+
+3. Project source is in src/dmoulding_boilermake/animal.py. All test code is in tests/ and public_tests/.
+
+Notes:
+- Original C++ tests only checked construction (no method interface tested).
+- Public tests check for .get_name(), .get_age(), .get_breed(), speak().
+- Python source classes implement these methods for compatibility.

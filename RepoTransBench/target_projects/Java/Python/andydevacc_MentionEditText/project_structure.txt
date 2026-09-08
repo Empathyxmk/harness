@@ -1,0 +1,42 @@
+project_root/
+├── requirements.txt              # Python dependencies (mainly pytest)
+├── run_tests.sh                  # Script to run all tests via pytest
+├── tests/                        # All test code
+│   └── original/
+│       └── test_mention_edit_text.py    # Original (private) translated tests from Java
+├── public_tests/
+│   └── test_mention_edit_text_public.py # Publicly released test cases
+├── README.md                     # Project documentation (add details as needed)
+
+Explanation:
+
+- requirements.txt:
+    Specify all Python dependencies. This project only requires `pytest` as the test runner.
+
+- run_tests.sh:
+    Simple shell script to run all tests (`pytest`), covering both original and public tests.
+
+- tests/original/test_mention_edit_text.py:
+    Complete translation of all "original" (private/internal) Java tests. All test scenarios, data, and logic are preserved as per the source.
+
+- public_tests/test_mention_edit_text_public.py:
+    All public test cases translated from Java, using the same testing logic and data but adapted to Python and pytest conventions.
+
+- README.md:
+    Project summary, usage, and contribution documentation (to be completed as needed).
+
+Instructions:
+
+1. (Optional, once) Install Python dependencies:
+   $ pip install -r requirements.txt
+
+2. Run all tests (both original and public):
+   $ ./run_tests.sh
+
+3. To run only original or only public tests, use:
+   $ pytest tests/original/
+   $ pytest public_tests/
+
+Notes:
+- All test cases and helper classes are self-contained for independent and reliable test execution.
+- The test implementations are exact logical equivalents of the original Java android tests, but adapted to Python's pytest ecosystem.

@@ -1,0 +1,11 @@
+{
+  "project_name": "code4craft_hello-design-pattern",
+  "language": "Java",
+  "coverage": {
+    "line": 57.4,
+    "branch": 53.7
+  },
+  "timestamp": "2025-06-23T10:13:36.830656",
+  "original_path": "/workspace/test_enhancement_results/Java/code4craft_hello-design-pattern",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/code4craft_hello-design-pattern"
+}

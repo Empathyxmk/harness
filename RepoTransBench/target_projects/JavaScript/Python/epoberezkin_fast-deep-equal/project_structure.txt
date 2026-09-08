@@ -1,0 +1,28 @@
+epoberezkin_fast_deep_equal_python/
+├── src/
+│   └── fast_deep_equal/
+│       ├── __init__.py                # (Placeholder for the implementation module)
+│       ├── index.py                   # Main equality logic
+│       └── react.py                   # React-specific equality logic (handles _owner ignore)
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_index.py              # Translation of spec/index.spec.js
+│       ├── test_react.py              # Translation of spec/react.spec.js
+│       └── test_es6.py                # Translation of spec/es6tests.js
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_index_public.py           # Translation of public_tests/index.public.test.js
+│   └── test_react_public.py           # Translation of public_tests/react.public.test.js
+├── requirements.txt                   # Python dependencies
+├── run_tests.sh                       # Shell script to run all tests (chmod +x)
+├── README.md                          # Instructions and documentation
+└── project_structure.txt              # This file
+
+# Directory/Files Explanation:
+# src/fast_deep_equal/ : Source code for fast deep equal and variants. You must supply an implementation or port as needed.
+# tests/original/      : All original test cases from the JavaScript repo, translated to Python.
+# public_tests/        : Public sample test cases, translated to Python.
+# requirements.txt     : Lists Python requirements (pytest).
+# run_tests.sh         : One-click script to execute all tests.
+# project_structure.txt: This reference file.

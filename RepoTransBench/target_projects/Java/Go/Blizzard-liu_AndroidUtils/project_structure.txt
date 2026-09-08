@@ -1,0 +1,46 @@
+.
+├── README.md
+├── go.mod                           # Go module definition and dependency management
+├── run_tests.sh                     # Executable script to run all tests (chmod +x for execution)
+├── project_structure.txt            # This structure overview and directory explanations
+├── tests/
+│   └── original/                    # All original/private/internal test translations from Java
+│       ├── animation_utils_test.go
+│       ├── app_example_instrumented_test.go
+│       ├── app_example_unit_test.go
+│       ├── app_utils_test.go
+│       ├── asset_database_open_helper_test.go
+│       ├── bitmap_util_test.go
+│       ├── file_utils_test.go
+│       ├── gson_util_test.go
+│       ├── log_utils_test.go
+│       ├── picasso_util_test.go
+│       ├── utils_example_instrumented_test.go
+│       └── utils_example_unit_test.go
+├── public_tests/
+│   ├── animation_utils_public_test.go
+│   ├── app_example_instrumented_public_test.go
+│   ├── app_example_unit_public_test.go
+│   ├── app_utils_public_test.go
+│   ├── asset_database_open_helper_public_test.go
+│   ├── bitmap_util_public_test.go
+│   ├── file_utils_public_test.go
+│   ├── gson_util_public_test.go
+│   ├── log_utils_public_test.go
+│   ├── picasso_util_public_test.go
+│   ├── utils_example_instrumented_public_test.go
+│   └── utils_example_unit_public_test.go
+
+Structure Explanation
+---------------------
+- `tests/original/` contains Go test files corresponding to internal/original Java tests.
+- `public_tests/` contains Go test files for all public tests (from *_PublicTest.java).
+- `go.mod` manages module requirements, such as testify (optional, but included for Go best practice).
+- `run_tests.sh` is a single script for executing all tests.
+- All test code uses idiomatic Go and the `testing` package.
+
+How to Run:
+-----------
+1. Install Go if not already installed.
+2. (Optional) run `go mod tidy` to ensure dependencies are downloaded.
+3. Run all tests with `./run_tests.sh`

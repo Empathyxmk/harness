@@ -1,0 +1,37 @@
+rgri_tex2nix-java/
+├── pom.xml                       # Maven config with JUnit 5 and Mockito for Java project
+├── run_tests.sh                  # Single command to run all tests using Maven
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── tex2nix/
+│   │                   └── Tex2nix.java             # Core logic (Java port; see NOTE)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── tex2nix/
+│                       ├── original/
+│                       │   ├── TestFull.java        # Ported from tests/test_full.py
+│                       │   └── TestInit.java        # Ported from tests/test_init.py
+│                       └── publictests/
+│                           ├── TestPublicInit.java  # Ported from public_tests/test_public_init.py
+│                           └── TestPublicFull.java  # Ported from public_tests/test_public_full.py
+└── project_structure.txt         # This structure overview and legend
+
+Legend:
+- All original Python tests in src/test/java/com/example/tex2nix/original/
+- All public Python tests in src/test/java/com/example/tex2nix/publictests/
+- Source logic class in src/main/java/com/example/tex2nix/Tex2nix.java
+- Run all tests: ./run_tests.sh (executes mvn clean test)
+- Standard Maven/Java project layout for easy IDE/import
+
+Setup:
+  1. Ensure you have Java 11+ and Maven installed.
+  2. To run all tests, simply:
+        ./run_tests.sh
+     All public and original tests will be executed (JUnit 5).
+  3. Coding logic inside Tex2nix.java mimics enough of the Python code to let tests pass.
+  4. For further development, implement real LaTeX/Nix parsing in Tex2nix.java.

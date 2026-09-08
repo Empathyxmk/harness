@@ -1,0 +1,102 @@
+{
+  "project_name": "peritus_bumpversion",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": false
+  },
+  "timestamp": "2025-06-23T20:20:50.293348",
+  "original_path": "/workspace/verified_repos_v2/Python/peritus_bumpversion",
+  "public_test_result_path": "/workspace/public_test_results/Python/peritus_bumpversion",
+  "original_tests": {
+    "test_files": [
+      "tests/test_functions.py",
+      "tests/test_functions_edge.py",
+      "tests/test_cli.py",
+      "tests/test_init_vcs.py",
+      "tests/test_bumpversion_init.py",
+      "tests/test_version_part.py",
+      "tests/test_version_part_extra.py",
+      "tests/test_init_edge_cases.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_functions.py",
+      "public_tests/test_public_functions_edge.py",
+      "public_tests/test_public_cli.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_version_part.py",
+      "public_tests/test_public_version_part_extra.py",
+      "public_tests/test_public_init_edge_cases.py",
+      "public_tests/test_public_init_vcs.py",
+      "public_tests/test_public_bumpversion_init.py",
+      "public_tests/test_public_functions.py",
+      "public_tests/test_public_functions_edge.py",
+      "public_tests/test_public_version_part.py",
+      "public_tests/test_public_version_part_extra.py",
+      "public_tests/test_public_init_vcs.py",
+      "public_tests/test_public_init_edge_cases.py",
+      "public_tests/test_public_bumpversion_init.py",
+      "public_tests/test_public_cli.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 18,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_functions.py",
+    "public_tests/test_public_functions_edge.py",
+    "public_tests/test_public_cli.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_version_part.py",
+    "public_tests/test_public_version_part_extra.py",
+    "public_tests/test_public_init_edge_cases.py",
+    "public_tests/test_public_init_vcs.py",
+    "public_tests/test_public_bumpversion_init.py",
+    "public_tests/test_public_functions.py",
+    "public_tests/test_public_functions_edge.py",
+    "public_tests/test_public_version_part.py",
+    "public_tests/test_public_version_part_extra.py",
+    "public_tests/test_public_init_vcs.py",
+    "public_tests/test_public_init_edge_cases.py",
+    "public_tests/test_public_bumpversion_init.py",
+    "public_tests/test_public_cli.py",
+    "run_public_tests.sh"
+  ],
+  "finished_data": {
+    "tests_path": [
+      "tests/test_bumpversion_init.py",
+      "tests/test_cli.py",
+      "tests/test_functions.py",
+      "tests/test_functions_edge.py",
+      "tests/test_init_edge_cases.py",
+      "tests/test_init_vcs.py",
+      "tests/test_version_part.py",
+      "tests/test_version_part_extra.py"
+    ],
+    "run_tests_path": "run_tests.sh",
+    "public_tests_path": [
+      "public_tests/test_public_bumpversion_init.py",
+      "public_tests/test_public_cli.py",
+      "public_tests/test_public_functions.py",
+      "public_tests/test_public_functions_edge.py",
+      "public_tests/test_public_init_edge_cases.py",
+      "public_tests/test_public_init_vcs.py",
+      "public_tests/test_public_version_part.py",
+      "public_tests/test_public_version_part_extra.py"
+    ],
+    "run_public_tests_path": "run_public_tests.sh"
+  }
+}

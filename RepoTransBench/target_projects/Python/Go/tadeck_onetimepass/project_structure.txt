@@ -1,0 +1,14 @@
+tadeck_onetimepass/
+├── go.mod
+├── README.md
+├── onetimepass/
+│   └── onetimepass.go           # (To be implemented: core library)
+├── tests/
+│   └── original/
+│       ├── onetimepass_core_test.go
+│       └── onetimepass_extra_test.go
+├── public_tests/
+│   ├── onetimepass_core_test.go
+│   └── onetimepass_extra_test.go
+├── run_tests.sh
+└── project_structure.txt

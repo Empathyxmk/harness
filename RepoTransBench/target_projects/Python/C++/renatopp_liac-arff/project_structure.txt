@@ -1,0 +1,65 @@
+liac-arff-cpp/
+├── CMakeLists.txt
+├── include/
+│   └── arff/
+│       ├── arff.h
+│       ├── arff_decoder.h
+│       ├── arff_encoder.h
+│       ├── arff_types.h
+│       └── ...
+├── src/
+│   ├── main.cpp
+│   └── arff/
+│       ├── arff.cpp
+│       ├── arff_decoder.cpp
+│       ├── arff_encoder.cpp
+│       └── ...
+├── tests/
+│   ├── original/
+│   │   ├── test_loads.cpp
+│   │   ├── test_dumps_escape.cpp
+│   │   ├── test_dump_escape.cpp
+│   │   ├── test_decode.cpp
+│   │   ├── test_decode_attribute_types.cpp
+│   │   ├── test_dumps.cpp
+│   │   ├── test_decode_comment.cpp
+│   │   ├── test_setup_py.cpp
+│   │   ├── test_conversor.cpp
+│   │   ├── test_data.cpp
+│   │   ├── test_decode_attribute.cpp
+│   │   ├── test_encode_comment.cpp
+│   │   ├── test_decode_relation.cpp
+│   │   ├── test_encode_attribute.cpp
+│   │   ├── test_dump.cpp
+│   │   ├── test_decode_data.cpp
+│   │   ├── test_encode.cpp
+│   │   ├── test_load.cpp
+│   │   ├── test_loads_dumps.cpp
+│   │   ├── test_encode_relation.cpp
+│   │   └── ...
+│   └── test_main.cpp
+├── public_tests/
+│   ├── test_public_encode_comment.cpp
+│   ├── test_public_conversor.cpp
+│   ├── test_public_loads.cpp
+│   ├── test_public_loads_dumps.cpp
+│   ├── test_public_data.cpp
+│   ├── test_public_dump.cpp
+│   ├── test_public_dumps.cpp
+│   ├── test_public_decode_attribute.cpp
+│   ├── test_public_encode.cpp
+│   ├── test_public_dump_escape.cpp
+│   ├── test_public_dumps_escape.cpp
+│   ├── test_public_encode_relation.cpp
+│   ├── test_public_decode_comment.cpp
+│   ├── test_public_decode_relation.cpp
+│   ├── test_public_encode_attribute.cpp
+│   ├── test_public_setup_py.cpp
+│   ├── test_public_decode.cpp
+│   ├── test_public_decode_data.cpp
+│   ├── test_public_load.cpp
+│   ├── test_public_decode_attribute_types.cpp
+│   └── ...
+├── test_translation_progress.json
+├── run_tests.sh
+└── README.md

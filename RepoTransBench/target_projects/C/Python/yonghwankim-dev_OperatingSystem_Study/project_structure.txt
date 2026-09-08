@@ -1,0 +1,24 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_bounded_buffer.py
+│       ├── test_bounded_buffer_extra.py
+│       ├── test_philosopher.py
+│       ├── test_philosopher_extra.py
+│       ├── test_pthread_scheduling.py
+│       └── test_pthread_scheduling_extra.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_bounded_buffer_public.py
+│   ├── test_bounded_buffer_extra_public.py
+│   ├── test_philosopher_public.py
+│   ├── test_philosopher_extra_public.py
+│   ├── test_pthread_scheduling_public.py
+│   ├── test_pthread_scheduling_extra_public.py
+│   └── test_driver_public.py

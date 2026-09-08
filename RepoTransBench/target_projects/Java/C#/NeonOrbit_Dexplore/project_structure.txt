@@ -1,0 +1,34 @@
+NeonOrbit_Dexplore/
+├── LICENSE
+├── NeonOrbit.Dexplore.sln
+├── README.md
+├── build.gradle
+├── dexplore-cli/
+│   ├── build.gradle
+│   └── src/
+│       ├── main/
+│       └── test/
+├── dexplore-lib/
+│   ├── build.gradle
+│   └── src/
+│       ├── main/
+│       └── test/
+├── tests/
+│   ├── original/
+│   │   ├── CommandLineTests.cs
+│   │   ├── DexFileDecoderTests.cs
+│   │   ├── DexSearchEngineTests.cs
+│   │   ├── TestUtilities.cs
+│   │   ├── decompiler/
+│   │   │   └── DexDecompilerTests.cs
+│   │   └── command/
+│   │       ├── BaseJCommanderTests.cs
+│   │       ├── DecodeCommandTests.cs
+│   │       ├── MapverCommandTests.cs
+│   │       ├── SearchCommandTests.cs
+│   │       └── TBatchCommandTests.cs
+├── public_tests/
+│   ├── PublicCommandLineTests.cs
+│   ├── PublicDecodeCommandTests.cs
+│   └── PublicSearchCommandTests.cs
+├── run_tests.sh

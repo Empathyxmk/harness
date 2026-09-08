@@ -1,0 +1,147 @@
+woodpecker-framework_ysoserial-for-woodpecker/
+├── Dockerfile
+├── README.md
+├── appveyor.yml
+├── assembly.xml
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests
+│   ├── __init__.py
+│   ├── test_generate_payload_public.py
+│   ├── test_serializer_deserializer_public.py
+│   ├── test_serializer_deserializer_smoke_public.py
+│   ├── test_strings_public.py
+│   ├── test_strings_smoke_public.py
+│   ├── test_yso_config_public.py
+│   └── test_yso_config_smoke_public.py
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── src
+│   └── main
+│       └── java
+│           ├── com
+│           │   └── sun
+│           │       └── org
+│           │           └── apache
+│           │               └── bcel
+│           │                   └── internal
+│           │                       └── util
+│           │                           └── ClassLoader.java
+│           └── me
+│               └── gv7
+│                   └── woodpecker
+│                       └── yso
+│                           ├── Deserializer.java
+│                           ├── GeneratePayload.java
+│                           ├── JavassistClassLoader.java
+│                           ├── Serializer.java
+│                           ├── Strings.java
+│                           ├── YsoConfig.java
+│                           ├── exploit
+│                           │   ├── JBoss.java
+│                           │   ├── JMXInvokeMBean.java
+│                           │   ├── JRMPClassLoadingListener.java
+│                           │   ├── JRMPClient.java
+│                           │   ├── JRMPListener.java
+│                           │   ├── JSF.java
+│                           │   ├── JenkinsCLI.java
+│                           │   ├── JenkinsListener.java
+│                           │   ├── JenkinsReverse.java
+│                           │   └── RMIRegistryExploit.java
+│                           ├── payloads
+│                           │   ├── AspectJWeaver.java
+│                           │   ├── BeanShell1.java
+│                           │   ├── C3P0.java
+│                           │   ├── C3P0Tomcat.java
+│                           │   ├── C3P0_LowVer.java
+│                           │   ├── Click1.java
+│                           │   ├── Clojure.java
+│                           │   ├── CommonsBeanutils1.java
+│                           │   ├── CommonsBeanutils1_183.java
+│                           │   ├── CommonsBeanutils2.java
+│                           │   ├── CommonsBeanutils2_183.java
+│                           │   ├── CommonsBeanutils3.java
+│                           │   ├── CommonsBeanutils3_183.java
+│                           │   ├── CommonsCollections1.java
+│                           │   ├── CommonsCollections10.java
+│                           │   ├── CommonsCollections11.java
+│                           │   ├── CommonsCollections2.java
+│                           │   ├── CommonsCollections3.java
+│                           │   ├── CommonsCollections4.java
+│                           │   ├── CommonsCollections5.java
+│                           │   ├── CommonsCollections6.java
+│                           │   ├── CommonsCollections6Lite.java
+│                           │   ├── CommonsCollections7.java
+│                           │   ├── CommonsCollections8.java
+│                           │   ├── CommonsCollections9.java
+│                           │   ├── CommonsCollectionsK1.java
+│                           │   ├── CommonsCollectionsK2.java
+│                           │   ├── CommonsCollectionsK3.java
+│                           │   ├── CommonsCollectionsK4.java
+│                           │   ├── DynamicDependencies.java
+│                           │   ├── FastJson.java
+│                           │   ├── FileUpload1.java
+│                           │   ├── FindClassByBomb.java
+│                           │   ├── FindClassByDNS.java
+│                           │   ├── FindGadgetByDNS.java
+│                           │   ├── Groovy1.java
+│                           │   ├── Hibernate1.java
+│                           │   ├── Hibernate2.java
+│                           │   ├── JBossInterceptors1.java
+│                           │   ├── JRMPClient.java
+│                           │   ├── JRMPClient2.java
+│                           │   ├── JRMPListener.java
+│                           │   ├── JSON1.java
+│                           │   ├── JavassistWeld1.java
+│                           │   ├── Jdk7u21.java
+│                           │   ├── Jdk8u20.java
+│                           │   ├── Jython1.java
+│                           │   ├── MozillaRhino1.java
+│                           │   ├── MozillaRhino2.java
+│                           │   ├── Myfaces1.java
+│                           │   ├── Myfaces2.java
+│                           │   ├── ObjectPayload.java
+│                           │   ├── ROME.java
+│                           │   ├── ReleaseableObjectPayload.java
+│                           │   ├── Spring1.java
+│                           │   ├── Spring2.java
+│                           │   ├── Spring3.java
+│                           │   ├── URLDNS.java
+│                           │   ├── Vaadin1.java
+│                           │   ├── Wicket1.java
+│                           │   ├── annotation
+│                           │   │   ├── Authors.java
+│                           │   │   ├── Dependencies.java
+│                           │   │   └── PayloadTest.java
+│                           │   ├── custom
+│                           │   │   ├── BeanShellUtil.java
+│                           │   │   ├── CommonsCollections4Util.java
+│                           │   │   ├── CommonsCollectionsUtil.java
+│                           │   │   ├── CustomCommand.java
+│                           │   │   └── TemplatesImplUtil.java
+│                           │   └── util
+│                           │       ├── BASE64Decoder.java
+│                           │       ├── BASE64Encoder.java
+│                           │       ├── ClassFiles.java
+│                           │       ├── ClassUtil.java
+│                           │       └── extrautils.java
+├── tests
+│   ├── __init__.py
+│   └── original
+│       ├── __init__.py
+│       ├── exploit
+│       │   └── test_rmi_registry_exploit.py
+│       ├── test_annotation_payload.py
+│       ├── test_custom_test.py
+│       ├── test_for_class.py
+│       ├── test_generate_payload.py
+│       ├── test_serializer_deserializer.py
+│       ├── test_serializer_deserializer_smoke.py
+│       ├── test_strings.py
+│       ├── test_strings_smoke.py
+│       ├── test_template.py
+│       ├── test_wrapped_test.py
+│       ├── test_yso_config.py
+│       └── test_yso_config_smoke.py

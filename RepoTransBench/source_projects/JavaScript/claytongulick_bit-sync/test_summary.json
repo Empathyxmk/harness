@@ -1,0 +1,15 @@
+{
+  "project_name": "claytongulick_bit-sync",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 88.88
+  },
+  "timestamp": "2025-06-19T10:06:58.452342",
+  "original_path": "/workspace/runnable_filter/JavaScript/claytongulick_bit-sync",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/claytongulick_bit-sync",
+  "tests_path": [
+    "__tests__/bit-sync.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

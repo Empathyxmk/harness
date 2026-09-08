@@ -1,0 +1,52 @@
+project_root/
+├── pom.xml                     # Maven build configuration with dependencies (JUnit, Mockito, Jackson)
+├── run_tests.sh                # One-click test execution script using Maven
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               ├── jsonrpc/
+│   │               │   ├── JsonRpcError.java
+│   │               │   ├── JsonRpcErrors.java
+│   │               │   ├── JsonRpcResult.java
+│   │               │   ├── JsonRpcServer.java
+│   │               │   └── JsonRpcClient.java
+│   │               ├── serialize/
+│   │               │   ├── BaseItem.java
+│   │               │   ├── Field.java
+│   │               │   └── SerializeUtils.java
+│   │               └── txweb/
+│   │                   ├── DummyRequest.java
+│   │                   ├── Error.java
+│   │                   ├── Handler.java
+│   │                   ├── JsonResource.java
+│   │                   ├── NotFound.java
+│   │                   └── StaticNotFound.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── TestTxweb.java        # Original test for txweb (headers/JSON outputs)
+│                   │   ├── TestJsonrpc.java      # Original test for JSON-RPC logic
+│                   │   └── TestSerialize.java    # Original test for serialize (JSON/field/item/etc)
+│                   └── public_tests/
+│                       ├── PublicTxwebTest.java      # Public test for txweb (Error/Handler)
+│                       ├── PublicJsonrpcTest.java    # Public test for JSON-RPC helpers
+│                       └── PublicSerializeTest.java  # Public test for serialize utils
+└── project_structure.txt    # This structure documentation
+
+# Directory explanations:
+# - src/main/java/com/example/: Main code packages split into jsonrpc/, serialize/, txweb/
+# - src/test/java/com/example/original/: Unit tests for original/internal logic mirroring Python "tests/"
+# - src/test/java/com/example/public_tests/: Unit tests for public-facing API/logic (mirroring "public_tests/")
+# - run_tests.sh: Executes 'mvn clean test' to run ALL tests (original+public)
+# - pom.xml: Maven config with dependencies for JUnit 5, Mockito, Jackson (JSON)
+#
+# Testing instructions:
+# 1. Ensure Java 8+ and Maven are installed.
+# 2. Run 'chmod +x run_tests.sh' before first use if needed.
+# 3. Run all tests: ./run_tests.sh
+#    (builds code and runs all original and public unit tests)
+# 4. Read project_structure.txt for how tests/map to Python originals/publics.

@@ -1,0 +1,24 @@
+agile6v_awesome_nginx_rust/
+├── Cargo.toml                   # Rust package manifest and dependency configuration
+├── src/
+│   ├── lib.rs                  # Main implementation (hello_main)
+│   └── main.rs                 # Optional main entry (not needed for tests)
+├── tests/
+│   ├── original/
+│   │   └── test_hello.rs       # Translation of original test_hello.c
+│   └── public/
+│       └── test_hello_public.rs # Translation of public tests/test_hello_public.c
+├── run_tests.sh                # One-click test runner
+└── README.md                   # Project documentation
+
+Explanation of structure:
+
+- `src/lib.rs`: Implements the project functionality, especially `hello_main`, callable from tests.
+- `src/main.rs`: Optional main; not needed for library/testing, provided for completeness.
+- `tests/original/`: Contains Rust translation(s) of all original test cases (here: test_hello.c).
+- `tests/public/`: Contains Rust translation(s) of all public test cases (here: test_hello_public.c).
+- `Cargo.toml`: Rust build configuration, lists libs, dependencies, metadata.
+- `run_tests.sh`: Single command to execute *all* tests, both original and public.
+- `README.md`: Documentation, instructions, and project overview.
+
+Test discovery works automatically with `cargo test`. Both `tests/original/` and `tests/public/` test modules are integration tests and will be discovered and run.

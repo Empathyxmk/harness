@@ -1,0 +1,40 @@
+underyx_flask_redis/                     # Root Rust project directory
+├── Cargo.toml                           # Rust package definition and dependencies
+├── src/
+│   ├── lib.rs                           # Main library file. Holds constants, API stubs, and impls (mocked).
+│   └── client.rs                        # Mocked client module for test dependencies.
+├── tests/
+│   └── original/
+│       ├── test_setup_py.rs             # Translation of test/unit/test_setup_py.py
+│       ├── test_client.rs               # Translation of test/unit/test_client.py
+│       ├── test_init_py.rs              # Translation of test/unit/test_init_py.py
+│       ├── test_additional.rs           # Translation of test/unit/test_additional.py
+│       └── test_client_integration.rs   # Translation of test/integration/test_client.py
+├── public_tests/
+│   ├── integration/
+│   │   └── test_public_client.rs        # Translated public integration test
+│   └── unit/
+│       ├── test_public_additional.rs    # Translated public unit "additional" test
+│       ├── test_public_client.rs        # Translated public unit client test
+│       ├── test_public_init_py.rs       # Translated public unit dunder/init test
+│       └── test_public_setup_py.rs      # Translated public setup.py tests
+├── run_tests.sh                         # Simple Rust test execution script
+├── README.md                            # Usage/readme info (not included)
+└── project_structure.txt                # This file (project tree overview)
+
+---
+Directory Explanations:
+- src/: Main source files for the Rust library (only stubs/mocks for test dependencies here).
+- tests/original/: Rust translations of all original (private) Python test cases, preserving their logic.
+- public_tests/: Rust translations of all public test cases, organized by `integration`/`unit`.
+- run_tests.sh: Run `chmod +x run_tests.sh` and then `./run_tests.sh` to execute all tests.
+- Cargo.toml: Cargo/Rust dependency configuration and package meta.
+- project_structure.txt: This file, for documentation and navigation.
+
+---
+Test and Build Instructions:
+1. Ensure you have Rust (and Cargo) installed.
+2. Make sure `run_tests.sh` is executable: `chmod +x run_tests.sh`
+3. Run all tests: `./run_tests.sh`
+   - This will compile the project and run all tests (including both original and public).
+   - Everything uses the built-in Rust test framework; no further dependencies needed beyond what's in Cargo.toml.

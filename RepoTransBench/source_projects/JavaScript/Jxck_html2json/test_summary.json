@@ -1,0 +1,16 @@
+{
+  "project_name": "Jxck_html2json",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 69.43,
+    "branch": 52.66
+  },
+  "timestamp": "2025-06-19T10:47:35.972588",
+  "original_path": "/workspace/runnable_filter/JavaScript/Jxck_html2json",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/Jxck_html2json",
+  "tests_path": [
+    "test/test.js",
+    "test/html2json-extra.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,47 @@
+pilgr_Paper_CSharp/
+├── PilgrPaper.sln                                   # .NET solution file
+├── src/
+│   └── PilgrPaper/
+│       ├── PilgrPaper.csproj                        # Main library project (minimal)
+│       ├── Paper/                                   # Business logic analog (placeholders or partials for test compilation)
+│       ├── Models/                                  # Data models for testdata.Person, PersonArg etc
+│       └── Utils/                                   # Utilities (TestUtils equivalents)
+├── tests/
+│   └── original/
+│       ├── PilgrPaper.OriginalTests.csproj          # Test project for original tests
+│       ├── DataTest.cs
+│       ├── CustomBookTest.cs
+│       ├── PaperTest.cs
+│       ├── VersionUpgradeTest.cs
+│       ├── CustomBookLocationTest.cs
+│       ├── CompatibilityTest.cs
+│       ├── MultiThreadTest.cs
+│       ├── DeprecatedDataTest.cs
+│       ├── PaperDeprecatedAPITest.cs
+│       ├── PaperDbExceptionTest.cs
+│       ├── PaperTestUnit.cs
+│       ├── KeyLockerTest.cs
+│       ├── PaperTableTest.cs
+│       ├── ApplicationTest.cs
+│       ├── KotlinCompatibilityTest.cs
+│       └── TestDataGenerator.cs
+│       ├── Models/
+│       │    ├── Person.cs
+│       │    ├── PersonArg.cs
+│       │    └── PhoneNumber.cs
+│       └── Utils/
+│            └── TestUtils.cs
+├── public_tests/
+│   ├── PilgrPaper.PublicTests.csproj                # Test project for public tests
+│   ├── DataPublicTest.cs
+│   ├── CustomBookPublicTest.cs
+│   ├── PaperPublicTest.cs
+│   ├── PaperDbExceptionPublicTest.cs
+│   ├── Models/
+│   │    ├── Person.cs
+│   │    ├── PersonArg.cs
+│   │    └── PhoneNumber.cs
+│   └── Utils/
+│        └── TestUtils.cs
+├── run_tests.sh                                     # One-click test script
+├── README.md

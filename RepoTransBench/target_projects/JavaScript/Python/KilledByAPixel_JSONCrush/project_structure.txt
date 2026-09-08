@@ -1,0 +1,32 @@
+project_root/
+├── src/
+│   └── jsoncrush/
+│       ├── __init__.py
+│       └── jsoncrush.py
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   └── test_jsoncrush.py     # Original tests from test/JSONCrush.test.js
+│   └── test_jsoncrush_unit.py    # Unit tests from test_jsoncrush.js
+├── public_tests/
+│   ├── __init__.py
+│   └── test_jsoncrush_public.py  # Public tests from public_tests/JSONCrush.public.test.js
+├── requirements.txt              # Python dependencies (pytest)
+├── run_tests.sh                  # One-click run all tests
+├── project_structure.txt         # This project tree and explanations
+
+Explanation:
+- src/jsoncrush/jsoncrush.py     → Python implementation of JSONCrush and JSONUncrush (functionality for tests)
+- tests/original/test_jsoncrush.py → Exact port of the original JS tests (test/JSONCrush.test.js)
+- public_tests/test_jsoncrush_public.py → Exact port of the public JS tests (public_tests/JSONCrush.public.test.js)
+- tests/test_jsoncrush_unit.py   → Port of test_jsoncrush.js with console output (and all-pass assertion)
+- requirements.txt               → Declares pytest as dependency
+- run_tests.sh                   → Simple one-command script for running all tests
+- project_structure.txt          → This documentation
+
+Setup:
+1. python3 -m venv venv
+2. source venv/bin/activate
+3. pip install -r requirements.txt
+4. ./run_tests.sh

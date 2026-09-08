@@ -1,0 +1,21 @@
+{
+  "name": "multipipe",
+  "version": "4.0.0",
+  "description": "pipe streams with centralized error handling",
+  "license": "MIT",
+  "repository": "juliangruber/multipipe",
+  "dependencies": {
+    "object-assign": "^4.1.0"
+  },
+  "devDependencies": {
+    "duplexer2": "^0.1.4",
+    "mocha": "^7.2.0",
+    "nyc": "^17.1.0",
+    "prettier-standard": "^16.0.0",
+    "standard": "^14.0.2",
+    "through2": "^3.0.2"
+  },
+  "scripts": {
+    "test": "prettier-standard '**/*.js' 'test/*.js' && standard && mocha --reporter spec --timeout 300"
+  }
+}

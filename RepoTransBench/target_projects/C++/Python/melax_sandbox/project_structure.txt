@@ -1,0 +1,36 @@
+melax_sandbox_python/
+├── requirements.txt            # Python dependencies, install with: pip install -r requirements.txt
+├── run_tests.sh                # Simple script to run all tests
+├── project_structure.txt       # This file - documents the structure and instructions
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_voxblob_limcubes.py      # Translated from test_voxblob_limcubes.cpp (original)
+│       ├── testcov_headless.py           # Translated from testcov/testcov_headless.cpp (original)
+│       ├── testhull_headless.py          # Translated from testhull/testhull_headless.cpp (original)
+│       └── testphys_headless.py          # Translated from testphys/testphys_headless.cpp (original)
+└── public_tests/
+    ├── __init__.py
+    ├── test_voxblob_limcubes_public.py   # Translated from test_voxblob_limcubes_public.cpp (public)
+    └── testhull_headless_public.py       # Translated from testhull/testhull_headless_public.cpp (public)
+
+# Directory Explanations
+# - requirements.txt : Lists Python dependencies. Install using `pip install -r requirements.txt`
+# - run_tests.sh     : Executable script. Run `./run_tests.sh` to execute all tests (requires pytest installed).
+# - tests/original/  : All original logic/coverage test translations from C++ source.
+# - public_tests/    : All public test case translations from C++ source public test files.
+# - __init__.py      : (empty) Standard for Python test/package directories.
+#
+# Running All Tests:
+#   $ pip install -r requirements.txt
+#   $ chmod +x run_tests.sh
+#   $ ./run_tests.sh
+#
+# All tests from both "tests/" and "public_tests/" will be discovered & executed by pytest.
+#
+# To run only original/coverage tests:
+#   $ pytest tests/original/
+#
+# To run only public tests:
+#   $ pytest public_tests/

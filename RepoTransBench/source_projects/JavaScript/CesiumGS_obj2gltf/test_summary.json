@@ -1,0 +1,19 @@
+{
+  "project_name": "CesiumGS_obj2gltf",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 98.97,
+    "branch": 93.07
+  },
+  "timestamp": "2025-06-19T10:04:31.715349",
+  "original_path": "/workspace/runnable_filter/JavaScript/CesiumGS_obj2gltf",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/CesiumGS_obj2gltf",
+  "tests_path": [
+    "specs/lib/createGltfSpec.js",
+    "specs/lib/loadMtlSpec.js",
+    "specs/lib/loadObjSpec.js",
+    "specs/lib/loadTextureSpec.js",
+    "specs/lib/obj2gltfSpec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,31 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── src/
+│   ├── __init__.py
+│   └── command_interpreter.py    # CommandInterpreter implementation for tests
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_ci.py                # Original regression and unit tests
+│       └── test_command_interpreter_more.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_ci_public.py         # Public tests (with new command sets)
+│   └── test_command_interpreter_more_public.py
+└── project_structure.txt         # This file (structure doc)
+
+Directory/Files Explanations:
+- requirements.txt: Python dependencies (pytest)
+- run_tests.sh: Executable script to run all tests with `pytest`
+- src/: Python source; contains the main CommandInterpreter class used by all tests
+- tests/original/: Translations of original C++ regression/unit tests (logic/coverage tests)
+- public_tests/: Public/official test suite with different command configurations
+- project_structure.txt: Overview and explanations
+- All __init__.py files allow pytest to discover tests and treat directories as packages.
+
+How to run all tests:
+1. Ensure `pytest` is installed.
+2. Run: `./run_tests.sh`
+3. All original and public tests will be detected and run; output will indicate any failures.

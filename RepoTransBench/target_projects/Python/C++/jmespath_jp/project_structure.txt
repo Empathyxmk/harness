@@ -1,0 +1,70 @@
+/workspace/temp_translation/translation_20250625_080210/jmespath_jp
+├── CMakeLists.txt
+├── CONTRIBUTING.md
+├── Ensure
+├── LICENSE
+├── Makefile
+├── NOTICE
+├── README.md
+├── go.mod
+├── go.sum
+├── include
+│   └── jp_wrapper.h
+├── jp
+├── jp.go
+├── jp_wrapper.py
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests
+│   ├── CMakeLists.txt
+│   ├── test_public_jp_wrapper.py
+│   └── test_public_jp_wrapper_test.cpp
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── scripts
+│   ├── build-all-platforms
+│   ├── build-self-contained
+│   ├── bump-version
+│   ├── docker-build
+│   └── sign-all
+├── src
+│   └── jp_wrapper.cpp
+├── test
+│   ├── cases
+│   │   └── search.bats
+│   ├── compliance
+│   │   ├── basic.json
+│   │   ├── boolean.json
+│   │   ├── current.json
+│   │   ├── escape.json
+│   │   ├── filters.json
+│   │   ├── functions.json
+│   │   ├── identifiers.json
+│   │   ├── indices.json
+│   │   ├── literal.json
+│   │   ├── multiselect.json
+│   │   ├── pipe.json
+│   │   ├── slice.json
+│   │   ├── syntax.json
+│   │   ├── unicode.json
+│   │   └── wildcard.json
+│   ├── jp-compliance
+│   └── vendor
+│       └── bats
+│           ├── LICENSE
+│           ├── bin
+│           │   └── bats
+│           └── libexec
+│               ├── bats
+│               ├── bats-exec-suite
+│               ├── bats-exec-test
+│               ├── bats-format-tap-stream
+│               └── bats-preprocess
+├── test_jp_wrapper.py
+├── test_summary.json
+└── tests
+    ├── CMakeLists.txt
+    └── original
+        ├── CMakeLists.txt
+        └── test_jp_wrapper_test.cpp

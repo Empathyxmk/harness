@@ -1,0 +1,19 @@
+project_root/
+├── requirements.txt             # Python dependencies
+├── run_tests.sh                 # One-click run script for all tests
+├── tests/
+│   ├── __init__.py              # Pytest package marker
+│   └── original/
+│       ├── __init__.py
+│       ├── conftest.py
+│       ├── test_allocators.py               # Original C++ stub: always pass
+│       ├── test_nvjpeg_error.py             # Original C++ stub: always pass
+│       ├── test_cuda_error.py               # Original C++ stub: always pass
+│       └── test_supported_subsampling.py    # Original C++ stub: always pass
+├── public_tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── test_allocators_public.py            # Public version: vector growth/reserve test in Python
+│   ├── test_nvjpeg_error_public.py          # Public version: runtime error and message test
+│   ├── test_cuda_error_public.py            # Public version: simulate cuda error, error msg test
+│   └── test_supported_subsampling_public.py # Public version: check supported/unsupported ratios

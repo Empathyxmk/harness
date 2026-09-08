@@ -1,0 +1,17 @@
+{
+  "project_name": "JacksonTian_diveintonode_examples",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 50.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-23T10:39:19.292557",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/JacksonTian_diveintonode_examples",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/JacksonTian_diveintonode_examples",
+  "tests_path": [
+    "02/extensions.test.js",
+    "05/delete.test.js",
+    "05/parse.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

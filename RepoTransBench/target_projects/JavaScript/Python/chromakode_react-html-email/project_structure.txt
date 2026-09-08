@@ -1,0 +1,49 @@
+.
+├── requirements.txt                # Python dependencies: pytest for testing
+├── run_tests.sh                    # Simple one-click test execution script
+├── src/                            # (Stub) Library code for chromakode_react-html-email
+│   ├── __init__.py
+│   ├── includeDataProps.py
+│   ├── StyleValidator.py
+│   ├── PropTypes.py
+│   ├── renderEmail.py
+│   ├── index.py
+│   └── supportMatrix.json
+├── tests/                          # All project-internal/original tests
+│   └── original/
+│       ├── __init__.py
+│       ├── test_includeDataProps.py
+│       ├── test_renderEmail_extra.py
+│       ├── test_ReactHTMLEmail.py
+│       ├── test_StyleValidator.py
+│       ├── test_StyleValidator_extra.py
+│       ├── test_index.py
+│       ├── test_PropTypes.py
+│       └── test_renderEmail.py
+├── public_tests/                   # All public test files
+│   ├── __init__.py
+│   ├── test_StyleValidator_extra_public.py
+│   ├── test_StyleValidator_public.py
+│   ├── test_index_public.py
+│   ├── test_renderEmail_extra_public.py
+│   ├── test_renderEmail_public.py
+│   ├── test_ReactHTMLEmail_public.py
+│   ├── test_PropTypes_public.py
+│   └── test_includeDataProps_public.py
+└── README.md                       # Project documentation
+
+# Directory explanations:
+# - requirements.txt: Specifies pytest as the test dependency.
+# - run_tests.sh: Easily runs all tests using pytest.
+# - src/: Source code (Python implementations - see source files for actual logic).
+# - tests/original/: Python translations of original JavaScript test cases.
+# - public_tests/: Python translations of public (publicly released) test cases.
+# - README.md: Instructions and documentation.
+
+# Setup and testing instructions:
+# 1. Install the dependencies:   pip install -r requirements.txt
+# 2. Run all tests:              ./run_tests.sh
+
+# To run only original or public tests:
+#   pytest tests/original/
+#   pytest public_tests/

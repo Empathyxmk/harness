@@ -1,0 +1,21 @@
+commoncrawl_news_crawl_python/
+├── requirements.txt                 # Python dependencies (pytest, idna for Punycode)
+├── run_tests.sh                     # Simple shell script for running ALL tests via pytest
+├── tests/
+│   ├── __init__.py                  # (can be empty) - package marker
+│   └── original/
+│       ├── __init__.py              # (can be empty) - package marker
+│       ├── test_fast_url_filter.py        # Original test (FastURLFilterTest.java)
+│       ├── test_content_detector.py       # Original test (ContentDetectorTest.java)
+│       ├── test_pre_filter_bolt.py       # Original test (PreFilterBoltTest.java)
+│       ├── test_punycode_url_normalizer.py   # Original test (PunycodeURLNormalizerTest.java)
+│       ├── test_news_site_map_parser.py      # Original test (NewsSiteMapParserTest.java)
+│   └── resources/
+│       └── sitemap-news.xml          # Test resource XML for site map test
+├── public_tests/
+│   ├── __init__.py                  # (can be empty) - package marker
+│   ├── test_fast_url_filter_public.py       # Public test for FastURLFilter
+│   ├── test_content_detector_public.py      # Public test for ContentDetector
+│   ├── test_pre_filter_bolt_public.py      # Public test for PreFilterBolt
+│   ├── test_punycode_url_normalizer_public.py # Public test for PunycodeURLNormalizer
+│   ├── test_news_site_map_parser_public.py    # Public test for NewsSiteMapParser

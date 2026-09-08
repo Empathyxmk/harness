@@ -1,0 +1,28 @@
+ext.versions = [
+    minSdk            : 15,
+    compileSdk        : 32,
+    versionName       : '1.2.3',
+
+    gradleBuildTool   : '7.2.1',
+    spotlessGradle    : '6.7.0',
+    ktlintGradle      : '0.42.0',
+    dokkaGradle       : '1.7.0',
+    mavenPublish      : '0.15.1',
+
+    androidxAnnotation: '1.1.0',
+    autoService       : '1.0-rc7',
+    javapoet          : '1.13.0',
+    guava             : '28.2-jre',
+    incap             : '0.3',
+
+    // for demo
+    kotlin            : '1.7.0',
+    gson              : '2.8.5',
+    googleMaterial    : '1.6.0',
+
+    // unit test
+    junit             : '4.13.1',
+    runner            : '1.2.0',
+    junitExt          : '1.1.1',
+    stetho            : '1.5.1'
+]

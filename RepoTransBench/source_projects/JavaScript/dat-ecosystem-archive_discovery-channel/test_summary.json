@@ -1,0 +1,16 @@
+{
+  "project_name": "dat-ecosystem-archive_discovery-channel",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 83.33,
+    "branch": 70.43
+  },
+  "timestamp": "2025-06-23T10:38:49.316634",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/dat-ecosystem-archive_discovery-channel",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/dat-ecosystem-archive_discovery-channel",
+  "tests_path": [
+    "test/index-extra.test.js",
+    "test/index-coverage.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

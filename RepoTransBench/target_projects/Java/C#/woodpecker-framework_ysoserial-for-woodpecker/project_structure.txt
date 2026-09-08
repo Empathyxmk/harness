@@ -1,0 +1,52 @@
+woodpecker-framework_ysoserial-for-woodpecker-cs/
+├── src/
+│   └── WoodpeckerYsoserial/
+│       ├── WoodpeckerYsoserial.csproj
+│       ├── Program.cs
+│       └── (solution logic code goes here)
+├── tests/
+│   ├── original/
+│   │   ├── OriginalTests.csproj
+│   │   ├── Payloads/
+│   │   │   ├── JRMPReverseConnectTest.cs
+│   │   │   ├── CommandExecTest.cs
+│   │   │   ├── FileUploadTest.cs
+│   │   │   ├── TestHarnessTest.cs
+│   │   │   ├── PayloadsTest.cs
+│   │   │   ├── MyfacesTest.cs
+│   │   │   ├── RemoteClassLoadingTest.cs
+│   │   │   ├── JRMPReverseConnectSMTest.cs
+│   │   │   └── Custom/
+│   │   │       └── BcelWithArgsTest.cs
+│   │   ├── Annotation/
+│   │   │   └── PayloadTestAttribute.cs
+│   │   ├── Utility/
+│   │   │   └── (test utilities and base tools if needed)
+│   │   ├── TestForClass.cs
+│   │   ├── TemaplateTest.cs
+│   │   ├── StringsSmokeTest.cs
+│   │   ├── YsoConfigSmokeTest.cs
+│   │   ├── StringsTest.cs
+│   │   ├── GeneratePayloadTest.cs
+│   │   ├── YsoConfigTest.cs
+│   │   ├── SerializerDeserializerSmokeTest.cs
+│   │   ├── SerializerDeserializerTest.cs
+│   │   ├── CustomTest.cs
+│   │   ├── WrappedTest.cs
+│   │   ├── Exploit/
+│   │   │   └── RMIRegistryExploitTest.cs
+│   │   └── (other files)
+│   └── (other test infra)
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── SerializerDeserializerSmokePublicTest.cs
+│   ├── YsoConfigPublicTest.cs
+│   ├── StringsPublicTest.cs
+│   ├── SerializerDeserializerPublicTest.cs
+│   ├── StringsSmokePublicTest.cs
+│   ├── YsoConfigSmokePublicTest.cs
+│   └── GeneratePayloadPublicTest.cs
+├── WoodpeckerYsoserial.sln
+├── run_tests.sh
+├── README.md
+├── test_translation_progress.json

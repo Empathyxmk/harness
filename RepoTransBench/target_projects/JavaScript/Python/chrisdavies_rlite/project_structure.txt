@@ -1,0 +1,23 @@
+project_root/
+├── requirements.txt
+│   # Python dependencies (includes pytest for testing)
+├── run_tests.sh
+│   # Simple shell script to run all Python tests with pytest
+├── src/
+│   └── rlite/
+│       └── __init__.py
+│       # Placeholder for the rlite router implementation.
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_rlite.py
+│       #   - Translation of test/rlite.test.js (original)
+│       └── test_rlite_uncovered.py
+│           # - Translation of test/rlite.uncovered.test.js (original UMD test)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_rlite_public.py
+│   #   - Translation of public_tests/rlite.public.test.js (public)
+│   └── test_rlite_uncovered_public.py
+│       # - Translation of public_tests/rlite.uncovered.public.test.js (public UMD)

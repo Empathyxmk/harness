@@ -1,0 +1,51 @@
+pytest_tricks_rust/
+├── Cargo.toml              # Rust project manifest (dependencies, config)
+├── src/
+│   ├── lib.rs              # Rust main library
+│   ├── model_foobar.rs     # Python foobar.py logic structures in Rust
+│   └── model_sushi.rs      # Python sushi.py logic structures in Rust
+├── tests/
+│   └── original/
+│       ├── test_create_tests_via_parametrization.rs   # Translated "test_foobar.py"
+│       ├── test_parametrize.rs                        # Translated "test_parametrize.py"
+│       ├── test_params.rs                             # Translated "test_params.py"
+│       ├── test_foobar_show_warning.rs                # Translated "test_foobar_show_warning.py"
+│       ├── test_sushi_unit.rs                         # Translated "test_sushi_unit.py"
+│       ├── test_sushi_property_edge.rs                # Translated "test_sushi_property_edge.py"
+│       ├── test_sushi_error.rs                        # Translated "test_sushi_error.py"
+│       ├── test_conftest_py_integration.rs            # Translated "test_conftest_py_integration.py"
+│       └── test_sushi.rs                              # Translated "test_sushi.py"
+├── public_tests/
+│   ├── create_tests_via_parametrization/
+│   │   ├── test_public_parametrize.rs
+│   │   ├── test_public_params.rs
+│   │   └── test_public_foobar.rs
+│   ├── show_pytest_warnings/
+│   │   └── test_public_foobar_show_warning.rs
+│   └── mark_parametrize_with_indirect/
+│       ├── test_public_sushi_error.rs
+│       ├── test_public_conftest_py_integration.rs
+│       ├── test_public_sushi.rs
+│       ├── test_public_sushi_property_edge.rs
+│       └── test_public_sushi_unit.rs
+├── run_tests.sh               # One-click script: runs all tests (chmod +x)
+└── project_structure.txt      # This file: describes project structure
+
+# Directory Explanations
+
+src/:
+    - Core Rust crate logic, translated from original Python source (foobar.py, sushi.py, etc.)
+
+tests/original/:
+    - Full translation of original Python test suites to Rust
+
+public_tests/:
+    - Translation of public Python test suites to Rust, same structure as provided
+
+run_tests.sh:
+    - Executable script to run *all* tests with standard Rust command
+
+Setup and Testing Instructions:
+1. Install Rust (https://www.rust-lang.org/tools/install)
+2. cd into the repo root
+3. Run all tests: ./run_tests.sh

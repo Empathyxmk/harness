@@ -1,0 +1,16 @@
+{
+  "project_name": "brianloveswords_buffer-crc32",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:02:09.328249",
+  "original_path": "/workspace/runnable_filter/JavaScript/brianloveswords_buffer-crc32",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/brianloveswords_buffer-crc32",
+  "tests_path": [
+    "tests/crc.test.js",
+    "tests/crc-extra.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

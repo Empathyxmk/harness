@@ -1,0 +1,17 @@
+{
+  "name": "elaworkshop_awesome-cn-cafe",
+  "version": "1.0.0",
+  "description": "![CI](https://github.com/ElaWorkshop/awesome-cn-cafe/workflows/CI/badge.svg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^5.4.1",
+    "jest": "^30.0.1",
+    "jsonlint": "^1.6.3"
+  }
+}

@@ -1,0 +1,69 @@
+LatencyUtils_LatencyUtils/
+├── LICENSE
+├── LatencyUtils_LatencyUtils.sln
+├── README.md
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── IntervalEstimatorPublicTests.cs
+│   ├── LatencyStatsPublicTests.cs
+│   ├── MovingAverageIntervalEstimatorPublicTests.cs
+│   ├── PauseDetectorListenerPublicTests.cs
+│   ├── PublicTests.csproj
+│   ├── SimplePauseDetectorPublicTests.cs
+│   ├── TimeCappedMovingAverageIntervalEstimatorPublicTests.cs
+│   └── TimeServicesPublicTests.cs
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── LatencyUtils/
+│   │   └── LatencyUtils.csproj
+│   ├── examples/
+│   │   └── java/
+│   │       ├── LatencyComparativeLoggingDemo.java
+│   │       ├── LatencyLoggingDemo.java
+│   │       └── LatencyStatsDemo.java
+│   ├── main/
+│   │   └── java/
+│   │       └── org/
+│   │           └── LatencyUtils/
+│   │               ├── IntervalEstimator.java
+│   │               ├── LatencyStats.java
+│   │               ├── MovingAverageIntervalEstimator.java
+│   │               ├── PauseDetector.java
+│   │               ├── PauseDetectorListener.java
+│   │               ├── SimplePauseDetector.java
+│   │               ├── TimeCappedMovingAverageIntervalEstimator.java
+│   │               ├── TimeServices.java
+│   │               └── package-info.java
+│   └── test/
+│       └── java/
+│           └── org/
+│               └── LatencyUtils/
+│                   ├── IntervalEstimatorPublicTest.java
+│                   ├── IntervalEstimatorTest.java
+│                   ├── LatencyStatsPublicTest.java
+│                   ├── LatencyStatsTest.java
+│                   ├── MovingAverageIntervalEstimatorPublicTest.java
+│                   ├── MovingAverageIntervalEstimatorTest.java
+│                   ├── PauseDetectorListenerPublicTest.java
+│                   ├── PauseDetectorListenerTest.java
+│                   ├── SimplePauseDetectorPublicTest.java
+│                   ├── SimplePauseDetectorTest.java
+│                   ├── TimeCappedMovingAverageIntervalEstimatorPublicTest.java
+│                   ├── TimeCappedMovingAverageIntervalEstimatorTest.java
+│                   ├── TimeServicesPublicTest.java
+│                   └── TimeServicesTest.java
+├── test_summary.json
+├── test_translation_progress.json
+└── tests/
+    └── original/
+        ├── IntervalEstimatorTests.cs
+        ├── LatencyStatsTests.cs
+        ├── MovingAverageIntervalEstimatorTests.cs
+        ├── OriginalTests.csproj
+        ├── PauseDetectorListenerTests.cs
+        ├── SimplePauseDetectorTests.cs
+        ├── TimeCappedMovingAverageIntervalEstimatorTests.cs
+        └── TimeServicesTests.cs

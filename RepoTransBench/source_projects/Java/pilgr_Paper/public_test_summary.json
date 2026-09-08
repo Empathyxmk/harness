@@ -1,0 +1,61 @@
+{
+  "project_name": "pilgr_Paper",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:19:10.134501",
+  "original_path": "/workspace/verified_repos_v2/Java/pilgr_Paper",
+  "public_test_result_path": "/workspace/public_test_results/Java/pilgr_Paper",
+  "original_tests": {
+    "test_files": [
+      "paperdb/src/androidTest/java/io/paperdb/DataTest.java",
+      "paperdb/src/androidTest/java/io/paperdb/CustomBookTest.java",
+      "paperdb/src/androidTest/java/io/paperdb/PaperTest.java",
+      "paperdb/src/androidTest/java/io/paperdb/VersionUpgradeTest.java",
+      "paperdb/src/androidTest/java/io/paperdb/CustomBookLocationTest.java",
+      "paperdb/src/androidTest/java/io/paperdb/CompatibilityTest.java",
+      "paperdb/src/androidTest/java/io/paperdb/multithread/MultiThreadTest.java",
+      "paperdb/src/androidTest/java/io/paperdb/deprecated/DataTest.java",
+      "paperdb/src/androidTest/java/io/paperdb/deprecated/PaperDeprecatedAPITest.java",
+      "paperdb/src/test/java/io/paperdb/PaperDbExceptionTest.java",
+      "paperdb/src/test/java/io/paperdb/PaperTest.java",
+      "paperdb/src/test/java/io/paperdb/KeyLockerTest.java",
+      "paperdb/src/test/java/io/paperdb/PaperTableTest.java",
+      "app/src/androidTest/java/paperdb/io/paperdb/ApplicationTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 14,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "paperdb/src/androidTest/java/io/paperdb/DataPublicTest.java",
+      "paperdb/src/androidTest/java/io/paperdb/CustomBookPublicTest.java",
+      "paperdb/src/androidTest/java/io/paperdb/PaperPublicTest.java",
+      "paperdb/src/test/java/io/paperdb/PaperDbExceptionPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 6,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "paperdb/src/androidTest/java/io/paperdb/DataPublicTest.java",
+    "paperdb/src/androidTest/java/io/paperdb/CustomBookPublicTest.java",
+    "paperdb/src/androidTest/java/io/paperdb/PaperPublicTest.java",
+    "paperdb/src/test/java/io/paperdb/PaperDbExceptionPublicTest.java",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "paperdb/build.gradle"
+  ]
+}

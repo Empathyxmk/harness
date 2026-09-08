@@ -1,0 +1,27 @@
+project_root/
+│
+├── requirements.txt               # Python dependencies for the project (pytest and pytest-mock)
+├── run_tests.sh                   # Executable script to run all Python tests
+│
+├── tests/                         # All test code (excluding public tests)
+│   └── original/
+│       ├── test_SsoApplication.py     # Complete translation of SsoApplicationTest.java
+│       └── test_ApplicationTests.py   # Complete translation of ApplicationTests.java
+│
+├── public_tests/                  # All public test cases, isolated from original tests
+│   └── test_SsoApplicationPublicTest.py   # Complete translation of SsoApplicationPublicTest.java
+│
+└── project_structure.txt          # This file; describes the Python project layout
+
+Directory explanations:
+- requirements.txt: Lists dependencies (use 'pip install -r requirements.txt' to install)
+- run_tests.sh: One-click script to run all tests with pytest
+- tests/original/: Contains all original (non-public) test cases
+- public_tests/: Contains all public test cases
+- Each test file is directly transcribed and translated from the Java test suite into idiomatic, fully functional Python/pytest format. Core SsoApplication logic is stubbed/mocked as appropriate.
+
+Setup instructions:
+1. Install dependencies:
+     pip install -r requirements.txt
+2. Run all tests:
+     ./run_tests.sh

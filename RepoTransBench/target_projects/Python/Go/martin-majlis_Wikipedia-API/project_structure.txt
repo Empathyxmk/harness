@@ -1,0 +1,37 @@
+wikipediaapi-go/
+├── go.mod
+├── main.go
+├── module.go
+├── README.md
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── wikipedia_object_test.go
+│   │   ├── namespace_and_extractformat_test.go
+│   │   ├── utils_and_consts_test.go
+│   │   ├── links_test.go
+│   │   ├── extract_errors_test.go
+│   │   ├── extract_html_format_test.go
+│   │   ├── categorymembers_test.go
+│   │   ├── categories_test.go
+│   │   ├── wikipedia_test.go
+│   │   ├── extract_wiki_format_test.go
+│   │   ├── backlinks_test.go
+│   │   ├── wikipedia_page_test.go
+│   │   ├── langlinks_test.go
+│   ├── testutil.go         # (For test helpers/mocks; implemented as needed)
+├── public_tests/
+│   ├── public_namespace_and_extractformat_test.go
+│   ├── public_langlinks_test.go
+│   ├── public_backlinks_test.go
+│   ├── public_categorymembers_test.go
+│   ├── public_extract_errors_test.go
+│   ├── public_wikipedia_object_test.go
+│   ├── public_wikipedia_test.go
+│   ├── public_wikipedia_page_test.go
+│   ├── public_links_test.go
+│   ├── public_categories_test.go
+│   ├── public_extract_html_format_test.go
+│   ├── public_extract_wiki_format_test.go
+│   ├── public_utils_and_consts_test.go

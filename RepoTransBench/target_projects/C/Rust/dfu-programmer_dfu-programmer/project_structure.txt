@@ -1,0 +1,27 @@
+dfu-programmer/
+├── Cargo.toml               # Rust project configuration and dependencies
+├── run_tests.sh             # Simple script to run all tests
+├── src/                     # Source code directory
+│   ├── lib.rs               # Main library file
+│   ├── util.rs              # Utility functions (translated from util.h/c)
+│   └── libdfu.rs            # DFU programmer functions (translated from libdfu.h/c)
+└── tests/                   # Test directory
+    ├── main.rs              # Test integration file
+    ├── original/            # Original tests directory
+    │   ├── test_util.rs               # Translated from test_util.c
+    │   └── test_main_libdfu_dummy.rs  # Translated from test_main_libdfu_dummy.c
+    └── public/              # Public tests directory
+        ├── test_util_public.rs                # Translated from test_util_public.c
+        └── test_main_libdfu_dummy_public.rs   # Translated from test_main_libdfu_dummy_public.c
+
+The project follows standard Rust project structure:
+- src/ contains all the library code
+- tests/ contains all test code, organized into original and public subdirectories
+- Cargo.toml defines the project and its dependencies
+- run_tests.sh provides a simple way to execute all tests
+
+Test Execution:
+To run all tests, simply execute:
+$ ./run_tests.sh
+
+This will compile the code and run all tests using Cargo's built-in test runner.

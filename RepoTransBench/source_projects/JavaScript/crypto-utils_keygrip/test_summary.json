@@ -1,0 +1,16 @@
+{
+  "project_name": "crypto-utils_keygrip",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:08:31.684358",
+  "original_path": "/workspace/runnable_filter/JavaScript/crypto-utils_keygrip",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/crypto-utils_keygrip",
+  "tests_path": [
+    "test/keygrip.js",
+    "test/keygrip-extra.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

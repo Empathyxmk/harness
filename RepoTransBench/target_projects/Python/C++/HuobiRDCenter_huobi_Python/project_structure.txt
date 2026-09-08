@@ -1,0 +1,29 @@
+project_root/
+├── CMakeLists.txt                   # CMake build config, sets up project and all test executables
+├── include/                         # (empty, or for future library headers)
+├── src/                             # (empty, or for actual production code)
+├── tests/                           # All original Python tests translated to C++
+│   ├── test_utils_coverage.cpp      # C++ version of tests/test_utils_coverage.py
+│   ├── test_subuser_client.cpp      # C++ version of tests/test_subuser_client.py
+│   └── test_api_signature.cpp       # C++ version of tests/test_api_signature.py
+├── public_tests/                    # All public Python tests translated to C++
+│   ├── test_public_utils_coverage.cpp     # C++ version of public_tests/test_public_utils_coverage.py
+│   ├── test_public_subuser_client.cpp     # C++ version of public_tests/test_public_subuser_client.py
+│   └── test_public_api_signature.cpp      # C++ version of public_tests/test_public_api_signature.py
+├── run_tests.sh                     # Build & run all tests with one command
+├── project_structure.txt            # (this file) project layout and content explanation
+└── README.md                        # How to build/run tests, general project info
+
+Directory details:
+- tests/:          All original (non-public) tests migrated to C++, using Google Test.
+- public_tests/:   Public test suite, logic equivalent to Python's public_tests/ in C++.
+- src/, include/:  Place to put actual SDK code/headers in a C++ refactor/migration.
+- run_tests.sh:    To build & run tests: `chmod +x run_tests.sh && ./run_tests.sh`
+- CMakeLists.txt:  Main CMake configuration, sets up all tests using Google Test.
+- README.md:       Usage/build instructions.
+- project_structure.txt: This documentation file.
+
+Build/Run:
+- Prerequisites: cmake >=3.14, make, C++17 compiler, internet (for GTest fetch)
+- To run: `chmod +x run_tests.sh && ./run_tests.sh`
+- All tests (including public & original) will be built and executed as one binary.

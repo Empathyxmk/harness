@@ -1,0 +1,40 @@
+gf3_Levenshtein Python Translation Project Structure
+
+.
+├── src/
+│   └── levenshtein.py          # Implementation of Levenshtein distance (both function & class)
+├── tests/
+│   └── original/
+│       ├── test_levenshtein.py             # Original unit tests for Levenshtein class
+│       ├── test_levenshtein_coverage.py    # Original branch/line coverage tests for levenshtein() function
+│       ├── test_qunit_harness.py           # Original QUnit-style harness tests from test.js
+│       └── test_summary.json               # Summary info (converted)
+├── public_tests/
+│   ├── test_levenshtein_public.py          # Public-style tests for Levenshtein class (inputs different from originals)
+│   └── test_levenshtein_coverage_public.py # Public coverage tests using levenshtein() function (input variants)
+├── requirements.txt            # Python dependencies (pytest)
+├── run_tests.sh                # Simple test script (runs all tests with pytest)
+├── project_structure.txt       # This file: structure and content description
+
+# Directory Explanation
+- src/                     : Python source code (levenshtein.py contains both class & function implementations)
+- tests/original/          : All translated original test cases from JavaScript (full coverage)
+- public_tests/            : All translated public test cases (distinct input scenarios for public test exposure)
+- requirements.txt         : Project requirements for Python (pytest for testing)
+- run_tests.sh             : Simple shell script to run all tests
+- project_structure.txt    : Directory structure and file explanations
+
+# Test Discovery
+- All tests can be run at once with `./run_tests.sh`
+- Both original and public tests are auto-discovered by pytest (standard naming)
+
+# Usage Instructions
+1. Install requirements:
+       pip install -r requirements.txt
+2. Make the test script executable (if needed):
+       chmod +x run_tests.sh
+3. Run all tests:
+       ./run_tests.sh
+
+- Source tests are organized as "original" and "public" to mirror JS repo separation.
+- Implementation matches both direct distance function and class-based usage.

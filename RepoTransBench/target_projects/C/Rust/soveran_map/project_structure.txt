@@ -1,0 +1,28 @@
+soveran_map/
+├── Cargo.toml                 # Rust project configuration file
+├── src/
+│   └── main.rs                # Main source code for the map utility
+├── tests/
+│   ├── mod.rs                 # Test module configuration
+│   ├── data/
+│   │   └── input              # Original test input data
+│   └── original/
+│       ├── mod.rs             # Original tests module configuration
+│       └── tests.rs           # Original tests implementation
+├── public_tests/
+│   ├── data/
+│   │   └── public_input       # Public test input data
+│   └── public_tests.rs        # Public tests implementation
+└── run_tests.sh               # Test execution script
+
+Setup and Testing Instructions:
+1. Install Rust and Cargo (if not already installed): https://www.rust-lang.org/tools/install
+2. Build the project: cargo build
+3. Run all tests: ./run_tests.sh
+   - This will execute both original and public tests
+
+Test Structure:
+- Original tests are in tests/original/tests.rs
+- Public tests are in public_tests/public_tests.rs
+- Both test sets verify the same functionality with different inputs
+- Tests cover normal usage, multi-line input, empty input, and error cases

@@ -1,0 +1,43 @@
+madvirus_ddd-start-python/
+├── README.md
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_type_descriptor.py
+│       ├── test_type_resolver.py
+│       ├── test_spring_config.py
+│       ├── test_shop_application.py
+│       ├── test_coupon.py
+│       ├── test_no_order_exception.py
+│       ├── test_method_access.py
+│       ├── test_authentication.py
+│       ├── test_web_access.py
+│       ├── test_order_controller.py
+│       ├── test_place_order_service.py
+│       ├── test_jpa_order_repository_int.py
+│       ├── test_jpa_order_view_dao_int.py
+│       ├── test_jpa_order_summary_dao_int.py
+│       ├── test_security_cancel_policy.py
+│       ├── test_jpa_product_repository_int.py
+│       ├── test_jpa_article_repository_int.py
+│       ├── test_lock_manager_basic.py
+│       ├── test_optimistic_lock.py
+│       ├── test_lock_manager_multi_user.py
+│       ├── test_event_api.py
+│       ├── test_jdbc_event_store.py
+│       ├── test_event_forwarder.py
+│       ├── test_event_handler_get_event_type.py
+│       ├── test_event_store_handler_aspect.py
+│       ├── test_event_store_handler.py
+│       ├── test_test_event.py
+│       ├── test_async_event.py
+│       ├── test_event_reset_processor.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_type_descriptor_public.py
+│   ├── test_type_resolver_public.py
+│   └── test_spring_config_public.py
+├── test_translation_progress.json

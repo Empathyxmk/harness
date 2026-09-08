@@ -1,0 +1,14 @@
+keirf_amiga_stuff/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── util.rs
+├── tests/
+│   └── original/
+│       ├── util_test.rs
+│       └── inflate_test.rs
+├── public_tests/
+│   ├── util_public_test.rs
+│   └── inflate_test_public.rs
+├── run_tests.sh
+└── project_structure.txt

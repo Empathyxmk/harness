@@ -1,0 +1,15 @@
+{
+  "project_name": "jdorfman_awesome-json-datasets",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 66.66
+  },
+  "timestamp": "2025-06-19T10:41:11.917246",
+  "original_path": "/workspace/runnable_filter/JavaScript/jdorfman_awesome-json-datasets",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/jdorfman_awesome-json-datasets",
+  "tests_path": [
+    "tests/whitespace.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

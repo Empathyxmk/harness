@@ -1,0 +1,29 @@
+vijos_jd4 (Rust crate root)
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── cache.rs
+│   ├── case.rs
+│   ├── cgroup.rs
+│   ├── compile.rs
+│   ├── log.rs
+│   ├── pool.rs
+│   ├── status.rs
+│   └── compare.rs
+├── tests/
+│   └── original/
+│       ├── test_cache.rs
+│       ├── test_log_and_config.rs
+│       ├── test_pool.rs
+│       ├── case_test.rs
+│       ├── compare_test.rs
+│       └── integration_test.rs
+├── public_tests/
+│   ├── test_public_case.rs
+│   ├── test_public_pool.rs
+│   ├── test_public_log_and_config.rs
+│   ├── test_public_cache.rs
+│   ├── test_public_compare.rs
+│   └── conftest.rs
+├── run_tests.sh
+└── project_structure.txt

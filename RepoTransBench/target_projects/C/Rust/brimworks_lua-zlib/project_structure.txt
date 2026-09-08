@@ -1,0 +1,47 @@
+.
+├── Cargo.toml
+├── README.md
+├── run_tests.sh
+├── src
+│   ├── lib.rs         # Rust translation of minimal zlib API for tests
+│   └── main.rs        # Placeholder main file
+├── public_tests
+│   ├── test_public.rs                      # Rust translation of public test_public.lua
+│   ├── test_zlib_checksum_public.rs        # Rust translation of test_zlib_checksum_public.lua
+│   ├── test_zlib_edge_public.rs            # Rust translation of test_zlib_edge_public.lua
+│   └── test_zlib_constants_public.rs       # Rust translation of test_zlib_constants_public.lua
+├── tests
+│   ├── original
+│   │   ├── test.rs                     # All original tests from test.lua
+│   │   ├── test_zlib_checksum.rs       # From test_zlib_checksum.lua
+│   │   ├── test_zlib_edge.rs           # From test_zlib_edge.lua
+│   │   └── test_zlib_constants.rs      # From test_zlib_constants.lua
+├── amnon_david.gz         # Required by some tests (copy from original)
+├── tom_macwright.gz       # Required by some tests (copy from original)
+├── tom_macwright.out      # Required by some tests (copy from original)
+└── README.md
+
+# Directory and file explanations:
+# 
+# Cargo.toml
+#     Rust package manifest with library and test dependencies.
+# README.md
+#     Project description and build/test instructions.
+# run_tests.sh
+#     Simple script for one-click test execution. Run all tests.
+# src/
+#     Main source. lib.rs provides a minimal zlib-compatible API for the tests.
+# tests/original/
+#     Contains Rust translations of the *original* Lua C tests. 
+# public_tests/
+#     Contains Rust translations of the *public* Lua C tests.
+# amnon_david.gz, tom_macwright.gz, tom_macwright.out
+#     Test files required for roundtrip/inflate tests; must be present for all tests to pass.
+#
+# Setup instructions:
+# 1. Ensure you have Rust toolchain (cargo).
+# 2. Place amnon_david.gz, tom_macwright.gz, tom_macwright.out in the project root if you wish to run all content tests.
+# 3. Run:
+#      chmod +x run_tests.sh
+#      ./run_tests.sh
+#    This will build and run all tests (original and public).

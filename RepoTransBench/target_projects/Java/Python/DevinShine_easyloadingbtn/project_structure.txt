@@ -1,0 +1,48 @@
+Python Project Structure for DevinShine_easyloadingbtn
+=====================================================
+
+.
+├── src/
+│   └── easyloadingbtn/
+│       ├── __init__.py
+│       └── loading_button.py   # Python testable version of LoadingButton class.
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_loading_button.py    # Translated original tests from LoadingButtonTest.java
+├── public_tests/
+│   ├── __init__.py
+│   └── test_loading_button_public.py # Translated public tests from LoadingButtonPublicTest.java
+├── requirements.txt                  # Python dependencies (only pytest needed)
+├── run_tests.sh                      # One-click test run script for ALL tests
+├── project_structure.txt             # This file
+└── README.md                         # Basic usage and project info
+
+Explanations:
+-------------
+- src/easyloadingbtn/loading_button.py:
+    The core LoadingButton class, simulating expected public API sufficient for testing in Python.
+
+- tests/original/test_loading_button.py:
+    Unit tests translated from the original private/internal Java tests.
+
+- public_tests/test_loading_button_public.py:
+    Unit tests translated from the public Java tests.
+
+- requirements.txt:
+    Lists Python dependencies (Pytest).
+
+- run_tests.sh:
+    Executable script to run all tests, installing dependencies first.
+
+- project_structure.txt:
+    Describes the file tree and what each part is for.
+
+Setup & Usage:
+--------------
+1. Install Python 3.7+.
+2. Grant execute permission to the test script: `chmod +x run_tests.sh`
+3. Run all tests: `./run_tests.sh`
+
+The project separates original and public tests as in the Java version. All test logic is maintained.

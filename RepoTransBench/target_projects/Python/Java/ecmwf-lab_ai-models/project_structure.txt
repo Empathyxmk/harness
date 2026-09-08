@@ -1,0 +1,46 @@
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── ecmwf/
+│   │               └── ai_models/
+│   │                   ├── stepper/
+│   │                   │   └── Stepper.java
+│   │                   ├── checkpoint/
+│   │                   │   └── Checkpoint.java
+│   │                   ├── code/
+│   │                   │   └── SimpleCodeUtil.java
+│   │                   └── main/
+│   │                       └── MainModule.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── ecmwf/
+│                   └── ai_models/
+│                       ├── original/
+│                       │   ├── StepperTest.java
+│                       │   ├── CheckpointTest.java
+│                       │   ├── CodeTest.java
+│                       │   └── MainBasicTest.java
+│                       └── public_tests/
+│                           ├── PublicStepperTest.java
+│                           ├── PublicCodeTest.java
+│                           ├── PublicCheckpointTest.java
+│                           └── PublicMainBasicTest.java
+
+Structure explanation:
+
+- pom.xml: Maven configuration file (dependencies, build, test plugin)
+- run_tests.sh: Simple shell script to execute all tests (one click)
+- src/main/java/...: Placeholder/simulation implementations for tested modules (Stepper, Checkpoint, SimpleCodeUtil, MainModule)
+- src/test/java/com/ecmwf/ai_models/original/: Java translations of all original (private) Python tests
+- src/test/java/com/ecmwf/ai_models/public_tests/: Java translations of all public Python tests
+
+How to setup & test:
+1. Install Maven (https://maven.apache.org/)
+2. Make sure `run_tests.sh` is executable: `chmod +x run_tests.sh`
+3. Run all tests: `./run_tests.sh`
+4. All original and public tests run (JUnit output via Maven)

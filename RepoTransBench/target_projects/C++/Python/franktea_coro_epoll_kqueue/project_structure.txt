@@ -1,0 +1,47 @@
+franktea_coro_epoll_kqueue Python translation - Project Structure
+=================================================================
+
+/
+├── src/
+│   └── (Place for library source code: e.g. io_context.py, socket.py, etc.)
+├── tests/
+│   ├── __init__.py                  # Python package marker
+│   └── original/
+│       ├── __init__.py
+│       ├── test_awaiters.py
+│       ├── test_io_context_epoll.py
+│       ├── test_io_context_kqueue.py
+│       └── test_socket.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_awaiters.py
+│   ├── test_public_io_context_epoll.py
+│   ├── test_public_io_context_kqueue.py
+│   └── test_public_socket.py
+├── requirements.txt                 # Python dependencies (pytest)
+├── run_tests.sh                     # One-click script to run all tests
+└── project_structure.txt            # This project tree & explanations
+
+Directory/Files Explained:
+--------------------------
+
+src/                - (Optional, not included in this translation) Place your actual source implementation here.
+tests/original/     - Full translations of all original private test cases (from C++).
+public_tests/       - Translations of all public test cases (from C++ logic-only public tests).
+tests/__init__.py   - Python package marker for test discovery.
+requirements.txt    - Lists all dependencies. Run `pip install -r requirements.txt`.
+run_tests.sh        - Minimal script: runs all tests (public and original).
+project_structure.txt- This file: describes structure and usage.
+
+Setup/Testing Instructions:
+--------------------------
+
+1. Install dependencies:
+   $ pip install -r requirements.txt
+
+2. Run tests:
+   $ ./run_tests.sh
+
+   (You can also run `pytest tests/original` or `pytest public_tests` separately.)
+
+All tests are self-contained and run with pytest (no source implementation needed for logic-only translation).

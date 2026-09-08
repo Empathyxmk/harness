@@ -1,0 +1,45 @@
+kevinburke_hamms/ (project root)
+├── pom.xml
+│      - Maven configuration file: declares dependencies, build plugins, and project info.
+├── run_tests.sh
+│      - Simple executable script: runs all tests using Maven (`mvn clean test`).
+├── README.md
+│      - (Not implemented here, but standard project documentation file.)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── (source code classes to be implemented as needed)
+│   ├── test/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── original/
+│   │                   ├── ThreadPyTest.java
+│   │                   ├── UtilsTest.java
+│   │                   ├── MorseTest.java
+│   │                   ├── EndpointsTest.java
+│   │                   ├── HammsMiscTest.java
+│   │                   ├── HammsServerTest.java
+│   │                   ├── InitPyTest.java
+│   │                   └── MainPyTest.java
+│   └── public_test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── publictests/
+│                       ├── PublicEndpointsTest.java
+│                       ├── PublicMainPyTest.java
+│                       ├── PublicHammsMiscTest.java
+│                       ├── PublicHammsServerTest.java
+│                       ├── PublicMorseTest.java
+│                       ├── PublicInitPyTest.java
+│                       ├── PublicThreadPyTest.java
+│                       └── PublicUtilsTest.java
+
+- All original test classes are under `src/test/java/com/example/original/`, parallel to Python's `tests/`.
+- All public test classes are under `src/public_test/java/com/example/publictests/`, parallel to Python's `public_tests/`.
+- Source code (if implemented) should be placed under `src/main/java/com/example/`.
+- Tests use JUnit 5 and standard Java testing conventions.
+- To run all tests, simply `chmod +x run_tests.sh` (if not already executable) and run `./run_tests.sh` in the root directory.

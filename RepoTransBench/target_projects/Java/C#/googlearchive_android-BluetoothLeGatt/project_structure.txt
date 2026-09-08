@@ -1,0 +1,57 @@
+BluetoothLeGatt C# Project Structure:
+
+.
+├── BluetoothLeGatt.sln               # C# Solution file tying all projects together
+├── run_tests.sh                      # One-click script to run all tests
+├── project_structure.txt             # Project structure description (this file)
+├── src/
+│   └── BluetoothLeGatt/
+│       ├── BluetoothLeGatt.csproj    # Main library project file
+│       ├── SampleGattAttributes.cs   # Translation of SampleGattAttributes Java class
+│       ├── BluetoothLeService.cs     # BluetoothLeService static fields
+│       ├── DeviceScanActivity.cs     # DeviceScanActivity static (SCAN_PERIOD) class
+│       └── DeviceControlActivity.cs  # DeviceControlActivity static fields class
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj      # C# test project file for original (private/internal) tests
+│       ├── BluetoothLeServiceTestBasic.cs         # Original test translation
+│       ├── SampleGattAttributesTest.cs            # Original test translation
+│       ├── DeviceScanActivityTestBasic.cs         # Original test translation
+│       ├── DeviceControlActivityTestBasic.cs      # Original test translation
+│       └── SampleGattAttributesEdgeTest.cs        # Original edge-case test translation
+├── public_tests/
+│   ├── PublicTests.csproj            # C# test project file for public tests
+│   ├── SampleGattAttributesPublicTest.cs          # Translation of public tests
+│   └── SampleGattAttributesEdgePublicTest.cs      # Edge public test translation
+
+DIRECTORY/FILE EXPLANATIONS
+==============================
+BluetoothLeGatt.sln           : Solution file to manage/build/run all projects and tests at once.
+run_tests.sh                  : Bash script to build and run all tests using the dotnet CLI.
+src/BluetoothLeGatt/          : Main library code for the C# translation ("Production code").
+    ├── BluetoothLeGatt.csproj: C# class library project definition.
+    ├── SampleGattAttributes.cs       : GATT attribute lookup functionality.
+    ├── BluetoothLeService.cs         : Static constants for BluetoothLeService.
+    ├── DeviceScanActivity.cs         : Static field for scan period.
+    └── DeviceControlActivity.cs      : Static constants for device control.
+tests/original/               : Original (private/internal) tests translated from Java.
+    ├── OriginalTests.csproj  : Project for original/internal tests.
+    ├── *TestBasic.cs         : Basic behavior tests.
+    ├── *Test.cs              : Main original tests.
+    └── *EdgeTest.cs          : Edge-case original tests.
+public_tests/                 : Public, limited-disclosure tests.
+    ├── PublicTests.csproj    : Project for public tests.
+    ├── *PublicTest.cs        : Public scenario tests.
+    └── *EdgePublicTest.cs    : Public edge-case tests.
+
+SETUP & TEST INSTRUCTIONS
+==============================
+1. Prerequisites: .NET 6+ SDK installed.
+2. (First time only) Restore dependencies:
+      dotnet restore BluetoothLeGatt.sln
+3. Run all tests:
+      ./run_tests.sh
+   or equivalently:
+      dotnet test BluetoothLeGatt.sln
+
+This will build the C# solution, discover, and run all original and public tests.

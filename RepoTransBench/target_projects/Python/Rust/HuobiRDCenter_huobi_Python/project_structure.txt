@@ -1,0 +1,28 @@
+huobi_rdcenter_huobi_rust/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   ├── test_api_signature.rs             # Original API signature logic tests
+│   ├── test_subuser_client.rs            # Original subuser client unit/integration logic
+│   ├── test_utils_coverage.rs            # Original utility/coverage unit tests
+│   ├── test_public_api_signature.rs      # Public variant of API signature tests
+│   ├── test_public_subuser_client.rs     # Public variant for subuser logic
+│   └── test_public_utils_coverage.rs     # Public utilities logic/coverage variant
+├── run_tests.sh
+├── project_structure.txt
+
+Directory explanations:
+- src/                   : Main library code (empty/stub, as logic is in tests)
+- tests/                 : All logic/coverage test cases (original and public variants). Run with `cargo test`.
+- Cargo.toml             : Rust/cargo manifest.
+- run_tests.sh           : One-click test execution for *all* tests.
+- project_structure.txt  : This documentation.
+
+Setup and test instructions:
+1. Prerequisites: Rust 1.60+ (install from https://rustup.rs/)
+2. Run all tests (original + public):  
+       ./run_tests.sh
+   Or (manually):  
+       cargo test
+3. See `tests/` for complete coverage translation of Python test scenarios.

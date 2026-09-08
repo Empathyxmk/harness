@@ -1,0 +1,36 @@
+Snippets30Seconds/
+├── src/
+│   ├── SnippetsLib.csproj        # Main C# library project for snippets
+│   └── Snippets.cs               # Implementation of Snippets class with required methods
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj  # xUnit test project for original tests
+│       ├── SnippetsEdgeTests.cs  # Translated original edge case tests
+│       └── SnippetsTests.cs      # Translated original core tests (expand as needed)
+├── public_tests/
+│   ├── PublicTests.csproj        # xUnit test project for public tests
+│   ├── SnippetsEdgePublicTests.cs# Translated edge-case public tests
+│   └── SnippetsPublicTests.cs    # Translated core public tests
+├── Snippets30Seconds.sln         # Solution file linking all projects
+├── run_tests.sh                  # Simple script to run all tests
+└── project_structure.txt         # This file; directory and file explanations
+
+# Directory and file explanations:
+#
+# - src/:           Contains the SnippetsLib class library. All implementations go here.
+# - tests/original/:    xUnit test project for original (private/owner) test cases. 
+#                       All translated original test logic, 1:1 with Java tests.
+# - public_tests/:      xUnit test project for public tests. 
+#                       All translated public test logic, 1:1 with Java public tests.
+# - Snippets30Seconds.sln: Solution file that groups the projects for building and testing.
+# - run_tests.sh:    Runs ALL tests. Usage: `./run_tests.sh`
+#
+# Setup and Test Instructions:
+# 1. Install .NET 6.0+ SDK if needed.
+# 2. Run `dotnet restore` to fetch dependencies.
+# 3. Run `./run_tests.sh` to execute ALL tests (original and public).
+# 4. See test results in terminal. All failures/successes will be reported.
+#
+# To run individual test projects:
+#   dotnet test tests/original/OriginalTests.csproj
+#   dotnet test public_tests/PublicTests.csproj

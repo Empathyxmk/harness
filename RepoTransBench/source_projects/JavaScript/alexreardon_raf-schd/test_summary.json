@@ -1,0 +1,16 @@
+{
+  "project_name": "alexreardon_raf-schd",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T09:51:24.496953",
+  "original_path": "/workspace/runnable_filter/JavaScript/alexreardon_raf-schd",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/alexreardon_raf-schd",
+  "tests_path": [
+    "test/index.spec.js",
+    "test/rafSchd.extra.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

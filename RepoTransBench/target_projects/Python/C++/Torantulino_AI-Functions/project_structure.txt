@@ -1,0 +1,27 @@
+project_root/
+├── CMakeLists.txt                   # Root CMake project file, configures source, includes, tests, and GoogleTest
+├── README.md                        # Project overview and usage instructions
+├── include/
+│   └── ai_functions.hpp             # Library interface (header)
+├── run_tests.sh                     # One-click build and run test script
+├── src/
+│   ├── ai_functions.cpp             # Library stub implementation (testable interface)
+│   └── CMakeLists.txt               # Subdirectory for building library
+├── tests/
+│   ├── original/
+│   │   └── ai_function_test.cpp     # Translated original (private) tests from Python
+│   └── test_main.cpp                # Main entry point for GoogleTest runner
+├── public_tests/
+│   └── ai_function_public_test.cpp  # Translated public tests from Python
+└── project_structure.txt            # This structure overview
+
+# Structure Explanations:
+# - CMakeLists.txt: Sets up the CMake build for the library, tests, GoogleTest, and test runner.
+# - include/: Contains all public headers to be used in both library and tests.
+# - src/: Source code that implements the library (stubbed for testing; to be expanded).
+# - tests/original/: Original/private project unit tests, fully translated from Python.
+# - public_tests/: Publicly-released translated test cases.
+# - tests/test_main.cpp: The test runner main() (collects/runs all tests in the build).
+# - run_tests.sh: The simplest way to build and run all tests.
+# - README.md: Usage, build, and test instructions for users.
+# - project_structure.txt: This file, as documentation.

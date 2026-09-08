@@ -1,0 +1,42 @@
+project_root/
+├── AUTHORS
+├── LICENSE
+├── Makefile
+├── README.md
+├── docs/
+│   ├── Makefile
+│   ├── make.bat
+│   └── source/
+│       ├── changelog.md
+│       ├── conf.py
+│       ├── context.md
+│       ├── contributing.md
+│       ├── errors.md
+│       ├── example.md
+│       ├── fastapi.md
+│       ├── index.md
+│       ├── license.md
+│       ├── middleware.md
+│       ├── plugins.md
+│       ├── quickstart.md
+│       └── testing.md
+├── example/
+│   ├── Makefile
+│   ├── README.md
+│   ├── app.py
+│   ├── mypy.ini
+│   ├── requirements.txt
+│   └── setup_logging.py
+├── go.mod
+├── htmlcov/
+│   └── [coverage files...]
+├── tests/
+│   └── original/
+│       ├── test_date_plugin_test.go
+│       ├── test_plugins_init_test.go
+│       ├── test_middleware_init_test.go
+│       ├── test_pure_asgi_middleware_test.go
+│       ├── test_context_with_middleware_test.go
+│       └── test_api_key_plugin_test.go
+├── run_tests.sh
+├── test_translation_progress.json

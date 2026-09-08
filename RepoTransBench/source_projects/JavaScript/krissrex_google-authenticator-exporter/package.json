@@ -1,0 +1,32 @@
+{
+  "name": "google-auth-exporter",
+  "version": "1.0.0",
+  "description": "Convert 2fa uri to secrets",
+  "main": "src/index.js",
+  "repository": "github:krissrex/google-authenticator-exporter",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "start:qrcode": "node ./src/index.js -q",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "2fa",
+    "google",
+    "authenticator",
+    "export",
+    "migrate"
+  ],
+  "author": "Kristian Rekstad",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "prompt": "^1.3.0",
+    "protobufjs": "^7.3.0",
+    "qrcode": "^1.5.3"
+  },
+  "devDependencies": {
+    "jest": "^30.0.2",
+    "vitest": "^1.6.0"
+  }
+}

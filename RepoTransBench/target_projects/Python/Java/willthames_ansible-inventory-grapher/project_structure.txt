@@ -1,0 +1,31 @@
+willthames_ansible-inventory-grapher-java/
+├── pom.xml               # Maven configuration and dependencies
+├── run_tests.sh          # One-click test execution script
+├── project_structure.txt # This overview file
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── ansibleinventorygrapher/
+│                       ├── Edge.java          # Edge POJO, mirrors graph edge
+│                       ├── Node.java          # Node POJO
+│                       ├── __init__.java      # Test helper stubs for common static methods/fields used in tests
+│                       ├── inventory/
+│                       │   ├── InventoryManager.java      # Minimal stub used in tests
+│                       │   └── NoVaultSecretFound.java    # Exception class for missing vault password
+│                       └── version/
+│                           └── Version.java    # Version holder (mimics version.py)
+└── src/
+    └── test/
+        └── java/
+            └── com/
+                └── example/
+                    └── ansibleinventorygrapher/
+                        ├── original/
+                        │   ├── TestInventory.java      # (original) translation of tests/test_inventory.py
+                        │   ├── TestInit.java           # (original) translation of tests/test_init.py
+                        │   └── TestVersion.java        # (original) translation of tests/test_version.py
+                        └── publictests/
+                            ├── TestPublicInit.java     # translation of public_tests/test_public_init.py
+                            # (Other public test files would be similarly named and placed)

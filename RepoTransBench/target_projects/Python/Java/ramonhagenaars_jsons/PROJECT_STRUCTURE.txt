@@ -1,0 +1,54 @@
+.
+├── LICENSE
+├── README.md
+├── SConstruct.py
+├── docs/
+│   ├── _templates/
+│   │   └── sidebarintro.html
+│   ├── api.rst
+│   ├── conf.py
+│   ├── faq.rst
+│   └── index.rst
+├── htmlcov/
+│   └── ... (HTML coverage files)
+├── jsons/
+│   ├── __init__.py
+│   ├── _cache.py
+│   ├── ... (other Python implementation files)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── ramonhagenaars/
+│   │               └── jsons/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── ramonhagenaars/
+│                   └── jsons/
+│                       ├── original_tests/
+│                       │   ├── OriginalDefaultComplexTest.java
+│                       │   ├── OriginalDefaultDateTest.java
+│                       │   ├── OriginalDefaultDatetimeTest.java
+│                       │   ├── OriginalDefaultDecimalTest.java
+│                       │   ├── OriginalDefaultDictTest.java
+│                       │   ├── OriginalDefaultEnumTest.java
+│                       │   ├── OriginalDefaultIterableTest.java
+│                       │   ├── OriginalDefaultListTest.java
+│                       │   ├── OriginalDefaultMappingTest.java
+│                       │   ├── OriginalDefaultNonetypeTest.java
+│                       │   ├── OriginalDefaultPrimitiveTest.java
+│                       │   ├── OriginalDefaultStringTest.java
+│                       │   ├── OriginalDefaultTimeTest.java
+│                       │   ├── OriginalDefaultTimedeltaTest.java
+│                       │   ├── OriginalDefaultTimezoneTest.java
+│                       │   ├── OriginalDefaultTupleTest.java
+│                       │   └── OriginalDefaultUnionTest.java
+│                       └── public_tests/
+│                           ├── PublicDefaultTupleTest.java
+│                           ├── PublicDefaultTimeTest.java
+│                           ├── PublicDefaultTimezoneTest.java
+│                           └── PublicDefaultUnionTest.java
+├── pom.xml
+├── run_tests.sh
+└── PROJECT_STRUCTURE.txt

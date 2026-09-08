@@ -1,0 +1,95 @@
+{
+  "project_name": "Kreijstal_JavaScript-functions",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:33:28.171819",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/Kreijstal_JavaScript-functions",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/Kreijstal_JavaScript-functions",
+  "original_tests": {
+    "test_files": [
+      "PureFunctions2.test.js",
+      "parser/lang.test.js",
+      "parser/tree.test.js",
+      "parser/parser-constants.test.js",
+      "parser/Step.test.js",
+      "parser/regex-rules.test.js",
+      "parser/parser.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/PureFunctions2.public.test.js",
+      "public_tests/parser/lang.public.test.js",
+      "public_tests/parser/tree.public.test.js",
+      "public_tests/parser/parser-constants.public.test.js",
+      "public_tests/parser/Step.public.test.js",
+      "public_tests/parser/regex-rules.public.test.js",
+      "public_tests/parser/parser.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/parser/parser-constants.public.test.js",
+      "public_tests/parser/regex-rules.public.test.js",
+      "public_tests/parser/lang.public.test.js",
+      "public_tests/parser/Step.public.test.js",
+      "public_tests/parser/tree.public.test.js",
+      "public_tests/parser/parser.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/parser/parser.public.test.js",
+      "public_tests/parser/parser-constants.public.test.js",
+      "public_tests/parser/lang.public.test.js",
+      "public_tests/parser/parser.public.test.js",
+      "public_tests/parser/lang.public.test.js",
+      "public_tests/parser/parser-constants.public.test.js",
+      "public_tests/parser/parser.public.test.js",
+      "public_tests/parser/lang.public.test.js",
+      "public_tests/parser/parser-constants.public.test.js",
+      "public_tests/parser/parser.public.test.js",
+      "public_tests/parser/lang.public.test.js",
+      "public_tests/parser/parser-constants.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 27,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/PureFunctions2.public.test.js",
+    "public_tests/parser/lang.public.test.js",
+    "public_tests/parser/tree.public.test.js",
+    "public_tests/parser/parser-constants.public.test.js",
+    "public_tests/parser/Step.public.test.js",
+    "public_tests/parser/regex-rules.public.test.js",
+    "public_tests/parser/parser.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/parser/parser-constants.public.test.js",
+    "public_tests/parser/regex-rules.public.test.js",
+    "public_tests/parser/lang.public.test.js",
+    "public_tests/parser/Step.public.test.js",
+    "public_tests/parser/tree.public.test.js",
+    "public_tests/parser/parser.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/parser/parser.public.test.js",
+    "public_tests/parser/parser-constants.public.test.js",
+    "public_tests/parser/lang.public.test.js",
+    "public_tests/parser/parser.public.test.js",
+    "public_tests/parser/lang.public.test.js",
+    "public_tests/parser/parser-constants.public.test.js",
+    "public_tests/parser/parser.public.test.js",
+    "public_tests/parser/lang.public.test.js",
+    "public_tests/parser/parser-constants.public.test.js",
+    "public_tests/parser/parser.public.test.js",
+    "public_tests/parser/lang.public.test.js",
+    "public_tests/parser/parser-constants.public.test.js"
+  ]
+}

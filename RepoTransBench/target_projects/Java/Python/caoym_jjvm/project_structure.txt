@@ -1,0 +1,19 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── lang/
+│   │   │   ├── __init__.py
+│   │   │   └── test_jvm_field_method.py
+│   │   ├── test_jjvm.py
+│   │   ├── test_virtual_machine.py
+│   │   └── test_jvm_default_class_loader.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_jvm_default_class_loader_public.py
+│   ├── test_virtual_machine_public.py
+│   ├── test_jjvm_public.py
+│   └── test_jvm_field_method_public.py

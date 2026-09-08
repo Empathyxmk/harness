@@ -1,0 +1,29 @@
+.
+├── README.md               # Project description and setup instructions
+├── requirements.txt        # Python dependencies (pytest)
+├── run_tests.sh            # Simple test runner script (one-click test execution)
+├── project_structure.txt   # This project structure file
+├── src/
+│   └── tinycthread/
+│       └── __init__.py     # Placeholder for the tinycthread package
+├── tests/
+│   └── original/
+│       ├── test_hello.py                   # "hello.c" (original)
+│       ├── test_test.py                    # "test.c"   (original)
+│       ├── test_tinycthread_api.py         # "test_tinycthread_api.c" (original)
+│       └── test_tinycthread_extra.py       # "test_tinycthread_extra.c" (original)
+├── public_tests/
+│   ├── test_hello_public.py                # "hello_public.c"   (public)
+│   ├── test_public.py                      # "test_public.c"    (public)
+│   ├── test_tinycthread_api_public.py      # "test_tinycthread_api_public.c" (public)
+│   └── test_tinycthread_extra_public.py    # "test_tinycthread_extra_public.c" (public)
+
+Explanation:
+
+- `src/tinycthread/` is a placeholder for the library under test; it should eventually contain the python implementation (not provided in this translation).
+- `tests/original/` contains translations of all original C tests with identical functionality.
+- `public_tests/` contains translations of all public C test variants.
+- `requirements.txt` lists dependencies (`pytest`) for test running.
+- `run_tests.sh` is a minimal bash script running all tests with pytest.
+- To run all tests: `./run_tests.sh`
+- To run only original or public tests: `pytest tests/original/` or `pytest public_tests/`

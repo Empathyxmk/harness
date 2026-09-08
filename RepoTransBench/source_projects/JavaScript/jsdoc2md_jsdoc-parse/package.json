@@ -1,0 +1,19 @@
+{
+  "name": "jsdoc2md_jsdoc-parse",
+  "version": "1.0.0",
+  "description": "A parser for jsdoc outputs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "dependencies": {
+    "sort-array": "^3.0.0",
+    "array-back": "^6.0.0",
+    "lodash.omit": "^4.5.0",
+    "find-replace": "^3.0.0"
+  }
+}

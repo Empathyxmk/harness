@@ -1,0 +1,81 @@
+Project Structure
+=================
+
+project_root/
+├── src/
+│   ├── __init__.py
+│   └── trurl_logic.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_command_args.py
+│       └── test_full_cases.py
+│
+├── public_tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── test_public_json.py
+│   └── test_public_txt.py
+│
+├── testfiles/
+│   ├── test0000.txt
+│   ├── test0001.txt
+│   └── test0002.txt
+│
+├── testfiles_public/
+│   ├── test_public_0000.txt
+│   ├── test_public_0001.txt
+│   └── test_public_0002.txt
+│
+├── tests.json
+├── tests.json.bak
+├── tests_public.json
+├── requirements.txt
+├── run_tests.sh
+├── README.md (add project info & setup instructions)
+└── project_structure.txt
+
+Directory/Files Explained:
+--------------------------
+
+src/
+  Contains the main Python "trurl" logic (trurl_logic.py). You must replace this stub with a real implementation for meaningful results.
+
+tests/
+  Python `pytest` tests for all original test scenarios, structured to mimic C repository logic.
+  - original/: holds individual test files matching original suite.
+
+public_tests/
+  Python `pytest` tests for all public test scenarios, including JSON and custom .txt-based tests.
+
+testfiles/, testfiles_public/
+  Original C test resources/data (for reference or for use in advanced test expansion if needed).
+
+requirements.txt
+  Python dependencies (only pytest by default).
+
+run_tests.sh
+  Simple script to run *all* Python tests with `pytest`.
+
+tests.json, tests.json.bak, tests_public.json
+  JSON test specifications imported from the C project.
+
+README.md
+  Starter documentation for project overview, setup, and testing instructions.
+
+Setup & Testing Instructions
+----------------------------
+
+1. Install dependencies (ideally in a venv):
+   $ pip install -r requirements.txt
+
+2. Run all tests:
+   $ ./run_tests.sh
+
+  (Or, to run ONLY original tests: pytest tests/
+   Or, ONLY public: pytest public_tests/ )
+
+3. Add your 'real' trurl implementation to `src/trurl_logic.py`

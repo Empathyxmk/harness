@@ -1,0 +1,11 @@
+{
+  "project_name": "caoym_jjvm",
+  "language": "Java",
+  "coverage": {
+    "line": 52.2,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T08:46:05.810721",
+  "original_path": "/workspace/runnable_filter/Java/caoym_jjvm",
+  "test_result_path": "/workspace/test_enhancement_results/Java/caoym_jjvm"
+}

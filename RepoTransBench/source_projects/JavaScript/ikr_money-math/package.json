@@ -1,0 +1,16 @@
+{
+  "name": "ikr_money-math",
+  "version": "1.0.0",
+  "description": "Money math utilities",
+  "main": "money.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "jsbn": "^1.1.0"
+  }
+}

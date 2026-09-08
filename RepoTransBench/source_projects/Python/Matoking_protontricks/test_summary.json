@@ -1,0 +1,29 @@
+{
+  "project_name": "Matoking_protontricks",
+  "language": "Python",
+  "coverage": {
+    "line": 95.0,
+    "branch": 91.8
+  },
+  "timestamp": "2025-06-19T12:03:15.504572",
+  "original_path": "/workspace/runnable_filter/Python/Matoking_protontricks",
+  "test_result_path": "/workspace/test_enhancement_results/Python/Matoking_protontricks",
+  "tests_path": [
+    "tests/test_gui.py",
+    "tests/test_util.py",
+    "tests/test__version.py",
+    "tests/test_gui_coverage.py",
+    "tests/test_winetricks_func.py",
+    "tests/test_config_functional.py",
+    "tests/test_flatpak.py",
+    "tests/test_steam.py",
+    "tests/test_winetricks.py",
+    "tests/test_config.py",
+    "tests/cli/test_desktop_install.py",
+    "tests/cli/test_main.py",
+    "tests/cli/test_launch.py",
+    "tests/cli/test_util.py",
+    "tests/conftest.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

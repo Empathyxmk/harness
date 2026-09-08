@@ -1,0 +1,42 @@
+.
+├── LICENSE
+├── README.md
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests
+│   ├── test_public_cardsection_and_potentialaction.py
+│   └── test_public_webhook.py
+├── pyproject.toml
+├── run_public_tests.sh
+├── run_tests.sh
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── example
+│   │               └── pymsteams
+│   │                   ├── CardSection.java
+│   │                   ├── ConnectorCard.java
+│   │                   ├── PotentialAction.java
+│   │                   └── TeamsWebhookException.java
+│   ├── pymsteams
+│   │   └── __init__.py
+│   └── test
+│       └── java
+│           └── com
+│               └── example
+│                   └── pymsteams
+│                       ├── original
+│                       │   ├── CardSectionAndPotentialActionTest.java
+│                       │   └── ConnectorCardTest.java
+│                       └── publics
+│                           ├── PublicCardSectionAndPotentialActionTest.java
+│                           └── PublicConnectorCardTest.java
+├── test_summary.json
+├── tests
+│   ├── desk_toys_1.jpg
+│   ├── desk_toys_2.jpg
+│   ├── test_cardsection_and_potentialaction.py
+│   └── test_webhook.py
+└── uv.lock

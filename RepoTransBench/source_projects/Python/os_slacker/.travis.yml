@@ -1,0 +1,18 @@
+language: python
+
+dist: xenial
+
+python:
+  - "2.7"
+  - "3.6"
+  - "3.7"
+  - "3.8-dev"
+  - "pypy3.5"
+
+sudo: false
+
+install:
+  - pip install -r requirements-dev.txt
+
+script:
+  - pytest

@@ -1,0 +1,82 @@
+{
+  "project_name": "drakeet_Floo",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:15:50.941993",
+  "original_path": "/workspace/verified_repos_v2/Java/drakeet_Floo",
+  "public_test_result_path": "/workspace/public_test_results/Java/drakeet_Floo",
+  "original_tests": {
+    "test_files": [
+      "sample/src/test/java/me/drakeet/floo/sample/WebHandlerTest.java",
+      "sample/src/test/java/me/drakeet/floo/sample/TargetNotFoundToasterTest.java",
+      "sample/src/test/java/me/drakeet/floo/sample/URLsTest.java",
+      "library/src/test/java/me/drakeet/floo/ChainTest.java",
+      "library/src/test/java/me/drakeet/floo/StackManagerTest.java",
+      "library/src/test/java/me/drakeet/floo/StackStatesTest.java",
+      "library/src/test/java/me/drakeet/floo/UrlsTest.java",
+      "library/src/test/java/me/drakeet/floo/StackTest.java",
+      "library/src/test/java/me/drakeet/floo/TargetTest.java",
+      "library/src/test/java/me/drakeet/floo/TargetMapTest.java",
+      "library/src/test/java/me/drakeet/floo/InvalidJsonExceptionTest.java",
+      "library/src/test/java/me/drakeet/floo/PreconditionsTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 12,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "sample/src/test/java/me/drakeet/floo/sample/WebHandlerPublicTest.java",
+      "sample/src/test/java/me/drakeet/floo/sample/TargetNotFoundToasterPublicTest.java",
+      "sample/src/test/java/me/drakeet/floo/sample/URLsPublicTest.java",
+      "run_public_tests.sh",
+      "library/src/test/java/me/drakeet/floo/ChainPublicTest.java",
+      "library/src/test/java/me/drakeet/floo/InvalidJsonExceptionPublicTest.java",
+      "library/src/test/java/me/drakeet/floo/PreconditionsPublicTest.java",
+      "library/src/test/java/me/drakeet/floo/StackManagerPublicTest.java",
+      "library/src/test/java/me/drakeet/floo/StackPublicTest.java",
+      "library/src/test/java/me/drakeet/floo/StackStatesPublicTest.java",
+      "library/src/test/java/me/drakeet/floo/TargetMapPublicTest.java",
+      "library/src/test/java/me/drakeet/floo/TargetPublicTest.java",
+      "library/src/test/java/me/drakeet/floo/UrlsPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 15,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "sample/src/test/java/me/drakeet/floo/sample/WebHandlerPublicTest.java",
+    "sample/src/test/java/me/drakeet/floo/sample/TargetNotFoundToasterPublicTest.java",
+    "sample/src/test/java/me/drakeet/floo/sample/URLsPublicTest.java",
+    "run_public_tests.sh",
+    "library/src/test/java/me/drakeet/floo/ChainPublicTest.java",
+    "library/src/test/java/me/drakeet/floo/InvalidJsonExceptionPublicTest.java",
+    "library/src/test/java/me/drakeet/floo/PreconditionsPublicTest.java",
+    "library/src/test/java/me/drakeet/floo/StackManagerPublicTest.java",
+    "library/src/test/java/me/drakeet/floo/StackPublicTest.java",
+    "library/src/test/java/me/drakeet/floo/StackStatesPublicTest.java",
+    "library/src/test/java/me/drakeet/floo/TargetMapPublicTest.java",
+    "library/src/test/java/me/drakeet/floo/TargetPublicTest.java",
+    "library/src/test/java/me/drakeet/floo/UrlsPublicTest.java",
+    "run_public_tests.sh",
+    "build.gradle",
+    "library/build.gradle",
+    "sample/build.gradle",
+    "settings.gradle",
+    "run_public_tests.sh",
+    "run_tests.sh"
+  ]
+}

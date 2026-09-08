@@ -1,0 +1,19 @@
+{
+  "project_name": "bdarnell_plop",
+  "language": "Python",
+  "coverage": {
+    "line": 74.0,
+    "branch": 87.3
+  },
+  "timestamp": "2025-06-19T11:30:42.573655",
+  "original_path": "/workspace/runnable_filter/Python/bdarnell_plop",
+  "test_result_path": "/workspace/test_enhancement_results/Python/bdarnell_plop",
+  "tests_path": [
+    "plop/test/collector_test.py",
+    "plop/test/viewer_test.py",
+    "plop/test/callgraph_test.py",
+    "plop/test/platform_test.py",
+    "plop/test/setup_test.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

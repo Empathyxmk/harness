@@ -1,0 +1,36 @@
+project_root/
+├── src/
+│   └── msckf_mono/
+│       ├── __init__.py
+│       └── corner_detector.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── conftest.py
+│       ├── test_corner_detector.py
+│       └── test_corner_detector_extra.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── test_public_test_corner_detector.py
+│   └── test_public_test_corner_detector_extra.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Directory explanations:
+
+src/msckf_mono/:          Python source code modules (translated from C++ msckf_mono)
+tests/original/:          Original test cases (direct analogues of the C++ tests)
+public_tests/:            Public test cases (translated from C++/generated test cases)
+requirements.txt:         Python dependencies for test frameworks (pytest)
+run_tests.sh:             Simple script to run all tests (pytest for both test roots)
+project_structure.txt:    This documentation of the project tree
+
+Setup and testing instructions:
+
+1. (Optional) Ensure python3 and pip are available.
+2. Install dependencies (pytest) with: pip install -r requirements.txt
+3. Run all tests via: ./run_tests.sh
+4. Both original and public tests will be discovered and run by pytest.

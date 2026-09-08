@@ -1,0 +1,13 @@
+verbal_expressions/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── verbal_expressions.rs
+├── tests/
+│   └── original/
+│       ├── verbal_expressions_extra.rs
+│       └── verbal_expressions_test.rs
+├── public_tests/
+│   ├── test_public_verbal_expressions.rs
+│   └── test_public_verbal_expressions_extra.rs
+├── run_tests.sh

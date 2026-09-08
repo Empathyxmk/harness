@@ -1,0 +1,51 @@
+quora_qcore/
+├── CMakeLists.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── project_structure.txt
+├── src/
+│   ├── main.cpp
+│   └── lib/
+│       ├── ... core implementation source/header files ...
+├── include/
+│   └── ... project public headers ...
+├── tests/
+│   ├── original/
+│   │   ├── test_enum_test.cpp
+│   │   ├── test_asserts_test.cpp
+│   │   ├── test_decorators_test.cpp
+│   │   ├── test_testing_test.cpp
+│   │   ├── test_examples_test.cpp
+│   │   ├── test_debug_extra_test.cpp
+│   │   ├── test_microtime_test.cpp
+│   │   ├── test_debug_test.cpp
+│   │   ├── test_events_test.cpp
+│   │   ├── test_caching_test.cpp
+│   │   ├── test_errors_extra_test.cpp
+│   │   ├── test_helpers_test.cpp
+│   │   ├── test_microtime_extra_test.cpp
+│   │   ├── test_disallow_inheritance_test.cpp
+│   │   ├── test_errors_test.cpp
+│   │   ├── test_inspection_test.cpp
+│   │   └── test_inspectable_class_test.cpp
+│   └── test_main.cpp
+├── public_tests/
+│   ├── test_public_events_test.cpp
+│   ├── test_public_errors_extra_test.cpp
+│   ├── test_public_examples_test.cpp
+│   ├── test_public_errors_test.cpp
+│   ├── test_public_inspectable_class_test.cpp
+│   ├── test_public_microtime_test.cpp
+│   ├── test_public_helpers_test.cpp
+│   ├── test_public_debug_test.cpp
+│   ├── test_public_testing_test.cpp
+│   ├── test_public_asserts_test.cpp
+│   ├── test_public_inspection_test.cpp
+│   ├── test_public_enum_test.cpp
+│   ├── test_public_decorators_test.cpp
+│   ├── test_public_caching_test.cpp
+│   ├── test_public_disallow_inheritance_test.cpp
+│   ├── test_public_microtime_extra_test.cpp
+│   ├── test_public_debug_extra_test.cpp
+│   └── ... (additional as new batches processed) ...
+└── README.md

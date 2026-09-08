@@ -1,0 +1,34 @@
+termplotlib_rs/               - Project root
+├── Cargo.toml                - Rust package manifest; defines project and dependencies
+├── run_tests.sh              - Simple script to run ALL tests with one command
+├── src/
+│   └── lib.rs                - Library main source (contains stubs/mocks for API)
+├── tests/
+│   └── original/
+│       ├── test_barh.rs      - Original barh plot test (translated)
+│       ├── test_figure.rs    - Original Figure class test (translated)
+│       ├── test_hist.rs      - Original hist test (translated)
+│       ├── test_plot.rs      - Original plot test (translated)
+│       ├── test_scatter.rs   - Original scatter test (translated)
+│       └── test_subplot.rs   - Original subplot test (translated)
+├── public_tests/
+│   ├── test_public_barh.rs       - Public barh test (translated)
+│   ├── test_public_figure.rs     - Public figure/axes test (translated)
+│   ├── test_public_hist.rs       - Public histogram variants (translated)
+│   ├── test_public_plot.rs       - Public plot test (translated)
+│   ├── test_public_scatter.rs    - Public scatter test (translated)
+│   └── test_public_subplot.rs    - Public subplot init test (translated)
+
+Structure notes:
+- Source/main functionality is placed in src/lib.rs as stubs so all the tests compile.
+- All original tests are in tests/original/ mirroring the Python 'tests/'.
+- All public tests are in public_tests/ to separate publicly-visible scenarios.
+- run_tests.sh provides a simple way to run all tests: ./run_tests.sh
+- Cargo.toml defines the crate for both source and testing.
+
+Test execution:
+$ chmod +x run_tests.sh
+$ ./run_tests.sh
+    => compiles and runs ALL tests in tests/ and public_tests/ automatically
+
+To add new tests, just create new *.rs files in the appropriate directory.

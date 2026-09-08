@@ -1,0 +1,69 @@
+{
+  "project_name": "Meituan-Dianping_walle",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:41:06.603747",
+  "original_path": "/workspace/verified_repos_v2/Java/Meituan-Dianping_walle",
+  "public_test_result_path": "/workspace/public_test_results/Java/Meituan-Dianping_walle",
+  "original_tests": {
+    "test_files": [
+      "payload_reader/src/test/java/com/meituan/android/walle/PayloadReaderTest.java",
+      "payload_reader/src/test/java/com/meituan/android/walle/ChannelInfoEqualsHashCodeTest.java",
+      "payload_reader/src/test/java/com/meituan/android/walle/SignatureNotFoundExceptionTest.java",
+      "payload_reader/src/test/java/com/meituan/android/walle/ApkUtilTest.java",
+      "payload_reader/src/test/java/com/meituan/android/walle/ChannelInfoTest.java",
+      "payload_reader/src/test/java/com/meituan/android/walle/PairTest.java",
+      "payload_reader/src/test/java/com/meituan/android/walle/ChannelReaderTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "payload_reader/src/test/java/com/meituan/android/walle/PayloadReaderPublicTest.java",
+      "payload_reader/src/test/java/com/meituan/android/walle/ChannelInfoEqualsHashCodePublicTest.java",
+      "payload_reader/src/test/java/com/meituan/android/walle/SignatureNotFoundExceptionPublicTest.java",
+      "payload_reader/run_public_tests.sh",
+      "payload_reader/src/test/java/com/meituan/android/walle/PairPublicTest.java",
+      "payload_reader/src/test/java/com/meituan/android/walle/ChannelInfoPublicTest.java",
+      "payload_reader/src/test/java/com/meituan/android/walle/ChannelReaderPublicTest.java",
+      "payload_reader/src/test/java/com/meituan/android/walle/ApkUtilPublicTest.java",
+      "payload_reader/run_public_tests.sh",
+      "payload_reader/run_public_tests.sh",
+      "payload_reader/run_public_tests.sh",
+      "payload_reader/run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "payload_reader/run_public_tests.sh",
+      "payload_reader/run_public_tests.sh",
+      "payload_reader/run_public_tests.sh",
+      "payload_reader/run_public_tests.sh",
+      "payload_reader/run_public_tests.sh"
+    ],
+    "total_public_test_files": 12,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "payload_reader/src/test/java/com/meituan/android/walle/PayloadReaderPublicTest.java",
+    "payload_reader/src/test/java/com/meituan/android/walle/ChannelInfoEqualsHashCodePublicTest.java",
+    "payload_reader/src/test/java/com/meituan/android/walle/SignatureNotFoundExceptionPublicTest.java",
+    "payload_reader/run_public_tests.sh",
+    "payload_reader/src/test/java/com/meituan/android/walle/PairPublicTest.java",
+    "payload_reader/src/test/java/com/meituan/android/walle/ChannelInfoPublicTest.java",
+    "payload_reader/src/test/java/com/meituan/android/walle/ChannelReaderPublicTest.java",
+    "payload_reader/src/test/java/com/meituan/android/walle/ApkUtilPublicTest.java",
+    "payload_reader/run_public_tests.sh",
+    "payload_reader/run_public_tests.sh",
+    "payload_reader/run_tests.sh",
+    "payload_reader/run_public_tests.sh",
+    "payload_reader/run_public_tests.sh"
+  ]
+}

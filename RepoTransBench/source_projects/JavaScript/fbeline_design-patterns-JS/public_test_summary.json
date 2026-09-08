@@ -1,0 +1,50 @@
+{
+  "project_name": "fbeline_design-patterns-JS",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:26:47.971408",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/fbeline_design-patterns-JS",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/fbeline_design-patterns-JS",
+  "original_tests": {
+    "test_files": [
+      "test/prototype.test.js",
+      "test/factory_es6.test.js",
+      "test/factory.test.js",
+      "test/singleton_es6.test.js",
+      "test/prototype_es6.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/prototype.public.test.js",
+      "public_tests/factory.public.test.js",
+      "public_tests/factory_es6.public.test.js",
+      "public_tests/prototype_es6.public.test.js",
+      "public_tests/singleton_es6.public.test.js",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 6,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/prototype.public.test.js",
+    "public_tests/factory.public.test.js",
+    "public_tests/factory_es6.public.test.js",
+    "public_tests/prototype_es6.public.test.js",
+    "public_tests/singleton_es6.public.test.js",
+    "run_public_tests.sh"
+  ]
+}

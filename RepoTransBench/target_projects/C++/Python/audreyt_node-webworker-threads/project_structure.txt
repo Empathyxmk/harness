@@ -1,0 +1,35 @@
+audreyt_node-webworker-threads_python/
+├── src/
+│   └── sim/
+│       ├── __init__.py
+│       ├── simple_queue.py
+│       └── nan_isolate_data_accessor.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_nan_isolate_data_accessor.py
+│       └── test_queues_a_gogo.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_nan_isolate_data_accessor_public.py
+│   └── test_queues_a_gogo_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Directory explanations:
+- src/sim/: Contains Python modules simulating minimal required functionality from the C++ test targets (SimpleQueue, NanIsolateDataAccessor).
+- tests/original/: Translations of the original C++ tests found/tested in CTest.
+- public_tests/: Translations of public test cases, with distinct test data, corresponding to the _public.cpp C++ test cases.
+- requirements.txt: Python dependencies (pytest).
+- run_tests.sh: One-click script to run all tests (pytest scans tests/ and public_tests/).
+- project_structure.txt: This file; documents the overall project layout.
+
+Setup Instructions:
+1. (Recommended) Use a Python 3.7+ virtual environment.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run all tests: `./run_tests.sh`
+   - This executes ALL tests (original and public).
+4. Test source code resides in `src/sim/`.
+5. All translated test logic and scenarios (original + public) are covered.

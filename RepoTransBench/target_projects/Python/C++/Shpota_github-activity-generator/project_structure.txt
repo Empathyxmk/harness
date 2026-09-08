@@ -1,0 +1,28 @@
+github-activity-generator/
+├── CMakeLists.txt                # Root CMake listing defining target, test, GTest download.
+├── include/
+│   └── contribute.h              # Header for core library and test logic
+├── public_tests/
+│   └── test_public_contribute.cpp# C++ translation of public test cases
+├── run_tests.sh                  # One-click test build/run script
+├── src/
+│   ├── CMakeLists.txt            # Add library 'project_lib'
+│   └── contribute.cpp            # Functions for core project logic tested by all cases
+├── tests/
+│   ├── test_main.cpp             # Test entrypoint (main)
+│   └── original/
+│       └── test_contribute.cpp   # Translation of Python's original test suite
+└── project_structure.txt         # This overview and structure doc
+
+Directory explanations:
+- include/:        C++ public headers for sharing project logic with tests.
+- src/:           Implementation source code (contribute logic).
+- tests/:         All C++ test case files and test_main.cpp, plus original/ for Python's original tests.
+- public_tests/:   Translation of "public" test cases for user-facing validation.
+- run_tests.sh:    Build+run all tests (main binary is test_runner)
+- CMakeLists.txt:  Main CMake definitions, downloads GoogleTest, builds code, defines test suites.
+
+Setup:
+  1. Install CMake and C++17 compiler.
+  2. Run `./run_tests.sh`
+  3. All tests will be compiled and executed with full output.

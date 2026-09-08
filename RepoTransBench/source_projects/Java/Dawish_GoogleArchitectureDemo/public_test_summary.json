@@ -1,0 +1,79 @@
+{
+  "project_name": "Dawish_GoogleArchitectureDemo",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:47:40.308757",
+  "original_path": "/workspace/verified_repos_v2/Java/Dawish_GoogleArchitectureDemo",
+  "public_test_result_path": "/workspace/public_test_results/Java/Dawish_GoogleArchitectureDemo",
+  "original_tests": {
+    "test_files": [
+      "lib_coremodel/src/androidTest/java/architecture/google/coremodel/ExampleInstrumentedTest.java",
+      "lib_coremodel/src/androidTest/java/google/architecture/coremodel/ExampleInstrumentedTest.java",
+      "lib_coremodel/src/test/java/architecture/google/coremodel/ExampleUnitTest.java",
+      "lib_coremodel/src/test/java/google/architecture/coremodel/ExampleUnitTest.java",
+      "lib_coremodel/src/test/java/google/architecture/coremodel/util/JsonUtilTest.java",
+      "lib_coremodel/src/test/java/google/architecture/coremodel/util/SwitchSchedulersTest.java",
+      "lib_coremodel/src/test/java/google/architecture/coremodel/util/NetUtilsTest.java",
+      "app_universal/src/androidTest/java/google/architecture/ExampleInstrumentedTest.java",
+      "app_universal/src/test/java/google/architecture/ExampleUnitTest.java",
+      "module_girls/src/androidTest/java/google/architecture/girls/ExampleInstrumentedTest.java",
+      "module_girls/src/test/java/google/architecture/girls/ExampleUnitTest.java",
+      "app_specific/src/androidTest/java/google/architecture/specific/ExampleInstrumentedTest.java",
+      "app_specific/src/test/java/google/architecture/specific/ExampleUnitTest.java",
+      "lib_common/src/androidTest/java/google/architecture/common/ExampleInstrumentedTest.java",
+      "lib_common/src/test/java/google/architecture/common/ExampleUnitTest.java",
+      "module_news/src/androidTest/java/google/architecture/news/ExampleInstrumentedTest.java",
+      "module_news/src/test/java/google/architecture/news/ExampleUnitTest.java",
+      "lib_opensource/src/androidTest/java/google/architecture/opensource/ExampleInstrumentedTest.java",
+      "lib_opensource/src/test/java/google/architecture/opensource/ExampleUnitTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 19,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "lib_coremodel/src/test/java/google/architecture/coremodel/publictests/ExampleUnitPublicTest.java",
+      "lib_coremodel/src/test/java/google/architecture/coremodel/util/JsonUtilPublicTest.java",
+      "lib_coremodel/src/test/java/google/architecture/coremodel/util/SwitchSchedulersPublicTest.java",
+      "lib_coremodel/src/test/java/google/architecture/coremodel/util/NetUtilsPublicTest.java",
+      "run_public_tests.sh",
+      "lib_coremodel/src/androidTest/java/architecture/google/coremodel/ExampleInstrumentedPublicTest.java",
+      "lib_coremodel/src/androidTest/java/google/architecture/coremodel/ExampleInstrumentedPublicTest.java",
+      "lib_coremodel/src/test/java/architecture/google/coremodel/ExampleUnitPublicTest.java",
+      "lib_coremodel/src/test/java/google/architecture/coremodel/ExampleUnitPublicTest.java",
+      "run_public_tests.sh",
+      "lib_coremodel/src/test/java/google/architecture/coremodel/publictests/ExampleUnitPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 12,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "lib_coremodel/src/test/java/google/architecture/coremodel/publictests/ExampleUnitPublicTest.java",
+    "lib_coremodel/src/test/java/google/architecture/coremodel/util/JsonUtilPublicTest.java",
+    "lib_coremodel/src/test/java/google/architecture/coremodel/util/SwitchSchedulersPublicTest.java",
+    "lib_coremodel/src/test/java/google/architecture/coremodel/util/NetUtilsPublicTest.java",
+    "run_public_tests.sh",
+    "lib_coremodel/src/androidTest/java/architecture/google/coremodel/ExampleInstrumentedPublicTest.java",
+    "lib_coremodel/src/androidTest/java/google/architecture/coremodel/ExampleInstrumentedPublicTest.java",
+    "lib_coremodel/src/test/java/architecture/google/coremodel/ExampleUnitPublicTest.java",
+    "lib_coremodel/src/test/java/google/architecture/coremodel/ExampleUnitPublicTest.java",
+    "run_public_tests.sh",
+    "lib_coremodel/src/test/java/google/architecture/coremodel/publictests/ExampleUnitPublicTest.java",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

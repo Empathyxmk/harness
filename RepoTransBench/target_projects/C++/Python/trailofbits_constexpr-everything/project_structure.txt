@@ -1,0 +1,72 @@
+trailofbits_constexpr-everything-python/
+├── src/
+│   └── mylib/
+│       ├── __init__.py
+│       └── my_strlen.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_01_my_strlen.py
+│       ├── test_02_class_X.py
+│       └── test_03_my_strlen_extended.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_01_my_strlen_public.py
+│   ├── test_02_class_X_public.py
+│   └── test_03_constexpr_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+----------------------------------------------------------------------------------
+Directory/File Explanations:
+----------------------------------------------------------------------------------
+src/mylib/         : Source (library) code. Primary logic/my_strlen implementation lives here.
+  __init__.py      : Package initializer for 'mylib'.
+  my_strlen.py     : Python version of the C++ my_strlen function.
+
+tests/             : All original test cases from the C++ project, organized as a package.
+tests/original/    : Original translated test modules covering all class/functionality.
+  __init__.py      : Package initializer for 'tests/original'.
+  test_01_my_strlen.py
+                   : Tests for my_strlen and get_input (mirrors tests/01/test01.cpp).
+  test_02_class_X.py
+                   : Tests the X class's constructors, copy/assignment, and behavior (mirrors tests/02/test02.cpp).
+  test_03_my_strlen_extended.py
+                   : Additional/edge tests for my_strlen (mirrors tests/03/test03.cpp).
+
+public_tests/      : Public-generated test suite, independent logic/coverage, following same conventions.
+  __init__.py      : Package initializer for 'public_tests'.
+  test_01_my_strlen_public.py
+                   : Public tests for my_strlen ("public" for lesson-like/test task usage).
+  test_02_class_X_public.py
+                   : Public variant tests for the X class, using different input data.
+  test_03_constexpr_public.py
+                   : Public version of constexpr-style C++ logic (translated to Python idioms).
+
+requirements.txt   : Dependency listing (for pip install -r requirements.txt).
+run_tests.sh       : Simple, one-click Python test runner (using pytest).
+project_structure.txt : This documentation file.
+
+----------------------------------------------------------------------------------
+Setup & Testing Instructions:
+----------------------------------------------------------------------------------
+1. Install dependencies (once):
+     pip install -r requirements.txt
+
+2. Run ALL tests (original + public):
+     ./run_tests.sh
+
+    OR explicitly:
+     pytest
+
+3. Organize new tests by adding new test_*.py files under tests/original/ for originals and public_tests/ for public.
+
+----------------------------------------------------------------------------------
+Notes:
+- All tests assume functions/classes are available/imported at proper scope.
+- No Python `main()` required; pytest auto-discovers test functions/classes.
+- To run only original tests: pytest tests/original/
+- To run only public tests: pytest public_tests/
+-----------------------------------------------------------------------------------

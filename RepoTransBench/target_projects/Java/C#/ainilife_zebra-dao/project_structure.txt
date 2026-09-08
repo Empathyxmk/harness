@@ -1,0 +1,26 @@
+ainilife_zebra-dao-cs/
+├── README.md                       # Project overview and C# remake notes
+├── ainilife_zebra-dao-cs.sln       # .NET solution file
+├── src/
+│   └── Ainilife.ZebraDao/          # Core library project (placeholder for sources)
+│       ├── Ainilife.ZebraDao.csproj
+│       ├── AsyncMapperExecutor.cs
+│       ├── AsyncDaoCallableExecutor.cs
+│       ├── AsyncDaoException.cs
+│       ├── AsyncDaoRunnableExecutor.cs
+│       ├── AsyncDaoCallback.cs
+│       └── (Other translated source files/classes, as needed)
+├── tests/
+│   └── original/                   # Original (non-public) test cases
+│       ├── OriginalTests.csproj
+│       ├── AsyncMapperExecutorTests.cs
+│       ├── AsyncDaoRunnableExecutorTests.cs
+│       ├── AsyncDaoExceptionTests.cs
+│       └── AsyncDaoCallableExecutorTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── AsyncMapperExecutorPublicTests.cs
+│   ├── AsyncDaoRunnableExecutorPublicTests.cs
+│   ├── AsyncDaoExceptionPublicTests.cs
+│   └── AsyncDaoCallableExecutorPublicTests.cs
+├── run_tests.sh                    # Simple shell script to run ALL tests

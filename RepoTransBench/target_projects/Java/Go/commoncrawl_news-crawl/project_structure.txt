@@ -1,0 +1,33 @@
+commoncrawl_news_crawl/
+├── go.mod                            # Go module definition
+├── run_tests.sh                      # Simple test execution script
+├── tests/
+│   ├── original/
+│   │   ├── fast_url_filter_test.go               # Original private tests for FastURLFilter
+│   │   ├── content_detector_test.go              # Original private tests for ContentDetector
+│   │   ├── pre_filter_bolt_test.go               # Original private tests for PreFilterBolt
+│   │   ├── punycode_url_normalizer_test.go       # Original private tests for PunycodeURLNormalizer
+│   │   ├── news_sitemap_parser_test.go           # Original private tests for NewsSiteMapParser
+│   └── test_resources/
+│       └── sitemap-news.xml          # Resource used by sitemap test
+├── public_tests/
+│   ├── fast_url_filter_public_test.go                # Public test for FastURLFilter
+│   ├── content_detector_public_test.go               # Public test for ContentDetector
+│   ├── pre_filter_bolt_public_test.go                # Public test for PreFilterBolt
+│   ├── punycode_url_normalizer_public_test.go        # Public test for PunycodeURLNormalizer
+│   ├── news_sitemap_parser_public_test.go            # Public test for NewsSiteMapParser
+│
+# Directory explanations:
+#   tests/original/      : Private/original test cases fully emulating the original Java test logic.
+#   tests/test_resources/: Supplemental resources (XML, etc) used for testing.
+#   public_tests/        : Public test cases derived from public Java tests.
+#   go.mod               : Go module file, manages dependencies.
+#   run_tests.sh         : One-click shell script to run all Go tests.
+#
+# To run all tests:
+#   1. Install Go (https://golang.org/dl/)
+#   2. Ensure you are in the repo root.
+#   3. Make the script executable: chmod +x run_tests.sh
+#   4. Execute: ./run_tests.sh
+#
+# This will discover and run all tests in both tests/original/ and public_tests/.

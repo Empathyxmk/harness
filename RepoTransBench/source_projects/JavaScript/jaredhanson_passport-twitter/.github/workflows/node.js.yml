@@ -1,0 +1,93 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+# https://github.com/actions/starter-workflows/blob/main/ci/node.js.yml
+
+name: Node.js CI (New)
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version:
+        - current
+        - 22.x
+        - 20.x
+        - 18.x
+        - 16.x
+        - 14.x
+        - 12.x
+        - 10.x
+        - 8.x
+        - 6.x
+        - 4.x
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+    
+    - id: node-v
+      name: Output Node.js version
+      run: echo "version=$(node -v)" >> $GITHUB_OUTPUT
+    
+    - id: node-version
+      name: Parse Node.js version
+      uses: apexskier/github-semver-parse@v1
+      with:
+        version: ${{ steps.node-v.outputs.version }}
+     
+    - id: npm-v
+      name: Output npm version
+      run: echo "version=$(npm -v)" >> $GITHUB_OUTPUT
+      
+    - id: npm-version
+      name: Parse npm version
+      uses: apexskier/github-semver-parse@v1
+      with:
+        version: ${{ steps.npm-v.outputs.version }}
+      
+    - id: lockfile-version
+      name: Check package lockfileVersion
+      run: echo "version=$(cat package-lock.json | jq '.lockfileVersion')" >> $GITHUB_OUTPUT
+      if: hashFiles('package-lock.json') != ''
+    
+    - id: clean-install-v3
+      name: Clean install
+      run: npm ci
+      if: steps.npm-version.outputs.major >= 7 && steps.lockfile-version.outputs.version >= 3
+      
+    - id: clean-install-v3-compat
+      name: 'Install with lockfileVersion: 3 for compatibility with npm v6'
+      run: npm install
+      if: steps.npm-version.outputs.major < 7 && steps.npm-version.outputs.major >= 5 && steps.lockfile-version.outputs.version >= 3
+      
+    - name: Clean install
+      run: npm ci
+      # The [`ci`][1] command was [introduced][2] with npm@5, and is intended to
+      # be used in continuous integration environments.  If npm@5 or later is
+      # installed and the package-lock.json file exists, `npm ci` is executed to
+      # install dependencies.  Otherwise, `npm install` is executed.
+      #
+      # [1]: https://docs.npmjs.com/cli/v10/commands/npm-ci
+      # [2]: https://blog.npmjs.org/post/171556855892/introducing-npm-ci-for-faster-more-reliable
+      #if: steps.npm-version.outputs.major >= 6
+      if: steps.npm-version.outputs.major >= 5 && steps.lockfile-version.outputs.version != null
+          && steps.clean-install-v3.outcome == 'skipped' && steps.clean-install-v3-compat.outcome == 'skipped'
+    
+    - name: Install
+      run: npm install
+      if: steps.npm-version.outputs.major < 5 || steps.lockfile-version.outputs.version == null
+    
+    - run: npm test

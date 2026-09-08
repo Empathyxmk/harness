@@ -1,0 +1,88 @@
+import httpx
+import pytest
+from pytest_httpx import HTTPXMock
+
+from gigachat.api import post_chat
+from gigachat.context import authorization_cvar, operation_id_cvar, request_id_cvar, service_id_cvar, session_id_cvar
+from gigachat.exceptions import AuthenticationError, ResponseError
+from gigachat.models import Chat, ChatCompletion
+
+from ....utils import get_json
+
+BASE_URL = "http://testserver/api"
+MOCK_URL = f"{BASE_URL}/chat/completions"
+
+CHAT = Chat.parse_obj(get_json("chat.json"))
+CHAT_COMPLETION = get_json("chat_completion.json")
+
+
+def test__kwargs_context_vars() -> None:
+    token_authorization_cvar = authorization_cvar.set("authorization_cvar")
+    token_request_id_cvar = request_id_cvar.set("request_id_cvar")
+    token_session_id_cvar = session_id_cvar.set("session_id_cvar")
+    token_service_id_cvar = service_id_cvar.set("service_id_cvar")
+    token_operation_id_cvar = operation_id_cvar.set("operation_id_cvar")
+
+    assert post_chat._get_kwargs(chat=Chat(messages=[]))
+
+    authorization_cvar.reset(token_authorization_cvar)
+    request_id_cvar.reset(token_request_id_cvar)
+    session_id_cvar.reset(token_session_id_cvar)
+    service_id_cvar.reset(token_service_id_cvar)
+    operation_id_cvar.reset(token_operation_id_cvar)
+
+
+def test_sync(httpx_mock: HTTPXMock) -> None:
+    httpx_mock.add_response(url=MOCK_URL, json=CHAT_COMPLETION)
+
+    with httpx.Client(base_url=BASE_URL) as client:
+        response = post_chat.sync(client, chat=CHAT)
+
+    assert isinstance(response, ChatCompletion)
+
+
+def test_sync_value_error(httpx_mock: HTTPXMock) -> None:
+    httpx_mock.add_response(url=MOCK_URL, json={})
+
+    with httpx.Client(base_url=BASE_URL) as client:
+        with pytest.raises(ValueError, match="5 validation errors for ChatCompletion*"):
+            post_chat.sync(client, chat=CHAT)
+
+
+def test_sync_authentication_error(httpx_mock: HTTPXMock) -> None:
+    httpx_mock.add_response(url=MOCK_URL, status_code=401)
+
+    with httpx.Client(base_url=BASE_URL) as client:
+        with pytest.raises(AuthenticationError):
+            post_chat.sync(client, chat=CHAT)
+
+
+def test_sync_response_error(httpx_mock: HTTPXMock) -> None:
+    httpx_mock.add_response(url=MOCK_URL, status_code=400)
+
+    with httpx.Client(base_url=BASE_URL) as client:
+        with pytest.raises(ResponseError):
+            post_chat.sync(client, chat=CHAT)
+
+
+def test_sync_headers(httpx_mock: HTTPXMock) -> None:
+    httpx_mock.add_response(url=MOCK_URL, json=CHAT_COMPLETION)
+
+    with httpx.Client(base_url=BASE_URL) as client:
+        response = post_chat.sync(
+            client,
+            chat=CHAT,
+            access_token="access_token",
+        )
+
+    assert isinstance(response, ChatCompletion)
+
+
+@pytest.mark.asyncio()
+async def test_asyncio(httpx_mock: HTTPXMock) -> None:
+    httpx_mock.add_response(url=MOCK_URL, json=CHAT_COMPLETION)
+
+    async with httpx.AsyncClient(base_url=BASE_URL) as client:
+        response = await post_chat.asyncio(client, chat=CHAT)
+
+    assert isinstance(response, ChatCompletion)

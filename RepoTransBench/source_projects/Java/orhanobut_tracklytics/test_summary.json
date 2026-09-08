@@ -1,0 +1,11 @@
+{
+  "project_name": "orhanobut_tracklytics",
+  "language": "Java",
+  "coverage": {
+    "line": 91.6,
+    "branch": 70.4
+  },
+  "timestamp": "2025-06-19T23:39:10.198055",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/orhanobut_tracklytics",
+  "test_result_path": "/workspace/test_enhancement_results/Java/orhanobut_tracklytics"
+}

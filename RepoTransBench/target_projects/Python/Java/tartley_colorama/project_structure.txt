@@ -1,0 +1,23 @@
+tartley_colorama Java Project Structure
+
+.
+├── pom.xml                 # Maven build configuration with dependencies (JUnit 5, Mockito)
+├── run_tests.sh            # Simple executable script to run all tests
+├── README.md               # Project setup and usage instructions
+├── project_structure.txt   # This project structure document
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── colorama/
+│   │                   └── ... (library code goes here, to support the tests)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── colorama/
+│                       ├── original/
+│                       │   └── ... (original tests, JUnit 5)
+│                       └── public_tests/
+│                           └── ... (public tests, JUnit 5)

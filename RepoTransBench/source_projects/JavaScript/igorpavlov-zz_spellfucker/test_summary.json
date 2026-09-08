@@ -1,0 +1,16 @@
+{
+  "project_name": "igorpavlov-zz_spellfucker",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 91.42,
+    "branch": 72.72
+  },
+  "timestamp": "2025-06-19T10:38:29.810434",
+  "original_path": "/workspace/runnable_filter/JavaScript/igorpavlov-zz_spellfucker",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/igorpavlov-zz_spellfucker",
+  "tests_path": [
+    "tests/spellfucker.test.js",
+    "tests/spellfucker.advanced.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,17 @@
+{
+  "project_name": "aMarCruz_rollup-plugin-cleanup",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 95.24,
+    "branch": 91.18
+  },
+  "timestamp": "2025-06-23T10:31:49.718854",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/aMarCruz_rollup-plugin-cleanup",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/aMarCruz_rollup-plugin-cleanup",
+  "tests_path": [
+    "test/create-filter.test.js",
+    "test/parse-options.test.js",
+    "test/index.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

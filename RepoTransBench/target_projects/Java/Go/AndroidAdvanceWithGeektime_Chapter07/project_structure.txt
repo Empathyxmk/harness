@@ -1,0 +1,19 @@
+.
+├── go.mod                     # Go module file
+├── README.md                  # Instructions and project overview
+├── project_structure.txt      # This project tree and directory explanation
+├── run_tests.sh               # Simple test execution script
+├── tests/
+│   └── original/
+│       ├── example_instrumented_test.go      # Original instrumented test
+│       ├── log_test.go                       # Original test for Log
+│       └── reflect_util_test.go              # Original test for ReflectUtil
+└── public_tests/
+    ├── example_instrumented_public_test.go   # Public variant of instrumented test
+    ├── log_public_test.go                    # Public test for Log
+    └── reflect_util_public_test.go           # Public test for ReflectUtil
+
+- `go.mod` specifies the module and required Go version.
+- `run_tests.sh` allows you to run all unit and public tests with a single command.
+- `tests/original/` contains all translated original tests.
+- `public_tests/` contains all translated public tests.

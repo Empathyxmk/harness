@@ -1,0 +1,13 @@
+rvrsh3ll_bof_collection/
+├── Cargo.toml              # Rust project configuration with test definitions
+├── src/
+│   └── lib.rs              # Library code with mocks for BOF collection functionality
+├── tests/
+│   ├── registry_persistence.rs   # Original registry persistence tests
+│   ├── domain_info.rs            # Original domain info tests
+│   └── portscan.rs               # Original port scan tests
+├── public_tests/
+│   ├── registry_persistence_public.rs   # Public registry persistence tests
+│   ├── domain_info_public.rs            # Public domain info tests
+│   └── portscan_public.rs               # Public port scan tests
+└── run_tests.sh            # Script to run all tests

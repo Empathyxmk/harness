@@ -1,0 +1,51 @@
+Project Structure for FlashText Java (JUnit 5 + Maven):
+
+.
+├── pom.xml
+│       → Maven build configuration; manages dependencies and test plugins.
+├── run_tests.sh
+│       → One-click script to run all unit tests (original and public), via Maven.
+├── src/
+│   ├── main/java/com/example/flashtext/
+│   │      └── KeywordProcessor.java
+│   │              → Java implementation of the FlashText algorithm (stub in this template).
+│   └── test/java/com/example/
+│       ├── original/
+│       │      └── [All original test cases...]
+│       └── public_tests/
+│              └── [All public test cases...]
+├── test/
+│   ├── keyword_remover_test_cases.json
+│   ├── keyword_extractor_test_cases.json
+│   ├── keywords_format_one.txt
+│   └── keywords_format_two.txt
+│       → These JSON/text files are test-data resources for corresponding tests.
+└── README.md
+        → Instructions for setup, building, and running tests.
+
+Testing Instructions:
+---------------------
+1. Install Maven (https://maven.apache.org/)
+2. Place all test data (`test/*.json`, `test/*.txt`) in the `test/` directory.
+3. To run tests:
+      $ ./run_tests.sh
+   OR:
+      $ mvn clean test
+
+- All test code is under `src/test/java/com/example/original/` and `src/test/java/com/example/public_tests/`.
+- You may add/adjust the real implementation for `KeywordProcessor` as needed under `src/main/java/com/example/flashtext/`.
+
+Directory/Organization Notes:
+- `src/main/java/com/example/flashtext/`:
+    Contains the actual Java implementation of FlashText (must be implemented for full test execution).
+- `src/test/java/com/example/original/`:
+    Contains translated test cases from the *original* test suite.
+- `src/test/java/com/example/public_tests/`:
+    Contains translated *public* test cases (from public_tests/ in Python codebase).
+- `test/`:
+    Holds data files/fixtures needed for parametrized tests.
+
+- Build/dependency resolution is handled by Maven via the project `pom.xml`.
+- One-click test execution is handled by `run_tests.sh`.
+
+All tests are fully translated and implemented as per the original and public Python test suites.

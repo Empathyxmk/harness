@@ -1,0 +1,41 @@
+MadLittleMods_node-usb-detection/
+├── CHANGELOG.md
+├── CMakeLists.txt
+├── README.md
+├── binding.gyp
+├── build_public/
+│   └── ... (build files)
+├── doc/
+│   └── debugging-notes.md
+├── index.d.ts
+├── index.js
+├── license
+├── package-lock.json
+├── package.json
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── __init__.py
+│   └── test_devicelist_public.py
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── __init__.py
+│   └── devicelist.py
+│   └── (other C++ src files)
+├── test/
+│   ├── dev-helper-test.js
+│   ├── deviceList_public_test.cpp
+│   ├── deviceList_test.cpp
+│   ├── fixtures/
+│   │   └── *.js
+│   ├── lib/
+│   │   └── *.js
+│   └── test.js
+├── test_summary.json
+└── tests/
+    ├── __init__.py
+    └── original/
+        ├── __init__.py
+        └── test_devicelist.py

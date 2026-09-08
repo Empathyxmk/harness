@@ -1,0 +1,46 @@
+Project Structure for C++ port of stephenmcd_django-forms-builder
+
+.
+├── include/                # Public headers for the application/library (if any)
+├── public_tests/           # Public test suite (translated from public_tests/)
+│   ├── test_public_fields.cpp
+│   └── test_public_fields_unit.cpp
+├── src/
+│   ├── main.cpp            # Entry point placeholder (optional)
+│   └── lib/                # C++ ported library code - to be implemented separately
+│       ├── forms_fields.cpp
+│       ├── forms_fields.h
+│       └── ...other modules as needed
+├── tests/
+│   ├── original/
+│   │   ├── tests_core.cpp
+│   │   ├── tests_docs_conf_py.cpp
+│   │   ├── tests_fields.cpp
+│   │   ├── tests_fields_unit.cpp
+│   │   ├── tests_init_py.cpp
+│   │   ├── tests_setup_py.cpp
+│   │   └── tests_utils.cpp
+│   └── test_main.cpp       # GTest entry point for running all test cases
+├── CMakeLists.txt          # CMake build configuration
+├── run_tests.sh            # One-click test execution script
+├── README.md               # Project documentation
+└── project_structure.txt   # This file
+
+
+Directory Explanations:
+- include/:         Public C++ header files; for greater modularity and interface sharing
+- src/:            Contains the source code. src/lib/ should contain code ported from forms_builder/forms/*
+- tests/original/: All original test cases ported to C++
+- public_tests/:    Publicly visible tests, as ported to C++
+- tests/test_main.cpp: Entry point for all C++ tests (unifies running all test files)
+- CMakeLists.txt:   CMake build configuration to build (including GoogleTest)
+- run_tests.sh:     Simple script to build and run all tests
+- README.md:        Documentation and usage instructions
+
+Setup & Testing Instructions:
+1. Prerequisites: C++14 compiler, CMake, git and internet connection (gtest will be automatically fetched)
+2. Run: chmod +x run_tests.sh
+3. Execute: ./run_tests.sh
+4. All original and public tests will be built and run with GoogleTest output.
+
+Note: If you implement additional source modules, add them to src/lib/ and update CMakeLists.txt if needed.

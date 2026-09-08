@@ -1,0 +1,18 @@
+antirez_aocla/
+├── Cargo.toml
+├── Cargo.lock
+├── run_tests.sh
+├── src/
+│   ├── lib.rs
+│   └── main.rs
+├── tests/
+│   ├── original/
+│   │   ├── test_aocla_basic.rs
+│   │   └── test_aocla_coverage.rs
+│   └── public/
+│       ├── test_aocla_basic_public.rs
+│       └── test_aocla_coverage_public.rs
+...
+Other source, legacy and example files omitted for brevity.
+- All Rust test files are in `tests/original/` (original) and `tests/public/` (public).
+- To run **all tests**, execute `./run_tests.sh` in project root.

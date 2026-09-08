@@ -1,0 +1,11 @@
+{
+  "name": "the-super-tiny-compiler",
+  "version": "1.0.0",
+  "author": "James Kyle <me@thejameskyle.com> (thejameskyle.com)",
+  "license": "CC-BY-4.0",
+  "main": "./the-super-tiny-compiler.js",
+  "devDependencies": {
+    "jest": "^30.0.1",
+    "jest-environment-node": "^30.0.1"
+  }
+}

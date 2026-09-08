@@ -1,0 +1,50 @@
+project_root/
+├── pom.xml                      # Maven build configuration and dependencies for the project and test framework (JUnit5, AssertJ)
+├── run_tests.sh                 # Simple, one-click shell script to run all Java tests with Maven
+├── README.md                    # Project, structure and setup explanations
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── create_tests_via_parametrization/
+│                   │   ├── Foobar.java     # Implementation of Package, Woman, Man, etc.
+│                   ├── mark_parametrize_with_indirect/
+│                   │   ├── Sushi.java      # Implementation of Sushi
+│                   │   ├── Restaurant.java # Implementation of Restaurant
+│                   │   ├── ConftestUtil.java # Utility for fixtures/data for tests (recipes etc)
+│                   └── show_pytest_warnings/
+│                       └── WarningHelper.java # Helper for warning emission if needed
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── original/
+│                       ├── create_tests_via_parametrization/
+│                       │   ├── FoobarTest.java
+│                       │   ├── ParametrizeTest.java
+│                       │   ├── ParamsTest.java
+│                       ├── show_pytest_warnings/
+│                       │   └── FoobarShowWarningTest.java
+│                       ├── mark_parametrize_with_indirect/
+│                       │   ├── SushiUnitTest.java
+│                       │   ├── SushiPropertyEdgeTest.java
+│                       │   ├── SushiErrorTest.java
+│                       │   ├── ConftestPyIntegrationTest.java
+│                       │   └── SushiTest.java
+│                       ├── TestRunner.java           # Optionally, a suite runner if needed
+│                   └── public/
+│                       ├── create_tests_via_parametrization/
+│                       │   ├── PublicFoobarTest.java
+│                       │   ├── PublicParametrizeTest.java
+│                       │   ├── PublicParamsTest.java
+│                       ├── show_pytest_warnings/
+│                       │   └── PublicFoobarShowWarningTest.java
+│                       ├── mark_parametrize_with_indirect/
+│                       │   ├── PublicSushiUnitTest.java
+│                       │   ├── PublicSushiPropertyEdgeTest.java
+│                       │   ├── PublicSushiErrorTest.java
+│                       │   ├── PublicConftestPyIntegrationTest.java
+│                       │   └── PublicSushiTest.java
+│                       └── PublicTestRunner.java     # Optionally, a suite runner for public tests

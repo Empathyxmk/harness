@@ -1,0 +1,28 @@
+kungfoo_geohash-go/
+├── go.mod                         # Module definition
+├── run_tests.sh                   # One-click script to run all tests
+├── README.md                      # Project explanation and test instructions
+├── project_structure.txt           # This structure + explanations
+├── tests/
+│   └── original/
+│       ├── bounding_box_test.go                 # Original BoundingBoxTest.java
+│       ├── geohash_test.go                      # Original GeoHashTest.java
+│       ├── geohash_boundingbox_search_test.go   # Original GeoHashBoundingBoxSearchTest.java
+│       ├── geohash_circlequery_test.go          # Original GeoHashCircleQueryTest.java
+│       ├── wgs84point_test.go                   # Original WGS84PointTest.java
+│       ├── util/
+│       │   ├── bounding_box_geo_hash_iterator_test.go   # Original BoundingBoxGeoHashIteratorTest.java
+│       │   ├── bounding_box_sampler_test.go             # Original BoundingBoxSamplerTest.java
+│       │   ├── double_util_test.go                     # Original DoubleUtilTest.java
+│       │   ├── long_util_test.go                       # Original LongUtilTest.java
+│       │   └── geohash_size_table_test.go              # Original GeoHashSizeTableTest.java
+│       └── testutil.go                      # Shared test helpers (if needed)
+├── public_tests/
+│   ├── bounding_box_public_test.go           # BoundingBoxPublicTest.java
+│   ├── wgs84point_public_test.go             # WGS84PointPublicTest.java
+│   ├── util/
+│   │   ├── bounding_box_geo_hash_iterator_public_test.go  # BoundingBoxGeoHashIteratorPublicTest.java
+│   │   ├── bounding_box_sampler_public_test.go            # BoundingBoxSamplerPublicTest.java
+│   │   ├── double_util_public_test.go                     # DoubleUtilPublicTest.java
+│   │   ├── long_util_public_test.go                       # LongUtilPublicTest.java
+│   │   └── geohash_size_table_public_test.go              # GeoHashSizeTablePublicTest.java

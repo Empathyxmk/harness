@@ -1,0 +1,31 @@
+fast-pack_simdcomp-python/
+├── README.md
+├── requirements.txt
+├── run_tests.sh                  # One-click all-python-test runner (pytest)
+├── src/
+│   └── fast_pack_simdcomp/       # (Optional) core translations or wrappers
+│       └── __init__.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── conftest.py
+│       ├── test_example.py       # Original C: tests/test_example.c
+│       └── test_utils.py         # Original C: tests/test_utils.c
+├── public_tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── test_example_public.py    # C: tests/test_example_public.c
+│   └── test_utils_public.py      # C: tests/test_utils_public.c
+
+# Directory explanations
+# - src/fast_pack_simdcomp/: Placeholder for future logic/core code
+# - tests/original/: Python translations of original C project test files
+# - public_tests/: Public/generic/outsider-facing test translations
+# - requirements.txt: Dependencies (pytest)
+# - run_tests.sh: Minimal bash script running all tests
+
+# Setup:
+#   pip install -r requirements.txt
+# Run all tests:
+#   ./run_tests.sh

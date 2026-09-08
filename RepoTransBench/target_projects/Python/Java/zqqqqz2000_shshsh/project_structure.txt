@@ -1,0 +1,47 @@
+zqqqqz2000_shshsh-java/
+├── pom.xml                            # Maven build and dependency configuration
+├── run_tests.sh                       # One-click test execution script
+├── README.md                          # Documentation and setup info
+├── project_structure.txt              # This file: structure and explanation
+└── src/
+    └── main/
+        └── java/
+            └── com/
+                └── zqqqqz2000/
+                    └── shshsh/
+                        └── ...       # (Place your main Java source files here)
+    └── test/
+        └── java/
+            └── com/
+                └── zqqqqz2000/
+                    └── shshsh/
+                        ├── original/
+                        │    └── ...  # Original translated tests
+                        └── public_tests/
+                             └── ...  # Public test cases
+
+FOLDERS:
+- src/main/java/com/zqqqqz2000/shshsh/
+    - Your main library code lives here.
+- src/test/java/com/zqqqqz2000/shshsh/original/
+    - All "original" Python test modules translated to Java JUnit 5 tests.
+- src/test/java/com/zqqqqz2000/shshsh/public_tests/
+    - All public Python test modules translated to Java JUnit 5 tests.
+
+FILES:
+- pom.xml
+    - Declares JUnit and Mockito as test dependencies, configures Surefire to pick up *Test.java files.
+- run_tests.sh
+    - Runs all tests (`mvn clean test`).
+- README.md
+    - Project intro, how to run, and folder info.
+- project_structure.txt
+    - This document.
+
+TEST DISCOVERY:
+- Both original and public testcases use files ending in `Test.java` under their respective subdirectories, so both are always run by `mvn test`.
+
+CUSTOMIZATION:
+- To run only original or only public tests, use Maven's test include pattern, eg:
+    mvn test -Dtest="com.zqqqqz2000.shshsh.original.**.*Test"
+    mvn test -Dtest="com.zqqqqz2000.shshsh.public_tests.**.*Test"

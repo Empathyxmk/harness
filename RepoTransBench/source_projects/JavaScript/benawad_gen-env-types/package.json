@@ -1,0 +1,32 @@
+{
+  "name": "gen-env-types",
+  "version": "1.0.3",
+  "bin": "gen-env-types.js",
+  "scripts": {
+    "semantic-release": "semantic-release",
+    "test": "jest"
+  },
+  "description": "",
+  "main": "gen-env-types.js",
+  "keywords": [],
+  "author": "Ben",
+  "homepage": "https://github.com/benawad/gen-env-types",
+  "repository": "github:benawad/gen-env-types",
+  "bugs": "https://github.com/benawad/gen-env-types/issues",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "master"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.1",
+    "semantic-release": "^17.1.1"
+  },
+  "packageManager": "yarn@4.9.2+sha512.1fc009bc09d13cfd0e19efa44cbfc2b9cf6ca61482725eb35bbc5e257e093ebf4130db6dfe15d604ff4b79efd8e1e8e99b25fa7d0a6197c9f9826358d4d65c3c"
+}

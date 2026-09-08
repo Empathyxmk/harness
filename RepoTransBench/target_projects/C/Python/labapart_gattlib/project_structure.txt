@@ -1,0 +1,19 @@
+project_root/
+├── src/                                   # Contains the Python source code, including mocked gattlib for tests
+│   └── gattlib/
+│       └── __init__.py                    # Mocked gattlib functions for testing purposes.
+├── tests/                                 # Directory for original test cases
+│   └── original/
+│       └── test_unit_utils.py             # Translated unit test from test_utils.c
+│       └── test_continuous_connection.py  # Translated continuous connection logic from test_continuous_connection.c
+├── public_tests/                          # Directory for public test cases
+│   └── test_unit_utils_public.py          # Translated public unit test from test_utils_public.c
+│   └── test_continuous_connection_public.py # Translated public continuous connection logic from test_continuous_connection_public.c
+├── requirements.txt                       # Lists Python dependencies (e.g., pytest)
+├── run_tests.sh                           # Shell script to execute all tests
+└── project_structure.txt                  # This file, detailing the project structure
+
+---
+Setup and Testing Instructions:
+
+1.  **Navigate to the project root directory:**

@@ -1,0 +1,92 @@
+{
+  "project_name": "nickstenning_honcho",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:21:17.384939",
+  "original_path": "/workspace/verified_repos_v2/Python/nickstenning_honcho",
+  "public_test_result_path": "/workspace/public_test_results/Python/nickstenning_honcho",
+  "original_tests": {
+    "test_files": [
+      "tests/test_environ.py",
+      "tests/test_command.py",
+      "tests/test_printer.py",
+      "tests/test_export_systemd.py",
+      "tests/test__version.py",
+      "tests/test_invocation.py",
+      "tests/test_export_upstart.py",
+      "tests/test__init__.py",
+      "tests/test_doc_conf.py",
+      "tests/test_export_runit.py",
+      "tests/test_export_supervisord.py",
+      "tests/test_manager.py",
+      "tests/test_export_base.py",
+      "tests/test_colour.py",
+      "tests/test_process.py",
+      "tests/integration/test_run.py",
+      "tests/integration/test_start.py",
+      "tests/integration/test_main.py",
+      "tests/integration/test_check.py",
+      "tests/integration/test_export.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 20,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_environ.py",
+      "public_tests/test_public_command.py",
+      "public_tests/test_public_printer.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_export_systemd.py",
+      "public_tests/test_public__version.py",
+      "public_tests/test_public_invocation.py",
+      "public_tests/test_public_export_upstart.py",
+      "public_tests/test_public__init__.py",
+      "public_tests/test_public_doc_conf.py",
+      "public_tests/test_public_export_runit.py",
+      "public_tests/test_public_export_supervisord.py",
+      "public_tests/test_public_manager.py",
+      "public_tests/test_public_export_base.py",
+      "public_tests/test_public_colour.py",
+      "public_tests/test_public_process.py",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 18,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_environ.py",
+    "public_tests/test_public_command.py",
+    "public_tests/test_public_printer.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_export_systemd.py",
+    "public_tests/test_public__version.py",
+    "public_tests/test_public_invocation.py",
+    "public_tests/test_public_export_upstart.py",
+    "public_tests/test_public__init__.py",
+    "public_tests/test_public_doc_conf.py",
+    "public_tests/test_public_export_runit.py",
+    "public_tests/test_public_export_supervisord.py",
+    "public_tests/test_public_manager.py",
+    "public_tests/test_public_export_base.py",
+    "public_tests/test_public_colour.py",
+    "public_tests/test_public_process.py",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

@@ -1,0 +1,39 @@
+project_root/
+├── src/
+│   ├── algorithms/
+│   │   └── __init__.py
+│   ├── data_structures/
+│   │   ├── __init__.py
+│   │   ├── max_heap.py
+│   │   ├── min_heap.py
+│   │   ├── trie.py
+│   │   ├── linked_list.py
+│   │   ├── binary_search_tree.py
+│   │   ├── queue.py
+│   │   ├── stack.py
+│   │   └── binary_heap_validator.py
+│   └── __init__.py
+├── tests/
+│   ├── algorithms/
+│   │   └── __init__.py
+│   ├── data_structures/
+│   │   ├── __init__.py
+│   │   ├── test_max_heap_one.py
+│   │   ├── test_trie_sort.py
+│   │   ├── test_max_heap_ten.py
+│   │   ├── test_min_heap_two.py
+│   │   ├── test_trie_remove.py
+│   │   ├── test_linked_list_one.py
+│   │   ├── test_min_heap_ten.py
+│   │   └── test_binary_search_tree.py
+│   └── __init__.py
+├── public_tests/
+│   ├── data_structures/
+│   │   ├── __init__.py
+│   │   ├── test_queue_two.py
+│   │   ├── test_trie_add.py
+│   │   └── test_stack_two.py
+│   └── __init__.py
+├── requirements.txt
+├── run_tests.sh
+└── test_translation_progress.json

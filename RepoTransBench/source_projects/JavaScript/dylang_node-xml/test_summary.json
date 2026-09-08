@@ -1,0 +1,18 @@
+{
+  "project_name": "dylang_node-xml",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 92.75,
+    "branch": 80.83
+  },
+  "timestamp": "2025-06-19T10:18:01.996187",
+  "original_path": "/workspace/runnable_filter/JavaScript/dylang_node-xml",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/dylang_node-xml",
+  "tests_path": [
+    "test/escapeForXML.test.js",
+    "test/xml.test.js",
+    "test/xml_api.test.js",
+    "test/xml_internal.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

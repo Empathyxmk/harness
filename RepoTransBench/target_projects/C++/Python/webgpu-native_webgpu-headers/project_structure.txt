@@ -1,0 +1,14 @@
+project_root/
+├── requirements.txt                 # Python dependencies (pytest, etc.)
+├── run_tests.sh                     # Simple executable to run all tests
+├── README.md                        # Project/documentation entry point (not required by translation)
+├── project_structure.txt            # This project structure/overview file
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py              # Marks tests/original as a Python package
+│   │   └── test_webgpu_extension.py # Original extension constants/types/tests, fully translated from C++
+│   └── __init__.py                  # Marks tests as a Python package
+├── public_tests/
+│   ├── __init__.py                  # Marks public_tests as a Python package
+│   ├── test_main_public.py          # Public macro/constant and output order test
+│   └── test_webgpu_extension_public.py # Public extension/feature/limit/enum test

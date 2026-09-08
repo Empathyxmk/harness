@@ -1,0 +1,29 @@
+project_root/
+├── requirements.txt                 # Python dependencies (pytest)
+├── run_tests.sh                     # Simple test-run script
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_examples_cat.py     # Tests for examples/cat.c
+│       ├── test_examples_scandir.py # Tests for examples/scandir.c
+│       ├── test_examples_find.py    # Tests for examples/find.c
+│       └── test_examples_ls.py      # Tests for examples/ls.c
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_dirent_public.py        # Port of t-dirent_public.c
+│   ├── test_scandir_public.py       # Port of t-scandir_public.c
+│   ├── test_strverscmp_public.py    # Port of t-strverscmp_public.c
+│   ├── test_symlink_public.py       # Port of t-symlink_public.c
+│   └── test_telldir_public.py       # Port of t-telldir_public.c
+
+Directory Explanations:
+- requirements.txt: Lists Python dependencies, including pytest (run: pip install -r requirements.txt)
+- run_tests.sh: Simple one-click script; runs all tests using pytest
+- tests/original/: Translations of the C tests for "examples/*.c"
+- public_tests/: Translations of public "tests_public" C tests
+- __init__.py: Ensures each test directory is a Python package
+
+Test Execution:
+1. Install dependencies: pip install -r requirements.txt
+2. Run all tests: ./run_tests.sh

@@ -1,0 +1,17 @@
+.
+├── README.md                 # Documentation and instructions
+├── requirements.txt          # Python dependencies
+├── run_tests.sh              # One-click test execution script
+├── src/
+│   └── __init__.py           # (placeholder, for source code modules if needed)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_chat_application.py         # from ChatApplicationTests.java
+│       ├── test_chatroom_service.py         # from ChatRoomServiceTest.java
+│       └── test_chat_controller.py          # from ChatControllerTest.java
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_chatroom_service_public.py      # from ChatRoomServicePublicTest.java
+│   └── test_chat_controller_public.py       # from ChatControllerPublicTest.java

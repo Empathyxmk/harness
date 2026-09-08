@@ -1,0 +1,15 @@
+{
+  "project_name": "foyzulkarim_ip-camera-browser-client",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:26:45.830784",
+  "original_path": "/workspace/runnable_filter/JavaScript/foyzulkarim_ip-camera-browser-client",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/foyzulkarim_ip-camera-browser-client",
+  "tests_path": [
+    "tests/ipCameraUtils.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

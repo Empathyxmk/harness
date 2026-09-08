@@ -1,0 +1,28 @@
+trailofbits-protofuzz/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   └── test/
+│       ├── java/
+│       │   └── com/
+│       │       └── trailofbits/
+│       │           └── protofuzz/
+│       │               ├── original/
+│       │               │   ├── TestProtofuzz.java
+│       │               │   ├── TestValues.java
+│       │               │   ├── TestGen.java
+│       │               │   ├── TestLog.java
+│       │               │   └── TestPbImport.java
+│       │               └── public_tests/
+│       │                   ├── PublicProtofuzzTest.java
+│       │                   ├── PublicValuesTest.java
+│       │                   ├── PublicGenTest.java
+│       │                   ├── PublicPbImportTest.java
+│       │                   └── PublicLogTest.java
+│       └── resources/
+│           └── protofuzz/
+│               └── original/
+│                   └── test.proto
+└── project_structure.txt

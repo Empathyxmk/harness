@@ -1,0 +1,11 @@
+{
+  "project_name": "n0fate_chainbreaker",
+  "language": "Python",
+  "coverage": {
+    "line": 59.0,
+    "branch": 52.3
+  },
+  "timestamp": "2025-06-19T12:08:50.268248",
+  "original_path": "/workspace/runnable_filter/Python/n0fate_chainbreaker",
+  "test_result_path": "/workspace/test_enhancement_results/Python/n0fate_chainbreaker"
+}

@@ -1,0 +1,34 @@
+project_root/
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── tests/
+│   └── original/
+│       ├── redactor_test.go
+│       ├── redactor_options_test.go
+│       ├── redactor_error_test.go
+│       └── redactor_filters_test.go
+├── public_tests/
+│   ├── redactor_test.go
+│   ├── redactor_options_test.go
+│   ├── redactor_error_test.go
+│   └── redactor_filters_test.go
+
+Description:
+
+- go.mod: Go module definition.
+- run_tests.sh: One-click script to run all Go tests in the project via `go test ./...`.
+- project_structure.txt: This documentation.
+- tests/original/: Original test suite direct translations from Python, using Go's `testing` package. These cover complete test scenarios as defined in the original repo.
+- public_tests/: Public/validation-oriented tests, direct translations, also using Go's `testing` package.
+- (Implementation code, e.g. pdfredactor.go, is assumed to be provided to allow these tests to compile and run.)
+
+To run all tests, from project root:
+    chmod +x run_tests.sh
+    ./run_tests.sh
+
+No extra build step required beyond Go's standard toolchain.
+
+Each test suite (`tests/original/*`, `public_tests/*`) uses appropriate test function names and logic corresponding to the original Python code. Both "original" and "public" tests can be run together with `go test ./...`.
+
+(For full functionality, ensure that the `pdfredactor` package implements the required methods/types as expected by the test interfaces.)

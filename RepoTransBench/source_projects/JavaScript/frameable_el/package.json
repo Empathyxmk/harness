@@ -1,0 +1,17 @@
+{
+  "name": "@frameable/el",
+  "description": "Minimal JavaScript application framework",
+  "version": "0.7.5",
+  "main": "./el.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test"
+  },
+  "devDependencies": {
+    "c8": "^10.1.3",
+    "linkedom": "^0.14.7"
+  },
+  "dependencies": {
+    "assert": "^2.1.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "project_name": "justonedb_kafka-sink-pg-json",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T21:32:25.121644",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/justonedb_kafka-sink-pg-json",
+  "test_result_path": "/workspace/test_enhancement_results/Java/justonedb_kafka-sink-pg-json",
+  "tests_path": [
+    "src/test/java/com/justone/kafka/sink/pg/json/PostgreSQLSinkConnectorTest.java",
+    "src/test/java/com/justone/kafka/sink/pg/json/PostgreSQLSinkTaskTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

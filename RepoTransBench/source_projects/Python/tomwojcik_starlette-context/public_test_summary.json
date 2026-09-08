@@ -1,0 +1,76 @@
+{
+  "project_name": "tomwojcik_starlette-context",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:57:07.424907",
+  "original_path": "/workspace/verified_repos_v2/Python/tomwojcik_starlette-context",
+  "public_test_result_path": "/workspace/public_test_results/Python/tomwojcik_starlette-context",
+  "original_tests": {
+    "test_files": [
+      "tests/test_starlette_compatibility.py",
+      "tests/test_middleware/test_context_middleware.py",
+      "tests/test_middleware/test_pure_asgi_middleware.py",
+      "tests/test_example/test_app_and_setup_logging.py",
+      "tests/test_plugins/test_request_id.py",
+      "tests/test_plugins/test_correlation_id.py",
+      "tests/test_plugins/test_wrong_plugin.py",
+      "tests/test_plugins/test_user_agent.py",
+      "tests/test_plugins/test_plugin.py",
+      "tests/test_plugins/test_date.py",
+      "tests/test_plugins/test_error_responses.py",
+      "tests/test_plugins/test_forwarded_for.py",
+      "tests/test_plugins/test_exceptions.py",
+      "tests/test_plugins/test_api_key.py",
+      "tests/test_context/test_context_on_unhandled_exception.py",
+      "tests/test_context/test_context_with_middleware.py",
+      "tests/test_context/test_context_no_middleware.py",
+      "tests/test_context/test_context_existence.py",
+      "tests/test_context/test_context_persistance.py",
+      "tests/test_context/test_mocked_context_object.py",
+      "tests/test_context/test_manager.py",
+      "tests/test_context/test_context_object.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 22,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_starlette_compatibility_public.py",
+      "public_tests/test_middleware_test_context_middleware_public.py",
+      "public_tests/test_middleware_test_pure_asgi_middleware_public.py",
+      "run_public_tests.sh",
+      "public_tests/test_plugins_test_request_id_public.py",
+      "public_tests/test_plugins_test_correlation_id_public.py",
+      "public_tests/test_plugins_test_user_agent_public.py",
+      "public_tests/test_plugins_test_plugin_public.py",
+      "public_tests/test_plugins_test_date_public.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 10,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_starlette_compatibility_public.py",
+    "public_tests/test_middleware_test_context_middleware_public.py",
+    "public_tests/test_middleware_test_pure_asgi_middleware_public.py",
+    "run_public_tests.sh",
+    "public_tests/test_plugins_test_request_id_public.py",
+    "public_tests/test_plugins_test_correlation_id_public.py",
+    "public_tests/test_plugins_test_user_agent_public.py",
+    "public_tests/test_plugins_test_plugin_public.py",
+    "public_tests/test_plugins_test_date_public.py",
+    "run_public_tests.sh"
+  ]
+}

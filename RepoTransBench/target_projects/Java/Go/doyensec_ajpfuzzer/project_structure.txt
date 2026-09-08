@@ -1,0 +1,36 @@
+.
+├── README.md
+├── ajpfuzzer/
+│   ├── ajpfuzzer.go           # Main logic stub for the fuzzer (AJPFuzzer)
+│   ├── ajptestcases.go        # Static AJP test cases list and accessor
+│   └── utils.go               # Utility functions (RandomString, GetRandomInt, ToHex, Join, Map builder)
+├── go.mod                     # Go module definition
+├── public_tests/              # ALL PUBLIC TESTS (translated from *PublicTest.java)
+│   ├── ajpfuzzer_extra_public_test.go
+│   ├── ajpfuzzer_public_test.go
+│   ├── ajptestcases_extra_public_test.go
+│   ├── ajptestcases_public_test.go
+│   ├── utils_extra_public_test.go
+│   └── utils_public_test.go
+├── tests/
+│   └── original/              # Original/Internal tests (from *Test.java excluding PublicTest)
+│       ├── ajpfuzzer_extra_test.go
+│       ├── ajpfuzzer_test.go
+│       ├── ajptestcases_extra_test.go
+│       ├── ajptestcases_test.go
+│       ├── utils_extra_test.go
+│       └── utils_test.go
+├── run_tests.sh               # Script: run all tests with one command
+└── project_structure.txt      # THIS FILE
+
+# Directory explanations:
+# - ajpfuzzer/: All production (translation of src/main/java) Go code.
+# - tests/original/: Original internal test cases, used for internal/test suite coverage.
+# - public_tests/: Public test set. Each test file matches a *PublicTest.java in source.
+# - go.mod: Go module requirements.
+# - run_tests.sh: One-click test execution. Runs all tests in all packages.
+# - project_structure.txt: Overview of project file structure (this file).
+
+# Setup and running tests:
+#   1. Install Go (>= 1.20)
+#   2. Run `./run_tests.sh`

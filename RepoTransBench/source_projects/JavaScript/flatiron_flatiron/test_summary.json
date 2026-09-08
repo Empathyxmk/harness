@@ -1,0 +1,17 @@
+{
+  "project_name": "flatiron_flatiron",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 79.7,
+    "branch": 55.3
+  },
+  "timestamp": "2025-06-19T10:27:12.029795",
+  "original_path": "/workspace/runnable_filter/JavaScript/flatiron_flatiron",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/flatiron_flatiron",
+  "tests_path": [
+    "test/examples/resourceful-app-app.test.js",
+    "test/examples/static-app-app.test.js",
+    "test/examples/http-sample.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

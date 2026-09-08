@@ -1,0 +1,55 @@
+Project Structure and Documentation - hackebrot_pytest-tricks C++ Translation
+
+.
+├── CMakeLists.txt      # Build config (CMake targeting GoogleTest)
+├── run_tests.sh        # Simple script to build and run all tests
+├── README.md           # (Not included, but should provide guidance)
+├── src/                # (Would hold source; can add code to mirror original Python modules)
+│
+├── tests/
+│   └── original/
+│       ├── test_foobar.cpp
+│       ├── test_params.cpp
+│       ├── test_parametrize.cpp
+│       ├── test_foobar_show_warning.cpp
+│       ├── test_sushi_unit.cpp
+│       ├── test_sushi_property_edge.cpp
+│       ├── test_sushi_error.cpp
+│       ├── test_conftest_py_integration.cpp
+│       └── test_sushi.cpp
+│
+├── public_tests/
+│   ├── (see below for public_tests/ structure; mirrors original Python subdirs)
+│   └── *.cpp           # Should contain C++ versions of all public test scenarios
+│
+└── project_structure.txt # This documentation file
+
+EXPLANATION:
+- tests/original/: All C++ test files translated from the original Python tests (full logic, coverage, edge cases preserved).
+- public_tests/: All C++ public tests translated from Python public_tests/ directory, same structure. (Example below.)
+- CMakeLists.txt: CMake configuration for dependency fetching (GoogleTest), test building and test discovery.
+- run_tests.sh: Just run ./run_tests.sh in project root for full test build and execution.
+- src/: Can be used if porting implementation classes (optional--tests above are self-contained for demonstration).
+
+USAGE:
+1. Install CMake and a C++ compiler
+2. Run: ./run_tests.sh
+3. All original and public tests will build and run!
+
+Example public_tests/ tree:
+
+public_tests/
+├── create_tests_via_parametrization/
+│   ├── test_public_foobar.cpp
+│   ├── test_public_params.cpp
+│   └── test_public_parametrize.cpp
+├── show_pytest_warnings/
+│   └── test_public_foobar_show_warning.cpp
+└── mark_parametrize_with_indirect/
+    ├── test_public_sushi_unit.cpp
+    ├── test_public_sushi_property_edge.cpp
+    ├── test_public_sushi_error.cpp
+    ├── test_public_conftest_py_integration.cpp
+    └── test_public_sushi.cpp
+
+(Every test file includes full C++ logic, assertions, and test coverage equivalent to its original Python version.)

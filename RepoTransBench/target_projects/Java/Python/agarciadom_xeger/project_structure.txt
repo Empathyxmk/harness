@@ -1,0 +1,35 @@
+.
+├── README.md                 # Documentation for the project
+├── requirements.txt          # Python package dependencies (pytest)
+├── run_tests.sh              # Simple test execution script
+├── src/
+│   └── xeger.py              # Xeger class & helpers (Python version)
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_xeger.py
+│       ├── test_xeger_coverage.py
+│       ├── test_xeger_edge.py
+│       ├── test_xeger_utils.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_xeger_coverage_public.py
+│   ├── test_xeger_edge_public.py
+│   ├── test_xeger_public.py
+│   ├── test_xeger_utils_public.py
+└── project_structure.txt     # This file: describes project layout and directories
+
+Directory explanations:
+- src/: Contains the Xeger implementation (single-file for simplicity, minimal to run the tests).
+- tests/original/: Python translations of all original (non-public) Java tests.
+- public_tests/: Python translations of all public Java tests only.
+- requirements.txt: Declares pytest as dependency, install via `pip install -r requirements.txt`
+- run_tests.sh: One-click script running tests (both suites) in a shell.
+- README.md: Project documentation, setup and testing instructions.
+- project_structure.txt: This file.
+
+Test execution setup:
+1. Install dependencies: pip install -r requirements.txt
+2. Run all tests: ./run_tests.sh
+
+All test logic is fully implemented for both original and public test cases, with assertions and matching logic corresponding to the source Java code.

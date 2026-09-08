@@ -1,0 +1,38 @@
+EasyLoadingBtn C# Solution Structure
+
+.
+├── src/
+│   └── EasyLoadingBtn/
+│       ├── EasyLoadingBtn.csproj
+│       └── Models/
+│           └── LoadingButton.cs
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── ApplicationTest_App.cs         # Test for app-side ApplicationTest.java
+│       ├── ApplicationTest_Lib.cs         # Test for lib-side ApplicationTest.java
+│       └── LoadingButtonTest.cs           # Direct translation of LoadingButtonTest.java (original tests)
+├── public_tests/
+│   ├── PublicTests.csproj
+│   └── LoadingButtonPublicTest.cs         # Direct translation of LoadingButtonPublicTest.java
+├── run_tests.sh                           # Simple test runner script
+├── README.md
+└── project_structure.txt
+
+# Directory/Component Purposes:
+# src/EasyLoadingBtn/            - Main library project (analogue to 'lib/main/java')
+# src/EasyLoadingBtn/Models/     - Source classes (LoadingButton, etc.)
+# tests/original/                - Original (internal) tests from source repo
+# public_tests/                  - Public tests from source repo
+# *.csproj                       - Project configuration files for .NET Core/Standard
+# run_tests.sh                   - Shell script for running all tests in one step
+# README.md                      - Project description and build/run instructions
+
+# Setup and Test Instructions:
+
+# Build and test all projects:
+#   ./run_tests.sh
+
+# Individual test runs:
+#   dotnet test tests/original/
+#   dotnet test public_tests/

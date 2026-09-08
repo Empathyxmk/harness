@@ -1,0 +1,33 @@
+signalfx_maestro-ng/
+├── CMakeLists.txt                # CMake config for C++ build & Google Test setup
+├── README.md                     # Project documentation
+├── include/                      # (empty, for project headers)
+├── src/                          # (empty, for source code implementation)
+│   └── lib/                      # (empty, for shared components)
+├── tests/
+│   ├── test_main.cpp             # Main test runner entry point for Google Test
+│   └── original/
+│       ├── test_lifecycle.cpp    # Original translated lifecycle tests
+│       └── test_loader.cpp       # Original translated loader tests
+├── public_tests/
+│   ├── test_lifecycle_public.cpp # Public translated lifecycle tests
+│   └── test_loader_public.cpp    # Public translated loader tests
+└── run_tests.sh                  # One-click build and test execution script
+
+Directory explanations:
+- CMakeLists.txt: Configures the C++ build system, includes GoogleTest setup, bundles all tests.
+- include/: For project header files (add as needed for implementation).
+- src/: For C++ source code (add .cpp files for library/CLI logic).
+- src/lib/: For shared project library code (optional, currently empty).
+- tests/: Entry point for test binary, plus original (private) test translations in tests/original/
+- public_tests/: C++ translations of public test suite; self-contained and does not depend on private logic.
+- run_tests.sh: Build & run all tests in one command.
+
+Setup & testing instructions:
+1. Install a C++17+ compiler, Git, and CMake (version >= 3.10).
+2. Ensure run_tests.sh is executable: chmod +x run_tests.sh
+3. Run all tests with:    ./run_tests.sh
+
+This will fetch and build GoogleTest on first run, compile all tests, and display test results.
+
+Project code structure is ready for gradual C++ implementation; see tests/ and public_tests/ for test translations.

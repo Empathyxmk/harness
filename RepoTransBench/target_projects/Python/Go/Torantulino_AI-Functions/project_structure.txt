@@ -1,0 +1,20 @@
+project_root/
+├── ai_functions.go                # Go stub for ai_function and test hook mechanism
+├── go.mod                         # Go module file
+├── README.md                      # Project overview and instructions
+├── run_tests.sh                   # One-click test runner (all tests)
+├── public_tests/
+│   └── public_ai_function_test.go # Translated public tests (from public_tests/test_public_ai_function.py)
+├── tests/
+│   └── original/
+│       └── ai_function_test.go    # Translated original tests (from test_ai_function.py)
+└── project_structure.txt          # This structure doc
+
+Directory/file explanations:
+- ai_functions.go: Contains the ai_function logic stub and mocking facilities to allow testing
+- go.mod: Go module with minimum config, no deps (uses standard library only)
+- README.md: Instructions for setup, test running, and file layout
+- run_tests.sh: Runs all tests under public_tests/ and tests/original/
+- public_tests/: Contains translated public test cases (Go style)
+- tests/original/: Contains translated original test cases (Go style)
+- project_structure.txt: This file, with full project tree and notes

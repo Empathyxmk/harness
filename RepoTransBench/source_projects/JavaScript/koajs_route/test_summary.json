@@ -1,0 +1,17 @@
+{
+  "project_name": "koajs_route",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:50:23.311590",
+  "original_path": "/workspace/runnable_filter/JavaScript/koajs_route",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/koajs_route",
+  "tests_path": [
+    "test/index.unit.test.js",
+    "test/route.test.js",
+    "test/example.integration.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

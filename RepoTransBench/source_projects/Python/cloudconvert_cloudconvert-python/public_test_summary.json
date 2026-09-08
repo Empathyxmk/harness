@@ -1,0 +1,65 @@
+{
+  "project_name": "cloudconvert_cloudconvert-python",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:14:56.879292",
+  "original_path": "/workspace/verified_repos_v2/Python/cloudconvert_cloudconvert-python",
+  "public_test_result_path": "/workspace/public_test_results/Python/cloudconvert_cloudconvert-python",
+  "original_tests": {
+    "test_files": [
+      "tests/unit/test_signed_url.py",
+      "tests/unit/test_utils.py",
+      "tests/unit/test_setup_py.py",
+      "tests/unit/test_task_cancel_retry.py",
+      "tests/unit/test_task_upload.py",
+      "tests/unit/test_environment_vars.py",
+      "tests/unit/test_job.py",
+      "tests/unit/test_webhook.py",
+      "tests/unit/test_exceptions.py",
+      "tests/unit/test_config.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 10,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_signed_url.py",
+      "public_tests/test_public_utils.py",
+      "public_tests/test_public_setup_py.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_task_cancel_retry.py",
+      "public_tests/test_public_task_upload.py",
+      "public_tests/test_public_environment_vars.py",
+      "public_tests/test_public_job.py",
+      "public_tests/test_public_webhook.py",
+      "public_tests/test_public_exceptions.py",
+      "public_tests/test_public_config.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 11,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_signed_url.py",
+    "public_tests/test_public_utils.py",
+    "public_tests/test_public_setup_py.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_task_cancel_retry.py",
+    "public_tests/test_public_task_upload.py",
+    "public_tests/test_public_environment_vars.py",
+    "public_tests/test_public_job.py",
+    "public_tests/test_public_webhook.py",
+    "public_tests/test_public_exceptions.py",
+    "public_tests/test_public_config.py"
+  ]
+}

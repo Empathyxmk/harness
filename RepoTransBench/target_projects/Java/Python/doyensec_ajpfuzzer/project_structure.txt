@@ -1,0 +1,30 @@
+.
+├── README.md               # Project documentation and instructions
+├── requirements.txt        # Python dependencies for tests
+├── run_tests.sh            # One-click test execution script
+├── src/
+│   └── ajpfuzzer/
+│       └── ajpfuzzer.py    # Main source code (AJPFuzzer, AJPTestCases, Utils)
+├── tests/
+│   └── original/
+│       ├── test_utils_extra.py
+│       ├── test_ajp_testcases_extra.py
+│       ├── test_utils.py
+│       ├── test_ajpfuzzer_extra.py
+│       ├── test_ajp_testcases.py
+│       └── test_ajpfuzzer.py
+├── public_tests/
+│   ├── test_ajpfuzzer_public.py
+│   ├── test_utils_public.py
+│   ├── test_ajpfuzzer_extra_public.py
+│   ├── test_ajp_testcases_public.py
+│   ├── test_ajp_testcases_extra_public.py
+│   └── test_utils_extra_public.py
+
+# Directory/Files Explanation:
+# - src/ajpfuzzer/ajpfuzzer.py     => All production code, reflecting Java source.
+# - tests/original/                => Translations of original (private) tests.
+# - public_tests/                  => Translations of public (*PublicTest Java tests).
+# - requirements.txt               => Specifies dependencies (pytest).
+# - run_tests.sh                   => Runs *all* tests with pytest.
+# - README.md                      => Developer documentation.

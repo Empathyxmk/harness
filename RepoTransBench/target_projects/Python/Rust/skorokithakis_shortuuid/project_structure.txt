@@ -1,0 +1,22 @@
+skorokithakis_shortuuid/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   ├── original/
+│   │   ├── test_cli.rs
+│   │   ├── test_cli_argparse_errors.rs
+│   │   ├── test_django_fields.rs
+│   │   ├── test_main_additional.rs
+│   │   ├── test_main_branches.rs
+│   │   ├── test_shortuuid.rs
+│   │   └── test_shortuuid_init_imports.rs
+│   └── public/
+│       ├── test_public_cli.rs
+│       ├── test_public_cli_argparse_errors.rs
+│       ├── test_public_django_fields.rs
+│       ├── test_public_main_additional.rs
+│       ├── test_public_main_branches.rs
+│       ├── test_public_shortuuid.rs
+│       └── test_public_shortuuid_init_imports.rs
+├── run_tests.sh

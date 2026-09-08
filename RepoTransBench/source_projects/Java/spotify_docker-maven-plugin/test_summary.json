@@ -1,0 +1,11 @@
+{
+  "project_name": "spotify_docker-maven-plugin",
+  "language": "Java",
+  "coverage": {
+    "line": 51.0,
+    "branch": 56.0
+  },
+  "timestamp": "2025-06-20T03:01:45.793093",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/spotify_docker-maven-plugin",
+  "test_result_path": "/workspace/test_enhancement_results/Java/spotify_docker-maven-plugin"
+}

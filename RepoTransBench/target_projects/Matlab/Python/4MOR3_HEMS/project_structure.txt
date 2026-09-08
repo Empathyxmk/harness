@@ -1,0 +1,54 @@
+Project Structure:
+
+├── src/
+│   └── hems/
+│       ├── __init__.py
+│       ├── Dynamic_Price_HEMS.py
+│       ├── Dynamic_Price2_HEMS.py
+│       └── Tou_Inspire_Price_Comfort_HEMS.py
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_Tou_Inspire_Price_Comfort_HEMS.py
+│       ├── test_Dynamic_Price_HEMS.py
+│       └── test_Dynamic_Price2_HEMS.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_Dynamic_Price_HEMS.py
+│   ├── test_public_Dynamic_Price2_HEMS.py
+│   └── test_public_Tou_Inspire_Price_Comfort_HEMS.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+
+Explanations:
+
+- src/hems/:
+    Source Python modules implementing HEMS mock functions.
+    Each file corresponds to a major function from the Matlab source (Dynamic_Price_HEMS, etc).
+    Replace dummy implementations with real logic for full operation.
+
+- tests/original/:
+    Private/original test cases directly based on Matlab's test_*.m files.
+    Replicate Matlab logic, with complete test logic and assertions.
+
+- public_tests/:
+    Public test cases as per public Matlab tests, using alternate/smaller/different data.
+    Allow students/users to run safe tests not revealing proprietary test sets.
+
+- requirements.txt:
+    Python pip requirements; includes pytest and numpy for tests.
+
+- run_tests.sh:
+    Simple executable shell script to run all Python tests in both test folders.
+
+- project_structure.txt:
+    This file. Documents the folder structure and file purposes.
+
+Test running instructions:
+
+1. Install requirements: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+3. To run only a specific test set:
+   - `pytest tests/original/` for original tests
+   - `pytest public_tests/` for public tests

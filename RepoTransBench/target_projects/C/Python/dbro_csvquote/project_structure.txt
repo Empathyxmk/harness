@@ -1,0 +1,23 @@
+./
+├── Makefile                          # Makefile to build the C `csvquote` executable
+├── README.md                         # Original README (copied from source if available, otherwise placeholder)
+├── csvquote.c                        # Source code for the C `csvquote` executable (copied from source)
+├── public_tests/                     # Directory for public test cases
+│   ├── __init__.py                   # Marks directory as a Python package
+│   ├── output.public_testdata.csv    # Expected output for public tests (golden file)
+│   ├── public_testdata.csv           # Input data for public tests
+│   └── test_public_csvquote.py       # Translated public test cases (pytest)
+├── requirements.txt                  # Python dependencies (e.g., pytest)
+├── run_tests.sh                      # Script to build C executable and run all Python tests
+├── src/                              # Source directory for Python helper code
+│   ├── __init__.py                   # Marks directory as a Python package
+│   └── csvquote_wrapper/             # Wrapper for interacting with the C executable
+│       ├── __init__.py               # Marks directory as a Python package
+│       └── csvquote_cli.py           # Python functions to run and build the C `csvquote`
+└── tests/                            # Directory for original test cases
+    ├── __init__.py                   # Marks directory as a Python package
+    └── original/                     # Original test cases
+        ├── __init__.py               # Marks directory as a Python package
+        ├── output.testdata.csv       # Expected output for original tests (golden file)
+        ├── testdata.csv              # Input data for original tests
+        └── test_original_csvquote.py # Translated original test cases (pytest)

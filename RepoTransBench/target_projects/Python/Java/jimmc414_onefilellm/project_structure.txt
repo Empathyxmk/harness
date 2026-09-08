@@ -1,0 +1,23 @@
+onefilellm/
+├── pom.xml
+├── run_tests.sh
+├── project_structure.txt
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── onefilellm/
+│   │               ├── OneFileLLM.java
+│   │               └── utils/
+│   │                   └── Utils.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── onefilellm/
+│                   ├── original/
+│                   │   ├── TestAll.java
+│                   │   └── TestUtils.java
+│                   └── public_tests/
+│                       ├── TestPublicAll.java
+│                       └── TestPublicUtils.java
+└── test_translation_progress.json

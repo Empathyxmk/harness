@@ -1,0 +1,36 @@
+antirez_smaz/
+├── COPYING
+├── Cargo.lock
+├── Cargo.toml
+├── Makefile
+├── Makefile.bak
+├── README
+├── README.md
+├── TODO
+├── project_structure.txt
+├── public_test_summary.json
+├── run_public_tests.sh
+├── run_tests.sh
+├── smaz.c
+├── smaz.gcno
+├── smaz.h
+├── smaz_extra_tests
+├── smaz_extra_tests-smaz.gcda
+├── smaz_extra_tests-smaz.gcno
+├── smaz_extra_tests-smaz_extra_tests.gcda
+├── smaz_extra_tests-smaz_extra_tests.gcno
+├── smaz_extra_tests.c
+├── smaz_public_test
+├── smaz_public_test-smaz.gcno
+├── smaz_public_test-smaz_public_test.gcno
+├── smaz_public_test.c
+├── smaz_test
+├── smaz_test.c
+├── smaz_test.gcno
+├── src
+│   └── lib.rs
+├── test_summary.json
+└── tests
+    ├── smaz_extra_tests.rs
+    ├── smaz_public_test.rs
+    └── smaz_test.rs

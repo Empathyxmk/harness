@@ -1,0 +1,11 @@
+{
+  "project_name": "olzhasar_pytest-watcher",
+  "language": "Python",
+  "coverage": {
+    "line": 80.0,
+    "branch": 88.9
+  },
+  "timestamp": "2025-06-19T12:11:33.130043",
+  "original_path": "/workspace/runnable_filter/Python/olzhasar_pytest-watcher",
+  "test_result_path": "/workspace/test_enhancement_results/Python/olzhasar_pytest-watcher"
+}

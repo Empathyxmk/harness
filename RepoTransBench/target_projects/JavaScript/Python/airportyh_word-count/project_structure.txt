@@ -1,0 +1,39 @@
+airportyh_word-count-python/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt         # This file
+├── README.md
+├── src/
+│   ├── __init__.py               # (empty or real package __init__)
+│   ├── oo_one_class.py           # (WordCount implementation here)
+│   └── oo_small_classes.py       # (Tokenizer, FileReader, etc. here)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_oo_one_class.py
+│       └── test_oo_small_classes.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_oo_one_class_public.py
+│   └── test_oo_small_classes_public.py
+
+-----------------------------
+Directory/Files explained:
+- requirements.txt: Python dependencies (pytest etc.).
+- run_tests.sh: One-click test script. Installs dependencies, runs pytest on all tests.
+- src/: Place for the actual implementations (WordCount, Tokenizer, etc.). You must implement these!
+- tests/original/: Translated tests from original repo (__tests__). Uses WordCount and others.
+- public_tests/: Public version tests for external verification.
+- README.md: Add documentation for setup & usage.
+- __init__.py files: Empty, ensure package/folder recognition.
+
+-----------------------------
+To run all tests:
+$ ./run_tests.sh
+
+To run ONLY public tests:
+$ pytest public_tests/
+
+To run ONLY original tests:
+$ pytest tests/original/

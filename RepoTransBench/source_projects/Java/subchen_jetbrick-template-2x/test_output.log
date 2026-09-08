@@ -1,0 +1,363 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] jetbrick-template                                                  [jar]
+[[1;34mINFO[m] jetbrick-template-parent                                           [pom]
+[[1;34mINFO[m] jetbrick-template-web                                              [jar]
+[[1;34mINFO[m] jetbrick-template-jetbrickmvc                                      [jar]
+[[1;34mINFO[m] jetbrick-template-springmvc                                        [jar]
+[[1;34mINFO[m] jetbrick-template-jfinal                                           [jar]
+[[1;34mINFO[m] jetbrick-template-jodd                                             [jar]
+[[1;34mINFO[m] jetbrick-template-struts                                           [jar]
+[[1;34mINFO[m] jetbrick-template-nutz                                             [jar]
+[[1;34mINFO[m] jetbrick-template-shiro                                            [jar]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36mcom.github.subchen:jetbrick-template[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding jetbrick-template 2.1.4                                  [1/10][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mjetbrick-template[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mjetbrick-template[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 111 source files to /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/target/classes
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;33mWARNING[m] COMPILATION WARNING : 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;33mWARNING[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java: /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java uses or overrides a deprecated API.
+[[1;33mWARNING[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java: Recompile with -Xlint:deprecation for details.
+[[1;33mWARNING[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetSecurityManager.java: Some input files use or override a deprecated API that is marked for removal.
+[[1;33mWARNING[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetSecurityManager.java: Recompile with -Xlint:removal for details.
+[[1;34mINFO[m] 4 warnings 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[22,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[23,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[24,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[28,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[29,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[41,26] cannot find symbol
+  symbol:   class Logger
+  location: class jetbrick.template.resolver.tag.TagInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvoker.java:[22,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[44,36] cannot find symbol
+  symbol:   class MethodInfo
+  location: class jetbrick.template.resolver.tag.TagInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[67,26] cannot find symbol
+  symbol:   class MethodInfo
+  location: class jetbrick.template.resolver.tag.TagInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvoker.java:[27,19] cannot find symbol
+  symbol:   class MethodInfo
+  location: class jetbrick.template.resolver.tag.TagInvoker
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvoker.java:[31,23] cannot find symbol
+  symbol:   class MethodInfo
+  location: class jetbrick.template.resolver.tag.TagInvoker
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/runtime/JetTagContext.java:[22,26] package jetbrick.io.stream does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetEngine.java:[23,28] package jetbrick.io.resource does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetEngine.java:[24,28] package jetbrick.io.resource does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetEngine.java:[26,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/runtime/ValueStack.java:[25,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetConfig.java:[25,23] package jetbrick.config does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetConfig.java:[26,23] package jetbrick.config does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetConfig.java:[29,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetConfig.java:[30,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[24,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[25,26] package jetbrick.io.finder does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[36,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[37,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetTemplate.java:[25,28] package jetbrick.io.resource does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetEngine.java:[115,65] cannot find symbol
+  symbol:   class ResourceNotFoundException
+  location: class jetbrick.template.JetEngine
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetEngine.java:[142,21] cannot find symbol
+  symbol:   class Resource
+  location: class jetbrick.template.JetEngine
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetEngine.java:[142,62] cannot find symbol
+  symbol:   class ResourceNotFoundException
+  location: class jetbrick.template.JetEngine
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetTemplate.java:[34,33] cannot find symbol
+  symbol:   class ResourceNotFoundException
+  location: interface jetbrick.template.JetTemplate
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java:[24,26] package jetbrick.io.finder does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java:[25,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java:[26,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java:[27,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java:[28,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java:[34,26] cannot find symbol
+  symbol:   class Logger
+  location: class jetbrick.template.resolver.clazz.ClassResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[43,26] cannot find symbol
+  symbol:   class Logger
+  location: class jetbrick.template.resolver.GlobalResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[22,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[23,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[24,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[27,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[28,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[22,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[23,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[24,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[27,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[28,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[129,32] cannot find symbol
+  symbol:   class MethodInfo
+  location: class jetbrick.template.resolver.GlobalResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[154,34] cannot find symbol
+  symbol:   class MethodInfo
+  location: class jetbrick.template.resolver.GlobalResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[179,29] cannot find symbol
+  symbol:   class MethodInfo
+  location: class jetbrick.template.resolver.GlobalResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[40,26] cannot find symbol
+  symbol:   class Logger
+  location: class jetbrick.template.resolver.function.FunctionInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[43,36] cannot find symbol
+  symbol:   class MethodInfo
+  location: class jetbrick.template.resolver.function.FunctionInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[63,26] cannot find symbol
+  symbol:   class MethodInfo
+  location: class jetbrick.template.resolver.function.FunctionInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[40,26] cannot find symbol
+  symbol:   class Logger
+  location: class jetbrick.template.resolver.method.MethodInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[43,36] cannot find symbol
+  symbol:   class MethodInfo
+  location: class jetbrick.template.resolver.method.MethodInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[63,26] cannot find symbol
+  symbol:   class MethodInfo
+  location: class jetbrick.template.resolver.method.MethodInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetConfig.java:[57,19] cannot find symbol
+  symbol:   class Logger
+  location: class jetbrick.template.JetConfig
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/loader/ResourceLoader.java:[22,28] package jetbrick.io.resource does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetConfig.java:[103,29] cannot find symbol
+  symbol:   class Config
+  location: class jetbrick.template.JetConfig
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/loader/ResourceLoader.java:[47,12] cannot find symbol
+  symbol:   class Resource
+  location: interface jetbrick.template.loader.ResourceLoader
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/property/DefaultGetterResolver.java:[25,1] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstDirectiveInclude.java:[24,28] package jetbrick.io.resource does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstDirectiveInclude.java:[28,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstValueEscaped.java:[25,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstValueEscaped.java:[26,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetSecurityManagerImpl.java:[26,19] package jetbrick.io does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetSecurityManagerImpl.java:[27,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstInvokeFieldStatic.java:[22,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstInvokeFieldStatic.java:[23,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstInvokeFieldStatic.java:[33,13] cannot find symbol
+  symbol:   class FieldInfo
+  location: class jetbrick.template.parser.ast.AstInvokeFieldStatic
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[26,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[27,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[28,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[29,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[30,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[31,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[32,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[33,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[34,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[35,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[36,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[37,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[38,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[39,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[40,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[41,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[42,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[43,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[44,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[45,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[46,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[47,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[48,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[49,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[50,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[51,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[52,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[53,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[54,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[55,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[56,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;34mINFO[m] 100 errors 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] jetbrick-template 2.1.4 ............................ [1;31mFAILURE[m [  1.145 s]
+[[1;34mINFO[m] jetbrick-template-parent 2.1.10 .................... [1;33mSKIPPED[m
+[[1;34mINFO[m] jetbrick-template-web 2.1.10 ....................... [1;33mSKIPPED[m
+[[1;34mINFO[m] jetbrick-template-jetbrickmvc 2.1.10 ............... [1;33mSKIPPED[m
+[[1;34mINFO[m] jetbrick-template-springmvc 2.1.10 ................. [1;33mSKIPPED[m
+[[1;34mINFO[m] jetbrick-template-jfinal 2.1.10 .................... [1;33mSKIPPED[m
+[[1;34mINFO[m] jetbrick-template-jodd 2.1.10 ...................... [1;33mSKIPPED[m
+[[1;34mINFO[m] jetbrick-template-struts 2.1.10 .................... [1;33mSKIPPED[m
+[[1;34mINFO[m] jetbrick-template-nutz 2.1.10 ...................... [1;33mSKIPPED[m
+[[1;34mINFO[m] jetbrick-template-shiro 2.1.10 ..................... [1;33mSKIPPED[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.240 s
+[[1;34mINFO[m] Finished at: 2025-06-25T15:18:17Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.1:compile[m [1m(default-compile)[m on project [36mjetbrick-template[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[22,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[23,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[24,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[28,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[29,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[41,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Logger
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.tag.TagInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvoker.java:[22,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[44,36] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MethodInfo
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.tag.TagInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvokerResolver.java:[67,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MethodInfo
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.tag.TagInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvoker.java:[27,19] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MethodInfo
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.tag.TagInvoker
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/tag/TagInvoker.java:[31,23] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MethodInfo
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.tag.TagInvoker
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/runtime/JetTagContext.java:[22,26] package jetbrick.io.stream does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetEngine.java:[23,28] package jetbrick.io.resource does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetEngine.java:[24,28] package jetbrick.io.resource does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetEngine.java:[26,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/runtime/ValueStack.java:[25,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetConfig.java:[25,23] package jetbrick.config does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetConfig.java:[26,23] package jetbrick.config does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetConfig.java:[29,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetConfig.java:[30,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[24,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[25,26] package jetbrick.io.finder does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[36,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[37,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetTemplate.java:[25,28] package jetbrick.io.resource does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetEngine.java:[115,65] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ResourceNotFoundException
+[[1;31mERROR[m]   location: class jetbrick.template.JetEngine
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetEngine.java:[142,21] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Resource
+[[1;31mERROR[m]   location: class jetbrick.template.JetEngine
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetEngine.java:[142,62] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ResourceNotFoundException
+[[1;31mERROR[m]   location: class jetbrick.template.JetEngine
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetTemplate.java:[34,33] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ResourceNotFoundException
+[[1;31mERROR[m]   location: interface jetbrick.template.JetTemplate
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java:[24,26] package jetbrick.io.finder does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java:[25,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java:[26,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java:[27,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java:[28,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/clazz/ClassResolver.java:[34,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Logger
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.clazz.ClassResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[43,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Logger
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.GlobalResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[22,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[23,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[24,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[27,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[28,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[22,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[23,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[24,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[27,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[28,17] package org.slf4j does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[129,32] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MethodInfo
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.GlobalResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[154,34] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MethodInfo
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.GlobalResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/GlobalResolver.java:[179,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MethodInfo
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.GlobalResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[40,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Logger
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.function.FunctionInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[43,36] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MethodInfo
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.function.FunctionInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/function/FunctionInvokerResolver.java:[63,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MethodInfo
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.function.FunctionInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[40,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Logger
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.method.MethodInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[43,36] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MethodInfo
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.method.MethodInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/method/MethodInvokerResolver.java:[63,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   class MethodInfo
+[[1;31mERROR[m]   location: class jetbrick.template.resolver.method.MethodInvokerResolver
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetConfig.java:[57,19] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Logger
+[[1;31mERROR[m]   location: class jetbrick.template.JetConfig
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/loader/ResourceLoader.java:[22,28] package jetbrick.io.resource does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetConfig.java:[103,29] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Config
+[[1;31mERROR[m]   location: class jetbrick.template.JetConfig
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/loader/ResourceLoader.java:[47,12] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Resource
+[[1;31mERROR[m]   location: interface jetbrick.template.loader.ResourceLoader
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/resolver/property/DefaultGetterResolver.java:[25,1] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstDirectiveInclude.java:[24,28] package jetbrick.io.resource does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstDirectiveInclude.java:[28,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstValueEscaped.java:[25,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstValueEscaped.java:[26,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetSecurityManagerImpl.java:[26,19] package jetbrick.io does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/JetSecurityManagerImpl.java:[27,21] package jetbrick.util does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstInvokeFieldStatic.java:[22,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstInvokeFieldStatic.java:[23,21] package jetbrick.bean does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/ast/AstInvokeFieldStatic.java:[33,13] cannot find symbol
+[[1;31mERROR[m]   symbol:   class FieldInfo
+[[1;31mERROR[m]   location: class jetbrick.template.parser.ast.AstInvokeFieldStatic
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[26,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[27,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[28,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[29,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[30,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[31,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[32,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[33,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[34,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[35,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[36,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[37,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[38,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[39,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[40,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[41,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[42,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[43,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[44,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[45,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[46,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[47,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[48,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[49,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[50,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[51,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[52,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[53,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[54,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[55,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] /workspace/temp_public_testcase/public_test_generation_20250625_151656/subchen_jetbrick-template-2x/jetbrick-template/src/main/java/jetbrick/template/parser/AstCodeVisitor.java:[56,66] package jetbrick.template.runtime.parser.grammer.JetTemplateParser does not exist
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

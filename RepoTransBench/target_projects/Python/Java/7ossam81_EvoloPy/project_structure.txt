@@ -1,0 +1,63 @@
+7ossam81_EvoloPy_Java/
+├── pom.xml
+├── run_tests.sh
+├── README.md
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── evolopy/
+│   │               ├── (Java implementations of EvoloPy modules and optimizers)
+│   │               └── ...
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── evolopy/
+│                   ├── original/
+│                   │   ├── TestPlotConvergenceEdge.java
+│                   │   ├── TestOptimizer.java
+│                   │   ├── TestPlotBoxplot.java
+│                   │   ├── TestSetupPy.java
+│                   │   ├── TestBenchmarks.java
+│                   │   ├── TestBenchmarksEdge.java
+│                   │   ├── TestPlotConvergence.java
+│                   │   └── optimizers/
+│                   │       ├── TestMVO.java
+│                   │       ├── TestDE.java
+│                   │       ├── TestHHO.java
+│                   │       ├── TestBAT.java
+│                   │       ├── TestFFA.java
+│                   │       ├── TestSSA.java
+│                   │       ├── TestPSO.java
+│                   │       ├── TestJAYA.java
+│                   │       ├── TestGWO.java
+│                   │       ├── TestMFO.java
+│                   │       ├── TestGA.java
+│                   │       ├── TestWOA.java
+│                   │       ├── TestCS.java
+│                   │       └── TestSCA.java
+│                   └── public_tests/
+│                       ├── TestBenchmarksEdgePublic.java
+│                       ├── TestPlotConvergencePublic.java
+│                       ├── TestOptimizerPublic.java
+│                       ├── TestPlotBoxplotPublic.java
+│                       ├── TestSetupPyPublic.java
+│                       ├── TestBenchmarksPublic.java
+│                       ├── TestPlotConvergenceEdgePublic.java
+│                       └── optimizers/
+│                           ├── TestBATPublic.java
+│                           ├── TestFFAPublic.java
+│                           ├── TestSSAPublic.java
+│                           ├── TestPSOPublic.java
+│                           ├── TestJAYAPublic.java
+│                           ├── TestGWOPublic.java
+│                           ├── TestMFOPublic.java
+│                           ├── TestGAPublic.java
+│                           ├── TestWOAPublic.java
+│                           ├── TestCSPublic.java
+│                           ├── TestSCAPublic.java
+│                           ├── TestDEPublic.java
+│                           ├── TestHHOPublic.java
+│                           ├── TestMVOPublic.java
+│                           └── ...
+└──

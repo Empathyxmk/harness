@@ -1,0 +1,41 @@
+project_root/
+├── src/
+│   └── jsonfield/
+│       ├── jsonfield.cpp           # (Stub or core implementation of C++ JSONField)
+│       ├── encoder.cpp
+│       ├── fields.cpp
+│       ├── forms.cpp
+│       ├── json.cpp
+├── include/
+│   └── jsonfield/
+│       ├── jsonfield.h             # (Headers for JSONField and helpers)
+│       ├── encoder.h
+│       ├── fields.h
+│       ├── forms.h
+│       ├── json.h
+├── tests/
+│   ├── original/
+│   │   ├── test_fields.cpp         # C++ translation of tests/test_fields.py
+│   │   ├── test_forms.cpp          # C++ translation of tests/test_forms.py
+│   │   ├── test_jsonfield.cpp      # C++ translation of tests/test_jsonfield.py
+│   └── test_main.cpp               # Main entry for GoogleTest
+├── public_tests/
+│   ├── test_public_fields.cpp      # C++ translation of test_public_fields.py
+│   ├── test_public_jsonfield.cpp   # C++ translation of test_public_jsonfield.py
+│   ├── test_public_forms.cpp       # C++ translation of test_public_forms.py
+├── CMakeLists.txt                  # CMake build configuration
+├── run_tests.sh                    # One-click test runner (build + run)
+├── project_structure.txt           # Project tree and explanations
+└── README.md
+
+# Explanations:
+
+src/jsonfield/         : C++ source code stubs and modules for JSONField and utilities.
+include/jsonfield/     : Header files for the library.
+tests/original/        : Original test suite, one-for-one C++ converted from Python Django tests.
+public_tests/          : Public test suite, C++ translation of provided public tests.
+tests/test_main.cpp    : Main GoogleTest entry point, runs all tests.
+CMakeLists.txt         : Builds the library and test binaries, fetches GoogleTest, configures all tests.
+run_tests.sh           : Invokes CMake, builds, and runs all tests.
+project_structure.txt  : This file, describes structure and file purposes.
+README.md              : Instructions (to be filled).

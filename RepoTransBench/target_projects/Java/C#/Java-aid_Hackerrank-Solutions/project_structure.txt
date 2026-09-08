@@ -1,0 +1,28 @@
+/
+├── src/
+│   ├── HackerrankSolutions/
+│   │   ├── TripleSum.cs
+│   │   ├── CountTriplets.cs
+│   │   ├── ClimbingTheLeaderboard.cs
+│   │   ├── MakingAnagrams.cs
+│   │   └── StringsMakingAnagrams.cs
+├── tests/
+│   ├── original/
+│   │   ├── TripleSumTests.cs
+│   │   ├── CountTripletsTests.cs
+│   │   ├── ClimbingTheLeaderboardTests.cs
+│   │   ├── MakingAnagramsTests.cs
+│   │   └── StringsMakingAnagramsTests.cs
+│   ├── TestUtilities.cs
+│   └── OriginalTests.csproj
+├── public_tests/
+│   ├── TripleSumPublicTests.cs
+│   ├── CountTripletsPublicTests.cs
+│   ├── ClimbingTheLeaderboardPublicTests.cs
+│   ├── MakingAnagramsPublicTests.cs
+│   ├── StringsMakingAnagramsPublicTests.cs
+│   └── PublicTests.csproj
+├── HackerrankSolutions.sln
+├── run_tests.sh
+├── test_translation_progress.json
+└── README.md

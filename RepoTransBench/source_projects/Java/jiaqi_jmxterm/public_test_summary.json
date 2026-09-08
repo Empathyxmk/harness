@@ -1,0 +1,100 @@
+{
+  "project_name": "jiaqi_jmxterm",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:48:21.798477",
+  "original_path": "/workspace/verified_repos_v2/Java/jiaqi_jmxterm",
+  "public_test_result_path": "/workspace/public_test_results/Java/jiaqi_jmxterm",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/org/cyclopsgroup/jmxterm/SyntaxUtilsExtraTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/CommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/ConnectionTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/SessionTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/CommandFactoryTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/SyntaxUtilsTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/io/PrintStreamCommandOutputTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/io/FileCommandOutputTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/io/FileCommandInputTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/io/InputStreamCommandInputTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/io/ValueOutputFormatTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/DomainCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/InfoCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/SubscribeCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/BeansCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/DomainsCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/CloseCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/OptionCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/BeanCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/RunCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/SetCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/QuitCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/UnsubscribeCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/OpenCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cmd/GetCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cc/CommandCenterTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cc/PredefinedCommandFactoryTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cc/SessionImplTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cc/JPMFactoryTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cc/HelpCommandTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/cc/ConnectionImplTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/pm/JConsoleClassLoaderFactoryTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/jdk9/Jdk9JavaProcessManagerTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/utils/WeakCastUtilsTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/utils/ValueFormatTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/jdk6/Jdk6JavaProcessManagerTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/jdk6/LocalVirtualMachineTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/jdk5/Jdk5JavaProcessManagerTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 38,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/org/cyclopsgroup/jmxterm/SyntaxUtilsExtraPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/org/cyclopsgroup/jmxterm/SyntaxUtilsPublicTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/SessionPublicTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/CommandFactoryPublicTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/CommandPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/org/cyclopsgroup/jmxterm/ConnectionPublicTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/io/PrintStreamCommandOutputPublicTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/io/FileCommandInputPublicTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/io/FileCommandOutputPublicTest.java",
+      "src/test/java/org/cyclopsgroup/jmxterm/io/InputStreamCommandInputPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 13,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/org/cyclopsgroup/jmxterm/SyntaxUtilsExtraPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/org/cyclopsgroup/jmxterm/SyntaxUtilsPublicTest.java",
+    "src/test/java/org/cyclopsgroup/jmxterm/SessionPublicTest.java",
+    "src/test/java/org/cyclopsgroup/jmxterm/CommandFactoryPublicTest.java",
+    "src/test/java/org/cyclopsgroup/jmxterm/CommandPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/org/cyclopsgroup/jmxterm/ConnectionPublicTest.java",
+    "src/test/java/org/cyclopsgroup/jmxterm/io/PrintStreamCommandOutputPublicTest.java",
+    "src/test/java/org/cyclopsgroup/jmxterm/io/FileCommandInputPublicTest.java",
+    "src/test/java/org/cyclopsgroup/jmxterm/io/FileCommandOutputPublicTest.java",
+    "src/test/java/org/cyclopsgroup/jmxterm/io/InputStreamCommandInputPublicTest.java",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

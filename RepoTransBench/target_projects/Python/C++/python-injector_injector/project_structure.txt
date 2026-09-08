@@ -1,0 +1,33 @@
+project_root/
+├── CMakeLists.txt              # Main CMake build configuration (uses Google Test via FetchContent)
+├── include/
+│   └── injector.h              # Header declaring the Injector API/Module/InstanceProvider
+├── src/
+│   └── injector.cpp            # Dummy injector implementation and stubs for test compatibility
+├── setup.py                    # Python setup file checked by tests (should exist in the repo root)
+├── injector/
+│   └── py.typed                # Type marker file for compatibility test (needs to exist)
+├── tests/
+│   ├── original/
+│   │   ├── injector_test.cpp   # C++ version of original 'injector_test.py'
+│   │   ├── test_injector_init.cpp  # C++ version of 'test_injector_init.py'
+│   │   └── test_setup_py.cpp   # C++ version of 'test_setup_py.py'
+│   └── test_main.cpp           # Main entry for Google Test (shared for both runner executables)
+├── public_tests/
+│   ├── test_public_injector.cpp      # C++ version of 'test_public_injector.py'
+│   ├── test_public_injector_init.cpp # C++ version of 'test_public_injector_init.py'
+│   └── test_public_setup_py.cpp      # C++ version of 'test_public_setup_py.py'
+├── run_tests.sh                # Simple one-click script to build and run all tests
+├── project_structure.txt       # (this file) project structure and explanation
+
+Notes:
+- All core library code lives in src/ and include/, with a stub "injector" for testing.
+- "injector/py.typed" must exist for compatibility; root "setup.py" must exist for artifact tests.
+- tests/original/ contains C++ translations of all Python original tests.
+- public_tests/ contains C++ translations of all Python public tests.
+- CMake builds two test runners: "test_runner" for original, "public_test_runner" for public.
+- Running "./run_tests.sh" builds and executes all tests.
+Instructions:
+1. Ensure "setup.py" and "injector/py.typed" are present (can be empty but must exist).
+2. Install CMake and a C++17 compiler.
+3. Run: chmod +x run_tests.sh && ./run_tests.sh

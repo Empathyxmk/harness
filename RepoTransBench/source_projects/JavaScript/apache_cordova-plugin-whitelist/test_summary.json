@@ -1,0 +1,16 @@
+{
+  "project_name": "apache_cordova-plugin-whitelist",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:32:30.927349",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/apache_cordova-plugin-whitelist",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/apache_cordova-plugin-whitelist",
+  "tests_path": [
+    "whitelist.test.js",
+    "tests/scripts/remove-access.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,11 @@
+{
+  "project_name": "pre-commit_pre-commit-hooks",
+  "language": "Python",
+  "coverage": {
+    "line": 67.2,
+    "branch": 52.7
+  },
+  "timestamp": "2025-06-19T12:18:57.860655",
+  "original_path": "/workspace/runnable_filter/Python/pre-commit_pre-commit-hooks",
+  "test_result_path": "/workspace/test_enhancement_results/Python/pre-commit_pre-commit-hooks"
+}

@@ -1,0 +1,80 @@
+{
+  "project_name": "zqqqqz2000_shshsh",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:26:23.710446",
+  "original_path": "/workspace/verified_repos_v2/Python/zqqqqz2000_shshsh",
+  "public_test_result_path": "/workspace/public_test_results/Python/zqqqqz2000_shshsh",
+  "original_tests": {
+    "test_files": [
+      "tests/test_parameter_parse.py",
+      "tests/test_zero.py",
+      "tests/test_pipe_manual.py",
+      "tests/test_utils.py",
+      "tests/test_cwd.py",
+      "tests/test_logic.py",
+      "tests/test_quick.py",
+      "tests/test_pipe_class.py",
+      "tests/test_global_vars.py",
+      "tests/test_redirect.py",
+      "tests/test_quick_manual.py",
+      "tests/test_shell.py",
+      "tests/test_simple_cmd.py",
+      "tests/test_streamer.py",
+      "tests/test_pipe.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 15,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_parameter_parse.py",
+      "public_tests/test_public_zero.py",
+      "public_tests/test_public_pipe_manual.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_utils.py",
+      "public_tests/test_public_cwd.py",
+      "public_tests/test_public_logic.py",
+      "public_tests/test_public_quick.py",
+      "public_tests/test_public_pipe_class.py",
+      "public_tests/test_public_global_vars.py",
+      "public_tests/test_public_redirect.py",
+      "public_tests/test_public_quick_manual.py",
+      "public_tests/test_public_shell.py",
+      "public_tests/test_public_simple_cmd.py",
+      "public_tests/test_public_streamer.py",
+      "public_tests/test_public_pipe.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 16,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_parameter_parse.py",
+    "public_tests/test_public_zero.py",
+    "public_tests/test_public_pipe_manual.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_utils.py",
+    "public_tests/test_public_cwd.py",
+    "public_tests/test_public_logic.py",
+    "public_tests/test_public_quick.py",
+    "public_tests/test_public_pipe_class.py",
+    "public_tests/test_public_global_vars.py",
+    "public_tests/test_public_redirect.py",
+    "public_tests/test_public_quick_manual.py",
+    "public_tests/test_public_shell.py",
+    "public_tests/test_public_simple_cmd.py",
+    "public_tests/test_public_streamer.py",
+    "public_tests/test_public_pipe.py"
+  ]
+}

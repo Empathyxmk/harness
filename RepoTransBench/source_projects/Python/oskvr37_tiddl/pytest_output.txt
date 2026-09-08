@@ -1,0 +1,700 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.0rc1, pytest-8.4.1, pluggy-1.6.0
+rootdir: /workspace/temp_testcase/test_generation_20250619_121155/oskvr37_tiddl
+configfile: pyproject.toml
+plugins: mock-3.14.1, hypothesis-6.135.11, timeout-2.4.0, anyio-4.8.0, django-4.11.1, cov-6.2.1, asyncio-0.20.3, pylama-8.4.1, time-machine-2.16.0
+asyncio: mode=Mode.STRICT
+collected 43 items
+
+tests/test_api.py FFFFFFFFFFFFF                                          [ 30%]
+tests/test_api_unit.py ..F.                                              [ 39%]
+tests/test_config_unit.py ......                                         [ 53%]
+tests/test_exceptions_unit.py FFFF                                       [ 62%]
+tests/test_utils.py ....                                                 [ 72%]
+tests/test_utils_unit.py FFFFFFFFFFFF                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ TestApi.test_album ______________________________
+
+self = <tests.test_api.TestApi testMethod=test_album>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+___________________________ TestApi.test_album_items ___________________________
+
+self = <tests.test_api.TestApi testMethod=test_album_items>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+_______________________ TestApi.test_album_items_credits _______________________
+
+self = <tests.test_api.TestApi testMethod=test_album_items_credits>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+_____________________________ TestApi.test_artist ______________________________
+
+self = <tests.test_api.TestApi testMethod=test_artist>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+__________________________ TestApi.test_artist_albums __________________________
+
+self = <tests.test_api.TestApi testMethod=test_artist_albums>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+____________________________ TestApi.test_favorites ____________________________
+
+self = <tests.test_api.TestApi testMethod=test_favorites>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+____________________________ TestApi.test_playlist _____________________________
+
+self = <tests.test_api.TestApi testMethod=test_playlist>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+_________________________ TestApi.test_playlist_items __________________________
+
+self = <tests.test_api.TestApi testMethod=test_playlist_items>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+______________________________ TestApi.test_ready ______________________________
+
+self = <tests.test_api.TestApi testMethod=test_ready>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+_____________________________ TestApi.test_search ______________________________
+
+self = <tests.test_api.TestApi testMethod=test_search>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+______________________________ TestApi.test_track ______________________________
+
+self = <tests.test_api.TestApi testMethod=test_track>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+______________________________ TestApi.test_video ______________________________
+
+self = <tests.test_api.TestApi testMethod=test_video>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+__________________________ TestApi.test_video_stream ___________________________
+
+self = <tests.test_api.TestApi testMethod=test_video_stream>
+
+    def setUp(self):
+        config = Config.fromFile()
+        auth = config.auth
+    
+        token, user_id, country_code = (
+            auth.token,
+            auth.user_id,
+            auth.country_code,
+        )
+    
+>       assert token, "No token found in config file"
+E       AssertionError: No token found in config file
+E       assert ''
+
+tests/test_api.py:20: AssertionError
+_________________________ test_TidalApi_fetch_failure __________________________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x775dca118790>
+
+    def test_TidalApi_fetch_failure(monkeypatch):
+        dummy_class = type("DummyModel", (), {"model_validate": classmethod(dummy_model_validate)})
+        api = api_mod.TidalApi("token", "uid", "cc")
+        class ErrSession(DummySession):
+            def get(self, *a, **k):
+                return DummyResponse({"status": 401, "userMessage": "Auth fail"}, status_code=401)
+        api.session = ErrSession()
+        with pytest.raises(api_mod.ApiError) as e:
+>           api.fetch(dummy_class, "endpoint/1")
+
+tests/test_api_unit.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <tiddl.api.TidalApi object at 0x775dca119d10>
+model = <class 'tests.test_api_unit.DummyModel'>, endpoint = 'endpoint/1'
+params = {}, expire_after = -1
+
+    def fetch(
+        self,
+        model: Type[T],
+        endpoint: str,
+        params: dict[str, Any] = {},
+        expire_after=NEVER_EXPIRE,
+    ) -> T:
+        """Fetch data from the API and parse it into the given Pydantic model."""
+    
+        req = self.session.get(
+            f"{self.URL}/{endpoint}", params=params, expire_after=expire_after
+        )
+    
+        logger.debug(
+            (
+                endpoint,
+                params,
+                req.status_code,
+                "HIT" if req.from_cache else "MISS",
+            )
+        )
+    
+        data = req.json()
+    
+        if DEBUG:
+            debug_data = {
+                "status_code": req.status_code,
+                "endpoint": endpoint,
+                "params": params,
+                "data": data,
+            }
+    
+            path = Path(f"debug_data/{endpoint}.json")
+            path.parent.mkdir(parents=True, exist_ok=True)
+    
+            with path.open("w", encoding="utf-8") as f:
+                json.dump(debug_data, f, indent=2)
+    
+        if req.status_code != 200:
+>           raise ApiError(**data)
+                  ^^^^^^^^^^^^^^^^
+E           TypeError: ApiError.__init__() missing 1 required positional argument: 'subStatus'
+
+tiddl/api.py:117: TypeError
+________________________ test_ApiError_str_repr_fields _________________________
+
+    def test_ApiError_str_repr_fields():
+        # Test with all fields
+>       err = ApiError(status=404, subStatus=0, userMessage='not found', errorCode=999, message='msg')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: ApiError.__init__() got an unexpected keyword argument 'errorCode'
+
+tests/test_exceptions_unit.py:6: TypeError
+_________________________ test_ApiError_missing_fields _________________________
+
+    def test_ApiError_missing_fields():
+        # Test with missing and default fields
+>       err = ApiError(status=401, userMessage=None)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: ApiError.__init__() missing 1 required positional argument: 'subStatus'
+
+tests/test_exceptions_unit.py:17: TypeError
+__________________________ test_ApiError_only_status ___________________________
+
+    def test_ApiError_only_status():
+>       err = ApiError(status=502)
+              ^^^^^^^^^^^^^^^^^^^^
+E       TypeError: ApiError.__init__() missing 2 required positional arguments: 'subStatus' and 'userMessage'
+
+tests/test_exceptions_unit.py:24: TypeError
+__________________________ test_ApiError_with_kwargs ___________________________
+
+    def test_ApiError_with_kwargs():
+>       err = ApiError(status=123, foo="bar", custom="cval")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: ApiError.__init__() got an unexpected keyword argument 'foo'
+
+tests/test_exceptions_unit.py:28: TypeError
+_______________________ test_safe_filename_with_badchars _______________________
+
+    def test_safe_filename_with_badchars():
+        s = "hello/\\:*?\"<>|world"
+>       out = utils.safeFilename(s)
+              ^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'tiddl.utils' has no attribute 'safeFilename'
+
+tests/test_utils_unit.py:9: AttributeError
+____________________________ test_make_dir_and_file ____________________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-439/test_make_dir_and_file0')
+
+    def test_make_dir_and_file(tmp_path):
+        d = tmp_path / "a/b"
+>       utils.makedir(d)
+        ^^^^^^^^^^^^^
+E       AttributeError: module 'tiddl.utils' has no attribute 'makedir'
+
+tests/test_utils_unit.py:16: AttributeError
+____________________________ test_delete_and_exists ____________________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-439/test_delete_and_exists0')
+
+    def test_delete_and_exists(tmp_path):
+        f = tmp_path / "f.txt"
+        with f.open("w") as fh:
+            fh.write("abc")
+>       assert utils.fileExists(f)
+               ^^^^^^^^^^^^^^^^
+E       AttributeError: module 'tiddl.utils' has no attribute 'fileExists'
+
+tests/test_utils_unit.py:28: AttributeError
+____________________________ test_stringify_simple _____________________________
+
+    def test_stringify_simple():
+        obj = {"a": 1}
+>       out = utils.stringify(obj)
+              ^^^^^^^^^^^^^^^
+E       AttributeError: module 'tiddl.utils' has no attribute 'stringify'
+
+tests/test_utils_unit.py:38: AttributeError
+______________________________ test_humanize_size ______________________________
+
+    def test_humanize_size():
+>       assert utils.humanizeSize(512) == "512 B"
+               ^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'tiddl.utils' has no attribute 'humanizeSize'
+
+tests/test_utils_unit.py:42: AttributeError
+_____________________________ test_format_seconds ______________________________
+
+    def test_format_seconds():
+>       assert utils.formatSeconds(65) == "1:05"
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'tiddl.utils' has no attribute 'formatSeconds'
+
+tests/test_utils_unit.py:46: AttributeError
+__________________________ test_calc_segments_chunks ___________________________
+
+    def test_calc_segments_chunks():
+        items = list(range(10))
+>       chunks = list(utils.chunks(items, 3))
+                      ^^^^^^^^^^^^
+E       AttributeError: module 'tiddl.utils' has no attribute 'chunks'
+
+tests/test_utils_unit.py:51: AttributeError
+_______________________________ test_path_to_uri _______________________________
+
+    def test_path_to_uri():
+        f = Path("/file.txt")
+>       uri = utils.pathToUri(f)
+              ^^^^^^^^^^^^^^^
+E       AttributeError: module 'tiddl.utils' has no attribute 'pathToUri'
+
+tests/test_utils_unit.py:60: AttributeError
+___________________________ test_try_int_ok_and_fail ___________________________
+
+    def test_try_int_ok_and_fail():
+>       assert utils.tryInt("123") == 123
+               ^^^^^^^^^^^^
+E       AttributeError: module 'tiddl.utils' has no attribute 'tryInt'
+
+tests/test_utils_unit.py:64: AttributeError
+____________________________ test_flatten_and_take _____________________________
+
+    def test_flatten_and_take():
+        data = [[1, 2], [3, 4]]
+>       out = list(utils.flatten(data))
+                   ^^^^^^^^^^^^^
+E       AttributeError: module 'tiddl.utils' has no attribute 'flatten'
+
+tests/test_utils_unit.py:69: AttributeError
+_________________________ test_convert_extension_noop __________________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-439/test_convert_extension_noop0')
+
+    def test_convert_extension_noop(tmp_path):
+        # No actual conversion, only test logic
+        file = tmp_path / "file.m4a"
+        file.write_bytes(b"\x00\x01")
+        # Fallbacks
+>       utils.convertFileExtension(file, ".flac", False, False, False)
+
+tests/test_utils_unit.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tiddl/utils.py:225: in convertFileExtension
+    ).execute()
+      ^^^^^^^^^
+/usr/local/lib/python3.11/dist-packages/ffmpeg/ffmpeg.py:172: in execute
+    self._process = create_subprocess(
+/usr/local/lib/python3.11/dist-packages/ffmpeg/utils.py:44: in create_subprocess
+    return subprocess.Popen(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/lib/python3.11/subprocess.py:1022: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Popen: returncode: 255 args: ['ffmpeg', '-y', '-i', '/tmp/pytest-of-root/py...>
+args = ['ffmpeg', '-y', '-i', '/tmp/pytest-of-root/pytest-439/test_convert_extension_noop0/file.m4a', '-loglevel', 'error', ...]
+executable = b'ffmpeg', preexec_fn = None, close_fds = True, pass_fds = ()
+cwd = None, env = None, startupinfo = None, creationflags = 0, shell = False
+p2cread = -1, p2cwrite = -1, c2pread = 11, c2pwrite = 12, errread = 13
+errwrite = 14, restore_signals = True, gid = None, gids = None, uid = None
+umask = -1, start_new_session = False, process_group = -1
+
+    def _execute_child(self, args, executable, preexec_fn, close_fds,
+                       pass_fds, cwd, env,
+                       startupinfo, creationflags, shell,
+                       p2cread, p2cwrite,
+                       c2pread, c2pwrite,
+                       errread, errwrite,
+                       restore_signals,
+                       gid, gids, uid, umask,
+                       start_new_session, process_group):
+        """Execute program (POSIX version)"""
+    
+        if isinstance(args, (str, bytes)):
+            args = [args]
+        elif isinstance(args, os.PathLike):
+            if shell:
+                raise TypeError('path-like args is not allowed when '
+                                'shell is true')
+            args = [args]
+        else:
+            args = list(args)
+    
+        if shell:
+            # On Android the default shell is at '/system/bin/sh'.
+            unix_shell = ('/system/bin/sh' if
+                      hasattr(sys, 'getandroidapilevel') else '/bin/sh')
+            args = [unix_shell, "-c"] + args
+            if executable:
+                args[0] = executable
+    
+        if executable is None:
+            executable = args[0]
+    
+        sys.audit("subprocess.Popen", executable, args, cwd, env)
+    
+        if (_USE_POSIX_SPAWN
+                and os.path.dirname(executable)
+                and preexec_fn is None
+                and not close_fds
+                and not pass_fds
+                and cwd is None
+                and (p2cread == -1 or p2cread > 2)
+                and (c2pwrite == -1 or c2pwrite > 2)
+                and (errwrite == -1 or errwrite > 2)
+                and not start_new_session
+                and process_group == -1
+                and gid is None
+                and gids is None
+                and uid is None
+                and umask < 0):
+            self._posix_spawn(args, executable, env, restore_signals,
+                              p2cread, p2cwrite,
+                              c2pread, c2pwrite,
+                              errread, errwrite)
+            return
+    
+        orig_executable = executable
+    
+        # For transferring possible exec failure from child to parent.
+        # Data format: "exception name:hex errno:description"
+        # Pickle is not used; it is complex and involves memory allocation.
+        errpipe_read, errpipe_write = os.pipe()
+        # errpipe_write must not be in the standard io 0, 1, or 2 fd range.
+        low_fds_to_close = []
+        while errpipe_write < 3:
+            low_fds_to_close.append(errpipe_write)
+            errpipe_write = os.dup(errpipe_write)
+        for low_fd in low_fds_to_close:
+            os.close(low_fd)
+        try:
+            try:
+                # We must avoid complex work that could involve
+                # malloc or free in the child process to avoid
+                # potential deadlocks, thus we do all this here.
+                # and pass it to fork_exec()
+    
+                if env is not None:
+                    env_list = []
+                    for k, v in env.items():
+                        k = os.fsencode(k)
+                        if b'=' in k:
+                            raise ValueError("illegal environment variable name")
+                        env_list.append(k + b'=' + os.fsencode(v))
+                else:
+                    env_list = None  # Use execv instead of execve.
+                executable = os.fsencode(executable)
+                if os.path.dirname(executable):
+                    executable_list = (executable,)
+                else:
+                    # This matches the behavior of os._execvpe().
+                    executable_list = tuple(
+                        os.path.join(os.fsencode(dir), executable)
+                        for dir in os.get_exec_path(env))
+                fds_to_keep = set(pass_fds)
+                fds_to_keep.add(errpipe_write)
+                self.pid = _fork_exec(
+                        args, executable_list,
+                        close_fds, tuple(sorted(map(int, fds_to_keep))),
+                        cwd, env_list,
+                        p2cread, p2cwrite, c2pread, c2pwrite,
+                        errread, errwrite,
+                        errpipe_read, errpipe_write,
+                        restore_signals, start_new_session,
+                        process_group, gid, gids, uid, umask,
+                        preexec_fn, _USE_VFORK)
+                self._child_created = True
+            finally:
+                # be sure the FD is closed no matter what
+                os.close(errpipe_write)
+    
+            self._close_pipe_fds(p2cread, p2cwrite,
+                                 c2pread, c2pwrite,
+                                 errread, errwrite)
+    
+            # Wait for exec to fail or succeed; possibly raising an
+            # exception (limited in size)
+            errpipe_data = bytearray()
+            while True:
+                part = os.read(errpipe_read, 50000)
+                errpipe_data += part
+                if not part or len(errpipe_data) > 50000:
+                    break
+        finally:
+            # be sure the FD is closed no matter what
+            os.close(errpipe_read)
+    
+        if errpipe_data:
+            try:
+                pid, sts = os.waitpid(self.pid, 0)
+                if pid == self.pid:
+                    self._handle_exitstatus(sts)
+                else:
+                    self.returncode = sys.maxsize
+            except ChildProcessError:
+                pass
+    
+            try:
+                exception_name, hex_errno, err_msg = (
+                        errpipe_data.split(b':', 2))
+                # The encoding here should match the encoding
+                # written in by the subprocess implementations
+                # like _posixsubprocess
+                err_msg = err_msg.decode()
+            except ValueError:
+                exception_name = b'SubprocessError'
+                hex_errno = b'0'
+                err_msg = 'Bad exception data from child: {!r}'.format(
+                              bytes(errpipe_data))
+            child_exception_type = getattr(
+                    builtins, exception_name.decode('ascii'),
+                    SubprocessError)
+            if issubclass(child_exception_type, OSError) and hex_errno:
+                errno_num = int(hex_errno, 16)
+                child_exec_never_called = (err_msg == "noexec")
+                if child_exec_never_called:
+                    err_msg = ""
+                    # The error must be from chdir(cwd).
+                    err_filename = cwd
+                else:
+                    err_filename = orig_executable
+                if errno_num != 0:
+                    err_msg = os.strerror(errno_num)
+>               raise child_exception_type(errno_num, err_msg, err_filename)
+E               FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+
+/usr/lib/python3.11/subprocess.py:1899: FileNotFoundError
+_____________________________ test_files_and_dirs ______________________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-439/test_files_and_dirs0')
+
+    def test_files_and_dirs(tmp_path):
+        # add some files and dirs
+        d = tmp_path / "d"
+        d.mkdir()
+        f = d / "f.txt"
+        f.write_text("ok")
+>       files = utils.getFiles([tmp_path])
+                ^^^^^^^^^^^^^^
+E       AttributeError: module 'tiddl.utils' has no attribute 'getFiles'
+
+tests/test_utils_unit.py:88: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_api.py::TestApi::test_album - AssertionError: No token foun...
+FAILED tests/test_api.py::TestApi::test_album_items - AssertionError: No toke...
+FAILED tests/test_api.py::TestApi::test_album_items_credits - AssertionError:...
+FAILED tests/test_api.py::TestApi::test_artist - AssertionError: No token fou...
+FAILED tests/test_api.py::TestApi::test_artist_albums - AssertionError: No to...
+FAILED tests/test_api.py::TestApi::test_favorites - AssertionError: No token ...
+FAILED tests/test_api.py::TestApi::test_playlist - AssertionError: No token f...
+FAILED tests/test_api.py::TestApi::test_playlist_items - AssertionError: No t...
+FAILED tests/test_api.py::TestApi::test_ready - AssertionError: No token foun...
+FAILED tests/test_api.py::TestApi::test_search - AssertionError: No token fou...
+FAILED tests/test_api.py::TestApi::test_track - AssertionError: No token foun...
+FAILED tests/test_api.py::TestApi::test_video - AssertionError: No token foun...
+FAILED tests/test_api.py::TestApi::test_video_stream - AssertionError: No tok...
+FAILED tests/test_api_unit.py::test_TidalApi_fetch_failure - TypeError: ApiEr...
+FAILED tests/test_exceptions_unit.py::test_ApiError_str_repr_fields - TypeErr...
+FAILED tests/test_exceptions_unit.py::test_ApiError_missing_fields - TypeErro...
+FAILED tests/test_exceptions_unit.py::test_ApiError_only_status - TypeError: ...
+FAILED tests/test_exceptions_unit.py::test_ApiError_with_kwargs - TypeError: ...
+FAILED tests/test_utils_unit.py::test_safe_filename_with_badchars - Attribute...
+FAILED tests/test_utils_unit.py::test_make_dir_and_file - AttributeError: mod...
+FAILED tests/test_utils_unit.py::test_delete_and_exists - AttributeError: mod...
+FAILED tests/test_utils_unit.py::test_stringify_simple - AttributeError: modu...
+FAILED tests/test_utils_unit.py::test_humanize_size - AttributeError: module ...
+FAILED tests/test_utils_unit.py::test_format_seconds - AttributeError: module...
+FAILED tests/test_utils_unit.py::test_calc_segments_chunks - AttributeError: ...
+FAILED tests/test_utils_unit.py::test_path_to_uri - AttributeError: module 't...
+FAILED tests/test_utils_unit.py::test_try_int_ok_and_fail - AttributeError: m...
+FAILED tests/test_utils_unit.py::test_flatten_and_take - AttributeError: modu...
+FAILED tests/test_utils_unit.py::test_convert_extension_noop - FileNotFoundEr...
+FAILED tests/test_utils_unit.py::test_files_and_dirs - AttributeError: module...
+======================== 30 failed, 13 passed in 1.38s =========================

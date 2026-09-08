@@ -1,0 +1,27 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── src/
+│   └── __init__.py
+│   ├── grid_graph.py
+│   ├── findindex.py
+│   ├── findpossmove_rec.py
+│   ├── finminexcept_tabu.py
+│   └── createtimegraph.py
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_find_index.py
+│   │   ├── test_grid_graph.py
+│   │   ├── test_finminexcept_tabu.py
+│   │   ├── test_create_time_graph.py
+│   │   └── test_findpossmove_rec.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_find_index.py
+│   ├── test_public_findpossmove_rec.py
+│   ├── test_public_finminexcept_tabu.py
+│   ├── test_public_create_time_graph.py
+│   └── test_public_grid_graph.py

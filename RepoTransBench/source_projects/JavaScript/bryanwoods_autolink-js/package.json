@@ -1,0 +1,14 @@
+{
+  "name": "bryanwoods_autolink-js",
+  "version": "1.0.0",
+  "description": "Automatic linking of URLs in JavaScript strings.",
+  "main": "autolink.js",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "author": "Bryan Woods",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}

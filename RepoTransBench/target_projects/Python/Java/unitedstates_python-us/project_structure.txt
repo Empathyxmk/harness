@@ -1,0 +1,39 @@
+unitedstates_python-us/
+├── LICENSE
+├── MANIFEST.in
+├── README.md
+├── htmlcov/
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── py.typed
+├── pyproject.toml
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── us/
+│                   ├── original/
+│                   │   ├── TestExtra.java           # Original test cases (from us/tests/test_extra.py)
+│                   │   └── TestUs.java              # Original test cases (from us/tests/test_us.py)
+│                   └── publictests/
+│                       ├── PublicExtraTest.java     # Public test cases (from us/public_tests/test_public_extra.py)
+│                       └── PublicUsTest.java        # Public test cases (from us/public_tests/test_public_us.py)
+├── test_summary.json
+└── us/
+    ├── __init__.py
+    ├── cli/
+    │   ├── __init__.py
+    │   └── states.py
+    ├── public_tests/
+    │   ├── test_public_extra.py      # Public test: source
+    │   └── test_public_us.py         # Public test: source
+    ├── states.py
+    ├── tests/
+    │   ├── __init__.py
+    │   ├── test_extra.py             # Original test: source
+    │   └── test_us.py                # Original test: source
+    ├── unitedstatesofamerica.py
+    └── version.py

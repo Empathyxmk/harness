@@ -1,0 +1,64 @@
+google_mail-importer/
+├── AUTHORS
+├── CONTRIBUTING.md
+├── CONTRIBUTORS
+├── Design.md
+├── LICENSE
+├── README.md
+├── google_mail_importer.sln
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── CommandLineArgumentsPublicTests.cs
+│   ├── FlagsModulePublicTests.cs
+│   ├── IoProviderPublicTests.cs
+│   ├── MailProviderPublicTests.cs
+│   ├── PublicTests.csproj
+│   ├── gmail/
+│   │   ├── GmailServiceModulePublicTests.cs
+│   │   ├── GmailSyncerPublicTests.cs
+│   │   └── UnsuccessfulResponseHandlerChainerPublicTests.cs
+│   ├── local/
+│   │   ├── JavaxMailStoragePublicTests.cs
+│   │   └── thunderbird/
+│   │       ├── ThunderbirdLocalMessagePublicTests.cs
+│   │       ├── ThunderbirdMailStoragePublicTests.cs
+│   │       └── XMozillaStatusPublicTests.cs
+│   └── testing/
+│       └── ModuleTesterPublicTests.cs
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── GoogleMailImporter/
+│   │   ├── GoogleMailImporter.csproj
+│   │   └── Program.cs
+│   ├── main/
+│   │   └── java/
+│   │       └── to/lean/tools/gmail/importer/
+│   │           (source .java files)
+│   └── test/
+│       └── java/
+│           └── to/lean/tools/gmail/importer/
+│               (source .java tests)
+├── tests/
+│   └── original/
+│       ├── CommandLineArgumentsTests.cs
+│       ├── FlagsModuleTests.cs
+│       ├── ImporterTests.cs
+│       ├── IoProviderTests.cs
+│       ├── MailProviderTests.cs
+│       ├── OriginalTests.csproj
+│       ├── gmail/
+│       │   ├── GmailServiceModuleTests.cs
+│       │   ├── GmailSyncerTests.cs
+│       │   └── UnsuccessfulResponseHandlerChainerTests.cs
+│       ├── local/
+│       │   ├── JavaxMailStorageTests.cs
+│       │   └── thunderbird/
+│       │       ├── ThunderbirdLocalMessageTests.cs
+│       │       ├── ThunderbirdMailStorageTests.cs
+│       │       └── XMozillaStatusTests.cs
+│       └── testing/
+│           └── ModuleTesterTests.cs
+├── test_summary.json

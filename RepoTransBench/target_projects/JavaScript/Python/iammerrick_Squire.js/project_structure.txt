@@ -1,0 +1,17 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   └── squire_node.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_squire_extra.py
+│       └── test_squire_util.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_squire_extra_public.py
+│   └── test_squire_util_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt

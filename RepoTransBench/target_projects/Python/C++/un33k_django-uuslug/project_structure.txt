@@ -1,0 +1,22 @@
+.
+├── CMakeLists.txt           # Main CMake configuration
+├── run_tests.sh             # Run all tests with one command
+├── src/
+│   ├── CMakeLists.txt       # CMake config for src
+│   └── dummy.cpp            # Dummy implementation (required for build)
+├── tests/
+│   ├── test_main.cpp        # Google Test main function
+│   └── original/
+│       ├── test_models_integration.cpp
+│       ├── test_init.cpp
+│       ├── test_uuslug_func.cpp
+│       ├── test_uuslug.cpp
+│       ├── test_setup.cpp
+│       └── test_apps_py.cpp
+├── public_tests/
+│   ├── public_test_init.cpp
+│   ├── public_test_uuslug.cpp
+│   ├── public_test_setup.cpp
+│   ├── public_test_apps_py.cpp
+│   ├── public_test_uuslug_func.cpp
+│   └── public_test_models_integration.cpp

@@ -1,0 +1,36 @@
+claude-to-chatgpt-go/
+├── go.mod                  # Go module definition and dependencies
+├── README.md               # Project overview and instructions
+├── run_tests.sh            # One-click script to run all tests
+├── claude_to_chatgpt/      # Main source code package
+│   ├── adapter.go
+│   ├── app.go
+│   ├── logger.go
+│   ├── models.go
+│   └── util.go
+├── tests/                  # Original (private) tests as per Python's 'tests' directory
+│   ├── original/
+│   │   ├── adapter_test.go
+│   │   ├── app_routes_test.go
+│   │   ├── logger_test.go
+│   │   ├── models_test.go
+│   │   └── util_test.go
+├── public_tests/           # Public tests translated from public test suite
+│   ├── adapter_public_test.go
+│   ├── app_routes_public_test.go
+│   ├── logger_public_test.go
+│   ├── models_public_test.go
+│   └── util_public_test.go
+
+# Directory explanations:
+# - claude_to_chatgpt/: Main application code. Each .go file corresponds to a former .py module.
+# - tests/original/: All original (private) test files, directly ported from Python
+# - public_tests/: Public test equivalents, ensuring open test coverage
+# - run_tests.sh: Runs both private and public tests with one command.
+# - go.mod: Go modules definition, with 'testify' as a test helper assertion package
+
+# Setup and test instructions:
+# 1. Clone repo and install Go (1.20+)
+# 2. Run `go mod tidy` if dependencies are missing
+# 3. Run `./run_tests.sh` from project root to execute all tests
+# 4. New test files should follow Go suffix (_test.go) and reside in their respective test dirs

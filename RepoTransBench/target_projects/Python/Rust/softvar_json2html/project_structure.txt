@@ -1,0 +1,36 @@
+project_root/
+├── Cargo.toml                  # Rust project manifest with dependencies and metadata
+├── src/
+│   └── lib.rs                  # Main library code providing convert() and Json2Html analog
+├── tests/
+│   └── original/
+│       ├── test_json2html_core.rs      # Translated original core Python tests
+│       ├── test_json2html_additional.rs# Translated original additional Python tests
+│       └── run_tests.rs        # (No-op; `cargo test` finds all #[test])
+├── public_tests/
+│   ├── test_public_json2html_core.rs        # Translated public core tests
+│   └── test_public_json2html_additional.rs  # Translated public additional tests
+├── run_tests.sh                # One-click test execution script
+├── README.md                   # Documentation and usage instructions
+└── project_structure.txt       # This file; project layout & explanations
+
+# Directory and file explanations:
+#  Cargo.toml             - Defines project name, dependencies (serde, serde_json), and build profile
+#  src/lib.rs             - Library logic, Rust port of the json2html logic and API needed for tests
+#  tests/original/        - All "original" (private) test cases, directly translated from Python
+#  public_tests/          - All public-visibility test cases, directly translated from Python
+#  run_tests.sh           - Minimal script to execute all tests in workspace with `./run_tests.sh`
+#  README.md              - Instructions for building and testing the project
+#  project_structure.txt  - This tree and explanation
+
+# How to test:
+#   1. `cargo build` to check dependencies and build the crate
+#   2. `./run_tests.sh` (or `cargo test`) to run all tests (original and public)
+#      Both "tests/original" and "public_tests" will run under `cargo test`
+# 
+# Test location notes:
+# - Original tests are in `tests/original/` as per Rust best practices for integration/large tests.
+# - Public tests are in `public_tests/`; Rust's Cargo will not auto-run these without configuring
+#   `[[test]]` targets or `cargo test --test ...` for each, so for this conversion, you may symlink
+#   or move these to `tests/` for automatic discovery if desired, or run with:
+#     `cargo test --test test_public_json2html_core` etc.

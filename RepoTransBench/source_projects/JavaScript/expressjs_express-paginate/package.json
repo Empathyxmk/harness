@@ -1,0 +1,23 @@
+{
+  "name": "expressjs_express-paginate",
+  "version": "1.0.0",
+  "description": "Node.js pagination middleware and view helpers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require test/support/should.js test/*.js",
+    "coverage": "nyc mocha --require test/support/should.js test/*.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "async": "^3.2.6",
+    "chai": "^4.5.0",
+    "lodash.assign": "^4.2.0",
+    "lodash.clone": "^4.5.0",
+    "lodash.isobject": "^3.0.2",
+    "mocha": "^10.8.2",
+    "nyc": "^15.1.0",
+    "qs": "^6.14.0",
+    "reqres": "^2.1.0"
+  }
+}

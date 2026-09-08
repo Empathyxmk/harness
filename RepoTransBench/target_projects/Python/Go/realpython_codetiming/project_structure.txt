@@ -1,0 +1,27 @@
+realpython_codetiming/
+├── go.mod                        # Go module definition
+├── run_tests.sh                  # Run all Go tests in the project
+├── project_structure.txt         # This structure file
+├── tests/
+│   └── original/
+│       ├── test_codetiming_test.go
+│       ├── test_timer_additional_test.go
+│       └── test_timers_test.go
+├── public_tests/
+│   ├── test_public_codetiming_test.go
+│   ├── test_public_timer_additional_test.go
+│   └── test_public_timers_test.go
+
+# Directory explanations:
+# - go.mod: Declares the Go module and Go version.
+# - run_tests.sh: Simple script to run all tests (make executable with chmod +x).
+# - tests/original/: Full translation of all "original" Python test files to Go, with each scenario implemented.
+# - public_tests/: Go translations of all public test cases.
+# - project_structure.txt: This structure and guide.
+#
+# To run all tests:
+#   1. Ensure Go is installed (go >= 1.20 recommended).
+#   2. Run: ./run_tests.sh
+#   3. All tests (original and public) will be executed and results reported.
+#
+# The Timer/Timers logic is embedded in test files as mocks to support the test scenarios.

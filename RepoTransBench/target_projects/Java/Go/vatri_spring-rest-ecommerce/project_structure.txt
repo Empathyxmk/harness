@@ -1,0 +1,45 @@
+vatri_spring_rest_ecommerce/
+├── README.md                           # Project overview and instructions
+├── go.mod                              # Go module and dependency descriptor
+├── run_tests.sh                        # Simple script to run all tests
+├── main.go                             # (Stub) Main application entrypoint (not implemented)
+├── module.go                           # (Stub) Module/demo file if needed
+├── public_tests/                       # Public tests, translated from Java
+│   ├── cache/
+│   │   └── redis_cache_public_test.go
+│   └── storage/
+│       ├── file_system_storage_service_public_test.go
+│       ├── storage_file_not_found_exception_public_test.go
+│       ├── storage_properties_public_test.go
+│       └── storage_service_public_test.go
+├── tests/
+│   ├── original/
+│   │   ├── cache/
+│   │   │   └── redis_cache_test.go
+│   │   └── storage/
+│   │       ├── file_system_storage_service_test.go
+│   │       ├── storage_file_not_found_exception_test.go
+│   │       ├── storage_properties_test.go
+│   │       └── storage_service_test.go
+│   └── testutil.go                     # Helper functions and test stubs/mocks
+└── project_structure.txt               # This file: explains all files & directories
+
+**Directory explanations:**
+- `public_tests/`      - Publicly visible test cases (student-accessible)
+- `tests/original/`    - All full/private/teacher/original tests
+- `tests/testutil.go`  - Contains test-only stubs/mocks for interfaces, helpers, custom error types etc.
+- `main.go`, `module.go` - Not implemented/empty, placeholders
+- `go.mod`             - Specifies Go module and needed dependencies (`testify`, `gomock`)
+- `run_tests.sh`       - Simple script to run all tests
+
+#### To run ALL tests (original + public):
+
+    $ ./run_tests.sh
+
+#### To run only public tests:
+
+    $ go test ./public_tests/...
+
+#### To run only original tests:
+
+    $ go test ./tests/original/...

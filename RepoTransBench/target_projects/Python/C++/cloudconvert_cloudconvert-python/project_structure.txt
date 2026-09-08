@@ -1,0 +1,51 @@
+cloudconvert_cloudconvert_cpp/
+├── CMakeLists.txt
+├── include/
+│   └── ...                        # C++ headers for your src modules (simulating cloudconvert)
+├── src/
+│   └── ...                        # C++ source files for main logic (simulating cloudconvert)
+├── public_tests/
+│   ├── test_public_config.cpp
+│   ├── test_public_environment_vars.cpp
+│   ├── test_public_exceptions.cpp
+│   ├── test_public_job.cpp
+│   ├── test_public_setup_py.cpp
+│   ├── test_public_signed_url.cpp
+│   ├── test_public_task_cancel_retry.cpp
+│   ├── test_public_task_upload.cpp
+│   ├── test_public_utils.cpp
+│   └── test_public_webhook.cpp
+├── tests/
+│   ├── test_main.cpp
+│   └── original/
+│       ├── test_config.cpp
+│       ├── test_environment_vars.cpp
+│       ├── test_exceptions.cpp
+│       ├── test_job.cpp
+│       ├── test_setup_py.cpp
+│       ├── test_signed_url.cpp
+│       ├── test_task_cancel_retry.cpp
+│       ├── test_task_upload.cpp
+│       ├── test_utils.cpp
+│       ├── test_webhook.cpp
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+- CMakeLists.txt: CMake configuration file specifying test/executable targets and GTest usage.
+- include/: Place for your project headers; use for C++ equivalents of Python cloudconvert modules.
+- src/: Place for your main source implementation files for the library/code under test.
+- public_tests/: Public test cases translated from Python, named with test_public_ prefix for clarity.
+- tests/original/: Original (non-public) test cases, direct logic translation from the Python source.
+- tests/test_main.cpp: Entrypoint for running all tests via GoogleTest.
+- run_tests.sh: Simple one-click build and test execution script.
+- README.md: Place documentation and setup instructions here.
+- project_structure.txt: This documentation.
+
+To run all tests (original and public):
+    $ ./run_tests.sh
+
+Dependencies:
+- C++17 or later compiler
+- GoogleTest (gtest) library and headers (install via your package manager)
+- CMake >= 3.10

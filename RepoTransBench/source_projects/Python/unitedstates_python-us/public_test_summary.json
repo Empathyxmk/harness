@@ -1,0 +1,67 @@
+{
+  "project_name": "unitedstates_python-us",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:26:39.227462",
+  "original_path": "/workspace/verified_repos_v2/Python/unitedstates_python-us",
+  "public_test_result_path": "/workspace/public_test_results/Python/unitedstates_python-us",
+  "original_tests": {
+    "test_files": [
+      "us/tests/test_extra.py",
+      "us/tests/test_us.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 2,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "us/public_tests/test_public_extra.py",
+      "us/public_tests/test_public_us.py",
+      "run_public_tests.sh",
+      "us/public_tests/test_public_extra.py",
+      "us/public_tests/test_public_us.py",
+      "run_public_tests.sh",
+      "us/public_tests/test_public_extra.py",
+      "us/public_tests/test_public_us.py",
+      "us/public_tests/test_public_extra.py",
+      "us/public_tests/test_public_us.py",
+      "us/public_tests/test_public_extra.py",
+      "us/public_tests/test_public_us.py",
+      "run_public_tests.sh",
+      "us/public_tests/test_public_extra.py",
+      "us/public_tests/test_public_us.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 15,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "us/public_tests/test_public_extra.py",
+    "us/public_tests/test_public_us.py",
+    "run_public_tests.sh",
+    "us/public_tests/test_public_extra.py",
+    "us/public_tests/test_public_us.py",
+    "run_public_tests.sh",
+    "us/public_tests/test_public_extra.py",
+    "us/public_tests/test_public_us.py",
+    "us/public_tests/test_public_extra.py",
+    "us/public_tests/test_public_us.py",
+    "us/public_tests/test_public_extra.py",
+    "us/public_tests/test_public_us.py",
+    "run_public_tests.sh",
+    "us/public_tests/test_public_extra.py",
+    "us/public_tests/test_public_us.py"
+  ]
+}

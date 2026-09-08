@@ -1,0 +1,40 @@
+project_root/
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── nickstenning/
+│                   └── honcho/
+│                       ├── original/
+│                       │   ├── TestColour.java
+│                       │   ├── TestCommand.java
+│                       │   ├── TestDocConf.java
+│                       │   ├── TestEnviron.java
+│                       │   ├── TestExportBase.java
+│                       │   ├── TestExportRunit.java
+│                       │   ├── TestExportSupervisord.java
+│                       │   ├── TestExportSystemd.java
+│                       │   ├── TestExportUpstart.java
+│                       │   ├── TestInit.java
+│                       │   ├── TestInvocation.java
+│                       │   ├── TestManager.java
+│                       │   ├── TestPrinter.java
+│                       │   ├── TestProcess.java
+│                       │   └── TestVersion.java
+│                       └── public/
+│                           ├── TestPublicColour.java
+│                           ├── TestPublicCommand.java
+│                           ├── TestPublicDocConf.java
+│                           ├── TestPublicEnviron.java
+│                           ├── TestPublicExportBase.java
+│                           ├── TestPublicExportRunit.java
+│                           ├── TestPublicExportSupervisord.java
+│                           ├── TestPublicExportSystemd.java
+│                           ├── TestPublicExportUpstart.java
+│                           ├── TestPublicInit.java
+│                           ├── TestPublicInvocation.java
+│                           ├── TestPublicManager.java
+│                           ├── TestPublicPrinter.java
+│                           ├── TestPublicProcess.java
+│                           └── TestPublicVersion.java
+EOL

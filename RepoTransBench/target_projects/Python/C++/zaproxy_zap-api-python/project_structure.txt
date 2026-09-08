@@ -1,0 +1,37 @@
+.
+├── CMakeLists.txt
+├── include/
+│   ├── AutomationModule.h
+│   ├── BrkModule.h
+│   ├── DummyZAP.h
+│   └── RuleConfigModule.h
+├── public_tests/
+│   ├── test_public_automation.cpp
+│   ├── test_public_automation.py
+│   ├── test_public_brk.cpp
+│   ├── test_public_brk.py
+│   ├── test_public_client.cpp
+│   ├── test_public_client.py
+│   ├── test_public_ruleConfig.cpp
+│   └── test_public_ruleConfig.py
+├── run_tests.sh
+├── src/
+│   ├── examples/
+│   │   ├── README.md
+│   │   ├── basic-spider-scan.py
+│   │   └── zap_example_api_script.py
+│   └── zapv2/
+│       └── [Python API source files]
+└── tests/
+    ├── original/
+    │   ├── test_automation.cpp
+    │   ├── test_brk.cpp
+    │   ├── test_client.cpp
+    │   └── test_ruleConfig.cpp
+    ├── test_main.cpp
+    └── unit/
+        ├── conftest.py
+        ├── test_automation.py
+        ├── test_brk.py
+        ├── test_client.py
+        └── test_ruleConfig.py

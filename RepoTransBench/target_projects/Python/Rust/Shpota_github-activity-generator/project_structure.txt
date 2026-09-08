@@ -1,0 +1,27 @@
+github_activity_generator/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs            # exposes the main module(s)
+│   └── contribute.rs     # translated core logic/utils tested in both public and original tests
+├── tests/
+│   └── original/
+│       └── test_contribute.rs   # Translated original Python `test_contribute.py`
+├── public_tests/
+│   └── test_public_contribute.rs  # Translated public Python test
+├── run_tests.sh           # Simple executable to run all tests
+└── project_structure.txt   # PROJECT TREE (this file, for documentation/reference)
+
+Directory Explanations:
+- src/           : Main crate source code and logic; here, `contribute.rs` holds functions tested in the cases.
+- tests/original/: All tests from the original codebase, closest match to author/unit tests.
+- public_tests/  : All public/variant tests, which demonstrate testing surface for public verification.
+- Cargo.toml     : Rust package/configuration file, with dependencies for code and test utilities.
+- run_tests.sh   : One-step test runner, runs all Rust unit/integration/public tests.
+- project_structure.txt: This file! Explains the project structure, serves as a high-level map & doc.
+
+Setup & Testing Instructions:
+1. Install Rust toolchain (https://rustup.rs/)
+2. Clone/download this project, `cd github_activity_generator`
+3. Run: `chmod +x run_tests.sh`
+4. Run: `./run_tests.sh`
+All tests (original and public) will execute. You can add additional .rs test files in tests/original/ or public_tests/.

@@ -1,0 +1,17 @@
+ikkisoft_serialkiller/
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── tests/
+│   ├── original/
+│   │   ├── configuration_test.go
+│   │   ├── patternlist_test.go
+│   │   ├── serialkillerspeed_test.go
+│   │   └── serialkiller_test.go
+│   └── testutil.go
+├── public_tests/
+│   ├── configuration_public_test.go
+│   ├── patternlist_public_test.go
+│   ├── serialkiller_public_test.go
+│   └── serialkillerspeed_public_test.go
+└── project_structure.txt

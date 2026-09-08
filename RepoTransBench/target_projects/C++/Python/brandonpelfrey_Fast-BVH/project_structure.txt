@@ -1,0 +1,32 @@
+.
+├── src/
+│   └── fastbvh/
+│       ├── __init__.py
+│       ├── vector3.py            # FastBVH::Vector3, math/vector classes
+│       ├── bbox.py               # FastBVH::BBox, bounding box logic
+│       └── build_strategy.py     # BuildStrategy logic (with dummy SAHBin)
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py
+│   │   └── test_mathtests.py     # Translated from MathTests.cxx (original tests)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_buildstrategy_public.py  # Translated from BuildStrategy_public_test.cxx
+│   └── test_math_public.py           # Translated from MathTests_public_test.cxx
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Directory explanations:
+- src/fastbvh: Contains the Python library implementation for FastBVH components.
+- tests/original: Contains original test cases (translated from MathTests.cxx) that correspond to the full internal/unit coverage.
+- public_tests: Contains public-facing tests as per generated/visible C++ public tests.
+- requirements.txt: Lists all Python dependencies (pytest, numpy).
+- run_tests.sh: One-click test execution script. Runs all test suites (public, original).
+- project_structure.txt: This file. Lists and documents the structure.
+
+Setup and testing instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+   - Will automatically run public and original tests using pytest.
+3. Source code for FastBVH ported classes is in `src/fastbvh/`.

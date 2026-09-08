@@ -1,0 +1,11 @@
+{
+  "project_name": "sockeqwe_fragmentargs",
+  "language": "Java",
+  "coverage": {
+    "line": 60.0,
+    "branch": 55.0
+  },
+  "timestamp": "2025-06-23T13:35:00.971803",
+  "original_path": "/workspace/runnable_filter/Java/sockeqwe_fragmentargs",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/sockeqwe_fragmentargs"
+}

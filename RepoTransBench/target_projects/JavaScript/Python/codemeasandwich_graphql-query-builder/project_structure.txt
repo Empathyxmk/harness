@@ -1,0 +1,37 @@
+project_root/
+├── requirements.txt
+│   # Python dependency file. Requires 'pytest' for running tests.
+├── run_tests.sh
+│   # Simple script to run all tests in project. Usage: ./run_tests.sh
+├── src/
+│   └── graphql_query_builder/
+│       ├── __init__.py
+│       └── index.py
+│           # (Query class implementation should go here.)
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_graphql_query_builder.py
+│           # Translated main original tests from test.js
+│       └── test_graphql_query_builder_extra.py
+│           # Translated extra/error/edge tests from test-extra.js
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public.py
+│       # Translated "public" main public test cases
+│   └── test_extra_public.py
+│       # Translated "public" extra/edge public test cases
+
+# Directory explanations:
+# src/ - Main Python package module (put your Query class here).
+# tests/original/ - Contains original/author-only private test cases.
+# public_tests/ - Contains public/competition test cases.
+# requirements.txt - Declares dependencies (pytest for testing).
+# run_tests.sh - One-liner script to execute all test cases using pytest.
+# project_structure.txt - This file, describes the layout and usage notes.
+
+# Setup and testing instructions:
+# 1. (Optional) Setup a virtualenv and activate it.
+# 2. pip install -r requirements.txt
+# 3. Make sure run_tests.sh is executable (chmod +x run_tests.sh).
+# 4. Run all tests with ./run_tests.sh

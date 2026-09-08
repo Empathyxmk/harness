@@ -1,0 +1,22 @@
+taocpp_tuple_python/
+├── src/
+│   └── tuple_ops.py           # Minimal implementation for tuple sum/integer_sequence
+├── tests/
+│   └── original/
+│       └── test_sum.py        # Original tests (from sum_test.cpp)
+├── public_tests/
+│   └── test_sum_public.py     # Public tests (from sum_public_test.cpp)
+├── requirements.txt           # Python dependencies (pytest)
+├── run_tests.sh               # One-click test execution script
+├── README.md                  # Project overview and instructions
+├── project_structure.txt      # This structure description
+
+**Directory explanations:**
+
+- `src/`              : Contains minimal tuple utility Python implementation to support the tests.
+- `tests/original/`   : Contains test cases translated from the original test sources.
+- `public_tests/`     : Contains public/released test cases.
+- `requirements.txt`  : Python dependency definition (pytest).
+- `run_tests.sh`      : Script to run all tests.
+- `README.md`         : Overview, setup, and usage instructions.
+- `project_structure.txt`: This file.

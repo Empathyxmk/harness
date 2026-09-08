@@ -1,0 +1,23 @@
+.
+├── Cargo.toml               # Rust project manifest (dependencies, package settings)
+├── README.md                # Documentation and usage
+├── run_tests.sh             # One-click test runner (all tests)
+├── src/
+│   ├── lib.rs               # Main library entrypoint (declares modules)
+│   └── ml_stratifiers.rs    # Core logic, test-mock implementation of iterative stratification
+├── tests/
+│   ├── test_init_and_setup.rs           # Translated original: setup/import/file existence tests
+│   ├── test_iterative_stratification.rs # Translated original: iterative stratification cases
+│   └── test_ml_stratifiers.rs           # Translated original: stratification + error branch tests
+├── public_tests/
+│   ├── test_public_init_and_setup.rs           # Translated public: setup/import/file existence tests
+│   ├── test_public_iterative_stratification.rs # Translated public: iterative stratification cases
+│   └── test_public_ml_stratifiers.rs           # Translated public: stratification + error branch tests
+
+Directory explanations:
+- src/: Rust library code, intentionally written for testing, providing a minimal dummy version so tests compile.
+- tests/: ALL original (hidden) tests from the Python codebase, translated and using the library.
+- public_tests/: ALL public tests, for public validation, also using the library.
+- Cargo.toml: Rust package manifest with dependencies used (ndarray, lazy_static, etc.).
+- run_tests.sh: Simple runner; just runs `cargo test --all` to execute everything.
+- README.md: Brief overview and usage.

@@ -1,0 +1,32 @@
+project_root/
+├── src/
+│   └── netscope/
+│       ├── __init__.py
+│       └── appcontroller.py       # (STUB: Implementation placeholder - see README)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_netscope_appcontroller.py    # Translated original tests
+├── public_tests/
+│   ├── __init__.py
+│   └── test_netscope_appcontroller_public.py # Translated public tests
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Explanation:
+- src/netscope/              : (Placeholder) Where main Python netscope modules would go. `appcontroller.py` is required to import for full test runs but is a stub unless ported from JS/Coffee.
+- tests/original/            : Contains original translated tests from JS (non-public). All tests fully implemented in pytest.
+- public_tests/              : Contains public, example/derivative tests from original repo.
+- requirements.txt           : Python dependencies needed for running tests.
+- run_tests.sh               : Simple bash script to execute all the tests using pytest.
+- project_structure.txt      : This explanation file showing tree and notes.
+
+Setup/Usage:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`
+3. For test organization, both public and original tests get picked up with `pytest`.
+4. Source code stub is present at `src/netscope/appcontroller.py` (must be filled in for actual implementation).
+
+NOTE: The tests use mocks and fakes for dependencies like jQuery/DOM, as in the original repo's JS tests.

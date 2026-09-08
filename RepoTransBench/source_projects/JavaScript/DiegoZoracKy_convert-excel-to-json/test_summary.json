@@ -1,0 +1,17 @@
+{
+  "project_name": "DiegoZoracKy_convert-excel-to-json",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.4,
+    "branch": 96.11
+  },
+  "timestamp": "2025-06-19T10:15:06.776179",
+  "original_path": "/workspace/runnable_filter/JavaScript/DiegoZoracKy_convert-excel-to-json",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/DiegoZoracKy_convert-excel-to-json",
+  "tests_path": [
+    "tests/convert-excel-to-json-extra.test.js",
+    "tests/convert-excel-to-json.test.js",
+    "tests/main.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,39 @@
+aholstenson_miio_python/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── src/
+│   └── miio/               # Python package for source modules (empty or implementation as desired)
+│       ├── __init__.py
+│       └── ...             # Actual source code files go here (not provided by translation)
+├── tests/
+│   └── original/
+│       ├── test_device_finder.py
+│       ├── test_example.py
+│       ├── test_index.py
+│       ├── test_log.py
+│       └── test_protocol.py
+├── public_tests/
+│   ├── test_example_public.py
+│   └── cli/
+│       ├── test_device_finder_public.py
+│       ├── test_index_public.py
+│       ├── test_log_public.py
+│       └── commands/
+│           └── test_protocol_public.py
+
+Directory Explanations:
+- requirements.txt: Python dependencies (pytest for testing)
+- run_tests.sh: One-click script to run all tests
+- project_structure.txt: This structure document
+- src/miio/: Python source modules go here (put implementations if porting source)
+- tests/original/: All original tests, fully translated from JS Jest to pytest
+- public_tests/: All translated public tests from public JS tests
+
+Setup and Testing Instructions:
+1. Install Python 3.7+ and pip
+2. Run `pip install -r requirements.txt` to install pytest
+3. Run all tests via: `./run_tests.sh`
+4. Both original and public tests are auto-discovered by pytest
+
+Public and original tests are kept separate in directory for clear mapping. No source code is provided or required to run tests as all behavior is self-mocked.

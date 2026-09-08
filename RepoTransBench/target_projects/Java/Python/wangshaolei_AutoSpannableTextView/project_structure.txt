@@ -1,0 +1,46 @@
+wangshaolei_AutoSpannableTextView_python/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt         # This file: overview and instructions
+├── tests/                       # All original test cases (translated from Java)
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_application.py          # From ApplicationTest.java
+│       ├── test_example_unit.py         # From ExampleUnitTest.java
+│       └── test_autolink_style_textview.py # From AutoLinkStyleTextViewTest.java
+├── public_tests/                # All public test cases (translated from Java)
+│   ├── __init__.py
+│   ├── test_application_public.py             # From ApplicationPublicTest.java
+│   ├── test_example_unit_public.py            # From ExampleUnitPublicTest.java
+│   └── test_autolink_style_textview_public.py # From AutoLinkStyleTextViewPublicTest.java
+
+--------
+Directory and File Purpose:
+
+requirements.txt
+    - Python dependencies for running tests (pytest, mock).
+
+run_tests.sh
+    - Execute all tests in both tests/ and public_tests/ directories with a single command.
+
+tests/
+    - Original tests, matching the original (non-public) Java tests, organized as Python modules.
+    - tests/original/test_application.py:         Simulates ApplicationTest (android base).
+    - tests/original/test_example_unit.py:        Simple addition unit test.
+    - tests/original/test_autolink_style_textview.py:  Core tests for the (simulated) AutoLinkStyleTextView logic.
+
+public_tests/
+    - Public test cases, matching *PublicTest.java logic from the Java sources.
+    - test_application_public.py:                 Public variant of application instantiation test.
+    - test_example_unit_public.py:                Public math test (multiplication).
+    - test_autolink_style_textview_public.py:     Public variant with altered parameters for AutoLinkStyleTextView.
+
+Instructions:
+1. Install dependencies:
+      pip install -r requirements.txt
+2. Run all tests:
+      ./run_tests.sh
+
+All test cases are complete and functionally equivalent to their Java counterparts.
+--------

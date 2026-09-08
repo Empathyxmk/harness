@@ -1,0 +1,33 @@
+Project Structure:
+
+- pom.xml                        : Maven Java project definition with JUnit 5 as the test engine.
+- run_tests.sh                   : Simple bash script to execute all Java tests in one command.
+- src/
+    main/
+        java/
+            com/
+                example/
+                    ...     : (Put translated app code here if porting main app)
+    test/
+        java/
+            com/
+                example/
+                    original/
+                        AdminTest.java      : Translation of Django admin action tests from test_admin.py
+                        UtilsTest.java      : Utility/newsletter/email tests from test_utils.py
+                        ModelsTest.java     : Model methods and logic from test_models.py
+                        RunTestsPyTest.java : Blank test as in test_runtests_py.py
+                        FormsTest.java      : Form input validation logic from test_forms.py
+                        AppsTest.java       : App config verification from test_apps.py
+                        UrlsTest.java       : URL routing logic from test_urls.py
+                        ViewsTest.java      : View/controller tests from test_views.py
+
+Instructions:
+
+1. Ensure Maven is installed.
+2. Run all tests using:
+      ./run_tests.sh
+
+- All major Python test files were ported to the "com.example.original" package in JUnit test files, structurally matching the Django test suite.
+- No public/sample user-facing tests exist, so 'public_tests' directory is not present.
+- For a real Java port, you'd implement helper layers and mocks for emails, web/app context, and ORM.

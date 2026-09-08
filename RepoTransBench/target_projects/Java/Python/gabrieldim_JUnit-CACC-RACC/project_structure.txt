@@ -1,0 +1,32 @@
+project_root/
+├── src/
+│   └── difference_between_days_in_year.py   # Implementation of date difference logic
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_difference_between_days_in_year.py  # All original tests, fully translated from Java
+├── public_tests/
+│   ├── __init__.py
+│   └── test_difference_between_days_in_year_public.py  # All public tests, fully translated from Java
+├── requirements.txt     # All required Python dependencies (pytest)
+├── run_tests.sh         # Simple script to run all tests using pytest
+├── README.md            # Usage and project info
+└── project_structure.txt # (this file) Project tree and explanation
+
+# Directory explanations
+
+- src/: All source code (actual logic), translation of 'DifferenceBetweenDaysInYear' logic.
+- tests/original/: Original (non-public) test cases from the Java repo.
+- public_tests/: Translated public test suite, covering public problem description and sample/outlier cases.
+- requirements.txt: Python dependency list. 'pytest' for all testing needs.
+- run_tests.sh: Minimal script for users to run all tests with one line.
+- README.md: Project usage, structure, and run guide.
+
+# Instructions
+
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Run all tests:
+   ./run_tests.sh

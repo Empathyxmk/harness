@@ -1,0 +1,37 @@
+cwacmerge/
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       └── merge_adapter_test.go
+├── public_tests/
+│   └── merge_adapter_public_test.go
+└── project_structure.txt
+
+Directory and File Explanations:
+
+cwacmerge/
+│
+├── go.mod
+│    - Go module definition (package name and go version)
+│
+├── run_tests.sh
+│    - Simple shell script to run all Go tests in the project (recursive, no arguments needed)
+│
+├── tests/
+│    - Contains all original (non-public) test cases found in the Java project.
+│    └── original/
+│        └── merge_adapter_test.go    # Translated from src/test/java/com/commonsguy/cwac/merge/MergeAdapterTest.java
+│
+├── public_tests/
+│    - Contains translated public test cases. Tests here correspond to public input/output validation.
+│    └── merge_adapter_public_test.go # Translated from src/test/java/com/commonsguy/cwac/merge/MergeAdapterPublicTest.java
+│
+└── project_structure.txt
+     - This file (describes overall project layout and components)
+
+Setup & Testing Instructions:
+1. Make sure you have Go (1.18+) installed.
+2. Run all tests by executing:
+       ./run_tests.sh
+3. All test output (original & public) will be reported to the console.

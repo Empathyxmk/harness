@@ -1,0 +1,35 @@
+Python AES Project Structure:
+
+.
+├── requirements.txt                # pip dependencies (pytest)
+├── run_tests.sh                    # single command to run all tests
+├── src/
+│   └── aes/                        # (Recommended: source implementation goes here)
+│       ├── __init__.py
+│       └── (Implementation files)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_aes.py             # Complete translation of aes_gtest.cpp tests
+│       ├── test_loader.py          # Original Python loader test
+│       └── test_pyprotect_dummy_test.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_loader_public_test.py  # Public test for encrypt_tree with foo.py
+│   └── test_pyprotect_dummy_public_test.py  # Dummy public assertion
+└── README.md
+
+Directory Explanations:
+- src/aes/:         Python implementation of AES logic (if reimplemented)
+- tests/original/:  All tests translated from original C++ and Python test suite
+- public_tests/:    Public test suite (open test scenarios)
+- requirements.txt: Install Python dependencies (`pip install -r requirements.txt`)
+- run_tests.sh:     One command to run all tests (`./run_tests.sh`)
+- README.md:        Project info and instructions
+
+Testing Instructions:
+1. pip install -r requirements.txt
+2. ./run_tests.sh
+
+This will run both the original and public tests using pytest.

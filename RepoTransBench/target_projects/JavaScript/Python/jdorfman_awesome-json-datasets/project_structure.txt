@@ -1,0 +1,33 @@
+Project Structure for Python Translation of jdorfman_awesome-json-datasets
+
+.
+├── src/
+│   └── markdown_whitespace.py      # Python implementation of check_markdown_whitespace function
+├── tests/
+│   ├── original/
+│   │   └── test_whitespace.py      # Original (private) tests converted from JS to Python
+│   └── __init__.py                 # Allows tests/ to be recognized as a package
+├── public_tests/
+│   └── test_whitespace_public.py   # Public tests converted from JS to Python
+│   └── __init__.py                 # To allow package recognition
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Simple test run script, just executes pytest
+├── project_structure.txt           # Explains the structure and provides usage overview
+└── README.md                       # Instructions and overview [CREATE AS NEEDED]
+
+Directory Explanations:
+- src/: Source implementation for the markdown whitespace checker.
+- tests/original/: All "original" test cases translated from JS Jest/Mocha to pytest.
+- public_tests/: All "public" test cases, variations for public/assignment style.
+- requirements.txt: Test dependency declaration. Install with `pip install -r requirements.txt`.
+- run_tests.sh: Executable shell script (chmod +x) to run all tests (original and public) with a single `pytest` command.
+- project_structure.txt: This document.
+- README.md: General project documentation and usage (add as needed).
+
+How to Set Up and Run:
+1. Install dependencies:
+     pip install -r requirements.txt
+2. Run all tests:
+     ./run_tests.sh
+
+Both original and public tests are automatically detected and run by pytest.

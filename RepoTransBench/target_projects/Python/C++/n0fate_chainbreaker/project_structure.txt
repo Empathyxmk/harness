@@ -1,0 +1,40 @@
+n0fate_chainbreaker-cpp/
+├── src/
+│   └── CMakeLists.txt    # Placeholder, for future source files
+├── include/
+│   └── (empty: for public headers if/when needed)
+├── tests/
+│   ├── test_main.cpp     # Main for all GoogleTest-based tests
+│   └── chainbreaker/
+│       ├── test_schema.cpp
+│       ├── test_init_chainbreaker.cpp
+│       ├── test_command_line.cpp
+│       ├── test_results.cpp
+│       └── test_version.cpp
+├── public_tests/
+│   └── chainbreaker/
+│       ├── test_public_init_chainbreaker.cpp
+│       ├── test_public_command_line.cpp
+│       ├── test_public_version.cpp
+│       ├── test_public_schema.cpp
+│       └── test_public_results.cpp
+├── CMakeLists.txt        # Main build configuration (builds test runners)
+├── run_tests.sh          # One-click test build & run script
+└── project_structure.txt # This file (structure and explanations)
+
+# Directory explanations:
+# - src/: Place for C++ implementations (empty stubs needed to satisfy linker for tests; intended for actual code)
+# - include/: Header files, currently empty/stubbed (for future expansion)
+# - tests/: All translated original (private) test cases, uses GoogleTest
+# - public_tests/: All translated public test cases, uses GoogleTest
+# - CMakeLists.txt: Configures two test binaries (original and public) and downloads/builds GoogleTest as needed
+# - run_tests.sh: Easy build and run for ALL tests, both original and public, in one script
+
+# Usage:
+# 1. Install cmake and a C++17 compiler.
+# 2. Run: chmod +x run_tests.sh && ./run_tests.sh
+#    This builds all tests and runs both original and public test suites.
+# 3. See output for pass/fail results for all tests.
+
+# Note:
+# - All test files are in C++. Any leftover .py files in tests/ and public_tests/ directories can be deleted.

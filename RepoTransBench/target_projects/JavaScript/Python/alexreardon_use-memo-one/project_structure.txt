@@ -1,0 +1,44 @@
+alexreardon_use-memo-one-python/
+├── src/
+│   ├── __init__.py
+│   ├── are_inputs_equal.py       # Python implementation of are-inputs-equal.js
+│   ├── use_memo_one.py           # Python implementation of useMemoOne
+│   └── use_callback_one.py       # Python implementation of useCallbackOne
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_are_inputs_equal.py
+│       ├── test_edge_cases.py
+│       ├── test_no_input.py
+│       ├── test_use_callback_one.py
+│       └── test_use_memo_one.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_are_inputs_equal_public.py
+│   ├── test_edge_cases_public.py
+│   ├── test_no_input_public.py
+│   ├── test_use_callback_one_public.py
+│   └── test_use_memo_one_public.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+Directory explanations:
+- src/: Python source code implementations, directly ported from JS logic.
+- tests/original/: All original, full-coverage tests from the JS repo, now fully translated to Python/pytest (private/internal).
+- public_tests/: All public test cases, as translated from public_tests/*.public.test.js.
+- requirements.txt: All Python package requirements (pytest, pytest-mock for mocking).
+- run_tests.sh: One-click shell script to discover and run all tests using pytest.
+- README.md: Project information and instructions (not filled here).
+- project_structure.txt: This file, describing the full tree and each folder's purpose.
+
+Instructions:
+1. `pip install -r requirements.txt` to install dependencies.
+2. `./run_tests.sh` to run all tests.
+
+Notes:
+- source code stubs in src/ must be implemented to pass tests.
+- Both tests/original/ and public_tests/ are organized with idiomatic pytest test files.
+- All test logic fully implemented—no placeholder code!

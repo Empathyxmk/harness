@@ -1,0 +1,59 @@
+powergo_pytracking/
+├── AUTHORS.txt
+├── CHANGELOG.rst
+├── LICENSE
+├── MANIFEST.in
+├── README.rst
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_init_exports_public.py
+│   ├── test_pytracking_public.py
+│   └── test_tracking_unit_public.py
+├── pytracking/
+│   ├── __init__.py
+│   ├── django.py
+│   ├── html.py
+│   ├── tracking.py
+│   └── webhook.py
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.cfg
+├── setup.py
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── powergo/
+│   │               └── pytracking/
+│   │                   ├── Configuration.java
+│   │                   └── TrackingConstants.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── powergo/
+│                   └── pytracking/
+│                       ├── original/
+│                       │   ├── TestCrypto.java
+│                       │   ├── TestDjango.java
+│                       │   ├── TestHtml.java
+│                       │   ├── TestInitExports.java
+│                       │   ├── TestPytracking.java
+│                       │   ├── TestTrackingUnit.java
+│                       │   └── TestWebhook.java
+│                       └── publictests/
+│                           ├── PublicTestInitExports.java
+│                           ├── PublicTestPytracking.java
+│                           └── PublicTestTrackingUnit.java
+├── test_summary.json
+├── tests/
+│   ├── __init__.py
+│   ├── test_crypto.py
+│   ├── test_django.py
+│   ├── test_html.py
+│   ├── test_init_exports.py
+│   ├── test_pytracking.py
+│   ├── test_tracking_unit.py
+│   └── test_webhook.py
+└── tox.ini

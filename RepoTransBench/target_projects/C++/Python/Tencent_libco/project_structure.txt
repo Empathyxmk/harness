@@ -1,0 +1,31 @@
+Tencent_libco_python/
+├── src/
+│   └── libco/
+│       └── __init__.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_co_comm.py
+│       └── test_stub_co_routine.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_co_comm_public.py
+│   └── test_stub_co_routine_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Directory Explanations:
+src/libco/                - Intended location for main package/module code. (Stub only, as no implementation provided)
+tests/original/           - Contains all original (non-public) test cases, directly translated from C++ GTest files.
+public_tests/             - Contains all public/coverage-style test cases (translated from *_public.cpp files).
+requirements.txt          - Python dependencies, lists `pytest`.
+run_tests.sh              - Simple script to run all tests in both original and public test directories.
+project_structure.txt     - This file.
+
+Setup and Testing Instructions:
+1. Create a Python virtual environment (recommended).
+2. Install all dependencies: `pip install -r requirements.txt`
+3. Run all tests: `./run_tests.sh` or `bash run_tests.sh`
+- All original and public test cases will be executed using pytest.

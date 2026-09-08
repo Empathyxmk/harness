@@ -1,0 +1,36 @@
+.
+├── pom.xml                # Maven build configuration file. Defines dependencies, build process.
+├── run_tests.sh           # Simple test script to run all tests (mvn clean test)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/example/queuelib/
+│   │            ├── BaseQueue.java          # Java queue interface
+│   │            ├── FifoMemoryQueue.java    # FIFO in-memory testable queue
+│   │            ├── LifoMemoryQueue.java    # LIFO in-memory testable queue
+│   │            ├── PriorityQueue.java      # Priority queue sample (simplified for testing)
+│   │            ├── Queuelib.java           # Dummy main/public API class for tests
+│   │            └── RoundRobinQueue.java    # Round robin queue sample (simplified)
+│   └── test/
+│       └── java/
+│           └── com/example/queuelib/
+│               ├── original/
+│               │   ├── TestBaseQueueInterface.java    # Tests from test_queue_memory.py, test_queue.py
+│               │   ├── TestPublicApi.java            # From test_public_api.py
+│               │   └── TestQueueMemory.java          # From test_queue_memory.py
+│               └── public_tests/
+│                   ├── TestPublicApiPublic.java       # public_tests/test_public_public_api.py
+│                   └── TestPublicQueueMemory.java     # public_tests/test_public_queue_memory.py
+
+# Directory explanations:
+# src/main/java/com/example/queuelib/   : All main library (queue) logic, dummies/skeletons for test pass.
+# src/test/java/com/example/queuelib/original/    : Original (non-public) tests, from queuelib/tests
+# src/test/java/com/example/queuelib/public_tests/ : Public test cases from public_tests/
+# pom.xml                         : Maven configuration (JUnit5, dependencies)
+# run_tests.sh                    : One-click runner for all Java tests
+
+# Setup & Testing Instructions:
+# 1. Ensure Java and Maven are installed.
+# 2. From project root, run: chmod +x run_tests.sh
+# 3. Run tests: ./run_tests.sh
+#    (All tests will execute and results are printed)

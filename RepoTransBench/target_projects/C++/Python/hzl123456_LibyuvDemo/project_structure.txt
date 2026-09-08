@@ -1,0 +1,38 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Shell script to run all tests
+├── project_structure.txt           # This project structure overview
+├── tests/
+│   └── original/
+│       ├── test_compare.py         # Original C++ compare_test.cpp in Python
+│       ├── test_example_instrumented.py # Original ExampleInstrumentedTest.java port
+│       ├── test_example_unit.py          # Original ExampleUnitTest.java port
+│       ├── test_libyuv_util_example_instrumented.py # Libyuv Android Instrumented
+│       ├── test_libyuv_util_example_unit.py # Libyuv Java Unit Test
+│       ├── test_psnr.py               # Original psnr_test.cpp
+│       ├── test_roll_deps.py          # Python GYP/roll_deps tests
+│       ├── test_ssim.py               # Original ssim_test.cpp
+│       └── test_yuvjni.py             # Simple GTest dummy
+├── public_tests/
+│   ├── test_compare_public.py
+│   ├── test_example_instrumented_public.py
+│   ├── test_example_unit_public.py
+│   ├── test_libyuv_util_example_instrumented_public.py
+│   ├── test_libyuv_util_example_unit_public.py
+│   ├── test_psnr_public.py
+│   ├── test_roll_deps_public.py
+│   ├── test_ssim_public.py
+│   └── test_yuvjni_public.py
+
+Description:
+- `requirements.txt`: Declares Python dependencies (pytest)
+- `run_tests.sh`: Executable script to run all tests with a single command
+- `tests/original/`: Contains all tests translated from the original C++/Java codebase
+- `public_tests/`: Contains all public tests translated from C++/Java public cases
+- All tests are runnable by executing `./run_tests.sh` from project root
+
+Setup & Usage:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run tests: `./run_tests.sh` (ensure it is executable: `chmod +x run_tests.sh`)
+
+Each test file corresponds to an original C++/Java test file from the source layout as explained above.

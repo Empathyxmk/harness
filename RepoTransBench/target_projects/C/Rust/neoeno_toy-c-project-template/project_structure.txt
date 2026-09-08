@@ -1,0 +1,8 @@
+toy-project/
+├── Cargo.toml           # Rust project configuration
+├── src/
+│   └── lib.rs           # Core functionality implementation
+├── tests/
+│   ├── original_tests.rs # Original test cases
+│   └── public_tests.rs   # Public test cases
+└── run_tests.sh         # Test execution script

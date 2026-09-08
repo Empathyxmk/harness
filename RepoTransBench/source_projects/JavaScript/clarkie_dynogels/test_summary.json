@@ -1,0 +1,32 @@
+{
+  "project_name": "clarkie_dynogels",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 91.54,
+    "branch": 82.72
+  },
+  "timestamp": "2025-06-23T10:34:56.745331",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/clarkie_dynogels",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/clarkie_dynogels",
+  "tests_path": [
+    "test/batch-test.js",
+    "test/examples-createTable.test.js",
+    "test/examples-dynamicKeys.test.js",
+    "test/examples-optionalAttributes.test.js",
+    "test/examples-queryFilter.test.js",
+    "test/expressions-test.js",
+    "test/index-proxy.test.js",
+    "test/index-test.js",
+    "test/integration/create-table-test.js",
+    "test/integration/integration-test.js",
+    "test/item-test.js",
+    "test/parallel-test.js",
+    "test/query-test.js",
+    "test/scan-test.js",
+    "test/schema-test.js",
+    "test/serializer-test.js",
+    "test/table-test.js",
+    "test/test-helper.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

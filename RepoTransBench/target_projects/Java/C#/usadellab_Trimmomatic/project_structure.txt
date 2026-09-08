@@ -1,0 +1,32 @@
+Project Structure for usadellab_Trimmomatic C# Port
+====================================================
+
+usadellab_Trimmomatic/           # Project root
+│
+├── src/UsadellabTrimmomatic/    # Source code (main project code here)
+│   ├── UsadellabTrimmomatic.csproj
+│   ├── Program.cs (placeholder/main entry)
+│   └── ...     # Other src files as ported/needed (not provided, only test stubs shown)
+│
+├── tests/                       # All original test cases (private/complete)
+│   └── original/
+│       ├── OriginalTests.csproj     # xUnit test proj for originals
+│       ├── TrimmomaticTest.cs      # Translated from TrimmomaticTest.java
+│       ├── TrimStatsTest.cs        # Translated from TrimStatsTest.java
+│       └── PairomaticTest.cs       # Translated from PairomaticTest.java
+│
+├── public_tests/                    # All public test cases
+│   ├── PublicTests.csproj           # xUnit test proj for public tests
+│   ├── TrimmomaticPublicTest.cs     # Translated from TrimmomaticPublicTest.java
+│   ├── TrimStatsPublicTest.cs       # Translated from TrimStatsPublicTest.java
+│   └── PairomaticPublicTest.cs      # Translated from PairomaticPublicTest.java
+│
+├── UsadellabTrimmomatic.sln         # Solution file tying all projects together
+├── run_tests.sh                     # Top-level one click test runner
+├── README.md                        # Project doc (instructions for build/test)
+└── project_structure.txt            # (this file! structure & instructions)
+
+Notes:
+- Test projects use the xUnit test framework.
+- All logic in each original Java test is ported into corresponding C# test files.
+- run_tests.sh executes all test projects with one command; make sure you have `dotnet` SDK (6.0+).

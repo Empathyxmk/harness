@@ -1,0 +1,37 @@
+.
+├── pom.xml                      # Maven build configuration for dependencies and test setup
+├── run_tests.sh                 # Script to run all tests (one-click)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── rajinipp/
+│   │               └── [core Java sources go here (not included in translation)]
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── rajinipp/
+│                   ├── original/
+│                   │   ├── InitModuleTest.java
+│                   │   ├── RajiniworldTest.java
+│                   │   ├── FunctionsTest.java
+│                   │   ├── FlowControlTest.java
+│                   │   ├── ExprsTest.java
+│                   │   ├── RunnerTest.java
+│                   │   ├── LexerAndExceptionsTest.java
+│                   │   └── PrintTest.java
+│                   └── publictests/
+│                       ├── PublicInitModuleTest.java
+│                       ├── PublicRajiniworldTest.java
+│                       ├── PublicFunctionsTest.java
+│                       ├── PublicFlowControlTest.java
+│                       ├── PublicExprsTest.java
+│                       ├── PublicRunnerTest.java
+│                       ├── PublicLexerAndExceptionsTest.java
+│                       └── PublicPrintTest.java
+└── README.md                   # Info about the project and tests
+
+- All original ("private") tests are fully translated to Java and reside in `src/test/java/com/rajinipp/original/`.
+- All public tests are fully translated to Java and reside in `src/test/java/com/rajinipp/publictests/`.
+- To run all tests: `chmod +x run_tests.sh && ./run_tests.sh`
+- Project uses JUnit 5 for all test code.

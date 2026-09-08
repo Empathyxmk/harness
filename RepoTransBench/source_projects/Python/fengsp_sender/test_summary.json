@@ -1,0 +1,16 @@
+{
+  "project_name": "fengsp_sender",
+  "language": "Python",
+  "coverage": {
+    "line": 75.0,
+    "branch": 87.5
+  },
+  "timestamp": "2025-06-19T11:42:36.224057",
+  "original_path": "/workspace/runnable_filter/Python/fengsp_sender",
+  "test_result_path": "/workspace/test_enhancement_results/Python/fengsp_sender",
+  "tests_path": [
+    "test_sender.py",
+    "test_sender_extended.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

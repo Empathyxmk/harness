@@ -1,0 +1,51 @@
+justonedb_kafka-sink-pg-json Go Project Structure
+================================================
+
+.
+├── go.mod                  # Go module definition and dependencies
+├── run_tests.sh            # One-click test runner (Go)
+├── project_structure.txt   # This structure document
+├── tests/
+│   ├── original/
+│   │   ├── postgresql_sink_connector_test.go      # Original connector logic tests (translated from Java)
+│   │   └── postgresql_sink_task_test.go           # Original sink task logic tests (translated from Java)
+├── public_tests/
+│   ├── postgresql_sink_connector_public_test.go   # Public test: connector (translated)
+│   └── postgresql_sink_task_public_test.go        # Public test: sink task (translated)
+└── README.md                # Project documentation and instructions
+
+Directory Explanations
+----------------------
+go.mod
+    - Declares the module name and Go version.
+    - No dependencies needed as only stdlib testing is used for the translation.
+
+run_tests.sh
+    - Simple one-click test run for all tests (original + public).
+    - Executes: go test ./...
+    - Usage: `chmod +x run_tests.sh && ./run_tests.sh`
+
+tests/original/
+    - Contains the original, non-public test translations.
+    - Each *_test.go file is an exact translation of its Java counterpart, using Go's testing package and stubs for the Java classes.
+
+public_tests/
+    - Contains public test translations.
+    - Each *_test.go file here directly corresponds to the provided public test Java files but adapted to Go and using stubs/mocks as needed.
+
+README.md
+    - Contains general project and test running information.
+
+project_structure.txt
+    - This file, outlines the entire Go project structure and purpose of each file/folder.
+
+How To Run Tests
+----------------
+1. Ensure you have Go installed and in your PATH.
+2. From the project root, make the test script executable: 
+       chmod +x run_tests.sh
+3. Run all tests (original and public):
+       ./run_tests.sh
+4. All output will be from standard Go `testing` package.
+
+No external dependencies are required for these translated tests.

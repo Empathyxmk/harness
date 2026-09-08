@@ -1,0 +1,38 @@
+project_root/
+├── requirements.txt                # Project dependencies (pytest)
+├── run_tests.sh                    # Simple script to run all tests
+├── README.md                       # Project documentation and usage
+├── src/                            # Place for the main package code (empty here, see below)
+│   └── package/                    # Placeholder for ported source code if needed
+│       ├── __init__.py
+├── tests/                          # All original test cases
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_ch01.py
+│       ├── test_ch01_helper.py
+│       ├── test_ch01_listing1_6.py
+│       ├── test_ch01_listing1_7.py
+│       ├── test_ch02.py
+│       ├── test_ch03.py
+│       ├── test_ch04.py
+│       ├── test_ch05.py
+│       ├── test_ch06.py
+│       ├── test_ch06_jscheck.py
+│       ├── test_ch07.py
+│       └── test_ch08.py
+├── public_tests/                   # All public test cases
+│   ├── __init__.py
+│   ├── test_ch01_public.py
+│   ├── test_ch01_helper_public.py
+│   ├── test_ch01_listing1_6_public.py
+│   ├── test_ch01_listing1_7_public.py
+│   ├── test_ch02_public.py
+│   ├── test_ch03_public.py
+│   ├── test_ch04_public.py
+│   ├── test_ch05_public.py
+│   ├── test_ch06_public.py
+│   ├── test_ch06_jscheck_public.py
+│   ├── test_ch07_public.py
+│   ├── test_ch08_public.py
+└──

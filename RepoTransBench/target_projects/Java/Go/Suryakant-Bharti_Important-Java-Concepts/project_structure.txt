@@ -1,0 +1,20 @@
+.
+├── core.go
+├── manual_main.go
+├── overloading_calculation2.go
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── tests/
+│   ├── testutil.go
+│   └── original/
+│       ├── adder_test.go
+│       ├── manual_main_test.go
+│       ├── example_overloading_test.go
+│       └── overloading_calculation2_test.go
+├── public_tests/
+│   ├── adder_public_test.go
+│   ├── manual_main_public_test.go
+│   ├── example_overloading_public_test.go
+│   └── overloading_calculation2_public_test.go
+└── README.md

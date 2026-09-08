@@ -1,0 +1,28 @@
+project_root/
+├── requirements.txt                   # Python dependencies: pytest
+├── run_tests.sh                       # One-click test execution script
+├── tests/
+│   └── original/
+│       ├── test_index.py              # Original in-depth test cases (full plugin coverage)
+├── public_tests/
+│   ├── test_index_public.py           # Public/testable subset for external verification
+│
+└── project_structure.txt              # (This file) Explains project structure & test running
+
+# Directory Explanations:
+# - tests/original/: Contains the original, in-depth test translations for internal/plugin-level testing.
+# - public_tests/: Contains public-facing tests for integration/external/quick checks.
+# - requirements.txt: Python dependency list ("pytest" required).
+# - run_tests.sh: Simple script to run all tests with "pytest".
+# - project_structure.txt: You are reading it!
+
+# Setup & Testing Instructions:
+# 1. Install dependencies:      pip install -r requirements.txt
+# 2. Run all tests:             ./run_tests.sh
+#    (or directly:              pytest )
+# Tests from both tests/ and public_tests/ will be auto-discovered and executed by pytest.
+
+# Note:
+# - Both test_index.py and test_index_public.py include a minimal dummy
+#   CircularDependencyPlugin class to simulate the testable interface and logic,
+#   so the tests are self-contained and executable even without the real plugin code.

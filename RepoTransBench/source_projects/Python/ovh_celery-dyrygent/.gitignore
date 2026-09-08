@@ -1,0 +1,11 @@
+*.pyc
+*.swp
+*.swo
+venv/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+/tests/integration/setup/worker/src/celery_dyrygent

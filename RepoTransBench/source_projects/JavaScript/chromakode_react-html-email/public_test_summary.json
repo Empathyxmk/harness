@@ -1,0 +1,69 @@
+{
+  "project_name": "chromakode_react-html-email",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:23:25.854226",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/chromakode_react-html-email",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/chromakode_react-html-email",
+  "original_tests": {
+    "test_files": [
+      "__tests__/includeDataProps.test.js",
+      "__tests__/renderEmail-extra.test.js",
+      "__tests__/ReactHTMLEmail.test.js",
+      "__tests__/StyleValidator.test.js",
+      "__tests__/StyleValidator-extra.test.js",
+      "__tests__/index.test.js",
+      "__tests__/PropTypes.test.js",
+      "__tests__/renderEmail.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/includeDataProps.public.test.js",
+      "public_tests/renderEmail-extra.public.test.js",
+      "public_tests/ReactHTMLEmail.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/StyleValidator.public.test.js",
+      "public_tests/StyleValidator-extra.public.test.js",
+      "public_tests/index.public.test.js",
+      "public_tests/PropTypes.public.test.js",
+      "public_tests/renderEmail.public.test.js",
+      "public_tests/PropTypes.public.test.js",
+      "public_tests/StyleValidator-extra.public.test.js",
+      "public_tests/StyleValidator.public.test.js",
+      "public_tests/PropTypes.public.test.js",
+      "public_tests/StyleValidator.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 14,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/includeDataProps.public.test.js",
+    "public_tests/renderEmail-extra.public.test.js",
+    "public_tests/ReactHTMLEmail.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/StyleValidator.public.test.js",
+    "public_tests/StyleValidator-extra.public.test.js",
+    "public_tests/index.public.test.js",
+    "public_tests/PropTypes.public.test.js",
+    "public_tests/renderEmail.public.test.js",
+    "public_tests/PropTypes.public.test.js",
+    "public_tests/StyleValidator-extra.public.test.js",
+    "public_tests/StyleValidator.public.test.js",
+    "public_tests/PropTypes.public.test.js",
+    "public_tests/StyleValidator.public.test.js"
+  ]
+}

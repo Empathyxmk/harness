@@ -1,0 +1,16 @@
+{
+  "project_name": "signalfx_maestro-ng",
+  "language": "Python",
+  "coverage": {
+    "line": 51.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T12:48:32.103748",
+  "original_path": "/workspace/runnable_filter/Python/signalfx_maestro-ng",
+  "test_result_path": "/workspace/test_enhancement_results/Python/signalfx_maestro-ng",
+  "tests_path": [
+    "tests/maestro/test_lifecycle.py",
+    "tests/maestro/test_loader.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

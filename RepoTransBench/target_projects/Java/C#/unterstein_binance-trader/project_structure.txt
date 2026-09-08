@@ -1,0 +1,27 @@
+unterstein_binance-trader-csharp/
+├── Unterstein.BinanceTrader.sln               # .NET solution file tying together all projects
+├── src/
+│   ├── Unterstein.BinanceTrader.csproj        # Main project file
+│   ├── BinanceBotApplication.cs               # Main bootstrap application (dummy for tests)
+│   ├── TradingClient.cs                       # TradingClient with connection and buy/sell logic
+│   └── BinanceTrader.cs                       # BinanceTrader class wrapping high-level trading logic
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj               # Test project for original tests
+│       ├── BinanceBotApplicationTests.cs      # Original application tests
+│       ├── TradingClientTests.cs              # Original TradingClient tests
+│       └── BinanceTraderTests.cs              # Original BinanceTrader tests
+├── public_tests/
+│   ├── PublicTests.csproj                     # Test project for public tests
+│   ├── BinanceBotApplicationPublicTests.cs    # Public application tests
+│   ├── TradingClientPublicTests.cs            # Public TradingClient tests
+│   └── BinanceTraderPublicTests.cs            # Public BinanceTrader tests
+├── run_tests.sh                               # Simple script to run all tests via dotnet test
+└── project_structure.txt                      # This structure description
+
+- `src/` contains all application source files. All logic under `Unterstein.BinanceTrader` namespace.
+- `tests/original/` has all original tests, in a separate .csproj for organizational clarity.
+- `public_tests/` has all public tests, in a separate .csproj.
+- `run_tests.sh` will build/restore all projects as needed and run all tests.
+- `project_structure.txt` is this documentation.
+- To run tests: `./run_tests.sh`

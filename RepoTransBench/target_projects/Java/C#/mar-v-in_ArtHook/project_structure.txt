@@ -1,0 +1,37 @@
+mar-v-in_ArtHook (C# Structure)
+├── src/
+│   └── ArtHook/
+│       ├── ArtHook.csproj           # Main project configuration
+│       ├── Xposed.cs                # Xposed main static methods
+│       ├── Log.cs                   # Log abstraction (used by Xposed)
+│       ├── Utils.cs                 # Utility class for reflection main() invocation
+│       ├── RuntimeInit.cs           # RuntimeInit stub with main
+│       └── ZygoteInit.cs            # ZygoteInit stub with main
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj      # xUnit + Moq test project file
+│       ├── ZygoteInitTest.cs         # ZygoteInit test logic
+│       ├── UtilsTest.cs              # Utils test logic
+│       ├── XposedTest.cs             # Xposed test logic
+│       └── RuntimeInitTest.cs        # RuntimeInit test logic
+├── public_tests/
+│   ├── PublicTests.csproj            # xUnit + Moq test project (public)
+│   ├── XposedPublicTest.cs           # Public interface test of Xposed
+│   ├── RuntimeInitPublicTest.cs      # Public interface test for RuntimeInit
+│   ├── UtilsPublicTest.cs            # Utils public test variant
+│   └── ZygoteInitPublicTest.cs       # Public test for ZygoteInit
+├── project_structure.txt             # This file (directory map/overview)
+├── run_tests.sh                      # Script: one-button test running (dotnet test ...)
+└── README.md                         # Usage and running instructions
+
+Directory explanations:
+- src/ArtHook: Source code ported and stubbed for testing; static methods use C# conventions.
+- tests/original: Full translation of original test logic, one file per Java JUnit test.
+- public_tests: Fully functional public-facing tests, mirroring public JUnit tests.
+- run_tests.sh: Run all tests in one go (./run_tests.sh).
+- project_structure.txt: Guide to the above structure.
+
+How to build and run:
+1. Ensure you have .NET 6 or later installed.
+2. Run: chmod +x ./run_tests.sh
+3. Then: ./run_tests.sh

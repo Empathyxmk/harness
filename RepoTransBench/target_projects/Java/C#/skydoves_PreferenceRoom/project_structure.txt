@@ -1,0 +1,80 @@
+Project Structure for skydoves_PreferenceRoom (C# Translation)
+=============================================================
+
+skydoves_PreferenceRoom/
+├── src/
+│   └── Skydoves.PreferenceRoom/
+│       ├── Skydoves.PreferenceRoom.csproj
+│       └── [All code logic and supporting classes, if needed]
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── InjectorGeneratorTests.cs
+│       ├── PreferenceEntityAnnotatedClassTests.cs
+│       ├── PreferenceKeyFieldTests.cs
+│       ├── AppComponentTests.cs
+│       ├── JunitComponentTests.cs
+│       ├── ProfileEntityTests.cs
+│       └── DeviceEntityTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── InjectorGeneratorPublicTests.cs
+│   ├── PreferenceKeyFieldPublicTests.cs
+│   ├── PreferenceEntityAnnotatedClassPublicTests.cs
+│   ├── AppComponentPublicTests.cs
+│   ├── JunitComponentPublicTests.cs
+│   ├── ProfileEntityPublicTests.cs
+│   └── DeviceEntityPublicTests.cs
+├── Skydoves.PreferenceRoom.sln
+├── run_tests.sh
+├── README.md
+
+-------------------------------------------------------------
+Directory and File Explanations
+-------------------------------------------------------------
+src/Skydoves.PreferenceRoom/                -- Main library/project source code (logic, stubs, shared code)
+src/Skydoves.PreferenceRoom/Skydoves.PreferenceRoom.csproj -- .NET Core C# project file for main logic
+
+tests/original/                             -- Original test cases (private/internal verification)
+tests/original/OriginalTests.csproj         -- xUnit test project (references Skydoves.PreferenceRoom)
+tests/original/*Tests.cs                    -- Each file is a full translation of a test class from the Java originals
+
+public_tests/                               -- Public test cases (visible for grading/public)
+public_tests/PublicTests.csproj              -- xUnit test project for public cases (references Skydoves.PreferenceRoom)
+public_tests/*PublicTests.cs                -- Each file is a translation of public test Java files
+
+Skydoves.PreferenceRoom.sln                 -- .NET solution file (ties together projects)
+run_tests.sh                                -- Simple shell script to run all tests (see below)
+README.md                                   -- Documentation and setup instructions
+
+-------------------------------------------------------------
+How to Build and Run Tests
+-------------------------------------------------------------
+1. Install .NET Core SDK 6+ (https://dotnet.microsoft.com/download)
+2. To restore dependencies:
+     dotnet restore
+
+3. To build all projects:
+     dotnet build
+
+4. To run all tests (original + public):
+     ./run_tests.sh
+
+   - This script simply runs 'dotnet test' at the solution root. Both public and original test projects will execute.
+   - Test outputs and results will appear in the console.
+
+-------------------------------------------------------------
+How Projects/Tests are Organized
+-------------------------------------------------------------
+- All test logic is in xUnit-style C# test files.
+- Each *Tests.cs correlates to one original Java test file (class).
+- Public test logic is in public_tests/, original/private logic is in tests/original/.
+- All required projects are tied together in the solution file.
+
+-------------------------------------------------------------
+Custom/Helper Classes & Mocking
+-------------------------------------------------------------
+- Since the original Java tests use extensive 'mock' objects via Mockito,
+  in C# we use Moq (a standard C# mocking library for .NET/xUnit). All mock-heavy files (`*Processor*`) use Moq for mocking elements, attributes, etc.
+
+- The solution is ready to be extended with actual core logic if needed.

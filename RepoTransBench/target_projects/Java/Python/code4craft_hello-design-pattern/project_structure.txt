@@ -1,0 +1,95 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── project_structure.txt
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_HelloWorld.py
+│       ├── test_Main.py
+│       ├── test_SplitHelloWorld.py
+│       ├── prototype/
+│       │   ├── __init__.py
+│       │   ├── test_HelloWorldPrototypeFull.py
+│       │   └── test_HelloWorldPrototype.py
+│       ├── singleton/
+│       │   ├── __init__.py
+│       │   ├── test_HelloWorldSingletonFull.py
+│       │   └── test_HelloWorldSingleton.py
+│       ├── builder/
+│       │   ├── __init__.py
+│       │   └── test_HelloWorldBuilder.py
+│       ├── abstract_factory/
+│       │   ├── __init__.py
+│       │   └── test_AbstractFactory.py
+│       ├── factory_method/
+│       │   ├── __init__.py
+│       │   └── test_FactoryMethodHelloWorldFactory.py
+│       ├── composite/
+│       │   ├── __init__.py
+│       │   └── test_CompositeHelloWorld.py
+│       ├── facade/
+│       │   ├── __init__.py
+│       │   └── test_HelloWorldFacade.py
+│       ├── adapter/
+│       │   ├── __init__.py
+│       │   └── test_HelloWorldAdapter.py
+│       ├── bridge/
+│       │   ├── __init__.py
+│       │   └── test_HelloWorldBridge.py
+│       ├── proxy/
+│       │   ├── __init__.py
+│       │   └── test_HelloWorldProxy.py
+│       ├── flyweight/
+│       │   ├── __init__.py
+│       │   └── test_HelloWorldFlyWeight.py
+│       ├── decorator/
+│       │   ├── __init__.py
+│       │   └── test_HelloWorldDecorator.py
+│       ├── mediator/
+│       │   ├── __init__.py
+│       │   ├── test_HelloWorldInterjection.py
+│       │   ├── test_HelloWorldObject.py
+│       │   └── test_HelloWorldMediator.py
+│       ├── strategy/
+│       │   ├── __init__.py
+│       │   ├── test_HelloWorldStrategyContext.py
+│       │   └── test_JavaHelloWorldStrategy.py
+│       ├── chain_of_responsibility/
+│       │   ├── __init__.py
+│       │   ├── test_HelloWorldHandler.py
+│       │   └── test_HelloWorldObjectHandler.py
+│       ├── observer/
+│       │   ├── __init__.py
+│       │   ├── test_HelloWorldObserver.py
+│       │   └── test_Subject.py
+│       ├── template_method/
+│       │   ├── __init__.py
+│       │   └── test_TemplateMethodHelloWorld.py
+│       ├── command/
+│       │   ├── __init__.py
+│       │   └── test_HelloWorldPrintCommand.py
+│       ├── memento/
+│       │   ├── __init__.py
+│       │   └── test_HelloWorldMemento.py
+│       ├── state/
+│       │   ├── __init__.py
+│       │   ├── test_HelloWorldStateContext.py
+│       │   └── test_HelloWorldState.py
+│       ├── visitor/
+│       │   ├── __init__.py
+│       │   └── test_HelloWorldVisitor.py
+│       ├── iterator/
+│       │   ├── __init__.py
+│       │   ├── test_HelloWorldIterator.py
+│       │   └── test_HelloWorldCharacterIterator.py
+│       └── interpreter/
+│           ├── __init__.py
+│           └── test_HelloWorldInterpreter.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_HelloWorldPublic.py
+│   ├── test_SplitHelloWorldPublic.py
+│   └── test_MainPublic.py

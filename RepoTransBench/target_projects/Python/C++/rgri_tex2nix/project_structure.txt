@@ -1,0 +1,41 @@
+project_root/
+├── CMakeLists.txt
+│      - Top-level build configuration for CMake
+├── README.md
+│      - Documentation and usage instructions
+├── include/
+│      - (empty or for future use)
+├── src/
+│   └── lib/
+│          ├── tex2nix.h
+│          │      - C++ header for tex2nix functionality (API surface for LaTeX parsing)
+│          ├── tex2nix.cpp
+│          │      - Implementation of LaTeX-to-Nix functions, matching Python interface as per tests
+│          └── CMakeLists.txt
+│                  - Library build config
+├── tests/
+│   ├── test_main.cpp
+│   │      - Main entry point for running all tests with Google Test
+│   └── original/
+│          ├── test_full_test.cpp
+│          │      - Minimal original test for 'full' scenario
+│          └── test_init_test.cpp
+│                  - Full translation of Python original tests from tests/test_init.py
+├── public_tests/
+│    ├── test_public_full_test.cpp
+│    │      - Full translation of public_tests/test_public_full.py
+│    └── test_public_init_test.cpp
+│            - Full translation of public_tests/test_public_init.py
+├── build/
+│      - (created by CMake and run_tests.sh, for binaries)
+├── run_tests.sh
+│      - Shell script: build and run all tests
+└── project_structure.txt
+       - You are reading it
+
+Testing:
+---------
+- To build and run all tests:
+    $ ./run_tests.sh
+
+- Both original and public tests are built and run together. Test source separation is preserved.

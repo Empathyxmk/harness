@@ -1,0 +1,17 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_configuration.py
+│       ├── test_patternlist.py
+│       ├── test_serialkiller_speed.py
+│       └── test_serialkiller.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_configuration_public.py
+│   ├── test_patternlist_public.py
+│   ├── test_serialkiller_speed_public.py
+│   └── test_serialkiller_public.py

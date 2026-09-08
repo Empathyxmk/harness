@@ -1,0 +1,16 @@
+system-bus-radio/
+├── Cargo.toml                    # Rust project configuration file
+├── src/
+│   ├── lib.rs                    # Main library entry point
+│   └── implementations/          # Implementation modules
+│       ├── mod.rs                # Module declaration file
+│       ├── mm_stream_si128.rs    # Implementation for mm_stream_si128 (sbr_add)
+│       └── neon_threads.rs       # Implementation for neon_threads (sbr_mul)
+├── tests/                        # Original tests
+│   ├── mm_stream_si128_test.rs   # Tests for mm_stream_si128 implementation
+│   ├── neon_threads_test.rs      # Tests for neon_threads implementation
+│   └── check_test_data_tabs.rs   # Test for checking tabs in TEST-DATA.tsv
+├── public_tests/                 # Public tests
+│   ├── mm_stream_si128_test.rs   # Public tests for mm_stream_si128
+│   └── neon_threads_test.rs      # Public tests for neon_threads
+└── run_tests.sh                  # Script to run all tests

@@ -1,0 +1,42 @@
+thebjorn_pydeps/
+├── src/
+│   └── (all main C++ implementation files go here)
+│
+├── include/
+│   └── (all public C++ headers go here)
+│
+├── tests/
+│   ├── original/
+│   │   ├── test_file.cpp
+│   │   ├── test_json.cpp
+│   │   ├── test_funny_names.cpp
+│   │   ├── test_skip.cpp
+│   │   ├── test_dirtree.cpp
+│   │   ├── test_pyw.cpp
+│   │   ├── test_relative_imports.cpp
+│   │   ├── test_cli.cpp
+│   │   ├── test_cycles.cpp
+│   │   ├── test_kosaraju.cpp
+│   │   ├── test_skinny_package.cpp
+│   │   ├── test_dep2dot.cpp
+│   │   ├── test_tasks_setup.cpp
+│   │   ├── test_filemaker.cpp
+│   │   ├── test_cluster.cpp
+│   │   ├── test_externals.cpp
+│   │   ├── test_py2dep.cpp
+│   │   ├── test_colors.cpp
+│   │   ├── test_package_names.cpp
+│   │   ├── test_dot.cpp
+│   │   ├── test_render_context.cpp
+│   │   └── test_config.cpp
+│   └── test_main.cpp
+│
+├── public_tests/
+│   ├── test_public_json.cpp
+│   ├── test_public_file.cpp
+│   └── test_public_funny_names.cpp
+│
+├── CMakeLists.txt
+├── run_tests.sh
+├── README.md
+└── test_translation_progress.json

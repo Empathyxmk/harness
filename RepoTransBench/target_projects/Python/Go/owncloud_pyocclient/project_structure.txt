@@ -1,0 +1,12 @@
+owncloudpyocclient/
+├── go.mod                # Go modules config file
+├── main.go               # Go main entrypoint (no-op)
+├── owncloud/
+│   └── owncloud.go       # Main stub-owncloud library (minimal logic for tests)
+├── tests/
+│   └── original/
+│       └── owncloud_test_unit_test.go   # Original feature-rich test suite (unit tests)
+├── public_tests/
+│   └── owncloud_public_unit_test.go     # Public, standalone, restricted test suite
+├── run_tests.sh          # One-click test execution script
+├── README.md             # Project and usage info

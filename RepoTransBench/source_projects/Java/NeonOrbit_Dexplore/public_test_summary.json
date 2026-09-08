@@ -1,0 +1,56 @@
+{
+  "project_name": "NeonOrbit_Dexplore",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:17:35.433422",
+  "original_path": "/workspace/verified_repos_v2/Java/NeonOrbit_Dexplore",
+  "public_test_result_path": "/workspace/public_test_results/Java/NeonOrbit_Dexplore",
+  "original_tests": {
+    "test_files": [
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/RefPoolBufferTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/DexDecoderTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/DexContainerTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/DexOptionsTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/ReferencePoolTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/DexploreTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/DexBasedTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/DexOpcodesTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/result/MethodDataTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/result/FieldDataTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/result/ClassDataTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/util/DexUtilsTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/filter/ClassFilterTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/filter/DexFilterTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/filter/MethodFilterTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 15,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/RefPoolBufferPublicTest.java",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/DexContainerPublicTest.java",
+      "run_public_tests.sh",
+      "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/DexDecoderPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 4,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/RefPoolBufferPublicTest.java",
+    "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/DexContainerPublicTest.java",
+    "run_public_tests.sh",
+    "dexplore-lib/src/test/java/io/github/neonorbit/dexplore/DexDecoderPublicTest.java"
+  ]
+}

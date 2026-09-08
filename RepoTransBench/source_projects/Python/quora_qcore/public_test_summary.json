@@ -1,0 +1,90 @@
+{
+  "project_name": "quora_qcore",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:21:26.007929",
+  "original_path": "/workspace/verified_repos_v2/Python/quora_qcore",
+  "public_test_result_path": "/workspace/public_test_results/Python/quora_qcore",
+  "original_tests": {
+    "test_files": [
+      "qcore/tests/test_enum.py",
+      "qcore/tests/test_asserts.py",
+      "qcore/tests/test_decorators.py",
+      "qcore/tests/test_testing.py",
+      "qcore/tests/test_examples.py",
+      "qcore/tests/test_debug_extra.py",
+      "qcore/tests/test_microtime.py",
+      "qcore/tests/test_debug.py",
+      "qcore/tests/test_events.py",
+      "qcore/tests/test_caching.py",
+      "qcore/tests/test_errors_extra.py",
+      "qcore/tests/test_helpers.py",
+      "qcore/tests/test_microtime_extra.py",
+      "qcore/tests/test_disallow_inheritance.py",
+      "qcore/tests/test_errors.py",
+      "qcore/tests/test_inspection.py",
+      "qcore/tests/test_inspectable_class.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 17,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_asserts.py",
+      "public_tests/test_public_enum.py",
+      "public_tests/test_public_decorators.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_testing.py",
+      "public_tests/test_public_helpers.py",
+      "public_tests/test_public_microtime.py",
+      "public_tests/test_public_debug.py",
+      "public_tests/test_public_caching.py",
+      "public_tests/test_public_events.py",
+      "public_tests/test_public_examples.py",
+      "public_tests/test_public_debug_extra.py",
+      "public_tests/test_public_microtime_extra.py",
+      "public_tests/test_public_inspection.py",
+      "public_tests/test_public_disallow_inheritance.py",
+      "public_tests/test_public_errors.py",
+      "public_tests/test_public_inspectable_class.py",
+      "public_tests/test_public_errors_extra.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 19,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_asserts.py",
+    "public_tests/test_public_enum.py",
+    "public_tests/test_public_decorators.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_testing.py",
+    "public_tests/test_public_helpers.py",
+    "public_tests/test_public_microtime.py",
+    "public_tests/test_public_debug.py",
+    "public_tests/test_public_caching.py",
+    "public_tests/test_public_events.py",
+    "public_tests/test_public_examples.py",
+    "public_tests/test_public_debug_extra.py",
+    "public_tests/test_public_microtime_extra.py",
+    "public_tests/test_public_inspection.py",
+    "public_tests/test_public_disallow_inheritance.py",
+    "public_tests/test_public_errors.py",
+    "public_tests/test_public_inspectable_class.py",
+    "public_tests/test_public_errors_extra.py",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

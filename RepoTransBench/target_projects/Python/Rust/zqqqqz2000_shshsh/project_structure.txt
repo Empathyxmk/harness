@@ -1,0 +1,52 @@
+shshsh_rs/
+├── Cargo.toml                  # Rust package configuration and dependencies
+├── README.md                   # Documentation
+├── run_tests.sh                # One-click test script for all tests
+├── src/
+│   ├── lib.rs                  # Main library root
+│   ├── main.rs                 # Bin file (empty - library project)
+│   ├── global_vars.rs          # Placeholder module for global variables (to be implemented)
+│   ├── pipe.rs                 # Placeholder module for pipe (to be implemented)
+│   ├── quick.rs                # Placeholder module for quick mode (to be implemented)
+│   ├── shell.rs                # Placeholder module for shell (to be implemented)
+│   ├── streamer.rs             # Placeholder module for streamer (to be implemented)
+│   └── utils.rs                # Placeholder module for utils (to be implemented)
+├── tests/
+│   ├── test_cwd.rs             # Original test: test_cwd.py
+│   ├── test_global_vars.rs     # Original test: test_global_vars.py
+│   ├── test_logic.rs           # Original test: test_logic.py
+│   ├── test_parameter_parse.rs # Original test: test_parameter_parse.py
+│   ├── test_pipe.rs            # Original test: test_pipe.py
+│   ├── test_pipe_class.rs      # Original test: test_pipe_class.py
+│   ├── test_pipe_manual.rs     # Original test: test_pipe_manual.py
+│   ├── test_quick.rs           # Original test: test_quick.py
+│   ├── test_quick_manual.rs    # Original test: test_quick_manual.py
+│   ├── test_redirect.rs        # Original test: test_redirect.py
+│   ├── test_shell.rs           # Original test: test_shell.py
+│   ├── test_simple_cmd.rs      # Original test: test_simple_cmd.py
+│   ├── test_streamer.rs        # Original test: test_streamer.py
+│   ├── test_utils.rs           # Original test: test_utils.py
+│   └── test_zero.rs            # Original test: test_zero.py
+└── public_tests/
+    ├── test_public_cwd.rs                # Public test: test_public_cwd.py
+    ├── test_public_global_vars.rs        # Public test: test_public_global_vars.py
+    ├── test_public_logic.rs              # Public test: test_public_logic.py
+    ├── test_public_parameter_parse.rs    # Public test: test_public_parameter_parse.py
+    ├── test_public_pipe.rs               # Public test: test_public_pipe.py
+    ├── test_public_pipe_class.rs         # Public test: test_public_pipe_class.py
+    ├── test_public_pipe_manual.rs        # Public test: test_public_pipe_manual.py
+    ├── test_public_quick.rs              # Public test: test_public_quick.py
+    ├── test_public_quick_manual.rs       # Public test: test_public_quick_manual.py
+    ├── test_public_redirect.rs           # Public test: test_public_redirect.py
+    ├── test_public_shell.rs              # Public test: test_public_shell.py
+    ├── test_public_simple_cmd.rs         # Public test: test_public_simple_cmd.py
+    ├── test_public_streamer.rs           # Public test: test_public_streamer.py
+    ├── test_public_utils.rs              # Public test: test_public_utils.py
+    └── test_public_zero.rs               # Public test: test_public_zero.py
+
+# Directory Explanations
+# - src/: Main library code (stub modules provided; must be implemented for tests to pass).
+# - tests/: Original (private) test cases translated from Python.
+# - public_tests/: Public tests, typically provided for grading/samples.
+# - run_tests.sh: Runs all (original and public) Rust tests via cargo test.
+# - Cargo.toml: Rust project and dependency manager.

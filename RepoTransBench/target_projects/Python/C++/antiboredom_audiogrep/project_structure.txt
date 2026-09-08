@@ -1,0 +1,16 @@
+project_root/
+├── CMakeLists.txt
+├── run_tests.sh
+├── tests/
+│   ├── CMakeLists.txt
+│   └── original/
+│       ├── test_api.cpp
+│       ├── test_audiogrep.cpp
+│       └── test_import_init.cpp
+├── public_tests/
+│   ├── CMakeLists.txt
+│   ├── test_import_init_public.cpp
+│   ├── test_api_public.cpp
+│   └── test_audiogrep_public.cpp
+└── include/
+    └──            # (for project headers and interfaces, as needed)

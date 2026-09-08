@@ -1,0 +1,35 @@
+project_root/
+├── requirements.txt               # Python dependencies, install with `pip install -r requirements.txt`
+├── run_tests.sh                   # Simple script to execute all tests
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_convert.py        # Original ConvertTest translated to Python/pytest
+│       ├── test_retry_listener.py # Original RetryListenerTest translated
+│       └── test_nexml_reporter_config.py   # Original NeXMLReporterConfigTest translated
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_convert_public.py     # Public ConvertPublicTest translated
+│   ├── test_retry_listener_public.py   # Public RetryListenerPublicTest translated
+│   └── test_nexml_reporter_config_public.py  # Public NeXMLReporterConfigPublicTest translated
+└── project_structure.txt          # This project structure note (directory tree & doc)
+
+## Directory Explanations:
+
+- requirements.txt: Lists all Python dependencies, install with `pip install -r requirements.txt`
+- run_tests.sh: Run this script to execute ALL tests (original and public).
+- tests/: Main test suite folder.
+  - original/: Translated original (non-public) Java tests.
+- public_tests/: Public test cases only.
+- project_structure.txt: This documentation.
+
+## Setup and Usage:
+
+1. Install requirements:
+   pip install -r requirements.txt
+
+2. Run all tests:
+   ./run_tests.sh
+
+3. Test files in tests/original/ are from original Java tests, those in public_tests/ are public tests.

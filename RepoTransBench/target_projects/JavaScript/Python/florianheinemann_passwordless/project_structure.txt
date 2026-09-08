@@ -1,0 +1,76 @@
+florianheinemann_passwordless_python/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── project_structure.txt
+├── src/
+│   └── passwordless/
+│       ├── __init__.py
+│       └── (module impl stubs or logic if desired)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_init.py
+│       ├── test_root_index.py
+│       ├── test_root_gruntfile.py
+│       ├── test_acceptToken_stateless.py
+│       ├── test_acceptToken_session.py
+│       ├── test_acceptToken_acceptToken.py
+│       ├── test_restricted_restricted.py
+│       ├── test_mock_tokenstoremock.py
+│       ├── test_logout_logout.py
+│       ├── test_integration_token_reuse.py
+│       ├── test_integration_two_step_auth.py
+│       ├── test_integration_no_success_redirect.py
+│       ├── test_integration_ttl.py
+│       ├── test_integration_stateless.py
+│       ├── test_integration_originRedirect.py
+│       ├── test_integration_standard.py
+│       ├── test_integration_two_delivery_methods.py
+│       ├── test_user_user.py
+│       ├── test_delivery_requestToken.py
+│       ├── test_delivery_addDelivery.py
+│       └── test_delivery_severalStrategies.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_init_public.py
+│   ├── root/
+│   │   ├── __init__.py
+│   │   ├── test_gruntfile_public.py
+│   │   └── test_index_public.py
+│   ├── acceptToken/
+│   │   ├── __init__.py
+│   │   ├── test_acceptToken_public.py
+│   │   ├── test_stateless_public.py
+│   │   └── test_session_public.py
+│   ├── restricted/
+│   │   ├── __init__.py
+│   │   └── test_restricted_public.py
+│   ├── mock/
+│   │   ├── __init__.py
+│   │   ├── test_tokenstoremock_public.py
+│   │   └── test_mocks_public.py
+│   ├── logout/
+│   │   ├── __init__.py
+│   │   └── test_logout_public.py
+│   ├── integration/
+│   │   ├── __init__.py
+│   │   ├── test_originRedirect_public.py
+│   │   ├── test_standard_public.py
+│   │   ├── test_stateless_public.py
+│   │   ├── test_no_success_redirect_public.py
+│   │   ├── test_two_delivery_methods_public.py
+│   │   ├── test_token_reuse_public.py
+│   │   ├── test_ttl_public.py
+│   │   └── test_two_step_auth_public.py
+│   ├── user/
+│   │   ├── __init__.py
+│   │   └── test_user_public.py
+│   ├── delivery/
+│   │   ├── __init__.py
+│   │   ├── test_requestToken_public.py
+│   │   ├── test_addDelivery_public.py
+│   │   └── test_severalStrategies_public.py
+│   └── (repeat files for public coverage, deduplication suggested)
+└── (temp/utility files)

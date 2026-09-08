@@ -1,0 +1,41 @@
+hokaccha_node-jwt-simple/
+├── History.md
+├── LICENSE
+├── README.md
+├── coverage/
+├── index.d.ts
+├── index.js
+├── lib/
+│   └── jwt.js              # Original JS source
+├── package-lock.json
+├── package.json
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── __init__.py
+│   ├── internal-util.public.test.js          # for reference only
+│   ├── jwt.encode_decode.public.test.js      # for reference only
+│   ├── test_internal_util_public.py          # PYTHON translated PUBLIC test
+│   └── test_jwt_encode_decode_public.py      # PYTHON translated PUBLIC test
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   └── hokaccha_node_jwt_simple/
+│       └── lib/
+│           └── jwt.py      # Python implementation (to be implemented)
+├── test/
+│   ├── basic.js
+│   ├── internal-util.test.js                 # for reference only
+│   ├── jwt.encode_decode.test.js             # for reference only
+│   ├── test.crt
+│   └── test.pem
+├── test_summary.json
+└── tests/
+    ├── __init__.py
+    └── original/
+        ├── __init__.py
+        ├── test.crt
+        ├── test.pem
+        ├── test_internal_util.py             # PYTHON translated original test
+        └── test_jwt_encode_decode.py         # PYTHON translated original test

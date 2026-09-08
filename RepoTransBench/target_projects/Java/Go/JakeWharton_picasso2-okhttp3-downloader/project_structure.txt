@@ -1,0 +1,35 @@
+project_root/
+├── go.mod
+├── main.go
+├── module.go
+├── README.md
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── okhttp3downloader_additional_test.go
+│       ├── okhttp3downloader_diskcache_test.go
+│       ├── okhttp3downloader_test.go
+│       ├── okhttp3downloader_ctor_test.go
+│       └── okhttp3downloader_loaderror_test.go
+├── public_tests/
+│   ├── okhttp3downloader_additional_public_test.go
+│   ├── okhttp3downloader_diskcache_public_test.go
+│   ├── okhttp3downloader_public_test.go
+│   ├── okhttp3downloader_ctor_public_test.go
+│   └── okhttp3downloader_loaderror_public_test.go
+
+# Directory explanations:
+#   go.mod            - Go module definition file for dependencies & versioning
+#   main.go           - Optional main entrypoint (empty for lib/testing)
+#   module.go         - Minimal stub implementation of OkHttp3Downloader to make the tests run
+#   README.md         - Usage, structure, and guidance
+#   run_tests.sh      - One-click script to run all tests (original & public)
+#   tests/original/   - Translated original test cases from Java, mapped to Go
+#   public_tests/     - Translated public test cases from Java, mapped to Go
+
+# Test Execution:
+#   ./run_tests.sh    - runs "go test ./..." to find all tests everywhere under the module
+
+# Notes:
+#   * To implement actual downloader logic, fill out module.go.
+#   * All original and public tests correspond 1:1 with the Java tests and mirror their logic.

@@ -1,0 +1,23 @@
+madvirus_ddd-start-go/
+├── go.mod                  # Go modules file declares dependencies
+├── run_tests.sh            # Simple script to run all tests
+├── README.md               # Project overview and instructions
+├── main.go                 # (empty/placeholder, for completeness)
+├── src/                    # Package sources (empty for test translation)
+├── tests/
+│   ├── original/
+│   │   ├── type_descriptortest.go
+│   │   ├── type_resolvertest.go
+│   │   ├── springconfigtest.go
+│   │   ├── shopapplicationtest.go
+│   │   ├── methodaccesstest.go
+│   │   ├── authenticationtest.go
+│   │   ├── webaccesstest.go
+│   │   ├── coupontest.go
+│   │   ├── noorderexceptiontest.go
+│   │   ├── ordercontrollertest.go
+│   │   └── ... (other original test files)
+├── public_tests/
+│   ├── type_descriptor_public_test.go
+│   ├── type_resolver_public_test.go
+│   └── spring_config_public_test.go

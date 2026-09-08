@@ -1,0 +1,37 @@
+{
+  "project_name": "saadmk11_django-newsfeed",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": false,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:21:20.157737",
+  "original_path": "/workspace/verified_repos_v2/Python/saadmk11_django-newsfeed",
+  "public_test_result_path": "/workspace/public_test_results/Python/saadmk11_django-newsfeed",
+  "original_tests": {
+    "test_files": [
+      "tests/test_admin.py",
+      "tests/test_utils.py",
+      "tests/test_models.py",
+      "tests/test_runtests_py.py",
+      "tests/test_forms.py",
+      "tests/test_apps.py",
+      "tests/test_urls.py",
+      "tests/test_views.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [],
+    "test_scripts": [],
+    "total_public_test_files": 0,
+    "generated_public_tests": false
+  },
+  "created_files": []
+}

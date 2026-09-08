@@ -1,0 +1,45 @@
+spring5webapp Go Project Structure
+===================================
+
+.
+├── go.mod                       # Go module definition for dependency management
+├── main.go                      # Entrypoint (calls internal application Main)
+├── spring5webapp/
+│   └── application.go           # Application main logic, callable as Go function
+├── internal/
+│   └── samplebranching/
+│       └── sample_branching_service.go  # Service logic (from SampleBranchingService.java, translated)
+├── tests/
+│   └── original/
+│       ├── sample_branching_service_test.go
+│       ├── spring5webapp_application_main_method_test.go
+│       └── spring5webapp_application_test.go
+├── public_tests/
+│   ├── sample_branching_service_public_test.go
+│   └── spring5webapp_application_main_method_public_test.go
+├── run_tests.sh                 # Script to run all tests (./run_tests.sh)
+└── project_structure.txt        # This file (project tree + explanations)
+
+Directory explanations:
+- main.go: Entrypoint for running application. Not needed for tests, but useful if running as normal Go app.
+- spring5webapp/: Module with application-level logic, provides Main([]string) callable from tests.
+- internal/samplebranching/: Contains business logic for number categorization/even checking.
+- tests/original/: Contains translations of original Java suite test cases.
+- public_tests/: Contains translations of public Java test cases.
+- run_tests.sh: One-click script to run all Go tests in every test directory.
+- go.mod: Go module file, standard for dependency management.
+
+Setup & Running Tests:
+----------------------
+1. Ensure you have Go installed (go 1.20+ recommended).
+2. To run all tests (original + public): 
+   $ chmod +x ./run_tests.sh
+   $ ./run_tests.sh
+
+This will automatically discover and run all *_test.go files in every subdirectory (including public_tests/ and tests/).
+
+You can run tests for a single package, e.g.:
+  $ go test ./tests/original
+  $ go test ./public_tests
+
+Project assumes all business logic required for tests is included in internal/samplebranching and spring5webapp/.

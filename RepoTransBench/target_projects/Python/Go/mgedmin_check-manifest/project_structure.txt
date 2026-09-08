@@ -1,0 +1,32 @@
+project_root/
+├── check_manifest.py
+├── go.mod
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_check_manifest_additional_public.py
+│   └── test_check_manifest_additional_public_test.go
+├── run_public_tests.sh
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── test_archive_util_test.go
+│       ├── test_bdist_dumb_test.go
+│       ├── test_build_py_test.go
+│       ├── test_check_manifest_additional_test.go
+│       ├── test_check_test.go
+│       ├── test_config_cmd_test.go
+│       ├── test_core_test.go
+│       ├── test_dist_test.go
+│       ├── test_extension_test.go
+│       ├── test_install_headers_test.go
+│       ├── test_install_lib_test.go
+│       ├── test_install_scripts_test.go
+│       ├── test_install_test.go
+│       ├── test_modified_test.go
+│       ├── test_spawn_test.go
+│       ├── test_sysconfig_test.go
+│       ├── test_text_file_test.go
+│       ├── test_util_test.go
+│       └── test_version_test.go

@@ -1,0 +1,39 @@
+whonore_Coqtail/
+├── go.mod                   # Go module definition
+├── run_tests.sh             # Simple script: go test ./...
+├── README.md                # Documentation and usage
+├── public_tests/            # Public test cases translated from source/public_tests
+│   ├── parse_public_test.go               # From test_public_parse.py
+│   ├── coqtail_py_public_test.go          # From test_public_coqtail_py.py
+│   ├── version_public_test.go             # From test_public_version.py
+│   ├── xml_interface_py_public_test.go    # From test_public_xmlInterface_py.py
+│   ├── coqtop_py_public_test.go           # From test_public_coqtop_py.py
+│   ├── matcher_public_test.go             # From test_public_matcher.py
+├── tests/
+│   ├── original/
+│   │   ├── xml_interface_py_test.go      # From test_xmlInterface.py
+│   │   ├── xml_interface_extra_py_test.go # From test_xmlInterface_py.py
+│   │   ├── coqtop_py_test.go             # From test_coqtop_py.py
+│   │   ├── coqtail_py_test.go            # From test_coqtail_py.py
+│   │   ├── matcher_test.go               # From test_matcher.py
+│   │   ├── version_test.go               # From test_version.py
+│   │   ├── parse_test.go                 # From test_parse.py
+│   │   ├── coqtop_test.go                # From coq/test_coqtop.py
+│   └── testutil.go                       # Test helpers and utilities
+└── README.md                            # Documentation for the Go project
+
+Directory Explanations:
+- go.mod: Declares the Go module.
+- run_tests.sh: Simple script to execute all tests for the project.
+- public_tests/: Contains all public test cases, directly translated from the source's public_tests/*.py.
+- tests/original/: Contains original (non-public) test cases, directly translated from the source's tests/unit/*.py and tests/coq/*.py.
+- tests/testutil.go: Helper functions shared across tests.
+- README.md: Documentation of setup instructions, directory purpose, and usage.
+
+Setup/Testing Instructions:
+1. Make sure you have Go installed (version 1.21 or higher).
+2. Run `chmod +x run_tests.sh` if necessary to ensure the script is executable.
+3. Run all tests with:
+   ./run_tests.sh
+
+This will recursively execute all tests in tests/ and public_tests/.

@@ -1,0 +1,40 @@
+project_root/
+├── CMakeLists.txt                 # CMake build configuration for project and GoogleTest setup
+├── README.md                      # Project documentation
+├── include/                       # C++ project-wide header files (if any, not used in this translation)
+├── public_tests/                  # Public translated tests (as *_test.cpp)
+│   ├── test_public_checkpoint_test.cpp
+│   ├── test_public_code_test.cpp
+│   ├── test_public_main_basic_test.cpp
+│   ├── test_public_stepper_test.cpp
+│   └── conftest.cpp
+├── run_tests.sh                   # Simple script to build/run all tests
+├── src/                           # C++ source files ("production code")
+│   └── ai_models/
+│       ├── stepper.h
+│       ├── stepper.cpp
+│       ├── checkpoint.h
+│       ├── checkpoint.cpp
+│       ├── main.h
+│       └── main.cpp
+├── tests/
+│   ├── conftest.cpp               # C++ conftest: (no-op, just for symmetry)
+│   ├── test_main.cpp              # GoogleTest runner: main()
+│   └── original/                  # Orginal (private) test suite
+│       ├── test_stepper_test.cpp
+│       ├── test_code_test.cpp
+│       ├── test_checkpoint_test.cpp
+│       └── test_main_basic_test.cpp
+└── project_structure.txt          # This file: structure and explanation
+
+---
+Directory/Files Explanation:
+- `src/ai_models/` - C++ source code for production modules (stubs if no implementation yet).
+- `tests/original/` - Original (private) translated test suite, in C++/GoogleTest.
+- `public_tests/` - Public translated test suite, in C++/GoogleTest.
+- `tests/test_main.cpp` - Main entry for GoogleTest.
+- `run_tests.sh` - One-click script to build and run all tests.
+- `CMakeLists.txt` - CMake config for building and testing.
+- `include/` - For shared project headers (empty by default, can add needed headers).
+
+**How to build and run all tests:**

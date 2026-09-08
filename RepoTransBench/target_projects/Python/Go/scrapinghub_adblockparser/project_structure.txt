@@ -1,0 +1,34 @@
+scrapinghub_adblockparser/
+├── adblockparser/
+│   ├── adblockparser.go            # (Stub) Adblock parsing logic module; test dependencies
+│   └── utils.go                    # (Stub) Utility functions for the parser; used in tests
+├── tests/
+│   ├── test_adblockparser_api_test.go    # Original test: API presence/exports
+│   ├── test_options_test.go              # Original test: AdblockRule parsing/options interpreation
+│   ├── test_parsing_test.go              # Original test: Rules, options, matching logic, edge cases
+│   ├── test_rule_types_test.go           # Original test: Rule types (comment/html)
+│   └── test_utils_test.go                # Original test: Utility (split_data)
+├── public_tests/
+│   ├── test_public_adblockparser_api_test.go  # Public: Adblockparser symbols presence
+│   ├── test_public_options_test.go            # Public: Options parsing, various
+│   ├── test_public_parsing_test.go            # Public: Rules matching & options subset
+│   ├── test_public_rule_types_test.go         # Public: Comment & HTML rule recognition
+│   └── test_public_utils_test.go              # Public: Utility function split_data
+├── go.mod
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+Directory Explanations:
+
+- adblockparser/:      Stubs/placeholder implementations of parser and utility APIs expected by tests.
+- tests/:              Complete translation of original Python test suite to Go.
+- public_tests/:       Complete translation of public/coverage subset test suite to Go.
+- go.mod:              Go module definition, minimal.
+- run_tests.sh:        Simple script to execute all tests.
+- README.md:           Instructions, context for running and extending.
+- project_structure.txt: This file.
+
+Instructions:
+- To run all tests: `./run_tests.sh`
+- All Go test files are named with `_test.go` and use `testing` package.

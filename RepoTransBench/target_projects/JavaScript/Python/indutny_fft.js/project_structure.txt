@@ -1,0 +1,42 @@
+project_root/
+├── src/
+│   └── fft.py              # FFT implementation (to be filled in with actual logic)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_fft.py           # Original core test suite (translated from test/fft-test.js)
+│       └── test_fft_extra.py     # Original extra/edge/error tests (translated from test/fft-extra-test.js)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_fft_public.py        # Public version of core test suite (translated from fft.public.test.js)
+│   └── test_fft_extra_public.py  # Public version of extra/edge/error tests (translated from fft-extra.public.test.js)
+├── requirements.txt              # Python dependencies
+├── run_tests.sh                  # Run all tests with one command (./run_tests.sh)
+├── project_structure.txt         # (this file) Structure doc with explanations
+
+Directory/Files explanations:
+- src/fft.py:
+    Main FFT algorithm implementation; all tests expect FFT class to be importable from here.
+
+- tests/original/:
+    Contains Python translations of the original JavaScript test suites, preserving ALL original coverage AND structure.
+    * test_fft.py:      Main original core test suite, functional and cross-referencing.
+    * test_fft_extra.py:Edge cases, error-throws, conversion utilities etc.
+
+- public_tests/:
+    Contains Python translations of the "public" test suites, preserving all test logic.
+    * test_fft_public.py:      Public-facing main FFT test suite (different numbers, truncation).
+    * test_fft_extra_public.py:Public-facing extra/edge/error tests.
+
+- requirements.txt:
+    Lists all dependencies. (Install with `pip install -r requirements.txt`.)
+
+- run_tests.sh:
+    Run all tests (original and public) with a single command (`./run_tests.sh`). Uses standard `pytest`.
+
+How to run:
+    pip install -r requirements.txt
+    ./run_tests.sh
+
+Add FFT implementation in src/fft.py to make tests pass.

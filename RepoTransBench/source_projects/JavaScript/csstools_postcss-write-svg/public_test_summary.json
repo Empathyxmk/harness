@@ -1,0 +1,55 @@
+{
+  "project_name": "csstools_postcss-write-svg",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:24:43.142602",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/csstools_postcss-write-svg",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/csstools_postcss-write-svg",
+  "original_tests": {
+    "test_files": [
+      "__tests__/internal-utils.test.js",
+      "__tests__/index.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 2,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/internal-utils.public.test.js",
+      "public_tests/index.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/internal-utils.public.test.js",
+      "public_tests/index.public.test.js",
+      "public_tests/internal-utils.public.test.js",
+      "public_tests/internal-utils.public.test.js",
+      "public_tests/internal-utils.public.test.js",
+      "public_tests/internal-utils.public.test.js",
+      "public_tests/internal-utils.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 10,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/internal-utils.public.test.js",
+    "public_tests/index.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/internal-utils.public.test.js",
+    "public_tests/index.public.test.js",
+    "public_tests/internal-utils.public.test.js",
+    "public_tests/internal-utils.public.test.js",
+    "public_tests/internal-utils.public.test.js",
+    "public_tests/internal-utils.public.test.js",
+    "public_tests/internal-utils.public.test.js"
+  ]
+}

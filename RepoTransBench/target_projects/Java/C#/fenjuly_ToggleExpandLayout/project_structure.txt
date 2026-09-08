@@ -1,0 +1,45 @@
+fenjuly_ToggleExpandLayout/
+├── src/
+│   └── Fenjuly.ToggleExpandLayout/
+│       ├── Fenjuly.ToggleExpandLayout.csproj    # Main source code project (placeholder, logic can go here)
+│       └── [Main classes: ToggleExpandLayout, DropDownLayout, BaseAnimator, stubs as needed]
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj                 # xUnit test project for original test cases
+│       ├── DemoToggleExpandLayout_ApplicationTest.cs      # demo/src/androidTest/java/com/fenjuly/toggleexpandlayout/ApplicationTest.java
+│       ├── Mylibrary_ApplicationTest.cs                  # library/src/androidTest/java/com/fenjuly/mylibrary/ApplicationTest.java
+│       ├── DropDownLayoutTest.cs                          # library/src/test/java/com/fenjuly/mylibrary/DropDownLayoutTest.java
+│       ├── ToggleExpandLayoutTest.cs                      # library/src/test/java/com/fenjuly/mylibrary/ToggleExpandLayoutTest.java
+│       └── BaseAnimatorTest.cs                            # library/src/test/java/com/fenjuly/mylibrary/BaseAnimatorTest.java
+├── public_tests/
+│   ├── PublicTests.csproj                      # xUnit test project for public test cases
+│   ├── DemoToggleExpandLayout_ApplicationPublicTest.cs    # demo/src/androidTest/java/com/fenjuly/toggleexpandlayout/ApplicationPublicTest.java
+│   ├── Mylibrary_ApplicationPublicTest.cs                # library/src/androidTest/java/com/fenjuly/mylibrary/ApplicationPublicTest.java
+│   ├── DropDownLayoutPublicTest.cs                        # library/src/test/java/com/fenjuly/mylibrary/DropDownLayoutPublicTest.java
+│   ├── ToggleExpandLayoutPublicTest.cs                    # library/src/test/java/com/fenjuly/mylibrary/ToggleExpandLayoutPublicTest.java
+│   └── BaseAnimatorPublicTest.cs                          # library/src/test/java/com/fenjuly/mylibrary/BaseAnimatorPublicTest.java
+├── run_tests.sh                              # Single script to run all tests
+├── README.md
+├── project_structure.txt
+
+Directory Details
+-----------------
+src/Fenjuly.ToggleExpandLayout/    - Main source code (classes Fakes/stubs provided if needed for test to compile)
+tests/original/                    - All original test cases ported to C# xUnit (+Moq for mocking)
+public_tests/                      - All public test cases ported to C# xUnit (+Moq for mocking)
+run_tests.sh                       - Simple script to execute all test projects with dotnet test
+README.md                          - Usage and setup instructions
+project_structure.txt              - This structure doc
+
+Instructions
+------------
+1. Ensure you have .NET 6+ SDK.
+2. From the repository root, run: ./run_tests.sh
+3. All tests will execute and give a summary.
+
+Dependencies
+-------------
+- xUnit (testing framework)
+- Moq (for mocking framework, equivalent to Mockito)
+
+Add more logic/classes in src/Fenjuly.ToggleExpandLayout/ as needed if expanding codebase.

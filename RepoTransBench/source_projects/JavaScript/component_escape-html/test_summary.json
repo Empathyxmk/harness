@@ -1,0 +1,15 @@
+{
+  "project_name": "component_escape-html",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:07:31.014969",
+  "original_path": "/workspace/runnable_filter/JavaScript/component_escape-html",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/component_escape-html",
+  "tests_path": [
+    "test/index.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,55 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   ├── PureFunctions2.py
+│   └── parser/
+│       ├── __init__.py
+│       ├── lang.py
+│       ├── tree.py
+│       ├── parser_constants.py
+│       ├── Step.py
+│       ├── regex_rules.py
+│       └── parser.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_PureFunctions2.py
+│       ├── test_lang.py
+│       ├── test_tree.py
+│       ├── test_parser_constants.py
+│       ├── test_Step.py
+│       ├── test_regex_rules.py
+│       ├── test_parser.py
+│       └── test_parser_expression_features.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_PureFunctions2_public.py
+│   └── parser/
+│       ├── __init__.py
+│       ├── test_lang_public.py
+│       ├── test_tree_public.py
+│       ├── test_parser_constants_public.py
+│       ├── test_Step_public.py
+│       ├── test_regex_rules_public.py
+│       └── test_parser_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Explanations:
+- src/                       : Python source code, modules to be tested (expected manual/automatic translation)
+- src/PureFunctions2.py      : Python translation of PureFunctions2.js
+- src/parser/                : Python translation of all parser-related JavaScript modules
+- tests/original/            : Original tests translated from JavaScript to Python, preserving all logic/coverage
+- public_tests/              : Public-facing test cases, as per public JavaScript tests
+- requirements.txt           : Python dependencies for test execution (pytest)
+- run_tests.sh               : Simple, one-click test execution script (`pytest`)
+- project_structure.txt      : This project tree with explanations for setup/discovery
+
+Setup/Testing Instructions:
+1. Place the Python translations of original JS source into src/ and src/parser/
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run all tests:        `./run_tests.sh`
+4. Pytest will discover and run all tests under `tests/` and `public_tests/`
+5. Add/extend tests following this structure for future development

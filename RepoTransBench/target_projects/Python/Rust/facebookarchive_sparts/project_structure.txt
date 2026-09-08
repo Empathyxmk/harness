@@ -1,0 +1,36 @@
+facebookarchive_sparts_rs Rust Project Structure
+------------------------------------------------
+.
+├── Cargo.toml                  # Rust package/project manifest
+├── src/
+│   ├── lib.rs                  # Main crate library root
+│   ├── counters.rs             # counters module: Sum, Count (stubbed/minimal for tests)
+│   ├── ctx.rs                  # ctx module (minimal)
+│   ├── daemon.rs               # daemon module (minimal for tests)
+│   └── vservice.rs             # vservice module (minimal for tests)
+├── tests/
+│   └── original/
+│       ├── test_counters.rs    # Translation of tests/test_counters.py
+│       ├── test_ctx.rs         # Translation of tests/test_ctx.py
+│       ├── test_daemon.rs      # Translation of tests/test_daemon.py
+│       ├── test_setup_py.rs    # Translation of tests/test_setup_py.py
+│       └── test_vservice.rs    # Translation of tests/test_vservice.py
+├── public_tests/
+│   ├── test_public_imports.rs
+│   ├── test_public_collections.rs
+│   ├── test_public_setup_py.rs
+│   ├── test_public_counters.rs
+│   └── test_public_collections_extra.rs
+├── run_tests.sh                # Shell script for easy test execution
+├── project_structure.txt       # This documentation file
+└── test_translation_progress.json   # Progress tracking for the translation migration
+
+Explanations:
+- src/: Library code (stubbed/minimal implementations present for test compatibility)
+- tests/original/: Original (private/internal) tests translated from Python
+- public_tests/: Public tests translated from Python
+- run_tests.sh: Run all tests for the crate (including public_tests/)
+- Cargo.toml: Declares dependencies and project metadata
+- test_translation_progress.json: Tracks translation progress across batches
+
+To run all tests: ./run_tests.sh

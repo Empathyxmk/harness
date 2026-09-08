@@ -1,0 +1,20 @@
+{
+  "project_name": "kennethreitz_records",
+  "language": "Python",
+  "coverage": {
+    "line": 78.0,
+    "branch": 89.4
+  },
+  "timestamp": "2025-06-19T11:56:47.772257",
+  "original_path": "/workspace/runnable_filter/Python/kennethreitz_records",
+  "test_result_path": "/workspace/test_enhancement_results/Python/kennethreitz_records",
+  "tests_path": [
+    "tests/test_105.py",
+    "tests/test_69.py",
+    "tests/test_records.py",
+    "tests/test_records_additional.py",
+    "tests/test_records_core.py",
+    "tests/test_transactions.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

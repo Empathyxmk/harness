@@ -1,0 +1,21 @@
+.
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_loops_do_while_structure.py
+│   └── test_loops_for_structure.py
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_setw.py
+│       └── test_switch_structure.py
+└── README.md
+
+- `public_tests/`: Contains all public ("sample/demo") tests translated from the project, organized by topic or C++ source folder.
+- `tests/original/`: (Here, all tests not considered public, i.e., end-to-end/functional tests.) Contains the translated scenario-based original tests.
+- `requirements.txt`: Python dependencies (notably: pytest).
+- `run_tests.sh`: Shell script to run all tests with one command.
+- `README.md`: Instructions for setup, usage, and structure documentation.
+- `project_structure.txt`: (this file) Overview of all files/folders, with short explanations.

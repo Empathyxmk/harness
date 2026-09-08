@@ -1,0 +1,11 @@
+.
+├── go.mod                             # Go module file
+├── run_tests.sh                       # Simple script to run all Go tests
+├── project_structure.txt              # This overview file
+├── syntaxlint/
+│   └── syntax_lint.go                 # Implementation for syntax/tag checking logic
+├── tests/
+│   └── original/
+│       └── syntax_lint_test.go        # Original test cases (from 'tests/test_syntax_lint.py')
+├── public_tests/
+│   └── test_public_syntax_lint_test.go # Public test cases (from 'public_tests/test_public_syntax_lint.py')

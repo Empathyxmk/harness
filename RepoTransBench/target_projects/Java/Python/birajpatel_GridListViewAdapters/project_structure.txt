@@ -1,0 +1,44 @@
+birajpatel_gridlistviewadapters_python/
+├── requirements.txt                 # Dependency file (pytest, pytest-mock)
+├── run_tests.sh                     # Executable test script
+├── project_structure.txt            # This file - describes the project organization
+├── tests/                           # All original ("private") tests
+│   ├── original/
+│   │   ├── test_base_grid_adapter.py
+│   │   ├── test_cursor_filter.py
+│   │   ├── test_row_view_holder.py
+│   │   ├── test_list_grid_adapter.py
+│   │   ├── test_card.py
+│   │   ├── test_cursor_grid_adapter.py
+│   │   └── ...
+│   ├── original/dataholders/
+│   │   ├── test_card_position_info.py
+│   │   ├── test_card_data_holder.py
+│   │   └── test_row_data_holder.py
+│   └── original/utils/
+│       ├── test_position_calculator.py
+│       ├── test_grid_data_structure.py
+│       ├── test_view_holder_position_tagger.py
+│       └── test_max_cards_info.py
+├── public_tests/                    # All public test cases (for student testing)
+│   ├── test_row_view_holder_public.py
+│   ├── test_cursor_grid_adapter_public.py
+│   ├── test_cursor_filter_public.py
+│   ├── test_list_grid_adapter_public.py
+│   ├── test_card_public.py
+│   ├── test_base_grid_adapter_public.py
+│   ├── dataholders/
+│   │   ├── test_card_data_holder_public.py
+│   │   ├── test_row_data_holder_public.py
+│   │   └── test_card_position_info_public.py
+│   └── utils/
+│       ├── test_position_calculator_public.py
+│       ├── test_view_holder_position_tagger_public.py
+│       ├── test_grid_data_structure_public.py
+│       └── test_max_cards_info_public.py
+
+Instructions:
+- Install dependencies: `pip install -r requirements.txt`
+- Run all tests with: `./run_tests.sh`
+- All original (private) tests are in `tests/original/`
+- All public tests are in `public_tests/`

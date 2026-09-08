@@ -1,0 +1,38 @@
+Java Project Structure for jmespath_jp Translation
+--------------------------------------------------
+
+./
+├── pom.xml                     # Maven build and dependency configuration
+├── run_tests.sh                # Simple script to execute all tests (mvn clean test)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── jpwrapper/
+│   │                   └── JpWrapper.java    # Java implementation of JpWrapper for testing
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   └── TestJpWrapper.java     # Translated original (private) tests from test_jp_wrapper.py
+│                   └── public_tests/
+│                       └── PublicJpWrapperTest.java # Translated public tests from public_tests/test_public_jp_wrapper.py
+
+Details:
+- pom.xml         : Contains Java dependencies (JUnit5, Jackson), build plugins
+- run_tests.sh    : Runs all tests using Maven with a single command
+- src/main/...    : Contains "JpWrapper.java", which wraps invocation of the `jp` binary and handles JSON serialization/deserialization
+- src/test/.../original/   : All original/private test cases (from test_jp_wrapper.py)
+- src/test/.../public_tests/: All public test cases (from public_tests/test_public_jp_wrapper.py)
+- All test logic is faithfully ported from Python to Java, using JUnit 5 assertions and structure
+
+Setup & Test Instructions:
+--------------------------
+1. Place the compiled `jp` binary (from the original project) into the project root (i.e., `./jp`).
+2. Ensure the binary is executable (`chmod +x ./jp`).
+3. Run `./run_tests.sh` to execute both original and public tests. This will compile the project and run all test cases via Maven/JUnit 5.
+4. Review test results in the console output.
+
+Note: The test cases will automatically skip if the `jp` binary is missing or not executable.

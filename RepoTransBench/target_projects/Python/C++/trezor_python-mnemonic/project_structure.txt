@@ -1,0 +1,28 @@
+project_root/
+├── CMakeLists.txt                # CMake build configuration for the whole project (library, tests, GoogleTest)
+├── include/                      # Directory for exported headers (empty, stubs used in src)
+├── public_tests/                 # Directory for public test code
+│   ├── test_public_mnemonic.cpp  # Translated public tests
+│   ├── test_public_mnemonic_extra.cpp
+│   └── test_public_main.cpp      # Main for GoogleTest public
+├── run_tests.sh                  # One-click test script (builds and runs all tests)
+├── src/                          # C++ source directory
+│   └── mnemonic/
+│       ├── mnemonic.cpp          # Stub implementation (so tests compile)
+│       └── mnemonic.h            # Class/function declarations
+├── tests/
+│   ├── test_mnemonic.cpp         # Translated original test
+│   ├── test_mnemonic_extra.cpp
+│   └── test_main.cpp             # Main for GoogleTest
+├── vectors.json                  # Test vectors (used in tests, copied from source)
+├── README.md (not included here)
+└── project_structure.txt         # This structure doc
+
+Key notes:
+
+- All test code is C++ and uses GoogleTest (`gtest`).
+- `CMakeLists.txt` handles both the original and public test suites and GoogleTest download.
+- `src/mnemonic/mnemonic.cpp` / `.h` are a stub only, so that all tests compile. Fill with actual logic for production use.
+- `run_tests.sh` builds and runs *both* test suites with one command.
+- `vectors.json` is provided in project root for vector-based tests.
+- To run: `./run_tests.sh`

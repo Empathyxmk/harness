@@ -1,0 +1,11 @@
+{
+  "project_name": "renatopp_liac-arff",
+  "language": "Python",
+  "coverage": {
+    "line": 98.3,
+    "branch": 89.8
+  },
+  "timestamp": "2025-06-23T10:36:05.361930",
+  "original_path": "/workspace/test_enhancement_results/Python/renatopp_liac-arff",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/renatopp_liac-arff"
+}

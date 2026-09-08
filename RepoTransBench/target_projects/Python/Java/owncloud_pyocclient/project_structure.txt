@@ -1,0 +1,44 @@
+Project Structure
+=================
+.
+├── pom.xml                          # Maven build configuration
+├── run_tests.sh                     # Bash script to execute all tests
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/owncloud/
+│   │           └── ... (Production code goes here, not required for test translation)
+│   └── test/
+│       └── java/
+│           └── com/owncloud/
+│               ├── original/
+│               │   ├── ResponseErrorTest.java         # Translated original error tests
+│               │   ├── ShareInfoTest.java             # Translated ShareInfo logic tests
+│               │   └── UtilsTest.java                 # Translated original utils tests
+│               └── public_tests/
+│                   └── PublicUnitTest.java            # Translated public-platform tests
+README
+------
+- All original tests are in:         src/test/java/com/owncloud/original/
+- All public tests are in:           src/test/java/com/owncloud/public_tests/
+- To run all tests:                  ./run_tests.sh
+- Requires:                          Java 11+, Maven
+
+How To Run
+----------
+1. Make sure Java (>=11) and Maven are installed.
+2. In this folder, run:
+       ./run_tests.sh
+
+This will:
+- Build the project using Maven
+- Run ALL original and public tests (JUnit 5)
+
+Directory Details
+-----------------
+- pom.xml           : Build and dependency specification for Maven and JUnit.
+- run_tests.sh      : Simple script (bash) for one-command testing.
+- src/main/java/    : (empty) Placeholder for source code (if implemented in Java).
+- src/test/java/    : All translated test cases:
+    - com/owncloud/original/      : Original test cases (from owncloud/test/test_unit.py etc.)
+    - com/owncloud/public_tests/  : Public test cases (from public_tests/test_public_unit.py)

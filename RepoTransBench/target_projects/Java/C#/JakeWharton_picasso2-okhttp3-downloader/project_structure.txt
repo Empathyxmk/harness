@@ -1,0 +1,38 @@
+JakeWharton_picasso2-okhttp3-downloader/
+├── JakeWharton_picasso2-okhttp3-downloader.sln         # Visual Studio solution file - top-level entry point for whole project
+├── src/
+│   ├── Picasso.csproj                                 # C# project file for the Picasso (OkHttp3Downloader) implementation
+│   └── OkHttp3Downloader.cs                           # C# translation of the Java OkHttp3Downloader class
+├── tests/
+│   └── original/
+│       ├── OkHttp3DownloaderOriginalTests.csproj      # xUnit test project for original tests
+│       ├── OkHttp3DownloaderAdditionalTest.cs         # Additional edge and shutdown tests
+│       ├── OkHttp3DownloaderDiskCacheTest.cs          # Disk cache constructor tests
+│       ├── OkHttp3DownloaderTest.cs                   # General shutdown/dummy constructor tests
+│       ├── OkHttp3DownloaderCtorTest.cs               # Default constructor test
+│       └── OkHttp3DownloaderLoadErrorTest.cs          # Load error/exception tests
+├── public_tests/
+│   ├── OkHttp3DownloaderPublicTests.csproj            # xUnit test project for public tests
+│   ├── OkHttp3DownloaderAdditionalPublicTest.cs       # Additional public edge and shutdown tests
+│   ├── OkHttp3DownloaderDiskCachePublicTest.cs        # Disk cache constructor public tests
+│   ├── OkHttp3DownloaderPublicTest.cs                 # Public shutdown/dummy constructor public tests
+│   ├── OkHttp3DownloaderLoadErrorPublicTest.cs        # Public test for error on invalid protocol
+│   └── OkHttp3DownloaderCtorPublicTest.cs             # Public constructor tests
+├── run_tests.sh                                       # Simple shell script to run all tests
+└── project_structure.txt                              # This project layout and explanation
+
+Directory explanations:
+- src/: Contains main C# class and implementation
+- tests/original/: Unit/integration tests from the original Java, ported to xUnit/C#
+- public_tests/: Public test suite for evaluation/submission checking
+- *.csproj: Project files for .NET SDK (dependencies, references)
+- .sln: Solution file; run/build/test whole solution
+- run_tests.sh: One-click script to run all tests
+- project_structure.txt: This overview and file/directory explanations
+
+To build and run all tests:
+  $ ./run_tests.sh
+
+You can also run only original or public tests, e.g.:
+  $ dotnet test tests/original/OkHttp3DownloaderOriginalTests.csproj
+  $ dotnet test public_tests/OkHttp3DownloaderPublicTests.csproj

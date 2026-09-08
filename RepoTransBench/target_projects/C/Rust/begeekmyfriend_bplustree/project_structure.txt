@@ -1,0 +1,26 @@
+begeekmyfriend_bplustree/
+├── Cargo.toml                  # Rust package & dependency config
+├── README.md                   # Project overview and instructions
+├── run_tests.sh                # One-click script to build & run all tests
+├── project_structure.txt       # This structure documentation
+├── src/
+│   └── lib.rs                  # (Stub) B+ tree implementation for tests
+├── tests/
+│   ├── original/
+│   │   ├── bplustree_unit_test.rs      # Original unit test scenarios (from C)
+│   │   └── bplustree_edge_test.rs      # Original edge case tests (from C)
+│   └── testcase_generator.py           # (python test data generator from C, for reference)
+└── public_tests/
+    ├── bplustree_unit_public_test.rs   # Publicized/curated validation test (from C)
+    └── bplustree_edge_public_test.rs   # Public edge case test (from C)
+
+Directory Explanations:
+- src/                  Source code. src/lib.rs holds a stub B+ tree.
+- tests/original/       Rust translations of original C test cases.
+- public_tests/         Rust translations of the public C tests.
+- tests/testcase_generator.py   Original python used in C version for test data creation (not used directly in Rust workflow, provided for reference).
+
+How to run all tests:
+  $ ./run_tests.sh
+
+This will run all tests, including those in tests/original/ and public_tests/.

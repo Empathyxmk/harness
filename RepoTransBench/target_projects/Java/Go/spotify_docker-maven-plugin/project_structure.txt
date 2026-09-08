@@ -1,0 +1,29 @@
+project_root/
+├── go.mod                         # Go module, dependencies
+├── run_tests.sh                   # Test execution script (run all Go tests)
+├── tests/
+│   └── original/
+│       ├── git_test.go            # Original test: GitTest.java
+│       ├── composite_image_name_test.go  # Original test: CompositeImageNameTest.java
+│       ├── utils_test.go          # Original test: UtilsTest.java
+│       ├── docker_build_information_test.go # DockerBuildInformationTest.java
+│       ├── image_dependency_test.go        # ImageDependencyTest.java
+├── public_tests/
+│   ├── composite_image_name_public_test.go      # Public test for CompositeImageName
+│   ├── git_public_test.go                      # Public test for Git logic
+│   ├── utils_public_test.go                    # Public test for Utils functions
+│   ├── docker_build_information_public_test.go  # Public DockerBuildInformation test
+│   ├── image_dependency_public_test.go          # Public test for multi-module logic
+└── README.md                        # Project and testing instructions
+
+Directory Explanations:
+- go.mod: Declares Go module and dependency info.
+- run_tests.sh: Run all tests via `go test ./...`
+- tests/original/: Contains Go translations of all original (private) test cases from Java source.
+- public_tests/: Contains Go translations of all public-facing test cases.
+- project_structure.txt: This document.
+
+Testing Instructions:
+- Install Go 1.20+.
+- Run `chmod +x run_tests.sh` (if not already executable).
+- Execute all tests: `./run_tests.sh`

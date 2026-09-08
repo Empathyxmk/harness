@@ -1,0 +1,36 @@
+zhouwt612_Wireless-Communication-Paper-Code-Reproduce (Python translation)
+├── src/
+│   └── combining/
+│       ├── met.py                 # Python translation of METcombiner_forK (used in public tests)
+│       ├── sqbc.py                # Python translation of J_SQBCcombiner_forK (used in public tests)
+│       └── __init__.py            # Empty file to mark package
+├── tests/
+│   └── original/
+│       ├── test_dummy.py          # Dummy test to ensure test setup works (original test)
+│       └── __init__.py
+├── public_tests/
+│   ├── test_metcombiner_for_k_public.py       # Public test using METcombiner_forK
+│   ├── test_j_sqbccombiner_for_k_public.py    # Public test using J_SQBCcombiner_forK
+│   └── __init__.py
+├── requirements.txt               # Python dependencies (pytest, numpy, scipy)
+├── run_tests.sh                   # Simple test script for one-click test execution
+└── project_structure.txt          # This file: structure and usage documentation
+
+Directory explanations:
+- src/combining/: Contains Python implementations of combining functions needed for public tests.
+- tests/original/: Contains original tests (from Matlab tests/unit), translated to pytest.
+- public_tests/: Contains all public tests, directly translated from Matlab public test files, using pytest.
+- requirements.txt: List of dependencies for Python environment (install via pip).
+- run_tests.sh: One-click script to run all tests (sets -e for safety, runs original and public tests).
+- project_structure.txt: Project structure and testing instructions.
+
+Setup & Testing instructions:
+1. Install Python 3.x.
+2. (Optional, recommended) Create a virtual environment and activate it.
+3. Install dependencies: `pip install -r requirements.txt`
+4. Run all tests: `chmod +x run_tests.sh && ./run_tests.sh`
+5. Tests in both tests/original and public_tests will run under pytest.
+
+Note:
+- Source implementations of METcombiner_forK and J_SQBCcombiner_forK in src/combining are minimal stubs, based on implied Matlab test behaviors.
+- Adjust src code if real algorithm details are known/available.

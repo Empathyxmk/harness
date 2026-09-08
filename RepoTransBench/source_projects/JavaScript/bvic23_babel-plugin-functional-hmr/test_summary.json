@@ -1,0 +1,11 @@
+{
+  "project_name": "bvic23_babel-plugin-functional-hmr",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 98.03,
+    "branch": 96.15
+  },
+  "timestamp": "2025-06-23T10:34:38.751495",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/bvic23_babel-plugin-functional-hmr",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/bvic23_babel-plugin-functional-hmr"
+}

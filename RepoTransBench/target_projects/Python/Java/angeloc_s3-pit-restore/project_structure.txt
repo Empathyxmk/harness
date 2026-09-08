@@ -1,0 +1,49 @@
+s3-pit-restore Java Translation Project Structure
+================================================
+
+.
+├── pom.xml                     # Maven build configuration file (JUnit 5 included)
+├── run_tests.sh                # Executable script to run all tests via Maven
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── angeloc
+│   │               └── s3pitrestore
+│   │                   └── Main.java                # Placeholder main class (not required for the tests)
+│   └── test
+│       └── java
+│           └── com
+│               └── angeloc
+│                   └── s3pitrestore
+│                       ├── original
+│                       │   ├── SetupPyTest.java         # Original setup.py import test translation
+│                       │   ├── S3PitRestoreUnittestTest.java # Original custom logic tree-generation test translation
+│                       │   └── S3PitRestoreSmokeTest.java    # Original CLI smoke and error case test translation
+│                       └── publictests
+│                           ├── PublicSetupPyTest.java           # Public test (setup author/keywords)
+│                           ├── PublicS3PitRestoreUnittestTest.java # Public test for custom tree, with different folder names
+│                           └── PublicS3PitRestoreSmokeTest.java    # Public CLI tests with other argument cases
+
+-------------------------------------------------
+File/Directory Purpose
+-------------------------------------------------
+pom.xml .................... Maven build file with dependencies for JUnit 5.
+run_tests.sh ............... Simple, one-click script to run all tests.
+src/main/java/.............. Main application code (not required for this test translation; Main.java placeholder).
+src/test/java/.............. All test code:
+  └── original/............. Translated tests from original Python 'tests/' directory.
+  └── publictests/.......... Translated public tests from Python 'public_tests/' directory.
+
+How to build and test:
+----------------------
+1. Make sure Maven is installed on your system.
+2. Run the following command to execute all tests:
+       ./run_tests.sh
+
+This executes ALL tests (original and public). For separation, you can use Maven's -Dtest argument, e.g.:
+    mvn test -Dtest="com.angeloc.s3pitrestore.original.*Test"
+or
+    mvn test -Dtest="com.angeloc.s3pitrestore.publictests.*Test"
+
+All tests are implemented and fully functional, matching original Python logic and assertions.

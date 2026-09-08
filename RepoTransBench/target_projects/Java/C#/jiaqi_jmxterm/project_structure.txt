@@ -1,0 +1,62 @@
+Project Structure for C# Translation of jiaqi_jmxterm Tests
+
+/.
+├── src/
+│   └── JmxTerm/                               # Main C# source code (placeholder, to be implemented if needed)
+│       ├── JmxTerm.csproj
+│       ├── Program.cs
+│       └── ... (core classes/interfaces to be added as needed for testing)
+├── tests/
+│   ├── original/
+│   │   ├── OriginalTests.csproj
+│   │   ├── SyntaxUtilsExtraTest.cs
+│   │   ├── PrintStreamCommandOutputTest.cs
+│   │   ├── FileCommandOutputTest.cs
+│   │   ├── FileCommandInputTest.cs
+│   │   ├── InputStreamCommandInputTest.cs
+│   │   ├── ValueOutputFormatTest.cs
+│   │   ├── DomainCommandTest.cs
+│   │   ├── InfoCommandTest.cs
+│   │   ├── SubscribeCommandTest.cs
+│   │   ├── BeansCommandTest.cs
+│   │   ├── DomainsCommandTest.cs
+│   │   ├── CloseCommandTest.cs
+│   │   ├── OptionCommandTest.cs
+│   │   ├── BeanCommandTest.cs
+│   │   ├── RunCommandTest.cs
+│   │   ├── SetCommandTest.cs
+│   │   ├── QuitCommandTest.cs
+│   │   ├── UnsubscribeCommandTest.cs
+│   │   ├── OpenCommandTest.cs
+│   │   ├── GetCommandTest.cs
+│   │   ├── CommandCenterTest.cs
+│   │   ├── PredefinedCommandFactoryTest.cs
+│   │   ├── SessionImplTest.cs
+│   │   ├── JPMFactoryTest.cs
+│   │   ├── HelpCommandTest.cs
+│   │   ├── ConnectionImplTest.cs
+│   │   ├── JConsoleClassLoaderFactoryTest.cs
+│   │   ├── Jdk9JavaProcessManagerTest.cs
+│   │   ├── WeakCastUtilsTest.cs
+│   │   ├── ValueFormatTest.cs
+│   │   ├── Jdk6JavaProcessManagerTest.cs
+│   │   ├── LocalVirtualMachineTest.cs
+│   │   ├── Jdk5JavaProcessManagerTest.cs
+│   │   ├── TestPerl.pl
+│   │   └── TestScript.jmx
+│   └── TestUtilities.cs                         # Shared helpers for test mocks, stubs, etc.
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── ConnectionPublicTest.cs
+│   ├── SyntaxUtilsPublicTest.cs
+│   ├── CommandFactoryPublicTest.cs
+│   ├── SessionPublicTest.cs
+│   ├── CommandPublicTest.cs
+│   ├── SyntaxUtilsExtraPublicTest.cs
+│   ├── PrintStreamCommandOutputPublicTest.cs
+│   ├── FileCommandInputPublicTest.cs
+│   ├── InputStreamCommandInputPublicTest.cs
+│   └── FileCommandOutputPublicTest.cs
+├── JmxTerm.sln                                  # Solution file including all projects
+├── run_tests.sh                                 # Simple test execution script
+└── test_translation_progress.json               # Progress tracker

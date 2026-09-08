@@ -1,0 +1,45 @@
+PacktPublishing_Python-3-Object-Oriented-Programming-Third-Edition-go/
+├── go.mod
+├── run_tests.sh
+├── README.md
+├── internal/
+│   └── chapter11/
+│       ├── car_flyweight.go
+│       ├── email_facade.go
+│       ├── folder_composite.go
+│       ├── pythonic_window_command.go
+│       └── window_command.go
+│   └── chapter12/
+│       ├── stats.go
+│       ├── stats_list_setup.go
+│       ├── flight_status_redis.go
+│       ├── vigenere_cipher.go
+│       ├── echo_server.go
+│       └── ...other source files as needed
+├── tests/
+│   └── original/
+│       ├── car_flyweight_test.go
+│       ├── window_command_test.go
+│       ├── email_facade_test.go
+│       ├── folder_composite_test.go
+│       └── pythonic_window_command_test.go
+│   └── chapter12/
+│       ├── pytest_stats_test.go
+│       ├── flight_status_test.go
+│       ├── pytest_skipping_test.go
+│       ├── pytest_setups_test.go
+│       ├── with_pytest_test.go
+│       ├── pytest_cleanup_test.go
+│       ├── statslist_setup_test.go
+│       ├── skipping_test.go
+│       ├── echo_server_test.go
+│       └── vigenere_test.go
+├── public_tests/
+│   ├── public_with_pytest_test.go
+│   ├── public_pytest_stats_test.go
+│   ├── public_statslist_setup_test.go
+│   ├── public_flight_status_test.go
+│   ├── public_pytest_cleanup_test.go
+│   ├── public_pytest_setups_test.go
+│   ├── public_pytest_skipping_test.go
+└── test_translation_progress.json

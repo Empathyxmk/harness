@@ -1,0 +1,14 @@
+django_environ_rs/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── fileaware_mapping.rs
+│   ├── env.rs
+│   ├── compat.rs
+│   └── path.rs
+├── tests/
+│   └── original/
+│       └── test_fileaware.rs
+├── public_tests/
+├── run_tests.sh
+└── project_structure.txt

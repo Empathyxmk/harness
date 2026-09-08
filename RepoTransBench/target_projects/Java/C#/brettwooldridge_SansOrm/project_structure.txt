@@ -1,0 +1,24 @@
+brettwooldridge_SansOrm_CSharp/
+├── src/
+│   └── SansOrm/
+│       ├── SansOrm.csproj
+│       ├── (production code .cs files go here)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── (Original translated test files: OrmElfTest.cs, SqlClosureBranchTest.cs, etc.)
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── (Public translated test files: OrmElfPublicTest.cs, SqlClosureBranchPublicTest.cs, etc.)
+├── run_tests.sh
+├── README.md
+├── project_structure.txt
+
+# Explanations:
+# - src/SansOrm/: Contains the main C# library/application code. All SansOrm production code (OrmElf, SqlClosure, etc.) would go here.
+# - tests/original/: Contains the C# xUnit test project for all ORIGINAL tests as translated from Java (test logic, edge cases).
+# - public_tests/: Contains the C# xUnit test project for all PUBLIC tests as translated from Java (for public exposure/OAuth/etc).
+# - SansOrm.csproj, OriginalTests.csproj, PublicTests.csproj: .NET project files for library and test assemblies, specifying dependencies.
+# - run_tests.sh: Simple script to build and test all C# code (original + public tests). Use: chmod +x run_tests.sh; ./run_tests.sh
+# - project_structure.txt: This structure description.
+# - README.md: Instructions and documentation.

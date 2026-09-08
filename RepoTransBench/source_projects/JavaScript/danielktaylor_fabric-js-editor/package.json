@@ -1,0 +1,12 @@
+{
+  "name": "danielktaylor_fabric-js-editor",
+  "version": "1.0.0",
+  "description": "Fabric JS Editor",
+  "main": "src/js/editor.js",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

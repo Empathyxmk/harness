@@ -1,0 +1,35 @@
+eatonphil_pj-cpp/
+├── CMakeLists.txt            # Root CMake configuration file
+├── README.md                 # Project documentation and usage
+├── include/
+│   └── pj/                   # Header files for pj library
+│       ├── pj.h              # API: to_string, from_string, etc.
+│       ├── lexer.h           # Lexer function declarations
+│       └── parser.h          # Parser function declarations
+├── src/
+│   ├── pj.cpp                # Implementation of pj.h
+│   ├── lexer.cpp             # Implementation of lexer.h
+│   └── parser.cpp            # Implementation of parser.h
+├── tests/
+│   ├── test_api.cpp          # Original API tests
+│   ├── test_lexer.cpp        # Original lexer tests
+│   ├── test_parser.cpp       # Original parser tests
+│   └── test_pj.cpp           # Original core pj tests
+├── public_tests/
+│   ├── test_public_api.cpp      # Public API tests
+│   ├── test_public_lexer.cpp    # Public lexer tests
+│   ├── test_public_parser.cpp   # Public parser tests
+│   └── test_public_pj.cpp       # Public core pj tests
+├── run_tests.sh               # Script to build and run all tests
+└── extern/
+    └── gtest/                 # Optionally, GoogleTest submodule or fetched dependency
+
+Explanations:
+- include/: C++ header files for each logical pj component (API, lexer, parser)
+- src/: Implementation files for pj, lexer, and parser, to be linked for tests
+- tests/: All original (non-public/hidden) test conversions from Python to C++ (1:1 with original Py tests)
+- public_tests/: All public test conversions from Python to C++, clearly separated
+- run_tests.sh: One-click script to build (cmake/make) and run all tests (original+public)
+- CMakeLists.txt: Configures project, brings in GoogleTest, builds tests
+- extern/gtest: (possibly as a submodule or downloaded) for building GoogleTest
+- README.md and this file: documentation and usage

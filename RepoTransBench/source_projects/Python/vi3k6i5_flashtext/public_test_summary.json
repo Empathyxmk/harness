@@ -1,0 +1,84 @@
+{
+  "project_name": "vi3k6i5_flashtext",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:26:38.716188",
+  "original_path": "/workspace/verified_repos_v2/Python/vi3k6i5_flashtext",
+  "public_test_result_path": "/workspace/public_test_results/Python/vi3k6i5_flashtext",
+  "original_tests": {
+    "test_files": [
+      "test/test_extract_fuzzy.py",
+      "test/test_kp_len.py",
+      "test/test_kp_term_in_kp.py",
+      "test/test_setup_py.py",
+      "test/test_dictionary_loading.py",
+      "test/test_kp_next_word.py",
+      "test/test_replace_fuzzy.py",
+      "test/test_extractor.py",
+      "test/test_kp_get_all_keywords.py",
+      "test/test_kp_exceptions.py",
+      "test/test_file_load.py",
+      "test/test_replacer.py",
+      "test/test_loading_keyword_list.py",
+      "test/test_kp_extract_span.py",
+      "test/test_remove_keywords.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 15,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_extract_fuzzy.py",
+      "public_tests/test_public_kp_len.py",
+      "public_tests/test_public_kp_term_in_kp.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_dictionary_loading.py",
+      "public_tests/test_public_kp_next_word.py",
+      "public_tests/test_public_replace_fuzzy.py",
+      "public_tests/test_public_extractor.py",
+      "public_tests/test_public_kp_get_all_keywords.py",
+      "public_tests/test_public_kp_exceptions.py",
+      "public_tests/test_public_file_load.py",
+      "public_tests/test_public_replacer.py",
+      "public_tests/test_public_loading_keyword_list.py",
+      "public_tests/test_public_kp_extract_span.py",
+      "public_tests/test_public_remove_keywords.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 17,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_extract_fuzzy.py",
+    "public_tests/test_public_kp_len.py",
+    "public_tests/test_public_kp_term_in_kp.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_dictionary_loading.py",
+    "public_tests/test_public_kp_next_word.py",
+    "public_tests/test_public_replace_fuzzy.py",
+    "public_tests/test_public_extractor.py",
+    "public_tests/test_public_kp_get_all_keywords.py",
+    "public_tests/test_public_kp_exceptions.py",
+    "public_tests/test_public_file_load.py",
+    "public_tests/test_public_replacer.py",
+    "public_tests/test_public_loading_keyword_list.py",
+    "public_tests/test_public_kp_extract_span.py",
+    "public_tests/test_public_remove_keywords.py",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

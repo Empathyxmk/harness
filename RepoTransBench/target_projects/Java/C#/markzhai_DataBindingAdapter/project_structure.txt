@@ -1,0 +1,54 @@
+Project Structure for markzhai_DataBindingAdapter C# Port
+========================================================
+
+markzhai_DataBindingAdapter_CSharp/
+├── src/
+│   └── MarkZhai.DataBindingAdapter/        # Main library code (originals from adapter/src/main/java/com/github/markzhai/recyclerview/)
+│       ├── MarkZhai.DataBindingAdapter.csproj
+│       ├── Dummy.cs
+│       ├── BaseViewAdapter.cs
+│       ├── BindingViewHolder.cs
+│       ├── MultiTypeAdapter.cs
+│       └── SingleTypeAdapter.cs
+├── tests/
+│   └── original/                           # ALL original test translations
+│       ├── OriginalTests.csproj
+│       ├── BaseViewAdapterTest.cs
+│       ├── BindingViewHolderTest.cs
+│       ├── DummyTest.cs
+│       ├── MultiTypeAdapterTest.cs
+│       └── SingleTypeAdapterTest.cs
+├── public_tests/                           # ALL public test translations
+│   ├── PublicTests.csproj
+│   ├── BaseViewAdapterPublicTest.cs
+│   ├── BindingViewHolderPublicTest.cs
+│   ├── DummyPublicTest.cs
+│   ├── MultiTypeAdapterPublicTest.cs
+│   └── SingleTypeAdapterPublicTest.cs
+├── MarkZhai.DataBindingAdapter.sln         # Solution file referencing src, tests, public_tests projects
+├── run_tests.sh                            # One-click test script
+├── README.md                               # Project readme - overview and instructions
+
+Directory Explanations
+----------------------
+src/MarkZhai.DataBindingAdapter/    - Main adapter implementation (converted/adapted from Java as needed)
+tests/original/                     - Original (non-public) tests, one-to-one with Java's original test files
+public_tests/                       - Public tests ("*_PublicTest.java"), for public CI/testing
+MarkZhai.DataBindingAdapter.sln     - The solution file includes all 3 projects for easy management
+run_tests.sh                        - Executes ALL tests across projects using standard .NET CLI commands
+
+Test Project Structure
+----------------------
+Each test file corresponds directly to a Java test of the same name (sans extension change).
+- Tests use xUnit
+- Files named <ClassUnderTest>Test.cs or <ClassUnderTest>PublicTest.cs
+
+How to Build & Run Tests
+------------------------
+1. Ensure you have the .NET 7.0+ SDK installed: https://dotnet.microsoft.com/download
+2. Run:
+      chmod +x run_tests.sh
+      ./run_tests.sh
+   This will build the solution and execute all tests under tests/original/ and public_tests/
+
+Project includes ALL original and public test cases, fully implemented in C# with xUnit.

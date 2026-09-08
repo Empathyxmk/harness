@@ -1,0 +1,29 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_option_complete.py
+│   │   ├── test_claim_aud.py
+│   │   ├── test_claim_exp.py
+│   │   ├── test_sign_verify_additional.py
+│   │   ├── test_option_nonce.py
+│   │   ├── test_header_kid.py
+│   │   ├── test_claim_nbf.py
+│   │   ├── test_claim_iat.py
+│   │   ├── test_claim_jti.py
+│   │   ├── test_option_maxAge.py
+│   │   ├── test_claim_iss.py
+│   │   ├── test_issue_304.py
+│   │   ├── test_issue_147.py
+│   │   ├── test_jwt_malicious.py
+│   │   ├── test_utils.py
+│   ├── conftest.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_rsa_public_key.py
+│   ├── test_undefined_secret_or_public_key.py
+├── test_translation_progress.json
+├── project_structure.txt

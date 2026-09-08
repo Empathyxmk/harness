@@ -1,0 +1,50 @@
+Project Structure for Java Translation of oskvr37_tiddl
+=======================================================
+
+.
+├── pom.xml                       # Maven build configuration with JUnit dependencies
+├── run_tests.sh                  # Shell script to run all tests with one command
+├── README.md                     # Documentation
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── tiddl/
+│   │               └── ...      # (Application source code stub)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── tiddl/
+│                   ├── original/
+│                   │   ├── ApiUnitTest.java
+│                   │   ├── ApiTest.java
+│                   │   ├── ConfigUnitTest.java
+│                   │   ├── ExceptionsUnitTest.java
+│                   │   ├── UtilsTest.java
+│                   │   └── UtilsUnitTest.java
+│                   └── public_tests/
+│                       ├── PublicApiTest.java
+│                       ├── PublicApiUnitTest.java
+│                       ├── PublicConfigUnitTest.java
+│                       ├── PublicExceptionsUnitTest.java
+│                       ├── PublicUtilsTest.java
+│                       └── PublicUtilsUnitTest.java
+
+Key Directories and Files:
+- src/main/java/com/tiddl/ :     Application source. Stubs should be added here if you wish to pass tests.
+- src/test/java/com/tiddl/original/ :      Original private tests from the Python repo, directly translated.
+- src/test/java/com/tiddl/public_tests/ :  Public test cases, directly translated from Python public tests.
+- run_tests.sh:                  Run all tests quickly with `./run_tests.sh`
+- pom.xml:                       Standard Maven configuration including JUnit 5.
+
+Testing Instructions:
+---------------------
+1. Ensure you have Java 17+ and Maven installed.
+2. Run: `chmod +x ./run_tests.sh`
+3. Execute all tests with: `./run_tests.sh`
+
+Test organization:
+------------------
+- Original tests (`tests/*` in Python) → `src/test/java/com/tiddl/original/`
+- Public tests (`public_tests/*` in Python) → `src/test/java/com/tiddl/public_tests/`
+- Each test file is a full, complete JUnit 5 test class.

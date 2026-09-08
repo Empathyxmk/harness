@@ -1,0 +1,91 @@
+//file:noinspection DependencyNotationArgument
+
+apply from: "gradle/functions.gradle"
+
+allprojects {
+    group = 'io.github.neonorbit'
+    version = '1.4.5' //-SNAPSHOT
+}
+
+tasks.register('produceJar') {
+    dependsOn ':dexplore-cli:build'
+}
+
+tasks.register('localRelease') {
+    dependsOn ':dexplore-lib:publish'
+}
+
+tasks.register('mavenRelease') {
+    dependsOn ':dexplore-lib:clean'
+    dependsOn ':dexplore-lib:publish'
+}
+
+ext {
+    primaryKey      = 'NeonOrbit'
+    projectName     = project.name
+    projectGroup    = project.group
+    projectVersion  = project.version
+    projectRootPath = projectDir.absolutePath
+    mavenArtifact   = projectName.toLowerCase()
+    jarOutputPath   = projectRootPath + '/out'
+    mavenLocalRepo  = projectRootPath + '/out/maven'
+    isLocalRelease  = hasGradleTask('localRelease')
+    isMavenRelease  = hasGradleTask('mavenRelease')
+    depends = [
+        dexlib2       : 'org.smali:dexlib2:2.5.2',
+        jcommander    : 'com.beust:jcommander:1.82',
+        jadx_core     : 'io.github.skylot:jadx-core:1.4.7',
+        jadx_plugin   : 'io.github.skylot:jadx-dex-input:1.4.7',
+        findbugs      : 'com.google.code.findbugs:jsr305:3.0.2',
+        guava         : 'com.google.guava:guava:30.0-android',
+        proguard      : 'com.guardsquare:proguard-gradle:7.3.2',
+        junit_api     : 'org.junit.jupiter:junit-jupiter-api:5.9.3',
+        junit_params  : 'org.junit.jupiter:junit-jupiter-params:5.9.3',
+        junit_engine  : 'org.junit.jupiter:junit-jupiter-engine:5.9.3',
+        mockito_core  : 'org.mockito:mockito-core:5.3.1',
+        mockito_junit : 'org.mockito:mockito-junit-jupiter:5.3.1',
+        shadow_plugin : 'com.github.johnrengelman:shadow:8.1.1',
+        kotlin_plugin : 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.21'
+    ]
+}
+
+allprojects {
+    apply plugin: 'java'
+    checkJDKCompatibility()
+    java.sourceCompatibility = JavaVersion.VERSION_1_8
+    java.targetCompatibility = JavaVersion.VERSION_1_8
+    if (JavaVersion.current()> JavaVersion.VERSION_1_8) {
+        compileJava.options.compilerArgs.addAll(['--release', '8'])
+    }
+}
+
+subprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        testImplementation depends.guava
+        testRuntimeOnly depends.junit_engine
+        testImplementation depends.junit_api
+        testImplementation depends.junit_params
+        testImplementation depends.mockito_core
+        testImplementation depends.mockito_junit
+    }
+    test {
+        useJUnitPlatform()
+        testLogging {
+            events "passed", "skipped", "failed"
+        }
+    }
+}
+
+def hasGradleTask(name) {
+    return gradle.startParameter.taskNames.contains(name)
+}
+
+static def checkJDKCompatibility() {
+    if (!JavaVersion.current().isJava8Compatible()) {
+        throw new GradleException('Incompatible JDK version')
+    }
+}

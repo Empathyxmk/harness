@@ -1,0 +1,46 @@
+zfkun_ja_netfilter_mymap_plugin/ (solution root)
+├── src/
+│   └── zfkun_ja_netfilter_mymap_plugin/
+│       ├── zfkun_ja_netfilter_mymap_plugin.csproj      # Main project file
+│       ├── Models/
+│       │   ├── RuleType.cs          # RuleType enum
+│       │   └── FilterRule.cs        # FilterRule data model
+│       ├── Core/
+│       │   └── PluginConfig.cs      # Dummy plugin config
+│       ├── MapTransformer.cs        # MapTransformer business logic class
+│       ├── PutFilter.cs             # PutFilter business logic class
+│       └── MyPluginEntry.cs         # Main plugin entry
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj                 # Project file for original tests
+│       ├── MapTransformerTests.cs               # Tests (1:1 from Java MapTransformerTest)
+│       ├── PutFilterTests.cs                    # Tests (1:1 from Java PutFilterTest)
+│       └── MyPluginEntryTests.cs                # Tests (1:1 from Java MyPluginEntryTest)
+├── public_tests/
+│   ├── PublicTests.csproj                       # Project file for public tests
+│   ├── MapTransformerPublicTests.cs             # Tests (1:1 from Java MapTransformerPublicTest)
+│   ├── PutFilterPublicTests.cs                  # Tests (1:1 from Java PutFilterPublicTest)
+│   └── MyPluginEntryPublicTests.cs              # Tests (1:1 from Java MyPluginEntryPublicTest)
+├── zfkun_ja_netfilter_mymap_plugin.sln          # Solution file
+├── run_tests.sh                                 # Script to run all tests
+└── project_structure.txt                        # This structure and documentation
+
+# Directory explanations:
+
+src/                  - Source code for the main project
+  Models/             - Data models (enums and POCOs)
+  Core/               - Plugin config and potential shared abstractions
+tests/original/       - Original (private/internal) tests translated from Java
+public_tests/         - Public test suite, translated from Java "_PublicTest" test classes
+run_tests.sh          - Simple executable script; run all tests in a single command
+zfkun_ja_netfilter_mymap_plugin.sln - .NET solution tying all components together
+
+# Setup & Testing Instructions:
+1. Install .NET 6+ SDK: https://dotnet.microsoft.com/en-us/download
+2. To build: from root, run
+   dotnet build
+3. To run tests:
+   chmod +x run_tests.sh
+   ./run_tests.sh
+
+# All test logic is a direct translation from the provided Java test files.

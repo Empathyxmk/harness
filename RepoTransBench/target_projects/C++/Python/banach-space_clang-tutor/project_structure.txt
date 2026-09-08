@@ -1,0 +1,22 @@
+banach-space_clang-tutor-python/
+├── requirements.txt              # Python dependencies, includes pytest
+├── run_tests.sh                  # Executable script to run ALL tests
+├── project_structure.txt         # This structure file
+├── tests/
+│   └── original/
+│       ├── __init__.py           # Marks directory as a package
+│       └── test_hello_world.py   # Python translation of HelloWorld/test_HelloWorld.cpp
+└── public_tests/
+    └── __init__.py               # Placeholder for public test conversions (if needed)
+
+Directory Explanations:
+- requirements.txt: Lists dependencies (pytest).
+- run_tests.sh: One-click script, creates venv, installs dependencies, runs all tests.
+- tests/: All original project tests, placed under tests/original/.
+- public_tests/: Placeholder for public tests, to hold Python translations of public test scenarios.
+- project_structure.txt: This overview document.
+
+Instructions:
+1. Run `chmod +x run_tests.sh` if not already executable.
+2. Execute all tests using `./run_tests.sh`.
+3. All test results will be printed to stdout by pytest.

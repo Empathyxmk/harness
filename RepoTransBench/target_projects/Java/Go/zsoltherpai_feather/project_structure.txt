@@ -1,0 +1,26 @@
+zsoltherpai_feather/
+├── go.mod
+├── run_tests.sh
+├── test_translation_progress.json
+├── project_structure.txt
+├── tests/
+│   ├── original/
+│   │   ├── activity_test.go
+│   │   ├── injection_test.go
+│   │   ├── dependency_test.go
+│   │   ├── key_test.go
+│   │   ├── singleton_test.go
+│   │   ├── transitive_dependency_test.go
+│   │   ├── provider_injection_test.go
+│   │   ├── field_injection_test.go
+│   │   ├── module_override_test.go
+│   │   ├── named_dependency_test.go
+│   │   ├── qualified_dependency_test.go
+│   │   ├── circular_dependency_test.go
+│   │   ├── ambiguous_module_test.go
+│   │   ├── polymorphic_dependency_test.go
+│   │   ├── pojo_provided_through_module_test.go
+│   │   └── startup_comparison_test.go
+├── public_tests/
+│   ├── injection_public_test.go
+│   └── dependency_public_test.go

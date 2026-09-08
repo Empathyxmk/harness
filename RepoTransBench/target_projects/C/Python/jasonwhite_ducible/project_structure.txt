@@ -1,0 +1,36 @@
+project_root/
+├── src/
+│   ├── __init__.py               # Source root package init
+│   └── util/
+│       ├── __init__.py           # util submodule init
+│       └── md5.py                # C-like MD5 test API built on Python's hashlib
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py           # (empty) pytest test discovery
+│   │   └── test_md5.py           # Translated original MD5 tests from C
+├── public_tests/
+│   ├── __init__.py               # (empty) pytest test discovery
+│   └── test_md5_public.py        # Translated public MD5 tests from C
+├── requirements.txt              # Python dependencies (pytest)
+├── run_tests.sh                  # Simple "one click" all-test execution script
+└── project_structure.txt         # This project structure description
+
+# Directory Purpose:
+#   src/              - Python "source" code, including md5.py reimplementation
+#   tests/original/   - All original (non-public) translated MD5 test cases
+#   public_tests/     - All translated public MD5 test cases (well-separated)
+#   requirements.txt  - PyPI dependencies; no build, just 'pip install ...'
+#   run_tests.sh      - Installs requirements and runs all tests with pytest
+#   project_structure.txt - Brief summary of project layout and file purposes
+
+# Setup & Testing Instructions:
+# 1. Ensure Python 3 is installed.
+# 2. (Optional) Create and activate a clean virtualenv.
+# 3. Run tests with:
+#       ./run_tests.sh
+# 4. All tests (original + public) will be automatically discovered and run.
+
+# All test logic, data, and edge cases match the original C tests.
+# To run only original or public tests:
+#   pytest tests/original/
+#   pytest public_tests/

@@ -1,0 +1,22 @@
+vimalloc_flask_jwt_extended_rs/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── main.rs
+├── tests/
+│   └── original/
+│       ├── test_json.rs
+│       └── test_user_lookup.rs
+│       └── ... (other translated original test files)
+├── public_tests/
+│   ├── test_public_additional_claims_loader.rs
+│   ├── test_public_options_method.rs
+│   ├── test_public_json.rs
+│   ├── test_public_asymmetric_crypto.rs
+│   ├── test_public_cookies.rs
+│   ├── test_public_add_context_processor.rs
+│   ├── test_public_view_decorators.rs
+│   ├── test_public_config.rs
+│   └── ... (other translated public test files)
+├── run_tests.sh
+└── project_structure.txt

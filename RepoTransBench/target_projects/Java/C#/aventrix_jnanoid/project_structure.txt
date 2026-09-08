@@ -1,0 +1,28 @@
+aventrix_jnanoid_csharp/
+├── Aventrix.JNanoId.sln
+├── README.md
+├── run_tests.sh
+├── src/
+│   └── Main/
+│       ├── Aventrix.JNanoId.csproj
+│       └── NanoIdUtils.cs
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       └── NanoIdUtilsTests.cs
+└── public_tests/
+    ├── PublicTests.csproj
+    └── NanoIdUtilsPublicTests.cs
+
+Project Structure:
+
+- Aventrix.JNanoId.sln: .NET solution, includes all projects
+- run_tests.sh: Runs all test projects in one click (`dotnet test`)
+- src/Main/: Library source (NanoIdUtils and .csproj)
+- tests/original/: Translated "original" (private) tests, with own .csproj
+- public_tests/: Translated "public" test suite, with own .csproj
+- README.md: Usage and structure instructions
+
+Test organization matches the Java project: 
+- All test logic, assertions, and coverage are fully implemented and mapped.
+- Each C# test class mirrors its Java counterpart.

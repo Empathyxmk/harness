@@ -1,0 +1,34 @@
+markushi_android-ui-csharp/
+├── MarkushiAndroidUi.sln                 # Solution file for all projects
+├── run_tests.sh                          # One-click test execution script
+├── src/
+│   └── MarkushiAndroidUi/
+│       ├── MarkushiAndroidUi.csproj      # Main class library project
+│       ├── PlusAction.cs                 # Translated core logic: PlusAction
+│       ├── DrawerAction.cs               # Translated core logic: DrawerAction
+│       └── LineSegment.cs                # Translated core logic: LineSegment (+ LineSegmentCreator)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj          # Test project for original tests
+│       ├── PlusActionTests.cs            # PlusAction original tests
+│       ├── DrawerActionTests.cs          # DrawerAction original tests
+│       └── LineSegmentTests.cs           # LineSegment original tests
+├── public_tests/
+│   ├── PublicTests.csproj                # Test project for public tests
+│   ├── PlusActionPublicTests.cs          # PlusAction public tests
+│   ├── DrawerActionPublicTests.cs        # DrawerAction public tests
+│   └── LineSegmentPublicTests.cs         # LineSegment public tests
+
+# Directory/Files Description:
+# - MarkushiAndroidUi.sln: Solution to coordinate building main code and test projects
+# - run_tests.sh: Shell script. Run all tests (both original and public): ./run_tests.sh
+# - src/MarkushiAndroidUi/: Main C# class library with dummy logic for running tests
+# - tests/original/: All original test cases (1 test class per logic area)
+# - public_tests/: All public (student-facing) test cases (separated)
+# - *.csproj: Project and package configuration (xUnit used for all test projects)
+
+# Setup/Build/Run instructions:
+# 1. Install .NET SDK (>= 7.0)
+# 2. Restore dependencies:        dotnet restore
+# 3. To run all tests:           ./run_tests.sh
+#    (runs both original and public tests)

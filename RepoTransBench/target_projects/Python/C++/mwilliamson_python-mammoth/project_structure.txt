@@ -1,0 +1,37 @@
+project_root/
+├── CMakeLists.txt
+├── LICENSE
+├── NEWS
+├── README.md
+├── coverage.xml
+├── htmlcov/
+├── src/
+│   ├── main.cpp
+│   └── lib/
+│       ├── ... (library files)
+├── include/
+│   └── ... (headers)
+├── tests/
+│   ├── original/
+│   │   ├── body_xml_tests.cpp
+│   │   ├── document_xml_tests.cpp
+│   │   ├── office_xml_tests.cpp
+│   │   ├── notes_xml_tests.cpp
+│   │   ├── numbering_xml_tests.cpp
+│   │   ├── xmlparser_tests.cpp
+│   │   ├── files_tests.cpp
+│   │   ├── uris_tests.cpp
+│   │   ├── comments_xml_tests.cpp
+│   │   ├── transforms_tests.cpp
+│   │   ├── images_tests.cpp
+│   │   ├── mammoth_tests.cpp
+│   │   ├── lists_tests.cpp
+│   │   ├── zips_tests.cpp
+│   │   ├── test_html_paths_module.cpp
+│   │   ├── test_images_module.cpp
+│   │   ├── test_document_matchers_module.cpp
+│   │   └── test_conversion_module.cpp
+│   └── test_main.cpp
+├── public_tests/
+│   └── (public C++ tests as needed)
+├── run_tests.sh

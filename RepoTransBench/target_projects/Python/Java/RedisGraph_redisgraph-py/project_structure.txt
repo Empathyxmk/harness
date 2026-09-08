@@ -1,0 +1,81 @@
+RedisGraph_redisgraph-py/
+├── Dockerfile
+├── LICENSE
+├── MANIFEST.in
+├── README.md
+├── htmlcov/
+│   └── ... (HTML coverage output)
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_execution_plan.py
+│   ├── test_public_graph.py
+│   └── test_public_query_result_extra.py
+├── pyproject.toml
+├── redisgraph/
+│   ├── __init__.py
+│   ├── edge.py
+│   ├── exceptions.py
+│   ├── execution_plan.py
+│   ├── graph.py
+│   ├── node.py
+│   ├── path.py
+│   ├── query_result.py
+│   └── util.py
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── redisgraphpy/
+│                   ├── original/
+│                   │   ├── BaseTest.java
+│                   │   ├── EdgeTest.java
+│                   │   ├── ExceptionsTest.java
+│                   │   ├── ExecutionPlanTest.java
+│                   │   ├── FunctionalAllTest.java
+│                   │   ├── GraphExtraTest.java
+│                   │   ├── GraphTest.java
+│                   │   ├── NodeTest.java
+│                   │   ├── PathTest.java
+│                   │   ├── QueryResultExtraTest.java
+│                   │   ├── QueryResultTest.java
+│                   │   ├── TestEdge.java
+│                   │   ├── TestNode.java
+│                   │   ├── TestPath.java
+│                   │   ├── TestQueryResult.java
+│                   │   ├── TestUtil.java
+│                   │   └── UtilTest.java
+│                   └── publictests/
+│                       ├── PublicExecutionPlanTest.java
+│                       ├── PublicGraphTest.java
+│                       ├── PublicQueryResultExtraTest.java
+│                       ├── PublicTestEdge.java
+│                       ├── PublicTestNode.java
+│                       ├── PublicTestPath.java
+│                       └── PublicTestQueryResult.java
+├── test_summary.json
+├── tests/
+│   ├── README.md
+│   ├── __init__.py
+│   ├── functional/
+│   │   ├── __init__.py
+│   │   └── test_all.py
+│   ├── unit/
+│   │   ├── __init__.py
+│   │   ├── test_edge.py
+│   │   ├── test_exceptions.py
+│   │   ├── test_execution_plan.py
+│   │   ├── test_graph.py
+│   │   ├── test_graph_extra.py
+│   │   ├── test_node.py
+│   │   ├── test_path.py
+│   │   ├── test_query_result.py
+│   │   ├── test_query_result_extra.py
+│   │   └── test_util.py
+│   └── utils/
+│       └── base.py
+└── tox.ini

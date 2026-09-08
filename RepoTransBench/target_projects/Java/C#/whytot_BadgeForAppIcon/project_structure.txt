@@ -1,0 +1,27 @@
+whytot_BadgeForAppIcon/
+├── src/
+│   └── BadgeForAppIcon/
+│       ├── BadgeForAppIcon.csproj
+│       ├── Program.cs
+│       └── Models/
+│           ├── GoogleModelImpl.cs
+│           ├── VIVOModelImpl.cs
+│           ├── XiaoMiModelImpl.cs
+│           └── Utils.cs
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── XiaoMiModelImplTests.cs
+│       ├── GoogleModelImplTests.cs
+│       ├── VIVOModelImplTests.cs
+│       └── UtilsTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── XiaoMiModelImplPublicTests.cs
+│   ├── GoogleModelImplPublicTests.cs
+│   ├── VIVOModelImplPublicTests.cs
+│   └── UtilsPublicTests.cs
+├── BadgeForAppIcon.sln
+├── run_tests.sh
+├── README.md
+└── test_translation_progress.json

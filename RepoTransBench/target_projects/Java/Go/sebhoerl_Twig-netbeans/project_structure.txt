@@ -1,0 +1,31 @@
+twigmodule/
+├── go.mod                    -- Go module definition
+├── README.md                 -- Project README and instructions
+├── main.go                   -- Source stub for testing (if needed)
+├── src/                      -- (Optional) Future source files placeholder
+├── tests/
+│   ├── testutil.go           -- Utility mocks/stubs for tests
+│   └── original/
+│       ├── twig_editorkit_test.go
+│       ├── twig_dataobject_test.go
+│       ├── twig_completionhandler_test.go
+│       ├── twig_structureitem_test.go
+│       ├── twig_structurescanner_test.go
+│       ├── twig_language_test.go
+│       ├── twig_parserresult_test.go
+│       ├── twig_parser_test.go
+│       ├── twig_formatter_test.go
+│       ├── twig_toptokenid_test.go
+│       └── app_test.go
+├── public_tests/
+│   ├── twig_dataobject_public_test.go
+│   ├── twig_editorkit_public_test.go
+│   ├── twig_completionhandler_public_test.go
+│   ├── twig_structurescanner_public_test.go
+│   ├── twig_structureitem_public_test.go
+│   ├── twig_language_public_test.go
+│   ├── twig_parserresult_public_test.go
+│   ├── twig_parser_public_test.go
+│   ├── twig_formatter_public_test.go
+│   ├── twig_toptokenid_public_test.go
+├── run_tests.sh              -- Main script to run all tests

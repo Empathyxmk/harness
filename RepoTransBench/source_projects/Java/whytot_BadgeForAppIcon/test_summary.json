@@ -1,0 +1,18 @@
+{
+  "project_name": "whytot_BadgeForAppIcon",
+  "language": "Java",
+  "coverage": {
+    "line": 95.7,
+    "branch": 80.0
+  },
+  "timestamp": "2025-06-23T12:46:22.004780",
+  "original_path": "/workspace/runnable_filter/Java/whytot_BadgeForAppIcon",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/whytot_BadgeForAppIcon",
+  "tests_path": [
+    "badges/src/test/java/com/tot/badges/UtilsTest.java",
+    "badges/src/test/java/com/tot/badges/XiaoMiModelImplTest.java",
+    "badges/src/test/java/com/tot/badges/GoogleModelImplTest.java",
+    "badges/src/test/java/com/tot/badges/VIVOModelImplTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

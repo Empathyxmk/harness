@@ -1,0 +1,49 @@
+wbolster-jsonlines-java/
+├── pom.xml                        # Maven build config and dependencies (JUnit, Gson)
+├── run_tests.sh                   # One-click test execution script
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── jsonlines/
+│                       ├── Error.java
+│                       ├── InvalidLineError.java
+│                       ├── Reader.java
+│                       ├── Writer.java
+│                       ├── ReaderWriterBase.java
+│                       └── JsonlinesUtil.java
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── jsonlines/
+│                       └── Jsonlines.java
+├── src/
+│   └── test/
+│       └── java/
+│           └── tests/
+│               └── original/
+│                   └── JsonlinesExtraTest.java      # Full translation of tests/test_jsonlines_extra.py
+│               └── public/
+│                   └── [ALL_PUBLIC_TESTS_HERE]      # See deliverable for other translated files
+├── README.md
+└── project_structure.txt
+
+Directory explanations:
+- pom.xml: Maven build configuration with dependencies (JUnit5 for testing, Gson for JSON parsing).
+- run_tests.sh: Minimal script to run all tests (`mvn clean test`).
+- src/main/java/.../jsonlines/: Minimal Java "library" to allow test compilation and execution.
+  - Contains Error.java, InvalidLineError.java, Reader.java, Writer.java, ReaderWriterBase.java, JsonlinesUtil.java: basic skeletons & minimal logic, enough for tests.
+- src/test/java/tests/original/: Translated original Python tests to Java using JUnit 5.
+- src/test/java/tests/public/: Translated public Python tests to Java using JUnit 5 (TO BE COMPLETED as per full solution).
+- README.md: Setup/build/test instructions.
+- project_structure.txt: This file, overview of layout and purpose.
+
+Setup & Testing:
+1. Ensure JDK 11+ and Maven are installed.
+2. Run `chmod +x run_tests.sh`.
+3. Execute all tests with `./run_tests.sh`.
+
+Other test files from Python source (such as test_jsonlines.py, test_error_conditions.py, test_typing.py, and all public_tests) will appear as separate files in the corresponding `tests/original/` and `tests/public/` Java test package folders, all following the naming convention `*Test.java` and using JUnit 5.

@@ -1,0 +1,39 @@
+Project Structure:
+
+.
+├── src/
+│   ├── linkedlist.py               # Python implementation of list and operations (from list.c/list.h)
+│
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_list.py            # Original test cases from src/test_list.c
+│
+├── public_tests/
+│   ├── __init__.py
+│   └── test_list_public.py         # Public test cases from src/test_list_public.c
+│
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Simple script for running all tests
+└── project_structure.txt           # This project structure and explanation file
+
+Directory explanations:
+- src/: Source code implementation of the linked list and its methods.
+- tests/original/: Original unit tests (faithfully translated from test_list.c); for maintainers/internal use.
+- public_tests/: Public test cases (translated from test_list_public.c); for students or external verification.
+- requirements.txt: Specifies dependency (pytest) for running tests.
+- run_tests.sh: Minimal script to run all tests using pytest.
+
+Setup & Testing Instructions:
+
+1. Install Python 3 and pip if not already installed.
+2. (Optional but recommended) Create a virtual environment:
+      python3 -m venv venv
+      source venv/bin/activate
+3. Install dependencies:
+      pip install -r requirements.txt
+4. Run all tests:
+      ./run_tests.sh
+
+All tests in tests/ and public_tests/ will be automatically discovered and run by pytest.

@@ -1,0 +1,17 @@
+{
+  "project_name": "brigand_react-mixin",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 94.93,
+    "branch": 82.5
+  },
+  "timestamp": "2025-06-19T10:02:02.184337",
+  "original_path": "/workspace/runnable_filter/JavaScript/brigand_react-mixin",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/brigand_react-mixin",
+  "tests_path": [
+    "test/toUnsafe.test.js",
+    "test/toUnsafe.extra.test.js",
+    "test/index.unit.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

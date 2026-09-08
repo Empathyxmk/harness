@@ -1,0 +1,45 @@
+project_root/
+├── requirements.txt                  # Python project/package dependencies
+├── run_tests.sh                      # Test runner script (one-click for all tests)
+├── project_structure.txt             # This file: describes project directory layout and content
+├── tests/
+│   ├── conftest.py                   # Test configuration, fixtures, and NGINX orchestration helpers
+│   └── original/
+│       ├── test_batch_exporter.py    # Translation of original C++ batch_exporter test
+│       ├── test_trace_context.py     # Translation of original C++ trace_context test
+│       └── test_otel.py              # Main original Python test suite for otel/NGINX module
+├── public_tests/
+│   ├── test_otel_public.py           # Translated public Python integration test (public-data variant)
+│   ├── test_batch_exporter_public.py # Public version of batch exporter test logic & data
+│   └── test_trace_context_public.py  # Public version of trace context logic & edge cases
+└── (other files...)
+
+Directory Explanation:
+
+- requirements.txt        : All Python project dependencies for running tests (pytest, niquests, etc.)
+- run_tests.sh            : One-click test runner, simply run `./run_tests.sh` to run all tests
+- project_structure.txt   : This file, explains project tree for quick developer onboarding
+- tests/                  : Main test suite folder
+    - conftest.py         : Shared pytest fixtures and helpers for integration/E2E tests
+    - original/           : All *original* test cases (translated from C++ and Python originals)
+        - test_batch_exporter.py   : Unit test for batch exporter (dummy/sanity test)
+        - test_trace_context.py    : Unit test for trace context (dummy/sanity test)
+        - test_otel.py             : Main Python integration suite for otel NGINX module
+- public_tests/           : All *public* test cases (open test scenarios with public data/inputs)
+    - test_otel_public.py         : Public variant of otel integration test (different inputs, config, paths)
+    - test_batch_exporter_public.py: Public batch exporter scenario (different batch sizes/content)
+    - test_trace_context_public.py : Public trace context scenario (different ids, malformed edge case, etc.)
+
+Setup & Running Tests:
+----------------------
+1. Ensure all dependencies are installed:
+       pip install -r requirements.txt
+
+2. To run ALL tests (original and public):
+       ./run_tests.sh
+
+3. To run ONLY original (private) tests:
+       pytest tests/original/
+
+4. To run ONLY public tests:
+       pytest public_tests/

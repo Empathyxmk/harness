@@ -1,0 +1,16 @@
+colorout_python/
+├── README.md               # Project documentation
+├── requirements.txt        # Python dependencies
+├── run_tests.sh            # Test execution script
+├── src/
+│   └── colorout/           # Source package
+│       ├── __init__.py     # Package initialization
+│       └── core.py         # Core functionality
+├── tests/
+│   └── original/           # Original tests from C/R
+│       ├── __init__.py     # Package initialization
+│       ├── test_colorout.py        # Translated from src/test_colorout.c
+│       └── test_is_colorout.py     # Translated from tests/test-isColorOut.R
+└── public_tests/           # Public tests
+    ├── __init__.py         # Package initialization
+    └── test_colorout_public.py     # Translated from src/test_colorout_public.c

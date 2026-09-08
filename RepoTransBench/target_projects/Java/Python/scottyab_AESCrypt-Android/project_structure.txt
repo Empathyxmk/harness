@@ -1,0 +1,39 @@
+project_root/
+├── src/
+│   └── aescrypt/
+│       └── aescrypt.py           # Python implementation of AESCrypt (test harness)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_application.py           # Translated from ApplicationTest.java
+│       ├── test_aescrypt_reflection.py   # Translated from AESCryptReflectionTest.java
+│       ├── test_application_stub.py      # Translated from ApplicationStubTest.java
+│       ├── test_aescrypt.py              # Translated from AESCryptTest.java
+│       └── test_aescrypt_debug.py        # Translated from AESCryptDebugTest.java
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_application_public.py         # Translated from ApplicationPublicTest.java
+│   ├── test_aescrypt_public.py            # Translated from AESCryptPublicTest.java
+│   ├── test_aescrypt_debug_public.py      # Translated from AESCryptDebugPublicTest.java
+│   ├── test_application_stub_public.py    # Translated from ApplicationStubPublicTest.java
+│   └── test_aescrypt_reflection_public.py # Translated from AESCryptReflectionPublicTest.java
+├── requirements.txt                # Python dependencies for project and for testing
+├── run_tests.sh                    # Script for running all tests (one-click)
+└── project_structure.txt           # This file; overview of structure
+
+Explanations:
+- src/aescrypt/aescrypt.py: Minimal implementation of AESCrypt to support tests.
+- tests/original/: All original (non-public) test translations, matching the Java originals.
+- public_tests/: All public test translations from the provided Java public tests.
+- requirements.txt: Declares dependencies; install with `pip install -r requirements.txt`.
+- run_tests.sh: Run all tests with a single command (`./run_tests.sh`). Requires pytest.
+- project_structure.txt: This documentation.
+
+How to set up and test:
+1. Install dependencies:
+   pip install -r requirements.txt
+2. Run all tests:
+   ./run_tests.sh
+
+You should see all tests execute with results matching the Java originals and public tests.

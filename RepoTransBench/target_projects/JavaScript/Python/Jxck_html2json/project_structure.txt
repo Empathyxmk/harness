@@ -1,0 +1,30 @@
+project_root/
+├── requirements.txt
+│   - Lists Python dependencies (pytest for testing)
+├── run_tests.sh
+│   - Simple test script; runs all tests via 'pytest'
+├── src/
+│   └── html2json.py
+│       - Placeholder for core html2json/json2html functions (implement here)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_html2json_extra.py       # Translation of original: html2json-extra.test.js
+│       └── test_html2json_basic.py       # Translation of original: test.js
+│
+├── public_tests/
+│   ├── __init__.py
+│   └── test_html2json_extra_public.py    # Translation of: html2json-extra.public.test.js
+│
+├── project_structure.txt
+│   - This file (overview and explanation)
+│
+└── [README.md]
+    - (add documentation or usage instructions as needed)
+
+Notes:
+- Place all your logic for html2json/json2html in src/html2json.py
+- tests/original/ contains all original (private/internal) test cases
+- public_tests/ contains all public test cases
+- All tests run with ./run_tests.sh

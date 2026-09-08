@@ -1,0 +1,51 @@
+C# Project Structure for jhalterman_typetools
+=============================================
+
+.
+├── src/
+│   └── TypeTools/
+│       ├── TypeResolver.cs
+│       ├── ReifiedParameterizedType.cs
+│       └── (Add library implementation files here)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── AbstractTypeResolverTest.cs
+│       ├── ReifiedParameterizedTypeTest.cs
+│       ├── TypeResolverTest.cs
+│       ├── functional/
+│       │   ├── InnerClassTest.cs
+│       │   └── LambdaTest.cs
+│       ├── TestUtilities.cs
+│       └── (Other helpers)
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── ReifiedParameterizedTypePublicTest.cs
+│   ├── TypeResolverPublicTest.cs
+│   └── functional/
+│       ├── InnerClassPublicTest.cs
+│       └── LambdaPublicTest.cs
+├── jhalterman_typetools.sln
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+Directory/Files:
+----------------
+- src/TypeTools/           -- Library source code (to be implemented or referenced)
+- tests/original/          -- Translated private/internal tests
+- public_tests/            -- Translated public/visible tests
+- jhalterman_typetools.sln -- .NET Solution file tying it all together
+- run_tests.sh             -- Simple shell script to execute all test projects
+- README.md                -- Project documentation and test instructions
+- project_structure.txt    -- This file: overview of all folders and their purposes
+
+Test Projects:
+--------------
+- Each of 'tests/original' and 'public_tests' is a self-contained test project referencing the main src/TypeTools/ library.
+
+How to Run:
+-----------
+./run_tests.sh   -- Runs all xUnit tests in both original and public test projects.
+
+You may add your solution into src/TypeTools/ for the tests to compile.

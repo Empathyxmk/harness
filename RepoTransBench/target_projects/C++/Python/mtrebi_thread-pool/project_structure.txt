@@ -1,0 +1,50 @@
+project_root/
+├── src/
+│   └── threadpool/
+│       ├── __init__.py
+│       ├── safequeue.py         # Python translation of SafeQueue.h
+│       └── threadpool.py        # Python translation of ThreadPool.h
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_safequeue.py    # Python translation of test_safequeue.cpp
+│       └── test_threadpool.py   # Python translation of test_threadpool.cpp
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_safequeue_public.py      # Python translation of test_safequeue_public.cpp
+│   └── test_threadpool_public.py     # Python translation of test_threadpool_public.cpp
+├── requirements.txt            # Python dependencies (only pytest needed)
+├── run_tests.sh                # Simple script to run all tests via pytest
+├── README.md                   # Project documentation and usage
+└── project_structure.txt       # (this file) Explanation and layout of structure
+
+# Directory Explanations and Setup Instructions
+
+src/threadpool/:
+    - Contains all implementation code for the thread pool and safe queue classes.
+
+tests/original/:
+    - Contains all original (non-public) translated test cases from the C++ project.
+    - Each test corresponds to an original test file.
+
+public_tests/:
+    - Contains all public test cases generated (mirroring public C++ tests).
+    - Can be run independently or together with original tests.
+
+requirements.txt:
+    - Python dependency list. Install via `pip install -r requirements.txt`.
+
+run_tests.sh:
+    - One-click script to run ALL tests. Usage: `./run_tests.sh`
+    - Runs pytest from project root to discover tests in both `tests/` and `public_tests/`.
+
+Setup and Usage:
+    1. Install Python 3 (>=3.6 recommended) and pip.
+    2. Run: `pip install -r requirements.txt`
+    3. Execute tests: `./run_tests.sh`
+
+Notes:
+    - All test logic is fully implemented with assertions; no placeholders or incomplete code.
+    - You may run original and public tests separately (e.g. `pytest tests/original/` or `pytest public_tests/`).
+    - Each Python test faithfully mirrors its C++ counterpart's test data and logic.

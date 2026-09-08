@@ -1,0 +1,25 @@
+project_root/
+├── src/
+│   ├── main.cpp
+│   └── lib/
+│       ├── module.h
+│       └── module.cpp
+├── tests/
+│   ├── test_api_communicator.cpp
+│   ├── test_api_structure.cpp
+│   ├── test_base_api.cpp
+│   ├── test_sentence.cpp
+│   ├── test_resource.cpp
+├── public_tests/
+│   ├── test_public_api_communicator.cpp
+│   ├── test_public_api_structure.cpp
+│   ├── test_public_base_api.cpp
+│   ├── test_public_login_router_os_api.cpp
+│   ├── test_public_query.cpp
+│   ├── test_public_resource.cpp
+│   ├── test_public_sentence.cpp
+│   ├── test_public_socket.cpp
+├── include/
+├── CMakeLists.txt
+├── run_tests.sh
+├── README.md

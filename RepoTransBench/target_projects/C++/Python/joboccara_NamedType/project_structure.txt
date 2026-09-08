@@ -1,0 +1,16 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── src/
+│   └── named_type/
+│       ├── __init__.py
+│       └── named_type.py      # Stub for NamedType Python implementation
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_tests.py      # Translation of test/tests.cpp
+├── public_tests/
+│   ├── __init__.py
+│   └── test_tests_public.py   # Translation of test/tests_public.cpp

@@ -1,0 +1,12 @@
+wesbarnett_snap_pac/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── test_script.rs
+│       └── test_snap_pac.rs
+├── public_tests/
+│   ├── test_public_script.rs
+│   └── test_public_snap_pac.rs

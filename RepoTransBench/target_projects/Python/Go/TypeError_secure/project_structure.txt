@@ -1,0 +1,28 @@
+TypeError_secure/
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── secure/                   # placeholder for package implementation
+│   └── (to be implemented)
+├── tests/
+│   └── original/
+│       ├── test_secure_api_minimal_test.go
+│       ├── test_secure_test.go
+│       ├── test_secure_protocols_test.go
+│       ├── test_x_frame_options_test.go
+│       ├── test_permissions_policy_test.go
+│       ├── test_server_test.go
+│       ├── test_strict_transport_security_test.go
+│       ├── test_cache_control_test.go
+│       ├── test_cross_origin_opener_policy_test.go
+│       ├── test_referrer_policy_test.go
+│       ├── test_custom_header_test.go
+│       ├── test_content_security_policy_test.go
+│       ├── test_x_content_type_options_test.go
+│
+├── public_tests/
+│   ├── test_secure_protocols_public_test.go
+│   ├── test_secure_api_minimal_public_test.go
+│   ├── test_secure_public_test.go
+│
+└── test_translation_progress.json

@@ -1,0 +1,34 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   └── skiplist.py
+│       - Skip List implementation in Python.
+├── tests/
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_skiplist.py           # Unit tests for basic skiplist operations (insert, search, delete, etc.)
+│   │   └── test_stress.py             # Multi-threaded stress test for original suite
+│   └── __init__.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_skiplist_public.py       # Public variant unit tests (different data)
+│   └── test_stress_public.py         # Public multi-threaded (stress) test
+├── requirements.txt                  # Python dependency specification (includes pytest)
+├── run_tests.sh                      # One-click test execution script
+├── README.md                         # Project documentation & usage
+├── project_structure.txt             # (This file) Structure and directory explanations
+
+# Directory/Files Legend:
+
+src/:              Core skiplist implementation.
+tests/original/:   Original (private/internal) C++ test suite translated to Python.
+public_tests/:     Public C++ test suite translated to Python.
+requirements.txt:  PyPI dependencies (pytest for test discovery).
+run_tests.sh:      Shell script to execute *all* tests with one click.
+README.md:         Documentation, quickstart, and usage instructions.
+
+How to run:
+1. pip install -r requirements.txt
+2. ./run_tests.sh
+
+All tests (original & public) will execute together, with success/failure reported by pytest.

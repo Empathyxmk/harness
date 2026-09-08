@@ -1,0 +1,35 @@
+project_root/
+├── go.mod                   # Go module definition and dependency file
+├── README.md                # Project overview, test running and directory structure
+├── run_tests.sh             # Simple test runner script (executes all Go tests)
+├── project_structure.txt    # This structure description and explanations
+├── tests/
+│   ├── original/                # Original (private/internal) test cases translated from Java
+│   │   ├── message_test.go
+│   │   ├── shard_supplier_test.go
+│   │   ├── test_message_test.go
+│   │   ├── consistent_aws_dyno_shard_supplier_test.go
+│   │   ├── redis_dyno_queue_test.go
+│   │   ├── default_sharding_strategy_test.go
+│   │   ├── base_queue_tests_test.go
+│   │   ├── dyno_shard_supplier_test.go
+│   │   ├── custom_sharding_strategy_test.go
+│   │   ├── jedis_tests_test.go
+│   │   ├── redis_dyno_queue_v2_test.go
+│   │   ├── multi_queue_tests_test.go
+│   │   ├── dyno_jedis_tests_test.go
+│   │   ├── benchmark_tests_jedis_test.go
+│   │   ├── benchmark_tests_no_pipelines_test.go
+│   │   ├── benchmark_tests_dyno_jedis_test.go
+│   │   └── ... (additional private/original test files)
+│   └── testutil.go              # Shared test utilities and mock types
+├── public_tests/
+│   ├── message_public_test.go
+│   ├── shard_supplier_public_test.go
+│   ├── consistent_aws_dyno_shard_supplier_public_test.go
+│   ├── redis_dyno_queue_public_test.go
+│   ├── default_sharding_strategy_public_test.go
+│   ├── dyno_shard_supplier_public_test.go
+│   ├── custom_sharding_strategy_public_test.go
+│   ├── redis_dyno_queue_v2_public_test.go
+│   └── ... (all public *PublicTest Java test cases)

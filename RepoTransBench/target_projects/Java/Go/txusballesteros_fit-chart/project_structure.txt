@@ -1,0 +1,36 @@
+fitchart-go/
+├── fitchart/
+│   ├── animation_mode.go       # AnimationMode enum
+│   ├── fit_chart_value.go      # FitChartValue struct
+│   ├── renderer.go             # Renderer interface
+│   ├── linear_value_renderer.go # LinearValueRenderer implementation
+│   ├── overdraw_value_renderer.go # OverdrawValueRenderer implementation
+│   ├── base_renderer.go        # BaseRenderer base class
+│   └── renderer_factory.go     # RendererFactory logic
+├── tests/
+│   └── original/
+│       ├── base_renderer_test.go
+│       ├── fake_classes_for_test.go
+│       ├── linear_value_renderer_test.go
+│       ├── overdraw_value_renderer_test.go
+│       └── renderer_factory_test.go
+├── public_tests/
+│   ├── base_renderer_public_test.go
+│   ├── fake_classes_for_public_test.go
+│   ├── linear_value_renderer_public_test.go
+│   ├── overdraw_value_renderer_public_test.go
+│   └── renderer_factory_public_test.go
+├── go.mod
+├── README.md
+├── run_tests.sh
+└── project_structure.txt
+
+Key:
+- fitchart/: Core implementation (minimal for allowing tests; can be expanded)
+- tests/original/: Translated original Java tests as Go tests
+- public_tests/: Translated public Java tests as Go tests
+- run_tests.sh: Script to run all tests in a single command
+- project_structure.txt: This outline
+
+Hint:
+All core/package code is minimally implemented only as much as needed for the tests.

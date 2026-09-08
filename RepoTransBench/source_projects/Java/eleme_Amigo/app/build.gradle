@@ -1,0 +1,146 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.ele.amigo'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "me.ele.amigo.app"
+        minSdkVersion 7
+        targetSdkVersion 22
+        versionCode 11
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    signingConfigs {
+        release {
+            storeFile file("${project.projectDir}/debug.keystore")
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+    }
+    buildTypes {
+        release {
+            debuggable true
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        host {
+            debuggable true
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        patch {
+            debuggable true
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // test split apk
+    splits {
+
+        // Configures screen ABI split settings
+        abi {
+
+            // Enable ABI APK splits
+            enable false
+
+            // By default all ABIs are included, so use reset() and include to specify that we only
+            // want APKs for x86, armeabi-v7a, and mips
+
+            // Resets the list of ABIs that Gradle should create APKs for to none
+            reset()
+
+            // Specifies a list of ABIs that Gradle should create APKs for
+            include "armeabi", "x86"
+        }
+    }
+
+    lintOptions {
+        ignoreWarnings true
+    }
+}
+
+dependencies {
+    compile project(":amigo-lib")
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+
+//    // test multidex
+//    compile group: 'com.google.guava', name: 'guava', version: '19.0'
+//    compile "org.scala-lang:scala-library:2.11.7"
+}
+
+amigo {
+    disable false
+    autoDisableInInstantRunMode true
+}
+
+
+def getPkg() {
+    return android.defaultConfig.applicationId
+}
+
+def getHostApk() {
+    return "app/build/outputs/apk/app-host.apk"
+}
+
+def getPatchApk() {
+    return "app/build/outputs/apk/app-patch.apk"
+}
+
+def getPatchApkName() {
+    return 'amigo_patch.apk'
+}
+
+def inheritIO(final InputStream src, final PrintStream dest) {
+    new Thread(new Runnable() {
+        public void run() {
+            Scanner sc = new Scanner(src);
+            while (sc.hasNextLine()) {
+                dest.println(sc.nextLine());
+            }
+        }
+    }).start();
+}
+
+def runCmd(String cmd) {
+    println "start cmd: ${cmd}"
+    Process p = cmd.execute()
+    inheritIO(p.getInputStream(), System.out);
+    inheritIO(p.getErrorStream(), System.err);
+    p.waitFor()
+    println "finish cmd: ${cmd}"
+}
+
+def launch() {
+    runCmd("adb shell monkey -p ${getPkg()} -c android.intent.category.LAUNCHER 1")
+}
+
+def deletePatchApk() {
+    runCmd("adb shell rm -rf /sdcard/${getPatchApkName()}")
+}
+
+task runHost(dependsOn: "assembleHost") << {
+    deletePatchApk()
+    runCmd("adb uninstall ${getPkg()}")
+    runCmd("adb install -r ${getHostApk()}")
+    launch()
+}
+
+task preparePatch(dependsOn: "assemblePatch") << {
+    deletePatchApk()
+    runCmd("adb push ${getPatchApk()} /sdcard/${getPatchApkName()}")
+}

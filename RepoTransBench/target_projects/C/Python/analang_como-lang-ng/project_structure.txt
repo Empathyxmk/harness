@@ -1,0 +1,24 @@
+project_root/
+├── src/
+│   └── como_lang/
+│       ├── __init__.py           # Makes 'como_lang' a Python package
+│       └── mocks.py              # Contains Python mock implementations of C structs/functions
+├── tests/
+│   ├── __init__.py               # Makes 'tests' a Python package
+│   └── original/
+│       ├── __init__.py           # Makes 'original' a Python subpackage
+│       ├── test_ast.py           # Translated from test/test_como_ast.c
+│       ├── test_executor.py      # Translated from test/test_como_executor.c
+│       ├── test_io.py            # Translated from test/test_como_io.c
+│       ├── test_opcode.py        # Translated from test/test_como_opcode.c
+│       └── test_stack.py         # Translated from test/test_como_stack.c
+├── public_tests/
+│   ├── __init__.py               # Makes 'public_tests' a Python package
+│   ├── test_ast_public.py        # Translated from test/test_como_ast_public.c
+│   ├── test_executor_public.py   # Translated from test/test_como_executor_public.c
+│   ├── test_io_public.py         # Translated from test/test_como_io_public.c
+│   ├── test_opcode_public.py     # Translated from test/test_como_opcode_public.c
+│   └── test_stack_public.py      # Translated from test/test_como_stack_public.c
+├── requirements.txt              # Lists Python dependencies (e.g., pytest)
+├── run_tests.sh                  # Script to execute all tests using pytest
+└── project_structure.txt         # This document describing the project structure

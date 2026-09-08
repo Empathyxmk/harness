@@ -1,0 +1,9 @@
+Name                                Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------------------------
+json2html/__init__.py                   3      0      0      0   100%
+json2html/jsonconv.py                  83      5     38      4    93%   26-28, 56, 131, 134->136
+test/__init__.py                        3      0      0      0   100%
+test/test_json2html_additional.py      36      0      0      0   100%
+test/test_json2html_core.py            39      0      0      0   100%
+-------------------------------------------------------------------------------
+TOTAL                                 164      5     38      4    96%

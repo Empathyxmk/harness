@@ -1,0 +1,65 @@
+{
+  "project_name": "andreroggeri_pynubank",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:14:39.732567",
+  "original_path": "/workspace/verified_repos_v2/Python/andreroggeri_pynubank",
+  "public_test_result_path": "/workspace/public_test_results/Python/andreroggeri_pynubank",
+  "original_tests": {
+    "test_files": [
+      "tests/test_auth_mode_and_exception.py",
+      "tests/test_certificate_generator.py",
+      "tests/test_mock_http_client.py",
+      "tests/test_cli.py",
+      "tests/test_setup_py_functional.py",
+      "tests/test_http_client.py",
+      "tests/test_init_is_alive.py",
+      "tests/test_discovery.py",
+      "tests/test_parsing.py",
+      "tests/test_nubank_client.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 10,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_auth_mode_and_exception.py",
+      "public_tests/test_public_certificate_generator.py",
+      "public_tests/test_public_mock_http_client.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_cli.py",
+      "public_tests/test_public_setup_py_functional.py",
+      "public_tests/test_public_http_client.py",
+      "public_tests/test_public_init_is_alive.py",
+      "public_tests/test_public_discovery.py",
+      "public_tests/test_public_parsing.py",
+      "public_tests/test_public_nubank_client.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 11,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_auth_mode_and_exception.py",
+    "public_tests/test_public_certificate_generator.py",
+    "public_tests/test_public_mock_http_client.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_cli.py",
+    "public_tests/test_public_setup_py_functional.py",
+    "public_tests/test_public_http_client.py",
+    "public_tests/test_public_init_is_alive.py",
+    "public_tests/test_public_discovery.py",
+    "public_tests/test_public_parsing.py",
+    "public_tests/test_public_nubank_client.py"
+  ]
+}

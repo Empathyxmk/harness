@@ -1,0 +1,34 @@
+project_root/
+├── LICENSE
+├── NEWS
+├── README.md
+├── coverage.xml
+├── go.mod
+├── htmlcov/
+├── tests/
+│   ├── conftest.go
+│   ├── testing.go
+│   ├── raw_text_tests_test.go
+│   ├── conversion_tests_test.go
+│   ├── options_tests_test.go
+│   ├── test_results_module_test.go
+│   ├── writers/
+│   │   └── markdown_tests_test.go
+│   ├── styles/
+│   │   ├── document_matcher_tests_test.go
+│   │   └── parser/
+│   │       ├── token_parser_tests_test.go
+│   │       ├── document_matcher_parser_tests_test.go
+│   │       ├── style_mapping_parser_tests_test.go
+│   │       ├── html_path_parser_tests_test.go
+│   │       └── tokeniser_tests_test.go
+│   ├── html/
+│   │   ├── strip_empty_tests_test.go
+│   │   └── collapse_tests_test.go
+│   └── docx/
+│       ├── content_types_xml_tests_test.go
+│       ├── docx_tests_test.go
+│       ├── relationships_xml_tests_test.go
+│       ├── styles_xml_tests_test.go
+│       └── style_map_tests_test.go
+└── run_tests.sh

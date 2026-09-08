@@ -1,0 +1,16 @@
+{
+  "project_name": "benawad_gen-env-types",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 89.65
+  },
+  "timestamp": "2025-06-23T10:32:54.470052",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/benawad_gen-env-types",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/benawad_gen-env-types",
+  "tests_path": [
+    "gen-env-types.test.js",
+    "parse.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

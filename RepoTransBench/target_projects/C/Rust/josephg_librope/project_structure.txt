@@ -1,0 +1,59 @@
+josephg_librope/
+├── Cargo.toml
+├── LICENSE
+├── Makefile
+├── README.md
+├── afl/
+│   ├── README.md
+│   ├── afl_harness.c
+│   ├── afl_testcases/
+│   │   └── simple
+│   └── run_afl
+├── coverage.log
+├── librope.a
+├── librope.sln
+├── librope.vcxproj
+├── librope.xcodeproj/
+│   └── project.pbxproj
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── mod.rs
+│   ├── test_rope_additional_public.rs
+│   └── tests_public.rs
+├── rope.c
+├── rope.h
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   └── lib.rs
+├── test/
+│   ├── benchmark.c
+│   ├── rope.h
+│   ├── slowstring.c
+│   ├── slowstring.h
+│   ├── test_rope_additional.c
+│   ├── test_rope_additional_public.c
+│   ├── tests.c
+│   ├── tests.h
+│   └── tests_public.c
+├── test_rope_additional
+├── test_rope_additional_public
+├── test_rope_additional_public-rope.gcda
+├── test_rope_additional_public-rope.gcno
+├── test_rope_additional_public-test_rope_additional_public.gcda
+├── test_rope_additional_public-test_rope_additional_public.gcno
+├── test_summary.json
+├── test_translation_progress.json
+├── tests/
+│   └── original/
+│       ├── mod.rs
+│       ├── test_rope_additional.rs
+│       └── tests.rs
+├── tests_public
+├── tests_public-rope.gcda
+├── tests_public-rope.gcno
+├── tests_public-slowstring.gcda
+├── tests_public-slowstring.gcno
+├── tests_public-tests_public.gcda
+└── tests_public-tests_public.gcno

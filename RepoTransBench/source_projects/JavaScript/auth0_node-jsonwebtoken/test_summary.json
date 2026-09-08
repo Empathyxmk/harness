@@ -1,0 +1,25 @@
+{
+  "project_name": "auth0_node-jsonwebtoken",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 89.34,
+    "branch": 84.53
+  },
+  "timestamp": "2025-06-19T09:57:00.440590",
+  "original_path": "/workspace/runnable_filter/JavaScript/auth0_node-jsonwebtoken",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/auth0_node-jsonwebtoken",
+  "tests_path": [
+    "test/claim-aud.test.js",
+    "test/claim-exp.test.js",
+    "test/claim-iat.test.js",
+    "test/claim-iss.test.js",
+    "test/claim-jti.test.js",
+    "test/claim-nbf.test.js",
+    "test/header-kid.test.js",
+    "test/option-complete.test.js",
+    "test/option-maxAge.test.js",
+    "test/option-nonce.test.js",
+    "test/sign-verify.additional.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

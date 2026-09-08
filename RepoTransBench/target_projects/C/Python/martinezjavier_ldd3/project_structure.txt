@@ -1,0 +1,21 @@
+project_root/
+├── src/                                  # Contains the main source code of the project.
+│   └── martinezjavier_ldd3/              # The main Python package for the module.
+│       ├── __init__.py                   # Makes 'martinezjavier_ldd3' a Python package.
+│       └── example_module.py             # Translated C 'example_module.c' into Python functions.
+├── tests/                                # Directory for original test cases.
+│   ├── __init__.py                       # Makes 'tests' a Python package.
+│   └── original/                         # Subdirectory for original test cases.
+│       ├── __init__.py                   # Makes 'original' a Python package.
+│       └── test_example_module.py        # Translated 'test_example_module.c' using pytest.
+├── public_tests/                         # Directory for public test cases.
+│   ├── __init__.py                       # Makes 'public_tests' a Python package.
+│   └── test_example_module_public.py     # Translated 'test_example_module_public.c' using pytest.
+├── requirements.txt                      # Lists Python dependencies (e.g., pytest).
+├── run_tests.sh                          # A bash script to run all tests.
+└── project_structure.txt                 # This document describing the project structure.
+
+To set up and run the tests:
+1. Navigate to the project_root directory.
+2. Install Python dependencies: `pip install -r requirements.txt` (or simply run `./run_tests.sh`, which includes this step).
+3. Run all tests: `./run_tests.sh`

@@ -1,0 +1,21 @@
+tusenai_mv2d/
+├── go.mod
+├── main.go                   # (optional/main package entrypoint if needed)
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── configs_exp_attributes_test.go
+│   │   ├── configs_data_py_test.go
+│   │   ├── configs_exp_py_test.go
+│   │   ├── configs_data_full_coverage_test.go
+│   │   └── torchserver_test.go
+│   └── testutil.go
+├── public_tests/
+│   ├── public_configs_exp_py_test.go
+│   ├── public_configs_exp_attributes_test.go
+│   ├── public_torchserver_noop_test.go
+│   ├── public_configs_data_full_coverage_test.go
+│   ├── public_configs_data_py_test.go
+│   └── testutil.go
+└── README.md

@@ -1,0 +1,30 @@
+AllenDowney_ThinkJavaCode/
+├── go.mod
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   └── original/
+│       ├── series_test.go
+│       ├── series_fibonacci_edge_test.go
+│       ├── convert_test.go
+│       ├── hello_goodbye_test.go
+│       ├── time_test.go
+│       ├── time_client_test.go
+│       ├── time_additional_test.go
+│       ├── ch13_test.go
+│       └── ch14_test.go
+├── public_tests/
+│   ├── series_public_test.go
+│   ├── series_fibonacci_edge_public_test.go
+│   ├── convert_public_test.go
+│   ├── hello_goodbye_public_test.go
+│   ├── time_public_test.go
+│   ├── time_client_public_test.go
+│   ├── time_additional_public_test.go
+│   ├── ch13_public_test.go
+│   └── ch14_public_test.go
+└── README.md
+
+Notes:
+- Original test files are in tests/original/
+- Public test files are in public_tests/

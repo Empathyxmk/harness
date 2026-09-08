@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "ask-sdk-core": "^2.14.0",
+    "ask-sdk-dynamodb-persistence-adapter": "^2.14.0",
+    "aws-sdk": "^2.1692.0",
+    "i18next": "^25.2.1",
+    "i18next-sprintf-postprocessor": "^0.2.2"
+  }
+}

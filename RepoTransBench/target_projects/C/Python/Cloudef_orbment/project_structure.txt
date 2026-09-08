@@ -1,0 +1,41 @@
+project_root/
+├── src/
+│   ├── __init__.py             # Empty, marks src as a package
+│   ├── parse_prefix.py         # parse_prefix logic for testing
+│   └── validate_key.py         # validate_key logic for testing
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_parse_prefix.py
+│       ├── test_validate_key.py
+│       ├── test_configuration.py
+│       ├── test_keybind.py
+│       └── test_crappy_borders.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_parse_prefix_public.py
+│   └── test_validate_key_public.py
+├── requirements.txt            # All dependencies
+├── run_tests.sh                # Simple script to run all tests via pytest
+├── README.md                   # Project documentation
+└── project_structure.txt       # This structure overview and dir explanations
+
+# Directory/Files Explanation:
+
+src/: Implementation of logic needed for tests (parse_prefix, validate_key, etc.)
+
+tests/original/: Private/internal test cases (translated from original C tests),
+  - Includes basic dummy test modules for plugin stubs.
+
+public_tests/: Publicly-visible test cases (translated from public C sample tests).
+
+requirements.txt: Declares that pytest is required.
+
+run_tests.sh: Runs all tests in one command.
+
+README.md: Usage and setup instructions.
+
+project_structure.txt: This project structure reference and description.
+
+__init__.py: Present to mark Python packages.

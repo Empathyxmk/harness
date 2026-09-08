@@ -1,0 +1,50 @@
+Project Structure for Go Translation of NewBeginning6_Subdir-vul-find
+
+.
+├── go.mod                   # Go module definition file
+├── run_tests.sh             # One-click script to run all tests (original & public)
+├── org/
+│   └── example/
+│       ├── checktarget.go   # Go implementations of original 'CheckTarget'
+│       ├── defaulttext.go   # Go implementation of 'DefaultText'
+│       ├── defaulttextarea.go # Go implementation of 'DefaultTextarea'
+│       ├── gui.go           # Go implementation for Gui (dummy)
+│       ├── http.go          # Go implementation for Http utilities (dummy)
+│       ├── main.go          # Go implementation for Main (dummy)
+│       ├── re.go            # Go implementation of regex helpers
+│       └── txtfile.go       # Go implementation of text file helpers
+├── tests/
+│   ├── testutil.go          # Shared test utilities (currently unused)
+│   └── original/
+│       ├── checktarget_test.go     # Original test for CheckTarget
+│       ├── defaulttext_test.go     # Original test for DefaultText
+│       ├── defaulttextarea_test.go # Original test for DefaultTextarea
+│       ├── guismoke_test.go        # Original test for GUI smoke
+│       ├── http_test.go            # Original test for Http
+│       ├── mainsmoke_test.go       # Original test for Main smoke
+│       ├── re_test.go              # Original test for Re
+│       └── txtfile_test.go         # Original test for TxtFile
+├── public_tests/
+│   ├── checktarget_public_test.go   # Public test for CheckTarget
+│   ├── defaulttext_public_test.go   # Public test for DefaultText
+│   ├── defaulttextarea_public_test.go # Public test for DefaultTextarea
+│   ├── guismoke_public_test.go      # Public test for Gui
+│   ├── httppublic_test.go           # Public test for Http
+│   ├── mainsmoke_public_test.go     # Public test for Main
+│   ├── re_public_test.go            # Public test for Re
+│   └── txtfile_public_test.go       # Public test for TxtFile
+
+Directory Explanations:
+- org/example/      : Go implementation of all core app logic and mock equivalents for testing
+- tests/original/   : Translated original tests from Java (full coverage)
+- public_tests/     : Translated public test cases (safe for publication)
+- tests/testutil.go : Shared helper funcs for tests (expand if needed)
+- run_tests.sh      : One-click script: EXECUTE ALL TESTS via 'go test ./...'
+
+Setup & Testing Instructions:
+1. Install Go (https://golang.org/doc/install)
+2. In project root, run: `go mod tidy` (if needed)
+3. To execute all tests, simply run:
+   ./run_tests.sh
+or
+   go test ./...

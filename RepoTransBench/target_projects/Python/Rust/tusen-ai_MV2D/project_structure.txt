@@ -1,0 +1,25 @@
+.
+├── Cargo.toml               # Rust package manifest (dependencies, build)
+├── README.md                # Documentation and testing instructions
+├── run_tests.sh             # Simple script to run all tests
+├── src/
+│   └── lib.rs               # (empty) Library entry-point
+├── tests/
+│   ├── test_configs_data_full_coverage.rs      # Original: Configs/data deep structure coverage
+│   ├── test_configs_data_py.rs                 # Original: Configs/data pipeline validity
+│   ├── test_configs_exp_attributes.rs          # Original: Model/config nested attribute checks
+│   └── test_configs_exp_py.rs                  # Original: Config loader/validity
+├── public_tests/
+│   ├── test_public_configs_data_full_coverage.rs
+│   ├── test_public_configs_data_py.rs
+│   ├── test_public_configs_exp_attributes.rs
+│   ├── test_public_configs_exp_py.rs
+│   ├── test_public_torchserver_noop.rs
+└── project_structure.txt    # This file
+
+# Directory Explanations:
+# - src/: Main code base (empty unless extension is needed for utility/shared code).
+# - tests/: All original/private tests (each file is an integration test module).
+# - public_tests/: Public test cases.
+# 
+# Setup: No extra setup required, just run ./run_tests.sh with Rust and Cargo installed.

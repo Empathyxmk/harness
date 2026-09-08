@@ -1,0 +1,31 @@
+spengilley_ActivityFragmentMVP_CSharp/
+├── README.md
+├── spengilley_ActivityFragmentMVP.sln         # Solution file
+├── src/
+│   └── ActivityFragmentMVP/
+│       ├── ActivityFragmentMVP.csproj
+│       ├── App.cs
+│       ├── AppModule.cs
+│       ├── Modules.cs
+│       └── UI/
+│           └── Main/
+│               ├── FragmentCallback.cs
+│               └── (other possible files - stubbed as needed)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj               # Test project for original (private) tests
+│       ├── AppTest.cs
+│       ├── ModulesTest.cs
+│       ├── AppModuleTest.cs
+│       └── UI/
+│           └── Main/
+│               └── FragmentCallbackTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj                    # Test project for public tests
+│   ├── AppPublicTest.cs
+│   ├── ModulesPublicTest.cs
+│   ├── AppModulePublicTest.cs
+│   └── UI/
+│       └── Main/
+│           └── FragmentCallbackPublicTest.cs
+├── run_tests.sh                              # Script to run ALL tests

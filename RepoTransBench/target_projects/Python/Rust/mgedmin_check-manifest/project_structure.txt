@@ -1,0 +1,23 @@
+Project Structure for Rust port of mgedmin_check-manifest
+
+.
+├── Cargo.toml                      # Rust package and build configuration
+├── src/
+│   └── lib.rs                      # Core implementation for check-manifest (API for tests)
+├── tests/
+│   └── original/
+│       ├── mod.rs                  # Main module for original test suite
+│       └── test_check_manifest_additional.rs # Ported tests from test_check_manifest_additional.py
+├── public_tests/
+│   └── test_check_manifest_additional_public.rs # Public test cases ported from Python
+├── run_tests.sh                    # One-click test execution script (runs all tests)
+├── project_structure.txt           # This documentation file
+└── test_translation_progress.json  # Progress/status of source to Rust test conversion
+
+src/:         Core library source (stub logic provided for immediate test runs)
+tests/:       All automated tests from the original repo, separated by source/original
+public_tests/: Fully public test cases derived from public_tests/ in source
+run_tests.sh: Run all tests and show output
+Cargo.toml:   Standard Rust build configuration using built-in test harness
+
+Ready for future batch additions and easy scaling.

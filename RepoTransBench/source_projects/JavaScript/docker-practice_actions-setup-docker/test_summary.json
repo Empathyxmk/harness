@@ -1,0 +1,11 @@
+{
+  "project_name": "docker-practice_actions-setup-docker",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:35:33.046168",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/docker-practice_actions-setup-docker",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/docker-practice_actions-setup-docker"
+}

@@ -1,0 +1,11 @@
+{
+  "project_name": "bitcoinjs_bip39",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 88.83,
+    "branch": 56.25
+  },
+  "timestamp": "2025-06-19T10:00:37.397344",
+  "original_path": "/workspace/runnable_filter/JavaScript/bitcoinjs_bip39",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/bitcoinjs_bip39"
+}

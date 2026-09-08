@@ -1,0 +1,31 @@
+alexjlockwood_adp-path-morph-play-to-pause-python/
+├── src/
+│   └── package_name/
+│       └── PlayToPauseMorph.py      # Main source (Python translation of the Java class)
+├── tests/
+│   └── original/
+│       ├── test_PlayToPauseMorphTest.py                # Original private tests
+│       └── test_PlayToPauseMorphAdditionalTest.py      # Additional private/original tests
+├── public_tests/
+│   ├── test_PlayToPauseMorphPublicTest.py              # Public tests
+│   └── test_PlayToPauseMorphAdditionalPublicTest.py    # Additional public tests
+├── requirements.txt         # Python dependencies (includes pytest)
+├── run_tests.sh             # Script to run all tests
+├── README.md                # Project documentation and instructions
+└── project_structure.txt    # This file - structure & explanations
+
+Directory Explanations:
+
+- src/package_name/: Contains the main module (PlayToPauseMorph Python implementation)
+- tests/original/: All original (private/internal) test cases, mirroring the Java originals
+- public_tests/: All public test cases (for release/public feedback)
+- requirements.txt: Project dependencies (install with pip)
+- run_tests.sh: One-click test execution; runs both original and public tests
+- README.md: Setup, usage, and project explanation
+
+Setup & Usage:
+
+1. Install pytest:
+   pip install -r requirements.txt
+2. Run all tests:
+   ./run_tests.sh

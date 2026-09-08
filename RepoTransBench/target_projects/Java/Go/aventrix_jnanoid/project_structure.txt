@@ -1,0 +1,30 @@
+Project Structure for Go translation of aventrix_jnanoid
+
+.
+├── go.mod                          # Go module configuration
+├── nanoid/
+│   └── nanoid.go                   # Main package implementing NanoId logic (API-compatible with tests)
+├── tests/
+│   └── original/
+│       └── nanoidutils_test.go     # All original (non-public) tests translated from Java test sources
+├── public_tests/
+│   └── nanoidutils_public_test.go  # All public tests translated from original Java public test sources
+├── project_structure.txt           # This file (project tree and explanations)
+├── run_tests.sh                    # Simple test runner for all tests (executable)
+└── README.md                       # Project documentation (summary, usage, instructions)
+
+Directory Descriptions:
+- nanoid/: Main Go implementation for nanoid logic, matching behavior required by tests.
+- tests/original/: Go _test.go file containing all translated original unit tests (from NanoIdUtilsTest.java).
+- public_tests/: Go _test.go file containing all translated public/visible tests (from NanoIdUtilsPublicTest.java).
+- go.mod: Go module file (no additional dependencies beyond stdlib).
+- run_tests.sh: Quick test execution script (runs all tests recursively).
+- README.md: Library and test usage/documentation.
+
+Test Execution:
+----------------
+1. Make sure you have Go 1.20+ installed.
+2. Run `chmod +x ./run_tests.sh` if needed.
+3. Execute `./run_tests.sh` to run all tests in both tests/original and public_tests.
+
+All tests are package-level, use Go's testing package, and are self-contained.

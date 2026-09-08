@@ -1,0 +1,28 @@
+.
+├── README.md
+├── requirements.txt
+├── run_tests.sh
+├── src/
+│   ├── __init__.py
+│   └── [project_code_modules_placeholder]
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_payload_reader.py
+│       ├── test_channel_info_equals_hash.py
+│       ├── test_signature_not_found_exception.py
+│       ├── test_apk_util.py
+│       ├── test_channel_info.py
+│       ├── test_pair.py
+│       └── test_channel_reader.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_payload_reader_public.py
+│   ├── test_channel_info_equals_hash_public.py
+│   ├── test_signature_not_found_exception_public.py
+│   ├── test_apk_util_public.py
+│   ├── test_channel_info_public.py
+│   ├── test_pair_public.py
+│   └── test_channel_reader_public.py
+├── test_translation_progress.json

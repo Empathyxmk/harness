@@ -1,0 +1,41 @@
+trezor_python-mnemonic/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   ├── test_mnemonic.rs               # Original full test translation
+│   ├── test_mnemonic_extra.rs         # Original extra test translation
+│   └── public/
+│       ├── test_public_mnemonic.rs        # Public test translation
+│       └── test_public_mnemonic_extra.rs  # Public extra test translation
+├── run_tests.sh
+├── project_structure.txt
+├── README.md
+
+---------------------------------------
+Directory and File Explanations:
+
+Cargo.toml              - Rust project manifest and dependencies.
+src/lib.rs              - Main library root. Contains stubs and structures for translated tests.
+tests/                  - All Rust integration tests live here, as required by cargo.
+  test_mnemonic.rs      - Original test_mnemonic.py translation.
+  test_mnemonic_extra.rs- Original test_mnemonic_extra.py translation.
+  public/               - Holds public test subset.
+    test_public_mnemonic.rs       - Public test_public_mnemonic.py translation.
+    test_public_mnemonic_extra.rs - Public test_public_mnemonic_extra.py translation.
+run_tests.sh            - Simple bash script that runs all tests with `cargo test --all`.
+project_structure.txt   - This file.
+README.md               - Setup and usage documentation.
+
+---------------------------------------
+**Note on Test Organization**:  
+Rust only runs integration tests found in `tests/`. To keep code coverage and allow single-command testing, all tests (original and public) are under `tests/`. Public tests are logically grouped in `tests/public/`.
+
+Running `./run_tests.sh` or `cargo test` will run ALL tests.
+
+---------------------------------------
+How to Run Tests:
+
+    ./run_tests.sh
+
+(or `cargo test` manually)

@@ -1,0 +1,17 @@
+{
+  "project_name": "thomasa88_ParametricText",
+  "language": "Python",
+  "coverage": {
+    "line": 52.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T12:56:36.248504",
+  "original_path": "/workspace/runnable_filter/Python/thomasa88_ParametricText",
+  "test_result_path": "/workspace/test_enhancement_results/Python/thomasa88_ParametricText",
+  "tests_path": [
+    "test/parser_test.py",
+    "test/test_paramparser.py",
+    "test/test_paramformatter.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

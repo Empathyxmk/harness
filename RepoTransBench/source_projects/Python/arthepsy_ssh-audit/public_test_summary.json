@@ -1,0 +1,65 @@
+{
+  "project_name": "arthepsy_ssh-audit",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:42:58.602580",
+  "original_path": "/workspace/verified_repos_v2/Python/arthepsy_ssh-audit",
+  "public_test_result_path": "/workspace/public_test_results/Python/arthepsy_ssh-audit",
+  "original_tests": {
+    "test_files": [
+      "test/test_buffer.py",
+      "test/test_software.py",
+      "test/test_ssh2.py",
+      "test/test_banner.py",
+      "test/test_version_compare.py",
+      "test/test_ssh1.py",
+      "test/test_auditconf.py",
+      "test/test_output.py",
+      "test/test_errors.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 9,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_buffer.py",
+      "public_tests/test_public_software.py",
+      "public_tests/test_public_banner.py",
+      "public_tests/test_public_version_compare.py",
+      "public_tests/test_public_ssh1.py",
+      "public_tests/test_public_auditconf.py",
+      "public_tests/test_public_output.py",
+      "public_tests/test_public_ssh2.py",
+      "public_tests/test_public_errors.py",
+      "public_tests/run_public_tests.sh",
+      "public_tests/run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "public_tests/run_public_tests.sh",
+      "public_tests/run_public_tests.sh"
+    ],
+    "total_public_test_files": 11,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_buffer.py",
+    "public_tests/test_public_software.py",
+    "public_tests/test_public_banner.py",
+    "public_tests/test_public_version_compare.py",
+    "public_tests/test_public_ssh1.py",
+    "public_tests/test_public_auditconf.py",
+    "public_tests/test_public_output.py",
+    "public_tests/test_public_ssh2.py",
+    "public_tests/test_public_errors.py",
+    "public_tests/run_public_tests.sh",
+    "public_tests/run_public_tests.sh"
+  ]
+}

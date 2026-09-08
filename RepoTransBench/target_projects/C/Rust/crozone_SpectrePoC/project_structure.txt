@@ -1,0 +1,12 @@
+spectre_poc/
+├── Cargo.toml           # Rust project configuration
+├── src/
+│   └── lib.rs           # Main library implementation (translated from spectre.c)
+├── tests/
+│   ├── main.rs          # Test module configuration
+│   └── original/
+│       └── spectre_test.rs # Original tests translated from spectre_test.c
+├── public_tests/
+│   └── spectre_public_test.rs # Public tests translated from spectre_public_test.c
+├── run_tests.sh         # Script to run all tests
+└── run_public_tests.sh  # Script to run only public tests

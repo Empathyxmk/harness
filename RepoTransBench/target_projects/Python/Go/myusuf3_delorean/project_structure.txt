@@ -1,0 +1,22 @@
+myusuf3_delorean/
+├── go.mod
+├── go.sum
+├── README.md
+├── run_tests.sh
+├── test_translation_progress.json
+├── main.go                # (placeholder if needed)
+├── delorean/              # (would contain Go implementation of delorean, stub here)
+│   ├── delorean.go
+│   ├── dates.go
+│   ├── exceptions.go
+│   └── interface.go
+├── tests/
+│   └── original/
+│       ├── test_interface_test.go
+│       ├── test_dates_test.go
+│       ├── test_exceptions_test.go
+│       └── delorean_tests_test.go
+├── public_tests/
+│   ├── test_public_interface_test.go
+│   ├── test_public_exceptions_test.go
+│   └── test_public_dates_test.go

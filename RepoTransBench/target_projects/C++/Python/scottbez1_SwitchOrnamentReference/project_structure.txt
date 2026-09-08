@@ -1,0 +1,26 @@
+project_root/
+├── requirements.txt                   # Project dependencies (pytest)
+├── run_tests.sh                       # One-click test execution script for all tests
+├── tests/                             # All test source files
+│   ├── __init__.py                    # Marks as Python package
+│   └── original/                      # Original/canonical tests from C++
+│       ├── __init__.py
+│       ├── test_json11_extra.py       # Translated original json11_extra_test.cpp tests
+│       └── test_json11.py             # Translated original json11_test.cpp tests
+├── public_tests/                      # Public-facing test cases
+│   ├── __init__.py
+│   ├── test_json11_public.py          # Translated public json11_public_test.cpp
+│   └── test_json11_extra_public.py    # Translated public json11_extra_public_test.cpp
+└── project_structure.txt              # (This file) Structure documentation and guidance
+
+Directory explanations:
+- tests/original/ : Canonical/original test suite for full coverage, directly translated from json11_test.cpp and json11_extra_test.cpp.
+- public_tests/   : Public test suite with alternate data and cases as published for external verification.
+- requirements.txt: Declares project dependencies (pytest for testing).
+- run_tests.sh    : Minimal test runner; execute `./run_tests.sh` to run all tests.
+- __init__.py     : Included to mark directories as Python packages as per best practice.
+
+Setup and Usage:
+1. (Optional but recommended) Create a Python virtual environment.
+2. Run `pip install -r requirements.txt` to install test dependencies.
+3. Run `./run_tests.sh` to execute all original and public test cases.

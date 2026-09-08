@@ -1,0 +1,17 @@
+{
+  "project_name": "expressjs_cookie-parser",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 96.87
+  },
+  "timestamp": "2025-06-23T10:37:48.012648",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/expressjs_cookie-parser",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/expressjs_cookie-parser",
+  "tests_path": [
+    "test/index.unit.coverage.test.js",
+    "test/unit.cookieParser.extra.test.js",
+    "test/cookieParser.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

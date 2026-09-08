@@ -1,0 +1,48 @@
+Project Structure for Ansible Inventory Grapher (C++ Translation)
+===============================================================
+
+Root Directory:
+.
+├── LICENSE.txt               # License information
+├── README.md                 # Project documentation and usage
+├── CMakeLists.txt            # Build configuration for CMake and Google Test
+├── run_tests.sh              # One-click test execution script (build+run)
+├── project_structure.txt     # This file: tree + directory explanations
+├── include/                  # C++ header files (for core library/source, if split)
+├── src/                      # C++ source files (core implementation, if added)
+│
+├── tests/                    # All original/functional unit tests (translated from Python)
+│   └── original/
+│       ├── test_init.cpp
+│       ├── test_inventory.cpp
+│       ├── test_variables.cpp
+│       ├── test_vault.cpp
+│       └── test_version.cpp
+│
+├── public_tests/             # Public test cases (C++ versions)
+│   ├── test_public_init.cpp
+│   ├── test_public_inventory.cpp
+│   ├── test_public_variables.cpp
+│   ├── test_public_vault.cpp
+│   └── test_public_version.cpp
+│
+└── ... (remaining legacy Python project structure, for reference)
+
+Directory and File Descriptions:
+- src/                -- C++ implementation source files (library code, not included in this translation if not provided)
+- include/            -- Project header files (interfaces, class definitions)
+- tests/original/     -- Original full unit and integration test cases, fully translated from Python to C++
+- public_tests/       -- Public test cases, fully translated from Python to C++
+- run_tests.sh        -- Simple script: builds project and runs all tests with one command
+- CMakeLists.txt      -- CMake configuration to build tests and link Google Test
+- project_structure.txt-- This overview and documentation
+
+To run all tests:
+    $ ./run_tests.sh
+
+Requires:
+    - CMake >=3.10
+    - Google Test available (system package or via CMake's FetchContent)
+    - C++17 compiler
+
+All test cases are fully ported; all test logic, data, edge cases, and helpers are included. Simply build and run. If modifying source/library files, re-run the script to test changes.

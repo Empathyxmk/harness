@@ -1,0 +1,43 @@
+Project Structure for Bouke_docx-mailmerge (Go version)
+=======================================================
+
+/
+├── go.mod                     # Go module definition for dependency management
+├── run_tests.sh               # One-click script to run all Go tests
+└── tests/
+    └── original/
+        ├── issue54_spaces_test.go
+        ├── issue64_test.go
+        ├── issue8_test.go
+        ├── macword2011_test.go
+        ├── mailmerge_errors_test.go
+        ├── mailmerge_parse_test.go
+        ├── merge_pages_test.go
+        ├── merge_table_multipart_test.go
+        ├── merge_table_rows_test.go
+        ├── merge_templates_test.go
+        ├── multiple_elements_test.go
+        └── winword2010_test.go
+
+-------------------------------------------------------
+Directory/Files Explanations:
+
+go.mod
+    Standard Go modules file. Declares this as a Go module and allows `go test ./...` or importing dependencies.
+
+run_tests.sh
+    Simple bash script to execute ALL tests with `go test ./...`. Make sure it's executable: `chmod +x run_tests.sh`.
+
+tests/original/
+    All tests originally found in Python (one .go for each .py). All logic has been faithfully translated and unit tested here. 
+    Each test is self-contained and follows Go's testing conventions.
+
+-------------------------------------------------------
+Setup & Testing Instructions:
+
+1. Install Go (>= 1.20).
+2. Run tests with: ./run_tests.sh
+   - This executes all Go tests.
+3. No external dependencies are required for these tests.
+
+-------------------------------------------------------

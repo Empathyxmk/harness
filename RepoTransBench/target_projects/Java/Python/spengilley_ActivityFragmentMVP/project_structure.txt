@@ -1,0 +1,37 @@
+project_root/
+├── src/
+│   └── (put your source package here if implementing logic)
+├── tests/
+│   ├── __init__.py                  # Test package marker
+│   └── original/
+│       ├── __init__.py
+│       ├── test_app.py              # Original AppTest.java (logic stubs included)
+│       ├── test_appmodule.py        # Original AppModuleTest.java
+│       ├── test_fragment_callback.py# Original FragmentCallbackTest.java
+│       └── test_modules.py          # Original ModulesTest.java
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_app_public.py           # AppPublicTest.java
+│   ├── test_appmodule_public.py     # AppModulePublicTest.java
+│   ├── test_fragment_callback_public.py # FragmentCallbackPublicTest.java
+│   └── test_modules_public.py       # ModulesPublicTest.java
+├── requirements.txt                 # Python dependencies (pytest)
+├── run_tests.sh                     # One-click test runner
+├── README.md                        # Overview and instructions
+├── project_structure.txt            # This file
+
+----- DIRECTORY EXPLANATIONS -----
+src/                - Place for core source code (if porting from Java logic)
+tests/original/     - Translations of original Java test cases (full implementation)
+public_tests/       - Translations of public test cases
+requirements.txt    - Dependencies (install with pip)
+run_tests.sh        - Run all tests with one command
+README.md           - Project and test instructions
+project_structure.txt - This file/overview
+
+----- SETUP INSTRUCTIONS -----
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Run all tests:
+   ./run_tests.sh

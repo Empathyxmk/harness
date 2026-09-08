@@ -1,0 +1,16 @@
+danharper_Handlebars-Helpers/
+├── src/
+│   ├── __init__.py
+│   └── helpers.py            # Main helper logic for tests
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_helpers.py   # Original helpers.test.js converted
+│       └── test_helpersTest.py # Original helpersTest.js converted
+├── public_tests/
+│   ├── __init__.py
+│   └── test_helpers_public.py    # Public test cases from helpers.public.test.js
+├── requirements.txt
+├── run_tests.sh
+├── (other project files...)

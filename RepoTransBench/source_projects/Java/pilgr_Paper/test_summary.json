@@ -1,0 +1,11 @@
+{
+  "project_name": "pilgr_Paper",
+  "language": "Java",
+  "coverage": {
+    "line": 70.1,
+    "branch": 56.8
+  },
+  "timestamp": "2025-06-20T01:47:13.179833",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/pilgr_Paper",
+  "test_result_path": "/workspace/test_enhancement_results/Java/pilgr_Paper"
+}

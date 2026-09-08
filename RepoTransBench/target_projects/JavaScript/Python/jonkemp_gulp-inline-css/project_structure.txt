@@ -1,0 +1,21 @@
+jonkemp_gulp-inline-css_python/
+├── src/
+│   └── inline_css.py               # Python inline_css stub (replace with full logic in real project)
+├── public_tests/
+│   └── test_main_public.py         # All translated public tests
+├── requirements.txt                # Python test/dependency requirements
+├── run_tests.sh                    # Run all tests with one command
+└── project_structure.txt           # This structure file
+
+Directory explanations:
+- src/:           Python source code directory. Contains inline_css plugin stub.
+- public_tests/:  Translated public tests from original JS (pytest format).
+- requirements.txt: Python pip requirements (pytest, etc).
+- run_tests.sh:   One-click test running (runs all tests using pytest).
+- project_structure.txt: This explanation.
+
+To run tests:
+1. pip install -r requirements.txt
+2. ./run_tests.sh
+
+Replace the stub in src/inline_css.py with a full implementation for the tests to pass for real.

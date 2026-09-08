@@ -1,0 +1,63 @@
+project_root/
+│
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt              # This file. Project documentation & structure.
+│
+├── tests/
+│   └── original/
+│       ├── test_number_complement.py
+│       ├── test_maximum_depth_of_binary_tree.py
+│       ├── test_battleships_in_a_board.py
+│       └── test_sort_characters_by_frequency.py
+│
+├── public_tests/
+│   ├── test_number_complement.py
+│   ├── test_maximum_depth_of_binary_tree.py
+│   ├── test_battleships_in_a_board.py
+│   └── test_sort_characters_by_frequency.py
+│
+└── src/
+    ├── __init__.py
+    ├── number_complement.py
+    ├── maximum_depth_of_binary_tree.py
+    ├── battleships_in_a_board.py
+    └── sort_characters_by_frequency.py
+
+-------------------------------------------------------------------------------
+
+Directory/Files Explanation:
+
+requirements.txt
+    List of Python dependencies (pytest for tests).
+
+run_tests.sh
+    One-click script to run all tests. Installs pytest if missing, then runs pytest.
+
+project_structure.txt
+    This file. Documents the directory structure and explains project files.
+
+tests/original/
+    Contains translations of the project's original test cases (comprehensive/internal).
+
+public_tests/
+    Contains translations of the project's public test cases.
+
+src/
+    Folder where production (solution) code lives.
+    - __init__.py: marks 'src' as a package.
+    - Each .py file is the translated solution module for the corresponding problem.
+
+Instructions:
+1. To run all tests, simply execute:
+       ./run_tests.sh
+
+2. To install all dependencies manually:
+       pip install -r requirements.txt
+
+3. To run only "original" or "public" tests:
+   - pytest tests/original/
+   - pytest public_tests/
+
+Project is designed for easy extensibility (just drop more test files in the appropriate folder).
+-------------------------------------------------------------------------------

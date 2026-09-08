@@ -1,0 +1,33 @@
+project_root/
+├── README.md                 # Project overview, setup, and instructions
+├── requirements.txt          # Python dependencies (pytest)
+├── run_tests.sh              # Simple one-click test execution script
+├── project_structure.txt     # This file: explains layout and file purposes
+├── src/
+│   └── containers_quadlet/
+│       ├── __init__.py       # (Placeholder for main project code)
+│       └── (yourmodule.py)   # (Add implementation code here)
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_podman.py
+│       ├── test_ranges.py
+│       ├── test_utils.py
+│       ├── test_utils_extra.py
+│       ├── test_utils_extra_extra.py
+│       └── test_testcase_runner.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_podman_public.py
+│   ├── test_ranges_public.py
+│   ├── test_utils_public.py
+│   ├── test_utils_extra_public.py
+│   └── test_utils_extra_extra_public.py
+
+Legend:
+- src/: primary package location (currently empty, for future logic implementation)
+- tests/original/: faithful translations of the C original test cases
+- public_tests/: translations of the C public test cases
+- requirements.txt: Python test dependency (pytest)
+- run_tests.sh: minimal, universal test runner
+- README.md/project_structure.txt: project documentation

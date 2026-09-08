@@ -1,0 +1,17 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_xiaomimodelimpl.py
+│       ├── test_googlemodelimpl.py
+│       ├── test_vivomodelimpl.py
+│       └── test_utils.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_utils_public.py
+│   ├── test_googlemodelimpl_public.py
+│   ├── test_vivomodelimpl_public.py
+│   └── test_xiaomimodelimpl_public.py

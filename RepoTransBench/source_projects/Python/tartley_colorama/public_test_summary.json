@@ -1,0 +1,64 @@
+{
+  "project_name": "tartley_colorama",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:25:28.311746",
+  "original_path": "/workspace/verified_repos_v2/Python/tartley_colorama",
+  "public_test_result_path": "/workspace/public_test_results/Python/tartley_colorama",
+  "original_tests": {
+    "test_files": [
+      "colorama/tests/win32_test.py",
+      "colorama/tests/initialise_test.py",
+      "colorama/tests/winterm_test.py",
+      "colorama/tests/ansitowin32_test.py",
+      "colorama/tests/ansi_test.py",
+      "colorama/tests/imports_test.py",
+      "colorama/tests/isatty_test.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_win32.py",
+      "public_tests/test_public_initialise.py",
+      "public_tests/test_public_winterm.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_winterm.py",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "public_tests/test_public_winterm.py",
+      "public_tests/test_public_winterm.py",
+      "public_tests/test_public_winterm.py",
+      "public_tests/test_public_winterm.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 11,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_win32.py",
+    "public_tests/test_public_initialise.py",
+    "public_tests/test_public_winterm.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_winterm.py",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "public_tests/test_public_winterm.py",
+    "public_tests/test_public_winterm.py",
+    "public_tests/test_public_winterm.py",
+    "public_tests/test_public_winterm.py"
+  ]
+}

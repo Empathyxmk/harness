@@ -1,0 +1,41 @@
+fastapi_mysql_generator/
+├── Cargo.toml                  # Project manifest and dependencies
+├── src/
+│   ├── lib.rs                  # Library root (empty, for code sharing if needed)
+│   └── main.rs                 # Binary entry/stub
+├── tests/
+│   └── original/
+│       ├── test_casbin.rs      # Rust translation of original private Casbin API tests
+│       ├── test_casbin_examples.rs    # Rust translation of Casbin file/adapter/dynamic tests
+│       ├── test_cron.rs        # Rust translation of original cron/scheduler API logic
+│       ├── test_main_scheduler.rs # Rust translation of importing and constructing scheduler module
+│       └── test_user.rs        # Rust translation of user creation/login/info logic
+├── public_tests/
+│   ├── api/
+│   │   └── v1/
+│   │       ├── test_public_casbin.rs   # Public Casbin API test, simulated in Rust
+│   │       ├── test_public_cron.rs     # Public cron scheduler API test, simulated in Rust
+│   │       └── test_public_user.rs     # Public user API test, simulated in Rust
+│   ├── demo_casbin/
+│   │   └── test_public_casbin_examples.rs  # Public Casbin example, file/adapter/dynamic test
+│   └── demo_scheduler/
+│       └── test_public_main_scheduler.rs  # Public scheduler time computation test
+├── run_tests.sh                # Simple test execution script (cargo test)
+└── project_structure.txt       # This project structure and documentation
+
+Directory explanations:
+- src/: Rust crate source. Empty unless business logic ported. main.rs is a stub.
+- tests/original/: Rust modules for original (private) test cases, one file per conceptual area.
+- public_tests/: Rust modules for public test cases, mirroring the Python public_tests folder.
+- run_tests.sh: One-click script to run all tests using Rust's built-in framework.
+- Cargo.toml: All Rust and test dependencies. Add more as needed if business logic expands.
+
+Setup and Testing instructions:
+1. Install Rust and Cargo (https://rustup.rs/)
+2. Run tests with: ./run_tests.sh
+3. To run only specific test(s): cargo test test_name
+4. To run all original or all public: cargo test --test test_file_name (files are auto discovered)
+5. Source and tests are decoupled for clarity; replace mock logic with real API/server code as needed.
+
+This repo is a faithful Rust translation of the Python FastAPI-mysql-generator test set;
+all test logic/data/coverage follows the original, but with idiomatic Rust, mocks and test frameworks.

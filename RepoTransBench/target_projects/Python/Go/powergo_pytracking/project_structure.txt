@@ -1,0 +1,26 @@
+powergo_pytracking/
+├── pytracking/                    # Go library code (to be implemented; translated from Python's pytracking/)
+│
+├── tests/
+│   └── original/                  # Original test cases, exact ports from Python's tests/
+│       ├── test_tracking_unit_test.go
+│       ├── test_pytracking_test.go
+│       ├── test_init_exports_test.go
+│       ├── test_crypto_test.go
+│       ├── test_webhook_test.go
+│       ├── test_html_test.go
+│       ├── test_django_test.go
+│
+├── public_tests/                  # Public test cases (from public_tests/)
+│   ├── test_tracking_unit_public_test.go
+│   ├── test_pytracking_public_test.go
+│   ├── test_init_exports_public_test.go
+│
+├── testutil/
+│   └── testutil.go                # (Optional) Shared helpers for tests, such as assert wrappers or test configuration.
+│
+├── go.mod                         # Module dependencies: only "github.com/stretchr/testify" for richer assertions.
+├── go.sum                         # (Generated) Dependency checksums.
+├── run_tests.sh                   # Run all test suites with a single command.
+├── README.md                      # This documentation.
+├── project_structure.txt          # This file; structure & directory explanations.

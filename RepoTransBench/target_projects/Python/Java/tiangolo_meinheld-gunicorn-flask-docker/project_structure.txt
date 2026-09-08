@@ -1,0 +1,36 @@
+meinheld-gunicorn-flask-docker/
+├── pom.xml                   # Maven build file with all dependencies and test config
+├── run_tests.sh              # Executable script to run all Java tests
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/example/
+│   │           └── (empty)   # No main Java code; tests only
+│   └── test/
+│       └── java/
+│           └── com/example/
+│               ├── original/
+│               │   ├── MainTest.java         # Translated original main tests
+│               │   ├── UtilsMinimalTest.java # Translated original minimal utils tests
+│               │   └── UtilsTest.java        # Translated original utils tests
+│               └── public_tests/
+│                   ├── PublicMainTest.java         # Public main tests
+│                   ├── PublicUtilsMinimalTest.java # Public minimal utils tests
+│                   └── PublicUtilsTest.java        # Public utils tests
+└── project_structure.txt     # This file: lists project layout and file purposes
+
+Explanations:
+- pom.xml: Maven configuration with dependencies (JUnit 5, Mockito, Jackson for JSON parsing).
+- run_tests.sh: One-click shell script for running all tests (`chmod +x run_tests.sh`).
+- src/main/java/com/example/: (empty, placeholder for future Java code)
+- src/test/java/com/example/original/: All original Python tests, translated to Java JUnit5
+- src/test/java/com/example/public_tests/: All public Python tests, translated to Java JUnit5
+- project_structure.txt: This structure file and explanations.
+
+To run tests:
+1. Ensure you have Maven installed.
+2. Run `chmod +x run_tests.sh` (one-time setup).
+3. Run `./run_tests.sh` to execute the full test suite. All original and public tests are run by default (JUnit 5 via Maven `mvn test`).
+
+Test class naming:
+- *Test.java: Follows Java/JUnit5 conventions. Each original/public test file is mapped to a Java class per above.

@@ -1,0 +1,11 @@
+{
+  "project_name": "zaproxy_zap-api-python",
+  "language": "Python",
+  "coverage": {
+    "line": 86.7,
+    "branch": 51.2
+  },
+  "timestamp": "2025-06-19T13:07:04.860408",
+  "original_path": "/workspace/runnable_filter/Python/zaproxy_zap-api-python",
+  "test_result_path": "/workspace/test_enhancement_results/Python/zaproxy_zap-api-python"
+}

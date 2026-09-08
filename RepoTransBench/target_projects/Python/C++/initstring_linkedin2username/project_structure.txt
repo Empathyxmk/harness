@@ -1,0 +1,49 @@
+initstring_linkedin2username/
+├── CMakeLists.txt
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── drawing.jpeg
+├── htmlcov/
+│   ├── d_a44f0ac069e85531___init___py.html
+│   ├── d_a44f0ac069e85531_test_georegions_py.html
+│   ├── d_a44f0ac069e85531_test_import_python_py.html
+│   ├── d_a44f0ac069e85531_test_linkedin2username_minimal_py.html
+│   ├── d_a44f0ac069e85531_test_linkedin2username_py.html
+│   ├── d_a44f0ac069e85531_test_namemutator_py.html
+│   └── linkedin2username_py.html
+├── linkedin2username.py
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_georegions.cpp
+│   ├── test_public_georegions.py
+│   ├── test_public_import_python.cpp
+│   ├── test_public_import_python.py
+│   ├── test_public_linkedin2username.cpp
+│   ├── test_public_linkedin2username.py
+│   ├── test_public_linkedin2username_minimal.cpp
+│   ├── test_public_linkedin2username_minimal.py
+│   ├── test_public_namemutator.cpp
+│   └── test_public_namemutator.py
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── test_summary.json
+├── test_translation_progress.json
+└── tests/
+    ├── __init__.py
+    ├── mock-employee-response
+    ├── mock-employee-response-last-page
+    ├── test_georegions.cpp
+    ├── test_georegions.py
+    ├── test_import_python.cpp
+    ├── test_import_python.py
+    ├── test_linkedin2username.cpp
+    ├── test_linkedin2username.py
+    ├── test_linkedin2username_minimal.cpp
+    ├── test_linkedin2username_minimal.py
+    ├── test_namemutator.cpp
+    └── test_namemutator.py
+
+3 directories, 43 files

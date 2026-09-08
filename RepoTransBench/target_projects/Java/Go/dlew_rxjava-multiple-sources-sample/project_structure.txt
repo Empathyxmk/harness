@@ -1,0 +1,30 @@
+.
+├── go.mod                          # Module definition for Go
+├── main.go                         # Main entry; optional or empty
+├── dlew/
+│   └── module.go                   # Main code: Data, Sources, Sample (Java-to-Go translation)
+├── README.md                       # Project and usage documentation
+├── run_tests.sh                    # One-click script to run all tests
+├── project_structure.txt           # This file!
+├── tests/
+│   ├── original/
+│   │   ├── dat_test.go            # DataTest.java
+│   │   ├── sample_test.go         # SampleTest.java
+│   │   ├── sources_test.go        # SourcesTest.java
+│   │   └── sourcesbranch_test.go  # SourcesBranchTest.java
+│   └── testutil.go                 # Rx-style test observer/utility functions
+├── public_tests/
+│   ├── data_public_test.go         # DataPublicTest.java
+│   ├── sample_public_test.go       # SamplePublicTest.java
+│   ├── sources_public_test.go      # SourcesPublicTest.java
+│   └── sourcesbranch_public_test.go# SourcesBranchPublicTest.java
+
+Explanations:
+- go.mod: Go module definition
+- dlew/module.go: implements the core Data, Sources, Sample logic for the tests
+- main.go: Optional main
+- tests/original/: faithfully translated original tests
+- public_tests/: public runnable test versions
+- tests/testutil.go: test helpers and assertion utilities for Rx/observable style
+- run_tests.sh: runs all tests with go
+- project_structure.txt: this documentation

@@ -1,0 +1,49 @@
+name: Lint
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  pull_request_target:
+    branches: [master]
+
+permissions:
+  checks: write
+  contents: read
+
+jobs:
+  run-linters:
+    name: Run linters and tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.12
+
+      - name: Install Python dependencies
+        run: pip install black flake8 mypy pytest pytest-cov pytest-asyncio -e .
+
+      - name: Run linters
+        uses: samuelmeuli/lint-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Enable linters
+          black: true
+          flake8: true
+          mypy: true
+          flake8_args: "--exclude='test.py __init__.py' --max-line-length=120"
+          auto_fix: false
+          git_email: "sbidy@hotmail.com"
+
+      - name: Test with pytest
+        run: |
+          pytest --asyncio-mode=auto --durations=0 --cov=pywizlight --cov-report term-missing --cov-report xml
+
+      - name: Upload codecov
+        uses: codecov/codecov-action@v2

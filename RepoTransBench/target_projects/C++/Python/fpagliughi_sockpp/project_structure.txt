@@ -1,0 +1,51 @@
+fpagliughi_sockpp_python/
+├── README.md                # Project overview and test execution instructions
+├── requirements.txt         # Python (pytest) dependencies
+├── run_tests.sh             # One-click script to run all tests
+├── src/
+│   └── (if needed: code or mocks, or empty)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_acceptor.py
+│       ├── test_can_address.py
+│       ├── test_can_socket_error.py
+│       ├── test_connector.py
+│       ├── test_datagram_socket.py
+│       ├── test_inet6_address.py
+│       ├── test_inet_address.py
+│       ├── test_result.py
+│       ├── test_sock_address.py
+│       ├── test_socket.py
+│       ├── test_stream_socket.py
+│       ├── test_tcp_socket.py
+│       ├── test_tls_connector_failures.py
+│       ├── test_tls_connector_options.py
+│       ├── test_unix_address.py
+│       ├── test_unix_connector_error.py
+│       ├── test_unix_dgram_socket.py
+│       ├── test_unix_stream_socket.py
+│       └── unit_tests.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_can_address_public.py
+│   ├── test_inet_address_public.py
+│   ├── test_result_public.py
+│   ├── test_sock_address_public.py
+│   └── test_unix_address_public.py
+
+## Directory Purpose
+
+- **src/**: (Optional, for code/mocks if any; not mandatory for test-only conversion)
+- **tests/original/**: Translated C++ unit tests (one-to-one mapping of C++ files).
+- **public_tests/**: Translated public test suite (from C++ auto/public tests).
+- **requirements.txt**: Python requirements (pytest, etc).
+- **run_tests.sh**: Simple shell script; runs all tests via `pytest`.
+- **README.md**: Instructions, project overview.
+
+## To run
+
+1. `pip install -r requirements.txt`
+2. `chmod +x run_tests.sh`
+3. `./run_tests.sh`

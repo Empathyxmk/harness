@@ -1,0 +1,27 @@
+project_root/
+├── src/
+│   └── ruapu_module/              # Contains the Python implementation of ruapu functions (mocked for testing)
+│       ├── __init__.py            # Makes ruapu_module a Python package
+│       └── ruapu.py               # Mock implementation of ruapu_init, ruapu_supports, ruapu_rua
+├── tests/
+│   ├── __init__.py                # Makes tests a Python package
+│   └── original/                  # Directory for original test cases
+│       ├── __init__.py            # Makes original a Python package
+│       └── test_ruapu.py          # Translated original test cases from test_ruapu.c
+├── public_tests/
+│   ├── __init__.py                # Makes public_tests a Python package
+│   └── test_ruapu_public.py       # Translated public test cases from test_ruapu_public.c
+├── requirements.txt               # Lists Python project dependencies (e.g., pytest)
+├── run_tests.sh                   # Script to install dependencies and run all tests
+└── project_structure.txt          # This document describing the project structure
+
+---
+Setup and Testing Instructions:
+
+1.  **Navigate to the project root directory**:
+    cd /path/to/project_root
+
+2.  **Run all tests**:
+    ./run_tests.sh
+
+This script will install `pytest` if not already present (based on `requirements.txt`) and then execute all tests found in the `tests/` and `public_tests/` directories using `pytest`.

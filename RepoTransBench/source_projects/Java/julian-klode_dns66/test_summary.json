@@ -1,0 +1,11 @@
+{
+  "project_name": "julian-klode_dns66",
+  "language": "Java",
+  "coverage": {
+    "line": 56.2,
+    "branch": 51.4
+  },
+  "timestamp": "2025-06-19T21:29:00.238498",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/julian-klode_dns66",
+  "test_result_path": "/workspace/test_enhancement_results/Java/julian-klode_dns66"
+}

@@ -1,0 +1,79 @@
+julian-klode_dns66_python/
+├── src/
+│   └── dns66/
+│       ├── __init__.py
+│       ├── configuration.py
+│       ├── file_helper.py
+│       ├── single_writer_multiple_reader_file.py
+│       ├── square_image_view.py
+│       ├── db/
+│       │   ├── __init__.py
+│       │   ├── rule_database.py
+│       │   ├── rule_database_item_update_runnable.py
+│       │   ├── rule_database_update_job_service.py
+│       │   └── rule_database_update_task.py
+│       └── vpn/
+│           ├── __init__.py
+│           ├── ad_vpn_thread.py
+│           ├── dns_packet_proxy.py
+│           └── vpn_watchdog.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_configuration.py
+│       ├── test_square_image_view.py
+│       ├── test_file_helper_minimal.py
+│       ├── test_file_helper.py
+│       ├── test_example_unit.py
+│       ├── test_single_writer_multiple_reader_file.py
+│       ├── db/
+│       │   ├── __init__.py
+│       │   ├── test_rule_database_item_update_runnable.py
+│       │   ├── test_rule_database_update_task.py
+│       │   └── test_rule_database.py
+│       └── vpn/
+│           ├── __init__.py
+│           ├── test_dns_packet_proxy.py
+│           ├── test_ad_vpn_thread.py
+│           └── test_vpn_watchdog.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_example_public_unit.py
+│   ├── test_example_public_unit2.py
+│   ├── test_configuration_public.py
+│   ├── test_file_helper_minimal_public.py
+│   ├── test_file_helper_public.py
+│   ├── test_single_writer_multiple_reader_file_public.py
+│   ├── test_square_image_view_public.py
+│   └── db/
+│       ├── __init__.py
+│       ├── test_rule_database_public.py
+│       ├── test_rule_database_update_job_service_public.py
+│       ├── test_rule_database_update_task_public.py
+│       └── test_rule_database_item_update_runnable_public.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── project_structure.txt
+
+# Directory Explanation
+src/dns66/               : Core source code (translated modules)
+src/dns66/db/            : Database and related source modules
+src/dns66/vpn/           : VPN and networking source modules
+
+tests/original/          : Complete translations of original Java test files (private/internal tests)
+public_tests/            : Complete translations of all Java public tests (safe for public release)
+
+requirements.txt         : Python dependency spec (pytest, mock)
+run_tests.sh             : One-command test runner for all Python tests
+README.md                : Project description, installation, and test instructions
+project_structure.txt    : This structure file. Explains organization and usage.
+
+# Test Execution
+- To run *all* tests, just run:
+  $ ./run_tests.sh
+- To run only original/private tests:
+  $ pytest tests/original/
+- To run only public tests:
+  $ pytest public_tests/

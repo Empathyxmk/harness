@@ -1,0 +1,142 @@
+vimalloc_flask-jwt-extended/
+├── LICENSE
+├── MANIFEST.in
+├── README.md
+├── docs/
+│   ├── Makefile
+│   ├── __init__.py
+│   ├── add_custom_data_claims.rst
+│   ├── api.rst
+│   ├── automatic_user_loading.rst
+│   ├── basic_usage.rst
+│   ├── blocklist_and_token_revoking.rst
+│   ├── changing_default_behavior.rst
+│   ├── conf.py
+│   ├── custom_decorators.rst
+│   ├── index.rst
+│   ├── installation.rst
+│   ├── optional_endpoints.rst
+│   ├── options.rst
+│   ├── refreshing_tokens.rst
+│   ├── requirements.txt
+│   ├── token_locations.rst
+│   └── v4_upgrade_guide.rst
+├── examples/
+│   ├── additional_data_in_access_token.py
+│   ├── automatic_user_loading.py
+│   ├── blocklist_database.py
+│   ├── blocklist_redis.py
+│   ├── custom_decorators.py
+│   ├── implicit_refresh.py
+│   ├── jwt_locations.py
+│   ├── loaders.py
+│   ├── oidc.py
+│   ├── optional_protected_endpoints.py
+│   ├── refresh_tokens.py
+│   ├── simple.py
+│   └── token_freshness.py
+├── flask_jwt_extended/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── default_callbacks.py
+│   ├── exceptions.py
+│   ├── internal_utils.py
+│   ├── jwt_manager.py
+│   ├── py.typed
+│   ├── tokens.py
+│   ├── typing.py
+│   ├── utils.py
+│   └── view_decorators.py
+├── go.mod
+├── go.sum
+├── htmlcov/
+│   ├── class_index.html
+│   ├── coverage_html_cb_6fb7b396.js
+│   ├── favicon_32_cb_58284776.png
+│   ├── function_index.html
+│   ├── index.html
+│   ├── keybd_closed_cb_ce680311.png
+│   ├── status.json
+│   ├── style_cb_81f8c14c.css
+│   ├── z_714eac15f71a9411_additional_data_in_access_token_py.html
+│   ├── z_714eac15f71a9411_automatic_user_loading_py.html
+│   ├── z_714eac15f71a9411_blocklist_database_py.html
+│   ├── z_714eac15f71a9411_blocklist_redis_py.html
+│   ├── z_714eac15f71a9411_custom_decorators_py.html
+│   ├── z_714eac15f71a9411_implicit_refresh_py.html
+│   ├── z_714eac15f71a9411_jwt_locations_py.html
+│   ├── z_714eac15f71a9411_loaders_py.html
+│   ├── z_714eac15f71a9411_oidc_py.html
+│   ├── z_714eac15f71a9411_optional_protected_endpoints_py.html
+│   ├── z_714eac15f71a9411_refresh_tokens_py.html
+│   ├── z_714eac15f71a9411_simple_py.html
+│   ├── z_714eac15f71a9411_token_freshness_py.html
+│   ├── z_f2e640907e97c893___init___py.html
+│   ├── z_f2e640907e97c893_config_py.html
+│   ├── z_f2e640907e97c893_default_callbacks_py.html
+│   ├── z_f2e640907e97c893_exceptions_py.html
+│   ├── z_f2e640907e97c893_internal_utils_py.html
+│   ├── z_f2e640907e97c893_jwt_manager_py.html
+│   ├── z_f2e640907e97c893_tokens_py.html
+│   ├── z_f2e640907e97c893_typing_py.html
+│   ├── z_f2e640907e97c893_utils_py.html
+│   └── z_f2e640907e97c893_view_decorators_py.html
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_add_context_processor.py
+│   ├── test_public_additional_claims_loader.py
+│   ├── test_public_additional_claims_loader_test.go
+│   ├── test_public_asymmetric_crypto.py
+│   ├── test_public_blocklist.py
+│   ├── test_public_claims_verification.py
+│   ├── test_public_config.py
+│   ├── test_public_cookies.py
+│   ├── test_public_decode_tokens.py
+│   ├── test_public_examples_integrated.py
+│   ├── test_public_get_jwt_in_non_protected_contexts.py
+│   ├── test_public_get_methods_in_optional_endpoint.py
+│   ├── test_public_headers.py
+│   ├── test_public_json.py
+│   ├── test_public_jwt_header_loader.py
+│   ├── test_public_multiple_token_locations.py
+│   ├── test_public_options_method.py
+│   ├── test_public_query_string.py
+│   ├── test_public_user_lookup.py
+│   └── test_public_view_decorators.py
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.cfg
+├── setup.py
+├── test_summary.json
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── test_config_test.go
+│   │   ├── test_cookies_test.go
+│   │   ├── test_json_test.go
+│   │   └── test_view_decorators_test.go
+│   ├── test_add_context_processor.py
+│   ├── test_additional_claims_loader.py
+│   ├── test_asymmetric_crypto.py
+│   ├── test_blocklist.py
+│   ├── test_claims_verification.py
+│   ├── test_config.py
+│   ├── test_cookies.py
+│   ├── test_decode_tokens.py
+│   ├── test_examples_integrated.py
+│   ├── test_get_jwt_in_non_protected_contexts.py
+│   ├── test_get_methods_in_optional_endpoint.py
+│   ├── test_headers.py
+│   ├── test_json.py
+│   ├── test_jwt_header_loader.py
+│   ├── test_multiple_token_locations.py
+│   ├── test_options_method.py
+│   ├── test_query_string.py
+│   ├── test_user_lookup.py
+│   ├── test_view_decorators.py
+│   ├── testutil.go
+│   └── utils.py
+└── tox.ini

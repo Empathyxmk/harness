@@ -1,0 +1,46 @@
+quora_qcore_go/
+├── go.mod
+├── go.sum
+├── README.md
+├── run_tests.sh   # Run all tests in the repository
+├── internal/      # Internal source code for core logic and packages
+│   └── (see internal/README.md for details)
+├── tests/
+│   ├── original/
+│   │   ├── enum_test.go
+│   │   ├── asserts_test.go
+│   │   ├── decorators_test.go
+│   │   ├── testing_test.go
+│   │   ├── examples_test.go
+│   │   ├── debug_extra_test.go
+│   │   ├── microtime_test.go
+│   │   ├── debug_test.go
+│   │   ├── events_test.go
+│   │   ├── caching_test.go
+│   │   ├── errors_extra_test.go
+│   │   ├── helpers_test.go
+│   │   ├── microtime_extra_test.go
+│   │   ├── disallow_inheritance_test.go
+│   │   ├── errors_test.go
+│   │   ├── inspection_test.go
+│   │   └── inspectable_class_test.go
+│   └── testutil.go   # Test helpers, common assert tools
+├── public_tests/
+│   ├── public_asserts_test.go
+│   ├── public_enum_test.go
+│   ├── public_decorators_test.go
+│   ├── public_testing_test.go
+│   ├── public_helpers_test.go
+│   ├── public_microtime_test.go
+│   ├── public_debug_test.go
+│   ├── public_caching_test.go
+│   ├── public_events_test.go
+│   ├── public_examples_test.go
+│   ├── public_debug_extra_test.go
+│   ├── public_microtime_extra_test.go
+│   ├── public_inspection_test.go
+│   ├── public_disallow_inheritance_test.go
+│   ├── public_errors_test.go
+│   ├── public_inspectable_class_test.go
+│   ├── public_errors_extra_test.go
+└── (source files under internal/...)

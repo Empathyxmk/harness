@@ -1,0 +1,11 @@
+{
+  "project_name": "Hankkin_TaoBaoDetailDemo",
+  "language": "Java",
+  "coverage": {
+    "line": 58.4,
+    "branch": 51.3
+  },
+  "timestamp": "2025-06-19T20:19:22.252452",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/Hankkin_TaoBaoDetailDemo",
+  "test_result_path": "/workspace/test_enhancement_results/Java/Hankkin_TaoBaoDetailDemo"
+}

@@ -1,0 +1,40 @@
+project_root/
+├── CMakeLists.txt                          # Project build configuration using CMake for all source and test code
+├── README.md                               # Documentation and setup instructions
+├── include/
+│   └── (pypattyrn translated headers)      # All library public API headers (*.h)
+├── src/
+│   └── (pypattyrn translated sources)      # All library source files (*.cpp) for each pattern/module
+├── tests/
+│   ├── original/
+│   │   ├── behavioral/
+│   │   │   └── (test_chain_test.cpp, test_command_test.cpp, etc.)
+│   │   ├── creational/
+│   │   │   └── (test_builder_test.cpp, ...)
+│   │   └── structural/
+│   │       └── (test_adapter_test.cpp, ...)
+│   ├── test_main.cpp                       # Main entry for all original tests (registers all GoogleTest test cases)
+├── public_tests/
+│   ├── behavioral/
+│   │   └── (test_null_public_test.cpp, ...)
+│   ├── creational/
+│   │   └── (test_builder_public_test.cpp, ...)
+│   └── test_public_main.cpp                # Main entry for all public tests (also with GoogleTest)
+├── run_tests.sh                            # One-click test build and execution script (runs ALL tests)
+└── project_structure.txt                   # This file; explains the project structure
+
+Directory explanations:
+- src/:        Translated C++ source code for all pypattyrn modules/patterns
+- include/:    C++ header files for the library modules and classes (public API)
+- tests/original/:   All original (private/internal) test cases translated from Python, organized by type
+- public_tests/:     All public test cases, mirroring original structure. Organized by area (behavioral/creational/structural)
+- tests/test_main.cpp:       Unified entry file that registers all test cases in tests/original/* for Google Test
+- public_tests/test_public_main.cpp: Entry for all public test cases
+- CMakeLists.txt:   CMake configuration to build the library and all test executables
+- run_tests.sh:     Simple test runner script: builds and runs all test targets
+- README.md:        Build, install, and usage instructions
+
+How to run tests:
+  $ ./run_tests.sh
+
+CMake and gtest are required; see README.md for installation help.

@@ -1,0 +1,19 @@
+{
+  "project_name": "scrapinghub_adblockparser",
+  "language": "Python",
+  "coverage": {
+    "line": 94.0,
+    "branch": 90.2
+  },
+  "timestamp": "2025-06-19T12:28:19.070850",
+  "original_path": "/workspace/runnable_filter/Python/scrapinghub_adblockparser",
+  "test_result_path": "/workspace/test_enhancement_results/Python/scrapinghub_adblockparser",
+  "tests_path": [
+    "tests/test_adblockparser_api.py",
+    "tests/test_options.py",
+    "tests/test_parsing.py",
+    "tests/test_rule_types.py",
+    "tests/test_utils.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

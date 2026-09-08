@@ -1,0 +1,40 @@
+project_root/
+├── src/
+│   └── jws.py          # JWS stub library to satisfy imports for tests. (Replace with real JWS impl. as needed)
+├── tests/
+│   └── original/
+│       ├── test_jws.py         # Translated original JS test/jws.test.js to Python using pytest
+│       └── test_unit_extra.py  # Translated original JS test/unit-extra.test.js
+├── public_tests/
+│   ├── test_jws_public.py      # Python translation of test_public/jws.public.test.js
+│   └── test_unit_extra_public.py # Python translation of test_public/unit-extra.public.test.js
+├── requirements.txt    # pip requirements, with pytest dependency
+├── run_tests.sh        # Simple pytest runner script
+├── project_structure.txt # This file: project tree and explanation
+
+-------------------------------------------------------------------------------------
+Directory explanations:
+
+src/              -- Python modules for core logic (stubbed here as jws.py; replace with real).
+tests/original/   -- Original (non-public) test cases, translated from JavaScript (using pytest).
+public_tests/     -- Public-facing test suite, translated from JS public tests.
+requirements.txt  -- List of Python dependencies (pytest).
+run_tests.sh      -- Bash script to run all tests with a single command.
+project_structure.txt -- This explanation and directory tree.
+
+Instructions:
+
+1. Set up a Python virtual environment (optional but recommended):
+   python3 -m venv venv
+   source venv/bin/activate
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Place test files (fixtures: .pem, .txt, etc.) from the original JS 'test/' folder to the new 'test/' folder at project root,
+   as Python tests expect these files in the relative '../test/' directory of the test scripts.
+
+4. Run all tests with:
+   ./run_tests.sh
+
+All test logic is fully implemented and tests are separated into original and public suites, runnable with pytest.

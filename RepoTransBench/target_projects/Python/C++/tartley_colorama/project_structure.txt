@@ -1,0 +1,42 @@
+project_root/
+├── CMakeLists.txt             # CMake build configuration for the overall project.
+├── include/
+│   └── colorama/              # C++ header files for colorama implementation and test stubs.
+│       ├── ansi.h
+│       ├── ansitowin32.h
+│       ├── initialise.h
+│       ├── win32.h
+│       ├── winterm.h
+│       └── test_utils.h
+├── src/
+│   └── colorama/
+│       ├── ansi.cpp
+│       ├── ansitowin32.cpp
+│       ├── initialise.cpp
+│       ├── win32.cpp
+│       └── winterm.cpp
+├── tests/
+│   ├── original/
+│   │   ├── ansi_test.cpp
+│   │   ├── ansi_test_extra.cpp
+│   │   ├── ansitowin32_test.cpp
+│   │   ├── ansitowin32_test_extra.cpp
+│   │   ├── imports_test.cpp
+│   │   ├── initialise_test.cpp
+│   │   ├── initialise_test_branch.cpp
+│   │   ├── initialise_test_extra.cpp
+│   │   ├── isatty_test.cpp
+│   │   ├── win32_test.cpp
+│   │   ├── win32_test_extra.cpp
+│   │   ├── winterm_test.cpp
+│   │   ├── winterm_test_branch.cpp
+│   │   ├── winterm_test_extra.cpp
+│   │   └── utils.cpp
+│   └── test_main.cpp          # Main entrypoint for Google Test discovery (links all original tests)
+├── public_tests/
+│   ├── test_public_initialise.cpp
+│   ├── test_public_win32.cpp
+│   ├── test_public_winterm.cpp
+│   └── test_public_main.cpp   # Main entry for Google Test discovery (links all public tests)
+├── run_tests.sh               # Simple one-click build and test script (all tests)
+├── README.md                  # High-level documentation, instructions

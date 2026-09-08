@@ -1,0 +1,44 @@
+Project Structure for Translated C# Version (Adp.PathMorph)
+-----------------------------------------------------------
+
+Adp.PathMorph.sln
+    - Visual Studio Solution file binding together all projects.
+
+src/Adp.PathMorph/
+    - Adp.PathMorph.csproj       # C# project file for main PlayToPauseMorph implementation.
+    - PlayToPauseMorph.cs        # Main implementation class, transcribed from Java source.
+
+tests/original/
+    - OriginalTests.csproj                    # Test project for all original (private) test cases.
+    - PlayToPauseMorphTest.cs                 # Direct translation of PlayToPauseMorphTest.java.
+    - PlayToPauseMorphAdditionalTest.cs       # Direct translation of PlayToPauseMorphAdditionalTest.java.
+
+public_tests/
+    - PublicTests.csproj                                # Test project for all public test cases.
+    - PlayToPauseMorphPublicTest.cs                     # Direct translation of PlayToPauseMorphPublicTest.java.
+    - PlayToPauseMorphAdditionalPublicTest.cs           # Direct translation of PlayToPauseMorphAdditionalPublicTest.java.
+
+run_tests.sh
+    - Simple shell script for building and running all tests.
+
+-----------------------------------------------------------------
+Quick Setup & Testing
+---------------------
+1. Ensure you have .NET 6 SDK or higher installed (`dotnet --version`).
+2. Run all tests with a single command:
+
+   ./run_tests.sh
+
+This script restores dependencies, builds the solution, and runs all tests (both original/private and public).
+
+-----------------------------------------------------------------
+Directory Key:
+--------------
+- src/Adp.PathMorph/         : Main implementation code.
+- tests/original/            : Original (private) tests, exact Java logic, run with xUnit.
+- public_tests/              : Public tests, exact Java logic, run with xUnit.
+- .csproj files              : Build/test targets for dotnet CLI & Visual Studio.
+- Adp.PathMorph.sln          : Top-level solution for IDE & CLI.
+- run_tests.sh               : Everything-built-and-tested one-liner.
+
+-----------------------------------------------------------------

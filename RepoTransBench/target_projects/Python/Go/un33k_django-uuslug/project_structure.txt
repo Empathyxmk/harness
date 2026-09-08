@@ -1,0 +1,22 @@
+.
+├── go.mod                  # Go module file
+├── run_tests.sh            # One-click script to run all tests
+├── tests/
+│   └── original/
+│       ├── apps_py_test.go             # Original test: test_apps_py.py
+│       ├── init_test.go                # Original test: test_init.py
+│       ├── models_integration_test.go  # Original test: test_models_integration.py
+│       ├── setup_test.go               # Original test: test_setup.py
+│       ├── tests_test.go               # Original test: tests.py (most complete Django functional tests)
+│       ├── uuslug_func_test.go         # Original test: test_uuslug_func.py
+│       ├── uuslug_test.go              # Original test: test_uuslug.py
+│
+├── public_tests/
+│       ├── public_test_apps_py_test.go         # Public test: public_test_apps_py.py
+│       ├── public_test_init_test.go            # Public test: public_test_init.py
+│       ├── public_test_models_integration_test.go    # Public test: public_test_models_integration.py
+│       ├── public_test_setup_test.go           # Public test: public_test_setup.py
+│       ├── public_test_uuslug_func_test.go     # Public test: public_test_uuslug_func.py
+│       ├── public_test_uuslug_test.go          # Public test: public_test_uuslug.py
+│
+├── README.md                # Project readme (add your details)

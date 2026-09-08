@@ -1,0 +1,30 @@
+project_root/
+├── README.md
+│   # Project documentation and test running instructions.
+├── requirements.txt
+│   # Python dependencies (pytest).
+├── run_tests.sh
+│   # One-click script to run ALL tests with pytest.
+├── src/
+│   └── editorconfig/
+│       ├── __init__.py
+│       └── utils.py
+│           # Implementation stubs for the functions/classes being tested.
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_utils.py
+│           # Translation of the Java original test UtilsTest.java
+├── public_tests/
+│   ├── __init__.py
+│   └── test_utils_public.py
+│       # Translation of the Java public test UtilsPublicTest.java
+
+# Directory explanations:
+# - src/editorconfig/ : Holds the Python translation of the classes/functions being tested (mocks/real as necessary).
+# - tests/original/   : Contains original test translations from the private/internal Java test suite.
+# - public_tests/     : Contains tests translated from the Java public test suite. Safe for public runs.
+# - requirements.txt  : PyPI dependencies for test execution.
+# - run_tests.sh      : Simple bash script to execute all tests.
+# - README.md         : Project and usage info.

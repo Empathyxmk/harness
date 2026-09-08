@@ -1,0 +1,29 @@
+project_root/
+├── src/
+│   └── potpourri3d/
+│       ├── __init__.py
+│       ├── core.py
+│       ├── io.py
+│       ├── mesh.py
+│       └── point_cloud.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_core.py
+│       ├── test_io.py
+│       ├── test_mesh.py
+│       ├── test_point_cloud.py
+│       └── test_potpourri3d.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_core_public.py
+│   ├── test_io_public.py
+│   ├── test_mesh_public.py
+│   ├── test_point_cloud_public.py
+│   └── test_potpourri3d_public.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── project_structure.txt
+└── test/    # Legacy, superceded by tests/original and public_tests, safe to ignore

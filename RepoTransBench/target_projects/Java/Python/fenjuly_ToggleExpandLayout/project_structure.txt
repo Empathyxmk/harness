@@ -1,0 +1,37 @@
+.
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_application_demo_public.py
+│   ├── test_application_library_public.py
+│   ├── test_baseanimator_public.py
+│   ├── test_dropdownlayout_public.py
+│   └── test_toggleexpandlayout_public.py
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_application_demo.py
+│       ├── test_application_library.py
+│       ├── test_baseanimator.py
+│       ├── test_dropdownlayout.py
+│       └── test_toggleexpandlayout.py
+
+Contents:
+- requirements.txt         # Python dependencies for testing
+- run_tests.sh            # Shell script to run all tests with pytest (original + public)
+- public_tests/           # All public test cases (translated from Java public tests)
+   - __init__.py
+   - test_*.py            # Translated public test files
+- tests/original/         # All original (non-public) test cases from Java
+   - __init__.py
+   - test_*.py            # Translated original test files
+
+Instructions:
+- To run all tests:   ./run_tests.sh
+- To install deps:    pip install -r requirements.txt
+- To only run public: pytest public_tests
+- To only run original: pytest tests/original
+
+All tests use pytest + unittest.mock/mocker (see requirements.txt).

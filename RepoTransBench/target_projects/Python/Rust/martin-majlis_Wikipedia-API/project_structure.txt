@@ -1,0 +1,43 @@
+project_root/
+├── src/
+│   ├── lib.rs          # Main library code; contains #[cfg(test)] for internal tests if needed
+│   └── main.rs         # Entry point for the application
+├── tests/
+│   ├── original/       # Translated original test cases from Python's tests/ directory
+│   │   ├── test_wikipedia_object.rs
+│   │   ├── test_namespace_and_extractformat.rs
+│   │   ├── test_utils_and_consts.rs
+│   │   ├── links_test.rs
+│   │   ├── extract_errors_test.rs
+│   │   ├── extract_html_format_test.rs
+│   │   ├── categorymembers_test.rs
+│   │   ├── categories_test.rs
+│   │   ├── wikipedia_test.rs
+│   │   ├── extract_wiki_format_test.rs
+│   │   ├── backlinks_test.rs
+│   │   ├── wikipedia_page_test.rs
+│   │   └── langlinks_test.rs
+│   └── public_tests/   # Translated public test cases from Python's public_tests/ directory
+│       ├── test_public_wikipedia_object.rs
+│       ├── test_public_namespace_and_extractformat.rs
+│       ├── test_public_utils_and_consts.rs
+│       ├── test_public_links.rs
+│       ├── test_public_extract_errors.rs
+│       ├── test_public_extract_html_format.rs
+│       ├── test_public_categorymembers.rs
+│       ├── test_public_categories.rs
+│       ├── test_public_wikipedia.rs
+│       ├── test_public_extract_wiki_format.rs
+│       ├── test_public_backlinks.rs
+│       ├── test_public_wikipedia_page.rs
+│       └── test_public_langlinks.rs
+├── Cargo.toml          # Project configuration file
+├── run_tests.sh        # Script to run all tests with one command
+├── project_structure.txt # This file: documentation of the project structure
+└── README.md           # Project documentation
+
+This structure follows Rust conventions:
+- Source code is in src/.
+- Tests are in tests/, subdivided into original and public_tests to mirror the Python structure.
+- run_tests.sh allows one-click test execution using 'cargo test'.
+- All tests are fully implemented with identical logic from the source Python tests.

@@ -1,0 +1,37 @@
+paypal_seifnode Python Project Structure:
+
+├── requirements.txt               # Python dependencies (e.g. pytest)
+├── run_tests.sh                   # One-click test runner script (pytest)
+├── project_structure.txt          # This file; structure & documentation
+├── tests/
+│   ├── original/
+│   │   ├── test_aesxor.py         # Original C++ header "compilation" tests (Python equivalent)
+│   │   ├── test_seifecc.py
+│   │   ├── test_seifsha3.py
+│   │   └── test_rng.py
+│   ├── test_aestest.py            # Translation of aesxortest.js
+│   ├── test_ecctest.py            # Translation of ecctest.js
+│   ├── test_rngtest.py            # Translation of rngtest.js
+│   └── test_shatest.py            # Translation of shatest.js
+├── public_tests/
+│   ├── test_aesxor_public.py      # Public header test (Python)
+│   ├── test_seifecc_public.py
+│   └── test_seifsha3_public.py
+
+Directory explanations and setup/test instructions:
+
+- requirements.txt: Specifies Python testing dependencies (pytest).
+- run_tests.sh: Executable script. Runs all tests with one-click: `./run_tests.sh`
+    * Installs dependencies and runs all tests (original and public).
+- tests/original/: Contains minimal original C++ tests (header-compile checks).
+- tests/: Contains complete translations of all JS logic tests for aesxor, rng, ecc, sha3.
+- public_tests/: Public version of header checks, for public testing purposes.
+- project_structure.txt: Structure documentation.
+
+Instructions:
+1. Ensure you have Python 3.7+ and pip.
+2. Run `chmod +x run_tests.sh` if necessary.
+3. Run all tests and auto-install dependencies:
+       ./run_tests.sh
+
+All tests (original and public) are run with pytest.

@@ -1,0 +1,13 @@
+*.iml
+/.idea
+docs
+pikaq-base.iml
+/.project
+/.classpath
+/.settings
+log
+*/build
+.gradle
+old.txt
+old
+/log

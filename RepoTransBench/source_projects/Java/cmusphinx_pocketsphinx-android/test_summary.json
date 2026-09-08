@@ -1,0 +1,19 @@
+{
+  "project_name": "cmusphinx_pocketsphinx-android",
+  "language": "Java",
+  "coverage": {
+    "line": 94.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T08:48:55.313350",
+  "original_path": "/workspace/runnable_filter/Java/cmusphinx_pocketsphinx-android",
+  "test_result_path": "/workspace/test_enhancement_results/Java/cmusphinx_pocketsphinx-android",
+  "tests_path": [
+    "src/test/java/edu/cmu/pocketsphinx/RecognitionListenerTest.java",
+    "src/test/java/edu/cmu/pocketsphinx/HypothesisTest.java",
+    "src/test/java/edu/cmu/pocketsphinx/AssetsTest.java",
+    "src/test/java/edu/cmu/pocketsphinx/SpeechRecognizerSetupTest.java",
+    "src/test/java/edu/cmu/pocketsphinx/SpeechRecognizerTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

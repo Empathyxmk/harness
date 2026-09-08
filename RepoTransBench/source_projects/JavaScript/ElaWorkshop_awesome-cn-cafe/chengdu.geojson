@@ -1,0 +1,150 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "咖世家咖啡（Costa Coffee）",
+        "下载速度": "4.63 Mbps",
+        "Speedtest 链接": "http://beta.speedtest.net/result/6381402353",
+        "评论 (@cosmos53076)": "成都市中心位置，人少，网速还可以。",
+        "marker-color": "#F3AE1A",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.068281,
+          30.66127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "漫咖啡(3号店)（Manne Coffee）",
+        "下载速度": "10.43 Mbps",
+        "Speedtest 链接": "http://beta.speedtest.net/result/6381848344",
+        "评论 (@cosmos53076)": "高新区，网速很快，人很多",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.063417,
+          30.549483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "漫咖啡(2号店)（Manne Coffee）",
+        "下载速度": "7.47 Mbps",
+        "Speedtest 链接": "http://beta.speedtest.net/result/6384439354",
+        "评论 (@cosmos53076)": "周末人很多，网速还可以，测试连的Wifi是Maan Coffee 2",
+        "marker-color": "#F3AE1A",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.064766,
+          30.64873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "漫咖啡(紫荆美熙广场店)（Manne Coffee）",
+        "下载速度": "18.47 Mbps",
+        "Speedtest 链接": "http://beta.speedtest.net/result/6393926937",
+        "评论 (@cosmos53076)": "工作日人非常少，即使是午餐时间，网速非常快，测试连的Wifi是Maan Coffee（Mann Coffee Free WiFi很慢）",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.05147,
+          30.615395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "构客咖啡（GROK Coffee）",
+        "下载速度": "91.85 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/result/8681040588",
+        "评论 (@kid1412621)": "毗邻银泰城，人比较少，景观不错，空间很大（3 层+天台），网速非常快",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.05782,
+          30.53827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "Seesaw（成都魔方店）",
+        "下载速度": "584 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/my-result/i/4668652209",
+        "评论 (@xhacker)": "有一些座位不算太多。网速惊人。",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.052,
+          30.585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "Starbucks 星巴克（臻选酒坊万象城店）",
+        "下载速度": "68.5 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/my-result/i/4669760661",
+        "评论 (@xhacker)": "挺大的。工作日人不多。",
+        "marker-color": "#50C240",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.113,
+          30.651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "名称": "Starbucks 星巴克（成都城南仁和新城店）",
+        "下载速度": "5.54 Mbps",
+        "Speedtest 链接": "https://www.speedtest.net/my-result/i/4671743601",
+        "评论 (@xhacker)": "空间大，环境不错。",
+        "厕所": "商场内有",
+        "marker-color": "#F3AE1A",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.051,
+          30.591
+        ]
+      }
+    }
+  ]
+}

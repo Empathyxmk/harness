@@ -1,0 +1,25 @@
+latencyutils/
+├── go.mod
+├── README.md
+├── test_translation_progress.json
+├── run_tests.sh
+├── tests/
+│   ├── original/
+│   │   ├── interval_estimator_test.go
+│   │   ├── latency_stats_test.go
+│   │   ├── moving_average_interval_estimator_test.go
+│   │   ├── pause_detector_listener_test.go
+│   │   ├── simple_pause_detector_test.go
+│   │   ├── time_capped_moving_average_interval_estimator_test.go
+│   │   └── time_services_test.go
+│   └── testutil.go
+├── public_tests/
+│   ├── interval_estimator_public_test.go
+│   ├── latency_stats_public_test.go
+│   ├── moving_average_interval_estimator_public_test.go
+│   ├── pause_detector_listener_public_test.go
+│   ├── simple_pause_detector_public_test.go
+│   ├── time_capped_moving_average_interval_estimator_public_test.go
+│   ├── time_services_public_test.go
+│   └── testutil_public.go
+└── README.md

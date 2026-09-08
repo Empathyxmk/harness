@@ -1,0 +1,25 @@
+najoshi_sickle/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── print_record.rs
+│   └── sliding.rs
+├── tests/
+│   └── original/
+│       ├── test_print_record.rs
+│       ├── test_print_record_edge.rs
+│       ├── test_sickle_args.rs
+│       ├── test_sliding_quality.rs
+│       ├── test_sliding_window_edge.rs
+│       ├── test_trim_paired_args.rs
+│       ├── test_trim_paired_failures.rs
+│       ├── test_trim_single_args.rs
+│       ├── test_trim_single_failures.rs
+├── public_tests/
+│   ├── test_print_record_public.rs
+│   ├── test_print_record_edge_public.rs
+│   ├── test_sliding_quality_public.rs
+│   └── test_sliding_window_edge_public.rs
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json

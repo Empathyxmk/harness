@@ -1,0 +1,25 @@
+wroberts_pytimeparse/
+├── go.mod
+├── main.go (optional placeholder for future implementation)
+├── pytimeparse/               # Go implementation of the main package (not included in this migration step)
+│
+├── tests/
+│   ├── original/
+│   │   ├── test_setup_py_test.go
+│   │   ├── test_init_test.go
+│   │   ├── test_timeparse_comprehensive_test.go
+│   │   ├── test_timeparse_regexes_test.go
+│   │   ├── test_timeparse_api_test.go
+│   │   └── testutil.go   # Any shared helpers/mocks for testing
+│
+├── public_tests/
+│   ├── test_public_timeparse_api_test.go
+│   ├── test_public_init_test.go
+│   ├── test_public_timeparse_regexes_test.go
+│   ├── test_public_timeparse_comprehensive_test.go
+│   ├── test_public_setup_py_test.go
+│   └── testutil.go       # Any public-test-specific helpers
+│
+├── run_tests.sh
+├── README.md
+└── test_translation_progress.json

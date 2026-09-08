@@ -1,0 +1,77 @@
+{
+  "project_name": "jkrasnay_sqlbuilder",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T15:04:18.092164",
+  "original_path": "/workspace/verified_repos_v2/Java/jkrasnay_sqlbuilder",
+  "public_test_result_path": "/workspace/public_test_results/Java/jkrasnay_sqlbuilder",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/ca/krasnay/sqlbuilder/AbstractSqlCreatorTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/InsertBuilderTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/SelectBuilderTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/ParameterizedPreparedStatementCreatorTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/PredicateTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/UpdateBuilderTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/UniqueStringGeneratorTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/DeleteBuilderTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/SelectCreatorTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/orm/StringListConverterTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/orm/StringMapConverterTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/orm/ReflectionUtilsTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/orm/StringListFlattenerTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/orm/MappingTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 14,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/ca/krasnay/sqlbuilder/AbstractSqlCreatorPublicTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/InsertBuilderPublicTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/SelectBuilderPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/ca/krasnay/sqlbuilder/UpdateBuilderPublicTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/DeleteBuilderPublicTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/UniqueStringGeneratorPublicTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/PredicatePublicTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/orm/StringListConverterPublicTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/orm/StringMapConverterPublicTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/orm/StringListFlattenerPublicTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/orm/ReflectionUtilsPublicTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/SelectCreatorPublicTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/ParameterizedPreparedStatementCreatorPublicTest.java",
+      "src/test/java/ca/krasnay/sqlbuilder/orm/MappingPublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 15,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/ca/krasnay/sqlbuilder/AbstractSqlCreatorPublicTest.java",
+    "src/test/java/ca/krasnay/sqlbuilder/InsertBuilderPublicTest.java",
+    "src/test/java/ca/krasnay/sqlbuilder/SelectBuilderPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/ca/krasnay/sqlbuilder/UpdateBuilderPublicTest.java",
+    "src/test/java/ca/krasnay/sqlbuilder/DeleteBuilderPublicTest.java",
+    "src/test/java/ca/krasnay/sqlbuilder/UniqueStringGeneratorPublicTest.java",
+    "src/test/java/ca/krasnay/sqlbuilder/PredicatePublicTest.java",
+    "src/test/java/ca/krasnay/sqlbuilder/orm/StringListConverterPublicTest.java",
+    "src/test/java/ca/krasnay/sqlbuilder/orm/StringMapConverterPublicTest.java",
+    "src/test/java/ca/krasnay/sqlbuilder/orm/StringListFlattenerPublicTest.java",
+    "src/test/java/ca/krasnay/sqlbuilder/orm/ReflectionUtilsPublicTest.java",
+    "src/test/java/ca/krasnay/sqlbuilder/SelectCreatorPublicTest.java",
+    "src/test/java/ca/krasnay/sqlbuilder/ParameterizedPreparedStatementCreatorPublicTest.java",
+    "src/test/java/ca/krasnay/sqlbuilder/orm/MappingPublicTest.java"
+  ]
+}

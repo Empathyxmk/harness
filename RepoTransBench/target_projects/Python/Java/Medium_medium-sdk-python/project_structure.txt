@@ -1,0 +1,35 @@
+medium-sdk-java/
+├── pom.xml
+├── run_tests.sh
+├── project_structure.txt
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── medium/
+│   │               └── sdk/
+│   │                   └── Client.java             # Main SDK stub (minimal)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── medium/
+│                   └── sdk/
+│                       ├── original/
+│                       │   ├── TestClient.java         # Translation of tests/test.py
+│                       │   └── TestClientExtra.java    # Translation of tests/test_extra.py
+│                       └── public_tests/
+│                           └── TestClientPublicExtra.java # Translation of public_tests/test_public_extra.py
+│       └── resources/
+│           └── test.png     # (Empty/stub for image test)
+│
+# Explanations:
+# - pom.xml: Maven configuration and dependencies
+# - run_tests.sh: One-click test execution script (./run_tests.sh)
+# - src/main/java/.../Client.java: Main SDK class (minimal stub)
+# - src/test/java/.../original/: Translated original (private) tests
+# - src/test/java/.../public_tests/: Translated public tests
+# - src/test/resources/test.png: Stub (empty) image file for image upload test
+#
+# How to run all tests:
+#   Run: ./run_tests.sh
+# This will build and test all (original + public) test classes.

@@ -1,0 +1,15 @@
+wangshaolei_AutoSpannableTextView-go/
+├── go.mod                       # Go module definition and dependencies
+├── README.md                    # Project overview and setup instructions
+├── main.go                      # Placeholder for app/main package
+├── run_tests.sh                 # Script to run all tests. Usage: ./run_tests.sh
+├── tests/
+│   ├── original/
+│   │   ├── application_test.go                  # From ApplicationTest.java
+│   │   ├── example_unit_test.go                 # From ExampleUnitTest.java
+│   │   └── autolink_style_textview_test.go      # From AutoLinkStyleTextViewTest.java
+│   └── testutil.go                             # Any reusable test helpers/mocks
+├── public_tests/
+│   ├── application_public_test.go               # From ApplicationPublicTest.java
+│   ├── example_unit_public_test.go              # From ExampleUnitPublicTest.java
+│   └── autolink_style_textview_public_test.go   # From AutoLinkStyleTextViewPublicTest.java

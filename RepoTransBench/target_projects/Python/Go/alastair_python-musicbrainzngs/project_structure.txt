@@ -1,0 +1,32 @@
+project_root/
+├── go.mod                        # Go module/package definition
+├── README.md                     # Project overview and running instructions
+├── run_tests.sh                  # Simple script to run all tests
+├── project_structure.txt         # This file: describes the layout
+├── tests/
+│   ├── original/
+│   │   ├── test_mbxml_artist_test.go
+│   │   └── ...                   # All other original test files (one per Python original test)
+│   └── ...                       # Additional helper files as needed (testutil.go etc).
+├── public_tests/
+│   ├── test_public_caa_test.go
+│   ├── test_public_mbxml_artist_test.go
+│   ├── test_public_mbxml_release_group_test.go
+│   ├── conftest.go
+│   └── ...                       # (One file per public test from Python)
+└── ...
+
+### Directory/Files Explained
+
+- `go.mod`: Standard Go module descriptor; manages module imports and versions.
+- `README.md`: Project overview, how to run tests, summary.
+- `run_tests.sh`: One-click script to run all Go tests in every package/subdir.
+- `tests/original/`: All original test files, one per original Python test (translated).
+- `public_tests/`: All public test files, mirroring the public Python tests. Standalone/public logic only.
+- `project_structure.txt`: This file, documents the directory tree and file purposes.
+
+### How to Run
+
+1. Make sure you have Go installed (`go 1.21` or later).
+2. From the project root, run: `./run_tests.sh` to execute all tests.
+3. All test output will be displayed in standard Go test format.

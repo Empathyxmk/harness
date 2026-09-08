@@ -1,0 +1,19 @@
+{
+  "project_name": "alexreardon_use-memo-one",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T10:32:14.390945",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/alexreardon_use-memo-one",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/alexreardon_use-memo-one",
+  "tests_path": [
+    "test/are-inputs-equal.spec.js",
+    "test/use-callback-one.spec.js",
+    "test/use-memo-one.spec.js",
+    "test/no-input.spec.js",
+    "test/edge-cases.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

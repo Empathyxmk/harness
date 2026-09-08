@@ -1,0 +1,15 @@
+luaprofiler/
+├── Cargo.toml                 # Rust project configuration
+├── src/
+│   ├── lib.rs                 # Main library code
+│   └── bin/
+│       └── public_test.rs     # Public test binary
+├── tests/
+│   ├── mod.rs                 # Test module organization
+│   └── original/
+│       ├── mod.rs             # Original test module organization
+│       ├── test_profiler.rs   # Translated C test
+│       └── test.lua           # Original Lua test script
+├── public_tests/
+│   └── public_test.lua        # Public Lua test script
+└── run_tests.sh               # Test execution script

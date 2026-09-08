@@ -1,0 +1,39 @@
+project_root/
+├── src/
+│   └── Comet/
+│       ├── Comet.csproj                  # Library project with main code and interfaces
+│       ├── ChatOperation.cs              # ChatOperation implementation
+│       ├── IApplicationContext.cs        # Interface (mocks Spring's ApplicationContext)
+│       ├── Operation.cs                  # Operation interface
+│       ├── Constants.cs                  # Constant op codes
+│       ├── Proto.cs                      # DTO for protocol (as in Java)
+│       ├── MsgService.cs                 # Service interface for message
+│       ├── MessageOperation.cs           # Main operation class for message actions
+│       └── IChannel.cs                   # Channel (writes messages), like Netty Channel
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj          # xUnit test project for original tests
+│       ├── ChatOperationTests.cs         # Translated tests from ChatOperationTest.java
+│       └── MessageOperationTests.cs      # Translated tests from MessageOperationTest.java
+├── public_tests/
+│   ├── PublicTests.csproj                # xUnit test project for public tests
+│   ├── ChatOperationPublicTests.cs       # Translated public tests from ChatOperationPublicTest.java
+│   └── MessageOperationPublicTests.cs    # Translated public tests from MessageOperationPublicTest.java
+├── run_tests.sh                          # Simple one-click test script, runs all tests
+├── project_structure.txt                 # This file (structure + explanations)
+└── README.md                             # Write additional documentation if needed
+
+Directory/Files Explanation:
+- src/Comet/: Main codebase (core chat operation logic, interfaces, and DTOs)
+- tests/original/: All original (private/internal) test cases. Mirrors Java's "original test" intent.
+- public_tests/: All public test cases. Mirrors Java's public/visible tests.
+- *.csproj: Standard C# project files for building source/tests with dotnet
+- run_tests.sh: Run all tests (original + public) with a single `./run_tests.sh`
+- project_structure.txt: Describes file layout and directory roles
+- README.md: (Create as needed) Explains project build/run for new contributors
+
+How to Build/Run Tests:
+1. Make sure you have .NET 7 SDK+ installed.
+2. From project_root, simply run:
+   ./run_tests.sh
+All tests should run (original and public). Projects use xUnit and moq for mocking.

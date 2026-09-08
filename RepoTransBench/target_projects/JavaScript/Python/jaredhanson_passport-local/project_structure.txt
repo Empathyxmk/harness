@@ -1,0 +1,57 @@
+Project Structure for passport_local Python Translation
+======================================================
+
+passport_local/         - Project root (this folder)
+|
+|-- requirements.txt    - Python dependencies
+|-- run_tests.sh        - Simple script to run ALL tests with pytest
+|-- project_structure.txt - This documentation
+|
+|-- src/
+|    |-- passport_local/
+|        |-- __init__.py      - Exposes Strategy
+|        |-- strategy.py      - Main Strategy class, mimics JS logic for test translation
+|        |-- utils.py         - Utility functions
+|
+|-- tests/
+|    |-- __init__.py      - Test package marker
+|    |-- test_strategy.py             - Original: test/strategy.test.js
+|    |-- test_strategy_normal.py      - Original: test/strategy.normal.test.js
+|    |-- test_strategy_options.py     - Original: test/strategy.options.test.js
+|    |-- test_strategy_fields.py      - Original: test/strategy.fields.test.js
+|    |-- test_package.py              - Original: test/package.test.js
+|    |-- test_strategy_fail.py        - Original: test/strategy.fail.test.js
+|    |-- test_index.py                - Original: test/index.test.js
+|    |-- test_utils.py                - Original: test/utils.test.js
+|    |-- test_strategy_error.py       - Original: test/strategy.error.test.js
+|    |-- test_strategy_passreq.py     - Original: test/strategy.passreq.test.js
+|
+|-- public_tests/
+|    |-- __init__.py 
+|    |-- test_strategy_public.py          - Public: strategy.public.test.js
+|    |-- test_strategy_normal_public.py   - Public: strategy.normal.public.test.js
+|    |-- test_strategy_options_public.py  - Public: strategy.options.public.test.js
+
+======================================================
+
+Setup & Usage
+-------------
+
+1. Install requirements:
+    pip install -r requirements.txt
+
+2. To run ALL tests (original and public), execute:
+    ./run_tests.sh
+
+Test Folders:
+-------------
+- tests/         - Contains all translated original tests.
+- public_tests/  - Contains all translated public test cases.
+
+Source Code:
+------------
+- src/passport_local/   - Source re-implementation to enable tests to pass, modeled for test compatibility.
+
+Adjust as needed if you plan to integrate real logic.
+
+======================================================

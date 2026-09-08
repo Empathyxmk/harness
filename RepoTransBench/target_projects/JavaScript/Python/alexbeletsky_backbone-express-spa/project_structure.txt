@@ -1,0 +1,26 @@
+alexbeletsky_backbone-express-spa-python/
+├── requirements.txt
+│   # Python dependencies (uses pytest for testing)
+├── run_tests.sh
+│   # Bash script to run all Python tests with one command
+├── README.md
+│   # Project usage and overview
+├── public_tests/
+│   ├── test_Gruntfile_public.py
+│   │   # Public test for Gruntfile (function arity and repeated calls)
+│   ├── test_app_public.py
+│   │   # Public test for server HTTP status response
+│   ├── test_runMocha_public.py
+│   │   # Public test for environment variable setting
+│   └── test_public_js_core_transition_public.py
+│       # Public test for transition module accessibility and singleton behavior
+├── tests/
+│   └── original/
+│       ├── test_Gruntfile.py
+│       │   # Original test for Gruntfile function export and call
+│       ├── test_app.py
+│       │   # Original test for app (server) HTTP response
+│       ├── test_runMocha.py
+│       │   # Original test for process.env and script invocation
+│       └── test_public_js_core_transition.py
+│           # Original tests for transition: method & callback logic

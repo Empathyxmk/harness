@@ -1,0 +1,36 @@
+realpython_codetiming/
+├── src/
+│   └── lib/
+│       ├── timer.h           # C++ translation of codetiming._timer
+│       ├── timer.cpp
+│       ├── timers.h          # C++ translation of codetiming._timers
+│       └── timers.cpp
+├── include/
+│   ├── timer.h               # Header for Timer
+│   └── timers.h              # Header for Timers
+├── tests/
+│   ├── test_codetiming.cpp          # Original tests translation
+│   ├── test_timer_additional.cpp
+│   ├── test_timers.cpp
+│   └── test_main.cpp         # GTest main entrypoint
+├── public_tests/
+│   ├── test_public_codetiming.cpp   # Translated public test 1
+│   ├── test_public_timer_additional.cpp
+│   └── test_public_timers.cpp
+├── CMakeLists.txt            # Project configuration for CMake
+├── run_tests.sh              # One-click build and test runner
+├── project_structure.txt     # This structure document
+└── README.md                 # Project/usage info
+
+Directory explanations:
+- src/lib: Implementation of code timing logic in C++
+- include: Public headers for Timer and Timers
+- tests/: All translated original (private) tests, grouped as in source project
+- public_tests/: All translated public tests
+- CMakeLists.txt: Configure GoogleTest, build and link all sources/tests
+- run_tests.sh: Builds and runs all tests automatically
+- test_main.cpp: Standard GTest main()
+- README.md: User guide and doc
+
+To build and run all tests:
+$ ./run_tests.sh

@@ -1,0 +1,56 @@
+quora_qcore-java/
+├── pom.xml
+├── run_tests.sh
+├── README.md
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── quora/
+│                   └── qcore/
+│                       ├── (main library code goes here)
+│
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── quora/
+│                   └── qcore/
+│                       ├── original/
+│                       │   ├── AssertsTest.java
+│                       │   ├── CachingTest.java
+│                       │   ├── DebugExtraTest.java
+│                       │   ├── DebugTest.java
+│                       │   ├── DecoratorsTest.java
+│                       │   ├── DisallowInheritanceTest.java
+│                       │   ├── EnumTest.java
+│                       │   ├── ErrorsExtraTest.java
+│                       │   ├── ErrorsTest.java
+│                       │   ├── EventsTest.java
+│                       │   ├── ExamplesTest.java
+│                       │   ├── HelpersTest.java
+│                       │   ├── InspectableClassTest.java
+│                       │   ├── InspectionTest.java
+│                       │   ├── MicrotimeExtraTest.java
+│                       │   ├── MicrotimeTest.java
+│                       │   └── TestingTest.java
+│                       └── public_tests/
+│                           ├── PublicAssertsTest.java
+│                           ├── PublicCachingTest.java
+│                           ├── PublicDebugTest.java
+│                           ├── PublicDebugExtraTest.java
+│                           ├── PublicDecoratorsTest.java
+│                           ├── PublicDisallowInheritanceTest.java
+│                           ├── PublicEnumTest.java
+│                           ├── PublicErrorsExtraTest.java
+│                           ├── PublicErrorsTest.java
+│                           ├── PublicEventsTest.java
+│                           ├── PublicExamplesTest.java
+│                           ├── PublicHelpersTest.java
+│                           ├── PublicInspectableClassTest.java
+│                           ├── PublicInspectionTest.java
+│                           ├── PublicMicrotimeExtraTest.java
+│                           ├── PublicMicrotimeTest.java
+│                           ├── PublicTestingTest.java
+│
+└── project_structure.txt

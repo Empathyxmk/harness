@@ -1,0 +1,43 @@
+BlackObfuscatorASPlugin/                       # Solution root directory
+│
+├── BlackObfuscatorASPlugin.sln                # Solution file referencing all projects
+│
+├── src/BlackObfuscatorASPlugin/               # Main library source code
+│   ├── BlackObfuscatorASPlugin.csproj         # C# project file for main code
+│   ├── Abx.cs                                # Abx utility class
+│   ├── MainActivity.cs                       # Main activity class
+│   └── Models/
+│        ├── Mapping.cs                        # Mapping class (obfuscation map)
+│        └── ObfDex.cs                        # ObfDex utility (simulated Dex handling)
+│
+├── tests/original/                           # Directory for all original test translations
+│   ├── OriginalTests.csproj                  # Test project file for original tests
+│   ├── AbxTests.cs                           # Translated AbxTest.java
+│   ├── ExampleInstrumentedTests.cs           # Translated ExampleInstrumentedTest.java
+│   ├── ExampleUnitTests.cs                   # Translated ExampleUnitTest.java
+│   ├── MainActivityTests.cs                  # Translated MainActivityTest.java
+│   ├── MappingTests.cs                       # Translated MappingTest.java
+│   └── ObfDexTests.cs                        # Translated ObfDexTest.java
+│
+├── public_tests/                             # Directory for all public test translations
+│   ├── PublicTests.csproj                    # Test project file for public tests
+│   ├── AbxPublicTests.cs                     # Translated AbxPublicTest.java
+│   ├── ExampleInstrumentedPublicTests.cs     # Translated ExampleInstrumentedPublicTest.java
+│   ├── ExampleUnitPublicTests.cs             # Translated ExampleUnitPublicTest.java
+│   ├── MainActivityPublicTests.cs            # Translated MainActivityPublicTest.java
+│   ├── MappingPublicTests.cs                 # Translated MappingPublicTest.java
+│   └── ObfDexPublicTests.cs                  # Translated ObfDexPublicTest.java
+│
+├── run_tests.sh                              # Run this script to execute ALL tests (original + public)
+│
+└── project_structure.txt                     # This file; explains the structure above
+
+Instructions:
+1. Make sure you have .NET 6.0+ SDK installed.
+2. To restore dependencies and build, run:   dotnet build BlackObfuscatorASPlugin.sln
+3. To run all unit tests (original & public), run:   ./run_tests.sh
+
+- The main library code resides in `src/BlackObfuscatorASPlugin/`.
+- Original tests and public tests are split into separate test projects for clarity.
+- Tests use xUnit as the testing framework.
+- All test logic, data, and scenarios directly mirror those found in the Java source.

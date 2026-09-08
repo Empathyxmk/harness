@@ -1,0 +1,20 @@
+project_root/
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── apkutil_test.go
+│       ├── channelinfo_test.go
+│       ├── channelinfoequalshashcode_test.go
+│       ├── channelreader_test.go
+│       ├── pair_test.go
+│       ├── payloadreader_test.go
+│       ├── signaturenotfoundexception_test.go
+├── public_tests/
+│   ├── apkutil_public_test.go
+│   ├── channelinfo_public_test.go
+│   ├── channelinfoequalshashcode_public_test.go
+│   ├── channelreader_public_test.go
+│   ├── pair_public_test.go
+│   ├── payloadreader_public_test.go
+│   ├── signaturenotfoundexception_public_test.go

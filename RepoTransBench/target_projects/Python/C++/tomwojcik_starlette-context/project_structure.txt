@@ -1,0 +1,18 @@
+/
+├── CMakeLists.txt
+├── run_tests.sh
+├── src/
+│   ├── CMakeLists.txt
+│   └── ... (library sources)
+├── include/
+│   └── ... (library headers)
+├── tests/
+│   ├── original/
+│   │   └── [test files here - one per original]
+│   └── test_main.cpp
+├── public_tests/
+│   └── [test files here - one per public test]
+├── build/
+│   └── (cmake build)
+├── project_structure.txt
+├── test_translation_progress.json

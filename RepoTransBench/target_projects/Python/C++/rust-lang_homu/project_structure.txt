@@ -1,0 +1,26 @@
+rust-lang_homu_cpp/
+├── CMakeLists.txt
+├── include/
+│   └── (anticipated header files for core logic, e.g., utils.h, main.h, auth.h, comments.h, parse_issue_comment.h)
+├── src/
+│   ├── (anticipated source files for modules, e.g., utils.cpp, main.cpp, auth.cpp, comments.cpp, parse_issue_comment.cpp)
+│   └── main.cpp (dummy main if needed)
+├── tests/
+│   ├── original/
+│   │   ├── test_utils_test.cpp
+│   │   ├── test_main_test.cpp
+│   │   ├── test_comments_test.cpp
+│   │   ├── test_auth_test.cpp
+│   │   ├── test_pr_body_test.cpp
+│   │   └── test_parse_issue_comment_test.cpp
+│   └── test_main.cpp  (GoogleTest runner aggregating all original tests)
+├── public_tests/
+│   ├── test_public_utils_test.cpp
+│   ├── test_public_main_test.cpp
+│   ├── test_public_comments_test.cpp
+│   ├── test_public_auth_test.cpp
+│   ├── test_public_parse_issue_comment_test.cpp
+│   └── test_public_pr_body_test.cpp
+│   └── test_public_main.cpp  (GoogleTest runner aggregating all public tests)
+├── run_tests.sh
+├── test_translation_progress.json

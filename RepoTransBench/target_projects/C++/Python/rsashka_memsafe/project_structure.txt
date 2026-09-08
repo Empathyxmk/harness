@@ -1,0 +1,29 @@
+rsashka_memsafe_python_project/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── README.md
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_memsafe_macros_public.py
+│   ├── test_memsafe_plugin_public.py
+│   └── test_memsafe_test_public.py
+└── tests/
+    └── original/
+        ├── __init__.py
+        ├── test_memsafe_macros.py
+        ├── test_memsafe_plugin.py
+        └── test_memsafe_test.py
+
+Directories:
+- public_tests/: Contains all public, non-solution-revealing tests to check API and basic contract without revealing implementation details.
+- tests/original/: Contains all tests resembling the structure and coverage of the original C++ tests, meant for internal/complete correctness.
+- Each test follows the pytest convention: test_*.py files, test_* functions.
+- requirements.txt: Python dependencies, including pytest for all test execution.
+- run_tests.sh: Simple script to run all tests with one command.
+- README.md: Project summary and usage instructions.
+- project_structure.txt: This file, showing structure and explanation.
+
+Usage:
+- Run `pip install -r requirements.txt` to install dependencies.
+- Run `./run_tests.sh` to execute all tests (both public and original).

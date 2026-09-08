@@ -1,0 +1,32 @@
+project_root/
+├── go.mod                   # Go module definition
+├── run_tests.sh             # Simple one-click test execution script
+├── tests/
+│   ├── test_barh_test.go        # Original Barh test
+│   ├── test_figure_test.go      # Original Figure test
+│   ├── test_hist_test.go        # Original Hist test
+│   ├── test_plot_test.go        # Original Plot test
+│   ├── test_scatter_test.go     # Original Scatter test
+│   └── test_subplot_test.go     # Original Subplot test
+├── public_tests/
+│   ├── test_public_barh_test.go     # Public Barh test
+│   ├── test_public_figure_test.go   # Public Figure test
+│   ├── test_public_hist_test.go     # Public Hist test
+│   ├── test_public_plot_test.go     # Public Plot test
+│   ├── test_public_scatter_test.go  # Public Scatter test
+│   └── test_public_subplot_test.go  # Public Subplot test
+└── project_structure.txt     # This project tree and explanation
+
+
+Directory Explanations:
+- go.mod: Declares Go module, required for all dependencies and package management.
+- run_tests.sh: Simple script to run all tests (uses go test ./... so all packages and tests are discovered automatically).
+- tests/: Contains all original private tests, exactly translated from Python unittest.
+- public_tests/: Contains all public (released) test cases, exactly translated from the public_test_summary listing.
+- project_structure.txt: You are reading it! Overview of folders, test suites, and quick start guide.
+
+Setup & Testing Instructions:
+1. Ensure you have Go (>=1.20) installed.
+2. Run: `chmod +x ./run_tests.sh` (if needed).
+3. To run ALL tests: `./run_tests.sh`
+4. All tests run using standard Go test runner. Both original and public_tests suites are discovered.

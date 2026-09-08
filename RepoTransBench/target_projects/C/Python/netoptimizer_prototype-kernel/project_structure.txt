@@ -1,0 +1,64 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # One-click script to run all tests via pytest
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_xdp_monitor_user.py
+│       └── test_xdp_bench01_mem_access_cost_user.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_xdp_bench01_mem_access_cost_user_public.py
+│   └── test_xdp_monitor_user_public.py
+└── project_structure.txt           # This file (project structure description)
+
+----------------------------------------
+Directory and File Explanations:
+
+- requirements.txt
+    Specifies Python dependencies. The only requirement is 'pytest'.
+
+- run_tests.sh
+    Simple executable script. Just run './run_tests.sh' to execute all tests.
+
+- tests/
+    Contains all original (non-public) translated tests.
+
+    - tests/original/
+        Holds Python translations of the original (internal) test cases.
+        Each .py file contains test functions with identical logic to the
+        C source tests.
+
+- public_tests/
+    Holds Python translations of the public test cases, logically separated from
+    original tests. Naming mirrors public C test files.
+
+- __init__.py
+    Blank files, included so pytest discovers tests in all folders.
+
+- project_structure.txt
+    This file. Describes the repository/file layout, directory roles, and how to
+    set up/run the tests.
+
+----------------------------------------
+SETUP AND TESTING INSTRUCTIONS
+
+1. [Install Requirements]
+   Run:
+       pip install -r requirements.txt
+
+2. [Run All Tests]
+   Run:
+       ./run_tests.sh
+
+   This executes ALL original and public tests using pytest.
+
+3. [Run Only a Subset]
+   - Only original (internal logic) tests:
+       pytest tests/original/
+
+   - Only public tests:
+       pytest public_tests/
+
+----------------------------------------

@@ -1,0 +1,79 @@
+code4craft_hello-design-pattern-dotnet/
+├── code4craft_hello_design_pattern.sln
+├── src/
+│   └── HelloDesignPattern/
+│       ├── HelloDesignPattern.csproj
+│       └── [core classes, NOT included in this batch]
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── HelloWorldTest.cs
+│       ├── MainTest.cs
+│       ├── SplitHelloWorldTest.cs
+│       ├── creational/
+│       │   ├── prototype/
+│       │   │   ├── HelloWorldPrototypeFullTest.cs
+│       │   │   └── HelloWorldPrototypeTest.cs
+│       │   ├── singleton/
+│       │   │   ├── HelloWorldSingletonFullTest.cs
+│       │   │   └── HelloWorldSingletonTest.cs
+│       │   ├── builder/
+│       │   │   └── HelloWorldBuilderTest.cs
+│       │   ├── abstract_factory/
+│       │   │   └── AbstractFactoryTest.cs
+│       │   └── factory_method/
+│       │       └── FactoryMethodHelloWorldFactoryTest.cs
+│       ├── structural/
+│       │   ├── composite/
+│       │   │   └── CompositeHelloWorldTest.cs
+│       │   ├── facade/
+│       │   │   └── HelloWorldFacadeTest.cs
+│       │   ├── adapter/
+│       │   │   └── HelloWorldAdapterTest.cs
+│       │   ├── bridge/
+│       │   │   └── HelloWorldBridgeTest.cs
+│       │   ├── proxy/
+│       │   │   └── HelloWorldProxyTest.cs
+│       │   ├── flyweight/
+│       │   │   └── HelloWorldFlyWeightTest.cs
+│       │   └── decorator/
+│       │       └── HelloWorldDecoratorTest.cs
+│       ├── behavioral/
+│       │   ├── mediator/
+│       │   │   ├── HelloWorldInterjectionTest.cs
+│       │   │   ├── HelloWorldObjectTest.cs
+│       │   │   └── HelloWorldMediatorTest.cs
+│       │   ├── strategy/
+│       │   │   ├── HelloWorldStrategyContextTest.cs
+│       │   │   └── JavaHelloWorldStrategyTest.cs
+│       │   ├── chain_of_responsibility/
+│       │   │   ├── HelloWorldHandlerTest.cs
+│       │   │   └── HelloWorldObjectHandlerTest.cs
+│       │   ├── observer/
+│       │   │   ├── HelloWorldObserverTest.cs
+│       │   │   └── SubjectTest.cs
+│       │   ├── template_method/
+│       │   │   └── TemplateMethodHelloWorldTest.cs
+│       │   ├── command/
+│       │   │   └── HelloWorldPrintCommandTest.cs
+│       │   ├── memento/
+│       │   │   └── HelloWorldMementoTest.cs
+│       │   ├── state/
+│       │   │   ├── HelloWorldStateContextTest.cs
+│       │   │   └── HelloWorldStateTest.cs
+│       │   ├── visitor/
+│       │   │   └── HelloWorldVisitorTest.cs
+│       │   ├── iterator/
+│       │   │   ├── HelloWorldIteratorTest.cs
+│       │   │   └── HelloWorldCharacterIteratorTest.cs
+│       │   └── interpreter/
+│       │       └── HelloWorldInterpreterTest.cs
+│       └── TestUtilities.cs  [helper functions/mocks if needed]
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── HelloWorldPublicTest.cs
+│   ├── MainPublicTest.cs
+│   └── SplitHelloWorldPublicTest.cs
+├── run_tests.sh
+├── test_translation_progress.json
+└── README.md

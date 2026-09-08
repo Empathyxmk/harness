@@ -1,0 +1,39 @@
+.
+├── Cargo.toml             # Rust package manifest and dependency list.
+├── src/
+│   ├── lib.rs             # Central library module.
+│   ├── execution_plan.rs  # RedisGraph execution plan types (stub for test support).
+│   ├── node.rs            # Node struct definition for graph and test logic.
+│   ├── edge.rs            # Edge struct for tests (minimal logic for parity).
+│   ├── path.rs            # Path struct for path tests.
+│   ├── query_result.rs    # Query result type/scaffold for tests.
+│   ├── util.rs            # Utility functions for test utilities.
+│   ├── exceptions.rs      # Custom exception types for error handling.
+│   └── graph.rs           # Dummy Graph and connection for meta/mocking.
+├── tests/
+│   ├── original/                 # All original (unit/functional) test cases translated from Python.
+│   │   ├── test_edge.rs
+│   │   ├── test_exceptions.rs
+│   │   ├── test_execution_plan.rs
+│   │   ├── test_graph.rs
+│   │   ├── test_graph_extra.rs
+│   │   ├── test_node.rs
+│   │   ├── test_path.rs
+│   │   ├── test_query_result.rs
+│   │   ├── test_query_result_extra.rs
+│   │   ├── test_util.rs
+│   │   └── test_all.rs
+├── public_tests/
+│   ├── test_public_execution_plan.rs
+│   ├── test_public_query_result_extra.rs
+├── run_tests.sh           # Minimal test runner (runs all Rust tests with cargo).
+├── project_structure.txt  # THIS FILE: Project tree and file/directory purpose description.
+└── README.md              # (To be created as user wishes for project summary/setup.)
+
+# Directory/File explanations:
+# - src/           : All library code and test scaffolding required for test parity (not production).
+# - tests/original/: Translated original Python unit/functional tests as Rust test modules.
+# - public_tests/  : Translated/generative public tests, separate from internal/original ones.
+# - run_tests.sh   : One-click script to run all tests (cargo test).
+# - Cargo.toml     : Rust crate manifest; all dependencies declared here.
+# - project_structure.txt: Documents layout, for easy navigation.

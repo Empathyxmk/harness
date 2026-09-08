@@ -1,0 +1,36 @@
+flask_login_rs/
+├── Cargo.toml                     # Rust package manifest: project dependencies & metadata
+├── src/
+│   ├── lib.rs                     # Main library file, links modules together
+│   ├── about.rs                   # About/version info (simulates __about__.py)
+│   ├── config.rs                  # Configuration constants (simulates config.py)
+│   ├── mixins.rs                  # User and Anonymous mixin structs (simulates mixins.py)
+│   ├── login_manager.rs           # LoginManager struct and simulation logic
+│   └── test_client.rs             # Minimal client struct for testing "login" flows
+├── tests/
+│   └── original/
+│       ├── test_about.rs          # Original integration/unit tests for about
+│       ├── test_config.rs         # Original integration/unit tests for config
+│       ├── test_mixins.rs         # Original integration/unit tests for mixins
+│       ├── test_login.rs          # (Partial) login suite - stub demonstrating pattern
+├── public_tests/
+│   ├── test_public_about.rs       # Public test for about simulation
+│   ├── test_public_config.rs      # Public test for config constants
+│   ├── test_public_mixins.rs      # Public test for user mixins
+│   ├── test_public_client.rs      # Public test for client struct
+│   └── test_public_login.rs       # Public test for login manager struct
+├── run_tests.sh                   # One-click test runner (calls `cargo test`)
+└── project_structure.txt          # This description file explaining structure
+
+Explanations:
+- src/: Core library modules (each corresponds to a module/concept from the Python project).
+- tests/original/: Full translation of the original Python "unit"/integration tests ("private"/original tests).
+- public_tests/: Fully translated public test suite, as generated and with changed names and slightly different logic.
+- Cargo.toml: Describes project/package metadata and test dependencies.
+- run_tests.sh: Simple test runner shell script – just run `./run_tests.sh`.
+- project_structure.txt: This file, documenting layout and purpose.
+
+Setup & testing:
+1. Ensure Rust 1.60+ is installed.
+2. Run all tests with: `./run_tests.sh`
+3. To run only original or public, use e.g.: `cargo test --test test_about` or `cargo test --test test_public_about`

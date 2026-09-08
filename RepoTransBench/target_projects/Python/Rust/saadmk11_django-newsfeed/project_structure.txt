@@ -1,0 +1,23 @@
+django_newsfeed_rust/
+├── Cargo.toml      # Rust manifest and dependency management file
+├── src/
+│   ├── lib.rs      # Main library module
+│   ├── admin.rs    # Simulated admin panel logic/actions
+│   ├── models.rs   # Data models (Issue, Post, etc.)
+│   ├── utils.rs    # Utility functions (is_ajax, etc.)
+│   ├── forms.rs    # SubscriberEmailForm logic
+│   ├── apps.rs     # NewsfeedConfig config struct
+│   ├── urls.rs     # Simulated URL resolver
+│   └── views.rs    # (Empty placeholder; real view logic not present)
+├── tests/
+│   └── original/
+│       ├── test_admin.rs      # Django admin actions
+│       ├── test_utils.rs      # Utility/tests of low-level functions
+│       ├── test_models.rs     # All core model logic (fields, methods)
+│       ├── test_forms.rs      # Subscription form validation
+│       ├── test_apps.rs       # App config test
+│       ├── test_urls.rs       # URL resolver coverage
+│       ├── test_runtests_py.rs# Dummy for runtests.py no-op
+│       └── test_views.rs      # Invariants corresponding to Django view output
+├── run_tests.sh        # One-click script to run all Rust tests
+└── project_structure.txt # This file -- documents the structure

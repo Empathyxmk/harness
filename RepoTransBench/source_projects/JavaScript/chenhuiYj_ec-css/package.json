@@ -1,0 +1,14 @@
+{
+  "name": "ec-css",
+  "version": "1.0.0",
+  "description": "ec-css ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=text --coverageReporters=html",
+    "dev": "browser-sync start --server --files '*.css,*.html'"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "jest": "^29.7.0"
+  }
+}

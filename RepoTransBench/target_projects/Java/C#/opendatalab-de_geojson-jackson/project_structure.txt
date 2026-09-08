@@ -1,0 +1,43 @@
+opendatalab-de_geojson-jackson-dotnet/
+├── ProjectName.sln
+├── src/
+│   └── ProjectName/
+│       ├── ProjectName.csproj
+│       ├── Program.cs (placeholder or real source later)
+│       └── Models/
+│           └── (entities likely needed for the domain: Feature, FeatureCollection, etc.)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── FeatureCollectionTest.cs
+│       ├── GeoJsonObjectVisitorTest.cs
+│       ├── GeometryTest.cs
+│       ├── FeatureUnitTest.cs
+│       ├── ToStringTest.cs
+│       ├── FeatureTest.cs
+│       ├── LineStringUnitTest.cs
+│       ├── LngLatAltTest.cs
+│       ├── MultiLineStringUnitTest.cs
+│       └── jackson/
+│           ├── CrsTest.cs
+│           ├── MultiPoligonTest.cs
+│           ├── LineStringTest.cs
+│           ├── MultiPointTest.cs
+│           ├── LngLatAltSerializerTest.cs
+│           ├── GeoJsonObjectTest.cs
+│           ├── GeometryCollectionTest.cs
+│           ├── MultiLineStringTest.cs
+│           ├── LngLatAltDeserializerTest.cs
+│           ├── PointTest.cs
+│           └── PolygonTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── FeatureCollectionPublicTest.cs
+│   ├── GeoJsonObjectVisitorPublicTest.cs
+│   ├── GeometryPublicTest.cs
+│   ├── FeatureUnitPublicTest.cs
+│   ├── ToStringPublicTest.cs
+│   └── (add more as translated)
+├── run_tests.sh
+├── README.md
+├── test_translation_progress.json

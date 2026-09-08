@@ -1,0 +1,55 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   └── (implementation modules go here)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_amigo_integration.py
+│       ├── test_amigo_class_loader.py
+│       ├── test_amigo_service.py
+│       ├── test_native_lib_loader.py
+│       ├── test_common_util.py
+│       ├── test_symlink.py
+│       ├── test_load_patch_error.py
+│       ├── test_patch_checker.py
+│       ├── test_amigo.py
+│       ├── test_patch_info_util.py
+│       ├── test_apk_release_activity.py
+│       ├── test_utils.py
+│       ├── test_message_digest_util.py
+│       ├── test_file_lock_util.py
+│       ├── test_array_util.py
+│       ├── dex_extractor/
+│           ├── __init__.py
+│           ├── test_art_vm.py
+│           └── test_dalvik_vm.py
+│       ├── test_example_instrumented.py
+│       ├── test_example_unit.py
+│       ├── (android resource/layout XMLs are not converted; note in readme)
+│       └── (Pure UI activity/service Java files are not tested)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_amigo_integration_public.py
+│   ├── test_amigo_class_loader_public.py
+│   ├── test_amigo_service_public.py
+│   ├── test_native_lib_loader_public.py
+│   ├── test_symlink_public.py
+│   ├── test_patch_checker_public.py
+│   ├── test_amigo_public.py
+│   ├── test_load_patch_error_public.py
+│   ├── test_patch_info_util_public.py
+│   ├── test_apk_release_activity_public.py
+│   ├── test_utils_public.py
+│   ├── test_array_util_public.py
+│   ├── test_file_lock_util_public.py
+│   ├── test_message_digest_util_public.py
+│   └── dex_extractor/
+│       ├── __init__.py
+│       ├── test_dalvik_vm_public.py
+│       └── test_art_vm_public.py
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+└── project_structure.txt

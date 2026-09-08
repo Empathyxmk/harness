@@ -1,0 +1,34 @@
+rveachkc_pymsteams/
+├── Cargo.toml                    # Rust project config and dependency list
+├── README.md
+├── run_tests.sh                  # One-click test execution script (chmod +x)
+├── src/
+│   ├── lib.rs                    # Rust lib root; exposes pymsteams module
+│   └── pymsteams/
+│       └── mod.rs                # Core pymsteams API: CardSection, PotentialAction etc.
+├── tests/
+│   ├── test_cardsection_and_potentialaction.rs      # Original internal test translations
+│   └── test_webhook.rs           # Original internal test translations
+├── public_tests/
+│   ├── test_public_cardsection_and_potentialaction.rs   # Public test translations
+│   └── test_public_webhook.rs   # Public test translations
+└── project_structure.txt         # This file: overview, documentation
+
+Directory Details:
+- src/lib.rs: Exposes pymsteams as main library crate
+- src/pymsteams/mod.rs: Main logic, minimal business logic to support all test scenarios (structs, methods, errors)
+- tests/: All original test case translations, Rust style, using cargo test
+- public_tests/: All public test case translations, with the same test logic but using public sample data
+- run_tests.sh: Simply runs `cargo test` (all tests in /tests and /public_tests get run)
+- Cargo.toml: Declares dependencies and crate config (uses serde, thiserror for error and JSON mock logic)
+- README.md: (stub)
+
+## How to test
+
+1. Install Rust (if not already): https://rustup.rs
+2. In repo root, run:
+
+    chmod +x run_tests.sh
+    ./run_tests.sh
+
+All internal and public tests will run with output and errors.

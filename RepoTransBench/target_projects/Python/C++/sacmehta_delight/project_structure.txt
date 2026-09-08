@@ -1,0 +1,50 @@
+.
+├── CMakeLists.txt
+├── include/
+├── public_tests/
+│   ├── test_public_label_smoothing.cpp
+│   ├── test_public_token_block_dataset.cpp
+│   ├── test_public_character_token_embedder.cpp
+│   ├── test_public_sequence_generator.cpp
+│   ├── test_public_average_checkpoints.cpp
+│   ├── test_public_memory_efficient_fp16.cpp
+│   ├── test_public_utils.cpp
+├── run_tests.sh
+├── src/
+├── tests/
+│   ├── original/
+│   │   ├── test_label_smoothing.cpp
+│   │   ├── test_average_checkpoints.cpp
+│   │   ├── test_memory_efficient_fp16.cpp
+│   │   ├── test_character_token_embedder.cpp
+│   │   ├── test_utils.cpp
+│   │   ├── test_token_block_dataset.cpp
+│   │   ├── test_sequence_generator.cpp
+│   │   ├── test_dictionary.cpp
+│   │   ├── test_multihead_attention.cpp
+│   │   ├── test_fairseq_checkpoint_utils.cpp
+│   │   ├── test_run_experiment_advanced.cpp
+│   │   ├── test_metrics.cpp
+│   │   ├── test_convtbc.cpp
+│   │   ├── test_fairseq_data_utils.cpp
+│   │   ├── test_fairseq_dictionary.cpp
+│   │   ├── test_sequence_scorer.cpp
+│   │   ├── test_multi_corpus_sampled_dataset.cpp
+│   │   ├── test_train.cpp
+│   │   ├── test_iterators.cpp
+│   │   ├── test_export.cpp
+│   │   ├── test_sparse_multihead_attention.cpp
+│   │   ├── test_file_io.cpp
+│   │   ├── test_concat_dataset.cpp
+│   │   ├── test_resampling_dataset.cpp
+│   │   ├── test_main_scripts.cpp
+│   │   ├── test_cli_entrypoints.cpp
+│   │   ├── test_bmuf.cpp
+│   │   ├── test_reproducibility.cpp
+│   │   ├── test_fairseq_bleu.cpp
+│   │   ├── test_binaries.cpp
+│   │   ├── test_backtranslation_dataset.cpp
+│   │   ├── test_noising.cpp
+│   │   └── (other test files and subdirs)
+│   └── test_main.cpp
+├── test_translation_progress.json

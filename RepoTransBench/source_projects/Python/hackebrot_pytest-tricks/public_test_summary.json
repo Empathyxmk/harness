@@ -1,0 +1,74 @@
+{
+  "project_name": "hackebrot_pytest-tricks",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:15:44.545535",
+  "original_path": "/workspace/verified_repos_v2/Python/hackebrot_pytest-tricks",
+  "public_test_result_path": "/workspace/public_test_results/Python/hackebrot_pytest-tricks",
+  "original_tests": {
+    "test_files": [
+      "code_examples/create_tests_via_parametrization/test_foobar.py",
+      "code_examples/create_tests_via_parametrization/test_params.py",
+      "code_examples/create_tests_via_parametrization/test_parametrize.py",
+      "code_examples/show_pytest_warnings/test_foobar_show_warning.py",
+      "code_examples/mark_parametrize_with_indirect/test_sushi_unit.py",
+      "code_examples/mark_parametrize_with_indirect/test_sushi_property_edge.py",
+      "code_examples/mark_parametrize_with_indirect/test_sushi_error.py",
+      "code_examples/mark_parametrize_with_indirect/test_conftest_py_integration.py",
+      "code_examples/mark_parametrize_with_indirect/test_sushi.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 9,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/create_tests_via_parametrization/test_public_foobar.py",
+      "public_tests/create_tests_via_parametrization/test_public_params.py",
+      "public_tests/create_tests_via_parametrization/test_public_parametrize.py",
+      "public_tests/show_pytest_warnings/test_public_foobar_show_warning.py",
+      "public_tests/mark_parametrize_with_indirect/test_public_sushi_unit.py",
+      "public_tests/mark_parametrize_with_indirect/test_public_sushi_property_edge.py",
+      "public_tests/mark_parametrize_with_indirect/test_public_sushi_error.py",
+      "public_tests/mark_parametrize_with_indirect/test_public_conftest_py_integration.py",
+      "public_tests/mark_parametrize_with_indirect/test_public_sushi.py",
+      "public_tests/run_public_tests.sh",
+      "public_tests/run_public_tests.sh",
+      "public_tests/mark_parametrize_with_indirect/test_public_conftest_py_integration.py",
+      "public_tests/mark_parametrize_with_indirect/test_public_sushi.py",
+      "public_tests/create_tests_via_parametrization/test_public_foobar.py",
+      "public_tests/run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "public_tests/run_public_tests.sh",
+      "public_tests/run_public_tests.sh",
+      "public_tests/run_public_tests.sh"
+    ],
+    "total_public_test_files": 15,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/create_tests_via_parametrization/test_public_foobar.py",
+    "public_tests/create_tests_via_parametrization/test_public_params.py",
+    "public_tests/create_tests_via_parametrization/test_public_parametrize.py",
+    "public_tests/show_pytest_warnings/test_public_foobar_show_warning.py",
+    "public_tests/mark_parametrize_with_indirect/test_public_sushi_unit.py",
+    "public_tests/mark_parametrize_with_indirect/test_public_sushi_property_edge.py",
+    "public_tests/mark_parametrize_with_indirect/test_public_sushi_error.py",
+    "public_tests/mark_parametrize_with_indirect/test_public_conftest_py_integration.py",
+    "public_tests/mark_parametrize_with_indirect/test_public_sushi.py",
+    "public_tests/run_public_tests.sh",
+    "public_tests/run_public_tests.sh",
+    "public_tests/mark_parametrize_with_indirect/test_public_conftest_py_integration.py",
+    "public_tests/mark_parametrize_with_indirect/test_public_sushi.py",
+    "public_tests/create_tests_via_parametrization/test_public_foobar.py",
+    "public_tests/run_public_tests.sh"
+  ]
+}

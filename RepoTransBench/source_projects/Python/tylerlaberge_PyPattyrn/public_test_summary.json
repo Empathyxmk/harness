@@ -1,0 +1,81 @@
+{
+  "project_name": "tylerlaberge_PyPattyrn",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:25:19.169648",
+  "original_path": "/workspace/verified_repos_v2/Python/tylerlaberge_PyPattyrn",
+  "public_test_result_path": "/workspace/public_test_results/Python/tylerlaberge_PyPattyrn",
+  "original_tests": {
+    "test_files": [
+      "tests/creational_tests/test_builder.py",
+      "tests/creational_tests/test_setup_py.py",
+      "tests/creational_tests/test_singleton.py",
+      "tests/creational_tests/test_builder_coverage.py",
+      "tests/creational_tests/test_singleton_coverage.py",
+      "tests/creational_tests/test_pool_coverage.py",
+      "tests/creational_tests/test_pool.py",
+      "tests/creational_tests/test_factory.py",
+      "tests/creational_tests/test_prototype.py",
+      "tests/behavioral_tests/test_null.py",
+      "tests/behavioral_tests/test_command.py",
+      "tests/behavioral_tests/test_observer.py",
+      "tests/behavioral_tests/test_mediator.py",
+      "tests/behavioral_tests/test_memento.py",
+      "tests/behavioral_tests/test_visitor.py",
+      "tests/behavioral_tests/test_chain.py",
+      "tests/behavioral_tests/test_iterator.py",
+      "tests/structural_tests/test_adapter.py",
+      "tests/structural_tests/test_composite.py",
+      "tests/structural_tests/test_decorator.py",
+      "tests/structural_tests/test_flyweight.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 21,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/creational_tests/test_builder_public.py",
+      "public_tests/creational_tests/test_setup_py_public.py",
+      "public_tests/creational_tests/test_singleton_public.py",
+      "run_public_tests.sh",
+      "public_tests/creational_tests/test_builder_coverage_public.py",
+      "public_tests/creational_tests/test_singleton_coverage_public.py",
+      "public_tests/creational_tests/test_pool_coverage_public.py",
+      "public_tests/creational_tests/test_pool_public.py",
+      "public_tests/creational_tests/test_factory_public.py",
+      "public_tests/creational_tests/test_prototype_public.py",
+      "public_tests/behavioral_tests/test_null_public.py",
+      "public_tests/creational_tests/test_setup_py_public.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 13,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/creational_tests/test_builder_public.py",
+    "public_tests/creational_tests/test_setup_py_public.py",
+    "public_tests/creational_tests/test_singleton_public.py",
+    "run_public_tests.sh",
+    "public_tests/creational_tests/test_builder_coverage_public.py",
+    "public_tests/creational_tests/test_singleton_coverage_public.py",
+    "public_tests/creational_tests/test_pool_coverage_public.py",
+    "public_tests/creational_tests/test_pool_public.py",
+    "public_tests/creational_tests/test_factory_public.py",
+    "public_tests/creational_tests/test_prototype_public.py",
+    "public_tests/behavioral_tests/test_null_public.py",
+    "public_tests/creational_tests/test_setup_py_public.py",
+    "run_public_tests.sh"
+  ]
+}

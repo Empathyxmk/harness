@@ -1,0 +1,24 @@
+{
+  "project_name": "altafino_react-webpack-5-tailwind-2",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.33,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T09:54:19.619559",
+  "original_path": "/workspace/runnable_filter/JavaScript/altafino_react-webpack-5-tailwind-2",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/altafino_react-webpack-5-tailwind-2",
+  "tests_path": [
+    "postcss.config.test.js",
+    "tailwind.config.test.js",
+    ".eslintrc.test.js",
+    "src/App.test.js",
+    "src/index.test.js",
+    "config/paths.test.js",
+    "config/webpack.common.test.js",
+    "config/webpack.dev.test.js",
+    "config/webpack.prod.test.js",
+    "config/webpack.stag.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

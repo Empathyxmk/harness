@@ -1,0 +1,48 @@
+Project Structure for Translated google_magritte Python Package
+
+/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Simple one-click test execution script (runs all tests)
+├── project_structure.txt           # This documentation file
+├── public_tests/                   # Public test suite (translated from public_test files)
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── test_blend_calculator_public.py
+│   ├── test_image_io_util_public.py
+│   ├── test_new_canvas_calculator_public.py
+│   ├── test_rois_to_sprite_list_calculator_public.py
+│   ├── test_rotation_roi_calculator_public.py
+│   ├── test_sprite_calculator_cpu_public.py
+├── tests/                          # Original test suite (translated from "original" test files)
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── original/                   # (All original C++ logic moved up here)
+│   │   ├── test_blend_calculator.py
+│   │   ├── test_new_canvas_calculator.py
+│   │   ├── test_rois_to_sprite_list_calculator.py
+│   │   ├── test_rotation_roi_calculator.py
+│   │   ├── test_sprite_calculator_cpu.py
+
+Directory Explanations:
+
+requirements.txt       - Lists all required Python dependencies (pytest for testing).
+run_tests.sh           - Executable shell script to run all tests via pytest.
+project_structure.txt  - This file, describing the folder layout and purpose.
+
+public_tests/          - Contains Python translations of "public" C++ tests (as guided by public_test_summary.json). Use `pytest public_tests/` to run only public tests.
+tests/original/        - Contains translated "original" C++ tests. Use `pytest tests/original/` to run only original tests.
+tests/                 - Root tests directory. Running `pytest` at project root finds everything.
+
+How to Set Up & Run:
+
+1. Install dependencies
+   $ pip install -r requirements.txt
+
+2. Run all tests (one-click)
+   $ ./run_tests.sh
+
+3. Run just public tests:
+   $ pytest public_tests/
+
+4. Run just original/functional tests:
+   $ pytest tests/original/

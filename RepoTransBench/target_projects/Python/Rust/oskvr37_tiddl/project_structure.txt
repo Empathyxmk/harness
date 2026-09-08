@@ -1,0 +1,37 @@
+oskvr37_tiddl/
+├── Cargo.toml           # Rust package configuration file
+├── src/
+│   ├── lib.rs           # Main library file, module declarations
+│   ├── api.rs           # (Stub/placeholder for translated src modules)
+│   ├── config.rs        # (Stub/placeholder for translated src modules)
+│   ├── exceptions.rs    # Contains ApiError and error type implementation
+│   └── utils.rs         # Utilities for filename cleaning, slugify, etc.
+├── tests/
+│   └── original/
+│       ├── test_utils_unit.rs      # Rust translation of original test_utils_unit.py
+│       └── test_exceptions_unit.rs # Rust translation of original test_exceptions_unit.py
+├── public_tests/
+│   └── test_public_utils_unit.rs   # Rust translation of test_public_utils_unit.py
+├── run_tests.sh         # Single-command test execution (calls `cargo test --all`)
+└── project_structure.txt    # This file: describes the overall project tree and file purposes
+
+Directory Explanations:
+
+- src/: Main Rust source code modules.
+- tests/: Holds Rust test files for original (private) test cases.
+- public_tests/: Contains public-accessible translated test cases in Rust.
+- Cargo.toml: Cargo (Rust package manager) configuration/dependencies.
+- run_tests.sh: Simple one-click script to execute all tests with `cargo test`.
+- project_structure.txt: The tree you're reading; documents layout, config, execution.
+
+Setup and Testing Instructions:
+
+1. Install Rust and Cargo (https://rustup.rs/)
+2. Clone/download this project.
+3. Run `chmod +x run_tests.sh` (if not already executable).
+4. Execute `./run_tests.sh` to run all original and public tests.
+5. All tests in `tests/original/` and `public_tests/` will be discovered and run by Cargo.
+
+Note:
+- Some source modules (api.rs, config.rs) are referenced but implemented as stubs for illustrative/test-translation completeness.
+- Unit tests mirror test logic and assertions from the original Python repository, adapting to Rust idioms.

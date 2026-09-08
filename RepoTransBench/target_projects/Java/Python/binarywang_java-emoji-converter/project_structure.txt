@@ -1,0 +1,21 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_emoji_converter.py
+│       ├── test_emoji_converter_edge.py
+│       ├── test_emoji_reader.py
+│       ├── test_emoji_utils.py
+│       └── test_emoji4unicode.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_emoji_converter_public.py
+│   ├── test_emoji_converter_edge_public.py
+│   ├── test_emoji_reader_public.py
+│   ├── test_emoji_utils_public.py
+│   └── test_emoji4unicode_public.py

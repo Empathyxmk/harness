@@ -1,0 +1,18 @@
+toxinu_requirements/
+├── go.mod
+├── main.go                      # (empty or with package main if needed)
+├── requirements.go              # (implementation stub or source translation target)
+├── tests/
+│   └── original/
+│       ├── base_test.go
+│       └── requirements_test.go
+├── public_tests/
+│   ├── public_base_test.go
+│   └── public_requirements_test.go
+├── examples/
+│   └── requirements/
+│        └── tests.txt           # copy of example non-test input data for completeness
+├── run_tests.sh
+├── README.md
+├── LICENSE
+└── test_translation_progress.json

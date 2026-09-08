@@ -1,0 +1,23 @@
+workspace/temp_translation/translation_20250625_051311/lhamot_CPP2D/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_options_public.py
+│   ├── test_consumer_public.py
+│   ├── test_frontendaction_public.py
+│   ├── test_pphandling_public.py
+│   └── test_basic_sanity_public.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_options.py
+│       ├── test_consumer.py
+│       ├── test_frontendaction.py
+│       ├── test_pphandling.py
+│       ├── test_stdlib.py
+│       ├── test_template.py
+│       └── test_empty_stub.py
+...

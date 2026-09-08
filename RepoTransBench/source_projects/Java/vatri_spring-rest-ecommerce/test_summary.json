@@ -1,0 +1,11 @@
+{
+  "project_name": "vatri_spring-rest-ecommerce",
+  "language": "Java",
+  "coverage": {
+    "line": 88.9,
+    "branch": 72.0
+  },
+  "timestamp": "2025-06-23T17:39:39.784132",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/vatri_spring-rest-ecommerce",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/vatri_spring-rest-ecommerce"
+}

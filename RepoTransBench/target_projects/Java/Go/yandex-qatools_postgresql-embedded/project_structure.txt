@@ -1,0 +1,33 @@
+project_root/
+├── go.mod                        # Go module definition
+├── README.md                     # This documentation
+├── run_tests.sh                  # One-click test execution script
+├── tests/
+│   ├── original/
+│   │   ├── cached_postgres_artifact_store_test.go
+│   │   ├── imutable_artifact_store_test.go
+│   │   ├── noncached_postgres_artifact_store_builder_test.go
+│   │   ├── postgres_artifact_store_test.go
+│   │   ├── embedded_postgres_test.go
+│   │   ├── abstract_psql_test.go
+│   │   ├── storage_test.go
+│   │   ├── test_downloads_test.go
+│   │   ├── test_multiple_instance_test.go
+│   │   ├── test_postgres_cached_dir_starter.go
+│   │   ├── test_postgres_starter_test.go
+│   │   ├── test_postgres_stored_data_test.go
+│   │   ├── test_postgres_with_pgctl_test.go
+│   │   ├── test_psql_export_test.go
+│   │   ├── test_psql_import_test.go
+│   │   ├── test_psql_restore_test.go
+│   │   ├── test_postgres_within_spring_context_test.go
+│   │   ├── test_stop_test.go
+│   └── testutil.go               # Utility types for stubbing or mocks
+├── public_tests/
+│   ├── cached_postgres_artifact_store_public_test.go
+│   ├── imutable_artifact_store_public_test.go
+│   ├── noncached_postgres_artifact_store_builder_public_test.go
+│   ├── postgres_artifact_store_public_test.go
+│   ├── embedded_postgres_public_test.go
+│   ├── abstract_psql_public_test.go
+│   └── storage_public_test.go

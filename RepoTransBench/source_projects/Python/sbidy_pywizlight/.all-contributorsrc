@@ -1,0 +1,189 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "snickell",
+      "name": "Seth Nickell",
+      "avatar_url": "https://avatars.githubusercontent.com/u/223277?v=4",
+      "profile": "http://mtnspring.org",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "daanzu",
+      "name": "David Zurow",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4319503?v=4",
+      "profile": "https://github.com/daanzu",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "eibanez",
+      "name": "Eduardo Ibanez",
+      "avatar_url": "https://avatars.githubusercontent.com/u/438494?v=4",
+      "profile": "https://github.com/eibanez",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "angadsingh",
+      "name": "Angad Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1623026?v=4",
+      "profile": "https://github.com/angadsingh",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "fabaff",
+      "name": "Fabian Affolter",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116184?v=4",
+      "profile": "http://fabian-affolter.ch/blog/",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "redaxmedia",
+      "name": "Henry Ruhs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1835397?v=4",
+      "profile": "https://redaxmedia.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "bigjohnson",
+      "name": "Alberto Panu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2248402?v=4",
+      "profile": "https://www.panu.it/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "skitterrusty",
+      "name": "skitterrusty",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71942600?v=4",
+      "profile": "https://github.com/skitterrusty",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "mots",
+      "name": "Mathias Roth",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26517?v=4",
+      "profile": "https://github.com/mots",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "durnezj",
+      "name": "durnezj",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11504333?v=4",
+      "profile": "https://github.com/durnezj",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Dirty-No",
+      "name": "Noëlle",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54525684?v=4",
+      "profile": "https://github.com/Dirty-No",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "scriptsrc",
+      "name": "Patrick Kelley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8009126?v=4",
+      "profile": "https://linkedin.com/in/scriptsrc",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "emichael",
+      "name": "Ellis Michael",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1312141?v=4",
+      "profile": "http://ellismichael.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "SvbZ3r0",
+      "name": "Gughan Ravikumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57280279?v=4",
+      "profile": "https://github.com/SvbZ3r0",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "CharlotteCross1998",
+      "name": "Charlotte",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29734551?v=4",
+      "profile": "https://github.com/CharlotteCross1998",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "akx",
+      "name": "Aarni Koskela",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58669?v=4",
+      "profile": "https://akx.github.io/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "UH-60",
+      "name": "UH-60",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4968133?v=4",
+      "profile": "https://github.com/UH-60",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "bdraco",
+      "name": "J. Nick Koston",
+      "avatar_url": "https://avatars.githubusercontent.com/u/663432?v=4",
+      "profile": "https://github.com/bdraco",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "shreve",
+      "name": "Violet Shreve",
+      "avatar_url": "https://avatars.githubusercontent.com/u/253634?v=4",
+      "profile": "https://shreve.io",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "pywizlight",
+  "projectOwner": "sbidy",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "commitType": "docs",
+  "commitConvention": "angular"
+}

@@ -1,0 +1,52 @@
+wapiflapi_veles Python Project Structure
+========================================
+
+.
+├── public_tests/
+│   ├── __init__.py
+│   ├── parser/
+│   │   ├── __init__.py
+│   │   ├── test_utils_public.py               # Public: swapEndian/reverseBytes tests
+│   │   └── test_unpng_public.py               # Public: PNG header check tests
+│   └── ui/
+│       ├── __init__.py
+│       └── test_createchunkdialog_public.py   # Public: CreateChunkDialog basic tests
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── parser/
+│   │   │   ├── __init__.py
+│   │   │   ├── test_utils.py                  # Original: Dummy test (Qt not translatable)
+│   │   │   ├── test_unpng.py                  # Original: Dummy test (just pass)
+│   │   │   └── test_unpyc.py                  # Original: Dummy test (just pass)
+│   │   ├── db/
+│   │   │   ├── __init__.py
+│   │   │   ├── test_handle.py                 # Dummy test
+│   │   │   └── test_object.py                 # Dummy test
+│   │   ├── ui/
+│   │   │   ├── __init__.py
+│   │   │   └── test_createchunkdialog.py      # Dummy test
+│   │   ├── data/
+│   │   │   ├── __init__.py
+│   │   │   ├── test_bindata.py                # Dummy test
+│   │   │   └── test_repack.py                 # Dummy test
+│   │   ├── dbif/
+│   │   │   ├── __init__.py
+│   │   │   └── test_dbif_test_main.py         # Dummy test
+│   │   └── test_veles.py                      # See note below.
+│   └── test_run.py                            # Implements the test runner logic (as in run_test.cc)
+├── requirements.txt
+├── run_tests.sh                               # Script to invoke all tests
+├── README.md
+└── project_structure.txt                      # This file
+
+NOTES:
+------
+1. The original C++ tests are nearly all "dummy" tests with `SUCCEED()` in Google Test (i.e. confirming build only).
+   In Python, these are translated to simple presence tests (with `assert True`).
+2. All meaningful logic is in the public_tests files, which actually implement and check swapEndian, reverseBytes, PNG signature, and CreateChunkDialog logic.
+3. The C++ file test_veles.cc is not mapped to a Python test as it is an integration/CLI test dependent on C++ object model, file IO, and project internals not available in this translation scope. It will be included as a placeholder with explanation.
+4. The run_tests.sh script runs both public and original tests using pytest.
+5. All __init__.py files are to enable package discovery by pytest.
+6. requirements.txt specifies pytest as the only dependency (feel free to add further requirements as needed).

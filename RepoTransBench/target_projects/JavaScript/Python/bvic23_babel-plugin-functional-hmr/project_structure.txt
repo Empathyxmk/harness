@@ -1,0 +1,13 @@
+bvic23_babel-plugin-functional-hmr/
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+├── test_translation_progress.json
+├── project_structure.txt
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       └── test_plugin.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_plugin_public.py

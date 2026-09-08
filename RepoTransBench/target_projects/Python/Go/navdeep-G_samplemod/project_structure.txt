@@ -1,0 +1,32 @@
+navdeep-G_samplemod-go/
+├── go.mod                     # Go module definition
+├── sample/
+│   ├── core.go                # Core logic: GetHmm, Hmm, Add, SafeDivide
+│   └── helpers.go             # Helper logic: HelpersGetAnswer, Shout, InvertBool
+├── tests/
+│   ├── original/
+│   │   ├── test_core_helpers_test.go   # Original test for core/helpers, covering GetHmm, Hmm, HelpersGetAnswer
+│   │   ├── test_basic_test.go          # Absolute truth smoke test
+│   │   ├── test_advanced_test.go       # Test sample.Hmm() result and non-panicking
+│   │   └── testutil.go                 # Utility for patching HelpersGetAnswer in tests
+├── public_tests/
+│   ├── test_public_core_helpers_test.go   # Public: Shout/invert_bool coverage
+│   ├── test_public_basic_test.go          # Public: add function combinatorics
+│   └── test_public_advanced_test.go       # Public: safe_divide coverage and edge cases
+├── run_tests.sh                  # One-click execution script for all tests
+├── project_structure.txt         # (This file) Describes structure & testing
+└── README.md                     # (Not included) - user may add as needed
+
+Directory explanations:
+- sample/: Go implementation of the module's functionality.
+- tests/original/: Original (private) test cases, fully translated from Python's unittest suite.
+- public_tests/: Publicly visible/auto-generated tests, translated from provided Python.
+- run_tests.sh: Bash script, just run `./run_tests.sh` to execute all original and public tests.
+- testutil.go: Utility to patch helpers during testing (simulated "monkeypatching" a global function).
+
+Setup:
+1. Run `go mod tidy` if needed (dependencies are standard library only).
+2. Run tests: `./run_tests.sh`
+3. All tests (original and public) are included in the proper folders using Go's testing conventions.
+
+No extra dependencies needed; just requires Go toolchain.

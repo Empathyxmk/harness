@@ -1,0 +1,18 @@
+project_root/
+├── src/                                 # Source code directory for the application's modules
+│   ├── __init__.py                      # Makes 'src' a Python package
+│   ├── libdfu.py                        # Contains dummy 'ProgrammerArguments' class and 'libdfu_dummy' function
+│   └── util.py                          # Contains 'dfu_debug', 'min', 'max', 'clamp' utility functions
+├── tests/                               # Directory for original (private) test cases
+│   ├── __init__.py                      # Makes 'tests' a Python package
+│   └── original/                        # Subdirectory for original test cases
+│       ├── __init__.py                  # Makes 'original' a Python package
+│       ├── test_util.py                 # Translated C's tests/test_util.c (original)
+│       └── test_main_libdfu_dummy.py    # Translated C's tests/test_main_libdfu_dummy.c (original)
+├── public_tests/                        # Directory for public test cases
+│   ├── __init__.py                      # Makes 'public_tests' a Python package
+│   ├── test_util_public.py              # Translated C's tests/test_util_public.c (public)
+│   └── test_main_libdfu_dummy_public.py # Translated C's tests/test_main_libdfu_dummy_public.c (public)
+├── requirements.txt                     # Lists Python dependencies (e.g., pytest)
+├── run_tests.sh                         # Script to execute all tests using pytest
+└── project_structure.txt                # This file, documenting the project structure

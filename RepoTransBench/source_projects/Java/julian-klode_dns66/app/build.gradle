@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    // ... (existing content unchanged)
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // ... (existing deps)
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'androidx.test:core:1.4.0'
+    testImplementation 'org.robolectric:robolectric:4.9.2'
+    testImplementation 'org.mockito:mockito-core:3.11.2'
+}
+
+apply plugin: 'jacoco'
+
+jacoco {
+    toolVersion = "0.8.7"
+}
+
+tasks.withType(Test) {
+    jacoco.includeNoLocationClasses = true
+    jacoco.excludes = []
+}

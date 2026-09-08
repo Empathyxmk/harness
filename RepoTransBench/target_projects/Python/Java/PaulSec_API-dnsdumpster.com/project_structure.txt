@@ -1,0 +1,29 @@
+PaulSec_API-dnsdumpster.com Java Translation Project Structure
+
+.
+├── pom.xml                    # Maven build and dependency configuration
+├── run_tests.sh               # One-click script for running all tests
+├── project_structure.txt      # This structure/readme file
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/example/dnsdumpster/
+│   │           └── DNSDumpsterAPI.java           # Skeleton for main API class
+│   └── test/
+│       └── java/
+│           └── com/example/dnsdumpster/
+│               ├── original/
+│               │   ├── DNSDumpsterApiTest.java        # Translated from dnsdumpster/test_api.py
+│               │   └── DNSDumpsterApiAdvancedTest.java# Translated from dnsdumpster/test_dnsdumpsterapi.py
+│               └── publictests/
+│                   ├── PublicApiTest.java             # From public_tests/test_public_api.py
+│                   └── PublicDNSDumpsterApiTest.java  # From public_tests/test_public_dnsdumpsterapi.py
+
+Key Points:
+- All code under the package com.example.dnsdumpster.
+- Original tests live in src/test/java/com/example/dnsdumpster/original/
+- Public tests live in src/test/java/com/example/dnsdumpster/publictests/
+- Main class stub/skeleton in src/main/java/com/example/dnsdumpster/DNSDumpsterAPI.java is a minimum stub to satisfy imports and mocks in tests.
+- All test logic is self-mocking; tests do not hit any real service.
+- Run all tests using the provided run_tests.sh script, which simply calls 'mvn clean test'.
+- Dependencies: JUnit 5 for testing, Mockito for mocking.

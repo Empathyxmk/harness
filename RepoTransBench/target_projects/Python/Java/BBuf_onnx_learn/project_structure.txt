@@ -1,0 +1,54 @@
+BBufOnnxLearn Java Project Structure
+------------------------------------
+
+Root/
+├── pom.xml                        <-- Maven project file with dependencies
+├── run_tests.sh                   <-- Bash script to run all tests
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               ├── convert2onnx/
+│   │               │   └── PyTorch2OnnxResize.java
+│   │               ├── onnxapi/
+│   │               │   └── CreatOnnxExample.java
+│   │               └── tools/
+│   │                   └── tool/
+│   │                       ├── Functions.java
+│   │                       ├── Tool.java
+│   │                       └── package-info.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── TestTool.java
+│                   │   ├── TestToolsTool.java
+│                   │   ├── TestOnnxApiCreatOnnxExample.java
+│                   │   └── TestPyTorch2OnnxResize.java
+│                   └── public_tests/
+│                       ├── TestPublicToolFunctions.java
+│                       ├── TestPublicToolsTool.java
+│                       ├── TestPublicOnnxApiCreatOnnxExample.java
+│                       └── TestPublicConvert2OnnxPytorch2OnnxResize.java
+
+-----------------------------------
+Directory/Package Purposes:
+- pom.xml: Maven build configuration (dependencies, plugins)
+- run_tests.sh: Shell script for running all Java tests via Maven
+- src/main/java: Project source code
+  - com.example.tools.tool: Math functions and Tool class
+  - com.example.onnxapi: Identity and sum utilities
+  - com.example.convert2onnx: Dummy resize functionality
+- src/test/java: Test code, organized by:
+  - com.example.original: Original functional tests (one class per source test file)
+  - com.example.public_tests: Public ("release") test cases
+
+Instructions:
+1. Ensure JDK and Maven are installed.
+2. Make sure run_tests.sh is executable (`chmod +x run_tests.sh`)
+3. Run `./run_tests.sh` to build and run all tests.
+4. All test cases (original and public) will be executed and results displayed.
+
+-----------------------------------

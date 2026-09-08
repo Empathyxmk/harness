@@ -1,0 +1,32 @@
+project_root/
+├── requirements.txt          # Python dependencies (pytest)
+├── run_tests.sh              # One-click test runner for ALL tests
+├── tests/                    # Test suite root
+│   ├── __init__.py
+│   └── original/             # Original test cases (from FileManagerTest.java)
+│       ├── __init__.py
+│       └── test_file_manager.py
+├── public_tests/             # Public (sample) test cases (from FileManagerPublicTest.java)
+│   ├── __init__.py
+│   └── test_file_manager_public.py
+├── project_structure.txt     # Overview of project structure and file purposes
+
+Directory explanations:
+- requirements.txt: Declares Python dependencies (pytest required to run tests).
+- run_tests.sh: Simple shell script to install dependencies and run all test cases (original and public).
+- tests/: Contains all original translated test cases from Java.
+- tests/original/: Direct translation of FileManagerTest.java.
+- public_tests/: Contains all public (sample) translated test cases from Java.
+- __init__.py: Ensures packages are properly recognized by Python.
+- project_structure.txt: This structure overview file.
+
+Setup & testing instructions:
+1. Ensure Python 3.7+ is installed.
+2. Run the test runner:
+      ./run_tests.sh
+   This will install pytest (if not already) and execute all tests.
+3. All test outputs will be shown in the terminal.
+
+Notes:
+- FileManager logic here is a stub in each test file to ensure the tests are runnable & to reflect the Java logic referenced.
+- In a real project, replace the FileManager class in test files with an import from the actual source implementation.

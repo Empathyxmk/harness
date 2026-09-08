@@ -1,0 +1,18 @@
+{
+  "project_name": "ubisoft_ubisoft-laforge-animation-dataset",
+  "language": "Python",
+  "coverage": {
+    "line": 53.0,
+    "branch": 53.0
+  },
+  "timestamp": "2025-06-19T13:03:17.584207",
+  "original_path": "/workspace/runnable_filter/Python/ubisoft_ubisoft-laforge-animation-dataset",
+  "test_result_path": "/workspace/test_enhancement_results/Python/ubisoft_ubisoft-laforge-animation-dataset",
+  "tests_path": [
+    "lafan1/test_utils.py",
+    "lafan1/test_benchmarks.py",
+    "lafan1/test_extract.py",
+    "evaluate_test.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

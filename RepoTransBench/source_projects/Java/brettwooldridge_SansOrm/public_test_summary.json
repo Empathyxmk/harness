@@ -1,0 +1,63 @@
+{
+  "project_name": "brettwooldridge_SansOrm",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:13:08.698283",
+  "original_path": "/workspace/verified_repos_v2/Java/brettwooldridge_SansOrm",
+  "public_test_result_path": "/workspace/public_test_results/Java/brettwooldridge_SansOrm",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/com/zaxxer/sansorm/SqlClosureBranchTest.java",
+      "src/test/java/com/zaxxer/sansorm/SansOrmTest.java",
+      "src/test/java/com/zaxxer/sansorm/SqlClosureTest.java",
+      "src/test/java/com/zaxxer/sansorm/SqlFunctionTest.java",
+      "src/test/java/com/zaxxer/sansorm/OrmElfTest.java",
+      "src/test/java/com/zaxxer/sansorm/SqlClosureElfTest.java",
+      "src/test/java/com/zaxxer/sansorm/internal/CaseSensitiveDatabasesTest.java",
+      "src/test/java/com/zaxxer/sansorm/internal/RefreshTest.java",
+      "src/test/java/com/zaxxer/sansorm/internal/CompositeKeyTest.java",
+      "src/test/java/com/zaxxer/sansorm/internal/FieldColumnInfoTest.java",
+      "src/test/java/com/zaxxer/sansorm/internal/IntrospectedTest.java",
+      "src/test/java/com/zaxxer/sansorm/internal/IntrospectorTest.java",
+      "src/test/java/org/sansorm/QueryTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 13,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/com/zaxxer/sansorm/SqlClosureBranchPublicTest.java",
+      "src/test/java/com/zaxxer/sansorm/SansOrmPublicTest.java",
+      "src/test/java/com/zaxxer/sansorm/SqlClosurePublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/com/zaxxer/sansorm/OrmElfPublicTest.java",
+      "src/test/java/com/zaxxer/sansorm/SqlFunctionPublicTest.java",
+      "src/test/java/com/zaxxer/sansorm/SqlClosureElfPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/com/zaxxer/sansorm/SqlClosureBranchPublicTest.java",
+    "src/test/java/com/zaxxer/sansorm/SansOrmPublicTest.java",
+    "src/test/java/com/zaxxer/sansorm/SqlClosurePublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/com/zaxxer/sansorm/OrmElfPublicTest.java",
+    "src/test/java/com/zaxxer/sansorm/SqlFunctionPublicTest.java",
+    "src/test/java/com/zaxxer/sansorm/SqlClosureElfPublicTest.java",
+    "run_public_tests.sh"
+  ]
+}

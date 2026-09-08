@@ -1,0 +1,23 @@
+{
+  "name": "super-expressive",
+  "version": "1.4.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.test.js",
+    "test:coverage": "nyc --reporter=clover --reporter=text mocha index.test.js"
+  },
+  "author": "Francis Stokes <stokesie14@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "babel-jest": "^30.0.1",
+    "chai": "^4.2.0",
+    "jest": "^30.0.1",
+    "jest-environment-node": "^30.0.1",
+    "mocha": "^10.1.0",
+    "nyc": "^15.1.0"
+  }
+}

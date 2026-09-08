@@ -1,0 +1,33 @@
+project_root/
+├── src/
+│   └── ip/
+│       ├── __init__.py       # Placeholder, real implementation expected here
+│       └── ip.py             # Should be the port of lib/ip.js; not provided for translation
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_api.py
+│       ├── test_api_spec.py
+│       └── test_advanced_spec.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_api_public_test.py
+│   ├── test_api_public_spec.py
+│   └── test_advanced_public_spec.py
+├── requirements.txt          # Python dependencies (contains pytest)
+├── run_tests.sh             # Single-click script to run all tests
+└── project_structure.txt     # This file; describes the structure
+
+Directory explanations:
+
+src/ip/ - Intended for main library code ("ip" package, from lib/ip.js).
+tests/original/ - All original (private) tests translated from JS.
+public_tests/ - Public sample tests translated from JS.
+requirements.txt - Use this to `pip install -r requirements.txt` before testing.
+run_tests.sh - Use `./run_tests.sh` to run all tests.
+project_structure.txt - Reference for repo structure and layout.
+
+Setup & test instructions:
+1. pip install -r requirements.txt
+2. ./run_tests.sh

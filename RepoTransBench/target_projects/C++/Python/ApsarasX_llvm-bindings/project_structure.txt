@@ -1,0 +1,38 @@
+ApsarasX_llvm-bindings Python Translation Project Structure
+==========================================================
+
+.
+├── requirements.txt            # Python dependencies (pytest)
+├── run_tests.sh                # One-click test execution script
+├── project_structure.txt       # This structure file and directory explanations
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_apfloat.py         # Original APFloat tests (from apfloat_test.cpp)
+│       ├── test_apint.py           # Original APInt tests (from apint_test.cpp)
+│       ├── test_mc_index.py        # Original MCIndex tests (from mc_index_test.cpp)
+│       └── test_targetregistry.py  # Original TargetRegistry tests (from targetregistry_test.cpp)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_apfloat_public.py      # Public APFloat tests (from apfloat_public_test.cpp)
+│   ├── test_apint_public.py        # Public APInt tests (from apint_public_test.cpp)
+│   ├── test_mc_index_public.py     # Public MCIndex tests (from mc_index_public_test.cpp)
+│   └── test_targetregistry_public.py # Public TargetRegistry tests (from targetregistry_public_test.cpp)
+
+Directory/Module Explanations
+-----------------------------
+tests/original/          Original test suite translated from C++ GTest test files.
+public_tests/            Publicly released test suite (smaller variant, similar logic but different values).
+requirements.txt         Declares project dependencies (pytest for running tests).
+run_tests.sh             Simple script to run ALL tests in both suites at once.
+project_structure.txt    This template/file.
+
+Instructions
+------------
+1. Set up a Python environment (optionally: `python3 -m venv venv && source venv/bin/activate`)
+2. Install dependencies:
+    pip install -r requirements.txt
+3. Run all tests:
+    ./run_tests.sh
+4. You should see all tests from both original and public suites passing.

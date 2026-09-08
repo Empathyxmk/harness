@@ -1,0 +1,57 @@
+jiaqi_jmxterm/
+├── go.mod
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── bean_command_test.go
+│   │   ├── beans_command_test.go
+│   │   ├── close_command_test.go
+│   │   ├── cmd_domain_command_test.go
+│   │   ├── cmd_domains_command_test.go
+│   │   ├── cmd_get_command_test.go
+│   │   ├── cmd_info_command_test.go
+│   │   ├── cmd_open_command_test.go
+│   │   ├── cmd_option_command_test.go
+│   │   ├── cmd_quit_command_test.go
+│   │   ├── cmd_run_command_test.go
+│   │   ├── cmd_set_command_test.go
+│   │   ├── cmd_subscribe_command_test.go
+│   │   ├── cmd_unsubscribe_command_test.go
+│   │   ├── command_center_test.go
+│   │   ├── connection_impl_test.go
+│   │   ├── file_command_input_test.go
+│   │   ├── file_command_output_test.go
+│   │   ├── help_command_test.go
+│   │   ├── input_stream_command_input_test.go
+│   │   ├── jconsole_class_loader_factory_test.go
+│   │   ├── jdk5_java_process_manager_test.go
+│   │   ├── jdk6_java_process_manager_test.go
+│   │   ├── jdk6_local_virtual_machine_test.go
+│   │   ├── jdk9_java_process_manager_test.go
+│   │   ├── jp_mfactory_test.go
+│   │   ├── predefined_command_factory_test.go
+│   │   ├── print_stream_command_output_test.go
+│   │   ├── session_impl_test.go
+│   │   ├── set_command_test.go
+│   │   ├── syntax_utils_extra_test.go
+│   │   ├── test_script.go
+│   │   ├── test_perl.go
+│   │   ├── value_format_test.go
+│   │   ├── value_output_format_test.go
+│   │   ├── weak_cast_utils_test.go
+│   │   └── (other files for remaining Java test classes)
+│   └── testutil.go
+├── public_tests/
+│   ├── bean_command_public_test.go
+│   ├── command_factory_public_test.go
+│   ├── command_public_test.go
+│   ├── connection_public_test.go
+│   ├── file_command_input_public_test.go
+│   ├── file_command_output_public_test.go
+│   ├── input_stream_command_input_public_test.go
+│   ├── print_stream_command_output_public_test.go
+│   ├── session_public_test.go
+│   ├── syntax_utils_extra_public_test.go
+│   └── syntax_utils_public_test.go
+└── README.md

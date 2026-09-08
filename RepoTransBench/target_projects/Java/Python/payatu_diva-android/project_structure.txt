@@ -1,0 +1,37 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_access_control1_activity.py
+│       ├── test_apicreds_activity.py
+│       ├── test_application.py
+│       ├── test_example_unit.py
+│       ├── test_insecure_data_storage1_activity.py
+│       ├── test_insecure_data_storage2_activity.py
+│       └── test_input_validation2_uri_scheme_activity.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_access_control1_activity_public.py
+│   ├── test_apicreds_activity_public.py
+│   ├── test_example_unit_public.py
+│   ├── test_insecure_data_storage1_activity_public.py
+│   ├── test_insecure_data_storage2_activity_public.py
+│   └── test_input_validation2_uri_scheme_activity_public.py
+
+Explanation:
+- requirements.txt           : Python dependencies (mainly pytest)
+- run_tests.sh               : One-click test runner for all tests (runs pytest)
+- tests/original/            : Directory containing translations of all original Java test cases
+- public_tests/              : Directory containing translations of all public test cases
+- Each test_*.py file        : One test module, translated keeping logic intact; one test class per source, or functions for simple cases
+- __init__.py                : Empty file to make Python treat dirs as packages (not strictly needed, but helps pytest discovery)
+- project_structure.txt      : This file describing structure and contents
+- To run all tests:          : (in shell) ./run_tests.sh
+
+Test organization:
+- All "original" Java test files → tests/original/ (full logic and data fidelity)
+- All "public" Java test files   → public_tests/   (follows provided public test coverage)

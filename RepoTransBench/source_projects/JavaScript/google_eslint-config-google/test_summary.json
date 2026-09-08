@@ -1,0 +1,16 @@
+{
+  "project_name": "google_eslint-config-google",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:30:21.188149",
+  "original_path": "/workspace/runnable_filter/JavaScript/google_eslint-config-google",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/google_eslint-config-google",
+  "tests_path": [
+    "test/index.test.js",
+    "test/test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

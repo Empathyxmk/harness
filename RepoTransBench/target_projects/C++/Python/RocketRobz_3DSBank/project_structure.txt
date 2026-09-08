@@ -1,0 +1,15 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_inifile.py
+│       └── test_stringtool.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_inifile.py
+│   └── test_stringtool.py

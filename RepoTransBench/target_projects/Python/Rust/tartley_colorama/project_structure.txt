@@ -1,0 +1,21 @@
+project_root/
+├── src/
+│   └── lib.rs                # Placeholder for main library code
+├── tests/
+│   ├── original/             # Contains original test cases translated to Rust
+│   │   ├── ansi_test.rs
+│   │   ├── initialise_test.rs
+│   │   ├── win32_test.rs
+│   │   ├── winterm_test.rs
+│   │   ├── imports_test.rs
+│   │   ├── ansitowin32_test.rs
+│   │   └── isatty_test.rs
+│   └── utils/
+│       └── mod.rs            # Utility functions for all tests
+├── public_tests/
+│   ├── public_initialise_test.rs
+│   ├── public_win32_test.rs
+│   └── public_winterm_test.rs
+├── Cargo.toml                # Rust project configuration
+├── Cargo.lock                # Generated after the first `cargo build`
+└── run_tests.sh              # Script for executing all Rust tests in one step

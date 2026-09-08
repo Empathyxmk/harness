@@ -1,0 +1,57 @@
+Microway_gpu-burn Python Test Project Structure
+==============================================
+
+.
+├── requirements.txt              # Python dependency list for pip
+├── run_tests.sh                  # One-click test script (executes ALL tests)
+├── project_structure.txt         # You are reading this file
+├── public_tests/                 # Public tests translated from public C++ test files
+│   ├── __init__.py
+│   └── test_gpu_burn_drv_public.py
+├── tests/                        # All tests (main test directory; can also add further tests here)
+│   ├── __init__.py
+│   └── original/                 # Translated original (private) C++ tests
+│       ├── __init__.py
+│       └── test_gpu_burn_drv.py
+
+Directory/Files Explanation
+--------------------------
+
+- requirements.txt:
+    Lists Python dependencies. **Install with:** `pip install -r requirements.txt`
+    - Currently includes `pytest` for testing.
+
+- run_tests.sh:
+    Simple script: installs dependencies and runs all test cases (both public and original).
+    Make executable: `chmod +x run_tests.sh`
+    Run via:
+        ./run_tests.sh
+
+- public_tests/:
+    Contains public test cases translated from C++.
+    - test_gpu_burn_drv_public.py: Direct translation of public C++ test code.
+
+- tests/original/:
+    Contains original/private translated test cases from C++.
+    - test_gpu_burn_drv.py: Direct translation of the original C++ test file.
+
+- __init__.py Files:
+    Allow directory recognition as Python packages for test discovery.
+
+Instructions
+------------
+
+1. **Install Python 3 and pip** if not already available.
+2. **Install dependencies:**
+    pip install -r requirements.txt
+
+3. **Run all tests (original + public):**
+    ./run_tests.sh
+
+   This runs ALL tests in both tests/ and public_tests/ directories with pytest.
+
+4. **To run original/private-only tests:**
+    pytest tests/original/
+
+5. **To run public-only tests:**
+    pytest public_tests/

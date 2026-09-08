@@ -1,0 +1,45 @@
+ayeks_sgx_hardware/
+├── Cargo.toml               # Rust package manifest
+├── src/
+│   ├── lib.rs               # Main library stubs for original tests
+│   ├── lib_public.rs        # Library functions for public tests (distinct test values)
+│   ├── cpuid.rs             # Module for cpuid, with public submodule
+│   ├── rdmsr.rs             # Module for rdmsr, with public submodule
+│   ├── vdso.rs              # Module for vdso, with public submodule
+│   └── xsave.rs             # Module for xsave, with public submodule
+├── tests/
+│   └── original/
+│       ├── test_main.rs     # Rust port of C: test_main.c
+│       ├── test_cpuid.rs    # Rust port of C: test_cpuid.c
+│       ├── test_rdmsr.rs    # Rust port of C: test_rdmsr.c
+│       ├── test_vdso.rs     # Rust port of C: test_vdso.c
+│       └── test_xsave.rs    # Rust port of C: test_xsave.c
+├── public_tests/
+│   ├── test_main_public.rs      # Rust port of C: test_main_public.c
+│   ├── test_cpuid_public.rs     # Rust port of C: test_cpuid_public.c
+│   ├── test_rdmsr_public.rs     # Rust port of C: test_rdmsr_public.c
+│   ├── test_vdso_public.rs      # Rust port of C: test_vdso_public.c
+│   └── test_xsave_public.rs     # Rust port of C: test_xsave_public.c
+├── run_tests.sh             # Simple one-liner script to run all tests
+└── project_structure.txt    # This file: describes the overall layout
+
+# Directory and file purpose:
+
+# src/lib.rs         - Library functions for original (private/original) test logic
+# src/lib_public.rs  - Functions for public tests (different stub values)
+# src/*.rs           - Code modules for cpuid, rdmsr, vdso, xsave (with .public module for public tests)
+# tests/original/    - All translated original C tests: structured as Rust #[test] functions
+# public_tests/      - All translated public C tests; use src/lib_public.rs or the 'public' submodules
+# run_tests.sh       - Runs `cargo test` to execute all test files (both original and public)
+# Cargo.toml         - Standard Rust crate manifest for building and running tests
+
+# To run ALL tests (original and public), run:
+#   ./run_tests.sh
+
+# To run only original tests:
+#   cargo test
+
+# To run only public tests:
+#   cargo test --test test_main_public
+
+# (or any test by name).

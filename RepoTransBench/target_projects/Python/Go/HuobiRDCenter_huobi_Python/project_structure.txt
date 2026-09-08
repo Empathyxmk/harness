@@ -1,0 +1,29 @@
+huobirdcenter_huobi_go/
+├── go.mod                         # Go module definition for dependency management
+├── README.md                      # Project setup, usage, and directory explanations
+├── run_tests.sh                   # One-click script to run all tests
+├── huobi/
+│   └── (mocked utility files)     # Only empty or stub files for import coverage by test files
+├── tests/
+│   └── test_utils_coverage_test.go      # Translated original utils coverage test
+│   └── test_subuser_client_test.go      # Translated original subuser client integration test
+│   └── test_api_signature_test.go       # Translated original api signature test
+├── public_tests/
+│   └── test_public_utils_coverage_test.go   # Translated public utils coverage test
+│   └── test_public_subuser_client_test.go   # Translated public subuser client test
+│   └── test_public_api_signature_test.go    # Translated public api signature test
+
+Directory Explanations:
+-----------------------
+huobi/           - Minimal stubs for imported modules/functions/classes (mocked for tests, as source not translated)
+tests/           - "Original" SDK test cases (full translation from Python's tests/)
+public_tests/    - "Public" SDK test cases (full translation from Python's public_tests/)
+run_tests.sh     - Simple shell script, runs all Go tests in project tree
+
+Setup & Run:
+------------
+1. Install Go >=1.18
+2. From project root: chmod +x run_tests.sh
+3. Run all tests: ./run_tests.sh
+
+No external dependencies required. All mocks/stubs in place for test logic coverage.

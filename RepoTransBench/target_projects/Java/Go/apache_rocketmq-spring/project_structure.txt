@@ -1,0 +1,17 @@
+apache_rocketmq_spring/
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── tests/
+│   └── original/
+│       ├── consumer_application_test.go
+│       ├── ext_rocketmq_template_test.go
+│       ├── producer_acl_application_test.go
+│       ├── producer_application_test.go
+│       ├── string_consumer_test.go
+├── public_tests/
+│   ├── consumer_application_public_test.go
+│   ├── ext_rocketmq_template_public_test.go
+│   ├── producer_acl_application_public_test.go
+│   ├── producer_application_public_test.go
+│   ├── string_consumer_public_test.go

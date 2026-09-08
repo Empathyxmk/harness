@@ -1,0 +1,70 @@
+{
+  "project_name": "jonkemp_gulp-inline-css",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": false,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:30:38.209712",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/jonkemp_gulp-inline-css",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/jonkemp_gulp-inline-css",
+  "original_tests": {
+    "test_files": [],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 0,
+    "found_existing_tests": false
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/main.public.test.js",
+      "public_tests/fixtures/inline.html",
+      "public_tests/fixtures/inline.css",
+      "public_tests/expected/inline-expected.html",
+      "public_tests/fixtures/group/alpha/inline.html",
+      "public_tests/fixtures/group/alpha/inline.css",
+      "public_tests/expected/group/alpha/inline-expected.html",
+      "public_tests/fixtures/group/beta/inline.html",
+      "public_tests/fixtures/group/beta/inline.css",
+      "public_tests/expected/group/beta/inline-expected.html",
+      "public_tests/fixtures/codeblocks-public.html",
+      "public_tests/fixtures/cb.css",
+      "public_tests/expected/codeblocks-public.html",
+      "public_tests/fixtures/codeblocks-external-public.html",
+      "public_tests/fixtures/cbx.css",
+      "public_tests/expected/codeblocks-external-public.html",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 18,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/main.public.test.js",
+    "public_tests/fixtures/inline.html",
+    "public_tests/fixtures/inline.css",
+    "public_tests/expected/inline-expected.html",
+    "public_tests/fixtures/group/alpha/inline.html",
+    "public_tests/fixtures/group/alpha/inline.css",
+    "public_tests/expected/group/alpha/inline-expected.html",
+    "public_tests/fixtures/group/beta/inline.html",
+    "public_tests/fixtures/group/beta/inline.css",
+    "public_tests/expected/group/beta/inline-expected.html",
+    "public_tests/fixtures/codeblocks-public.html",
+    "public_tests/fixtures/cb.css",
+    "public_tests/expected/codeblocks-public.html",
+    "public_tests/fixtures/codeblocks-external-public.html",
+    "public_tests/fixtures/cbx.css",
+    "public_tests/expected/codeblocks-external-public.html",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

@@ -1,0 +1,32 @@
+project_root/
+├── src/
+│   ├── __init__.py               # (empty) Marks src as a package
+│   ├── process_dir.py            # Python version of processDir logic
+│   ├── should_exclude_path.py    # Python version of shouldExcludePath logic
+│   └── utils.py                  # Utility functions (truncated, position, etc)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_process_dir.py       # Original process-dir.test.js
+│       ├── test_utils.py             # Original utils.test.js
+│       ├── test_should_exclude_path.py      # Original should-exclude-path.test.js
+│       └── test_should_exclude_path_ts.py   # Original should-exclude-path.test.ts
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_process_dir_public.py          # Public process-dir.public.test.js
+│   ├── test_utils_public.py                # Public utils.public.test.js
+│   └── test_should_exclude_path_public.py  # Public should-exclude-path.public.test.js
+├── requirements.txt                    # Python dependencies for pytest
+├── run_tests.sh                        # One-click script to run all tests
+├── README.md
+└── project_structure.txt               # This file
+
+Explanations:
+- src/: All Python modules/logic required to run the tests.
+- tests/original/: Translated original test cases (from JS).
+- public_tests/: Public versions of some tests, as disclosed in the JS repo.
+- requirements.txt: List of Python package dependencies (here: pytest).
+- run_tests.sh: Bash script to run all tests via pytest.
+- README.md: Project info and usage.
+- project_structure.txt: This file, gives project overview and mapping.

@@ -1,0 +1,29 @@
+scrapyjsonrpc/
+├── go.mod                          # Go module definition file
+├── run_tests.sh                    # Simple script to run all Go tests with one command
+├── project_structure.txt           # This overview/documentation file
+├── public_tests/                   # Public test suite (for Go public API validation)
+│   ├── jsonrpc_public_test.go      # Public tests for JSON-RPC API
+│   ├── serialize_public_test.go    # Public tests for serialization API
+│   └── txweb_public_test.go        # Public tests for txweb API
+└── tests/                          # Original (internal) tests
+    └── original/
+        ├── jsonrpc_test.go         # Original tests for JSON-RPC
+        ├── serialize_test.go       # Original tests for serialization
+        └── txweb_test.go           # Original tests for txweb (resource rendering, etc.)
+
+# Structure explanation:
+
+- go.mod:           Go module descriptor, required for dependency and package management.
+- run_tests.sh:     Executable bash script to run all tests (original and public) via 'go test ./...'
+- project_structure.txt: This explanation and file map for the Go port.
+- public_tests/:    Contains public tests using only the public Go API for the package.
+- tests/original/:  Contains original/internal tests for all core logic, including private edge cases.
+
+# Setup & Usage:
+
+1. Ensure Go (>=1.18) is installed on your system.
+2. From the project root, run:
+     $ chmod +x run_tests.sh
+     $ ./run_tests.sh
+3. All tests (original/internal and public) will execute automatically.

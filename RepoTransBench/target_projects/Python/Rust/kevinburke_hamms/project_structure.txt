@@ -1,0 +1,46 @@
+kevinburke_hamms Rust Project Structure
+
+.
+├── Cargo.toml                  # Rust package and dependency manifest
+├── src/
+│   ├── lib.rs                  # Library source (stubbed for test support)
+│   ├── main.rs                 # Binary main (minimal, for test coverage)
+│   └── thread.rs               # Simulated thread functionality for tests
+├── tests/
+│   ├── original/
+│   │   ├── test_thread_py.rs   # Translation of tests/test_thread_py.py
+│   │   ├── test_utils.rs
+│   │   ├── test_morse.rs
+│   │   ├── test_endpoints.rs
+│   │   ├── test_hamms_misc.rs
+│   │   ├── test_hamms_server.rs
+│   │   ├── test_init_py.rs
+│   │   └── test_main_py.rs
+│   ├── common/
+│   │   └── mod.rs              # For shared utilities (currently empty)
+│   └── thread_mod.rs           # Re-exports thread_mod for tests
+├── public_tests/
+│   ├── test_public_thread_py.rs
+│   ├── test_public_utils.rs
+│   ├── test_public_morse.rs
+│   ├── test_public_endpoints.rs
+│   ├── test_public_hamms_misc.rs
+│   ├── test_public_hamms_server.rs
+│   ├── test_public_init_py.rs
+│   └── test_public_main_py.rs
+├── run_tests.sh                # Simple one-click script to run all tests
+├── README.md                   # Project documentation
+└── project_structure.txt       # This file, documents the layout and instructions
+
+Directory Explanations:
+- src/: All source code, including stubs required by test code
+- tests/original/: Complete translations of all 'tests/' from Python (original tests)
+- public_tests/: Translations of all 'public_tests/' from Python (public test set)
+- tests/common/: Reserved for any shared helpers/utilities (currently empty)
+- run_tests.sh: One-step test runner script (see below)
+
+Setup & Testing:
+1. Ensure Rust is installed (https://www.rust-lang.org/tools/install)
+2. Run all tests (original and public): ./run_tests.sh
+
+This layout follows standard Rust conventions, ensures clarity between original and public test sets, and provides a simple workflow.

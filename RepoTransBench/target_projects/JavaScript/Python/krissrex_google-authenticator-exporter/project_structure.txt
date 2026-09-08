@@ -1,0 +1,23 @@
+Project structure (Python translation):
+
+.
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── src/
+│   ├── __init__.py
+│   ├── edbase32.py              # (Target for src/edbase32.js)
+│   └── index.py                 # (Target for src/index.js)
+├── test-assets/
+│   └── test-qr-codes.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_edbase32.py         # from src/edbase32.test.js
+│   │   └── test_index.py            # from src/index.test.js
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_edbase32_public.py      # from public_tests/edbase32.public.test.js
+│   └── test_index_public.py         # from public_tests/index.public.test.js

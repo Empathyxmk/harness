@@ -1,0 +1,31 @@
+project_root/
+├── src/
+│   ├── flask_recaptcha.h         # Library header (contains DEFAULTS and ReCaptcha classes)
+│   └── flask_recaptcha.cpp       # Library implementation
+├── include/
+│   └── (empty, or put extra headers here)
+├── tests/
+│   ├── test_main.cpp             # GTest entry point
+│   └── original/
+│       ├── test_flask_recaptcha.cpp            # Original test cases for main API
+│       ├── test_flask_recaptcha_coverage.cpp   # Original coverage-focused tests
+│       └── test_flask_recaptcha_extra.cpp      # Original extra/edge-case tests
+├── public_tests/
+│   ├── test_public_flask_recaptcha.cpp         # Public tests for main API
+│   ├── test_public_flask_recaptcha_coverage.cpp# Public coverage-focused tests
+│   └── test_public_flask_recaptcha_extra.cpp   # Public extra/public interface tests
+├── CMakeLists.txt
+├── run_tests.sh                   # One-click build-and-test script
+├── README.md
+└── project_structure.txt          # This file
+
+Directory explanations:
+- src/: C++ source files and main implementation of flask_recaptcha
+- include/: place for any project-wide headers (empty here)
+- tests/original/: Full translation of original Python tests to C++ gtest
+- public_tests/: Public C++ gtest testcases
+- tests/test_main.cpp: GTest main entrypoint
+- CMakeLists.txt: Project and build configuration
+- run_tests.sh: Builds and runs all tests with one command
+- README.md: Documentation/instructions (not shown here)
+- project_structure.txt: This explanation

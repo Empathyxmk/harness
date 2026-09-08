@@ -1,0 +1,1 @@
+# Ensures public_tests is treated as a package for pytest discovery when needed.

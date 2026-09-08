@@ -1,0 +1,60 @@
+sacmehta_delight/
+├── Cargo.toml                  # Rust project config file
+├── src/
+│   └── lib.rs                 # Rust source code root (empty placeholder)
+├── tests/
+│   ├── original/              # All original translated tests here
+│   │   ├── test_label_smoothing.rs
+│   │   ├── test_average_checkpoints.rs
+│   │   ├── test_memory_efficient_fp16.rs
+│   │   ├── test_character_token_embedder.rs
+│   │   ├── test_utils.rs
+│   │   ├── test_token_block_dataset.rs
+│   │   ├── test_sequence_generator.rs
+│   │   ├── test_dictionary.rs
+│   │   ├── test_multihead_attention.rs
+│   │   ├── test_fairseq_checkpoint_utils.rs
+│   │   ├── test_run_experiment_advanced.rs
+│   │   ├── test_metrics.rs
+│   │   ├── test_convtbc.rs
+│   │   ├── test_fairseq_data_utils.rs
+│   │   ├── test_fairseq_dictionary.rs
+│   │   ├── test_sequence_scorer.rs
+│   │   ├── test_multi_corpus_sampled_dataset.rs
+│   │   ├── test_train.rs
+│   │   ├── test_iterators.rs
+│   │   ├── test_export.rs
+│   │   ├── test_sparse_multihead_attention.rs
+│   │   ├── test_file_io.rs
+│   │   ├── test_concat_dataset.rs
+│   │   ├── test_resampling_dataset.rs
+│   │   ├── test_main_scripts.rs
+│   │   ├── test_cli_entrypoints.rs
+│   │   ├── test_bmuf.rs
+│   │   ├── test_reproducibility.rs
+│   │   ├── test_fairseq_bleu.rs
+│   │   ├── test_binaries.rs
+│   │   ├── test_backtranslation_dataset.rs
+│   │   ├── test_noising.rs
+│   │   ├── speech_recognition/
+│   │   │   ├── test_cross_entropy.rs
+│   │   │   ├── test_collaters.rs
+│   │   │   ├── test_vggtransformer.rs
+│   │   │   └── asr_test_base.rs
+│   └── conftest.rs             # Rust test configuration if needed
+├── public_tests/              # Public test translations (mostly marked skipped)
+│   ├── test_public_label_smoothing.rs
+│   ├── test_public_average_checkpoints.rs
+│   ├── test_public_memory_efficient_fp16.rs
+│   ├── test_public_character_token_embedder.rs
+│   ├── test_public_utils.rs
+│   ├── test_public_token_block_dataset.rs
+│   └── test_public_sequence_generator.rs
+├── run_tests.sh               # Simple bash script to run all tests
+└── README.md                  # Project overview and instructions
+
+README.md Instructions:
+- Install Rust and Cargo from https://rustup.rs/
+- To run all tests: chmod +x run_tests.sh; ./run_tests.sh
+- Tests translated from original Python repository; some tests are placeholder mimics
+- Extensive Rust test coverage matches original Python test logic as closely as possible

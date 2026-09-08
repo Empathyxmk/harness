@@ -1,0 +1,31 @@
+project_root/
+├── requirements.txt               # Python requirements for testing (pytest)
+├── run_tests.sh                   # One-click test execution script
+├── src/                           # (Source code here, not included in this translation)
+├── tests/
+│   └── original/
+│       ├── test_core.py           # Original core tests (translated)
+│       ├── test_diff.py           # Original diff tests (translated)
+│       ├── test_helpers.py        # Original helpers tests (translated)
+│       └── test_index.py          # Original index tests (translated)
+├── public_tests/
+│   ├── test_core_public.py        # Public test: core (translated)
+│   ├── test_diff_public.py        # Public test: diffStates (translated)
+│   ├── test_helpers_public.py     # Public test: helpers (translated)
+│   └── test_index_public.py       # Public test: index (translated)
+└── project_structure.txt          # Project structure and explanations (this file)
+
+Directory and file explanations:
+- requirements.txt: Specifies test dependencies (pytest).
+- run_tests.sh: Simple script to execute all tests with one command.
+- src/: Directory expected for source code. Not included here, but should contain your main Python implementation.
+- tests/original/: Contains all translated original test cases from the JavaScript specs.
+- public_tests/: Contains all translated public test cases.
+- project_structure.txt: Describes the structure and usage of this Python test project.
+
+Setup & testing instructions:
+1. Install test dependencies with: `pip install -r requirements.txt`
+2. Run all tests with: `./run_tests.sh`
+3. Add Python source modules in `src/` as needed for your codebase.
+
+All tests are fully implemented with pytest and do not contain placeholders or incomplete functions.

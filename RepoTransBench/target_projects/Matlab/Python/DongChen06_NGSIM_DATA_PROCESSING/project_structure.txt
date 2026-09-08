@@ -1,0 +1,40 @@
+DongChen06_NGSIM_DATA_PROCESSING Python Project Structure
+
+project_root/
+├── src/
+│   └── ngsim_data_processing/
+│       ├── __init__.py
+│       ├── save_data.py
+│       ├── plot_trajectories.py
+│       └── data_process.py
+│
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── conftest.py
+│       ├── test_save_data.py
+│       ├── test_data_process.py
+│       └── test_plot_trajectories.py
+│
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_save_data_public.py
+│   ├── test_plot_trajectories_public.py
+│   └── test_data_process_public.py
+│
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+
+Key:
+- src/ngsim_data_processing/: Python package for main code (save_data, data_process, plot_trajectories)
+- tests/original/: All translated original (private) test cases from Matlab
+- public_tests/: All translated public test cases from Matlab
+- requirements.txt: Python dependencies (pytest, scipy, matplotlib, numpy)
+- project_structure.txt: This project structure and key file explanations
+- run_tests.sh: One-click test script (runs both original and public tests)
+
+Test instructions:
+1. pip install -r requirements.txt
+2. ./run_tests.sh
+   (runs all original and public tests via pytest; output clearly shows all test statuses)

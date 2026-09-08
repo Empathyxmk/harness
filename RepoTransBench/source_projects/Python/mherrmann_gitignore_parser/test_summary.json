@@ -1,0 +1,16 @@
+{
+  "project_name": "mherrmann_gitignore_parser",
+  "language": "Python",
+  "coverage": {
+    "line": 92.0,
+    "branch": 82.1
+  },
+  "timestamp": "2025-06-19T12:03:59.608445",
+  "original_path": "/workspace/runnable_filter/Python/mherrmann_gitignore_parser",
+  "test_result_path": "/workspace/test_enhancement_results/Python/mherrmann_gitignore_parser",
+  "tests_path": [
+    "tests.py",
+    "extra_tests.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

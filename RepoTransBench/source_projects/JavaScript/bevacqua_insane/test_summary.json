@@ -1,0 +1,19 @@
+{
+  "project_name": "bevacqua_insane",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 95.4,
+    "branch": 81.7
+  },
+  "timestamp": "2025-06-19T09:59:48.548153",
+  "original_path": "/workspace/runnable_filter/JavaScript/bevacqua_insane",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/bevacqua_insane",
+  "tests_path": [
+    "test/sanitizer.test.js",
+    "test/insane.test.js",
+    "test/attributes.test.js",
+    "test/toMap.test.js",
+    "test/parser.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

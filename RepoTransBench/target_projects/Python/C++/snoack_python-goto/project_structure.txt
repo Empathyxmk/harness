@@ -1,0 +1,30 @@
+snoack_python-goto-cpp/
+├── CMakeLists.txt               # CMake build configuration root
+├── include/
+│   └── goto_dummy.h             # Dummy header to emulate core "goto" interface
+├── public_tests/
+│   ├── test_public_goto.cpp             # Translated public test: public_tests/test_public_goto.py
+│   └── test_public_goto_internals.cpp   # Translated public test: public_tests/test_public_goto_internals.py
+├── src/
+│   └── goto_dummy.cpp           # C++ source for dummy "goto" logic to satisfy linking/tests
+├── tests/
+│   ├── original/
+│   │   ├── test_goto.cpp            # Translated original test: test_goto.py
+│   │   └── test_goto_internals.cpp  # Translated original test: test_goto_internals.py
+│   └── test_main.cpp            # Common Google Test runner (main)
+├── run_tests.sh                 # One-click test build and execution script
+├── project_structure.txt        # This project structure and usage notes
+└── README.md                    # (Add documentation if desired)
+
+Directory explanations:
+- include/: C++ headers needed by source/tests.
+- src/: Source code; here just gateways to dummy stubs for tests.
+- tests/original/: Translated original Python test cases.
+- public_tests/: Translated public Python test cases.
+- run_tests.sh: Build and run script (use `chmod +x run_tests.sh`).
+
+How to build and test:
+1. Install CMake and a C++17 compiler (e.g. g++ or clang++).
+2. `chmod +x run_tests.sh`
+3. `./run_tests.sh`
+All tests (original and public) will compile and run via Google Test, with results shown in terminal.

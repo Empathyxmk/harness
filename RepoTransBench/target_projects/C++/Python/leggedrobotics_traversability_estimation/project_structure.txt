@@ -1,0 +1,22 @@
+leggedrobotics_traversability_estimation/
+├── requirements.txt
+├── run_tests.sh
+├── src/
+│   └── traversability/
+│       ├── __init__.py
+│       ├── roughness_filter.py
+│       ├── slope_filter.py
+│       └── step_filter.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_filters_roughness.py
+│       ├── test_filters_slope.py
+│       └── test_filters_step.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_filters_roughness_public.py
+│   ├── test_filters_slope_public.py
+│   └── test_filters_step_public.py
+└── test_translation_progress.json

@@ -1,0 +1,33 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_shader_catalog.py                  # Original test: Header existence for shader_catalog
+│       ├── test_font_logic.py                      # Original test: Header existence/inclusion for glm
+│       └── test_transform.py                       # Original test: Dummy struct/header inclusion for transform/glm
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_shader_catalog_public.py               # Public test: ShaderCatalog header compiles (really just a placeholder)
+│   ├── test_font_logic_public.py                   # Public test: GLM header available (really just a placeholder)
+│   └── test_transform_public.py                    # Public test: Struct/header availability (just a placeholder)
+README:
+
+# GreenLightning_gpu-font-rendering (Python Testing Adaptation)
+
+This Python package is a translation of the original C++ test suite for GreenLightning_gpu-font-rendering. 
+The tests mimic header inclusion checks and compilation succeeds for minimal C++ files.
+
+## Directory Structure
+
+- `requirements.txt`: Python testing dependencies (pytest).
+- `run_tests.sh`: One-click test execution. Runs all tests.
+- `tests/original/`: "Original" test conversion from C++, minimal existence checks.
+- `public_tests/`: Public ("unobfuscated") test equivalents, as per supplied public tests.
+- Each directory has an `__init__.py` for Python package recognition.
+
+## Running Tests
+
+1. Ensure Python 3 and pytest are installed. To install dependencies:

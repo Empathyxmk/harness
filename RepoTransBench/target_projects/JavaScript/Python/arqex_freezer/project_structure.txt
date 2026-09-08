@@ -1,0 +1,30 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── src/
+│   └── __init__.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_utils_coverage_extra.py
+│       ├── test_frozen_coverage_extra.py
+│       ├── test_emitter_coverage_extra.py
+│       ├── test_emitter_coverage.py
+│       ├── test_freezer_coverage.py
+│       ├── test_nodecreator_coverage.py
+│       ├── test_nodecreator_coverage_extra.py
+│       ├── test_utils_coverage.py
+│       └── test_frozen_coverage.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_nodecreator_coverage.py
+│   ├── test_frozen_coverage_extra.py
+│   ├── test_emitter_coverage_extra.py
+│   ├── test_freezer_coverage.py
+│   ├── test_utils_coverage.py
+│   ├── test_emitter_coverage.py
+│   ├── test_frozen_coverage.py
+│   ├── test_nodecreator_coverage_extra.py
+│   └── test_utils_coverage_extra.py
+└── test_translation_progress.json

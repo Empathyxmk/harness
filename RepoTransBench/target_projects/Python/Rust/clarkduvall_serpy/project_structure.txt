@@ -1,0 +1,46 @@
+clarkduvall_serpy_rust/
+├── Cargo.toml                  # Rust project manifest and dependencies.
+├── src/
+│   ├── lib.rs                  # Main lib file re-exporting modules.
+│   ├── obj.rs                  # Provides Obj struct and helpers for test fixtures/data.
+│   └── serpy.rs                # Minimal serialization field traits, helpers, and macros.
+├── tests/
+│   └── original/
+│       ├── test_fields.rs      # Translated original (private) tests: field logic & edge cases.
+│       ├── test_integration.rs # Translated original integration tests for overall serializer behavior.
+│       └── test_serializer.rs  # Translated original serializer core logic tests.
+├── public_tests/
+│   ├── test_public_fields.rs      # Translated public tests verifying field use and behavior.
+│   ├── test_public_integration.rs # Translated public integration tests for user-facing features.
+│   └── test_public_serializer.rs  # Translated basic public serializer usage tests.
+├── run_tests.sh                # Single-command test runner (calls 'cargo test').
+└── project_structure.txt       # This file (project directory explanation and documentation).
+
+---------------------------------------
+Directory/Files explanation:
+---------------------------------------
+- Cargo.toml: Crate/dependency management.
+- src/: Library code.
+  - lib.rs: Main library module.
+  - obj.rs: Contains the Obj struct and helpers for emulating Python test data inputs.
+  - serpy.rs: Implements basic field traits to simulate serpy-like behavior (raw field translation).
+- tests/original/: Contains all translated original (non-public) test cases from Python.
+- public_tests/: Contains all translated public test cases, directly mapped from their Python equivalents.
+- run_tests.sh: Minimal, executable shell script to run all tests with one command (`./run_tests.sh`).
+- project_structure.txt: Overview of the Rust project layout and purpose of each file/folder.
+
+---------------------------------------
+Setup & Testing Instructions:
+---------------------------------------
+1. Make sure you have Rust and Cargo installed.
+2. To run ALL tests (including public and original):
+   ./run_tests.sh
+
+---------------------------------------
+How to extend:
+---------------------------------------
+- Add new library code under `src/`.
+- Add new original (private) tests under `tests/original/`.
+- Add new public tests under `public_tests/`.
+
+---------------------------------------

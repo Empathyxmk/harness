@@ -1,0 +1,34 @@
+.
+├── requirements.txt                   # Python dependencies (pytest)
+├── run_tests.sh                       # Simple test execution script (runs all tests)
+├── tests/
+│   └── original/
+│       ├── __init__.py                # (optional) Python package marker
+│       ├── test_capture_photo_helper.py        # Translated original CapturePhotoHelperTest.java
+│       ├── test_example_unit.py                 # Translated ExampleUnitTest.java
+│       ├── test_example_instrumented.py         # Translated ExampleInstrumentedTest.java
+│       ├── test_file_choose_interceptor.py      # Translated FileChooseInterceptorTest.java
+│       ├── test_image_loader.py                 # Translated ImageLoaderTest.java
+│       ├── test_photo_load_listener.py          # Translated PhotoLoadListenerTest.java
+│       └── test_simage_picker.py                # Translated SImagePickerTest.java
+├── public_tests/
+│   ├── __init__.py                    # (optional) Python package marker
+│   ├── test_capture_photo_helper_public.py        # Translated public CapturePhotoHelperPublicTest.java
+│   ├── test_file_choose_interceptor_public.py     # Translated public FileChooseInterceptorPublicTest.java
+│   ├── test_image_loader_public.py                # Translated public ImageLoaderPublicTest.java
+│   ├── test_photo_load_listener_public.py         # Translated public PhotoLoadListenerPublicTest.java
+│   └── test_simage_picker_public.py              # Translated public SImagePickerPublicTest.java
+
+Directory explanations:
+- requirements.txt: Lists all Python dependencies needed (pytest)
+- run_tests.sh: Simple shell script to run all tests in both original and public test directories using pytest
+- tests/original/: Contains all translations of the original (internal) Java test files into Python
+- public_tests/: Contains all translations of the public (benchmark) Java test files into Python
+- __init__.py: Included as package markers to allow relative imports if needed.
+- Each test_*.py: A direct translation of the corresponding Java test file, with identical logic, assertions, and structure, implemented in Python using pytest.
+
+Setup and test instructions:
+1. Install Python 3.x and `pip` if not already installed.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Make the test script executable: `chmod +x run_tests.sh`
+4. Run all tests with one command: `./run_tests.sh`

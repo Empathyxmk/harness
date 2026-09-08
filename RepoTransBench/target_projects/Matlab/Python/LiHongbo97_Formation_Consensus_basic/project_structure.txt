@@ -1,0 +1,49 @@
+LiHongbo97_Formation_Consensus_basic_python/
+├── src/
+│   └── lihongbo_consensus/
+│       ├── __init__.py
+│       ├── helpers.py              # All helpers and function stubs (normalization, compute_area, etc.)
+│       ├── consensus_APF.py        # Dummy APF consensus_main method for test
+│       └── consensus_DWA.py        # Dummy DWA consensus_main method for test
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_consensus_main.py
+│       ├── test_rank_safe.py
+│       ├── test_normalization.py
+│       ├── test_draw_arrow_and_circle.py
+│       ├── test_compute_area_repulsion_confine.py
+│       ├── test_consensus_helpers.py
+│       ├── test_detection_and_find_hop.py
+│       ├── test_DynamicWindowApproach.py
+│       └── test_communication_range.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_consensus_main.py
+│   ├── test_public_rank_safe.py
+│   ├── test_public_normalization.py
+│   ├── test_public_draw_arrow_and_circle.py
+│   ├── test_public_compute_area_repulsion_confine.py
+│   ├── test_public_consensus_helpers.py
+│   ├── test_public_detection_and_find_hop.py
+│   ├── test_public_DynamicWindowApproach.py
+│   └── test_public_communication_range.py
+├── requirements.txt                # Python dependencies (pytest, numpy, matplotlib)
+├── run_tests.sh                    # One-click test shell script (chmod +x)
+├── project_structure.txt           # This file: tree plus brief purpose descriptions
+└── README.md
+
+Directory Descriptions:
+- src/lihongbo_consensus/: Core implementation and helper stubs for the tests (adapted from Matlab functions).
+- tests/original/: Automated translations of Matlab 'original' test scripts.
+- public_tests/: Automated translations of Matlab 'public' test scripts.
+- requirements.txt: Python dependencies for running and testing (pytest, numpy, matplotlib).
+- run_tests.sh: Minimal script for running all tests with one command.
+- project_structure.txt: Overview of the converted project tree and roles.
+
+Setup & Test Instructions:
+1. pip install -r requirements.txt
+2. ./run_tests.sh
+
+All tests (both original and public) will be executed by pytest automatically.

@@ -1,0 +1,17 @@
+{
+  "project_name": "nathanrooy_particle-swarm-optimization",
+  "language": "Python",
+  "coverage": {
+    "line": 98.4,
+    "branch": 96.4
+  },
+  "timestamp": "2025-06-19T12:07:58.083306",
+  "original_path": "/workspace/runnable_filter/Python/nathanrooy_particle-swarm-optimization",
+  "test_result_path": "/workspace/test_enhancement_results/Python/nathanrooy_particle-swarm-optimization",
+  "tests_path": [
+    "tests/test_cost_functions.py",
+    "tests/test_pso.py",
+    "tests/test_pso_simple.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

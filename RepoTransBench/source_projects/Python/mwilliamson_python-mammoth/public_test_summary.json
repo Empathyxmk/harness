@@ -1,0 +1,62 @@
+{
+  "project_name": "mwilliamson_python-mammoth",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:19:03.568079",
+  "original_path": "/workspace/verified_repos_v2/Python/mwilliamson_python-mammoth",
+  "public_test_result_path": "/workspace/public_test_results/Python/mwilliamson_python-mammoth",
+  "original_tests": {
+    "test_files": [
+      "tests/test_images_module.py",
+      "tests/test_setup_py.py",
+      "tests/test_document_matchers_module.py",
+      "tests/test_conversion_module.py",
+      "tests/test_html_paths_module.py",
+      "tests/test_results_module.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 6,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_images_module.py",
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_document_matchers_module.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_conversion_module.py",
+      "public_tests/test_public_html_paths_module.py",
+      "public_tests/test_public_results_module.py",
+      "public_tests/test_public_images_module.py",
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_document_matchers_module.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 11,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_images_module.py",
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_document_matchers_module.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_conversion_module.py",
+    "public_tests/test_public_html_paths_module.py",
+    "public_tests/test_public_results_module.py",
+    "public_tests/test_public_images_module.py",
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_document_matchers_module.py",
+    "run_public_tests.sh"
+  ]
+}

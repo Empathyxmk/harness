@@ -1,0 +1,43 @@
+Java Project Structure (Translated from Python: jtsang4_claude-to-chatgpt)
+
+project_root/
+├── pom.xml                    # Maven build file with JUnit 5, Mockito, AssertJ dependencies
+├── run_tests.sh               # Simple test execution script (runs all tests)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/example/
+│   │           └── (Source code goes here. *Not included in test translation*)
+│   └── test/
+│       └── java/
+│           └── com/example/
+│               ├── original/
+│               │   ├── AdapterTest.java         # Original tests for Adapter logic
+│               │   ├── AppRoutesTest.java       # Original REST API/state tests
+│               │   ├── LoggerTest.java
+│               │   ├── ModelsTest.java
+│               │   └── UtilTest.java
+│               └── publictests/
+│                   ├── PublicAdapterTest.java
+│                   ├── PublicAppRoutesTest.java
+│                   ├── PublicLoggerTest.java
+│                   ├── PublicModelsTest.java
+│                   ├── PublicUtilTest.java
+
+DIRECTORY & FILE PURPOSES:
+- pom.xml:           Maven build and dependency configuration (JUnit, Mockito, AssertJ)
+- run_tests.sh:      Run all tests with a single command (`mvn clean test`)  
+- src/main/java/:    Placeholder for production source code (not included)
+- src/test/java/com/example/original/:    All translated ORIGINAL (private) test logic
+- src/test/java/com/example/publictests/: All translated PUBLIC test logic visible to users
+- project_structure.txt: This explanation file
+
+INSTRUCTIONS:
+1. Install Maven (if needed), then run all tests via:
+   $ ./run_tests.sh
+
+2. All tests will be discovered and run automatically, including both original and public tests.
+
+3. Add your production (source) code under src/main/java/com/example/ as required.
+
+4. To run only public or only original tests, adjust your Maven invocation with includes/excludes as needed.

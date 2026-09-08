@@ -1,0 +1,42 @@
+project_root/
+├── README.md
+│     - Project overview and testing instructions.
+├── go.mod
+│     - Go modules dependency file.
+├── run_tests.sh
+│     - Run this script to execute all tests.
+├── flaskbabel/
+│   └── flaskbabel.go
+│       - Go implementation (to be filled out for full test compliance).
+├── tests/
+│   ├── original/
+│   │   ├── app_factory_test.go
+│   │   ├── date_formatting_test.go
+│   │   ├── force_locale_test.go
+│   │   ├── gettext_test.go
+│   │   ├── init_smoke_test.go
+│   │   ├── integration_test.go
+│   │   ├── multiple_apps_test.go
+│   │   ├── number_formatting_test.go
+│   │   └── speaklater_test.go
+│   └── testutil.go
+│       - Shared test helpers/utilities.
+├── public_tests/
+│   ├── app_factory_public_test.go
+│   ├── date_formatting_public_test.go
+│   ├── force_locale_public_test.go
+│   ├── gettext_public_test.go
+│   ├── init_smoke_public_test.go
+│   ├── integration_public_test.go
+│   ├── multiple_apps_public_test.go
+│   ├── number_formatting_public_test.go
+│   ├── speaklater_public_test.go
+│
+└── (other Go source files as needed)
+
+Explanations:
+- "flaskbabel/" - Core Go implementation ported from the Python package ("flask_babel"). You need to fill in the logic for all tested functions/classes for tests to pass.
+- "tests/original/" - Direct translations of the Python test suite, full coverage.
+- "public_tests/" - Publicly-focused, scenario-driven test subset.
+- "testutil.go" - Shared utilities for test setup or helper methods.
+- "run_tests.sh" - Runs all tests with standard Go commands.

@@ -1,0 +1,32 @@
+fafaldo-zz-fabtoolbar/
+├── go.mod                         # Go modules file
+├── run_tests.sh                   # Simple test execution script
+├── tests/
+│   └── original/
+│        ├── fabtoolbar_application_test.go              # App module ApplicationTest translation
+│        ├── fabtoolbar_library_application_test.go      # Library ApplicationTest translation
+│        ├── fabtoolbar_layout_test.go                  # FABToolbarLayoutTest translation
+│        └── expand_animation_utils_test.go             # ExpandAnimationUtilsTest translation
+├── public_tests/
+│   ├── application_public_test.go                      # ApplicationPublicTest translation
+│   ├── fabtoolbar_layout_public_test.go                # FABToolbarLayoutPublicTest translation
+│   └── expand_animation_utils_public_test.go           # ExpandAnimationUtilsPublicTest translation
+└── project_structure.txt           # This file (project structure and instructions)
+
+
+# Directory Explanations:
+
+go.mod               - Go module config (dependencies managed here)
+run_tests.sh         - One-click script to execute ALL unit & public tests
+tests/original/      - Translations of all original (internal/private) Java test logic
+public_tests/        - Translations of all public (publicly generated or shared) Java test logic
+
+# Setup and Testing Instructions
+
+1. Make sure you have Go installed (version >= 1.20).
+2. Fetch dependencies and run all tests:
+    chmod +x run_tests.sh
+    ./run_tests.sh
+
+This will run ALL tests (original and public) and print results.
+For more verbose output, change run_tests.sh to: go test -v ./...

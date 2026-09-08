@@ -1,0 +1,32 @@
+Project Structure:
+
+corbt_react-native-keep-awake-python/
+├── src/
+│   └── keepawake.py                  # Python implementation of the KeepAwake class.
+├── tests/
+│   └── original/
+│       └── test_keepawake.py         # Original tests translated from Java.
+├── public_tests/
+│   └── test_keepawake_public.py      # Public tests translated from Java public test file.
+├── requirements.txt                  # Python dependencies (pytest).
+├── run_tests.sh                      # Simple test runner script.
+└── project_structure.txt             # This file. Explains directory and file layout.
+
+Directory/Files Explanation:
+
+- src/keepawake.py: The translated core logic (from KeepAwake.java) to Python.
+- tests/original/test_keepawake.py: Translated original suite from KeepAwakeTest.java. Requires KeepAwake class.
+- public_tests/test_keepawake_public.py: Translated public suite from KeepAwakePublicTest.java.
+- requirements.txt: Specifies Python dependencies for easy setup (e.g. `pip install -r requirements.txt`).
+- run_tests.sh: One-click shell script to run all tests using pytest, covering both tests and public_tests.
+- project_structure.txt: Describes the directory structure and guidance.
+
+Setup and Testing Instructions:
+
+1. Ensure you have Python 3.7+ installed.
+2. (Optional but recommended) Create and activate a virtualenv.
+3. Run: `pip install -r requirements.txt`
+4. Run all tests with: `./run_tests.sh`
+5. Make sure run_tests.sh is executable: `chmod +x run_tests.sh` if needed.
+
+Tests from tests/original/ and public_tests/ are both discovered together by pytest.

@@ -1,0 +1,33 @@
+project_root/
+├── src/
+│   └── picojson.py        # Python port of picojson interface (sufficient for test execution, not full implementation)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_core.py           # Main test translation from test.cc
+│       └── test_extra_picojson.py # Extra test translation from test_extra_picojson.cc
+├── public_tests/
+│   ├── __init__.py
+│   └── test_public.py      # Public test translation from test_public.cc
+├── requirements.txt        # Python dependencies (pytest)
+├── run_tests.sh            # Simple script for running all tests with one command
+└── project_structure.txt   # This file: explanation of all directories and files
+
+Directory explanations:
+- src/:         Contains the 'picojson.py' Python module. This module implements the minimal 'value' class and needed functions to allow tests to run and to mimic the original C++ interface.
+- tests/:       Root for all non-public (original) tests, including:
+  - original/:  Direct translation of C++ original test files.
+- public_tests/:  Contains Python translations of all public test cases.
+- requirements.txt:  Lists dependencies (mainly pytest).
+- run_tests.sh:  Run all tests with one command.
+- project_structure.txt:  This description file.
+
+Setup & Testing Instructions:
+1. Install dependencies:
+   $ pip install -r requirements.txt
+
+2. Run all tests:
+   $ ./run_tests.sh
+
+Tests use the 'pytest' framework and will run both original and public tests.

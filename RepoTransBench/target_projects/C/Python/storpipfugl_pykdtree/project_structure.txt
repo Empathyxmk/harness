@@ -1,0 +1,42 @@
+Project Structure for storpipfugl_pykdtree
+
+.
+├── LICENSE.txt                # Project license
+├── README.rst                 # Project documentation
+├── requirements.txt           # Python dependencies for testing (pytest, numpy)
+├── run_tests.sh               # One-click script to run all tests
+├── setup.py                   # Python packaging configuration
+├── pyproject.toml             # Modern Python build config
+├── setup.cfg                  # setuptools configuration
+├── CHANGELOG.md               # Changelog/history
+├── MANIFEST.in                # Manifest for package data inclusion
+├── Makefile                   # (If provided) For convenience tasks
+├── pykdtree/                  # Project package code + all tests, as in source
+│   ├── __init__.py               # Package initializer
+│   ├── kdtree.pyx                # Main KDTree code (Cython)
+│   ├── kdtree.c                  # C extension code
+│   ├── _kdtree_core.c            # C kernel
+│   ├── render_template.py        # Template rendering script
+│   └── ...                       # Test files are here (see below)
+│   ├── test_init_cov.py                  # ORIGINAL TEST (kept flat as in source)
+│   ├── test_render_template.py           # ORIGINAL TEST
+│   ├── test_kdtree_functionality.py      # ORIGINAL TEST
+│   ├── test_render_template_cov.py       # ORIGINAL TEST
+│   ├── test_tree.py                      # ORIGINAL TEST
+│   ├── test_tree_orig.py                 # ORIGINAL TEST
+│   ├── test_init_cov_public.py           # PUBLIC TEST
+│   ├── test_render_template_public.py    # PUBLIC TEST
+│   ├── test_kdtree_functionality_public.py      # PUBLIC TEST
+│   ├── test_render_template_cov_public.py       # PUBLIC TEST
+│   ├── test_tree_public.py               # PUBLIC TEST
+│   ├── test_tree_orig_public.py          # PUBLIC TEST
+├── run_public_tests.sh         # one-click script to run only public tests (as in source)
+└── test_summary.json           # Coverage/reporting info (not relevant for running tests)
+
+NOTES:
+- To run ALL tests, use `./run_tests.sh` (runs pytest for all `pykdtree/test_*.py`).
+- To run only public tests, use `./run_public_tests.sh`.
+- All original and public test files remain in `pykdtree/` as in the original structure (mirrors input sources).
+- Source and tests are all in the `pykdtree/` directory.
+- Install dependencies first: `pip install -r requirements.txt`
+- To run coverage, run: `pytest --cov=pykdtree --cov-report=term`

@@ -1,0 +1,20 @@
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── mapio/
+│                   └── gvanim/
+│                       ├── original/
+│                       │   ├── TestAnimation.java
+│                       │   ├── TestActionExtra.java
+│                       │   ├── TestMainImports.java
+│                       │   └── TestRender.java
+│                       └── public_tests/
+│                           ├── PublicTestAnimation.java
+│                           ├── PublicTestActionExtra.java
+│                           ├── PublicTestMainImports.java
+│                           └── PublicTestRender.java
+└── project_structure.txt

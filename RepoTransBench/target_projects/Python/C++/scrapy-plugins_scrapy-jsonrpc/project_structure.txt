@@ -1,0 +1,45 @@
+scrapy_jsonrpc-cpp/
+├── CMakeLists.txt                    # CMake configuration for project and test discovery
+├── include/                          # Project-wide header files (empty placeholder if no headers)
+│
+├── public_tests/                     # (Public) translated public test cases
+│   ├── test_public_jsonrpc.cpp
+│   ├── test_public_serialize.cpp
+│   └── test_public_txweb.cpp
+│
+├── src/                              # Project source code
+│   ├── main.cpp                      # (optional) main entry
+│   └── lib/
+│       ├── jsonrpc.h                 # Stubs or real implementation (not provided)
+│       ├── jsonrpc.cpp
+│       ├── serialize.h
+│       ├── serialize.cpp
+│       ├── txweb.h
+│       └── txweb.cpp
+│
+├── tests/
+│   ├── test_main.cpp                 # Main for running all tests
+│   └── original/
+│       ├── test_jsonrpc.cpp          # Original translated test cases
+│       ├── test_serialize.cpp
+│       └── test_txweb.cpp
+│
+├── run_tests.sh                      # One-click test runner
+└── project_structure.txt             # This file: structure and instructions
+
+------
+**Directory explanations:**
+- `src/` and `src/lib/`: Library implementation (not provided—place .h/.cpp as needed).
+- `include/`: Common header files (keep empty if not used; provide if desired for public APIs).
+- `tests/original/`: Translated "original" test cases from the original Python repository.
+- `public_tests/`: Translated public test cases.
+- `tests/test_main.cpp`: Main driver for Google Test.
+- `CMakeLists.txt`: Configures build, links Google Test, finds and compiles all tests and sources.
+- `run_tests.sh`: Builds and runs all tests with a single command.
+- `project_structure.txt`: This documentation.
+
+------
+**Setup and Testing Instructions:**
+1. Install [GoogleTest](https://github.com/google/googletest) and [nlohmann/json](https://github.com/nlohmann/json) (or ensure your system provides them).
+2. Ensure CMake >= 3.10 and a recent compiler (C++17).
+3. Run all tests from project root:

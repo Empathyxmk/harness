@@ -1,0 +1,11 @@
+{
+  "project_name": "editorconfig_editorconfig-jetbrains",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T19:25:39.367145",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/editorconfig_editorconfig-jetbrains",
+  "test_result_path": "/workspace/test_enhancement_results/Java/editorconfig_editorconfig-jetbrains"
+}

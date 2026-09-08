@@ -1,0 +1,36 @@
+bdarnell_plop_project/
+├── CMakeLists.txt                # Top-level CMake configuration
+├── include/                      # (Put all C++ headers here, e.g., collector.h, callgraph.h etc.)
+├── public_tests/                 # All public C++ test files here (e.g., test_public_collector.cpp)
+│   ├── test_public_collector.cpp
+│   ├── test_public_callgraph.cpp
+│   ├── test_public_platform.cpp
+│   ├── test_public_setup.cpp
+│   └── test_public_viewer.cpp
+├── run_tests.sh                  # Simple Bash script for one-click testing
+├── src/                          # C++ source implementation (collector.cpp, callgraph.cpp, etc.)
+│   ├── CMakeLists.txt            # Library subdirectory CMake config
+│   └── ...                       # .cpp implementation files
+├── tests/                        # C++ tests directory
+│   ├── original/                 # Translated original test cases
+│   │   ├── callgraph_test.cpp
+│   │   ├── collector_test.cpp
+│   │   ├── platform_test.cpp
+│   │   ├── setup_test.cpp
+│   │   └── viewer_test.cpp
+│   └── test_main.cpp             # Main test runner for GoogleTest
+└── project_structure.txt         # This file
+
+# Directory explanations:
+#  - include/:          All project headers.
+#  - src/:              Project C++ source files.
+#  - tests/original/:   Original (private) test cases, directly translated from Python.
+#  - public_tests/:     Public test files (translated from Python).
+#  - run_tests.sh:      Script to configure, build, and run both test suites.
+#  - project_structure.txt: This file.
+
+# Setup and Testing Instructions:
+# 1. Install GoogleTest and CMake (standard packages).
+# 2. Run: `chmod +x run_tests.sh`
+# 3. Run: `./run_tests.sh`
+#    This will build the project and run both original and public C++ test suites.

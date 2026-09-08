@@ -1,0 +1,34 @@
+spring5webapp_csharp/
+├── Spring5Webapp.sln
+├── README.md
+├── project_structure.txt
+├── run_tests.sh
+├── src/
+│   ├── SampleBranchingService.cs
+│   ├── Spring5webappApplication.cs
+│   └── Spring5Webapp.csproj
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── SampleBranchingServiceTests.cs
+│       ├── Spring5webappApplicationMainMethodTests.cs
+│       └── Spring5webappApplicationTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── SampleBranchingServicePublicTests.cs
+│   └── Spring5webappApplicationMainMethodPublicTests.cs
+
+Explanations:
+- src/ : Contains C# source code for the library/application being tested.
+- tests/original/ : All original (non-public) tests, directly mapped from Java source.
+- public_tests/ : Public test cases as seen in the Java repository.
+- run_tests.sh : Minimal script to execute all test projects.
+- Spring5Webapp.sln : Visual Studio solution managing all projects.
+- README.md : Instructions.
+- project_structure.txt : (this file) textual description of the project structure.
+
+Setup:
+1. Restore .NET dependencies:   dotnet restore
+2. Build everything:            dotnet build
+3. Run all tests:               ./run_tests.sh
+4. To run only one test suite:  dotnet test <path-to-csproj>

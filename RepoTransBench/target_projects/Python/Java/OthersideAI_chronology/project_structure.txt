@@ -1,0 +1,62 @@
+OthersideAI Chronology Java Project Structure
+============================================
+
+Project Root
+├── pom.xml
+│   - Maven project/configuration file with JUnit 5 testing dependencies.
+├── run_tests.sh
+│   - Simple shell script to run all tests via Maven (./run_tests.sh).
+├── project_structure.txt
+│   - This documentation of the Java project structure.
+└── src/
+    ├── main/
+    │   └── java/
+    │       └── com/
+    │           └── othersideai/
+    │               └── chronology/
+    │                   └── Chronological.java
+    │                       - Java implementation ("production") class with dummyAdd, dummyMul, dummyPositive.
+    └── test/
+        └── java/
+            └── com/
+                └── othersideai/
+                    └── chronology/
+                        ├── original/
+                        │   ├── TestChronological.java
+                        │   ├── TestChronologicalExtra.java
+                        │   └── TestChronologicalBranches.java
+                        │       - Unit test classes for all "original" Python test logic.
+                        └── public_tests/
+                            ├── PublicChronologicalTest.java
+                            ├── PublicChronologicalExtraTest.java
+                            └── PublicChronologicalBranchesTest.java
+                                - Unit test classes for all "public" Python test logic.
+
+-----------------------------------------------
+Directory & File Explanations
+-----------------------------------------------
+
+- pom.xml
+  Maven build file, manages dependencies (JUnit Jupiter 5) and configuration for compiling/running all tests.
+
+- run_tests.sh
+  One-command script for running all tests with `mvn clean test`. Requires Maven.
+
+- src/main/java/com/othersideai/chronology/Chronological.java
+  Contains the implementation of all functions needed for test logic (dummyAdd, dummyMul, dummyPositive).
+
+- src/test/java/com/othersideai/chronology/original/
+  Contains all Java translations of the "original" test suite.
+
+- src/test/java/com/othersideai/chronology/public_tests/
+  Contains all Java translations of the "public_tests" Python test suite.
+
+------------------------------------------------
+Setup & Testing Instructions
+------------------------------------------------
+
+1. Ensure you have Maven and Java (11+) installed.
+2. (Optional) Make the script executable: `chmod +x run_tests.sh`
+3. Run all tests with: `./run_tests.sh`
+   This will build, discover, and run all original & public tests.
+4. All test results will be shown in the terminal. No further steps necessary.

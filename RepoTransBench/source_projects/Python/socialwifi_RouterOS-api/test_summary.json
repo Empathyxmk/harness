@@ -1,0 +1,23 @@
+{
+  "project_name": "socialwifi_RouterOS-api",
+  "language": "Python",
+  "coverage": {
+    "line": 79.0,
+    "branch": 85.7
+  },
+  "timestamp": "2025-06-19T12:50:27.030650",
+  "original_path": "/workspace/runnable_filter/Python/socialwifi_RouterOS-api",
+  "test_result_path": "/workspace/test_enhancement_results/Python/socialwifi_RouterOS-api",
+  "tests_path": [
+    "tests/test_api_communicator.py",
+    "tests/test_base_api.py",
+    "tests/test_sentence.py",
+    "tests/test_api_structure.py",
+    "tests/test_resource.py",
+    "tests/test_query.py",
+    "tests/test_api_socket.py",
+    "tests/test_socket.py",
+    "tests/test_login_router_os_api.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

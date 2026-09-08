@@ -1,0 +1,21 @@
+project_root/
+├── requirements.txt                 # Python dependencies (pytest)
+├── run_tests.sh                     # Simple executable script to run all tests with pytest
+├── src/
+│   ├── __init__.py                  # Makes src a package
+│   ├── cat.py                       # Cat class definition
+│   ├── dog.py                       # Dog class definition (with oneThird class property)
+│   └── index.py                     # Module bundling Cat and Dog exports
+├── tests/
+│   └── original/
+│       ├── test_cat.py              # Original test for Cat class
+│       ├── test_dog.py              # Original test for Dog class
+│       ├── test_dog_extended.py     # Original test for Dog additional logic/statics
+│       ├── test_index.py            # Original test for package index bundle
+│       └── test_webpackconfig.py    # Original test for webpack.config.js (mocked)
+├── public_tests/
+│   ├── test_cat_public.py           # Public test (Cat class variant cases)
+│   ├── test_dog_public.py           # Public test (Dog class variant cases)
+│   ├── test_dog_extended_public.py  # Public test (Dog with alternative inputs)
+│   ├── test_index_public.py         # Public test (Package index bundle, Cat/Dog matches)
+│   └── test_webpackconfig_public.py # Public test (webpack config, extra fields)

@@ -1,0 +1,37 @@
+project_root/
+├── README.md                        # Project documentation and usage instructions
+├── requirements.txt                 # Python dependencies (msgpack, pytest)
+├── run_tests.sh                     # Simple executable test script for running all tests
+├── src/
+│   └── (placeholder)                # Placeholder for possible Python implementation of cmsgpack
+├── tests/
+│   ├── __init__.py                  # Makes 'tests' a Python package
+│   └── original/
+│       ├── __init__.py              # Makes 'original' a package
+│       ├── test_lua_extra.py        # Python translation of test_lua_extra.lua (original test)
+│       ├── test_lua_edge.py         # Python translation of test_lua_edge.lua (original test)
+│       └── test_lua_main.py         # Python translation of test.lua (original main test)
+└── public_tests/
+    ├── __init__.py                  # Makes 'public_tests' a package
+    ├── test_public.py               # Python translation of test_public.lua (public test)
+    └── test_lua_extra_public.py     # Python translation of test_lua_extra_public.lua (public extra test)
+
+# Directory explanations
+
+src/:
+    Holds source implementation (if any; empty placeholder here).
+
+tests/original/:
+    Contains all translations of the original project's test cases from Lua to Python.
+
+public_tests/:
+    Contains all translations of the public or generated tests from Lua to Python.
+
+requirements.txt:
+    Python dependencies for running tests (pytest, msgpack).
+
+run_tests.sh:
+    One-click script that runs all tests with pytest.
+
+README.md:
+    How to install, run, and understand the structure.

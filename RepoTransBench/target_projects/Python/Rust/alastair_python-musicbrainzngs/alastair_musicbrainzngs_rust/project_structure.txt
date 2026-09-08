@@ -1,0 +1,12 @@
+project_root/
+├── Cargo.toml
+├── Cargo.lock
+├── src/
+│   ├── main.rs
+│   ├── lib.rs
+├── tests/
+│   ├── original/
+│   │   └── test_caa.rs
+│   └── public/
+│       └── test_public_caa.rs
+├── run_tests.sh

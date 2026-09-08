@@ -1,0 +1,49 @@
+{
+  "project_name": "redwarp_9-Patch-Resizer",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:39.610281",
+  "original_path": "/workspace/verified_repos_v2/Java/redwarp_9-Patch-Resizer",
+  "public_test_result_path": "/workspace/public_test_results/Java/redwarp_9-Patch-Resizer",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/net/redwarp/tool/resizer/FileToolsTest.java",
+      "src/test/java/net/redwarp/tool/resizer/worker/OutputTest.java",
+      "src/test/java/net/redwarp/tool/resizer/worker/ImageWriterTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/net/redwarp/tool/resizer/FileToolsPublicTest.java",
+      "src/test/java/net/redwarp/tool/resizer/worker/OutputPublicTest.java",
+      "src/test/java/net/redwarp/tool/resizer/worker/ImageWriterPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 5,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/net/redwarp/tool/resizer/FileToolsPublicTest.java",
+    "src/test/java/net/redwarp/tool/resizer/worker/OutputPublicTest.java",
+    "src/test/java/net/redwarp/tool/resizer/worker/ImageWriterPublicTest.java",
+    "run_public_tests.sh",
+    "pom.xml",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

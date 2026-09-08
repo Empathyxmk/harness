@@ -1,0 +1,16 @@
+{
+  "project_name": "rveachkc_pymsteams",
+  "language": "Python",
+  "coverage": {
+    "line": 55.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T12:29:14.992405",
+  "original_path": "/workspace/runnable_filter/Python/rveachkc_pymsteams",
+  "test_result_path": "/workspace/test_enhancement_results/Python/rveachkc_pymsteams",
+  "tests_path": [
+    "tests/test_cardsection_and_potentialaction.py",
+    "tests/test_webhook.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

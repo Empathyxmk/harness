@@ -1,0 +1,31 @@
+.
+├── README.md                      # Project overview and instructions
+├── go.mod                         # Go module file with dependencies
+├── lafan1/                        # (Placeholder) main package directory -- source code should go here
+│   ├── benchmarks.go
+│   ├── extract.go
+│   ├── utils.go
+│   └── ...                        # Actual implementations required for tests to pass
+├── tests/
+│   └── original/
+│       ├── test_utils_test.go         # Translation of lafan1/test_utils.py
+│       ├── test_benchmarks_test.go    # Translation of lafan1/test_benchmarks.py
+│       ├── test_extract_test.go       # Translation of lafan1/test_extract.py
+│       └── evaluate_test.go           # Translation of evaluate_test.py
+├── public_tests/
+│   ├── test_utils_public_test.go      # Translation of public_tests/test_utils_public.py
+│   ├── test_benchmarks_public_test.go # Translation of public_tests/test_benchmarks_public.py
+│   ├── test_extract_public_test.go    # Translation of public_tests/test_extract_public.py
+│   └── test_evaluate_public_test.go   # Translation of public_tests/test_evaluate_public.py
+├── run_tests.sh                   # Simple shell script to run all tests
+└── project_structure.txt          # This file: Project tree and directory explanations
+
+Directory Explanations:
+- lafan1/           : Main Go package code (not included; stubs or real implementation must be provided)
+- tests/original/   : All original test translations from Python
+- public_tests/     : All public test translations from Python
+- go.mod            : Go module definition
+- run_tests.sh      : Single-command test execution
+- project_structure.txt : This structure listing
+
+To run tests, run: ./run_tests.sh

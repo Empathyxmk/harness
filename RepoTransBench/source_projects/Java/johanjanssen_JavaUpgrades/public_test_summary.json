@@ -1,0 +1,93 @@
+{
+  "project_name": "johanjanssen_JavaUpgrades",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:17:06.005919",
+  "original_path": "/workspace/verified_repos_v2/Java/johanjanssen_JavaUpgrades",
+  "public_test_result_path": "/workspace/public_test_results/Java/johanjanssen_JavaUpgrades",
+  "original_tests": {
+    "test_files": [
+      "multi-release-jar/src/test/java17/com/example/StudentTest.java",
+      "multi-release-jar/src/test/java/com/example/StudentTest.java",
+      "multi-release-jar/src/test/java/com/example/ApplicationTest.java",
+      "java15/nashorn_fixed/src/test/java/com/example/NashornExampleTest.java",
+      "java15/nashorn_broken/src/test/java/com/example/NashornExampleTest.java",
+      "java11/removed_fonts/src/test/java/removedfonts/FontExampleTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/bind/JAXBServiceTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/bind/JAXBStudentTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/annotation/AnnotationExampleTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/activation/ActivationExampleTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/ws/WSExampleTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/transaction/TransactionExampleTest.java",
+      "java17/mockito_broken/src/test/java/com/example/ExampleEnumTest.java",
+      "java17/mockito_fixed/src/test/java/com/example/ExampleEnumTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 14,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "multi-release-jar/src/test/java/com/example/ApplicationPublicTest.java",
+      "multi-release-jar/src/test/java/com/example/StudentPublicTest.java",
+      "multi-release-jar/src/test/java17/com/example/StudentPublicTest.java",
+      "run_public_tests.sh",
+      "java15/nashorn_broken/src/test/java/com/example/NashornExamplePublicTest.java",
+      "java15/nashorn_fixed/src/test/java/com/example/NashornExamplePublicTest.java",
+      "java11/removed_fonts/src/test/java/removedfonts/FontExamplePublicTest.java",
+      "run_public_tests.sh",
+      "java11/javaee_removed_broken/src/test/java/com/example/activation/ActivationExamplePublicTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/annotation/AnnotationExamplePublicTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/bind/JAXBStudentPublicTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/bind/JAXBServicePublicTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/transaction/TransactionExamplePublicTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/ws/WSExamplePublicTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/activation/ActivationExamplePublicTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/annotation/AnnotationExamplePublicTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/bind/JAXBServicePublicTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/bind/JAXBStudentPublicTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/transaction/TransactionExamplePublicTest.java",
+      "java11/javaee_removed_broken/src/test/java/com/example/ws/WSExamplePublicTest.java"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 20,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "multi-release-jar/src/test/java/com/example/ApplicationPublicTest.java",
+    "multi-release-jar/src/test/java/com/example/StudentPublicTest.java",
+    "multi-release-jar/src/test/java17/com/example/StudentPublicTest.java",
+    "run_public_tests.sh",
+    "java15/nashorn_broken/src/test/java/com/example/NashornExamplePublicTest.java",
+    "java15/nashorn_fixed/src/test/java/com/example/NashornExamplePublicTest.java",
+    "java11/removed_fonts/src/test/java/removedfonts/FontExamplePublicTest.java",
+    "run_public_tests.sh",
+    "java11/javaee_removed_broken/src/test/java/com/example/activation/ActivationExamplePublicTest.java",
+    "java11/javaee_removed_broken/src/test/java/com/example/annotation/AnnotationExamplePublicTest.java",
+    "java11/javaee_removed_broken/src/test/java/com/example/bind/JAXBStudentPublicTest.java",
+    "java11/javaee_removed_broken/src/test/java/com/example/bind/JAXBServicePublicTest.java",
+    "java11/javaee_removed_broken/src/test/java/com/example/transaction/TransactionExamplePublicTest.java",
+    "java11/javaee_removed_broken/src/test/java/com/example/ws/WSExamplePublicTest.java",
+    "multi-release-jar/pom.xml",
+    "java11/javaee_removed_broken/pom.xml",
+    "java11/javaee_removed_broken/src/test/java/com/example/activation/ActivationExamplePublicTest.java",
+    "java11/javaee_removed_broken/src/test/java/com/example/annotation/AnnotationExamplePublicTest.java",
+    "java11/javaee_removed_broken/src/test/java/com/example/bind/JAXBServicePublicTest.java",
+    "java11/javaee_removed_broken/src/test/java/com/example/bind/JAXBStudentPublicTest.java",
+    "java11/javaee_removed_broken/src/test/java/com/example/transaction/TransactionExamplePublicTest.java",
+    "java11/javaee_removed_broken/src/test/java/com/example/ws/WSExamplePublicTest.java",
+    "java11/removed_fonts/pom.xml",
+    "java15/nashorn_broken/pom.xml",
+    "java15/nashorn_fixed/pom.xml"
+  ]
+}

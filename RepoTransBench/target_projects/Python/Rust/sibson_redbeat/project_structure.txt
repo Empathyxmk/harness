@@ -1,0 +1,33 @@
+sibson_redbeat/
+├── Cargo.toml                           # Rust project configuration and dependencies
+├── src/
+│   ├── lib.rs                           # Main Rust library module
+│   └── redbeat/
+│       ├── mod.rs                       # RedBeat implementation (stubbed here for tests)
+│       ├── decoder.rs                   # Stubbed: schedule/crontab/encoding logic for tests
+│       ├── schedulers.rs                # Stubbed: RedBeatSchedulerEntry for test support
+│       └── schedules.rs                 # Stubbed: rrule type for test support
+├── tests/
+│   └── original/
+│       ├── test_json.rs                 # Original test: Schedule/Crontab encode/decode tests
+│       ├── test_entry.rs                # Original test: SchedulerEntry save/next/delete
+│       ├── test_schedules_extra.rs      # Original test: rrule traits/eq/repr
+│       └── test_utils.rs                # Original test: Timestamp roundtrip
+├── public_tests/
+│   ├── test_public_json.rs              # Public test: Schedule/Crontab (public variant)
+│   ├── test_public_entry.rs             # Public test: SchedulerEntry (public variant)
+│   └── test_public_schedules_extra.rs   # Public test: rrule (public variant)
+├── run_tests.sh                         # One-click script to run all tests (chmod +x)
+└── project_structure.txt                # This file
+
+# Directory explanations:
+# - src/                : Rust library source code (stubbed for test logic)
+# - tests/original/     : Rust files containing tests translated from "original" Python tests
+# - public_tests/       : Rust files containing tests translated from "public" Python tests
+# - run_tests.sh        : Simple script to run all tests using cargo test
+#
+# Setup and testing instructions:
+# 1. Install Rust (see https://www.rust-lang.org/tools/install)
+# 2. Run tests:        ./run_tests.sh
+#    (or directly:     cargo test)
+# 3. Place real logic in src/redbeat/* to replace stubs as needed.

@@ -1,0 +1,29 @@
+.
+├── go.mod                              # Go module definition
+├── README.md                           # Project intro and how to run tests
+├── run_tests.sh                        # Simple one-click test execution (runs all Go tests)
+├── typetools/
+│   ├── reified_parameterized_type.go   # Scaffold for ReifiedParameterizedType (for tests)
+│   └── typeresolver.go                 # Scaffold for TypeResolver (for tests)
+├── tests/
+│   └── original/
+│       ├── reified_parameterized_type_test.go     # Original Java tests for ReifiedParameterizedType
+│       ├── typeresolver_test.go                  # Original Java tests for TypeResolver
+│       ├── functional_innerclasstest.go          # Original Java tests for InnerClassTest
+│       └── functional_lambdatest.go              # Original Java tests for LambdaTest
+├── public_tests/
+│   ├── reified_parameterized_type_public_test.go   # Public version ReifiedParameterizedType
+│   ├── typeresolver_public_test.go                 # Public version TypeResolver
+│   ├── functional_innerclass_public_test.go        # Public InnerClassTest
+│   └── functional_lambda_public_test.go            # Public LambdaTest
+
+**Directory/Files explanations**:
+- `typetools/`: Core logic (must be implemented or stubbed for tests to run)
+- `tests/original/`: Original comprehensive tests, translated from Java, for general coverage
+- `public_tests/`: Public subset of tests, matching public/exam requirements
+- `run_tests.sh`: run all tests with one command
+- `go.mod`: go modules/deps
+- `README.md`: User guide and documentation
+
+**How to run tests**:
+- Just run: `./run_tests.sh`

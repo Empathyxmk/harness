@@ -1,0 +1,45 @@
+project_root/
+├── src/
+│   ├── main.cpp                  # (implementation of main ShortUUID logic)
+│   ├── cli.cpp                   # (CLI implementation)
+│   ├── django_fields.cpp         # (Django field simulation)
+│   └── lib/
+│       ├── shortuuid.h           # (core header)
+│       └── shortuuid.cpp         # (core ShortUUID functions)
+├── include/
+│   └── shortuuid/
+│       ├── shortuuid.h           # (public API header)
+│       └── cli.h                 # (public API for CLI)
+├── tests/
+│   ├── original/
+│   │   ├── test_cli.cpp
+│   │   ├── test_cli_argparse_errors.cpp
+│   │   ├── test_django_fields.cpp
+│   │   ├── test_main_additional.cpp
+│   │   ├── test_main_branches.cpp
+│   │   ├── test_shortuuid.cpp
+│   │   ├── test_shortuuid_init_imports.cpp
+│   └── test_main.cpp            # (test main entry point for all original tests)
+├── public_tests/
+│   ├── test_public_cli.cpp
+│   ├── test_public_cli_argparse_errors.cpp
+│   ├── test_public_django_fields.cpp
+│   ├── test_public_main_additional.cpp
+│   ├── test_public_main_branches.cpp
+│   ├── test_public_shortuuid.cpp
+│   └── test_public_shortuuid_init_imports.cpp
+├── tests/test_main_public.cpp   # (test main entry point for all public tests)
+├── CMakeLists.txt               # (build instructions)
+├── run_tests.sh                 # (one-click build and test script)
+├── README.md                    # (project overview, requirements)
+└── project_structure.txt        # (this file)
+
+### Directory Explanation
+- **src/**: Source code for ShortUUID and its modules.
+- **include/**: Public headers.
+- **tests/original/**: Tests faithfully ported from original Python repo; full private/internal coverage.
+- **public_tests/**: Public or "limited-coverage" tests as in source.
+- **tests/test_main.cpp**: Test main for original tests.
+- **tests/test_main_public.cpp**: Test main for public tests.
+- **run_tests.sh**: *Builds and runs all tests (original+public)* with a single command.
+- **CMakeLists.txt**: Standard C++ build configuration (requires gtest).

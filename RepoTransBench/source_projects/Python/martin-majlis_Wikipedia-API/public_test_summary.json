@@ -1,0 +1,77 @@
+{
+  "project_name": "martin-majlis_Wikipedia-API",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:01.914080",
+  "original_path": "/workspace/verified_repos_v2/Python/martin-majlis_Wikipedia-API",
+  "public_test_result_path": "/workspace/public_test_results/Python/martin-majlis_Wikipedia-API",
+  "original_tests": {
+    "test_files": [
+      "tests/test_wikipedia_object.py",
+      "tests/test_namespace_and_extractformat.py",
+      "tests/test_utils_and_consts.py",
+      "tests/links_test.py",
+      "tests/extract_errors_test.py",
+      "tests/extract_html_format_test.py",
+      "tests/categorymembers_test.py",
+      "tests/categories_test.py",
+      "tests/wikipedia_test.py",
+      "tests/extract_wiki_format_test.py",
+      "tests/backlinks_test.py",
+      "tests/wikipedia_page_test.py",
+      "tests/langlinks_test.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 13,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_wikipedia_object.py",
+      "public_tests/test_public_namespace_and_extractformat.py",
+      "public_tests/test_public_utils_and_consts.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_links.py",
+      "public_tests/test_public_extract_errors.py",
+      "public_tests/test_public_extract_html_format.py",
+      "public_tests/test_public_categorymembers.py",
+      "public_tests/test_public_categories.py",
+      "public_tests/test_public_wikipedia.py",
+      "public_tests/test_public_extract_wiki_format.py",
+      "public_tests/test_public_backlinks.py",
+      "public_tests/test_public_wikipedia_page.py",
+      "public_tests/test_public_langlinks.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 15,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_wikipedia_object.py",
+    "public_tests/test_public_namespace_and_extractformat.py",
+    "public_tests/test_public_utils_and_consts.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_links.py",
+    "public_tests/test_public_extract_errors.py",
+    "public_tests/test_public_extract_html_format.py",
+    "public_tests/test_public_categorymembers.py",
+    "public_tests/test_public_categories.py",
+    "public_tests/test_public_wikipedia.py",
+    "public_tests/test_public_extract_wiki_format.py",
+    "public_tests/test_public_backlinks.py",
+    "public_tests/test_public_wikipedia_page.py",
+    "public_tests/test_public_langlinks.py",
+    "run_public_tests.sh"
+  ]
+}

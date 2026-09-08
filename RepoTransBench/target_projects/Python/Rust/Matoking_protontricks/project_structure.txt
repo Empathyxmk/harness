@@ -1,0 +1,53 @@
+protontricks/ (project root)
+├── Cargo.toml                # Rust project manifest and build configuration
+├── src/
+│   ├── lib.rs                # Root library file, exposes modules for production and tests
+│   ├── util.rs               # Ported utility logic (includes lower_dict, etc.)
+│   ├── _version.rs           # Program version info
+│   ├── flatpak.rs            # Flatpak environment test helpers
+│   └── config.rs             # Configuration logic (mimic config file API)
+├── tests/
+│   ├── original/
+│   │   ├── test__version.rs
+│   │   ├── test_config.rs
+│   │   ├── test_config_functional.rs
+│   │   ├── test_flatpak.rs
+│   │   ├── test_public__version.rs
+│   │   ├── test_public_config.rs
+│   │   ├── test_public_flatpak.rs
+│   │   ├── test_public_util.rs
+│   │   └── test_util.rs
+│   └── public/
+│       ├── test_public__init__.rs
+│       ├── test_public__version.rs
+│       ├── test_public_config.rs
+│       ├── test_public_flatpak.rs
+│       └── test_public_util.rs
+├── public_tests/
+│   ├── test_public__init__.py
+│   ├── test_public__init__.rs
+│   ├── test_public__version.py
+│   ├── test_public__version.rs
+│   ├── test_public_config.py
+│   ├── test_public_config.rs
+│   ├── test_public_flatpak.py
+│   ├── test_public_flatpak.rs
+│   ├── test_public_util.py
+│   └── test_public_util.rs
+├── run_tests.sh              # Simple test execution script (chmod +x)
+└── project_structure.txt     # This structure document
+
+# Directory/Files Purpose:
+# - src/: All (minimal mock/stub) implementation modules (lib.rs, util.rs, etc).
+# - tests/original/: All test cases ported from original Python tests.
+# - tests/public/: All public test cases copied for Cargo test discovery.
+# - public_tests/: Reference location for public tests, not executed by Cargo (only .rs files matter).
+# - Cargo.toml: Declares dependencies and crate metadata.
+# - run_tests.sh: Run all the tests via cargo test.
+# - project_structure.txt: This documentation.
+
+SETUP & RUNNING:
+1. Install Rust (https://rustup.rs/)
+2. In the project directory, run: chmod +x run_tests.sh
+3. Run all tests: ./run_tests.sh
+4. Both original and public test cases will be executed (Cargo runs all .rs in tests/original/ and tests/public/).

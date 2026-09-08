@@ -1,0 +1,28 @@
+.
+├── go.mod
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── original/
+│   │   ├── test_bounding_box_and_polygon_py_test.go
+│   │   ├── bounding_box_and_polygon_test.go
+│   │   ├── locations_test.go
+│   │   ├── zbar_library_test.go
+│   │   ├── zbar_library_import_test.go
+│   │   ├── init_test.go
+│   │   ├── read_zbar_test.go
+│   │   ├── scripts_read_zbar_test.go
+│   │   ├── wrapper_test.go
+│   │   ├── pyzbar_error_test.go
+│   │   └── pyzbar_test.go
+├── public_tests/
+│   ├── bounding_box_and_polygon_public_test.go
+│   ├── locations_public_test.go
+│   ├── zbar_library_public_test.go
+│   ├── pyzbar_error_public_test.go
+│   ├── pyzbar_public_test.go
+│   ├── zbar_library_import_public_test.go
+│   ├── wrapper_public_test.go
+│   ├── read_zbar_public_test.go
+│   ├── init_public_test.go
+│   └── scripts_read_zbar_public_test.go

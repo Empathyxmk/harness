@@ -1,0 +1,4 @@
+p, alice2, data2, read
+p, bob2, data2, write
+p, lisa, data3, update
+p, root2, data1, delete

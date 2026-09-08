@@ -1,0 +1,17 @@
+{
+  "project_name": "airbnb_polyglot.js",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 74.0,
+    "branch": 51.63
+  },
+  "timestamp": "2025-06-19T09:51:44.955914",
+  "original_path": "/workspace/runnable_filter/JavaScript/airbnb_polyglot.js",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/airbnb_polyglot.js",
+  "tests_path": [
+    "test/polyglot-utils.spec.js",
+    "test/polyglot.spec.js",
+    "test/polyglot-coverage-extra.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

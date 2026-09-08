@@ -1,0 +1,45 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   └── pool.py
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_pool_basic.py
+│       └── test_pool_ext.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public.py
+│   └── test_ext_public.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Explanations:
+- src/: Contains the Python 'pool' module with minimal API sufficient for supporting the same test interface as in the C code.
+- tests/original/: Contains the translations of the original C test cases for 'jobtalle_pool'.
+- public_tests/: Contains test cases from the public C tests.
+- requirements.txt: Lists dependencies, primarily 'pytest'.
+- run_tests.sh: Simple, one-click script to run all tests (original and public).
+- project_structure.txt: This file, documenting the directory layout and content.
+
+Setup and Testing Instructions:
+1. Create a Python virtual environment if desired:
+    python3 -m venv venv
+    source venv/bin/activate
+
+2. Install dependencies:
+    pip install -r requirements.txt
+
+3. To run ALL tests (original + public), execute:
+    ./run_tests.sh
+
+   This will discover and run all 'pytest' tests in both 'tests/' and 'public_tests/'.
+
+Source <-> Target Test Mapping:
+- C 'test.c'           -> Python 'tests/original/test_pool_basic.py'
+- C 'test_ext.c'       -> Python 'tests/original/test_pool_ext.py'
+- C 'test_public.c'    -> Python 'public_tests/test_public.py'
+- C 'test_ext_public.c'-> Python 'public_tests/test_ext_public.py'

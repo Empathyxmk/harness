@@ -1,0 +1,23 @@
+piskvorky_sqlitedict/
+├── CMakeLists.txt
+├── README.md
+├── include/
+│   └── sqlitedict.h
+├── src/
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   └── sqlitedict.cpp
+├── tests/
+│   ├── CMakeLists.txt
+│   └── original/
+│       ├── test_coverage_ext.cpp
+│       ├── test_sqlitedict_extremes.cpp
+│       └── test_main.cpp
+├── public_tests/
+│   ├── CMakeLists.txt
+│   ├── test_main.cpp
+│   ├── test_public_coverage_ext.cpp
+│   └── test_public_sqlitedict_extremes.cpp
+├── run_tests.sh
+├── run_public_tests.sh
+└── project_structure.txt

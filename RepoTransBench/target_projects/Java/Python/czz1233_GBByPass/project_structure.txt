@@ -1,0 +1,44 @@
+project_root/
+├── src/
+│   └── company/
+│       ├── __init__.py         # Makes 'company' a package
+│       └── main.py             # Contains Main and RandomUtil implementation
+├── tests/
+│   ├── __init__.py             # For test package discovery
+│   └── original/
+│       ├── __init__.py         # For sub-module
+│       ├── test_main.py                       # Original tests for Main
+│       ├── test_main_branch_coverage.py       # Branch coverage for Main
+│       ├── test_main_full_coverage.py         # Full coverage Main tests
+│       ├── test_randomutil.py                 # Original tests for RandomUtil
+│       ├── test_randomutil_branch_coverage.py # Branch coverage RandomUtil
+│       └── test_randomutil_full.py            # Full coverage RandomUtil
+├── public_tests/
+│   ├── __init__.py             # For test discovery in the public_tests dir
+│   ├── test_main_public.py
+│   ├── test_main_branch_coverage_public.py
+│   ├── test_main_full_coverage_public.py
+│   ├── test_randomutil_public.py
+│   ├── test_randomutil_branch_coverage_public.py
+│   └── test_randomutil_full_public.py
+├── requirements.txt            # Lists Python testing dependencies
+├── run_tests.sh                # Simple test execution script
+├── project_structure.txt       # This file, explains and documents the layout
+└── README.md                   # Project documentation
+
+Explanation and Instructions:
+
+- src/company/main.py: The full implementation of logic and classes under test (Main and RandomUtil).
+- tests/original/: Contains all Python equivalents of the original Java test files.
+- public_tests/: Contains translated public test suite files.
+- requirements.txt: To install dependencies (`pip install -r requirements.txt`).
+- run_tests.sh: Run ALL tests (original + public) with one command (`./run_tests.sh`—ensure executable).
+- project_structure.txt: This document; describes the overall structure & purpose.
+- README.md: Contains instructions on running tests, installing dependencies, etc.
+
+**How to run tests:**
+1. Install dependencies:
+   `pip install -r requirements.txt`
+2. Run all tests with:
+   `./run_tests.sh`
+All original and public tests will be discovered and executed by pytest.

@@ -1,0 +1,12 @@
+skeeto_branchless-utf8/
+├── Cargo.toml
+├── Cargo.lock
+├── README.md
+├── run_tests.sh
+├── src/
+│   └── lib.rs
+├── tests/
+│   ├── test_utf8_decode.rs
+│   ├── tests_original.rs
+│   ├── test_utf8_decode_public.rs
+│   └── tests_public.rs

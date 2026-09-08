@@ -1,0 +1,11 @@
+{
+  "project_name": "libxzr_HorizonKernelFlasher",
+  "language": "Java",
+  "coverage": {
+    "line": 54.6,
+    "branch": 51.0
+  },
+  "timestamp": "2025-06-19T09:21:26.798440",
+  "original_path": "/workspace/runnable_filter/Java/libxzr_HorizonKernelFlasher",
+  "test_result_path": "/workspace/test_enhancement_results/Java/libxzr_HorizonKernelFlasher"
+}

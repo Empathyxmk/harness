@@ -1,0 +1,11 @@
+{
+  "project_name": "Dawish_GoogleArchitectureDemo",
+  "language": "Java",
+  "coverage": {
+    "line": 67.4,
+    "branch": 54.2
+  },
+  "timestamp": "2025-06-19T19:01:09.468186",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/Dawish_GoogleArchitectureDemo",
+  "test_result_path": "/workspace/test_enhancement_results/Java/Dawish_GoogleArchitectureDemo"
+}

@@ -1,0 +1,32 @@
+teslamotors_ttpoe_python/
+├── requirements.txt               # Python dependencies (pytest)
+├── run_tests.sh                   # One-click script to run ALL tests
+├── project_structure.txt          # (This file) Project organization overview
+├── README.md                      # Setup and usage instructions
+├── public_tests/                  # Public test suite, translated from C
+│   ├── __init__.py                # Module marker
+│   ├── test_param_user_public.py  # Public param logic test
+│   ├── test_print_user_public.py  # Public print logic test
+│   └── test_tags_user_public.py   # Public tags logic test
+└── tests/
+    ├── __init__.py                # Module marker
+    └── original/
+        ├── __init__.py            # Module marker
+        ├── test_param_user.py     # Original param logic test
+        ├── test_print_user.py     # Original print logic test
+        └── test_tags_user.py      # Original tags logic test
+
+Directory Explanations:
+- requirements.txt: Declares Python dependencies (pytest) for easiest setup with pip.
+- run_tests.sh: Installs dependencies and runs both sets of tests with pytest for one-click verification.
+- public_tests/: Contains Python translations of PUBLIC user-facing C tests ("_public" C sources). Clean, easy to copy/use tests.
+- tests/original/: Direct Python translations of original user-space C test files for developer-internal testing, maximal coverage, not expected for end-users.
+- Each test Python file contains translation of C assertions, boundary/value logic, and prints for inspection.
+- __init__.py: Allows test discovery and Python module management.
+
+Setup/Usage instructions (see README.md for details):
+1. Make sure Python 3.7+ is installed (virtualenv recommended).
+2. Run all tests: `./run_tests.sh`
+3. To run tests individually: `pytest tests/original/` or `pytest public_tests/`
+
+This structure keeps public and original/coverage tests clearly separated, and ensures all edge/branch cases and public outputs are covered.

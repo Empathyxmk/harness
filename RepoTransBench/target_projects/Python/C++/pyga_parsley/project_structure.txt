@@ -1,0 +1,37 @@
+project_root/
+├── src/
+│   ├── main.cpp (optional, for production sources)
+│   └── lib/
+│       ├── module.h
+│       └── module.cpp
+├── include/
+│   └── *.h (optional, for headers)
+├── tests/
+│   ├── original/
+│   │   ├── test_parsley_end2end.cpp
+│   │   ├── test_grammar_import.cpp
+│   │   ├── test_ometa_interp.cpp
+│   │   ├── test_setup_py.cpp
+│   │   ├── test_parsley_extra.cpp
+│   │   ├── test_vm_builder_integration.cpp
+│   │   ├── test_parsley_api.cpp
+│   │   ├── test_ometa_builder.cpp
+│   │   ├── test_ometa_vm_builder.cpp
+│   │   ├── test_builder_integration.cpp
+│   │   ├── test_parsley.cpp
+│   │   ├── test_builder.cpp
+│   │   ├── test_vm_builder.cpp
+│   │   ├── test_tube.cpp
+│   │   ├── test_protocol.cpp
+│   │   ├── test_runtime.cpp
+│   │   └── other_original_tests.cpp
+│   └── test_main.cpp
+├── public_tests/
+│   ├── test_public_builder.cpp
+│   ├── test_public_parsley.cpp
+│   └── test_public_vm_builder.cpp
+├── CMakeLists.txt
+├── run_tests.sh
+├── README.md
+├── project_structure.txt
+└── test_translation_progress.json

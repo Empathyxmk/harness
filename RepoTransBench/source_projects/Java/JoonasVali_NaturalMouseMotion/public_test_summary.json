@@ -1,0 +1,100 @@
+{
+  "project_name": "JoonasVali_NaturalMouseMotion",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:19:09.243617",
+  "original_path": "/workspace/verified_repos_v2/Java/JoonasVali_NaturalMouseMotion",
+  "public_test_result_path": "/workspace/public_test_results/Java/JoonasVali_NaturalMouseMotion",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/com/github/joonavali/naturalmouse/MouseMotionTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/FlowUtilTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/FlowTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/HeadlessEnvTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/util/MathUtilTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/MovementFactoryTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/DefaultOvershootManagerTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/screenadjustednature/ScreenAdjustedNatureTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/screenadjustednature/ExtendedScreenTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/screenadjustednature/NegativeTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/screenadjustednature/ScreenAdjustedNatureDefaultsTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 11,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/com/github/joonavali/naturalmouse/MouseMotionPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/FlowUtilPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/FlowPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/com/github/joonavali/naturalmouse/util/MathUtilPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/MovementFactoryPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/DefaultOvershootManagerPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/screenadjustednature/ScreenAdjustedNaturePublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/screenadjustednature/ExtendedScreenPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/screenadjustednature/NegativePublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/screenadjustednature/ScreenAdjustedNatureDefaultsPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/util/MathUtilPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/MovementFactoryPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/DefaultOvershootManagerPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/util/MathUtilPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/MovementFactoryPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/DefaultOvershootManagerPublicTest.java",
+      "src/test/java/com/github/joonasvali/naturalmouse/util/MathUtilPublicTest.java",
+      "src/test/java/com/github/joonasvali/naturalmouse/support/mousemotion/MovementFactoryPublicTest.java",
+      "src/test/java/com/github/joonasvali/naturalmouse/support/mousemotion/DefaultOvershootManagerPublicTest.java",
+      "src/test/java/com/github/joonavali/naturalmouse/util/MathUtilPublicTest.java",
+      "src/test/java/com/github/joonasvali/naturalmouse/support/mousemotion/MovementFactoryPublicTest.java",
+      "src/test/java/com/github/joonasvali/naturalmouse/support/mousemotion/DefaultOvershootManagerPublicTest.java",
+      "src/test/java/com/github/joonasvali/naturalmouse/support/mousemotion/DefaultOvershootManagerPublicTest.java",
+      "src/test/java/com/github/joonasvali/naturalmouse/support/mousemotion/MovementFactoryPublicTest.java",
+      "src/test/java/com/github/joonasvali/naturalmouse/util/MathUtilPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 27,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/com/github/joonavali/naturalmouse/MouseMotionPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/FlowUtilPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/FlowPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/com/github/joonavali/naturalmouse/util/MathUtilPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/MovementFactoryPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/DefaultOvershootManagerPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/screenadjustednature/ScreenAdjustedNaturePublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/screenadjustednature/ExtendedScreenPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/screenadjustednature/NegativePublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/screenadjustednature/ScreenAdjustedNatureDefaultsPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/util/MathUtilPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/MovementFactoryPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/DefaultOvershootManagerPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/util/MathUtilPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/MovementFactoryPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/support/mousemotion/DefaultOvershootManagerPublicTest.java",
+    "src/test/java/com/github/joonasvali/naturalmouse/util/MathUtilPublicTest.java",
+    "src/test/java/com/github/joonasvali/naturalmouse/support/mousemotion/MovementFactoryPublicTest.java",
+    "src/test/java/com/github/joonasvali/naturalmouse/support/mousemotion/DefaultOvershootManagerPublicTest.java",
+    "src/test/java/com/github/joonavali/naturalmouse/util/MathUtilPublicTest.java",
+    "src/test/java/com/github/joonasvali/naturalmouse/support/mousemotion/MovementFactoryPublicTest.java",
+    "src/test/java/com/github/joonasvali/naturalmouse/support/mousemotion/DefaultOvershootManagerPublicTest.java",
+    "src/test/java/com/github/joonasvali/naturalmouse/support/mousemotion/DefaultOvershootManagerPublicTest.java",
+    "src/test/java/com/github/joonasvali/naturalmouse/support/mousemotion/MovementFactoryPublicTest.java",
+    "src/test/java/com/github/joonasvali/naturalmouse/util/MathUtilPublicTest.java",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

@@ -1,0 +1,17 @@
+picklepete_pyicloud/
+├── Cargo.toml                 # Rust build and dependency configuration
+├── src/
+│   ├── lib.rs                 # Main library source file (stub)
+│   └── main.rs                # Main module, empty (library crate)
+├── tests/
+│   └── original/              # Folder for Rust translations of original private tests
+│       ├── test_utils.rs
+│       ├── test_init.rs
+│       ├── test_drive.rs
+│       ├── test_exceptions.rs
+├── public_tests/
+│   ├── test_public_utils.rs   # Public test translation (Rust)
+│   ├── test_public_init.rs
+│   ├── test_public_drive.rs
+├── run_tests.sh               # Run all tests with one command
+├── project_structure.txt      # This documentation file

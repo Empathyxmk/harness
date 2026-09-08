@@ -1,0 +1,40 @@
+kaggle-2014-criteo/
+├── README.md
+├── requirements.txt
+├── run_tests.sh
+├── run_public_tests.sh
+├── src/
+│   ├── __init__.py
+│   ├── converters/
+│   │   ├── __init__.py
+│   │   ├── common.py
+│   │   └── txt2csv.py
+│   ├── solvers/
+│   │   ├── __init__.py
+│   │   ├── ffm/
+│   │   │   ├── __init__.py
+│   │   │   └── ffm.py
+│   │   └── gbdt/
+│   │       ├── __init__.py
+│   │       ├── common.py
+│   │       ├── gbdt.py
+│   │       └── timer.py
+│   └── utils/
+│       ├── __init__.py
+│       ├── add_dummy_label.py
+│       ├── calibrate.py
+│       ├── count.py
+│       └── make_submission.py
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_ffm.py
+│   │   └── test_gbdt_common.py
+│   └── data/
+│       └── test.tiny.csv
+└── public_tests/
+    ├── __init__.py
+    ├── test_ffm.py
+    └── test_gbdt_common.py

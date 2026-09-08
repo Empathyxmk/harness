@@ -1,0 +1,11 @@
+{
+  "project_name": "google_mail-importer",
+  "language": "Java",
+  "coverage": {
+    "line": 75.6,
+    "branch": 72.7
+  },
+  "timestamp": "2025-06-19T20:01:59.351085",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/google_mail-importer",
+  "test_result_path": "/workspace/test_enhancement_results/Java/google_mail-importer"
+}

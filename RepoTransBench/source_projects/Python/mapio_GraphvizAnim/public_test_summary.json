@@ -1,0 +1,47 @@
+{
+  "project_name": "mapio_GraphvizAnim",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:57:30.541048",
+  "original_path": "/workspace/verified_repos_v2/Python/mapio_GraphvizAnim",
+  "public_test_result_path": "/workspace/public_test_results/Python/mapio_GraphvizAnim",
+  "original_tests": {
+    "test_files": [
+      "tests/test_animation.py",
+      "tests/test_main_imports.py",
+      "tests/test_action_extra.py",
+      "tests/test_render.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 4,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_animation.py",
+      "public_tests/test_public_main_imports.py",
+      "public_tests/test_public_action_extra.py",
+      "public_tests/test_public_render.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 5,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_animation.py",
+    "public_tests/test_public_main_imports.py",
+    "public_tests/test_public_action_extra.py",
+    "public_tests/test_public_render.py",
+    "run_public_tests.sh"
+  ]
+}

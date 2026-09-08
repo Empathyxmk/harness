@@ -1,0 +1,45 @@
+scastillo-siesta/
+├── pom.xml                        # Maven build configuration, dependency and test config
+├── run_tests.sh                   # Script to run all tests (public and original)
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── siesta/
+│   │                   ├── API.java                # Core API class
+│   │                   ├── Resource.java           # Resource representation
+│   │                   ├── CoreConstants.java      # Holds static constants (USER_AGENT, versions, etc.)
+│   │                   ├── Util.java               # foo_not_supported utility
+│   │                   └── auth/
+│   │                       ├── Auth.java           # Authentication interfaces and implementations (BasicAuth, BearerToken, ApiKey)
+│   │                       └── DummyRequest.java   # DummyRequest for attaching headers in tests
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── siesta/
+│                       ├── original/
+│                       │   ├── TestAPITest.java           # Tests for API
+│                       │   ├── TestAuthTest.java          # Tests for authentication methods
+│                       │   ├── TestResourceTest.java      # Tests for resource logic
+│                       │   └── TestSiestaAPITest.java     # Extra API + resource tests
+│                       └── public_tests/
+│                           ├── TestAPIPublicTest.java         # Public tests: API
+│                           ├── TestAuthPublicTest.java        # Public tests: Auth
+│                           ├── TestResourcePublicTest.java    # Public tests: Resource
+│                           └── TestSiestaAPIPublicTest.java   # Public tests: API + resource 
+└── project_structure.txt             # (This file) Explanation and description
+
+Directory explanations:
+- src/main/java/.../siesta/        — Core Java implementation (API, Resource, auth methods, etc.)
+- src/test/java/.../siesta/original/      — Translated original Python tests (full coverage tests)
+- src/test/java/.../siesta/public_tests/  — Translated public Python tests (public test set)
+- run_tests.sh                      — Single script to run all tests (mvn clean test)
+- pom.xml                           — Standard Java/Maven dependency + test config
+- project_structure.txt             — This explanation file.
+
+How to setup and run:
+  $ chmod +x run_tests.sh
+  $ ./run_tests.sh
+  # (Runs all tests in both original and public test packages)

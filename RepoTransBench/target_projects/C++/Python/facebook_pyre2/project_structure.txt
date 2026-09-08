@@ -1,0 +1,39 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_compile_public.py
+│   ├── test_match_public.py
+│   ├── test_re2_module_public.py
+│   └── test_set_interface_public.py
+└── tests/
+    ├── __init__.py
+    └── original/
+        ├── test_compile.py
+        ├── test_match.py
+        ├── test_re2_module.py
+        └── test_set_interface.py
+
+Directory explanations:
+- requirements.txt: Python dependencies for testing (pytest, coverage, re2)
+- run_tests.sh: Script to run all tests with coverage
+- project_structure.txt: Project directory structure and explanations
+- public_tests/: Directory for all public tests (external "sample" tests)
+  - All *_public.py test modules targeting a subset/sample of module functionality
+- tests/: Directory for all original (full/internal) unit tests
+  - original/: Holds all detailed 'original' tests that thoroughly exercise core features
+  - __init__.py: Needed for Python package recognition
+  - *test_*.py files under original/: All detailed, internal test modules
+- public_tests/__init__.py: Required for python module discovery of public test directory
+- tests/__init__.py: Required for python module discovery of original test directory
+
+Setup & Testing instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests and measure coverage: `./run_tests.sh`
+3. To run only public tests: `pytest public_tests/`
+4. To run only original tests: `pytest tests/original/`
+5. All tests are Python unittest-compatible; pytest or unittest can be used
+
+The source directory of your library code (re2.py etc) should be present at the root for a fully working codebase.

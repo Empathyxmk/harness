@@ -1,0 +1,17 @@
+{
+  "project_name": "racwn_wp-file-analyser",
+  "language": "Python",
+  "coverage": {
+    "line": 87.0,
+    "branch": 96.2
+  },
+  "timestamp": "2025-06-19T12:23:18.086652",
+  "original_path": "/workspace/runnable_filter/Python/racwn_wp-file-analyser",
+  "test_result_path": "/workspace/test_enhancement_results/Python/racwn_wp-file-analyser",
+  "tests_path": [
+    "tests/test_analyser_core.py",
+    "tests/analyser_tests.py",
+    "tests/test_analyser_branches.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

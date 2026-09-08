@@ -1,0 +1,16 @@
+{
+  "project_name": "chrisdavies_rlite",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 96.36,
+    "branch": 93.75
+  },
+  "timestamp": "2025-06-19T10:05:54.103960",
+  "original_path": "/workspace/runnable_filter/JavaScript/chrisdavies_rlite",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/chrisdavies_rlite",
+  "tests_path": [
+    "test/rlite.spec.js",
+    "test/rlite.uncovered.spec.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

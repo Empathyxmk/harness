@@ -1,0 +1,93 @@
+{
+  "project_name": "facebookarchive_sparts",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:15:27.892994",
+  "original_path": "/workspace/verified_repos_v2/Python/facebookarchive_sparts",
+  "public_test_result_path": "/workspace/public_test_results/Python/facebookarchive_sparts",
+  "original_tests": {
+    "test_files": [
+      "tests/test_counters.py",
+      "tests/test_ctx.py",
+      "tests/test_daemon.py",
+      "tests/test_setup_py.py",
+      "tests/test_vservice.py",
+      "tests/test_imports.py",
+      "tests/test_collections_extra.py",
+      "tests/test_timer.py",
+      "tests/test_compat_extra.py",
+      "tests/test_fileutils.py",
+      "tests/test_collections.py",
+      "tests/test_vtask.py",
+      "tests/test_timer_extra.py",
+      "tests/test_fb303.py",
+      "tests/thrift/test_compiler.py",
+      "tests/tasks/test_file.py",
+      "tests/tasks/test_periodic.py",
+      "tests/tasks/test_tornado.py",
+      "tests/tasks/test_dbus.py",
+      "tests/tasks/test_thrift.py",
+      "tests/tasks/test_select.py",
+      "tests/tasks/test_queue.py",
+      "tests/tasks/test_settaskoption.py",
+      "tests/tasks/test_poller.py",
+      "tests/tasks/test_queue_deferred.py",
+      "tests/tasks/test_queue_futures.py",
+      "tests/tasks/thrift/test_multiplexed.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 27,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_counters.py",
+      "public_tests/test_public_ctx.py",
+      "public_tests/test_public_daemon.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_setup_py.py",
+      "public_tests/test_public_imports.py",
+      "public_tests/test_public_vservice.py",
+      "public_tests/test_public_collections_extra.py",
+      "public_tests/test_public_collections.py",
+      "public_tests/test_public_compat_extra.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_collections.py",
+      "public_tests/test_public_collections_extra.py",
+      "public_tests/test_public_daemon.py",
+      "public_tests/test_public_imports.py",
+      "public_tests/test_public_setup_py.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 16,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_counters.py",
+    "public_tests/test_public_ctx.py",
+    "public_tests/test_public_daemon.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_setup_py.py",
+    "public_tests/test_public_imports.py",
+    "public_tests/test_public_vservice.py",
+    "public_tests/test_public_collections_extra.py",
+    "public_tests/test_public_collections.py",
+    "public_tests/test_public_compat_extra.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_collections.py",
+    "public_tests/test_public_collections_extra.py",
+    "public_tests/test_public_daemon.py",
+    "public_tests/test_public_imports.py",
+    "public_tests/test_public_setup_py.py"
+  ]
+}

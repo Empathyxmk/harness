@@ -1,0 +1,54 @@
+{
+  "project_name": "pypa_sampleproject",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:22:19.808857",
+  "original_path": "/workspace/verified_repos_v2/Python/pypa_sampleproject",
+  "public_test_result_path": "/workspace/public_test_results/Python/pypa_sampleproject",
+  "original_tests": {
+    "test_files": [
+      "tests/test_init.py",
+      "tests/test_noxfile.py",
+      "tests/test_simple.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 3,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_simple.py",
+      "public_tests/test_public_init.py",
+      "public_tests/test_public_noxfile.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_noxfile.py",
+      "public_tests/test_public_noxfile.py",
+      "public_tests/test_public_noxfile.py",
+      "public_tests/test_public_noxfile.py",
+      "public_tests/test_public_noxfile.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_simple.py",
+    "public_tests/test_public_init.py",
+    "public_tests/test_public_noxfile.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_noxfile.py",
+    "public_tests/test_public_noxfile.py",
+    "public_tests/test_public_noxfile.py",
+    "public_tests/test_public_noxfile.py",
+    "public_tests/test_public_noxfile.py"
+  ]
+}

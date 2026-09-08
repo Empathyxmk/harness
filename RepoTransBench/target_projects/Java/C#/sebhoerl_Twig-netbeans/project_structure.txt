@@ -1,0 +1,34 @@
+sebhoerl_Twig-netbeans-csharp/
+├── src/
+│   └── TwigNetbeans/
+│       ├── TwigNetbeans.csproj           # Main project file (for implementation, stubs for types may be needed for compiling tests)
+│       └── ...                           # (Source files would go here. Not required for the test translation task.)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj          # xUnit test project file for original tests
+│       ├── TwigEditorKitTests.cs         # Translated original test files from Java
+│       ├── TwigDataObjectTests.cs
+│       ├── TwigCompletionHandlerTests.cs
+│       ├── TwigStructureItemTests.cs
+│       ├── TwigStructureScannerTests.cs
+│       ├── TwigLanguageTests.cs
+│       ├── TwigParserResultTests.cs
+│       ├── TwigParserTests.cs
+│       ├── TwigFormatterTests.cs
+│       ├── TwigTopTokenIdTests.cs
+│       └── AppTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj                # xUnit test project file for public tests
+│   ├── TwigEditorKitPublicTests.cs       # Translated public test files from Java
+│   ├── TwigDataObjectPublicTests.cs
+│   ├── TwigCompletionHandlerPublicTests.cs
+│   ├── TwigStructureScannerPublicTests.cs
+│   ├── TwigStructureItemPublicTests.cs
+│   ├── TwigLanguagePublicTests.cs
+│   ├── TwigParserResultPublicTests.cs
+│   ├── TwigParserPublicTests.cs
+│   ├── TwigFormatterPublicTests.cs
+│   ├── TwigTopTokenIdPublicTests.cs
+├── SebhoerlTwigNetbeans.sln              # Solution file including both src and test projects
+├── run_tests.sh                          # Test execution script (runs all tests)
+├── README.md                             # Setup, build, and test instructions

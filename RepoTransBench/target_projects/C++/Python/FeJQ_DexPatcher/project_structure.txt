@@ -1,0 +1,11 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_command.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_command_public.py

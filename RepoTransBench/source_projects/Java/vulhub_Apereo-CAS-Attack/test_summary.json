@@ -1,0 +1,15 @@
+{
+  "project_name": "vulhub_Apereo-CAS-Attack",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 92.3
+  },
+  "timestamp": "2025-06-20T04:07:27.275601",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/vulhub_Apereo-CAS-Attack",
+  "test_result_path": "/workspace/test_enhancement_results/Java/vulhub_Apereo-CAS-Attack",
+  "tests_path": [
+    "src/test/java/org/vulhub/AppTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

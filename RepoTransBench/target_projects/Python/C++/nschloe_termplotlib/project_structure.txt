@@ -1,0 +1,46 @@
+project_root/
+├── CMakeLists.txt                # CMake configuration for building tests
+├── include/                      # (Placeholder: for public headers, if any)
+├── src/                          # (Placeholder: for library source, if any)
+├── tests/
+│   ├── test_barh.cpp             # Original test: barh (horizontal bar plot)
+│   ├── test_subplot.cpp          # Original test: subplot initialization
+│   ├── test_scatter.cpp          # Original test: scatter plot (invoked via plot)
+│   ├── test_figure.cpp           # Original test: Figure instantiation
+│   ├── test_plot.cpp             # Original test: simple plot
+│   ├── test_hist.cpp             # Original test: histogram
+│   └── test_main.cpp             # Google Test main entry point
+├── public_tests/
+│   ├── test_public_barh.cpp      # Public test: barh with different data
+│   ├── test_public_figure.cpp    # Public test: Figure and Axes interface test
+│   ├── test_public_hist.cpp      # Public test: histogram with diff data & args
+│   ├── test_public_plot.cpp      # Public test: plot with different data
+│   ├── test_public_scatter.cpp   # Public test: scatter plot (diff data)
+│   └── test_public_subplot.cpp   # Public test: subplot with different data
+├── run_tests.sh                  # Simple, one-click build-and-test script
+├── project_structure.txt         # This file: explains layout & usage
+└── README.md                     # (Instructions for building and testing)
+
+Directory and file explanation:
+- CMakeLists.txt      : Configures CMake project, fetches Google Test, builds test_runner from both original and public tests.
+- include/            : Placeholder for any public C++ headers (not needed for these tests but included for completeness).
+- src/                : Placeholder for C++ library implementation; would contain translation of termplotlib.
+- tests/              : Contains all original test cases, translated from Python to C++/Google Test.
+- public_tests/       : Contains all public tests (like those for open evaluation).
+- run_tests.sh        : Minimal shell script to build everything and run all tests (no arguments needed).
+- project_structure.txt: This file; overview of the layout and instructions.
+- README.md           : Human-readable instructions (optional; usually included).
+
+Test commands:
+  $ ./run_tests.sh
+
+Dependencies:
+- Requires CMake and a C++17 compiler (GCC, Clang, or MSVC).
+- Google Test is automatically downloaded/built via CMake.
+- No other dependencies.
+
+To run all tests (original and public), simply execute:
+    ./run_tests.sh
+from the project root.
+
+All test logic is included, no test code has any stubs or placeholders.

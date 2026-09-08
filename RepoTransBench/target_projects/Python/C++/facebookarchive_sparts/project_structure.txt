@@ -1,0 +1,16 @@
+sparts_cpp_test_suite/
+├── CMakeLists.txt
+├── include/
+│   └── sparts/
+│       └── counters.h
+├── src/
+│   ├── CMakeLists.txt
+│   └── counters.cpp
+├── tests/
+│   ├── CMakeLists.txt
+│   └── original/
+│       └── test_counters.cpp
+├── public_tests/
+│   ├── CMakeLists.txt
+│   └── test_public_counters.cpp
+└── run_tests.sh

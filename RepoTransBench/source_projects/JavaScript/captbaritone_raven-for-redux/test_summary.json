@@ -1,0 +1,15 @@
+{
+  "project_name": "captbaritone_raven-for-redux",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:05:12.336947",
+  "original_path": "/workspace/runnable_filter/JavaScript/captbaritone_raven-for-redux",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/captbaritone_raven-for-redux",
+  "tests_path": [
+    "index.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

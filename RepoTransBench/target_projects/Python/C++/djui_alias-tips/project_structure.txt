@@ -1,0 +1,29 @@
+djui_alias_tips/
+├── CMakeLists.txt                     # Build configuration for CMake and test setup
+├── include/
+│   └── alias_tips.h                   # Header for alias_tips functions
+├── public_tests/
+│   └── test_public_alias_tips.cpp     # Translated public Python tests for alias_tips
+├── run_tests.sh                       # One-click script to build and run all tests
+├── src/
+│   └── alias_tips.cpp                 # Implementation of alias_tips logic
+├── tests/
+│   ├── original/
+│   │   └── test_alias_tips.cpp        # Translated original/unittest suite for alias_tips
+│   └── test_main.cpp                  # Main entry point for Google Test runner
+└── project_structure.txt              # Project layout and documentation
+
+Directory Explanations:
+- include/:                    C++ header(s) for the alias tips library.
+- src/:                        Implementation of core functionality.
+- tests/original/:             Original (hidden/private) test cases, translated from original Python tests.
+- tests/test_main.cpp:         Test runner main for all test suites.
+- public_tests/:               Public/visible test translations, matching public Python tests.
+- CMakeLists.txt:              CMake build and test configuration, pulls all tests and GoogleTest.
+- run_tests.sh:                Script for easy building/running of the complete suite.
+- project_structure.txt:       This documentation and structure overview.
+
+Setup/Usage:
+1. Install GoogleTest (libgtest-dev) and CMake on your system.
+2. Run all tests with:    ./run_tests.sh
+   This will configure, build, and run all original and public test cases.

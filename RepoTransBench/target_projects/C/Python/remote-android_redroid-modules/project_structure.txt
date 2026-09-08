@@ -1,0 +1,24 @@
+redroid-modules-python/
+├── src/                           # Source code being tested
+│   ├── __init__.py                # Package initialization
+│   ├── ashmem/                    # Ashmem module implementation
+│   │   ├── __init__.py            # Ashmem package initialization
+│   │   └── deps.py                # Ashmem dependencies implementation
+│   └── binder/                    # Binder module implementation
+│       ├── __init__.py            # Binder package initialization
+│       └── binder_alloc.py        # Binder allocation implementation
+├── tests/                         # Original test cases
+│   ├── __init__.py                # Tests package initialization
+│   ├── conftest.py                # Pytest configuration
+│   └── original/                  # Original tests directory
+│       ├── __init__.py            # Original tests package initialization
+│       ├── test_ashmem_deps.py    # Tests for ashmem dependencies
+│       └── test_ashmem_ion_heap.py # Tests for ashmem ion heap
+├── public_tests/                  # Public test cases
+│   ├── __init__.py                # Public tests package initialization
+│   ├── test_ashmem_deps_public.py # Public tests for ashmem dependencies
+│   └── test_ashmem_ion_heap_public.py # Public tests for ashmem ion heap
+├── requirements.txt               # Python dependencies
+├── run_tests.sh                   # Script to run all tests
+├── run_public_tests.sh            # Script to run only public tests
+└── README.md                      # Project documentation

@@ -1,0 +1,11 @@
+{
+  "name": "ip-camera-browser-client",
+  "version": "1.0.0",
+  "main": "src/ipCameraUtils.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

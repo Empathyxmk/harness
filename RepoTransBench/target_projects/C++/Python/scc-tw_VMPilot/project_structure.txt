@@ -1,0 +1,41 @@
+Project Structure:
+
+scc-tw_VMPilot-python/
+├── src/
+│   └── vmpilot/                      # (Placeholder for main source code, empty here)
+│       └── __init__.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── conftest.py
+│       ├── test_decoder.py           # Translated from test_decoder.cpp
+│       ├── test_dump_optable.py      # Translated from test_dump_optable.cpp
+│       ├── test_runtime_main.py      # Translated from test_runtime_main.cpp
+│       └── test_opcode_table.py      # Translated from test_opcode_table.cpp
+├── public_tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── test_decoder_public.py        # Translated from test_decoder_public.cpp
+│   ├── test_dump_optable_public.py   # Translated from test_dump_optable_public.cpp
+│   ├── test_opcode_table_public.py   # Translated from test_opcode_table_public.cpp
+│   └── test_runtime_main_public.py   # Translated from test_runtime_main_public.cpp
+├── requirements.txt                  # Python dependencies (including pytest)
+├── run_tests.sh                      # One-click test execution script (runs all tests)
+├── project_structure.txt             # (This file, explains project structure)
+└── README.md                         # Project and testing instructions
+
+Directory Explanations:
+- src/vmpilot/: Placeholder for production Python source files (empty or minimal here).
+- tests/: Root tests package.
+  - tests/original/: Python translations of all "original" private test cases.
+- public_tests/: Python translations of all "public" test cases and their helpers.
+- requirements.txt: Lists all required Python dependencies for running the tests.
+- run_tests.sh: Runs all test suites (both original and public) using pytest.
+- project_structure.txt: This file, listing & describing structure.
+- README.md: Project setup and test execution instructions.
+
+Setup/Testing Instructions:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests:      `./run_tests.sh`
+3. All original tests are under tests/original/, all public tests are in public_tests/.

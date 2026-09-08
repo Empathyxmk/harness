@@ -1,0 +1,66 @@
+{
+  "project_name": "drenther_js-design-patterns",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:48:39.500466",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/drenther_js-design-patterns",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/drenther_js-design-patterns",
+  "original_tests": {
+    "test_files": [
+      "Behavioral/__tests__/only_Behavioral.test.js",
+      "Behavioral/__tests__/Strategy.test.js",
+      "Behavioral/__tests__/ChainOfResponsibility.test.js",
+      "Behavioral/__tests__/Command.test.js",
+      "Behavioral/__tests__/Mediator.test.js",
+      "Behavioral/__tests__/Template.test.js",
+      "Behavioral/__tests__/State.test.js",
+      "Behavioral/__tests__/Observer.test.js",
+      "Behavioral/__tests__/Iterator.test.js",
+      "Structural/__tests__/Adapter.test.js",
+      "Structural/__tests__/Flyweight.test.js",
+      "Structural/__tests__/Proxy.test.js",
+      "Structural/__tests__/Decorator.test.js",
+      "Structural/__tests__/Composite.test.js",
+      "Structural/__tests__/Facade.test.js",
+      "Creational/__tests__/Factory.test.js",
+      "Creational/__tests__/Prototype.test.js",
+      "Creational/__tests__/Constructor.test.js",
+      "Creational/__tests__/Singleton.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 19,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "Behavioral/__tests__/Strategy.public.test.js",
+      "Behavioral/__tests__/ChainOfResponsibility.public.test.js",
+      "public_tests/Strategy.public.test.js",
+      "public_tests/ChainOfResponsibility.public.test.js",
+      "run_public_tests.sh",
+      "Behavioral/__tests__/State.public.test.js",
+      "public_tests/State.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "Behavioral/__tests__/Strategy.public.test.js",
+    "Behavioral/__tests__/ChainOfResponsibility.public.test.js",
+    "public_tests/Strategy.public.test.js",
+    "public_tests/ChainOfResponsibility.public.test.js",
+    "run_public_tests.sh",
+    "Behavioral/__tests__/State.public.test.js",
+    "public_tests/State.public.test.js"
+  ]
+}

@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using Xunit;
+using NewBeginning6_Subdir.Models;
+
+namespace NewBeginning6_Subdir.Tests.Original
+{
+    public class TxtFileTests
+    {
+        [Fact]
+        public void TestTxtFileApi()
+        {
+            string fname = "txtfiletest.txt";
+            string text = "hello\nworld";
+            var fileUtil = new TxtFile();
+
+            bool foundWrite = false;
+            bool foundRead = false;
+
+            // Try to find a suitable 'write' method
+            foreach (var m in typeof(TxtFile).GetMethods())
+            {
+                if (m.Name.ToLower().Contains("write"))
+                {
+                    var parameters = m.GetParameters();
+                    if (parameters.Length == 3 &&
+                        parameters[0].ParameterType == typeof(string) &&
+                        parameters[1].ParameterType == typeof(string) &&
+                        parameters[2].ParameterType == typeof(bool))
+                    {
+                        if (m.IsStatic)
+                        {
+                            m.Invoke(null, new object[] { fname, text, false });
+                        }
+                        else
+                        {
+                            m.Invoke(fileUtil, new object[] { fname, text, false });
+                        }
+                        foundWrite = true;
+                        break;
+                    }
+                }
+            }
+            Assert.True(foundWrite, "No suitable write method found in TxtFile");
+
+            List<string>? readResult = null;
+            foreach (var m in typeof(TxtFile).GetMethods())
+            {
+                if (m.Name.ToLower().Contains("read"))
+                {
+                    var parameters = m.GetParameters();
+                    if (parameters.Length == 1 && parameters[0].ParameterType == typeof(string))
+                    {
+                        object? result;
+                        if (m.IsStatic)
+                        {
+                            result = m.Invoke(null, new object[] { fname });
+                        }
+                        else
+                        {
+                            result = m.Invoke(fileUtil, new object[] { fname });
+                        }
+                        if (result is List<string> l)
+                        {
+                            readResult = l;
+                            foundRead = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            Assert.True(foundRead, "No suitable read method found in TxtFile");
+            Assert.NotNull(readResult);
+            Assert.Equal(2, readResult!.Count);
+            Assert.Equal("hello", readResult[0]);
+            Assert.Equal("world", readResult[1]);
+            File.Delete(fname);
+        }
+    }
+}

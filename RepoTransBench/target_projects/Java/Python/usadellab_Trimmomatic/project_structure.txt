@@ -1,0 +1,29 @@
+project_root/
+├── requirements.txt               # Python dependencies: pytest as testing framework
+├── run_tests.sh                   # One-click shell script for running all tests. Usage: ./run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_trimmomatic.py    # Translated from TrimmomaticTest.java (original internal tests)
+│       ├── test_trimstats.py      # Translated from TrimStatsTest.java (original internal tests)
+│       └── test_pairomatic.py     # Translated from PairomaticTest.java (original internal tests)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_trimmomatic_public.py # Translated from TrimmomaticPublicTest.java (public sample tests)
+│   ├── test_trimstats_public.py   # Translated from TrimStatsPublicTest.java (public sample tests)
+│   └── test_pairomatic_public.py  # Translated from PairomaticPublicTest.java (public sample tests)
+└── project_structure.txt          # This overview and explanation of files
+
+Explanation:
+- requirements.txt: Specifies pytest for running and writing tests.
+- run_tests.sh: Executable script that will discover and run all tests (both tests and public_tests).
+- tests/original/: Contains Python equivalents of the original (private/internal) Java tests (unit/integration).
+- public_tests/: Contains Python versions of public Java tests.
+- __init__.py: ensures directories are recognized as packages for pytest discovery.
+- All test logic and edge cases from Java are preserved exactly in Python.
+- No placeholder code: all test bodies are fully implemented and executable. 
+
+Setup/usage:
+1. Install dependencies:     pip install -r requirements.txt
+2. Run all tests:            ./run_tests.sh

@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  schedule:
+    - cron: '0 12 * * *'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.1.0
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ">= 3.9"
+      - name: lint
+        run: |
+          pip3 install black
+          black --check protofuzz
+
+  test:
+    strategy:
+      matrix:
+        python:
+          - "3.9"
+          - "3.10"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.1.0
+        with:
+          submodules: true
+      - uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python }}
+      - name: deps
+        run: sudo apt install -y protobuf-compiler
+      - name: install
+        run: python3 setup.py install
+      - name: test
+        run: python3 -m unittest discover protofuzz/tests

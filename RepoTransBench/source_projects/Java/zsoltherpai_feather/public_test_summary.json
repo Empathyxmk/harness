@@ -1,0 +1,55 @@
+{
+  "project_name": "zsoltherpai_feather",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:48:11.069907",
+  "original_path": "/workspace/verified_repos_v2/Java/zsoltherpai_feather",
+  "public_test_result_path": "/workspace/public_test_results/Java/zsoltherpai_feather",
+  "original_tests": {
+    "test_files": [
+      "android-test/app/src/androidTest/java/org/codejargon/feather/androidtest/ActivityTest.java",
+      "android-test/app/src/test/java/org/codejargon/feather/androidtest/InjectionTest.java",
+      "feather/src/test/java/org/codejargon/feather/DependencyTest.java",
+      "feather/src/test/java/org/codejargon/feather/KeyTest.java",
+      "feather/src/test/java/org/codejargon/feather/SingletonTest.java",
+      "feather/src/test/java/org/codejargon/feather/TransitiveDependencyTest.java",
+      "feather/src/test/java/org/codejargon/feather/ProviderInjectionTest.java",
+      "feather/src/test/java/org/codejargon/feather/FieldInjectionTest.java",
+      "feather/src/test/java/org/codejargon/feather/ModuleOverrideTest.java",
+      "feather/src/test/java/org/codejargon/feather/NamedDependencyTest.java",
+      "feather/src/test/java/org/codejargon/feather/QualifiedDependencyTest.java",
+      "feather/src/test/java/org/codejargon/feather/CircularDependencyTest.java",
+      "feather/src/test/java/org/codejargon/feather/AmbiguousModuleTest.java",
+      "feather/src/test/java/org/codejargon/feather/PolymorphicDependencyTest.java",
+      "feather/src/test/java/org/codejargon/feather/PojoProvidedThroughModuleTest.java",
+      "performance-test/src/test/java/org/codejargon/feather/StartupComparisonTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 16,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "feather/src/test/java/org/codejargon/feather/DependencyPublicTest.java",
+      "android-test/app/src/test/java/org/codejargon/feather/androidtest/InjectionPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 3,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "feather/src/test/java/org/codejargon/feather/DependencyPublicTest.java",
+    "android-test/app/src/test/java/org/codejargon/feather/androidtest/InjectionPublicTest.java",
+    "run_public_tests.sh"
+  ]
+}

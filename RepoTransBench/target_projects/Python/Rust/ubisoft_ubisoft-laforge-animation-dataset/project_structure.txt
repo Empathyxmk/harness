@@ -1,0 +1,43 @@
+ubisoft_laforge_animation_dataset/
+├── Cargo.toml                  # Rust package manifest
+├── src/
+│   ├── lib.rs                  # Library root, declares modules
+│   ├── utils.rs                # Quaternion utils for animation
+│   ├── extract.rs              # Data extraction utilities (pad/flatten/BVH parse)
+│   └── benchmarks.rs           # Evaluation metrics implementations
+├── tests/
+│   └── original/
+│       ├── test_utils.rs       # Converted from lafan1/test_utils.py
+│       ├── test_benchmarks.rs  # Converted from lafan1/test_benchmarks.py
+│       ├── test_extract.rs     # Converted from lafan1/test_extract.py
+│       └── test_evaluate.rs    # Converted (dummy placeholder)
+├── public_tests/
+│   ├── test_utils_public.rs         # From public_tests/test_utils_public.py
+│   ├── test_extract_public.rs       # From public_tests/test_extract_public.py
+│   ├── test_benchmarks_public.rs    # From public_tests/test_benchmarks_public.py
+│   └── test_evaluate_public.rs      # From public_tests/test_evaluate_public.py
+├── run_tests.sh                # Simple shell script to execute all tests
+├── project_structure.txt       # This file - explains layout and content
+└── README.md                   # (not implemented here, but recommended)
+
+# Directory explanations:
+
+src/: Source code modules implementing library functionality.
+
+tests/original/: Original test suite, fully translated from Python. Each test file directly maps to and covers the same logic as its Python counterpart.
+
+public_tests/: Public test suite translated from public Python tests, provides additional verification and re-use logic but with only public/whitebox coverage.
+
+Cargo.toml: Rust package manifest — lists dependencies and library metadata.
+
+run_tests.sh: One-click script to run all tests in both test locations (original + public).
+
+project_structure.txt: Documents this structure.
+
+# Setup and Test Instructions:
+1. Install Rust and Cargo (https://rustup.rs/)
+2. From the repo root, run:
+   $ chmod +x run_tests.sh
+   $ ./run_tests.sh
+3. This executes all tests (original and public) via cargo test.
+4. Add your own modules/functions into src/, and re-use tests as templates for new ones.

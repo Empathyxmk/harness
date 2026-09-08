@@ -1,0 +1,48 @@
+libxzr_HorizonKernelFlasher/
+├── libxzr_HorizonKernelFlasher.sln    # .NET solution with references to all projects
+├── src/
+│   └── LibxzrHorizonKernelFlasher/    # Main library source code
+│       ├── LibxzrHorizonKernelFlasher.csproj  # Main project file
+│       ├── Program.cs                 # Entry point placeholder
+│       ├── MainActivity.cs            # Main Activity stub class (translated API)
+│       ├── Worker.cs                  # Worker stub class (translated API)
+│       ├── Models/
+│       │   ├── Interfaces.cs          # Interface mocks for Android-specific classes
+│       │   └── ResourceId.cs          # Simulated resource IDs for menu handling
+│       └── utils/
+│           └── AssetsUtil.cs          # AssetsUtil stub class (translated API)
+├── tests/
+│   ├── original/
+│   │   ├── MainActivityTests.cs       # Original tests for MainActivity
+│   │   ├── WorkerTests.cs             # Original tests for Worker
+│   │   ├── utils/
+│   │   │   └── AssetsUtilTests.cs     # Original tests for AssetsUtil
+│   │   └── OriginalTests.csproj
+│   └── TestUtilities.cs               # Room for shared test helpers (empty)
+├── public_tests/
+│   ├── MainActivityPublicTests.cs     # Public verification tests for MainActivity
+│   ├── WorkerPublicTests.cs           # Public verification tests for Worker
+│   ├── utils/
+│   │   └── AssetsUtilPublicTests.cs   # Public verification tests for AssetsUtil
+│   └── PublicTests.csproj
+├── run_tests.sh                       # One-click test runner for all test projects
+└── project_structure.txt              # This file, describes project organization
+
+Directory Explanations:
+- src/LibxzrHorizonKernelFlasher/: Contains the .NET class library (`csproj`) with stubs for the translated Android code.
+- src/LibxzrHorizonKernelFlasher/Models/: Holds mock interface representations for Android/Java types used in tests.
+- src/LibxzrHorizonKernelFlasher/utils/: Assets utility bulk actions and their C# test stubs.
+- tests/original/: Contains all original test translations into C# using xUnit and Moq, organized by subject (with utils subfolder).
+- public_tests/: Contains all public/verification tests, separated to mimic the original repository organization.
+- run_tests.sh: Simple script to run all C# tests using a single command.
+- libxzr_HorizonKernelFlasher.sln: The main solution file for enabling IDE and command line builds.
+- project_structure.txt: Documents directory structure and file purposes.
+
+Setup & Testing:
+1. Install the .NET SDK 6.0 or greater.
+2. Run `./run_tests.sh` from project root -- this will build and test all projects, including both original and public test cases.
+3. Test projects rely on the Moq and xUnit NuGet packages (already specified in csproj files).
+
+Dependencies:
+- xunit (for tests)
+- Moq (for mocking Android/Java classes/interfaces)

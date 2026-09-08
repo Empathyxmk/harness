@@ -1,0 +1,25 @@
+richermans-plda/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── richermansplda/
+│   │               ├── liblda/
+│   │               │   ├── LDA.java
+│   │               │   └── PLDA.java
+│   │               └── scoring/
+│   │                   └── ExtractDVector.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── richermansplda/
+│                   ├── original/
+│                   │   ├── ExtractDVectorTest.java
+│                   │   ├── LDATest.java
+│                   │   └── PLDATest.java
+│                   └── public_tests/
+│                       ├── PublicExtractDVectorTest.java
+│                       ├── PublicLDATest.java
+│                       └── PublicLDACompTest.java

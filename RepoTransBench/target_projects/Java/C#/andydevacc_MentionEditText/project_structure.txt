@@ -1,0 +1,23 @@
+MyMentionEditText/
+├── MyMentionEditText.sln                 # .NET solution for the test projects
+├── README.md                             # Project README and usage
+├── run_tests.sh                          # One-click test execution script
+├── tests/
+│   ├── TestUtils.cs                      # C# mocks, MentionEditText, and test utilities
+│   └── original/
+│       ├── MentionEditTextTests.cs       # All original tests (ported from Java)
+│       └── OriginalTests.csproj          # xUnit/Moq project file for original tests
+├── public_tests/
+│   ├── MentionEditTextPublicTests.cs     # Public test suite (ported from Java public)
+│   └── PublicTests.csproj                # xUnit/Moq project file for public tests
+
+Structure Explanation:
+- `tests/original/`: All original test cases, ported for C#/xUnit. 
+- `public_tests/`: All public/visible test cases, ported for C#/xUnit.
+- `tests/TestUtils.cs`: Contains all mocks and the minimal implementation of `MentionEditText` and helpers so tests are runnable in C#.
+- `MyMentionEditText.sln`: Binds both test projects together.
+- `run_tests.sh`: Simple script to run every test. (Make executable: chmod +x run_tests.sh)
+
+How to run:
+1. Ensure .NET 6+ and `dotnet` CLI installed.
+2. Run `./run_tests.sh` to build and test all cases.

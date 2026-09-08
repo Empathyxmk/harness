@@ -1,0 +1,36 @@
+blueimp_JavaScript-MD5 Python translation project
+
+Project Tree:
+.
+├── requirements.txt                  # Python dependencies
+├── run_tests.sh                      # One-click test execution
+├── src/
+│   └── blueimp_md5/
+│       ├── __init__.py               # MD5 algorithm implementation and compatibility shims
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_md5_unit.py          # Translated unit tests from md5.unit.test.js
+│       └── test_md5_oldapi.py        # Translated old API and encoding tests from test.js
+├── public_tests/
+│   ├── __init__.py
+│   └── test_md5_public.py            # Translated public tests from md5.public.test.js
+└── project_structure.txt             # This file (overview/instructions)
+
+Directory Explanations:
+- src/blueimp_md5/: Python module containing the MD5/hmac-md5 function with type compatibility
+- tests/original/: Original translation of in-repo Blueimp MD5 unit and API coverage tests
+- public_tests/: Publicly-visible or alternate-input test coverage in sync with project's public test summary
+- requirements.txt: Python dependencies (pytest for running tests)
+- run_tests.sh: One-command test execution script
+- project_structure.txt: Structure and usage notes
+
+Setup & Testing Instructions:
+1. Make sure Python 3 is installed.
+2. Run: `chmod +x run_tests.sh` (if needed to make executable).
+3. Run all tests: `./run_tests.sh`
+   - This installs dependencies and runs all pytest-based tests in both tests/original and public_tests.
+4. To run only original or public tests:
+   - `pytest tests/original/`
+   - `pytest public_tests/`

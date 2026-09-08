@@ -1,0 +1,16 @@
+{
+  "project_name": "rgri_tex2nix",
+  "language": "Python",
+  "coverage": {
+    "line": 50.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T12:25:13.980929",
+  "original_path": "/workspace/runnable_filter/Python/rgri_tex2nix",
+  "test_result_path": "/workspace/test_enhancement_results/Python/rgri_tex2nix",
+  "tests_path": [
+    "tests/test_full.py",
+    "tests/test_init.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

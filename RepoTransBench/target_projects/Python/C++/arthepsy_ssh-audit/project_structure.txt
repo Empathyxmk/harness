@@ -1,0 +1,35 @@
+ssh_audit_cpp/
+├── src/
+│   ├── main.cpp
+│   └── lib/
+│       ├── ssh_audit.h
+│       └── ssh_audit.cpp
+├── include/
+│   └── ssh_audit.h
+├── tests/
+│   ├── original/
+│   │   ├── test_buffer.cpp
+│   │   ├── test_software.cpp
+│   │   ├── test_ssh2.cpp
+│   │   ├── test_banner.cpp
+│   │   ├── test_version_compare.cpp
+│   │   ├── test_ssh1.cpp
+│   │   ├── test_auditconf.cpp
+│   │   ├── test_output.cpp
+│   │   ├── test_errors.cpp
+│   ├── test_main.cpp
+│   ├── conftest.cpp
+├── public_tests/
+│   ├── test_public_errors.cpp
+│   ├── test_public_auditconf.cpp
+│   ├── test_public_version_compare.cpp
+│   ├── test_public_ssh1.cpp
+│   ├── test_public_output.cpp
+│   ├── test_public_buffer.cpp
+│   ├── test_public_software.cpp
+│   ├── test_public_ssh2.cpp
+│   ├── test_public_banner.cpp
+├── CMakeLists.txt
+├── run_tests.sh
+├── README.md
+└── test_translation_progress.json

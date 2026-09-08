@@ -1,0 +1,24 @@
+underyx_flask_redis_cpp/
+├── include/
+│   └── dummy.h                        # Placeholder include; real headers go here.
+├── public_tests/
+│   ├── integration/
+│   │   └── test_public_client_test.cpp    # C++ translation of public integration FlaskRedis client tests
+│   └── unit/
+│       ├── test_public_additional_test.cpp   # C++ translation of public 'additional' unit tests
+│       ├── test_public_client_test.cpp       # C++ translation of public client unit tests
+│       ├── test_public_init_py_test.cpp      # C++ translation of public init_py unit tests
+│       └── test_public_setup_py_test.cpp     # C++ translation of public setup_py unit tests
+├── run_tests.sh                          # Builds and runs all tests with one command
+├── src/
+│   ├── CMakeLists.txt                    # Adds source files to the build (dummy here)
+│   └── dummy.cpp                         # Placeholder source; replace with project implementation
+├── CMakeLists.txt                        # Project-level CMake configuration (includes GoogleTest)
+├── tests/
+│   ├── original/
+│   │   ├── test_additional_test.cpp      # C++ translation of original test_additional.py
+│   │   ├── test_client_integration_test.cpp    # C++ translation of original integration/test_client.py
+│   │   ├── test_client_test.cpp          # C++ translation of original test_client.py
+│   │   ├── test_init_py_test.cpp         # C++ translation of original test_init_py.py
+│   │   └── test_setup_py_test.cpp        # C++ translation of original test_setup_py.py
+│   └── test_main.cpp                     # Main entrypoint for running all tests

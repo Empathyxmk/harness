@@ -1,0 +1,26 @@
+shicai_Caffe_Manual_python/
+├── README.md
+├── requirements.txt      # Python dependencies (pytest for tests)
+├── run_tests.sh          # Script to run all tests (one-click)
+├── src/                  # (Stub) Source directory (if/when needed)
+│   └── __init__.py
+├── tests/
+│   ├── __init__.py
+│   └── original/         # Original (private/internal) test cases from C++ codebase
+│       ├── __init__.py
+│       └── test_get_features_dummy.py
+├── public_tests/         # Public C++ test cases, translated
+│   ├── __init__.py
+│   ├── test_caffe_manual_public.py
+│   └── test_get_features_dummy_public.py
+
+- `src/`: Place any main implementation or stub code here if needed.
+- `tests/original/`: Contains translations of internal/original developer C++ tests.
+- `public_tests/`: Contains translations of generated/external/public-facing tests.
+- Top-level files:
+    - `README.md`: Documentation and instructions
+    - `requirements.txt`: Python testing dependencies
+    - `run_tests.sh`: For one-click test execution (runs all pytest-discoverable tests)
+
+To run all tests:
+$ ./run_tests.sh

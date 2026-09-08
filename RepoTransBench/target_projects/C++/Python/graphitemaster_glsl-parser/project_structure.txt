@@ -1,0 +1,39 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_constants.py
+│       ├── test_directives.py
+│       ├── test_floating_point_literals.py
+│       ├── test_continuations.py
+│       ├── test_structures.py
+│       ├── test_arrays.py
+│       ├── test_ternary.py
+│       ├── test_switch.py
+│       ├── test_uniforms.py
+│       ├── test_integer_literals.py
+│       ├── test_first_character_invalid.py
+│       ├── test_do_statement.py
+│       ├── test_for_statement.py
+│       ├── test_interface_blocks.py
+│       ├── test_sequence.py
+│       ├── test_booleans.py
+│       ├── test_while_statement.py
+│       ├── test_builtin_types.py
+│       ├── test_summary_json.py
+│       ├── test_main_py.py
+│       ├── test_ast.py
+│       ├── test_util.py
+│       ├── test_lexer.py
+│       ├── test_parser.py
+│       └── test_py.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_util_public.py
+│   ├── test_ast_public.py
+│   ├── test_lexer_public.py
+│   └── test_parser_public.py

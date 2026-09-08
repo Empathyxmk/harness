@@ -1,0 +1,22 @@
+Hitomis_CircleMenu/
+├── Hitomis_CircleMenu.sln               # Solution file
+├── README.md                            # (README/documentation, not generated here)
+├── run_tests.sh                         # Simple script to run all tests
+├── project_structure.txt                # This structure overview and descriptions
+├── tests/
+│   └── original/
+│       ├── ApplicationTest.cs           # Translated original ApplicationTest
+│       ├── MainActivityTest.cs          # Translated original MainActivityTest (uses Moq)
+│       ├── ExampleUnitTest.cs           # Basic "4 == 2+2" test
+│       ├── OnMenuStatusChangeListenerTest.cs  # Tests event listener interface
+│       ├── CircleMenuTest.cs            # Dummy/always passing test
+│       ├── OnMenuSelectedListenerTest.cs# Tests OnMenuSelectedListener logic
+│       └── OriginalTests.csproj         # Test project file for originals
+├── public_tests/
+│   ├── ApplicationPublicTest.cs         # Translated public ApplicationPublicTest
+│   ├── ExampleUnitPublicTest.cs         # Public test with 7*3 = 21 assertion
+│   ├── MainActivityPublicTest.cs        # Public test for MainActivity, slightly different than original
+│   ├── OnMenuSelectedListenerPublicTest.cs  # Public OnMenuSelectedListener test variant
+│   ├── CircleMenuPublicTest.cs          # Public CircleMenu logic stub and variant
+│   ├── OnMenuStatusChangeListenerPublicTest.cs # Public status change listener test
+│   └── PublicTests.csproj               # Test project file for public tests

@@ -1,0 +1,29 @@
+typeerror_secure/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   ├── headers/
+│   │   └── mod.rs
+│   └── secure.rs
+├── tests/
+│   ├── original/
+│   │   ├── test_secure_api_minimal.rs
+│   │   ├── test_secure.rs
+│   │   ├── test_secure_protocols.rs
+│   │   ├── test_x_frame_options.rs
+│   │   ├── test_permissions_policy.rs
+│   │   ├── test_server.rs
+│   │   ├── test_strict_transport_security.rs
+│   │   ├── test_cache_control.rs
+│   │   ├── test_cross_origin_opener_policy.rs
+│   │   ├── test_referrer_policy.rs
+│   │   ├── test_custom_header.rs
+│   │   ├── test_content_security_policy.rs
+│   │   ├── test_x_content_type_options.rs
+│   └── (other possible module folders)
+├── public_tests/
+│   ├── test_secure_api_minimal_public.rs
+│   ├── test_secure_protocols_public.rs
+│   ├── test_secure_public.rs
+├── run_tests.sh
+└── project_structure.txt

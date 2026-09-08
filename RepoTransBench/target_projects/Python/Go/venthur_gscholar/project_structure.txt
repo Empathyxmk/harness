@@ -1,0 +1,43 @@
+venthur_gscholar Go Project Structure
+
+.
+├── go.mod                        # Go module definition
+├── main.go                       # (Placeholder for main package, if needed)
+├── gscholar/                     # (Placeholder for core logic packages, if needed)
+│
+├── tests/
+│   └── original/
+│       ├── main_cli_test.go          # CLI and integration tests, private/original
+│       ├── gscholar_extended_test.go # More granular unit and integration tests
+│       ├── gscholar_test.go          # Google Scholar integration tests (simulate, due to rate limits)
+│       ├── version_test.go           # Version string format
+│       └── README.md                 # Notes
+│
+├── public_tests/
+│   ├── main_cli_test.go              # Public interface CLI tests
+│   ├── gscholar_extended_test.go     # Public interface library tests
+│   ├── gscholar_test.go              # Public saved queries (simulate)
+│   ├── version_test.go               # Version checking
+│   └── README.md                     # Notes
+│
+├── run_tests.sh                  # One-click Go test runner (go test ./...)
+└── project_structure.txt         # This documentation
+
+Directory explanations:
+
+- go.mod:        Declares this as a Go module for dependency management and test execution.
+- main.go:       Placeholder for core executable/package (not used here unless porting internals).
+- gscholar/:     Placeholder for source implementation if ported.
+- tests/original/:  Contains all original (private/internal) test logic, direct translation from Python.
+- public_tests/:    Contains all public-facing test logic, using only externally-documented behaviors.
+- run_tests.sh:     Simple executable test runner. Use `./run_tests.sh` to run the whole suite.
+- project_structure.txt: This documentation.
+
+Test instructions:
+
+1. Ensure you have Go 1.18+ installed.
+2. In the project root, run:
+
+    ./run_tests.sh
+
+All test files will be discovered and run by Go's test tools.

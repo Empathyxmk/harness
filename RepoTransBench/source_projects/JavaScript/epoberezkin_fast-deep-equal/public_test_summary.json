@@ -1,0 +1,41 @@
+{
+  "project_name": "epoberezkin_fast-deep-equal",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:25:54.581004",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/epoberezkin_fast-deep-equal",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/epoberezkin_fast-deep-equal",
+  "original_tests": {
+    "test_files": [
+      "spec/react.spec.js",
+      "spec/index.spec.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 2,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/index.public.test.js",
+      "public_tests/react.public.test.js",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 3,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/index.public.test.js",
+    "public_tests/react.public.test.js",
+    "run_public_tests.sh"
+  ]
+}

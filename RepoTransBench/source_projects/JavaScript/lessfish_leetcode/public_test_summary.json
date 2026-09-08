@@ -1,0 +1,59 @@
+{
+  "project_name": "lessfish_leetcode",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:32:29.134006",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/lessfish_leetcode",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/lessfish_leetcode",
+  "original_tests": {
+    "test_files": [
+      "Algorithms/Number Complement/number-complement.test.js",
+      "Algorithms/Maximum Depth of Binary Tree/maximum-depth-of-binary-tree.test.js",
+      "Algorithms/Battleships in a Board/battleships-in-a-board.test.js",
+      "Algorithms/Sort Characters By Frequency/sort-characters-by-frequency.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 4,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "Algorithms/Number Complement/number-complement.public.test.js",
+      "Algorithms/Maximum Depth of Binary Tree/maximum-depth-of-binary-tree.public.test.js",
+      "Algorithms/Battleships in a Board/battleships-in-a-board.public.test.js",
+      "Algorithms/Sort Characters By Frequency/sort-characters-by-frequency.public.test.js",
+      "run_public_tests.sh",
+      "Algorithms/Sort Characters By Frequency/sort-characters-by-frequency.public.test.js",
+      "Algorithms/Battleships in a Board/battleships-in-a-board.public.test.js",
+      "Algorithms/Battleships in a Board/battleships-in-a-board.public.test.js",
+      "Algorithms/Battleships in a Board/battleships-in-a-board.public.test.js",
+      "Algorithms/Battleships in a Board/battleships-in-a-board.public.test.js",
+      "Algorithms/Battleships in a Board/battleships-in-a-board.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 11,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "Algorithms/Number Complement/number-complement.public.test.js",
+    "Algorithms/Maximum Depth of Binary Tree/maximum-depth-of-binary-tree.public.test.js",
+    "Algorithms/Battleships in a Board/battleships-in-a-board.public.test.js",
+    "Algorithms/Sort Characters By Frequency/sort-characters-by-frequency.public.test.js",
+    "run_public_tests.sh",
+    "Algorithms/Sort Characters By Frequency/sort-characters-by-frequency.public.test.js",
+    "Algorithms/Battleships in a Board/battleships-in-a-board.public.test.js",
+    "Algorithms/Battleships in a Board/battleships-in-a-board.public.test.js",
+    "Algorithms/Battleships in a Board/battleships-in-a-board.public.test.js",
+    "Algorithms/Battleships in a Board/battleships-in-a-board.public.test.js",
+    "Algorithms/Battleships in a Board/battleships-in-a-board.public.test.js"
+  ]
+}

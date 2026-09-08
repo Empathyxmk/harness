@@ -1,0 +1,47 @@
+scastillo_siesta_cxx/
+├── README.md                  # Project overview and instructions
+├── project_structure.txt      # This file: describes structure and purpose
+├── CMakeLists.txt             # CMake build configuration
+├── run_tests.sh               # Script to build and run all tests
+├── include/
+│   ├── siesta.hpp             # Main siesta API header (class/function declarations)
+│   ├── auth.hpp               # Authentication types declarations
+├── src/
+│   ├── siesta.cpp             # Implementation for main API
+│   ├── auth.cpp               # Auth system implementation
+├── tests/
+│   └── original/              # Original (non-public) tests
+│       ├── test_auth.cpp
+│       ├── test_init.cpp
+│       └── test_siesta.cpp
+├── public_tests/              # Public test cases (translated from Python)
+│   ├── test_public_auth.cpp
+│   ├── test_public_init.cpp
+│   └── test_public_siesta.cpp
+
+Directory Explanations:
+
+- `include/`:
+    - Contains all API/public headers, class & function declarations for use by tests and other code.
+
+- `src/`:
+    - Implementation of all classes and functions declared in headers. Kept simple and stubbed only to allow all tests to pass.
+
+- `tests/original/`:
+    - Fully functional translations of the original (private) Python test suites.
+
+- `public_tests/`:
+    - Publicly released test cases (verifying similar logic, but as public interface validation).
+
+- `CMakeLists.txt`:
+    - Configures the C++ project for compilation, links Google Test, and builds a `test_runner` executable.
+
+- `run_tests.sh`:
+    - Cleans/builds the project and runs *all* tests in one step.
+
+Build artifacts will be in `build/`.
+
+To build/run/test:
+    $ ./run_tests.sh
+
+---

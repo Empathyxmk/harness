@@ -1,0 +1,20 @@
+{
+  "project_name": "creationix_step",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 96.49,
+    "branch": 89.28
+  },
+  "timestamp": "2025-06-19T10:08:24.681724",
+  "original_path": "/workspace/runnable_filter/JavaScript/creationix_step",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/creationix_step",
+  "tests_path": [
+    "test/callbackTest.js",
+    "test/edgeCaseTest.js",
+    "test/errorTest.js",
+    "test/fnTest.js",
+    "test/groupTest.js",
+    "test/parallelTest.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

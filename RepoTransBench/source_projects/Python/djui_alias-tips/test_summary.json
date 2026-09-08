@@ -1,0 +1,15 @@
+{
+  "project_name": "djui_alias-tips",
+  "language": "Python",
+  "coverage": {
+    "line": 97.0,
+    "branch": 93.8
+  },
+  "timestamp": "2025-06-19T11:44:20.289298",
+  "original_path": "/workspace/runnable_filter/Python/djui_alias-tips",
+  "test_result_path": "/workspace/test_enhancement_results/Python/djui_alias-tips",
+  "tests_path": [
+    "test_alias_tips.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

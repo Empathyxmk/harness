@@ -1,0 +1,11 @@
+{
+  "project_name": "apache_rocketmq-spring",
+  "language": "Java",
+  "coverage": {
+    "line": 85.0,
+    "branch": 76.0
+  },
+  "timestamp": "2025-06-19T17:49:42.523818",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/apache_rocketmq-spring",
+  "test_result_path": "/workspace/test_enhancement_results/Java/apache_rocketmq-spring"
+}

@@ -1,0 +1,24 @@
+{
+  "project_name": "jaredhanson_passport-local",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 97.61,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:41:11.328328",
+  "original_path": "/workspace/runnable_filter/JavaScript/jaredhanson_passport-local",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/jaredhanson_passport-local",
+  "tests_path": [
+    "test/index.test.js",
+    "test/package.test.js",
+    "test/strategy.error.test.js",
+    "test/strategy.fail.test.js",
+    "test/strategy.fields.test.js",
+    "test/strategy.normal.test.js",
+    "test/strategy.options.test.js",
+    "test/strategy.passreq.test.js",
+    "test/strategy.test.js",
+    "test/utils.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

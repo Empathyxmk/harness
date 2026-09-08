@@ -1,0 +1,35 @@
+drakeetfloo/
+├── go.mod                    # Go module definition
+├── README.md                 # Project info and usage
+├── run_tests.sh              # Script to run all tests
+├── project_structure.txt     # This structure file
+├── tests/
+│   ├── original/             # Original (private/internal) tests
+│   │   ├── chain_test.go
+│   │   ├── invalid_json_exception_test.go
+│   │   ├── preconditions_test.go
+│   │   ├── stack_manager_test.go
+│   │   ├── stack_states_test.go
+│   │   ├── stack_test.go
+│   │   ├── target_map_test.go
+│   │   ├── target_test.go
+│   │   ├── urls_test.go
+│   │   └── sample/
+│   │       ├── web_handler_test.go
+│   │       ├── target_not_found_toaster_test.go
+│   │       └── urls_test.go
+│   ├── testutil.go           # Test helper types/mocks (if needed)
+├── public_tests/             # Public tests (mirroring the public Java ones)
+│   ├── chain_public_test.go
+│   ├── invalid_json_exception_public_test.go
+│   ├── preconditions_public_test.go
+│   ├── stack_manager_public_test.go
+│   ├── stack_public_test.go
+│   ├── stack_states_public_test.go
+│   ├── target_map_public_test.go
+│   ├── target_public_test.go
+│   ├── urls_public_test.go
+│   └── sample/
+│       ├── web_handler_public_test.go
+│       ├── target_not_found_toaster_public_test.go
+│       └── urls_public_test.go

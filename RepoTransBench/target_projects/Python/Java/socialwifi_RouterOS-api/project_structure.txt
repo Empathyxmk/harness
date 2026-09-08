@@ -1,0 +1,39 @@
+socialwifi_RouterOS-api-java/
+├── pom.xml                          # Maven build & dependency configuration
+├── run_tests.sh                     # One-click script to run all tests
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/socialwifi/routeros/
+│   │           └── ...               # (RouterOS Java src code goes here)
+│   └── test/
+│       └── java/
+│           └── com/socialwifi/routeros/
+│               ├── original/         # Original test cases translated from Python
+│               │   ├── TestApiCommunicator.java
+│               │   ├── TestBaseApi.java
+│               │   ├── TestSentence.java
+│               │   ├── TestApiStructure.java
+│               │   ├── TestResource.java
+│               │   ├── TestQuery.java
+│               │   ├── TestApiSocket.java
+│               │   ├── TestSocket.java
+│               │   └── TestLoginRouterOsApi.java
+│               └── publictests/      # Translated public test cases
+│                   ├── PublicApiCommunicatorTest.java
+│                   ├── PublicBaseApiTest.java
+│                   ├── PublicSentenceTest.java
+│                   ├── PublicApiStructureTest.java
+│                   ├── PublicResourceTest.java
+│                   ├── PublicQueryTest.java
+│                   ├── PublicApiSocketTest.java
+│                   └── PublicLoginRouterOsApiTest.java
+└── README.md                        # Setup, build, and run instructions
+
+Explanation:
+- `pom.xml`: Configures Maven to include JUnit 5 and Mockito
+- `run_tests.sh`: Runs `mvn clean test` to execute all tests
+- `src/main/java/...`: Placeholder for the actual RouterOS Java source code
+- `src/test/java/com/socialwifi/routeros/original/`: All original test cases translated from Python’s `tests/`
+- `src/test/java/com/socialwifi/routeros/publictests/`: All public test cases, maintaining separation per Python public_tests
+- `README.md`: Project overview and usage

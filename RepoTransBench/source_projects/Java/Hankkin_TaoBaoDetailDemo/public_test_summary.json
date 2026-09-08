@@ -1,0 +1,71 @@
+{
+  "project_name": "Hankkin_TaoBaoDetailDemo",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:15:54.481804",
+  "original_path": "/workspace/verified_repos_v2/Java/Hankkin_TaoBaoDetailDemo",
+  "public_test_result_path": "/workspace/public_test_results/Java/Hankkin_TaoBaoDetailDemo",
+  "original_tests": {
+    "test_files": [
+      "app/src/androidTest/java/com/hankkin/taobaodetaildemo/ApplicationTest.java",
+      "app/src/test/java/com/hankkin/taobaodetaildemo/ExampleUnitTest.java",
+      "library/src/androidTest/java/com/hankkin/library/ApplicationTest.java",
+      "library/src/test/java/com/hankkin/library/CircleImageViewTest.java",
+      "library/src/test/java/com/hankkin/library/ScrollViewContainerTest.java",
+      "library/src/test/java/com/hankkin/library/ExampleUnitTest.java",
+      "library/src/test/java/com/hankkin/library/MyImageLoaderTest.java",
+      "library/src/test/java/com/hankkin/library/StatusBarViewTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "app/src/test/java/com/hankkin/taobaodetaildemo/ExamplePublicUnitTest.java",
+      "library/src/test/java/com/hankkin/library/ExamplePublicUnitTest.java",
+      "run_public_tests.sh",
+      "library/src/test/java/com/hankkin/library/CircleImageViewPublicTest.java",
+      "library/src/test/java/com/hankkin/library/ScrollViewContainerPublicTest.java",
+      "library/src/test/java/com/hankkin/library/MyImageLoaderPublicTest.java",
+      "library/src/test/java/com/hankkin/library/StatusBarViewPublicTest.java",
+      "run_public_tests.sh",
+      "library/src/test/java/com/hankkin/library/ExamplePublicUnitTest.java",
+      "run_public_tests.sh",
+      "library/src/test/java/com/hankkin/library/ExamplePublicUnitTest.java",
+      "app/src/test/java/com/hankkin/taobaodetaildemo/ExamplePublicUnitTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 13,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "app/src/test/java/com/hankkin/taobaodetaildemo/ExamplePublicUnitTest.java",
+    "library/src/test/java/com/hankkin/library/ExamplePublicUnitTest.java",
+    "run_public_tests.sh",
+    "library/src/test/java/com/hankkin/library/CircleImageViewPublicTest.java",
+    "library/src/test/java/com/hankkin/library/ScrollViewContainerPublicTest.java",
+    "library/src/test/java/com/hankkin/library/MyImageLoaderPublicTest.java",
+    "library/src/test/java/com/hankkin/library/StatusBarViewPublicTest.java",
+    "run_public_tests.sh",
+    "library/src/test/java/com/hankkin/library/ExamplePublicUnitTest.java",
+    "run_public_tests.sh",
+    "library/src/test/java/com/hankkin/library/ExamplePublicUnitTest.java",
+    "app/src/test/java/com/hankkin/taobaodetaildemo/ExamplePublicUnitTest.java",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

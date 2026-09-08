@@ -1,0 +1,64 @@
+Queuelib release notes
+======================
+
+Version 1.8.0
+-------------
+(released on March 31st, 2025)
+
+* Added support for Python 3.13 and PyPy 3.11
+* Removed support for Python 3.8
+* Queue classes now accept ``os.PathLike`` paths
+* Fixed test failures on Windows
+* Switched the build system to ``hatchling``
+* Improved linting and CI configuration
+
+
+Version 1.7.0
+-------------
+(released on May 4th, 2024)
+
+No functionality changes with respect to 1.6.2
+
+* Added support for Python 3.10-3.12 and PyPy 3.10
+* Removed support for Python 3.5-3.7
+* Improved type annotations and added the ``py.typed`` file
+* Added ``pre-commit`` configuration
+* Improved linting and CI configuration
+
+
+Version 1.6.2
+-------------
+(released on August 26th, 2021)
+
+No functionality changes with respect to 1.6.1
+
+* Added `python_requires>=3.5` to `setup.py`
+* Formatted the codebase with `black`
+* Added type annotations
+* Added CI checks for typing, security and linting
+
+
+Version 1.6.1
+-------------
+(released on April 21st, 2021)
+
+No code changes with respect to 1.6
+
+* Migrate CI to GitHub actions
+* Fix release
+
+
+Version 1.6
+-----------
+(released on April 21st, 2021)
+
+* Add peek support
+* Remove py2 support
+* Full test coverage
+
+
+Version 1.0
+-----------
+(released on April 23rd, 2013)
+
+First release of Queuelib.

@@ -1,0 +1,35 @@
+project_root/
+├── requirements.txt               # Python dependencies (pytest, mock)
+├── run_tests.sh                   # One-click test script (runs all tests with pytest)
+├── project_structure.txt          # This structure and instructions file
+├── tests/                         # All test code (original tests)
+│   └── original/
+│       ├── test_Gruntfile.py          # Original Gruntfile.js logic tests (mocking, registration, etc.)
+│       └── test_stopwords_all.py      # Verifies stopwords-all.json loads and contains English
+├── public_tests/                  # All public/compliance tests
+│   ├── test_Gruntfile_public.py       # Public logic/mocking tests for Gruntfile.js
+│   └── test_stopwords_all_public.py   # Public-facing tests for stopwords-all.json content and coverage
+└── README.md                      # Project description and usage (to be added)
+
+Directory explanations:
+
+- requirements.txt:   Lists all required Python dependencies for this project.
+- run_tests.sh:       Run "chmod +x run_tests.sh"; then "./run_tests.sh" runs all tests (both tests/ and public_tests/ via pytest).
+- tests/original/:    Contains the original translated JS test logic, focusing on code "internals".
+- public_tests/:      Contains compliance/public API-facing tests as required for public validation.
+- project_structure.txt: This file (readme of the structure).
+
+Setup and testing instructions:
+
+1. Setup a virtualenv (optional, but recommended):
+   python3 -m venv venv
+   source venv/bin/activate
+
+2. Install requirements:
+   pip install -r requirements.txt
+
+3. Run all tests:
+   chmod +x run_tests.sh
+   ./run_tests.sh
+
+All tests will be discovered and run automatically.

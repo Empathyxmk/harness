@@ -1,0 +1,11 @@
+{
+  "project_name": "nexmark_nexmark",
+  "language": "Java",
+  "coverage": {
+    "line": 56.0,
+    "branch": 51.5
+  },
+  "timestamp": "2025-06-20T01:07:46.748718",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/nexmark_nexmark",
+  "test_result_path": "/workspace/test_enhancement_results/Java/nexmark_nexmark"
+}

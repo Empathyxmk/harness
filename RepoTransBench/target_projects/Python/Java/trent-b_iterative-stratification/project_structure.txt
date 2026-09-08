@@ -1,0 +1,39 @@
+Project Structure Overview:
+
+.
+├── pom.xml                        # Maven config with JUnit dependencies
+├── README.md                      # Standard README, instructions, and documentation
+├── LICENSE                        # License file, needed for existence checks in tests
+├── run_tests.sh                   # One-click script to run ALL tests (JUnit 5/Maven)
+├── src
+│   └── main
+│       └── java
+│           └── com
+│               └── trentb
+│                   └── iterstrat
+│                       ├── IterativeStratification.java         # Production class (stub)
+│                       └── MlStratifiers.java                   # Production class (stub, for import checks)
+│
+└── src
+    └── test
+        └── java
+            └── com
+                └── trentb
+                    ├── original
+                    │   ├── DummyRandomState.java                # Test deterministic random
+                    │   ├── TestInitAndSetup.java                # Original test: setup and import checks
+                    │   ├── TestIterativeStratification.java     # Original logic/edge/matrix tests for iterations
+                    │   └── TestMlStratifiers.java               # Original logic/nonint/float/shape/etc.
+                    └── public_tests
+                        ├── DummyRandomStatePublic.java          # Deterministic random for public tests
+                        ├── TestPublicInitAndSetup.java          # Public test: setup and import checks
+                        ├── TestPublicIterativeStratification.java   # Public iterative stratification tests
+                        └── TestPublicMlStratifiers.java         # Public ml_stratifiers, input error, etc.
+
+- All tests in both original and public suites fully translated to Java/JUnit5, matching Python logic line by line.
+- Directory names mirror Python structure: public and original are separate.
+- The `src/main/java/...` is placeholder: real logic goes there for true integration; testing targets the APIs as expected.
+- `run_tests.sh` runs all tests via `mvn clean test`.
+- README describes usage; LICENSE and README.md exist so "file existence" tests pass.
+
+To add production logic for `IterativeStratification`, implement your algorithm in `src/main/java/com/trentb/iterstrat/IterativeStratification.java` as a static method.

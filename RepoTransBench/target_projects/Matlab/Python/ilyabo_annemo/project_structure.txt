@@ -1,0 +1,33 @@
+project_root/
+├── src/
+│   ├── __init__.py
+│   └── rating_check_recola.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_rating_check_recola.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_rating_check_recola_public.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+
+Explanations:
+- src/: Main source code directory. The file rating_check_recola.py implements the function to be tested.
+- tests/original/: Contains all translated original tests from Matlab, using pytest. These tests match the original developer suite.
+- public_tests/: Contains the public/validation tests, as generated or supplied to learners. These use pytest as well and match public Matlab test logic.
+- requirements.txt: Python dependencies for running the code and tests (here, pytest and numpy).
+- run_tests.sh: Simple shell script to execute all tests with one command (`./run_tests.sh`).
+- project_structure.txt: This file, which describes the tree and purpose of each component.
+- __init__.py files: Help Python recognize packages/directories for test discovery.
+
+Setup instructions:
+1. Install dependencies:
+       pip install -r requirements.txt
+2. Run all tests:
+       ./run_tests.sh
+3. To run only original or public tests:
+       pytest tests/original/
+       pytest public_tests/

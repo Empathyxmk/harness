@@ -1,0 +1,28 @@
+vimalloc_flask-jwt-extended-java/
+├── pom.xml                       # Maven build file with dependencies for JUnit 5, REST-assured, Jackson
+├── run_tests.sh                  # Simple shell script: mvn clean test
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── vimalloc
+│   │               └── flaskjwt
+│   │                   └── (main Java sources, if any)
+│   └── test
+│       └── java
+│           └── com
+│               └── vimalloc
+│                   └── flaskjwt
+│                       ├── original
+│                       │   └── TestJson.java
+│                       │   └── (other original test files...)
+│                       └── publictests
+│                           ├── PublicConfigTest.java
+│                           ├── PublicAsymmetricCryptoTest.java
+│                           ├── PublicCookiesTest.java
+│                           ├── PublicExamplesIntegratedTest.java
+│                           ├── PublicViewDecoratorsTest.java
+│                           ├── PublicOptionsMethodTest.java
+│                           ├── PublicAdditionalClaimsLoaderTest.java
+│                           ├── PublicHeadersTest.java
+│                           └── (other public test files...)

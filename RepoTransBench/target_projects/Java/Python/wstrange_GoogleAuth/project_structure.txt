@@ -1,0 +1,21 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_reseeding_secure_random.py
+│       ├── test_google_auth.py
+│       ├── test_google_authenticator_qr_generator_util.py
+│       ├── test_key_representation.py
+│       ├── test_google_authenticator_exception.py
+│       ├── test_google_authenticator_qr_generator.py
+│       ├── test_google_authenticator_config.py
+│       ├── test_hmac_hash_function.py
+│       └── test_google_authenticator_key.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_reseeding_secure_random_public.py
+│   └── test_google_authenticator_qr_generator_util_public.py

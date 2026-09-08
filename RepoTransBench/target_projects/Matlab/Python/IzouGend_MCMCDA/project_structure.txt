@@ -1,0 +1,34 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── src/
+│   └── izougend_mcmcda/
+│       ├── __init__.py
+│       ├── acceptance_pw.py
+│       ├── kalman.py
+│       ├── move_utils.py
+│       └── public_utils.py
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_acceptance_pw.py
+│       ├── test_kalman.py
+│       └── test_move_utils.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_acceptance_pw_public.py
+│   ├── test_kalman_public.py
+│   └── test_move_utils_public.py
+
+Explanation:
+- requirements.txt         # Python dependencies (pytest, numpy)
+- run_tests.sh             # One-click test runner (runs all tests with pytest)
+- src/izougend_mcmcda/     # Source code modules; each algorithm/component in its own .py file
+- tests/original/          # Direct translation of original Matlab tests (logic, structure, test data preserved)
+- public_tests/            # Public test cases, general scenarios, extra API tests, etc.
+- Each test is a normal pytest module/function, uses Python's `assert`s and NumPy for numerics
+
+Instructions:
+1. Set up: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh`

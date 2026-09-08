@@ -1,0 +1,25 @@
+ekg_intervaltree/
+├── LICENSE                          # License information (from C++)
+├── Makefile                         # (C++ build: can be ignored for python)
+├── README.md                        # Project overview and instructions
+├── requirements.txt                 # Python package requirements (pytest)
+├── run_tests.sh                     # One-click script to run all tests (now properly sets PYTHONPATH)
+├── project_structure.txt            # This file: describes project layout
+├── src/
+│   ├── __init__.py                  # Makes src a Python package (for reliable imports)
+│   └── interval.py                  # Implementation of the Interval class
+├── tests/
+│   ├── __init__.py                  # Makes tests a package
+│   └── original/
+│       ├── __init__.py              # Makes tests.original a package
+│       └── test_interval.py         # Original/private translated tests from interval_tree_test.cpp
+└── public_tests/
+    ├── __init__.py                  # Makes public_tests a package
+    └── test_interval_public.py      # Public translated tests from interval_tree_public_test.cpp
+
+Directory details:
+- src/:            Python source code. Interval logic lives in interval.py.
+- tests/original/: Unit tests translated from original (private) C++ tests. Now with package initialization for import reliability.
+- public_tests/:   Public test cases translated from C++ public test sets.
+- requirements.txt: Test dependencies (pytest)
+- run_tests.sh:     One-click (from project root) test runner, handles path issues

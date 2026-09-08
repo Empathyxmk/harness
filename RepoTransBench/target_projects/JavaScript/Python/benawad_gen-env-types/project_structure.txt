@@ -1,0 +1,31 @@
+benawad_gen-env-types-python/
+├── src/
+│   ├── __init__.py            # Empty, marks source as Python package
+│   ├── gen_env_types.py       # Implementation of generate_env_types logic
+│   └── parse.py               # Implementation of parse .env logic
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_gen_env_types.py      # Translated from gen-env-types.test.js
+│       └── test_parse.py              # Translated from parse.test.js
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_gen_env_types_public.py   # Translated from gen-env-types.public.test.js
+│   └── test_parse_public.py           # Translated from parse.public.test.js
+├── requirements.txt           # Python dependencies for pytest
+├── run_tests.sh               # Simple test script (runs all tests via pytest)
+└── project_structure.txt      # This file, describes the structure and contents
+
+# Directory Explanations:
+# src/           - Main source code implementations: gen_env_types (TypeScript generator), parse (env parser)
+# tests/original/ - Original tests translated from project ("original" and non-public test logic)
+# public_tests/  - Public/competition test set for verification (non-overlapping data from public_tests/ in JS)
+# requirements.txt - Dependency list: pytest for all tests
+# run_tests.sh   - One-click script to run ALL tests (original, public) using pytest
+# project_structure.txt - Directory/file explanations
+
+# How to set up and run:
+# 1. Install dependencies: pip install -r requirements.txt
+# 2. Run all tests: ./run_tests.sh
+#    (You may need to: chmod +x run_tests.sh first)

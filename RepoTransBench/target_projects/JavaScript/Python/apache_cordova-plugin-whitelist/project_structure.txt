@@ -1,0 +1,19 @@
+apache_cordova-plugin-whitelist-python/
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_remove_access.py
+│   │   ├── test_whitelist.py
+│   │   └── test_whitelist_api_highlevel.py
+│   └── conftest.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_whitelist_public.py
+│   └── scripts/
+│       ├── __init__.py
+│       └── test_remove_access_public.py
+├── README.md
+└── test_translation_progress.json

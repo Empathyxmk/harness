@@ -1,0 +1,35 @@
+natural_history_museum_pyzbar/
+├── Cargo.toml
+├── README.md (if present)
+├── src/
+│   ├── lib.rs
+│   └── main.rs
+├── tests/
+│   └── original/
+│       ├── mod.rs
+│       ├── test_bounding_box_and_polygon_py.rs
+│       ├── test_locations.rs
+│       ├── test_zbar_library.rs
+│       ├── test_zbar_library_import.rs
+│       ├── test_init.rs
+│       ├── test_read_zbar.rs
+│       ├── test_bounding_box_and_polygon.rs
+│       ├── test_scripts_read_zbar.rs
+│       ├── test_wrapper.rs
+│       ├── test_pyzbar_error.rs
+│       └── test_pyzbar.rs
+├── public_tests/
+│   ├── mod.rs
+│   ├── test_bounding_box_and_polygon_public.rs
+│   ├── test_locations_public.rs
+│   ├── test_zbar_library_public.rs
+│   ├── test_pyzbar_error_public.rs
+│   ├── test_pyzbar_public.rs
+│   ├── test_zbar_library_import_public.rs
+│   ├── test_wrapper_public.rs
+│   ├── test_read_zbar_public.rs
+│   ├── test_init_public.rs
+│   └── test_scripts_read_zbar_public.rs
+├── run_tests.sh
+├── test_translation_progress.json
+└── project_structure.txt

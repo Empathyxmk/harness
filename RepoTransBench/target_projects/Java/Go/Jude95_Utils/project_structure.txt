@@ -1,0 +1,15 @@
+jude95_utils/
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── public_tests/
+│   ├── application_public_test.go
+│   ├── jactivitymanager_public_test.go
+│   ├── jfilemanager_public_test.go
+│   └── jtimetransform_public_test.go
+└── tests/
+    └── original/
+        ├── application_test.go
+        ├── jactivitymanager_test.go
+        ├── jfilemanager_test.go
+        └── jtimetransform_test.go

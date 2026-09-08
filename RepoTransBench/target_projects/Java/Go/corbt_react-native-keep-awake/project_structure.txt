@@ -1,0 +1,20 @@
+corbt-react-native-keep-awake/
+├── go.mod                      # Module definition for Go
+├── keepawake.go                # Implementation of KeepAwake struct for testability
+├── README.md                   # Project overview and instructions
+├── run_tests.sh                # Simple one-click script for running all tests
+├── project_structure.txt       # This file; describes the project layout
+├── tests/
+│   └── original/
+│       └── keepawake_test.go   # Translated original test suite from KeepAwakeTest.java
+└── public_tests/
+    └── keepawake_public_test.go    # Translated public test suite from KeepAwakePublicTest.java
+
+# Directory/Files Explanation:
+# - keepawake.go: Implements the KeepAwake type as described in the tests.
+# - tests/original: Holds all original, non-public test cases.
+# - public_tests: Holds all public/benchmark test cases.
+# - run_tests.sh: Run this script to execute _all_ tests.
+# - go.mod: Defines the module and Go version for builds/tests.
+# - README.md: Contains setup, usage, and structure notes.
+# - project_structure.txt: This structure/index.

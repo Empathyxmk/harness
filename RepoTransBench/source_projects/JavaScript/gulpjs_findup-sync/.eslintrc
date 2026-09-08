@@ -1,0 +1,6 @@
+{
+  "extends": "gulp",
+  "rules": {
+    "max-len": 0
+  }
+}

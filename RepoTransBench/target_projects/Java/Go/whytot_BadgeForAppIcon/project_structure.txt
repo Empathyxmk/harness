@@ -1,0 +1,16 @@
+project_root/
+├── go.mod
+├── README.md
+├── run_tests.sh
+├── tests/
+│   ├── original/
+│   │   ├── google_model_impl_test.go
+│   │   ├── utils_test.go
+│   │   ├── vivo_model_impl_test.go
+│   │   └── xiaomi_model_impl_test.go
+├── public_tests/
+│   ├── google_model_impl_public_test.go
+│   ├── utils_public_test.go
+│   ├── vivo_model_impl_public_test.go
+│   └── xiaomi_model_impl_public_test.go
+└── test_translation_progress.json

@@ -1,0 +1,55 @@
+renatopp_liac-arff/
+├── CHANGES.rst
+├── LICENSE
+├── README.md
+├── README.rst
+├── arff.py
+├── ci_scripts/
+│   └── create_doc.sh
+├── docs/
+│   ├── Makefile
+│   ├── make.bat
+│   └── source/
+│       ├── _static/
+│       │   └── empty
+│       ├── conf.py
+│       └── index.rst
+├── go.mod
+├── htmlcov/
+│   └── ... (coverage HTML files)
+├── public_test_summary.json
+├── project_structure.txt
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_conversor.py
+│   ├── test_public_data.py
+│   ├── test_public_decode.py
+│   ├── test_public_decode_attribute.py
+│   ├── test_public_decode_attribute_types.py
+│   ├── test_public_decode_comment.py
+│   ├── test_public_decode_data.py
+│   ├── test_public_decode_relation.py
+│   ├── test_public_dump.py
+│   ├── test_public_dump_escape.py
+│   ├── test_public_dumps.py
+│   ├── test_public_dumps_escape.py
+│   ├── test_public_encode.py
+│   ├── test_public_encode_attribute.py
+│   ├── test_public_encode_comment.py
+│   ├── test_public_encode_relation.py
+│   ├── test_public_load.py
+│   ├── test_public_loads.py
+│   ├── test_public_loads_dumps.py
+│   └── test_public_setup_py.py
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.py
+├── test_summary.json
+├── test_translation_progress.json
+└── tests/
+    ├── __init__.py
+    ├── examples/
+    │   └── issue69.arff
+    └── original/
+        ├── test_conversor_test.go
+        └── test_conversor_sparse_test.go

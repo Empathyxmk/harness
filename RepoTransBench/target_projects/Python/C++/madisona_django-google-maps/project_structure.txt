@@ -1,0 +1,32 @@
+madisona_django-google-maps-cpp/
+├── CMakeLists.txt                  # CMake build configuration
+├── src/
+│   └── lib/
+│       ├── geo_pt_field.h          # GeoPtField, DummyGeoPtField implementation for test logic
+│       ├── widgets.h               # DummyMapWidget - for widget simulation
+│       ├── typename_utils.h        # `typename_func` - C++ equivalent for type inspection
+│       └── address_fields.h        # Dummy Address/Location field classes
+├── tests/
+│   ├── original/
+│   │   ├── test_fields_models_widgets.cpp  # Ported from django_google_maps/tests/test_fields_models_widgets.py
+│   │   ├── test_geolocation_field.cpp      # Ported from django_google_maps/tests/test_geolocation_field.py
+│   │   ├── test_geopt_field.cpp            # Ported from django_google_maps/tests/test_geopt_field.py
+│   │   ├── test_setup_manage_urls.cpp      # Ported from django_google_maps/tests/test_setup_manage_urls.py
+│   │   ├── test_typename.cpp               # Ported from django_google_maps/tests/test_typename.py
+│   │   └── test_widget.cpp                 # Ported from django_google_maps/tests/test_widget.py
+│   └── test_main.cpp               # Main entry for running all tests
+├── public_tests/
+│   ├── test_public_fields_models_widgets.cpp   # Ported from public_tests/test_public_fields_models_widgets.py
+│   ├── test_public_typename.cpp               # Ported from public_tests/test_public_typename.py
+│   └── test_public_widget.cpp                 # Ported from public_tests/test_public_widget.py
+├── run_tests.sh                      # Simple test execution script
+├── project_structure.txt             # This file
+└── README.md                         # Project overview & setup instructions
+
+# Directory and file explanations:
+# - src/lib/: C++ code for all mimicked data structures needed by the tests.
+# - tests/original/: translation of all original python tests, 1:1 logic in C++/GTest.
+# - public_tests/: all public test cases in C++/GTest.
+# - run_tests.sh: builds and runs all tests in one step.
+# - test_main.cpp: entry for all Google Test cases.
+# - CMakeLists.txt: builds `test_runner` including all test sources and test dependencies.

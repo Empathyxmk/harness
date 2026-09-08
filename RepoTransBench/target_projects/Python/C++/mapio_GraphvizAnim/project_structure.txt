@@ -1,0 +1,30 @@
+project_root/
+├── include/
+│   └── [public headers for library code]
+├── src/
+│   ├── main.cpp            # (optional/stub main)
+│   └── lib/
+│       ├── action.cpp      # (library/module source stubs)
+│       ├── action.h
+│       ├── animation.cpp
+│       ├── animation.h
+│       ├── jupyter.cpp
+│       ├── jupyter.h
+│       ├── render.cpp
+│       └── render.h
+├── tests/
+│   ├── original/
+│   │   ├── test_animation.cpp
+│   │   ├── test_action_extra.cpp
+│   │   ├── test_main_imports.cpp
+│   │   └── test_render.cpp
+│   ├── test_main.cpp             # Entry for all "original" tests
+│   └── test_main_public.cpp      # Entry for all "public" tests
+├── public_tests/
+│   ├── test_public_animation.cpp
+│   ├── test_public_action_extra.cpp
+│   ├── test_public_main_imports.cpp
+│   └── test_public_render.cpp
+├── CMakeLists.txt
+├── run_tests.sh
+└── project_structure.txt

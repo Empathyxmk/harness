@@ -1,0 +1,75 @@
+{
+  "project_name": "luijar_functional-programming-js",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:33:43.692048",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/luijar_functional-programming-js",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/luijar_functional-programming-js",
+  "original_tests": {
+    "test_files": [
+      "src/ch01/jest/listing1_7.test.js",
+      "src/ch01/jest/ch01.test.js",
+      "src/ch01/jest/listing1_6.test.js",
+      "src/ch01/jest/helper.test.js",
+      "src/ch07/jest/ch07.test.js",
+      "src/ch05/jest/ch05.test.js",
+      "src/ch08/jest/ch08.test.js",
+      "src/ch03/jest/ch03.test.js",
+      "src/ch02/jest/ch02.test.js",
+      "src/ch04/jest/ch04.test.js",
+      "src/ch06/jest/ch06.test.js",
+      "src/ch06/jest/jscheck.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 12,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/ch01/jest/listing1_7.public.test.js",
+      "src/ch01/jest/ch01.public.test.js",
+      "src/ch01/jest/listing1_6.public.test.js",
+      "run_public_tests.sh",
+      "src/ch01/jest/helper.public.test.js",
+      "src/ch02/jest/ch02.public.test.js",
+      "src/ch03/jest/ch03.public.test.js",
+      "src/ch04/jest/ch04.public.test.js",
+      "src/ch05/jest/ch05.public.test.js",
+      "src/ch06/jest/ch06.public.test.js",
+      "src/ch06/jest/jscheck.public.test.js",
+      "src/ch07/jest/ch07.public.test.js",
+      "src/ch08/jest/ch08.public.test.js",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 14,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/ch01/jest/listing1_7.public.test.js",
+    "src/ch01/jest/ch01.public.test.js",
+    "src/ch01/jest/listing1_6.public.test.js",
+    "run_public_tests.sh",
+    "src/ch01/jest/helper.public.test.js",
+    "src/ch02/jest/ch02.public.test.js",
+    "src/ch03/jest/ch03.public.test.js",
+    "src/ch04/jest/ch04.public.test.js",
+    "src/ch05/jest/ch05.public.test.js",
+    "src/ch06/jest/ch06.public.test.js",
+    "src/ch06/jest/jscheck.public.test.js",
+    "src/ch07/jest/ch07.public.test.js",
+    "src/ch08/jest/ch08.public.test.js",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

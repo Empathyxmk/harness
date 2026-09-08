@@ -1,0 +1,31 @@
+NayakwadiS_mftool Go Project Structure
+
+.
+├── README.md                # Project overview and setup instructions
+├── go.mod                   # Go module definition
+├── run_tests.sh             # Simple script to run all tests in one click
+├── project_structure.txt    # This structure documentation
+├── tests/
+│   └── original/            # Original (non-public) tests directory
+│       ├── mftool_tests_test.go            # Extensive original integration tests
+│       ├── test_mftool_class_test.go       # Basic test as per Python
+│       ├── test_utils_test.go              # Utility test translated from Python
+│       └── test_mftool_init_test.go        # Init/minimal tests
+├── public_tests/
+│   ├── test_public_mftool_class_test.go    # Alternate/basic public tests
+│   ├── test_public_mftool_init_test.go     # Alternate public "init" test
+│   └── test_public_utils_test.go           # Alternate public utility test
+└── (src module files e.g. mftool.go, utils.go assumed to exist - not included here)
+
+Directory explanations:
+- tests/original/: Contains the direct translations of "original" (not public) Python tests.
+- public_tests/:   Contains test cases that serve as alternate/public-facing tests.
+- run_tests.sh:    One-click script to run all tests recursively via `go test ./...`.
+- go.mod:          Go package/module requirements.
+- README.md:       Overview and usage guide for this Go project.
+- (src):           Your Go source files (e.g., mftool.go, utils.go) should be placed at root or organized further.
+
+How to Run:
+  1. Ensure Go 1.18+ is installed.
+  2. Run `chmod +x run_tests.sh` if not already executable.
+  3. Execute `./run_tests.sh` from the project root to run all tests.

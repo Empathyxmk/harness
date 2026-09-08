@@ -1,0 +1,44 @@
+clibs_list Python translation project structure
+==============================================
+
+project_root/
+├── src/                          # Python source code package
+│   ├── __init__.py
+│   └── list.py                   # Minimal list API (skeleton); implement list logic here!
+├── tests/
+│   ├── __init__.py
+│   └── original/                 # Tests from original (private/internal)
+│       ├── __init__.py
+│       ├── test_list.py          # Main translated private tests
+│       └── test_extra.py         # Additional thorough coverage for private tests
+├── public_tests/
+│   ├── __init__.py
+│   └── test_list_public.py       # All public (external/visible) test cases, as required
+├── requirements.txt              # Python dependencies, just "pytest"
+├── run_tests.sh                  # Simple one-click test script (runs ALL tests)
+└── project_structure.txt         # This file
+
+Directory explanations:
+-----------------------
+src/                - Contains the Python package and list implementation (stub/skeleton provided).
+tests/original/     - Contains all original/internal test translations from C tests (test_list.c, test.c).
+public_tests/       - Contains translation of public/visible test suite (test_list_public.c).
+requirements.txt    - Declares dependencies (pytest is needed for all tests).
+run_tests.sh        - Run all tests using pytest in a single step.
+project_structure.txt - This documentation.
+
+Setup & Testing Instructions:
+-----------------------------
+1. (Optional) Create and activate a Python virtual environment.
+2. Install dependencies:
+      pip install -r requirements.txt
+3. To run all tests (original and public), from project root:
+      ./run_tests.sh
+   You'll see pytest output with all test results.
+4. Implement your list logic inside src/list.py (current file is a stub).
+5. All test coverage from the original and public C tests is preserved!
+
+Notes:
+------
+- All original scenario coverage and public edge-cases are ported to idiomatic Python, using pytest.
+- The actual Python list implementation is NOT included; you must implement list.py for tests to pass.

@@ -1,0 +1,27 @@
+NotHarshhaa_into-the-devops/
+├── CMakeLists.txt
+├── include/
+│   └── syntax_lint.h          # C++ header for the syntax_lint utility functions
+├── src/
+│   └── syntax_lint.cpp        # C++ implementation of syntax_lint (logic for tags, parsing, checks)
+├── tests/
+│   └── test_syntax_lint.cpp   # Translated original tests (unit, edge-cases, integration tests)
+├── public_tests/
+│   └── test_public_syntax_lint.cpp  # Translated public tests for parse_tags/check_formatting logic
+├── run_tests.sh               # One-click test script for building and running all tests
+└── project_structure.txt      # This file - project structure and description
+
+Directory Explanations:
+- include/: All public C++ headers for project utilities and shared symbols.
+- src/: All implementation source code needed to run the logic being tested.
+- tests/: Original test cases, matching logic/coverage from Python repo.
+- public_tests/: Translated public test cases for public verification.
+- run_tests.sh: Build and test C++ project with GoogleTest, all at once.
+- CMakeLists.txt: Build and test definition using CMake and GTest.
+- project_structure.txt: This overview.
+
+Setup/Testing Instructions:
+1. Make sure cmake and a C++ compiler are installed.
+2. Run: chmod +x run_tests.sh
+3. Run: ./run_tests.sh
+   (This will build and run all original and public tests with GoogleTest. All results/summary will be printed.)

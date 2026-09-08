@@ -1,0 +1,20 @@
+/workspace/temp_translation/translation_20250625_055641/pavlov99_json-rpc/
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── jsonrpc/
+│                       ├── original/
+│                       │   ├── TestJsonrpc1.java
+│                       │   ├── TestJSONRPC10Request.java
+│                       │   ├── TestUtils.java
+│                       │   ├── TestDispatcher.java
+│                       │   ├── TestManager.java
+│                       │   ├── TestJsonrpcErrors.java
+│                       │   └── TestRunner.java
+│                       └── publictests/
+│                           ├── TestJsonrpc1Public.java
+│                           ├── TestJsonrpc2Public.java
+│                           ├── TestUtilsPublic.java
+│                           └── TestRunner.java

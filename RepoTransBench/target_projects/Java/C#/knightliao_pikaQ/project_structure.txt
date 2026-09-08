@@ -1,0 +1,70 @@
+C# Project Structure for knightliao_pikaQ (Test-Only Translation)
+=================================================================
+
+Project Root/
+│
+├── README.md
+├── knightliao_pikaQ.sln     # Solution aggregating all projects
+│
+├── src/                     # Source code (stubbed or empty; source not provided)
+│   └── KnightliaoPikaQ/     
+│       ├── KnightliaoPikaQ.csproj
+│       └── (core classes, stubs: empty or minimal as needed)
+│
+├── tests/
+│   ├── original/
+│   │   ├── OriginalTests.csproj              # Original test project file (.NET Core xUnit)
+│   │   ├── AbstractDaoTest.cs
+│   │   ├── DBTest.cs
+│   │   ├── ColumnsTest.cs
+│   │   └── CampaignMgrImplTest.cs
+│   │
+│   └── (common test utilities, stubs, helpers if needed)
+│
+├── public_tests/
+│   ├── PublicTests.csproj                    # Public test project file (.NET Core xUnit)
+│   ├── AbstractDaoPublicTest.cs
+│   ├── DBPublicTest.cs
+│   ├── ColumnsPublicTest.cs
+│   └── CampaignMgrImplPublicTest.cs
+│
+├── run_tests.sh                   # Bash script to run all tests (dotnet test)
+│
+└── project_structure.txt          # This file
+
+------------------------------------------------------------------
+Directory Explanation
+------------------------------------------------------------------
+
+- src/KnightliaoPikaQ/
+    - Stub or placeholder for actual product code needed for the tests, in KnightliaoPikaQ namespace.
+    - KnightliaoPikaQ.csproj: Standard C# project file for the source stub/placeholder. Will remain trivial or empty due to source unavailability.
+    - Models, gateways, etc. can be defined here minimally if required by tests.
+
+- tests/original/
+    - Contains all C# xUnit test files translated from original Java tests not marked as public.
+    - OriginalTests.csproj: C# xUnit project configuration for these tests.
+
+- public_tests/
+    - Contains all C# xUnit test files translated from Java public tests.
+    - PublicTests.csproj: C# xUnit project configuration for these tests.
+
+- run_tests.sh
+    - Simple, one-click shell script: `dotnet test` to run *all* tests.
+
+- knightliao_pikaQ.sln
+    - Solution aggregating original and public test projects.
+
+------------------------------------------------------------------
+Test Execution Instructions
+------------------------------------------------------------------
+
+1. Install .NET Core SDK (if not installed).
+
+2. From the project root:
+
+    $ chmod +x run_tests.sh
+    $ ./run_tests.sh
+
+   This will discover and run all original and public tests using xUnit.
+------------------------------------------------------------------

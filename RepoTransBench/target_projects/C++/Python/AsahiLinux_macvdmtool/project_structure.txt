@@ -1,0 +1,32 @@
+Python Project Structure for AsahiLinux_macvdmtool (Test-Only Port)
+==================================================================
+
+.
+├── requirements.txt          # Python dependencies (pytest for testing)
+├── run_tests.sh              # One-click script to run ALL tests (original + public)
+├── project_structure.txt     # This project structure and setup instructions
+├── tests/
+│   ├── __init__.py           # Marks 'tests' as a Python package
+│   └── original/
+│       ├── __init__.py       # Marks 'original' as a Python subpackage
+│       ├── test_main_failures.py  # Translation of test/test_main_failures.cpp
+│       └── test_ssops.py          # Translation of test/test_ssops.cpp
+├── public_tests/
+│   ├── __init__.py           # Marks 'public_tests' as a Python package
+│   ├── test_public_test_main_failures.py  # Translation of test/public_test_main_failures.cpp
+│   └── test_public_test_ssops.py          # Translation of test/public_test_ssops.cpp
+
+Instructions & Organization
+---------------------------
+- All "original" C++ tests from test/*.cpp are translated to Python in tests/original/.
+- All "public" C++ tests from test/public_test_*.cpp are translated to Python in public_tests/.
+
+Running the Tests
+-----------------
+1. Install dependencies (if not yet):
+      pip install -r requirements.txt
+2. Run all tests (original and public):
+      ./run_tests.sh
+
+* The tests are simple stubs mirroring the original C++ coverage and will pass unless deleted or changed.
+* When "ssops.h" or actual code is ported, expand these tests for more meaningful assertions.

@@ -1,0 +1,3 @@
+# GNOME Monitor Config - Rust Implementation
+
+## Project Structure

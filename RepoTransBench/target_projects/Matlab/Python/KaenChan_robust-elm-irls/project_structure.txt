@@ -1,0 +1,41 @@
+Project Structure for KaenChan_robust-elm-irls (Python version)
+================================================================
+
+src/kaenchan_robust_elm_irls/
+    __init__.py
+    robust_func.py
+        > Main source implementation for the robust_func used in ELM/Robust ELM tests.
+        > Any further core logic can be moved here as needed (e.g., when adding ELM algorithms).
+
+tests/original/
+    __init__.py
+    test_robust_func.py
+        > Full original (private/internal) test of robust_func with deep coverage,
+          including all loss types, edge cases, and warnings.
+
+public_tests/
+    __init__.py
+    test_public_robust_func.py
+        > Public test for robust_func, with alternate coverage on several robust loss types,
+          distinct from private test by data/parameters.
+
+requirements.txt
+    > Python dependencies needed to run all tests (numpy, pytest, etc.).
+
+run_tests.sh
+    > One-click script to run all tests using pytest.
+
+README.md
+    > Overview & setup instructions.
+
+Notes:
+------
+* All original (private/internal) tests are under tests/original/.
+* All public tests are under public_tests/.
+* You can add more modules implementing the rest of robust ELM/ELM logic in src/kaenchan_robust_elm_irls/.
+* For full ELM/robust model integration, more stubs and implementations should be added to the src/ package,
+  and data-driven tests can be expanded into the test and public_tests directories.
+* To run all tests, install requirements and execute:
+    $ pip install -r requirements.txt
+    $ ./run_tests.sh
+* This will run all tests found under tests/ and public_tests/.

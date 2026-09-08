@@ -1,0 +1,17 @@
+del-xiong_screw-plus_python/
+├── src/
+│   ├── __init__.py
+│   ├── b64.py            # Base64 implementation
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_b64.py        # Translated test_b64.c
+│   │   └── test_b64_table.py  # Translated test_b64_table.c
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_b64_public.py     # Translated test_b64_public.c
+│   └── test_b64_table_public.py  # Translated test_b64_table_public.c
+├── requirements.txt
+├── run_tests.sh
+└── README.md

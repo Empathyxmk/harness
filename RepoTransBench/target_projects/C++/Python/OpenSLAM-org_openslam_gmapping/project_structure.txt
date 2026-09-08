@@ -1,0 +1,31 @@
+Project Structure Overview
+
+OpenSLAM-org_openslam_gmapping Python Translation
+-------------------------------------------------
+.
+├── src/
+│   └── example.py                # Python translation of Example class
+├── tests/
+│   └── original/
+│       └── test_example.py       # Translated original tests (from C++)
+├── public_tests/
+│   └── test_example_public.py    # Translated public tests (from C++)
+├── requirements.txt              # Python dependencies (pytest)
+├── run_tests.sh                  # Simple script to run all tests
+└── project_structure.txt         # This project structure overview
+
+Directories & Files:
+- src/: Contains Python module(s) corresponding to C++ source code.
+- tests/original/: All tests translated from original (private) C++ tests.
+- public_tests/: All tests translated from public C++ tests.
+- requirements.txt: PyPI dependencies, primarily pytest for testing.
+- run_tests.sh: Bash script to run all tests via pytest.
+- project_structure.txt: This file, explaining the layout.
+
+How To Run Tests:
+-----------------
+1. Ensure Python and pip are installed.
+2. Make run_tests.sh executable: chmod +x run_tests.sh
+3. Run all tests: ./run_tests.sh
+
+Both original and public tests will be collected and run.

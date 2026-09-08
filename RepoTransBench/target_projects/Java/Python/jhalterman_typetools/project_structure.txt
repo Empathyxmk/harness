@@ -1,0 +1,28 @@
+project_root/
+├── requirements.txt         # Python dependencies (pytest)
+├── run_tests.sh             # Test execution script
+├── tests/                   # Directory for original (private) tests
+│   └── original/            # (or all tests directly in tests/ as necessary)
+│       ├── test_reified_parameterized_type.py    # Original test port
+│       ├── test_type_resolver.py                 # Original test port
+│       ├── test_functional_inner_class.py        # Original functional test
+│       └── test_functional_lambda.py             # Original functional test
+├── public_tests/            # Directory for public test files
+│   ├── test_reified_parameterized_type_public.py # Public test port
+│   ├── test_type_resolver_public.py              # Public test port
+│   ├── test_functional_inner_class_public.py     # Public inner class test
+│   └── test_functional_lambda_public.py          # Public lambda test
+└── project_structure.txt    # This structure/readme documentation
+
+# Directory explanations:
+# - requirements.txt: lists Python dependencies, including pytest.
+# - run_tests.sh: a simple script to run all tests using pytest.
+# - tests/original/: all original (private/internal) test cases, direct translation from Java.
+# - public_tests/: all public test cases, direct translation from Java public tests.
+# - project_structure.txt: Explanation/documentation of project layout.
+
+# Setup Instructions:
+# 1. Install dependencies:
+#       pip install -r requirements.txt
+# 2. Run all tests:
+#       ./run_tests.sh

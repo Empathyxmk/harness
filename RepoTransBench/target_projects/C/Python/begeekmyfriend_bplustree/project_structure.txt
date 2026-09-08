@@ -1,0 +1,35 @@
+Project Structure: Python translation of C bplustree test suite
+
+.
+├── src/
+│   └── bplustree/
+│       └── __init__.py         # Placeholder for bplustree implementation & C API stubs
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_bplustree_unit_test.py  # Original test: translates bplustree_unit_test.c
+│       └── test_bplustree_edge_test.py  # Original test: translates bplustree_edge_test.c
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_bplustree_unit_public_test.py     # Public test: translates bplustree_unit_public_test.c
+│   └── test_bplustree_edge_public_test.py     # Public test: translates bplustree_edge_public_test.c
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Directory explanations:
+- src/bplustree/__init__.py     : Contains the BPlusTree class and C-API-like wrappers.
+- tests/original/               : Original test cases, mapped from C sources.
+- public_tests/                 : Public test cases, mapped from public C test sources.
+- requirements.txt              : Python project dependencies (pytest).
+- run_tests.sh                  : Simple script to run all tests (`pytest`).
+- project_structure.txt         : This file. Explains the layout and setup.
+- (init.py files)               : Enable Python package/test discovery.
+
+Setup & Testing:
+1. Ensure Python (>=3.6) is installed.
+2. Run `./run_tests.sh` from project root.
+   This script will install dependencies (if needed) and run all tests using pytest.
+3. Test output for all suites (original/public) will be displayed.
+4. Implement your bplustree logic in src/bplustree/__init__.py for full feature parity.

@@ -1,0 +1,14 @@
+{
+  "name": "alexreardon_raf-schd",
+  "version": "1.0.0",
+  "main": "dist/raf-schd.cjs.js",
+  "module": "dist/raf-schd.esm.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "nyc": "^15.0.0"
+  }
+}

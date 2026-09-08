@@ -1,0 +1,12 @@
+.
+├── public_tests/
+│   ├── test_android_instrumented_public.py         # Public instrumented test for app context (Python version)
+│   ├── test_log_public.py                          # Public tests for Log ("public" version)
+│   └── test_reflectutil_public.py                  # Public tests for ReflectUtil ("public" version)
+├── requirements.txt                                # Defines Python dependencies (pytest)
+├── run_tests.sh                                    # One-click script to run all tests
+├── tests/
+│   ├── original/
+│   │   ├── test_android_instrumented.py            # Translation of ExampleInstrumentedTest.java
+│   │   ├── test_log.py                             # Original tests for Log class
+│   │   └── test_reflectutil.py                     # Original tests for ReflectUtil

@@ -1,0 +1,107 @@
+## 1.11.1
+
+- Fix version number
+
+## 1.11.0
+
+(Not released to PyPI because of a mistake.)
+
+- Drop support for Python 3.8; add support for Python 3.13
+
+## 1.10.1
+
+* Add minimum version requirement (Python 3.8) to metadata
+* Build Python 3.12 wheels
+
+## 1.10.0
+
+* Drop support for Python 3.7
+* Add support for Python 3.12
+* Support building with Cython 3
+
+## 1.9.1
+
+* Pin to `Cython<3` to fix build
+
+## 1.9.0
+
+* Drop support for Python 3.6; add support for Python 3.11
+* Add functions `utime_as_datetime`, `datetime_as_utime`,
+  `format_utime_as_iso_8601`, `iso_8601_as_utime`
+
+## 1.8.0
+
+* Add `.fn` attributes to cache functions in `qcore.caching`,
+  enabling pyanalyze type checking
+* Remove broken caching from qcore.inspection.get_full_name
+* Add support for Python 3.10
+* Support dict subclasses in `qcore.asserts.assert_dict_eq`
+* Fix `**kwargs` support in `qcore.caching.cached_per_instance`
+* Use ASCII representation of objects in error messages
+* Fix type annotation for `qcore.caching.LRUCache.get`
+
+## 1.7.0
+
+* Update mypy version
+* Drop support for Python 2.7, 3.4, and 3.5
+* Add support for Python 3.9
+* Build wheels using GitHub actions and cibuildwheel
+* Improve stub files
+* Prevent AttributeError in qcore.inspection.get_original_fn
+* Use relative imports in pxd files
+
+## 1.6.1
+
+* Support Python 3.8
+
+## 1.6.0
+
+* Optimize import time
+* Add to AssertRaises stubs
+* Add assert_startswith and assert_endswith
+
+## 1.5.0
+
+* Fix stub for decorator_of_context_manager
+* Add qcore.Utime typing helper
+* Add clear() method to LRUCache
+* Fix stub for LRUCache
+
+## 0.5.1
+* Add __prepare__ to some metaclasses to fix errors with six 1.11.0.
+
+## 0.5.0
+* Start publishing manylinux wheels
+* Support Python 3.7
+* Improve pickle implementation for enums
+* Add type stubs
+
+## 0.4.2
+* Improve installation procedure
+
+## 0.4.1
+* Add qcore.caching.lru_cache
+* Declare Cython as a setup_requires dependency
+
+## 0.4.0
+* Add support for some new features in py3 (e.g. keyword-only args).
+* Make pickling/unpickling of enums work across py2 and py3.
+* Make helpers.object_from_string handle more cases.
+
+## 0.3.0
+* Various enum improvements. Invalid values are now disallowed, methods like
+  get_names() return members in consistent order, there is a new IntEnum
+  class, and some new methods were added.
+* Cython is no longer required to import qcore if it has not been compiled with
+  Cython.
+* @qcore.caching.memoize() is now more efficient.
+
+## 0.2.1
+* MarkerObject names are now always text
+* Fix equality for DecoratorBinder objects to work correctly in compiled and
+  non-compiled Python 2 and 3.
+* Errors run during event handlers are now reraised with a meaningful
+  traceback.
+
+## 0.2.0
+* Public release

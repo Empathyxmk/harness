@@ -1,0 +1,40 @@
+claude_to_chatgpt-rust/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs           # Main entrypoint, re-exports modules
+│   ├── adapter.rs       # Adapter logic (translated + stub)
+│   ├── models.rs        # Models + mapping logic (translated + stub)
+│   ├── util.rs          # Token counting, etc. (translated + stub)
+│   ├── logger.rs        # Logger bridge (minimal stub for tests)
+│   └── app.rs           # Placeholder for app/server logic
+├── tests/
+│   ├── test_adapter.rs      # Translated original core tests for adapter.rs
+│   ├── test_models.rs       # Translated original core tests for models.rs
+│   ├── test_util.rs         # Translated original core tests for util.rs
+│   ├── test_logger.rs       # Translated original test for logger.rs
+│   └── test_app_routes.rs   # Stubs for route tests (see notes)
+├── public_tests/
+│   ├── test_public_adapter.rs     # Translated public adapter tests
+│   ├── test_public_models.rs      # Translated public models tests
+│   ├── test_public_util.rs        # Translated public util tests
+│   ├── test_public_logger.rs      # Translated public logger tests
+│   └── test_public_app_routes.rs  # Stubs for public app routes tests
+├── run_tests.sh                # Simple script to run all tests
+└── project_structure.txt       # This file
+
+Directory explanations:
+- src/: Main project source code in Rust ("library" crate). Each .rs file is a module for main logic area.
+- tests/: Original (private/internal) test suite, one per component.
+- public_tests/: Public-facing tests, translated from public_tests/ in Python.
+- Cargo.toml: Package manifest and dependency manager for Rust.
+- run_tests.sh: Run all tests quickly (`chmod +x run_tests.sh`).
+- project_structure.txt: Reference for this file and structure.
+
+Testing instructions:
+1. Install Rust (https://rustup.rs/) if not present.
+2. Mark the test script as executable: `chmod +x run_tests.sh`
+3. Run `./run_tests.sh`
+4. All tests (including both private and public) will be run and their results shown.
+5. Test logic is a 1:1 port of the Python suite (original and public) from claude-to-chatgpt.
+
+Note: The app/modules are stubs/minimal to permit full cross-compilation of tests. Real implementation would require porting all logic.

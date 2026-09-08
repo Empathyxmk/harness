@@ -1,0 +1,11 @@
+{
+  "project_name": "ainilife_zebra-dao",
+  "language": "Java",
+  "coverage": {
+    "line": 92.3,
+    "branch": 80.0
+  },
+  "timestamp": "2025-06-19T08:36:48.623643",
+  "original_path": "/workspace/runnable_filter/Java/ainilife_zebra-dao",
+  "test_result_path": "/workspace/test_enhancement_results/Java/ainilife_zebra-dao"
+}

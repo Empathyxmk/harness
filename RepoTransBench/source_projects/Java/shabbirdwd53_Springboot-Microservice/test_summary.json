@@ -1,0 +1,11 @@
+{
+  "project_name": "shabbirdwd53_Springboot-Microservice",
+  "language": "Java",
+  "coverage": {
+    "line": 80.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-20T02:36:57.068751",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/shabbirdwd53_Springboot-Microservice",
+  "test_result_path": "/workspace/test_enhancement_results/Java/shabbirdwd53_Springboot-Microservice"
+}

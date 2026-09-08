@@ -1,0 +1,36 @@
+Project Structure:
+
+Rob--_memoryjs-python-adaptation/
+├── requirements.txt                    # Python dependencies (pytest)
+├── run_tests.sh                        # Simple shell script to run all tests
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_function.py            # Original test: Function test ported from C++
+│       ├── test_memory.py              # Original test: Memory test ported from C++
+│       └── test_protection.py          # Original test: Protection test ported from C++
+├── public_tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── test_function_public.py         # Public test: Function test public variant
+│   ├── test_memory_public.py           # Public test: Memory test public variant
+│   └── test_protection_public.py       # Public test: Protection test public variant
+
+Explanation:
+- requirements.txt: Declares pytest as the dependency for testing.
+- run_tests.sh: Simple shell script to execute all tests via pytest in one click.
+- tests/: Root test directory.
+  - __init__.py and conftest.py: Python test structure files.
+  - original/: Contains all "original" test suite files, direct C++ test logic translation.
+- public_tests/: Contains all public test suite files, which are slight variants (order/data) of the originals.
+- Each test file contains direct, complete port of the C++ test logic and assertions.
+
+How to Run:
+1. Install dependencies:
+   pip install -r requirements.txt
+2. Execute tests:
+   ./run_tests.sh
+
+This structure enables one-click full test execution and preserves the separation between original and public (curated) test logic, matching the C++ project's intent and coverage.

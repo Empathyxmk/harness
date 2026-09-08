@@ -1,0 +1,20 @@
+mapio_graphvizanim/
+├── Cargo.toml
+├── run_tests.sh
+├── src/
+│   ├── lib.rs
+│   ├── action.rs
+│   ├── animation.rs
+│   ├── render.rs
+│   └── jupyter.rs
+├── tests/
+│   └── original/
+│       ├── test_action_extra.rs
+│       ├── test_animation.rs
+│       ├── test_main_imports.rs
+│       └── test_render.rs
+├── public_tests/
+│   ├── test_public_action_extra.rs
+│   ├── test_public_animation.rs
+│   ├── test_public_main_imports.rs
+│   └── test_public_render.rs

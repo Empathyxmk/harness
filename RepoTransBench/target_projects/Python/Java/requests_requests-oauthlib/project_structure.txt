@@ -1,0 +1,60 @@
+Java Project Structure for requests_requests-oauthlib
+=====================================================
+
+Root directory:
+.
+├── pom.xml                # Maven build and dependency configuration
+├── run_tests.sh           # One-click script to run all tests (./run_tests.sh)
+├── README.md              # Project overview and setup instructions
+
+src/
+├── main/
+│   └── java/
+│       └── com/
+│           └── requests/
+│               └── oauthlib/
+│                   # Main Java sources (translated library, if available)
+├── test/
+│   └── java/
+│       └── com/
+│           └── requests/
+│               └── oauthlib/
+│                   ├── original/
+│                   │   ├── OAuth1SessionTest.java
+│                   │   ├── OAuth2SessionTest.java
+│                   │   ├── OAuth2AuthTest.java
+│                   │   ├── ComplianceFixesTest.java
+│                   │   ├── CoreTest.java
+│                   │   └── InitAndSetupTest.java
+│                   └── publictests/
+│                       ├── PublicCoreTest.java
+│                       ├── PublicInitAndSetupTest.java
+│                       ├── PublicOAuth2AuthTest.java
+│                       ├── PublicComplianceFixesTest.java
+│                       ├── PublicOAuth2SessionTest.java
+│                       └── PublicOAuth1SessionTest.java
+
+Details:
+- src/main/java/com/requests/oauthlib/
+    - Contains main implementation Java files (translate Python library if needed)
+- src/test/java/com/requests/oauthlib/original/
+    - All *original* test cases, one per Python file, fully migrated to Java using JUnit
+- src/test/java/com/requests/oauthlib/publictests/
+    - All *public* test cases, with logic and naming distinct from originals
+- pom.xml:
+    - Uses JUnit 5 and Mockito; add more dependencies as needed for more complex mocking.
+- run_tests.sh:
+    - Run all tests with one command (`./run_tests.sh`)
+
+How to run tests:
+-----------------
+1. Ensure Java and Maven are installed (java -version & mvn -version to verify)
+2. Run:
+    ./run_tests.sh
+3. View reports and results in the Maven output.
+
+Where to add new code/tests:
+----------------------------
+- Main library code: src/main/java/com/requests/oauthlib/
+- New original tests: src/test/java/com/requests/oauthlib/original/
+- New public tests:   src/test/java/com/requests/oauthlib/publictests/

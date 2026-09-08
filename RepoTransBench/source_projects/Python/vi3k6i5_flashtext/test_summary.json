@@ -1,0 +1,11 @@
+{
+  "project_name": "vi3k6i5_flashtext",
+  "language": "Python",
+  "coverage": {
+    "line": 99.4,
+    "branch": 96.6
+  },
+  "timestamp": "2025-06-23T10:37:43.219586",
+  "original_path": "/workspace/test_enhancement_results/Python/vi3k6i5_flashtext",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Python/vi3k6i5_flashtext"
+}

@@ -1,0 +1,30 @@
+.
+├── requirements.txt              # Python dependencies (pytest)
+├── run_tests.sh                  # Simple all-in-one test runner script
+├── tests/
+│   ├── __init__.py               # Makes 'tests' a package (may be empty)
+│   └── original/
+│       ├── __init__.py           # (usually empty)
+│       ├── test_abx.py           # Abx core logic tests (original, from Java AbxTest.java)
+│       ├── test_example_instrumented.py # Simulates Android instrumented test
+│       ├── test_example_unit.py  # Basic math test (from ExampleUnitTest.java)
+│       ├── test_main_activity.py # Coverage for MainActivity methods
+│       ├── test_mapping.py       # Mapping file parsing/edge-case handling
+│       └── test_obfdex.py        # ObfDex file/dir handling
+├── public_tests/
+│   ├── __init__.py               # (usually empty)
+│   ├── test_abx_public.py        # Public: altered inputs/coverage for Abx.add, Abx.is_positive
+│   ├── test_example_instrumented_public.py # Public: altered package prefix check
+│   ├── test_example_unit_public.py       # Public: different numeric math check
+│   ├── test_main_activity_public.py      # Public: MainActivity.get_welcome_message variants
+│   ├── test_mapping_public.py     # Public: diverse Mapping put/get/map API
+│   └── test_obfdex_public.py      # Public: ObfDex public testing
+└── project_structure.txt          # (this file) Documents structure and file roles.
+
+Structure notes:
+- All original Java tests in 'tests/original/' with functionally complete Python equivalents.
+- Public test variants in 'public_tests/'.
+- All stubs/mock-classes are implemented to fully cover the test logic.
+- `run_tests.sh` will install pytest and run all (original and public) tests.
+- requirements.txt contains pytest as the only dependency.
+- To run all tests: `chmod +x run_tests.sh && ./run_tests.sh`

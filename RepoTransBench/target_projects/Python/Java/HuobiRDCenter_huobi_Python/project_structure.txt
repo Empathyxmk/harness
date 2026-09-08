@@ -1,0 +1,39 @@
+Java Huobi SDK Project Structure:
+
+.
+├── pom.xml                       # Maven build configuration and dependencies
+├── run_tests.sh                  # Simple script to run all tests
+├── project_structure.txt         # Description of the project tree
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── huobi/
+│   │               └── ...      # (Your main sources here as needed, not implemented for test-only translation)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── huobi/
+│                   ├── original/
+│                   │   ├── TestApiSignature.java
+│                   │   ├── TestSubuserClient.java
+│                   │   └── TestUtilsCoverage.java
+│                   └── public_tests/
+│                       ├── TestPublicApiSignature.java
+│                       ├── TestPublicSubuserClient.java
+│                       └── TestPublicUtilsCoverage.java
+
+Directory Explanations:
+- pom.xml:         Maven build file, declares all dependencies and test plugins.
+- run_tests.sh:    Bash script to run all Java tests via Maven.
+- project_structure.txt: This file. Describes all structure and files.
+- src/main/java:   Here would live main library sources; not implemented in this translation.
+- src/test/java/com/huobi/original/:    All "original" tests converted from Python source "tests".
+- src/test/java/com/huobi/public_tests/: All "public" tests converted from Python "public_tests".
+- Naming follows Java conventions: Test class per file, all end with `Test.java`.
+
+Test Execution:
+1. Ensure you have JDK 11+ and Maven installed.
+2. Run:  `chmod +x run_tests.sh`
+3. Run:  `./run_tests.sh`
+4. All tests in both `original` and `public_tests` will run.

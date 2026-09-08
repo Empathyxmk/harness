@@ -1,0 +1,73 @@
+{
+  "project_name": "madvirus_ddd-start",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:17:37.880220",
+  "original_path": "/workspace/verified_repos_v2/Java/madvirus_ddd-start",
+  "public_test_result_path": "/workspace/public_test_results/Java/madvirus_ddd-start",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/net/jodah/typetools/TypeDescriptorTest.java",
+      "src/test/java/net/jodah/typetools/TypeResolverTest.java",
+      "src/test/java/com/myshop/SpringConfigTest.java",
+      "src/test/java/com/myshop/ShopApplicationTest.java",
+      "src/test/java/com/myshop/springsecurity/MethodAccessTest.java",
+      "src/test/java/com/myshop/springsecurity/AuthenticationTest.java",
+      "src/test/java/com/myshop/springsecurity/WebAccessTest.java",
+      "src/test/java/com/myshop/coupon/domain/CouponTest.java",
+      "src/test/java/com/myshop/order/NoOrderExceptionTest.java",
+      "src/test/java/com/myshop/order/ui/OrderControllerTest.java",
+      "src/test/java/com/myshop/order/command/application/PlaceOrderServiceTest.java",
+      "src/test/java/com/myshop/order/infra/repository/JpaOrderRepositoryIntTest.java",
+      "src/test/java/com/myshop/order/infra/dao/JpaOrderViewDaoIntTest.java",
+      "src/test/java/com/myshop/order/infra/dao/JpaOrderSummaryDaoIntTest.java",
+      "src/test/java/com/myshop/order/infra/domain/SecurityCancelPolicyTest.java",
+      "src/test/java/com/myshop/catalog/infra/repository/JpaProductRepositoryIntTest.java",
+      "src/test/java/com/myshop/board/infra/repository/JpaArticleRepositoryIntTest.java",
+      "src/test/java/com/myshop/lock/LockManagerBasicTest.java",
+      "src/test/java/com/myshop/lock/OptimisticLockTest.java",
+      "src/test/java/com/myshop/lock/LockManagerMultiUserTest.java",
+      "src/test/java/com/myshop/eventstore/ui/EventApiTest.java",
+      "src/test/java/com/myshop/eventstore/infra/JdbcEventStoreTest.java",
+      "src/test/java/com/myshop/integration/EventForwarderTest.java",
+      "src/test/java/com/myshop/common/event/EventHandlerGetEventTypeTest.java",
+      "src/test/java/com/myshop/common/event/EventStoreHandlerAspectTest.java",
+      "src/test/java/com/myshop/common/event/EventStoreHandlerTest.java",
+      "src/test/java/com/myshop/common/event/AsyncEventTest.java",
+      "src/test/java/com/myshop/common/event/EventResetProcessorTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 28,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/net/jodah/typetools/TypeDescriptorPublicTest.java",
+      "src/test/java/net/jodah/typetools/TypeResolverPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/com/myshop/SpringConfigPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 5,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/net/jodah/typetools/TypeDescriptorPublicTest.java",
+    "src/test/java/net/jodah/typetools/TypeResolverPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/com/myshop/SpringConfigPublicTest.java",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

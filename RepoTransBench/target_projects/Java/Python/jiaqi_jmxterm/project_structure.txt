@@ -1,0 +1,55 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_SyntaxUtilsExtra.py
+│   │   ├── test_PrintStreamCommandOutput.py
+│   │   ├── test_FileCommandOutput.py
+│   │   ├── test_FileCommandInput.py
+│   │   ├── test_InputStreamCommandInput.py
+│   │   ├── test_ValueOutputFormat.py
+│   │   ├── test_DomainCommand.py
+│   │   ├── test_InfoCommand.py
+│   │   ├── test_SubscribeCommand.py
+│   │   ├── test_BeansCommand.py
+│   │   ├── test_DomainsCommand.py
+│   │   ├── test_CloseCommand.py
+│   │   ├── test_OptionCommand.py
+│   │   ├── test_BeanCommand.py
+│   │   ├── test_RunCommand.py
+│   │   ├── test_SetCommand.py
+│   │   ├── test_QuitCommand.py
+│   │   ├── test_UnsubscribeCommand.py
+│   │   ├── test_OpenCommand.py
+│   │   ├── test_GetCommand.py
+│   │   ├── test_CommandCenter.py
+│   │   ├── test_PredefinedCommandFactory.py
+│   │   ├── test_SessionImpl.py
+│   │   ├── test_JPMFactory.py
+│   │   ├── test_HelpCommand.py
+│   │   ├── test_ConnectionImpl.py
+│   │   ├── test_JConsoleClassLoaderFactory.py
+│   │   ├── test_Jdk9JavaProcessManager.py
+│   │   ├── test_WeakCastUtils.py
+│   │   ├── test_ValueFormat.py
+│   │   ├── test_Jdk6JavaProcessManager.py
+│   │   ├── test_LocalVirtualMachine.py
+│   │   ├── test_Jdk5JavaProcessManager.py
+│   │   └── test_script_and_perl/      # for testperl.pl and testscript.jmx
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_ConnectionPublic.py
+│   ├── test_SyntaxUtilsPublic.py
+│   ├── test_CommandFactoryPublic.py
+│   ├── test_SessionPublic.py
+│   ├── test_CommandPublic.py
+│   ├── test_SyntaxUtilsExtraPublic.py
+│   ├── test_PrintStreamCommandOutputPublic.py
+│   ├── test_FileCommandInputPublic.py
+│   ├── test_InputStreamCommandInputPublic.py
+│   ├── test_FileCommandOutputPublic.py
+└── README.md

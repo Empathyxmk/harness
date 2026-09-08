@@ -1,0 +1,17 @@
+{
+  "project_name": "jeromeetienne_microevent.js",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 94.44
+  },
+  "timestamp": "2025-06-19T10:41:54.852399",
+  "original_path": "/workspace/runnable_filter/JavaScript/jeromeetienne_microevent.js",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/jeromeetienne_microevent.js",
+  "tests_path": [
+    "tests/microevent.test.js",
+    "tests/microevent-debug.test.js",
+    "tests/microevent-extra.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

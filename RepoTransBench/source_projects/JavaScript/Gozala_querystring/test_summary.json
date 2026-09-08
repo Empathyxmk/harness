@@ -1,0 +1,16 @@
+{
+  "project_name": "Gozala_querystring",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 86.27,
+    "branch": 78.57
+  },
+  "timestamp": "2025-06-23T10:39:04.302883",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/Gozala_querystring",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/Gozala_querystring",
+  "tests_path": [
+    "test/encode-decode-edge-cases.test.js",
+    "test/additional-encode-decode.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

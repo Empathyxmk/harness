@@ -1,0 +1,52 @@
+{
+  "project_name": "trailofbits_protofuzz",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:49:52.479797",
+  "original_path": "/workspace/verified_repos_v2/Python/trailofbits_protofuzz",
+  "public_test_result_path": "/workspace/public_test_results/Python/trailofbits_protofuzz",
+  "original_tests": {
+    "test_files": [
+      "protofuzz/tests/test_protofuzz.py",
+      "protofuzz/tests/test_values.py",
+      "protofuzz/tests/test_gen.py",
+      "protofuzz/tests/test_log.py",
+      "protofuzz/tests/test_pbimport.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "protofuzz/public_tests/test_public_protofuzz.py",
+      "protofuzz/public_tests/test_public_values.py",
+      "protofuzz/public_tests/test_public_gen.py",
+      "protofuzz/public_tests/test_public_log.py",
+      "protofuzz/public_tests/test_public_pbimport.py",
+      "run_public_tests.sh",
+      "protofuzz/public_tests/test_public_values.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "protofuzz/public_tests/test_public_protofuzz.py",
+    "protofuzz/public_tests/test_public_values.py",
+    "protofuzz/public_tests/test_public_gen.py",
+    "protofuzz/public_tests/test_public_log.py",
+    "protofuzz/public_tests/test_public_pbimport.py",
+    "run_public_tests.sh",
+    "protofuzz/public_tests/test_public_values.py"
+  ]
+}

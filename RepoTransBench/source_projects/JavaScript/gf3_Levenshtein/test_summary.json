@@ -1,0 +1,11 @@
+{
+  "project_name": "gf3_Levenshtein",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:29:44.663375",
+  "original_path": "/workspace/runnable_filter/JavaScript/gf3_Levenshtein",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/gf3_Levenshtein"
+}

@@ -1,0 +1,133 @@
+jkrasnay_sqlbuilder/
+├── 1.6/
+├── LICENSE
+├── README.markdown
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── AbstractSqlCreatorPublicTests.cs
+│   ├── DeleteBuilderPublicTests.cs
+│   ├── InsertBuilderPublicTests.cs
+│   ├── ParameterizedPreparedStatementCreatorPublicTests.cs
+│   ├── PredicatePublicTests.cs
+│   ├── PublicTests.csproj
+│   ├── SelectBuilderPublicTests.cs
+│   ├── SelectCreatorPublicTests.cs
+│   ├── UniqueStringGeneratorPublicTests.cs
+│   ├── UpdateBuilderPublicTests.cs
+│   └── orm/
+│       ├── MappingPublicTests.cs
+│       ├── ReflectionUtilsPublicTests.cs
+│       ├── StringListConverterPublicTests.cs
+│       ├── StringListFlattenerPublicTests.cs
+│       └── StringMapConverterPublicTests.cs
+├── run_public_tests.sh
+├── run_tests.sh
+├── src/
+│   ├── Jkrasnay.SqlBuilder/
+│   │   └── Jkrasnay.SqlBuilder.csproj
+│   ├── main/
+│   │   └── java/
+│   │       └── ca/
+│   │           └── krasnay/
+│   │               └── sqlbuilder/
+│   │                   ├── AbstractSqlBuilder.java
+│   │                   ├── AbstractSqlCreator.java
+│   │                   ├── DeleteBuilder.java
+│   │                   ├── DeleteCreator.java
+│   │                   ├── Dialect.java
+│   │                   ├── ExistsPredicate.java
+│   │                   ├── ExistsPredicateImpl.java
+│   │                   ├── InsertBuilder.java
+│   │                   ├── InsertCreator.java
+│   │                   ├── ParameterizedPreparedStatementCreator.java
+│   │                   ├── PostgresqlDialect.java
+│   │                   ├── PostgresqlSequence.java
+│   │                   ├── Predicate.java
+│   │                   ├── Predicates.java
+│   │                   ├── SelectBuilder.java
+│   │                   ├── SelectCreator.java
+│   │                   ├── SubSelectBuilder.java
+│   │                   ├── SubSelectCreator.java
+│   │                   ├── Supplier.java
+│   │                   ├── UnionSelectCreator.java
+│   │                   ├── UniqueStringGenerator.java
+│   │                   ├── UpdateBuilder.java
+│   │                   ├── UpdateCreator.java
+│   │                   └── orm/
+│   │                       ├── ClassConverter.java
+│   │                       ├── Column.java
+│   │                       ├── Converter.java
+│   │                       ├── ConverterFactory.java
+│   │                       ├── DateTimeConverter.java
+│   │                       ├── DefaultConverter.java
+│   │                       ├── DefaultConverterFactory.java
+│   │                       ├── EnumStringConverter.java
+│   │                       ├── LocalDateConverter.java
+│   │                       ├── LocaleConverter.java
+│   │                       ├── Mapping.java
+│   │                       ├── OptimisticLockException.java
+│   │                       ├── OrmConfig.java
+│   │                       ├── ReflectionUtils.java
+│   │                       ├── RowNotFoundException.java
+│   │                       ├── StringConverter.java
+│   │                       ├── StringListConverter.java
+│   │                       ├── StringListFlattener.java
+│   │                       ├── StringMapConverter.java
+│   │                       ├── TimestampConverter.java
+│   │                       └── TooManyRowsException.java
+│   └── test/
+│       └── java/
+│           └── ca/
+│               └── krasnay/
+│                   └── sqlbuilder/
+│                       ├── AbstractSqlCreatorPublicTest.java
+│                       ├── AbstractSqlCreatorTest.java
+│                       ├── DeleteBuilderPublicTest.java
+│                       ├── DeleteBuilderTest.java
+│                       ├── InsertBuilderPublicTest.java
+│                       ├── InsertBuilderTest.java
+│                       ├── ParameterizedPreparedStatementCreatorPublicTest.java
+│                       ├── ParameterizedPreparedStatementCreatorTest.java
+│                       ├── PredicatePublicTest.java
+│                       ├── PredicateTest.java
+│                       ├── SelectBuilderPublicTest.java
+│                       ├── SelectBuilderTest.java
+│                       ├── SelectCreatorPublicTest.java
+│                       ├── SelectCreatorTest.java
+│                       ├── UniqueStringGeneratorPublicTest.java
+│                       ├── UniqueStringGeneratorTest.java
+│                       ├── UpdateBuilderPublicTest.java
+│                       ├── UpdateBuilderTest.java
+│                       └── orm/
+│                           ├── MappingPublicTest.java
+│                           ├── MappingTest.java
+│                           ├── ReflectionUtilsPublicTest.java
+│                           ├── ReflectionUtilsTest.java
+│                           ├── StringListConverterPublicTest.java
+│                           ├── StringListConverterTest.java
+│                           ├── StringListFlattenerPublicTest.java
+│                           ├── StringListFlattenerTest.java
+│                           ├── StringMapConverterPublicTest.java
+│                           └── StringMapConverterTest.java
+├── test_summary.json
+├── test_translation_progress.json
+└── tests/
+    └── original/
+        ├── AbstractSqlCreatorTests.cs
+        ├── DeleteBuilderTests.cs
+        ├── InsertBuilderTests.cs
+        ├── OriginalTests.csproj
+        ├── ParameterizedPreparedStatementCreatorTests.cs
+        ├── PredicateTests.cs
+        ├── SelectBuilderTests.cs
+        ├── SelectCreatorTests.cs
+        ├── UniqueStringGeneratorTests.cs
+        ├── UpdateBuilderTests.cs
+        └── orm/
+            ├── MappingTests.cs
+            ├── ReflectionUtilsTests.cs
+            ├── StringListConverterTests.cs
+            ├── StringListFlattenerTests.cs
+            └── StringMapConverterTests.cs

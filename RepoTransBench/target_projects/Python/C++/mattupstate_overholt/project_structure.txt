@@ -1,0 +1,54 @@
+project_root/
+├── CMakeLists.txt                        # CMake build configuration
+├── include/
+│   └── overholt/
+│       ├── settings.h                    # Core settings header (define settings values)
+│       ├── tasks.h                       # Core tasks header (email, etc.)
+│       ├── middleware.h                  # HTTP middleware implementation
+│       └── ...                           # (other headers as needed)
+├── src/
+│   ├── main.cpp                          # (optional main - not needed for tests)
+│   ├── lib/
+│   │   ├── ... (core library sources)    # Project sources
+│   └── ...                               #
+├── tests/
+│   ├── test_main.cpp                     # Test runner main()
+│   ├── original/
+│   │   ├── test_settings_test.cpp
+│   │   ├── test_middleware_test.cpp
+│   │   ├── test_tasks_test.cpp
+│   │   └── test_wsgi_test.cpp
+│   ├── api/
+│   │   ├── product_tests.cpp
+│   │   ├── store_tests.cpp
+│   │   ├── user_tests.cpp
+│   │   └── overholt_api_test_case.h      # (base API test case, helpers)
+│   ├── frontend/
+│   │   ├── dashboard_tests.cpp
+│   │   └── overholt_frontend_test_case.h # (base frontend test helpers)
+│   ├── factories.h                       # (test factories header)
+│   └── factories.cpp                     # (test factories implementation)
+├── public_tests/
+│   ├── test_public_settings_test.cpp
+│   ├── test_public_middleware_test.cpp
+│   ├── test_public_tasks_test.cpp
+│   └── test_public_wsgi_test.cpp
+├── run_tests.sh                          # One-click test runner script (build+run)
+├── README.md                             # Project documentation
+└── project_structure.txt                 # This structure and documentation
+
+Notes:
+- All real header/source/implementation files (src/lib/, include/overholt, etc.) must provide the minimal API/stubs required for the tests to compile and link to Google Test.
+- All original tests are located in tests/original/.
+- All public tests are located in public_tests/.
+- All API/Frontend tests and helpers are under tests/api/ and tests/frontend/.
+- tests/test_main.cpp boots all test cases (Google Test standard).
+- To add application/library sources: place them in src/lib/ and headers in include/overholt/.
+- Edit CMakeLists.txt to add any sources/headers as necessary.
+- See README.md for details.
+
+How to build and run tests:
+  $ chmod +x run_tests.sh
+  $ ./run_tests.sh
+
+Dependency: Google Test (GTest). If not installed, install via your system package manager, or build from source.

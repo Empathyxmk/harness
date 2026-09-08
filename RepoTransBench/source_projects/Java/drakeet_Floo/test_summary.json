@@ -1,0 +1,11 @@
+{
+  "project_name": "drakeet_Floo",
+  "language": "Java",
+  "coverage": {
+    "line": 50.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T19:19:44.072881",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/drakeet_Floo",
+  "test_result_path": "/workspace/test_enhancement_results/Java/drakeet_Floo"
+}

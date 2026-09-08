@@ -1,0 +1,35 @@
+eatonphil_pj Go project structure
+=================================
+
+.
+├── go.mod
+├── pj/
+│   ├── pj.go             # (your main library code goes here)
+│   ├── lexer/
+│   │   ├── lexer.go      # lexer implementation for pj (if structured)
+│   └── parser/
+│       ├── parser.go     # parser implementation for pj
+├── tests/
+│   └── original/
+│       ├── test_api_test.go     # Original test cases for pj API
+│       ├── test_lexer_test.go   # Original lexer tests
+│       ├── test_parser_test.go  # Original parser tests
+│       └── test_pj_test.go      # Original overall parser tests
+├── public_tests/
+│   ├── test_public_api_test.go     # Public API test cases for pj
+│   ├── test_public_lexer_test.go   # Public lexer tests
+│   ├── test_public_parser_test.go  # Public parser tests
+│   └── test_public_pj_test.go      # Public parsing/round-trip tests
+├── run_tests.sh               # Script for running all tests in the repo
+
+Instructions:
+-------------
+1. Put your Go code for pj under the pj/ directory as described above.
+2. To run all tests (both original and public): `./run_tests.sh`
+3. Tests are organized by original author tests (tests/original) and general/public (public_tests) as in the source repo.
+
+Notes:
+------
+- Add your implementation as needed under pj/ and its subfolders.
+- All tests can be run together and will be discovered by `go test ./...`.
+- Test files must be suffixed with _test.go to be run by Go's testing tool.

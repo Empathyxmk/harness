@@ -1,0 +1,21 @@
+project_root/
+├── README.md
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   └── original/
+│       ├── modeldownload_full_test.go
+│       ├── modelserving_full_test.go
+│       ├── modelfiles_full_test.go
+│       ├── modeldownload_test.go
+│       ├── modelfiles_test.go
+│       └── image_tests_test.go
+├── public_tests/
+│   ├── public_modelserving_full_test.go
+│   ├── public_modeldownload_test.go
+│   ├── public_modeldownload_full_test.go
+│   ├── public_modelfiles_full_test.go
+│   ├── public_modelfiles_test.go
+├── tests/testutil.go

@@ -1,0 +1,34 @@
+zsoltherpai_feather_csharp/
+├── src/
+│   └── Feather/
+│       ├── Feather.csproj
+│       ├── Program.cs (stub, or omitted if library)
+│       └── [Library Implementation Files - NOT GENERATED IN THIS BATCH]
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── ActivityTest.cs
+│       ├── TestApplication.cs
+│       ├── InjectionTest.cs
+│       ├── DependencyTest.cs
+│       ├── KeyTest.cs
+│       ├── SingletonTest.cs
+│       ├── TransitiveDependencyTest.cs
+│       ├── ProviderInjectionTest.cs
+│       ├── FieldInjectionTest.cs
+│       ├── ModuleOverrideTest.cs
+│       ├── NamedDependencyTest.cs
+│       ├── QualifiedDependencyTest.cs
+│       ├── CircularDependencyTest.cs
+│       ├── AmbiguousModuleTest.cs
+│       ├── PolymorphicDependencyTest.cs
+│       ├── PojoProvidedThroughModuleTest.cs
+│       └── StartupComparisonTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── DependencyPublicTest.cs
+│   └── InjectionPublicTest.cs
+├── zsoltherpai_feather.sln
+├── run_tests.sh
+├── test_translation_progress.json
+└── project_structure.txt

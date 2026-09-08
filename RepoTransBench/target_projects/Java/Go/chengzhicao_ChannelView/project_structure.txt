@@ -1,0 +1,30 @@
+chengzhicao_ChannelView/
+├── README.md                 # Project description and usage
+├── go.mod                    # Go module definition
+├── run_tests.sh              # One-click test runner
+├── project_structure.txt     # This file. Describes structure.
+├── main.go                   # (to be implemented as needed)
+├── module.go                 # (to be implemented as needed)
+├── tests/
+│   ├── testutil.go           # (Shared test utilities, empty for now)
+│   └── original/
+│       ├── example_unit_test.go           # Addition tests
+│       ├── example_instrumented_test.go   # App context package name checks (stubbed)
+│       ├── channel_test.go                # Channel logic unit tests (Go translation)
+│       └── default_style_adapter_test.go  # DefaultStyleAdapter logic stubbed tests
+├── public_tests/
+│   ├── example_unit_public_test.go        # Subtraction/multiplication public tests
+│   └── example_instrumented_public_test.go # Public package name/logic acceptance tests
+
+## Directory Explanations
+
+- `tests/original/` - All unit and logic tests ported from Java's original test sources.
+- `public_tests/`   - Ported public/acceptance tests as defined by public_test_summary.json.
+- `go.mod`          - Module dependencies for Go.
+- `run_tests.sh`    - One-click script for running all tests (executable).
+- `README.md`       - Overview and test instructions.
+
+## Setup & Testing
+
+1. [Install Go 1.21+](https://golang.org/dl/)
+2. Run: `./run_tests.sh`

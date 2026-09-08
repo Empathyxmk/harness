@@ -1,0 +1,48 @@
+Project Structure:
+
+.
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Script to run all tests
+├── src/
+│   └── incppect/
+│       ├── __init__.py             # Implementation stubs for incppect API (add, strlen_safe, DummyServer)
+├── tests/
+│   └── original/                   # Internal/original test cases translated from C++
+│       ├── __init__.py
+│       └── test_incppect.py        # All original test logic from tests/test_incppect.cpp
+├── public_tests/
+│   ├── __init__.py
+│   └── test_incppect_public.py     # All public test logic from tests/test_incppect_public.cpp
+├── project_structure.txt           # This file. Explains project contents and instructions.
+
+Directory explanations:
+
+src/incppect/:
+    Contains implementation code for the API and utilities required by the tests.
+
+tests/original/:
+    Contains translated original/internal (private) test cases.
+    Follows pytest conventions. Add more original tests here if needed.
+
+public_tests/:
+    Contains translated public test cases.
+    Follows pytest conventions. Add more public/shared test cases here if needed.
+
+requirements.txt:
+    Lists dependencies needed to run tests. Install with: pip install -r requirements.txt
+
+run_tests.sh:
+    One-click script to run ALL tests (original + public). Usage: ./run_tests.sh
+
+Instructions:
+--------------
+1. (Optional) Create and activate a virtualenv (recommended).
+2. Install required packages: pip install -r requirements.txt
+3. Run all tests: ./run_tests.sh
+   This will auto-find and run everything in tests/ and public_tests/ via pytest.
+
+Adding More Code:
+-----------------
+- Add production code to src/incppect/
+- Add or modify internal tests in tests/original/
+- Add or modify public tests in public_tests/

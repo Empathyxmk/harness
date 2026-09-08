@@ -1,0 +1,26 @@
+shabbirdwd53_Springboot-Microservice/
+├── go.mod                      # Go module definition
+├── run_tests.sh                # One-click test execution script
+├── project_structure.txt       # This file, explaining the structure
+├── tests/
+│   ├── original/
+│   │   ├── cloud_gateway_fallback_test.go   # All original test cases (including contextLoads and main coverage)
+│   │   └── testutil.go                     # Helper utilities (currently empty)
+├── public_tests/
+│   └── cloud_gateway_fallback_public_test.go  # All public test cases as per Java public tests
+└── README.md (not provided here, see below)
+
+Directory structure explanation:
+- go.mod: Defines the Go module and handles dependency management.
+- run_tests.sh: Simple script to run all tests with a single command. Usage: `./run_tests.sh`
+- project_structure.txt: Explains directory and file purposes.
+- tests/original/: Contains all original (private) tests translated from Java, including all context and coverage/test suite logic.
+- public_tests/: Contains translated public test(s) for the cloud gateway fallback controller.
+- tests/original/testutil.go: Placeholder for shared test utilities if needed.
+
+How to run tests:
+1. Install Go (>= 1.20).
+2. Open a shell in the project root.
+3. Run `chmod +x run_tests.sh` if not already executable.
+4. Run all tests: `./run_tests.sh`
+This will execute all tests in both `tests/original/` and `public_tests/`.

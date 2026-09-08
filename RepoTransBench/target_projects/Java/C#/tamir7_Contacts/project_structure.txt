@@ -1,0 +1,30 @@
+Project Structure for C# Ported Contacts Test Suite
+
+./
+├── src/
+│   └── Contacts/
+│       ├── Contacts.csproj         # Main C# project containing domain classes:
+│       ├── Email.cs                #   Email class
+│       ├── Event.cs                #   Event class
+│       ├── PhoneNumber.cs          #   PhoneNumber class
+│       └── Address.cs              #   Address class
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj    # Test project for original Java test ports
+│       ├── EmailTest.cs            # Original Email tests
+│       ├── EventTest.cs            # Original Event tests
+│       ├── PhoneNumberTest.cs      # Original PhoneNumber tests
+│       └── AddressTest.cs          # Original Address tests
+├── public_tests/
+│   ├── PublicTests.csproj          # Test project for public test set
+│   ├── EmailPublicTest.cs          # Public Email tests
+│   ├── EventPublicTest.cs          # Public Event tests
+│   ├── PhoneNumberPublicTest.cs    # Public PhoneNumber tests
+│   └── AddressPublicTest.cs        # Public Address tests
+├── run_tests.sh                    # Single script to run ALL tests
+├── README.md                       # Project overview and quick usage
+└── project_structure.txt           # (This file) Tree and explanation
+
+- All test projects use xUnit, standard for C#/.NET testing.
+- Run all tests with ./run_tests.sh for full CI check.
+- Add further domain classes to src/Contacts/ as needed.

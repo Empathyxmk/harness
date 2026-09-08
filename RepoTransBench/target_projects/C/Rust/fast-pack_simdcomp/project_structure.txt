@@ -1,0 +1,13 @@
+fast_pack_simdcomp/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   └── original/
+│       ├── test_example.rs
+│       └── test_utils.rs
+├── public_tests/
+│   ├── test_example_public.rs
+│   └── test_utils_public.rs
+├── run_tests.sh
+└── project_structure.txt

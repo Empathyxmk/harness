@@ -1,0 +1,23 @@
+project_root/
+├── Cargo.toml                          # Rust package manager and dependencies
+├── src/
+│   └── lib.rs                          # Core dummy module/re-implementation for test support
+├── tests/
+│   └── original/
+│       ├── test_flask_recaptcha.rs         # Translated from test_flask_recaptcha.py
+│       ├── test_flask_recaptcha_coverage.rs# Translated from test_flask_recaptcha_coverage.py
+│       └── test_flask_recaptcha_extra.rs   # Translated from test_flask_recaptcha_extra.py
+├── public_tests/
+│   ├── test_public_flask_recaptcha.rs      # Translated from test_public_flask_recaptcha.py
+│   ├── test_public_flask_recaptcha_coverage.rs # Translated from test_public_flask_recaptcha_coverage.py
+│   └── test_public_flask_recaptcha_extra.rs# Translated from test_public_flask_recaptcha_extra.py
+├── run_tests.sh                        # Simple script to run all tests via cargo test
+├── project_structure.txt               # This structure and mapping overview
+└── README.md                           # Project info and usage
+
+Notes:
+- All original Python test logic (input, output, edge cases) is represented in Rust.
+- All public test logic is in public_tests/.
+- src/lib.rs contains all mock structs for ReCaptcha & DEFAULTS needed by tests.
+- To run all tests: `./run_tests.sh`
+- Requires Rust (cargo) installed.

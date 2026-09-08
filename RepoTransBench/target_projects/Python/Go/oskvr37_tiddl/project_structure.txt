@@ -1,0 +1,27 @@
+oskvr37_tiddl/
+├── go.mod                          # Go module declaration and dependency file
+├── run_tests.sh                    # One-click script to run ALL tests in both tests/ and public_tests/
+├── README.md                       # Project usage and test instructions (to be provided)
+├── tests/
+│   ├── original/
+│   │   ├── test_api_test.go           # Go translation of tests/test_api.py
+│   │   ├── test_api_unit_test.go      # Go translation of tests/test_api_unit.py
+│   │   ├── test_config_unit_test.go   # Go translation of tests/test_config_unit.py
+│   │   ├── test_exceptions_unit_test.go # Go translation of tests/test_exceptions_unit.py
+│   │   ├── test_utils_test.go         # Go translation of tests/test_utils.py
+│   │   └── test_utils_unit_test.go    # Go translation of tests/test_utils_unit.py
+│   └── testutil.go                # Test helpers/utilities for the test suite
+├── public_tests/
+│   ├── test_public_api_test.go         # Go translation of public_tests/test_public_api.py
+│   ├── test_public_api_unit_test.go    # Go translation of public_tests/test_public_api_unit.py
+│   ├── test_public_config_unit_test.go # Go translation of public_tests/test_public_config_unit.py
+│   ├── test_public_exceptions_unit_test.go # Go translation of public_tests/test_public_exceptions_unit.py
+│   ├── test_public_utils_test.go       # Go translation of public_tests/test_public_utils.py
+│   └── test_public_utils_unit_test.go  # Go translation of public_tests/test_public_utils_unit.py
+└── tiddl/
+    ├── api.go                         # Go implementation for API logic (stub, real implementation needed)
+    ├── config.go                      # Go implementation for configuration handling (stub)
+    ├── exceptions.go                  # Go implementation for errors (stub)
+    ├── models/
+    │    └── resource.go               # Go data models (e.g. Track struct) (stub)
+    └── utils.go                       # Go utility functions (stub)

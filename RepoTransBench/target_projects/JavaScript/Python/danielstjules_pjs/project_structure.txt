@@ -1,0 +1,21 @@
+danielstjules_pjs_python/
+├── public_tests/                # Directory containing all generated public tests, translated from JavaScript
+│   ├── test_pjs_misc.py         # Tests for miscellaneous pjs functions, e.g. join, reverse
+│   ├── test_pjs_reduce.py       # Tests for array reduce-like functionality, e.g. product/min
+│   ├── test_pjs.py              # Tests for map/filter/reduce patterns
+│   └── test_utils.py            # Tests for common array utilities (every, find)
+├── requirements.txt             # Python dependencies (pytest for testing)
+├── run_tests.sh                 # Simple script to run all tests with pytest
+└── project_structure.txt        # This file - documents structure and contents
+
+Directory Explanations:
+- public_tests/: Contains all public tests, migrated from the JS project. Each file covers a specific suite: map/filter/reduce patterns, utility array functions, etc.
+- requirements.txt: Declares required Python packages; to install run `pip install -r requirements.txt`.
+- run_tests.sh: One-click testing. Run `chmod +x run_tests.sh` and then `./run_tests.sh` to execute all public tests in `public_tests/`.
+- project_structure.txt: Project structure outline and documentation.
+
+Setup & Testing Instructions:
+1. Install Python 3 and pip if not already available.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Make sure `run_tests.sh` is executable: `chmod +x run_tests.sh`
+4. Run all tests: `./run_tests.sh`

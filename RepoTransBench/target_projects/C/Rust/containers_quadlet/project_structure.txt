@@ -1,0 +1,22 @@
+containers_quadlet/
+├── Cargo.toml                  # Project configuration
+├── Cargo.lock                  # Dependency lock file (auto-generated)
+├── run_tests.sh                # Test execution script
+├── src/
+│   └── lib.rs                  # Library placeholder
+└── tests/
+    ├── mod.rs                  # Main test module
+    ├── original/
+    │   └── mod.rs              # Original tests module
+    ├── public/
+    │   └── mod.rs              # Public tests module
+    ├── test_podman.rs                   # Port of test-podman.c
+    ├── test_podman_public.rs            # Port of test-podman_public.c
+    ├── test_ranges.rs                   # Port of test-ranges.c
+    ├── test_ranges_public.rs            # Port of test-ranges_public.c
+    ├── test_utils.rs                    # Port of test-utils.c
+    ├── test_utils_public.rs             # Port of test-utils_public.c
+    ├── test_utils_extra.rs              # Port of test-utils-extra.c
+    ├── test_utils_extra_public.rs       # Port of test-utils-extra_public.c
+    ├── test_utils_extra_extra.rs        # Port of test-utils-extra-extra.c
+    └── test_utils_extra_extra_public.rs # Port of test-utils-extra-extra_public.c

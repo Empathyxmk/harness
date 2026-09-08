@@ -1,0 +1,28 @@
+alcover_stricks/
+├── src/
+│   ├── __init__.py           # Makes 'src' a Python package.
+│   ├── util.py               # Translated core utility functions from src/util.c (min, max, bit ops, string ops, load).
+│   └── stx.py                # Translated STX (Simple Text eXtensions) class from src/stx.c and src/stx.h.
+├── tests/
+│   ├── __init__.py           # Makes 'tests' a Python package.
+│   └── original/
+│       ├── __init__.py       # Makes 'original' a Python package.
+│       ├── test_util.py      # Translated original tests from src/test_util.c, testing functions in src/util.py.
+│       └── test_strings_data.py # Translated string constants from src/test_strings.c, for potential use in tests.
+├── public_tests/
+│   ├── __init__.py           # Makes 'public_tests' a Python package.
+│   └── test_stx_public.py    # Translated public tests from src/test_util_public.c, testing functionality in src/stx.py.
+├── requirements.txt          # Lists Python dependencies (e.g., pytest).
+├── run_tests.sh              # Bash script to run all Python tests using pytest.
+└── README.md                 # Placeholder for project documentation.
+
+This structure organizes the Python source code and test files following standard Python project conventions.
+- `src/` contains the core application logic.
+- `tests/original/` contains the translated original test cases.
+- `public_tests/` contains the translated public test cases.
+- `pytest` is used as the testing framework, which automatically discovers `test_*.py` files.
+
+To run the tests:
+1. Make the `run_tests.sh` script executable: `chmod +x run_tests.sh`
+2. Run the tests: `./run_tests.sh`
+This script will automatically install `pytest` if not found and then execute all discovered tests.

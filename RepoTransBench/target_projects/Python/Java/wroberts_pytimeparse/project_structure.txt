@@ -1,0 +1,25 @@
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── wroberts/
+│   │               └── pytimeparse/
+│   │                   └── [Java implementations would go here]
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── wroberts/
+│                   └── pytimeparse/
+│                       ├── original/
+│                       │   ├── TestSetupPy.java
+│                       │   ├── TestInit.java
+│                       │   └── TestTimeparseRegexes.java
+│                       └── publictests/
+│                           ├── PublicSetupPyTest.java
+│                           ├── PublicInitTest.java
+│                           ├── PublicTimeparseRegexesTest.java
+│                           └── PublicTimeparseApiTest.java
+└── project_structure.txt

@@ -1,0 +1,38 @@
+ParametricText C++ Project Structure
+-------------------------------------
+project_root/
+├── include/
+│   ├── paramparser.h     # C++ header port of paramparser.py
+│   └── paramformatter.h  # C++ header port of paramformatter.py
+├── src/
+│   └── lib/
+│       ├── paramparser.cpp   # C++ core logic for parameter parsing
+│       └── paramformatter.cpp# C++ core logic for parameter formatting
+├── tests/
+│   └── original/
+│       ├── test_paramparser.cpp   # Original internal logic tests (translation from test/test_paramparser.py)
+│       ├── test_paramformatter.cpp# Original internal logic tests (translation from test/test_paramformatter.py)
+│       └── parser_test.cpp        # Original internal logic/edge case tests (from test/parser_test.py)
+├── public_tests/
+│   ├── test_public_paramparser.cpp    # Public API/logic tests
+│   ├── test_public_paramformatter.cpp # Public API/logic tests
+│   └── test_public_parser.cpp         # Public API/logic tests
+├── CMakeLists.txt         # Project & test build configuration for CMake
+├── run_tests.sh           # Simple script to build & run all tests
+├── README.md              # (documentation to be added)
+├── project_structure.txt  # This structure explanation
+
+Directory Explanations:
+- include/:     Public header files for use by both library and tests
+- src/lib/:     Core source files implementing logic
+- tests/original/: Translations of 'test/' internal/original tests from Python codebase
+- public_tests/: Translations of public test cases from Python's public_tests/
+- CMakeLists.txt: Project and test build instructions; configures GoogleTest
+- run_tests.sh:  Simple build and all-tests-runner script
+- project_structure.txt: This file
+
+Setup and Testing Instructions:
+1. Install CMake and a C++ compiler.
+2. Run `chmod +x run_tests.sh` (if needed).
+3. Run all tests with a single command: `./run_tests.sh`.
+   - This will configure, build and run ALL tests (both original and public) using GoogleTest.

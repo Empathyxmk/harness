@@ -1,0 +1,12 @@
+{
+  "name": "foradian_fluxday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/sample.js",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1"
+  }
+}

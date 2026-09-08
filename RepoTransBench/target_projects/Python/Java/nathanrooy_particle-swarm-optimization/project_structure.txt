@@ -1,0 +1,17 @@
+project_root/
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── nathanrooy/
+│                   └── particle/
+│                       ├── CostFunctionsTest.java
+│                       ├── PsoSimpleTest.java
+│                       ├── PsoTest.java
+│                       └── publictests/
+│                           ├── PublicCostFunctionsTest.java
+│                           ├── PublicPsoSimpleTest.java
+│                           └── PublicPsoTest.java
+└── project_structure.txt

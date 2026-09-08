@@ -1,0 +1,33 @@
+project_root/
+├── CMakeLists.txt                  # Top-level CMake configuration
+├── README.md                       # Project documentation (if present)
+├── include/
+│   └── (for future public headers)
+├── src/
+│   └── lib/
+│       ├── medium.h                # Medium Client class declaration
+│       ├── medium.cpp              # Medium Client class stub implementation
+│       └── CMakeLists.txt          # CMake config for library build
+├── tests/
+│   ├── test_main.cpp               # Main runner for all tests
+│   ├── test_client.cpp             # Translated comprehensive Client tests
+│   └── original/
+│       └── test_extra_test.cpp     # Translated from original tests/test_extra.py
+├── public_tests/
+│   └── test_public_extra_test.cpp  # Translated from public_tests/test_public_extra.py
+├── run_tests.sh                    # Simple build-and-test script
+└── project_structure.txt           # This file: Project layout explanation
+
+Directory Explanations:
+- src/lib/           : Contains core C++ implementation and stub logic to allow tests to link/compile and pass (matches the tested API).
+- include/           : Placeholder for public headers (could be used in a real project for API headers).
+- tests/             : All test harness code and translated original tests. 'test_main.cpp' launches all GTest tests. tests/original/ holds original repo-only tests.
+- public_tests/      : Tests visible to/used for public assessment (translated from `public_tests/` Python).
+- run_tests.sh       : One-command test build and execution script.
+- CMakeLists.txt     : Top-level build definition using GoogleTest.
+- README.md          : Instructions/documentation (if provided).
+
+How to build and run tests:
+1. Install CMake and a C++ compiler (e.g., g++, clang++).
+2. Run: ./run_tests.sh
+   - This will build the project and run all tests. Output will indicate test results.

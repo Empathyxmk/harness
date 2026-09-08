@@ -1,0 +1,53 @@
+{
+  "project_name": "maxcountryman_flask-login",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:17:51.380842",
+  "original_path": "/workspace/verified_repos_v2/Python/maxcountryman_flask-login",
+  "public_test_result_path": "/workspace/public_test_results/Python/maxcountryman_flask-login",
+  "original_tests": {
+    "test_files": [
+      "src/flask_login/test_client.py",
+      "tests/test_about.py",
+      "tests/test_mixins.py",
+      "tests/test_login.py",
+      "tests/test_config.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_mixins.py",
+      "public_tests/test_public_about.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_config.py",
+      "public_tests/test_public_login.py",
+      "public_tests/test_public_client.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_mixins.py",
+    "public_tests/test_public_about.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_config.py",
+    "public_tests/test_public_login.py",
+    "public_tests/test_public_client.py",
+    "run_public_tests.sh"
+  ]
+}

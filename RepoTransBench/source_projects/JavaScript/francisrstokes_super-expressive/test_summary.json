@@ -1,0 +1,15 @@
+{
+  "project_name": "francisrstokes_super-expressive",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 93.75
+  },
+  "timestamp": "2025-06-19T10:27:45.119214",
+  "original_path": "/workspace/runnable_filter/JavaScript/francisrstokes_super-expressive",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/francisrstokes_super-expressive",
+  "tests_path": [
+    "index.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,34 @@
+secure_package_template_rust/
+├── Cargo.toml        # Rust crate manifest (dependencies, metadata, version string)
+├── README.md         # Project documentation, structure, and test instructions
+├── run_tests.sh      # Simple test execution script: runs all Rust tests with cargo test
+├── src/              
+│   ├── lib.rs        # Main library file (exports version and modules)
+│   ├── py.typed      # Marker file (for Python package type-checking simulation, for tests)
+│   ├── py_typed.rs   # Rust module for py.typed marker (empty marker, test-only)
+│   └── version.rs    # Version string module (__VERSION__)
+├── public_tests/     
+│   ├── test_public_secure_package_template.rs  # Public package/template API tests
+│   └── test_public_version.rs                  # Public version consistency/format tests
+└── tests/
+    ├── test_secure_package_template.rs         # Original package/template API tests
+    └── test_version.rs                        # Original version string/consistency tests
+
+# Directory/Module Purpose
+
+- src/         : All Rust library code. Exposes the version string and simulates Python's py.typed marker.
+- public_tests : Equivalent to public Python tests, but as Rust integration tests (cargo test discovers these).
+- tests/       : Original/internal (non-public) Rust tests.
+- Cargo.toml   : Project manifest (dependencies, name, version, etc.)
+- run_tests.sh : Simple script to run all the tests.
+- README.md    : Documentation and usage guide.
+
+# Setup and Testing Instructions
+
+1. Make sure Rust (cargo) is installed.
+2. To run all tests, execute:
+   $ ./run_tests.sh
+   # or
+   $ cargo test
+
+All tests in public_tests/ and tests/ will be executed.

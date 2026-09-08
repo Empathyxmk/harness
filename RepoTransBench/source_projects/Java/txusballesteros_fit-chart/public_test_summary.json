@@ -1,0 +1,56 @@
+{
+  "project_name": "txusballesteros_fit-chart",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:19:50.169695",
+  "original_path": "/workspace/verified_repos_v2/Java/txusballesteros_fit-chart",
+  "public_test_result_path": "/workspace/public_test_results/Java/txusballesteros_fit-chart",
+  "original_tests": {
+    "test_files": [
+      "FitChart/src/test/java/com/txusballesteros/widgets/LinearValueRendererTest.java",
+      "FitChart/src/test/java/com/txusballesteros/widgets/FakeClassesForTest.java",
+      "FitChart/src/test/java/com/txusballesteros/widgets/OverdrawValueRendererTest.java",
+      "FitChart/src/test/java/com/txusballesteros/widgets/RendererFactoryTest.java",
+      "FitChart/src/test/java/com/txusballesteros/widgets/BaseRendererTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "FitChart/src/test/java/com/txusballesteros/widgets/LinearValueRendererPublicTest.java",
+      "FitChart/src/test/java/com/txusballesteros/widgets/OverdrawValueRendererPublicTest.java",
+      "FitChart/src/test/java/com/txusballesteros/widgets/RendererFactoryPublicTest.java",
+      "FitChart/src/test/java/com/txusballesteros/widgets/BaseRendererPublicTest.java",
+      "FitChart/src/test/java/com/txusballesteros/widgets/FakeClassesForPublicTest.java",
+      "run_public_tests.sh",
+      "FitChart/run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "FitChart/run_public_tests.sh"
+    ],
+    "total_public_test_files": 7,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "FitChart/src/test/java/com/txusballesteros/widgets/LinearValueRendererPublicTest.java",
+    "FitChart/src/test/java/com/txusballesteros/widgets/OverdrawValueRendererPublicTest.java",
+    "FitChart/src/test/java/com/txusballesteros/widgets/RendererFactoryPublicTest.java",
+    "FitChart/src/test/java/com/txusballesteros/widgets/BaseRendererPublicTest.java",
+    "FitChart/src/test/java/com/txusballesteros/widgets/FakeClassesForPublicTest.java",
+    "run_public_tests.sh",
+    "FitChart/gradlew",
+    "FitChart/gradlew.bat",
+    "FitChart/run_public_tests.sh",
+    "FitChart/run_tests.sh"
+  ]
+}

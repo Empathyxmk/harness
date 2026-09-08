@@ -1,0 +1,20 @@
+.
+├── README.md
+├── go.mod
+├── calculator.go               # Calculator implementation (replaces Calculator.java)
+├── run_tests.sh                # Script to run all tests with a single command
+├── tests/
+│   └── original/
+│       └── calculator_test.go  # Original tests (from CalculatorTest.java)
+├── public_tests/
+│   └── calculator_public_test.go # Public tests (from CalculatorPublicTest.java)
+└── project_structure.txt       # This file - explains the layout
+
+Directory explanations:
+- calculator.go:      Main Calculator implementation (all operations, error handling)
+- tests/original/:    Contains original (private) test cases, direct translation from Java's CalculatorTest.java
+- public_tests/:      Contains public test cases, direct translation from CalculatorPublicTest.java
+- run_tests.sh:       Simple script to run all tests via go test ./...
+- go.mod:             Go module file for dependency tracking and module name
+- README.md:          Project usage, description, and test instructions
+- project_structure.txt:  This file; describes the project layout

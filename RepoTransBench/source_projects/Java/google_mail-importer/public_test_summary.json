@@ -1,0 +1,78 @@
+{
+  "project_name": "google_mail-importer",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:16:06.941252",
+  "original_path": "/workspace/verified_repos_v2/Java/google_mail-importer",
+  "public_test_result_path": "/workspace/public_test_results/Java/google_mail-importer",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/to/lean/tools/gmail/importer/MailProviderTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/ImporterTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/CommandLineArgumentsTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/FlagsModuleTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/IoProviderTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/gmail/UnsuccessfulResponseHandlerChainerTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/gmail/GmailServiceModuleTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/gmail/GmailSyncerTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/local/JavaxMailStorageTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/local/thunderbird/XMozillaStatusTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/local/thunderbird/ThunderbirdMailStorageTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/local/thunderbird/ThunderbirdLocalMessageTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 12,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/to/lean/tools/gmail/importer/CommandLineArgumentsPublicTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/MailProviderPublicTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/FlagsModulePublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/to/lean/tools/gmail/importer/gmail/UnsuccessfulResponseHandlerChainerPublicTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/IoProviderPublicTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/local/thunderbird/XMozillaStatusPublicTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/gmail/GmailServiceModulePublicTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/local/thunderbird/ThunderbirdLocalMessagePublicTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/local/thunderbird/ThunderbirdMailStoragePublicTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/local/JavaxMailStoragePublicTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/gmail/GmailSyncerPublicTest.java",
+      "src/test/java/to/lean/tools/gmail/importer/testing/ModuleTesterPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 15,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/to/lean/tools/gmail/importer/CommandLineArgumentsPublicTest.java",
+    "src/test/java/to/lean/tools/gmail/importer/MailProviderPublicTest.java",
+    "src/test/java/to/lean/tools/gmail/importer/FlagsModulePublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/to/lean/tools/gmail/importer/gmail/UnsuccessfulResponseHandlerChainerPublicTest.java",
+    "src/test/java/to/lean/tools/gmail/importer/IoProviderPublicTest.java",
+    "src/test/java/to/lean/tools/gmail/importer/local/thunderbird/XMozillaStatusPublicTest.java",
+    "src/test/java/to/lean/tools/gmail/importer/gmail/GmailServiceModulePublicTest.java",
+    "src/test/java/to/lean/tools/gmail/importer/local/thunderbird/ThunderbirdLocalMessagePublicTest.java",
+    "src/test/java/to/lean/tools/gmail/importer/local/thunderbird/ThunderbirdMailStoragePublicTest.java",
+    "src/test/java/to/lean/tools/gmail/importer/local/JavaxMailStoragePublicTest.java",
+    "src/test/java/to/lean/tools/gmail/importer/gmail/GmailSyncerPublicTest.java",
+    "src/test/java/to/lean/tools/gmail/importer/testing/ModuleTesterPublicTest.java",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

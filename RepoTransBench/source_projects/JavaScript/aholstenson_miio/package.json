@@ -1,0 +1,17 @@
+{
+  "name": "aholstenson_miio",
+  "version": "1.0.0",
+  "description": "Testable version of aholstenson_miio with coverage",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "yargs": "^17.7.2"
+  }
+}

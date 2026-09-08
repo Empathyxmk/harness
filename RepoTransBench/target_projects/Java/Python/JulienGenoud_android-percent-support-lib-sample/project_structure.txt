@@ -1,0 +1,21 @@
+JulienGenoud_android-percent-support-lib-sample (Python translation)
+├── requirements.txt            # Project dependencies (pytest)
+├── run_tests.sh                # One-click test runner
+├── src/
+│   └── percentsamples/
+│       ├── __init__.py
+│       └── percent_linear_layout.py   # Mock implementation for layout logic
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_application.py
+│       └── test_percent_linear_layout.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_application_public.py
+│   └── test_percent_linear_layout_public.py
+
+- Place source logic under src/ if expanding the mock implementation.
+- tests/original/ contains the translation of the Java original tests.
+- public_tests/ contains the translation of the Java public tests.
+- To run: first `pip install -r requirements.txt` then `./run_tests.sh`

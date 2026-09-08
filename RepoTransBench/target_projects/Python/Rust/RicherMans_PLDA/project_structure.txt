@@ -1,0 +1,17 @@
+richer_mans_plda/
+├── Cargo.toml
+├── run_tests.sh
+├── src/
+│   ├── lib.rs
+│   ├── extractdvector.rs
+│   ├── lda.rs
+│   └── plda.rs
+├── tests/
+│   └── original/
+│       ├── ldatest.rs
+│       ├── pldatest.rs
+│       └── test_extractdvector.rs
+├── public_tests/
+│   ├── test_public_extractdvector.rs
+│   ├── test_public_ldacomp.rs
+│   └── test_public_ldatest.rs

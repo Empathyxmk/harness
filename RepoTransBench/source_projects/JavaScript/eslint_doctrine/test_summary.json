@@ -1,0 +1,19 @@
+{
+  "project_name": "eslint_doctrine",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 99.3,
+    "branch": 97.6
+  },
+  "timestamp": "2025-06-19T10:21:20.438793",
+  "original_path": "/workspace/runnable_filter/JavaScript/eslint_doctrine",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/eslint_doctrine",
+  "tests_path": [
+    "test/midstream.js",
+    "test/parse.js",
+    "test/strict.js",
+    "test/stringify.js",
+    "test/unwrap.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

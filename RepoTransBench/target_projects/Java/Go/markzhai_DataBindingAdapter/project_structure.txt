@@ -1,0 +1,19 @@
+markzhai_DataBindingAdapter (Go version)
+├── go.mod                          # Go module definition with dependencies
+├── run_tests.sh                    # Simple one-click script to run all tests
+├── project_structure.txt           # This project structure and explanation file
+├── tests/
+│   ├── original/
+│   │   ├── baseview_adapter_test.go        # Original test for BaseViewAdapter
+│   │   ├── binding_viewholder_test.go      # Original test for BindingViewHolder
+│   │   ├── dummy_test.go                   # Original Dummy test (coverage)
+│   │   ├── multitype_adapter_test.go       # Original test for MultiTypeAdapter
+│   │   ├── singletype_adapter_test.go      # Original test for SingleTypeAdapter
+│   │   └── testutil.go                     # Minimal working adapter/source stubs for tests
+├── public_tests/
+│   ├── baseview_adapter_public_test.go     # Public test for BaseViewAdapter
+│   ├── binding_viewholder_public_test.go   # Public test for BindingViewHolder
+│   ├── dummy_public_test.go                # Public Dummy test (coverage)
+│   ├── multitype_adapter_public_test.go    # Public test for MultiTypeAdapter
+│   ├── singletype_adapter_public_test.go   # Public test for SingleTypeAdapter
+│   └── testutil.go                         # Minimal working adapter/source stubs for tests

@@ -1,0 +1,11 @@
+.
+├── go.mod                       # Go module definition
+├── README.md                    # Project description and instructions
+├── run_tests.sh                 # Run all tests in one click
+├── tests/
+│   └── original/
+│       ├── dnsdumpsterapi_test.go      # Translation of dnsdumpster/test_dnsdumpsterapi.py
+│       └── api_test.go                 # Translation of dnsdumpster/test_api.py
+├── public_tests/
+│   ├── public_api_test.go              # Translation of public_tests/test_public_api.py
+│   └── public_dnsdumpsterapi_test.go   # Translation of public_tests/test_public_dnsdumpsterapi.py

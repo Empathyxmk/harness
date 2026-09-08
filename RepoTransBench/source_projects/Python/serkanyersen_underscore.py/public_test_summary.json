@@ -1,0 +1,85 @@
+{
+  "project_name": "serkanyersen_underscore.py",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:23:22.858336",
+  "original_path": "/workspace/verified_repos_v2/Python/serkanyersen_underscore.py",
+  "public_test_result_path": "/workspace/public_test_results/Python/serkanyersen_underscore.py",
+  "original_tests": {
+    "test_files": [
+      "tests/test_objects.py",
+      "tests/test_structure.py",
+      "tests/test_functions.py",
+      "tests/test_utility.py",
+      "tests/test_arrays.py",
+      "tests/test_collections.py",
+      "tests/test_more_coverage.py",
+      "tests/test_basics.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_objects.py",
+      "public_tests/test_public_structure.py",
+      "public_tests/test_public_functions.py",
+      "public_tests/test_public_utility.py",
+      "public_tests/test_public_arrays.py",
+      "public_tests/test_public_collections.py",
+      "public_tests/test_public_more_coverage.py",
+      "public_tests/test_public_basics.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_arrays.py",
+      "public_tests/test_public_basics.py",
+      "public_tests/test_public_collections.py",
+      "public_tests/test_public_functions.py",
+      "public_tests/test_public_more_coverage.py",
+      "public_tests/test_public_objects.py",
+      "public_tests/test_public_structure.py",
+      "public_tests/test_public_utility.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 17,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_objects.py",
+    "public_tests/test_public_structure.py",
+    "public_tests/test_public_functions.py",
+    "public_tests/test_public_utility.py",
+    "public_tests/test_public_arrays.py",
+    "public_tests/test_public_collections.py",
+    "public_tests/test_public_more_coverage.py",
+    "public_tests/test_public_basics.py",
+    "run_public_tests.sh",
+    "tests/test_arrays.py",
+    "tests/test_basics.py",
+    "tests/test_collections.py",
+    "tests/test_functions.py",
+    "tests/test_more_coverage.py",
+    "tests/test_objects.py",
+    "tests/test_structure.py",
+    "tests/test_utility.py",
+    "public_tests/test_public_arrays.py",
+    "public_tests/test_public_basics.py",
+    "public_tests/test_public_collections.py",
+    "public_tests/test_public_functions.py",
+    "public_tests/test_public_more_coverage.py",
+    "public_tests/test_public_objects.py",
+    "public_tests/test_public_structure.py",
+    "public_tests/test_public_utility.py",
+    "src/underscore.py",
+    "src/__init__.py"
+  ]
+}

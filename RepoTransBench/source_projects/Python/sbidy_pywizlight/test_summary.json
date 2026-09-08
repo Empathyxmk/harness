@@ -1,0 +1,11 @@
+{
+  "project_name": "sbidy_pywizlight",
+  "language": "Python",
+  "coverage": {
+    "line": 82.5,
+    "branch": 77.7
+  },
+  "timestamp": "2025-06-19T12:29:39.533079",
+  "original_path": "/workspace/runnable_filter/Python/sbidy_pywizlight",
+  "test_result_path": "/workspace/test_enhancement_results/Python/sbidy_pywizlight"
+}

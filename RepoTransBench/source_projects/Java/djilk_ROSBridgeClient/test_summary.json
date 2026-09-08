@@ -1,0 +1,11 @@
+{
+  "project_name": "djilk_ROSBridgeClient",
+  "language": "Java",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-23T15:33:43.660930",
+  "original_path": "/workspace/runnable_filter/Java/djilk_ROSBridgeClient",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/djilk_ROSBridgeClient"
+}

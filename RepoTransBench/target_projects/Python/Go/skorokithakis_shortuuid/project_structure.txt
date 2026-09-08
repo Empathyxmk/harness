@@ -1,0 +1,43 @@
+skorokithakis_shortuuid Go Project Structure
+
+.
+├── go.mod                  # Go module definition file
+├── README.md               # Project documentation
+├── run_tests.sh            # Script to run all tests (chmod +x)
+├── main.go                 # Main package (placeholder or entrypoint)
+├── shortuuid/
+│   ├── shortuuid.go        # Main implementation (to be implemented)
+│   └── cli.go              # CLI implementation (to be implemented)
+├── tests/
+│   └── original/
+│       ├── cli_test.go                 # Original test cases for CLI
+│       ├── cli_argparse_errors_test.go # CLI error handling tests
+│       ├── django_fields_test.go       # Django field-like test cases (mocked)
+│       ├── main_additional_test.go     # Tests for additional main logic
+│       ├── main_branches_test.go       # Tests for additional logic branches
+│       ├── shortuuid_init_imports_test.go # Tests for import/init logic
+│       └── shortuuid_test.go           # Tests for ShortUUID logic
+├── public_tests/
+│   ├── cli_test.go                    # Public CLI test cases
+│   ├── cli_argparse_errors_test.go    # Public CLI error handling tests
+│   ├── django_fields_test.go          # Skipped public Django field tests
+│   ├── main_additional_test.go        # Public main additional logic
+│   ├── main_branches_test.go          # Public main branch handling
+│   ├── shortuuid_init_imports_test.go # Public init/import tests
+│   └── shortuuid_test.go              # Public ShortUUID logic tests
+└── project_structure.txt   # This file (explanation and directory tree)
+
+Directory Overview:
+-------------------
+- shortuuid/:      Go implementation of the package (to be implemented).
+- tests/original/: All "original" (full-coverage/internal) test cases from Python, translated to Go.
+- public_tests/:   All public-facing test cases, translated to Go.
+- run_tests.sh:    Runs all tests (Go standard). Make executable with `chmod +x run_tests.sh`.
+
+Setup:
+------
+1. Make sure Go is installed (Go >= 1.21 recommended).
+2. Install dependencies with `go mod tidy`.
+3. Run all tests with: `./run_tests.sh`
+
+All test logic translated 1:1 from the original Python source. Some "Django field" tests are skipped or simulated/mocked as appropriate for Go.

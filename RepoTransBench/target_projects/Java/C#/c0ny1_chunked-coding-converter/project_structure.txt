@@ -1,0 +1,15 @@
+/project_root/
+├── ProjectName.sln
+├── src/
+│   └── ProjectName/
+│       ├── ProjectName.csproj
+│       └── ChunkedCodingConverter.cs           # (Placeholder for the main implementation - not translated here)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       └── ChunkedCodingConverterTests.cs      # All original test cases
+├── public_tests/
+│   ├── PublicTests.csproj
+│   └── ChunkedCodingConverterPublicTests.cs    # All public test cases
+├── run_tests.sh
+└── test_translation_progress.json

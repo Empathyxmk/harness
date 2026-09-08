@@ -1,0 +1,30 @@
+injector/                          # source Python injector package (for test artifact checks)
+    __init__.py
+    py.typed
+main.go                            # (optional/app for Go, not required in this test conversion)
+go.mod                             # Go module definition file
+
+tests/                             # Go test root
+  original/                        # Translated from Python original/hidden tests
+    injector_test_test.go          # Original advanced module/dir tests (injector_test.py)
+    test_injector_init_test.go     # Check package file presence, attributes (test_injector_init.py)
+    test_setup_py_test.go          # Check setup.py as text (test_setup_py.py)
+
+public_tests/                      # All public tests from public_tests/
+    test_public_injector_test.go   # Public API test: binding, decorator, providers (test_public_injector.py)
+    test_public_injector_init_test.go # Public API module/init/representation type tests
+    test_public_setup_py_test.go   # Public API text-based setup.py tests
+
+run_tests.sh                       # One-click script to run all Go tests (chmod +x)
+go.sum                             # Go module dependency lock file (auto-generated)
+README.md                          # Project/user documentation and instructions
+project_structure.txt              # This file (structure explanation)
+
+# Directory explanations:
+# tests/original/      - All original/internal tests, direct Python logic port.
+# public_tests/        - All public API behavior translated, matches public_tests/* in Python.
+# run_tests.sh         - Run all Go tests with one command.
+# go.mod / go.sum      - Go modules/deps files.
+# injector/            - Python test artifacts, not Go source, but tested via Go (file presence, etc.).
+
+# To run all tests: ./run_tests.sh

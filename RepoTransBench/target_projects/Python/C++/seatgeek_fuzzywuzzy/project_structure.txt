@@ -1,0 +1,49 @@
+seatgeek_fuzzywuzzy C++ Project Structure
+
+project_root/
+├── src/
+│   ├── main.cpp
+│   └── fuzzywuzzy/
+│       ├── fuzz.cpp
+│       ├── fuzz.h
+│       ├── process.cpp
+│       ├── process.h
+│       ├── utils.cpp
+│       ├── utils.h
+│       ├── StringMatcher.cpp
+│       ├── StringMatcher.h
+│       └── string_processing.cpp
+│       └── string_processing.h
+├── include/
+│   ├── fuzz.h
+│   ├── process.h
+│   ├── utils.h
+│   ├── StringMatcher.h
+│   └── string_processing.h
+├── tests/
+│   ├── original/
+│   │   ├── test_fuzzywuzzy.cpp
+│   │   ├── test_fuzzywuzzy_pytest.cpp
+│   │   ├── test_fuzzywuzzy_hypothesis.cpp
+│   │   ├── test_utils_and_stringmatcher.cpp
+│   │   └── test_process_py.cpp
+├── public_tests/
+│   ├── test_public_fuzzywuzzy.cpp
+│   ├── test_public_fuzzywuzzy_pytest.cpp
+│   ├── test_public_fuzzywuzzy_hypothesis.cpp
+│   ├── test_public_utils_and_stringmatcher.cpp
+│   └── test_public_process_py.cpp
+├── tests/test_main.cpp
+├── CMakeLists.txt
+├── run_tests.sh
+└── README.md
+
+- src/: Source code files (could include core logic and library implementation).
+- include/: Header files for public interface of core modules.
+- tests/original/: Translated original Python tests as C++ GoogleTest files.
+- public_tests/: Translated public Python tests as C++ GoogleTest files.
+- tests/test_main.cpp: Single entry point for all tests.
+- run_tests.sh: Bash script to configure, build, and run the tests with a single command.
+- CMakeLists.txt: CMake build configuration.
+- project_structure.txt: This file.
+- README.md: Setup and general usage documentation.

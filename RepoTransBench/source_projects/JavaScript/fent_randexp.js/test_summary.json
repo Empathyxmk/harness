@@ -1,0 +1,19 @@
+{
+  "project_name": "fent_randexp.js",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:24:25.198885",
+  "original_path": "/workspace/runnable_filter/JavaScript/fent_randexp.js",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/fent_randexp.js",
+  "tests_path": [
+    "test/custom-max-test.js",
+    "test/custom-prng-test.js",
+    "test/custom-range-test.js",
+    "test/main-test.js",
+    "test/sugar-test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

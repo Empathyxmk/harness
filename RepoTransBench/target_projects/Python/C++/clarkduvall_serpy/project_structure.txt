@@ -1,0 +1,31 @@
+clarkduvall_serpy/
+├── CMakeLists.txt                # CMake configuration for building and running tests (uses Google Test)
+├── LICENSE
+├── README.rst
+├── benchmarks/                   # Python benchmarks (source, not used by C++ version)
+├── docs/                         # Documentation (from Python version; reference)
+├── include/
+│   └── (empty/ or put library headers here)
+├── public_tests/
+│   ├── test_public_fields.cpp    # Translated public test: fields functionality (C++)
+│   ├── test_public_integration.cpp # Translated public test: integration scenarios (C++)
+│   └── test_public_serializer.cpp # Translated public test: serializer logic (C++)
+├── run_tests.sh                  # One-click build & test execution script
+├── serpy/                        # Python sources (reference: not part of C++ build)
+├── setup.py                      # Python build, ignore in C++
+├── tests/
+│   ├── obj.h                     # Emulates test obj used by tests (C++)
+│   ├── original/
+│   │   ├── test_fields.cpp       # Original test fields (C++)
+│   │   ├── test_integration.cpp  # Original integration tests (C++)
+│   │   └── test_serializer.cpp   # Original serializer tests (C++)
+│   └── test_main.cpp             # Main for all GTest suites
+└── tox.ini                       # Python tool config (reference)
+
+# Directory/Files Explanation:
+# - CMakeLists.txt: Defines build rules. GTest is required (install via apt or vcpkg/conan as needed).
+# - tests/original/: C++ translations of official/original project test cases.
+# - public_tests/: C++ translations of public "sample" tests.
+# - tests/obj.h: Simple "Obj" struct/class to support translated tests.
+# - run_tests.sh: Build+run C++ test suite in a single step.
+# - project_structure.txt: This file.

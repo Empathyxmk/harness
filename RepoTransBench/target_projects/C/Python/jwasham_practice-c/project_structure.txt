@@ -1,0 +1,34 @@
+.
+├── README.md
+├── requirements.txt                    # Python dependencies (pytest)
+├── run_tests.sh                        # Simple test runner for all tests
+├── project_structure.txt               # This file (structure and directory purpose description)
+├── src/
+│   └── __init__.py                     # (Empty placeholder for shared code)
+├── tests/
+│   ├── __init__.py
+│   ├── test_bit_manipulation.py                 # original: bit_manipulation/tests/test_bit_manipulation.c
+│   ├── test_bst.py                              # original: binary_search_tree/tests/test_bst.c
+│   ├── test_reverse_words.py                    # original: experiments/tests/test_reverse_words.c
+│   ├── test_bitsort.py                          # original: interview/tests/test_bitsort.c
+│   ├── test_quick_sort_helpers.py                # original: quick_sort/test_sort.c and test_sort.h
+│   ├── test_merge_sort_helpers.py                # original: merge_sort/test_merge_sort.c and test_merge_sort.h
+│   ├── test_hash_table.py                       # original: hash_table/tests.c
+│   ├── test_linked_lists.py                     # original: linked_lists/tests.c
+│   ├── test_queue_linked_list.py                # original: queue_linked_list/tests_queue_linked_list.c
+│   ├── test_queue_array.py                      # original: queue_array/tests_queue_array.c
+│   ├── test_linked_lists_redo.py                # original: linked_lists_redo/tests.c
+│   └── (other test implementation files as needed)
+└── public_tests/
+    ├── __init__.py
+    ├── test_bit_manipulation_public.py           # public: bit_manipulation/tests/test_bit_manipulation_public.c
+    └── test_bst_public.py                        # public: binary_search_tree/tests/test_bst_public.c
+
+# Directory Explanations:
+# src/             - (empty) reserved for modular code, if desired/needed
+# tests/           - Translated original unabridged tests, matching C test scenarios
+# public_tests/    - Translated public test files as per public_test_summary.json
+# requirements.txt - Python package dependencies (pytest, etc)
+# run_tests.sh     - Shell script to run all tests in both suites
+# README.md        - Usage and instructions
+# project_structure.txt - This reference documentation

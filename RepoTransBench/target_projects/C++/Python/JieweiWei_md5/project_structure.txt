@@ -1,0 +1,36 @@
+JieweiWei_md5 Python Translation Project Structure
+
+├── requirements.txt
+│     # → Python dependencies (pytest for testing)
+├── run_tests.sh
+│     # → Bash script to run all tests (one-click)
+├── project_structure.txt
+│     # → This structure/documentation file
+├── src/
+│     # → (Not implemented here, for MD5 code, e.g., src/md5.py)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_md5.py
+│           # → Full translation of test/test.cpp (original, comprehensive test logic)
+└── public_tests/
+    ├── __init__.py
+    └── test_md5_public.py
+        # → Translation of test/public_test.cpp (public simple correctness tests)
+
+Explanations:
+- `requirements.txt`   : Lists Python dependencies (pytest for CI and local test running).
+- `run_tests.sh`       : Single-command test runner. Runs pytest over all tests.
+- `src/`               : Placeholder for MD5 source implementation (Not provided here).
+- `tests/original/`    : Comprehensive/"private" tests from original test.cpp. Ensures deep coverage; may use more internals.
+- `public_tests/`      : Public/simple test cases for external, basic verification.
+- `__init__.py`        : Ensures tests are in modules; not required but included for completeness.
+- `project_structure.txt` : This explanation and structure document.
+
+Instructions:
+1. Implement or copy your MD5 class or function in `src/`, e.g. `src/md5.py`, so that `from src.md5 import MD5` works.
+2. (Optional) Remove/replace the mock MD5 classes in both `test_md5.py` and `test_md5_public.py` with your actual implementation.
+3. Install test dependencies: `pip install -r requirements.txt`
+4. Run all tests: `./run_tests.sh`
+5. Tests are organized into original and public folders for clarity and coverage separation.

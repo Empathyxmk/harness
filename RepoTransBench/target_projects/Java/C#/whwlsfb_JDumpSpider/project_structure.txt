@@ -1,0 +1,38 @@
+whwlsfb_JDumpSpider/                        # Project root
+├── whwlsfb_JDumpSpider.sln                 # .NET solution file for the project
+├── run_tests.sh                            # Run all tests in all test projects at once
+├── src/                                    # Source code directory
+│   └── whwlsfb_JDumpSpider/
+│       ├── whwlsfb_JDumpSpider.csproj      # Core project file
+│       ├── ISpider.cs                      # ISpider interface
+│       ├── IHeapHolder.cs                  # IHeapHolder interface
+│       ├── Main.cs                         # Main core class
+│       └── spider/
+│           ├── DataSource04.cs             # DataSource04 spider
+│           └── EnvProperty01.cs            # EnvProperty01 spider
+├── tests/
+│   └── original/                           # Directory for original (full) tests
+│       ├── OriginalTests.csproj            # xUnit test project for original tests
+│       ├── MainTests.cs                    # Tests for Main functionality
+│       ├── DataSource04Tests.cs            # Original DataSource04 tests
+│       └── EnvProperty01Tests.cs           # Original EnvProperty01 tests
+├── public_tests/
+│   ├── PublicTests.csproj                  # xUnit test project for public (subset) tests
+│   ├── MainPublicTests.cs                  # Public test for Main
+│   ├── DataSource04PublicTests.cs          # Public DataSource04 tests
+│   └── EnvProperty01PublicTests.cs         # Public EnvProperty01 tests
+
+# Build and test instructions:
+# 1. Run `dotnet restore` in the project root to restore all dependencies.
+# 2. Use `dotnet build whwlsfb_JDumpSpider.sln` to build all projects.
+# 3. Run all tests with `./run_tests.sh` or `dotnet test whwlsfb_JDumpSpider.sln`.
+# 4. Or test individual suites:
+#    - `dotnet test tests/original/OriginalTests.csproj`
+#    - `dotnet test public_tests/PublicTests.csproj`
+
+# Directory explanations:
+# - src/whwlsfb_JDumpSpider/: Core business code (interfaces, main logic, spidery classes).
+# - tests/original/: Full original tests, one-for-one translated from existing Java tests.
+# - public_tests/: Public tests, translated from the `*PublicTest.java` Java files, suitable for public validation or samples.
+# - run_tests.sh: Simple script to execute all test projects.
+# - whwlsfb_JDumpSpider.sln: Main solution file tying all projects together.

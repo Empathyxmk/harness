@@ -1,0 +1,66 @@
+7ossam81_EvoloPy-cpp/
+├── CMakeLists.txt
+├── include/
+│   ├── benchmarks.h
+│   ├── optimizer.h
+│   ├── plot_boxplot.h
+│   ├── plot_convergence.h
+│   └── solution.h
+├── src/
+│   ├── benchmarks.cpp
+│   ├── optimizer.cpp
+│   ├── plot_boxplot.cpp
+│   ├── plot_convergence.cpp
+│   └── main.cpp
+├── tests/
+│   ├── original/
+│   │   ├── test_benchmarks_edge.cpp
+│   │   ├── test_benchmarks.cpp
+│   │   ├── test_optimizer.cpp
+│   │   ├── test_plot_boxplot.cpp
+│   │   ├── test_plot_convergence.cpp
+│   │   ├── test_plot_convergence_edge.cpp
+│   │   ├── test_setup_py.cpp
+│   │   └── test_optimizers/
+│   │       ├── test_BAT.cpp
+│   │       ├── test_CS.cpp
+│   │       ├── test_DE.cpp
+│   │       ├── test_FFA.cpp
+│   │       ├── test_GA.cpp
+│   │       ├── test_GWO.cpp
+│   │       ├── test_HHO.cpp
+│   │       ├── test_JAYA.cpp
+│   │       ├── test_MFO.cpp
+│   │       ├── test_MVO.cpp
+│   │       ├── test_PSO.cpp
+│   │       ├── test_SCA.cpp
+│   │       ├── test_SSA.cpp
+│   │       ├── test_WOA.cpp
+│   │
+│   └── test_main.cpp
+├── public_tests/
+│   ├── test_benchmarks_edge_public.cpp
+│   ├── test_benchmarks_public.cpp
+│   ├── test_optimizer_public.cpp
+│   ├── test_plot_boxplot_public.cpp
+│   ├── test_plot_convergence_edge_public.cpp
+│   ├── test_plot_convergence_public.cpp
+│   ├── test_setup_py_public.cpp
+│   └── test_optimizers/
+│       ├── test_BAT_public.cpp
+│       ├── test_CS_public.cpp
+│       ├── test_DE_public.cpp
+│       ├── test_FFA_public.cpp
+│       ├── test_GA_public.cpp
+│       ├── test_GWO_public.cpp
+│       ├── test_HHO_public.cpp
+│       ├── test_JAYA_public.cpp
+│       ├── test_MFO_public.cpp
+│       ├── test_MVO_public.cpp
+│       ├── test_PSO_public.cpp
+│       ├── test_SCA_public.cpp
+│       ├── test_SSA_public.cpp
+│       ├── test_WOA_public.cpp
+├── README.md
+├── run_tests.sh
+├── test_translation_progress.json

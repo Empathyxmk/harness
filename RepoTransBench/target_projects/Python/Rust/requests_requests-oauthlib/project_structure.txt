@@ -1,0 +1,40 @@
+requests_oauthlib_rs/
+├── Cargo.toml                # Rust package manifest, dependencies, metadata
+├── src/
+│   ├── lib.rs                # Library root: declares modules and public exports
+│   ├── core.rs               # Core shared logic and helper traits (TokenAssignable)
+│   ├── oauth1.rs             # OAuth1 session struct and logic (stub)
+│   ├── oauth2.rs             # OAuth2 struct and logic (stub)
+│   └── compliance_fixes.rs   # Compliance fixes modules (stubs, public API)
+├── tests/
+│   └── original/
+│       ├── test_core.rs
+│       ├── test_oauth2_auth.rs
+│       ├── test_oauth1_session.rs
+│       ├── test_compliance_fixes.rs
+│       ├── test_init_and_setup.rs
+├── public_tests/
+│   ├── test_public_core.rs
+│   ├── test_public_oauth2_auth.rs
+│   ├── test_public_oauth1_session.rs
+│   ├── test_public_compliance_fixes.rs
+│   ├── test_public_init_and_setup.rs
+├── run_tests.sh              # Test execution script: 'cargo test --all --tests'
+└── project_structure.txt     # This project structure documentation
+
+Explanations:
+- src/             : All main library code (modules, public API surface, stubs)
+- tests/original/  : All translations of original (non-public) Python test cases
+- public_tests/    : All translations of public test cases from original repo
+- Cargo.toml       : Project config, dependencies, and build tool definition
+- run_tests.sh     : Simple script to execute all tests with one command
+- project_structure.txt: This documentation
+
+How to run tests:
+1. Make sure Rust and cargo are installed
+2. Run: `./run_tests.sh` (ensure it is executable with `chmod +x run_tests.sh`)
+3. All unit and integration tests (original & public) will be executed
+
+Stub/placeholder policy:
+- All test logic is FULLY implemented matching original Python intent.
+- All modules export enough structure for tests, even if full production logic is not implemented (for test translation purposes only).

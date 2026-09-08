@@ -1,0 +1,39 @@
+project_root/
+├── requirements.txt                 # Python dependencies (pytest)
+├── run_tests.sh                     # Simple script to run all tests
+├── public_tests/                    # Directory for PUBLIC (student/user) test cases
+│   ├── __init__.py
+│   ├── test_app_example_public_unit.py
+│   ├── test_library_example_public_unit.py
+│   ├── test_myimageloader_public.py
+│   ├── test_scrollviewcontainer_public.py
+│   ├── test_statusbarview_public.py
+│   └── test_circleimageview_public.py
+├── tests/
+│   └── original/                    # Directory for original/hidden/internal test cases
+│       ├── __init__.py
+│       ├── test_app_application.py
+│       ├── test_app_example_unit.py
+│       ├── test_circleimageview.py
+│       ├── test_library_application.py
+│       ├── test_library_example_unit.py
+│       ├── test_myimageloader.py
+│       ├── test_scrollviewcontainer.py
+│       └── test_statusbarview.py
+
+Explanation:
+- requirements.txt         : Lists dependencies (pytest for testing)
+- run_tests.sh            : Runs all tests (original and public) with one command
+- tests/original/         : Contains complete translations of ALL the original/hidden test cases
+- public_tests/           : Contains translations of ALL public test cases for user-facing testing
+- All test logic, assertions, and behaviors are faithfully replicated from the Java original
+
+How to set up & test:
+1. Ensure Python 3 and pip are installed.
+2. Install dependencies:
+      pip install -r requirements.txt
+3. Run all tests:
+      ./run_tests.sh
+   Or run only public or original tests:
+      pytest public_tests/
+      pytest tests/original/

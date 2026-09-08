@@ -1,0 +1,15 @@
+{
+  "project_name": "fossasia_knitserver",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:26:28.711894",
+  "original_path": "/workspace/runnable_filter/JavaScript/fossasia_knitserver",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/fossasia_knitserver",
+  "tests_path": [
+    "src/example.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,78 @@
+garethjns_Kaggle-EEG/
+├── @cvPart/
+│   └── cvPart.m
+├── @featuresObject/
+│   ├── extractBandsLin.m
+│   ├── extractChannelCorrelationF.m
+│   ├── extractChannelCorrelationT.m
+│   ├── extractHillBands.m
+│   ├── extractSumm3.m
+│   └── featuresObject.m
+├── @seizureModel/
+│   └── seizureModel.m
+├── Images/
+│   ├── FeaturesExtracted.png
+│   ├── ModelStructure.png
+│   ├── RawData.png
+│   ├── folderStructure.png
+│   └── folderStructure3.png
+├── Master61SVMgRBTg.csv
+├── compareModels.m
+├── copyTestLeakToTrain.m
+├── predict.m
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── __init__.py
+│   ├── testCompareModels_public.m
+│   ├── testCvPart_public.m
+│   ├── testFeaturesObject_public.m
+│   ├── testSaveSub_public.m
+│   ├── testSeizureModel_public.m
+│   ├── testSetParams_public.m
+│   ├── testZscore2_public.m
+│   ├── test_compare_models_public.py
+│   ├── test_cv_part_public.py
+│   ├── test_features_object_public.py
+│   ├── test_save_sub_public.py
+│   ├── test_seizure_model_public.py
+│   ├── test_set_params_public.py
+│   └── test_zscore2_public.py
+├── readme.md
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── saveSub.m
+├── setParams.m
+├── src/
+│   └── eeg_kaggle/
+│       ├── __init__.py
+│       ├── compare_models.py
+│       ├── cv_part.py
+│       ├── features_object.py
+│       ├── save_sub.py
+│       ├── seizure_model.py
+│       ├── set_params.py
+│       └── zscore2.py
+├── testRun.m
+├── test_summary.json
+├── tests/
+│   ├── __init__.py
+│   ├── testCompareModels.m
+│   ├── testCvPart.m
+│   ├── testFeaturesObject.m
+│   ├── testSaveSub.m
+│   ├── testSeizureModel.m
+│   ├── testSetParams.m
+│   ├── testZscore2.m
+│   ├── test_compare_models.py
+│   ├── test_cv_part.py
+│   ├── test_features_object.py
+│   ├── test_save_sub.py
+│   ├── test_seizure_model.py
+│   ├── test_set_params.py
+│   └── test_zscore2.py
+├── train.m
+├── trainModels.m
+├── train_and_test_data_labels_safe.csv
+└── zscore2.m

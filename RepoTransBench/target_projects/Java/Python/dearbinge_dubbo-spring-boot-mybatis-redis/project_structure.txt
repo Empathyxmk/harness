@@ -1,0 +1,19 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_HttpSessionConfig.py
+│   │   ├── test_ParkingSpotDataTrans.py
+│   │   └── test_ParkingBasicDataSync.py
+│   └── test_summary.json
+├── public_tests/
+│   ├── __init__.py
+│   ├── public_test_summary.json
+│   ├── test_HttpSessionConfigPublic.py
+│   ├── test_ParkingSpotDataTransPublic.py
+│   └── test_ParkingBasicDataSyncPublic.py

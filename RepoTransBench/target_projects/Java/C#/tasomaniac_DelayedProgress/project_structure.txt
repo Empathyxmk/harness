@@ -1,0 +1,28 @@
+tasomaniac_DelayedProgress_CSharp/
+├── ProjectName.sln
+├── src/
+│   └── ProjectName/
+│       ├── ProjectName.csproj
+│       └── (Put translated DelayedProgressBar, DelayedProgressDialog, and helpers here)
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj
+│       ├── DelayedProgressBarTests.cs
+│       └── DelayedProgressDialogTests.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── DelayedProgressBarPublicTests.cs
+│   └── DelayedProgressDialogPublicTests.cs
+├── run_tests.sh
+└── README.md
+
+- src/ProjectName: Source code for the ported library (implement as needed for test compilation and running)
+- tests/original: C# xUnit test project for private/original test cases (translated from Java)
+- public_tests: C# xUnit test project for public test cases (translated from Java)
+- run_tests.sh: Simple script to run all tests
+- ProjectName.sln: Solution file gluing together library and tests
+- README.md: Usage, build, and test instructions
+
+To run all tests:  
+1. Make sure dotnet is installed (`dotnet --version`)  
+2. From project root: `./run_tests.sh`

@@ -1,0 +1,21 @@
+project_root/
+├── CMakeLists.txt
+├── include/
+│   └── pso/
+│       ├── cost_functions.h
+│       └── pso_simple.h
+├── public_tests/
+│   ├── test_public_cost_functions.cpp
+│   ├── test_public_pso.cpp
+│   ├── test_public_pso_simple.cpp
+├── src/
+│   └── pso/
+│       ├── cost_functions.cpp
+│       └── pso_simple.cpp
+├── tests/
+│   ├── test_cost_functions.cpp
+│   ├── test_pso.cpp
+│   ├── test_pso_simple.cpp
+│   └── test_main.cpp
+├── run_tests.sh
+└── test_translation_progress.json

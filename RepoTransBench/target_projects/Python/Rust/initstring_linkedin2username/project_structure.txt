@@ -1,0 +1,20 @@
+linkedin2username/           # root cargo project (crate)
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── main.rs
+├── tests/
+│   └── original/
+│       ├── test_georegions.rs
+│       ├── test_linkedin2username.rs
+│       ├── test_import_python.rs
+│       ├── test_namemutator.rs
+│       └── test_linkedin2username_minimal.rs
+├── public_tests/
+│   ├── test_public_linkedin2username_minimal.rs
+│   ├── test_public_georegions.rs
+│   ├── test_public_linkedin2username.rs
+│   ├── test_public_import_python.rs
+│   └── test_public_namemutator.rs
+├── run_tests.sh
+└── project_structure.txt

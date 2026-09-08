@@ -1,0 +1,20 @@
+trailofbits_protofuzz/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs                  # Contains Rust module shims for protofuzz, values, gen, log, pbimport
+│   └── main.rs                 # Main binary stub
+├── tests/
+│   └── original/
+│       ├── test_protofuzz.rs
+│       ├── test_values.rs
+│       ├── test_gen.rs
+│       ├── test_log.rs
+│       ├── test_pbimport.rs
+│       └── test.proto
+├── public_tests/
+│   ├── test_public_protofuzz.rs
+│   ├── test_public_values.rs
+│   ├── test_public_gen.rs
+│   ├── test_public_log.rs
+│   └── test_public_pbimport.rs
+├── run_tests.sh                # One-click test runner for all Rust tests

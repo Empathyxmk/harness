@@ -1,0 +1,12 @@
+esonhugh_sshd_backdoor/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── main.rs
+├── tests/
+│   └── original/
+│       └── test_main.rs
+├── public_tests/
+│   └── test_main_public.rs
+├── run_tests.sh
+└── project_structure.txt

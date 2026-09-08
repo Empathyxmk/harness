@@ -1,0 +1,10 @@
+linked_list_good_taste/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   └── original/
+│       └── list_tests.rs
+├── public_tests/
+│   └── list_public_tests.rs
+├── run_tests.sh

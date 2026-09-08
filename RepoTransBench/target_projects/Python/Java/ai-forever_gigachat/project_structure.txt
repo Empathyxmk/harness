@@ -1,0 +1,52 @@
+.
+├── LICENSE
+├── Makefile
+├── README.md
+├── coverage.xml
+├── examples/
+│   ├── README.md
+│   ├── ai_check.ipynb
+│   ├── example_ask.py
+│   ├── example_auth_certs_mtls.py
+│   ├── example_contextvars.py
+│   ├── example_embeddings.py
+│   ├── example_functions.py
+│   ├── example_get_image.py
+│   ├── example_russian_trusted_root_ca.py
+│   ├── example_tokens.py
+│   ├── simple_chat.py
+│   ├── simple_chat_with_images.ipynb
+│   ├── streaming_asyncio.py
+│   └── vision/
+│       ├── cat.jpg
+│       └── vision.ipynb
+├── htmlcov/
+│   └── ... (coverage HTML output)
+├── pom.xml
+├── run_tests.sh
+└── src/
+    └── test/
+        └── java/
+            └── com/
+                └── aiforever/
+                    └── gigachat/
+                        ├── original/
+                        │   ├── AssistantsTest.java
+                        │   ├── ExamplesTest.java
+                        │   ├── PublicThreadsTest.java
+                        │   ├── PublicEmbeddingTest.java
+                        │   ├── PublicFilesTest.java
+                        │   ├── PublicFunctionTest.java
+                        │   ├── PublicUtilsTest.java
+                        │   ├── PublicBalanceTest.java
+                        │   └── PublicTokenTest.java
+                        └── publicapi/
+                            ├── PublicApiTest.java
+                            ├── PublicAuthTest.java
+                            ├── PublicChatTest.java
+                            ├── PublicEmbeddingsTest.java
+                            ├── PublicImagesTest.java
+                            ├── PublicMessagesTest.java
+                            ├── PublicModelsTest.java
+                            ├── PublicTokensTest.java
+                            └── PublicUsageTest.java

@@ -1,0 +1,13 @@
+{
+  "name": "danharper_handlebars-helpers",
+  "version": "1.0.0",
+  "main": "src/helpers.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "handlebars": "^4.7.7"
+  }
+}

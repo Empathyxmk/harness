@@ -1,0 +1,31 @@
+developit_dlv (Python translation)
+├── src/
+│   └── dlv.py           # Python implementation of dlv() deep property accessor
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_dlv.py        # All original test cases from dlv.test.js
+│       └── test_sanity.py     # Dummy/sanity test as in test.js
+├── public_tests/
+│   ├── __init__.py
+│   └── test_dlv_public.py     # All public test cases from dlv.public.test.js
+├── requirements.txt     # Python dependencies (pytest)
+├── run_tests.sh         # Run all tests. Usage: ./run_tests.sh
+└── project_structure.txt
+
+Directory explanations:
+- src/: Contains the Python source code for the dlv library.
+- tests/original/: Contains all original (author) test cases, translated from JavaScript to Python.
+- public_tests/: Contains all publicly released test cases, also fully translated.
+- requirements.txt: Pin pytest as the sole dev dependency.
+- run_tests.sh: One-click script to run all tests using pytest (unit, original, and public).
+- project_structure.txt: This file (documentation of layout).
+
+How to set up and test:
+1. Create and activate a Python virtualenv if desired.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run all tests: `./run_tests.sh`
+   - Or, directly: `pytest`
+
+All test logic is ported from the original and public JavaScript tests and will fully check Python's dlv implementation for functional parity.

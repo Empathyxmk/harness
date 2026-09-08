@@ -1,0 +1,25 @@
+.
+├── README.md
+├── requirements.txt
+├── run_tests.sh
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_interval_estimator.py
+│       ├── test_latency_stats.py
+│       ├── test_moving_average_interval_estimator.py
+│       ├── test_pause_detector_listener.py
+│       ├── test_simple_pause_detector.py
+│       ├── test_time_capped_moving_average_interval_estimator.py
+│       └── test_time_services.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_interval_estimator_public.py
+│   ├── test_latency_stats_public.py
+│   ├── test_moving_average_interval_estimator_public.py
+│   ├── test_pause_detector_listener_public.py
+│   ├── test_simple_pause_detector_public.py
+│   ├── test_time_capped_moving_average_interval_estimator_public.py
+│   └── test_time_services_public.py
+└── test_translation_progress.json

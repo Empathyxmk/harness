@@ -1,0 +1,21 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── test_translation_progress.json
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_user_service_impl.py
+│   │   ├── test_concurrence.py
+│   │   ├── test_only_sync_by_aqs.py
+│   │   ├── test_main_threadpool.py
+│   │   ├── test_simple_threadpool_application.py
+│   │   └── test_lock_performance.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_user_service_impl_public.py
+│   ├── test_concurrence_public.py
+│   ├── test_only_sync_by_aqs_public.py
+│   ├── test_main_public_threadpool.py
+│   └── test_lock_performance_public.py

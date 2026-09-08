@@ -1,0 +1,82 @@
+{
+  "project_name": "n0fate_chainbreaker",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:19:01.523516",
+  "original_path": "/workspace/verified_repos_v2/Python/n0fate_chainbreaker",
+  "public_test_result_path": "/workspace/public_test_results/Python/n0fate_chainbreaker",
+  "original_tests": {
+    "test_files": [
+      "tests/chainbreaker/test_schema.py",
+      "tests/chainbreaker/test_init_chainbreaker.py",
+      "tests/chainbreaker/test_command_line.py",
+      "tests/chainbreaker/test_results.py",
+      "tests/chainbreaker/test_version.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/chainbreaker/test_public_schema.py",
+      "public_tests/chainbreaker/test_public_init_chainbreaker.py",
+      "public_tests/chainbreaker/test_public_command_line.py",
+      "public_tests/chainbreaker/test_public_results.py",
+      "public_tests/chainbreaker/test_public_version.py",
+      "run_public_tests.sh",
+      "public_tests/chainbreaker/test_public_schema.py",
+      "public_tests/chainbreaker/test_public_command_line.py",
+      "public_tests/chainbreaker/test_public_version.py",
+      "public_tests/chainbreaker/test_public_schema.py",
+      "public_tests/chainbreaker/test_public_command_line.py",
+      "public_tests/chainbreaker/test_public_results.py",
+      "public_tests/chainbreaker/test_public_command_line.py",
+      "public_tests/chainbreaker/test_public_results.py",
+      "public_tests/chainbreaker/test_public_schema.py",
+      "run_public_tests.sh",
+      "public_tests/chainbreaker/test_public_init_chainbreaker.py",
+      "public_tests/chainbreaker/test_public_schema.py",
+      "public_tests/chainbreaker/test_public_version.py",
+      "run_public_tests.sh",
+      "public_tests/chainbreaker/test_public_init_chainbreaker.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 21,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/chainbreaker/test_public_schema.py",
+    "public_tests/chainbreaker/test_public_init_chainbreaker.py",
+    "public_tests/chainbreaker/test_public_command_line.py",
+    "public_tests/chainbreaker/test_public_results.py",
+    "public_tests/chainbreaker/test_public_version.py",
+    "run_public_tests.sh",
+    "public_tests/chainbreaker/test_public_schema.py",
+    "public_tests/chainbreaker/test_public_command_line.py",
+    "public_tests/chainbreaker/test_public_version.py",
+    "public_tests/chainbreaker/test_public_schema.py",
+    "public_tests/chainbreaker/test_public_command_line.py",
+    "public_tests/chainbreaker/test_public_results.py",
+    "public_tests/chainbreaker/test_public_command_line.py",
+    "public_tests/chainbreaker/test_public_results.py",
+    "public_tests/chainbreaker/test_public_schema.py",
+    "run_public_tests.sh",
+    "public_tests/chainbreaker/test_public_init_chainbreaker.py",
+    "public_tests/chainbreaker/test_public_schema.py",
+    "public_tests/chainbreaker/test_public_version.py",
+    "run_public_tests.sh",
+    "public_tests/chainbreaker/test_public_init_chainbreaker.py"
+  ]
+}

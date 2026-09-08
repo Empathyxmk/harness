@@ -1,0 +1,51 @@
+{
+  "project_name": "iammerrick_Squire.js",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:30:17.546818",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/iammerrick_Squire.js",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/iammerrick_Squire.js",
+  "original_tests": {
+    "test_files": [
+      "src/__tests__/Squire.util.test.js",
+      "src/__tests__/Squire.extra.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 2,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/Squire.util.public.test.js",
+      "public_tests/Squire.extra.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/Squire.extra.public.test.js",
+      "public_tests/Squire.extra.public.test.js",
+      "public_tests/Squire.extra.public.test.js",
+      "public_tests/Squire.extra.public.test.js",
+      "public_tests/Squire.extra.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/Squire.util.public.test.js",
+    "public_tests/Squire.extra.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/Squire.extra.public.test.js",
+    "public_tests/Squire.extra.public.test.js",
+    "public_tests/Squire.extra.public.test.js",
+    "public_tests/Squire.extra.public.test.js",
+    "public_tests/Squire.extra.public.test.js"
+  ]
+}

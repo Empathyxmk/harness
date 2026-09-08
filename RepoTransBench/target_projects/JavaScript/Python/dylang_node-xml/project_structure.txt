@@ -1,0 +1,30 @@
+project_root/
+├── README.md
+│   # Project overview and instructions
+├── requirements.txt
+│   # Python dependencies (pytest)
+├── run_tests.sh
+│   # Test runner script (one-click test execution)
+├── project_structure.txt
+│   # This file (project structure and explanations)
+├── src/xml_module/
+│   ├── __init__.py
+│   ├── xml.py
+│   └── escape_for_xml.py
+│   # Minimal implementation modules to support test suite
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_xml.py
+│       ├── test_xml_api.py
+│       ├── test_escape_for_xml.py
+│       └── test_xml_internal.py
+│   # All original (non-public) tests, complete implementation
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_xml_public.py
+│   ├── test_xml_api_public.py
+│   ├── test_escape_for_xml_public.py
+│   └── test_xml_internal_public.py
+│   # All public test cases, fully implemented

@@ -1,0 +1,28 @@
+project_root/
+├── src/
+│   └── lib/
+│       ├── modeldownload.h
+│       ├── modeldownload.cpp
+│       ├── modelfiles.h
+│       ├── modelfiles.cpp
+│       ├── modelserving.h
+│       └── modelserving.cpp
+├── include/
+│   └── <headers>
+├── tests/
+│   └── original/
+│       ├── test_modeldownload_full.cpp
+│       ├── test_modelserving_full.cpp
+│       ├── test_modelfiles_full.cpp
+│       ├── test_modeldownload.cpp
+│       └── test_modelfiles.cpp
+├── public_tests/
+│   ├── test_public_modelserving_full.cpp
+│   ├── test_public_modeldownload.cpp
+│   ├── test_public_modeldownload_full.cpp
+│   ├── test_public_modelfiles_full.cpp
+│   └── test_public_modelfiles.cpp
+├── CMakeLists.txt
+├── run_tests.sh
+├── README.md
+└── test_translation_progress.json

@@ -1,0 +1,61 @@
+sebhoerl_Twig-netbeans-python/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # One-click test execution script (runs all tests)
+├── tests/
+│   ├── __init__.py                 # Test package marker
+│   └── original/                   # Directory for original (private) test cases
+│       ├── __init__.py
+│       ├── test_twig_data_object.py
+│       ├── test_twig_editor_kit.py
+│       ├── test_twig_completion_handler.py
+│       ├── test_twig_structure_item.py
+│       ├── test_twig_structure_scanner.py
+│       ├── test_twig_language.py
+│       ├── test_twig_parser_result.py
+│       ├── test_twig_parser.py
+│       ├── test_twig_formatter.py
+│       ├── test_twig_top_token_id.py
+│       └── test_app.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_twig_data_object_public.py
+│   ├── test_twig_editor_kit_public.py
+│   ├── test_twig_completion_handler_public.py
+│   ├── test_twig_structure_scanner_public.py
+│   ├── test_twig_structure_item_public.py
+│   ├── test_twig_language_public.py
+│   ├── test_twig_parser_result_public.py
+│   ├── test_twig_parser_public.py
+│   ├── test_twig_formatter_public.py
+│   └── test_twig_top_token_id_public.py
+
+--- Directory explanations ---
+
+requirements.txt:
+    Contains Python dependencies. Only `pytest` is required for the tests.
+
+run_tests.sh:
+    Simple bash script to run all tests (original and public) using `pytest`. Executable.
+
+tests/original/:
+    Contains translations of all original/private Java test cases to Python.
+    Each Java test file is mapped to a `test_*.py` file. Class/function and logic faithfully translated.
+
+public_tests/:
+    Contains translations of all public/sanitized Java test cases to Python, matching coverage and logic.
+
+__init__.py files:
+    Used to mark directories as packages so pytest can discover all test modules in complex structures.
+
+--- Setup and Testing Instructions ---
+
+1. Install dependencies:
+    pip install -r requirements.txt
+
+2. Make sure run_tests.sh is executable:
+    chmod +x run_tests.sh
+
+3. Run all tests:
+    ./run_tests.sh
+
+Tests in both `tests/original/` and `public_tests/` are run automatically.

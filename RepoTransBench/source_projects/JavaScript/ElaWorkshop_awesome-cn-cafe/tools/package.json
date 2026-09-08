@@ -1,0 +1,16 @@
+{
+  "name": "awesome-cn-cafe-tool",
+  "version": "1.0.0",
+  "description": "This script automatically does housekeeping work.",
+  "main": "housekeeper.js",
+  "scripts": {
+    "test": "node lint.js",
+    "housekeeping": "node housekeeper.js"
+  },
+  "author": "xavierchow",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "jsonlint": "^1.6.2"
+  }
+}

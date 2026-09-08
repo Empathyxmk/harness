@@ -1,0 +1,11 @@
+project_root/
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   ├── original/
+│   │   ├── chunked_coding_converter_test.go        # Original test cases
+│   │   ├── chunkedcodingconverter.go               # Implementation used ONLY for tests (acts as stub/module)
+│   │   └── testutil.go
+├── public_tests/
+│   └── chunked_coding_converter_public_test.go     # Public test cases
+└── project_structure.txt

@@ -1,0 +1,25 @@
+# Byte compilation and cache files
+__pycache__/
+*.py[cod]
+
+# Distribution and packaging
+build/
+dist/
+eggs/
+lib/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Testing
+.coverage
+.tox/
+coverage.xml
+
+# Environments
+.env
+.venv
+env/
+venv/

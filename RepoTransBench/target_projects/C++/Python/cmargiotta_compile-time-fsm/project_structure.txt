@@ -1,0 +1,30 @@
+project_root/
+├── requirements.txt                # Python dependencies (pytest)
+├── run_tests.sh                    # Simple test execution script (runs all tests)
+├── project_structure.txt           # This project structure and instructions
+├── tests/
+│   ├── __init__.py                 # Test package marker
+│   └── original/
+│       ├── __init__.py             # Test package marker
+│       └── test_utility.py         # Translated original test cases (from utility_test.cpp)
+├── public_tests/
+│   ├── __init__.py                 # Test package marker
+│   └── test_utility_public.py      # Translated public tests (from utility_public_test.cpp)
+└── README.md                       # (Not included, optional for repo info)
+
+Directory explanations:
+- requirements.txt:         Specifies Python dependencies (pytest required for all test runs)
+- run_tests.sh:             Runs all tests in a single command; expected usage: ./run_tests.sh
+- project_structure.txt:    Explanation of the project structure and setup info
+- tests/:                   Root folder for all test code
+    - original/:            Contains original (private) translated test cases
+        - test_utility.py:  Python translation of the original C++ test/utility_test.cpp
+- public_tests/:            Contains translated public test cases
+    - test_utility_public.py: Python translation of the public C++ test/utility_public_test.cpp
+
+Test Execution:
+1. Make sure you have Python 3.7+ installed.
+2. Install requirements:      pip install -r requirements.txt
+3. Run all tests:            ./run_tests.sh
+
+All tests (both in tests/original/ and public_tests/) are automatically discovered and executed.

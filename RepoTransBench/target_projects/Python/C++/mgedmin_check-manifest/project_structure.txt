@@ -1,0 +1,64 @@
+project_root/
+├── src/
+│   ├── main.cpp
+│   └── lib/
+│       ├── module.h
+│       └── module.cpp
+├── tests/
+│   ├── original/
+│   │   ├── test_archive_util.cpp
+│   │   ├── test_bdist.cpp
+│   │   ├── test_bdist_dumb.cpp
+│   │   ├── test_build.cpp
+│   │   ├── test_build_clib.cpp
+│   │   ├── test_build_ext.cpp
+│   │   ├── test_build_meta.cpp
+│   │   ├── test_build_py.cpp
+│   │   ├── test_build_scripts.cpp
+│   │   ├── test_check.cpp
+│   │   ├── test_check_manifest_additional.cpp
+│   │   ├── test_config_cmd.cpp
+│   │   ├── test_core.cpp
+│   │   ├── test_core_metadata.cpp
+│   │   ├── test_dir_util.cpp
+│   │   ├── test_dist.cpp
+│   │   ├── test_dist_info.cpp
+│   │   ├── test_distutils_adoption.cpp
+│   │   ├── test_extension.cpp
+│   │   ├── test_extern.cpp
+│   │   ├── test_install.cpp
+│   │   ├── test_install_headers.cpp
+│   │   ├── test_install_lib.cpp
+│   │   ├── test_install_scripts.cpp
+│   │   ├── test_log.cpp
+│   │   ├── test_modified.cpp
+│   │   ├── test_setopt.cpp
+│   │   ├── test_setuptools.cpp
+│   │   ├── test_spawn.cpp
+│   │   ├── test_sysconfig.cpp
+│   │   ├── test_text_file.cpp
+│   │   ├── test_util.cpp
+│   │   └── test_version.cpp
+│   └── test_main.cpp
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_check_manifest_additional_public.cpp
+│   └── test_check_manifest_additional_public.py
+├── include/
+│   └── check_manifest.h
+├── CMakeLists.txt
+├── run_tests.sh
+├── README.md
+├── LICENSE.rst
+├── MANIFEST.in
+├── Makefile
+├── appveyor.yml
+├── CHANGES.rst
+├── release.mk
+├── run_public_tests.sh
+├── setup.cfg
+├── setup.py
+├── test_check_manifest_additional.py
+├── test_summary.json
+├── test_translation_progress.json
+└── tox.ini

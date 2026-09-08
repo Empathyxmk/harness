@@ -1,0 +1,23 @@
+project_root/
+├── README.md
+├── requirements.txt
+├── run_tests.sh              # Executable script to run all tests with pytest
+├── src/
+│   └── d3_queue/
+│       ├── __init__.py       # Makes d3_queue a pkg, re-exports slice, queue
+│       ├── array.py          # Implements JS array.slice logic for tests
+│       └── queue.py          # Implements a minimal Queue for async behavior as needed for tests
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_array.py                 # Tests for array.slice
+│       ├── test_queue_cjs_extra.py       # Queue CJS extra tests
+│       ├── test_queue_esm.py             # Queue ESM (ES module) tests
+│       ├── test_queue_extra.py           # Queue extra tests (concurrency/errors)
+│       └── test_queue_test.py            # Regular queue tests
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_array_public.py
+│   ├── test_queue_cjs_extra_public.py
+│   ├── test_queue_extra_public.py
+│   └── test_queue_esm_public.py

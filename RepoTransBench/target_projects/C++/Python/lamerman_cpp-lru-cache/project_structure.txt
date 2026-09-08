@@ -1,0 +1,31 @@
+Project structure:
+
+.
+├── README.md              # Project overview and instructions
+├── requirements.txt       # Python dependencies (pytest)
+├── run_tests.sh           # One-click script to run all tests
+├── project_structure.txt  # This file
+├── src/
+│   ├── lrucache.py        # Python implementation of LRU cache (for test use)
+├── tests/
+│   ├── __init__.py        # Required for Python package discovery
+│   └── original/
+│       ├── __init__.py    # Required for subpackage
+│       └── test_lru_cache.py    # All original private test cases translated from C++
+├── public_tests/
+│   ├── __init__.py        # Required for package discovery
+│   └── test_lru_cache_public.py # All public test cases translated from C++
+
+Directory explanations:
+- src/: Contains the Python LRUCache implementation for the test harness.
+- tests/original/: Contains private/original tests (not publicly released).
+- public_tests/: Contains public test cases; useful for evaluation.
+- All tests written in pytest style.
+
+Setup and usage:
+1. Install dependencies (`pip install -r requirements.txt`)
+2. Run all tests with `./run_tests.sh`
+
+Running individual tests:
+- pytest tests/original/
+- pytest public_tests/

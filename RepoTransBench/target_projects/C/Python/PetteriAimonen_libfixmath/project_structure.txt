@@ -1,0 +1,35 @@
+PetteriAimonen_libfixmath (Python Test Harness)
+├── README.md                  # Getting started, usage and explanations
+├── requirements.txt           # Python test requirements (pytest)
+├── run_tests.sh               # Simple one-click script to run all tests
+├── project_structure.txt      # This file: explainer and tree
+├── src/
+│   └── libfixmath_python/
+│       ├── __init__.py        # library visibility
+│       ├── fix16.py           # Fix16 (fixed-point) math stubs/mocks
+│       ├── fract32.py         # Fract32 math stubs/mocks
+│       ├── fix16_fft.py       # FFT functions/mocks
+│       ├── fix16_trig.py      # Trig functions/mocks
+│       ├── testcases.py       # Test input data arrays (verbatim from C source)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_basic.py
+│       ├── test_lerp.py
+│       ├── test_macros.py
+│       ├── test_sqrt.py
+│       ├── test_str.py
+│       ├── test_fract32.py
+│       ├── test_fft.py
+│       ├── test_trig.py
+│       └── test_sqrt_extra.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_public_tests_sqrt.py
+│   └── test_public_tests_fract32.py
+
+Key:
+- src/libfixmath_python/: Python stubs/mocks for the fix16/fract32 math (implements just enough for test logic fidelity).
+- tests/original/: All translated original C testcases.
+- public_tests/: All public test files.

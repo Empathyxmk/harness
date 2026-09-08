@@ -1,0 +1,24 @@
+{
+  "project_name": "aadhithya_rajiniPP",
+  "language": "Python",
+  "coverage": {
+    "line": 63.0,
+    "branch": 51.2
+  },
+  "timestamp": "2025-06-19T11:20:27.007935",
+  "original_path": "/workspace/runnable_filter/Python/aadhithya_rajiniPP",
+  "test_result_path": "/workspace/test_enhancement_results/Python/aadhithya_rajiniPP",
+  "tests_path": [
+    "tests/test_init_module.py",
+    "tests/test_rajiniworld.py",
+    "tests/test_functions.py",
+    "tests/test_flow_control.py",
+    "tests/test_exprs.py",
+    "tests/test_runner.py",
+    "tests/test_lexer_and_exceptions.py",
+    "tests/test_print.py",
+    "tests/conftest.py",
+    "tests/__init__.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

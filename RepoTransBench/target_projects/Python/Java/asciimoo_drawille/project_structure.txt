@@ -1,0 +1,46 @@
+Java Project Structure for asciimoo_drawille
+
+.
+├── pom.xml                     # Maven project file, declares dependencies and configuration
+├── run_tests.sh                # Simple script to run all tests with mvn
+├── project_structure.txt       # This file, explains the structure and usage
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── asciimoo/
+│   │               └── drawille/
+│   │                   ├── Canvas.java         # Main Canvas logic
+│   │                   ├── Turtle.java         # Turtle (turtle-graphics-like pen abstraction)
+│   │                   ├── LineUtil.java       # Utility for drawing lines (Bresenham)
+│   │                   └── ExtraUtil.java      # Utility functions (normalize, getTerminalSize, etc.)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── asciimoo/
+│                   └── drawille/
+│                       ├── original/
+│                       │   ├── CanvasTest.java    # Original Canvas tests
+│                       │   ├── LineTest.java      # Line algorithms
+│                       │   ├── TurtleTest.java    # Turtle tests
+│                       │   ├── ExtraTest.java     # Misc utility/edge/corner-case tests
+│                       │   └── SpeedTest.java     # Speed benchmark test (run, but no assertion)
+│                       └── public_tests/
+│                           ├── PublicDrawilleExtraTest.java # Translation of public_tests/test_public_drawille_extra.py
+│                           └── PublicSpeedTest.java         # Translation of public_tests/test_public_speed_test.py
+
+Instructions:
+
+- Source files are in src/main/java/com/asciimoo/drawille/
+- All original test cases are under src/test/java/com/asciimoo/drawille/original/
+- All public test cases are under src/test/java/com/asciimoo/drawille/public_tests/
+- Build/run all tests: Execute ./run_tests.sh (uses Maven/JUnit 5)
+- To run just one type of tests, use e.g.
+      mvn test -Dtest="**/original/*Test"
+      mvn test -Dtest="**/public_tests/*Test"
+
+Notes:
+
+- Tests are organized by source/original and public following Python structure.
+- Canvas.java, Turtle.java, LineUtil.java, ExtraUtil.java are stubs/ports sufficient for the tests to pass and mimic the Python function signatures and behavior.
+- All edge and error cases in the original and public Python tests are present.

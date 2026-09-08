@@ -1,0 +1,31 @@
+chronology/            # Rust library crate root
+│
+├── Cargo.toml         # Rust crate and dependency definitions
+├── src/
+│   ├── lib.rs         # Library source code with dummy_add, dummy_mul, dummy_positive
+│
+├── tests/
+│   └── original/                       # Original (private) test cases, Rust format
+│       ├── test_chronological.rs         # Tests dummy_add function (private/original)
+│       ├── test_chronological_extra.rs   # Tests dummy_mul function (private/original)
+│       └── test_chronological_branches.rs# Tests dummy_positive function (private/original)
+│
+├── public_tests/        # Public test cases in Rust format
+│   ├── test_public_chronological.rs         # Public tests for dummy_add
+│   ├── test_public_chronological_extra.rs   # Public tests for dummy_mul
+│   └── test_public_chronological_branches.rs# Public tests for dummy_positive
+│
+├── run_tests.sh        # Simple test runner; runs all tests in one shot
+└── project_structure.txt # This file - structure/explanation
+
+Setup & Testing Instructions:
+-------------------------------
+1. Install Rust toolchain (https://rustup.rs) if not already installed.
+2. Run all tests with:
+   $ ./run_tests.sh
+
+- All project logic is in src/lib.rs.
+- All test files are implemented using Rust's #[test] framework.
+- Original tests are in tests/original.
+- Public tests are in public_tests.
+- Add additional modules or tests as needed in this Rust structure.

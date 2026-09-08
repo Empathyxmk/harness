@@ -1,0 +1,28 @@
+.
+├── Cargo.toml
+├── LICENSE
+├── MANIFEST.in
+├── README.md
+├── goto.py
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests
+│   ├── test_public_goto.py
+│   └── test_public_goto_internals.py
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.cfg
+├── setup.py
+├── src
+│   └── lib.rs
+├── test_goto.py
+├── test_goto_internals.py
+├── test_summary.json
+├── tests
+│   ├── original
+│   │   ├── test_goto.rs
+│   │   └── test_goto_internals.rs
+│   └── public
+│       ├── test_public_goto.rs
+│       └── test_public_goto_internals.rs
+└── tox.ini

@@ -1,0 +1,12 @@
+clibs_list/
+├── Cargo.toml
+├── src/
+│   ├── lib.rs
+│   └── list.rs
+├── tests/
+│   └── original/
+│       ├── list_tests.rs
+│       └── classic_c_tests.rs
+├── public_tests/
+│   └── test_list_public.rs
+├── run_tests.sh

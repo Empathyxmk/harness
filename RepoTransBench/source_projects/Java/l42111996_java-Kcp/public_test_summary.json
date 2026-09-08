@@ -1,0 +1,73 @@
+{
+  "project_name": "l42111996_java-Kcp",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:18:36.898313",
+  "original_path": "/workspace/verified_repos_v2/Java/l42111996_java-Kcp",
+  "public_test_result_path": "/workspace/public_test_results/Java/l42111996_java-Kcp",
+  "original_tests": {
+    "test_files": [
+      "kcp-example/src/test/java/test/KcpServerExamplesTest.java",
+      "kcp-fec/src/test/java/com/backblaze/erasure/FecTest.java",
+      "kcp-fec/src/test/java/com/backblaze/erasure/ReedSolomonTest.java",
+      "kcp-fec/src/test/java/com/backblaze/erasure/GaloisTest.java",
+      "kcp-fec/src/test/java/com/backblaze/erasure/MatrixTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "kcp-example/src/test/java/test/KcpServerExamplesPublicTest.java",
+      "run_public_tests.sh",
+      "kcp-fec/src/test/java/com/backblaze/erasure/GaloisPublicTest.java",
+      "kcp-fec/src/test/java/com/backblaze/erasure/MatrixPublicTest.java",
+      "kcp-fec/src/test/java/com/backblaze/erasure/ReedSolomonPublicTest.java",
+      "kcp-fec/src/test/java/com/backblaze/erasure/FecPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "kcp-example/src/test/java/test/KcpServerExamplesPublicTest.java",
+      "kcp-fec/src/test/java/com/backblaze/erasure/MatrixPublicTest.java",
+      "kcp-fec/src/test/java/com/backblaze/erasure/ReedSolomonPublicTest.java",
+      "kcp-fec/src/test/java/com/backblaze/erasure/GaloisPublicTest.java",
+      "kcp-fec/src/test/java/com/backblaze/erasure/FecPublicTest.java",
+      "kcp-example/src/test/java/test/KcpServerExamplesPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 15,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "kcp-example/src/test/java/test/KcpServerExamplesPublicTest.java",
+    "run_public_tests.sh",
+    "kcp-fec/src/test/java/com/backblaze/erasure/GaloisPublicTest.java",
+    "kcp-fec/src/test/java/com/backblaze/erasure/MatrixPublicTest.java",
+    "kcp-fec/src/test/java/com/backblaze/erasure/ReedSolomonPublicTest.java",
+    "kcp-fec/src/test/java/com/backblaze/erasure/FecPublicTest.java",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "kcp-example/src/test/java/test/KcpServerExamplesPublicTest.java",
+    "kcp-fec/src/test/java/com/backblaze/erasure/MatrixPublicTest.java",
+    "kcp-fec/src/test/java/com/backblaze/erasure/ReedSolomonPublicTest.java",
+    "kcp-fec/src/test/java/com/backblaze/erasure/GaloisPublicTest.java",
+    "kcp-fec/src/test/java/com/backblaze/erasure/FecPublicTest.java",
+    "kcp-example/src/test/java/test/KcpServerExamplesPublicTest.java",
+    "kcp-fec/pom.xml",
+    "kcp-fec/pom.xml",
+    "run_public_tests.sh"
+  ]
+}

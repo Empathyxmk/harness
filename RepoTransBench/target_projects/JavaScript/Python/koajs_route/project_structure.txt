@@ -1,0 +1,20 @@
+koajs_route_python_port/
+├── README.md                       # Project overview, setup, instructions
+├── requirements.txt                # Python dependencies for tests
+├── run_tests.sh                    # One-click test execution script
+├── src/
+│   └── koajs_route/
+│       ├── __init__.py             # Python package init
+│       └── index.py                # Placeholder for "route" package code (implement for full pass)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_route.py           # Original route tests (Flask translation)
+│       ├── test_example_integration.py # Original example integration tests
+│       └── test_index_unit.py      # Unit tests for route internals
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_route_public.py        # Public route tests (Flask translation)
+│   ├── test_example_integration_public.py  # Public example integration
+│   └── test_index_unit_public.py   # Public unit tests for route

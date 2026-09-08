@@ -1,0 +1,47 @@
+bblanchon_ArduinoTrace_python_translation/
+├── src/
+│   └── arduinotrace/
+│       ├── __init__.py
+│       └── trace.py
+├── tests/
+│   └── original/
+│       ├── __init__.py
+│       ├── test_arduinotrace_core.py
+│       ├── test_alternative_serial.py
+│       ├── test_defaults.py
+│       ├── test_disabled.py
+│       └── test_full_path.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_arduinotrace_core_public.py
+│   ├── test_defaults_public.py
+│   ├── test_disabled_public.py
+│   ├── test_full_path_public.py
+│   └── test_alternative_serial_public.py
+├── requirements.txt
+├── run_tests.sh
+├── README.md
+└── project_structure.txt
+
+-- Directory Explanations --
+
+src/arduinotrace/:
+    Placeholder for the core ArduinoTrace implementation and mocks required for tests.
+
+tests/original/:
+    Translated original (private/internal) C++ tests.
+
+public_tests/:
+    Translated public C++ tests that demonstrate expected behaviors for public coverage.
+
+requirements.txt:
+    Python testing dependencies.
+
+run_tests.sh:
+    One-command test runner for all tests.
+
+README.md:
+    Project info and usage instructions.
+
+project_structure.txt:
+    This file - project tree and directory purposes.

@@ -1,0 +1,13 @@
+tiny_aes/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   ├── original.rs
+│   ├── edge_cases.rs
+│   └── original/
+│       └── mod.rs
+├── public_tests/
+│   ├── test_public.rs
+│   └── test_edge_cases_public.rs
+├── run_tests.sh

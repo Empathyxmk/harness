@@ -1,0 +1,43 @@
+syrusakbary_aiodataloader (C++ Translation)
+├── CMakeLists.txt                # CMake configuration for building source + tests with gtest
+├── include/
+│   └── aiodataloader/            # Public headers for DataLoader, etc (used by tests and source)
+├── src/
+│   └── lib/
+│       └── dateloader.h          # (Stub, to be implemented) Core DataLoader library header
+├── tests/
+│   ├── test_main.cpp             # GTest main() entry
+│   └── original/
+│       ├── test_aiodataloader.cpp        # Original logic-based test translation
+│       └── test_additional_aiodataloader.cpp
+├── public_tests/
+│   ├── test_public_aiodataloader.cpp     # Public logic-based test translation
+│   └── test_public_additional_aiodataloader.cpp
+├── run_tests.sh                  # One-click build & test script
+└── project_structure.txt         # This file: Layout and component explanations
+
+Directory and File Explanations:
+- CMakeLists.txt: Build configuration, test integration, pulls googletest automatically.
+- include/: Public headers, such as the DataLoader class definition (should match src/lib implementation).
+- src/lib/: Place actual C++ library code here (dateloader.h, dateloader.cpp). Tests #include from here.
+- tests/original/: Original tests covering all behaviors (translated from Python).
+- public_tests/: Public-facing tests (translated from Python 'public_tests/').
+- tests/test_main.cpp: Single main() for all test runners.
+- run_tests.sh: Minimal script: runs cmake, builds and executes all tests.
+- project_structure.txt: Describes structure and setup.
+
+How to Build and Test:
+1. Install cmake and a compiler (e.g., g++, clang++)
+2. Run: `chmod +x ./run_tests.sh` (first time only, if necessary)
+3. Run tests: `./run_tests.sh`
+4. All tests in both `tests/original/` and `public_tests/` will build and run via GTest.
+
+Dependencies:
+- CMake >= 3.10
+- A C++ compiler with C++17 support
+- [Downloaded automatically] GoogleTest (gtest)
+
+Note:
+- The actual DataLoader implementation should go in `src/lib/dateloader.h` and matching .cpp file.
+- The test files contain stubs/mocks to allow compilation and illustrate exact test logic translation.
+- All assertions and behaviors from Python tests are mapped into explicit C++ checks.

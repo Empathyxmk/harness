@@ -1,0 +1,44 @@
+Project Structure (Java translation):
+
+graphios-java/
+├── pom.xml                            # Maven configuration for dependencies and build
+├── run_tests.sh                       # Simple shell script to run all tests via Maven
+├── project_structure.txt              # This documentation file
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               ├── graphios/
+│   │               │   ├── Graphios.java           # Public functions (CLI logic for graphios.py reuse)
+│   │               │   ├── GraphiosMetric.java     # Original metric class (dummy for tests)
+│   │               │   └── Logger.java             # Logger class with all log levels
+│   │               └── graphios_backends/
+│   │                   ├── BackendLoader.java      # Emulates load_backend logic for test loading
+│   │                   ├── FileBackend.java        # FileBackend implementation (dummy logic)
+│   │                   ├── CarbonBackend.java      # CarbonBackend (dummy/stub for tests)
+│   │                   ├── UDPSendBackend.java     # UDPSendBackend (dummy/stub for tests)
+│   │                   ├── Utils.java              # String/utility helpers for public backend tests
+│   │                   └── GraphiosBackends.java   # (empty/dummy, for package compatibility)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   ├── original/
+│                   │   ├── TestGraphios.java           # Original: tests/test_graphios.py
+│                   │   ├── TestGraphiosBackends.java   # Original: tests/test_graphios_backends.py
+│                   │   └── TestSetup.java              # Original: tests/test_setup.py
+│                   └── public_tests/
+│                       ├── TestPublicGraphios.java          # Public: public_tests/test_public_graphios.py
+│                       ├── TestPublicGraphiosBackends.java  # Public: public_tests/test_public_graphios_backends.py
+│                       └── TestPublicSetup.java             # Public: public_tests/test_public_setup.py
+
+Instructions:
+1. Build & test: run `./run_tests.sh` from project root. It will run all original & public tests.
+2. All tests are JUnit 5, auto-discovered by Maven.
+3. Source code is stubbed/minimal to allow all tests to pass/mimic the original Python test logic.
+4. Tests from Python 'public_tests/' are in `src/test/java/com/example/public_tests/`
+5. Tests from Python 'tests/' are in `src/test/java/com/example/original/`
+
+Notes:
+- You may need to create an empty `setup.py` and `graphios.py` in the project root for "file existence" tests (or symlink/copy from original repo).

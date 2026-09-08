@@ -1,0 +1,11 @@
+{
+  "project_name": "googlearchive_android-ClippingBasic",
+  "language": "Java",
+  "coverage": {
+    "line": 60.0,
+    "branch": 55.0
+  },
+  "timestamp": "2025-06-19T20:03:44.250025",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/googlearchive_android-ClippingBasic",
+  "test_result_path": "/workspace/test_enhancement_results/Java/googlearchive_android-ClippingBasic"
+}

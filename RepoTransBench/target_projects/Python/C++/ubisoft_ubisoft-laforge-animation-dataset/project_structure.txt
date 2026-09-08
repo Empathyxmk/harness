@@ -1,0 +1,25 @@
+ubisoft_ubisoft-laforge-animation-dataset/
+├── include/
+│   ├── lafan1_utils.h           # C++ header for quaternion/kinematics utilities
+│   ├── lafan1_extract.h         # C++ header for extraction-related methods
+│   └── lafan1_benchmarks.h      # C++ header for benchmarks/npss
+├── src/
+│   ├── lafan1_utils.cpp         # Implementation for quaternion/kinematics utilities
+│   ├── lafan1_extract.cpp       # Implementation for extraction-related
+│   └── lafan1_benchmarks.cpp    # Implementation for benchmarks/npss
+├── tests/
+│   ├── test_main.cpp            # GTest main entry point (shared by all tests)
+│   └── original/
+│       ├── test_utils.cpp       # Translation of lafan1/test_utils.py
+│       ├── test_benchmarks.cpp  # Translation of lafan1/test_benchmarks.py
+│       ├── test_extract.cpp     # Translation of lafan1/test_extract.py
+│       └── test_evaluate_dummy.cpp # Dummy for evaluate.py test coverage
+├── public_tests/
+│   ├── test_utils_public.cpp       # Translation of public_tests/test_utils_public.py
+│   ├── test_benchmarks_public.cpp  # "
+│   ├── test_extract_public.cpp     # "
+│   └── test_evaluate_public.cpp    # "
+├── CMakeLists.txt               # Build and gtest configuration for all tests
+├── run_tests.sh                 # One-click test build&execution script
+├── project_structure.txt        # (This file) Overview of C++ structure
+└── [other sources, docs, data]

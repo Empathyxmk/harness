@@ -1,0 +1,17 @@
+{
+  "project_name": "scastillo_siesta",
+  "language": "Python",
+  "coverage": {
+    "line": 89.0,
+    "branch": 66.7
+  },
+  "timestamp": "2025-06-19T12:29:28.909058",
+  "original_path": "/workspace/runnable_filter/Python/scastillo_siesta",
+  "test_result_path": "/workspace/test_enhancement_results/Python/scastillo_siesta",
+  "tests_path": [
+    "siesta/tests/test_auth.py",
+    "siesta/tests/test_init.py",
+    "siesta/tests/test_siesta.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,37 @@
+project_root/
+├── src/
+│   └── channel_estimation/
+│       ├── __init__.py
+│       ├── c_gen.py
+│       ├── coeffes2_MgeN.py
+│       └── coeffes2_MlN.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_C_gen.py
+│       ├── test_C_gen_noise.py
+│       ├── test_coeffes2_MgeN.py
+│       └── test_coeffes2_MlN.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_C_gen.py
+│   ├── test_C_gen_noise.py
+│   ├── test_coeffes2_MgeN.py
+│   └── test_coeffes2_MlN.py
+├── requirements.txt
+├── run_tests.sh
+└── project_structure.txt
+
+Directory and file purposes:
+- src/channel_estimation/: source code implementations of the C_gen, coeffes2_MgeN, and coeffes2_MlN functions.
+- tests/original/: translated "original" test cases from the MATLAB repo, tests require code in src/.
+- public_tests/: translated "public" test cases from the MATLAB repo.
+- requirements.txt: Python dependencies (pytest, numpy, scipy).
+- run_tests.sh: Runs ALL tests in the repo.
+- project_structure.txt: This tree and explanations.
+
+Setup and Testing:
+1. Install requirements: `pip install -r requirements.txt`
+2. Run all tests: `./run_tests.sh` (you may need `chmod +x run_tests.sh`)
+3. Source code is under src/channel_estimation/.

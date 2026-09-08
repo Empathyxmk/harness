@@ -1,0 +1,11 @@
+{
+  "project_name": "Meituan-Dianping_walle",
+  "language": "Java",
+  "coverage": {
+    "line": 75.0,
+    "branch": 61.3
+  },
+  "timestamp": "2025-06-19T22:43:17.573517",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/Meituan-Dianping_walle",
+  "test_result_path": "/workspace/test_enhancement_results/Java/Meituan-Dianping_walle"
+}

@@ -1,0 +1,22 @@
+{
+  "project_name": "chromakode_react-html-email",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:06:35.069258",
+  "original_path": "/workspace/runnable_filter/JavaScript/chromakode_react-html-email",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/chromakode_react-html-email",
+  "tests_path": [
+    "__tests__/PropTypes.test.js",
+    "__tests__/includeDataProps.test.js",
+    "__tests__/renderEmail-extra.test.js",
+    "__tests__/ReactHTMLEmail.test.js",
+    "__tests__/StyleValidator.test.js",
+    "__tests__/StyleValidator-extra.test.js",
+    "__tests__/index.test.js",
+    "__tests__/renderEmail.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

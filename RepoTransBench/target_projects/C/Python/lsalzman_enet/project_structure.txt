@@ -1,0 +1,16 @@
+.
+├── README.md                           # General project information (optional, but good practice)
+├── src/                                # Source code directory
+│   └── lsalzman_enet/                  # Python package for the enet functions
+│       ├── __init__.py                 # Makes 'lsalzman_enet' a Python package
+│       └── enet.py                     # Python translation of enet.c/enet.h functions
+├── tests/                              # Directory for original/existing test cases
+│   ├── __init__.py                     # Makes 'tests' a Python package
+│   └── original/                       # Subdirectory for original test cases
+│       ├── __init__.py                 # Makes 'original' a Python package
+│       └── test_enet_original.py       # Translated test cases from C's test_enet.c
+├── public_tests/                       # Directory for public test cases
+│   ├── __init__.py                     # Makes 'public_tests' a Python package
+│   └── test_enet_public.py             # Translated test cases from C's public_test_enet.c
+├── requirements.txt                    # Lists Python dependencies (e.g., pytest)
+└── run_tests.sh                        # Script to install dependencies and execute all tests

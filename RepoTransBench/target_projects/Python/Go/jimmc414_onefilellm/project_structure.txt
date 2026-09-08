@@ -1,0 +1,11 @@
+project_root/
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── tests/
+│   ├── original/
+│   │   └── test_utils_test.go
+│   └── testutil.go
+├── public_tests/
+│   ├── test_public_all_test.go
+│   └── test_public_utils_test.go

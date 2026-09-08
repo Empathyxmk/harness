@@ -1,0 +1,11 @@
+{
+  "project_name": "vijos_jd4",
+  "language": "Python",
+  "coverage": {
+    "line": 79.2,
+    "branch": 58.7
+  },
+  "timestamp": "2025-06-19T13:02:59.173918",
+  "original_path": "/workspace/runnable_filter/Python/vijos_jd4",
+  "test_result_path": "/workspace/test_enhancement_results/Python/vijos_jd4"
+}

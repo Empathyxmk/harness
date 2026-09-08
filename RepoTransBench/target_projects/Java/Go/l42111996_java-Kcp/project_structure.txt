@@ -1,0 +1,25 @@
+project_root/
+├── go.mod                          # Go module file for dependency tracking
+├── tests/
+│   └── original/
+│       └── kcp_server_examples_test.go   # Original KCP server test cases (translated from Java)
+├── public_tests/
+│   ├── fec_public_test.go               # Public test: Fec
+│   ├── galois_public_test.go            # Public test: Galois arithmetic
+│   ├── kcp_server_examples_public_test.go    # Public test: KCP server simulated public test
+│   ├── matrix_public_test.go            # Public test: Matrix arithmetic
+│   └── reedsolomon_public_test.go       # Public test: ReedSolomon coding
+├── run_tests.sh                    # One-click script to run all tests (go test ./...)
+├── project_structure.txt           # This document: project layout and explanations
+
+# Directory explanations:
+#  - go.mod: specifies Go module (dependencies) for project; run 'go mod tidy' to update
+#  - tests/original/: all tests directly translated from original Java tests
+#  - public_tests/: all translated public test cases
+#  - run_tests.sh: run with './run_tests.sh' to execute all tests in every package
+#  - project_structure.txt: this document, describes the structure
+
+# To set up and run:
+# 1. Ensure you have Go installed.
+# 2. Run `go mod tidy` to fetch dependencies (if needed).
+# 3. Execute all tests: `./run_tests.sh`

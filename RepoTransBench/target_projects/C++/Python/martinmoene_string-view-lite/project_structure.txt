@@ -1,0 +1,17 @@
+martinmoene_string-view-lite-python/
+├── README.md
+├── requirements.txt
+├── run_tests.sh                  # One-click test script (calls pytest)
+├── project_structure.txt         # This file: describes the project structure
+├── src/
+│   └── string_view.py            # Minimal "string_view" implementation for testing
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_simple_string_view.py               # Original C++ test, basic
+│       └── test_string_view_edge.py                 # Original C++ test, edge
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_simple_string_view_public.py            # Public variant, basic (different data)
+│   └── test_string_view_edge_public.py              # Public variant, edge  (different data)

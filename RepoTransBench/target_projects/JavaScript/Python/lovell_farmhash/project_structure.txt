@@ -1,0 +1,40 @@
+Project Structure for Python Port of lovell_farmhash
+----------------------------------------------------
+
+lovell_farmhash/
+├── src/
+│   └── farmhash.py
+│       - Python implementation (stub/mock here) of the Farmhash API expected by the tests.
+│         - Replace functions here with real farmhash logic for production use.
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_index_spec.py
+│           - Direct port of the original JavaScript test/index.spec.js to Python/pytest.
+├── public_tests/
+│   ├── __init__.py
+│   └── test_index_public_spec.py
+│       - Direct port of the JS public test public_tests/index.public.spec.js to Python/pytest.
+├── requirements.txt
+│   - Python package dependencies (pytest for testing).
+├── run_tests.sh
+│   - Simple script to run all tests.
+└── project_structure.txt
+    - This file, describes the project's layout and purposes.
+
+How to run tests:
+-----------------
+1. Make sure you have Python 3.7+ installed (for pytest support).
+2. Install requirements:
+      pip install -r requirements.txt
+3. Run all tests:
+      ./run_tests.sh
+
+Test organization:
+------------------
+- All source code is in src/
+- All original project tests: tests/original/test_index_spec.py
+- All public (community/shared) tests: public_tests/test_index_public_spec.py
+
+To add additional modules or tests, extend src/ and tests/public_tests/ or tests/original/.

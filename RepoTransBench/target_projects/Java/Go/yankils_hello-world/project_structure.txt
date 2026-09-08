@@ -1,0 +1,22 @@
+.
+├── go.mod                           # Go module file (dependency manager)
+├── greeter.go                       # Source implementation of the Greeter class
+├── README.md                        # Documentation with setup/testing instructions
+├── run_tests.sh                     # Simple script to run all tests (`go test ./...`)
+├── tests/
+│   └── original/
+│       └── greeter_test.go          # All original tests from Java's TestGreeter.java
+└── public_tests/
+    └── greeter_public_test.go       # All public tests from Java's GreeterPublicTest.java
+
+Directory Descriptions:
+- `greeter.go`: Main Greeter implementation ("Hello, <name>!")
+- `tests/original/`: Contains the translated original (private) test cases.
+- `public_tests/`: Contains the translated public (student-visible) test cases.
+- `run_tests.sh`: Bash script for one-click test execution.
+- `go.mod`: Declares module and go version.
+- `README.md`: How to set up and use the project.
+
+How to run:
+- Make sure Go is installed.
+- Execute `chmod +x run_tests.sh && ./run_tests.sh` to run all tests.

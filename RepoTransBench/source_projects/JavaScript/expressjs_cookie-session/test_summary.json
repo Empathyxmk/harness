@@ -1,0 +1,18 @@
+{
+  "project_name": "expressjs_cookie-session",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 83.75,
+    "branch": 84.44
+  },
+  "timestamp": "2025-06-23T10:37:45.717467",
+  "original_path": "/workspace/test_enhancement_results/JavaScript/expressjs_cookie-session",
+  "test_result_path": "/workspace/test_enhancement_results_plus/JavaScript/expressjs_cookie-session",
+  "tests_path": [
+    "test/unit.index.js",
+    "test/unit.index.test.js",
+    "test/cookie-session.spec.js",
+    "test/test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,33 @@
+xiahouzuoxin_fft (Python translation) - Project Structure
+
+.
+├── requirements.txt        # Python dependencies
+├── README.md               # Project and usage overview
+├── project_structure.txt   # This structure file
+├── run_tests.sh            # Simple script to run all tests
+├── src/
+│   └── xiahouzuoxin_fft/
+│       ├── __init__.py
+│       ├── zx_math.py      # Math functions (ported from C)
+│       └── zx_fft.py       # FFT logic (ported from C)
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_zx_math.py     # Original test cases
+│       ├── test_zx_fft.py
+│       └── test_xcorr.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_zx_math_public.py
+│   ├── test_zx_fft_public.py
+│   └── test_xcorr_public.py
+
+Directory purpose explanations:
+- src/xiahouzuoxin_fft/: Python implementation of the core FFT library and math routines.
+- tests/original/: Translations of all *original* C test cases (preserved logic).
+- public_tests/: Translations of all C public test cases for public validation.
+- requirements.txt: Lists pytest, numpy and any dependencies.
+- run_tests.sh: One-click script to run *all* tests under both main and public test dirs.
+
+To run all tests: see README.md or just execute ./run_tests.sh

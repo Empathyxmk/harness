@@ -1,0 +1,27 @@
+.
+├── Project.sln                        # Solution file including all projects
+├── README.md
+├── run_tests.sh                       # One-click test execution script
+├── src/
+│   └── GBByPass/
+│       ├── GBByPass.csproj            # Library project for source code
+│       ├── Main.cs                    # Main class containing reverseIfNotBlank and isAllDigits
+│       ├── RandomUtil.cs              # Random utility class for random strings
+│       └── Program.cs                 # Main entry point; calls MainEntry for test coverage
+├── tests/
+│   └── original/
+│       ├── OriginalTests.csproj       # xUnit test project for original/private tests
+│       ├── MainTest.cs
+│       ├── MainBranchCoverageTest.cs
+│       ├── MainFullCoverageTest.cs
+│       ├── RandomUtilTest.cs
+│       ├── RandomUtilBranchCoverageTest.cs
+│       └── RandomUtilFullTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj             # xUnit test project for public tests
+│   ├── MainPublicTest.cs
+│   ├── MainBranchCoveragePublicTest.cs
+│   ├── MainFullCoveragePublicTest.cs
+│   ├── RandomUtilPublicTest.cs
+│   ├── RandomUtilBranchCoveragePublicTest.cs
+│   └── RandomUtilFullPublicTest.cs

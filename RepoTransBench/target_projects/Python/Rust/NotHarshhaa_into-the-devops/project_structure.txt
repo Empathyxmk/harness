@@ -1,0 +1,27 @@
+project_root/
+├── Cargo.toml                # Rust project configuration with dev-deps
+├── src/
+│   └── syntax_lint.rs        # Core logic (translated from Python 'syntax_lint.py')
+│   └── lib.rs                # Exports modules for crate
+├── tests/
+│   └── original/
+│       └── test_syntax_lint.rs    # Original tests (from tests/test_syntax_lint.py)
+├── public_tests/
+│   └── test_public_syntax_lint.rs # Public interface/acceptance tests
+├── run_tests.sh              # One-click test script (runs all Rust tests)
+├── project_structure.txt     # Project structure and directory purpose
+
+Directory descriptions:
+- src/syntax_lint.rs: Translated logic of Python code, implements all linter features and data structures.
+- src/lib.rs: Exports library crate modules for usage in tests and public_tests.
+- tests/original/: Original test cases from upstream repo, Rust translation of Python unittest suite.
+- public_tests/: Public samples and acceptance/behavior tests, translated from Python public_tests.
+- Cargo.toml: Rust config, includes all dev/test dependencies.
+- run_tests.sh: Minimal test execution script - just run `./run_tests.sh`.
+- project_structure.txt: This file! Explains project organization.
+
+To run all tests, just:
+$ chmod +x run_tests.sh
+$ ./run_tests.sh
+
+All tests are written as Rust #[test] functions and suitable for `cargo test`.

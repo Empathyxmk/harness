@@ -1,0 +1,48 @@
+{
+  "project_name": "jhalterman_typetools",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:16:41.909857",
+  "original_path": "/workspace/verified_repos_v2/Java/jhalterman_typetools",
+  "public_test_result_path": "/workspace/public_test_results/Java/jhalterman_typetools",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/net/jodah/typetools/AbstractTypeResolverTest.java",
+      "src/test/java/net/jodah/typetools/ReifiedParameterizedTypeTest.java",
+      "src/test/java/net/jodah/typetools/TypeResolverTest.java",
+      "src/test/java/net/jodah/typetools/functional/InnerClassTest.java",
+      "src/test/java/net/jodah/typetools/functional/LambdaTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/net/jodah/typetools/ReifiedParameterizedTypePublicTest.java",
+      "src/test/java/net/jodah/typetools/TypeResolverPublicTest.java",
+      "src/test/java/net/jodah/typetools/functional/InnerClassPublicTest.java",
+      "src/test/java/net/jodah/typetools/functional/LambdaPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 5,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/net/jodah/typetools/ReifiedParameterizedTypePublicTest.java",
+    "src/test/java/net/jodah/typetools/TypeResolverPublicTest.java",
+    "src/test/java/net/jodah/typetools/functional/InnerClassPublicTest.java",
+    "src/test/java/net/jodah/typetools/functional/LambdaPublicTest.java",
+    "run_public_tests.sh"
+  ]
+}

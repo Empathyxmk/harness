@@ -1,0 +1,62 @@
+{
+  "project_name": "commonsguy_cwac-merge",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:15:04.024625",
+  "original_path": "/workspace/verified_repos_v2/Java/commonsguy_cwac-merge",
+  "public_test_result_path": "/workspace/public_test_results/Java/commonsguy_cwac-merge",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/com/commonsguy/cwac/merge/MergeAdapterTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 1,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/com/commonsguy/cwac/merge/MergeAdapterPublicTest.java",
+      "run_public_tests.sh",
+      "src/test/java/com/commonsguy/cwac/merge/MergeAdapterPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "src/test/java/com/commonsguy/cwac/merge/MergeAdapterPublicTest.java",
+      "src/test/java/com/commonsguy/cwac/merge/MergeAdapterPublicTest.java",
+      "src/test/java/com/commonsguy/cwac/merge/MergeAdapterPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 9,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/com/commonsguy/cwac/merge/MergeAdapterPublicTest.java",
+    "run_public_tests.sh",
+    "src/test/java/com/commonsguy/cwac/merge/MergeAdapterTest.java",
+    "src/test/java/com/commonsguy/cwac/merge/MergeAdapterPublicTest.java",
+    "run_tests.sh",
+    "run_public_tests.sh",
+    "run_tests.sh",
+    "run_public_tests.sh",
+    "src/test/java/com/commonsguy/cwac/merge/MergeAdapterTest.java",
+    "src/test/java/com/commonsguy/cwac/merge/MergeAdapterPublicTest.java",
+    "src/test/java/com/commonsguy/cwac/merge/MergeAdapterTest.java",
+    "src/test/java/com/commonsguy/cwac/merge/MergeAdapterPublicTest.java",
+    "src/test/java/com/commonsguy/cwac/merge/MergeAdapterTest.java",
+    "src/test/java/com/commonsguy/cwac/merge/MergeAdapterPublicTest.java",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

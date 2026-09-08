@@ -1,0 +1,48 @@
+/
+├── README.md
+├── src/
+│   └── JetbrickTemplate/
+│       ├── JetbrickTemplate.csproj
+│       ├── Program.cs                         # (if needed for SDK project type)
+│       └── ...                                # (Put shared implementation code here if ported)
+├── tests/
+│   ├── original/
+│   │   ├── OriginalTests.csproj
+│   │   ├── JFinalActiveRecordGetterResolverTests.cs
+│   │   ├── JetTemplateRenderTests.cs
+│   │   ├── JetTemplateRenderFactoryTests.cs
+│   │   ├── JetEngineTests.cs
+│   │   ├── ALUTests.cs
+│   │   ├── ALUGetNumberTypeTests.cs
+│   │   ├── JetTemplateResultTests.cs
+│   │   ├── PerformanceTests.cs
+│   │   ├── AbstractJetxTest.cs
+│   │   ├── BuildinFunctionTests.cs
+│   │   ├── BuildinMethodTests.cs
+│   │   ├── BuildinTagTests.cs
+│   │   ├── CommentTests.cs
+│   │   ├── TextTests.cs
+│   │   ├── IdentifierTests.cs
+│   │   ├── ConstantTests.cs
+│   │   ├── ValueTests.cs
+│   │   ├── DirectiveForTests.cs
+│   │   ├── DirectiveSetTests.cs
+│   │   ├── DirectiveDefineTests.cs
+│   │   └── ... (other original test .cs files)
+│   └── TestUtilities.cs                       # Helper methods (if needed)
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── JFinalActiveRecordGetterResolverPublicTests.cs
+│   ├── JetTemplateRenderPublicTests.cs
+│   ├── JetTemplateRenderFactoryPublicTests.cs
+│   ├── JetEnginePublicTests.cs
+│   ├── ALUGetNumberTypePublicTests.cs
+│   ├── ALUPublicTests.cs
+│   ├── JetTemplateResultPublicTests.cs
+│   ├── PerformancePublicTests.cs
+│   ├── AbstractJetxPublicTests.cs
+│   ├── BuildinFunctionPublicTests.cs
+│   └── ... (other public test .cs files)
+├── JetbrickTemplate.sln
+├── run_tests.sh
+├── test_translation_progress.json

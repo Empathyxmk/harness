@@ -1,0 +1,16 @@
+{
+  "project_name": "alexwforsythe_code-blocks",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T09:51:58.176689",
+  "original_path": "/workspace/runnable_filter/JavaScript/alexwforsythe_code-blocks",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/alexwforsythe_code-blocks",
+  "tests_path": [
+    "server/__tests__/colors.test.js",
+    "server/__tests__/util.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

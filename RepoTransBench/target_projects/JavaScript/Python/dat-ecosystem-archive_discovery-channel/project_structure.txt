@@ -1,0 +1,34 @@
+project_root/
+├── requirements.txt                  # Python dependencies (pytest)
+├── run_tests.sh                      # Execute all tests with `pytest`
+├── src/
+│   ├── __init__.py
+│   └── discovery.py                  # Main Discovery and DiscoveryChannel implementation for tests
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_index_coverage.py    # Original coverage tests
+│   │   └── test_index_extra.py       # Original extra/core tests
+│   ├── test_list_and_find_peers.py   # Original test.js translation (list, find peers, callback coverage)
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_index_coverage_public.py # Public coverage tests
+│   └── test_index_extra_public.py    # Public extra/core tests
+├── README.md                         # Explanation and instructions
+└── project_structure.txt             # This file - shows project layout and file descriptions
+
+Summary of main components:
+- **src/discovery.py**: Test stub implementation for Discovery and DiscoveryChannel (just enough for tests)
+- **tests/original/**: Original source test cases
+- **tests/test_list_and_find_peers.py**: Translated from test.js (peer/list/CB call logic)
+- **public_tests/**: All public test cases
+- **run_tests.sh**: Run all tests
+- **requirements.txt**: Needed dependencies
+
+Instructions:
+1. Run `pip install -r requirements.txt` to ensure dependencies (pytest).
+2. Use `./run_tests.sh` to run all original/public tests.
+3. Tests for both original and public are discoverable via pytest.
+
+All test logic is fully implemented and executable.

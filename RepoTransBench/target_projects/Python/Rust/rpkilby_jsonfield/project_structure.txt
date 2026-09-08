@@ -1,0 +1,28 @@
+rpkilby_jsonfield/         # Rust project root
+├── Cargo.toml             # Rust project manifest (deps: serde, serde_json, indexmap, once_cell)
+├── src/
+│   └── lib.rs             # Root Rust lib module, imports jsonfield
+│   └── jsonfield.rs       # Contains JSONField struct, public API, dummy form module, and json submodule
+├── tests/
+│   └── test_fields.rs             # Original test_fields.py tests
+│   └── ... (additional: test_forms.rs, test_jsonfield.rs for full coverage)
+├── public_tests/
+│   └── test_public_fields.rs
+│   └── test_public_forms.rs
+│   └── test_public_jsonfield.rs
+├── run_tests.sh           # Simple test execution script (cargo test)
+└── project_structure.txt  # This file
+
+**Directory and File Purposes:**
+
+- Cargo.toml: Defines dependencies (serde, serde_json, indexmap for "typed dict", etc).
+- src/lib.rs: Exports all library code for tests.
+- src/jsonfield.rs: Implements most required logic/mocks to exercise test cases, includes dummy form/json API for tests.
+- tests/: Original/private tests from Django version (translated as Rust tests).
+- public_tests/: Public/provided tests, as Rust modules.
+- run_tests.sh: One-click test runner (`cargo test --all`)
+- project_structure.txt: Project/structure explanation and files
+
+**Test Execution:**
+
+To run all tests:

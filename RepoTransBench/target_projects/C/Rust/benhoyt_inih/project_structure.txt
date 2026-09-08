@@ -1,0 +1,97 @@
+benhoyt_inih/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   ├── original/
+│   │   ├── unittest.rs
+│   │   ├── unittest_alloc.rs
+│   │   ├── unittest_coverage.rs
+│   │   ├── unittest_coverage2.rs
+│   │   └── unittest_string.rs
+│   ├── unittest_public_alloc.rs
+│   ├── unittest_public_coverage.rs
+│   ├── unittest_public_coverage2.rs
+│   ├── unittest_public_string.rs
+│   ├── bad_comment.ini
+│   ├── bad_multi.ini
+│   ├── bad_section.ini
+│   ├── baseline_alloc.txt
+│   ├── baseline_allow_no_value.txt
+│   ├── baseline_call_handler_on_new_section.txt
+│   ├── baseline_disallow_inline_comments.txt
+│   ├── baseline_handler_lineno.txt
+│   ├── baseline_heap.txt
+│   ├── baseline_heap_max_line.txt
+│   ├── baseline_heap_realloc.txt
+│   ├── baseline_heap_realloc_max_line.txt
+│   ├── baseline_heap_string.txt
+│   ├── baseline_multi.txt
+│   ├── baseline_multi_max_line.txt
+│   ├── baseline_single.txt
+│   ├── baseline_stop_on_first_error.txt
+│   ├── baseline_string.txt
+│   ├── bom.ini
+│   ├── duplicate_sections.ini
+│   ├── long_line.ini
+│   ├── long_section.ini
+│   ├── meson.build
+│   ├── multi_line.ini
+│   ├── no_value.ini
+│   ├── normal.ini
+│   ├── public_tests.rs      # Can be removed (not needed)
+│   ├── runtest.sh
+│   ├── unittest
+│   ├── unittest-ini.gcda
+│   ├── unittest-ini.gcno
+│   ├── unittest-unittest.gcda
+│   ├── unittest-unittest.gcno
+│   ├── unittest.bat
+│   ├── unittest.c
+│   ├── unittest.sh
+│   ├── unittest_alloc
+│   ├── unittest_alloc-ini.gcda
+│   ├── unittest_alloc-ini.gcno
+│   ├── unittest_alloc-unittest_alloc.gcda
+│   ├── unittest_alloc-unittest_alloc.gcno
+│   ├── unittest_alloc.c
+│   ├── unittest_coverage
+│   ├── unittest_coverage-ini.gcda
+│   ├── unittest_coverage-ini.gcno
+│   ├── unittest_coverage-unittest_coverage.gcda
+│   ├── unittest_coverage-unittest_coverage.gcno
+│   ├── unittest_coverage.c
+│   ├── unittest_coverage2
+│   ├── unittest_coverage2-ini.gcda
+│   ├── unittest_coverage2-ini.gcno
+│   ├── unittest_coverage2-unittest_coverage2.gcda
+│   ├── unittest_coverage2-unittest_coverage2.gcno
+│   ├── unittest_coverage2.c
+│   ├── unittest_public_alloc
+│   ├── unittest_public_alloc.c
+│   ├── unittest_public_alloc.rs
+│   ├── unittest_public_coverage
+│   ├── unittest_public_coverage.c
+│   ├── unittest_public_coverage.rs
+│   ├── unittest_public_coverage2
+│   ├── unittest_public_coverage2.c
+│   ├── unittest_public_coverage2.rs
+│   ├── unittest_public_string
+│   ├── unittest_public_string.c
+│   ├── unittest_public_string.rs
+│   ├── unittest_string
+│   ├── unittest_string-ini.gcda
+│   ├── unittest_string-ini.gcno
+│   ├── unittest_string-unittest_string.gcda
+│   ├── unittest_string-unittest_string.gcno
+│   ├── unittest_string.c
+│   └── user_error.ini
+├── public_tests/
+│   ├── unittest_public_alloc.rs
+│   ├── unittest_public_coverage.rs
+│   ├── unittest_public_coverage2.rs
+│   └── unittest_public_string.rs
+├── run_tests.sh
+├── src/
+│   └── lib.rs
+└── ...

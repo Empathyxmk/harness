@@ -1,0 +1,65 @@
+{
+  "project_name": "apparatus_fuge",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:17:37.451862",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/apparatus_fuge",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/apparatus_fuge",
+  "original_tests": {
+    "test_files": [
+      "test/shell.test.js",
+      "test/commands_edge.test.js",
+      "test/util_extra.test.js",
+      "test/fuge_edge.test.js",
+      "test/basic.test.js",
+      "test/commands_smoke.test.js",
+      "test/fuge.test.js",
+      "test/shell_edge.test.js",
+      "test/commands_coverage.test.js",
+      "test/util.test.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 10,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/shell.public.test.js",
+      "public_tests/commands_edge.public.test.js",
+      "public_tests/util_extra.public.test.js",
+      "run_public_tests.sh",
+      "public_tests/fuge_edge.public.test.js",
+      "public_tests/basic.public.test.js",
+      "public_tests/commands_smoke.public.test.js",
+      "public_tests/fuge.public.test.js",
+      "public_tests/shell_edge.public.test.js",
+      "public_tests/commands_coverage.public.test.js",
+      "public_tests/util.public.test.js"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 11,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/shell.public.test.js",
+    "public_tests/commands_edge.public.test.js",
+    "public_tests/util_extra.public.test.js",
+    "run_public_tests.sh",
+    "public_tests/fuge_edge.public.test.js",
+    "public_tests/basic.public.test.js",
+    "public_tests/commands_smoke.public.test.js",
+    "public_tests/fuge.public.test.js",
+    "public_tests/shell_edge.public.test.js",
+    "public_tests/commands_coverage.public.test.js",
+    "public_tests/util.public.test.js"
+  ]
+}

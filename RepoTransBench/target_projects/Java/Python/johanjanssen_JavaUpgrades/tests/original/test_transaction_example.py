@@ -1,0 +1,9 @@
+import pytest
+
+class TransactionExample:
+    @staticmethod
+    def main(args):
+        pass
+
+def test_main_no_exceptions():
+    TransactionExample.main([])

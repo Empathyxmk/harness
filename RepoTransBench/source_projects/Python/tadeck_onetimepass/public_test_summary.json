@@ -1,0 +1,54 @@
+{
+  "project_name": "tadeck_onetimepass",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:49:56.399398",
+  "original_path": "/workspace/verified_repos_v2/Python/tadeck_onetimepass",
+  "public_test_result_path": "/workspace/public_test_results/Python/tadeck_onetimepass",
+  "original_tests": {
+    "test_files": [
+      "tests/test_onetimepass_core.py",
+      "tests/test_onetimepass_extra.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 2,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_onetimepass_core.py",
+      "public_tests/test_public_onetimepass_extra.py",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "public_tests/test_public_onetimepass_core.py",
+      "public_tests/test_public_onetimepass_extra.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 8,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_onetimepass_core.py",
+    "public_tests/test_public_onetimepass_extra.py",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "public_tests/test_public_onetimepass_core.py",
+    "public_tests/test_public_onetimepass_extra.py",
+    "run_public_tests.sh"
+  ]
+}

@@ -1,0 +1,27 @@
+krakjoe_pcov_python/
+├── src/                                # Contains the Python source code for the "pcov_mock" functionality.
+│   └── krakjoe_pcov/                   # Python package representing the mocked pcov extension.
+│       ├── __init__.py                 # Initializes the `krakjoe_pcov` Python package.
+│       └── pcov_mock.py                # A mock implementation of `pcov` functions (e.g., start, stop, collect, clear).
+├── tests/                              # Directory for translated original test cases.
+│   ├── __init__.py                     # Initializes the `tests` Python package.
+│   └── original/                       # Contains the translated original tests from `tests/*.phpt`.
+│       ├── __init__.py                 # Initializes the `original` Python package.
+│       ├── test_001.py                 # Placeholder for `tests/001.phpt` content.
+│       ├── test_002.py                 # Placeholder for `tests/002.phpt` content.
+│       │   ...                         # ... (up to test_016.py)
+│       └── test_016.py                 # Placeholder for `tests/016.phpt` content.
+├── public_tests/                       # Directory for translated public test cases.
+│   ├── __init__.py                     # Initializes the `public_tests` Python package.
+│   ├── test_001_public.py              # Placeholder for `tests_public/001_public.phpt` content.
+│       ├── test_002_public.py          # Placeholder for `tests_public/002_public.phpt` content.
+│       │   ...                         # ... (up to test_016_public.py)
+│   └── test_016_public.py              # Placeholder for `tests_public/016_public.phpt` content.
+├── requirements.txt                    # Lists Python dependencies, including `pytest`.
+├── run_tests.sh                        # A simple bash script to set up environment and run all tests using `pytest`.
+└── project_structure.txt               # This file, documenting the project layout.
+
+Setup and Testing Instructions:
+1.  **Navigate to the project root**: `cd /path/to/krakjoe_pcov_python`
+2.  **Run tests**: Execute the test script: `./run_tests.sh`
+    This script will install necessary Python dependencies (pytest) and then run all discovered tests in `tests/original/` and `public_tests/`.

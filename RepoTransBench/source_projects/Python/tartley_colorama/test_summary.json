@@ -1,0 +1,29 @@
+{
+  "project_name": "tartley_colorama",
+  "language": "Python",
+  "coverage": {
+    "line": 55.0,
+    "branch": 50.0
+  },
+  "timestamp": "2025-06-19T12:55:43.357784",
+  "original_path": "/workspace/runnable_filter/Python/tartley_colorama",
+  "test_result_path": "/workspace/test_enhancement_results/Python/tartley_colorama",
+  "tests_path": [
+    "colorama/tests/ansi_test.py",
+    "colorama/tests/ansi_test_extra.py",
+    "colorama/tests/ansitowin32_test.py",
+    "colorama/tests/ansitowin32_test_extra.py",
+    "colorama/tests/imports_test.py",
+    "colorama/tests/initialise_test.py",
+    "colorama/tests/initialise_test_branch.py",
+    "colorama/tests/initialise_test_extra.py",
+    "colorama/tests/isatty_test.py",
+    "colorama/tests/utils.py",
+    "colorama/tests/win32_test.py",
+    "colorama/tests/win32_test_extra.py",
+    "colorama/tests/winterm_test.py",
+    "colorama/tests/winterm_test_branch.py",
+    "colorama/tests/winterm_test_extra.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

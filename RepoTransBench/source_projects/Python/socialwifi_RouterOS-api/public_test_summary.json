@@ -1,0 +1,65 @@
+{
+  "project_name": "socialwifi_RouterOS-api",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:23:43.963584",
+  "original_path": "/workspace/verified_repos_v2/Python/socialwifi_RouterOS-api",
+  "public_test_result_path": "/workspace/public_test_results/Python/socialwifi_RouterOS-api",
+  "original_tests": {
+    "test_files": [
+      "tests/test_api_communicator.py",
+      "tests/test_base_api.py",
+      "tests/test_sentence.py",
+      "tests/test_api_structure.py",
+      "tests/test_resource.py",
+      "tests/test_query.py",
+      "tests/test_api_socket.py",
+      "tests/test_socket.py",
+      "tests/test_login_router_os_api.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 9,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_api_communicator.py",
+      "public_tests/test_public_base_api.py",
+      "public_tests/test_public_sentence.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_api_structure.py",
+      "public_tests/test_public_resource.py",
+      "public_tests/test_public_query.py",
+      "public_tests/test_public_api_socket.py",
+      "public_tests/test_public_socket.py",
+      "public_tests/test_public_login_router_os_api.py",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 11,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_api_communicator.py",
+    "public_tests/test_public_base_api.py",
+    "public_tests/test_public_sentence.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_api_structure.py",
+    "public_tests/test_public_resource.py",
+    "public_tests/test_public_query.py",
+    "public_tests/test_public_api_socket.py",
+    "public_tests/test_public_socket.py",
+    "public_tests/test_public_login_router_os_api.py",
+    "run_public_tests.sh"
+  ]
+}

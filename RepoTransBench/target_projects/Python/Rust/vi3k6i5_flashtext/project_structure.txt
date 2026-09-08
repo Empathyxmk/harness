@@ -1,0 +1,46 @@
+vi3k6i5_flashtext/
+├── Cargo.toml                   # Cargo build config for Rust project
+├── README.md                    # Project overview and usage info
+├── project_structure.txt        # This file: project structure summary
+├── run_tests.sh                 # One-click script to run all tests
+├── src/
+│   └── lib.rs                   # Main library (flashtext) implementation
+├── tests/
+│   ├── original/
+│   │   ├── mod.rs               # Main mod for original tests
+│   │   └── <original *.rs>      # All translated original Python unittest files
+│   └── public/
+│       ├── mod.rs               # Main mod for public sample tests
+│       └── <public *.rs>        # All translated public Python test files
+├── public_tests/                # (Symlink or copy of tests/public, for Py compat)
+│   └── ...                      # (Or: left empty/pointer if not needed)
+└── testdata/
+    ├── keyword_extractor_test_cases.json  # Transliterated from `test/` (Python)
+    ├── keyword_remover_test_cases.json
+    ├── keywords_format_one.txt
+    └── keywords_format_two.txt
+
+--- Directory & File Explanations ---
+
+Cargo.toml:      Rust manifest, dependencies, and test configs.
+README.md:       How to build/use/run tests, etc.
+src/lib.rs:      The Rust port of Flashtext (implement your algorithms here).
+tests/original/: Rust test modules translated from the original Python test/ files.
+tests/public/:   Rust test modules translated from the public_test suite.
+run_tests.sh:    Simple helper to run all tests with a single command.
+
+testdata/:       Holds test input/output files and JSON, used by test code.
+
+--- How to Run ---
+
+1. Install Rust (`rustup`, see https://rustup.rs/)
+2. Run all tests with:
+       ./run_tests.sh
+
+--- How to Add More Tests ---
+
+- Add new test modules (.rs) to tests/original/ or tests/public/
+- Include them in the corresponding mod.rs
+- All tests auto-discover with `cargo test`.
+
+---

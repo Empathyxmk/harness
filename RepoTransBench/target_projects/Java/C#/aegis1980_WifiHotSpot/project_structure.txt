@@ -1,0 +1,14 @@
+Aegis1980.WifiHotSpot/                 # Project root
+├── Aegis1980.WifiHotSpot.sln          # .NET solution file mapping all projects
+├── run_tests.sh                       # Run all tests with one command
+├── project_structure.txt               # This structure file and directory explanation
+├── src/                               # Production source code
+│   ├── Aegis1980.Hotspot.csproj       # Main project configuration
+│   └── HotSpotManager.cs              # Implementation of HotSpotManager
+├── tests/                             # All original ("private") test suites
+│   └── original/
+│       ├── OriginalTests.csproj       # Test project file for original tests
+│       └── HotSpotManagerTests.cs     # Translated original tests from Java
+├── public_tests/                      # All public/visible test suites
+│   ├── PublicTests.csproj             # Test project file for public tests
+│   └── PublicHotSpotManagerTests.cs   # Translated public test code from Java

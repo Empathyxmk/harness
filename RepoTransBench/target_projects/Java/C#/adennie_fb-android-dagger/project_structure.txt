@@ -1,0 +1,32 @@
+.
+├── ProjectName.sln                 # Solution file - links all projects together
+├── README.md                       # Project overview and instructions
+├── run_tests.sh                    # One-click script to run all tests
+├── src/
+│   └── ProjectName/
+│       └── ProjectName.csproj      # (Placeholder) Main source code project, required for compiling/running tests
+├── tests/
+│   ├── TestUtilities.cs            # Shared test utilities to match Java's TestUtils
+│   └── original/
+│       ├── InjectingActionBarActivityTest.cs
+│       ├── InjectingActivityModuleTest.cs
+│       ├── InjectingFragmentModuleTest.cs
+│       ├── InjectingPreferenceActivityTest.cs
+│       ├── InjectingPreferenceFragmentTest.cs
+│       ├── PreconditionsTest.cs
+│       └── OriginalTests.csproj    # C# xUnit/Moq test project
+├── public_tests/
+│   ├── InjectingActionBarActivityPublicTest.cs
+│   ├── InjectingActivityModulePublicTest.cs
+│   ├── InjectingFragmentModulePublicTest.cs
+│   ├── InjectingPreferenceActivityPublicTest.cs
+│   ├── InjectingPreferenceFragmentPublicTest.cs
+│   ├── PreconditionsPublicTest.cs
+│   └── PublicTests.csproj          # C# xUnit/Moq public test project
+
+# Directory explanations
+# - src/ProjectName/: Contains main application classes translated from Java (not included in this repo, as focus is tests).
+# - tests/original/: All original test cases translated from Java to C#, using xUnit/Moq.
+# - tests/TestUtilities.cs: Test utility class to replace Java's TestUtils functionality.
+# - public_tests/: Contains the public variants of the tests, as required.
+# - run_tests.sh: Simple one-click command to run ALL tests (original and public) via dotnet CLI.

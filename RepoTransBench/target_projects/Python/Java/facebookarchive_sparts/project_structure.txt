@@ -1,0 +1,185 @@
+project_root/
+├── CHANGES.txt
+├── CONTRIBUTING.rst
+├── LICENSE
+├── MANIFEST.in
+├── PATENTS
+├── README.md
+├── README.rst
+├── demo/
+│   ├── dbus_service.py
+│   ├── demo_tui.py
+│   ├── dev_watcher.py
+│   ├── empty_server.py
+│   ├── http_thrift.py
+│   ├── option_example.py
+│   ├── producer_consumer.py
+│   ├── tnonblock_thrift.py
+│   ├── twisted_chat.py
+│   └── twisted_command.py
+├── externals/
+│   └── thrift
+├── pom.xml
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_collections.py
+│   ├── test_public_collections_extra.py
+│   ├── test_public_compat_extra.py
+│   ├── test_public_counters.py
+│   ├── test_public_ctx.py
+│   ├── test_public_daemon.py
+│   ├── test_public_imports.py
+│   ├── test_public_setup_py.py
+│   └── test_public_vservice.py
+├── run_public_tests.sh
+├── run_tests.sh
+├── setup.cfg
+├── setup.py
+├── sparts/
+│   ├── __init__.py
+│   ├── collections.py
+│   ├── compat.py
+│   ├── counters.py
+│   ├── ctx.py
+│   ├── daemon.py
+│   ├── deps.py
+│   ├── fb303/
+│   │   ├── __init__.py
+│   │   └── dbus.py
+│   ├── fileutils.py
+│   ├── gen/
+│   │   ├── __init__.py
+│   │   ├── fb303/
+│   │   │   ├── FacebookService-remote
+│   │   │   ├── FacebookService.py
+│   │   │   ├── __init__.py
+│   │   │   ├── constants.py
+│   │   │   └── ttypes.py
+│   │   └── sparts_examples/
+│   │       ├── SpartsBarService-remote
+│   │       ├── SpartsBarService.py
+│   │       ├── SpartsFooService-remote
+│   │       ├── SpartsFooService.py
+│   │       ├── __init__.py
+│   │       ├── constants.py
+│   │       └── ttypes.py
+│   ├── runit.py
+│   ├── sparts.py
+│   ├── tasks/
+│   │   ├── __init__.py
+│   │   ├── dbus.py
+│   │   ├── fb303.py
+│   │   ├── file.py
+│   │   ├── periodic.py
+│   │   ├── poller.py
+│   │   ├── queue.py
+│   │   ├── select.py
+│   │   ├── thrift/
+│   │   │   ├── __init__.py
+│   │   │   ├── cppserver.py
+│   │   │   ├── handler.py
+│   │   │   ├── nbserver.py
+│   │   │   └── server.py
+│   │   ├── tornado.py
+│   │   ├── tornado_thrift.py
+│   │   ├── tui.py
+│   │   ├── twisted.py
+│   │   └── twisted_command.py
+│   ├── tests/
+│   │   ├── __init__.py
+│   │   ├── base.py
+│   │   └── dummy.py
+│   ├── thrift/
+│   │   ├── __init__.py
+│   │   ├── client.py
+│   │   └── compiler.py
+│   ├── timer.py
+│   ├── vservice.py
+│   └── vtask.py
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── facebook/
+│                   └── sparts/
+│                       ├── original/
+│                       │   ├── CollectionsExtraTest.java
+│                       │   ├── CollectionsTest.java
+│                       │   ├── CompatExtraTest.java
+│                       │   ├── CounterTests.java
+│                       │   ├── CtxTest.java
+│                       │   ├── DaemonTest.java
+│                       │   ├── Fb303Test.java
+│                       │   ├── FileTest.java
+│                       │   ├── FileutilsTest.java
+│                       │   ├── ImportsExtraTest.java
+│                       │   ├── ImportsTest.java
+│                       │   ├── PeriodicTest.java
+│                       │   ├── PollerTest.java
+│                       │   ├── QueueDeferredTest.java
+│                       │   ├── QueueFuturesTest.java
+│                       │   ├── QueueTest.java
+│                       │   ├── SelectTest.java
+│                       │   ├── SetTaskOptionTest.java
+│                       │   ├── SetupPyTest.java
+│                       │   ├── TaskTest.java
+│                       │   ├── TimerExtraTest.java
+│                       │   ├── TimerTest.java
+│                       │   ├── TornadoTest.java
+│                       │   ├── TwistedCommandTest.java
+│                       │   ├── VServiceTest.java
+│                       │   ├── VTaskTest.java
+│                       │   ├── tasks/
+│                       │   │   └── ThriftMultiplexedTest.java
+│                       │   └── thrift/
+│                       │       └── CompilerTest.java
+│                       └── public/
+│                           ├── PublicCollectionsExtraTest.java
+│                           ├── PublicCollectionsTest.java
+│                           ├── PublicCompatExtraTest.java
+│                           ├── PublicCountersTest.java
+│                           ├── PublicCtxTest.java
+│                           ├── PublicDaemonTest.java
+│                           ├── PublicImportsTest.java
+│                           ├── PublicSetupPyTest.java
+│                           └── PublicVServiceTest.java
+├── test_summary.json
+├── tests/
+│   ├── __init__.py
+│   ├── tasks/
+│   │   ├── __init__.py
+│   │   ├── test_dbus.py
+│   │   ├── test_file.py
+│   │   ├── test_periodic.py
+│   │   ├── test_poller.py
+│   │   ├── test_queue.py
+│   │   ├── test_queue_deferred.py
+│   │   ├── test_queue_futures.py
+│   │   ├── test_select.py
+│   │   ├── test_settaskoption.py
+│   │   ├── test_thrift.py
+│   │   ├── test_tornado.py
+│   │   ├── thrift/
+│   │   │   └── test_multiplexed.py
+│   │   └── twisted_command.py
+│   ├── test_collections.py
+│   ├── test_collections_extra.py
+│   ├── test_compat_extra.py
+│   ├── test_counters.py
+│   ├── test_ctx.py
+│   ├── test_daemon.py
+│   ├── test_fb303.py
+│   ├── test_fileutils.py
+│   ├── test_imports.py
+│   ├── test_setup_py.py
+│   ├── test_timer.py
+│   ├── test_timer_extra.py
+│   ├── test_vservice.py
+│   ├── test_vtask.py
+│   └── thrift/
+│       ├── __init__.py
+│       └── test_compiler.py
+├── thrift/
+│   ├── fb303.thrift
+│   └── sparts_examples.thrift

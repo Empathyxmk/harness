@@ -1,0 +1,75 @@
+{
+  "project_name": "commoncrawl_news-crawl",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:16:31.905186",
+  "original_path": "/workspace/verified_repos_v2/Java/commoncrawl_news-crawl",
+  "public_test_result_path": "/workspace/public_test_results/Java/commoncrawl_news-crawl",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/org/commoncrawl/stormcrawler/FastURLFilterTest.java",
+      "src/test/java/org/commoncrawl/stormcrawler/news/ContentDetectorTest.java",
+      "src/test/java/org/commoncrawl/stormcrawler/news/PreFilterBoltTest.java",
+      "src/test/java/org/commoncrawl/stormcrawler/news/PunycodeURLNormalizerTest.java",
+      "src/test/java/org/commoncrawl/stormcrawler/news/NewsSiteMapParserTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/org/commoncrawl/stormcrawler/FastURLFilterPublicTest.java",
+      "src/test/java/org/commoncrawl/stormcrawler/news/ContentDetectorPublicTest.java",
+      "src/test/java/org/commoncrawl/stormcrawler/news/PreFilterBoltPublicTest.java",
+      "src/test/java/org/commoncrawl/stormcrawler/news/PunycodeURLNormalizerPublicTest.java",
+      "src/test/java/org/commoncrawl/stormcrawler/news/NewsSiteMapParserPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "src/test/java/org/commoncrawl/stormcrawler/FastURLFilterPublicTest.java",
+      "src/test/java/org/commoncrawl/stormcrawler/news/ContentDetectorPublicTest.java",
+      "src/test/java/org/commoncrawl/stormcrawler/news/PreFilterBoltPublicTest.java",
+      "src/test/java/org/commoncrawl/stormcrawler/news/PunycodeURLNormalizerPublicTest.java",
+      "src/test/java/org/commoncrawl/stormcrawler/news/NewsSiteMapParserPublicTest.java",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 15,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/org/commoncrawl/stormcrawler/FastURLFilterPublicTest.java",
+    "src/test/java/org/commoncrawl/stormcrawler/news/ContentDetectorPublicTest.java",
+    "src/test/java/org/commoncrawl/stormcrawler/news/PreFilterBoltPublicTest.java",
+    "src/test/java/org/commoncrawl/stormcrawler/news/PunycodeURLNormalizerPublicTest.java",
+    "src/test/java/org/commoncrawl/stormcrawler/news/NewsSiteMapParserPublicTest.java",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "run_public_tests.sh",
+    "pom.xml",
+    "src/test/java/org/commoncrawl/stormcrawler/FastURLFilterPublicTest.java",
+    "src/test/java/org/commoncrawl/stormcrawler/news/ContentDetectorPublicTest.java",
+    "src/test/java/org/commoncrawl/stormcrawler/news/PreFilterBoltPublicTest.java",
+    "src/test/java/org/commoncrawl/stormcrawler/news/PunycodeURLNormalizerPublicTest.java",
+    "src/test/java/org/commoncrawl/stormcrawler/news/NewsSiteMapParserPublicTest.java",
+    "run_public_tests.sh",
+    "pom.xml",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

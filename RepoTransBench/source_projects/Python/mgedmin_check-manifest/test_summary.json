@@ -1,0 +1,16 @@
+{
+  "project_name": "mgedmin_check-manifest",
+  "language": "Python",
+  "coverage": {
+    "line": 97.0,
+    "branch": 98.4
+  },
+  "timestamp": "2025-06-19T12:04:06.140800",
+  "original_path": "/workspace/runnable_filter/Python/mgedmin_check-manifest",
+  "test_result_path": "/workspace/test_enhancement_results/Python/mgedmin_check-manifest",
+  "tests_path": [
+    "tests.py",
+    "test_check_manifest_additional.py"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

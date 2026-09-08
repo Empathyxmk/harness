@@ -1,0 +1,44 @@
+{
+  "project_name": "expressjs_cookie-session",
+  "language": "JavaScript",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:25:47.521847",
+  "original_path": "/workspace/verified_repos_v2/JavaScript/expressjs_cookie-session",
+  "public_test_result_path": "/workspace/public_test_results/JavaScript/expressjs_cookie-session",
+  "original_tests": {
+    "test_files": [
+      "test/unit.index.test.js",
+      "test/cookie-session.spec.js"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 2,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/unit.index.public.test.js",
+      "public_tests/cookie-session.public.spec.js",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 4,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/unit.index.public.test.js",
+    "public_tests/cookie-session.public.spec.js",
+    "run_public_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

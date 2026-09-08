@@ -1,0 +1,10 @@
+*.py[cod]
+__pycache__/
+doc/tags
+.cache/
+.coverage
+htmlcov
+.mypy_cache/
+.pytest_cache/
+.tox
+ci/result

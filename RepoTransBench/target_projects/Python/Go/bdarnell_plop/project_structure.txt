@@ -1,0 +1,23 @@
+bdarnell_plop/
+├── README.md                                # Project documentation and test running instructions
+├── go.mod                                   # Go module definition file for dependency management
+├── run_tests.sh                             # Simple script to run all Go tests with one command
+├── plop/                                    # Main source directory (mocks or actual code, not included here)
+│   ├── callgraph.go                         # Go translation of callgraph.py (assumed/mocked)
+│   ├── collector.go                         # Go translation of collector.py (assumed/mocked)
+│   ├── platform.go                          # Go translation of platform.py (assumed/mocked)
+│   ├── viewer.go                            # Go translation of viewer.py (assumed/mocked)
+│   └── ...                                  # other supporting files, static, templates, etc.
+├── tests/
+│   └── original/
+│       ├── callgraph_test.go                # Original Python tests from plop/test/callgraph_test.py
+│       ├── collector_test.go                # Original Python tests from plop/test/collector_test.py
+│       ├── platform_test.go                 # Original Python tests from plop/test/platform_test.py
+│       ├── setup_test.go                    # Original Python tests from plop/test/setup_test.py
+│       ├── viewer_test.go                   # Original Python tests from plop/test/viewer_test.py
+├── public_tests/
+│   ├── public_callgraph_test.go             # Go translations of public_tests/test_public_callgraph.py
+│   ├── public_collector_test.go             # Go translations of public_tests/test_public_collector.py
+│   ├── public_platform_test.go              # Go translations of public_tests/test_public_platform.py
+│   ├── public_setup_test.go                 # Go translations of public_tests/test_public_setup.py
+│   ├── public_viewer_test.go                # Go translations of public_tests/test_public_viewer.py

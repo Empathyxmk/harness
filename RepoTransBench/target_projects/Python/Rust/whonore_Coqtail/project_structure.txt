@@ -1,0 +1,22 @@
+whonore_Coqtail/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   ├── original/
+│   │   ├── test_coqtail.rs
+│   │   ├── test_coqtop.rs
+│   │   ├── test_matcher.rs
+│   │   ├── test_parse.rs
+│   │   ├── test_public_matcher.rs
+│   │   ├── test_public_parse.rs
+│   │   ├── test_public_version.rs
+│   │   ├── test_public_xml_interface.rs
+│   │   ├── test_version.rs
+│   │   └── test_xml_interface.rs
+├── public_tests/
+│   ├── test_public_matcher.rs
+│   ├── test_public_parse.rs
+│   ├── test_public_version.rs
+│   └── test_public_xml_interface.rs
+├── run_tests.sh

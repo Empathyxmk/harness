@@ -1,0 +1,44 @@
+alingse_jsoncsv/
+├── go.mod                        # Go module definition and dependencies
+├── run_tests.sh                  # Executable test script (run all tests with ./run_tests.sh)
+├── README.md                     # Project documentation and usage
+├── tests/
+│   ├── original/
+│   │   ├── dumptool_extra_test.go
+│   │   ├── dumptool_test.go
+│   │   ├── escape_test.go
+│   │   ├── jsoncsv_test.go
+│   │   ├── jsontool_extra_test.go
+│   │   ├── jsontool_test.go
+│   │   ├── main_extra_test.go
+│   │   └── mkexcel_test.go
+│   └── testutil.go               # Test helper/utilities (if reused across tests)
+├── public_tests/
+│   ├── public_dumptool_extra_test.go
+│   ├── public_dumptool_test.go
+│   ├── public_escape_test.go
+│   ├── public_jsoncsv_test.go
+│   ├── public_jsontool_extra_test.go
+│   ├── public_jsontool_test.go
+│   ├── public_mkexcel_test.go
+│   └── testutil.go               # Public test helpers (if necessary)
+├── jsoncsv/
+│   ├── dumptool.go
+│   ├── jsontool.go
+│   ├── main.go
+│   ├── utils.go
+│   └── ...                       # Implementation source files (to be filled in/migrated)
+├── fixture/
+│   └── files/
+│       └── ...                   # JSON and CSV fixtures used by tests
+└── project_structure.txt         # Project organization documentation
+
+EXPLANATION:
+- go.mod: Declares the Go module and manages dependencies.
+- run_tests.sh: Simple test runner script, executes all Go tests in all packages.
+- README.md: Documentation and usage instructions for the Go port.
+- tests/original/: Original function and CLI tests, translation from Python 'tests' directory.
+- public_tests/: Public/fairness tests, mirroring public_tests/ from Python, prefixed for Go convention.
+- jsoncsv/: Source implementations (migrated core logic from Python to Go).
+- fixture/files/: Reused test fixtures (data files), accessible to both test sets.
+- project_structure.txt: Describes layout, structure, and file purpose.

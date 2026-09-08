@@ -1,0 +1,15 @@
+{
+  "project_name": "jeromeetienne_MicroCache.js",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 87.5
+  },
+  "timestamp": "2025-06-19T10:41:51.086874",
+  "original_path": "/workspace/runnable_filter/JavaScript/jeromeetienne_MicroCache.js",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/jeromeetienne_MicroCache.js",
+  "tests_path": [
+    "tests/microcache.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

@@ -1,0 +1,36 @@
+.
+├── README.md
+│     # Documentation and setup
+├── go.mod
+│     # Go module and dependencies (uses testify for assertions)
+├── main.go
+│     # Main application stub (not used, for build completeness)
+├── module.go
+│     # Empty placeholder to root 'percentsamples' package
+├── run_tests.sh
+│     # One-click test runner (use: ./run_tests.sh)
+├── tests/
+│   ├── testutil.go
+│   │     # Android mocks/stubs and PercentLinearLayout stub - used by tests
+│   └── original/
+│       ├── application_test.go
+│       │     # Original ApplicationTest.java translated to Go
+│       └── percent_linear_layout_test.go
+│             # Original PercentLinearLayoutTest.java translated to Go
+├── public_tests/
+│   ├── application_public_test.go
+│   │     # Public ApplicationPublicTest.java translated to Go
+│   └── percent_linear_layout_public_test.go
+│         # Public PercentLinearLayoutPublicTest.java translated to Go
+
+Legend:
+- tests/original/: Translations of unit/original Java test files in Go
+- public_tests/: Translations of public Java test files in Go
+- tests/testutil.go: Stubs for Android types for test compatibility
+- go.mod: Go module configuration, includes testify for assertions
+- run_tests.sh: Runs all tests in original and public packages
+- README.md: Docs and instructions
+
+How to run all tests:
+    chmod +x run_tests.sh
+    ./run_tests.sh

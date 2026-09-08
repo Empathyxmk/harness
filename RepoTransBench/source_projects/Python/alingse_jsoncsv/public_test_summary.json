@@ -1,0 +1,62 @@
+{
+  "project_name": "alingse_jsoncsv",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:14:58.380869",
+  "original_path": "/workspace/verified_repos_v2/Python/alingse_jsoncsv",
+  "public_test_result_path": "/workspace/public_test_results/Python/alingse_jsoncsv",
+  "original_tests": {
+    "test_files": [
+      "tests/test_jsontool.py",
+      "tests/test_escape.py",
+      "tests/test_jsontool_extra.py",
+      "tests/test_mkexcel.py",
+      "tests/test_jsoncsv.py",
+      "tests/test_dumptool_extra.py",
+      "tests/test_dumptool.py",
+      "tests/test_main_extra.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 8,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_public_jsontool.py",
+      "public_tests/test_public_escape.py",
+      "public_tests/test_public_jsontool_extra.py",
+      "run_public_tests.sh",
+      "public_tests/test_public_mkexcel.py",
+      "public_tests/test_public_jsoncsv.py",
+      "public_tests/test_public_dumptool_extra.py",
+      "public_tests/test_public_dumptool.py",
+      "run_public_tests.sh",
+      "public_tests/__init__.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 10,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_public_jsontool.py",
+    "public_tests/test_public_escape.py",
+    "public_tests/test_public_jsontool_extra.py",
+    "run_public_tests.sh",
+    "public_tests/test_public_mkexcel.py",
+    "public_tests/test_public_jsoncsv.py",
+    "public_tests/test_public_dumptool_extra.py",
+    "public_tests/test_public_dumptool.py",
+    "run_public_tests.sh",
+    "public_tests/__init__.py"
+  ]
+}

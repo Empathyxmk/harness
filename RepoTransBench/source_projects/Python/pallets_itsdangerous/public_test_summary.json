@@ -1,0 +1,66 @@
+{
+  "project_name": "pallets_itsdangerous",
+  "language": "Python",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:20:02.491856",
+  "original_path": "/workspace/verified_repos_v2/Python/pallets_itsdangerous",
+  "public_test_result_path": "/workspace/public_test_results/Python/pallets_itsdangerous",
+  "original_tests": {
+    "test_files": [
+      "tests/test_itsdangerous/test_url_safe.py",
+      "tests/test_itsdangerous/test_encoding.py",
+      "tests/test_itsdangerous/test_init.py",
+      "tests/test_itsdangerous/test_serializer.py",
+      "tests/test_itsdangerous/test_timed.py",
+      "tests/test_itsdangerous/test_signer.py",
+      "tests/test_itsdangerous/test_exc.py"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 7,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "public_tests/test_url_safe_public.py",
+      "public_tests/test_encoding_public.py",
+      "public_tests/test_init_public.py",
+      "run_public_tests.sh",
+      "public_tests/test_serializer_public.py",
+      "public_tests/test_exc_public.py",
+      "public_tests/test_signer_public.py",
+      "public_tests/test_timed_public.py",
+      "public_tests/test_exc_public.py",
+      "public_tests/test_serializer_public.py",
+      "public_tests/test_exc_public.py",
+      "public_tests/test_timed_public.py",
+      "public_tests/test_timed_public.py"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 13,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "public_tests/test_url_safe_public.py",
+    "public_tests/test_encoding_public.py",
+    "public_tests/test_init_public.py",
+    "run_public_tests.sh",
+    "public_tests/test_serializer_public.py",
+    "public_tests/test_exc_public.py",
+    "public_tests/test_signer_public.py",
+    "public_tests/test_timed_public.py",
+    "public_tests/test_exc_public.py",
+    "public_tests/test_serializer_public.py",
+    "public_tests/test_exc_public.py",
+    "public_tests/test_timed_public.py",
+    "public_tests/test_timed_public.py"
+  ]
+}

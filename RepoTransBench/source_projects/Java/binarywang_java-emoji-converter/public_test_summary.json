@@ -1,0 +1,50 @@
+{
+  "project_name": "binarywang_java-emoji-converter",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T14:40:05.594534",
+  "original_path": "/workspace/verified_repos_v2/Java/binarywang_java-emoji-converter",
+  "public_test_result_path": "/workspace/public_test_results/Java/binarywang_java-emoji-converter",
+  "original_tests": {
+    "test_files": [
+      "src/test/java/com/github/binarywang/java/emoji/EmojiConverterEdgeTest.java",
+      "src/test/java/com/github/binarywang/java/emoji/EmojiUtilsTest.java",
+      "src/test/java/com/github/binarywang/java/emoji/EmojiConverterTest.java",
+      "src/test/java/com/github/binarywang/java/emoji/EmojiReaderTest.java",
+      "src/test/java/com/github/binarywang/java/emoji/model/Emoji4UnicodeTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 5,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "src/test/java/com/github/binarywang/java/emoji/EmojiConverterEdgePublicTest.java",
+      "src/test/java/com/github/binarywang/java/emoji/EmojiConverterPublicTest.java",
+      "src/test/java/com/github/binarywang/java/emoji/EmojiUtilsPublicTest.java",
+      "src/test/java/com/github/binarywang/java/emoji/EmojiReaderPublicTest.java",
+      "src/test/java/com/github/binarywang/java/emoji/model/Emoji4UnicodePublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 6,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "src/test/java/com/github/binarywang/java/emoji/EmojiConverterEdgePublicTest.java",
+    "src/test/java/com/github/binarywang/java/emoji/EmojiConverterPublicTest.java",
+    "src/test/java/com/github/binarywang/java/emoji/EmojiUtilsPublicTest.java",
+    "src/test/java/com/github/binarywang/java/emoji/EmojiReaderPublicTest.java",
+    "src/test/java/com/github/binarywang/java/emoji/model/Emoji4UnicodePublicTest.java",
+    "run_public_tests.sh"
+  ]
+}

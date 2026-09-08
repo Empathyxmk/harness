@@ -1,0 +1,45 @@
+JamesZBL_java_design_patterns_dotnet/
+├── src/
+│   └── MainProject/
+│       ├── MainProject.csproj
+│       └── (all production code; not included here)
+├── tests/
+│   ├── original/
+│   │   ├── Tests.Original.csproj
+│   │   ├── AbstractFactoryTest.cs
+│   │   ├── BuilderPersonTests.cs
+│   │   ├── CarpenterOperationsTest.cs
+│   │   ├── CharacterCompositeTest.cs
+│   │   ├── ChineseWordTest.cs
+│   │   ├── CourseFacadeTest.cs
+│   │   ├── DirectorTest.cs
+│   │   ├── EnumDirectorTest.cs
+│   │   ├── FactoryMethodTest.cs
+│   │   ├── FactoryTest.cs
+│   │   ├── HammerSmithOperationsTest.cs
+│   │   ├── LazyInitializationDirectorTest.cs
+│   │   ├── MordernWarTest.cs
+│   │   ├── OriginalTestUtilities.cs
+│   │   ├── PrototypeTest.cs
+│   │   ├── SingletonTest.cs
+│   │   ├── TestAdapter.cs
+│   │   ├── TestPerson.cs
+│   │   ├── ThreadSafeDoubleCheckLockingTest.cs
+│   │   ├── ThreadSafeLazyLoadDirectorTest.cs
+│   │   ├── WarTest.cs
+│   │   ├── WriterIntegrationTest.cs
+│   │   ├── WriterTest.cs
+│   │   ├── EnglishWordTest.cs
+│   │   └── EnglishSentenceTest.cs
+├── public_tests/
+│   ├── PublicTests.csproj
+│   ├── CharacterCompositePublicTest.cs
+│   ├── ChineseWordPublicTest.cs
+│   ├── EnglishSentencePublicTest.cs
+│   ├── EnglishWordPublicTest.cs
+│   ├── WriterIntegrationPublicTest.cs
+│   ├── WriterPublicTest.cs
+├── run_tests.sh
+├── JamesZBL_java_design_patterns_dotnet.sln
+├── test_translation_progress.json
+└── README.md

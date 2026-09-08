@@ -1,0 +1,22 @@
+pre-commit-hooks-java/
+├── pom.xml
+├── run_tests.sh
+├── test_translation_progress.json
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── precommit/
+│                   └── hooks/
+│                       └── (Main modules and actual hook code go here)
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── precommit/
+│                   └── hooks/
+│                       ├── original/
+│                       │   └── (All translated original tests from tests/)
+│                       └── public_tests/
+│                           └── (All translated public tests from public_tests/)
+└── README.md

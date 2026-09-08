@@ -1,0 +1,52 @@
+baer_pint Python Project Structure
+==================================
+
+.
+├── requirements.txt                      # Python dependencies (pytest)
+├── run_tests.sh                          # One-click script to run all tests
+├── project_structure.txt                 # This file: project structure & description
+├── tests/
+│   ├── __init__.py                       # marks as package, can be empty
+│   └── original/
+│       ├── __init__.py                   # marks as package, can be empty
+│       ├── test_build_test.py            # Translated original test: build/test.js
+│       ├── test_jobQueue.py              # Translated original test: jobQueue.spec.js
+│       ├── test_Job.py                   # Translated original test: Job.spec.js
+│       ├── test_cli.py                   # Translated original test: cli.spec.js
+│       ├── test_pint.py                  # Translated original test: pint.spec.js
+│       ├── test_Pintfile.py              # Translated original test: Pintfile.spec.js
+│       ├── test_cli_full.py              # Translated original test: cli_full.spec.js
+│       └── test_util.py                  # Translated original test: util.spec.js
+├── public_tests/
+│   ├── __init__.py                       # marks as package, can be empty
+│   ├── test_build_test_public.py         # Translated public test: build_test.public.test.js
+│   ├── test_cli_full_public.py           # Translated public test: cli_full.public.test.js
+│   ├── test_cli_public.py                # Translated public test: cli.public.test.js
+│   ├── test_jobQueue_public.py           # Translated public test: jobQueue.public.test.js
+│   ├── test_Job_public.py                # Translated public test: Job.public.test.js
+│   ├── test_pint_public.py               # Translated public test: pint.public.test.js
+│   ├── test_Pintfile_public.py           # Translated public test: Pintfile.public.test.js
+│   └── test_util_public.py               # Translated public test: util.public.test.js
+
+Directory Explanations:
+-----------------------
+- requirements.txt: Project dependencies. Run `pip install -r requirements.txt` to install.
+- run_tests.sh: Run ALL tests (both tests/original and public_tests).
+- tests/original/: Translated original (non-public) JavaScript tests.
+- public_tests/: Translated public JavaScript tests.
+- \_\_init\_\_.py: Marks directory as Python package, may be empty.
+- test_\*.py: Python unittest or pytest test files.
+
+Usage Instructions:
+-------------------
+1. Install Python dependencies:
+      pip install -r requirements.txt
+
+2. To run all tests (one-click):
+      ./run_tests.sh
+
+3. To run ONLY original or public tests:
+      pytest tests/original/
+      pytest public_tests/
+
+All tests are translated from the JavaScript originals and are directly runnable with pytest.

@@ -1,0 +1,11 @@
+{
+  "project_name": "NeonOrbit_Dexplore",
+  "language": "Java",
+  "coverage": {
+    "line": 54.1,
+    "branch": 52.6
+  },
+  "timestamp": "2025-06-20T01:05:30.514542",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/NeonOrbit_Dexplore",
+  "test_result_path": "/workspace/test_enhancement_results/Java/NeonOrbit_Dexplore"
+}

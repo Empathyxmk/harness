@@ -1,0 +1,97 @@
+{
+  "project_name": "sockeqwe_fragmentargs",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-25T15:05:54.242384",
+  "original_path": "/workspace/verified_repos_v2/Java/sockeqwe_fragmentargs",
+  "public_test_result_path": "/workspace/public_test_results/Java/sockeqwe_fragmentargs",
+  "original_tests": {
+    "test_files": [
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/FragmentArgsTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/FragmentArgsStaticInitTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/FragmentArgsInjectorTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/ArgsBundlerInterfaceTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/NoneArgsBundlerTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/CastedArrayListArgsBundlerTest.java",
+      "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/ProtectedAccessTest.java",
+      "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/InnerClassTest.java",
+      "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/CompileTest.java",
+      "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/CompareModifierUtilsTest.java",
+      "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/ModifierUtilsDefaultModifierTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 11,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/FragmentArgsPublicTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/FragmentArgsStaticInitPublicTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/FragmentArgsInjectorPublicTest.java",
+      "run_public_tests.sh",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/ArgsBundlerInterfacePublicTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/NoneArgsBundlerPublicTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/CastedArrayListArgsBundlerPublicTest.java",
+      "run_public_tests.sh",
+      "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/ProtectedAccessPublicTest.java",
+      "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/InnerClassPublicTest.java",
+      "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/CompilePublicTest.java",
+      "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/CompareModifierUtilsPublicTest.java",
+      "run_public_tests.sh",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/CastedArrayListArgsBundlerPublicTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/CastedArrayListArgsBundlerPublicTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/NoneArgsBundlerPublicTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/ArgsBundlerInterfacePublicTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/NoneArgsBundlerPublicTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/ArgsBundlerInterfacePublicTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/ArgsBundlerInterfacePublicTest.java",
+      "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/NoneArgsBundlerPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 22,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/FragmentArgsPublicTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/FragmentArgsStaticInitPublicTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/FragmentArgsInjectorPublicTest.java",
+    "run_public_tests.sh",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/ArgsBundlerInterfacePublicTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/NoneArgsBundlerPublicTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/CastedArrayListArgsBundlerPublicTest.java",
+    "run_public_tests.sh",
+    "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/ProtectedAccessPublicTest.java",
+    "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/InnerClassPublicTest.java",
+    "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/CompilePublicTest.java",
+    "processor/src/test/java/com/hannesdorfmann/fragmentargs/processor/CompareModifierUtilsPublicTest.java",
+    "run_public_tests.sh",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/CastedArrayListArgsBundlerPublicTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/CastedArrayListArgsBundlerPublicTest.java",
+    "annotation/src/test/java/android/os/Parcel.java",
+    "annotation/src/test/java/android/os/Bundle.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/NoneArgsBundlerTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/NoneArgsBundlerPublicTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/ArgsBundlerInterfacePublicTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/NoneArgsBundlerTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/NoneArgsBundlerPublicTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/ArgsBundlerInterfacePublicTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/ArgsBundlerInterfacePublicTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/NoneArgsBundlerTest.java",
+    "annotation/src/test/java/com/hannesdorfmann/fragmentargs/bundler/NoneArgsBundlerPublicTest.java",
+    "annotation/run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

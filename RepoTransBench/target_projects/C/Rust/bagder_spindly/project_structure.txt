@@ -1,0 +1,20 @@
+bagder_spindly/
+├── Cargo.toml              # Rust project configuration and dependencies
+├── README.md               # Project documentation
+├── run_tests.sh            # Simple script to run all tests
+├── src/
+│   ├── lib.rs              # Main library file with core functionality
+│   └── spdy_nv_block.rs    # Implementation of mock for nv_block functions
+└── tests/
+    ├── lib.rs              # Test entrypoint
+    ├── original/           # Translated original tests
+    │   ├── mod.rs          # Module definition for original tests
+    │   ├── test_spdy_frame.rs        # Frame tests
+    │   ├── test_spdy_rst_stream.rs   # RST stream tests
+    │   ├── test_spdy_headers.rs      # Headers tests
+    │   └── testdata.rs               # Test data definitions
+    └── public_tests/       # Translated public tests
+        ├── mod.rs          # Module definition for public tests
+        ├── test_spdy_frame_public.rs     # Public frame tests
+        ├── test_spdy_rst_stream_public.rs # Public RST stream tests
+        └── test_spdy_headers_public.rs    # Public headers tests

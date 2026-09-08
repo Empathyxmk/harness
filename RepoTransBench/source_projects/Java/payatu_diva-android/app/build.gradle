@@ -1,0 +1,24 @@
+// Add Robolectric and mockito for unit testing in build.gradle (app module)
+apply plugin: 'com.android.application'
+
+android {
+    // defaultConfig etc.
+    // (Assume the rest remains unchanged)
+    defaultConfig {
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    // ... (other configs as-is)
+}
+
+dependencies {
+    // ... (existing dependencies)
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation "org.robolectric:robolectric:4.10.3"
+    testImplementation "org.mockito:mockito-core:4.5.1"
+    testImplementation "androidx.test:core:1.4.0"
+    testImplementation "androidx.test.ext:junit:1.1.3"
+    testImplementation 'androidx.test:runner:1.4.0'
+    testImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    // Code coverage support
+    testImplementation "org.jacoco:org.jacoco.agent:0.8.8"
+}

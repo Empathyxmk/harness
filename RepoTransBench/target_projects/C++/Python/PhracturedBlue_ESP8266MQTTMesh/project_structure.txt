@@ -1,0 +1,13 @@
+project_root/
+├── requirements.txt
+├── run_tests.sh
+├── src/
+│   ├── base64_module.py
+├── tests/
+│   ├── __init__.py
+│   ├── original/
+│   │   ├── __init__.py
+│   │   └── test_base64.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_base64_public.py

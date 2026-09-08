@@ -1,0 +1,32 @@
+scrapinghub_adblockparser/
+├── Cargo.toml                  # Rust project manifest and dependencies
+├── README.md                   # Project overview, setup, test instructions
+├── run_tests.sh                # One-click script to run all tests via `cargo test`
+├── src/
+│   ├── lib.rs                  # Library entrypoint (re-exports core modules)
+│   ├── adblockparser.rs        # Core Adblock parser, rule and matcher implementations
+│   └── utils.rs                # Utility functions (e.g., split_data)
+├── tests/
+│   └── original/               # Ported original Python tests (full functional, internal coverage)
+│       ├── test_rule_types.rs
+│       ├── test_utils.rs
+│       └── test_adblockparser_api.rs
+├── public_tests/               # Public-facing/adapted tests for validation/demo purposes
+│   ├── test_public_rule_types.rs
+│   ├── test_public_utils.rs
+│   └── test_public_adblockparser_api.rs
+# (Other tests or modules can be extended similarly)
+
+## Directory explanations:
+
+- `src/` contains the library logic and core modules for adblock parsing and rule matching.
+- `tests/original/` contains the ported comprehensive tests, ensuring full parity with the original Python suite.
+- `public_tests/` contains public/adapted tests for open demonstration and simple usage checking.
+- `run_tests.sh` runs all tests using Rust's standard test runner.
+- `Cargo.toml` configures Rust dependencies and metadata for the project.
+
+## How to set up and test:
+
+1. Install Rust (https://rustup.rs)
+2. In the project directory, simply run: `./run_tests.sh`
+3. All tests (original and public) will be executed, showing results.

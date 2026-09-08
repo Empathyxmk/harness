@@ -1,0 +1,29 @@
+{
+  "name": "vhost",
+  "description": "virtual domain hosting for http servers",
+  "version": "3.0.2",
+  "repository": "expressjs/vhost",
+  "license": "MIT",
+  "keywords": [
+    "http",
+    "connect",
+    "express",
+    "host",
+    "virtual",
+    "domain",
+    "vhost"
+  ],
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "npx mocha --reporter spec --bail --check-leaks test/"
+  }
+}

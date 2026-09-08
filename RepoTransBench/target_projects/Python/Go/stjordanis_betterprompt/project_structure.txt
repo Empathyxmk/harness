@@ -1,0 +1,17 @@
+betterprompt/                # Go module, contains main package and helpers
+    betterprompt.go          # Implementation and dummy interface for tests
+    testutil.go             # Utility for test export logic and helpers
+go.mod                      # Module definition for dependency management
+tests/
+    original/               # Original test translations from Python
+        betterprompt_coverage_test.go
+        betterprompt_edgecases_test.go
+        betterprompt_test.go
+        init_module_test.go
+public_tests/               # Public tests as per public_tests in Python
+    public_betterprompt_coverage_test.go
+    public_betterprompt_edgecases_test.go
+    public_betterprompt_test.go
+    public_init_module_test.go
+run_tests.sh                # One-click test script: runs all tests
+project_structure.txt       # This documentation

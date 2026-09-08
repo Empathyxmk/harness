@@ -1,0 +1,34 @@
+python3_oop_rust/
+├── Cargo.toml                   # Rust build configuration and dependency file
+├── src/
+│   ├── lib.rs                   # Main library entry point
+│   ├── car_flyweight.rs         # Rust module for car flyweight pattern (mock)
+│   ├── window_command.rs        # Rust module for window command pattern (mock)
+│   ├── pythonic_window_command.rs   # Rust module for pythonic window command (mock)
+│   ├── folder_composite.rs      # Rust module for composite folder/filesystem
+│   ├── email_facade.rs          # Rust module for email facade (mock)
+├── tests/
+│   └── original/
+│       ├── test_car_flyweight.rs
+│       ├── test_window_command.rs
+│       ├── test_email_facade.rs
+│       ├── test_folder_composite.rs
+│       └── test_pythonic_window_command.rs
+├── public_tests/
+│   ├── test_public_pytest_stats.rs
+│   ├── test_public_flight_status.rs
+│   ├── test_public_pytest_cleanup.rs
+│   ├── test_public_pytest_setups.rs
+│   ├── test_public_pytest_skipping.rs
+│   ├── test_public_statslist_setup.rs
+│   └── test_public_with_pytest.rs
+├── run_tests.sh                 # Simple script to run all tests
+├── README.md                    # Project information and instructions
+
+# Directory explanations:
+# src/ - Rust source modules corresponding to application logic and mocks.
+# tests/original/ - Translated original Python tests using Rust test framework.
+# public_tests/ - Public variant tests designed similarly, testable with `cargo test`.
+# run_tests.sh - Single-command test runner script.
+# Cargo.toml - Rust build config and dependencies.
+# README.md - Project and usage documentation.

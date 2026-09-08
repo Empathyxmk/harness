@@ -1,0 +1,37 @@
+serkanyersen_underscore_cpp/
+├── CMakeLists.txt
+├── include/
+│   └── underscore.h            # C++ header file for underscore dummy library
+├── src/
+│   └── underscore.cpp          # Stub implementation for testing, to be replaced with real logic
+├── tests/
+│   ├── original/
+│   │   ├── test_arrays_test.cpp
+│   │   ├── test_basics_test.cpp
+│   │   ├── test_collections_test.cpp
+│   │   ├── test_functions_test.cpp
+│   │   ├── test_more_coverage_test.cpp
+│   │   ├── test_objects_test.cpp
+│   │   ├── test_structure_test.cpp
+│   │   └── test_utility_test.cpp
+│   └── test_main.cpp          # Entry point for tests
+├── public_tests/
+│   ├── test_public_arrays_test.cpp
+│   ├── test_public_basics_test.cpp
+│   ├── test_public_collections_test.cpp
+│   ├── test_public_functions_test.cpp
+│   ├── test_public_more_coverage_test.cpp
+│   ├── test_public_objects_test.cpp
+│   ├── test_public_structure_test.cpp
+│   └── test_public_utility_test.cpp
+├── run_tests.sh               # Build and run all tests (one-click)
+└── project_structure.txt      # This project tree and explanation
+
+# Structure explanations:
+# - include/: Public headers for the library under test.
+# - src/: Implementation files (currently stubbed for C++ translation testing).
+# - tests/original/: C++ equivalents of the original Python tests (translation preserves logic).
+# - public_tests/: C++ equivalents for public tests (input/output/cases as per public_tests/ in Python).
+# - tests/test_main.cpp: Contains main() for GoogleTest.
+# - CMakeLists.txt: Configures build and includes GoogleTest automatically.
+# - run_tests.sh: Builds project and runs all tests with one command.

@@ -1,0 +1,93 @@
+.
+├── CMakeLists.txt
+├── Dockerfile
+├── LICENSE
+├── MANIFEST.in
+├── README.md
+├── htmlcov/
+│   ├── class_index.html
+│   ├── coverage_html_cb_6fb7b396.js
+│   ├── favicon_32_cb_58284776.png
+│   ├── function_index.html
+│   ├── index.html
+│   ├── keybd_closed_cb_ce680311.png
+│   ├── status.json
+│   ├── style_cb_81f8c14c.css
+│   ├── z_0bc64142e06bf453___init___py.html
+│   ├── z_0bc64142e06bf453_edge_py.html
+│   ├── z_0bc64142e06bf453_exceptions_py.html
+│   ├── z_0bc64142e06bf453_execution_plan_py.html
+│   ├── z_0bc64142e06bf453_graph_py.html
+│   ├── z_0bc64142e06bf453_node_py.html
+│   ├── z_0bc64142e06bf453_path_py.html
+│   ├── z_0bc64142e06bf453_query_result_py.html
+│   ├── z_0bc64142e06bf453_util_py.html
+│   ├── z_17bd492d087794b9___init___py.html
+│   ├── z_17bd492d087794b9_test_edge_py.html
+│   ├── z_17bd492d087794b9_test_exceptions_py.html
+│   ├── z_17bd492d087794b9_test_execution_plan_py.html
+│   ├── z_17bd492d087794b9_test_graph_py.html
+│   ├── z_17bd492d087794b9_test_node_py.html
+│   ├── z_17bd492d087794b9_test_path_py.html
+│   ├── z_17bd492d087794b9_test_query_result_py.html
+│   ├── z_17bd492d087794b9_test_util_py.html
+│   ├── z_41207d94ac41bfc9___init___py.html
+│   ├── z_41207d94ac41bfc9_pytest_xprocess_py.html
+│   ├── z_41207d94ac41bfc9_xprocess_py.html
+│   ├── z_a44f0ac069e85531___init___py.html
+│   ├── z_aee55b7cdf71401b_base_py.html
+│   ├── z_c4ffa8a422684190___init___py.html
+│   ├── z_c4ffa8a422684190_more_py.html
+│   └── z_c4ffa8a422684190_recipes_py.html
+├── project_structure.txt
+├── public_test_summary.json
+├── public_tests/
+│   ├── test_public_execution_plan.py
+│   ├── test_public_graph.py
+│   └── test_public_query_result_extra.py
+├── pyproject.toml
+├── redisgraph/
+│   ├── __init__.py
+│   ├── edge.py
+│   ├── exceptions.py
+│   ├── execution_plan.py
+│   ├── graph.py
+│   ├── node.py
+│   ├── path.py
+│   ├── query_result.py
+│   └── util.py
+├── requirements.txt
+├── run_public_tests.sh
+├── run_tests.sh
+├── test_summary.json
+├── test_translation_progress.json
+├── tests/
+│   ├── README.md
+│   ├── __init__.py
+│   ├── functional/
+│   │   ├── __init__.py
+│   │   └── test_all.py
+│   ├── original/
+│   │   ├── test_edge.cpp
+│   │   ├── test_exceptions.cpp
+│   │   ├── test_execution_plan.cpp
+│   │   ├── test_graph.cpp
+│   │   ├── test_node.cpp
+│   │   ├── test_path.cpp
+│   │   ├── test_query_result.cpp
+│   │   └── test_util.cpp
+│   ├── unit/
+│   │   ├── __init__.py
+│   │   ├── test_edge.py
+│   │   ├── test_exceptions.py
+│   │   ├── test_execution_plan.py
+│   │   ├── test_graph.py
+│   │   ├── test_graph_extra.py
+│   │   ├── test_node.py
+│   │   ├── test_path.py
+│   │   ├── test_query_result.py
+│   │   ├── test_query_result_extra.py
+│   │   └── test_util.py
+│   └── utils/
+│       └── base.py
+└── tox.ini

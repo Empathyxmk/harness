@@ -1,0 +1,39 @@
+.
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   └── original/
+│       ├── commands_test.go
+│       ├── config_missing_file_test.go
+│       ├── config_test.go
+│       ├── constants_test.go
+│       ├── event_handler_test.go
+│       ├── htmlcov_event_handler_py_test.go
+│       ├── htmlcov_init_py_test.go
+│       ├── htmlcov_parse_py_test.go
+│       ├── htmlcov_pyproject_placeholder_test.go
+│       ├── htmlcov_terminal_py_test.go
+│       ├── import_packages_test.go
+│       ├── main_module_test.go
+│       ├── parse_arguments_test.go
+│       ├── parse_test.go
+│       ├── terminal_test.go
+│       ├── trigger_test.go
+│       ├── watcher_imports_test.go
+│       └── watcher_test.go
+└── public_tests/
+    ├── commands_test.go
+    ├── config_missing_file_test.go
+    ├── config_test.go
+    ├── constants_test.go
+    ├── event_handler_test.go
+    ├── import_packages_test.go
+    ├── main_module_test.go
+    ├── parse_arguments_test.go
+    ├── parse_test.go
+    ├── terminal_test.go
+    ├── trigger_test.go
+    ├── watcher_imports_test.go
+    ├── watcher_test.go

@@ -1,0 +1,30 @@
+PrettyTime/                 # Solution root
+├── PrettyTime.sln          # .NET solution file
+├── run_tests.sh            # One-click script to run all tests
+├── src/
+│   └── PrettyTime/         # Main C# library source code (placeholder)
+│       ├── PrettyTime.csproj
+│       └── (library code - not shown)
+├── tests/
+│   └── original/
+│       ├── original.csproj # Project file for all original test cases
+│       ├── (all original test classes, e.g., PrettyTimeTest.cs, DurationTest.cs, ...)
+│       └── TestUtilities.cs
+├── public_tests/
+│   ├── public_tests.csproj # Project file for all public test cases
+│   └── (public test classes, e.g., PrettyTimeI18n_FR_PublicTest.cs, ...)
+└── README.md               # Documentation and setup instructions
+
+Directory explanations:
+- src/PrettyTime/           - Core C# library code for PrettyTime port
+- tests/original/           - All original (comprehensive) test cases ported from Java
+- public_tests/             - All public test cases (typically simpler, non-redundant, public-facing)
+- run_tests.sh              - Simple script: runs ALL tests in both test projects
+
+Setup and testing instructions:
+1. Install .NET SDK 6.0+ (https://dotnet.microsoft.com/download)
+2. Run tests: `./run_tests.sh`
+3. View results in terminal output
+4. To run only original or public tests:
+     dotnet test tests/original/
+     dotnet test public_tests/

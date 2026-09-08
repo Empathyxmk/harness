@@ -1,0 +1,26 @@
+rbarrois_xworkflows_cpp/
+├── CMakeLists.txt                   # CMake configuration (build all, enable gtest, discovers test files)
+├── README.md                        # Project and build/run instructions
+├── run_tests.sh                     # Simple script to build/run all tests (one-click)
+├── include/
+│   └── xworkflows/
+│       ├── base.h                   # Workflow library header (API: State, Transition, Workflow etc.)
+│       ├── compat.h                 # Compatibility layer header
+│       └── utils.h                  # Introspection utilities header (iterclass simulation)
+├── src/
+│   └── xworkflows/
+│       ├── base.cpp                 # Implementation for base workflow logic
+│       ├── compat.cpp               # Implementation for compat helpers (e.g., type traits)
+│       └── utils.cpp                # Implementation for iterclass and related
+├── tests/
+│   ├── test_base.cpp                # C++ tests for Workflow base logic (translated from test_base.py)
+│   ├── test_compat.cpp              # C++ tests for compat (translated from test_compat.py)
+│   ├── test_init.cpp                # C++ tests for __init__ logic (translated from test_init.py)
+│   ├── test_using.cpp               # C++ tests for workflow usage (translated from test_using.py)
+│   └── test_utils.cpp               # C++ tests for utils/iterclass (translated from test_utils.py)
+├── public_tests/
+│   ├── test_public_base.cpp         # C++ translation of public base workflow tests
+│   ├── test_public_compat.cpp       # C++ translation of public compat tests
+│   ├── test_public_init.cpp         # C++ translation of public init tests
+│   ├── test_public_using.cpp        # C++ translation of public using tests
+│   └── test_public_utils.cpp        # C++ translation of public utils tests

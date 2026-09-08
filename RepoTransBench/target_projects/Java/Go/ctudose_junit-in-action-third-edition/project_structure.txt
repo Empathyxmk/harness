@@ -1,0 +1,39 @@
+ctudose_junit_in_action_third_edition/
+├── go.mod
+├── run_tests.sh
+├── project_structure.txt
+├── test_translation_progress.json
+├── tests/
+│   └── original/
+│       ├── parametrized_csvfilesource_test.go
+│       ├── parametrized_csvsource_test.go
+│       ├── parametrized_valuesource_test.go
+│       ├── parametrized_enumsource_test.go
+│       ├── hamcrest_list_test.go
+│       ├── hamcrest_matchers_test.go
+│       ├── displayname_test.go
+│       ├── repeatedtest_test.go
+│       ├── dynamic_tests_test.go
+│       ├── lifecycle_sut_test.go
+│       ├── predicate_positivenumber_test.go
+│       ├── assumptions_test.go
+│       ├── disabled_class_test.go
+│       ├── disabled_methods_test.go
+│       ├── tags_customersrepository_test.go
+│       ├── tags_customer_test.go
+│       ├── nested_tests_test.go
+│       ├── dependencyinjection_testreporter_test.go
+│       ├── dependencyinjection_testinfo_test.go
+│       ├── assertions_assertthrows_test.go
+│       ├── assertions_assertall_test.go
+│       ├── assertions_asserttimeout_test.go
+│       ├── resource_for_all_tests.go
+│       ├── tests_environment.go
+│       └── helper_types.go
+├── public_tests/
+│   ├── parametrized_valuesource_public_test.go
+│   ├── parametrized_csvfilesource_public_test.go
+│   ├── parametrized_csvsource_public_test.go
+│   ├── parametrized_enumsource_public_test.go
+├── testutil/
+│   └── word_counter.go

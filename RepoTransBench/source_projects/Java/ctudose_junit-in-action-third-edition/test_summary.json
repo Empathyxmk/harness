@@ -1,0 +1,36 @@
+{
+  "project_name": "ctudose_junit-in-action-third-edition",
+  "language": "Java",
+  "coverage": {
+    "line": 65.8,
+    "branch": 58.9
+  },
+  "timestamp": "2025-06-23T11:48:21.504536",
+  "original_path": "/workspace/runnable_filter/Java/ctudose_junit-in-action-third-edition",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/ctudose_junit-in-action-third-edition",
+  "tests_path": [
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/parametrized/ParameterizedWithCsvFileSourceTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/parametrized/ParameterizedWithCsvSourceTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/parametrized/ParameterizedWithValueSourceTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/parametrized/ParameterizedWithEnumSourceTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/hamcrest/HamcrestListTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/hamcrest/HamcrestMatchersTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/displayname/DisplayNameTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/repeated/RepeatedTestsTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/dynamic/DynamicTestsTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/lifecycle/SUTTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/predicate/PositiveNumberPredicateTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/assumptions/AssumptionsTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/disabled/DisabledClassTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/disabled/DisabledMethodsTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/tags/CustomersRepositoryTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/tags/CustomerTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/nested/NestedTestsTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/dependencyinjection/TestReporterTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/dependencyinjection/TestInfoTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/assertions/AssertThrowsTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/assertions/AssertAllTest.java",
+    "ch02-core/src/test/java/com/manning/junitbook/ch02/assertions/AssertTimeoutTest.java"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

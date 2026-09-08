@@ -1,0 +1,53 @@
+.
+├── Cargo.toml                # Rust crate manifest (lists dependencies, package info)
+├── README.md                 # Documentation for project, structure, instructions
+├── run_tests.sh              # Simple script to run all tests (with `cargo test`)
+├── src/
+│   └── lib.rs                # Placeholder for main library code (empty -- only tests here)
+├── tests/
+│   ├── original/
+│   │   ├── behavioral_chain.rs
+│   │   ├── behavioral_command.rs
+│   │   ├── behavioral_iterator.rs
+│   │   ├── behavioral_mediator.rs
+│   │   ├── behavioral_memento.rs
+│   │   ├── behavioral_null.rs
+│   │   ├── behavioral_observer.rs
+│   │   ├── behavioral_visitor.rs
+│   │   ├── creational_builder.rs
+│   │   ├── creational_builder_coverage.rs
+│   │   ├── creational_factory.rs
+│   │   ├── creational_pool.rs
+│   │   ├── creational_pool_coverage.rs
+│   │   ├── creational_prototype.rs
+│   │   ├── creational_setup_py.rs
+│   │   ├── creational_singleton.rs
+│   │   ├── creational_singleton_coverage.rs
+│   │   ├── structural_adapter.rs
+│   │   ├── structural_composite.rs
+│   │   ├── structural_decorator.rs
+│   │   └── structural_flyweight.rs
+│   └── mod.rs                # Test module listing for cargo integration
+└── public_tests/
+    ├── behavioral_null_public.rs
+    ├── creational_builder_coverage_public.rs
+    ├── creational_builder_public.rs
+    ├── creational_factory_public.rs
+    ├── creational_pool_coverage_public.rs
+    ├── creational_pool_public.rs
+    ├── creational_prototype_public.rs
+    ├── creational_setup_py_public.rs
+    ├── creational_singleton_coverage_public.rs
+    ├── creational_singleton_public.rs
+    └── mod.rs                # Test module listing for cargo
+
+Legend:
+- `tests/original/`: Rust translation of original unittest-based Python test suite.
+- `public_tests/`: Rust translation of crowd/public test suite.
+- `src/`: (Placeholder) For future/your PyPattyrn library Rust implementation.
+- `Cargo.toml`: Dependency and test configuration.
+- `run_tests.sh`: Runs `cargo test`, the standard Rust test execution.
+- `README.md`: Usage instructions and notes.
+
+To run the **full test suite**:
+  `./run_tests.sh`

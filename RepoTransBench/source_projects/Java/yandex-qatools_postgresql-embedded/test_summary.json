@@ -1,0 +1,11 @@
+{
+  "project_name": "yandex-qatools_postgresql-embedded",
+  "language": "Java",
+  "coverage": {
+    "line": 61.4,
+    "branch": 52.9
+  },
+  "timestamp": "2025-06-20T04:36:29.058321",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/yandex-qatools_postgresql-embedded",
+  "test_result_path": "/workspace/test_enhancement_results/Java/yandex-qatools_postgresql-embedded"
+}

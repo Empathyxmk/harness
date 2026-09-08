@@ -1,0 +1,35 @@
+Project Structure for Apereo CAS Attack Python Port
+
+.
+├── src/
+│   └── vulhub/
+│       ├── __init__.py
+│       └── app.py
+│         [Core application logic; ported from Java App.java]
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_app.py         [Full translation of AppTest.java, original tests]
+├── public_tests/
+│   ├── __init__.py
+│   └── test_app_public.py      [Full translation of AppPublicTest.java, public tests]
+├── requirements.txt            [Python dependencies]
+├── run_tests.sh                [One-click test runner using pytest]
+├── project_structure.txt       [This file]
+└── README.md                   [Writeup and documentation, not included here]
+
+Key Directories:
+- src/vulhub/: app logic module, including app.py implementing all tested features.
+- tests/original/: All original, possibly-internal or solution-revealing testcases.
+- public_tests/: All public, safe-for-release testcases. Mirrors Java public tests.
+
+Setup:
+1. (optional) Create virtual environment and install dependencies.
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+2. Run all tests:
+    ./run_tests.sh
+
+Both original & public tests are run by pytest.

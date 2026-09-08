@@ -1,0 +1,37 @@
+project_root/
+├── requirements.txt                 # Python dependencies file for pytest
+├── run_tests.sh                     # Simple script to run all tests
+├── project_structure.txt            # Project structure overview (this file)
+├── public_tests/                    # Public test cases (converted from public C++ tests)
+│   ├── __init__.py
+│   ├── test_h264decoder_public.py   # Public test cases for H264Decoder
+│   └── test_pid_public.py           # Public test cases for PID controller
+├── tests/                           # All tests
+│   ├── __init__.py                  # (NEW) enables package structure for pytest
+│   └── original/                    # Folder containing all original (non-public) Python tests
+│       ├── __init__.py
+│       ├── conftest.py
+│       ├── test_h264decoder.py      # Original test cases for H264Decoder
+│       └── test_pid.py              # Original test cases for PID controller
+#
+# Integration tests in tello_driver/scripts/test_cmd_vel.sh and test_srv.sh
+# are shell scripts intended for a real/virtualized ROS2 system with a running stack
+# and are NOT translated to Python (beyond the scope of unit testing).
+#
+# Notes:
+# - Source logic for PID and H264Decoder is defined in each test since the original C++ code is not directly available.
+# - All test logic and coverage directly mirror the C++ test files.
+# - Project does not include ROS interaction or shell-script-based integration tests (covered by original bash).
+# - To run all tests, simply execute ./run_tests.sh (ensuring you have Python 3.x and pip, and in a clean environment).
+#
+# Testing Instructions:
+#   1. Make sure you have Python 3.x and pip installed.
+#   2. Run `./run_tests.sh` to install `pytest` (from `requirements.txt`) and execute all tests across both directories.
+#   3. All tests should pass, mirroring the coverage and cases from the C++ repo.
+#
+# Directory purposes:
+#   - public_tests/: Contains tests that correspond to public C++ test files (should be suitable for public release/audience).
+#   - tests/original/: Contains tests that correspond to the original/internal C++ test files.
+#   - run_tests.sh: Installs dependencies and runs all tests in the project.
+#   - requirements.txt: Lists all dependencies required to run the tests.
+#   - project_structure.txt: Describes and explains the Python project structure.

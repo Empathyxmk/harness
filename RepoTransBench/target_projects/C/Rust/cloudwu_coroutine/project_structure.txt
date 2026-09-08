@@ -1,0 +1,31 @@
+cloudwu_coroutine/
+├── Cargo.toml                 # Rust project configuration and dependencies
+├── README.md                  # Project documentation
+├── run_tests.sh               # Test execution script
+├── project_structure.txt      # This file - project structure documentation
+├── src/                       # Source code directory
+│   └── lib.rs                 # Coroutine implementation
+├── tests/                     # Original test directory
+│   └── original/              # Original tests subdirectory
+│       └── test_coroutine.rs  # Original test cases
+└── public_tests/              # Public test directory
+    └── test_coroutine_public.rs # Public test cases
+
+3 directories, 7 files
+
+Explanation:
+------------
+- src/lib.rs: Contains the implementation of the coroutine library that was originally in C
+- tests/original/test_coroutine.rs: Contains the tests from the original test_coroutine.c file
+- public_tests/test_coroutine_public.rs: Contains the public tests from test_coroutine_public.c
+- Cargo.toml: Rust project configuration file that specifies dependencies and test paths
+- run_tests.sh: Simple script to run all tests with one command
+
+Setup and Testing Instructions:
+------------------------------
+1. Make sure Rust and Cargo are installed
+2. Run `./run_tests.sh` to execute all tests
+3. Alternatively, run specific test groups:
+   - All tests: `cargo test`
+   - Only original tests: `cargo test --test test_coroutine`
+   - Only public tests: `cargo test --test test_coroutine_public`

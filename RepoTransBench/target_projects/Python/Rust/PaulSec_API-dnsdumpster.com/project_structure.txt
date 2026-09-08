@@ -1,0 +1,17 @@
+.
+├── Cargo.toml
+├── README.md
+├── src/
+│   └── lib.rs
+├── tests/
+│   ├── original/
+│   │   ├── test_api.rs
+│   │   └── test_dnsdumpsterapi.rs
+│   ├── public_api.rs
+│   └── public_dnsdumpsterapi.rs
+├── public_tests/
+│   ├── test_public_api.py
+│   └── test_public_dnsdumpsterapi.py
+├── run_tests.sh
+...
+# Remaining project structure as before

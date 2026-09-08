@@ -1,0 +1,27 @@
+levenshtein_python/
+├── src/                        # Source code directory
+│   └── levenshtein/            # Main package directory
+│       ├── __init__.py         # Package initialization, exports levenshtein and levenshtein_n
+│       └── levenshtein.py      # Implementation of Levenshtein distance algorithm
+├── tests/                      # Directory for original test cases
+│   ├── __init__.py             # Makes the directory a Python package
+│   └── original/               # Original test cases
+│       ├── __init__.py         # Makes the directory a Python package
+│       └── test_levenshtein.py # Original test cases from test.c
+├── public_tests/               # Directory for public test cases
+│   ├── __init__.py             # Makes the directory a Python package
+│   └── test_public_levenshtein.py # Public test cases from public_test.c
+├── conftest.py                 # Empty file for pytest configuration
+├── requirements.txt            # Project dependencies
+├── run_tests.sh                # Script to run all tests
+├── run_public_tests.sh         # Script to run only public tests
+└── README.md                   # Project documentation
+
+Test Files:
+- tests/original/test_levenshtein.py: Contains the original test cases from test.c
+- public_tests/test_public_levenshtein.py: Contains the public test cases from public_test.c
+
+Setup and Testing Instructions:
+1. Install dependencies: pip install -r requirements.txt
+2. Run all tests: ./run_tests.sh
+3. Run only public tests: ./run_public_tests.sh

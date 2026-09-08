@@ -1,0 +1,11 @@
+{
+  "project_name": "6_stopwords-json",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 89.5,
+    "branch": 52.6
+  },
+  "timestamp": "2025-06-19T09:44:25.756161",
+  "original_path": "/workspace/runnable_filter/JavaScript/6_stopwords-json",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/6_stopwords-json"
+}

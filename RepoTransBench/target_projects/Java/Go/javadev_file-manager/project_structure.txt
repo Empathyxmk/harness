@@ -1,0 +1,26 @@
+Go FileManager Project Structure:
+
+.
+├── README.md                     # Project overview and instructions
+├── go.mod                        # Go module configuration
+├── main.go                       # Placeholder main program for Go
+├── filemanager.go                # FileManager implementation for all tests
+├── run_tests.sh                  # Script: one-click run of ALL tests
+├── project_structure.txt         # This structure guide
+├── tests/
+│   ├── original/
+│   │   └── filemanager_test.go   # Translated original test cases (private)
+│   └── testutil.go               # (Optional) Utilities for tests (not needed in this translation)
+└── public_tests/
+    └── filemanager_public_test.go # Translated public test cases
+
+Directory/Files explanation:
+- tests/original/: All private/original test cases, ported from Java JUnit
+- public_tests/:  All public test cases, ported from Java
+- filemanager.go: Re-implementation of FileManager to satisfy test logic as in Java
+- main.go:       Just to make the `go build` work if needed, does not affect tests
+- run_tests.sh:  Simple command to run **all** tests (original & public)
+- go.mod:        Declares project as Go module for dependency and package management
+
+To run all tests:
+    ./run_tests.sh

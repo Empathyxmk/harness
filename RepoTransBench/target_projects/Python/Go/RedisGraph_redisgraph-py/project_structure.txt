@@ -1,0 +1,31 @@
+redisgraph/
+    (Implementation sources -- should be implemented/ported to pass the translated tests)
+tests/
+|-- original/
+|   |-- test_edge_test.go
+|   |-- test_execution_plan_test.go
+|   |-- test_exceptions_test.go
+|   |-- test_graph_extra_test.go
+|   |-- test_graph_test.go
+|   |-- test_node_test.go
+|   |-- test_path_test.go
+|   |-- test_query_result_extra_test.go
+|   |-- test_query_result_test.go
+|   |-- test_util_test.go
+|   +-- test_all_test.go
+public_tests/
+|-- test_public_execution_plan_test.go
+|-- test_public_query_result_extra_test.go
+go.mod
+run_tests.sh
+README.md
+project_structure.txt
+
+Explanations:
+- redisgraph/: Directory for Go implementation code (e.g., Node, Edge, Graph, QueryResult, etc.)
+- tests/original/: Translated Go test files for ALL original Python tests.
+- public_tests/: Go test files for all public test cases.
+- go.mod: Go module configuration; add dependencies if needed.
+- run_tests.sh: Simple script to run all Go tests via `go test ./...`
+- README.md: Quick usage and info.
+- project_structure.txt: This file (project layout and explanations).

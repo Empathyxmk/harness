@@ -1,0 +1,30 @@
+Project Structure for korken89_crect Python Translation:
+
+korken89_crect/
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_async_public.py           # Translated public async test
+│   └── test_vector_table_public.py    # Translated public vector table test
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_async.py              # Translated original async test
+│       └── test_vector_table.py       # Translated original vector table test
+├── requirements.txt                   # Python dependencies (pytest)
+├── run_tests.sh                       # Simple, one-click test runner
+├── project_structure.txt              # This structure overview
+
+Directory/Files Explanation:
+- public_tests/:        Contains all translated "public" test cases for the project.
+- tests/original/:      Contains all translated "original" (non-public) test cases.
+- requirements.txt:     Install project dependencies (`pip install -r requirements.txt`), mainly pytest.
+- run_tests.sh:         Executable script to run all tests using pytest (run via `./run_tests.sh`).
+- project_structure.txt: This file - describes the folder contents and brief purpose.
+
+Test Execution:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run all tests:        `./run_tests.sh`
+   (or manually:         `pytest` )
+
+All test logic and coverage are fully preserved from the C++ versions and split into public/original test directories for clarity and maintainability.

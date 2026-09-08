@@ -1,0 +1,57 @@
+Project Structure for Python translation of bryanwoods_autolink-js
+---------------------------------------------------------------
+
+.
+├── src/
+│   └── autolink.py
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_autolink_unit.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_autolink_unit_public.py
+├── requirements.txt
+├── run_tests.sh
+├── project_structure.txt
+
+Directory and File Explanations
+------------------------------
+
+src/
+    autolink.py               - Implementation of the autoLink function (URL to link HTML conversion)
+
+tests/
+    __init__.py               - Makes 'tests' a package for test discovery
+    original/
+        __init__.py           - Marks original/ as a package
+        test_autolink_unit.py - All ORIGINAL test cases from the original repository (private, full coverage)
+
+public_tests/
+    __init__.py               - Package marker
+    test_autolink_unit_public.py - PUBLIC test cases (representing public coverage / sample cases)
+
+requirements.txt
+    Python dependencies for running tests (pytest only)
+
+run_tests.sh
+    Simple Bash script to run ALL tests (original + public) with pytest
+
+project_structure.txt
+    This file: Documents what each directory/file is for, instructions to run tests.
+
+Setup and Testing Instructions
+------------------------------
+
+1. (Optional) Set up a Python virtual environment:
+        python3 -m venv venv
+        source venv/bin/activate
+
+2. Install dependencies:
+        pip install -r requirements.txt
+
+3. Run all tests (both original and public):
+        ./run_tests.sh
+
+All test files will be automatically discovered and run by pytest.

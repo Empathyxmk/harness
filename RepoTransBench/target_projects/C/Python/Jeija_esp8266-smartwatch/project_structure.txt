@@ -1,0 +1,23 @@
+project_root/
+├── requirements.txt                    # Python test dependency list
+├── run_tests.sh                        # One-click test execution script
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_i2cdevice.py           # Original i2cdevice tests
+│       ├── test_util.py                # Original util tests
+│       └── test_vector.py              # Original vector math tests
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_i2cdevice_public.py        # Public i2cdevice tests
+│   ├── test_util_public.py             # Public util tests
+│   └── test_vector_public.py           # Public vector math tests
+└── README.md                           # Project and testing instructions
+
+Directory Explanations:
+- requirements.txt: Lists required pip packages; run `pip install -r requirements.txt`
+- run_tests.sh: Runs all tests (original and public) with `pytest`, for easy CI or local invocations
+- tests/original/: Contains all original test translations from the C repo
+- public_tests/: Contains all public challenge test translations from the C repo
+- README.md: Documentation on project usage and testing (add content as needed)

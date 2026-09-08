@@ -1,0 +1,51 @@
+Project Structure for Trezor Java Mnemonic
+
+.
+├── pom.xml
+├── run_tests.sh
+├── project_structure.txt            <-- This file
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── trezor/
+│   │               └── mnemonic/
+│   │                   ├── Mnemonic.java          <-- Core implementation stub (should be replaced by production)
+│   │                   └── ConfigurationError.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── trezor/
+│                   └── mnemonic/
+│                       ├── original/
+│                       │   ├── MnemonicTest.java         <-- Translation of tests/test_mnemonic.py
+│                       │   └── MnemonicExtraTest.java    <-- Translation of tests/test_mnemonic_extra.py
+│                       └── public_tests/
+│                           ├── PublicMnemonicTest.java         <-- Translation of public_tests/test_public_mnemonic.py
+│                           └── PublicMnemonicExtraTest.java    <-- Translation of public_tests/test_public_mnemonic_extra.py
+└── src/
+    └── mnemonic/
+        └── wordlist/
+            [language].txt                  <-- Wordlist files as in Python repo (copied over)
+
+Directory Notes:
+- pom.xml                  : Maven project build and dependency config. Uses JUnit 5 and org.json for test JSON handling.
+- run_tests.sh             : One-click shell script to invoke all tests.
+- src/main/java/           : Java code for the core implementation. Replace stub with real logic.
+- src/test/java/           : All test classes. Two subfolders:
+    - original/            : Original (private) test cases
+    - public_tests/        : Public test cases
+- src/mnemonic/wordlist/   : Wordlist data files as in Python for test resource compatibility.
+- project_structure.txt    : This documentation/overview.
+
+Testing Instructions:
+---------------------
+1. Install Java 11+ and Maven 3.x if not already installed.
+2. Place all wordlist files in src/mnemonic/wordlist/ as in original Python repo.
+3. Run:  ./run_tests.sh
+
+All tests, both original and public, will be run.
+
+To run a subset (original or public only), use Maven include patterns:
+- mvn test -Dtest="com/trezor/mnemonic/original/*Test"
+- mvn test -Dtest="com/trezor/mnemonic/public_tests/*Test"

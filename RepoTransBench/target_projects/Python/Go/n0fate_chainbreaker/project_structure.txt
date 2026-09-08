@@ -1,0 +1,37 @@
+n0fate_chainbreaker Go Project Structure
+=======================================
+
+.
+├── go.mod                     # Go module file, dependency management
+├── run_tests.sh               # Test runner script; runs all Go tests in project
+├── project_structure.txt      # This structure and guidance file
+├── tests/
+│   └── original/
+│       ├── command_line_test.go           # Original test: Command-line invocation and entry point testing
+│       ├── init_chainbreaker_test.go      # Original test: Chainbreaker attribute and error handling
+│       ├── results_test.go                # Original test: Results/output collection logic
+│       ├── schema_test.go                 # Original test: Keychain schema decoding/logic
+│       └── version_test.go                # Original test: Version string properties
+└── public_tests/
+    └── chainbreaker/
+        ├── command_line_public_test.go    # Public test: Main import crash simulation
+        ├── init_chainbreaker_public_test.go  # Public test: API presence for module-level attributes
+        ├── results_public_test.go         # Public test: API presence/result errors
+        ├── schema_public_test.go          # Public test: Module attribute/type checks
+        └── version_public_test.go         # Public test: API presence/version checks
+
+Project Structure Explanation:
+-----------------------------
+- go.mod:            Declares dependencies and Go module for the project.
+- run_tests.sh:      Bash script to run all Go tests with one click (`./run_tests.sh`).
+- tests/original/:   Contains original (non-public) test suite, translated from Python source.
+- public_tests/:     Contains public-facing tests, as generated and intended for public verification.
+- project_structure.txt: This documentation file.
+
+Test Execution Instructions:
+---------------------------
+1. Ensure you have Go installed (v1.18+ recommended).
+2. Make the test script executable: `chmod +x run_tests.sh`
+3. Run all tests: `./run_tests.sh`
+
+All tests will run and results print to stdout as per `go test` conventions.

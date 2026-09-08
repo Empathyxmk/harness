@@ -1,0 +1,11 @@
+{
+  "project_name": "JoshData_pdf-redactor",
+  "language": "Python",
+  "coverage": {
+    "line": 71.0,
+    "branch": 81.7
+  },
+  "timestamp": "2025-06-19T11:53:49.962671",
+  "original_path": "/workspace/runnable_filter/Python/JoshData_pdf-redactor",
+  "test_result_path": "/workspace/test_enhancement_results/Python/JoshData_pdf-redactor"
+}

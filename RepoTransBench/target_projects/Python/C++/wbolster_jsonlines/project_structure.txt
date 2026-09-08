@@ -1,0 +1,21 @@
+wbolster_jsonlines/                        # Project root
+├── CMakeLists.txt                         # Build configuration for CMake
+├── README.md                              # Project documentation (not shown)
+├── run_tests.sh                           # Simple script for building and running all tests
+├── include/
+│   └── jsonlines/
+│       └── jsonlines.h                    # Main jsonlines header for interfaces/classes
+├── src/
+│   └── jsonlines.cpp                      # Main implementation file (dummy for now)
+├── tests/
+│   ├── test_main.cpp                      # Testing main for gtest (used by all test runners)
+│   └── original/
+│       ├── test_jsonlines.cpp             # Original, full test set, translated from Python
+│       ├── test_jsonlines_extra.cpp
+│       ├── test_error_conditions.cpp
+│       └── test_typing.cpp
+├── public_tests/
+│   ├── test_public_jsonlines.cpp          # Public test suite (from public_tests)
+│   ├── test_public_jsonlines_extra.cpp
+│   ├── test_public_error_conditions.cpp
+│   └── test_public_typing.cpp

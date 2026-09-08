@@ -1,0 +1,26 @@
+project_root/
+├── go.mod                        # Go module/dependency definitions
+├── README.md                     # Project info & instructions
+├── run_tests.sh                  # One-step test runner script
+├── project_structure.txt         # This file: structure & explanations
+├── tests/
+│   └── original/
+│       ├── account_test.go           # Original account service tests
+│       ├── cmdline_test.go           # Original cmdline & CLI tests
+│       ├── drive_test.go             # Original iCloud Drive service tests
+│       ├── exceptions_test.go        # Original exceptions tests
+│       ├── findmyiphone_test.go      # Original "Find My iPhone" service tests
+│       ├── init_test.go              # Smoke/init test
+│       ├── setup_file_test.go        # Original setup.py/installer test
+│       └── utils_test.go             # Original utils (keyring, helper) tests
+├── tests/
+│   ├── const.go                  # Translated consts (test data) from Python `tests/const.py`, etc (if needed)
+│   ├── const_account.go          # Account test consts (if needed)
+│   ├── const_drive.go            # Drive test data (if needed)
+│   ├── const_findmyiphone.go     # FindMyIPhone test data (if needed)
+│   ├── const_login.go            # Login-specific test data (if needed)
+│   ├── testutil.go               # Test helpers/mocks (includes PyiCloudServiceMock, etc)
+├── public_tests/
+│   ├── drive_public_test.go      # Public iCloud Drive service tests
+│   ├── init_public_test.go       # Public init test
+│   └── utils_public_test.go      # Public utils tests

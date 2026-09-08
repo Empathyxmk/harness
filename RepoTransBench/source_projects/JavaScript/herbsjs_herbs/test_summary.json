@@ -1,0 +1,18 @@
+{
+  "project_name": "herbsjs_herbs",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 100.0
+  },
+  "timestamp": "2025-06-19T10:35:09.796907",
+  "original_path": "/workspace/runnable_filter/JavaScript/herbsjs_herbs",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/herbsjs_herbs",
+  "tests_path": [
+    "test/aloe.js",
+    "test/buchu.js",
+    "test/gotu.js",
+    "test/suma.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

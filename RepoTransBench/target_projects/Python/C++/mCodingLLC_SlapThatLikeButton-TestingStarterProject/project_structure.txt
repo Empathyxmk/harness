@@ -1,0 +1,29 @@
+/
+├── CMakeLists.txt                # CMake build configuration for project and test runner
+├── include/
+│   └── slap_that_like_button.h   # Public header for button functionality and state enum
+├── public_tests/
+│   ├── test_public_slap_that_like_button.cpp    # Public translated test cases from Python
+│   └── test_public_slapping.cpp                 # Public translated test cases from Python
+├── run_tests.sh                  # Simple script to build and run all tests
+├── src/
+│   └── slapping/
+│       └── slap_that_like_button.cpp    # Core implementation used by tests
+├── tests/
+│   ├── test_main.cpp             # Test runner main for Google Test
+│   ├── test_slap_that_like_button.cpp  # Translated original Python tests (slap_like/dislike/many)
+│   └── test_slapping.cpp                # Translated original Python tests (multi-slaps, edge cases)
+└── README.md                     # Project overview and usage
+
+Key Points:
+- `include/` holds library headers; `src/` has implementation.
+- `tests/` contains *original* (instructor/hidden) tests.
+- `public_tests/` are public/learners' test cases.
+- `CMakeLists.txt` handles test builds with GoogleTest.
+- `run_tests.sh` builds and runs all tests easily.
+- `test_main.cpp` enables discovery of all linked tests.
+
+Usage:
+    1. (Optional) Install GoogleTest systemwide (or provide CMake module path)
+    2. Run `./run_tests.sh`
+Outputs in-place build directory and runs all public & original tests.

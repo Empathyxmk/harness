@@ -1,0 +1,47 @@
+project_root/
+├── requirements.txt              # Python dependencies (pytest)
+├── run_tests.sh                  # Simple script to run all tests (pytest)
+├── src/
+│   └── cppstddb/
+│       ├── __init__.py           # (Placeholder, Python module for cppstddb source code)
+│       └── ...                   # (Other module files: database_error.py, date.py, log.py, info.py, etc.)
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   └── original/
+│       ├── __init__.py
+│       ├── test_database_error.py
+│       ├── test_date.py
+│       ├── test_info.py
+│       ├── test_log.py
+│       ├── test_mysql.py
+│       ├── test_oracle.py
+│       ├── test_postgres.py
+│       └── test_sqlite.py
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_database_error_public.py
+│   ├── test_date_public.py
+│   ├── test_info_public.py
+│   ├── test_log_public.py
+│   ├── test_mysql_public.py
+│   ├── test_oracle_public.py
+│   ├── test_postgres_public.py
+│   ├── test_sqlite_public.py
+└── README.md                     # (Project documentation and basic usage)
+
+Directory Explanations:
+- requirements.txt      : Lists Python dependencies. Only 'pytest' is needed.
+- run_tests.sh          : Bash script to execute all Python tests with `pytest`.
+- src/cppstddb/         : Python source code corresponding to the cppstddb (implement or connect as required).
+- tests/original/       : Original (non-public) translated test cases from C++.
+- public_tests/         : Public translated test cases from public C++ tests.
+- tests/conftest.py     : For pytest hooks if needed (currently empty).
+- __init__.py           : Makes directories packages for importing.
+
+Setup & Testing Instructions:
+1. Install requirements: `pip install -r requirements.txt`
+2. To run ALL tests (original + public): `./run_tests.sh`
+   - This automatically runs pytest and discovers all tests in tests/ and public_tests/
+
+Note: The src/cppstddb/ package is a placeholder for your Python implementations of cppstddb components.

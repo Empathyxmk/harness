@@ -1,0 +1,38 @@
+Polytonic_Chlorine Python Project Structure
+
+.
+├── requirements.txt                     # Python dependency list (pytest)
+├── run_tests.sh                         # Script to install requirements and run ALL tests (original + public)
+├── tests/
+│   ├── __init__.py                      # (empty/init file for test discovery)
+│   └── original/                        # All tests directly translated from C++ original (private) tests
+│       ├── __init__.py                  #
+│       ├── test_clinfo.py               # Test: C++ tests/test_clinfo.cpp
+│       ├── test_mandelbrot.py           # Test: C++ tests/test_mandelbrot.cpp
+│       └── test_swap.py                 # Test: C++ tests/test_swap.cpp
+├── public_tests/
+│   ├── __init__.py                      # (empty/init file for test discovery)
+│   ├── test_clinfo_public.py            # Test: C++ tests/test_clinfo_public.cpp
+│   ├── test_mandelbrot_public.py        # Test: C++ tests/test_mandelbrot_public.cpp
+│   └── test_swap_public.py              # Test: C++ tests/test_swap_public.cpp
+├── project_structure.txt                # This file. Explains directory, file purposes & setup.
+└── ...                                  # (source .py files, etc. as needed)
+
+Directory explanations:
+- tests/original/: All C++ test_xxx.cpp (not public variants), direct one-to-one translation for internal tests.
+- public_tests/:  All public test files as per C++ tests/test_xxx_public.cpp.
+- requirements.txt: Lists dependencies--here only pytest is needed.
+- run_tests.sh: Installs dependencies and runs all tests with one command.
+- project_structure.txt: Explains the project tree, file rationale, and how to run tests.
+
+How to setup:
+1. Have Python 3.x
+2. Run:   ./run_tests.sh
+
+How to run all tests (original + public):
+    ./run_tests.sh
+This will install dependencies (pytest) and run every test in both `tests/` and `public_tests/`.
+
+You can also run original or public tests only:
+    pytest tests/
+    pytest public_tests/

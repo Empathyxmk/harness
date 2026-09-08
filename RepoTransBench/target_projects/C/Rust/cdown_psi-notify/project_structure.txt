@@ -1,0 +1,36 @@
+psi_notify/              # Rust project root
+├── Cargo.toml           # Cargo build and package configuration
+├── src/
+│   ├── lib.rs           # Core psi-notify logic ported from psi-notify.h/c (as stubs for testing)
+│   └── main.rs          # Main binary stub
+├── tests/
+│   └── original/        # Original C project test suite translated to Rust
+│       ├── test.rs
+│       └── test_extra.rs
+├── public_tests/        # Public generated test suite translated to Rust
+│   ├── public_test.rs
+│   └── public_test_extra.rs
+├── run_tests.sh         # One-click script to run all tests (`cargo test`)
+└── project_structure.txt# Project structure and documentation
+
+Directory explanations:
+- src/: Main Rust code. Contains stubs and function signatures to support running the tests. 
+        Replace implementations with real logic as needed.
+- tests/original/: All "original" C tests (test.c, test_extra.c) ported to Rust using #[test].
+- public_tests/: All "public" test variants ported from C (public_test.c, public_test_extra.c).
+- Cargo.toml: Standard Rust/Cargo package manifest for build configuration.
+- run_tests.sh: Simple script to execute all tests via `cargo test`.
+- project_structure.txt: This documentation.
+
+Setup & testing instructions:
+1. Ensure you have Rust (cargo) installed: https://www.rust-lang.org/
+2. To run ALL tests, simply execute:
+      ./run_tests.sh
+   This runs both all original and public test translations.
+3. For individual test files, use cargo:
+      cargo test --test tests/original/test
+      cargo test --test tests/original/test_extra
+      cargo test --test public_tests/public_test
+      cargo test --test public_tests/public_test_extra
+
+All tests are defined with #[test] and can be discovered/executed using standard Rust workflows. You may implement/adjust src/lib.rs for more accurate code logic, if necessary.

@@ -1,0 +1,47 @@
+alcover_stricks Rust Project Structure
+
+.
+├── Cargo.toml
+├── README.md            # Documentation/how to build/test
+├── run_tests.sh         # One-click test script, runs all tests
+├── src/
+│   ├── lib.rs           # Main Rust library file, exposes modules
+│   ├── util.rs          # Utility/coverage helpers (min, max, string, load)
+│   └── stx.rs           # The `stx` (Stricks) string object implementation
+├── tests/
+│   ├── original/
+│   │   └── util_tests.rs       # Coverage/original C tests from src/test_util.c
+│   └── public/
+│       └── util_public.rs      # Public test logic, from src/test_util_public.c
+
+# Explanations:
+
+Cargo.toml
+    - Rust build and dependency configuration file.
+
+src/
+    - Main library sources. All exported logic for both production and tested code goes here.
+    - util.rs: implements all `util.c` logic (min, max, bit ops, string helpers).
+    - stx.rs: implements the `stx`/stricks string type and its manipulation.
+
+tests/original/
+    - All tests that correspond to the original/internal code coverage tests from C.
+    - util_tests.rs mirrors src/test_util.c - covers util.rs fully.
+
+tests/public/
+    - All public/verification tests, matching src/test_util_public.c but in Rust.
+    - util_public.rs: All cases from src/test_util_public.c in Rust idioms.
+
+run_tests.sh
+    - One-click, no-argument script for running all tests, including both public and original.
+    - Runs `cargo test` for entire project, displays all output (with --nocapture).
+
+README.md
+    - Project documentation. (Create/update as needed.)
+
+# Setup/Testing Instructions:
+
+- Install Rust (https://rustup.rs/)
+- Make sure you are in the project root directory (contains Cargo.toml).
+- Run `./run_tests.sh` to execute ALL tests.
+- Both tests/original/* and tests/public/* will be run and output will be shown.

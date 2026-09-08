@@ -1,0 +1,35 @@
+project_root/
+├── requirements.txt                  # Python dependencies (pytest, mock)
+├── run_tests.sh                      # One-click test execution script
+├── tests/
+│   ├── original/
+│   │   ├── test_abstract_docker_mojo.py
+│   │   ├── test_build_mojo.py
+│   │   ├── test_composite_image_name.py
+│   │   ├── test_docker_build_information.py
+│   │   ├── test_git.py
+│   │   ├── test_image_dependency.py
+│   │   ├── test_push_mojo.py
+│   │   ├── test_remove_image_mojo.py
+│   │   ├── test_tag_mojo.py
+│   │   └── test_utils.py
+├── public_tests/
+│   ├── test_abstract_docker_mojo_public.py
+│   ├── test_build_mojo_public.py
+│   ├── test_composite_image_name_public.py
+│   ├── test_docker_build_information_public.py
+│   ├── test_git_public.py
+│   ├── test_image_dependency_public.py
+│   ├── test_push_mojo_public.py
+│   ├── test_remove_image_mojo_public.py
+│   ├── test_tag_mojo_public.py
+│   └── test_utils_public.py
+└── README.md                         # Project information and setup instructions
+
+# 
+# Directory Explanations:
+# - requirements.txt: Specifies all Python dependencies needed for running the tests.
+# - run_tests.sh: Shell script that runs ALL tests (both original and public) using pytest. Just `chmod +x run_tests.sh` and `./run_tests.sh`.
+# - tests/original/: Contains direct translations of the original Java tests; same logic, edge cases, and parameters as upstream.
+# - public_tests/: Contains translations of the public (student-facing) test cases. These avoid proprietary/private data and test logic that is suitable for public release.
+# - README.md: Explains the structure, how to set up the environment, and how to run tests.

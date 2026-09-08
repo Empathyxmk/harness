@@ -1,0 +1,36 @@
+project_root/
+├── go.mod                        # Go module definition and dependency management
+├── README.md                     # Project overview and usage
+├── run_tests.sh                  # Simple one-command test launcher
+├── ratelimit/
+│   ├── ratelimit.go              # Main ratelimit API and decorators implementation (Go translation)
+│   ├── decorator.go              # Go version of decorators logic
+│   ├── exception.go              # Go version of exception handling
+│   └── utils.go                  # Go version of time/utility functions
+├── tests/
+│   └── original/
+│       ├── decorator_class_core_test.go
+│       ├── decorator_decorator_tests_test.go
+│       ├── decorator_test.go
+│       ├── decorators_edge_cases_test.go
+│       ├── exception_additional_test.go
+│       ├── exception_test.go
+│       ├── init_module_test.go
+│       ├── utils_additional_test.go
+│       └── utils_test.go
+└── public_tests/
+    ├── public_decorator_class_core_test.go
+    ├── public_decorator_test.go
+    ├── public_decorators_edge_cases_test.go
+    ├── public_exception_additional_test.go
+    ├── public_exception_test.go
+    ├── public_init_module_test.go
+    ├── public_utils_additional_test.go
+    └── public_utils_test.go
+
+Explanations:
+- `ratelimit/`: The Go implementation of the ratelimit library API, decorators, exceptions, and utilities.
+- `tests/original/`: Full translation of each original Python test file.
+- `public_tests/`: Full translation of each provided public test file.
+- `run_tests.sh`: Bash wrapper for executing all tests with a single command.
+- `README.md`: Usage and instructions.

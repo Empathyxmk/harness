@@ -1,0 +1,12 @@
+tinyexpr_rs/
+├── Cargo.toml
+├── src/
+│   └── lib.rs
+├── tests/
+│   └── original/
+│       ├── test_tinyexpr.rs
+│       └── test_tinyexpr_extra.rs
+├── public_tests/
+│   └── test_tinyexpr_public.rs
+├── run_tests.sh
+└── project_structure.txt

@@ -1,0 +1,65 @@
+Project Directory Structure for Python Port of jonschlinkert_get-value
+====================================================================
+
+.
+├── src/
+│   ├── get_value.py         # Main get_value implementation (Python port)
+│
+├── tests/
+│   ├── __init__.py         # Marks directory as Python module
+│   ├── original/
+│   │   ├── __init__.py
+│   │   ├── test_get_value.py        # Main direct translation of get-value.test.ts
+│   │   ├── test_uncovered_get_value.py # Covers extra/uncovered original logic
+│   │   ├── test_test.py             # Test for the test runner/unit driver logic
+│
+├── public_tests/
+│   ├── __init__.py
+│   ├── test_get_value_public.py     # Public tests translated from get-value.public.test.js
+│
+├── requirements.txt        # Dependencies file (pytest etc.)
+├── run_tests.sh           # Simple executable script to run all tests
+├── project_structure.txt   # This file: documents and explains project structure
+
+====================================================================
+
+Directory/Files Explanation:
+---------------------------
+src/get_value.py
+    Python port of the core get-value functionality, compatible with the test suite.
+    Provides get_value(target, path, options=None) with JS-like flexibility.
+
+tests/original/
+    Contains translations of the project's original tests. Each test module in here
+    matches the logic/coverage of one or more of the original JS/TS files.
+
+public_tests/
+    Contains translations of public (generated) tests, with similar semantics and
+    validation as the public_get_value.public.test.js.
+
+requirements.txt
+    Python dependency requirements. Lists 'pytest' for testing.
+
+run_tests.sh
+    Simple shell script to run all tests via pytest.
+
+Usage:
+------
+1. Install dependencies:
+
+    pip install -r requirements.txt
+
+2. Run all tests:
+
+    ./run_tests.sh
+
+    - This will discover and run all test cases in both 'tests/' and 'public_tests/'.
+
+Adding Tests:
+-------------
+- Additional original tests: Place in 'tests/original/'.
+- Additional public tests: Place in 'public_tests/'.
+
+Test Discovery:
+---------------
+- All Python files of the form 'test_*.py' or '*_test.py' in tests/ and public_tests/ will be run by pytest.

@@ -1,0 +1,85 @@
+C++ Project Structure for "nickstenning_honcho" test translation
+=================================================================
+
+project_root/
+├── src/
+│   ├── main.cpp                # (empty or basic main unless source ported)
+│   └── honcho/                 # Source modules translated from Python
+│       ├── environ.h
+│       ├── environ.cpp
+│       ├── command.h
+│       ├── command.cpp
+│       ├── printer.h
+│       ├── printer.cpp
+│       ├── export/
+│       │   ├── systemd.h
+│       │   ├── systemd.cpp
+│       │   ├── upstart.h
+│       │   ├── upstart.cpp
+│       │   ├── base.h
+│       │   ├── base.cpp
+│       │   ├── supervisord.h
+│       │   ├── supervisord.cpp
+│       │   ├── runit.h
+│       │   ├── runit.cpp
+│       └── ... (other logic translated as needed)
+│
+├── include/                    # Public C++ headers (if shared across modules)
+│
+├── tests/                      # Original (private) tests
+│   └── original/
+│       ├── test_environ_test.cpp
+│       ├── test_command_test.cpp
+│       ├── test_printer_test.cpp
+│       ├── test_export_systemd_test.cpp
+│       ├── test__version_test.cpp
+│       ├── test_invocation_test.cpp
+│       ├── test_export_upstart_test.cpp
+│       ├── test__init__test.cpp
+│       ├── test_doc_conf_test.cpp
+│       ├── test_export_runit_test.cpp
+│       ├── test_export_supervisord_test.cpp
+│       ├── test_manager_test.cpp
+│       ├── test_export_base_test.cpp
+│       ├── test_colour_test.cpp
+│       ├── test_process_test.cpp
+│       └── integration/
+│             ├── test_run_test.cpp
+│             ├── test_start_test.cpp
+│             ├── test_main_test.cpp
+│             ├── test_check_test.cpp
+│             └── test_export_test.cpp
+│   └── test_main.cpp           # GTest test runner for all original tests
+│
+├── public_tests/               # Public test suite
+│   ├── test_public_command_test.cpp
+│   ├── test_public_manager_test.cpp
+│   ├── test_public__init__test.cpp
+│   ├── test_public_process_test.cpp
+│   ├── test_public_colour_test.cpp
+│   ├── test_public__version_test.cpp
+│   ├── test_public_invocation_test.cpp
+│   ├── test_public_printer_test.cpp
+│   ├── test_public_export_supervisord_test.cpp
+│   ├── test_public_environ_test.cpp
+│   ├── test_public_export_upstart_test.cpp
+│   ├── test_public_export_base_test.cpp
+│   ├── test_public_doc_conf_test.cpp
+│   ├── test_public_export_runit_test.cpp
+│   ├── test_public_export_systemd_test.cpp
+│   └── ... (mirrors public Python tests)
+│   └── test_public_main.cpp    # GTest test runner for public tests
+│
+├── CMakeLists.txt              # CMake configuration for source and tests
+├── run_tests.sh                # Simple test execution script
+├── README.md                   # Project overview & build/run instructions
+└── ...                         # Other files (LICENSE, docs, etc.)
+
+-------------------------------------------------------------------------
+Key Notes:
+- All test files (original and public) are fully translated with complete logic.
+- CMake configuration discovers and builds all tests, linking with GoogleTest.
+- run_tests.sh builds all and runs both original and public test binaries.
+- All source-logic necessary to run the tests is available/translated as .cpp/.h
+- README explains build dependency on CMake and GoogleTest.
+-------------------------------------------------------------------------

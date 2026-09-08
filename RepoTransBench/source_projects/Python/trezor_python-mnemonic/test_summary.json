@@ -1,0 +1,11 @@
+{
+  "project_name": "trezor_python-mnemonic",
+  "language": "Python",
+  "coverage": {
+    "line": 71.0,
+    "branch": 58.3
+  },
+  "timestamp": "2025-06-19T13:00:47.866224",
+  "original_path": "/workspace/runnable_filter/Python/trezor_python-mnemonic",
+  "test_result_path": "/workspace/test_enhancement_results/Python/trezor_python-mnemonic"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "jeromeetienne_microevent.js",
+  "version": "1.0.0",
+  "description": "MicroEvent.js tests",
+  "main": "microevent.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage --coverageReporters=text --coverageReporters=html"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

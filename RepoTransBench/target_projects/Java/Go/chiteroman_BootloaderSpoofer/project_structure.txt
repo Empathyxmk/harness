@@ -1,0 +1,37 @@
+chiteroman_BootloaderSpoofer Go Project Structure
+================================================
+
+.
+├── bootloaderspoofer.go           # Implementation of BootloaderSpoofer class/logic
+├── go.mod                         # Go module file
+├── run_tests.sh                   # Simple one-click test run script (chmod +x this file)
+├── project_structure.txt           # This structure and documentation file
+├── tests/
+│   └── original/
+│       └── bootloaderspoofer_test.go   # Translation of BootloaderSpooferTest.java (original tests)
+└── public_tests/
+    └── bootloaderspoofer_public_test.go # Translation of BootloaderSpooferPublicTest.java (public tests)
+
+Directory/Files Explained:
+- bootloaderspoofer.go:
+    Contains the Go translation of the BootloaderSpoofer class with all required methods.
+- tests/original/:
+    All original test cases translated from the Java test suite.
+- public_tests/:
+    All public test cases translated from the Java public test suite.
+- go.mod:
+    Declares this project as a Go module for dependency and import handling.
+- run_tests.sh:
+    Simple shell script to execute all tests under the Go module. Usage: `./run_tests.sh`
+- project_structure.txt:
+    This file, outlining the layout and high-level documentation.
+
+How to run all tests:
+---------------------
+1. Ensure you have Go 1.18 or newer installed.
+2. Make sure you are in the project root directory.
+3. Run `chmod +x run_tests.sh` if necessary.
+4. Execute:
+   ./run_tests.sh
+
+This will automatically run all test files in both the tests/original/ and public_tests/ directories.

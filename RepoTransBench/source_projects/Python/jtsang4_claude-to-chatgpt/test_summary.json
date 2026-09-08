@@ -1,0 +1,11 @@
+{
+  "project_name": "jtsang4_claude-to-chatgpt",
+  "language": "Python",
+  "coverage": {
+    "line": 82.8,
+    "branch": 61.9
+  },
+  "timestamp": "2025-06-19T11:54:22.436854",
+  "original_path": "/workspace/runnable_filter/Python/jtsang4_claude-to-chatgpt",
+  "test_result_path": "/workspace/test_enhancement_results/Python/jtsang4_claude-to-chatgpt"
+}

@@ -1,0 +1,19 @@
+{
+  "project_name": "lorisleiva_tailwindcss-plugins",
+  "language": "JavaScript",
+  "coverage": {
+    "line": 100.0,
+    "branch": 96.29
+  },
+  "timestamp": "2025-06-19T10:54:06.886622",
+  "original_path": "/workspace/runnable_filter/JavaScript/lorisleiva_tailwindcss-plugins",
+  "test_result_path": "/workspace/test_enhancement_results/JavaScript/lorisleiva_tailwindcss-plugins",
+  "tests_path": [
+    "test/gradients.test.js",
+    "test/pagination.test.js",
+    "test/keyframes.test.js",
+    "test/index.test.js",
+    "test/animations.test.js"
+  ],
+  "run_tests_path": "run_tests.sh"
+}

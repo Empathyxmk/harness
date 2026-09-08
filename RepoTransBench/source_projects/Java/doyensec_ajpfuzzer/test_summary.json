@@ -1,0 +1,11 @@
+{
+  "project_name": "doyensec_ajpfuzzer",
+  "language": "Java",
+  "coverage": {
+    "line": 95.0,
+    "branch": 96.0
+  },
+  "timestamp": "2025-06-23T10:14:19.078835",
+  "original_path": "/workspace/test_enhancement_results/Java/doyensec_ajpfuzzer",
+  "test_result_path": "/workspace/test_enhancement_results_plus/Java/doyensec_ajpfuzzer"
+}

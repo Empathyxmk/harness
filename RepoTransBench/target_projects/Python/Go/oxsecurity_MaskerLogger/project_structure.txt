@@ -1,0 +1,22 @@
+oxsecurity_MaskerLogger_GO/
+├── go.mod
+├── run_tests.sh
+├── tests/
+│   └── original/
+│       ├── ahocorasick_regex_match_additional_test.go
+│       ├── ahocorasick_regex_match_test.go
+│       ├── masker_formatter_test.go
+│       ├── masked_logger_test.go
+│       ├── secrets_in_logs_example_test.go
+│       ├── utils_additional_test.go
+│       └── utils_test.go
+├── public_tests/
+│   ├── public_ahocorasick_regex_match_additional_test.go
+│   ├── public_ahocorasick_regex_match_test.go
+│   ├── public_masked_logger_test.go
+│   ├── public_masker_formatter_test.go
+│   ├── public_secrets_in_logs_example_test.go
+│   ├── public_utils_additional_test.go
+│   ├── public_utils_test.go
+│   └── conftest.go  (for legacy compatibility, can be no-op)
+├── test_translation_progress.json

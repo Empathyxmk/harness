@@ -1,0 +1,13 @@
+project_root/
+├── requirements.txt
+├── setup.cfg
+├── run_tests.sh
+├── project_structure.txt
+├── tests/
+│   ├── __init__.py
+│   └── original/
+│       ├── __init__.py
+│       └── test_chunked_coding_converter.py
+├── public_tests/
+│   ├── __init__.py
+│   └── test_chunked_coding_converter_public.py

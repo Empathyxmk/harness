@@ -1,0 +1,91 @@
+{
+  "project_name": "Blizzard-liu_AndroidUtils",
+  "language": "Java",
+  "test_results": {
+    "existing_tests_found": true,
+    "public_tests_generated": true,
+    "existing_tests_passed": true,
+    "public_tests_passed": true
+  },
+  "timestamp": "2025-06-23T20:12:36.661147",
+  "original_path": "/workspace/verified_repos_v2/Java/Blizzard-liu_AndroidUtils",
+  "public_test_result_path": "/workspace/public_test_results/Java/Blizzard-liu_AndroidUtils",
+  "original_tests": {
+    "test_files": [
+      "app/src/androidTest/java/com/example/administrator/androidutils/ExampleInstrumentedTest.java",
+      "app/src/test/java/com/example/administrator/androidutils/ExampleUnitTest.java",
+      "utils/src/androidTest/java/com/example/utils/ExampleInstrumentedTest.java",
+      "utils/src/test/java/com/example/utils/AnimationUtilsTest.java",
+      "utils/src/test/java/com/example/utils/FileUtilsTest.java",
+      "utils/src/test/java/com/example/utils/AssetDatabaseOpenHelperTest.java",
+      "utils/src/test/java/com/example/utils/LogUtilsTest.java",
+      "utils/src/test/java/com/example/utils/GsonUtilTest.java",
+      "utils/src/test/java/com/example/utils/ExampleUnitTest.java",
+      "utils/src/test/java/com/example/utils/PicassoUtilTest.java",
+      "utils/src/test/java/com/example/utils/BitmapUtilTest.java",
+      "utils/src/test/java/com/example/utils/AppUtilsTest.java"
+    ],
+    "test_scripts": [
+      "run_tests.sh"
+    ],
+    "total_original_test_files": 12,
+    "found_existing_tests": true
+  },
+  "public_tests": {
+    "test_files": [
+      "app/src/androidTest/java/com/example/administrator/androidutils/ExampleInstrumentedPublicTest.java",
+      "app/src/test/java/com/example/administrator/androidutils/ExampleUnitPublicTest.java",
+      "utils/src/androidTest/java/com/example/utils/ExampleInstrumentedPublicTest.java",
+      "utils/src/test/java/com/example/utils/ExampleUnitPublicTest.java",
+      "utils/src/test/java/com/example/utils/AnimationUtilsPublicTest.java",
+      "utils/src/test/java/com/example/utils/AppUtilsPublicTest.java",
+      "utils/src/test/java/com/example/utils/AssetDatabaseOpenHelperPublicTest.java",
+      "utils/src/test/java/com/example/utils/BitmapUtilPublicTest.java",
+      "utils/src/test/java/com/example/utils/FileUtilsPublicTest.java",
+      "utils/src/test/java/com/example/utils/GsonUtilPublicTest.java",
+      "utils/src/test/java/com/example/utils/LogUtilsPublicTest.java",
+      "utils/src/test/java/com/example/utils/PicassoUtilPublicTest.java",
+      "run_public_tests.sh",
+      "utils/src/test/java/com/example/utils/AnimationUtilsPublicTest.java",
+      "utils/src/test/java/com/example/utils/AppUtilsPublicTest.java",
+      "utils/src/test/java/com/example/utils/AssetDatabaseOpenHelperPublicTest.java",
+      "utils/src/test/java/com/example/utils/BitmapUtilPublicTest.java",
+      "utils/src/test/java/com/example/utils/FileUtilsPublicTest.java",
+      "utils/src/test/java/com/example/utils/GsonUtilPublicTest.java",
+      "utils/src/test/java/com/example/utils/LogUtilsPublicTest.java",
+      "utils/src/test/java/com/example/utils/PicassoUtilPublicTest.java",
+      "run_public_tests.sh"
+    ],
+    "test_scripts": [
+      "run_public_tests.sh",
+      "run_public_tests.sh"
+    ],
+    "total_public_test_files": 22,
+    "generated_public_tests": true
+  },
+  "created_files": [
+    "app/src/androidTest/java/com/example/administrator/androidutils/ExampleInstrumentedPublicTest.java",
+    "app/src/test/java/com/example/administrator/androidutils/ExampleUnitPublicTest.java",
+    "utils/src/androidTest/java/com/example/utils/ExampleInstrumentedPublicTest.java",
+    "utils/src/test/java/com/example/utils/ExampleUnitPublicTest.java",
+    "utils/src/test/java/com/example/utils/AnimationUtilsPublicTest.java",
+    "utils/src/test/java/com/example/utils/AppUtilsPublicTest.java",
+    "utils/src/test/java/com/example/utils/AssetDatabaseOpenHelperPublicTest.java",
+    "utils/src/test/java/com/example/utils/BitmapUtilPublicTest.java",
+    "utils/src/test/java/com/example/utils/FileUtilsPublicTest.java",
+    "utils/src/test/java/com/example/utils/GsonUtilPublicTest.java",
+    "utils/src/test/java/com/example/utils/LogUtilsPublicTest.java",
+    "utils/src/test/java/com/example/utils/PicassoUtilPublicTest.java",
+    "run_public_tests.sh",
+    "utils/src/test/java/com/example/utils/AnimationUtilsPublicTest.java",
+    "utils/src/test/java/com/example/utils/AppUtilsPublicTest.java",
+    "utils/src/test/java/com/example/utils/AssetDatabaseOpenHelperPublicTest.java",
+    "utils/src/test/java/com/example/utils/BitmapUtilPublicTest.java",
+    "utils/src/test/java/com/example/utils/FileUtilsPublicTest.java",
+    "utils/src/test/java/com/example/utils/GsonUtilPublicTest.java",
+    "utils/src/test/java/com/example/utils/LogUtilsPublicTest.java",
+    "utils/src/test/java/com/example/utils/PicassoUtilPublicTest.java",
+    "run_tests.sh",
+    "run_public_tests.sh"
+  ]
+}

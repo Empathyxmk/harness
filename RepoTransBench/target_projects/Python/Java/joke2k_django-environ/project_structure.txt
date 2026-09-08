@@ -1,0 +1,51 @@
+.
+├── pom.xml
+├── run_tests.sh
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── environ/
+│                       ├── [Java sources for the main library, e.g., Env.java, Path.java, FileAwareMapping.java]
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── environ/
+│                       ├── original/
+│                       │   ├── TestCache.java
+│                       │   ├── TestChannels.java
+│                       │   ├── TestDB.java
+│                       │   ├── TestEmail.java
+│                       │   ├── TestEnv.java
+│                       │   ├── TestFileAware.java
+│                       │   ├── TestFileAwareMappingUnit.java
+│                       │   ├── TestInitAndCompat.java
+│                       │   ├── TestPath.java
+│                       │   ├── TestSchema.java
+│                       │   ├── TestSearch.java
+│                       │   ├── TestSetupModule.java
+│                       │   └── TestUtils.java
+│                       └── [other regular original Java test files, if any]
+├── README.md
+├── project_structure.txt
+└── [public_tests/ or src/test/java/com/example/environ/public/ if public tests exist]
+
+# Directory/Files Explanation:
+# - pom.xml: Maven build configuration file, declares dependencies (JUnit 5, Mockito).
+# - run_tests.sh: Simple test launcher script using Maven.
+# - src/main/java/com/example/environ/: Source code for adapted Java implementation of django-environ, 
+#   including Env, Path, FileAwareMapping, etc.
+# - src/test/java/com/example/environ/original/: All original test imports from Python mapped here as Java test files.
+#   Each test maps a Python test module to a Java class (e.g., test_env.py -> TestEnv.java).
+# - project_structure.txt: This file, describes the layout.
+# - README.md: Intro/documentation (not included in this preview).
+# - public_tests/: Place for public test cases, if any, in Java form (none for this project per summary).
+
+# How to run the tests:
+#  1. Make sure you have Maven (3.6+) and Java 11+ installed.
+#  2. From the project root, run: ./run_tests.sh
+#     (Or: mvn clean test)
+#  3. All tests in src/test/java/com/example/environ/** will be executed.

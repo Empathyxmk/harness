@@ -1,0 +1,11 @@
+{
+  "project_name": "NewBeginning6_Subdir-vul-find",
+  "language": "Java",
+  "coverage": {
+    "line": 62.9,
+    "branch": 53.8
+  },
+  "timestamp": "2025-06-20T01:09:10.411243",
+  "original_path": "/workspace/runnable_filter_cannot_run/Java/NewBeginning6_Subdir-vul-find",
+  "test_result_path": "/workspace/test_enhancement_results/Java/NewBeginning6_Subdir-vul-find"
+}
