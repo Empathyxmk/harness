@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "20260908T123151Z",
+  "experiment": {
+    "name": "baseline",
+    "planning": false,
+    "feedback_rounds": 0,
+    "completion_gate": false,
+    "description": "Single off-the-shelf Codex migration pass."
+  },
+  "task": {
+    "project": "1ssqq1lxr_iot_push",
+    "source": "Java",
+    "target": "Python",
+    "public_test_paths": 7,
+    "hidden_test_paths": 17
+  },
+  "replicate": 1,
+  "model": null,
+  "agent": {
+    "turns": [
+      {
+        "index": 1,
+        "return_code": 0,
+        "seconds": 1084.1296654239995,
+        "thread_id": "01a08100-dc26-7253-bebd-4013b467aed3",
+        "final_message": "Implemented the Python migration with MQTT client/server, QoS handling, sessions, retained messages, wills, TLS, WebSockets, and utilities.\n\nAll 9 public tests pass, plus in-memory protocol and TLS checks. Live TCP testing was blocked by sandbox socket restrictions.\n\nTests, runner, and `_source_reference/` remain unchanged.",
+        "usage": {
+          "input_tokens": 1585246,
+          "cached_input_tokens": 1488256,
+          "output_tokens": 32364
+        }
+      }
+    ],
+    "turn_count": 1,
+    "seconds": 1084.1296654239995,
+    "usage": {
+      "input_tokens": 1585246,
+      "cached_input_tokens": 1488256,
+      "output_tokens": 32364
+    }
+  },
+  "public_checks": [],
+  "final": {
+    "return_code": 1,
+    "seconds": 0.5640314930005843,
+    "passed": 32,
+    "failed": 4,
+    "total": 36,
+    "pass_rate": 0.8888888888888888,
+    "full_success": false,
+    "parser": "pytest"
+  }
+}

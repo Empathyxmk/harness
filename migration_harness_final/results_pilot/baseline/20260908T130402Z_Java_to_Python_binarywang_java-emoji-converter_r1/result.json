@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "20260908T130402Z",
+  "experiment": {
+    "name": "baseline",
+    "planning": false,
+    "feedback_rounds": 0,
+    "completion_gate": false,
+    "description": "Single off-the-shelf Codex migration pass."
+  },
+  "task": {
+    "project": "binarywang_java-emoji-converter",
+    "source": "Java",
+    "target": "Python",
+    "public_test_paths": 5,
+    "hidden_test_paths": 5
+  },
+  "replicate": 1,
+  "model": "",
+  "agent": {
+    "turns": [
+      {
+        "index": 1,
+        "return_code": 0,
+        "seconds": 297.2784847469993,
+        "thread_id": "01a0811e-5394-71b3-bde4-23b335ab318a",
+        "final_message": "Implemented the Python migration with:\n\n- `EmojiConverter` singleton supporting Unicode, aliases, HTML decimal entities, and SoftBank conversion.\n- `EmojiReader` parsing the bundled emoji4unicode mapping.\n- `Emoji4Unicode` model classes and Java-style accessors.\n- `EmojiUtils` SoftBank detection utilities.\n- Bundled emoji alias data and XML resource\u2014no external dependencies needed.\n\nVerified documented conversion examples and ran the public suite: 10 passed.",
+        "usage": {
+          "input_tokens": 996780,
+          "cached_input_tokens": 934656,
+          "output_tokens": 10769
+        }
+      }
+    ],
+    "turn_count": 1,
+    "seconds": 297.2784847469993,
+    "usage": {
+      "input_tokens": 996780,
+      "cached_input_tokens": 934656,
+      "output_tokens": 10769
+    }
+  },
+  "public_checks": [],
+  "final": {
+    "return_code": 0,
+    "seconds": 0.27921016499931284,
+    "passed": 19,
+    "failed": 0,
+    "total": 19,
+    "pass_rate": 1.0,
+    "full_success": true,
+    "parser": "pytest"
+  }
+}

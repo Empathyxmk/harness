@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "20260908T131707Z",
+  "experiment": {
+    "name": "baseline",
+    "planning": false,
+    "feedback_rounds": 0,
+    "completion_gate": false,
+    "description": "Single off-the-shelf Codex migration pass."
+  },
+  "task": {
+    "project": "c0ny1_chunked-coding-converter",
+    "source": "Java",
+    "target": "Python",
+    "public_test_paths": 1,
+    "hidden_test_paths": 1
+  },
+  "replicate": 1,
+  "model": "gpt-5.6-terra",
+  "agent": {
+    "turns": [
+      {
+        "index": 1,
+        "return_code": 0,
+        "seconds": 211.0767595489997,
+        "thread_id": "01a0812a-507a-7840-a6ad-f4bd3fe67f80",
+        "final_message": "Migrated the Java converter to Python in [chunked_coding_converter.py](/home/matth/projects/Harness/migration_harness_final/results_study/baseline/20260908T131707Z_Java_to_Python_c0ny1_chunked-coding-converter_r1/agent/chunked_coding_converter.py), with Java-package and class-name compatibility imports.\n\nImplemented UTF-8 byte-size encoding and the reference decoder\u2019s line-oriented edge-case behavior.\n\nVerification: 20 public tests pass, plus direct Java-parity checks.",
+        "usage": {
+          "input_tokens": 404839,
+          "cached_input_tokens": 368896,
+          "output_tokens": 8353
+        }
+      }
+    ],
+    "turn_count": 1,
+    "seconds": 211.0767595489997,
+    "usage": {
+      "input_tokens": 404839,
+      "cached_input_tokens": 368896,
+      "output_tokens": 8353
+    }
+  },
+  "public_checks": [],
+  "final": {
+    "return_code": 0,
+    "seconds": 0.28154750000066997,
+    "passed": 40,
+    "failed": 0,
+    "total": 40,
+    "pass_rate": 1.0,
+    "full_success": true,
+    "parser": "pytest"
+  }
+}

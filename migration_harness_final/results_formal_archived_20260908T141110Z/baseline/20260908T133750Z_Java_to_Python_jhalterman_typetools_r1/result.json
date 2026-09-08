@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "20260908T133750Z",
+  "experiment": {
+    "name": "baseline",
+    "planning": false,
+    "feedback_rounds": 0,
+    "completion_gate": false,
+    "description": "Single off-the-shelf Codex migration pass."
+  },
+  "task": {
+    "project": "jhalterman_typetools",
+    "source": "Java",
+    "target": "Python",
+    "public_test_paths": 4,
+    "hidden_test_paths": 4
+  },
+  "replicate": 1,
+  "model": "gpt-5.6-terra",
+  "agent": {
+    "turns": [
+      {
+        "index": 1,
+        "return_code": 1,
+        "seconds": 4.104846651000116,
+        "thread_id": "01a0813d-4210-7d50-833d-0cfbd9dce8f8",
+        "final_message": "",
+        "usage": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0
+        }
+      }
+    ],
+    "turn_count": 1,
+    "seconds": 4.104846651000116,
+    "usage": {
+      "input_tokens": 0,
+      "cached_input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "public_checks": [],
+  "final": {
+    "return_code": 1,
+    "seconds": 0.3316579960010131,
+    "passed": 41,
+    "failed": 2,
+    "total": 43,
+    "pass_rate": 0.9534883720930233,
+    "full_success": false,
+    "parser": "pytest"
+  }
+}

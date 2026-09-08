@@ -1,0 +1,45 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.6.0
+rootdir: /home/matth/projects/Harness/migration_harness_final
+configfile: pyproject.toml
+collected 43 items
+
+public_tests/test_functional_inner_class_public.py ..                    [  4%]
+public_tests/test_functional_lambda_public.py ..                         [  9%]
+public_tests/test_reified_parameterized_type_public.py .......           [ 25%]
+public_tests/test_type_resolver_public.py ...............                [ 60%]
+tests/original/test_functional_inner_class.py .                          [ 62%]
+tests/original/test_functional_lambda.py ..                              [ 67%]
+tests/original/test_reified_parameterized_type.py .......                [ 83%]
+tests/original/test_type_resolver.py ..F.F..                             [100%]
+
+=================================== FAILURES ===================================
+___________ test_should_resolve_argument_for_object_when_not_generic ___________
+
+    def test_should_resolve_argument_for_object_when_not_generic():
+        class Some:
+            pass
+>       assert TypeResolver.resolveRawArgument(list, Some) == list
+E       AssertionError: assert None == list
+E        +  where None = <function TypeResolver.resolveRawArgument at 0x7500df0aea30>(list, <class 'test_type_resolver.test_should_resolve_argument_for_object_when_not_generic.<locals>.Some'>)
+E        +    where <function TypeResolver.resolveRawArgument at 0x7500df0aea30> = TypeResolver.resolveRawArgument
+
+tests/original/test_type_resolver.py:68: AssertionError
+________________ test_should_resolve_arguments_for_baz_from_foo ________________
+
+    def test_should_resolve_arguments_for_baz_from_foo():
+        T = typing.TypeVar('T')
+        S = typing.TypeVar('S')
+        class Foo(typing.Generic[T]):
+            pass
+        class Baz(Foo[dict], typing.Generic[T, S]):
+            pass
+        args = TypeResolver.resolveRawArguments(Baz, Foo)
+>       assert args is not None
+E       assert None is not None
+
+tests/original/test_type_resolver.py:85: AssertionError
+=========================== short test summary info ============================
+FAILED tests/original/test_type_resolver.py::test_should_resolve_argument_for_object_when_not_generic
+FAILED tests/original/test_type_resolver.py::test_should_resolve_arguments_for_baz_from_foo
+========================= 2 failed, 41 passed in 0.10s =========================

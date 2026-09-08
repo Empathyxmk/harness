@@ -1,0 +1,142 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.6.0
+rootdir: /home/matth/projects/Harness/migration_harness_final
+configfile: pyproject.toml
+collected 0 items / 12 errors
+
+==================================== ERRORS ====================================
+_ ERROR collecting results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_answer_set.py _
+ImportError while importing test module '/home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_answer_set.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/original/test_answer_set.py:4: in <module>
+    from src.awslabs_route53_infima.util import AnswerSet, ComparableResourceRecord, HealthCheckedResourceRecord
+E   ModuleNotFoundError: No module named 'src'
+_ ERROR collecting results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_lattice.py _
+ImportError while importing test module '/home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_lattice.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/original/test_lattice.py:3: in <module>
+    from src.awslabs_route53_infima import Lattice
+E   ModuleNotFoundError: No module named 'src'
+_ ERROR collecting results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_one_dimensional_lattice.py _
+ImportError while importing test module '/home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_one_dimensional_lattice.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/original/test_one_dimensional_lattice.py:1: in <module>
+    from src.awslabs_route53_infima import OneDimensionalLattice
+E   ModuleNotFoundError: No module named 'src'
+_ ERROR collecting results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_rubber_tree.py _
+ImportError while importing test module '/home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_rubber_tree.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/original/test_rubber_tree.py:1: in <module>
+    from src.awslabs_route53_infima.util import HealthCheckedResourceRecord
+E   ModuleNotFoundError: No module named 'src'
+_ ERROR collecting results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_simple_signature_shuffle_sharder.py _
+ImportError while importing test module '/home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_simple_signature_shuffle_sharder.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/original/test_simple_signature_shuffle_sharder.py:6: in <module>
+    from src.awslabs_route53_infima import (
+E   ModuleNotFoundError: No module named 'src'
+_ ERROR collecting results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_stateful_searching_shuffle_sharder.py _
+ImportError while importing test module '/home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_stateful_searching_shuffle_sharder.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/original/test_stateful_searching_shuffle_sharder.py:4: in <module>
+    from src.awslabs_route53_infima import (
+E   ModuleNotFoundError: No module named 'src'
+_ ERROR collecting results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_sub_list_iterator.py _
+ImportError while importing test module '/home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_sub_list_iterator.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/original/test_sub_list_iterator.py:1: in <module>
+    from src.awslabs_route53_infima.util import IterableSubListGenerator
+E   ModuleNotFoundError: No module named 'src'
+_ ERROR collecting results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_two_dimensional_lattice.py _
+ImportError while importing test module '/home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/tests/original/test_two_dimensional_lattice.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/original/test_two_dimensional_lattice.py:1: in <module>
+    from src.awslabs_route53_infima import TwoDimensionalLattice
+E   ModuleNotFoundError: No module named 'src'
+_ ERROR collecting results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/public_tests/test_lattice_public.py _
+ImportError while importing test module '/home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/public_tests/test_lattice_public.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+public_tests/test_lattice_public.py:3: in <module>
+    from src.awslabs_route53_infima import Lattice
+E   ModuleNotFoundError: No module named 'src'
+_ ERROR collecting results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/public_tests/test_one_dimensional_lattice_public.py _
+ImportError while importing test module '/home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/public_tests/test_one_dimensional_lattice_public.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+public_tests/test_one_dimensional_lattice_public.py:1: in <module>
+    from src.awslabs_route53_infima import OneDimensionalLattice
+E   ModuleNotFoundError: No module named 'src'
+_ ERROR collecting results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/public_tests/test_simple_signature_shuffle_sharder_public.py _
+ImportError while importing test module '/home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/public_tests/test_simple_signature_shuffle_sharder_public.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+public_tests/test_simple_signature_shuffle_sharder_public.py:3: in <module>
+    from src.awslabs_route53_infima import (
+E   ModuleNotFoundError: No module named 'src'
+_ ERROR collecting results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/public_tests/test_two_dimensional_lattice_public.py _
+ImportError while importing test module '/home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T133758Z_Java_to_Python_awslabs_route53-infima_r1/final_eval/public_tests/test_two_dimensional_lattice_public.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+public_tests/test_two_dimensional_lattice_public.py:1: in <module>
+    from src.awslabs_route53_infima import TwoDimensionalLattice
+E   ModuleNotFoundError: No module named 'src'
+=========================== short test summary info ============================
+ERROR tests/original/test_answer_set.py
+ERROR tests/original/test_lattice.py
+ERROR tests/original/test_one_dimensional_lattice.py
+ERROR tests/original/test_rubber_tree.py
+ERROR tests/original/test_simple_signature_shuffle_sharder.py
+ERROR tests/original/test_stateful_searching_shuffle_sharder.py
+ERROR tests/original/test_sub_list_iterator.py
+ERROR tests/original/test_two_dimensional_lattice.py
+ERROR public_tests/test_lattice_public.py
+ERROR public_tests/test_one_dimensional_lattice_public.py
+ERROR public_tests/test_simple_signature_shuffle_sharder_public.py
+ERROR public_tests/test_two_dimensional_lattice_public.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 12 errors during collection !!!!!!!!!!!!!!!!!!!
+============================== 12 errors in 0.21s ==============================

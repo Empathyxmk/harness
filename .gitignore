@@ -1,1 +1,9 @@
 RepoTransBench/projects.tar.gz
+
+# Harness run workspaces: huge, and each agent/ is a nested git repo.
+# The evidence that matters (result.json, logs, reports, CSVs) is kept.
+*.tar.gz
+migration_harness_final/results*/**/agent/
+migration_harness_final/results*/**/public_eval/
+migration_harness_final/results*/**/final_eval/
+migration_harness_final/*.egg-info/

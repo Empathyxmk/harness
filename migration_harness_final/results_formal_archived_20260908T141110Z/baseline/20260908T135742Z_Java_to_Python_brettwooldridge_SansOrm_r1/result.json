@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "20260908T135742Z",
+  "experiment": {
+    "name": "baseline",
+    "planning": false,
+    "feedback_rounds": 0,
+    "completion_gate": false,
+    "description": "Single off-the-shelf Codex migration pass."
+  },
+  "task": {
+    "project": "brettwooldridge_SansOrm",
+    "source": "Java",
+    "target": "Python",
+    "public_test_paths": 6,
+    "hidden_test_paths": 3
+  },
+  "replicate": 1,
+  "model": "gpt-5.6-terra",
+  "agent": {
+    "turns": [
+      {
+        "index": 1,
+        "return_code": 1,
+        "seconds": 5.631691308999507,
+        "thread_id": "01a0814f-7b2b-71d3-8922-0dde3ff31852",
+        "final_message": "",
+        "usage": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0
+        }
+      }
+    ],
+    "turn_count": 1,
+    "seconds": 5.631691308999507,
+    "usage": {
+      "input_tokens": 0,
+      "cached_input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "public_checks": [],
+  "final": {
+    "return_code": 0,
+    "seconds": 0.6790298760006408,
+    "passed": 26,
+    "failed": 0,
+    "total": 26,
+    "pass_rate": 1.0,
+    "full_success": true,
+    "parser": "pytest"
+  }
+}

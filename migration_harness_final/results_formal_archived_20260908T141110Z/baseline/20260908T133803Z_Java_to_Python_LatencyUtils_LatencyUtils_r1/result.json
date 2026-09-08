@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "20260908T133803Z",
+  "experiment": {
+    "name": "baseline",
+    "planning": false,
+    "feedback_rounds": 0,
+    "completion_gate": false,
+    "description": "Single off-the-shelf Codex migration pass."
+  },
+  "task": {
+    "project": "LatencyUtils_LatencyUtils",
+    "source": "Java",
+    "target": "Python",
+    "public_test_paths": 7,
+    "hidden_test_paths": 7
+  },
+  "replicate": 1,
+  "model": "gpt-5.6-terra",
+  "agent": {
+    "turns": [
+      {
+        "index": 1,
+        "return_code": 1,
+        "seconds": 5.013877441000659,
+        "thread_id": "01a0813d-76ef-7433-950d-724b74d81443",
+        "final_message": "",
+        "usage": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0
+        }
+      }
+    ],
+    "turn_count": 1,
+    "seconds": 5.013877441000659,
+    "usage": {
+      "input_tokens": 0,
+      "cached_input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "public_checks": [],
+  "final": {
+    "return_code": 1,
+    "seconds": 2.2630256740012555,
+    "passed": 17,
+    "failed": 3,
+    "total": 20,
+    "pass_rate": 0.85,
+    "full_success": false,
+    "parser": "pytest"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "return_code": 0,
+  "seconds": 0.6790298760006408,
+  "passed": 26,
+  "failed": 0,
+  "total": 26,
+  "pass_rate": 1.0,
+  "full_success": true,
+  "parser": "pytest"
+}

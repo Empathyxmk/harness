@@ -1,0 +1,75 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.6.0
+rootdir: /home/matth/projects/Harness/migration_harness_final/results_smoke_retry/baseline/20260908T123151Z_Java_to_Python_1ssqq1lxr_iot_push_r1/final_eval
+configfile: pyproject.toml
+collected 36 items
+
+public_tests/test_client_mqtt_handler_service_public.py .                [  2%]
+public_tests/test_default_thread_factory_public.py .                     [  5%]
+public_tests/test_executor_queue_public.py ...                           [ 13%]
+public_tests/test_ip_utils_public.py .                                   [ 16%]
+public_tests/test_mqtt_hander_public.py .                                [ 19%]
+public_tests/test_mqtt_handler_intf_public.py .                          [ 22%]
+public_tests/test_server_mqtt_handler_service_public.py .                [ 25%]
+tests/original/test_client_mqtt_handler_service.py .                     [ 27%]
+tests/original/test_default_thread_factory.py .                          [ 30%]
+tests/original/test_enums.py FFF.F                                       [ 44%]
+tests/original/test_exception.py ..                                      [ 50%]
+tests/original/test_executor_queue.py ...                                [ 58%]
+tests/original/test_ip_utils.py .                                        [ 61%]
+tests/original/test_mqtt_client_consumer1.py .                           [ 63%]
+tests/original/test_mqtt_client_consumer2.py .                           [ 66%]
+tests/original/test_mqtt_client_producer.py .                            [ 69%]
+tests/original/test_mqtt_hander.py .                                     [ 72%]
+tests/original/test_mqtt_handler_intf.py .                               [ 75%]
+tests/original/test_pool.py ....                                         [ 86%]
+tests/original/test_properties.py .                                      [ 88%]
+tests/original/test_scheduled.py .                                       [ 91%]
+tests/original/test_server_mqtt_handler_service.py .                     [ 94%]
+tests/original/test_spring.py .                                          [ 97%]
+tests/original/test_standard_thread_executor.py .                        [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_confirm_status_enum ___________________________
+
+    def test_confirm_status_enum():
+        values = list(ConfirmStatus)
+>       assert len(values) == 2
+E       assert 4 == 2
+E        +  where 4 = len([<ConfirmStatus.PUB: 1>, <ConfirmStatus.PUBREC: 2>, <ConfirmStatus.PUBREL: 3>, <ConfirmStatus.COMPLETE: 4>])
+
+tests/original/test_enums.py:6: AssertionError
+______________________________ test_protocol_enum ______________________________
+
+    def test_protocol_enum():
+        values = list(ProtocolEnum)
+>       assert len(values) == 2
+E       assert 3 == 2
+E        +  where 3 = len([<ProtocolEnum.MQTT: 1>, <ProtocolEnum.MQTT_WS_MQTT: 2>, <ProtocolEnum.MQTT_WS_PAHO: 3>])
+
+tests/original/test_enums.py:12: AssertionError
+_______________________________ test_qos_status ________________________________
+
+    def test_qos_status():
+        values = list(QosStatus)
+>       assert len(values) == 3
+E       assert 2 == 3
+E        +  where 2 = len([<QosStatus.PUBD: 1>, <QosStatus.RECD: 2>])
+
+tests/original/test_enums.py:18: AssertionError
+_______________________________ test_sub_status ________________________________
+
+    def test_sub_status():
+        values = list(SubStatus)
+        assert len(values) == 2
+>       assert SubStatus.CANCEL.name == "CANCEL"
+               ^^^^^^^^^^^^^^^^
+E       AttributeError: type object 'SubStatus' has no attribute 'CANCEL'
+
+tests/original/test_enums.py:35: AttributeError
+=========================== short test summary info ============================
+FAILED tests/original/test_enums.py::test_confirm_status_enum - assert 4 == 2
+FAILED tests/original/test_enums.py::test_protocol_enum - assert 3 == 2
+FAILED tests/original/test_enums.py::test_qos_status - assert 2 == 3
+FAILED tests/original/test_enums.py::test_sub_status - AttributeError: type o...
+========================= 4 failed, 32 passed in 0.23s =========================

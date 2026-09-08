@@ -1,0 +1,10 @@
+{
+  "return_code": 127,
+  "seconds": 0.05850709799960896,
+  "passed": null,
+  "failed": null,
+  "total": null,
+  "pass_rate": null,
+  "full_success": false,
+  "parser": "exit_code"
+}

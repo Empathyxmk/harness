@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "20260908T133754Z",
+  "experiment": {
+    "name": "baseline",
+    "planning": false,
+    "feedback_rounds": 0,
+    "completion_gate": false,
+    "description": "Single off-the-shelf Codex migration pass."
+  },
+  "task": {
+    "project": "opendatalab-de_geojson-jackson",
+    "source": "Java",
+    "target": "Python",
+    "public_test_paths": 1,
+    "hidden_test_paths": 6
+  },
+  "replicate": 1,
+  "model": "gpt-5.6-terra",
+  "agent": {
+    "turns": [
+      {
+        "index": 1,
+        "return_code": 1,
+        "seconds": 3.950020747999588,
+        "thread_id": "01a0813d-53dd-79f3-9edd-491a0f6d342f",
+        "final_message": "",
+        "usage": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0
+        }
+      }
+    ],
+    "turn_count": 1,
+    "seconds": 3.950020747999588,
+    "usage": {
+      "input_tokens": 0,
+      "cached_input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "public_checks": [],
+  "final": {
+    "return_code": 1,
+    "seconds": 0.2920239960003528,
+    "passed": 9,
+    "failed": 5,
+    "total": 14,
+    "pass_rate": 0.6428571428571429,
+    "full_success": false,
+    "parser": "pytest"
+  }
+}

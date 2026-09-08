@@ -1,0 +1,52 @@
+{
+  "brettwooldridge_SansOrm": {
+    "project": "brettwooldridge_SansOrm",
+    "source": "Java",
+    "target": "Python",
+    "passed": 35,
+    "total": 35,
+    "pass_rate": 1.0,
+    "full_success": true,
+    "count_source": "fixed_test_list"
+  },
+  "jhalterman_typetools": {
+    "project": "jhalterman_typetools",
+    "source": "Java",
+    "target": "Python",
+    "passed": 41,
+    "total": 43,
+    "pass_rate": 0.9534883720930233,
+    "full_success": false,
+    "count_source": "fixed_test_list"
+  },
+  "opendatalab-de_geojson-jackson": {
+    "project": "opendatalab-de_geojson-jackson",
+    "source": "Java",
+    "target": "Python",
+    "passed": 9,
+    "total": 14,
+    "pass_rate": 0.6428571428571429,
+    "full_success": false,
+    "count_source": "fixed_test_list"
+  },
+  "awslabs_route53-infima": {
+    "project": "awslabs_route53-infima",
+    "source": "Java",
+    "target": "Python",
+    "passed": 0,
+    "total": 24,
+    "pass_rate": 0.0,
+    "full_success": false,
+    "count_source": "fixed_test_list"
+  },
+  "LatencyUtils_LatencyUtils": {
+    "project": "LatencyUtils_LatencyUtils",
+    "source": "Java",
+    "target": "Python",
+    "passed": 17,
+    "total": 20,
+    "pass_rate": 0.85,
+    "full_success": false,
+    "count_source": "fixed_test_list"
+  }
+}

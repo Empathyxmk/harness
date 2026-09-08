@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "20260908T132428Z",
+  "experiment": {
+    "name": "baseline",
+    "planning": false,
+    "feedback_rounds": 0,
+    "completion_gate": false,
+    "description": "Single off-the-shelf Codex migration pass."
+  },
+  "task": {
+    "project": "LatencyUtils_LatencyUtils",
+    "source": "Java",
+    "target": "Python",
+    "public_test_paths": 7,
+    "hidden_test_paths": 7
+  },
+  "replicate": 1,
+  "model": "gpt-5.6-terra",
+  "agent": {
+    "turns": [
+      {
+        "index": 1,
+        "return_code": 0,
+        "seconds": 227.1885188569995,
+        "thread_id": "01a08131-0793-7ad3-b475-250191626a80",
+        "final_message": "Implemented the Python migration under `latency_utils/`, with Java-style compatibility imports under `org.LatencyUtils` and top-level class modules.\n\nIncludes interval estimators, pause detectors/listeners, time services, histograms, and `LatencyStats` with pause correction and builder APIs.\n\nCore API checks pass. The supplied public suite has two failures caused by inconsistent assertions in test-local implementations, unrelated to repository code.",
+        "usage": {
+          "input_tokens": 450797,
+          "cached_input_tokens": 400384,
+          "output_tokens": 9876
+        }
+      }
+    ],
+    "turn_count": 1,
+    "seconds": 227.1885188569995,
+    "usage": {
+      "input_tokens": 450797,
+      "cached_input_tokens": 400384,
+      "output_tokens": 9876
+    }
+  },
+  "public_checks": [],
+  "final": {
+    "return_code": 1,
+    "seconds": 2.2553691169996455,
+    "passed": 17,
+    "failed": 3,
+    "total": 20,
+    "pass_rate": 0.85,
+    "full_success": false,
+    "parser": "pytest"
+  }
+}

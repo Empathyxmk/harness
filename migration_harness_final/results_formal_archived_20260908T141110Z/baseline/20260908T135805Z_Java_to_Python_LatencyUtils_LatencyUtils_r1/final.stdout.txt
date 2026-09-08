@@ -1,0 +1,136 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.6.0
+rootdir: /home/matth/projects/Harness/migration_harness_final
+configfile: pyproject.toml
+collected 20 items
+
+public_tests/test_interval_estimator_public.py .                         [  5%]
+public_tests/test_latency_stats_public.py .                              [ 10%]
+public_tests/test_moving_average_interval_estimator_public.py F          [ 15%]
+public_tests/test_pause_detector_listener_public.py .                    [ 20%]
+public_tests/test_simple_pause_detector_public.py ..                     [ 30%]
+public_tests/test_time_capped_moving_average_interval_estimator_public.py F [ 35%]
+                                                                         [ 35%]
+public_tests/test_time_services_public.py .                              [ 40%]
+tests/original/test_interval_estimator.py .                              [ 45%]
+tests/original/test_latency_stats.py ..                                  [ 55%]
+tests/original/test_moving_average_interval_estimator.py .               [ 60%]
+tests/original/test_pause_detector_listener.py .                         [ 65%]
+tests/original/test_simple_pause_detector.py ...                         [ 80%]
+tests/original/test_time_capped_moving_average_interval_estimator.py F.. [ 95%]
+                                                                         [ 95%]
+tests/original/test_time_services.py .                                   [100%]
+
+=================================== FAILURES ===================================
+________________ test_moving_average_interval_estimator_public _________________
+
+    def test_moving_average_interval_estimator_public():
+        class MovingAverageIntervalEstimator:
+            def __init__(self, window_size):
+                self.window_size = window_size
+                self.intervals = []
+    
+            def record_interval(self, timestamp):
+                if not self.intervals:
+                    self.intervals.append(timestamp)
+                else:
+                    self.intervals.append(timestamp)
+                    if len(self.intervals) > self.window_size + 1:
+                        self.intervals.pop(0)
+    
+            def get_estimated_interval(self, _timestamp):
+                if len(self.intervals) < 2:
+                    return 0
+                intervals = [self.intervals[i] - self.intervals[i - 1] for i in range(1, len(self.intervals))]
+                if not intervals:
+                    return 0
+                avg = int(sum(intervals) / len(intervals))
+                return avg
+    
+        estimator = MovingAverageIntervalEstimator(512)
+        now = 0
+        for _ in range(8000):
+            now += 25
+            estimator.record_interval(now)
+        assert estimator.get_estimated_interval(now) == 25
+    
+        for _ in range(400):
+            now += 50
+            estimator.record_interval(now)
+>       assert estimator.get_estimated_interval(0) == 37
+E       assert 44 == 37
+E        +  where 44 = get_estimated_interval(0)
+E        +    where get_estimated_interval = <test_moving_average_interval_estimator_public.test_moving_average_interval_estimator_public.<locals>.MovingAverageIntervalEstimator object at 0x71471a376a50>.get_estimated_interval
+
+public_tests/test_moving_average_interval_estimator_public.py:34: AssertionError
+_________________________ test_window_behavior_public __________________________
+
+    def test_window_behavior_public():
+        pause_detector = MyArtificialPauseDetectorPublic()
+        estimator = TimeCappedMovingAverageIntervalEstimator(16, 500_000_000, pause_detector)
+        time.sleep(0.01)
+    
+        now = 0
+    
+        for _ in range(5000):
+            now += 15
+            estimator.record_interval(now)
+        assert estimator.get_estimated_interval(now) == 15
+    
+        for _ in range(8):
+            now += 30
+            estimator.record_interval(now)
+        assert estimator.get_estimated_interval(now) == 22
+    
+        for _ in range(4):
+            now += 60
+            estimator.record_interval(now)
+>       assert estimator.get_estimated_interval(now) == 32
+E       assert 33 == 32
+E        +  where 33 = get_estimated_interval(75480)
+E        +    where get_estimated_interval = <test_time_capped_moving_average_interval_estimator_public.TimeCappedMovingAverageIntervalEstimator object at 0x71471a376e40>.get_estimated_interval
+
+public_tests/test_time_capped_moving_average_interval_estimator_public.py:67: AssertionError
+_____________________________ test_window_behavior _____________________________
+
+    def test_window_behavior():
+        pause_detector = MyArtificialPauseDetector()
+        estimator = TimeCappedMovingAverageIntervalEstimator(32, 1000000000, pause_detector)
+        time.sleep(0.02)
+    
+        now = 0
+        for _ in range(10000):
+            now += 20
+            estimator.record_interval(now)
+        assert estimator.get_estimated_interval(now) == 20
+    
+        for _ in range(16):
+            now += 40
+            estimator.record_interval(now)
+        assert estimator.get_estimated_interval(now) == 30
+    
+        for _ in range(8):
+            now += 60
+            estimator.record_interval(now)
+        assert estimator.get_estimated_interval(now) == 40
+    
+        pause_detector.record_pause(1500000000, now + 1500000000)
+        now += 1500000000
+        time.sleep(0.02)
+>       assert estimator.get_estimated_interval(now) == 40
+E       assert 9223372036854775807 == 40
+E        +  where 9223372036854775807 = get_estimated_interval(1500201120)
+E        +    where get_estimated_interval = <test_time_capped_moving_average_interval_estimator.TimeCappedMovingAverageIntervalEstimator object at 0x71471a3778c0>.get_estimated_interval
+
+tests/original/test_time_capped_moving_average_interval_estimator.py:80: AssertionError
+=============================== warnings summary ===============================
+tests/original/test_pause_detector_listener.py:5
+  /home/matth/projects/Harness/migration_harness_final/results_formal/baseline/20260908T135805Z_Java_to_Python_LatencyUtils_LatencyUtils_r1/final_eval/tests/original/test_pause_detector_listener.py:5: PytestCollectionWarning: cannot collect test class 'TestListener' because it has a __init__ constructor (from: results_formal/baseline/20260908T135805Z_Java_to_Python_LatencyUtils_LatencyUtils_r1/final_eval/tests/original/test_pause_detector_listener.py)
+    class TestListener(PauseDetectorListener):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED public_tests/test_moving_average_interval_estimator_public.py::test_moving_average_interval_estimator_public
+FAILED public_tests/test_time_capped_moving_average_interval_estimator_public.py::test_window_behavior_public
+FAILED tests/original/test_time_capped_moving_average_interval_estimator.py::test_window_behavior
+=================== 3 failed, 17 passed, 1 warning in 2.04s ====================

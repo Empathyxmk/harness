@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "20260908T122154Z",
+  "experiment": {
+    "name": "baseline",
+    "planning": false,
+    "feedback_rounds": 0,
+    "completion_gate": false,
+    "description": "Single off-the-shelf Codex migration pass."
+  },
+  "task": {
+    "project": "1ssqq1lxr_iot_push",
+    "source": "Java",
+    "target": "Python",
+    "public_test_paths": 7,
+    "hidden_test_paths": 17
+  },
+  "replicate": 1,
+  "model": null,
+  "agent": {
+    "turns": [
+      {
+        "index": 1,
+        "return_code": 1,
+        "seconds": 20.72898753699974,
+        "thread_id": "01a080f7-c263-7ca3-801b-e9231ea8833d",
+        "final_message": "",
+        "usage": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0
+        }
+      }
+    ],
+    "turn_count": 1,
+    "seconds": 20.72898753699974,
+    "usage": {
+      "input_tokens": 0,
+      "cached_input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "public_checks": [],
+  "final": {
+    "return_code": 127,
+    "seconds": 0.05850709799960896,
+    "passed": null,
+    "failed": null,
+    "total": null,
+    "pass_rate": null,
+    "full_success": false,
+    "parser": "exit_code"
+  }
+}

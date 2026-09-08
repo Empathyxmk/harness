@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "20260908T132038Z",
+  "experiment": {
+    "name": "baseline",
+    "planning": false,
+    "feedback_rounds": 0,
+    "completion_gate": false,
+    "description": "Single off-the-shelf Codex migration pass."
+  },
+  "task": {
+    "project": "binarywang_java-emoji-converter",
+    "source": "Java",
+    "target": "Python",
+    "public_test_paths": 5,
+    "hidden_test_paths": 5
+  },
+  "replicate": 1,
+  "model": "gpt-5.6-terra",
+  "agent": {
+    "turns": [
+      {
+        "index": 1,
+        "return_code": 0,
+        "seconds": 229.64914316999966,
+        "thread_id": "01a0812d-84d2-7c50-81e8-c2e5a58aef86",
+        "final_message": "Implemented the Python migration:\n\n- `emoji_converter.py`: singleton converter with Unicode, alias, HTML, and SoftBank support.\n- `emoji_reader.py`: bundled, compressed reference XML parsed into the original model structure.\n- `emoji4unicode.py`: model classes and Java/Python-style accessors.\n- `emoji_utils.py`: SoftBank emoji utilities.\n- `requirements.txt`: dependency-free setup.\n\nVerified with `pytest`: 10 tests pass.",
+        "usage": {
+          "input_tokens": 383485,
+          "cached_input_tokens": 319232,
+          "output_tokens": 10012
+        }
+      }
+    ],
+    "turn_count": 1,
+    "seconds": 229.64914316999966,
+    "usage": {
+      "input_tokens": 383485,
+      "cached_input_tokens": 319232,
+      "output_tokens": 10012
+    }
+  },
+  "public_checks": [],
+  "final": {
+    "return_code": 0,
+    "seconds": 0.2768778999998176,
+    "passed": 19,
+    "failed": 0,
+    "total": 19,
+    "pass_rate": 1.0,
+    "full_success": true,
+    "parser": "pytest"
+  }
+}

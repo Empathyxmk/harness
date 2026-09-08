@@ -1,0 +1,14 @@
+Migrate this repository from Java to Python.
+
+The complete original Java repository is under `_source_reference/`.
+The current working directory is the target repository.
+
+Requirements:
+- Preserve the source repository's externally observable behavior.
+- Implement the target repository completely; do not use stubs or hard-coded
+  answers for visible tests.
+- You may inspect the visible public tests and the benchmark test runner.
+- Do not modify tests, the benchmark test runner, or `_source_reference/`.
+- Work only inside this repository.
+
+When you believe the migration is complete, stop.

@@ -1,0 +1,50 @@
+Running all tests (original + public)...
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.6.0 -- /home/matth/projects/Harness/migration_harness_final/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/matth/projects/Harness/migration_harness_final
+configfile: pyproject.toml
+collecting ... collected 40 items
+
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_encode_simple_string PASSED [  2%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_encode_empty_string PASSED [  5%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_encode_long_string PASSED [  7%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_valid_chunked PASSED [ 10%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_empty_chunked PASSED [ 12%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_invalid_hex PASSED [ 15%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_missing_crlf_after_chunk_data PASSED [ 17%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_chunk_with_extensions PASSED [ 20%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_extra_crlf_between_chunks PASSED [ 22%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_with_spaces_in_chunk_ext PASSED [ 25%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_with_different_chunk_sizes PASSED [ 27%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_nonascii PASSED [ 30%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_encode_unicode PASSED [ 32%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_capital_hex PASSED [ 35%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_lowercase_hex PASSED [ 37%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_encode_capital_and_lowercase PASSED [ 40%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_single_chunk PASSED [ 42%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_encode_multibyte_character PASSED [ 45%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_utf8 PASSED [ 47%]
+tests/original/test_chunked_coding_converter.py::TestChunkedCodingConverterOriginal::test_decode_trailing_characters_after_last_chunk PASSED [ 50%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_encode_simple_string PASSED [ 52%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_encode_empty_string PASSED [ 55%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_encode_long_string PASSED [ 57%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_valid_chunked PASSED [ 60%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_empty_chunked PASSED [ 62%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_invalid_hex PASSED [ 65%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_missing_crlf_after_chunk_data PASSED [ 67%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_chunk_with_extensions PASSED [ 70%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_extra_crlf_between_chunks PASSED [ 72%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_with_spaces_in_chunk_ext PASSED [ 75%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_with_different_chunk_sizes PASSED [ 77%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_nonascii PASSED [ 80%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_encode_unicode PASSED [ 82%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_capital_hex PASSED [ 85%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_lowercase_hex PASSED [ 87%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_encode_capital_and_lowercase PASSED [ 90%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_single_chunk PASSED [ 92%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_encode_multibyte_character PASSED [ 95%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_utf8 PASSED [ 97%]
+public_tests/test_chunked_coding_converter_public.py::TestChunkedCodingConverterPublic::test_decode_trailing_characters_after_last_chunk PASSED [100%]
+
+============================== 40 passed in 0.05s ==============================

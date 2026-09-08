@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "20260908T135801Z",
+  "experiment": {
+    "name": "baseline",
+    "planning": false,
+    "feedback_rounds": 0,
+    "completion_gate": false,
+    "description": "Single off-the-shelf Codex migration pass."
+  },
+  "task": {
+    "project": "awslabs_route53-infima",
+    "source": "Java",
+    "target": "Python",
+    "public_test_paths": 4,
+    "hidden_test_paths": 8
+  },
+  "replicate": 1,
+  "model": "gpt-5.6-terra",
+  "agent": {
+    "turns": [
+      {
+        "index": 1,
+        "return_code": 1,
+        "seconds": 3.841931378001391,
+        "thread_id": "01a0814f-bd4d-76c3-931a-0f8f98271a65",
+        "final_message": "",
+        "usage": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0
+        }
+      }
+    ],
+    "turn_count": 1,
+    "seconds": 3.841931378001391,
+    "usage": {
+      "input_tokens": 0,
+      "cached_input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "public_checks": [],
+  "final": {
+    "return_code": 2,
+    "seconds": 0.45863797000129125,
+    "passed": 0,
+    "failed": 12,
+    "total": 12,
+    "pass_rate": 0.0,
+    "full_success": false,
+    "parser": "pytest"
+  }
+}
