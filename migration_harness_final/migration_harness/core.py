@@ -693,6 +693,10 @@ class TestResult:
     full_success: bool
     parser: str
     count_source: str = "run_tests_script"
+    # The benchmark script's own verdict, kept separately from full_success so
+    # the stricter harness verdict stays auditable against RepoTransBench's.
+    script_success: bool | None = None
+    fixed_list_success: bool | None = None
 
 
 def _sum(pattern: str, text: str) -> int:
@@ -873,8 +877,16 @@ def evaluate(
     """
     Authoritative evaluation.
 
-    full_success  <- the benchmark's own run_tests.sh exit code
-    passed/total  <- one pytest invocation over a fixed file list
+    passed/total   <- one pytest invocation over a fixed file list
+    script_success <- the benchmark's own run_tests.sh exit code
+    full_success   <- BOTH must succeed
+
+    Requiring both closes a loophole in the benchmark's own runners: several
+    run_tests.sh scripts execute only a subset of the declared test files (for
+    example `pytest tests/` with `set -e`, so public_tests/ never runs after a
+    failure), and would therefore report success while declared benchmark tests
+    fail. script_success is kept in the record so the two verdicts can always be
+    compared.
     """
     script_result, stdout, stderr = run_tests(
         task, workspace, timeout=timeout, log_prefix=log_prefix
@@ -888,7 +900,26 @@ def evaluate(
     )
 
     if counted is None:
-        return script_result, stdout, stderr
+        # No countable fixed-list run; the script's verdict is all there is.
+        fallback = TestResult(
+            return_code=script_result.return_code,
+            seconds=script_result.seconds,
+            passed=script_result.passed,
+            failed=script_result.failed,
+            total=script_result.total,
+            pass_rate=script_result.pass_rate,
+            full_success=script_result.full_success,
+            parser=script_result.parser,
+            count_source=script_result.count_source,
+            script_success=script_result.full_success,
+            fixed_list_success=None,
+        )
+        log_prefix.with_suffix(".json").write_text(
+            json.dumps(asdict(fallback), indent=2), encoding="utf-8"
+        )
+        return fallback, stdout, stderr
+
+    fixed_list_success = counted.return_code == 0
 
     merged = TestResult(
         return_code=script_result.return_code,
@@ -897,9 +928,11 @@ def evaluate(
         failed=counted.failed,
         total=counted.total,
         pass_rate=counted.pass_rate,
-        full_success=script_result.full_success,
+        full_success=script_result.full_success and fixed_list_success,
         parser=counted.parser,
         count_source="fixed_test_list",
+        script_success=script_result.full_success,
+        fixed_list_success=fixed_list_success,
     )
     log_prefix.with_suffix(".json").write_text(
         json.dumps(asdict(merged), indent=2), encoding="utf-8"
@@ -1351,6 +1384,17 @@ def summary_text(results_root: str | Path, include_invalid: bool = False) -> str
             else "  mean normalised pass rate: n/a "
                  "(run `migration-harness calibrate`)"
         )
+        divergent = [
+            x for x in group
+            if x["final"].get("script_success") is not None
+            and x["final"].get("script_success") != x["final"]["full_success"]
+        ]
+        if divergent:
+            lines.append(
+                f"  run_tests.sh disagreed with the fixed test list on "
+                f"{len(divergent)} run(s): the script reported success while "
+                f"declared benchmark tests failed"
+            )
         lines.append(f"  mean agent turns: {mean(turns):.2f}")
         lines.append(f"  mean agent time: {mean(seconds):.1f}s")
         lines.append(f"  total tokens: {tokens:,}")
@@ -1365,7 +1409,8 @@ def export_csv(results_root: str | Path, output: str | Path) -> Path:
 
     fields = [
         "experiment", "project", "replicate", "valid", "agent_problems",
-        "full_success", "pass_rate", "normalised_pass_rate",
+        "full_success", "script_success", "fixed_list_success",
+        "pass_rate", "normalised_pass_rate",
         "passed", "failed", "total", "count_source",
         "null_passed", "null_total",
         "agent_turns", "agent_seconds",
@@ -1389,6 +1434,8 @@ def export_csv(results_root: str | Path, output: str | Path) -> Path:
                 "valid": _is_valid(x),
                 "agent_problems": "; ".join(x.get("agent_problems") or []),
                 "full_success": final["full_success"],
+                "script_success": final.get("script_success"),
+                "fixed_list_success": final.get("fixed_list_success"),
                 "pass_rate": final["pass_rate"],
                 "normalised_pass_rate": x.get("normalised_pass_rate"),
                 "passed": final["passed"],
